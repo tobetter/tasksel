@@ -14,3 +14,7 @@ clean:
 	-rm -f C.po build_stamp
 	-rm -f *.mo
 
+update-%: %.po C.po
+	mv $< $<.bak
+	msgmerge $<.bak C.po > $<
+
