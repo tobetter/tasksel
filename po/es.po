@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: tasksel 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-07-31 21:32-0400\n"
-"PO-Revision-Date: 2003-03-06 23:15+0100\n"
+"PO-Revision-Date: 2003-08-2 01:00+0100\n"
 "Last-Translator: Javier Fernandez-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team: Debian Spanish Team <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -78,9 +78,9 @@ msgid "Unable to initialize keyboard interface"
 msgstr "No puedo inicializar la interfaz de teclado"
 
 #: ../slangui.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "Instalador de tareas de Debian v %s (C) 1999-2001 SPI y otros"
+msgstr "Instalador de tareas de Debian v %s (C) 1999-2003 SPI y otros"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -210,13 +210,13 @@ msgid "No packages selected\n"
 msgstr "No se ha seleccionado ningún paquete\n"
 
 #: ../tasksel.c:192
-#, fuzzy
 msgid ""
 "No tasks found on this system.\n"
 "Did you update your available file? Try running dselect update.\n"
 msgstr ""
 "No se encontraron tareas en este sistema.\n"
-"¿Está seguro de que actualizó su fichero de paquetes disponibles?\n"
+"¿Está seguro de que actualizó su fichero de paquetes disponibles? Intente"
+"ejecutar «dselect update».\n"
 
 #: ../util.c:20
 msgid "Cannot allocate memory for strdup"
