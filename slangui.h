@@ -10,7 +10,7 @@ int ui_running(void);
 void ui_resize(void);
 int ui_eventloop(void);
 
-int ui_drawbox(int obj, int x, int y, unsigned int dx, unsigned int dy);
+int ui_drawbox(int obj, int x, int y, unsigned int dx, unsigned int dy, int shadow);
 void ui_button(int row, int col, char *txt);
 void ui_dialog(int row, int col, int height, int width, char *title, char *msg, int reflow);
 

@@ -1,0 +1,13 @@
+Source: tasksel
+Section: base
+Priority: optional
+Maintainer: Randolph Chung <tausq@debian.org>
+Standards-Version: 3.0.1.1
+
+Package: tasksel
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: New task packages selector
+ Interface for selecting task packages; used for boot-floppies, but can also
+ be called independently
+

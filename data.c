@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.3 1999/12/13 03:01:33 tausq Exp $ */
+/* $Id: data.c,v 1.4 1999/12/29 16:10:01 tausq Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -44,7 +44,7 @@ static void packages_walk_enumerate(const void *nodep, const VISIT order, const 
 {
   /* adds nodep to list of nodes if we haven't visited this node before */
   struct package_t *datap = *(struct package_t **)nodep;
-  if (order == leaf || order == endorder) {
+  if (order == leaf || order == postorder) {
     _packages_enumcount++;
     _packages_enumbuf[_packages_enumcount - 1] = datap;
   }
@@ -77,7 +77,7 @@ static void packages_walk_delete(const void *nodep, const VISIT order, const int
   }
 }
 
-int splitlinkdesc(const char *desc, char ***array)
+static int splitlinkdesc(const char *desc, char ***array)
 {
   /* given a comma separate list of names, returns an array with the names split into elts of the array */
   char *p;
@@ -235,7 +235,7 @@ void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
       if (longdesc != NULL) FREE(longdesc);
     }
   };
-  fclose(f);
+  fclose(f);   
 }
 
 void packages_free(struct packages_t *taskpkgs, struct packages_t *pkgs)

@@ -1,0 +1,28 @@
+=head1 NAME 
+
+tasksel - a user interface for installing task packages
+
+=head1 SYNOPSIS
+
+tasksel
+
+=head1 DESCRIPTION
+
+tasksel shows all available task packages and allows to user to select
+ones to install
+
+=head1 SEE ALSO
+
+dpkg(8), apt-get(8)
+
+=head1 FILES
+
+F</var/lib/dpkg/available>
+
+=head1 AUTHOR
+
+tasksel was written by Randolph Chung E<lt>tausq@debian.orgE<gt>.
+
+=head1 HISTORY 
+
+This document first appeared with tasksel-1.0

@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.6 1999/12/13 03:01:33 tausq Exp $ */
+/* $Id: slangui.c,v 1.7 1999/12/29 16:10:01 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -22,6 +22,7 @@
 #define DIALOGOBJ    4
 #define POINTEROBJ   5
 #define BUTTONOBJ    6
+#define SHADOWOBJ    7
 
 #define CHOOSERWINDOW 0
 #define DESCWINDOW    1
@@ -74,13 +75,14 @@ void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct 
   SLang_set_abort_signal(NULL);
   
   /* assign attributes to objects */
-  SLtt_set_color(DEFAULTOBJ, NULL, "white", "black");
-  SLtt_set_color(CHOOSEROBJ, NULL, "black", "cyan");
-  SLtt_set_color(POINTEROBJ, NULL, "brightblue", "cyan");
+  SLtt_set_color(DEFAULTOBJ, NULL, "white", "blue");
+  SLtt_set_color(CHOOSEROBJ, NULL, "black", "lightgray");
+  SLtt_set_color(POINTEROBJ, NULL, "brightblue", "lightgray");
   SLtt_set_color(DESCOBJ, NULL, "black", "cyan");
   SLtt_set_color(STATUSOBJ, NULL, "yellow", "blue");
   SLtt_set_color(DIALOGOBJ, NULL, "black", "lightgray");
   SLtt_set_color(BUTTONOBJ, NULL, "white", "red");
+  SLtt_set_color(SHADOWOBJ, NULL, "black", "black");
   
   ui_resize();
   _initialized = 1;
@@ -206,11 +208,18 @@ int ui_eventloop(void)
   return ret;
 }
 
-int ui_drawbox(int obj, int r, int c, unsigned int dr, unsigned int dc)
+int ui_drawbox(int obj, int r, int c, unsigned int dr, unsigned int dc, 
+               int shadow)
 {
+  if (shadow) {
+    SLsmg_set_color(SHADOWOBJ);
+    SLsmg_fill_region(r+dr, c+1, 1, dc, ' ');
+    SLsmg_fill_region(r+1, c+dc, dr, 1, ' ');
+  }
   SLsmg_set_color(obj);
   SLsmg_draw_box(r, c, dr, dc);
   SLsmg_fill_region(r+1, c+1, dr-2, dc-2, ' ');
+	  
   return 0;
 }
 
@@ -222,7 +231,7 @@ int ui_drawscreen(void)
   SLsmg_set_color(DEFAULTOBJ);
   write_centered_str(1, 0, COLUMNS, 
 		     _("Select the task package(s) appropriate for your system:"));
-  ui_drawbox(CHOOSEROBJ, _chooserinfo.rowoffset - 1, _chooserinfo.coloffset - 1, _chooserinfo.height + 2, _chooserinfo.width + 2);
+  ui_drawbox(CHOOSEROBJ, _chooserinfo.rowoffset - 1, _chooserinfo.coloffset - 1, _chooserinfo.height + 2, _chooserinfo.width + 2, 1);
 
   for (i = _chooserinfo.topindex; i < _chooserinfo.topindex + _chooserinfo.height; i++)
     if (i < _taskpackages->count) ui_drawchooseritem(i);
@@ -255,7 +264,7 @@ void ui_dialog(int row, int col, int height, int width, char *title, char *msg, 
   
   SLsmg_set_color(DIALOGOBJ);
 
-  ui_drawbox(DIALOGOBJ, row, col, height, width);
+  ui_drawbox(DIALOGOBJ, row, col, height, width, 1);
   SLsmg_fill_region(row+1, col+1, height-2, width-2, ' ');
   
   if (title) {
