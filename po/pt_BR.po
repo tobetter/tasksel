@@ -1,17 +1,18 @@
 # translation of tasksel.
 # Copyright (C) 2001 Free Software Foundation, Inc.
 # Andre Luis Lopes <andrelop@ig.com.br>, 2001.
-# 
+# Andre Luis Lopes <andrelop@debian.org>, 2004.
+
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 1.11\n"
+"Project-Id-Version: tasksel 1.41\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-18 23:37+0200\n"
-"PO-Revision-Date: 2001-11-19 22:36-0200\n"
-"Last-Translator: Andre Luis Lopes <andrelop@ig.com.br>\n"
+"PO-Revision-Date: 2004-01-25 15:51-0300\n"
+"Last-Translator: Andre Luis Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../data.c:307 ../data.c:321
@@ -211,7 +212,7 @@ msgstr "Nenhum pacote selecionado\n"
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
+msgstr "Nenhuma tarefa encontrada neste sistema.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
