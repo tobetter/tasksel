@@ -14,14 +14,16 @@ Key:
 Packages:
   gdm
   gnome
+# gnome whines if there's no xscreensaver
+  xscreensaver
+# a screen saver does silly things without this
+  fortune-mod
+  menu
   mozilla-browser
   mozilla-psm
 # mozilla printing
   xprt-xprintorg 
-  menu
   gimp
-# a screen saver does silly things without this
-  fortune-mod
 # openoffice is the best word processor / office suite at the moment
   openoffice.org
   openoffice.org-bin
