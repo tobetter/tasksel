@@ -2,6 +2,10 @@ tasksel (1.52) UNRELEASED; urgency=low
 
   * Recai Oktas
     - Remove openoffice.org-l10n-tr from Turkish task to make it lighter.
+    - Remove fonty from Turkish task because it only handles iso* fonts,
+      and debian-installer sets Turkish font to a better alternative
+      (ter-916f) which is overridden if fonty is installed.
+      Closes: #247928
 
  -- Denis Barbier <barbier@debian.org>  Sat,  8 May 2004 17:04:00 +0200
 
