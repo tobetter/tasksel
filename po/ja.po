@@ -6,94 +6,97 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
-"POT-Creation-Date: 2000-05-08 23:29+0900\n"
-"PO-Revision-Date: 2000-05-09 00:42+0900\n"
+"POT-Creation-Date: 2001-12-06 02:32+0900\n"
+"PO-Revision-Date: 2001-12-06 02:40+0900\n"
 "Last-Translator: Keita Maehara <maehara@debian.org>\n"
 "Language-Team: Debian Japanese List <debian-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=eucjp\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../slangui.c:111
+#: ../slangui.c:212
 msgid "Unable to initialize the terminal"
 msgstr "端末を初期化できません"
 
-#: ../slangui.c:113
+#: ../slangui.c:214
 msgid "Unable to initialize screen output"
 msgstr "画面出力を初期化できません"
 
-#: ../slangui.c:114
+#: ../slangui.c:215
 msgid "Unable to initialize keyboard interface"
 msgstr "キーボードインタフェースを初期化できません"
 
-#: ../slangui.c:131
+#: ../slangui.c:232
 msgid "Debian Task Installer"
 msgstr "Debian タスクインストーラ"
 
-#: ../slangui.c:132
-msgid "(c) 1999-2000 SPI and others"
-msgstr "(c) 1999-2000 SPI 他"
+#: ../slangui.c:233
+msgid "(c) 1999-2001 SPI and others"
+msgstr "(c) 1999-2001 SPI 他"
 
-#: ../slangui.c:285
+#: ../slangui.c:386
 msgid "^Finish"
 msgstr "終了"
 
-#: ../slangui.c:293 ../slangui.c:294
+#: ../slangui.c:394 ../slangui.c:395
 msgid "Task ^Info"
 msgstr "タスク情報"
 
-#: ../slangui.c:298 ../slangui.c:299
+#: ../slangui.c:399 ../slangui.c:400
 msgid "^Help"
 msgstr "ヘルプ"
 
-#: ../slangui.c:331
-msgid "Select task packages to install"
-msgstr "インストールするタスクパッケージを選択してください"
+#: ../slangui.c:434
+msgid "Select tasks to install"
+msgstr "インストールするタスクを選択してください"
 
-#: ../slangui.c:466
+#: ../slangui.c:569
 msgid "Ok"
 msgstr "了解"
 
-#: ../slangui.c:634
+#: ../slangui.c:769
 msgid "Help"
 msgstr "ヘルプ"
 
-#: ../slangui.c:635
+#: ../slangui.c:770
 msgid ""
-"Task packages are \"metapackages\" that allow you to quickly installa "
-"selection of packages that performs a given task.\r\rThe main chooserlist "
-"shows a list of tasks that you can choose to install. The arrow keys moves "
-"the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the "
-"package at the cursor. You can also press A to select all packages, or N to "
-"deselect all packages. Pressing Q will exit this program and begin "
-"installation of your selected tasks.\r\rThank you for using Debian.\r\rPress "
-"enter to return to the task selection screen"
+"Tasks allow you to quickly install a selection of packages that performs a "
+"given task.\r\rThe main chooser list shows a list of tasks that you can "
+"choose to install. The arrow keys moves the cursor. Pressing ENTER or the "
+"SPACEBAR toggles the selection of the task at the cursor. You can also press "
+"A to select all tasks, or N to deselect all tasks. Pressing Q will exit this "
+"program and begin installation of your selected tasks.\r\rThank you for "
+"using Debian.\r\rPress enter to return to the task selection screen"
 msgstr ""
-"タスクパッケージは、与えられた仕事を実行するパッケージを手早く\n"
-"インストールするための「メタパッケージ」です。\r\rメイン選択"
-"リストには選択してインストール可能なタスクの一覧が\n"
+"タスクとは、与えられた仕事を実行するためのパッケージを\n"
+"簡単にインストールするための仕組です。\n"
+"\n"
+"メイン選択リストにはインストール可能なタスクの一覧が\n"
 "表示されます。矢印キーでカーソルを移動します。Enterかスペース\n"
-"バーを押すとカーソルのところにあるパッケージの選択状態を交互\n"
-"に切り替えます。Aを押してすべてのパッケージを選択したり、Nを\n"
-"押してすべてのパッケージを非選択にすることもできます。Qを押す\n"
+"バーを押すとカーソルのところにあるタスクの選択状態を\n"
+"交互に切り替えます。Aを押してすべてのタスクを選択したり、\n"
+"Nを押してすべてのタスクを非選択にすることもできます。Qを押す\n"
 "と、このプログラムを終了して選択したタスクのインストールを\n"
-"開始します。\r\rDebian をご利用いただきありがとうございます。\r\r"
+"開始します。\n"
+"\n"
+"Debian をご利用いただきありがとうございます。\n"
+"\n"
 "Enter を押すとタスク選択画面に戻ります。"
 
-#: ../slangui.c:669
+#: ../slangui.c:807
 #, c-format
 msgid ""
 "Description:\n"
 "%s\n"
 "\n"
-"Dependent packages:\n"
+"Included packages:\n"
 msgstr ""
 "説明:\n"
 "%s\n"
 "\n"
-"依存パッケージ:\n"
+"選択パッケージ:\n"
 
-#: ../slangui.c:677
+#: ../slangui.c:815
 msgid "(no description available)"
 msgstr "(説明がありません)"
 
@@ -133,14 +136,18 @@ msgstr "-s -- 優先度「標準」のパッケージをすべてインストールする"
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- UI を表示しない; 通常 -r か -i とともに使用します"
 
-#: ../tasksel.c:72 ../tasksel.c:100
+#: ../tasksel.c:39
+msgid "-a -- show all tasks, even those with no packages in them"
+msgstr ""
+
+#: ../tasksel.c:80 ../tasksel.c:115
 msgid "No packages selected\n"
 msgstr "パッケージは選択されませんでした\n"
 
-#: ../tasksel.c:140
+#: ../tasksel.c:167
 msgid ""
-"No task packages found on this system.\n"
-"Did you update your available file?"
+"No tasks found on this system.\n"
+"Did you update your available file?\n"
 msgstr ""
-"このシステムにはタスクパッケージがありません。\n"
+"このシステムにはタスクリストがありません。\n"
 "available ファイルは更新しましたか?"
