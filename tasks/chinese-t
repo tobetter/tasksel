@@ -6,10 +6,11 @@ Description: traditional Chinese environment
  Traditional-Chinese-related operations.
 Packages:
   locales
-  debian-zh-faq-s
+  debian-zh-faq-t
   doc-linux-zh
-  xfonts-arphic-bsmi00lp
-  xfonts-arphic-bkai00mp
+  x-ttcidfont-conf
+  ttf-arphic-bsmi00lp
+  ttf-arphic-bkai00mp
   xfonts-intl-chinese
   rxvt-ml
   xcin
@@ -20,14 +21,21 @@ Packages:
   stardic
   fortune-zh
   cjk-latex
+  tfm-arphic-bsmi00lp
+  tfm-arphic-bkai00mp
   chdrv
   yh
+  zhcon
+  cxterm-big5
   ttfprint
   bg5ps
+  psfontmgr
   gs-cjk-resource
   cmap-adobe-cns1
-  xfonts-cmex-big5p
   unifont
-  cxterm-big5
-  kon2
   cedictb5
+  cpanel
+  language-env
+  kde-i18n-zhtwbig5
+  manpages-zh
+  netscape-zh-resource-477
