@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-29 11:46-0500\n"
-"PO-Revision-Date: 2004-03-27 23:02+0200\n"
+"PO-Revision-Date: 2004-03-29 23:15+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -141,8 +141,7 @@ msgstr "SQL duomenų bazė"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Šis uždavinys išrenka įdiegimui PostgreSQL duomenų bazes kliento ir serverio "
 "paketus. "
@@ -199,8 +198,7 @@ msgstr "Vardų serveris (DNS)"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Parinks BIND DNS serverį ir atitinkamus dokumentacijos ir pagalbinių "
 "programų paketus."
@@ -212,13 +210,12 @@ msgstr "Failų serveris"
 
 #. Description
 #: ../po/debian-tasks.desc:130
-#, fuzzy
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
 msgstr ""
 "Šis uždavinys atliks tokius Jūsų sistemos nustatymus, kad ji galės būti "
-"failų serveriu."
+"failų serveriu, dirbančiu abiem protokolais: NetBIOS ir NFS."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -280,18 +277,16 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid "Hebrew environment"
-msgstr "Graikų kalbos aplinka"
+msgstr "Hebrajų kalbos aplinka"
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
 msgstr ""
-"Šis uždavinys įdiegia paketus ir graikiškus dokumentus, kad padėtų graikų "
+"Šis uždavinys įdiegia paketus ir hebrajiškus dokumentus, kad padėtų hebrajų "
 "kalba kalbantiems žmonėms naudotis Debian'u."
 
 #. Description
@@ -579,8 +574,7 @@ msgstr "TeX/LaTeX aplinka"
 
 #. Description
 #: ../po/debian-tasks.desc:351
-msgid ""
-"This task provides necessary packages for composing documents in TeX/LaTeX."
+msgid "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
 
 #. Description
@@ -618,11 +612,8 @@ msgstr "Žiniatinklio (web) serveris"
 
 #. Description
 #: ../po/debian-tasks.desc:378
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
+msgid "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Šis uždavinys parinks paketus, naudingus bendros paskirties žiniatinklio "
 "(web) serverio sistemai."
 
-#~ msgid "a TeX/LaTeX environment"
-#~ msgstr "TeX/LaTeX aplinka"
