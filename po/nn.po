@@ -1,23 +1,27 @@
-# Norwegian (Nynorsk) translation of Debian tasksel messages.
-# Copyright (C) 2001 Gaute Hvoslef Kvalnes.
-# Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 2001.
+# translation of tasksel.po to Norwegian (Nynorsk)
+# translation of tasksel.po to
+# translation of tasksel.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# HÃ¥vard Korsvoll <korsvoll@stud.ntnu.no>, 2004.
+# HÃ¥vard Korsvoll <korsvoll@skulelinux.no>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 1.12\n"
+"Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2003-08-14 10:14MET\n"
-"Last-Translator: Petter Reinholdtsen <pere@hungry.com>\n"
-"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"PO-Revision-Date: 2004-02-17 21:24+0100\n"
+"Last-Translator: HÃ¥vard Korsvoll <korsvoll@skulelinux.no>\n"
+"Language-Team: Norwegian (Nynorsk) <i18n-nn@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.5\n"
+"X-Generator: KBabel 1.3\n"
 
 #: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Kan ikkje tilordna minne til oppramsingslageret"
+msgstr "Klarer ikkje allokere minne for oppteljingsbuffer"
 
 #: ../macros.h:42
 #, c-format
@@ -25,7 +29,7 @@ msgid ""
 "Fatal error encountered at %s:%d\n"
 "\t"
 msgstr ""
-"Fatal feil ved %s:%d\n"
+"Fatal feil oppstod ved %s:%d\n"
 "\t"
 
 #: ../macros.h:51
@@ -47,7 +51,7 @@ msgstr "Sluttbrukar"
 
 #: ../slangui.c:76
 msgid "Hardware Support"
-msgstr "Maskinvarestøtte"
+msgstr "StÃ¸tte for maskinvare"
 
 #: ../slangui.c:77
 msgid "Servers"
@@ -67,28 +71,28 @@ msgstr "Ymse"
 
 #: ../slangui.c:219
 msgid "Unable to initialize the terminal"
-msgstr "Kan ikkje initiera terminalen"
+msgstr "Klarer ikkje setja igang terminalen"
 
 #: ../slangui.c:221
 msgid "Unable to initialize screen output"
-msgstr "Kan ikkje initiera skjermutskrifta"
+msgstr "Klarer ikkje setja igang skjermutskrift"
 
 #: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
-msgstr "Kan ikkje initiera tastaturet"
+msgstr "Klarer ikkje setja opp tastaturgrensesnitt"
 
 #: ../slangui.c:239
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "Installasjon av Debian-profilar v%s - (c) 1999-2003 SPI og andre"
+msgstr "Debian Task Installer v%s - (c) 1999-2003 SPI og andre"
 
 #: ../slangui.c:393
 msgid "^Finish"
-msgstr "Avslutt"
+msgstr "^Ferdig"
 
 #: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
-msgstr "Profil^info"
+msgstr "OppgÃ¥ve^info"
 
 #: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
@@ -96,7 +100,7 @@ msgstr "^Hjelp"
 
 #: ../slangui.c:441
 msgid "Select tasks to install"
-msgstr "Vel profilane som skal installerast"
+msgstr "Vel oppgÃ¥ve som skal installerast"
 
 #: ../slangui.c:576
 msgid "Ok"
@@ -105,7 +109,7 @@ msgstr "OK"
 #: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
 #, c-format
 msgid "Index out of bounds: %d >= %d"
-msgstr "Indeks utanfor grensene: %d >= %d"
+msgstr "Indeks overskrider grensene: %d >= %d"
 
 #: ../slangui.c:776
 msgid "Help"
@@ -126,18 +130,15 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"Med profilar kan du lett velja ei samling pakkar som utfører ei viss "
-"oppgåve.\n"
+"OppgÃ¥ver let deg raskt installera eit utval av pakkar som tilsaman utfÃ¸rer "
+"ei oppgÃ¥ve.\n"
 "\n"
-"I hovudlista ser du dei profilane du kan installera. Med piltastane flyttar "
-"du peikaren, og med linjeskift eller mellomrom vel du ein profil. Du kan "
-"bruka tasten A for å velja alle profilane, eller N for å fjerna alle val. "
-"Trykk Q for å avslutta dette programmet og starta installeringa av dei valde "
-"profilane.\n"
+"Hovudlista viser ei liste over oppÃ¥ver som du kan velja Ã¥ installera. Piltastane flyttar markÃ¸ren. Ved Ã¥ trykkja Enter eller Mellomrom vel du om du vil ta med denne oppgÃ¥va eller ikkje. Du kan ogsÃ¥ trykkja A for Ã¥ velja alle oppgÃ¥vene eller N for Ã¥ velja ingen oppvÃ¥ver. Ved Ã¥ trykkja Q vil dette programmet avslutta og installasjonen "
+"av dei valde oppgÃ¥ven vil byrja.\n"
 "\n"
-"Takk for at du valde Debian.\n"
+"Takk for at du brukar Debian.\n"
 "\n"
-"Trykk linjeskift for å gå tilbake til profilvalskjermen."
+"Trykk Enter for Ã¥ gÃ¥ tilbake til skjermbiletet for val av oppgÃ¥ver"
 
 #: ../slangui.c:818
 #, c-format
@@ -158,79 +159,71 @@ msgstr "(inga skildring tilgjengeleg)"
 
 #: ../tasksel.c:33
 msgid "Unknown signal seen"
-msgstr "Mottok ukjent signal"
+msgstr "Ser ukjent signal"
 
 #: ../tasksel.c:39
 #, c-format
 msgid "tasksel install <task>\n"
-msgstr "tasksel install <profil>\n"
+msgstr "tasksel install <oppgÃ¥ve>\n"
 
 #: ../tasksel.c:40
 #, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [val]; der val er ein kombinasjon av:\n"
+msgstr "tasksel [val]; der val er ein eller anna kombinasjon av:\n"
 
 #: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- testmodus; ikkje køyr apt-get når tasksel avsluttar"
+msgstr "-t -- test modus; kÃ¸yrer ikkje apt-get nÃ¥r du avsluttar"
 
 #: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- legg installasjonane i kø; ikkje installer pakkar med apt-get,\n"
-"\t\tberre legg dei i køen til dpkg"
+"-q -- legg installasjonar i kÃ¸; ikkje installer pakkar med apt-get;\n"
+"\t\tlegg dei berre i kÃ¸ i dpkg"
 
 #: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
-msgstr "-r -- installer alle pakkane med prioritet «naudsynt»"
+msgstr "-r -- installer alle pakkar med prioriteten naudsynt"
 
 #: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
-msgstr "-i -- installer alle pakkane med prioritet «viktig»"
+msgstr "-i -- installer alle pakkar med prioriteten viktig"
 
 #: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
-msgstr "-s -- installer alle pakkane med prioritet «standard»"
+msgstr "-s -- installer alle pakkar med prioriteten standard"
 
 #: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- ikkje vis grensesnitt; vanlegvis brukt med -r eller -i"
+msgstr "-n -- ikkje vis UI, brukast vanlegvis saman med -r eller -i"
 
 #: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- vis alle oppgåver, sjølv dei som ikkje har pakkar"
+msgstr "-a -- vis alle oppgÃ¥ver, ogsÃ¥ dei utan nokon pakkar i seg"
 
 #: ../tasksel.c:88 ../tasksel.c:123
 #, c-format
 msgid "No packages selected\n"
-msgstr "Ingen pakkar vald\n"
+msgstr "Ingen pakkar valt\n"
 
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
+msgstr "Ingen oppgÃ¥ver funne pÃ¥ dette systemet.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
-msgstr "Kan ikkje tilordna minne for strdup"
+msgstr "Klarer ikkje Ã¥ allokere minne for strdup"
 
 #: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
-msgstr "Kan ikkje tilordna %d byte minne"
+msgstr "Klarer ikkje Ã¥ allokere %d byte med minne"
 
-# reallokera bør heita noko betre, men kva?
 #: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
-msgstr "Kan ikkje reallokera %d byte minne"
+msgstr "Klarer ikkje Ã¥ reallokere %d byte med minne"
 
-#, fuzzy
-#~ msgid ""
-#~ "No tasks found on this system.\n"
-#~ "Did you update your available file? Try running dselect update.\n"
-#~ msgstr ""
-#~ "Fann ingen profilar på dette systemet.\n"
-#~ "Har du oppdatert fila «available»?\n"
