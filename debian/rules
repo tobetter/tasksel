@@ -38,9 +38,9 @@ install-stamp: build-stamp
 	$(MAKE) install DESTDIR=`pwd`/debian/tasksel
 	touch install-stamp
 
-binary-indep: build install
-
 binary-arch: build install
+
+binary-indep: build install
 	dh_testdir
 	dh_testroot
 	dh_installdocs TODO README
