@@ -207,7 +207,7 @@ sub getopts {
 	Getopt::Long::Configure ("bundling");
 	if (! GetOptions(\%ret, "test|t", "required|r", "important|i", 
 		   "standard|s", "no-ui|n", "new-install", "list-tasks",
-		   "task-packages=s@")) {
+		   "task-packages=s@", "task-desc=s")) {
 		usage();
 		exit(1);
 	}
@@ -226,6 +226,7 @@ tasksel [options]; where options is any combination of:
 	    --new-install   atomatically install some tasks
 	    --list-tasks    list tasks that would be displayed and exit
 	    --task-packages list available packages in a task
+	    --task-desc     returns the description of a task
 });
 }
 
@@ -249,6 +250,18 @@ if (exists $options{"task-packages"}) {
 		print "$_\n" foreach task_packages($_);
 	}
 	exit(0);
+}
+elsif ($options{"task-desc"}) {
+	my $task=(grep { $_->{task} eq $options{"task-desc"} }
+			map { read_task_desc($_) } list_task_descs())[0];
+	if ($task) {
+		print dgettext("debian-tasks", join(" ",
+			@{$task->{description}}[1..$#{$task->{description}}]))."\n";
+		exit(0);
+	}
+	else {
+		exit(1);
+	}
 }
 
 my @tasks=map { hide_dependent_tasks($_) } map { task_test($_) }
