@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-10 09:02+0200\n"
-"PO-Revision-Date: 2004-07-03 13:20+0200\n"
+"POT-Creation-Date: 2004-07-14 15:31-0400\n"
+"PO-Revision-Date: 2004-07-15 20:58+0200\n"
 "Last-Translator: Javier Fernandez-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team: Debian Spanish Team <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: ../tasksel.pl:188
+#: ../tasksel.pl:199
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -25,7 +25,6 @@ msgid ""
 "\t-i -- install all important-priority packages\n"
 "\t-s -- install all standard-priority packages\n"
 "\t-n -- don't show UI; use with -r or -i usually\n"
-"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
 "Modo de uso:\n"
 "tasksel install <tarea>\n"
@@ -35,15 +34,16 @@ msgstr ""
 "-i -- instalar todos los paquetes de prioridad «important»\n"
 "-s -- instalar todos los paquetes de prioridad «standard»\n"
 "-n -- no mostrar la interfaz de usuario; habitualmente utilizada con -r ó -i\n"
-"-a -- mostrar todas las tareas; incluyendo las que no tienen paquetes\n"
 
-#: ../tasksel.pl:250
-msgid "ignoring other selected packages in favour of manual package selection"
-msgstr "ignorando otros paquetes seleccionados para hacer la selección manual de paquetes"
-
-#: ../tasksel.pl:254 ../tasksel.pl:266
+#: ../tasksel.pl:265 ../tasksel.pl:291
 msgid "aptitude failed"
 msgstr "aptitude falló"
+
+#~ msgid ""
+#~ "ignoring other selected packages in favour of manual package selection"
+#~ msgstr ""
+#~ "ignorando otros paquetes seleccionados para hacer la selección manual de "
+#~ "paquetes"
 
 #~ msgid "Cannot allocate memory for enumeration buffer"
 #~ msgstr "No puedo resevar memoria para el búfer de enumeración"
