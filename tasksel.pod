@@ -44,8 +44,11 @@ used during new Debian installs.
 
 =item B<--list-tasks>
 
-list on stdout the tasks that would be displayed in the tasksel intserface,
-and exit
+list on stdout the tasks that would be displayed in the tasksel intserface
+
+=item B<--task-packages> task
+
+lists on stdout the packages that are available and part of the given task
 
 =back
 

@@ -70,6 +70,24 @@ sub read_task_desc {
 	return @ret;
 }
 
+# Given a task name, returns a list of all available packages in the task.
+sub task_packages {
+	my $task=shift;
+	my @list;
+	local $/="\n\n";
+	open (AVAIL, "apt-cache dumpavail|");
+	while (<AVAIL>) {
+		if (/^Task: (.*)/m) {
+			my @tasks=split(", ", $1);
+			if (grep { $_ eq $task } @tasks) { 
+				push @list, $1 if /^Package: (.*)/m;
+			}
+		}
+	}
+	close AVAIL;
+	return @list;
+}
+
 # Returns a list of all available packages.
 sub list_avail {
 	my @list;
@@ -188,7 +206,8 @@ sub getopts {
 	my %ret;
 	Getopt::Long::Configure ("bundling");
 	if (! GetOptions(\%ret, "test|t", "required|r", "important|i", 
-		   "standard|s", "no-ui|n", "new-install", "list-tasks")) {
+		   "standard|s", "no-ui|n", "new-install", "list-tasks",
+		   "task-packages=s")) {
 		usage();
 		exit(1);
 	}
@@ -199,19 +218,25 @@ sub usage {
 	print STDERR gettext(q{Usage:
 tasksel install <task>
 tasksel [options]; where options is any combination of:
-	-t, --test         test mode; don't really do anything
-	-r, --required     install all required-priority packages
-	-i, --important    install all important-priority packages
-	-s, --standard     install all standard-priority packages
-	-n, --no-ui        don't show UI; use with -r or -i usually
-	    --new-install  atomatically install some tasks
-	    --list-tasks   list tasks that would be displayed and exit
+	-t, --test          test mode; don't really do anything
+	-r, --required      install all required-priority packages
+	-i, --important     install all important-priority packages
+	-s, --standard      install all standard-priority packages
+	-n, --no-ui         don't show UI; use with -r or -i usually
+	    --new-install   atomatically install some tasks
+	    --list-tasks    list tasks that would be displayed and exit
+	    --task-packages list available packages in a task
 });
 }
 
 my @aptitude_install;
 my @tasks_to_install;
 my %options=getopts();
+
+if (exists $options{"task-packages"}) {
+	print "$_\n" foreach task_packages($options{"task-packages"});
+	exit(0);	
+}
 
 if (@ARGV) {
 	if ($ARGV[0] eq "install") {
