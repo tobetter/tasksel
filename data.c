@@ -640,7 +640,7 @@ dontmakemethink:
 		       suggestsdesc, shortdesc, 
 		       longdesc, priority);
 #if 1
-        if (strncmp(section, "tasks-", 6) == 0) {
+        if (section && strncmp(section, "tasks-", 6) == 0) {
 	  p->section = STRDUP(section+6);
 	} else {
 	  p->section = "junk";
