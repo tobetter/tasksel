@@ -1,4 +1,4 @@
-/* $Id: strutl.c,v 1.2 1999/11/23 05:12:43 tausq Exp $ */
+/* $Id: strutl.c,v 1.3 2000/01/16 02:55:30 tausq Rel $ */
 #include "strutl.h"
 
 #include <string.h>
@@ -56,6 +56,7 @@ char *reflowtext(int width, char *ptxt)
 	strncat(buf, begin, end - begin);
 	strcat(buf, "\n");
 	begin = end + 1;
+	if (isspace(*begin)) begin++;
       } else {
 	/* this is where it gets gross.. nowhere to break the line */
 	end = begin + width - 1;

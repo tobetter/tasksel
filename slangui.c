@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.14 2000/01/15 23:03:17 tausq Exp $ */
+/* $Id: slangui.c,v 1.15 2000/01/16 02:55:30 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -332,6 +332,8 @@ int ui_drawscreen(void)
   
   for (i = _chooserinfo.topindex; i < _chooserinfo.topindex + _chooserinfo.height; i++)
     if (i < _taskpackages->count) ui_drawchooseritem(i);
+
+  ui_vscrollbar(_chooserinfo.rowoffset, _chooserinfo.coloffset + _chooserinfo.width - 1, _chooserinfo.height, 0);
   
   for (i = 0; i <= NUM_BUTTONS; i++)
     _drawbutton(i, 0);
@@ -345,7 +347,9 @@ int ui_drawscreen(void)
 void ui_vscrollbar(int row, int col, int height, double percent)
 {
   int i;
-  if (percent < 0) percent = 0;
+  /* fudge the percent a bit -- this makes sure it shows up properly */
+  percent -= 0.05;
+  if (percent < 0.01) percent = 0.01;
   if (percent > 100.0) percent = 100.0;
   
   SLsmg_set_color(SCROLLBAR);
@@ -353,7 +357,10 @@ void ui_vscrollbar(int row, int col, int height, double percent)
      SLsmg_gotorc(row+i, col);
      if (((double)i)/height < percent &&
          ((double)i+1)/height >= percent) {
-       SLsmg_write_char('#');
+       SLsmg_set_char_set(1);
+       SLsmg_write_char(SLSMG_DIAMOND_CHAR);
+       SLsmg_set_char_set(0);
+       /* SLsmg_write_char('#'); */
      } else {
        SLsmg_set_char_set(1);
        SLsmg_write_char(SLSMG_CKBRD_CHAR);
@@ -365,7 +372,9 @@ void ui_vscrollbar(int row, int col, int height, double percent)
 void ui_hscrollbar(int row, int col, int width, double percent)
 {
   int i;
-  if (percent < 0) percent = 0;
+  /* fudge the percent a bit -- this makes sure it shows up properly */
+  percent -= 0.05;
+  if (percent < 0.01) percent = 0.01;
   if (percent > 100.0) percent = 100.0;
   
   SLsmg_set_color(SCROLLBAR);
@@ -435,6 +444,7 @@ static void ui_dialog_drawlines(int row, int col, int height, int width,
 		                char **buf, int topline, int leftcol, 
 				int numlines, int scroll)
 {
+  /* helper function for ui_dialog */
   int ri;
   int hoffset = ((scroll & SCROLLBAR_HORIZ) ? 6 : 4);
   int woffset = ((scroll & SCROLLBAR_VERT) ? 5 : 3);
@@ -447,7 +457,7 @@ static void ui_dialog_drawlines(int row, int col, int height, int width,
     if (strlen(buf[ri]) > leftcol)
       SLsmg_write_nstring(buf[ri]+leftcol, width - woffset);
   }
-  if (scroll & SCROLLBAR_VERT) 
+  if (scroll & SCROLLBAR_VERT && numlines > height-hoffset) 
     ui_vscrollbar(row+1, col+width-2, height-hoffset, 
 		  ((double)topline+1)/numlines);
   if (scroll & SCROLLBAR_HORIZ)
@@ -457,14 +467,15 @@ static void ui_dialog_drawlines(int row, int col, int height, int width,
   SLsmg_refresh();
 }
 
-void ui_dialog(int row, int col, int height, int width, char *title, char *msg, int reflow, int scroll)
+void ui_dialog(int row, int col, int height, int width, char *title, 
+               char *msg, int reflow, int scroll)
 {
   char *reflowbuf;
   int ri, c, topline = 0, leftcol = 0, numlines = 0, done = 0, redraw;
   char *line, *txt = NULL, **buf = NULL;
 
   if (reflow)
-    reflowbuf = reflowtext(width - 2, msg);
+    reflowbuf = reflowtext(width - 6, msg);
   else
     reflowbuf = msg;
   
@@ -492,6 +503,7 @@ void ui_dialog(int row, int col, int height, int width, char *title, char *msg, 
     
   ui_dialog_drawlines(row, col, height, width, buf, topline, leftcol, numlines, scroll);
   
+  /* local event loop */
   while (!done) {
     redraw = 0;
     c = SLkp_getkey();
@@ -512,16 +524,17 @@ void ui_dialog(int row, int col, int height, int width, char *title, char *msg, 
 	  redraw = 1;
 	}
         break;
-      case SL_KEY_LEFT:
-	if (leftcol > 0) {
-	  leftcol--;
-	  redraw=1;
-	}
+      case SL_KEY_PPAGE:
+	topline -= (height-5);
+	if (topline < 0) topline = 0;
+	redraw = 1;
 	break;
-      case SL_KEY_RIGHT:
-	leftcol++;
-	redraw=1;
+      case SL_KEY_NPAGE:
+	topline += (height-5);
+	if (topline > numlines - 1) topline = numlines-1;
+	redraw = 1;
 	break;
+	
     }
     if (redraw) {
       ui_dialog_drawlines(row, col, height, width, buf, topline, leftcol,
@@ -598,9 +611,13 @@ void ui_redrawcursor(int index)
     ui_redrawchooser();
   }
 
+  ui_vscrollbar(_chooserinfo.rowoffset, _chooserinfo.coloffset + 
+                _chooserinfo.width - 1, _chooserinfo.height, 
+                ((double)index+1)/_taskpackages->count);
   SLsmg_set_color(CURSOROBJ);
   SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 2);
   SLsmg_write_string(_taskpackagesary[index]->selected == 0 ? " " : "*");
+  
   SLsmg_refresh();
 }
 
@@ -614,7 +631,7 @@ void ui_clearcursor(int index)
 void ui_showhelp(void)
 {
   _chooserinfo.whichwindow = HELPWINDOW;
-  ui_dialog(3, 3, ROWS - 9, COLUMNS - 10, _("Help"), HELPTXT, 1, SCROLLBAR_VERT);
+  ui_dialog(3, 3, ROWS - 7, COLUMNS - 10, _("Help"), HELPTXT, 1, SCROLLBAR_VERT);
   _chooserinfo.whichwindow = CHOOSERWINDOW;
   ui_drawscreen();
 }
@@ -623,7 +640,7 @@ void ui_showpackageinfo(void)
 {
   struct package_t *pkg, *deppkg;
   int i;
-  int width = COLUMNS - 6;
+  int width = COLUMNS - 10;
   char buf[4096];
   char shortbuf[256];
   char *desc = NULL;

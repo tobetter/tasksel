@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.6 2000/01/07 22:45:09 joeyh Exp $ */
+/* $Id: data.c,v 1.7 2000/01/16 02:55:30 tausq Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -19,7 +19,9 @@
 #define RECOMMENDSFIELD  "Recommends: "
 #define SUGGESTSFIELD    "Suggests: "
 #define DESCRIPTIONFIELD "Description: "
+#define STATUSFIELD      "Status: "
 #define AVAILABLEFILE    "/var/lib/dpkg/available"
+#define STATUSFILE       "/var/lib/dpkg/status"
 #define BUF_SIZE         1024
 #define MATCHFIELD(buf, s) (strncmp(buf, s, strlen(s)) == 0)
 #define FIELDDATA(buf, s) (buf + strlen(s))
@@ -101,6 +103,18 @@ static int splitlinkdesc(const char *desc, char ***array)
   }
 
   return elts;
+}
+
+static const char *filterdescription(const char *descin)
+{
+  /* !!!!!TODO!!!!!!!!!
+   * This is a very ugly hack. It exists here until the package descriptions
+   * are properly fixed. :-(
+   */
+  if (strstr(descin, "Metapackage for ") || strstr(descin, "metapackage for "))
+    return (descin+16);
+  else
+    return descin;
 }
 
 static void addpackage(struct packages_t *pkgs,
@@ -246,9 +260,11 @@ void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
 	}
       }
 
-      addpackage(pkgs, name, NULL, NULL, NULL, shortdesc, NULL, 0);
+      addpackage(pkgs, name, NULL, NULL, NULL, shortdesc,
+		 NULL, 0);
       if (strncmp(name, "task-", 5) == 0)
-	addpackage(taskpkgs, name, dependsdesc, recommendsdesc, suggestsdesc, shortdesc, longdesc, 1);
+	addpackage(taskpkgs, name, dependsdesc, recommendsdesc, suggestsdesc, 
+                   filterdescription(shortdesc), longdesc, 1);
 	
       if (name != NULL) FREE(name);
       if (dependsdesc != NULL) FREE(dependsdesc);
