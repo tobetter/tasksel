@@ -1,23 +1,25 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Hungarian Debian team translation of tasksel.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Risko Gergely <risko@njszki.hu>, 2003.
+# Verok Istvan <vi@fsf.hu>, 2004.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 0.1\n"
+"Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-18 23:37+0200\n"
-"PO-Revision-Date: 2000-06-30 14:53+0100\n"
-"Last-Translator: Risko Gergely <risko@njszki.hu>\n"
-"Language-Team: Hungarian Debian team <forditas@njszki.hu>\n"
+"POT-Creation-Date: 2004-01-18 17:34-0700\n"
+"PO-Revision-Date: 2004-01-19 03:14+0100\n"
+"Last-Translator: VERÃ“K IstvÃ¡n <vi@fsf.hu>\n"
+"Language-Team: Hungarian Debian team <debian-l10n-hungarian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-2\n"
-"Content-Transfer-Encoding: ISO-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
 
 #: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr ""
+msgstr "Nincs elÃ©g memÃ³ria a felsorolÃ¡si puffer szÃ¡mÃ¡ra"
 
 #: ../macros.h:42
 #, c-format
@@ -25,6 +27,8 @@ msgid ""
 "Fatal error encountered at %s:%d\r\n"
 "\t"
 msgstr ""
+"Helyrehozhatatlan hiba: %s:%d\r\n"
+"\t"
 
 #: ../macros.h:51
 #, c-format
@@ -32,69 +36,69 @@ msgid ""
 "I/O error at %s:%d\r\n"
 "\t"
 msgstr ""
+"I/O hiba: %s:%d\r\n"
+"\t"
 
 #: ../slangui.c:18 ../slangui.c:19
-#, fuzzy
 msgid "(no description)"
-msgstr "(leírás nem érhetõ el)"
+msgstr "(leÃ­rÃ¡s nem Ã©rhetÅ‘ el)"
 
 #: ../slangui.c:75
 msgid "End-user"
-msgstr ""
+msgstr "VÃ©gfelhasznÃ¡lÃ³i"
 
 #: ../slangui.c:76
 msgid "Hardware Support"
-msgstr ""
+msgstr "HardvertÃ¡mogatÃ¡s"
 
 #: ../slangui.c:77
 msgid "Servers"
-msgstr ""
+msgstr "KiszolgÃ¡lÃ³k"
 
 #: ../slangui.c:78
 msgid "Development"
-msgstr ""
+msgstr "FejlesztÃ©s"
 
 #: ../slangui.c:79
 msgid "Localization"
-msgstr ""
+msgstr "SzÃ¶vegfordÃ­tÃ¡s"
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
-msgstr ""
+msgstr "EgyÃ©b"
 
 #: ../slangui.c:219
 msgid "Unable to initialize the terminal"
-msgstr "A terminál megnyitása szikertelen"
+msgstr "A terminÃ¡l megnyitÃ¡sa nem sikerÃ¼lt"
 
 #: ../slangui.c:221
 msgid "Unable to initialize screen output"
-msgstr "A képernyõ kimenetének megnyitása sikertelen"
+msgstr "A kÃ©pernyÅ‘re irÃ¡nyulÃ³ kimenet megnyitÃ¡sa nem sikerÃ¼lt"
 
 #: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
-msgstr "A billentyû inicializása nem sikerült"
+msgstr "A billentyÅ±zet inicializÃ¡sa nem sikerÃ¼lt"
 
 #: ../slangui.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "(c) 1999-2000 SPI és mások"
+msgstr "Debian metacsomag-telepÃ­tÅ‘ v%s - (c) 1999-2003 SPI Ã©s mÃ¡sok"
 
 #: ../slangui.c:393
 msgid "^Finish"
-msgstr "^Befejezés"
+msgstr "^BefejezÃ©s"
 
 #: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
-msgstr "Task ^Info"
+msgstr "Metacsomag-^Info"
 
 #: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
-msgstr "^Help"
+msgstr "^SÃºgÃ³"
 
 #: ../slangui.c:441
-#, fuzzy
 msgid "Select tasks to install"
-msgstr "Válaszd ki a telepítendõ taskokat"
+msgstr "TelepÃ­tendÅ‘ metacsomagok kivÃ¡lasztÃ¡sa"
 
 #: ../slangui.c:576
 msgid "Ok"
@@ -103,14 +107,13 @@ msgstr "Ok"
 #: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
 #, c-format
 msgid "Index out of bounds: %d >= %d"
-msgstr ""
+msgstr "IndexhatÃ¡r tÃºllÃ©pÃ©se: %d >= %d"
 
 #: ../slangui.c:776
 msgid "Help"
-msgstr "Súgó"
+msgstr "SÃºgÃ³"
 
 #: ../slangui.c:777
-#, fuzzy
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
 "given task.\n"
@@ -125,110 +128,117 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"A task csomagok olyan \"métacsomagok\" amelyek lehetõvé teszik, hogy nagyon "
-"gyorsan kiválaszd egy adott feladathoz szükséges csomagokat.\r\rA fõ lista "
-"azokat a taskokat mutatja, amit telepítésre választhatsz. A kurzort a "
-"nyilakkal mozgathatod. Az ENTER vagy a SPACE a kiválasztott csomag állapotát "
-"változtatja. Továbbá használható az A az összes csomag kiválasztásához, az N "
-"pedig az összes deaktiválásához. A Q gombbal kiléphetsz a programból és "
-"elkezdõdik a taskok telepítése.\r\rKöszönöm, hogy a Debiant használod.\r\r "
-"Nyomd meg az entert, hogy a taskok választó képernyõjéhez juss"
+"A metacsomagok rÃ©vÃ©n gyorsan telepÃ­thet fel bizonyos feladatokat "
+"megkÃ¶nnyÃ­tÅ‘ csomagÃ¶sszeÃ¡llÃ­tÃ¡sokat \n"
+"\n"
+"A fÅ‘ lista a telepÃ­thetÅ‘ metacsomagokat mutatja. A kurzort a "
+"nyilakkal mozgathatja. Az ENTER vagy a SPACE az aktuÃ¡lis "
+"metacsomag kivÃ¡lasztott voltÃ¡t vÃ¡ltoztatja. Az A lenyomÃ¡sa az "
+"Ã¶sszes metacsomagot kivÃ¡lasztja, az N pedig az Ã¶sszes kivÃ¡lasztÃ¡st "
+"tÃ¶rli. A Q gombbal kilÃ©p a programbÃ³l Ã©s megindul a metacsomagok "
+"telepÃ­tÃ©se.\n"
+"\n"
+"KÃ¶szÃ¶njÃ¼k, hogy a Debiant hasznÃ¡lja.\n"
+"\n"
+"Az ENTER gombbal most visszajut a metacsomag-vÃ¡lasztÃ³ kÃ©pernyÅ‘re"
 
 #: ../slangui.c:818
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Description:\n"
 "%s\n"
 "\n"
 "Included packages:\n"
 msgstr ""
-"Leírás:\n"
+"LeÃ­rÃ¡s:\n"
 "%s\n"
 "\n"
-"Szükséges csomagok:\n"
+"SzÃ¼ksÃ©ges csomagok:\n"
 
 #: ../slangui.c:826
 msgid "(no description available)"
-msgstr "(leírás nem érhetõ el)"
+msgstr "(leÃ­rÃ¡s nem Ã©rhetÅ‘ el)"
 
 #: ../tasksel.c:33
 msgid "Unknown signal seen"
-msgstr "Ismeretnel signal"
+msgstr "Ismeretlen jelzÃ©s (signal)"
 
 #: ../tasksel.c:39
 #, c-format
 msgid "tasksel install <task>\n"
-msgstr ""
+msgstr "taskselÃ‚Ë‡installÃ‚Ë‡<task>\n"
 
 #: ../tasksel.c:40
 #, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr ""
-"tasksel [options]; ahol az options bármilyen kombinációja a következõknek:\n"
+"tasksel [kapcsolÃ³k]; a kapcsolÃ³k a kÃ¶vetkezÅ‘kbÅ‘l kerÃ¼lhetnek ki:\n"
 
 #: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- test mode; nem futtatja az apt-get-et kilépéskor"
+msgstr "-t -- teszt mÃ³d; kilÃ©pÃ©skor nem futtatja az apt-get-et"
 
 #: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- queue installs; nem telepíti a csomagokat az apt-get-tel;\n"
-"\t\tcsak a dpkg sorba rakja be õket"
+"-q -- vÃ¡rakozÃ³sorba tevÃ©s; a csomagokat nem telepÃ­ti az apt-get-tel;\n"
+"\t\tcsak a dpkg vÃ¡rakozÃ³sorÃ¡ba teszi be Å‘ket"
 
 #: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
-msgstr "-r -- az összes required prioritású csomag telepítése"
+msgstr "-r -- az Ã¶sszes required (szÃ¼ksÃ©ges) prioritÃ¡sÃº csomag telepÃ­tÃ©se"
 
 #: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
-msgstr "-i -- az összes important priritású csomag telepítése"
+msgstr "-i -- az Ã¶sszes important (fontos) prioritÃ¡sÃº csomag telepÃ­tÃ©se"
 
 #: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
-msgstr "-s -- az összes standard prioritású csomag telepítése"
+msgstr "-s -- az Ã¶sszes standard prioritÃ¡sÃº csomag telepÃ­tÃ©se"
 
 #: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- nem mutat UI-t; a -r vagy -i opcióhoz"
+msgstr "-n -- nem mutat UI-t; Ã¡ltalÃ¡ban az -r vagy -i kapcsolÃ³kkal hasznÃ¡latos"
 
 #: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr ""
+"-a -- minden metacsomag kijelzÃ©se, mÃ©g az alÃ¡rendelt "
+"csomagokat nem tartalmazÃ³kÃ© is"
 
 #: ../tasksel.c:88 ../tasksel.c:123
 #, c-format
 msgid "No packages selected\n"
-msgstr "Nincsenek csomagok kiválasztva\n"
+msgstr "Nincs kivÃ¡lasztva egy csomag sem\n"
 
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
+msgstr "A rendszer felderÃ­tÃ©se egy metacsomagot sem talÃ¡lt.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
-msgstr ""
+msgstr "Nem sikerÃ¼lt strdup (stringmÃ¡solÃ¡s) cÃ©ljÃ¡ra memÃ³riÃ¡t foglalni"
 
 #: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
-msgstr ""
+msgstr "Nem sikerÃ¼lt %d bÃ¡jtnyi memÃ³riÃ¡t lefoglalni"
 
 #: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
-msgstr ""
+msgstr "Nem sikerÃ¼lt %d bÃ¡jtnyi memÃ³riÃ¡t Ãºjrafoglalni"
 
 #, fuzzy
 #~ msgid ""
 #~ "No tasks found on this system.\n"
 #~ "Did you update your available file? Try running dselect update.\n"
 #~ msgstr ""
-#~ "Task csomagok nem találhatóak a rendszeren.\n"
-#~ "Frissítetted az available file-odat?"
+#~ "Task csomagok nem talÄ‚Ä„lhatÄ‚Å‚ak a rendszeren.\n"
+#~ "FrissÄ‚Â­tetted az available file-odat?"
 
 #~ msgid "Debian Task Installer"
-#~ msgstr "Debian Task telepítõ"
+#~ msgstr "Debian Task telepÄ‚Â­tÄ¹Â‘"
