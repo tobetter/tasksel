@@ -1,4 +1,11 @@
-19991122
-- fixed some redraw bugs
-- better word wrapping support
-- fixed some memory leaks
+2000-02-26  Karl M. Hegbloom  <karlheg@debian.org>
+
+	* ChangeLog: Use GNU format so we can see who changed what.
+
+	* slangui.c: Changed Quit button to Finished button.
+	(ui_resize): Update Copyright.
+
+1999-11-22  ???? <anon@debian.org>
+	* slangui.c: fixed some redraw bugs
+	- better word wrapping support
+	- fixed some memory leaks
