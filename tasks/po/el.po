@@ -1,3 +1,4 @@
+# translation of tasksel_tasks_po_el.po to Greek
 # translation of el.po to Greek
 # translation of C.po to Greek
 # This file is distributed under the same license as the PACKAGE package.
@@ -6,12 +7,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: el\n"
+"Project-Id-Version: tasksel_tasks_po_el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-28 22:52-0500\n"
-"PO-Revision-Date: 2004-01-20 02:07EEST\n"
+"POT-Creation-Date: 2004-01-28 00:07+0100\n"
+"PO-Revision-Date: 2004-01-28 10:29EEST\n"
 "Last-Translator: Konstantinos Margaritis <markos@debian.org>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -144,8 +145,7 @@ msgstr "Βάση Δεδομένων SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Αυτή η ομάδα εγκαθιστά πακέτα για λογισμικό πελάτη και εξυπηρετητή για τη "
 "βάση δεδομένων PostgreSQL."
@@ -184,12 +184,12 @@ msgstr ""
 "δύο περιβάλλοντα."
 
 #. Description
-#: ../po/debian-tasks.desc:113
+#: ../po/debian-tasks.desc:114
 msgid "Dialup internet"
 msgstr "Σύνδεση μέσω τηλεφώνου"
 
 #. Description
-#: ../po/debian-tasks.desc:113
+#: ../po/debian-tasks.desc:114
 msgid ""
 "This task selects packages that address special needs of computers using a "
 "slow part-time dialup connection (by modem, ISDN, or similar)."
@@ -199,37 +199,36 @@ msgstr ""
 "(με modem, ISDN, ή παρόμοιες)."
 
 #. Description
-#: ../po/debian-tasks.desc:122
+#: ../po/debian-tasks.desc:123
 msgid "DNS server"
 msgstr "Διακομιστής Ονομάτων (DNS)"
 
 #. Description
-#: ../po/debian-tasks.desc:122
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+#: ../po/debian-tasks.desc:123
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Επιλέγει για εγκατάσταση το διακομιστή ονομάτων BIND, και σχετικά εργαλεία "
 "και οδηγίες χρήσης."
 
 #. Description
-#: ../po/debian-tasks.desc:129
+#: ../po/debian-tasks.desc:130
 msgid "File server"
 msgstr "Διακομιστής Αρχείων"
 
 #. Description
-#: ../po/debian-tasks.desc:129
+#: ../po/debian-tasks.desc:130
 msgid "This task sets up your system to be a file server."
 msgstr ""
 "Αυτή η ομάδα ρυθμίζει τον υπολογιστή σας να λειτουργεί ως διακομιστής "
 "αρχείων."
 
 #. Description
-#: ../po/debian-tasks.desc:137
+#: ../po/debian-tasks.desc:138
 msgid "French environment"
 msgstr "Γαλλικό περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:137
+#: ../po/debian-tasks.desc:138
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -238,12 +237,12 @@ msgstr ""
 "Debian που ομιλούν αυτή τη γλώσσα."
 
 #. Description
-#: ../po/debian-tasks.desc:146
+#: ../po/debian-tasks.desc:147
 msgid "Games"
 msgstr "Παιχνίδια"
 
 #. Description
-#: ../po/debian-tasks.desc:146
+#: ../po/debian-tasks.desc:147
 msgid ""
 "Selecting this task will install a broad selection of games, from "
 "traditional textual unix games to card games, to fast-paced arcade games. It "
@@ -255,12 +254,12 @@ msgstr ""
 "μια καλή αρχή."
 
 #. Description
-#: ../po/debian-tasks.desc:153
+#: ../po/debian-tasks.desc:154
 msgid "German environment"
 msgstr "Γερμανικό περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:153
+#: ../po/debian-tasks.desc:154
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -269,28 +268,26 @@ msgstr ""
 "του Debian που ομιλούν αυτή τη γλώσσα."
 
 #. Description
-#: ../po/debian-tasks.desc:162
-#, fuzzy
+#: ../po/debian-tasks.desc:163
 msgid "Greek environment"
-msgstr "Γαλλικό περιβάλλον"
+msgstr "Ελληνικό περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:162
-#, fuzzy
+#: ../po/debian-tasks.desc:163
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
 msgstr ""
-"Αυτή η ομάδα εγκαθιστά πακέτα και οδηγίες χρήσης στα Γαλλικά για χρήστες του "
-"Debian που ομιλούν αυτή τη γλώσσα."
+"Αυτή η ομάδα εγκαθιστά πακέτα και οδηγίες χρήσης στα Ελληνικά, για τους "
+"Έλληνες χρήστες του Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:170
+#: ../po/debian-tasks.desc:171
 msgid "Japanese environment"
 msgstr "Γιαπωνέζικο περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:170
+#: ../po/debian-tasks.desc:171
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -299,33 +296,32 @@ msgstr ""
 "Γιαπωνέζικα."
 
 #. Description
-#: ../po/debian-tasks.desc:183
+#: ../po/debian-tasks.desc:184
 msgid "Java"
 msgstr "Java"
 
 #. Description
-#: ../po/debian-tasks.desc:183
+#: ../po/debian-tasks.desc:184
 msgid "A java development environment."
 msgstr "Ένα περιβάλλον ανάπτυξης εφαρμογών Java."
 
 #. Description
-#: ../po/debian-tasks.desc:191
+#: ../po/debian-tasks.desc:192
 msgid "Debian Jr."
 msgstr "Debian Jr."
 
 #. Description
-#: ../po/debian-tasks.desc:191
+#: ../po/debian-tasks.desc:192
 msgid "Debian Jr. is a collection of Debian packages suitable for children."
-msgstr ""
-"Το Debian Jr. είναι μια συλλογή προγραμμάτων του Debian κατάλληλα για παιδιά."
+msgstr "Το Debian Jr. είναι μια συλλογή προγραμμάτων του Debian κατάλληλα για παιδιά."
 
 #. Description
-#: ../po/debian-tasks.desc:196
+#: ../po/debian-tasks.desc:197
 msgid "Custom kernel compilation"
 msgstr "Σύστημα μεταγλώττισης πυρήνων"
 
 #. Description
-#: ../po/debian-tasks.desc:196
+#: ../po/debian-tasks.desc:197
 msgid ""
 "This task includes everything you should need to build your own custom "
 "kernel."
@@ -334,12 +330,12 @@ msgstr ""
 "σας πυρήνα."
 
 #. Description
-#: ../po/debian-tasks.desc:205
+#: ../po/debian-tasks.desc:206
 msgid "Korean environment"
 msgstr "Κορεάτικο περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:205
+#: ../po/debian-tasks.desc:206
 msgid ""
 "This task installs programs, data files, fonts, and documentation to make it "
 "easier for Korean speakers to use Debian."
@@ -348,12 +344,12 @@ msgstr ""
 "διευκολύνουν χρήστες του Debian που ομιλούν Κορεάτικα."
 
 #. Description
-#: ../po/debian-tasks.desc:215
+#: ../po/debian-tasks.desc:216
 msgid "Laptop"
 msgstr "Φορητός υπολογιστής"
 
 #. Description
-#: ../po/debian-tasks.desc:215
+#: ../po/debian-tasks.desc:216
 msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities laptops including IBM Thinkpads, "
@@ -364,12 +360,12 @@ msgstr ""
 "IBM, Sony Vaio, Toshiba και Dell Inspirons."
 
 #. Description
-#: ../po/debian-tasks.desc:225
+#: ../po/debian-tasks.desc:226
 msgid "Linux Standard Base"
 msgstr "Linux Standard Base"
 
 #. Description
-#: ../po/debian-tasks.desc:225
+#: ../po/debian-tasks.desc:226
 msgid ""
 "This task makes the system compliant with the Linux Standard Base, allowing "
 "you to install and use LSB packages."
@@ -378,12 +374,12 @@ msgstr ""
 "Base, επιτρέποντάς σας να εγκαθιστάτε και να τρέχετε πακέτα LSB."
 
 #. Description
-#: ../po/debian-tasks.desc:233
+#: ../po/debian-tasks.desc:234
 msgid "Mail server"
 msgstr "Διακομιστής αλληλογραφίας"
 
 #. Description
-#: ../po/debian-tasks.desc:233
+#: ../po/debian-tasks.desc:234
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -392,12 +388,12 @@ msgstr ""
 "σύστημα αλληλογραφίας."
 
 #. Description
-#: ../po/debian-tasks.desc:241
+#: ../po/debian-tasks.desc:242
 msgid "Usenet news server"
 msgstr "Διακομιστής νέων Usenet"
 
 #. Description
-#: ../po/debian-tasks.desc:241
+#: ../po/debian-tasks.desc:242
 msgid ""
 "This task selects the preferred version of the INN news server software for "
 "new Debian installations."
@@ -406,7 +402,7 @@ msgstr ""
 "INN για νέες εγκαταστάσεις Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:241
+#: ../po/debian-tasks.desc:242
 msgid ""
 "You do not need this package if you merely wish to read news from an "
 "existing server, just select the news reader program you desire and it will "
@@ -420,12 +416,12 @@ msgstr ""
 "ένα διακομιστή νέων."
 
 #. Description
-#: ../po/debian-tasks.desc:254
+#: ../po/debian-tasks.desc:255
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Νορβηγικό περιβάλλον (Bokmaal και Nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:254
+#: ../po/debian-tasks.desc:255
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -434,12 +430,12 @@ msgstr ""
 "του Debian που ομιλούν αυτή τη γλώσσα."
 
 #. Description
-#: ../po/debian-tasks.desc:264
+#: ../po/debian-tasks.desc:265
 msgid "Office environment"
 msgstr "Περιβάλλον Εφαρμογών Γραφείου"
 
 #. Description
-#: ../po/debian-tasks.desc:264
+#: ../po/debian-tasks.desc:265
 msgid ""
 "This task provides a suite of office productivity software, including a word "
 "processor, a spreadsheet, a presentation program, and more. This is a rather "
@@ -450,12 +446,12 @@ msgstr ""
 "αρκετά μεγάλη συλλογή λογισμικού."
 
 #. Description
-#: ../po/debian-tasks.desc:274
+#: ../po/debian-tasks.desc:275
 msgid "Polish environment"
 msgstr "Πολωνικό περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:274
+#: ../po/debian-tasks.desc:275
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -464,22 +460,22 @@ msgstr ""
 "του Debian που ομιλούν αυτή τη γλώσσα."
 
 #. Description
-#: ../po/debian-tasks.desc:283
+#: ../po/debian-tasks.desc:284
 msgid "Print server"
 msgstr "Εξυπηρετητής εκτυπώσεων"
 
 #. Description
-#: ../po/debian-tasks.desc:283
+#: ../po/debian-tasks.desc:284
 msgid "This task sets up your system to be a print server."
 msgstr "Η ομάδα αυτή ρυθμίζει το σύστημά σας για εξυπηρέτηση εκτυπώσεων."
 
 #. Description
-#: ../po/debian-tasks.desc:292
+#: ../po/debian-tasks.desc:293
 msgid "Python"
 msgstr "Python"
 
 #. Description
-#: ../po/debian-tasks.desc:292
+#: ../po/debian-tasks.desc:293
 msgid ""
 "Many Python tools and extensions, for developing scripts and simple or "
 "complex applications in Python."
@@ -488,12 +484,12 @@ msgstr ""
 "απλών ή πολύπλοκων εφαρμογών σε Python."
 
 #. Description
-#: ../po/debian-tasks.desc:300
+#: ../po/debian-tasks.desc:301
 msgid "Russian environment"
 msgstr "Ρωσσικό περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:300
+#: ../po/debian-tasks.desc:301
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -502,12 +498,12 @@ msgstr ""
 "Debian που ομιλούν αυτή τη γλώσσα."
 
 #. Description
-#: ../po/debian-tasks.desc:309
+#: ../po/debian-tasks.desc:310
 msgid "Scientific applications"
 msgstr "Επιστημονικές εφαρμογές"
 
 #. Description
-#: ../po/debian-tasks.desc:309
+#: ../po/debian-tasks.desc:310
 msgid ""
 "This task selects packages which are suitable for scientific work. Under a "
 "fairly loose definition of 'scientific', this includes numerical analysis "
@@ -519,12 +515,12 @@ msgstr ""
 "οπτικοποίηση δεδομένων."
 
 #. Description
-#: ../po/debian-tasks.desc:316
+#: ../po/debian-tasks.desc:317
 msgid "Spanish environment"
 msgstr "Ισπανικό περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:316
+#: ../po/debian-tasks.desc:317
 msgid ""
 "This task installs programs, data files,  and documentation that makes it "
 "easier for Spanish speakers to use Debian."
@@ -533,12 +529,12 @@ msgstr ""
 "του Debian που ομιλούν αυτή τη γλώσσα."
 
 #. Description
-#: ../po/debian-tasks.desc:325
+#: ../po/debian-tasks.desc:326
 msgid "Tcl/Tk"
 msgstr "Tcl/Tk"
 
 #. Description
-#: ../po/debian-tasks.desc:325
+#: ../po/debian-tasks.desc:326
 msgid ""
 "Packages commonly used in developing applications using the Tcl language and "
 "Tk Toolkit."
@@ -547,34 +543,34 @@ msgstr ""
 "Tcl και το Σετ Εργαλείων Tk."
 
 #. Description
-#: ../po/debian-tasks.desc:334
+#: ../po/debian-tasks.desc:335
 msgid "TeX/LaTeX environment"
 msgstr "Περιβάλλον TeX/LaTeX"
 
 #. Description
-#: ../po/debian-tasks.desc:334
+#: ../po/debian-tasks.desc:335
 msgid "a TeX/LaTeX environment"
 msgstr "ένα περιβάλλον TeX/LaTeX"
 
 #. Description
-#: ../po/debian-tasks.desc:343
+#: ../po/debian-tasks.desc:344
 msgid "Thai environment"
 msgstr "Ταϊλανδέζικο περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:343
+#: ../po/debian-tasks.desc:344
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
 "Αυτή η ομάδα εγκαθιστά πακέτα για διευκόλυνση των χρηστών του Debian που "
 "ομιλούν Ταϊλανδέζικα."
 
 #. Description
-#: ../po/debian-tasks.desc:353
+#: ../po/debian-tasks.desc:354
 msgid "Conventional Unix server"
 msgstr "Τυπικός εξυπηρετητής UNIX"
 
 #. Description
-#: ../po/debian-tasks.desc:353
+#: ../po/debian-tasks.desc:354
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -585,14 +581,14 @@ msgstr ""
 "ένα σημαντικό αριθμό προγραμμάτων δαιμόνων (daemons)."
 
 #. Description
-#: ../po/debian-tasks.desc:360
+#: ../po/debian-tasks.desc:361
 msgid "Web server"
 msgstr "Διακομιστής Ιστοσελίδων"
 
 #. Description
-#: ../po/debian-tasks.desc:360
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
+#: ../po/debian-tasks.desc:361
+msgid "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Η ομάδα αυτή επιλέγει για εγκατάσταση πακέτα χρήσιμα για ένα διακομιστή "
 "ιστοσελίδων γενικών αναγκών."
+
