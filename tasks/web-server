@@ -4,8 +4,10 @@ Description: Web server
  This task selects a packages useful for a general purpose web server
  system.
 Key:
- # apache2 yet?
- apache
+ apache2-mpm-prefork
 Packages:
+ apache2-doc
+ libapache2-mod-php4
+ libapache2-mod-perl2
+ libapache2-mod-python
  analog
- # TODO: what else? dwww? cgi and/or dynamic web site stuff?

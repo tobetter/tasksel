@@ -1,10 +1,14 @@
-tasksel (1.47) UNRELASED; urgency=low
+tasksel (1.47) unstable; urgency=low
 
   * Joey Hess
     - Update kernel to 2.4.25. Remove bin86. Closes: #240383
     - Add ifplugd to laptop task.
     - Add a Hebrew task. Closes: #235450
     - Some touchups based on #225357
+    - After discussing it with the apache maintainers, switched to apache2 for
+      the web task. Added mod-perl, mod-pytohn, and php4 to that task.
+    - libecpg3 is not available, update database task to libecpg4
+    - Switch laptop task to use irda-utils.
   * dann frazier:
     - Fix segfault when it detects a package name w/ a task- prefix, that
       doesn't have a corresponding Section: tasks-foo field. Closes: #236397
@@ -24,7 +28,7 @@ tasksel (1.47) UNRELASED; urgency=low
     - Claus Hindsgaul
       - Updated Danish translation (tasks/po/da.po)
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 23 Mar 2004 22:47:02 +0100
+ -- Joey Hess <joeyh@debian.org>  Mon, 29 Mar 2004 10:38:17 -0500
 
 tasksel (1.46) unstable; urgency=low
 
