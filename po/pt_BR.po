@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-10 09:02+0200\n"
-"PO-Revision-Date: 2004-06-18 21:38-0300\n"
+"POT-Creation-Date: 2004-07-08 19:35-0400\n"
+"PO-Revision-Date: 2004-07-09 10:42-0300\n"
 "Last-Translator: Andre Luis Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,6 @@ msgid ""
 "\t-i -- install all important-priority packages\n"
 "\t-s -- install all standard-priority packages\n"
 "\t-n -- don't show UI; use with -r or -i usually\n"
-"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
 "Uso:\n"
 "tasksel install <task>\n"
@@ -34,13 +33,13 @@ msgstr ""
 "\t-i -- instala todos os pacotes de prioridade important\n"
 "\t-s -- instala todos os pacotes de prioridade standard\n"
 "\t-n -- não exibe a interface; normalmente usado com -r ou -i\n"
-"\t-a -- exibir todas as tasks, mesmo aqueles sem nenhum pacote\n"
 
-#: ../tasksel.pl:250
+#: ../tasksel.pl:249
 msgid "ignoring other selected packages in favour of manual package selection"
-msgstr "ignorando outros pacotes selecionados em favor de seleção manual de pacotes"
+msgstr ""
+"ignorando outros pacotes selecionados em favor de seleção manual de pacotes"
 
-#: ../tasksel.pl:254 ../tasksel.pl:266
+#: ../tasksel.pl:253 ../tasksel.pl:265
 msgid "aptitude failed"
 msgstr "aptitude falhou"
 
