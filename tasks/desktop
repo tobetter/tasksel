@@ -8,7 +8,8 @@ Description: Desktop environment
  which lets the user choose between the two.
 Key:
   x-window-system-core
-  kde
+# Disable kde until it is back to an installable state in testing
+#  kde
   gnome
 Packages:
 # gdm allows picking between gnome and kde at login time
