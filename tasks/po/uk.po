@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: tasksel-tasks_uk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-15 20:35+0200\n"
-"PO-Revision-Date: 2004-03-29 21:31+0300\n"
+"PO-Revision-Date: 2004-04-15 22:37+0300\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
@@ -60,8 +60,7 @@ msgstr "C та C++"
 msgid ""
 "A complete environment for development of programs in the C and C++ "
 "programming languages."
-msgstr ""
-"Повна робоча середовище для розробки програм на мовах програмування C та C++."
+msgstr "Повна робоча середовище для розробки програм на мовах програмування C та C++."
 
 #. Description
 #: ../po/debian-tasks.desc:33
@@ -146,10 +145,8 @@ msgstr "База даних SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Це завдання вибирає клієнтські та серверні пакунки для бази даних PostgreSQL."
+msgid "This task selects client and server packages for the PostgreSQL database."
+msgstr "Це завдання вибирає клієнтські та серверні пакунки для бази даних PostgreSQL."
 
 #. Description
 #: ../po/debian-tasks.desc:89
@@ -201,8 +198,7 @@ msgstr "Сервер DNS"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Вибирає DNS сервер BIND та пов'язані з ним пакети документації та "
 "інструментів."
@@ -486,8 +482,7 @@ msgstr "Сервер друку"
 #. Description
 #: ../po/debian-tasks.desc:300
 msgid "This task sets up your system to be a print server."
-msgstr ""
-"Це завдання налаштовує вашу систему для використання в якості сервера друку."
+msgstr "Це завдання налаштовує вашу систему для використання в якості сервера друку."
 
 #. Description
 #: ../po/debian-tasks.desc:309
@@ -554,8 +549,7 @@ msgstr "Середовище TeX/LaTeX"
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid ""
-"This task provides necessary packages for composing documents in TeX/LaTeX."
+msgid "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
 "Це завдання містить набір пакунків, що необхідні для створення документів в "
 "TeX/LaTeX."
@@ -574,19 +568,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:361
-#, fuzzy
 msgid "Ukrainian environment"
-msgstr "Підтримка литовської мови"
+msgstr "Підтримка української мови"
 
 #. Description
 #: ../po/debian-tasks.desc:361
-#, fuzzy
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
 msgstr ""
 "Це завдання встановлює пакунки, що дозволяють полегшити використання Debian "
-"для тих, хто говорить російською."
+"для тих, хто говорить українською."
 
 #. Description
 #: ../po/debian-tasks.desc:370
@@ -611,8 +603,7 @@ msgstr "Web сервер"
 
 #. Description
 #: ../po/debian-tasks.desc:377
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
+msgid "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Це завдання вибирає пакунки, що корисні для web сервера загального "
 "призначення."
@@ -629,3 +620,4 @@ msgstr ""
 
 #~ msgid "a TeX/LaTeX environment"
 #~ msgstr "Середовище TeX/LaTeX"
+
