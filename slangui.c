@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.11 2000/01/07 22:45:09 joeyh Exp $ */
+/* $Id: slangui.c,v 1.12 2000/01/07 22:49:53 joeyh Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -351,8 +351,8 @@ void ui_drawchooseritem(int index)
            _taskpackagesary[index]->prettyname);
   /* I fear the 1 below is an off-by-one error somewhere -- Joeyh */
   SLsmg_write_nstring(buf, _chooserinfo.width - 1);
-  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + _taskpackages->maxnamelen + 5);
-  SLsmg_write_nstring(_taskpackagesary[index]->shortdesc, _chooserinfo.width - _taskpackages->maxnamelen - 5);
+  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + _taskpackages->maxnamelen + 7);
+  SLsmg_write_nstring(_taskpackagesary[index]->shortdesc, _chooserinfo.width - _taskpackages->maxnamelen - 7);
 }
 
 void ui_toggleselection(int index)
