@@ -2,13 +2,12 @@
 # Copyright (C) 2000 Free Software Foundation, Inc.
 # Keita Maehara <maehara@debian.org>, 2000.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-07-31 21:32-0400\n"
-"PO-Revision-Date: 2001-12-06 02:40+0900\n"
+"PO-Revision-Date: 2003-09-26 12:12+0900\n"
 "Last-Translator: Keita Maehara <maehara@debian.org>\n"
 "Language-Team: Debian Japanese List <debian-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,50 +16,51 @@ msgstr ""
 
 #: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr ""
+msgstr "列挙バッファのためのメモリを確保できません"
 
 #: ../macros.h:42
 #, c-format
 msgid ""
 "Fatal error encountered at %s:%d\r\n"
 "\t"
-msgstr ""
+msgstr "%s:%d で致命的エラーが起こりました\r\n"
+"\t"
 
 #: ../macros.h:51
 #, c-format
 msgid ""
 "I/O error at %s:%d\r\n"
 "\t"
-msgstr ""
+msgstr "%s:%d で入出力エラーが起こりました\r\n"
+"\t"
 
 #: ../slangui.c:18 ../slangui.c:19
-#, fuzzy
 msgid "(no description)"
 msgstr "(説明がありません)"
 
 #: ../slangui.c:75
 msgid "End-user"
-msgstr ""
+msgstr "エンドユーザ"
 
 #: ../slangui.c:76
 msgid "Hardware Support"
-msgstr ""
+msgstr "ハードウェアサポート"
 
 #: ../slangui.c:77
 msgid "Servers"
-msgstr ""
+msgstr "サーバ"
 
 #: ../slangui.c:78
 msgid "Development"
-msgstr ""
+msgstr "開発"
 
 #: ../slangui.c:79
 msgid "Localization"
-msgstr ""
+msgstr "地域化"
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
-msgstr ""
+msgstr "その他"
 
 #: ../slangui.c:219
 msgid "Unable to initialize the terminal"
@@ -75,21 +75,21 @@ msgid "Unable to initialize keyboard interface"
 msgstr "キーボードインタフェースを初期化できません"
 
 #: ../slangui.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "(c) 1999-2001 SPI 他"
+msgstr "Debian タスクインストーラ v%s - (c) 1999-20031999-2001 SPI 他"
 
 #: ../slangui.c:393
 msgid "^Finish"
-msgstr "終了"
+msgstr "終了 (^F)"
 
 #: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
-msgstr "タスク情報"
+msgstr "タスク情報 (^I)"
 
 #: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
-msgstr "ヘルプ"
+msgstr "ヘルプ (^H)"
 
 #: ../slangui.c:441
 msgid "Select tasks to install"
@@ -110,7 +110,6 @@ msgstr "ヘルプ"
 
 #. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
-#, fuzzy
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
 "given task.\n"
@@ -125,16 +124,9 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"タスクとは、与えられた仕事を実行するためのパッケージを\n"
-"簡単にインストールするための仕組です。\n"
+"タスクとは、与えられた仕事を実行するためのパッケージを簡単にインストールするための仕組です。\n"
 "\n"
-"メイン選択リストにはインストール可能なタスクの一覧が\n"
-"表示されます。矢印キーでカーソルを移動します。Enterかスペース\n"
-"バーを押すとカーソルのところにあるタスクの選択状態を\n"
-"交互に切り替えます。Aを押してすべてのタスクを選択したり、\n"
-"Nを押してすべてのタスクを非選択にすることもできます。Qを押す\n"
-"と、このプログラムを終了して選択したタスクのインストールを\n"
-"開始します。\n"
+"メイン選択リストにはインストール可能なタスクの一覧が表示されます。矢印キーでカーソルを移動します。Enter かスペースバーを押すとカーソルのところにあるタスクの選択状態を交互に切り替えます。Aを押してすべてのタスクを選択したり、Nを押してすべてのタスクを非選択にすることもできます。Qを押すと、このプログラムを終了して選択したタスクのインストールを開始します。\n"
 "\n"
 "Debian をご利用いただきありがとうございます。\n"
 "\n"
@@ -163,7 +155,7 @@ msgstr "未知のシグナルです"
 
 #: ../tasksel.c:34
 msgid "tasksel install <task>\n"
-msgstr ""
+msgstr "tasksel は、<task> をインストールします。\n"
 
 #: ../tasksel.c:35
 msgid "tasksel [options]; where options is any combination of:\n"
@@ -199,34 +191,33 @@ msgstr "-n -- UI を表示しない; 通常 -r か -i とともに使用します"
 
 #: ../tasksel.c:42
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr ""
+msgstr "-a -- パッケージを含まないものも含め、全てのタスクを表示する"
 
 #: ../tasksel.c:83 ../tasksel.c:118
 msgid "No packages selected\n"
 msgstr "パッケージは選択されませんでした\n"
 
 #: ../tasksel.c:192
-#, fuzzy
 msgid ""
 "No tasks found on this system.\n"
 "Did you update your available file? Try running dselect update.\n"
 msgstr ""
 "このシステムにはタスクリストがありません。\n"
-"available ファイルは更新しましたか?\n"
+"available ファイルは更新しましたか? dselect の update を試してください。\n"
 
 #: ../util.c:20
 msgid "Cannot allocate memory for strdup"
-msgstr ""
+msgstr "strdup のためのメモリ確保ができません"
 
 #: ../util.c:38
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
-msgstr ""
+msgstr "%d バイトのメモリが確保できません"
 
 #: ../util.c:47
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
-msgstr ""
+msgstr "%d バイトのメモリが再確保できません"
 
 #~ msgid "Debian Task Installer"
 #~ msgstr "Debian タスクインストーラ"

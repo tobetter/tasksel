@@ -85,6 +85,9 @@ sub processfile {
 				}
 				if ($notmain{$_}) {
 					print STDERR "$file: $_ is in $notmain{$_}.\n";
+					if ($field eq 'key') {
+						print STDERR "MISSING KEY PACKAGE, TASK BROKEN\n";
+					}
 				}
 			}
 		}

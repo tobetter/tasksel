@@ -15,10 +15,10 @@ DEFS=-DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/
      -DTASKDIR=\".\" -DDEBUG
 endif
 VERSION=$(shell expr "`dpkg-parsechangelog 2>/dev/null |grep Version:`" : '.*Version: \(.*\)' | cut -d - -f 1)
-LIBS=-lslang #-lccmalloc -ldl
+LIBS=-lslang -ltextwrap #-lccmalloc -ldl
 OBJS=tasksel.o slangui.o data.o util.o strutl.o
 LANGS=cs da de es fr hu it ja no nn pl pt_BR ru sv zh_TW
-LANGS_DESC=de
+LANGS_DESC=de ja
 LOCALEDIR=$(DESTDIR)/usr/share/locale
 COMPILE = $(CC) $(CFLAGS) $(DEFS) -c
 LINK = $(CC) $(CFLAGS) $(DEFS) -o
