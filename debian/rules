@@ -18,7 +18,11 @@ clean:
 	rm -f build-stamp install-stamp commit-stamp
 	-$(MAKE) clean
 	dh_clean
-
+	# Handle norwegian translations
+        # Remove transition copy while we wait for all users to change from
+	# no_NO to nb_NO
+	$(RM) po/no.po
+			
 install: install-stamp
 install-stamp: build-stamp
 	dh_testdir
@@ -33,6 +37,10 @@ binary-indep: build install
 binary-arch: build install
 	dh_testdir
 	dh_testroot
+	# Handle norwegian translations
+        # Make transition copy while we wait for all users to change from
+        # no_NO to nb_NO
+        cp po/nb.po po/no.po
 	dh_installdocs TODO README
 	dh_installmenu
 	dh_installman

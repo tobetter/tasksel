@@ -7,8 +7,11 @@ tasksel (1.45) UNRELASED; urgency=low
       - Updated and unfuzzied German translations.
     - Håvard Korsvoll
       - Updated and added Norwegian nynorsk translations (nn.po)
+    - Christian Perrier on behalf of Petter Reinholdtsen
+      - Move to nb.po for Norwegian Bokmal. Temporarily copy nb.po to no.po
+        at build time during the no->nb locale transition
 
- -- Joey Hess <joeyh@debian.org>  Mon, 23 Feb 2004 01:35:45 -0500
+ -- Christian Perrier <bubulle@kheops.frmug.org>  Fri, 27 Feb 2004 15:50:38 +0100
 
 tasksel (1.44) unstable; urgency=low
 
