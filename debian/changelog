@@ -1,8 +1,15 @@
 tasksel (2.21) UNRELEASED; urgency=low
 
   * Joey Hess
-TODO: need complete explanation of Chinese changes
-    - Chinese tasks reord by Carlos Liu. Closes: #291092
+    - Chinese tasks reworked by Carlos Liu. Closes: #291092
+    	- Dropped xcin, pydict from chinese-s and stardic from chinese-t
+        - Dropped yiyantang, yh, kon2, chdrv, tfm-arphic-*, cce,
+          gs-cjk-resource, cmap-adobe-gb1, cmap-adobe-cns1, psfontmgr
+          from both tasks.
+        - Added scim-chinese, fcitx to chinese-s-desktop
+        - Added scim-tables-zh and rxvt-unicode-ml into both chinese-s-desktop
+          and chinese-t-desktop
+        - Moved all X-dependent packages from chinese-* to chinese-*-desktop.
     - Add myspell-* back to all language tasks since #283923 is fixed.
     - Uncommented the openoffice l10n packages since they no longer depend
       on openoffice.org, but only recommend it.
