@@ -1,0 +1,52 @@
+# translation of mg.po to Malagasy
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Jaonary Rabarisoa <mpandikateny@linuxmg.org>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mg\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-02-15 13:19-0500\n"
+"PO-Revision-Date: 2005-03-31 11:17+0200\n"
+"Last-Translator: Jaonary Rabarisoa <mpandikateny@linuxmg.org>\n"
+"Language-Team: Malagasy <mpandikateny@linuxmg.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+
+#: ../tasksel.pl:293
+msgid ""
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel remove <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t, --test          test mode; don't really do anything\n"
+"\t-r, --required      install all required-priority packages\n"
+"\t-i, --important     install all important-priority packages\n"
+"\t-s, --standard      install all standard-priority packages\n"
+"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
+"\t    --new-install   automatically install some tasks\n"
+"\t    --list-tasks    list tasks that would be displayed and exit\n"
+"\t    --task-packages list available packages in a task\n"
+"\t    --task-desc     returns the description of a task\n"
+msgstr ""
+"Fampiasa:\n"
+"tasksel install <task>\n"
+"tasksel remove <task>\n"
+"tasksel [options]; options dia fikambanan'iray amin'ireto:\n"
+"\t-t, --test          test mode; don't really do anything\n"
+"\t-r, --required      install all required-priority packages\n"
+"\t-i, --important     install all important-priority packages\n"
+"\t-s, --standard      install all standard-priority packages\n"
+"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
+"\t    --new-install   automatically install some tasks\n"
+"\t    --list-tasks    list tasks that would be displayed and exit\n"
+"\t    --task-packages list available packages in a task\n"
+"\t    --task-desc     returns the description of a task\n"
+
+#: ../tasksel.pl:481 ../tasksel.pl:497 ../tasksel.pl:514
+msgid "aptitude failed"
+msgstr "Tsy nandeha aptitude"
+
