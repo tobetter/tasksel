@@ -5,7 +5,6 @@ Description: Russian environment
  to help Russian speaking people using Debian.
 Maintainer: Peter Novodvorsky <nidd@debian.org>
 Packages:
-
  locales
  language-env
  console-cyrillic
@@ -17,3 +16,6 @@ Packages:
  xfonts-bolkhov-koi8r-75dpi
  xfonts-bolkhov-koi8r-misc
  xfonts-cronyx-koi8r-100dpi
+ # This package is rarely used, but the Russian support of
+ # language-env requires it:
+ xfonts-intl-european
