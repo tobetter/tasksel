@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-10 09:02+0200\n"
+"POT-Creation-Date: 2004-07-19 07:19+0200\n"
 "PO-Revision-Date: 2004-06-19 17:09+0200\n"
 "Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -16,17 +16,21 @@ msgstr ""
 "X-Generator: KBabel 1.3.1\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../tasksel.pl:188
+#: ../tasksel.pl:240
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel [options]; where options is any combination of:\n"
-"\t-t -- test mode; don't really do anything\n"
-"\t-r -- install all required-priority packages\n"
-"\t-i -- install all important-priority packages\n"
-"\t-s -- install all standard-priority packages\n"
-"\t-n -- don't show UI; use with -r or -i usually\n"
-"\t-a -- show all tasks, even those with no packages in them\n"
+"\t-t, --test          test mode; don't really do anything\n"
+"\t-r, --required      install all required-priority packages\n"
+"\t-i, --important     install all important-priority packages\n"
+"\t-s, --standard      install all standard-priority packages\n"
+"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
+"\t    --new-install   automatically install some tasks\n"
+"\t    --list-tasks    list tasks that would be displayed and exit\n"
+"\t    --task-packages list available packages in a task\n"
+"\t    --task-desc     returns the description of a task\n"
 msgstr ""
 "Brug:\n"
 "tasksel install <opgaver>\n"
@@ -38,13 +42,13 @@ msgstr ""
 "\t-n -- vis ikke brugerflade; bruges normalt sammen med --r eller -i\n"
 "\t-a -- vis samtlige opgaver, selv dem der ikke indeholder nogen pakker\n"
 
-#: ../tasksel.pl:250
-msgid "ignoring other selected packages in favour of manual package selection"
-msgstr "ignorerer andre valgte pakker til fordel for manuelt valg af pakker"
-
-#: ../tasksel.pl:254 ../tasksel.pl:266
+#: ../tasksel.pl:358 ../tasksel.pl:386
 msgid "aptitude failed"
 msgstr "aptitude fejlede"
+
+#~ msgid ""
+#~ "ignoring other selected packages in favour of manual package selection"
+#~ msgstr "ignorerer andre valgte pakker til fordel for manuelt valg af pakker"
 
 #~ msgid "Cannot allocate memory for enumeration buffer"
 #~ msgstr "Kan ikke frigøre hukommelse til tællelager"
@@ -216,4 +220,3 @@ msgstr "aptitude fejlede"
 #~ msgstr ""
 #~ "Fandt ingen pakker på dette system.\n"
 #~ "Opdaterede du din liste med ledige filer? Prøv at køre dselect update.\n"
-

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-08 19:35-0400\n"
+"POT-Creation-Date: 2004-07-19 07:19+0200\n"
 "PO-Revision-Date: 2004-07-10 03:01+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <cwryu@debian.org>\n"
@@ -11,16 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../tasksel.pl:188
+#: ../tasksel.pl:240
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel [options]; where options is any combination of:\n"
-"\t-t -- test mode; don't really do anything\n"
-"\t-r -- install all required-priority packages\n"
-"\t-i -- install all important-priority packages\n"
-"\t-s -- install all standard-priority packages\n"
-"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-t, --test          test mode; don't really do anything\n"
+"\t-r, --required      install all required-priority packages\n"
+"\t-i, --important     install all important-priority packages\n"
+"\t-s, --standard      install all standard-priority packages\n"
+"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
+"\t    --new-install   automatically install some tasks\n"
+"\t    --list-tasks    list tasks that would be displayed and exit\n"
+"\t    --task-packages list available packages in a task\n"
+"\t    --task-desc     returns the description of a task\n"
 msgstr ""
 "사용법:\n"
 "tasksel install <태스크>\n"
@@ -31,10 +36,10 @@ msgstr ""
 "\t-s -- 표준 우선순위의 꾸러미를 모두 설치합니다\n"
 "\t-n -- 사용자 인터페이스를 보여주지 않습니다; 보통 -r 혹은 -i와 함께 사용\n"
 
-#: ../tasksel.pl:249
-msgid "ignoring other selected packages in favour of manual package selection"
-msgstr "다른 방법으로 선택한 꾸러미를 무시하고 수동 꾸러미 선택을 따릅니다"
-
-#: ../tasksel.pl:253 ../tasksel.pl:265
+#: ../tasksel.pl:358 ../tasksel.pl:386
 msgid "aptitude failed"
 msgstr "aptitude 실패"
+
+#~ msgid ""
+#~ "ignoring other selected packages in favour of manual package selection"
+#~ msgstr "다른 방법으로 선택한 꾸러미를 무시하고 수동 꾸러미 선택을 따릅니다"

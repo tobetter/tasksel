@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-10 09:02+0200\n"
+"POT-Creation-Date: 2004-07-19 07:19+0200\n"
 "PO-Revision-Date: 2004-06-24 16:12+1200\n"
 "Last-Translator: Carlos Z.F. Liu <carlos_liu@yahoo.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
@@ -14,17 +14,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: ../tasksel.pl:188
+#: ../tasksel.pl:240
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel [options]; where options is any combination of:\n"
-"\t-t -- test mode; don't really do anything\n"
-"\t-r -- install all required-priority packages\n"
-"\t-i -- install all important-priority packages\n"
-"\t-s -- install all standard-priority packages\n"
-"\t-n -- don't show UI; use with -r or -i usually\n"
-"\t-a -- show all tasks, even those with no packages in them\n"
+"\t-t, --test          test mode; don't really do anything\n"
+"\t-r, --required      install all required-priority packages\n"
+"\t-i, --important     install all important-priority packages\n"
+"\t-s, --standard      install all standard-priority packages\n"
+"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
+"\t    --new-install   automatically install some tasks\n"
+"\t    --list-tasks    list tasks that would be displayed and exit\n"
+"\t    --task-packages list available packages in a task\n"
+"\t    --task-desc     returns the description of a task\n"
 msgstr ""
 "用法：\n"
 "tasksel install <软件集>\n"
@@ -36,13 +40,13 @@ msgstr ""
 "\t-n -- 不显示界面，通常与 -r 和 -i 一起使用\n"
 "\t-a -- 显示所有软件集，包括那些不含任何软件包的集合\n"
 
-#: ../tasksel.pl:250
-msgid "ignoring other selected packages in favour of manual package selection"
-msgstr "忽略其它已被选的软件包，手动进行软件选择"
-
-#: ../tasksel.pl:254 ../tasksel.pl:266
+#: ../tasksel.pl:358 ../tasksel.pl:386
 msgid "aptitude failed"
 msgstr "aptitude 操作失败"
+
+#~ msgid ""
+#~ "ignoring other selected packages in favour of manual package selection"
+#~ msgstr "忽略其它已被选的软件包，手动进行软件选择"
 
 #~ msgid "Cannot allocate memory for enumeration buffer"
 #~ msgstr "无法为枚举缓冲(enumeration buffer)分配内存"

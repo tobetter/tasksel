@@ -1,47 +1,58 @@
+# translation of fr.po to French
 # Translation file for tasksel to French.
-# Copyright (C) 2001 Free Software Foundation, Inc.
+# Copyright (C) 2001, 2004 Free Software Foundation, Inc.
 # Nicolas Sabouret <nico@limsi.fr>, 2001.
+# Christian Perrier <bubulle@debian.org>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel program\n"
-"POT-Creation-Date: 2004-06-10 09:02+0200\n"
-"PO-Revision-Date: 2004-06-10 21:01+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-07-19 07:19+0200\n"
+"PO-Revision-Date: 2004-07-19 07:15+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n>1;\n"
 
-#: ../tasksel.pl:188
+#: ../tasksel.pl:240
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel [options]; where options is any combination of:\n"
-"\t-t -- test mode; don't really do anything\n"
-"\t-r -- install all required-priority packages\n"
-"\t-i -- install all important-priority packages\n"
-"\t-s -- install all standard-priority packages\n"
-"\t-n -- don't show UI; use with -r or -i usually\n"
-"\t-a -- show all tasks, even those with no packages in them\n"
+"\t-t, --test          test mode; don't really do anything\n"
+"\t-r, --required      install all required-priority packages\n"
+"\t-i, --important     install all important-priority packages\n"
+"\t-s, --standard      install all standard-priority packages\n"
+"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
+"\t    --new-install   automatically install some tasks\n"
+"\t    --list-tasks    list tasks that would be displayed and exit\n"
+"\t    --task-packages list available packages in a task\n"
+"\t    --task-desc     returns the description of a task\n"
 msgstr ""
 "Usage:\n"
 "tasksel install <tâche>\n"
 "tasksel [options]; où [options] est une combinaison de :\n"
-"\t-t -- mode d'essai; aucune action n'aura lieu\n"
-"\t-r -- installe tous les paquets requis\n"
-"\t-i -- installe tous les paquets importants\n"
-"\t-s -- installe tous les paquets standards\n"
-"\t-n -- ne pas utiliser l'interface utilisateur ; généralement combiné avec -"
-"r ou -i\n"
-"\t-a -- montrer toutes les tâches, même celles n'installant aucun paquet\n"
+"\t-t, --test          mode d'essai; aucune action n'aura lieu\n"
+"\t-r, --required      installe tous les paquets requis\n"
+"\t-i, --important     installe tous les paquets importants\n"
+"\t-s, --standard      installe tous les paquets standards\n"
+"\t-n, --no-ui         ne pas utiliser l'interface utilisateur ;\n"
+"\t                    généralement combiné avec -r ou -i\n"
+"\t    --new-install   installe automatiquement certaines tâches\n"
+"\t    --list-tasks    affiche les tâches à afficher et termine\n"
+"\t    --task-packages affiche les paquets disponibles pour une tâche\n"
+"\t    --task-desc     affiche la description d'une tâche\n"
 
-#: ../tasksel.pl:250
-msgid "ignoring other selected packages in favour of manual package selection"
-msgstr ""
-"Les autres paquets choisis sont ignorés et la sélection manuelle sera "
-"utilisée"
-
-#: ../tasksel.pl:254 ../tasksel.pl:266
+#: ../tasksel.pl:358 ../tasksel.pl:386
 msgid "aptitude failed"
 msgstr "erreur du programme aptitude"
+
+#~ msgid ""
+#~ "ignoring other selected packages in favour of manual package selection"
+#~ msgstr ""
+#~ "Les autres paquets choisis sont ignorés et la sélection manuelle sera "
+#~ "utilisée"
