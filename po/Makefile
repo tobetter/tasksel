@@ -1,6 +1,7 @@
 XGETTEXT = xgettext --keyword=_
+MOS:=$(addsuffix .mo, $(LANGS))
 
-all: C.po cs.mo de.mo hu.mo ja.mo sv.mo pl.mo
+all: C.po $(MOS)
 	touch build_stamp
 
 C.po:

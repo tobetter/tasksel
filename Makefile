@@ -17,7 +17,7 @@ all: $(PROGRAM)
 	$(COMPILE) $<
 
 po/build_stamp:
-	$(MAKE) -C po 
+	$(MAKE) -C po LANGS="$(LANGS)"
 
 $(PROGRAM): $(OBJS) po/build_stamp
 	$(LINK) $(PROGRAM) $(OBJS) $(LIBS)
