@@ -360,7 +360,8 @@ sub main {
 	          grep { task_avail($_) } all_tasks();
 	
 	if ($options{"list-tasks"}) {
-		print $_->{task}."\t".$_->{shortdesc}."\n"
+		map { $_->{_installed} = task_installed($_) } @tasks;
+		print "".($_->{_installed} ? "i" : "u")." ".$_->{task}."\t".$_->{shortdesc}."\n"
 			foreach order_for_display(grep { $_->{_display} } @tasks);
 		exit(0);
 	}
