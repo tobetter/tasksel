@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-10 00:33-0400\n"
-"PO-Revision-Date: 2004-03-29 18:24+0300\n"
+"PO-Revision-Date: 2004-04-11 02:43+0300\n"
 "Last-Translator: Çağatay Tengiz <cagatay@tengiz.net>\n"
 "Language-Team: Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -210,11 +210,11 @@ msgstr "Dosya sunucusu"
 
 #. Description
 #: ../po/debian-tasks.desc:130
-#, fuzzy
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "Bu görev sisteminizi dosya sunucusu olacak şekilde ayarlar."
+msgstr "Hem NetBIOS hem de NFS'i destekleyen bu görev ve sisteminizi dosya "
+"sunucusu olacak şekilde ayarlar."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -277,19 +277,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid "Hebrew environment"
-msgstr "Yunanca desteği"
+msgstr "İbranice desteği"
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
 msgstr ""
-"Bu·görev·Yunanca·konuşan·kullanıcılar·için·Debian'ın·kullanımını "
-"kolaylaştıracak paket ve belgeleri içerir."
+"Bu·görev·İbranice·konuşan·kullanıcılar·için·Debian'ın·kullanımını "
+"kolaylaştıracak program ve belgeleri içerir."
 
 #. Description
 #: ../po/debian-tasks.desc:179
@@ -359,7 +357,6 @@ msgstr "Dizüstü"
 
 #. Description
 #: ../po/debian-tasks.desc:224
-#, fuzzy
 msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities for laptops including IBM "
@@ -558,7 +555,7 @@ msgstr "TeX/LaTeX ortamı"
 #: ../po/debian-tasks.desc:342
 msgid ""
 "This task provides necessary packages for composing documents in TeX/LaTeX."
-msgstr ""
+msgstr "Bu görev TeX/LaTeX ile belge hazırlamak için gerekli paketleri içerir."
 
 #. Description
 #: ../po/debian-tasks.desc:352
@@ -599,16 +596,3 @@ msgstr "Web sunucusu"
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "Bu görev genel amaçlı bir web sunucusu için gerekli paketleri seçer."
-
-#~ msgid "Tcl/Tk"
-#~ msgstr "Tcl/Tk"
-
-#~ msgid ""
-#~ "Packages commonly used in developing applications using the Tcl language "
-#~ "and Tk Toolkit."
-#~ msgstr ""
-#~ "Tcl dili ve Tk araç seti ile uygulama geliştirmek için genellikle "
-#~ "kullanılan paketler."
-
-#~ msgid "a TeX/LaTeX environment"
-#~ msgstr "bir TeX/LaTeX ortamı"
