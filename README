@@ -1,0 +1,31 @@
+$Id: README,v 1.1 1999/11/21 22:01:04 tausq Exp $
+Task Selection UI v0.1
+Nov 20, 1999
+Randolph Chung <tausq@debian.org>
+
+Here's a first cut at a task selection user interface.
+
+The interface GUI is based on libslang. It has no other special library 
+dependencies.
+
+On startup, the tasksel program will read /var/lib/dpkg/available to
+identify task packages (matching "task-*"). These packages will be
+presented in a simple list selection screen with their short descriptions.
+Users can drill down into the task packages to see detailed descriptions and
+some information about the packages in the task.
+
+On exit, tasksel executes the appropriate apt-get command to install the
+selected packages. If the -t option is given, then tasksel prints out the
+command line to use to stdout instead. All other messages are printed to
+stderr.
+
+The appropriate display strings in the source have been marked with gettext 
+macros, though I have never done any other i18n work and am not sure if it 
+is done correctly at the moment.
+
+A word on building.... use make CFLAGS="-Os" to get a smaller binary. The
+default build rule produces binaries with debugging symbols. You can also
+turn on -DDEBUG to get extra debugging info.
+
+Comments and suggestions are most welcome.
+
