@@ -1,21 +1,23 @@
 # Traditional Chinese translation for tasksel
-# Copyright (C) 2000
-# Anthony Wong <ypwong@debian.org> 
+# Copyright (C) 2004
+# Tetralet <tetralet@pchome.com.tw>
+# Thanks to prev translator, Anthony Wong <ypwong@debian.org> 
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 1.0\n"
+"Project-Id-Version: tasksel 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2004-02-23 02:07+1300\n"
-"Last-Translator: Anthony Wong <ypwong@debian.org>\n"
+"PO-Revision-Date: 2004-03-08 10:25+0800\n"
+"Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
+"Language-Team: Chinese/Traditional <tetralet@pchome.com.tw>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
 #: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr ""
+msgstr "無法替列舉緩衝區 (enumeration buffer) 配置記憶體"
 
 #: ../macros.h:42
 #, c-format
@@ -23,6 +25,8 @@ msgid ""
 "Fatal error encountered at %s:%d\n"
 "\t"
 msgstr ""
+"在 %s:%d 發生了嚴重錯誤\n"
+"\t"
 
 #: ../macros.h:51
 #, c-format
@@ -30,85 +34,84 @@ msgid ""
 "I/O error at %s:%d\n"
 "\t"
 msgstr ""
+"在 %s:%d 發生了 I/O 錯誤\n"
+"\t"
 
 #: ../slangui.c:18 ../slangui.c:19
-#, fuzzy
 msgid "(no description)"
-msgstr "（沒有說明）"
+msgstr "(沒有說明)"
 
 #: ../slangui.c:75
 msgid "End-user"
-msgstr ""
+msgstr "一般使用者"
 
 #: ../slangui.c:76
 msgid "Hardware Support"
-msgstr ""
+msgstr "硬體支援"
 
 #: ../slangui.c:77
 msgid "Servers"
-msgstr ""
+msgstr "伺服器"
 
 #: ../slangui.c:78
 msgid "Development"
-msgstr ""
+msgstr "開發環境"
 
 #: ../slangui.c:79
 msgid "Localization"
-msgstr ""
+msgstr "區域化"
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
-msgstr ""
+msgstr "雜項"
 
 #: ../slangui.c:219
 msgid "Unable to initialize the terminal"
-msgstr "未能把終端初始化"
+msgstr "無法初始化終端畫面"
 
 #: ../slangui.c:221
 msgid "Unable to initialize screen output"
-msgstr "未能把螢幕輸出初始化"
+msgstr "無法初始化螢幕輸出"
 
 #: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
-msgstr "未能把鍵盤介面初始化"
+msgstr "無法初始化鍵盤界面"
 
 #: ../slangui.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "(c) 1999-2000 SPI 及其他"
+msgstr "Debian 主題安裝程式 v%s - (c) 1999-2004 SPI 及其它"
 
 #: ../slangui.c:393
 msgid "^Finish"
-msgstr "完成"
+msgstr "完成 (^F)"
 
 #: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
-msgstr "任務資訊"
+msgstr "主題資訊 (^I)"
 
 #: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
-msgstr "幫助"
+msgstr "求助 (^H)"
 
 #: ../slangui.c:441
-#, fuzzy
 msgid "Select tasks to install"
-msgstr "請選擇要安裝的任務軟件套件"
+msgstr "請選取所要安裝的主題"
 
 #: ../slangui.c:576
 msgid "Ok"
-msgstr "完結"
+msgstr "完成"
 
 #: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
 #, c-format
 msgid "Index out of bounds: %d >= %d"
-msgstr ""
+msgstr "索引超出了邊界：%d >= %d"
 
 #: ../slangui.c:776
 msgid "Help"
-msgstr "幫助"
+msgstr "求助"
 
 #: ../slangui.c:777
-#, fuzzy
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
 "given task.\n"
@@ -123,18 +126,19 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"「任務軟件套件」可以助你安裝一系列用來達成某一任務的軟件。\n"
+"主題可以讓您快速得針對特定主題所提供的套件組合進行安裝。\n"
 "\n"
-"在第一個選單中顯示了一些可供安裝的任務。你可用方向鍵來移動浮標，按 ENTER 或空"
-"白鍵來選擇套件。你亦可按 A 來選擇所有套件，或按 N 來取消選擇所有套件。按 Q 便"
-"會脫離程式並開始安裝選擇了的任務。\n"
+"在主要選單中列出了一系列可以讓您選取並進行安裝的主題。"
+"您可以使用方向鍵來移動遊標。按 輸入鍵或 空白鍵 可以選取遊標所在位置的主題。"
+"您也可以按 A 來選取所有的主題，或按 N 來取消選取所有主題。"
+"按 Q 便會離開此程式並開始進行所選取主題的安裝作業。\n"
 "\n"
-"謝謝你使用 Debian。\n"
+"感謝您使用 Debian。\n"
 "\n"
-"請按 Enter 回到任務選擇畫面。"
+"請按 輸入鍵 來回到主題選取畫面。"
 
 #: ../slangui.c:818
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Description:\n"
 "%s\n"
@@ -144,88 +148,78 @@ msgstr ""
 "說明：\n"
 "%s\n"
 "\n"
-"依賴的套件：\n"
+"所包含的套件：\n"
 
 #: ../slangui.c:826
 msgid "(no description available)"
-msgstr "（沒有說明）"
+msgstr "(沒有提供說明)"
 
 #: ../tasksel.c:33
 msgid "Unknown signal seen"
-msgstr "不明的 signal"
+msgstr "發現不明的信號 (signal)"
 
 #: ../tasksel.c:39
 #, c-format
 msgid "tasksel install <task>\n"
-msgstr ""
+msgstr "tasksel install <主題>\n"
 
 #: ../tasksel.c:40
 #, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [選項]；選項可以是以下的組合：\n"
+msgstr "tasksel [選項]﹔其中選項可以由以下所組成：\n"
 
 #: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t ─ 測試模式，在離開程式時不執行 apt-get"
+msgstr "-t -- 測試模式﹔在離開程式時並不會實地執行 apt-get"
 
 #: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q ─ queue installs；不用 apt-get 安裝軟件，而只是在 dpkg 表示要安裝它們"
+"-q -- 佇列安裝﹔不使用 apt-get 來安裝套件；\n"
+"\t\t而是將它們放到 dpkg 的安裝佇列中"
 
 #: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
-msgstr "-r ─ 安裝所有 priority 為 required 的套件"
+msgstr "-r -- 安裝所有優先等級為『必須 (required)』的套件"
 
 #: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
-msgstr "-i ─ 安裝所有 priority 為 important 的套件"
+msgstr "-i -- 安裝所有優先等級為『重要 (important)』的套件"
 
 #: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
-msgstr "-s ─ 安裝所有 priority 為 standard 的套件"
+msgstr "-s -- 安裝所有優先等級為『標準 (standard)』的套件"
 
 #: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n ─ 不顯示介面；通常與 -r 或 -i 連用"
+msgstr "-n -- 不顯示使用者界面﹔通常與 -r 或 -i 一併使用"
 
 #: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr ""
+msgstr "-a -- 顯示所有主題，包括沒有包含任何套件的空主題"
 
 #: ../tasksel.c:88 ../tasksel.c:123
 #, c-format
 msgid "No packages selected\n"
-msgstr "沒有選擇套件\n"
+msgstr "沒有選取任何套件\n"
 
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
+msgstr "在本系統中找不到任何主題。\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
-msgstr ""
+msgstr "無法為 strdup 配置記憶體"
 
 #: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
-msgstr ""
+msgstr "無法配置 %d bytes 的記憶體"
 
 #: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
-msgstr ""
-
-#, fuzzy
-#~ msgid ""
-#~ "No tasks found on this system.\n"
-#~ "Did you update your available file? Try running dselect update.\n"
-#~ msgstr ""
-#~ "在這個系統中找不到任務套件。\n"
-#~ "你更新了你的“available”檔案沒有？"
-
-#~ msgid "Debian Task Installer"
-#~ msgstr "Debian 任務安裝介面"
+msgstr "無法重新配置 %d bytes 的記憶體"
