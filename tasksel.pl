@@ -12,6 +12,7 @@ my $debconf_helper="/usr/lib/tasksel/tasksel-debconf";
 my $testdir="/usr/lib/tasksel/tests";
 my $packagesdir="/usr/lib/tasksel/packages";
 my $descdir="/usr/share/tasksel";
+my $statusfile="/var/lib/dpkg/status";
 
 sub warning {
 	print STDERR "tasksel: @_\n";
@@ -71,6 +72,7 @@ sub read_task_desc {
 	return @ret;
 }
 
+# Loads info for all tasks, and returns a set of task structures.
 sub all_tasks {
 	map { read_task_desc($_) } list_task_descs();
 }
@@ -91,6 +93,20 @@ sub list_avail {
 	return @list;
 }
 
+# Returns a list of all installed packages.
+sub list_installed {
+	my @list;
+	local $/="\n\n";
+	open (STATUS, $statusfile);
+	while (<STATUS>) {
+		if (/^Status: .* installed$/m && /Package: (.*)$/m) {
+			push @list, $1;
+		}
+	}
+	close STATUS;
+	return @list;
+}
+
 my %avail_pkgs;
 # Given a package name, checks to see if it's available. Memoised.
 sub package_avail {
@@ -105,6 +121,20 @@ sub package_avail {
 	return $avail_pkgs{$package};
 }
 
+my %installed_pkgs;
+# Given a package name, checks to see if it's installed. Memoised.
+sub package_installed {
+	my $package=shift;
+	
+	if (! %installed_pkgs) {
+		foreach my $pkg (list_installed()) {
+			$installed_pkgs{$pkg} = 1;
+		}
+	}
+
+	return $installed_pkgs{$package};
+}
+
 # Given a task hash, checks if its key packages are available.
 sub task_avail {
 	local $_;
@@ -115,6 +145,24 @@ sub task_avail {
 	else {
 		foreach my $pkg (@{$task->{key}}) {
 			if (! package_avail($pkg)) {
+				return 0;
+			}
+		}
+		return 1;
+	}
+}
+
+# Given a task hash, checks to see if it is already installed.
+# (All of its key packages must be installed.)
+sub task_installed {
+	local $_;
+	my $task=shift;
+	if (! ref $task->{key}) {
+		return 0; # can't tell with no key packages
+	}
+	else {
+		foreach my $pkg (@{$task->{key}}) {
+			if (! package_installed($pkg)) {
 				return 0;
 			}
 		}
@@ -247,7 +295,7 @@ tasksel [options]; where options is any combination of:
 	-i, --important     install all important-priority packages
 	-s, --standard      install all standard-priority packages
 	-n, --no-ui         don't show UI; use with -r or -i usually
-	    --new-install   atomatically install some tasks
+	    --new-install   automatically install some tasks
 	    --list-tasks    list tasks that would be displayed and exit
 	    --task-packages list available packages in a task
 	    --task-desc     returns the description of a task
@@ -345,12 +393,21 @@ sub main {
 	# The interactive bit.
 	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
 	if (@list && ! $options{"no-ui"} && ! $options{install} && ! $options{remove}) {
+		if (! $options{"new-install"}) {
+			# find tasks that are already installed
+			map { $_->{_installed} = task_installed($_) } @list;
+		}
+		else {
+			# assume that no tasks are installed, to ensure
+			# that complete tasks get installed on new installs
+			map { $_->{_installed} = 0 } @list;
+		}
 		map { $_->{_install} = 0 } @list; # don't install displayed tasks unless selected
 		my $question="tasksel/tasks";
 		if ($options{"new-install"}) {
 			$question="tasksel/first";
 		}
-		my @default = grep { $_->{_display} == 1 && $_->{_install} == 1 } @tasks;
+		my @default = grep { $_->{_display} == 1 && ($_->{_install} == 1 || $_->{_installed} == 1) } @tasks;
 		my $tmpfile=`tempfile`;
 		chomp $tmpfile;
 		system($debconf_helper, $tmpfile, task_to_debconf(@list),
@@ -360,7 +417,8 @@ sub main {
 		chomp $ret;
 		close IN;
 		unlink $tmpfile;
-		map { $_->{_install} = 1 } debconf_to_task($ret, @tasks);
+		map { $_->{_install} = 1 unless $_->{_installed} }
+			debconf_to_task($ret, @tasks);
 		if ($ret=~/manual package selection/) {
 			unshift @aptitude_install, "--visual-preview";
 		}
