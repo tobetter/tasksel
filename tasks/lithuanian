@@ -1,0 +1,13 @@
+Task: lithuanian
+Section: l10n
+Maintainer: Kęstutis Biliūnas <kebil@kaunas.init.lt>
+Description: Lithuanian environment
+ This task installs packages and documentation in Lithuanian
+ to help Lithuanian speaking people use Debian.
+Key:
+ language-env
+Packages:
+ # fonty
+ ilithuanian
+ myspell-lt
+ kde-i18n-lt
