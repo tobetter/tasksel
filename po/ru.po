@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-28 08:04+0100\n"
+"POT-Creation-Date: 2004-03-29 13:21-0500\n"
 "PO-Revision-Date: 2004-01-28 22:52+0100\n"
 "Last-Translator: Nikolai Prokoschenko <nikolai@prokoschenko.de>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
@@ -82,9 +83,9 @@ msgid "Unable to initialize keyboard interface"
 msgstr "Ошибка инициализации клавиатуры"
 
 #: ../slangui.c:239
-#, c-format
+#, fuzzy, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Debian Task Installer v%s - (c) 1999-2004 SPI и все, все, все."
+msgstr "Debian Task Installer v%s - (c) 1999-2003 SPI и все, все, все."
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -102,20 +103,20 @@ msgstr "Помощь (^H)"
 msgid "Select tasks to install"
 msgstr "Выберите устанавливаемые задания"
 
-#: ../slangui.c:576
+#: ../slangui.c:582
 msgid "Ok"
 msgstr "Ok"
 
-#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
+#: ../slangui.c:691 ../slangui.c:705 ../slangui.c:816
 #, c-format
 msgid "Index out of bounds: %d >= %d"
 msgstr "Счётчик вышел за границы: %d >= %d"
 
-#: ../slangui.c:776
+#: ../slangui.c:782
 msgid "Help"
 msgstr "Помощь"
 
-#: ../slangui.c:777
+#: ../slangui.c:783
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
 "given task.\n"
@@ -143,7 +144,7 @@ msgstr ""
 "\n"
 "Нажмите ENTER, чтобы вернуться к экрану выбора заданий."
 
-#: ../slangui.c:818
+#: ../slangui.c:824
 #, c-format
 msgid ""
 "Description:\n"
@@ -156,7 +157,7 @@ msgstr ""
 "\n"
 "Пакеты, включенные в задание:\n"
 
-#: ../slangui.c:826
+#: ../slangui.c:832
 msgid "(no description available)"
 msgstr "(описания нет)"
 
@@ -240,4 +241,3 @@ msgstr "Не могу зарезервировать %d байтов памят�
 
 #~ msgid "Debian Task Installer"
 #~ msgstr "Установщик Заданий Debian"
-
