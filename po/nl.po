@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Taksel\n"
+"POT-Creation-Date: 2001-11-22 19:17+0100\n"
+"PO-Revision-Date: 2003-07-12 20:29+0100\n"
+"Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
+"Language-Team: Skolelinux <devel@skolelinux.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data.c:277
+#: ../data.c:291
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr "Kan geen geheugen toewijzen voor de opsom buffer"
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\r\n"
+"\t"
+msgstr ""
+"Er is een fatale fout opgetreden op %s:%d\r\n"
+"'t"
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\r\n"
+"\t"
+msgstr ""
+"I/O fout op %s:%d\r\n"
+"\t"
+
+#: ../slangui.c:18
+#: ../slangui.c:19
+msgid "(no description)"
+msgstr "(geen beschrijving)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr "eindgebruiker"
+
+#: ../slangui.c:76
+msgid "Servers"
+msgstr "Servers"
+
+#: ../slangui.c:77
+msgid "Development"
+msgstr "Ontwikkeling"
+
+#: ../slangui.c:78
+msgid "Localization"
+msgstr "Lokalizatie"
+
+#: ../slangui.c:79
+msgid "Hardware Support"
+msgstr "Hardware ondersteuning"
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr "Diversen"
+
+#: ../slangui.c:213
+msgid "Unable to initialize the terminal"
+msgstr "Kon de terminal niet initalizeren"
+
+#: ../slangui.c:215
+msgid "Unable to initialize screen output"
+msgstr "Kon scherm uitvoer niet initializeren"
+
+#: ../slangui.c:216
+msgid "Unable to initialize keyboard interface"
+msgstr "Kon toetsenbord interface niet installeren"
+
+#: ../slangui.c:233
+#, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
+msgstr "Debian Taak installer v%s - (c) 1999-2001 SPI en anderen"
+
+#: ../slangui.c:387
+msgid "^Finish"
+msgstr "^Afsluiten"
+
+#: ../slangui.c:395
+#: ../slangui.c:396
+msgid "Task ^Info"
+msgstr "Taak ^Info"
+
+#: ../slangui.c:400
+#: ../slangui.c:401
+msgid "^Help"
+msgstr "^Help"
+
+#: ../slangui.c:435
+msgid "Select tasks to install"
+msgstr "Selecteer de te installeren taken"
+
+#: ../slangui.c:570
+msgid "Ok"
+msgstr "Ok"
+
+#: ../slangui.c:679
+#: ../slangui.c:693
+#: ../slangui.c:804
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr "Index is buiten bereik: %d >= %d"
+
+#: ../slangui.c:770
+msgid "Help"
+msgstr "Help"
+
+#. TRANS: don't wrap lines because of different screen sizes!
+#: ../slangui.c:771
+msgid ""
+"Tasks allow you to quickly install a selection of packages that performs a given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the task at the cursor. You can also press A to select all tasks, or N to deselect all tasks. Pressing Q will exit this program and begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
+msgstr ""
+"Taken geven je de mogelijkheid om op een snelle manier een selectie met pakketten voor het bereiken van die taak te installeren.\n"
+"\n"
+"De hoofd keuzelijst toont de taken die u kan installeren. De pijltjestoetsen verplaatsen de cursor. Met ENTER of SPATIEBALK kunt u de selectie van de taak ter hoogtevan de cursor omschakelen. Daarnaast kun je met A alle taken installeren, en met N alle taken deselecteren. Q sluit dit programma af en begint de installatie van de door ugeselecteerdetaken.\n"
+"\n"
+"Bedankt voor het gebruiken van Debian.\n"
+"\n"
+"Druk ENTER om terug te keren naar het taak selectie venster"
+
+#: ../slangui.c:812
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Included packages:\n"
+msgstr ""
+"Beschrijving:\n"
+"%s\n"
+"\n"
+"Omvat volgende pakketten :\n"
+
+#: ../slangui.c:820
+msgid "(no description available)"
+msgstr "(geen beschrijving beschikbaar)"
+
+#: ../tasksel.c:26
+msgid "Unknown signal seen"
+msgstr "Onbekend signaal waargenomen"
+
+#: ../tasksel.c:32
+msgid "tasksel install <task>\n"
+msgstr "tasksel install <taak>\n"
+
+#: ../tasksel.c:33
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [opties]; waar opties gelijk welke combinatie is van:\n"
+
+#: ../tasksel.c:34
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- test modus; apt-get niet opstarten bij het afsluiten"
+
+#: ../tasksel.c:35
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- queue installs; installeer geen pakketten met apt-get;\n"
+"\t\tzet ze enkel in de queue van dpkg"
+
+#: ../tasksel.c:36
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- installeer alle pakketten met prioriteit vereist"
+
+#: ../tasksel.c:37
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- installeer alle pakketten met prioriteit belangrijk"
+
+#: ../tasksel.c:38
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- installeer alle pakketten met prioriteit standaard"
+
+#: ../tasksel.c:39
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- de UI niet tonen; gewoonlijk gebruikt samen met -r of -i"
+
+#: ../tasksel.c:40
+msgid "-a -- show all tasks, even those with no packages in them"
+msgstr "-a -- toon alle taken, ook als ze geen pakketten bevatten"
+
+#: ../tasksel.c:81
+#: ../tasksel.c:116
+msgid "No packages selected\n"
+msgstr "Er zijn geen pakketten geselecteerd\n"
+
+#: ../tasksel.c:168
+msgid ""
+"No tasks found on this system.\n"
+"Did you update your available file?\n"
+msgstr ""
+"Kan op dit systeem geen taken vinden.\n"
+"Heeft u het beschikbaarheidsbestand geupdate?\n"
+
+#: ../util.c:20
+msgid "Cannot allocate memory for strdup"
+msgstr "Kan geen geheugen toewijzen vor strdup"
+
+#: ../util.c:38
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr "Kan %d bytes geheugen niet toewijzen"
+
+#: ../util.c:47
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr "Kan %d bytes geheugen niet opnieuw toewijzen"
+
