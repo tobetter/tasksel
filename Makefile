@@ -22,6 +22,7 @@ LINK = $(CC) $(CFLAGS) $(DEFS) -o
 all: $(PROGRAM) $(TASKDESC)
 
 $(TASKDESC): makedesc.pl $(DESCDIR)/*
+	perl doincludes.pl $(DESCDIR)
 	perl makedesc.pl $(DESCDIR) $(TASKDESC)
 
 %.o: %.c

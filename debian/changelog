@@ -1,3 +1,13 @@
+tasksel (1.16) unstable; urgency=medium
+
+  * Added doincludes.pl, and let the desktop task use it to explode the
+    kde metapackage, so its entire dep list is put in the task, and if it does
+    not ship with woody, we still will get kde. Closes: #135797
+  * The same include mechanism should probably be used for the other
+    metapackages, like the junior stuff (and X?). But not right now.
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 26 Feb 2002 11:17:36 -0500
+
 tasksel (1.15) unstable; urgency=low
 
   * Include sawfish-gnome in desktop task so gnome will have a WM.
