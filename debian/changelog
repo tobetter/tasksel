@@ -1,34 +1,21 @@
-tasksel (2.11) UNRELEASED...TO SARGE; urgency=low
-
-  * Translations
-    - Tetralet
-      - Updated all Traditional Chinese translations. Closes: #267523
-    - Ognyan Kulev
-      - Updated Bulgarian translations (tasks/po/bg.po and po/bg.po).
-      - Initial Bulgarian translation of debian/po/bg.po.
-    - Dennis Stampfer
-      - Update German translations (debconf, tasks)
-
- -- Dennis Stampfer <seppy@debian.org>  Wed, 25 Aug 2004 21:36:22 +0200
-
-tasksel (2.10) unstable; urgency=low
+tasksel (2.10) UNRELEASED; urgency=low
 
   * Otavio Salvador
     - Include which file have a parser error.
+  * Christian Perrier
+    - Corrected typo in tasksel.pod. Closes: #266234
   * Eugeniy Meshcheryakov
     - Added iukrainian to ukrainian task
     - Added myspell-uk to ukrainian-desktop task
-  * Joey Hess
-    - fix man page typo. Closes: #266234
-    - Add xscreensaver to desktop task since gnome whines if it's not
-      available. Closes: #266075
   * Translations:
     - Jordi Mallach:
       - Update Catalan translation of tasks, program and debconf templates.
     - Miguel Figueiredo
       - Portuguese translation pt.po: Initial program, debconf update.
+    - Christian Perrier
+      - Typo correction in fr.po
 
- -- Joey Hess <joeyh@debian.org>  Thu, 19 Aug 2004 18:26:34 +0100
+ -- Christian Perrier <bubulle@debian.org>  Thu, 26 Aug 2004 14:05:33 +0200
 
 tasksel (2.09) unstable; urgency=critical
 
