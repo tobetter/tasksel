@@ -10,7 +10,7 @@
   do { \
     fprintf(stderr, "%s:%d ", __FILE__, __LINE__); \
     fprintf(stderr, fmt, ##arg); \
-    fprintf(stderr, "\r\n"); \
+    fprintf(stderr, "\n"); \
   } while (0);
 #define ASSERT(cond) \
   if (!(cond)) { \
@@ -39,17 +39,17 @@
 #define DIE(fmt, arg...) \
   do { \
     if (ui_running()) ui_shutdown(); \
-    fprintf(stderr, _("Fatal error encountered at %s:%d\r\n\t"), __FILE__, __LINE__); \
+    fprintf(stderr, _("Fatal error encountered at %s:%d\n\t"), __FILE__, __LINE__); \
     fprintf(stderr, fmt, ##arg); \
-    fprintf(stderr, "\r\n"); \
+    fprintf(stderr, "\n"); \
     ABORT; \
   } while (0);
   
 #define PERROR(ctx) \
   do { \
     if (ui_running()) ui_shutdown(); \
-    fprintf(stderr, _("I/O error at %s:%d\r\n\t"), __FILE__, __LINE__); \
-    fprintf(stderr, "%s: %s\r\n", ctx, strerror(errno)); \
+    fprintf(stderr, _("I/O error at %s:%d\n\t"), __FILE__, __LINE__); \
+    fprintf(stderr, "%s: %s\n", ctx, strerror(errno)); \
     ABORT; \
   } while (0);
   

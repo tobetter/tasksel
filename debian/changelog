@@ -12,6 +12,7 @@ tasksel (1.43) UNRELEASED; urgency=low
     - Sort tasks when generating debian-tasks.desc so that number lines
       in generated PO files do not change when different users build this
       file.
+    - Remove \r characters from printed strings in macros.h.
   * Konstantinos Margaritis
     - Update Greek translations.
 
