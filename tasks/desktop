@@ -7,7 +7,6 @@ Description: desktop environment
  which lets the user choose between the two.
 Essential:
   x-window-system-core
-  # Just cause it's easy, no bias here...
 #include kde
 #Automatically added by doincludes.pl; do not edit.
   kdelibs3
@@ -61,28 +60,75 @@ Essential:
   kcoloredit
   kde
 #endinclude
-Packages:
-  x-window-system-core
-  # TODO: we really should have gnome meta-packages, which this
-  # task could just pull in, rather than having to track all gnome here.
+#include gnome
+#Automatically added by doincludes.pl; do not edit.
+  gnome-utils
+  evolution 
+  sawfish-gnome
+  gedit
+  nautilus
+  gimp
+  pan
+  galeon
+  gftp
+  xchat-gnome
+  gnome-admin
+  gnome-terminal
+  gnome-media
+  gnome-audio
   gnome-session
   gnome-panel
   gnome-control-center
   imlib-base
-  gnome-terminal
   gnome-applets
-  sawfish-gnome
   gmc
   esound
-  gnome-users-guide
   gnome-help
+  eog
+  gconf
+  gnome-bin
+  gnome-core
+  gnome
+#endinclude
+Packages:
+  x-window-system-core
+# gdm allows picking between gnome and kde at login time
   gdm
-  gnome-utils
   mozilla
   mozilla-psm
   menu
   abiword
   gimp1.2
+#include gnome
+#Automatically added by doincludes.pl; do not edit.
+  gnome-utils
+  evolution 
+  sawfish-gnome
+  gedit
+  nautilus
+  gimp
+  pan
+  galeon
+  gftp
+  xchat-gnome
+  gnome-admin
+  gnome-terminal
+  gnome-media
+  gnome-audio
+  gnome-session
+  gnome-panel
+  gnome-control-center
+  imlib-base
+  gnome-applets
+  gmc
+  esound
+  gnome-help
+  eog
+  gconf
+  gnome-bin
+  gnome-core
+  gnome
+#endinclude
 #include kde
 #Automatically added by doincludes.pl; do not edit.
   kdelibs3

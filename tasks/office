@@ -1,0 +1,72 @@
+Task: produc
+Section: user
+Description: office environment
+ This task provides a suite of office productivity software, including a
+ word processor, a spreadsheat, a personal finance program, project
+ management software, slide show and graphing software, and more.
+ This is a rather large collection of software.
+Essential:
+  x-window-system-core
+#include gnome-office
+#Automatically added by doincludes.pl; do not edit.
+  gnome-utils
+  evolution 
+  sawfish-gnome
+  gedit
+  nautilus
+  gimp
+  pan
+  galeon
+  gftp
+  xchat-gnome
+  gnome-admin
+  gnome-terminal
+  gnome-media
+  gnome-audio
+  gnome-session
+  gnome-panel
+  gnome-control-center
+  imlib-base
+  gnome-applets
+  gmc
+  esound
+  gnome-help
+  eog
+  gconf
+  gnome-bin
+  gnome-core
+  gnome
+#endinclude
+Packages:
+  x-window-system-core
+  openoffice
+#include gnome-office
+#Automatically added by doincludes.pl; do not edit.
+  gnome-utils
+  evolution 
+  sawfish-gnome
+  gedit
+  nautilus
+  gimp
+  pan
+  galeon
+  gftp
+  xchat-gnome
+  gnome-admin
+  gnome-terminal
+  gnome-media
+  gnome-audio
+  gnome-session
+  gnome-panel
+  gnome-control-center
+  imlib-base
+  gnome-applets
+  gmc
+  esound
+  gnome-help
+  eog
+  gconf
+  gnome-bin
+  gnome-core
+  gnome
+#endinclude

@@ -1,3 +1,15 @@
+tasksel (1.21) unstable; urgency=low
+
+  * This is aimed at sid, not woody.
+  * #include gnome metapackage in desktop task, no need to track gnome
+    anymore.
+  * Added an "office" task, which will include openoffice when it is in
+    debian, and currently includes the stuff in gnome-office. IIRC we three
+    talked about such a package for woody, but there did not seem to be enough
+    to put in it; there certianly is now.
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 20 Jun 2002 16:59:22 -0400
+
 tasksel (1.20) unstable; urgency=low
 
   * Added Essential: fields to all task files. The idea is to skip display of
