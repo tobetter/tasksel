@@ -1,34 +1,84 @@
 # Copyright (C) 2001 Free Software Foundation, Inc.
+# Claus Hindsgaul <claus_h@image.dk>, 2002
 # Morten Brix Pedersen <morten@wtf.dk>, 2001.
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel VERSION\n"
-"POT-Creation-Date: 2001-10-26 22:14+0200\n"
-"PO-Revision-Date: 2001-10-26 22:14+0200\n"
-"Last-Translator: Morten Brix Pedersen <morten@wtf.dk>\n"
+"POT-Creation-Date: 2002-03-25 15:33+0100\n"
+"PO-Revision-Date: 2002-05-11 10:20GMT\n"
+"Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
+"Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: ../data.c:277 ../data.c:291
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr "Kan ikke frigøre hukommelse til tællelager"
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\r\n"
+"\t"
+msgstr ""
+"Stødte på en fatal fejl i %s.%d\r\n"
+"\t"
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\r\n"
+"\t"
+msgstr ""
+"I/O-fejl i %s.%d\r\n"
+"\t"
+
+#: ../slangui.c:18 ../slangui.c:19
+msgid "(no description)"
+msgstr "(ingen beskrivelse)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr "Slutbruger"
+
+#: ../slangui.c:76
+msgid "Servers"
+msgstr "Servere"
+
+#: ../slangui.c:77
+msgid "Development"
+msgstr "Udvikling"
+
+#: ../slangui.c:78
+msgid "Localization"
+msgstr "Lokalisering"
+
+#: ../slangui.c:79
+msgid "Hardware Support"
+msgstr "Udstyrsunderstøttelse"
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr "Diverse"
 
 #: ../slangui.c:213
 msgid "Unable to initialize the terminal"
-msgstr "Kunne ikke initialisere terminalen"
+msgstr "Kunne ikke klargøre terminalen"
 
 #: ../slangui.c:215
 msgid "Unable to initialize screen output"
-msgstr "Kunne ikke initialisere skærm output"
+msgstr "Kunne ikke klargøre skærm-uddata"
 
 #: ../slangui.c:216
 msgid "Unable to initialize keyboard interface"
-msgstr "Kunne ikke initialisere tastatur"
+msgstr "Kunne ikke klargøre tastatur"
 
 #: ../slangui.c:233
-msgid "Debian Task Installer"
-msgstr "Debian opgaveinstallation"
-
-#: ../slangui.c:234
-msgid "(c) 1999-2001 SPI and others"
-msgstr "(c) 1999-2001 SPI og andre"
+#, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
+msgstr "Debian opgaveinstallering (task installer) v%s - (c) 1999-2001 SPI med flere"
 
 #: ../slangui.c:387
 msgid "^Finish"
@@ -36,7 +86,7 @@ msgstr "^Afslut"
 
 #: ../slangui.c:395 ../slangui.c:396
 msgid "Task ^Info"
-msgstr "Task ^Info"
+msgstr "Opgave^info"
 
 #: ../slangui.c:400 ../slangui.c:401
 msgid "^Help"
@@ -44,36 +94,52 @@ msgstr "^Hjælp"
 
 #: ../slangui.c:435
 msgid "Select tasks to install"
-msgstr "Vælg tasks til installering"
+msgstr "Vælg opgaver til installering"
 
 #: ../slangui.c:570
 msgid "Ok"
-msgstr "Ok"
+msgstr "O.k."
+
+#: ../slangui.c:679 ../slangui.c:693 ../slangui.c:804
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr "Indeks udenfor området: %d >= %d"
 
 #: ../slangui.c:770
 msgid "Help"
 msgstr "Hjælp"
 
+#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:771
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\r\rThe main chooser list shows a list of tasks that you can "
-"choose to install. The arrow keys moves the cursor. Pressing ENTER or the "
-"SPACEBAR toggles the selection of the task at the cursor. You can also press "
-"A to select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-"program and begin installation of your selected tasks.\r\rThank you for "
-"using Debian.\r\rPress enter to return to the task selection screen"
+"given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
 msgstr ""
-"Task-pakker giver dig mulighed for at hurtigt installere en samling af "
-"pakker der udfører en given opgave.\r\rHovedlisten viser en liste af "
-"pakker du kan vælge at installere. Pile-tasterne rykker cursoren. Trykker "
-"du ENTER eller MELLEMRUMSTASTEN ændrer du valget af pakken på cursoren. "
-"Du kan også trykke på A til at vælge alle tasks, eller N til at fravælge "
-"alle. Trykker du på Q vil det afslutte dette program og begynde "
-"installationen af dine valgte tasks.\r\rTak fordi du bruger Debian.\r\r"
-"Tryk Enter for at vende tilbage til task udvægelelses skærmen"
+"Opgavepakker giver dig mulighed for at hurtigt installere en samling af "
+"pakker der udfører en given opgave.\n"
+"\n"
+"Hovedlisten viser en liste af pakker, du kan vælge at installere. "
+"Piletasterne bevæger markøren. Med ENTER eller MELLEMRUMSTASTEN  "
+"ændrer du valget for pakken under makøren. Du kan også "
+"trykke på A til at vælge alle opgaver, eller N til at fravælge alle. Trykker "
+"du på Q vil det afslutte programmet og begynde installationen af dine "
+"valgte opgaver.\n"
+"\n"
+"Tak fordi du har valgt Debian.\n"
+"\n"
+"Tryk Enter for at vende tilbage til opgaveudvælgelsesskærmen"
 
-#: ../slangui.c:808
+#: ../slangui.c:812
 #, c-format
 msgid ""
 "Description:\n"
@@ -86,58 +152,77 @@ msgstr ""
 "\n"
 "Inkluderede pakker:\n"
 
-#: ../slangui.c:816
+#: ../slangui.c:820
 msgid "(no description available)"
-msgstr "(ingen beskrivelse tilgængelig)"
+msgstr "(ingen tilgængelig beskrivelse)"
 
 #: ../tasksel.c:26
 msgid "Unknown signal seen"
 msgstr "Ukendt signal set"
 
 #: ../tasksel.c:32
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [options]; hvor options er en kombination af:\n"
+msgid "tasksel install <task>\n"
+msgstr "tasksel install <opgave>\n"
 
 #: ../tasksel.c:33
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [tilvalg]; hvor tilvalg er en kombination af:\n"
+
+#: ../tasksel.c:34
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- test mode; kør ikke apt-get ved afslutning"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:35
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- sæt i kø; installer ikke pakker med apt-get;\n"
+"-q -- sæt i kø; installér ikke pakker med apt-get;\n"
 "\t\tsæt dem i kø i dpkg"
 
-#: ../tasksel.c:35
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- installer alle krævet prioriterede pakker"
-
 #: ../tasksel.c:36
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- installer alle vigtigt prioriterede pakker"
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- installér alle pakker med prioriteten \"krævet\""
 
 #: ../tasksel.c:37
-msgid "-s -- install all standard-priority packages"
-msgstr "-s -- installer alle standard prioriterede pakker"
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- installer alle pakker med prioriteten \"vigtig\""
 
 #: ../tasksel.c:38
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- vis ikke UI; brug med -r eller -i normalt"
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- installer alle pakker med prioriteten \"standard\""
 
 #: ../tasksel.c:39
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- vis ikke brugerflade; bruges normalt sammen med med -r eller -i"
+
+#: ../tasksel.c:40
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- vis alle tasks, også selvom der ingen pakker er i dem"
+msgstr "-a -- vis alle opgaver, også selvom der ingen pakker er i dem"
 
-#: ../tasksel.c:80 ../tasksel.c:115
+#: ../tasksel.c:81 ../tasksel.c:116
 msgid "No packages selected\n"
-msgstr "Ingen pakker valgt\n"
+msgstr "Ingen valgte pakker\n"
 
-#: ../tasksel.c:167
+#: ../tasksel.c:168
 msgid ""
 "No tasks found on this system.\n"
 "Did you update your available file?\n"
 msgstr ""
-"Ingen tasks fundet på dette system.\n"
-"Opdaterede du din liste af ledige filer?\n"
+"Fandt ingen pakker på dette system.\n"
+"Opdaterede du din liste med ledige filer?\n"
+
+#: ../util.c:20
+msgid "Cannot allocate memory for strdup"
+msgstr "Kan ikke frigøre hukommelse til \"strdup\""
+
+#: ../util.c:38
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr "Kan ikke frigøre %d byte hukommelse"
+
+#: ../util.c:47
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr "Kan ikke frigøre %d byte hukommelse igen"
+
