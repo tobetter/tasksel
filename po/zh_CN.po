@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-19 07:19+0200\n"
+"POT-Creation-Date: 2004-07-20 22:44-0400\n"
 "PO-Revision-Date: 2004-07-20 00:00+1200\n"
 "Last-Translator: Carlos Z.F. Liu <carlos_liu@yahoo.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
@@ -14,17 +14,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: ../tasksel.pl:240
+#: ../tasksel.pl:241
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
+"tasksel remove <task>\n"
 "tasksel [options]; where options is any combination of:\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t-r, --required      install all required-priority packages\n"
 "\t-i, --important     install all important-priority packages\n"
 "\t-s, --standard      install all standard-priority packages\n"
 "\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
-"\t    --new-install   automatically install some tasks\n"
+"\t    --new-install   atomatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
 "\t    --task-packages list available packages in a task\n"
 "\t    --task-desc     returns the description of a task\n"
@@ -42,7 +44,7 @@ msgstr ""
 "\t    --task-packages 列出任务集中的软件包\n"
 "\t    --task-desc     显示任务集的说明\n"
 
-#: ../tasksel.pl:358 ../tasksel.pl:386
+#: ../tasksel.pl:392 ../tasksel.pl:403
 msgid "aptitude failed"
 msgstr "aptitude 操作失败"
 

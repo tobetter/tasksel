@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-19 07:19+0200\n"
+"POT-Creation-Date: 2004-07-20 22:44-0400\n"
 "PO-Revision-Date: 2004-03-13 16:52+0100\n"
 "Last-Translator: Matjaz Horvat <matjaz@owca.info>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
@@ -16,23 +16,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3\n"
 
-#: ../tasksel.pl:240
+#: ../tasksel.pl:241
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
+"tasksel remove <task>\n"
 "tasksel [options]; where options is any combination of:\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t-r, --required      install all required-priority packages\n"
 "\t-i, --important     install all important-priority packages\n"
 "\t-s, --standard      install all standard-priority packages\n"
 "\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
-"\t    --new-install   automatically install some tasks\n"
+"\t    --new-install   atomatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
 "\t    --task-packages list available packages in a task\n"
 "\t    --task-desc     returns the description of a task\n"
 msgstr ""
 
-#: ../tasksel.pl:358 ../tasksel.pl:386
+#: ../tasksel.pl:392 ../tasksel.pl:403
 msgid "aptitude failed"
 msgstr ""
 
