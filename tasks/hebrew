@@ -1,0 +1,14 @@
+Task: hebrew
+Section: l10n
+Description: Hebrew environment
+ This task installs programs and documentation in Hebrew
+ to help Hebrew speaking people use Debian.
+Maintainer: Shlomi Loubaton <loubaton.shlomi@012.net.il>
+Packages:
+ libfribidi0
+ bidiv
+ culmus
+ hspell
+ kde-i18n-he
+ koffice-i18n-he
+ ivritex
