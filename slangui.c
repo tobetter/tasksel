@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.13 2000/01/14 01:40:08 joeyh Exp $ */
+/* $Id: slangui.c,v 1.14 2000/01/15 23:03:17 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -10,6 +10,7 @@
 #include <ctype.h>
 
 #include "data.h"
+#include "util.h"
 #include "strutl.h"
 #include "macros.h"
 #include "help.h"
@@ -26,6 +27,7 @@
 #define BUTTONOBJ    8
 #define SELHIGHLIGHT 9
 #define HIGHLIGHT    10
+#define SCROLLBAR    11
 
 #define CHOOSERWINDOW 0
 #define DESCWINDOW    1
@@ -36,6 +38,10 @@
 #define BUTTON_QUIT   1
 #define BUTTON_INFO   2
 #define BUTTON_HELP   3
+
+#define SCROLLBAR_NONE  0
+#define SCROLLBAR_HORIZ 1
+#define SCROLLBAR_VERT  2
 
 #define ROWS SLtt_Screen_Rows
 #define COLUMNS SLtt_Screen_Cols
@@ -78,6 +84,7 @@ void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct 
   SLtt_set_color(BUTTONOBJ, NULL, "lightgray", "red");
   SLtt_set_color(SELHIGHLIGHT, NULL, "white", "blue");
   SLtt_set_color(HIGHLIGHT, NULL, "white", "red");
+  SLtt_set_color(SCROLLBAR, NULL, "black", "lightgray");
   
   ui_resize();
   _initialized = 1;
@@ -334,6 +341,47 @@ int ui_drawscreen(void)
   return 0;
 }
 
+/* Widgets */
+void ui_vscrollbar(int row, int col, int height, double percent)
+{
+  int i;
+  if (percent < 0) percent = 0;
+  if (percent > 100.0) percent = 100.0;
+  
+  SLsmg_set_color(SCROLLBAR);
+  for (i = 0; i < height; i++) {
+     SLsmg_gotorc(row+i, col);
+     if (((double)i)/height < percent &&
+         ((double)i+1)/height >= percent) {
+       SLsmg_write_char('#');
+     } else {
+       SLsmg_set_char_set(1);
+       SLsmg_write_char(SLSMG_CKBRD_CHAR);
+       SLsmg_set_char_set(0);
+     }
+  }
+}
+
+void ui_hscrollbar(int row, int col, int width, double percent)
+{
+  int i;
+  if (percent < 0) percent = 0;
+  if (percent > 100.0) percent = 100.0;
+  
+  SLsmg_set_color(SCROLLBAR);
+  for (i = 0; i < width; i++) {
+     SLsmg_gotorc(row, col+i);
+     if (((double)i)/width < percent &&
+         ((double)i+1)/width >= percent) {
+       SLsmg_write_char('#');
+     } else {
+       SLsmg_set_char_set(1);
+       SLsmg_write_char(SLSMG_CKBRD_CHAR);
+       SLsmg_set_char_set(0);
+     }
+  }
+}
+
 void ui_button(int row, int col, char *txt, int selected)
 {
   char *p;
@@ -383,11 +431,37 @@ void ui_title(int row, int col, int width, char *title)
   SLsmg_set_char_set(0);
 }
 
-void ui_dialog(int row, int col, int height, int width, char *title, char *msg, int reflow)
+static void ui_dialog_drawlines(int row, int col, int height, int width,
+		                char **buf, int topline, int leftcol, 
+				int numlines, int scroll)
+{
+  int ri;
+  int hoffset = ((scroll & SCROLLBAR_HORIZ) ? 6 : 4);
+  int woffset = ((scroll & SCROLLBAR_VERT) ? 5 : 3);
+  VERIFY(buf != NULL);
+
+  SLsmg_set_color(DIALOGOBJ);
+  SLsmg_fill_region(row+1, col+1, height-2, width-2, ' ');
+  for (ri = topline; ri < numlines && ri - topline < height - hoffset; ri++) {
+    SLsmg_gotorc(row + 1 + ri-topline, col + 1);
+    if (strlen(buf[ri]) > leftcol)
+      SLsmg_write_nstring(buf[ri]+leftcol, width - woffset);
+  }
+  if (scroll & SCROLLBAR_VERT) 
+    ui_vscrollbar(row+1, col+width-2, height-hoffset, 
+		  ((double)topline+1)/numlines);
+  if (scroll & SCROLLBAR_HORIZ)
+    ui_hscrollbar(row+height-4, col+1, width-woffset, 
+		  ((double)leftcol+1)/(width-woffset));
+  ui_button(row+height-2, col+(width-4)/2, _("Ok"), 1);
+  SLsmg_refresh();
+}
+
+void ui_dialog(int row, int col, int height, int width, char *title, char *msg, int reflow, int scroll)
 {
   char *reflowbuf;
-  int ri, c;
-  char *line, *txt;
+  int ri, c, topline = 0, leftcol = 0, numlines = 0, done = 0, redraw;
+  char *line, *txt = NULL, **buf = NULL;
 
   if (reflow)
     reflowbuf = reflowtext(width - 2, msg);
@@ -397,30 +471,65 @@ void ui_dialog(int row, int col, int height, int width, char *title, char *msg, 
   SLsmg_set_color(DIALOGOBJ);
 
   ui_drawbox(DIALOGOBJ, row, col, height, width, 1);
-  SLsmg_fill_region(row+1, col+1, height-2, width-2, ' ');
   
   if (title)
     ui_title(row, col, width, title);
   
   if (reflowbuf != NULL) {
     txt = reflowbuf;
+    while ((line = strchr(txt, '\n'))) {
+      numlines++;
+      txt = line+1;
+    }
+    numlines++;
+    buf = MALLOC(numlines * sizeof(char *));
     ri = 0;
-    while ((line = strsep(&txt, "\n")) && (ri < height - 3)) {
-      SLsmg_gotorc(row + 1 + ri, col + 1);
-      SLsmg_write_nstring(line, width - 2);
-      ri++;
+    txt = reflowbuf;
+    while ((line = strsep(&txt, "\n"))) {
+      buf[ri++] = line;
+    }
+  }
+    
+  ui_dialog_drawlines(row, col, height, width, buf, topline, leftcol, numlines, scroll);
+  
+  while (!done) {
+    redraw = 0;
+    c = SLkp_getkey();
+    switch (c) {
+      case '\r': case '\n':
+      case SL_KEY_ENTER: 
+        done = 1; 
+	break;
+      case SL_KEY_UP:
+        if (topline > 0) {
+	  topline--;
+	  redraw = 1;
+	}
+	break;
+      case SL_KEY_DOWN:
+        if (topline < numlines - 1) {
+	  topline++;
+	  redraw = 1;
+	}
+        break;
+      case SL_KEY_LEFT:
+	if (leftcol > 0) {
+	  leftcol--;
+	  redraw=1;
+	}
+	break;
+      case SL_KEY_RIGHT:
+	leftcol++;
+	redraw=1;
+	break;
+    }
+    if (redraw) {
+      ui_dialog_drawlines(row, col, height, width, buf, topline, leftcol,
+		          numlines, scroll);
     }
   }
 
-  ui_button(row+height-2, col+(width-4)/2, _("Ok"), 1);
-  
-  SLsmg_refresh();
-  SLsig_block_signals();
-  do {
-    c = 0;
-    if (SLang_input_pending(5)) c = SLkp_getkey();
-  } while (!(c == '\n' || c == '\r' || c == SL_KEY_ENTER || isspace(c)) && (_resizing == 0));
-  SLsig_unblock_signals();
+  if (buf) FREE(buf);
   if (reflow) FREE(reflowbuf);
 }
 
@@ -428,24 +537,29 @@ void ui_drawchooseritem(int index)
 {
   char buf[1024];
   ASSERT(_taskpackages != NULL);
-  if (index >= _taskpackages->count) DIE("Index out of bounds: %d >= %d", index, _taskpackages->count);
+  if (index >= _taskpackages->count) 
+    DIE("Index out of bounds: %d >= %d", index, _taskpackages->count);
   if (index < _chooserinfo.topindex) return;
   
   SLsmg_set_color(CHOOSEROBJ);
-  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 1);
+  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, 
+               _chooserinfo.coloffset + 1);
   snprintf(buf, 1024, "[%c] %s", 
 	   (_taskpackagesary[index]->selected == 0 ? ' ' : '*'),
            _taskpackagesary[index]->prettyname);
   /* I fear the 1 below is an off-by-one error somewhere -- Joeyh */
   SLsmg_write_nstring(buf, _chooserinfo.width - 1);
-  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + _taskpackages->maxnamelen + 7);
-  SLsmg_write_nstring(_taskpackagesary[index]->shortdesc, _chooserinfo.width - _taskpackages->maxnamelen - 7);
+  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, 
+               _chooserinfo.coloffset + _taskpackages->maxnamelen + 7);
+  SLsmg_write_nstring(_taskpackagesary[index]->shortdesc, _chooserinfo.width - 
+                      _taskpackages->maxnamelen - 7);
 }
 
 void ui_toggleselection(int index)
 {
   ASSERT(_taskpackages != NULL);
-  if (index >= _taskpackages->count) DIE("Index out of bounds: %d >= %d", index, _taskpackages->count);
+  if (index >= _taskpackages->count) 
+    DIE("Index out of bounds: %d >= %d", index, _taskpackages->count);
   
   if (_taskpackagesary[index]->selected == 0)
     _taskpackagesary[index]->selected = 1;
@@ -460,7 +574,8 @@ void ui_toggleselection(int index)
   else
     SLsmg_write_string("[*]");
 
-  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 3);
+  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, 
+               _chooserinfo.coloffset + 3);
   SLsmg_refresh();
 }
 
@@ -499,7 +614,7 @@ void ui_clearcursor(int index)
 void ui_showhelp(void)
 {
   _chooserinfo.whichwindow = HELPWINDOW;
-  ui_dialog(3, 3, ROWS - 9, COLUMNS - 10, _("Help"), HELPTXT, 1);
+  ui_dialog(3, 3, ROWS - 9, COLUMNS - 10, _("Help"), HELPTXT, 1, SCROLLBAR_VERT);
   _chooserinfo.whichwindow = CHOOSERWINDOW;
   ui_drawscreen();
 }
@@ -538,7 +653,7 @@ void ui_showpackageinfo(void)
     bufleft = sizeof(buf) - strlen(buf) - 1;
   }
 
-  ui_dialog(2, 2, ROWS-4, COLUMNS-4, pkg->name, buf, 0); 
+  ui_dialog(2, 2, ROWS-4, COLUMNS-4, pkg->name, buf, 0, SCROLLBAR_VERT); 
   _chooserinfo.whichwindow = CHOOSERWINDOW;
   ui_drawscreen();  
 }
