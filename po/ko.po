@@ -1,0 +1,218 @@
+# Changwoo Ryu <cwryu@debian.org>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-01-28 08:04+0100\n"
+"PO-Revision-Date: 2004-03-01 14:39+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: Korean <cwryu@debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data.c:307 ../data.c:321
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr "태스크 목록 버퍼에 필요한 메모리를 할당할 수 없습니다"
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\n"
+"\t"
+msgstr ""
+"치명적인 오류가 발생했습니다 (%s:%d)\n"
+"\t"
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\n"
+"\t"
+msgstr ""
+"입출력 오류 (%s:%d)\n"
+"\t"
+
+#: ../slangui.c:18 ../slangui.c:19
+msgid "(no description)"
+msgstr "(설명 없음)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr "일반 사용자"
+
+#: ../slangui.c:76
+msgid "Hardware Support"
+msgstr "하드웨어 지원"
+
+#: ../slangui.c:77
+msgid "Servers"
+msgstr "서버"
+
+#: ../slangui.c:78
+msgid "Development"
+msgstr "개발"
+
+#: ../slangui.c:79
+msgid "Localization"
+msgstr "지역화"
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr "기타"
+
+#: ../slangui.c:219
+msgid "Unable to initialize the terminal"
+msgstr "터미널을 초기화할 수 없습니다"
+
+#: ../slangui.c:221
+msgid "Unable to initialize screen output"
+msgstr "화면 출력을 초기화할 수 없습니다"
+
+#: ../slangui.c:222
+msgid "Unable to initialize keyboard interface"
+msgstr "키보드 인터페이스를 초기화할 수 없습니다"
+
+#: ../slangui.c:239
+#, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
+msgstr "데비안 태스크 설치 프로그램 v%s - (c) 1999-2003 SPI and others"
+
+#: ../slangui.c:393
+msgid "^Finish"
+msgstr "마침(^F)"
+
+#: ../slangui.c:401 ../slangui.c:402
+msgid "Task ^Info"
+msgstr "태스크 정보(^I)"
+
+#: ../slangui.c:406 ../slangui.c:407
+msgid "^Help"
+msgstr "도움말(^H)"
+
+#: ../slangui.c:441
+msgid "Select tasks to install"
+msgstr "설치할 태스크를 선택하십시오"
+
+#: ../slangui.c:576
+msgid "Ok"
+msgstr "확인"
+
+#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr "인덱스가 범위를 벗어났습니다: %d >= %d"
+
+#: ../slangui.c:776
+msgid "Help"
+msgstr "도움말"
+
+#: ../slangui.c:777
+msgid ""
+"Tasks allow you to quickly install a selection of packages that performs a "
+"given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
+msgstr ""
+"태스크를 사용하면 주어진 일을 하는 패키지들 여러가지를 빠르게 설치할 수 있습니다.\n"
+"\n"
+"주 선택 목록에는 설치할 수 있는 태스크의 목록이 나와 있습니다. 화살표 키로 커서를 움직입니다. Enter나 스페이스바를 누르면 커서 위치에 있는 태스크 선택을 토글합니다. A를 누르면 모든 태스크를 선택하고, N을 누르면 모든 태스크를 선택하지 않습니다. Q를 누르면 이 프로그램을 끝내고 선택한 태스크를 설치합니다.\n"
+"\n"
+"데비안을 사용해 주셔서 고맙습니다.\n"
+"\n"
+"태스크 선택 화면으로 돌아가려면 Enter를 누르십시오."
+
+#: ../slangui.c:818
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Included packages:\n"
+msgstr ""
+"설명:\n"
+"%s\n"
+"\n"
+"들어 있는 패키지:\n"
+
+#: ../slangui.c:826
+msgid "(no description available)"
+msgstr "(설명 없음)"
+
+#: ../tasksel.c:33
+msgid "Unknown signal seen"
+msgstr "알 수 없는 시그널이 잡혔습니다"
+
+#: ../tasksel.c:39
+#, c-format
+msgid "tasksel install <task>\n"
+msgstr "tasksel install <태스크>\n"
+
+#: ../tasksel.c:40
+#, c-format
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [옵션]; 옵션은 다음과 같습니다:\n"
+
+#: ../tasksel.c:41
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- 테스트 모드; 끝날 때 apt-get을 실행하지 않습니다"
+
+#: ../tasksel.c:42
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- 설치 큐에 넣기; apt-get으로 패키지를 실행하지 않습니다;\n"
+"\t\t다음에 설치하도록 dpkg 큐에 넣어 둡니다"
+
+#: ../tasksel.c:43
+msgid "-r -- install all required-priority packages"
+msgstr "-n -- 모든 필수 우선순위의 패키지를 설치합니다"
+
+#: ../tasksel.c:44
+msgid "-i -- install all important-priority packages"
+msgstr "-n -- 모든 중요 우선순위의 패키지를 설치합니다"
+
+#: ../tasksel.c:45
+msgid "-s -- install all standard-priority packages"
+msgstr "-n -- 모든 표준 우선순위의 패키지를 설치합니다"
+
+#: ../tasksel.c:46
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- UI를 보여주지 않습니다; 보통 -r이나 -i 옵션과 함께 씁니다"
+
+#: ../tasksel.c:47
+msgid "-a -- show all tasks, even those with no packages in them"
+msgstr "-a -- 모든 태스크를 보여줍니다. 그 안에 태스크가 없는 경우도 보여줍니다"
+
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
+msgid "No packages selected\n"
+msgstr "패키지를 선택하지 않았습니다\n"
+
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
+msgstr "이 시스템에는 태스크가 없습니다.\n"
+
+#: ../util.c:21
+msgid "Cannot allocate memory for strdup"
+msgstr "strdup에 필요한 메모리를 할당할 수 없습니다"
+
+#: ../util.c:39
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr "%d 바이트 메모리를 할당할 수 없습니다"
+
+#: ../util.c:48
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr "%d 바이트 메모리를 다시 할당할 수 없습니다"
