@@ -6,17 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Taksel\n"
 "POT-Creation-Date: 2001-11-22 19:17+0100\n"
-"PO-Revision-Date: 2003-07-12 20:29+0100\n"
+"PO-Revision-Date: 2004-01-11 03:43+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
-"Language-Team: Skolelinux <devel@skolelinux.no>\n"
+"Language-Team: debian-l10n-dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data.c:277
-#: ../data.c:291
+#: ../data.c:277 ../data.c:291
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Kan geen geheugen toewijzen voor de opsom buffer"
+msgstr "Kan geen geheugen toewijzen voor de opsombuffer"
 
 #: ../macros.h:42
 #, c-format
@@ -25,7 +24,7 @@ msgid ""
 "\t"
 msgstr ""
 "Er is een fatale fout opgetreden op %s:%d\r\n"
-"'t"
+"\t"
 
 #: ../macros.h:51
 #, c-format
@@ -36,8 +35,7 @@ msgstr ""
 "I/O fout op %s:%d\r\n"
 "\t"
 
-#: ../slangui.c:18
-#: ../slangui.c:19
+#: ../slangui.c:18 ../slangui.c:19
 msgid "(no description)"
 msgstr "(geen beschrijving)"
 
@@ -55,11 +53,11 @@ msgstr "Ontwikkeling"
 
 #: ../slangui.c:78
 msgid "Localization"
-msgstr "Lokalizatie"
+msgstr "Lokalisatie"
 
 #: ../slangui.c:79
 msgid "Hardware Support"
-msgstr "Hardware ondersteuning"
+msgstr "Hardware-ondersteuning"
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
@@ -67,46 +65,42 @@ msgstr "Diversen"
 
 #: ../slangui.c:213
 msgid "Unable to initialize the terminal"
-msgstr "Kon de terminal niet initalizeren"
+msgstr "Kon de terminal niet initaliseren"
 
 #: ../slangui.c:215
 msgid "Unable to initialize screen output"
-msgstr "Kon scherm uitvoer niet initializeren"
+msgstr "Kon schermuitvoer niet initializeren"
 
 #: ../slangui.c:216
 msgid "Unable to initialize keyboard interface"
-msgstr "Kon toetsenbord interface niet installeren"
+msgstr "Kon toetsenbordinterface niet initialiseren"
 
 #: ../slangui.c:233
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
-msgstr "Debian Taak installer v%s - (c) 1999-2001 SPI en anderen"
+msgstr "Debian Taak-installatieprogamma v%s - (c) 1999-2001 SPI en anderen"
 
 #: ../slangui.c:387
 msgid "^Finish"
 msgstr "^Afsluiten"
 
-#: ../slangui.c:395
-#: ../slangui.c:396
+#: ../slangui.c:395 ../slangui.c:396
 msgid "Task ^Info"
 msgstr "Taak ^Info"
 
-#: ../slangui.c:400
-#: ../slangui.c:401
+#: ../slangui.c:400 ../slangui.c:401
 msgid "^Help"
 msgstr "^Help"
 
 #: ../slangui.c:435
 msgid "Select tasks to install"
-msgstr "Selecteer de te installeren taken"
+msgstr "Welke taken wilt u installeren?"
 
 #: ../slangui.c:570
 msgid "Ok"
 msgstr "Ok"
 
-#: ../slangui.c:679
-#: ../slangui.c:693
-#: ../slangui.c:804
+#: ../slangui.c:679 ../slangui.c:693 ../slangui.c:804
 #, c-format
 msgid "Index out of bounds: %d >= %d"
 msgstr "Index is buiten bereik: %d >= %d"
@@ -118,21 +112,31 @@ msgstr "Help"
 #. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:771
 msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a given task.\n"
+"Tasks allow you to quickly install a selection of packages that performs a "
+"given task.\n"
 "\n"
-"The main chooser list shows a list of tasks that you can choose to install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the task at the cursor. You can also press A to select all tasks, or N to deselect all tasks. Pressing Q will exit this program and begin installation of your selected tasks.\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
 "\n"
 "Thank you for using Debian.\n"
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"Taken geven je de mogelijkheid om op een snelle manier een selectie met pakketten voor het bereiken van die taak te installeren.\n"
+"Taken geven u de mogelijkheid om op een snelle manier een set van pakketten "
+"nodig voor het uitvoeren van die taak te installeren.\n"
 "\n"
-"De hoofd keuzelijst toont de taken die u kan installeren. De pijltjestoetsen verplaatsen de cursor. Met ENTER of SPATIEBALK kunt u de selectie van de taak ter hoogtevan de cursor omschakelen. Daarnaast kun je met A alle taken installeren, en met N alle taken deselecteren. Q sluit dit programma af en begint de installatie van de door ugeselecteerdetaken.\n"
+"De hoofdkeuzelijst toont de taken die u kunt installeren. De pijltjestoetsen "
+"verplaatsen de cursor. Met ENTER of SPATIEBALK kunt u de selectie van de "
+"taak ter hoogte van de cursor omschakelen. Daarnaast kunt u met A alle taken "
+"selecteren, en met N alle taken deselecteren. Q sluit dit programma af en "
+"begint de installatie van de door u geselecteerde taken.\n"
 "\n"
 "Bedankt voor het gebruiken van Debian.\n"
 "\n"
-"Druk ENTER om terug te keren naar het taak selectie venster"
+"Druk ENTER om terug te keren naar het taakselectie-venster"
 
 #: ../slangui.c:812
 #, c-format
@@ -145,7 +149,7 @@ msgstr ""
 "Beschrijving:\n"
 "%s\n"
 "\n"
-"Omvat volgende pakketten :\n"
+"Omvat volgende pakketten:\n"
 
 #: ../slangui.c:820
 msgid "(no description available)"
@@ -172,20 +176,21 @@ msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- queue installs; installeer geen pakketten met apt-get;\n"
-"\t\tzet ze enkel in de queue van dpkg"
+"-q -- installaties in wachtrij (queue) plaatsen; installeer geen pakketten "
+"met apt-get;\n"
+"\t\tzet ze enkel in de wachtrij van dpkg"
 
 #: ../tasksel.c:36
 msgid "-r -- install all required-priority packages"
-msgstr "-r -- installeer alle pakketten met prioriteit vereist"
+msgstr "-r -- installeer alle pakketten met prioriteit=vereist"
 
 #: ../tasksel.c:37
 msgid "-i -- install all important-priority packages"
-msgstr "-i -- installeer alle pakketten met prioriteit belangrijk"
+msgstr "-i -- installeer alle pakketten met prioriteit=belangrijk"
 
 #: ../tasksel.c:38
 msgid "-s -- install all standard-priority packages"
-msgstr "-s -- installeer alle pakketten met prioriteit standaard"
+msgstr "-s -- installeer alle pakketten met prioriteit=standaard"
 
 #: ../tasksel.c:39
 msgid "-n -- don't show UI; use with -r or -i usually"
@@ -195,8 +200,7 @@ msgstr "-n -- de UI niet tonen; gewoonlijk gebruikt samen met -r of -i"
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr "-a -- toon alle taken, ook als ze geen pakketten bevatten"
 
-#: ../tasksel.c:81
-#: ../tasksel.c:116
+#: ../tasksel.c:81 ../tasksel.c:116
 msgid "No packages selected\n"
 msgstr "Er zijn geen pakketten geselecteerd\n"
 
@@ -206,11 +210,11 @@ msgid ""
 "Did you update your available file?\n"
 msgstr ""
 "Kan op dit systeem geen taken vinden.\n"
-"Heeft u het beschikbaarheidsbestand geupdate?\n"
+"Heeft u het beschikbaarheidsbestand bijgewerkt?\n"
 
 #: ../util.c:20
 msgid "Cannot allocate memory for strdup"
-msgstr "Kan geen geheugen toewijzen vor strdup"
+msgstr "Kan geen geheugen toewijzen voor strdup"
 
 #: ../util.c:38
 #, c-format
@@ -221,4 +225,3 @@ msgstr "Kan %d bytes geheugen niet toewijzen"
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Kan %d bytes geheugen niet opnieuw toewijzen"
-
