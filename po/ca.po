@@ -1,0 +1,226 @@
+# Catalan messages for Debian's tasksel.
+# Copyright (C) 2001 Software in the Public Interest, Inc.
+# Jordi Mallach <jordi@debian.org>, 2001.
+# $Id: ca.po,v 1.1 2001/11/24 14:51:24 jordi Rel $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel 1.13\n"
+"POT-Creation-Date: 2001-11-23 00:58+0100\n"
+"PO-Revision-Date: 2001-11-24 15:48+0100\n"
+"Last-Translator: Jordi Mallach <jordi@debian.org>\n"
+"Language-Team: Debian's Catalan l10n team <debian-l10n-catalan@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data.c:277 ../data.c:291
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr "No es pot reservar memoria per al buffer d'enumeració"
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\r\n"
+"\t"
+msgstr ""
+"Error fatal trobat en %s:%d\r\n"
+"\t"
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\r\n"
+"\t"
+msgstr ""
+"Error de E/S en %s:%d\r\n"
+"\t"
+
+#: ../slangui.c:18 ../slangui.c:19
+msgid "(no description)"
+msgstr "(cap descripció)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr "Usuari final"
+
+#: ../slangui.c:76
+msgid "Servers"
+msgstr "Servidors"
+
+#: ../slangui.c:77
+msgid "Development"
+msgstr "Desenvolupament"
+
+#: ../slangui.c:78
+msgid "Localization"
+msgstr "Localització"
+
+#: ../slangui.c:79
+msgid "Hardware Support"
+msgstr "Suport de maquinari"
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr "Miscelània"
+
+#: ../slangui.c:213
+msgid "Unable to initialize the terminal"
+msgstr "No s'ha pogut inicialitzar la terminal"
+
+#: ../slangui.c:215
+msgid "Unable to initialize screen output"
+msgstr "No s'ha pogut inicialitzar la sortida per pantalla"
+
+#: ../slangui.c:216
+msgid "Unable to initialize keyboard interface"
+msgstr "No s'ha pogut inicialitzar la interfície del teclat"
+
+#: ../slangui.c:233
+#, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
+msgstr "Instal·lador de tasques de Debian v%s - (c) 1999-2001 SPI i altres"
+
+#: ../slangui.c:387
+msgid "^Finish"
+msgstr "^Finalitzar"
+
+#: ../slangui.c:395 ../slangui.c:396
+msgid "Task ^Info"
+msgstr "^Informació sobre la tasca"
+
+#: ../slangui.c:400 ../slangui.c:401
+msgid "^Help"
+msgstr "^Ajuda"
+
+#: ../slangui.c:435
+msgid "Select tasks to install"
+msgstr "Seleccioneu les tasques a instal·lar"
+
+#: ../slangui.c:570
+msgid "Ok"
+msgstr "Acceptar"
+
+#: ../slangui.c:679 ../slangui.c:693 ../slangui.c:804
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr "Índex fora dels límits: %d >= %d"
+
+#: ../slangui.c:770
+msgid "Help"
+msgstr "Ajuda"
+
+#. TRANS: don't wrap lines because of different screen sizes!
+#: ../slangui.c:771
+msgid ""
+"Tasks allow you to quickly install a selection of packages that performs a "
+"given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
+msgstr ""
+"Les tasques vos permeten instal·lar una selecció de paquets que realitzen "
+"una tasca determinada,\n"
+"\n"
+"La llista de selecció principal mostra una llista de tasques que podeu "
+"elegir instal·lar. Les tecles de cursor moven la selecció. Polsar INTRO o la "
+"BARRA ESPACIADORA canvia la sel·lecció de la tasca en el cursor. També podeu "
+"polsar A per a seleccionar totes les tasques, o N per a deseleccionarles "
+"totes. Polsar Q sortirà d'aquest programa i començarà la instal·lació de "
+"les tasques seleccionades.\n"
+"\n"
+"Gràcies per fer servir Debian.\n"
+"\n"
+"Polseu intro per tornar a la finestra de selecció de tasques"
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Included packages:\n"
+msgstr ""
+"Descripció:\n"
+"%s\n"
+"\n"
+"Paquests inclosos:\n"
+
+#: ../slangui.c:820
+msgid "(no description available)"
+msgstr "(descripció no disponible)"
+
+#: ../tasksel.c:26
+msgid "Unknown signal seen"
+msgstr "Senyal desconeguda seen"
+
+#: ../tasksel.c:32
+msgid "tasksel install <task>\n"
+msgstr "tasksel install <tasca>\n"
+
+#: ../tasksel.c:33
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [opcions]; on opcions és qualsevol combinació de:\n"
+
+#: ../tasksel.c:34
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- modo testeig; no executar apt-get al sortir"
+
+#: ../tasksel.c:35
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- encolar instal·lacions; no instal·lar paquets amb apt-get;\n"
+"\t\tnomés encolar-los en dpkg"
+
+#: ../tasksel.c:36
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- instal·lar tots els paquets amb prioritat requerit"
+
+#: ../tasksel.c:37
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- instal·lar tots els paquets amb prioritat important"
+
+#: ../tasksel.c:38
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- instal·lar tots els paquets amb prioritat estandard"
+
+#: ../tasksel.c:39
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- no mostrar la IU; fer servir normalment amb -r o -i"
+
+#: ../tasksel.c:40
+msgid "-a -- show all tasks, even those with no packages in them"
+msgstr "-a -- mostrar totes les tasques, inclús aquelles que no tenen paquets"
+
+#: ../tasksel.c:81 ../tasksel.c:116
+msgid "No packages selected\n"
+msgstr "No hi ha paquets seleccionats\n"
+
+#: ../tasksel.c:168
+msgid ""
+"No tasks found on this system.\n"
+"Did you update your available file?\n"
+msgstr ""
+"No s'han trobat tasques en aquest sistema.\n"
+"Heu actualitzat el vostre fitxer \"available\"?\n"
+
+#: ../util.c:20
+msgid "Cannot allocate memory for strdup"
+msgstr "No es pot reservar memòria per a strdup"
+
+#: ../util.c:38
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr "No es poden reservar %d byes de memòria"
+
+#: ../util.c:47
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr "No es poden reassignar %d bytes de memòria"
