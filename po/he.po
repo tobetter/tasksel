@@ -8,16 +8,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-29 13:21-0500\n"
-"PO-Revision-Date: 2004-04-04 23:54+0200\n"
-"Last-Translator:  <>\n"
+"PO-Revision-Date: 2004-04-07 13:48+0200\n"
+"Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
 "Language-Team: English <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: ../data.c:307 ../data.c:321
+#: ../data.c:307
+#: ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
 msgstr ""
 
@@ -35,7 +35,8 @@ msgid ""
 "\t"
 msgstr ""
 
-#: ../slangui.c:18 ../slangui.c:19
+#: ../slangui.c:18
+#: ../slangui.c:19
 msgid "(no description)"
 msgstr "(אין תיאור)"
 
@@ -84,13 +85,15 @@ msgstr ""
 msgid "^Finish"
 msgstr "^סיום"
 
-#: ../slangui.c:401 ../slangui.c:402
+#: ../slangui.c:401
+#: ../slangui.c:402
 msgid "Task ^Info"
 msgstr ""
 
-#: ../slangui.c:406 ../slangui.c:407
+#: ../slangui.c:406
+#: ../slangui.c:407
 msgid "^Help"
-msgstr ""
+msgstr "^עזרה"
 
 #: ../slangui.c:441
 msgid "Select tasks to install"
@@ -100,7 +103,9 @@ msgstr "בחר משימות להתקנה"
 msgid "Ok"
 msgstr "OK"
 
-#: ../slangui.c:691 ../slangui.c:705 ../slangui.c:816
+#: ../slangui.c:691
+#: ../slangui.c:705
+#: ../slangui.c:816
 #, c-format
 msgid "Index out of bounds: %d >= %d"
 msgstr ""
@@ -111,14 +116,9 @@ msgstr "עזרה"
 
 #: ../slangui.c:783
 msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\n"
+"Tasks allow you to quickly install a selection of packages that performs a given task.\n"
 "\n"
-"The main chooser list shows a list of tasks that you can choose to install. "
-"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
-"selection of the task at the cursor. You can also press A to select all "
-"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
-"begin installation of your selected tasks.\n"
+"The main chooser list shows a list of tasks that you can choose to install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the task at the cursor. You can also press A to select all tasks, or N to deselect all tasks. Pressing Q will exit this program and begin installation of your selected tasks.\n"
 "\n"
 "Thank you for using Debian.\n"
 "\n"
@@ -182,7 +182,8 @@ msgstr ""
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr ""
 
-#: ../tasksel.c:88 ../tasksel.c:123
+#: ../tasksel.c:88
+#: ../tasksel.c:123
 #, c-format
 msgid "No packages selected\n"
 msgstr "לא נבחרו חבילות\n"
