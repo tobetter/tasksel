@@ -68,11 +68,9 @@ clean:
 	$(MAKE) -C po clean
 	$(MAKE) -C $(DESCPO) clean
 
-# This taget is run on auric to generate the overrides files.
+# This taget is run to generate the overrides files.
 # It is run from a cron job, so should only generate output if there are
 # problems.
 override:
-	@svn up tasks 2>&1 | grep -v ^U || true
-	@./makeoverride.pl $(DESCDIR) > temp-override
-	@cp temp-override /org/ftp.debian.org/scripts/external-overrides/task
-	@rm -f temp-override
+	@svn up tasks 2>&1 | grep -v ^U | grep -v "At revision" || true
+	@./makeoverride.pl $(DESCDIR) > external-overrides-task
