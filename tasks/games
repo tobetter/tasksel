@@ -1,10 +1,13 @@
 Task: games
 Section: user
-Description: A selection of games
- Selecting this package will install a broad selection of games, from
+Description: games
+ Selecting this task will install a broad selection of games, from
  traditional textual unix games to card games, to fast-paced arcade games.
  It won't install all the games in Debian, but it is a good starting point.
 Packages:
+# TODO: more games can be included now that this is not a task.
+# Please only add very good, complete, classic or well-known games though.
+# It would be good to have some emulators, if any are in main.
  xtris
  bsdgames
  nethack

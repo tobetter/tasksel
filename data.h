@@ -1,4 +1,4 @@
-/* $Id: data.h,v 1.6 2001/05/18 02:02:02 joeyh Exp $ */
+/* $Id: data.h,v 1.7 2001/05/23 17:39:54 joeyh Rel $ */
 #ifndef _DATA_H
 #define _DATA_H
 
@@ -47,7 +47,7 @@ struct tasks_t {
 };
 
 /* Reads in a list of tasks from task description file */
-void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs);
+void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs, unsigned char showempties);
 /* Reads in a list of package and package descriptions from available file */
 void packages_readlist(struct tasks_t *tasks, struct packages_t *packages);
 /* free memory allocated to store packages */

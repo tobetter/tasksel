@@ -1,7 +1,6 @@
 PROGRAM=tasksel
 TASKDESC=debian-tasks.desc
 DESCDIR=tasks/
-VERSION=1.3
 CC=gcc
 CFLAGS=-g -Wall  #-Os
 DEBUG=1
@@ -12,17 +11,17 @@ else
 DEFS=-DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" \
      -DTASKDESC=\"$(TASKDESC)\" -DDEBUG
 endif
+VERSION=$(shell expr "`dpkg-parsechangelog 2>/dev/null |grep Version:`" : '.*Version: \(.*\)' | cut -d - -f 1)
 LIBS=-lslang #-lccmalloc -ldl
 OBJS=tasksel.o slangui.o data.o util.o strutl.o
 LANGS=cs de hu ja sv pl ru
 LOCALEDIR=$(DESTDIR)/usr/share/locale
-
 COMPILE = $(CC) $(CFLAGS) $(DEFS) -c
 LINK = $(CC) $(CFLAGS) $(DEFS) -o
 
 all: $(PROGRAM) $(TASKDESC)
 
-$(TASKDESC):
+$(TASKDESC): makedesc.pl $(DESCDIR)/*
 	perl makedesc.pl $(DESCDIR) $(TASKDESC)
 
 %.o: %.c

@@ -1,8 +1,14 @@
 Task: mail-server
 Section: server
-Description: IMAP Server
- This is a server for the IMAP protocol.  IMAP allows you to keep your
- mail folders on a central server and access them from multiple locations.
+Description: mail server
+ This task selects a variety of package useful for a general purpose mail
+ server system.
 Packages:
+ qpopper # HELP: What's a good pop server?
+ mailx
+ # perhaps it should include a real mail reader too, but beware holy wars..
+ exim
+ procmail
+ mailagent
  uw-imapd
- imap-server
+ # HELP: what about some webmail thing?

@@ -1,8 +1,7 @@
 Task: c++-dev
 Section: devel
-Description: Development in C++
- A metapackage containing dependencies, recommendations and suggestions
- for a complete environment for development of programs in the
+Description: development in C++
+ A complete environment for development of programs in the
  C++ programming language, including:
   o Tools common for C, C++ and Objective C development
   o A C preprocessor
@@ -12,6 +11,7 @@ Description: Development in C++
   o Literate programming tools for C++
   o An extensible C++ compiler
 Packages:
+# FIXME: er, arn't task packages going away?
  task-devel-common
  g++
  cpp

@@ -1,13 +1,16 @@
 Task: desktop
 Section: user
-Description: X Desktop
- This package provides the basic "desktop" software, including a variety
- of window managers, session managers, file managers and web browsers. It
- incorporates the basic GNOME and KDE desktops, and provides a display
- manager which gives lets the user choose between the two.
+Description: desktop environment
+ This task provides basic "desktop" software, including a variety
+ of session managers, file managers and web browsers. It incorporates
+ both the GNOME and KDE desktops, and provides a display manager
+ which lets the user choose between the two.
 Packages:
-  # task-x-window-system-core
-  wmaker
+  # FIXME: not in a releasable state until it pulls in X too!
+  # task-x-window-system-core (?)
+  # TODO: we really should have kde and gnome meta-packages, which this
+  # task could just pull in, rather than having to track all of kde and
+  # gnome here.
   gnome-session
   gnome-panel
   gnome-control-center
@@ -47,7 +50,5 @@ Packages:
   kiconedit
   ksnapshot
   kruler
-  enlightenment
-  fvwm
-  qvwm
   mozilla
+  menu

@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.11 2001/05/20 12:05:54 ajt Exp $ */
+/* $Id: data.c,v 1.12 2001/05/23 17:39:54 joeyh Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -309,7 +309,8 @@ static void walktasks(const void *t, const VISIT which, const int depth)
   }
 }
 
-void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs)
+void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs,
+		   unsigned char showempties)
 {
   /* Reads a task definition file, and populates internal data structures
    * with information about the tasks defined therein.
@@ -322,7 +323,10 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs)
   FILE *f;
   char buf[BUF_SIZE];
   char *task, *shortdesc, *longdesc, *section;
-
+  struct package_t *p;
+  struct task_t *t;
+  char *package;
+  
   f = fopen(fn, "r");
   if (f == NULL) PERROR(fn);
 
@@ -363,11 +367,7 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs)
       
       /* packages_readlist must be called before this function, so we can
        * tell if any packages are in this task, and ignore it if none are. */
-      if (tasks_find(tasks, task)) {
-        struct package_t *p;
-        struct task_t *t;
-	char *package;
-
+      if (showempties || tasks_find(tasks, task)) {
 	/* This is a fake package to go with the task. I add the task-
 	 * prefix to the package name to ensure that adding this fake
 	 * package stomps on the toes of no real package. */
@@ -384,7 +384,7 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs)
 	
         t = addtask(tasks, task, "");
         t->task_pkg = p;
-      };
+      }
 
       if (task != NULL) FREE(task);
       if (shortdesc != NULL) FREE(shortdesc);

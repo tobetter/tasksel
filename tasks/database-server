@@ -1,7 +1,8 @@
 Task: database-server
 Section: server
-Description: PostgreSQL database
- This package installs client and server packages for the PostgreSQL database.
+# HELP: Would "relational database server" be a better short desk?
+Description: SQL database
+ This task selects client and server packages for the PostgreSQL database.
  .
  PostgreSQL is an SQL relational database, offering increasing SQL92
  compliance and some SQL3 features.  It is suitable for use with multi-user

@@ -1,13 +1,12 @@
 Task: python-dev
 Section: devel
-Description: Full Python development environment
- This package provides almost all of the Debian-packaged Python tools
+Description: Python development
+ Almost all of the Debian-packaged Python tools
  and extensions, for developing scripts and simple or complex applications
  in Python.
- .
- Please see task-python for additional information.
 Packages:
- # task-python
+ python-base
+ python-doc
  ddd
  dpkg-python
  gadfly

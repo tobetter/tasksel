@@ -1,3 +1,46 @@
+tasksel (1.3-2) unstable; urgency=low
+
+  * Modifications to existing tasks:
+    - Replaced talk of "this [meta]package" with "this task", and like
+      changes.
+    - In l10n tasks, s/-speaking// for consistency.
+    - Make all l10n tasks include locales. It's in base, so this is of
+      dubious utility, but some had it and some not.
+    - Changed short descriptions of basic-desktop and desktop in an attempt
+      to clarify how they're different.
+    - Added some comments here and there for unresolved issues.
+    - Largely rewrote Debian Jr. descriptions.
+    - Added menu to desktop task.
+    - Rejiggered mail-server, to be a general purpose mail server, not just
+      imap.
+    - Moved samba-server to file-server, and made that include nfs stuff
+      too.
+    - Added a print-server task, that also includes samba, along with other
+      stuff.
+    - Killed debian-dev(el) task, since it does not meet our task criteria
+      -- nowhere near 10% of debian users are debian developers (we hope!),
+      and probably not enough regular users will use this package to make
+      up the difference. This is my own package, so I'm willing to be
+      persuaded otherwise, though..
+    - Removed misc window managers from the desktop task. It is unnecessary
+      to list them there, since anXious will let the user choose.
+    - Killed the demo tasks.
+    - Went for consistent capitalization of the short descriptions. Just
+      capitalize proper names. I'm not sure if I like this effect, we may
+      want to capitalize the first word of each description too.
+    - Sundry other changes of little note.
+  * Replaced several occurrances of "task packages" with "tasks" elsewhere
+    in tasksel.
+  * Added -a switch, to show all tasks, even empties. Mostly useful before
+    we get tasks into the Packages files, for a global overview of how the
+    system will eventually look.
+  * Added lint check to makedesc.pl -- it will warn at build time
+    about tasks that list unavailable packages. This caught several
+    references to virtual packages, etc already, that need to be fixed..
+  * VERSION in Makefile automatically tracks this changelog.
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 22 May 2001 22:36:00 -0400
+
 tasksel (1.3-1) unstable; urgency=low
 
   * Joey Hess:

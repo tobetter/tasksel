@@ -1,11 +1,10 @@
 Task: russian
 Section: l10n
-Description: Russian-speaking environment
- This task package installs modifications and documentation in russian
- to help russian speaking people using Debian.
- .
- This package doesn't depend on packages that depend on X.
+Description: Russian environment
+ This task installs modifications and documentation in Russian
+ to help Russian speaking people using Debian.
 Packages:
+ locales
  console-cyrillic
  manpages-ru
  irussian

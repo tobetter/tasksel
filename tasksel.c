@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.11 2001/05/18 02:02:02 joeyh Exp $ */
+/* $Id: tasksel.c,v 1.12 2001/05/23 17:39:54 joeyh Exp $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -35,7 +35,9 @@ void help(void)
   fprintf(stderr, "\t%s\n", _("-r -- install all required-priority packages"));
   fprintf(stderr, "\t%s\n", _("-i -- install all important-priority packages"));
   fprintf(stderr, "\t%s\n", _("-s -- install all standard-priority packages"));
-  fprintf(stderr, "\t%s\n\n", _("-n -- don't show UI; use with -r or -i usually"));
+  fprintf(stderr, "\t%s\n", _("-n -- don't show UI; use with -r or -i usually"));
+  fprintf(stderr, "\t%s\n", _("-a -- show all tasks, even those with no packages in them"));
+  fprintf(stderr, "\n");
   exit(0);
 }
 
@@ -123,6 +125,7 @@ int main(int argc, char * const argv[])
   int i, c, r = 0;
   unsigned char testmode = 0, queueinstalls = 0, installreqd = 0;
   unsigned char installimp = 0, installstd = 0, noninteractive = 0;
+  unsigned char showempties = 0;
   struct packages_t packages;
   struct tasks_t tasks;
   struct package_t **pkglist;
@@ -135,7 +138,7 @@ int main(int argc, char * const argv[])
   textdomain(PACKAGE);
   
   while (1) {
-    c = getopt(argc, argv, "tqrins");
+    c = getopt(argc, argv, "tqrinsa");
     if (c == -1) break;
 
     switch (c) {
@@ -145,6 +148,7 @@ int main(int argc, char * const argv[])
       case 'i': installimp = 1; break;
       case 's': installstd = 1; break;
       case 'n': noninteractive = 1; break;
+      case 'a': showempties = 1; break;
       default: help();
     }
   }
@@ -157,10 +161,10 @@ int main(int argc, char * const argv[])
   packages_readlist(&tasks, &packages);
   
   /* TODO: should probably read in all files in a directory. */
-  taskfile_read(TASKDESC, &tasks, &packages);
+  taskfile_read(TASKDESC, &tasks, &packages, showempties);
 
   if (tasks.count == 0) {
-    fprintf(stderr, _("No task packages found on this system.\nDid you update your available file?"));
+    fprintf(stderr, _("No tasks found on this system.\nDid you update your available file?"));
     return 255;
   }
   

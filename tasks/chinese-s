@@ -1,13 +1,9 @@
 Task: chinese-s
 Section: l10n
-Description: Simplified Chinese environment
- This 'task package' installs programs, data files, fonts, and
+Description: simplified Chinese environment
+ This task installs programs, data files, fonts, and
  documentation that makes it easier to use Debian for
  Simplified-Chinese-related operations.
- .
- Please read /usr/share/doc/task-chinese-s/README for more information.
- .
- (The 's' in the package name stands for 'Simplified Chinese')
 Packages:
   locales
   debian-zh-faq-s
@@ -35,4 +31,3 @@ Packages:
   cxterm-gb
   unifont
   cedictgb
-

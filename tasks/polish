@@ -1,9 +1,10 @@
 Task: polish
 Section: l10n
-Description: Polish-speaking environment
- This task package installs modifications and documentation in Polish
- to help Polish speaking people using Debian.
+Description: Polish environment
+ This task installs packages and documentation in Polish
+ to help Polish speaking people use Debian.
 Packages:
+ locales
  manpages-pl
  fonty
  konwert

@@ -1,18 +1,16 @@
 Task: basic-desktop
 Section: user
-Description: X Window System (core components)
- This metapackage provides (by depending upon) the essential components for a
- standalone workstation running the X Window System.  It provides the X
- libraries, an X server, a set of fonts, and a group of basic X clients and
- utilities.
- .
- Higher level metapackages, such as those for desktop environments, can depend
- on this package and simplify their dependencies.
+Description: X window system
+ This task provides the essential components for a standalone workstation
+ running the X Window System. It provides the X libraries, an X server, a
+ set of fonts, and a group of basic X clients and utilities.
  .
  It should be noted that a package providing x-window-manager and a package
  providing x-terminal-emulator should also be installed to ensure a
  comfortable X experience.
 Packages:
+# FIXME: It would be better if Branden maintained this list by way of a
+# metapackage that we could just list here.
  xfree86-common
  xserver-common
  xserver-xfree86

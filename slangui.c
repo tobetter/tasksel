@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.21 2001/05/18 02:02:02 joeyh Exp $ */
+/* $Id: slangui.c,v 1.22 2001/05/23 17:39:54 joeyh Rel $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -72,10 +72,10 @@ static int *_displayhint = NULL;
 static int _displaylines;
 
 struct { char *section, *desc; } sectiondesc[] = {
-  { "user",   "End-user Tools" },
+  { "user",   "End-user" },
   { "server", "Servers" },
   { "devel",  "Development" },
-  { "l10n",   "Localisation" },
+  { "l10n",   "Localization" },
   { "hware",  "Hardware Support" },
   { "misc",   "Miscellaneous" },
   {0}
@@ -431,7 +431,7 @@ int ui_drawscreen(void)
   SLsmg_set_color(DEFAULTOBJ);
   ui_drawbox(CHOOSEROBJ, _chooserinfo.rowoffset - 1, _chooserinfo.coloffset - 1, _chooserinfo.height + 5, _chooserinfo.width + 2, 1);
   ui_title(_chooserinfo.rowoffset - 1, _chooserinfo.coloffset - 1, COLUMNS - 3, 
-	   _("Select task packages to install"));
+	   _("Select tasks to install"));
   
   for (i = _chooserinfo.topindex; i < _chooserinfo.topindex + _chooserinfo.height; i++)
     ui_drawchooseritem(i);

@@ -1,10 +1,8 @@
 Task: junior
 Section: user
-Description: Install a complete Debian Jr. system
- This will provide a complete Debian Jr. system.  If you would like to
- pick and choose individual components to install instead, then do not
- install this package.  Instead, install the individual junior-* meta
- packages separately.
+Description: Debian Jr.
+ This task will provide a complete Debian Jr. system. Debian Jr. is a
+ collection of Debian packages suitable for children.
 Packages:
  junior-toys
  junior-math

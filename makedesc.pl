@@ -24,19 +24,36 @@
 my $dir=shift or die "no directory specified\n";
 my $file=shift or die "no file specified\n";
 
+my %package;
+my $dolint=1;
+{
+	local $/="\n\n";
+	if (! open (AVAIL, "/var/lib/dpkg/available")) {
+		warn "cannot real available file, so disabling lint check\n";
+		$dolint=0;
+	}
+	while (<AVAIL>) {
+		my ($package)=/Package:\s*(.*?)\n/;
+		$package{$package}=1;
+	}
+	close AVAIL;
+}
+
 open (OUT, ">$file") or die ">$file: $!";
 
 use File::Find;
 find(\&processfile, $dir);
 
 sub processfile {
-	return unless /^[-+_.a-z0-9]+$/ and -f $_;
-	open (IN, $_) or die "$_: $!";
+	my $file=$_; # File::Find craziness.
+	return unless $file =~ /^[-+_.a-z0-9]+$/ and -f $file;
+	open (IN, $file) or die "$file: $!";
 	my %fields;
 	my $field="";
 	while (<IN>) {
 		chomp;
 		next if /^\s*#/;
+		s/#.*//;
 
 		if (/^\s/) {
 			$fields{$field}.="\n$_";
@@ -48,6 +65,17 @@ sub processfile {
 		}
 	}
 	close IN;
+
+	# Basic lint of the listed packages.
+	# TODO: a better lint would incloude checks for conflicting
+	# packages. Hard tho.
+	if ($dolint) {
+		foreach (split ' ', $fields{packages}) {
+			if (! $package{$_}) {
+				print STDERR "$file: $_ is not a valid package.\n";
+			}
+		}
+	}
 
 	print OUT map { ucfirst($_).": ".$fields{$_}."\n" }
 		qw{task section description};
