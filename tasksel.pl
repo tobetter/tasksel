@@ -270,7 +270,7 @@ my @tasks=map { hide_dependent_tasks($_) } map { task_test($_) }
 
 if ($options{"list-tasks"}) {
 	print $_->{task}."\t".$_->{shortdesc}."\n"
-		foreach grep { $_->{_display} } @tasks;
+		foreach order_for_display(grep { $_->{_display} } @tasks);
 	exit(0);
 }
 
