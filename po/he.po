@@ -1,32 +1,33 @@
-# English translation of PACKAGE.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# English translation of tasksel.
+# Copyright (C) 2004 THE tasksel'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the tasksel package.
 # <>, 2004.
 # , fuzzy
 # 
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: tasksel\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-29 13:21-0500\n"
-"PO-Revision-Date: 2004-04-07 13:48+0200\n"
+"PO-Revision-Date: 2004-06-13 00:36+0300\n"
 "Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
-"Language-Team: English <en@li.org>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
-#: ../data.c:307
-#: ../data.c:321
+#: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr ""
+msgstr "לא יכול להקצות זיכרון לבאפר מספור"
 
 #: ../macros.h:42
 #, c-format
 msgid ""
 "Fatal error encountered at %s:%d\n"
 "\t"
-msgstr ""
+msgstr "שגיאה פטלית קרתה ב-%s:%d\n"
+"\t"
 
 #: ../macros.h:51
 #, c-format
@@ -34,9 +35,10 @@ msgid ""
 "I/O error at %s:%d\n"
 "\t"
 msgstr ""
+"שגיאה I/O ב-%s:%d\n"
+"\t"
 
-#: ../slangui.c:18
-#: ../slangui.c:19
+#: ../slangui.c:18 ../slangui.c:19
 msgid "(no description)"
 msgstr "(אין תיאור)"
 
@@ -66,32 +68,31 @@ msgstr "שונות"
 
 #: ../slangui.c:219
 msgid "Unable to initialize the terminal"
-msgstr ""
+msgstr "לא מצליח לאתחל את המסוף"
 
 #: ../slangui.c:221
 msgid "Unable to initialize screen output"
-msgstr ""
+msgstr "לא מצליח לאתחל את פלט המסך"
 
 #: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
-msgstr ""
+msgstr "לא מצליח לאתחל את ממשק המקלדת"
 
 #: ../slangui.c:239
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr ""
+msgstr "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
 
 #: ../slangui.c:393
 msgid "^Finish"
 msgstr "^סיום"
 
-#: ../slangui.c:401
-#: ../slangui.c:402
+#: ../slangui.c:401 ../slangui.c:402
+#, fuzzy
 msgid "Task ^Info"
-msgstr ""
+msgstr "Task ^Info"
 
-#: ../slangui.c:406
-#: ../slangui.c:407
+#: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
 msgstr "^עזרה"
 
@@ -103,12 +104,10 @@ msgstr "בחר משימות להתקנה"
 msgid "Ok"
 msgstr "OK"
 
-#: ../slangui.c:691
-#: ../slangui.c:705
-#: ../slangui.c:816
+#: ../slangui.c:691 ../slangui.c:705 ../slangui.c:816
 #, c-format
 msgid "Index out of bounds: %d >= %d"
-msgstr ""
+msgstr "אינדקס מחוץ לגבולות: %d >= %d"
 
 #: ../slangui.c:782
 msgid "Help"
@@ -116,9 +115,14 @@ msgstr "עזרה"
 
 #: ../slangui.c:783
 msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a given task.\n"
+"Tasks allow you to quickly install a selection of packages that performs a "
+"given task.\n"
 "\n"
-"The main chooser list shows a list of tasks that you can choose to install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the task at the cursor. You can also press A to select all tasks, or N to deselect all tasks. Pressing Q will exit this program and begin installation of your selected tasks.\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
 "\n"
 "Thank you for using Debian.\n"
 "\n"
@@ -133,6 +137,10 @@ msgid ""
 "\n"
 "Included packages:\n"
 msgstr ""
+"תיאור:\n"
+"%s\n"
+"\n"
+"חבילות כלולות:\n"
 
 #: ../slangui.c:832
 msgid "(no description available)"
@@ -140,50 +148,51 @@ msgstr "(אין תיאור זמין)"
 
 #: ../tasksel.c:33
 msgid "Unknown signal seen"
-msgstr ""
+msgstr "נצפה אות לא מזוהה"
 
 #: ../tasksel.c:39
 #, c-format
 msgid "tasksel install <task>\n"
-msgstr ""
+msgstr "tasksel install <task>\n"
 
 #: ../tasksel.c:40
 #, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
-msgstr ""
+msgstr "tasksel [options]; כאשר options הוא כל שילוב של:\n"
 
 #: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr ""
+msgstr "-t -- test mode; אל תריץ apt-get ביציאה"
 
 #: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
+"-q -- queue installs; אל תתקין חבילות עם apt-get;\n"
+"\t\tרק הכנס אותם לתור של dpkg"
 
 #: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
-msgstr ""
+msgstr "-r -- התקן את כל החבילות שבעדיפות נדרשת"
 
 #: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
-msgstr ""
+msgstr "-i -- התקן את כל החבילות החשובות"
 
 #: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
-msgstr ""
+msgstr "-s -- התקן את כל החבילות הרגילות"
 
 #: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr ""
+msgstr "-n -- אל תראה ממשק משתמש; בדרך כלל שימושי עם  -r או -i"
 
 #: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr ""
+msgstr "-a -- הראה את כל המשימות, גם אם אין בהן חבילות"
 
-#: ../tasksel.c:88
-#: ../tasksel.c:123
+#: ../tasksel.c:88 ../tasksel.c:123
 #, c-format
 msgid "No packages selected\n"
 msgstr "לא נבחרו חבילות\n"
@@ -191,19 +200,19 @@ msgstr "לא נבחרו חבילות\n"
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
+msgstr "לא נמצאו חבילות על מערכת זאת.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
-msgstr ""
+msgstr "לא יכול להקצות זיכרון לעליה"
 
 #: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
-msgstr ""
+msgstr "לא יכול להקצות %d בתים בזיכרון"
 
 #: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
-msgstr ""
+msgstr "לא יכול להקצות מחדש %d בתים בזיכרון"
 
