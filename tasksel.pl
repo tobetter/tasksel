@@ -396,8 +396,10 @@ sub main {
 	}
 	
 	# The interactive bit.
+	my $interactive=0;
 	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
 	if (@list && ! $options{"no-ui"} && ! $options{install} && ! $options{remove}) {
+		$interactive=1;
 		if (! $options{"new-install"}) {
 			# Find tasks that are already installed.
 			map { $_->{_installed} = task_installed($_) } @list;
@@ -444,10 +446,6 @@ sub main {
 				push @aptitude_remove, task_packages($task, 0);
 			}
 		}
-		# Clear screen before running aptitude.
-		if ((@aptitude_remove || @aptitude_install) && ! $options{test}) {
-			system("clear");
-		}
 	}
 
 	# Mark dependnent packages for install if their dependencies are met.
@@ -463,7 +461,13 @@ sub main {
 	}
 
 	# Add tasks to install.
-	push @aptitude_install, map { task_packages($_, 1) } grep { $_->{_install} } @tasks;
+	my @to_install=map { task_packages($_, 1) } grep { $_->{_install} } @tasks;
+	push @aptitude_install, @to_install;
+	
+	# Clear screen before running aptitude.
+	if ($interactive && (@aptitude_remove || @aptitude_install) && ! $options{test}) {
+		system("clear");
+	}
 
 	# Remove any packages we were asked to.
 	if (@aptitude_remove) {
@@ -481,9 +485,8 @@ sub main {
 	# And finally, act on selected tasks.
 	if (@aptitude_install) {
 		# If aptitude is just being run with no tasks preselected 
-		# to install, remove the --visual-preview parameter and
-		# just go to regular aptitude.
-		if (@aptitude_install == 1 && $aptitude_install[0] eq "--visual-preview") {
+		# to install, run aptitude w/o the --visual-preview parameter.
+		if (! @to_install) {
 			if ($options{test}) {
 				print "aptitude\n";
 			}
