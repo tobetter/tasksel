@@ -1,8 +1,11 @@
-tasksel (1.45) UNRELASED; urgency=low
+tasksel (1.45) unstable; urgency=HIGH
 
   * Joey Hess
     - Add myspell-fr-gut to french task.
     - Add subversion to the c-dev task.
+    - Fix mysterious tab damange in rules file.
+    - Move the no.po linking code to before build.
+    - High urgency upload to get to testing in time.
   * Updated translations:
     - Rene Engelhard
       - Updated and unfuzzied German translations.
@@ -21,7 +24,7 @@ tasksel (1.45) UNRELASED; urgency=low
       - Added Traditional Chinese transaltion (tasks/po/zh_TW.po) and updated
         po/zh_TW.po, by Tetralet.
 
- -- Ognyan Kulev <ogi@fmi.uni-sofia.bg>  Sun,  7 Mar 2004 12:23:07 +0200
+ -- Joey Hess <joeyh@debian.org>  Mon,  8 Mar 2004 20:53:33 -0500
 
 tasksel (1.44) unstable; urgency=low
 
