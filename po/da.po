@@ -1,12 +1,12 @@
-# Copyright (C) 2001 Free Software Foundation, Inc.
-# Claus Hindsgaul <claus_h@image.dk>, 2002
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Claus Hindsgaul <claus_h@image.dk>, 2002-2003
 # Morten Brix Pedersen <morten@wtf.dk>, 2001.
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-07-31 21:32-0400\n"
-"PO-Revision-Date: 2002-05-11 10:20GMT\n"
+"PO-Revision-Date: 2003-08-12 10:20GMT\n"
 "Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -77,10 +77,10 @@ msgid "Unable to initialize keyboard interface"
 msgstr "Kunne ikke klargøre tastatur"
 
 #: ../slangui.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
 msgstr ""
-"Debian opgaveinstallering (task installer) v%s - (c) 1999-2001 SPI med flere"
+"Debian opgaveinstallering (task installer) v%s - (c) 1999-2003 SPI med flere"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -206,13 +206,12 @@ msgid "No packages selected\n"
 msgstr "Ingen valgte pakker\n"
 
 #: ../tasksel.c:192
-#, fuzzy
 msgid ""
 "No tasks found on this system.\n"
 "Did you update your available file? Try running dselect update.\n"
 msgstr ""
 "Fandt ingen pakker på dette system.\n"
-"Opdaterede du din liste med ledige filer?\n"
+"Opdaterede du din liste med ledige filer? Prøv at køre dselect update.\n"
 
 #: ../util.c:20
 msgid "Cannot allocate memory for strdup"
