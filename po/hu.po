@@ -6,54 +6,119 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 0.1\n"
-"POT-Creation-Date: 2000-01-10 08:46+0100\n"
-"PO-Revision-Date: 2000-01-10 08:50+0100\n"
+"POT-Creation-Date: 2000-02-07 07:45+0100\n"
+"PO-Revision-Date: 2000-02-07 07:50+0100\n"
 "Last-Translator: Risko Gergely <risko@njszki.hu>\n"
 "Language-Team: Hungarian Debian team <forditas@njszki.hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: ISO-8859-2\n"
 
-#: ../slangui.c:109
+#: ../slangui.c:111
 msgid "Unable to initialize the terminal"
 msgstr "A terminál megnyitása szikertelen"
 
-#: ../slangui.c:111
+#: ../slangui.c:113
 msgid "Unable to initialize screen output"
 msgstr "A képernyõ kimenetének megnyitása sikertelen"
 
-#: ../slangui.c:112
+#: ../slangui.c:114
 msgid "Unable to initialize keyboard interface"
 msgstr "A billentyû inicializása nem sikerült"
 
-#: ../slangui.c:129
+#: ../slangui.c:131
 msgid "Debian Task Installer"
 msgstr "Debian Task telepítõ"
 
-#: ../slangui.c:130
+#: ../slangui.c:132
 msgid "(c) 1999 SPI and others"
 msgstr "(c) 1999 SPI és mások"
 
-#: ../slangui.c:135
-msgid " h - Help    SPACE - Toggle selection    i - Task info    q - Exit"
-msgstr " h - Súgó    SPACE - válsztás            i - Task info    q - Kilépés"
+#: ../slangui.c:285
+msgid "^Quit"
+msgstr "^Quit"
 
-#: ../slangui.c:264
+#: ../slangui.c:293 ../slangui.c:294
+msgid "Task ^Info"
+msgstr "Task ^Info"
+
+#: ../slangui.c:298 ../slangui.c:299
+msgid "^Help"
+msgstr "^Help"
+
+#: ../slangui.c:331
 msgid "Select task packages to install"
 msgstr "Válaszd ki a telepítendõ taskokat"
 
-#: ../slangui.c:415
+#: ../slangui.c:466
+msgid "Ok"
+msgstr "Ok"
+
+#: ../slangui.c:634
 msgid "Help"
 msgstr "Súgó"
 
-#: ../slangui.c:449
+#: ../slangui.c:660
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Dependent packages:\n"
+msgstr ""
+"Leírás:\n"
+"%s\n"
+"\n"
+"Szükséges csomagok:\n"
+
+#: ../slangui.c:668
 msgid "(no description available)"
 msgstr "(leírás nem érhetõ el)"
 
-#: ../tasksel.c:22
+#: ../tasksel.c:23
 msgid "Unknown signal seen"
 msgstr "Ismeretnel signal"
 
 #: ../tasksel.c:30
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [options]; ahol az options bármilyen kombinációja a következõknek:\n"
+
+#: ../tasksel.c:31
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- test mode; nem futtatja az apt-get-et kilépéskor"
+
+#: ../tasksel.c:32
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- queue installs; nem telepíti a csomagokat az apt-get-tel;\n"
+"\t\tcsak a dpkg sorba rakja be õket"
+
+#: ../tasksel.c:33
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- az összes required prioritású csomag telepítése"
+
+#: ../tasksel.c:34
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- az összes important priritású csomag telepítése"
+
+#: ../tasksel.c:35
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- az összes standard prioritású csomag telepítése"
+
+#: ../tasksel.c:36
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- nem mutat UI-t; a -r vagy -i opcióhoz"
+
+#: ../tasksel.c:137
+msgid ""
+"No task packages found on this system.\n"
+"Did you update your available file?"
+msgstr ""
+"Task csomagok nem találhatóak a rendszeren.\n"
+"Frissítetted az available file-odat?"
+
+#~ msgid " h - Help    SPACE - Toggle selection    i - Task info    q - Exit"
+#~ msgstr ""
+#~ " h - Súgó    SPACE - válsztás            i - Task info    q - Kilépés"
