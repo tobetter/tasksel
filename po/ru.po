@@ -1,3 +1,4 @@
+# translation of tasksel-tasksel_ru.po to Russian
 # translation of tasksel-tasksel_ru.po to Русский язык
 # translation of ru.po to Russian
 # translation of tasksel_ru.po to Russian
@@ -5,15 +6,17 @@
 # Copyright (C) 2000, 2004 Free Software Foundation, Inc.
 # Peter Novodvorsky <petya@logic.ru>, 2000.
 # Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004.
+# Yuri Kozlov <yuray@id.ru>, 2004.
+# Yuriy Talakan' <yt@amur.elektra.ru>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasksel_ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-20 22:44-0400\n"
-"PO-Revision-Date: 2004-04-12 13:42+0200\n"
-"Last-Translator: Nikolai Prokoschenko <nikolai@prokoschenko.de>\n"
-"Language-Team: Русский язык <debian-russian@lists.debian.org>\n"
+"POT-Creation-Date: 2004-07-24 04:53-0400\n"
+"PO-Revision-Date: 2004-07-24 08:39+1000\n"
+"Last-Translator: Yuriy Talakan' <yt@amur.elektra.ru>\n"
+"Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,8 +24,9 @@ msgstr ""
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../tasksel.pl:241
+#: ../tasksel.pl:289
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -38,168 +42,21 @@ msgid ""
 "\t    --task-packages list available packages in a task\n"
 "\t    --task-desc     returns the description of a task\n"
 msgstr ""
+"Использование:\n"
+"tasksel install <задание>\n"
+"tasksel remove <задание>\n"
+"tasksel [опции]; где опциями в любой комбинации могут быть:\n"
+"\t-t --test           тестовый режим; ничего не делается\n"
+"\t-r --required       установить все пакеты с приоритетом \"необходимый\"\n"
+"\t-i --important      установить все пакеты с приоритетом \"важный\"\n"
+"\t-s --standard       установить все пакеты с приоритетом \"стандартный\"\n"
+"\t-n --no-ui          не запускать пользовательский интерфейс; обычно "
+"используется с -r или -i\n"
+"\t    --new-install   автоматическая установка некоторых заданий\n"
+"\t    --list-tasks    показать список возможных заданий и выйти\n"
+"\t    --task-packages показать список доступных пакетов в задании\n"
+"\t    --task-desc     показать описание задания\n"
 
-#: ../tasksel.pl:392 ../tasksel.pl:403
+#: ../tasksel.pl:460 ../tasksel.pl:473
 msgid "aptitude failed"
-msgstr ""
-
-#~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "Не удалось зарезервировать память для спискового буфера"
-
-#~ msgid ""
-#~ "Fatal error encountered at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Критическая ошибка в %s:%d\n"
-#~ "\t"
-
-#~ msgid ""
-#~ "I/O error at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Ошибка ввода-вывода в %s:%d\n"
-#~ "\t"
-
-#~ msgid "(no description)"
-#~ msgstr "(описания нет)"
-
-#~ msgid "End-user"
-#~ msgstr "Конечный пользователь"
-
-#~ msgid "Hardware Support"
-#~ msgstr "Поддержка оборудования"
-
-#~ msgid "Servers"
-#~ msgstr "Серверы"
-
-#~ msgid "Development"
-#~ msgstr "Разработка"
-
-#~ msgid "Localization"
-#~ msgstr "Локализация"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Разное"
-
-#~ msgid "Unable to initialize the terminal"
-#~ msgstr "Ошибка при инициализации терминала"
-
-#~ msgid "Unable to initialize screen output"
-#~ msgstr "Ошибка при инициализации вывода на экран"
-
-#~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "Ошибка инициализации клавиатуры"
-
-#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr "Debian Task Installer v%s - (c) 1999-2004 SPI и все, все, все."
-
-#~ msgid "^Finish"
-#~ msgstr "Закончить (^F)"
-
-#~ msgid "Task ^Info"
-#~ msgstr "Информация о задании (^I)"
-
-#~ msgid "^Help"
-#~ msgstr "Помощь (^H)"
-
-#~ msgid "Select tasks to install"
-#~ msgstr "Выберите устанавливаемые задания"
-
-#~ msgid "Ok"
-#~ msgstr "Ok"
-
-#~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Счётчик вышел за границы: %d >= %d"
-
-#~ msgid "Help"
-#~ msgstr "Помощь"
-
-#~ msgid ""
-#~ "Tasks allow you to quickly install a selection of packages that performs "
-#~ "a given task.\n"
-#~ "\n"
-#~ "The main chooser list shows a list of tasks that you can choose to "
-#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
-#~ "toggles the selection of the task at the cursor. You can also press A to "
-#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-#~ "program and begin installation of your selected tasks.\n"
-#~ "\n"
-#~ "Thank you for using Debian.\n"
-#~ "\n"
-#~ "Press enter to return to the task selection screen"
-#~ msgstr ""
-#~ "Задания позволяют быстро установить набор пакетов для соответствующего "
-#~ "задания.\n"
-#~ "\n"
-#~ "Главный список содержит названия пакетов которые вы можете установить. "
-#~ "Кнопки со стрелками передвигают курсор. Нажатием ENTER или пробела вы "
-#~ "добавляете/исключаете пакет из списка устанавлиеваемых. Также, вы можете "
-#~ "нажать A, чтобы добавить все пакеты или N, чтобы исключить их все. Нажав "
-#~ "на Q вы выйдете из программы и начнется установка выбранных пакетов.\n"
-#~ "\n"
-#~ "Спасибо за использование Debian.\n"
-#~ "\n"
-#~ "Нажмите ENTER, чтобы вернуться к экрану выбора заданий."
-
-#~ msgid ""
-#~ "Description:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Included packages:\n"
-#~ msgstr ""
-#~ "Описание:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Пакеты, включенные в задание:\n"
-
-#~ msgid "(no description available)"
-#~ msgstr "(описания нет)"
-
-#~ msgid "Unknown signal seen"
-#~ msgstr "Получен неизвестный сигнал"
-
-#~ msgid "tasksel install <task>\n"
-#~ msgstr "tasksel install <task>\n"
-
-#~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr "tasksel [опции]; где опции -- любая комбинация следующих ключей:\n"
-
-#~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- тестовый режим; не запускать apt-get при выходе"
-
-#~ msgid ""
-#~ "-q -- queue installs; do not install packages with apt-get;\n"
-#~ "\t\tjust queue them in dpkg"
-#~ msgstr ""
-#~ "-q -- поставить в очередь; не устанавливать пакеты\n"
-#~ "\t\tс помощью apt-get; просто поставить их в очередь dpkg"
-
-#~ msgid "-r -- install all required-priority packages"
-#~ msgstr "-r -- установить все необходимые пакеты"
-
-#~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- установить все важные пакеты"
-
-#~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- установить все пакеты с приоритетом \"стандартный\""
-
-#~ msgid "-n -- don't show UI; use with -r or -i usually"
-#~ msgstr "-n -- не показывать оболочку; используется с -r и -i"
-
-#~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr "-a -- показать все задания, даже если в них нет пакетов"
-
-#~ msgid "No packages selected\n"
-#~ msgstr "Не выбрано ни одного пакета\n"
-
-#~ msgid "No tasks found on this system.\n"
-#~ msgstr "Заданий не найдено!\n"
-
-#~ msgid "Cannot allocate memory for strdup"
-#~ msgstr "Не могу зарезервировать память для выполнения strdup"
-
-#~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "Не могу зарезервировать %d байтов памяти"
-
-#~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "Не могу зарезервировать %d байтов памяти"
+msgstr "программа aptitude завершилась неудачно"
