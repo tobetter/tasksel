@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2003-10-21 16:08+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -110,7 +110,6 @@ msgstr "Index mimo meze: %d >= %d"
 msgid "Help"
 msgstr "Nápovìda"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
@@ -129,11 +128,11 @@ msgstr ""
 "Pøipravené úlohy vám umo¾ní rychlý výbìr a instalaci balíkù plnících danou "
 "úlohu.\n"
 "\n"
-"Hlavní nabídka ukazuje seznam v¹ech úloh, které mù¾ete nainstalovat. "
-"Kurzor se pohybuje ¹ipkami. Stiskem klávesy Enter nebo mezera zvolíte "
-"úlohu, na kterou kurzor ukazuje. Stiskem A vyberete v¹echny úlohy, stiskem "
-"N se v¹echny úlohy odznaèí. Stisk klávesy Q ukonèí program a zaène "
-"instalace vybraných úkolù.\n"
+"Hlavní nabídka ukazuje seznam v¹ech úloh, které mù¾ete nainstalovat. Kurzor "
+"se pohybuje ¹ipkami. Stiskem klávesy Enter nebo mezera zvolíte úlohu, na "
+"kterou kurzor ukazuje. Stiskem A vyberete v¹echny úlohy, stiskem N se "
+"v¹echny úlohy odznaèí. Stisk klávesy Q ukonèí program a zaène instalace "
+"vybraných úkolù.\n"
 "\n"
 "Dìkujeme, ¾e jste si vybrali Debian.\n"
 "\n"
@@ -156,23 +155,25 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(popis není k dispozici)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Zachycen neznámý signál"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr "tasksel install <úloha>\n"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [pøepínaèe]; kde pøepínaèe jsou libovolnou kombinací:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- testovací mód; po zkonèení nespustí apt-get"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -180,48 +181,53 @@ msgstr ""
 "-q -- odlo¾ená instalace; nenainstaluje balíky pomocí apt-get;\n"
 "\t\tprovede pouze nastavení databáze dpkg"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- nainstaluj v¹echny balíky s prioritou required"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- nainstaluj v¹echny balíky s prioritou important"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- nainstaluj v¹echny balíky s prioritou standard"
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- nezobraz UI; obvykle pro pou¾ití s -r nebo -i"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr "-a -- zobraz v¹echny úlohy, i kdy¾ neobsahují ¾ádné balíky"
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Nebyl vybrán ¾ádný balík\n"
 
-#: ../tasksel.c:192
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"V systému nebyly nalezeny ¾ádné úlohy.\n"
-"Aktualizovali jste dostupné balíky? Zkuste spustit dselect update.\n"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr "Nemohu alokovat pamì» pro strdup"
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr "Nemohu alokovat %d bajtù pamìti"
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Nemohu realokovat %d bajtù pamìti"
+
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "V systému nebyly nalezeny ¾ádné úlohy.\n"
+#~ "Aktualizovali jste dostupné balíky? Zkuste spustit dselect update.\n"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2000-07-13 18:33+0400\n"
 "Last-Translator: Peter Novodvorsky <petya@logic.ru>\n"
 "Language-Team: Debian Russian Team <debian-russian@lists.debian.org>\n"
@@ -109,7 +109,6 @@ msgstr ""
 msgid "Help"
 msgstr "Помощь"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 #, fuzzy
 msgid ""
@@ -152,23 +151,25 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(описания нет)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Получен неизвестный сигнал"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr ""
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "taskset [опции]; где опции, это комбинация из ключей:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- тестовый режим; не запускать apt-get на выходе"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -176,52 +177,57 @@ msgstr ""
 "-q -- положить запросы об установке в очередь; не устанавливать пакеты\n"
 "\t\tс apt-get; просто положить их в очередь dpkg"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- установить все пакеты с приоритетом \"требуемый\""
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- установить все пакеты с приоритетом \"важный\""
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- установить все пакеты с приоритетом \"стандартный\""
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- не показывать пользовательский интерфейс; используется с -r и -i"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr ""
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Не выбрано ни одного пакета\n"
 
-#: ../tasksel.c:192
-#, fuzzy
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"В системе не найдено ни одного пакета.\n"
-"Вы обновляли ваш файл доступных пакетов?"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr ""
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr ""
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "В системе не найдено ни одного пакета.\n"
+#~ "Вы обновляли ваш файл доступных пакетов?"
 
 #~ msgid "Debian Task Installer"
 #~ msgstr "Установщик Заданий Debian"

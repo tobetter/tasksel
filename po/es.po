@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 0.1\n"
-"Report-Msgid-Bugs-To: Debian Spanish Team <debian-l10n-spanish@lists.debian.org>\n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2003-12-29 01:31+0100\n"
 "Last-Translator: Javier Fernandez-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team: Debian Spanish Team <debian-l10n-spanish@lists.debian.org>\n"
@@ -111,7 +111,6 @@ msgstr "Índice fuera de rango: %d >= %d"
 msgid "Help"
 msgstr "Ayuda"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
@@ -127,9 +126,15 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"Las tareas le permite le permiten instalar rápidamente una selección de paquetes que desempeñan una tarea dada.\n"
+"Las tareas le permite le permiten instalar rápidamente una selección de "
+"paquetes que desempeñan una tarea dada.\n"
 "\n"
-"La lista principal muestra una serie de tareas que usted puede escoger para instalar. Las teclas de flechas mueven el cursor. Pulsando INTRO o la BARRA ESPACIADORA cambia el estado de la selección de la tarea que esté bajo el cursor. Puede pulsar también A para seleccionar todas las tareas, o N para deseleccionar todas las tareas. Pulsando Q saldrá del programa y comenzará la instalación de las tareas seleccionadas.\n"
+"La lista principal muestra una serie de tareas que usted puede escoger para "
+"instalar. Las teclas de flechas mueven el cursor. Pulsando INTRO o la BARRA "
+"ESPACIADORA cambia el estado de la selección de la tarea que esté bajo el "
+"cursor. Puede pulsar también A para seleccionar todas las tareas, o N para "
+"deseleccionar todas las tareas. Pulsando Q saldrá del programa y comenzará "
+"la instalación de las tareas seleccionadas.\n"
 "\n"
 "Gracias por usar Debian.\n"
 "\n"
@@ -152,23 +157,25 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(no hay descripción disponible)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "He recibido una señal desconocida"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr "instalación de tasksel <tarea>\n"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [opciones]; donde opciones es una combinación de:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- modo de pruebas; no ejecuta apt-get al salir"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -177,54 +184,59 @@ msgstr ""
 "get;\n"
 "\t\tsólo los pone en la cola en dpkg"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- instala todos los paquetes con prioridad 'requerido'"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- instala todos los paquetes con prioridad 'importante'"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- instala todos los paquetes con prioridad 'estandar'"
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr ""
 "-n -- no muestra la interfaz de usuario; normalmente se usará con -r o -i"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr ""
 "-a -- muestra todas las tareas, incluso aquellas que no tienen paquetes"
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "No se ha seleccionado ningún paquete\n"
 
-#: ../tasksel.c:192
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"No se encontraron tareas en este sistema.\n"
-"¿Está seguro de que actualizó su fichero de paquetes disponibles? Intente"
-"ejecutar «dselect update».\n"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr "No se pudo reservar memoria para strdup"
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr "No se pudieron reservar %d bytes de memoria"
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "No se pudieron reasignar %d bytes de memoria"
+
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "No se encontraron tareas en este sistema.\n"
+#~ "¿Está seguro de que actualizó su fichero de paquetes disponibles? "
+#~ "Intenteejecutar «dselect update».\n"
 
 #~ msgid "Debian Task Installer"
 #~ msgstr "Instalador de Tareas de Debian"

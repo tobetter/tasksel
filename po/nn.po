@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2003-08-14 10:14MET\n"
 "Last-Translator: Petter Reinholdtsen <pere@hungry.com>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -111,7 +111,6 @@ msgstr "Indeks utanfor grensene: %d >= %d"
 msgid "Help"
 msgstr "Hjelp"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
@@ -157,23 +156,25 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(inga skildring tilgjengeleg)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Mottok ukjent signal"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr "tasksel install <profil>\n"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [val]; der val er ein kombinasjon av:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- testmodus; ikkje køyr apt-get når tasksel avsluttar"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -181,51 +182,55 @@ msgstr ""
 "-q -- legg installasjonane i kø; ikkje installer pakkar med apt-get,\n"
 "\t\tberre legg dei i køen til dpkg"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- installer alle pakkane med prioritet «naudsynt»"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- installer alle pakkane med prioritet «viktig»"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- installer alle pakkane med prioritet «standard»"
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- ikkje vis grensesnitt; vanlegvis brukt med -r eller -i"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr "-a -- vis alle oppgåver, sjølv dei som ikkje har pakkar"
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Ingen pakkar vald\n"
 
-#: ../tasksel.c:192
-#, fuzzy
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"Fann ingen profilar på dette systemet.\n"
-"Har du oppdatert fila «available»?\n"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr "Kan ikkje tilordna minne for strdup"
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr "Kan ikkje tilordna %d byte minne"
 
 # reallokera bør heita noko betre, men kva?
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Kan ikkje reallokera %d byte minne"
 
+#, fuzzy
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "Fann ingen profilar på dette systemet.\n"
+#~ "Har du oppdatert fila «available»?\n"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2001-11-23 22:30+0100\n"
 "Last-Translator: Marcin Owsiany <porridge@debian.org>\n"
 "Language-Team: Polish <porridge@debian.org>\n"
@@ -78,9 +78,9 @@ msgid "Unable to initialize keyboard interface"
 msgstr "Nie uda³o siê zainicjalizowaæ interfejsu klawiatury"
 
 #: ../slangui.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "Instalator zadañ Debiana v%s - (c) 1999-2001 SPI i inni"
+msgstr "Instalator zadañ Debiana v%s - (c) 1999-2003 SPI i inni"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -111,7 +111,6 @@ msgstr "Nieprawid³owy indeks: %d >= %d"
 msgid "Help"
 msgstr "Pomoc"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
@@ -158,23 +157,25 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(brak opisu)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Nieznany sygna³"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr "tasksel install <zadanie>\n"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [opcje]; gdzie opcje to kombinacja:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- tryb testowy; nie uruchamia apt-get przy wyj¶ciu"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -182,51 +183,56 @@ msgstr ""
 "-q -- kolejkuj instalacje; nie instaluj pakietów przy pomocy\n"
 "\t\tapt-get; jedynie kolejkuj je w dpkg"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- zainstaluj wszystkie wymagane pakiety"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- zainstaluj wszystkie wa¿ne pakiety"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- zainstaluj wszystkie standardowe pakiety"
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr ""
 "-n -- nie pokazuj interfejsu u¿ytkownika; zazwyczaj\n"
 "\t\tu¿ywane z -r lub -i"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr "-a -- pokazuj wszystkie zadania, nawet niezawieraj±ce pakietów"
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Nie wybrano ¿adnych pakietów\n"
 
-#: ../tasksel.c:192
-#, fuzzy
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"Nie znaleziono zadañ w systemie.\n"
-"Czy uaktualni³e¶(³a¶) plik dostêpnych pakietów?\n"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr "Nie uda³o siê zaalokowaæ pamiêci dla funkcji strdup"
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr "Nie uda³o siê zaalokowaæ %d bajtów pamiêci"
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Nie uda³o siê ponownie zaalokowaæ %d bajtów pamiêci"
+
+#, fuzzy
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "Nie znaleziono zadañ w systemie.\n"
+#~ "Czy uaktualni³e¶(³a¶) plik dostêpnych pakietów?\n"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2003-10-24 18:57+0900\n"
 "Last-Translator: Tomohiro KUBOTA <kubota@debian.org>\n"
 "Language-Team: Debian Japanese List <debian-japanese@lists.debian.org>\n"
@@ -23,7 +23,8 @@ msgstr "列挙バッファのためのメモリを確保できません"
 msgid ""
 "Fatal error encountered at %s:%d\r\n"
 "\t"
-msgstr "%s:%d で致命的エラーが起こりました\r\n"
+msgstr ""
+"%s:%d で致命的エラーが起こりました\r\n"
 "\t"
 
 #: ../macros.h:51
@@ -31,7 +32,8 @@ msgstr "%s:%d で致命的エラーが起こりました\r\n"
 msgid ""
 "I/O error at %s:%d\r\n"
 "\t"
-msgstr "%s:%d で入出力エラーが起こりました\r\n"
+msgstr ""
+"%s:%d で入出力エラーが起こりました\r\n"
 "\t"
 
 #: ../slangui.c:18 ../slangui.c:19
@@ -77,7 +79,7 @@ msgstr "キーボードインタフェースを初期化できません"
 #: ../slangui.c:239
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "Debian タスクインストーラ v%s - (c) 1999-20031999-2001 SPI 他"
+msgstr "Debian タスクインストーラ v%s - (c) 1999-2003 SPI 他"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -108,7 +110,6 @@ msgstr "インデックスが上限を超えています: %d >= %d"
 msgid "Help"
 msgstr "ヘルプ"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
@@ -124,9 +125,14 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"タスクとは、与えられた仕事を実行するためのパッケージを簡単にインストールするための仕組です。\n"
+"タスクとは、与えられた仕事を実行するためのパッケージを簡単にインストールする"
+"ための仕組です。\n"
 "\n"
-"メイン選択リストにはインストール可能なタスクの一覧が表示されます。矢印キーでカーソルを移動します。Enter かスペースバーを押すとカーソルのところにあるタスクの選択状態を交互に切り替えます。Aを押してすべてのタスクを選択したり、Nを押してすべてのタスクを非選択にすることもできます。Qを押すと、このプログラムを終了して選択したタスクのインストールを開始します。\n"
+"メイン選択リストにはインストール可能なタスクの一覧が表示されます。矢印キーで"
+"カーソルを移動します。Enter かスペースバーを押すとカーソルのところにあるタス"
+"クの選択状態を交互に切り替えます。Aを押してすべてのタスクを選択したり、Nを押"
+"してすべてのタスクを非選択にすることもできます。Qを押すと、このプログラムを終"
+"了して選択したタスクのインストールを開始します。\n"
 "\n"
 "Debian をご利用いただきありがとうございます。\n"
 "\n"
@@ -149,23 +155,25 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(説明がありません)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "未知のシグナルです"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr "tasksel は、<task> をインストールします。\n"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [オプション]; オプションは以下の任意の組み合わせ:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- テストモード; 終了時に実際には apt-get を実行しない"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -173,51 +181,56 @@ msgstr ""
 "-q -- キューインストール; apt-get でパッケージをインストールしない;\n"
 "\t\t単に dpkg のキューに入れる"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- 優先度「必須」のパッケージをすべてインストールする"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- 優先度「重要」のパッケージをすべてインストールする"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- 優先度「標準」のパッケージをすべてインストールする"
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- UI を表示しない; 通常 -r か -i とともに使用します"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr "-a -- パッケージを含まないものも含め、全てのタスクを表示する"
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "パッケージは選択されませんでした\n"
 
-#: ../tasksel.c:192
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"このシステムにはタスクリストがありません。\n"
-"available ファイルは更新しましたか? dselect の update を試してください。\n"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr "strdup のためのメモリ確保ができません"
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr "%d バイトのメモリが確保できません"
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "%d バイトのメモリが再確保できません"
+
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "このシステムにはタスクリストがありません。\n"
+#~ "available ファイルは更新しましたか? dselect の update を試してください。\n"
 
 #~ msgid "Debian Task Installer"
 #~ msgstr "Debian タスクインストーラ"

@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Taksel\n"
-"POT-Creation-Date: 2001-11-22 19:17+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2004-01-11 03:43+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
 "Language-Team: debian-l10n-dutch <debian-l10n-dutch@lists.debian.org>\n"
@@ -13,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data.c:277 ../data.c:291
+#: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
 msgstr "Kan geen geheugen toewijzen voor de opsombuffer"
 
@@ -44,73 +45,72 @@ msgid "End-user"
 msgstr "eindgebruiker"
 
 #: ../slangui.c:76
+msgid "Hardware Support"
+msgstr "Hardware-ondersteuning"
+
+#: ../slangui.c:77
 msgid "Servers"
 msgstr "Servers"
 
-#: ../slangui.c:77
+#: ../slangui.c:78
 msgid "Development"
 msgstr "Ontwikkeling"
 
-#: ../slangui.c:78
+#: ../slangui.c:79
 msgid "Localization"
 msgstr "Lokalisatie"
-
-#: ../slangui.c:79
-msgid "Hardware Support"
-msgstr "Hardware-ondersteuning"
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
 msgstr "Diversen"
 
-#: ../slangui.c:213
+#: ../slangui.c:219
 msgid "Unable to initialize the terminal"
 msgstr "Kon de terminal niet initaliseren"
 
-#: ../slangui.c:215
+#: ../slangui.c:221
 msgid "Unable to initialize screen output"
 msgstr "Kon schermuitvoer niet initializeren"
 
-#: ../slangui.c:216
+#: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
 msgstr "Kon toetsenbordinterface niet initialiseren"
 
-#: ../slangui.c:233
+#: ../slangui.c:239
 #, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
-msgstr "Debian Taak-installatieprogamma v%s - (c) 1999-2001 SPI en anderen"
+msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
+msgstr "Debian Taak-installatieprogamma v%s - (c) 1999-2003 SPI en anderen"
 
-#: ../slangui.c:387
+#: ../slangui.c:393
 msgid "^Finish"
 msgstr "^Afsluiten"
 
-#: ../slangui.c:395 ../slangui.c:396
+#: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
 msgstr "Taak ^Info"
 
-#: ../slangui.c:400 ../slangui.c:401
+#: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
 msgstr "^Help"
 
-#: ../slangui.c:435
+#: ../slangui.c:441
 msgid "Select tasks to install"
 msgstr "Welke taken wilt u installeren?"
 
-#: ../slangui.c:570
+#: ../slangui.c:576
 msgid "Ok"
 msgstr "Ok"
 
-#: ../slangui.c:679 ../slangui.c:693 ../slangui.c:804
+#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
 #, c-format
 msgid "Index out of bounds: %d >= %d"
 msgstr "Index is buiten bereik: %d >= %d"
 
-#: ../slangui.c:770
+#: ../slangui.c:776
 msgid "Help"
 msgstr "Help"
 
-#. TRANS: don't wrap lines because of different screen sizes!
-#: ../slangui.c:771
+#: ../slangui.c:777
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
 "given task.\n"
@@ -138,7 +138,7 @@ msgstr ""
 "\n"
 "Druk ENTER om terug te keren naar het taakselectie-venster"
 
-#: ../slangui.c:812
+#: ../slangui.c:818
 #, c-format
 msgid ""
 "Description:\n"
@@ -151,27 +151,29 @@ msgstr ""
 "\n"
 "Omvat volgende pakketten:\n"
 
-#: ../slangui.c:820
+#: ../slangui.c:826
 msgid "(no description available)"
 msgstr "(geen beschrijving beschikbaar)"
 
-#: ../tasksel.c:26
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Onbekend signaal waargenomen"
 
-#: ../tasksel.c:32
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr "tasksel install <taak>\n"
 
-#: ../tasksel.c:33
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [opties]; waar opties gelijk welke combinatie is van:\n"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- test modus; apt-get niet opstarten bij het afsluiten"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -180,48 +182,48 @@ msgstr ""
 "met apt-get;\n"
 "\t\tzet ze enkel in de wachtrij van dpkg"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- installeer alle pakketten met prioriteit=vereist"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- installeer alle pakketten met prioriteit=belangrijk"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- installeer alle pakketten met prioriteit=standaard"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- de UI niet tonen; gewoonlijk gebruikt samen met -r of -i"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr "-a -- toon alle taken, ook als ze geen pakketten bevatten"
 
-#: ../tasksel.c:81 ../tasksel.c:116
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Er zijn geen pakketten geselecteerd\n"
 
-#: ../tasksel.c:168
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file?\n"
+#: ../tasksel.c:197
+#, fuzzy, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
 "Kan op dit systeem geen taken vinden.\n"
 "Heeft u het beschikbaarheidsbestand bijgewerkt?\n"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr "Kan geen geheugen toewijzen voor strdup"
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr "Kan %d bytes geheugen niet toewijzen"
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Kan %d bytes geheugen niet opnieuw toewijzen"

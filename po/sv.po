@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2000-05-12 23:40+0200\n"
 "Last-Translator: peter karlsson <peter@softwolves.pp.se>\n"
 "MIME-Version: 1.0\n"
@@ -107,7 +107,6 @@ msgstr ""
 msgid "Help"
 msgstr "Hjälp"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 #, fuzzy
 msgid ""
@@ -150,23 +149,25 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(beskrivning saknas)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Okänd signal mottagen"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr ""
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [flaggor]; där flaggor kan vara en kombination av:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- testläge; kör inte apt-get vid avslutning"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -174,52 +175,57 @@ msgstr ""
 "-q -- köa installatioenr; installera inte paket med apt-get;\n"
 "\t\tköa dem bara i dpkg"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- installera alla paket med prioriteten \"krävs\""
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- installera alla paket med prioriteten \"viktig\""
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- installera alla paket med prioriteten \"normal\""
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- visa inte användargränssnittet; använd normalt med -r eller -i"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr ""
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Inga paket valda\n"
 
-#: ../tasksel.c:192
-#, fuzzy
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"Inga funktionspaket hittades på systemet.\n"
-"Uppgraderade du din lista över tillgängliga filer?"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr ""
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr ""
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "Inga funktionspaket hittades på systemet.\n"
+#~ "Uppgraderade du din lista över tillgängliga filer?"
 
 #~ msgid "Debian Task Installer"
 #~ msgstr "Funktionsinstalleraren"

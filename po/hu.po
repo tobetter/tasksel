@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2000-06-30 14:53+0100\n"
 "Last-Translator: Risko Gergely <risko@njszki.hu>\n"
 "Language-Team: Hungarian Debian team <forditas@njszki.hu>\n"
@@ -109,7 +109,6 @@ msgstr ""
 msgid "Help"
 msgstr "Súgó"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 #, fuzzy
 msgid ""
@@ -152,24 +151,26 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(leírás nem érhetõ el)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Ismeretnel signal"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr ""
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr ""
 "tasksel [options]; ahol az options bármilyen kombinációja a következõknek:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- test mode; nem futtatja az apt-get-et kilépéskor"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -177,52 +178,57 @@ msgstr ""
 "-q -- queue installs; nem telepíti a csomagokat az apt-get-tel;\n"
 "\t\tcsak a dpkg sorba rakja be õket"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- az összes required prioritású csomag telepítése"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- az összes important priritású csomag telepítése"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- az összes standard prioritású csomag telepítése"
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- nem mutat UI-t; a -r vagy -i opcióhoz"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr ""
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Nincsenek csomagok kiválasztva\n"
 
-#: ../tasksel.c:192
-#, fuzzy
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"Task csomagok nem találhatóak a rendszeren.\n"
-"Frissítetted az available file-odat?"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr ""
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr ""
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "Task csomagok nem találhatóak a rendszeren.\n"
+#~ "Frissítetted az available file-odat?"
 
 #~ msgid "Debian Task Installer"
 #~ msgstr "Debian Task telepítõ"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.23\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-10-11 14:46+0300\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2003-10-11 14:47+0300\n"
 "Last-Translator: Tommi Vainikainen <thv+debian@iki.fi>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
@@ -110,7 +110,6 @@ msgstr "Indeksi yli rajojen: %d >= %d"
 msgid "Help"
 msgstr "Ohje"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
@@ -157,25 +156,27 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(kuvausta ei saatavilla)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Tuntematon signaali saatu"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr "tasksel install <tehtävä>\n"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr ""
 "tasksel [valitsimet]; jossa valitsimet on mikä tahansa seuraavien "
 "yhdistelmä:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- kokeilutila; apt-getia ei suoriteta lopussa"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -183,31 +184,33 @@ msgstr ""
 "-q -- jonoasennukset; älä asenna paketteja apt-get:lla;\n"
 "\t\tlaita ne vain dpkg:n jonoon"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- asenna kaikki required-prioriteetin paketit"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- asenna kaikki tärkeä-prioriteetin paketit"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- asenna kaikki standardiprioriteetin paketit"
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- älä näytä käyttöliittymää; yleensä -r tai -i kanssa"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr "-a -- näytä kaikki tehtävät, myös ne joissa ei ole yhtään pakettia"
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Yhtään pakettia ei ole valittu\n"
 
-#: ../tasksel.c:192
+#: ../tasksel.c:197
+#, c-format
 msgid "No tasks found on this system.\n"
 msgstr "Järjestelmästä ei löytynyt tehtäviä.\n"
 

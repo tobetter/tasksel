@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2001-11-19 22:36-0200\n"
 "Last-Translator: Andre Luis Lopes <andrelop@ig.com.br>\n"
 "Language-Team: Debian-BR <debian-l10n-portuguese@lists.debian.org>\n"
@@ -77,9 +77,9 @@ msgid "Unable to initialize keyboard interface"
 msgstr "Não foi possível inicializar a interface de teclado"
 
 #: ../slangui.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "Instalador de Tarefas Debian versão %s (c) 1999-2001 SPI e outros"
+msgstr "Instalador de Tarefas Debian versão %s (c) 1999-2003 SPI e outros"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -110,7 +110,6 @@ msgstr "Índice fora dos limites: %d >= %d"
 msgid "Help"
 msgstr "Ajuda"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
@@ -157,23 +156,25 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(sem descrição disponível)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Visualizado sinal desconhecido"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr "tasksel install <tarefa>\n"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [opções]; onde opções é uma combinação de:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- modo de teste; atualmente não executa apt-get na saída"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -181,53 +182,58 @@ msgstr ""
 "-q -- coloca instalações na fila; não instala pacotes com apt-get;\n"
 "\t\tsomente os coloca na fila no dpkg"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- instala todos pacotes com prioridade requerida"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- instala todos os pacotes com prioridade importante"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- instala todos os pacotes com prioridade padrão"
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr ""
 "-n -- nãe exibe a interface de usuário (UI); usado normalmente com -r ou -i"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr "-a -- exibe todas as tarefas; mesmo aquelas que não contém pacotes"
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Nenhum pacote selecionado\n"
 
-#: ../tasksel.c:192
-#, fuzzy
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"Nenhuma tarefa encontrada neste sistema.\n"
-"Você atualizou seu arquivo de tarefas disponíveis ?\n"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr "Não foi possível alocar memória para strdup"
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr "Não foi possível alocar %d bytes de memória"
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Não foi possível realocar %d bytes de memória"
+
+#, fuzzy
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "Nenhuma tarefa encontrada neste sistema.\n"
+#~ "Você atualizou seu arquivo de tarefas disponíveis ?\n"
 
 #~ msgid "Package: "
 #~ msgstr "Pacote:"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-31 21:32-0400\n"
+"POT-Creation-Date: 2004-01-18 23:37+0200\n"
 "PO-Revision-Date: 2003-12-28 19:53EEST\n"
 "Last-Translator: Konstantinos Margaritis <markos@debian.org>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
@@ -30,7 +30,8 @@ msgid ""
 "Fatal error encountered at %s:%d\r\n"
 "\t"
 msgstr ""
-"Κάποιο ολέθριο σφάλμα συνέβη στο %s:%d\n\n"
+"Κάποιο ολέθριο σφάλμα συνέβη στο %s:%d\n"
+"\n"
 "\t"
 
 #: ../macros.h:51
@@ -39,7 +40,8 @@ msgid ""
 "I/O error at %s:%d\r\n"
 "\t"
 msgstr ""
-"Συνέβη σφάλμα I/O στο %s:%d\n\n"
+"Συνέβη σφάλμα I/O στο %s:%d\n"
+"\n"
 "\t"
 
 #: ../slangui.c:18 ../slangui.c:19
@@ -85,7 +87,8 @@ msgstr "Αδύνατη η αρχικοποίηση της διασύνδεσης
 #: ../slangui.c:239
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "Εγκαταστάτης Ομάδων Πακέτων του Debian v %s - (c) 1999-2003 SPI και άλλοι"
+msgstr ""
+"Εγκαταστάτης Ομάδων Πακέτων του Debian v %s - (c) 1999-2003 SPI και άλλοι"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -116,7 +119,6 @@ msgstr "Δείκτης εκτός ορίων: %d >= %d"
 msgid "Help"
 msgstr "Βοήθεια"
 
-#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
@@ -132,15 +134,16 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"Οι ομάδες πακέτων προσφέρουν τη δυνατότητα της γρήγορης εγκατάστασης λογισμικού "
-"που πραγματοποιεί μια συγκεκριμένη εργασία.\n"
+"Οι ομάδες πακέτων προσφέρουν τη δυνατότητα της γρήγορης εγκατάστασης "
+"λογισμικού που πραγματοποιεί μια συγκεκριμένη εργασία.\n"
 "\n"
 "Στο κυρίως μενού εμφανίζεται μια λίστα ομάδων πακέτων τις οποίες μπορείτε να "
-"επιλέξετε προς εγκατάσταση. Μπορείτε να μετακινήσετε το δρομέα χρησιμοποιώντας "
-"τα αντίστοιχα πλήκτρα ενώ πατώντας ENTER ή το πλήκτρο SPACE, εναλλάσσετε την "
-"κατάσταση επιλογής της συγκεκριμένης ομάδας. Πατώντας A επιλέγετε όλες τις ομάδες "
-"ενώ με το πλήκτρο N ακυρώνετε όλες τις επιλογές. Το πλήκτρο Q πραγματοποιεί έξοδο "
-"από το πρόγραμμα και εγκατάσταση όλων των επιλεγμένων ομάδων.\n"
+"επιλέξετε προς εγκατάσταση. Μπορείτε να μετακινήσετε το δρομέα "
+"χρησιμοποιώντας τα αντίστοιχα πλήκτρα ενώ πατώντας ENTER ή το πλήκτρο SPACE, "
+"εναλλάσσετε την κατάσταση επιλογής της συγκεκριμένης ομάδας. Πατώντας A "
+"επιλέγετε όλες τις ομάδες ενώ με το πλήκτρο N ακυρώνετε όλες τις επιλογές. "
+"Το πλήκτρο Q πραγματοποιεί έξοδο από το πρόγραμμα και εγκατάσταση όλων των "
+"επιλεγμένων ομάδων.\n"
 "\n"
 "Σας ευχαριστούμε που επιλέξατε το Debian.\n"
 "\n"
@@ -163,74 +166,83 @@ msgstr ""
 msgid "(no description available)"
 msgstr "(χωρίς διαθέσιμη περιγραφή)"
 
-#: ../tasksel.c:28
+#: ../tasksel.c:33
 msgid "Unknown signal seen"
 msgstr "Άγνωστο σήμα "
 
-#: ../tasksel.c:34
+#: ../tasksel.c:39
+#, c-format
 msgid "tasksel install <task>\n"
 msgstr "tasksel install <task>\n"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:40
+#, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [επιλογές]; όπου επιλογές είναι οποισδήποτε συνδυασμός των:\n"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- κατάσταση ελέγχου, δεν εκτελεί την εντολή apt-get κατά την έξοδο"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- σειριακοποίηση των εγκαταστάσεων, δεν εγκαθιστά τα πακέτα με την apt-get,\n"
+"-q -- σειριακοποίηση των εγκαταστάσεων, δεν εγκαθιστά τα πακέτα με την apt-"
+"get,\n"
 "\t\tαπλώς σειριακοποιεί τις εγκαταστάσεις με το dpkg"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- εγκατάσταση όλων των πακέτων με προτεραιότητα \"required\""
 
-#: ../tasksel.c:39
+#: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- εγκατάσταση όλων των πακέτων με προτεραιότητα \"important\""
 
-#: ../tasksel.c:40
+#: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- εγκατάσταση όλων των πακέτων με προτεραιότητα \"standard\""
 
-#: ../tasksel.c:41
+#: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- χωρίς απεικόνιση του μενού, για χρήση με τις επιλογές -r ή -i"
 
-#: ../tasksel.c:42
+#: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- εμφάνιση όλων των ομάδων πακέτων, ακόμη και αυτών που δε περιλαμβάνουν πακέτα"
+msgstr ""
+"-a -- εμφάνιση όλων των ομάδων πακέτων, ακόμη και αυτών που δε περιλαμβάνουν "
+"πακέτα"
 
-#: ../tasksel.c:83 ../tasksel.c:118
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
 msgid "No packages selected\n"
 msgstr "Δεν επιλέχθηκαν πακέτα\n"
 
-#: ../tasksel.c:192
-msgid ""
-"No tasks found on this system.\n"
-"Did you update your available file? Try running dselect update.\n"
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
 msgstr ""
-"Δε βρέθηκαν ομάδες πακέτων στο σύστημα.\n"
-"Μήπως δεν ανανεώσατε το αρχείο διαθέσιμων πακέτων available; Δοκιμάστε να "
-"τρέξετε dselect update.\n"
 
-#: ../util.c:20
+#: ../util.c:21
 msgid "Cannot allocate memory for strdup"
 msgstr "Αδύνατη η δέσμευση μνήμης για το strdup"
 
-#: ../util.c:38
+#: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
 msgstr "Αδύνατη η δέσμευση %d bytes μνήμης"
 
-#: ../util.c:47
+#: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Αδύνατη η επαναδέσμευση %d bytes μνήμης"
 
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "Δε βρέθηκαν ομάδες πακέτων στο σύστημα.\n"
+#~ "Μήπως δεν ανανεώσατε το αρχείο διαθέσιμων πακέτων available; Δοκιμάστε να "
+#~ "τρέξετε dselect update.\n"
