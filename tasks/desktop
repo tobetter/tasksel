@@ -8,9 +8,8 @@ Description: desktop environment
 Packages:
   # FIXME: not in a releasable state until it pulls in X too!
   # task-x-window-system-core (?)
-  # TODO: we really should have kde and gnome meta-packages, which this
-  # task could just pull in, rather than having to track all of kde and
-  # gnome here.
+  # TODO: we really should have gnome meta-packages, which this
+  # task could just pull in, rather than having to track all gnome here.
   gnome-session
   gnome-panel
   gnome-control-center
@@ -23,33 +22,8 @@ Packages:
   gnome-help
   gdm
   gnome-utils
-  kdebase
-  konqueror
-  konsole
-  kdebase-doc
-  kdewallpapers
-  kuser
-  ksysv
-  kcron
-  kpackage
-  ksysctrl
-  secpolicy
-  ark
   kcalc
-  kdf
-  kdepasswd
-  kedit
-  kfind
-  khexedit
-  kjots
-  knotes
-  kpm
-# ktimemon (gone)
-# pixie (gone)
-  kpaint
-  kiconedit
-  ksnapshot
-  kruler
+  kde
   mozilla
   mozilla-psm
   menu
