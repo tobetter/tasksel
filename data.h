@@ -1,9 +1,10 @@
-/* $Id: data.h,v 1.1 1999/11/21 22:01:04 tausq Exp $ */
+/* $Id: data.h,v 1.2 2000/01/07 22:27:48 joeyh Exp $ */
 #ifndef _DATA_H
 #define _DATA_H
 
 struct package_t {
   char *name;
+  char *prettyname;
   char *shortdesc;
   char *longdesc;
   int dependscount;

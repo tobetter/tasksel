@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.4 1999/12/29 16:10:01 tausq Exp $ */
+/* $Id: data.c,v 1.5 2000/01/07 22:27:48 joeyh Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -110,12 +110,26 @@ static void addpackage(struct packages_t *pkgs,
   /* Adds package to the package list binary tree */
   struct package_t *node = NEW(struct package_t);
   void *p;
+  char *c;
+  char space=1;
   
   VERIFY(name != NULL);
   
   /* DPRINTF("Adding package %s to list\n", name); */
   memset(node, 0, sizeof(struct package_t));
   node->name = STRDUP(name);
+  c = node->prettyname = STRDUP(name+5);
+  while(c[0]) {
+    if (c[0] == '-') {
+      c[0] = ' ';
+      space=1;
+    }
+    else if(space) {
+      c[0] = toupper(c[0]);
+      space=0;
+    }
+    c++;
+  }
   node->shortdesc = STRDUP(shortdesc); 
   node->longdesc = STRDUP(longdesc);
 
