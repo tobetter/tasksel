@@ -1,9 +1,13 @@
-tasksel (1.33) UNRELEASED; urgency=low
+tasksel (1.33) unstable; urgency=low
 
+  * Joey Hess
+    - Added dnsmasq to the dialup task, since it is useful to have a caching
+      name server, and dnsmasq is very easy to configure (and can block
+      verisign's bogus wildcard). Closes: #202883
   * Denis Barbier
     - Update tasks/po/fr.po and po/fr.po
 
- -- Joey Hess <joeyh@debian.org>  Wed, 17 Sep 2003 07:53:09 +0200
+ -- Joey Hess <joeyh@debian.org>  Sun, 21 Sep 2003 18:33:40 -0400
 
 tasksel (1.32) unstable; urgency=low
 
