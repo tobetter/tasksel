@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.17 2003/07/25 23:55:57 joeyh Rel $ */
+/* $Id: data.c,v 1.18 2003/08/01 01:39:35 joeyh Rel $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -18,6 +18,7 @@
 #define PACKAGEFIELD     "Package: "
 #define TASKFIELD        "Task: "
 #define KEYFIELD         "Key:" /* multiline; no space necessary */
+#define RELEVANCEFIELD   "Relevance: "
 #define DEPENDSFIELD     "Depends: "
 #define RECOMMENDSFIELD  "Recommends: "
 #define SUGGESTSFIELD    "Suggests: "
@@ -196,6 +197,7 @@ static struct task_t *addtask(
     task->packagesmax = 10;
     task->packagescount = 0;
     task->selected = 0;
+    task->relevance = 5;
     tsearch(task, &tasks->tasks, taskcompare);
     tasks->count++;
   }
@@ -362,14 +364,26 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs,
   char buf[BUF_SIZE];
   char *pkgname, *s;
   char *task, *shortdesc, *longdesc, *section;
+  int relevance = 5;
   struct package_t *p;
   struct task_t *t;
   char *package;
   int key_missing;
+  char *domainname, *l;
   
   f = fopen(fn, "r");
   if (f == NULL) PERROR(fn);
 
+  /* Use a domain matching the task file that's being read, so translations
+   * can be found. */
+  domainname=strdup(fn);
+  l = strrchr(domainname, '/');
+  if (l)
+    domainname=l;
+  l = strrchr(domainname, '.');
+  if (l)
+    l[0] = '\0';
+  
   while (!feof(f)) {
     fgets(buf, BUF_SIZE, f);
     CHOMP(buf);
@@ -393,8 +407,12 @@ dontmakemethink:
 
 	if (MATCHFIELD(buf, SECTIONFIELD)) {
 	  section = STRDUP(FIELDDATA(buf, SECTIONFIELD));
+	} else if (MATCHFIELD(buf, RELEVANCEFIELD)) {
+	  char *data = FIELDDATA(buf, RELEVANCEFIELD);
+	  if (strlen(data))
+		  relevance = atoi(data);
 	} else if (MATCHFIELD(buf, DESCRIPTIONFIELD)) {
-	  shortdesc = STRDUP(FIELDDATA(buf, DESCRIPTIONFIELD));
+	  shortdesc = STRDUP(dgettext(domainname, FIELDDATA(buf, DESCRIPTIONFIELD)));
 	  VERIFY(shortdesc != NULL);
 	  do {
 	    if (fgets(buf, BUF_SIZE, f) == 0)
@@ -409,6 +427,7 @@ dontmakemethink:
 	      strcat(longdesc, buf + 1);
 	    }
 	  } while (buf[0] != '\n' && !feof(f));
+          longdesc = STRDUP(dgettext(domainname, longdesc));
 	  break;
 	} else if (MATCHFIELD(buf, KEYFIELD)) {
 	  do {
@@ -452,6 +471,7 @@ dontmakemethink:
 	p->pseudopackage = 1;
         t = addtask(tasks, task, "");
         t->task_pkg = p;
+	t->relevance = relevance;
       }
       else {
 	DPRINTF("skipping empty task %s", task);

@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.25 2003/07/25 17:33:24 joeyh Rel $ */
+/* $Id: slangui.c,v 1.26 2003/08/01 01:39:35 joeyh Rel $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -73,10 +73,10 @@ static int _displaylines;
 
 struct { char *section, *desc; } sectiondesc[] = {
   { "user",   N_("End-user") },
+  { "hware",  N_("Hardware Support") },
   { "server", N_("Servers") },
   { "devel",  N_("Development") },
   { "l10n",   N_("Localization") },
-  { "hware",  N_("Hardware Support") },
   { "misc",   N_("Miscellaneous") },
   {0}
 };
@@ -145,7 +145,7 @@ int taskseccompare(const void *pl, const void *pr)
   const struct task_t *l = *((const struct task_t **)pl);
   const struct task_t *r = *((const struct task_t **)pr);
   char *ls = NULL, *rs = NULL;
-  int y = strcmp(l->name, r->name);
+  int y = strcmp(TASK_SHORTDESC(l), TASK_SHORTDESC(r));
   if (y == 0) return 0;
 
   if (l->task_pkg && l->task_pkg->section) ls = l->task_pkg->section;
@@ -157,6 +157,12 @@ int taskseccompare(const void *pl, const void *pr)
     return -1;
   } else if (rs) {
     return 1;
+  }
+  if (l->relevance != r->relevance) {
+	  if (l->relevance > r->relevance)
+		  return -1;
+	  else
+		  return 1;
   }
   return y;
 }

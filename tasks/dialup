@@ -1,11 +1,10 @@
 Task: dialup
-Section: user
-Description: Dialup system
+Section: hware
+Description: Dialup internet
  This task selects packages that address special needs of computers
- using a part-time dialup connection (by modem, ISDN, ADSL, or cable).
+ using a slow part-time dialup connection (by modem, ISDN, or similar).
 Key:
  ppp
- pppoe
  isdnutils
 Packages:
  # Modem:
@@ -13,7 +12,6 @@ Packages:
  pppconfig
  wvdial
  # Other handy stuff for dialup connections:
- anacron
  fetchmail
  wwwoffle
  leafnode

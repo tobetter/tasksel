@@ -50,6 +50,11 @@ Keep short descriptions short -- very short -- and to the point. Do not
 include details about what individual packages a task includes, tasksel
 will do that for you.
 
+If a task is important enough that it should go near the top of its
+section, give it a relevance of 9 or 10. If a task is not likely to be
+used, give it a relevance of 1. Default is 5. (Low relevance tasks are also
+candidates for removal..)
+
 Debian developers aside from the tasksel maintenance team may take over
 maintenance of tasks. Talk with the tasksel developers first, and then put
 your name in a Maintainer field in the task file you're maintaining.

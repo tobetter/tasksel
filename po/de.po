@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 0.1\n"
-"POT-Creation-Date: 2000-05-08 00:03+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-31 21:32-0400\n"
 "PO-Revision-Date: 2003-07-16 15:56+0100\n"
 "Last-Translator: Kurt Gramlich <kurt@lugrav.de>\n"
 "Language-Team: German <de@li.org>\n"
@@ -13,8 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data.c:277
-#: ../data.c:291
+#: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
 msgstr ""
 
@@ -32,8 +32,7 @@ msgid ""
 "\t"
 msgstr ""
 
-#: ../slangui.c:18
-#: ../slangui.c:19
+#: ../slangui.c:18 ../slangui.c:19
 #, fuzzy
 msgid "(no description)"
 msgstr "(keine Beschreibung verfügbar)"
@@ -43,179 +42,175 @@ msgid "End-user"
 msgstr ""
 
 #: ../slangui.c:76
-msgid "Servers"
+msgid "Hardware Support"
 msgstr ""
 
 #: ../slangui.c:77
-msgid "Development"
+msgid "Servers"
 msgstr ""
 
 #: ../slangui.c:78
-msgid "Localization"
+msgid "Development"
 msgstr ""
 
 #: ../slangui.c:79
-msgid "Hardware Support"
+msgid "Localization"
 msgstr ""
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
 msgstr ""
 
-#: ../slangui.c:213
+#: ../slangui.c:219
 msgid "Unable to initialize the terminal"
 msgstr "Initialisierung des Terminals schlug fehl"
 
-#: ../slangui.c:215
+#: ../slangui.c:221
 msgid "Unable to initialize screen output"
 msgstr "Initialisierung der Bildausgabe schlug fehl"
 
-#: ../slangui.c:216
+#: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
 msgstr "Initialisierung der Tastatur schlug fehl"
 
-#: ../slangui.c:233
+#: ../slangui.c:239
 #, fuzzy, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
+msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
 msgstr "(c) 1999-2000 SPI und andere"
 
-#: ../slangui.c:387
+#: ../slangui.c:393
 msgid "^Finish"
 msgstr "^Fertig"
 
-#: ../slangui.c:395
-#: ../slangui.c:396
+#: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
 msgstr "Task ^Info"
 
-#: ../slangui.c:400
-#: ../slangui.c:401
+#: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
 msgstr "^Hilfe"
 
-#: ../slangui.c:435
+#: ../slangui.c:441
 #, fuzzy
 msgid "Select tasks to install"
 msgstr "Wählen Sie die Tasks zum Installieren"
 
-#: ../slangui.c:570
+#: ../slangui.c:576
 msgid "Ok"
 msgstr "Ok"
 
-#: ../slangui.c:679
-#: ../slangui.c:693
-#: ../slangui.c:804
+#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
 #, c-format
 msgid "Index out of bounds: %d >= %d"
 msgstr ""
 
-#: ../slangui.c:770
+#: ../slangui.c:776
 msgid "Help"
 msgstr "Hilfe"
 
 #. TRANS: don't wrap lines because of different screen sizes!
-#: ../slangui.c:771
+#: ../slangui.c:777
 msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a given task.\n"
+"Tasks allow you to quickly install a selection of packages that performs a "
+"given task.\n"
 "\n"
-"The main chooser list shows a list of tasks that you can choose to install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the task at the cursor. You can also press A to select all tasks, or N to deselect all tasks. Pressing Q will exit this program and begin installation of your selected tasks.\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
 "\n"
 "Thank you for using Debian.\n"
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"Tasks sind zusammengehörende Pakete für ein bestimmtes Aufgabengebiet. Sie erlauben einem schnell und einfach Pakete für einen bestimmten Zweck zu installieren.\n"
+"Tasks sind zusammengehörende Pakete für ein bestimmtes Aufgabengebiet. Sie "
+"erlauben einem schnell und einfach Pakete für einen bestimmten Zweck zu "
+"installieren.\n"
 "\n"
-" Die Haupt-Auswahlliste zeigt eine Liste von Tasks, die man installieren kann. Mit den Pfeiltasten bewegt man den Cursor. Mit ENTER oder der LEERTASTE wählt man den gewünschten Task. Mit A wählt man alle Tasks, mit N wählt man gar keine Tasks aus. Mit Q beendet man das Programm und startet die Installation der ausgewählten Tasks.\n"
+" Die Haupt-Auswahlliste zeigt eine Liste von Tasks, die man installieren "
+"kann. Mit den Pfeiltasten bewegt man den Cursor. Mit ENTER oder der "
+"LEERTASTE wählt man den gewünschten Task. Mit A wählt man alle Tasks, mit N "
+"wählt man gar keine Tasks aus. Mit Q beendet man das Programm und startet "
+"die Installation der ausgewählten Tasks.\n"
 "\n"
 " Danke, dass Sie Debian gewählt haben.\n"
 "\n"
 " Drücken Sie ENTER um zur Auswahlliste zurückzukommen."
 
-#: ../slangui.c:812
+#: ../slangui.c:818
 #, fuzzy, c-format
 msgid ""
 "Description:\n"
 "%s\n"
 "\n"
 "Included packages:\n"
-""
 msgstr ""
 "Beschreibung:\n"
 "%s\n"
 "\n"
 "Abhängig von:\n"
-""
 
-#: ../slangui.c:820
+#: ../slangui.c:826
 msgid "(no description available)"
 msgstr "(keine Beschreibung verfügbar)"
 
-#: ../tasksel.c:26
+#: ../tasksel.c:28
 msgid "Unknown signal seen"
 msgstr "Unbekanntes Signal erhalten"
 
-#: ../tasksel.c:32
-msgid ""
-"tasksel install <task>\n"
-""
-msgstr ""
-
-#: ../tasksel.c:33
-msgid ""
-"tasksel [options]; where options is any combination of:\n"
-""
-msgstr ""
-"tasksel [Optionen]; folgende Optionen können Sie kombinieren:\n"
-""
-
 #: ../tasksel.c:34
+msgid "tasksel install <task>\n"
+msgstr ""
+
+#: ../tasksel.c:35
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [Optionen]; folgende Optionen können Sie kombinieren:\n"
+
+#: ../tasksel.c:36
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- Test Modus; apt-get wird beim Verlassen nicht ausgeführt"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:37
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- Installation aufschieben; Pakete werden nicht mit apt-get installiert;\n"
+"-q -- Installation aufschieben; Pakete werden nicht mit apt-get "
+"installiert;\n"
 "\t\tsie werden für dpkg vorgemerkt"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:38
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- installiere alle Pakete mit Priorität \"required\""
 
-#: ../tasksel.c:37
+#: ../tasksel.c:39
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- installiere alle Pakete mit Priorität \"important\""
 
-#: ../tasksel.c:38
+#: ../tasksel.c:40
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- installiere alle Pakete mit Priorität \"standard\""
 
-#: ../tasksel.c:39
+#: ../tasksel.c:41
 msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- zeigt die Benutzeroberfläche nicht; wird normalerweise mit -r oder -i aufgerufen"
+msgstr ""
+"-n -- zeigt die Benutzeroberfläche nicht; wird normalerweise mit -r oder -i "
+"aufgerufen"
 
-#: ../tasksel.c:40
+#: ../tasksel.c:42
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr ""
 
-#: ../tasksel.c:81
-#: ../tasksel.c:116
-msgid ""
-"No packages selected\n"
-""
-msgstr ""
-"Keine Pakete ausgewählt\n"
-""
+#: ../tasksel.c:83 ../tasksel.c:118
+msgid "No packages selected\n"
+msgstr "Keine Pakete ausgewählt\n"
 
-#: ../tasksel.c:168
+#: ../tasksel.c:192
 #, fuzzy
 msgid ""
 "No tasks found on this system.\n"
-"Did you update your available file?\n"
-""
+"Did you update your available file? Try running dselect update.\n"
 msgstr ""
 "Keine Tasks auf diesem System gefunden.\n"
 "Wurde die \"available\" Datei aktualisiert?"
@@ -233,4 +228,3 @@ msgstr ""
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr ""
-

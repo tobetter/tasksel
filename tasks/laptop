@@ -1,17 +1,36 @@
 Task: laptop
-Section: user
-Description: Laptop system
+Section: hware
+Description: Laptop
  This is a collection of tools that laptop users will expect to find on a
- system.
+ system. It includes some special utilities for IBM Thinkpad, Sony Vaio,
+ Toshiba, and Dell Inspiron laptops.
 Key:
  apmd
  pcmcia-cs
 Packages:
+ # XXX What about acpi?
  anacron
  guessnet
  irda-tools
  irda-common
- toshset
  noflushd
  wireless-tools
+ bluez-utils
  hdparm
+ smartmontools
+ # Hardware-specific
+ # for toshiba:
+ toshset
+ # for thinkpads:
+ tpb
+ mwavem
+ # Note that this needs a kernel module, and prebuild modules are not
+ # currenlty available.
+ thinkpad-base
+ tpctl
+ # dell inspirons:
+ i8kutils
+ # vaio
+ sjog
+ # Left out until there is less assembly required.
+ #vaiostat

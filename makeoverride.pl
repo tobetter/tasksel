@@ -15,6 +15,7 @@ print "$_\tTask\t", (join ", ", sort keys %{$p{$_}}), "\n"
 
 sub processfile {
 	my $file=$_; # File::Find craziness.
+	$file eq 'po' && -d $file && ($File::Find::prune = 1);
 	return unless $file =~ /^[-+_.a-z0-9]+$/ and -f $file;
 	open (IN, $file) or die "$file: $!";
 	my %fields;

@@ -29,8 +29,8 @@ find(\&processfile, $dir);
 
 sub processfile {
 	my $file=$_; # File::Find craziness.
-	return unless -f $file;
-	return unless $file =~ /^([-+_.a-z0-9]+)$/;
+	$file eq 'po' && -d $file && ($File::Find::prune = 1);
+	return unless $file =~ /^[-+_.a-z0-9]+$/ and -f $file;
 	my @lines;
 	open (IN, $file) or die "$file: $!";
 	while (<IN>) {

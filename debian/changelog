@@ -1,3 +1,26 @@
+tasksel (1.28) unstable; urgency=low
+
+  * Patch from Denis Barbier adds infrastructure for translated task names
+    and descriptions. This info is stored in the debian-tasks domain, for use
+    by any program that needs it.
+  * Modified data.c to set the domain to match the task file it is reading,
+    and use gettext on translatable strings. Closes: #157848
+  * Included a slighlty outdated tasks/po/de.po.
+  * laptop: to support specific laptop HW, add tcp, mwavem, tpctl, 
+    thinkpad-base, i8kutils, and sjog. vaiostat is left commented until
+    more than a source package is available. Closes: #201398
+  * dialup: Remove anacron. Closes: #202882
+  * Patch from Denis Barbier to fix encoding problems in it.po, ja.po.
+    This also adds an updatepo target. Closes: #203398
+  * Split broadband task out of dialup. Closes: #201764
+  * Moved broadband, dialup, and laptop into hardware.
+  * Moved science to misc.
+  * Change task sorting for display: Sort first on a new Relevance field,
+    then by short description (not name).
+  * Add bluez-utils to laptop task. Closes: #202881
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 31 Jul 2003 21:38:07 -0400
+
 tasksel (1.27) unstable; urgency=low
 
   * Remove gnome from desktop Key since neither the metapackage nor all of

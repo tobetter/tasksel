@@ -1,4 +1,4 @@
-/* $Id: data.h,v 1.9 2003/07/25 23:55:57 joeyh Rel $ */
+/* $Id: data.h,v 1.10 2003/08/01 01:39:35 joeyh Rel $ */
 #ifndef _DATA_H
 #define _DATA_H
 
@@ -39,6 +39,7 @@ struct task_t {
   int packagescount;
   int packagesmax;
   int selected;
+  int relevance;
 };
 
 struct tasks_t {

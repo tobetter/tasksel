@@ -6,67 +6,124 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
-"POT-Creation-Date: 2001-12-06 02:32+0900\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-31 21:32-0400\n"
 "PO-Revision-Date: 2001-12-06 02:40+0900\n"
 "Last-Translator: Keita Maehara <maehara@debian.org>\n"
 "Language-Team: Debian Japanese List <debian-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=eucjp\n"
+"Content-Type: text/plain; charset=euc-jp\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../slangui.c:212
+#: ../data.c:307 ../data.c:321
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr ""
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\r\n"
+"\t"
+msgstr ""
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\r\n"
+"\t"
+msgstr ""
+
+#: ../slangui.c:18 ../slangui.c:19
+#, fuzzy
+msgid "(no description)"
+msgstr "(説明がありません)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr ""
+
+#: ../slangui.c:76
+msgid "Hardware Support"
+msgstr ""
+
+#: ../slangui.c:77
+msgid "Servers"
+msgstr ""
+
+#: ../slangui.c:78
+msgid "Development"
+msgstr ""
+
+#: ../slangui.c:79
+msgid "Localization"
+msgstr ""
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../slangui.c:219
 msgid "Unable to initialize the terminal"
 msgstr "端末を初期化できません"
 
-#: ../slangui.c:214
+#: ../slangui.c:221
 msgid "Unable to initialize screen output"
 msgstr "画面出力を初期化できません"
 
-#: ../slangui.c:215
+#: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
 msgstr "キーボードインタフェースを初期化できません"
 
-#: ../slangui.c:232
-msgid "Debian Task Installer"
-msgstr "Debian タスクインストーラ"
-
-#: ../slangui.c:233
-msgid "(c) 1999-2001 SPI and others"
+#: ../slangui.c:239
+#, fuzzy, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
 msgstr "(c) 1999-2001 SPI 他"
 
-#: ../slangui.c:386
+#: ../slangui.c:393
 msgid "^Finish"
 msgstr "終了"
 
-#: ../slangui.c:394 ../slangui.c:395
+#: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
 msgstr "タスク情報"
 
-#: ../slangui.c:399 ../slangui.c:400
+#: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
 msgstr "ヘルプ"
 
-#: ../slangui.c:434
+#: ../slangui.c:441
 msgid "Select tasks to install"
 msgstr "インストールするタスクを選択してください"
 
-#: ../slangui.c:569
+#: ../slangui.c:576
 msgid "Ok"
 msgstr "了解"
 
-#: ../slangui.c:769
+#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr ""
+
+#: ../slangui.c:776
 msgid "Help"
 msgstr "ヘルプ"
 
-#: ../slangui.c:770
+#. TRANS: don't wrap lines because of different screen sizes!
+#: ../slangui.c:777
+#, fuzzy
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\r\rThe main chooser list shows a list of tasks that you can "
-"choose to install. The arrow keys moves the cursor. Pressing ENTER or the "
-"SPACEBAR toggles the selection of the task at the cursor. You can also press "
-"A to select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-"program and begin installation of your selected tasks.\r\rThank you for "
-"using Debian.\r\rPress enter to return to the task selection screen"
+"given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
 msgstr ""
 "タスクとは、与えられた仕事を実行するためのパッケージを\n"
 "簡単にインストールするための仕組です。\n"
@@ -83,7 +140,7 @@ msgstr ""
 "\n"
 "Enter を押すとタスク選択画面に戻ります。"
 
-#: ../slangui.c:807
+#: ../slangui.c:818
 #, c-format
 msgid ""
 "Description:\n"
@@ -96,23 +153,27 @@ msgstr ""
 "\n"
 "選択パッケージ:\n"
 
-#: ../slangui.c:815
+#: ../slangui.c:826
 msgid "(no description available)"
 msgstr "(説明がありません)"
 
-#: ../tasksel.c:26
+#: ../tasksel.c:28
 msgid "Unknown signal seen"
 msgstr "未知のシグナルです"
 
-#: ../tasksel.c:32
+#: ../tasksel.c:34
+msgid "tasksel install <task>\n"
+msgstr ""
+
+#: ../tasksel.c:35
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [オプション]; オプションは以下の任意の組み合わせ:\n"
 
-#: ../tasksel.c:33
+#: ../tasksel.c:36
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- テストモード; 終了時に実際には apt-get を実行しない"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:37
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -120,34 +181,52 @@ msgstr ""
 "-q -- キューインストール; apt-get でパッケージをインストールしない;\n"
 "\t\t単に dpkg のキューに入れる"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:38
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- 優先度「必須」のパッケージをすべてインストールする"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:39
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- 優先度「重要」のパッケージをすべてインストールする"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:40
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- 優先度「標準」のパッケージをすべてインストールする"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:41
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- UI を表示しない; 通常 -r か -i とともに使用します"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:42
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr ""
 
-#: ../tasksel.c:80 ../tasksel.c:115
+#: ../tasksel.c:83 ../tasksel.c:118
 msgid "No packages selected\n"
 msgstr "パッケージは選択されませんでした\n"
 
-#: ../tasksel.c:167
+#: ../tasksel.c:192
+#, fuzzy
 msgid ""
 "No tasks found on this system.\n"
-"Did you update your available file?\n"
+"Did you update your available file? Try running dselect update.\n"
 msgstr ""
 "このシステムにはタスクリストがありません。\n"
 "available ファイルは更新しましたか?\n"
+
+#: ../util.c:20
+msgid "Cannot allocate memory for strdup"
+msgstr ""
+
+#: ../util.c:38
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr ""
+
+#: ../util.c:47
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr ""
+
+#~ msgid "Debian Task Installer"
+#~ msgstr "Debian タスクインストーラ"
