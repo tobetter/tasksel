@@ -1,0 +1,18 @@
+Task: norwegian
+Section: l10n
+Description: Norwegian (Bokmaal and Nynorsk) environment
+ This task installs packages and documentation in Norwegian
+ to help Norwegian speaking people use Debian.
+Maintainer: Petter Reinholdtsen <pere@debian.org>
+Key:
+ locales
+ language-env
+Packages:
+ util-linux-locales
+ wnorwegian
+ inorwegian
+ aspell-no
+ tetex-brev
+ kde-i18n-no
+ kde-i18n-nb
+ kde-i18n-nn

@@ -30,7 +30,7 @@ my $dolint=1;
 {
 	local $/="\n\n";
 	if (! open (AVAIL, "apt-cache dumpavail |")) {
-		warn "cannot real available file, so disabling lint check\n";
+		warn "cannot real available info, so disabling lint check\n";
 		$dolint=0;
 	}
 	while (<AVAIL>) {

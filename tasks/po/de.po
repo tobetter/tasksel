@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-08-26 14:15-0400\n"
+"POT-Creation-Date: 2003-09-16 19:35-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -398,9 +398,10 @@ msgstr "Usenet-News-Server"
 
 #. Description
 #: ../po/debian-tasks.desc:237
+#, fuzzy
 msgid ""
-"This task selects select the preferred version of the INN news server "
-"software for new Debian installations."
+"This task selects the preferred version of the INN news server software for "
+"new Debian installations."
 msgstr ""
 "Dieser Task wählt die bevorzugte Version der INN Newsserver-Software für "
 "neue Debiansysteme aus."
@@ -462,12 +463,12 @@ msgid "This task sets up your system to be a print server."
 msgstr "Dieser Task richtet Ihr System als Drucker-Server ein."
 
 #. Description
-#: ../po/debian-tasks.desc:273
+#: ../po/debian-tasks.desc:277
 msgid "Python"
 msgstr "Python"
 
 #. Description
-#: ../po/debian-tasks.desc:273
+#: ../po/debian-tasks.desc:277
 #, fuzzy
 msgid ""
 "Many Python tools and extensions, for developing scripts and simple or "
@@ -478,12 +479,12 @@ msgstr ""
 "zu entwickeln."
 
 #. Description
-#: ../po/debian-tasks.desc:281
+#: ../po/debian-tasks.desc:285
 msgid "Russian environment"
 msgstr "Russische Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:281
+#: ../po/debian-tasks.desc:285
 #, fuzzy
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
@@ -493,12 +494,12 @@ msgstr ""
 "sprechenden Benutzern in Debian behilflich sind."
 
 #. Description
-#: ../po/debian-tasks.desc:290
+#: ../po/debian-tasks.desc:294
 msgid "Spanish environment"
 msgstr "spanische Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:290
+#: ../po/debian-tasks.desc:294
 #, fuzzy
 msgid ""
 "This task installs programs, data files,  and documentation that makes it "
@@ -508,12 +509,12 @@ msgstr ""
 "einfacher machen, Debian für spanisch verwandte Operationen zu verwenden."
 
 #. Description
-#: ../po/debian-tasks.desc:299
+#: ../po/debian-tasks.desc:303
 msgid "Tcl/Tk"
 msgstr "Tcl/Tk"
 
 #. Description
-#: ../po/debian-tasks.desc:299
+#: ../po/debian-tasks.desc:303
 #, fuzzy
 msgid ""
 "Packages commonly used in developing applications using the Tcl language and "
@@ -526,23 +527,23 @@ msgstr ""
 " o C-Header und -Bibliotheken"
 
 #. Description
-#: ../po/debian-tasks.desc:308
+#: ../po/debian-tasks.desc:312
 msgid "TeX/LaTeX environment"
 msgstr "TeX/LaTeX-Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:308
+#: ../po/debian-tasks.desc:312
 msgid "a TeX/LaTeX environment"
 msgstr "Eine TeX/LaTeX-Umgebung."
 
 #. Description
-#: ../po/debian-tasks.desc:318
+#: ../po/debian-tasks.desc:322
 #, fuzzy
 msgid "Conventional Unix server"
 msgstr "traditioneller Unix-Server"
 
 #. Description
-#: ../po/debian-tasks.desc:318
+#: ../po/debian-tasks.desc:322
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -553,13 +554,13 @@ msgstr ""
 "gewarnt, dass dies einige Daemons mit einschließt."
 
 #. Description
-#: ../po/debian-tasks.desc:325
+#: ../po/debian-tasks.desc:329
 #, fuzzy
 msgid "Web server"
 msgstr "Web-Server"
 
 #. Description
-#: ../po/debian-tasks.desc:325
+#: ../po/debian-tasks.desc:329
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""
@@ -567,16 +568,31 @@ msgstr ""
 "Server nützlich sind."
 
 #. Description
-#: ../po/debian-tasks.desc:333
+#: ../po/debian-tasks.desc:337
 msgid "Custom kernel compilation"
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:333
+#: ../po/debian-tasks.desc:337
 msgid ""
 "This task includes everything you should need to build your own custom "
 "kernel."
 msgstr ""
+
+#. Description
+#: ../po/debian-tasks.desc:346
+msgid "Norwegian (Bokmaal and Nynorsk) environment"
+msgstr ""
+
+#. Description
+#: ../po/debian-tasks.desc:346
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Norwegian to help Norwegian "
+"speaking people use Debian."
+msgstr ""
+"Dieser Task installiert Pakete und Dokumentationen in Französisch, die "
+"französisch sprechende Benutzer in Debian behilflich sind."
 
 #, fuzzy
 #~ msgid "dns-server"

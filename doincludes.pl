@@ -13,7 +13,7 @@ my %depends;
 {
 	local $/="\n\n";
 	if (! open (AVAIL, "apt-cache dumpavail |")) {
-		warn "cannot real available file, so not exanding includes\n";
+		warn "cannot real available info, so not exanding includes\n";
 		exit;
 	}
 	while (<AVAIL>) {

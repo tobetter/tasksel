@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.19 2003/08/01 01:54:55 joeyh Rel $ */
+/* $Id: data.c,v 1.20 2003/09/16 23:38:46 joeyh Rel $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -26,8 +26,8 @@
 #define PRIORITYFIELD    "Priority: "
 #define SECTIONFIELD     "Section: "
 #define STATUSFIELD      "Status: "
-#define AVAILABLEFILE    "/var/lib/dpkg/available"
 #define STATUSFILE       "/var/lib/dpkg/status"
+#define DUMPAVAIL        "apt-cache dumpavail"
 #define BUF_SIZE         1024
 #define MATCHFIELD(buf, s) (strncmp(buf, s, strlen(s)) == 0)
 #define FIELDDATA(buf, s) (buf + strlen(s))
@@ -349,6 +349,30 @@ static void walktasks(const void *t, const VISIT which, const int depth)
   }
 }
 
+static void add_translated_paragraph(char *domain, char **trans, char *msgid)
+{
+  char *l, *msgstr;
+
+  l = msgid+strlen(msgid) - 1;
+  while (l[0] == '\n' || l[0] == ' ') {
+   l[0] = '\0';
+   if (l == msgid)
+     break;
+   l--;
+  }
+  msgstr = dgettext(domain, msgid);
+  if (*trans == NULL) {
+    /* '\n\n' will be appended */
+    *trans = MALLOC(strlen(msgstr) + 3);
+    **trans = '\0';
+  }
+  else {
+    *trans = REALLOC(*trans, strlen(*trans) + strlen(msgstr) + 3);
+  }
+  strcat(*trans, msgstr);
+  strcat(*trans, "\n\n");
+}
+
 void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs,
 		   unsigned char showempties)
 {
@@ -363,23 +387,27 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs,
   FILE *f;
   char buf[BUF_SIZE];
   char *pkgname, *s;
-  char *task, *shortdesc, *longdesc, *section;
+  char *task, *shortdesc, *longdesc, *translongdesc, *section;
   int relevance = 5;
   struct package_t *p;
   struct task_t *t;
   char *package;
   int key_missing;
-  char *domainname, *l;
+  char *domainname, *newdomainname, *l, *startdesc;
+  int verbatimline;
   
   f = fopen(fn, "r");
   if (f == NULL) PERROR(fn);
 
   /* Use a domain matching the task file that's being read, so translations
    * can be found. */
-  domainname=strdup(fn);
+  domainname=STRDUP(fn);
   l = strrchr(domainname, '/');
-  if (l)
-    domainname=l;
+  if (l) {
+    newdomainname=STRDUP(l+1);
+    FREE(domainname);
+    domainname = newdomainname;
+  }
   l = strrchr(domainname, '.');
   if (l)
     l[0] = '\0';
@@ -418,7 +446,6 @@ dontmakemethink:
 	    if (fgets(buf, BUF_SIZE, f) == 0)
               break;
 	    if (buf[0] != ' ') goto dontmakemethink;
-	    if (buf[1] == '.') buf[1] = ' ';
 	    if (longdesc == NULL) {
 	      longdesc = (char *)MALLOC(strlen(buf) + 1);
 	      strcpy(longdesc, buf + 1);
@@ -453,15 +480,35 @@ dontmakemethink:
       }
       
       /* Munge long desc to something that gettext might be able to use. */
-      while ((l = strchr(longdesc, '\n'))) {
-        l[0] = ' ';
+      verbatimline = 0;
+      l = startdesc = longdesc;
+      translongdesc = NULL;
+      while ((l = strchr(l, '\n'))) {
+        if (l[1] == ' ')
+          verbatimline = 1;
+        else if (l[1] == '.' && l[2] == '\n') {
+          /* Translate current paragraph and pass to next one */
+          l[0] = '\0';
+          add_translated_paragraph(domainname, &translongdesc, startdesc);
+          startdesc = l + 3;
+          l += 2;
+          verbatimline = 0;
+        }
+        else {
+          if (!verbatimline)
+            l[0] = ' ';
+          verbatimline = 0;
+        }
+        l++;
       }
-      l = longdesc+strlen(longdesc) - 1;
-      while (l[0] == '\n' || l[0] == ' ') {
-      	l[0] = '\0';
-	l--;
-      }
-      longdesc = STRDUP(dgettext(domainname, longdesc));
+      add_translated_paragraph(domainname, &translongdesc, startdesc);
+      FREE(longdesc);
+      l = longdesc = translongdesc;
+      /* Dirty trick: text is reformatted in reflowtext(), but
+       * superfluous \n are already stripped, so keep remaining ones
+       */
+      while ((l = strchr(l, '\n')))
+        l[0] = '\r';
 
       /* packages_readlist must be called before this function, so we can
        * tell if any packages are in this task, and ignore it if none are */
@@ -494,13 +541,14 @@ dontmakemethink:
       if (section != NULL) FREE(section);
     }
   }
+  if (domainname != NULL) FREE(domainname);
   fclose(f);
 }
 
 void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
 {
-  /* Populates internal data structures with information from an available 
-   * file */
+  /* Populates internal data structures with information about available
+   * packages */
   FILE *f;
   char buf[BUF_SIZE];
   char *name, *shortdesc, *longdesc;
@@ -508,7 +556,8 @@ void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
   char *section;
   priority_t priority;
   
-  if ((f = fopen(AVAILABLEFILE, "r")) == NULL) PERROR(AVAILABLEFILE);
+  /* XXX This is hardly idea. */
+  if ((f = popen(DUMPAVAIL, "r")) == NULL) PERROR(DUMPAVAIL);
   while (!feof(f)) {
     fgets(buf, BUF_SIZE, f);
     CHOMP(buf);

@@ -1,8 +1,9 @@
-/* $Id: util.c,v 1.4 2001/11/22 17:53:48 tausq Rel $ */
+/* $Id: util.c,v 1.5 2003/09/16 23:38:46 joeyh Rel $ */
 #include "util.h"
 
 #include <string.h>
 #include <stdlib.h>
+#include <libintl.h>
 
 #include "slangui.h"
 #include "macros.h"

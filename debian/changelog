@@ -1,9 +1,22 @@
-tasksel (1.32) UNRELEASED; urgency=low
+tasksel (1.32) unstable; urgency=low
 
   * Denis Barbier
     - Remove a trailing space in tasks/{c-dev,chinese-t,python-dev}
       and update tasks/po/{de,no}.po
     - Add tasks/po/fr.po.  Closes: #204554
+    - Fix a typo in news-server. Closes: #204145
+    - Patched data.c to split multi-paragraph descriptions into
+      separate gettext calls. Closes: #203829
+  * Joey Hess
+    - Remove openoffice.org-spellcheck-de-* from German task, no such packages
+      any more, and I cannot find a replacement.
+    - Add a Norwegian language task from Petter Reinholdtsen. Closes: #205360
+    - Provisionally switched print server task to CUPS. We're not sure
+      which is the better choice, and continue to solicit comments on this
+      change. Closes: #205358
+    - Use apt-cache dumpavail via popen, instead of reading the often
+      outdated available file. Closes: #114721, #192306, #211072
+    - Doc updates for above change.
 
  -- Denis Barbier <barbier@debian.org>  Sun, 14 Sep 2003 00:15:52 +0200
 
@@ -18,7 +31,7 @@ tasksel (1.31) unstable; urgency=low
     - Started on tasks/po/no.po
   * Several translation updates: at least da es and nn were updated.
 
- -- Joey Hess <joeyh@debian.org>  Tue, 26 Aug 2003 14:15:31 -0400
+ -- Joey Hess <joeyh@debian.org>  Tue, 16 Sep 2003 19:35:07 -0400
 
 tasksel (1.30) unstable; urgency=low
 

@@ -3,12 +3,17 @@ Section: server
 Description: Print server
  This task sets up your system to be a print server.
 Key:
- lpr
+ cupsys
+ cupsys-pstoraster
+ cupsomatic-ppd
+ cupsys-client
+ cupsys-bsd
 Packages:
+ cupsys-driver-gimpprint
+ kdelibs3-cups
+ qtcups
  samba
  samba-doc
  smbclient
  swat
  smbfs
- magicfilter
- gs
