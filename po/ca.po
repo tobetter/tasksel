@@ -1,14 +1,14 @@
 # Catalan messages for Debian's tasksel.
-# Copyright © 2001, 2003 Software in the Public Interest, Inc.
+# Copyright © 2001, 2003, 2004 Software in the Public Interest, Inc.
 # This file is distributed under the same license as the tasksel package.
-# Jordi Mallach <jordi@debian.org>, 2001, 2003.
+# Jordi Mallach <jordi@debian.org>, 2001, 2003, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.34\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2003-11-10 17:22+0100\n"
+"PO-Revision-Date: 2004-01-30 13:43+0100\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,14 +24,18 @@ msgstr "No es pot reservar memòria per al buffer d'enumeració"
 msgid ""
 "Fatal error encountered at %s:%d\n"
 "\t"
-msgstr "S'ha trobat un error fatal en %s:%d\\n\t"
+msgstr ""
+"S'ha produït un error fatal en %s:%d\n"
+"\t"
 
 #: ../macros.h:51
 #, c-format
 msgid ""
 "I/O error at %s:%d\n"
 "\t"
-msgstr "Error d'E/S en %s:%d\\n\t"
+msgstr ""
+"S'ha produït un error d'E/S en %s:%d\n"
+"\t"
 
 #: ../slangui.c:18 ../slangui.c:19
 msgid "(no description)"
@@ -205,11 +209,9 @@ msgid "No packages selected\n"
 msgstr "No hi ha paquets seleccionats\n"
 
 #: ../tasksel.c:197
-#, fuzzy, c-format
+#, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
-"No s'han trobat tasques en aquest sistema.\n"
-"Heu actualitzat el vostre fitxer «available»?\n"
+msgstr "No s'han trobat tasques en aquest sistema.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
