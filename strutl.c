@@ -1,23 +1,36 @@
-/* $Id: strutl.c,v 1.1 1999/11/21 22:01:04 tausq Exp $ */
+/* $Id: strutl.c,v 1.2 1999/11/23 05:12:43 tausq Exp $ */
 #include "strutl.h"
 
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
+#include "util.h"
 #include "macros.h"
 
-char *reflowtext(int width, char *txt)
+char *reflowtext(int width, char *ptxt)
 {
   /* A simple greedy text formatting algorithm. Tries to put as many characters as possible
    * on a line without going over width 
    *
+   * Uses \r for hard line breaks. All \n not followed by a space are stripped.
    * Returns a malloc'ed string buffer that should be freed by the caller 
    */
   char *buf;
+  char *txt;
   char *begin, *end;
 
-  if (txt == NULL) return NULL;
-  buf = MALLOC(strlen(txt) + strlen(txt) / width + 2); 
+  if (ptxt == NULL) return NULL;
+  
+  txt = STRDUP(ptxt);
+  begin = txt;
+  while (*begin != 0) {
+    if (*begin == '\n' && !isspace(*(begin+1))) *begin = ' '; 
+    if (*begin == '\r') *begin = '\n';
+    begin++;
+  }
+  
+  buf = MALLOC(strlen(txt) + strlen(txt) / width * 2 + 2); 
   buf[0] = 0;
   
   begin = txt;
@@ -52,6 +65,7 @@ char *reflowtext(int width, char *txt)
       }
     }
   }
+  FREE(txt);
   return buf;  
 }
 

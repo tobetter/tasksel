@@ -5,7 +5,7 @@
 int main(int argc, char**argv)
 {
   char *buf;
-  char *S1 = "99 bottles of beer on the wall, 99 bottles of beer, take one down, pass it around";  
+  char *S1 = "99 bottles of beer on the\rwall, 99 bottles\r of beer, take one down, pass it around";  
   char *S2 = "99bottlesofbeeronthewall,99bottlesofbeer,takeonedown,passitaround";
 
   buf = reflowtext(30, S1);

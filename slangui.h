@@ -11,14 +11,14 @@ int ui_eventloop(void);
 
 int ui_drawbox(int obj, int x, int y, unsigned int dx, unsigned int dy);
 void ui_button(int row, int col, char *txt);
-void ui_dialog(int row, int col, int height, int width, char *title, char *msg);
+void ui_dialog(int row, int col, int height, int width, char *title, char *msg, int reflow);
 
-int ui_drawscreen(int index);
+int ui_drawscreen(void);
 void ui_drawchooseritem(int index);
 void ui_toggleselection(int index);
 void ui_showhelp(void);
-void ui_showpackageinfo(int index);
-void ui_redrawchooser(int index);
+void ui_showpackageinfo(void);
+void ui_redrawchooser(void);
 void ui_redrawcursor(int index);
 
 #endif
