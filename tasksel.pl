@@ -207,7 +207,7 @@ sub getopts {
 	Getopt::Long::Configure ("bundling");
 	if (! GetOptions(\%ret, "test|t", "required|r", "important|i", 
 		   "standard|s", "no-ui|n", "new-install", "list-tasks",
-		   "task-packages=s")) {
+		   "task-packages=s@")) {
 		usage();
 		exit(1);
 	}
@@ -233,11 +233,6 @@ my @aptitude_install;
 my @tasks_to_install;
 my %options=getopts();
 
-if (exists $options{"task-packages"}) {
-	print "$_\n" foreach task_packages($options{"task-packages"});
-	exit(0);	
-}
-
 if (@ARGV) {
 	if ($ARGV[0] eq "install") {
 		shift;
@@ -247,6 +242,13 @@ if (@ARGV) {
 		usage();
 		exit 1;
 	}
+}
+
+if (exists $options{"task-packages"}) {
+	foreach (@{$options{"task-packages"}}) {
+		print "$_\n" foreach task_packages($_);
+	}
+	exit(0);
 }
 
 my @tasks=map { hide_dependent_tasks($_) } map { task_test($_) }
