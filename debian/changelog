@@ -1,4 +1,4 @@
-tasksel (1.43) UNRELEASED; urgency=low
+tasksel (1.43) unstable; urgency=high
 
   * Denis Barbier
     - Rename po/C.po into po/tasksel.pot.
@@ -10,6 +10,11 @@ tasksel (1.43) UNRELEASED; urgency=low
       in generated PO files do not change when different users build this
       file.
     - Remove \r characters from printed strings in macros.h.
+  * Joey Hess
+    - Temporarily comment out kde in the desktop task, since it's too broken
+      in testing to be installable riht now. It will be re-enabled when it's
+      fixed.
+    - High priority because the above is breaking sarge installs.
 
   Updated translations:
 
@@ -25,7 +30,7 @@ tasksel (1.43) UNRELEASED; urgency=low
   * Peter Mann
     - Initial Slovak translation
 
- -- Joey Hess <joeyh@debian.org>  Mon, 26 Jan 2004 23:00:08 -0500
+ -- Joey Hess <joeyh@debian.org>  Wed, 28 Jan 2004 22:41:57 -0500
 
 tasksel (1.42) unstable; urgency=low
 
