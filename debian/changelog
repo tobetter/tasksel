@@ -1,10 +1,15 @@
-tasksel (2.05) UNRELEASED; urgency=low
+tasksel (2.05) unstable; urgency=low
 
+  * Joey Hess
+    - Add support for inter-task dependencies.
+    - Add a bunch of lang-desktop tasks, will be auto-installed if the desktop
+      task and given language are installed. Closes: #202907, #257863
+    - Add a Swedish task by Per Olofsson. Closes: #251536
   * Translations
     - André Luís Lopes
       - Updated Brazilian Portuguese translation.
 
- -- Andre Luis Lopes <andrelop@debian.org>  Fri,  9 Jul 2004 10:44:15 -0300
+ -- Joey Hess <joeyh@debian.org>  Wed, 14 Jul 2004 15:31:32 -0400
 
 tasksel (2.04) unstable; urgency=low
 
