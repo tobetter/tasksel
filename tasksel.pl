@@ -291,8 +291,8 @@ sub main {
 	elsif ($options{"task-desc"}) {
 		my $task=name_to_task($options{"task-desc"}, all_tasks());
 		if ($task) {
-			print dgettext("debian-tasks", join(" ",
-				@{$task->{description}}[1..$#{$task->{description}}]))."\n";
+			my $extdesc=join(" ", @{$task->{description}}[1..$#{$task->{description}}]);
+			print dgettext("debian-tasks", $extdesc)."\n";
 			exit(0);
 		}
 		else {
