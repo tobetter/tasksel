@@ -480,13 +480,29 @@ sub main {
 	
 	# And finally, act on selected tasks.
 	if (@aptitude_install) {
-		if ($options{test}) {
-			print "aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
+		# If aptitude is just being run with no tasks preselected 
+		# to install, remove the --visual-preview parameter and
+		# just go to regular aptitude.
+		if (@aptitude_install == 1 && $aptitude_install[0] eq "--visual-preview") {
+			if ($options{test}) {
+				print "aptitude\n";
+			}
+			else {
+				my $ret=system("aptitude") >> 8;
+				if ($ret != 0) {
+					error gettext("aptitude failed");
+				}
+			}
 		}
 		else {
-			my $ret=system("aptitude", "--without-recommends", "-y", "install", @aptitude_install) >> 8;
-			if ($ret != 0) {
-				error gettext("aptitude failed");
+			if ($options{test}) {
+				print "aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
+			}
+			else {
+				my $ret=system("aptitude", "--without-recommends", "-y", "install", @aptitude_install) >> 8;
+				if ($ret != 0) {
+					error gettext("aptitude failed");
+				}
 			}
 		}
 	}

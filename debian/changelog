@@ -1,4 +1,4 @@
-tasksel (2.19) UNRELEASED; urgency=low
+tasksel (2.19) unstable; urgency=low
 
   * Christian Perrier
     - Fix typo in README. Closes: #286053
@@ -7,10 +7,13 @@ tasksel (2.19) UNRELEASED; urgency=low
     - Don't require whitespace after keys with multiline values. Closes: #286054
     - Patch from Denis to always use untranslated values in the debconf
       choices list of tasks, as used for preseeding. Closes: #278186
+    - If the user chooses manual selection and does not change any other task
+      selections, run aptitude without --visual-preview parameter, as that
+      parameter made it skip the package browser. Closes: #272360
   * Translations
     - Bosnian translation updates by Safir Secerovic
 
- -- Christian Perrier <bubulle@kheops.frmug.org>  Fri, 17 Dec 2004 09:58:18 +0100
+ -- Joey Hess <joeyh@debian.org>  Tue,  4 Jan 2005 19:37:37 -0500
 
 tasksel (2.18) unstable; urgency=low
 
