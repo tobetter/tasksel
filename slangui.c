@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.12 2000/01/07 22:49:53 joeyh Exp $ */
+/* $Id: slangui.c,v 1.13 2000/01/14 01:40:08 joeyh Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -22,11 +22,20 @@
 #define STATUSOBJ    4
 #define DIALOGOBJ    5
 #define CURSOROBJ    6
-#define BUTTONOBJ    7
+#define SELBUTTONOBJ 7
+#define BUTTONOBJ    8
+#define SELHIGHLIGHT 9
+#define HIGHLIGHT    10
 
 #define CHOOSERWINDOW 0
 #define DESCWINDOW    1
 #define HELPWINDOW    2
+
+#define NUM_BUTTONS   3
+#define BUTTON_NONE   0
+#define BUTTON_QUIT   1
+#define BUTTON_INFO   2
+#define BUTTON_HELP   3
 
 #define ROWS SLtt_Screen_Rows
 #define COLUMNS SLtt_Screen_Cols
@@ -49,23 +58,6 @@ static struct packages_t *_packages = NULL;
 static struct packages_t *_taskpackages = NULL;
 static struct package_t **_taskpackagesary = NULL;
 
-static void write_centered_str(int row, int coloffset, int width, char *txt)
-{
-  int col;
-  int len = strlen(txt);
-  
-  if (txt == NULL) return;
-
-  SLsmg_fill_region(row, coloffset, 1, width, ' ');
-  
-  if (coloffset + len >= width) col = 0;
-  else col = (width - len) / 2;
-
-  SLsmg_gotorc(row, coloffset + col);
-  SLsmg_write_nstring(txt, width);
-}
-
-
 void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct packages_t *pkgs)
 {
   _taskpackages = taskpkgs;
@@ -82,7 +74,10 @@ void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct 
   SLtt_set_color(DESCOBJ, NULL, "black", "cyan");
   SLtt_set_color(STATUSOBJ, NULL, "yellow", "blue");
   SLtt_set_color(DIALOGOBJ, NULL, "black", "lightgray");
-  SLtt_set_color(BUTTONOBJ, NULL, "white", "blue");
+  SLtt_set_color(SELBUTTONOBJ, NULL, "lightgray", "blue");
+  SLtt_set_color(BUTTONOBJ, NULL, "lightgray", "red");
+  SLtt_set_color(SELHIGHLIGHT, NULL, "white", "blue");
+  SLtt_set_color(HIGHLIGHT, NULL, "white", "red");
   
   ui_resize();
   _initialized = 1;
@@ -117,7 +112,7 @@ void ui_resize(void)
   }
 */
    
-  _chooserinfo.height = ROWS - 2 * _chooserinfo.rowoffset;
+  _chooserinfo.height = ROWS - 2 * _chooserinfo.rowoffset - 3;
   _chooserinfo.width = COLUMNS - 2 *_chooserinfo.coloffset;
 
   SLsmg_cls();
@@ -131,9 +126,6 @@ void ui_resize(void)
   SLsmg_gotorc(0, 0);
   SLsmg_write_nstring(buf, strlen(buf));
   
-  write_centered_str(ROWS-1, 0, COLUMNS,
-                     _(" h - Help    SPACE - Toggle selection    i - Task info    q - Exit"));
-
   _resizing = 0;
   switch (_chooserinfo.whichwindow) {
     case CHOOSERWINDOW: ui_drawscreen(); break;
@@ -147,6 +139,7 @@ int ui_eventloop(void)
   int done = 0;
   int ret = 0;
   int c, i;
+  int onitem = 0;
   
   _chooserinfo.topindex = 0;
   _chooserinfo.index = 0;
@@ -156,8 +149,12 @@ int ui_eventloop(void)
 
     c = SLkp_getkey();
     switch (c) {
-      case SL_KEY_UP:
       case SL_KEY_LEFT:
+        onitem = ui_cycleselection(-1);
+        SLsmg_refresh();
+        break;
+      
+      case SL_KEY_UP:
       	ui_clearcursor(_chooserinfo.index);
 	if (_chooserinfo.index > 0) 
 	  _chooserinfo.index--; 
@@ -165,9 +162,13 @@ int ui_eventloop(void)
 	  _chooserinfo.index = _taskpackages->count - 1;
 	ui_redrawcursor(_chooserinfo.index);
         break;
-	
-      case SL_KEY_DOWN:
+      
       case SL_KEY_RIGHT:
+        onitem = ui_cycleselection(1);
+        SLsmg_refresh();
+        break;
+      
+      case SL_KEY_DOWN:
       	ui_clearcursor(_chooserinfo.index);
 	if (_chooserinfo.index < _taskpackages->count - 1) 
 	  _chooserinfo.index++; 
@@ -175,7 +176,7 @@ int ui_eventloop(void)
 	  _chooserinfo.index = 0;
 	ui_redrawcursor(_chooserinfo.index);
 	break;
-	
+
       case SL_KEY_PPAGE:
       	ui_clearcursor(_chooserinfo.index);
 	_chooserinfo.index -= _chooserinfo.height;
@@ -193,10 +194,26 @@ int ui_eventloop(void)
 	
       case SL_KEY_ENTER: case '\r': case '\n':
       case ' ':
-      	ui_toggleselection(_chooserinfo.index);
-      	ui_redrawcursor(_chooserinfo.index);
-      break;
-	
+      	if (onitem == BUTTON_NONE) {
+      	  ui_toggleselection(_chooserinfo.index);
+      	  ui_redrawcursor(_chooserinfo.index);
+	}
+        else if (onitem == BUTTON_QUIT) {
+	  done = 1;
+	}
+        else if (onitem == BUTTON_INFO) {
+	  ui_showpackageinfo();
+	}
+        else if (onitem == BUTTON_HELP) {
+	  ui_showhelp();
+	}
+        break;
+
+      case '\t':
+      	onitem = ui_cycleselection(1);
+        SLsmg_refresh();
+        break;
+      
       case 'A': case 'a': 
         for (i = 0; i < _taskpackages->count; i++) _taskpackagesary[i]->selected = 1;
 	ui_drawscreen();
@@ -253,31 +270,101 @@ int ui_drawbox(int obj, int r, int c, unsigned int dr, unsigned int dc,
   return 0;
 }
 
+void _drawbutton(int which, int issel)
+{
+  switch (which) {
+    case BUTTON_QUIT: // Left justified
+      ui_button(_chooserinfo.rowoffset + _chooserinfo.height + 1,
+                _chooserinfo.coloffset + 3, _("^Quit"), issel);
+      break;
+    case BUTTON_INFO: //Centered
+      /*
+       * TODO: This centering isn't perfect, since it doesn't take the size
+       * of the other buttons into account.
+       */
+      ui_button(_chooserinfo.rowoffset + _chooserinfo.height + 1,
+                _chooserinfo.coloffset + (_chooserinfo.width - strlen(_("Task ^Info")) + 1) / 2,
+                _("Task ^Info"), issel);
+      break;
+    case BUTTON_HELP:  // Right justified
+      ui_button(_chooserinfo.rowoffset + _chooserinfo.height + 1,
+                _chooserinfo.coloffset + _chooserinfo.width - 5 - strlen(_("^Help")) + 1,
+                _("^Help"), issel);
+      break;
+  }
+}
+
+int ui_cycleselection(int amount)
+{
+  static int whichsel = 0;
+  
+  _drawbutton(whichsel, 0);
+  ui_redrawcursor(_chooserinfo.index);
+  
+  whichsel = whichsel + amount;
+  if (whichsel > NUM_BUTTONS)
+    whichsel = 0;
+  else if (whichsel < 0)
+    whichsel = NUM_BUTTONS;
+  
+  if (whichsel > 0)
+    _drawbutton(whichsel, 1);
+  
+  return whichsel;
+}
+
 int ui_drawscreen(void)
 {
   int i;
 	
   /* Draw the chooser screen */
   SLsmg_set_color(DEFAULTOBJ);
-  ui_drawbox(CHOOSEROBJ, _chooserinfo.rowoffset - 1, _chooserinfo.coloffset - 1, _chooserinfo.height + 2, _chooserinfo.width + 2, 1);
+  ui_drawbox(CHOOSEROBJ, _chooserinfo.rowoffset - 1, _chooserinfo.coloffset - 1, _chooserinfo.height + 5, _chooserinfo.width + 2, 1);
   ui_title(_chooserinfo.rowoffset - 1, _chooserinfo.coloffset - 1, COLUMNS - 3, 
 	   _("Select task packages to install"));
- 
+  
   for (i = _chooserinfo.topindex; i < _chooserinfo.topindex + _chooserinfo.height; i++)
     if (i < _taskpackages->count) ui_drawchooseritem(i);
   
-  ui_redrawcursor(_chooserinfo.index);
+  for (i = 0; i <= NUM_BUTTONS; i++)
+    _drawbutton(i, 0);
+  ui_cycleselection(0);
 
   SLsmg_refresh();
   return 0;
 }
 
-void ui_button(int row, int col, char *txt)
+void ui_button(int row, int col, char *txt, int selected)
 {
-  SLsmg_set_color(BUTTONOBJ);
+  char *p;
+  
+  if (selected)
+	SLsmg_set_color(SELBUTTONOBJ);
+  else
+    	SLsmg_set_color(BUTTONOBJ);
   SLsmg_gotorc(row, col);
   SLsmg_write_char('<');
-  SLsmg_write_string(txt);
+  /* Anything following a ^ in txt is highlighted, and the ^ removed. */
+  p = strchr(txt, '^');
+  if (p) {
+    if (p > txt) {
+      SLsmg_write_nstring(txt, p - txt);
+    }
+    p++;
+    if (selected)
+      SLsmg_set_color(SELHIGHLIGHT);
+    else
+      SLsmg_set_color(HIGHLIGHT);
+    SLsmg_write_char(p[0]);
+    p++;
+    if (selected)
+      SLsmg_set_color(SELBUTTONOBJ);
+    else
+      SLsmg_set_color(BUTTONOBJ);
+    SLsmg_write_string(p);
+  }
+  else
+    SLsmg_write_string(txt);
   SLsmg_write_char('>');
 }
 
@@ -325,7 +412,7 @@ void ui_dialog(int row, int col, int height, int width, char *title, char *msg, 
     }
   }
 
-  ui_button(row+height-2, col+(width-4)/2, "Ok");
+  ui_button(row+height-2, col+(width-4)/2, _("Ok"), 1);
   
   SLsmg_refresh();
   SLsig_block_signals();
@@ -438,7 +525,7 @@ void ui_showpackageinfo(void)
   desc = reflowtext(width, pkg->longdesc); 
   
   /* pack buf with package info */
-  snprintf(buf, sizeof(buf), "Description:\n%s\n\nDependent packages:\n", desc);
+  snprintf(buf, sizeof(buf), _("Description:\n%s\n\nDependent packages:\n"), desc);
   FREE(desc);
   bufleft = sizeof(buf) - strlen(buf) - 1; 
   
