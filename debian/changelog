@@ -1,3 +1,11 @@
+tasksel (1.18) unstable; urgency=medium
+
+  * Should fix issues with doincludes.pl failing on autobuilders that
+    either have no available file, or don't have kde in the availabe file
+    (woody systems).
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 26 Feb 2002 19:46:02 -0500
+
 tasksel (1.17) unstable; urgency=medium
 
   * Removed junkbuster from dialup; probably not going to ship with woody, if

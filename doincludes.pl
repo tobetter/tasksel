@@ -13,8 +13,8 @@ my %depends;
 {
 	local $/="\n\n";
 	if (! open (AVAIL, "/var/lib/dpkg/available")) {
-		warn "cannot real available file, so disabling lint check\n";
-		$dolint=0;
+		warn "cannot real available file, so not exanding includes\n";
+		exit;
 	}
 	while (<AVAIL>) {
 		my ($package)=/Package:\s*(.*?)\n/;
@@ -35,13 +35,13 @@ sub processfile {
 	open (IN, $file) or die "$file: $!";
 	while (<IN>) {
 		if (/#\s*endinclude/) {
-			if (! $skipping) {
-				die "$file: #endinclude without #include";
+			if ($skipping == 0) {
+				die "$file: #endinclude without #include\n";
 			}
 			$skipping=0;
 		}
 		
-		push @lines, $_ unless $skipping;
+		push @lines, $_ unless $skipping == 1;
 
 		if (/^#\s*include\s+(\w+)/) {
 			my $pkg=$1;
@@ -49,18 +49,21 @@ sub processfile {
 				die "$file: nested includes near $_\n";
 			}
 			if (! exists $depends{$pkg}) {
-				die "$file: #include $1 failed; no such package";
+				warn "$file: #include $1 skipped; no such package. Leaving what was there alone.\n";
+				$skipping=-1;
 			}
-			push @lines, "#Automatically added by doincludes.pl; do not edit.\n";
-			# Split deps and remove alternates and versioned
-			# deps. Include the metapackage on the list.
-			push @lines, map { s/[|(].*//; "  $_\n" }
-			             split(/,\s+/, $depends{$pkg}), $pkg;
-			$skipping=1;
+			else {
+				push @lines, "#Automatically added by doincludes.pl; do not edit.\n";
+				# Split deps and remove alternates and versioned
+				# deps. Include the metapackage on the list.
+				push @lines, map { s/[|(].*//; "  $_\n" }
+				             split(/,\s+/, $depends{$pkg}), $pkg;
+				$skipping=1;
+			}
 		}
 	}
 	close IN;
-	if ($skipping) {
+	if ($skipping == 1) {
 		die "$file: #include without #endinclude";
 	}
 	
