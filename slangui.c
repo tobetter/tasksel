@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.8 2000/01/07 11:27:56 joeyh Exp $ */
+/* $Id: slangui.c,v 1.9 2000/01/07 22:10:18 joeyh Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -16,8 +16,8 @@
 
 /* Slang object number mapping */
 #define DEFAULTOBJ   0
-#define SHADOWOBJ    1 /* Has to be 1 due to slang weirdness */
-#define CHOOSEROBJ   2
+#define SHADOWOBJ    2 /* must be 2 due to slang weirdness */
+#define CHOOSEROBJ   1
 #define DESCOBJ      3
 #define STATUSOBJ    4
 #define DIALOGOBJ    5
@@ -222,20 +222,20 @@ void ui_shadow(int y, int x, unsigned int dy, unsigned int dx)
   
   if (SLtt_Use_Ansi_Colors) {
     for (c=0;c<dy-1;c++) {
-      SLsmg_gotorc(c+1+y,x+dx);
+      SLsmg_gotorc(c+1+y, x+dx);
       /*
        * Note: 0x02 corresponds to the current color.  0x80FF gets the
        * character plus alternate character set attribute. -- JED
        */
       ch = SLsmg_char_at();
       ch = (ch & 0x80FF) | (0x02 << 8);
-      SLsmg_write_raw(&ch,SHADOWOBJ);
+      SLsmg_write_raw(&ch, 1);
     }
     for (c=0;c<dx;c++) {
-      SLsmg_gotorc(y+dy,x+1+c);
+      SLsmg_gotorc(y+dy, x+1+c);
       ch = SLsmg_char_at();
       ch = (ch & 0x80FF) | (0x02 << 8);
-      SLsmg_write_raw(&ch,SHADOWOBJ);
+      SLsmg_write_raw(&ch, 1);
     }
   }
 }
