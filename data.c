@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.12 2001/05/23 17:39:54 joeyh Exp $ */
+/* $Id: data.c,v 1.13 2001/07/02 03:43:58 ajt Rel $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -340,6 +340,13 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs,
       
       while (!feof(f)) {
         fgets(buf, BUF_SIZE, f);
+dontmakemethink:
+  /* after reading the Description:, we make actually have some more fields.
+   * but the only way we might know this is if we've just read one of those
+   * fields. to ensure we don't miss it, we immediately goto the label above
+   * when we realise our mistake. a computer scientist would use lookahead
+   * for this
+   */
 	CHOMP(buf);
 	if (buf[0] == 0) break;
 
@@ -351,7 +358,7 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs,
 	  do {
 	    if (fgets(buf, BUF_SIZE, f) == 0)
               break;
-	    if (buf[0] != ' ') break;
+	    if (buf[0] != ' ') goto dontmakemethink;
 	    if (buf[1] == '.') buf[1] = ' ';
 	    if (longdesc == NULL) {
 	      longdesc = (char *)MALLOC(strlen(buf) + 1);
@@ -421,6 +428,13 @@ void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
       /* look for depends/suggests and shotdesc/longdesc */
       while (!feof(f)) {
 	fgets(buf, BUF_SIZE, f);
+dontmakemethink:
+  /* after reading the Description:, we make actually have some more fields.
+   * but the only way we might know this is if we've just read one of those
+   * fields. to ensure we don't miss it, we immediately goto the label above
+   * when we realise our mistake. a computer scientist would use lookahead
+   * for this
+   */
 	CHOMP(buf);
 	if (buf[0] == 0) break;
 
@@ -457,7 +471,7 @@ void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
 	  do {
             if (fgets(buf, BUF_SIZE, f) == 0)
               break;
-	    if (buf[0] != ' ') break;
+	    if (buf[0] != ' ') goto dontmakemethink;
 	    if (buf[1] == '.') buf[1] = ' ';
 	    if (longdesc == NULL) {
 	      longdesc = (char *)MALLOC(strlen(buf) + 1);

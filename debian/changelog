@@ -1,8 +1,12 @@
 tasksel (1.5) unstable; urgency=high
 
-  * 
+  * tasksel changes by Anthony Towns
+    - data.c: Made tasksel process fields after the long description. This was
+      stopping tasksel for handling the new Packages files that actually
+      include Task: headers, so it's kinda useful. :)
+    - tasksel.c: When no tasks are present, print a trailing newline.
 
- -- Adam Di Carlo <aph@debian.org>  Mon, 28 May 2001 21:07:52 -0400
+ -- Anthony Towns <aj@azure.humbug.org.au>  Mon,  2 Jul 2001 13:38:27 +1000
 
 tasksel (1.4) unstable; urgency=high
 
