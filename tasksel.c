@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.16 2003/07/25 17:33:24 joeyh Exp $ */
+/* $Id: tasksel.c,v 1.17 2003/07/25 23:55:57 joeyh Rel $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -186,6 +186,8 @@ int main(int argc, char * const argv[])
   }
   closedir(taskdir);
 
+  tasks_crop(&tasks);
+  
   if (tasks.count == 0) {
     fprintf(stderr, _("No tasks found on this system.\nDid you update your available file? Try running dselect update.\n"));
     return 255;

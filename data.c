@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.16 2003/07/25 18:06:28 joeyh Exp $ */
+/* $Id: data.c,v 1.17 2003/07/25 23:55:57 joeyh Rel $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -40,6 +40,7 @@ static void *_packages_root = NULL;
 static struct task_t **_tasks_enumbuf = NULL;
 static int _tasks_enumcount = 0;
 static void *_tasks_root = NULL;
+int _tasks_count;
 
 /* private functions */
 static int packagecompare(const void *p1, const void *p2)
@@ -71,7 +72,6 @@ static void tasks_walk_enumerate(const void *nodep, const VISIT order, const int
   }
 }
 
-
 static int taskcompare(const void *lp, const void *rp)
 {
   const struct task_t *l = (const struct task_t *)lp;
@@ -93,6 +93,19 @@ static void tasks_walk_delete(const void *nodep, const VISIT order, const int de
       FREE(datap->packages);
     }
     FREE(datap);
+  }
+}
+
+static void tasks_walk_crop(const void *nodep, const VISIT order, const int depth)
+{
+  struct task_t *datap = *(struct task_t **)nodep;
+
+  if (order == leaf || order == endorder) {
+    if (! datap->task_pkg || ! datap->task_pkg->shortdesc) {
+      if (tdelete((void *)datap, &_tasks_root, taskcompare)) {
+        _tasks_count--;
+      }
+    }
   }
 }
 
@@ -149,6 +162,20 @@ static int splitlinkdesc(const char *desc, char ***array)
   return elts;
 }
 
+
+void deletetask(struct tasks_t *tasks, const char *taskname) {
+  struct task_t *task;
+
+  task = tasks_find(tasks, taskname);
+  if (! task)
+    return;
+	
+  /* TODO: free structs */
+  if (tdelete((void *)task, &tasks->tasks, taskcompare)) {
+    tasks->count--;
+  }
+}
+    
 static struct task_t *addtask(
 	struct tasks_t *tasks,
 	const char *taskname,
@@ -299,6 +326,13 @@ struct task_t **tasks_enumerate(const struct tasks_t *tasks)
   return _tasks_enumbuf;
 }
 
+void tasks_crop(struct tasks_t *tasks) {
+  _tasks_root = tasks->tasks;
+  _tasks_count = tasks->count;
+  twalk(tasks->tasks, tasks_walk_crop);
+  tasks->count = _tasks_count;
+}
+
 static void walktasks(const void *t, const VISIT which, const int depth)
 {
   struct task_t *task = *(struct task_t**)t;
@@ -392,10 +426,8 @@ dontmakemethink:
 	    }
 	    if (pkgname) {
               if (! packages_find(pkgs, pkgname)) {
-                DPRINTF("task %s is missing required package %s\n", task, pkgname);
-		if (! showempties) {
-		  key_missing=1;
-		}
+                DPRINTF("task %s is missing key package %s", task, pkgname);
+		key_missing=1;
 	      }
 	    }
 	  } while (buf[0] != '\n' && !feof(f));
@@ -418,9 +450,12 @@ dontmakemethink:
 	               PRIORITY_UNKNOWN);
 	p->section = STRDUP(section);
 	p->pseudopackage = 1;
-	
         t = addtask(tasks, task, "");
         t->task_pkg = p;
+      }
+      else {
+	DPRINTF("skipping empty task %s", task);
+	deletetask(tasks, task);
       }
 
       if (task != NULL) FREE(task);
