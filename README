@@ -6,13 +6,70 @@ On startup, the tasksel program will read all *.desc files in
 tasks will be presented in a simple list selection screen with their short
 descriptions.
 
-On exit, tasksel executes the appropriate apt-get command to install the
-selected packages. If the -t option is given, then tasksel prints out the
-command line to use to stdout instead. All other messages are printed to
-stderr.
+On exit, tasksel executes the appropriate command to install the selected
+packages. If the -t option is given, then tasksel prints out the command
+line to use to stdout instead. All other messages are printed to stderr.
 
 To get a new task added, please file a bug report on tasksel.
 
 Debian derived distributions can add a new .desc file to
 /usr/share/tasksel/ to add additional tasks, or modify/divert
 debian-tasks.desc to remove tasks.
+
+The file format is a rfc-822 style stanza, with fields named Task, Section,
+Description (which should include an extended descrition), Key, Depends, 
+and optional Test- and Source fields. Here is an example:
+
+Task: desktop
+Section: user
+Relevance: 10
+Description: Desktop environment
+ This task provides basic "desktop" software, including a variety
+ of session managers, file managers and web browsers. It incorporates
+ both the GNOME and KDE desktops, and provides a display manager
+ which lets the user choose between the two.
+Key:
+  x-window-system-core
+  kde
+  gnome
+Packages: task-fields
+
+The Key field lists packages that are essential to the task. If those
+packages are not available, then the task will not be available either. It
+need not list all the packages in the task, if some only serve to make it
+better when they are available.
+
+The Packages field tells how to get a complete list of packages that are in
+the task. In the example above, it uses the task-fields method, which is
+built into tasksel, and looks for Task fields in the control data of available
+packages, that list the name of the task. It's also possible to define
+other methods, by adding programs to /usr/lib/tasksel/packages/. Then
+list the name of the program as the value for the task field, and it will
+be run and passed the name of the task, and should output a list of
+packages in that task.
+
+There is support for automatically installing tasks based on test programs.
+If a task has a Test-* field, then a program in /usr/lib/tasksel/tests/
+will be run. For example Test-lang fields cause /usr/lib/tasksel/tests/lang
+to be run. The test is passed first the name of the tasks, and then the
+contents of the field as parameters. The exit code of the test controls
+what to do with the task:
+
+0 - do not display, but do install task
+1 - do not display task 
+2 - display task, marked for installation
+3 - display task, not marked for installation
+
+One use of these tests is in automatically selecting a language task
+appropriate for the user's locale, and hiding the rest. The lang test
+handles this by comparing the value of the Test-lang field of a task with
+the locale setting. Tests could also be used for things like automatically
+installing hardware support tasks on systems with the right hardware.
+
+There is rudimentary support for tasks that depend on other tasks. If a
+task has a Depends field, then it should only be installed if all the tasks
+listed as dependencies are installed.
+
+If a task is important enough that it should go near the top of its
+section, give it a relevance of 9 or 10. If a task is not likely to be
+used, give it a relevance of 1. Default is 5.

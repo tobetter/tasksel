@@ -3,10 +3,10 @@ verious general tasks a user might want to perform with a Debian system,
 lists of packages that they might use to perform the tasks, and grouping
 information to make related sets of tasks appear together.
 
-The file format is a rfc-822 style stanza, with fields named Task, Section,
-Description (which should include an extended descrition), Key, and
-Packages. The Packages field should include the list of packages one per
-line after it, indented by one space each, like so:
+See the toplevel README for details about the file format. The files in
+this directory are preprocessed and may include comments by prefixing any
+line with a hash mark ("#"). Also, the Packages field is used in these files
+to list the packages that are part of each task, like so:
 
 Packages:
  foo
@@ -14,15 +14,15 @@ Packages:
  baz
  ...
 
-When the task is selected, any of those packages that are available will be
-selected.
+List only real packages, not virtual packages.
+ 
+Packages listed for different tasks (and within a single task)
+should not conflict, or the results will be rather arbitrary.
 
-The Key field is the same, but packages listed in it must be available or
-the task should not be displayed at all. There's no need to list packages
-in the Packages field if they are listed as Key.
-
-Comments may appear in the file, by prefixing a line with a hash mark
-('#').
+Packages that are only available on some architectures, or that may not
+be available on the user's installation media may still be listed. This
+is no problem, they are simply ignored in those cases. Take care listing
+such packages as Key however.
 
 Care should be taken when adding new tasks to ensure that the new task is
 suitably generic -- it should be something of value to a large number (at
@@ -35,38 +35,6 @@ appropriate test program. No more than 10 tasks should ever be displayed by
 the program, so if there are more, the least-used tasks must be removed
 when adding a new one.
 
-There is support for automatically installing tasks based on test programs.
-If a task has a Test-* field, then a program in /usr/lib/tasksel/tests/
-will be run. For example Test-lang fields cause /usr/lib/tasksel/tests/lang
-to be run. The test is passed first the name of the tasks, and then the
-contents of the field as parameters. The exit code of the test controls
-what to do with the task:
-
-0 - do not display, but do install task
-1 - do not display task
-2 - display task, marked for installation
-3 - display task, not marked for installation
-
-One use of these tests is in automatically selecting a language task
-appropriate for the user's locale, and hiding the rest. The lang test
-handles this by comparing the value of the Test-lang field of a task with
-the locale setting. Tests could also be used for things like automatically
-installing hardware support tasks on systems with the right hardware.
-
-There is rudimentary support for tasks that depend on other tasks. If a
-task has a Depends field, then it should only be installed if all the tasks
-listed as dependencies are installed.
-
-Packages listed for different tasks (and within a single task)
-should not conflict, or the results will be rather arbitrary.
-
-Packages that are only available on some architectures, or that may not
-be available on the user's installation media may still be listed. This 
-is no problem, they are simply ignored in those cases. Take care listing
-such packages as Key however.
-
-List only real packages, not virtual packages.
-
 Users are given the opportunity to drill down and select/unselect
 individual packages; the tasks they select only serve as a starting
 point. So err on the side of listing too many packages, rather than too
@@ -74,13 +42,7 @@ few (but don't go overboard, since many users will not bother with
 package-level selection at first).
 
 Keep short descriptions short -- very short -- and to the point. Do not
-include details about what individual packages a task includes, tasksel
-will do that for you.
-
-If a task is important enough that it should go near the top of its
-section, give it a relevance of 9 or 10. If a task is not likely to be
-used, give it a relevance of 1. Default is 5. (Low relevance tasks are also
-candidates for removal..)
+include details about what individual packages a task includes.
 
 Debian developers aside from the tasksel maintenance team may take over
 maintenance of tasks. Talk with the tasksel developers first, and then put

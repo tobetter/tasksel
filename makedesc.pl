@@ -98,6 +98,7 @@ sub processfile {
 	         grep(/^test-(.*)/, keys %fields)) {
 		print OUT ucfirst($_).": ".$fields{$_}."\n" if length $fields{$_};
 	}
+	print OUT "Packages: task-fields\n";
 	print OUT "\n";
 }
 

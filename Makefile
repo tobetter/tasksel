@@ -32,6 +32,7 @@ updatetaskspo:
 install:
 	install -d $(DESTDIR)/usr/bin $(DESTDIR)$(TASKDIR) \
 		$(DESTDIR)/usr/lib/tasksel/tests \
+		$(DESTDIR)/usr/lib/tasksel/packages \
 		$(DESTDIR)/usr/share/man/man8
 	install -m 755 tasksel.pl $(DESTDIR)/usr/bin/tasksel
 	install -m 755 tasksel-debconf $(DESTDIR)/usr/lib/tasksel/

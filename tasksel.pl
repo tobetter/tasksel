@@ -10,6 +10,7 @@ textdomain('tasksel');
 
 my $debconf_helper="/usr/lib/tasksel/tasksel-debconf";
 my $testdir="/usr/lib/tasksel/tests";
+my $packagesdir="/usr/lib/tasksel/packages";
 my $descdir="/usr/share/tasksel";
 
 sub warning {
@@ -70,21 +71,42 @@ sub read_task_desc {
 	return @ret;
 }
 
-# Given a task name, returns a list of all available packages in the task.
+sub all_tasks {
+	map { read_task_desc($_) } list_task_descs();
+}
+
+# Given task hash, returns a list of all available packages in the task.
+# If the aptitude_tasks parameter is true, then it does not expand tasks
+# that aptitude knows about, and just returns aptitude task syntax for
+# those.
 sub task_packages {
 	my $task=shift;
+	my $aptitude_tasks=shift;
+	
 	my @list;
-	local $/="\n\n";
-	open (AVAIL, "apt-cache dumpavail|");
-	while (<AVAIL>) {
-		if (/^Task: (.*)/m) {
-			my @tasks=split(", ", $1);
-			if (grep { $_ eq $task } @tasks) { 
-				push @list, $1 if /^Package: (.*)/m;
+	if ($task->{packages} eq 'task-fields') {
+		# task-fields method one is built-in for speed.
+		if ($aptitude_tasks) {
+			return "~t".$task->{task};
+		}
+		else {
+			local $/="\n\n";
+			open (AVAIL, "apt-cache dumpavail|");
+			while (<AVAIL>) {
+				if (/^Task: (.*)/m) {
+					my @tasks=split(", ", $1);
+					if (grep { $_ eq $task->{task} } @tasks) { 
+						push @list, $1 if /^Package: (.*)/m;
+					}
+				}
 			}
+			close AVAIL;
 		}
 	}
-	close AVAIL;
+	else {
+		# external method
+		@list=split "\n", `$packagesdir/$task->{packages} $task->{task}`;
+	}
 	return @list;
 }
 
@@ -201,17 +223,10 @@ sub order_for_display {
 	} @_;
 }
 
-# Process command line options.
-sub getopts {
-	my %ret;
-	Getopt::Long::Configure ("bundling");
-	if (! GetOptions(\%ret, "test|t", "required|r", "important|i", 
-		   "standard|s", "no-ui|n", "new-install", "list-tasks",
-		   "task-packages=s@", "task-desc=s")) {
-		usage();
-		exit(1);
-	}
-	return %ret;
+# Given a set of tasks and a name, returns the one with that name.
+sub name_to_task {
+	my $name=shift;
+	return (grep { $_->{task} eq $name } @_)[0];
 }
 
 sub usage {
@@ -230,114 +245,138 @@ tasksel [options]; where options is any combination of:
 });
 }
 
-my @aptitude_install;
-my @tasks_to_install;
-my %options=getopts();
-
-if (@ARGV) {
-	if ($ARGV[0] eq "install") {
-		shift;
-		push @aptitude_install, map { "~t$_" } @ARGV;
+# Process command line options and return them in a hash.
+sub getopts {
+	my %ret;
+	Getopt::Long::Configure ("bundling");
+	if (! GetOptions(\%ret, "test|t", "required|r", "important|i", 
+		   "standard|s", "no-ui|n", "new-install", "list-tasks",
+		   "task-packages=s@", "task-desc=s")) {
+		usage();
+		exit(1);
 	}
-	else {
+	# Special case apt-like syntax.
+	if (@ARGV && $ARGV[0] eq "install") {
+		shift @ARGV;
+		$ret{install} = shift @ARGV;
+	}
+	if (@ARGV) {
 		usage();
 		exit 1;
 	}
+	return %ret;
 }
 
-if (exists $options{"task-packages"}) {
-	foreach (@{$options{"task-packages"}}) {
-		print "$_\n" foreach task_packages($_);
-	}
-	exit(0);
-}
-elsif ($options{"task-desc"}) {
-	my $task=(grep { $_->{task} eq $options{"task-desc"} }
-			map { read_task_desc($_) } list_task_descs())[0];
-	if ($task) {
-		print dgettext("debian-tasks", join(" ",
-			@{$task->{description}}[1..$#{$task->{description}}]))."\n";
+sub main {
+	my %options=getopts();
+
+	# Options that output stuff and don't need a full processed list of tasks.
+	if (exists $options{"task-packages"}) {
+		my @tasks=all_tasks();
+		foreach my $taskname (@{$options{"task-packages"}}) {
+			print "$_\n" foreach task_packages(grep { $_->{task} eq $taskname } @tasks);
+		}
 		exit(0);
 	}
-	else {
-		exit(1);
-	}
-}
-
-my @tasks=map { hide_dependent_tasks($_) } map { task_test($_) }
-          grep { task_avail($_) } map { read_task_desc($_) }
-	  list_task_descs();
-
-if ($options{"list-tasks"}) {
-	print $_->{task}."\t".$_->{shortdesc}."\n"
-		foreach order_for_display(grep { $_->{_display} } @tasks);
-	exit(0);
-}
-
-if (! $options{"new-install"}) {
-	# Don't install hidden tasks if this is not a new install.
-	map { $_->{_install} = 0 } grep { $_->{_display} == 0 } @tasks;
-}
-if ($options{"required"}) {
-	push @aptitude_install, "~prequired";
-}
-if ($options{"important"}) {
-	push @aptitude_install, "~pimportant";
-}
-if ($options{"standard"}) {
-	push @aptitude_install, "~pstandard";
-}
-
-my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
-map { $_->{_install} = 0 } @list; # don't install displayed tasks unless selected
-if (@list && ! $options{"no-ui"}) {
-	my $question="tasksel/tasks";
-	if ($options{"new-install"}) {
-		$question="tasksel/first";
-	}
-	my @default = grep { $_->{_display} == 1 && $_->{_install} == 1 } @tasks;
-	my $tmpfile=`tempfile`;
-	chomp $tmpfile;
-	system($debconf_helper, $tmpfile, task_to_debconf(@list),
-		task_to_debconf(@default), $question);
-	open(IN, "<$tmpfile");
-	my $ret=<IN>;
-	chomp $ret;
-	close IN;
-	unlink $tmpfile;
-	map { $_->{_install} = 1 } debconf_to_task($ret, @tasks);
-	if (! $options{test} && $ret=~/manual package selection/) {
-		# Doing better than this calls for a way to queue stuff for
-		# install in aptitude and then enter interactive mode.
-		my $ret=system("aptitude") >> 8;
-		if ($ret != 0) {
-			error gettext("aptitude failed");
+	elsif ($options{"task-desc"}) {
+		my $task=name_to_task($options{"task-desc"}, all_tasks());
+		if ($task) {
+			print dgettext("debian-tasks", join(" ",
+				@{$task->{description}}[1..$#{$task->{description}}]))."\n";
+			exit(0);
+		}
+		else {
+			exit(1);
 		}
 	}
-}
 
-# Mark dependnent packages for install if their dependencies are met.
-foreach my $task (@tasks) {
-	if (! $task->{_install} && exists $task->{depends} && length $task->{depends} ) {
-		$task->{_install} = 1;
-		foreach my $dep (split(', ', $task->{depends})) {
-			if (! grep { $_->{task} eq $dep && $_->{_install} } @tasks) {
-				$task->{_install} = 0;
+	# This is relatively expensive, get the full list of available tasks and
+	# mark them.
+	my @tasks=map { hide_dependent_tasks($_) } map { task_test($_) }
+	          grep { task_avail($_) } all_tasks();
+	
+	if ($options{"list-tasks"}) {
+		print $_->{task}."\t".$_->{shortdesc}."\n"
+			foreach order_for_display(grep { $_->{_display} } @tasks);
+		exit(0);
+	}
+	
+	# Now work out what to tell aptitude to install.
+	my @aptitude_install;
+	if (! $options{"new-install"}) {
+		# Don't install hidden tasks if this is not a new install.
+		map { $_->{_install} = 0 } grep { $_->{_display} == 0 } @tasks;
+	}
+	if ($options{"required"}) {
+		push @aptitude_install, "~prequired";
+	}
+	if ($options{"important"}) {
+		push @aptitude_install, "~pimportant";
+	}
+	if ($options{"standard"}) {
+		push @aptitude_install, "~pstandard";
+	}
+	if ($options{"install"}) {
+		my $task=name_to_task($options{"install"}, @tasks);
+		$task->{_install} = 1 if $task;
+	}
+	
+	# The interactive bit.
+	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
+	if (@list && ! $options{"no-ui"} && ! $options{install}) {
+		map { $_->{_install} = 0 } @list; # don't install displayed tasks unless selected
+		my $question="tasksel/tasks";
+		if ($options{"new-install"}) {
+			$question="tasksel/first";
+		}
+		my @default = grep { $_->{_display} == 1 && $_->{_install} == 1 } @tasks;
+		my $tmpfile=`tempfile`;
+		chomp $tmpfile;
+		system($debconf_helper, $tmpfile, task_to_debconf(@list),
+			task_to_debconf(@default), $question);
+		open(IN, "<$tmpfile");
+		my $ret=<IN>;
+		chomp $ret;
+		close IN;
+		unlink $tmpfile;
+		map { $_->{_install} = 1 } debconf_to_task($ret, @tasks);
+		if (! $options{test} && $ret=~/manual package selection/) {
+			# Doing better than this calls for a way to queue stuff for
+			# install in aptitude and then enter interactive mode.
+			my $ret=system("aptitude") >> 8;
+			if ($ret != 0) {
+				error gettext("aptitude failed");
+			}
+		}
+	}
+
+	# Mark dependnent packages for install if their dependencies are met.
+	foreach my $task (@tasks) {
+		if (! $task->{_install} && exists $task->{depends} && length $task->{depends} ) {
+			$task->{_install} = 1;
+			foreach my $dep (split(', ', $task->{depends})) {
+				if (! grep { $_->{task} eq $dep && $_->{_install} } @tasks) {
+					$task->{_install} = 0;
+				}
+			}
+		}
+	}
+
+	# Add tasks to install.
+	push @aptitude_install, map { task_packages($_, 1) } grep { $_->{_install} } @tasks;
+
+	# And finally, act on selected tasks.
+	if (@aptitude_install) {
+		if ($options{test}) {
+			print "aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
+		}
+		else {
+			my $ret=system("aptitude", "--without-recommends", "-y", "install", @aptitude_install) >> 8;
+			if ($ret != 0) {
+				error gettext("aptitude failed");
 			}
 		}
 	}
 }
 
-push @aptitude_install, map { "~t".$_->{task} } grep { $_->{_install} } @tasks;
-
-if (@aptitude_install) {
-	if ($options{test}) {
-		print "aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
-	}
-	else {
-		my $ret=system("aptitude", "--without-recommends", "-y", "install", @aptitude_install) >> 8;
-		if ($ret != 0) {
-			error gettext("aptitude failed");
-		}
-	}
-}
+main();
