@@ -4,8 +4,8 @@ TASKDIR=/usr/share/tasksel
 DESCDIR=tasks
 DESCPO=$(DESCDIR)/po
 VERSION=$(shell expr "`dpkg-parsechangelog 2>/dev/null |grep Version:`" : '.*Version: \(.*\)' | cut -d - -f 1)
-LANGS=ar bg bs ca cs cy da de el es eu fi fr gl he hr hu id it ja ko lt mk nb nl nn pl pt pt_BR ro ru sk sl sq sv tr uk zh_CN zh_TW
-LANGS_DESC=ar bg bs ca cs cy da de el es eu fi fr gl he hr hu id it ja ko lt mk nb nl nn pl pt pt_BR ro ru sk sl sq sv tr uk zh_CN zh_TW
+LANGS=ar bg bs ca cs cy da de el es eu fi fr gl he hr hu id it ja ko lt mk nb nl nn pl pt pt_BR ro ru sk sl sq sv tl tr uk zh_CN zh_TW
+LANGS_DESC=ar bg bs ca cs cy da de el es eu fi fr gl he hr hu id it ja ko lt mk nb nl nn pl pt pt_BR ro ru sk sl sq sv tl tr uk zh_CN zh_TW
 LOCALEDIR=$(DESTDIR)/usr/share/locale
 
 all: $(TASKDESC) $(DESCPO)/build_stamp po/build_stamp
