@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks_uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-23 13:36-0400\n"
+"POT-Creation-Date: 2004-04-28 15:23-0400\n"
 "PO-Revision-Date: 2004-04-15 22:37+0300\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
@@ -575,11 +575,27 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid "Turkish environment"
+msgstr "Підтримка датської мови"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Turkish to help Turkish "
+"speaking people use Debian."
+msgstr ""
+"Це завдання встановлює пакунки, що дозволяють полегшити використання Debian "
+"для тих, хто говорить польською."
+
+#. Description
+#: ../po/debian-tasks.desc:371
 msgid "Ukrainian environment"
 msgstr "Підтримка української мови"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:371
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -588,12 +604,12 @@ msgstr ""
 "для тих, хто говорить українською."
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:380
 msgid "Conventional Unix server"
 msgstr "Традиційний сервер Unix"
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:380
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -604,12 +620,12 @@ msgstr ""
 "увазі, буде встановлено декілька демонів."
 
 #. Description
-#: ../po/debian-tasks.desc:377
+#: ../po/debian-tasks.desc:387
 msgid "Web server"
 msgstr "Web сервер"
 
 #. Description
-#: ../po/debian-tasks.desc:377
+#: ../po/debian-tasks.desc:387
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-23 13:36-0400\n"
+"POT-Creation-Date: 2004-04-28 15:23-0400\n"
 "PO-Revision-Date: 2004-04-18 05:56EEST\n"
 "Last-Translator: Konstantinos Margaritis <markos@debian.org>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
@@ -588,11 +588,27 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid "Turkish environment"
+msgstr "Δανέζικο περιβάλλον"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Turkish to help Turkish "
+"speaking people use Debian."
+msgstr ""
+"Αυτή η ομάδα εγκαθιστά πακέτα και οδηγίες χρήσης στα Πολωνικά για χρήστες "
+"του Debian που ομιλούν αυτή τη γλώσσα."
+
+#. Description
+#: ../po/debian-tasks.desc:371
 msgid "Ukrainian environment"
 msgstr "Ουκρανικό περιβάλλον"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:371
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -601,12 +617,12 @@ msgstr ""
 "του Debian που ομιλούν αυτή τη γλώσσα."
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:380
 msgid "Conventional Unix server"
 msgstr "Τυπικός εξυπηρετητής UNIX"
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:380
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -617,12 +633,12 @@ msgstr ""
 "ένα σημαντικό αριθμό προγραμμάτων δαιμόνων (daemons)."
 
 #. Description
-#: ../po/debian-tasks.desc:377
+#: ../po/debian-tasks.desc:387
 msgid "Web server"
 msgstr "Διακομιστής Ιστοσελίδων"
 
 #. Description
-#: ../po/debian-tasks.desc:377
+#: ../po/debian-tasks.desc:387
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""

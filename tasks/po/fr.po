@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.42\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-23 13:36-0400\n"
+"POT-Creation-Date: 2004-04-28 15:23-0400\n"
 "PO-Revision-Date: 2004-04-15 20:44+0200\n"
 "Last-Translator: Denis Barbier <barbier@linuxfr.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
@@ -600,11 +600,28 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid "Turkish environment"
+msgstr "Environnement danois"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Turkish to help Turkish "
+"speaking people use Debian."
+msgstr ""
+"Cette tâche installe des programmes et de la documentation en polonais afin "
+"de faciliter la prise en main de Debian par les utilisateurs parlant cette "
+"langue."
+
+#. Description
+#: ../po/debian-tasks.desc:371
 msgid "Ukrainian environment"
 msgstr "Environnement ukrainien"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:371
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -614,12 +631,12 @@ msgstr ""
 "langue."
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:380
 msgid "Conventional Unix server"
 msgstr "Serveur Unix traditionnel"
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:380
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -630,12 +647,12 @@ msgstr ""
 "distance. Attention : bon nombre de démons vont être installés."
 
 #. Description
-#: ../po/debian-tasks.desc:377
+#: ../po/debian-tasks.desc:387
 msgid "Web server"
 msgstr "Serveur web"
 
 #. Description
-#: ../po/debian-tasks.desc:377
+#: ../po/debian-tasks.desc:387
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "Cette tâche choisit les paquets utiles pour un serveur web générique."

@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.40\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-23 13:36-0400\n"
+"POT-Creation-Date: 2004-04-28 15:23-0400\n"
 "PO-Revision-Date: 2004-04-27 02:04+0200\n"
 "Last-Translator: Javier Fernandez-Sanguino Peña <jfs@computer.org>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -598,23 +598,39 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:361
+msgid "Turkish environment"
+msgstr "Entorno en danés"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Turkish to help Turkish "
+"speaking people use Debian."
+msgstr ""
+"Esta tarea instala paquetes y documentación en polaco útil para el manejo de "
+"Debian por parte de usuarios que hablen este idioma."
+
+#. Description
+#: ../po/debian-tasks.desc:371
+#, fuzzy
 msgid "Ukrainian environment"
 msgstr "Entorno en ukraniano"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:371
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
 msgstr "Esta tarea instala programas y documentación en ukraniano para ayudar a utilizar Debian a los usuarios que hablen este idioma."
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:380
 msgid "Conventional Unix server"
 msgstr "Servidor Unix convencional"
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:380
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -625,12 +641,12 @@ msgstr ""
 "cuenta que esta tarea incluye una cierta cantidad de servidores."
 
 #. Description
-#: ../po/debian-tasks.desc:377
+#: ../po/debian-tasks.desc:387
 msgid "Web server"
 msgstr "Servidor de web"
 
 #. Description
-#: ../po/debian-tasks.desc:377
+#: ../po/debian-tasks.desc:387
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""

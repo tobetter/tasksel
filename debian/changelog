@@ -1,13 +1,20 @@
 tasksel (1.51) UNRELEASED; urgency=low
 
+  * Joey Hess
+    - Update kernel source version in custom kernel task once more.
+    - Add a Turkish task from Recai Oktas. Closes: #243113
+    - Fix Portuguese translation of "Finish". Closes: #241550
+    - Switch mail task to use exim4. Closes: #242704
+    - Add openoffice.org-help-en to the office task for English help files.
+      Closes: #246106
+    - Add resolvconf to the dialup and broadband tasks. Closes: #229617
+  * Rene Engelhard
+    - Updated 'greek', 'korean' and 'thai' tasks 
   * Translations
     - Miguel Figueiredo
       - Updated Portuguese tasks translation
-  * Tasks
-    - Rene Engelhard
-      - Updated 'greek', 'korean' and 'thai' tasks 
 
- -- Rene Engelhard <rene@debian.org>  Wed, 28 Apr 2004 03:18:30 +0200
+ -- Joey Hess <joeyh@debian.org>  Wed, 28 Apr 2004 15:27:30 -0400
 
 tasksel (1.50) unstable; urgency=low
 

@@ -4,12 +4,13 @@ Description: Mail server
  This task selects a variety of package useful for a general purpose mail
  server system.
 Key:
- exim
+ exim4
 Packages:
  qpopper # HELP: What's a good pop server?
  mailx
  mutt
- exim
+ exim4-daemon-light
+ exim4-config
  procmail
  mailagent
  uw-imapd
