@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.1 1999/11/21 22:01:04 tausq Exp $ */
+/* $Id: data.c,v 1.2 1999/11/23 05:39:27 tausq Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -10,6 +10,7 @@
 #include <string.h>
 #include <ctype.h>
 
+#include "slangui.h"
 #include "util.h"
 #include "macros.h"
 

@@ -6,6 +6,7 @@ struct packages_t;
 
 void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct packages_t *packages);
 int ui_shutdown(void);
+int ui_running(void);
 void ui_resize(void);
 int ui_eventloop(void);
 

@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.4 1999/11/23 05:12:43 tausq Exp $ */
+/* $Id: slangui.c,v 1.5 1999/11/23 05:39:27 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -42,6 +42,8 @@ struct _chooserinfo_t {
 	  
 /* Module private variables */
 static struct _chooserinfo_t _chooserinfo = {3, 3, 0, 0, 0, 0, 0};
+static int _resizing = 0;
+static int _initialized = 0;
 static struct packages_t *_packages = NULL;
 static struct packages_t *_taskpackages = NULL;
 static struct package_t **_taskpackagesary = NULL;
@@ -81,18 +83,26 @@ void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct 
   SLtt_set_color(BUTTONOBJ, NULL, "white", "red");
   
   ui_resize();
+  _initialized = 1;
 }
 
 int ui_shutdown(void) 
 {
   SLsmg_reset_smg();
   SLang_reset_tty();
+  _initialized = 0;
   return 0;
+}
+
+int ui_running(void)
+{
+  return _initialized;
 }
 
 void ui_resize(void)
 {
   char buf[160];
+  _resizing = 1;
   /* SIGWINCH handler */
   if (-1 == SLang_init_tty(-1, 0, 1)) DIE(_("Unable to initialize the terminal"));
   SLtt_get_terminfo();
@@ -122,6 +132,7 @@ void ui_resize(void)
   write_centered_str(ROWS-1, 0, COLUMNS,
                      _(" h - Help    SPACE - Toggle selection    i - Task info    q - Exit"));
 
+  _resizing = 0;
   switch (_chooserinfo.whichwindow) {
     case CHOOSERWINDOW: ui_drawscreen(); break;
     case HELPWINDOW: ui_showhelp(); break;
@@ -268,10 +279,12 @@ void ui_dialog(int row, int col, int height, int width, char *title, char *msg, 
   ui_button(row+height-2, col+(width-4)/2, " OK ");
   
   SLsmg_refresh();
+  SLsig_block_signals();
   do {
-    c = SLkp_getkey();
-  } while (!(c == '\n' || c == '\r' || c == SL_KEY_ENTER || isspace(c)));
-
+    c = 0;
+    if (SLang_input_pending(5)) c = SLkp_getkey();
+  } while (!(c == '\n' || c == '\r' || c == SL_KEY_ENTER || isspace(c)) && (_resizing == 0));
+  SLsig_unblock_signals();
   if (reflow) FREE(reflowbuf);
 }
 

@@ -1,4 +1,4 @@
-/* $Id: macros.h,v 1.1 1999/11/21 22:01:04 tausq Exp $ */
+/* $Id: macros.h,v 1.2 1999/11/23 05:39:27 tausq Exp $ */
 #ifndef _MACROS_H
 #define _MACROS_H
 
@@ -14,6 +14,7 @@
   } while (0);
 #define ASSERT(cond) \
   if (!(cond)) { \
+    if (ui_running()) ui_shutdown(); \
     fprintf(stderr, "ASSERTION FAILED at %s:%d! (%s)\n", __FILE__, __LINE__, #cond); \
     exit(255); \
   }
@@ -35,6 +36,7 @@
 /* Do you see a perl influence? :-) */
 #define DIE(fmt, arg...) \
   do { \
+    if (ui_running()) ui_shutdown(); \
     fprintf(stderr, "Fatal error encountered at %s:%d\r\n\t", __FILE__, __LINE__); \
     fprintf(stderr, fmt, ##arg); \
     fprintf(stderr, "\r\n"); \
@@ -43,6 +45,7 @@
   
 #define PERROR(ctx) \
   do { \
+    if (ui_running()) ui_shutdown(); \
     fprintf(stderr, "I/O error at %s:%d\r\n\t", __FILE__, __LINE__); \
     fprintf(stderr, "%s: %s\r\n", ctx, strerror(errno)); \
     ABORT; \

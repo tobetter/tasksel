@@ -1,9 +1,10 @@
-/* $Id: util.c,v 1.1 1999/11/21 22:01:04 tausq Exp $ */
+/* $Id: util.c,v 1.2 1999/11/23 05:39:27 tausq Exp $ */
 #include "util.h"
 
 #include <string.h>
 #include <stdlib.h>
 
+#include "slangui.h"
 #include "macros.h"
 
 #ifdef DEBUG
