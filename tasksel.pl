@@ -473,7 +473,7 @@ sub main {
 		else {
 			my $ret=system("aptitude", "remove", @aptitude_remove) >> 8;
 			if ($ret != 0) {
-				error gettext("aptitude failed");
+				error gettext("aptitude failed")." ($ret)";
 			}
 		}
 	}
@@ -490,7 +490,7 @@ sub main {
 			else {
 				my $ret=system("aptitude") >> 8;
 				if ($ret != 0) {
-					error gettext("aptitude failed");
+					error gettext("aptitude failed")." ($ret)";
 				}
 			}
 		}
