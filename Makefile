@@ -53,5 +53,5 @@ clean:
 
 # This taget is run on auric to generate the overrides files.
 override:
-	@cvs up tasks 2>&1 | grep -v ^U | grep -v ".cvspass"
+	@cvs up tasks 2>&1 | grep -v ^U | grep -v ".cvspass" || true
 	@perl makeoverride.pl $(DESCDIR) > ../tasks.sid
