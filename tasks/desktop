@@ -8,7 +8,59 @@ Description: desktop environment
 Essential:
   x-window-system-core
   # Just cause it's easy, no bias here...
+#include kde
+#Automatically added by doincludes.pl; do not edit.
+  kdelibs3
+  libarts 
+  libkmid 
+  kdebase 
+  kdebase-audiolibs 
+  kdebase-libs 
+  libkonq3 
+  konqueror 
+  kate 
+  konsole 
+  kdebase-doc 
+  kscreensaver 
+  kdewallpapers 
+  kuser
+  ksysv
+  kcron
+  kpackage
+  secpolicy
+  kghostview
+  kview
+  kmail
+  korn
+  ark
+  kab
+  karm
+  kcalc
+  kcharselect
+  kdepasswd
+  kdf
+  kedit
+  kfind
+  khexedit
+  kjots
+  knotes
+  kpm
+  kpaint
+  kiconedit
+  kfract
+  ksnapshot
+  kruler
+  kdict
+  kdm 
+  kit
+  knode
+  ksirc
+  koffice
+  knewsticker
+  ktimer
+  kcoloredit
   kde
+#endinclude
 Packages:
   x-window-system-core
   # TODO: we really should have gnome meta-packages, which this
@@ -55,7 +107,6 @@ Packages:
   kview
   kmail
   korn
-  korganizer
   ark
   kab
   karm
@@ -75,7 +126,6 @@ Packages:
   ksnapshot
   kruler
   kdict
-  kdepim-libs
   kdm 
   kit
   knode

@@ -1,10 +1,16 @@
 tasksel (1.20) unstable; urgency=low
 
-UNRELEASED
-  * Added Essential: fields to all task files.
+  * Added Essential: fields to all task files. The idea is to skip display of
+    a task if all of its essential packages are not available, which will make
+    it easier to make CD's that include some package that happens to be in a
+    task, without having to drag in that whole task or get the confusing
+    situation of having tasksel display the task, but install only one
+    ancillary package from it.
   * Changed python task to use python instead of non-existant python-base.
     This task still needs a lot of work.
   * Updated Danish translation da.po by Claus Hindsgaul <claus_h@image.dk>
+  * Updated to use debhelper v4 and misc:Depends; removed outdated copyright
+    info from debian/rules.
 
  -- Joey Hess <joeyh@debian.org>  Mon, 18 Mar 2002 01:36:16 -0500
 
