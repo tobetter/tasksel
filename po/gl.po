@@ -1,24 +1,22 @@
 # translation of gl.po to Galician
 # Galician translation of Debian's tasksel.
-# Copyright (C) 2001 Jacobo Tarrío Barreiro
-# Jacobo Tarrio <jtarrio@trasno.net>, 2001.
-# Héctor Fernández López <trorrr@yahoo.es>, 2004
+# Copyright (C) 2005 Software in the Public Interest
+# HÃ©ctor FernÃ¡ndez LÃ³pez <trorrr@yahoo.es>, 2004
+# Jacobo TarrÃ­o <jtarrio@debian.org>, 2001, 2005
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-07-30 13:29-0400\n"
-"PO-Revision-Date: 2004-06-24 22:40+0200\n"
-"Last-Translator: Héctor Fernández López <trorrr@yahoo.es>\n"
+"PO-Revision-Date: 2005-02-16 17:07+0100\n"
+"Last-Translator: Jacobo TarrÃ­o <jtarrio@debian.org>\n"
 "Language-Team: Galician <trasno@ceu.fi.udc.es>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.1\n"
 
 #: ../tasksel.pl:290
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -34,15 +32,19 @@ msgid ""
 "\t    --task-packages list available packages in a task\n"
 "\t    --task-desc     returns the description of a task\n"
 msgstr ""
-"Uso:\n"
+"Emprego:\n"
 "tasksel install <tarefa>\n"
-"tasksel [opcións]; opción pode ser unha combinación de::\n"
-"\t-t -- modo de proba (non cambia nada en realidade)\n"
-"\t-r -- instalar tódolos paquetes con prioridade \"necesario\"\n"
-"\t-i -- instalar tódolos paquetes con prioridade \"importante\" \n"
-"\t-s -- instalar tódolos paquetes con prioridade \"normal\"\n"
-"\t-n -- non mostrar interface de usuario, usao con -r ou -i\n"
-"\t-a -- mostrar tódalas tarefas, aínda que non teñan paquetes\n"
+"tasksel remove <tarefa>\n"
+"tasksel [opciÃ³ns]; onde \"opciÃ³ns\" Ã© unha combinaciÃ³n de:\n"
+"\t-t, --test          modo de probas; o programa non fai nada\n"
+"\t-r, --required      instala tÃ³dolos paquetes requiridos\n"
+"\t-i, --important     instala tÃ³dolos paquetes importantes\n"
+"\t-s, --standard      instala tÃ³dolos paquetes de prioridade normal\n"
+"\t-n, --no-ui         non amosa a interfaz; adoita usarse con -r ou -i\n"
+"\t    --new-install   instala automaticamente algunhas tarefas\n"
+"\t    --list-tasks    amosa a lista de tarefas que se instalarÃ­an e sae\n"
+"\t    --task-packages amosa a lista de paquetes dunha tarefa\n"
+"\t    --task-desc     amosa a descriciÃ³n dunha tarefa\n"
 
 #: ../tasksel.pl:465 ../tasksel.pl:478
 msgid "aptitude failed"
@@ -55,7 +57,7 @@ msgstr "aptitude fallou"
 #~ "de forma manual"
 
 #~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "Non se pode reservar memoria para o buffer de enumeración"
+#~ msgstr "Non se pode reservar memoria para o buffer de enumeraciÃ³n"
 
 #~ msgid ""
 #~ "Fatal error encountered at %s:%d\n"
@@ -72,7 +74,7 @@ msgstr "aptitude fallou"
 #~ "\t"
 
 #~ msgid "(no description)"
-#~ msgstr "(non hai descrición)"
+#~ msgstr "(non hai descriciÃ³n)"
 
 #~ msgid "End-user"
 #~ msgstr "Usuario final"
@@ -87,16 +89,16 @@ msgstr "aptitude fallou"
 #~ msgstr "Desenvolvemento"
 
 #~ msgid "Localization"
-#~ msgstr "Localización"
+#~ msgstr "LocalizaciÃ³n"
 
 #~ msgid "Miscellaneous"
-#~ msgstr "Miscelánea"
+#~ msgstr "MiscelÃ¡nea"
 
 #~ msgid "Unable to initialize the terminal"
 #~ msgstr "Non se puido inicializa-lo terminal"
 
 #~ msgid "Unable to initialize screen output"
-#~ msgstr "Non se puido inicializa-la saída por pantalla"
+#~ msgstr "Non se puido inicializa-la saÃ­da por pantalla"
 
 #~ msgid "Unable to initialize keyboard interface"
 #~ msgstr "Non se puido inicializa-la interface de teclado"
@@ -108,7 +110,7 @@ msgstr "aptitude fallou"
 #~ msgstr "^Rematar"
 
 #~ msgid "Task ^Info"
-#~ msgstr "^Información"
+#~ msgstr "^InformaciÃ³n"
 
 #~ msgid "^Help"
 #~ msgstr "^Axuda"
@@ -120,7 +122,7 @@ msgstr "aptitude fallou"
 #~ msgstr "Aceptar"
 
 #~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Índice fóra dos límites: %d >= %d"
+#~ msgstr "Ãndice fÃ³ra dos lÃ­mites: %d >= %d"
 
 #~ msgid "Help"
 #~ msgstr "Axuda"
@@ -139,19 +141,19 @@ msgstr "aptitude fallou"
 #~ "\n"
 #~ "Press enter to return to the task selection screen"
 #~ msgstr ""
-#~ "As tarefas permítenlle facer unha instalación rápida dunha selección de "
+#~ "As tarefas permÃ­tenlle facer unha instalaciÃ³n rÃ¡pida dunha selecciÃ³n de "
 #~ "paquetes que realizan unha tarefa determinada.\n"
 #~ "\n"
 #~ "A lista de escolla principal amosa unha lista de tarefas que pode "
 #~ "escoller para instalar. As teclas das frechas moven o cursor. Ao premer "
-#~ "Enter ou a barra espaciadora cámbiase a selección da tarefa que hai no "
-#~ "cursor. Tamén pode premer A para escoller tódalas tarefas, ou N para des-"
-#~ "seleccionar tódalas tarefas. Ao premer Q ha saír do programa e comeza-la "
-#~ "instalación das tarefas seleccionadas.\n"
+#~ "Enter ou a barra espaciadora cÃ¡mbiase a selecciÃ³n da tarefa que hai no "
+#~ "cursor. TamÃ©n pode premer A para escoller tÃ³dalas tarefas, ou N para des-"
+#~ "seleccionar tÃ³dalas tarefas. Ao premer Q ha saÃ­r do programa e comeza-la "
+#~ "instalaciÃ³n das tarefas seleccionadas.\n"
 #~ "\n"
 #~ "Gracias por empregar Debian.\n"
 #~ "\n"
-#~ "Prema Enter para voltar á pantalla de selección de tarefas"
+#~ "Prema Enter para voltar Ã¡ pantalla de selecciÃ³n de tarefas"
 
 #~ msgid ""
 #~ "Description:\n"
@@ -159,57 +161,57 @@ msgstr "aptitude fallou"
 #~ "\n"
 #~ "Included packages:\n"
 #~ msgstr ""
-#~ "Descrición:\n"
+#~ "DescriciÃ³n:\n"
 #~ "%s\n"
 #~ "\n"
-#~ "Paquetes incluídos:\n"
+#~ "Paquetes incluÃ­dos:\n"
 
 #~ msgid "(no description available)"
-#~ msgstr "(non hai unha descrición dispoñible)"
+#~ msgstr "(non hai unha descriciÃ³n dispoÃ±ible)"
 
 #~ msgid "Unknown signal seen"
-#~ msgstr "Recibiuse un sinal descoñecido"
+#~ msgstr "Recibiuse un sinal descoÃ±ecido"
 
 #~ msgid "tasksel install <task>\n"
 #~ msgstr "tasksel install <tarefa>\n"
 
 #~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr "tasksel [opcións]; onde opcións é unha combinación de:\n"
+#~ msgstr "tasksel [opciÃ³ns]; onde opciÃ³ns Ã© unha combinaciÃ³n de:\n"
 
 #~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- modo de proba; non executar apt-get ao saír"
+#~ msgstr "-t -- modo de proba; non executar apt-get ao saÃ­r"
 
 #~ msgid ""
 #~ "-q -- queue installs; do not install packages with apt-get;\n"
 #~ "\t\tjust queue them in dpkg"
 #~ msgstr ""
-#~ "-q -- poñe-las instalacións nunha cola; non instala-los paquetes con apt-"
+#~ "-q -- poÃ±e-las instalaciÃ³ns nunha cola; non instala-los paquetes con apt-"
 #~ "get;\n"
-#~ "\t\tsó metelos na cola con dpkg"
+#~ "\t\tsÃ³ metelos na cola con dpkg"
 
 #~ msgid "-r -- install all required-priority packages"
-#~ msgstr "-r -- instalar tódolos paquetes requiridos"
+#~ msgstr "-r -- instalar tÃ³dolos paquetes requiridos"
 
 #~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- instalar tódolos paquetes importantes"
+#~ msgstr "-i -- instalar tÃ³dolos paquetes importantes"
 
 #~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- instalar tódolos paquetes de prioridade normal"
+#~ msgstr "-s -- instalar tÃ³dolos paquetes de prioridade normal"
 
 #~ msgid "-n -- don't show UI; use with -r or -i usually"
-#~ msgstr "-n -- non amosa-la interface; adóitase empregar con -r ou -i"
+#~ msgstr "-n -- non amosa-la interface; adÃ³itase empregar con -r ou -i"
 
 #~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr "-a -- amosar tódalas tarefas, incluso esas que non teñen paquetes"
+#~ msgstr "-a -- amosar tÃ³dalas tarefas, incluso esas que non teÃ±en paquetes"
 
 #~ msgid "No packages selected\n"
-#~ msgstr "Non hai ningún paquete escolleito\n"
+#~ msgstr "Non hai ningÃºn paquete escolleito\n"
 
 #, fuzzy
 #~ msgid "No tasks found on this system.\n"
 #~ msgstr ""
 #~ "Non se atoparon tarefas neste sistema.\n"
-#~ "¿Actualizou o seu ficheiro de paquetes dispoñibles?\n"
+#~ "Â¿Actualizou o seu ficheiro de paquetes dispoÃ±ibles?\n"
 
 #~ msgid "Cannot allocate memory for strdup"
 #~ msgstr "Non se puido reservar memoria para strdup"
