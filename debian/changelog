@@ -1,3 +1,11 @@
+tasksel (1.9) unstable; urgency=low
+
+  * Add build-depends on gettext (Closes: #110918) 
+  * remove swig and saml from python-dev (Closes: #111683)
+  * desktop task uses gimp1.2 rather than gimp (Closes: #111655)
+
+ -- David Kimdon <dwhedon@debian.org>  Sun, 16 Sep 2001 20:23:45 +0000
+
 tasksel (1.8) unstable; urgency=low
 
   * Add build-depends. Closes: #105475
