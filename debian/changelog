@@ -1,8 +1,10 @@
-tasksel (2.08) UNRELEASED; urgency=low
+tasksel (2.08) unstable; urgency=critical
 
   * Joey Hess
     - Clear screen before running aptitude for better display
       with dialog frontend.
+    - Anchor ~t expressions for aptitude to avoid matching *-desktop
+      when only desktop is wanted. Closes: #261927
   * Kenshi Muto
     - Update Japanese and Japanese-desktop task.
       Removed some optional packages because there is no chance to

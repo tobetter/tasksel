@@ -184,7 +184,7 @@ sub task_packages {
 	if ($task->{packages} eq 'task-fields') {
 		# task-fields method one is built-in for speed.
 		if ($aptitude_tasks) {
-			return "~t".$task->{task};
+			return '~t^'.$task->{task}.'$';
 		}
 		else {
 			local $/="\n\n";
@@ -433,6 +433,10 @@ sub main {
 				push @aptitude_remove, task_packages($task, 0);
 			}
 		}
+		# Clear screen before running aptitude.
+		if (@aptitude_remove || @aptitude_install) {
+			system("clear");
+		}
 	}
 
 	# Mark dependnent packages for install if their dependencies are met.
@@ -450,11 +454,6 @@ sub main {
 	# Add tasks to install.
 	push @aptitude_install, map { task_packages($_, 1) } grep { $_->{_install} } @tasks;
 
-	# Clear screen before running aptitude.
-	if (@aptitude_remove || @aptitude_install) {
-		system("clear");
-	}
-	
 	# Remove any packages we were asked to.
 	if (@aptitude_remove) {
 		if ($options{test}) {
