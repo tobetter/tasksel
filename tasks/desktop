@@ -9,20 +9,8 @@ Description: Desktop environment
 Key:
   x-window-system-core
   kde
-Packages:
-# Gnome should be key, but it is *still* not in testing! Argh!!!
-#include gnome
-#Automatically added by doincludes.pl; do not edit.
-  gnome-desktop-environment 
-  gnome-office 
-  evolution 
-  bluefish
-  netspeed
-  rhythmbox
-  synaptic 
-  xscreensaver
   gnome
-#endinclude
+Packages:
 # gdm allows picking between gnome and kde at login time
   gdm
   mozilla
