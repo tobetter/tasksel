@@ -7,6 +7,8 @@ tasksel (2.07) UNRELEASED; urgency=low
     - Add --task-desc switch. Closes: #259664
     - Re-organised the documentation.
     - Modularised how the list of packages in a task is determined.
+    - Play with server relevance values a bit to order web server and print
+      server to the top.
   * Per Olofsson
     - Added openoffice.org-help-sv and gimp-help-sv to swedish-desktop.
       Closes: #259832.
@@ -23,7 +25,7 @@ tasksel (2.07) UNRELEASED; urgency=low
     - Claus Hindsgaul
       - Updated Danish translation of tasks.
 
- -- Rene Engelhard <rene@debian.org>  Sat, 17 Jul 2004 17:37:12 +0200
+ -- Joey Hess <joeyh@debian.org>  Sun, 18 Jul 2004 16:30:52 -0400
 
 tasksel (2.06) unstable; urgency=medium
 
