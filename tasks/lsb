@@ -4,7 +4,4 @@ Description: Linux Standard Base
  This task makes the system compliant with the Linux Standard Base,
  allowing you to install and use LSB packages.
 Key:
-  # Not #included because it expandes to list virtual packages, which would
-  # make it not show on the list. Anyway, we want the whole thing, or
-  # nothing.
   lsb

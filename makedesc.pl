@@ -79,7 +79,7 @@ sub processfile {
 				if (! $package{$_}) {
 					print STDERR "$file: $_ is not a valid package.\n";
 					if ($field eq 'key') {
-						die "Above package is Key -- fatal error!\n";
+						print STDERR "MISSING KEY PACKAGE, TASK BROKEN\n";
 					}
 				}
 				if ($notmain{$_}) {

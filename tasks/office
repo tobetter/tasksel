@@ -2,26 +2,11 @@ Task: office
 Section: user
 Description: Office environment
  This task provides a suite of office productivity software, including a
- word processor, a spreadsheat, a personal finance program, project
- management software, slide show and graphing software, and more.
+ word processor, a spreadsheat, a presentation program, and more.
  This is a rather large collection of software.
 Key:
   x-window-system-core
-#include gnome-office
-#Automatically added by doincludes.pl; do not edit.
-  gnome-core 
-  bug-buddy 
-  gconf-editor
-  evolution 
-  epiphany-browser 
-  gnumeric
-  abiword-gnome 
-  gnucash
-  xscreensaver-gnome
-  pan
-  gnome-gv
-  gnome
-#endinclude
-Packages:
-  menu
   openoffice.org
+Packages:
+  gnucash
+  menu

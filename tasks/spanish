@@ -6,7 +6,6 @@ Description: Spanish environment
 Key:
  language-env
  manpages-es
- user-es
 Packages: 
 # Dictionaries
  ispanish
@@ -22,9 +21,8 @@ Packages:
  linux-tutorial-es
 # Other packages to i18n common software
  util-linux-locales
-# The following should probably be based on other task selection
-# (see bug #202907)
-# mozilla-locale-es
-# kde-i18n-es
-# openoffice.org-l10n-es
-# openoffice.org-spellcheck-es
+ # Broken at the moment
+ #mozilla-locale-es
+ kde-i18n-es
+ openoffice.org-l10n-es
+ openoffice.org-spellcheck-es

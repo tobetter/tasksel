@@ -1,0 +1,13 @@
+Task: thai
+Section: l10n
+Description: Thai environment
+ This task installs packages that make it easier for Thai to use Debian.
+Key:
+ language-env
+ xiterm+thai
+ xfonts-thai
+Packages:
+ nonlock
+ cttex
+ ttmkfdir
+ kde-i18n-th

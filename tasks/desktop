@@ -7,23 +7,9 @@ Description: Desktop environment
  which lets the user choose between the two.
 Key:
   x-window-system-core
-#include kde
-#Automatically added by doincludes.pl; do not edit.
-  fontconfig
-  kde-core
-  kde-amusements
-  kdeaddons
-  kdeadmin
-  kdeartwork
-  kdegraphics
-  kdemultimedia
-  kdenetwork
-  kdepim
-  kdeutils
-  koffice
-  quanta
   kde
-#endinclude
+Packages:
+# Gnome should be key, but it is *still* not in testing! Argh!!!
 #include gnome
 #Automatically added by doincludes.pl; do not edit.
   gnome-core 
@@ -39,7 +25,6 @@ Key:
   gnome-gv
   gnome
 #endinclude
-Packages:
 # gdm allows picking between gnome and kde at login time
   gdm
   mozilla
