@@ -1,8 +1,9 @@
-tasksel (1.0-8) unstable; urgency=low
+tasksel (1.0-8) frozen unstable; urgency=low
 
   * Changed the Quit button into a Finished button - karlheg.
+  * catch SIGINT and exit gracefully
 
- --
+ -- Randolph Chung <tausq@debian.org>  Fri, 21 Apr 2000 17:49:59 -0700
 
 tasksel (1.0-7) frozen unstable; urgency=low
 

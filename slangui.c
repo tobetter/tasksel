@@ -1,7 +1,8 @@
-/* $Id: slangui.c,v 1.16 2000/02/26 10:16:37 karlheg Exp $ */
+/* $Id: slangui.c,v 1.17 2000/04/22 00:52:33 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
+#include "tasksel.h"
 #include "slangui.h"
 #include <slang.h>
 #include <libintl.h>
@@ -70,7 +71,7 @@ void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct 
   _taskpackagesary = packages_enumerate(taskpkgs);
   _packages = pkgs;
 	
-  SLang_set_abort_signal(NULL);
+  SLang_set_abort_signal(tasksel_signalhandler);
   
   /* assign attributes to objects */
   SLtt_set_color(DEFAULTOBJ, NULL, "white", "blue");

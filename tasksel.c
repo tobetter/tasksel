@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.6 2000/02/07 01:09:53 tausq Exp $ */
+/* $Id: tasksel.c,v 1.7 2000/04/22 00:52:33 tausq Exp $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -13,16 +13,18 @@
 #include "data.h"
 #include "macros.h"
 
-static void signalhandler(int sig)
+void tasksel_signalhandler(int sig)
 {
   switch (sig) {
     case SIGWINCH:
       ui_resize();
       break;
+    case SIGINT:
+      ui_shutdown();
+      exit(0);   
     default:
       DPRINTF("%s\n", _("Unknown signal seen"));
   }
-	 
 }
 
 void help(void)
@@ -99,6 +101,7 @@ int doinstall(struct package_t **taskpkglist, int taskpkgcount,
       return 1;
     }
   }  
+
   return 0;
 }
 
@@ -110,7 +113,7 @@ int main(int argc, char * const argv[])
   struct packages_t taskpkgs, packages;
   struct package_t **pkglist, **taskpkglist;
   
-  signal(SIGWINCH, signalhandler);
+  signal(SIGWINCH, tasksel_signalhandler);
   
   setlocale(LC_ALL, "");
   bindtextdomain(PACKAGE, LOCALEDIR);
