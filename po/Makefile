@@ -1,11 +1,15 @@
 XGETTEXT = xgettext --keyword=_
 
-%.po:
-	$(XGETTEXT) ../*.[ch]
-
-all: messages.po
+all: C.po hu.mo sv.mo pl.mo
 	touch build_stamp
 
+C.po:
+	$(XGETTEXT) -o $@ ../*.[ch]
+
+%.mo: %.po
+	msgfmt -o $@ $<
+
 clean:
-	-rm -f messages.po build_stamp
+	-rm -f C.po build_stamp
+	-rm -f *.mo
 
