@@ -46,7 +46,7 @@ my $dolint=1;
 open (OUT, ">$file") or die ">$file: $!";
 
 use File::Find;
-find(\&processfile, $dir);
+find({ wanted => \&processfile, preprocess => sub { return sort @_}}, $dir);
 
 sub processfile {
 	my $file=$_; # File::Find craziness.

@@ -7,6 +7,9 @@ tasksel (1.43) UNRELEASED; urgency=low
     - Rename po/C.po into po/tasksel.pot.
     - Add po/tasksel.pot into subversion repository to help translators,
       but it is not updated if only POT-Creation-Date has changed.
+    - Sort tasks when generating debian-tasks.desc so that number lines
+      in generated PO files do not change when different users build this
+      file.
   * Konstantinos Margaritis
     - Update Greek translations.
 
