@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-07 18:11-0500\n"
+"POT-Creation-Date: 2005-01-21 13:23-0500\n"
 "PO-Revision-Date: 2004-08-20 00:34+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -82,17 +82,17 @@ msgstr ""
 "更加方便地使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:55
+#: ../po/debian-tasks.desc:52
 msgid "Simplified Chinese desktop"
 msgstr "簡體中文桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:55
+#: ../po/debian-tasks.desc:52
 msgid "This task makes the desktop be localised in Simplified Chinese"
 msgstr "這個主題將把桌面環境區域化為簡體中文"
 
 #. Description
-#: ../po/debian-tasks.desc:62
+#: ../po/debian-tasks.desc:59
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
@@ -102,22 +102,22 @@ msgstr ""
 "更加方便地使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:79
+#: ../po/debian-tasks.desc:73
 msgid "Traditional Chinese environment"
 msgstr "繁體中文環境"
 
 #. Description
-#: ../po/debian-tasks.desc:79
+#: ../po/debian-tasks.desc:73
 msgid "This task makes the desktop be localised in Traditional Chinese"
 msgstr "這個主題將把桌面環境區域化為繁體中文"
 
 #. Description
-#: ../po/debian-tasks.desc:86
+#: ../po/debian-tasks.desc:80
 msgid "Cyrillic environment"
 msgstr "斯拉夫語系環境"
 
 #. Description
-#: ../po/debian-tasks.desc:86
+#: ../po/debian-tasks.desc:80
 msgid ""
 "This task provides Cyrillic fonts and other software you will need in order "
 "to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
@@ -127,12 +127,12 @@ msgstr ""
 "俄羅斯語、保加利亞語、馬其頓語、俄語、塞爾維亞語和烏克蘭語。"
 
 #. Description
-#: ../po/debian-tasks.desc:97
+#: ../po/debian-tasks.desc:91
 msgid "Cyrillic desktop"
 msgstr "斯拉夫語系桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:97
+#: ../po/debian-tasks.desc:91
 msgid ""
 "This task makes the desktop be localised in Cyrillic It supports Belarusian, "
 "Bulgarian, Macedonian, Russian, Serbian and Ukrainian."
@@ -141,12 +141,12 @@ msgstr ""
 "頓語、俄語、塞爾維亞語和烏克蘭語。"
 
 #. Description
-#: ../po/debian-tasks.desc:107
+#: ../po/debian-tasks.desc:101
 msgid "Danish environment"
 msgstr "丹麥語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:107
+#: ../po/debian-tasks.desc:101
 msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
@@ -154,28 +154,28 @@ msgstr ""
 "此主題將安裝丹麥語的相關的套件和文件，以利於使用丹麥語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:117
+#: ../po/debian-tasks.desc:111
 msgid "Danish desktop"
 msgstr "丹麥語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:117
+#: ../po/debian-tasks.desc:111
 msgid "This task makes the desktop be localised in Danish"
 msgstr "這個主題將把桌面環境區域化為丹麥語"
 
 #. Description
-#: ../po/debian-tasks.desc:124
+#: ../po/debian-tasks.desc:118
 msgid "SQL database"
 msgstr "SQL 資料庫"
 
 #. Description
-#: ../po/debian-tasks.desc:124
+#: ../po/debian-tasks.desc:118
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
 msgstr "此主題提供了 PostgreSQL 資料庫所需的用戶端及伺服器套件。"
 
 #. Description
-#: ../po/debian-tasks.desc:124
+#: ../po/debian-tasks.desc:118
 msgid ""
 "PostgreSQL is an SQL relational database, offering increasing SQL92 "
 "compliance and some SQL3 features.  It is suitable for use with multi-user "
@@ -186,12 +186,12 @@ msgstr ""
 "能。因為它操作簡便又易於掌控，所以很適合用於多使用者存取資料庫之環境。"
 
 #. Description
-#: ../po/debian-tasks.desc:138
+#: ../po/debian-tasks.desc:132
 msgid "Desktop environment"
 msgstr "桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:138
+#: ../po/debian-tasks.desc:132
 msgid ""
 "This task provides basic \"desktop\" software, including a variety of "
 "session managers, file managers and web browsers. It incorporates both the "
@@ -203,79 +203,79 @@ msgstr ""
 "使用者在二者之間進行選擇。"
 
 #. Description
-#: ../po/debian-tasks.desc:158
+#: ../po/debian-tasks.desc:152
 msgid "DNS server"
 msgstr "DNS 伺服器"
 
 #. Description
-#: ../po/debian-tasks.desc:158
+#: ../po/debian-tasks.desc:152
 msgid ""
 "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr "提供了 BIND DNS 伺服器以及相關文件和工具程式套件。"
 
 #. Description
-#: ../po/debian-tasks.desc:166
+#: ../po/debian-tasks.desc:160
 msgid "File server"
 msgstr "檔案伺服器"
 
 #. Description
-#: ../po/debian-tasks.desc:166
+#: ../po/debian-tasks.desc:160
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
 msgstr "此主題將把您的系統設置成一台同時支援 NetBIOS 及 NFS 的檔案伺服器。"
 
 #. Description
-#: ../po/debian-tasks.desc:176
+#: ../po/debian-tasks.desc:170
 msgid "French environment"
 msgstr "法語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:176
+#: ../po/debian-tasks.desc:170
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
 msgstr "此主題將安裝法語的相關套件和文件，以利於使用法語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:187
+#: ../po/debian-tasks.desc:181
 msgid "French desktop"
 msgstr "法語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:187
+#: ../po/debian-tasks.desc:181
 msgid "This task makes the desktop be localised in French"
 msgstr "這個主題將把桌面環境區域化為法語"
 
 #. Description
-#: ../po/debian-tasks.desc:194
+#: ../po/debian-tasks.desc:188
 msgid "German environment"
 msgstr "德語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:194
+#: ../po/debian-tasks.desc:188
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
 msgstr "此主題將安裝德語的相關套件和文件，以利於使用德語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:205
+#: ../po/debian-tasks.desc:199
 msgid "German desktop"
 msgstr "德語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:205
+#: ../po/debian-tasks.desc:199
 msgid "This task makes the desktop be localised in German"
 msgstr "這個主題將把桌面環境區域化為德語"
 
 #. Description
-#: ../po/debian-tasks.desc:212
+#: ../po/debian-tasks.desc:206
 msgid "Greek environment"
 msgstr "希臘語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:212
+#: ../po/debian-tasks.desc:206
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -283,22 +283,22 @@ msgstr ""
 "此主題將安裝希臘語的相關套件和文件，以利於使用希臘語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:222
+#: ../po/debian-tasks.desc:216
 msgid "Greek desktop"
 msgstr "希臘語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:222
+#: ../po/debian-tasks.desc:216
 msgid "This task makes the desktop be localised in Greek"
 msgstr "這個主題將把桌面環境區域化為希臘語"
 
 #. Description
-#: ../po/debian-tasks.desc:229
+#: ../po/debian-tasks.desc:223
 msgid "Hebrew environment"
 msgstr "希伯來語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:229
+#: ../po/debian-tasks.desc:223
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -306,22 +306,22 @@ msgstr ""
 "此主題將安裝希伯來語的相關套件和文件，以利於使用希伯來語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:237
+#: ../po/debian-tasks.desc:231
 msgid "Hebrew desktop"
 msgstr "希伯來語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:237
+#: ../po/debian-tasks.desc:231
 msgid "This task makes the desktop be localised in Hebrew"
 msgstr "這個主題將把桌面環境區域化為希伯來語"
 
 #. Description
-#: ../po/debian-tasks.desc:244
+#: ../po/debian-tasks.desc:238
 msgid "Italian environment"
 msgstr "義大利語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:244
+#: ../po/debian-tasks.desc:238
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -330,22 +330,22 @@ msgstr ""
 "Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:255
+#: ../po/debian-tasks.desc:249
 msgid "Italian desktop"
 msgstr "義大利語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:255
+#: ../po/debian-tasks.desc:249
 msgid "This task makes the desktop be localised in Italian"
 msgstr "這個主題將把桌面環境區域化為義大利語"
 
 #. Description
-#: ../po/debian-tasks.desc:262
+#: ../po/debian-tasks.desc:256
 msgid "Japanese environment"
 msgstr "日語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:262
+#: ../po/debian-tasks.desc:256
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -353,22 +353,22 @@ msgstr ""
 "此主題將安裝一些相關套件，以利於使用日語的人們能更加方便地使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:274
+#: ../po/debian-tasks.desc:268
 msgid "Japanese desktop environment"
 msgstr "日語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:274
+#: ../po/debian-tasks.desc:268
 msgid "This task makes the desktop be localised in Japanese"
 msgstr "這個主題將把桌面環境區域化為日語"
 
 #. Description
-#: ../po/debian-tasks.desc:281
+#: ../po/debian-tasks.desc:275
 msgid "Korean environment"
 msgstr "韓語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:281
+#: ../po/debian-tasks.desc:275
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
@@ -376,22 +376,22 @@ msgstr ""
 "此主題將安裝一些相關套件，以利於使用韓語的人們能更加方便地使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:293
+#: ../po/debian-tasks.desc:287
 msgid "Korean desktop"
 msgstr "韓語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:293
+#: ../po/debian-tasks.desc:287
 msgid "This task makes the desktop be localised in Korean"
 msgstr "這個主題將把桌面環境區域化為韓語"
 
 #. Description
-#: ../po/debian-tasks.desc:300
+#: ../po/debian-tasks.desc:294
 msgid "Lithuanian environment"
 msgstr "立陶宛語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:300
+#: ../po/debian-tasks.desc:294
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -400,34 +400,34 @@ msgstr ""
 "Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:310
+#: ../po/debian-tasks.desc:304
 msgid "Lithuanian desktop"
 msgstr "立陶宛語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:310
+#: ../po/debian-tasks.desc:304
 msgid "This task makes the desktop be localised in Lithuanian"
 msgstr "這個主題將把桌面環境區域化為立陶宛語"
 
 #. Description
-#: ../po/debian-tasks.desc:317
+#: ../po/debian-tasks.desc:311
 msgid "Mail server"
 msgstr "郵件伺服器"
 
 #. Description
-#: ../po/debian-tasks.desc:317
+#: ../po/debian-tasks.desc:311
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
 msgstr "此主題提供了多種對於一般用途的郵件伺服器系統而言極有用處的套件。"
 
 #. Description
-#: ../po/debian-tasks.desc:326
+#: ../po/debian-tasks.desc:320
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "挪威語 (Bokmaal 和 Nynorsk) 環境"
 
 #. Description
-#: ../po/debian-tasks.desc:326
+#: ../po/debian-tasks.desc:320
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -435,22 +435,22 @@ msgstr ""
 "此主題將安裝挪威語的相關套件和文件，以利於使用挪威語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:337
+#: ../po/debian-tasks.desc:331
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "挪威語 (Bokmaal 及 Nynorsk) 桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:337
+#: ../po/debian-tasks.desc:331
 msgid "This task makes the desktop be localised in Norwegian"
 msgstr "這個主題將把桌面環境區域化為挪威語"
 
 #. Description
-#: ../po/debian-tasks.desc:344
+#: ../po/debian-tasks.desc:338
 msgid "Polish environment"
 msgstr "波蘭語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:344
+#: ../po/debian-tasks.desc:338
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -458,54 +458,54 @@ msgstr ""
 "此主題將安裝波蘭語的相關套件和文件，以利於使用波蘭語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:355
+#: ../po/debian-tasks.desc:349
 msgid "Polish desktop"
 msgstr "波蘭語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:355
+#: ../po/debian-tasks.desc:349
 msgid "This task makes the desktop be localised in Polish"
 msgstr "這個主題將把桌面環境區域化為波蘭語"
 
 #. Description
-#: ../po/debian-tasks.desc:363
+#: ../po/debian-tasks.desc:357
 msgid "Print server"
 msgstr "列印伺服器"
 
 #. Description
-#: ../po/debian-tasks.desc:363
+#: ../po/debian-tasks.desc:357
 msgid "This task sets up your system to be a print server."
 msgstr "此主題將把您的系統設置成一台列印伺服器。"
 
 #. Description
-#: ../po/debian-tasks.desc:373
+#: ../po/debian-tasks.desc:367
 msgid "Russian environment"
 msgstr "俄語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:373
+#: ../po/debian-tasks.desc:367
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
 msgstr "此主題將安裝俄語的相關套件和文件，以利於使用俄語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:384
+#: ../po/debian-tasks.desc:378
 msgid "Russian desktop"
 msgstr "俄語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:384
+#: ../po/debian-tasks.desc:378
 msgid "This task makes the desktop be localised in Russian"
 msgstr "這個主題將把桌面環境區域化為俄語"
 
 #. Description
-#: ../po/debian-tasks.desc:391
+#: ../po/debian-tasks.desc:385
 msgid "Spanish environment"
 msgstr "西班牙語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:391
+#: ../po/debian-tasks.desc:385
 msgid ""
 "This task installs programs, data files, and documentation that makes it "
 "easier for Spanish speakers to use Debian."
@@ -514,22 +514,22 @@ msgstr ""
 "用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:402
+#: ../po/debian-tasks.desc:396
 msgid "Spanish desktop"
 msgstr "西班牙語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:402
+#: ../po/debian-tasks.desc:396
 msgid "This task makes the desktop be localised in Spanish"
 msgstr "這個主題將把桌面環境區域化為西班牙語"
 
 #. Description
-#: ../po/debian-tasks.desc:409
+#: ../po/debian-tasks.desc:403
 msgid "Swedish environment"
 msgstr "瑞典語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:409
+#: ../po/debian-tasks.desc:403
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -537,43 +537,43 @@ msgstr ""
 "此主題將安裝瑞典語的相關套件和文件，以利於使用瑞典語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:419
+#: ../po/debian-tasks.desc:413
 msgid "Swedish desktop"
 msgstr "瑞典語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:419
+#: ../po/debian-tasks.desc:413
 msgid "This task makes the desktop be localised in Swedish"
 msgstr "這個主題將把桌面環境區域化為瑞典語"
 
 #. Description
-#: ../po/debian-tasks.desc:426
+#: ../po/debian-tasks.desc:420
 msgid "Thai environment"
 msgstr "泰語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:426
+#: ../po/debian-tasks.desc:420
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
 "此主題將安裝一些相關套件，以利於使用泰語的人們能更加方便地使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:437
+#: ../po/debian-tasks.desc:431
 msgid "Thai desktop"
 msgstr "泰語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:437
+#: ../po/debian-tasks.desc:431
 msgid "This task makes the desktop be localised in Thai"
 msgstr "這個主題將把桌面環境區域化為泰語"
 
 #. Description
-#: ../po/debian-tasks.desc:444
+#: ../po/debian-tasks.desc:438
 msgid "Turkish environment"
 msgstr "土耳其語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:444
+#: ../po/debian-tasks.desc:438
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -581,22 +581,22 @@ msgstr ""
 "此主題將安裝土耳其語的相關套件和文件，以利於使用土耳其語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:456
+#: ../po/debian-tasks.desc:450
 msgid "Turkish desktop"
 msgstr "土耳其語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:456
+#: ../po/debian-tasks.desc:450
 msgid "This task makes the desktop be localised in Turkish"
 msgstr "這個主題將把桌面環境區域化為土耳其語"
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:457
 msgid "Ukrainian environment"
 msgstr "烏克蘭語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:457
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -604,22 +604,22 @@ msgstr ""
 "此主題將安裝烏克蘭語的相關套件和文件，以利於使用烏克蘭語的人們來使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:473
+#: ../po/debian-tasks.desc:467
 msgid "Ukrainian desktop"
 msgstr "烏克蘭語桌面環境"
 
 #. Description
-#: ../po/debian-tasks.desc:473
+#: ../po/debian-tasks.desc:467
 msgid "This task makes the desktop be localised in Ukrainian"
 msgstr "這個主題將把桌面環境區域化為烏克蘭語"
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:475
 msgid "Web server"
 msgstr "Web 伺服器"
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:475
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "此主題提供了對於一般用途的的 web 伺服器系統而言極有用處的套件。"
