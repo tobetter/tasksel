@@ -236,7 +236,7 @@ void ui_resize(void)
   SLsmg_set_color(STATUSOBJ);
 
   snprintf(buf, 160,
-	   _("Debian Task Installer v%s - (c) 1999-2003 SPI and others"),
+	   _("Debian Task Installer v%s - (c) 1999-2004 SPI and others"),
 	   VERSION);
   SLsmg_gotorc(0, 0);
   SLsmg_write_nstring(buf, strlen(buf));
