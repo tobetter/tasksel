@@ -1,4 +1,16 @@
-tasksel (2.10) UNRELEASED; urgency=low
+tasksel (2.11) unstable; urgency=low
+
+  * Joey Hess
+    - Remove openoffice.org (leaving -bin), and remove all OOo -help- and
+      -l10n- packages from all tasks. This is necessary because these packages
+      are available for all architectures, but have broken dependencies on
+      many architectures (openoffice.org-bin is only built on a few), which
+      breaks installation of the tasks of which they are a part on many
+      architectures.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 30 Aug 2004 11:38:40 -0400
+
+tasksel (2.10) unstable; urgency=low
 
   * Otavio Salvador
     - Include which file have a parser error.
