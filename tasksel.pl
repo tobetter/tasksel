@@ -397,6 +397,7 @@ sub main {
 	
 	# The interactive bit.
 	my $interactive=0;
+	my $manual_selection=0;
 	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
 	if (@list && ! $options{"no-ui"} && ! $options{install} && ! $options{remove}) {
 		$interactive=1;
@@ -430,7 +431,7 @@ sub main {
 		close IN;
 		unlink $tmpfile;
 		if ($ret=~/manual package selection/) {
-			unshift @aptitude_install, "--visual-preview";
+			$manual_selection=1;
 		}
 		
 		# Set _install flags based on user selection.
@@ -484,9 +485,9 @@ sub main {
 	
 	# And finally, act on selected tasks.
 	if (@aptitude_install) {
-		# If aptitude is just being run with no tasks preselected 
-		# to install, run aptitude w/o the --visual-preview parameter.
-		if (! @to_install) {
+		# If the user selected no tasks and manual package
+		# selection, run aptitude w/o the --visual-preview parameter.
+		if (! @to_install && $manual_selection) {
 			if ($options{test}) {
 				print "aptitude\n";
 			}
@@ -498,6 +499,12 @@ sub main {
 			}
 		}
 		else {
+			# Manaul selection and task installs, as best
+			# aptitude can do it currently.
+			if ($manual_selection) {
+				unshift @aptitude_install, "--visual-preview";
+			}
+			
 			if ($options{test}) {
 				print "aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
 			}
