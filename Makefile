@@ -17,8 +17,8 @@ endif
 VERSION=$(shell expr "`dpkg-parsechangelog 2>/dev/null |grep Version:`" : '.*Version: \(.*\)' | cut -d - -f 1)
 LIBS=-lslang -ltextwrap #-lccmalloc -ldl
 OBJS=tasksel.o slangui.o data.o util.o strutl.o
-LANGS=bs ca cs da de el es fi fr gl hu it ja lt nl nn no pl pt pt_BR ru sk sv uk zh_CN zh_TW
-LANGS_DESC=bs ca cs da de el es fi fr hu ja lt nl no pt pt_BR ru sk uk zh_CN
+LANGS=bg bs ca cs da de el es fi fr gl hu it ja lt nl nn no pl pt pt_BR ru sk sv uk zh_CN zh_TW
+LANGS_DESC=bg bs ca cs da de el es fi fr hu ja lt nl no pt pt_BR ru sk uk zh_CN
 LOCALEDIR=$(DESTDIR)/usr/share/locale
 COMPILE = $(CC) $(CFLAGS) $(DEFS) -c
 LINK = $(CC) $(CFLAGS) $(DEFS) -o

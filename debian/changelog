@@ -12,6 +12,8 @@ tasksel (1.44) UNRELEASED; urgency=low
       the gnome metapackage.
   * Denis Barbier
     - Convert this changelog to UTF-8.
+  * Ognyan Kulev
+    - Mention LANGS and LANGS_DESC in README.translators.
 
   * Updated translations:
     - Konstantinos Margaritis
@@ -26,17 +28,20 @@ tasksel (1.44) UNRELEASED; urgency=low
     - André Luís Lopes
       - Updated Brazilian Portuguese translation (tasks/po/pt_BR.po).
     - Kestutis Biliunas
-      - Initial Lithuanian translation (tasks/po/lt.po and po/lt.po). 
+      - Initial Lithuanian translation (tasks/po/lt.po and po/lt.po).
     - Safir Secerovic
-      - Initial Bosnian translation (po/bs.po and tasks/po/bs.po). 
+      - Initial Bosnian translation (po/bs.po and tasks/po/bs.po).
       - Add "bs" to LANGS and LANGS_DESC in Makefile.
     - Claus Hindsgaul
       - Update Danish translation (tasks/po/da.po)
     - Eugeniy Meshcheryakov
       - Add Ukrainian translations (tasks/po/uk.po and po/uk.po)
       - Add "uk" to LANGS and LANGS_DESC in Makefile.
+    - Ognyan Kulev
+      - Initial Bulgarian translation (po/bg.po and tasks/po/bg.po)
+      - Added "bg" to LANGS and LANGS_DESC in Makefile.
 
- -- Christian Perrier <bubulle@debian.org>  Sun,  1 Feb 2004 08:59:13 +0100
+ -- Ognyan Kulev <ogi@fmi.uni-sofia.bg>  Sun, 15 Feb 2004 16:12:20 +0200
 
 tasksel (1.43) unstable; urgency=high
 

@@ -13,3 +13,7 @@ There are two directories containing translations:
 
 The text in both these directories need to be translated for the
 translation to be complete.
+
+Your language should be listed in LANGS and LANGS_DESC variables
+in Makefile.  (LANGS is for translations in po/, and LANGS_DESC
+is for translations in tasks/po/.)

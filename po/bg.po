@@ -1,0 +1,228 @@
+# Bulgarian translation of tasksel.
+# Copyright (C) 2004 THE tasksel'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the tasksel package.
+# Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004.
+# , fuzzy
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel 1.44\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-01-28 08:04+0100\n"
+"PO-Revision-Date: 2004-02-15 14:32+0200\n"
+"Last-Translator: Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
+"Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: ../data.c:307 ../data.c:321
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr "Няма достатъчно памет за изброяващия буфер"
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\n"
+"\t"
+msgstr ""
+"Фатална грешка в %s:%d\n\t"
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\n"
+"\t"
+msgstr ""
+"Входно-изходна грешка в %s:%d\n\t"
+
+#: ../slangui.c:18 ../slangui.c:19
+msgid "(no description)"
+msgstr "(без описание)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr "Краен потребител"
+
+#: ../slangui.c:76
+msgid "Hardware Support"
+msgstr "Хардуерна поддръжка"
+
+#: ../slangui.c:77
+msgid "Servers"
+msgstr "Сървъри"
+
+#: ../slangui.c:78
+msgid "Development"
+msgstr "Разработка"
+
+#: ../slangui.c:79
+msgid "Localization"
+msgstr "Локализация"
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr "Други"
+
+#: ../slangui.c:219
+msgid "Unable to initialize the terminal"
+msgstr "Терминалът не може да се инициализира"
+
+#: ../slangui.c:221
+msgid "Unable to initialize screen output"
+msgstr "Изходът на екрана не може да се инициализира"
+
+#: ../slangui.c:222
+msgid "Unable to initialize keyboard interface"
+msgstr "Клавиатурният интерфейс не може да се инициализира"
+
+#: ../slangui.c:239
+#, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
+msgstr "Дебиански Инсталатор на Задачи v%s - (c)·1999-2003·SPI·и други"
+
+#: ../slangui.c:393
+msgid "^Finish"
+msgstr "^Край"
+
+#: ../slangui.c:401 ../slangui.c:402
+msgid "Task ^Info"
+msgstr "^Информация"
+
+#: ../slangui.c:406 ../slangui.c:407
+msgid "^Help"
+msgstr "Помощ (^H)"
+
+#: ../slangui.c:441
+msgid "Select tasks to install"
+msgstr "Изберете задачи за инсталиране"
+
+#: ../slangui.c:576
+msgid "Ok"
+msgstr "Добре"
+
+#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr "Индексът е извън границите: %d >= %d"
+
+#: ../slangui.c:776
+msgid "Help"
+msgstr "Помощ"
+
+#: ../slangui.c:777
+msgid ""
+"Tasks allow you to quickly install a selection of packages that performs a "
+"given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
+msgstr ""
+"Задачите позволяват бързо инсталиране на набор от пакети, които изпълняват определена задача."
+""
+"Главният списък показва задачи, които може да изберете за инсталиране. Клавишите-стрелки придвижват показалеца. Натискането на ENTER или на ИНТЕРВАЛ превключват избора на задачата под показалеца. Можете също да натиснете A, за да изберете всички задачи, или N за отказ от всички задачи. Натискането на Q предизвиква излизане от програмата и започване на инсталицията на избраните задачи."
+""
+"Благодарим Ви, че избрахте Debian."
+""
+"Натиснете ENTER, за да се върнете към екрана за избор на задачи"
+
+#: ../slangui.c:818
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Included packages:\n"
+msgstr ""
+"Описание:"
+"%s"
+""
+"Включени пакети:"
+""
+
+#: ../slangui.c:826
+msgid "(no description available)"
+msgstr "(липсва описание)"
+
+#: ../tasksel.c:33
+msgid "Unknown signal seen"
+msgstr "Прихванат е неизвестен сигнал"
+
+#: ../tasksel.c:39
+#, c-format
+msgid "tasksel install <task>\n"
+msgstr "tasksel install <задача>"
+""
+
+#: ../tasksel.c:40
+#, c-format
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [опции]; където опциите са всяка комбинация от:"
+""
+
+#: ../tasksel.c:41
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- тестов режим; не изпълнява apt-get на излизане"
+
+#: ../tasksel.c:42
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- забавено инсталиране; пакетите не се инсталират с apt-get;"
+"		просто се слагат в опашката за инсталиране на dpkg"
+
+#: ../tasksel.c:43
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- инсталиране на всички пакети с приоритет \"задължителен\""
+
+#: ../tasksel.c:44
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- инсталиране на всички пакети с приоритет \"важен\""
+
+#: ../tasksel.c:45
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- инсталиране на всички пакети с приоритет \"стандартен\""
+
+#: ../tasksel.c:46
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- не се показва потребителски интерфейс; обикновено се използва с -r или -i"
+
+#: ../tasksel.c:47
+msgid "-a -- show all tasks, even those with no packages in them"
+msgstr "-a -- показване на всички задачи, дори тези, които не съдържат пакети"
+
+#: ../tasksel.c:88 ../tasksel.c:123
+#, c-format
+msgid "No packages selected\n"
+msgstr "Не са избрани пакети"
+""
+
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
+msgstr "Не са намерени задачи в системата."
+""
+
+#: ../util.c:21
+msgid "Cannot allocate memory for strdup"
+msgstr "Няма памет за strdup"
+
+#: ../util.c:39
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr "Няма памет за %d байта"
+
+#: ../util.c:48
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr "Няма памет за презаделяне на %d байта"
+
