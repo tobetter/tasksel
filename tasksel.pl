@@ -417,10 +417,19 @@ sub main {
 		chomp $ret;
 		close IN;
 		unlink $tmpfile;
-		map { $_->{_install} = 1 unless $_->{_installed} }
-			debconf_to_task($ret, @tasks);
 		if ($ret=~/manual package selection/) {
 			unshift @aptitude_install, "--visual-preview";
+		}
+		foreach my $task (debconf_to_task($ret, @tasks)) {
+			if (! $task->{_installed}) {
+				$task->{_install} = 1;
+			}
+			$task->{_selected} = 1;
+		}
+		foreach my $task (@list) {
+			if (! $task->{_selected} && $task->{_installed}) {
+				push @aptitude_remove, task_packages($task, 0);
+			}
 		}
 	}
 
@@ -439,6 +448,19 @@ sub main {
 	# Add tasks to install.
 	push @aptitude_install, map { task_packages($_, 1) } grep { $_->{_install} } @tasks;
 
+	# Remove any packages we were asked to.
+	if (@aptitude_remove) {
+		if ($options{test}) {
+			print "aptitude remove ".join(" ", @aptitude_remove)."\n";
+		}
+		else {
+			my $ret=system("aptitude", "remove", @aptitude_remove) >> 8;
+			if ($ret != 0) {
+				error gettext("aptitude failed");
+			}
+		}
+	}
+	
 	# And finally, act on selected tasks.
 	if (@aptitude_install) {
 		if ($options{test}) {
@@ -446,17 +468,6 @@ sub main {
 		}
 		else {
 			my $ret=system("aptitude", "--without-recommends", "-y", "install", @aptitude_install) >> 8;
-			if ($ret != 0) {
-				error gettext("aptitude failed");
-			}
-		}
-	}
-	if (@aptitude_remove) {
-		if ($options{test}) {
-			print "aptitude remove ".join(" ", @aptitude_remove)."\n";
-		}
-		else {
-			my $ret=system("aptitude", "remove", @aptitude_remove) >> 8;
 			if ($ret != 0) {
 				error gettext("aptitude failed");
 			}
