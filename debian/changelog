@@ -5,6 +5,8 @@ tasksel (2.19) UNRELEASED; urgency=low
     - Add missing languages in Makefile. Closes: #286539
   * Joey Hess
     - Don't require whitespace after keys with multiline values. Closes: #286054
+    - Patch from Denis to always use untranslated values in the debconf
+      choices list of tasks, as used for preseeding. Closes: #278186
   * Translations
     - Bosnian translation updates by Safir Secerovic
 

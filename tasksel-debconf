@@ -5,11 +5,13 @@ set -e
 
 tmpfile=$1
 choices="$2"
-defaults="$3"
-question=$4
+choicestrans="$3"
+defaults="$4"
+question=$5
 
 db_settitle tasksel/title
-db_subst $question CHOICES "$choices"
+db_subst $question ORIGCHOICES "$choices"
+db_subst $question CHOICES "$choicestrans"
 
 # Allow tasksel/first to be preseeded. If it's marked as seen, then
 # it must have been preseeded, and that overrides any defaults set by

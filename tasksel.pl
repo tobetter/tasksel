@@ -64,7 +64,8 @@ sub read_task_desc {
 		}
 		if (%data) {
 			$data{relevance}=5 unless exists $data{relevance};
-			$data{shortdesc}=dgettext("debian-tasks", $data{description}->[0]);
+			$data{shortdesc}=$data{description}->[0];
+			$data{shortdesctrans}=dgettext("debian-tasks", $data{shortdesc});
 			push @ret, \%data;
 		}
 	}
@@ -252,8 +253,9 @@ sub hide_dependent_tasks {
 
 # Converts a list of tasks into a debconf list of their short descriptions.
 sub task_to_debconf {
+	my $field = shift;
 	join ", ", map {
-		my $desc=$_->{shortdesc};
+		my $desc=$_->{$field};
 		if ($desc=~/, /) {
 			warning("task ".$_->{task}." contains a comma in its short description: \"$desc\"");
 		}
@@ -415,8 +417,10 @@ sub main {
 		my @default = grep { $_->{_display} == 1 && ($_->{_install} == 1 || $_->{_installed} == 1) } @tasks;
 		my $tmpfile=`tempfile`;
 		chomp $tmpfile;
-		system($debconf_helper, $tmpfile, task_to_debconf(@list),
-			task_to_debconf(@default),
+		system($debconf_helper, $tmpfile,
+			task_to_debconf("shortdesc", @list),
+			task_to_debconf("shortdesctrans", @list),
+			task_to_debconf("shortdesc", @default),
 			$question);
 		open(IN, "<$tmpfile");
 		my $ret=<IN>;
