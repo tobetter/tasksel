@@ -7,6 +7,9 @@ tasksel (1.44) UNRELEASED; urgency=low
       install abiword-gnome, which conflicts the normal abiword.
     - Add myspell-ca to catalan.
     - Set myself as Maintainer: for catalan.
+  * Joey Hess
+    - Remove abiword-gnome from the desktop task, since it is pulled in by
+      the gnome metapackage.
 
   * Updated translations:
     - Konstantinos Margaritis
