@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-26 09:35-0400\n"
+"POT-Creation-Date: 2004-06-26 18:19-0300\n"
 "PO-Revision-Date: 2004-06-18 02:37+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <cwryu@debian.org>\n"
@@ -13,11 +13,27 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:3
+#, fuzzy
+msgid "Brazilian Portuguese environment"
+msgstr "일본어 환경"
+
+#. Description
+#: ../po/debian-tasks.desc:3
+#, fuzzy
+msgid ""
+"This task installs programs, data files,  and documentation that makes it "
+"easier for Brazilian Portuguese speakers to use Debian."
+msgstr ""
+"이 태스크는 러시아어를 사용하는 사람들이 데비안을 쉽게 쓸 수 있는 프로그램, "
+"데이터 파일 및 문서를 설치합니다."
+
+#. Description
+#: ../po/debian-tasks.desc:13
 msgid "Catalan environment"
 msgstr "카탈로니아어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:3
+#: ../po/debian-tasks.desc:13
 msgid ""
 "This task installs packages and documentation in Catalan to help Catalan "
 "speaking people use Debian."
@@ -26,12 +42,12 @@ msgstr ""
 "키지와 문서들을 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:12
+#: ../po/debian-tasks.desc:22
 msgid "Simplified Chinese environment"
 msgstr "중국어 간체 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:12
+#: ../po/debian-tasks.desc:22
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Chinese speakers to use Debian, using the simplified Chinese "
@@ -41,12 +57,12 @@ msgstr ""
 "쓸 수 있는 프로그램, 데이터 파일, 글꼴, 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:28
+#: ../po/debian-tasks.desc:38
 msgid "Traditional Chinese environment"
 msgstr "중국어 번체 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:28
+#: ../po/debian-tasks.desc:38
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
@@ -56,12 +72,12 @@ msgstr ""
 "쓸 수 있는 프로그램, 데이터 파일, 글꼴, 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:44
+#: ../po/debian-tasks.desc:54
 msgid "Cyrillic environment"
 msgstr "키릴 문자 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:44
+#: ../po/debian-tasks.desc:54
 msgid ""
 "This task provides Cyrillic fonts and other software you will need in order "
 "to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
@@ -72,12 +88,12 @@ msgstr ""
 "어를 지원합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:55
+#: ../po/debian-tasks.desc:65
 msgid "Danish environment"
 msgstr "덴마크어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:55
+#: ../po/debian-tasks.desc:65
 msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
@@ -86,19 +102,19 @@ msgstr ""
 "문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:64
+#: ../po/debian-tasks.desc:74
 msgid "SQL database"
 msgstr "SQL 데이터베이스"
 
 #. Description
-#: ../po/debian-tasks.desc:64
+#: ../po/debian-tasks.desc:74
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "이 태스크는 PostgreSQL 데이터베이스 클라이언트와 서버 꾸러미들을 선택합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:64
+#: ../po/debian-tasks.desc:74
 msgid ""
 "PostgreSQL is an SQL relational database, offering increasing SQL92 "
 "compliance and some SQL3 features.  It is suitable for use with multi-user "
@@ -110,12 +126,12 @@ msgstr ""
 "이스에 쓰기 적합합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:77
+#: ../po/debian-tasks.desc:87
 msgid "Desktop environment"
 msgstr "데스크탑 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:77
+#: ../po/debian-tasks.desc:87
 msgid ""
 "This task provides basic \"desktop\" software, including a variety of "
 "session managers, file managers and web browsers. It incorporates both the "
@@ -128,23 +144,23 @@ msgstr ""
 "관리자가 들어 있습니다."
 
 #. Description
-#: ../po/debian-tasks.desc:89
+#: ../po/debian-tasks.desc:99
 msgid "DNS server"
 msgstr "DNS 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:89
+#: ../po/debian-tasks.desc:99
 msgid ""
 "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr "BIND DNS 서버 및 관련된 문서와 유틸리티 꾸러미를 선택합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:96
+#: ../po/debian-tasks.desc:106
 msgid "File server"
 msgstr "파일 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:96
+#: ../po/debian-tasks.desc:106
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
@@ -152,12 +168,12 @@ msgstr ""
 "이 태스크는 시스템을 파일 서버로 준비합니다. NetBIOS와 NFS를 모두 지원합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:105
+#: ../po/debian-tasks.desc:115
 msgid "French environment"
 msgstr "프랑스어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:105
+#: ../po/debian-tasks.desc:115
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -166,12 +182,12 @@ msgstr ""
 "와 문서들을 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:115
+#: ../po/debian-tasks.desc:125
 msgid "German environment"
 msgstr "독일어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:115
+#: ../po/debian-tasks.desc:125
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -180,12 +196,12 @@ msgstr ""
 "을 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:125
+#: ../po/debian-tasks.desc:135
 msgid "Greek environment"
 msgstr "그리스어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:125
+#: ../po/debian-tasks.desc:135
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -194,12 +210,12 @@ msgstr ""
 "들을 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:134
+#: ../po/debian-tasks.desc:144
 msgid "Hebrew environment"
 msgstr "히브리어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:134
+#: ../po/debian-tasks.desc:144
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -208,12 +224,12 @@ msgstr ""
 "들을 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:141
+#: ../po/debian-tasks.desc:151
 msgid "Italian environment"
 msgstr "이탈리아어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:141
+#: ../po/debian-tasks.desc:151
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -222,12 +238,12 @@ msgstr ""
 "러미와 문서들을 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:151
+#: ../po/debian-tasks.desc:161
 msgid "Japanese environment"
 msgstr "일본어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:151
+#: ../po/debian-tasks.desc:161
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -236,12 +252,12 @@ msgstr ""
 "합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:165
+#: ../po/debian-tasks.desc:175
 msgid "Korean environment"
 msgstr "한국어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:165
+#: ../po/debian-tasks.desc:175
 msgid ""
 "This task installs programs, data files, fonts, and documentation to make it "
 "easier for Korean speakers to use Debian."
@@ -250,12 +266,12 @@ msgstr ""
 "이터 파일, 글꼴 및 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:177
+#: ../po/debian-tasks.desc:187
 msgid "Lithuanian environment"
 msgstr "리투아니아어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:177
+#: ../po/debian-tasks.desc:187
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -264,12 +280,12 @@ msgstr ""
 "키지와 문서들을 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:186
+#: ../po/debian-tasks.desc:196
 msgid "Mail server"
 msgstr "메일 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:186
+#: ../po/debian-tasks.desc:196
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -277,12 +293,12 @@ msgstr ""
 "이 태스크는 일반적인 메일 서버 시스템에 필요한 여러가지 꾸러미를 선택합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:194
+#: ../po/debian-tasks.desc:204
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "노르웨이어  (Bokmaal 및 Nynorsk) 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:194
+#: ../po/debian-tasks.desc:204
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -291,12 +307,12 @@ msgstr ""
 "지와 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:204
+#: ../po/debian-tasks.desc:214
 msgid "Polish environment"
 msgstr "폴란드어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:204
+#: ../po/debian-tasks.desc:214
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -305,22 +321,22 @@ msgstr ""
 "와 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:214
+#: ../po/debian-tasks.desc:224
 msgid "Print server"
 msgstr "인쇄 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:214
+#: ../po/debian-tasks.desc:224
 msgid "This task sets up your system to be a print server."
 msgstr "이 태스크는 시스템을 인쇄 서버로 준비합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:223
+#: ../po/debian-tasks.desc:233
 msgid "Russian environment"
 msgstr "러시아어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:223
+#: ../po/debian-tasks.desc:233
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -329,12 +345,12 @@ msgstr ""
 "와 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:233
+#: ../po/debian-tasks.desc:243
 msgid "Spanish environment"
 msgstr "스페인어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:233
+#: ../po/debian-tasks.desc:243
 msgid ""
 "This task installs programs, data files,  and documentation that makes it "
 "easier for Spanish speakers to use Debian."
@@ -343,24 +359,24 @@ msgstr ""
 "데이터 파일 및 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:243
+#: ../po/debian-tasks.desc:253
 msgid "Thai environment"
 msgstr "타이어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:243
+#: ../po/debian-tasks.desc:253
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
 "이 태스크는 타이어를 사용하는 사람들이 데비안을 쉽게 쓸 수 있는 꾸러미를 설치"
 "합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:253
+#: ../po/debian-tasks.desc:263
 msgid "Turkish environment"
 msgstr "터키어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:253
+#: ../po/debian-tasks.desc:263
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -369,12 +385,12 @@ msgstr ""
 "및 터키어로 쓰여진 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:264
+#: ../po/debian-tasks.desc:274
 msgid "Ukrainian environment"
 msgstr "우크라니아어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:264
+#: ../po/debian-tasks.desc:274
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -383,12 +399,12 @@ msgstr ""
 "러미 및 우크라니아어로 쓰여진 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:273
+#: ../po/debian-tasks.desc:283
 msgid "Web server"
 msgstr "웹 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:273
+#: ../po/debian-tasks.desc:283
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "이 태스크는 일반적인 웹 서버 시스템에 필요한 꾸러미들을 설치합니다."
