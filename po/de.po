@@ -1,15 +1,15 @@
-# translation of de.po to 
-# translation of de.po to
+# translation of de.po to german
 # Translation file for tasksel to German.
-# Copyright (C) 2000, 2003 Free Software Foundation, Inc.
+# Copyright (C) 2000, 2003, 2004 Free Software Foundation, Inc.
 # Othmar Pasteka <pasteka@kabsi.at>, 2000, 2003.
+# Rene Engelhard <rene@debian.org>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2003-10-16 23:36+0200\n"
+"PO-Revision-Date: 2004-02-21 02:16+0100\n"
 "Last-Translator: Rene Engelhard <rene@debian.org>\n"
 "Language-Team: german <de@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -131,7 +131,7 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"Tasks erlauben einem schnell und einfach Pakete für einen bestimmten Zweck "
+"Tasks erlauben Ihnen schnell und einfach Pakete für einen bestimmten Zweck "
 "zu installieren.\n"
 "\n"
 " Die Haupt-Auswahlliste zeigt eine Liste von Tasks, die man installieren "
@@ -218,7 +218,7 @@ msgstr "Keine Pakete ausgewählt\n"
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
+msgstr "Keine Tasks auf diesem System gefunden.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
@@ -241,3 +241,4 @@ msgstr ""
 #~ "Keine Tasks auf diesem System gefunden.\n"
 #~ "Wurde die \"available\" Datei aktualisiert? Versuchen Sie, dselect update "
 #~ "auszuführen.\n"
+
