@@ -1,24 +1,31 @@
-# Norwegian Bokm�l translation for tasksel tasks.
-# Copyright (C) 2003 Petter Reinholdtsen.
-# Petter Reinholdtsen <pere@hungry.com>, 2003.
+# translation of tasksel_tasks.po to Norsk Bokmål
+# translation of tasksel_tasks.po to Norwegian bokmål
+# translation of tasksel_tasks.po to Norwegian Nynorsk
+# translation of tasksel_tasks.po to
+# translation of tasksel_tasks.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Håvard Korsvoll <korsvoll@stud.ntnu.no>, 2004.
+# Håvard Korsvoll <korsvoll@skulelinux.no>, 2004.
+# Axel Bojer <axelb@skolelinux.no>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel\n"
+"Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-02-22 12:24-0500\n"
-"PO-Revision-Date: 2003-08-15 00:22MET\n"
-"Last-Translator: Petter Reinholdtsen <pere@hungry.com>\n"
-"Language-Team: Norwegian Bokm�l <i18n-nb@lister.ping.uio.no>\n"
+"POT-Creation-Date: 2004-02-22 11:50-0500\n"
+"PO-Revision-Date: 2004-03-04 19:52+0100\n"
+"Last-Translator: Axel Bojer <axelb@skolelinux.no>\n"
+"Language-Team: Norsk Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.5\n"
+"X-Generator: KBabel 1.3\n"
 
 #. Description
 #: ../po/debian-tasks.desc:4
 msgid "X window system"
-msgstr "Vindus-systemet X"
+msgstr "X vindussystem"
 
 #. Description
 #: ../po/debian-tasks.desc:4
@@ -27,18 +34,21 @@ msgid ""
 "running the X Window System. It provides the X libraries, an X server, a set "
 "of fonts, and a group of basic X clients and utilities."
 msgstr ""
+"Med dette valget installerer du hovedkomponentene for en frittstående "
+"arbeidsstasjon som kjører vindussystemet X. Du får bibliotekene til X, en "
+"X-tjener, et sett med skrifttyper og en gruppe med X-klienter og verktøy."
 
 #. Description
 #: ../po/debian-tasks.desc:13
 msgid "Broadband internet connection"
-msgstr ""
+msgstr "Internettforbindelse med bredbånd"
 
 #. Description
 #: ../po/debian-tasks.desc:13
 msgid ""
 "This task selects packages that address special needs of computers that "
 "connect to the internet using DSL, Cable, and the like."
-msgstr ""
+msgstr "Med dette valget installerer du pakker som behøves på maskiner som får tilgang til internett ved hjelp av xDSL, kabel og lignende."
 
 #. Description
 #: ../po/debian-tasks.desc:21
@@ -50,24 +60,24 @@ msgstr "C og C++"
 msgid ""
 "A complete environment for development of programs in the C and C++ "
 "programming languages."
-msgstr ""
+msgstr "Et fullstendig miljø for utvikling av programmer med programmeringspråkene C og C++."
 
 #. Description
 #: ../po/debian-tasks.desc:33
 msgid "Catalan environment"
-msgstr ""
+msgstr "Katalan-miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:33
 msgid ""
 "This task installs packages and documentation in Catalan to help Catalan "
 "speaking people use Debian."
-msgstr ""
+msgstr "Med dette valget installerer du pakker og dokumentasjon på katalansk for å hjelpe folk som snakkar katalansk med å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:41
 msgid "Simplified Chinese environment"
-msgstr "Omgivelse for forenklet kinesisk"
+msgstr "Forenklet kinesisk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:41
@@ -76,11 +86,13 @@ msgid ""
 "it easier for Chinese speakers to use Debian, using the simplified Chinese "
 "encoding."
 msgstr ""
+"Med dette valget installerer du programmer, datafiler, skrifttyper og dokumentasjon som gjør det enklere for kinesisktalende å bruke Debian, "
+"fordi systemet da støtter forenklet kinesisk koding."
 
 #. Description
 #: ../po/debian-tasks.desc:56
 msgid "Traditional Chinese environment"
-msgstr ""
+msgstr "Tradisjonelt kinesisk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:56
@@ -88,12 +100,12 @@ msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
 "encoding."
-msgstr ""
+msgstr "Med dette valget installerer du programmer, datafiler, skriftyper og dokumentasjon som gjør det enklere for kinesisktalende å bruke Debian, fordi systemet da støtter tradisjonell kinesisk koding."
 
 #. Description
 #: ../po/debian-tasks.desc:71
 msgid "Cyrillic environment"
-msgstr ""
+msgstr "Kyrillisk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:71
@@ -101,12 +113,12 @@ msgid ""
 "This task provides Cyrillic fonts and other software you will need in order "
 "to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
 "Serbian and Ukrainian."
-msgstr ""
+msgstr "Med dette valget installerer du kyrilliske skrifttyper og andre programmer du trenger for å bruke kyrillisk. De støtter hviterussisk, bulgarsk, makedonisk, russisk, serbisk og ukrainsk."
 
 #. Description
 #: ../po/debian-tasks.desc:81
 msgid "Danish environment"
-msgstr ""
+msgstr "Dansk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:81
@@ -114,17 +126,18 @@ msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
 msgstr ""
+"Med dette valget installerer du pakker og dokumentasjon på dansk for å hjelpe "
+"dansktalende med å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:89
 msgid "SQL database"
-msgstr ""
+msgstr "SQL-database"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
+msgid "This task selects client and server packages for the PostgreSQL database."
+msgstr "Dette valget gir klient- og tjenerpakker for databasen PostgreSQL."
 
 #. Description
 #: ../po/debian-tasks.desc:89
@@ -134,11 +147,15 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
+"PostgreSQL er en SQL relasjonsdatabase, som tilbyr økende SQL92-"
+"kompabilitet og noen SQL3-egenskaper. PostgreSQL passer for "
+"flerbruker databasetilgang fordi den kan bruke overføringer og "
+"fininndelt låsing."
 
 #. Description
 #: ../po/debian-tasks.desc:102
 msgid "Desktop environment"
-msgstr ""
+msgstr "Skrivebordsmiljø"
 
 #. Description
 #: ../po/debian-tasks.desc:102
@@ -148,11 +165,13 @@ msgid ""
 "GNOME and KDE desktops, and provides a display manager which lets the user "
 "choose between the two."
 msgstr ""
+"Dette valget gir grunnleggende «skrivebords»-verktøy. Du får med"
+"ulike øktbehandlere, filbehandlere og nettlesere. Pakken inneholder både GNOME og KDE, og gir en innloggingsvelger som lar deg velge mellom de to."
 
 #. Description
 #: ../po/debian-tasks.desc:114
 msgid "Dialup internet"
-msgstr "Oppringt Internet"
+msgstr "Internett med oppringing"
 
 #. Description
 #: ../po/debian-tasks.desc:114
@@ -160,32 +179,33 @@ msgid ""
 "This task selects packages that address special needs of computers using a "
 "slow part-time dialup connection (by modem, ISDN, or similar)."
 msgstr ""
+"Med dette valget installerer du pakker som trengs på maskiner som har oppringt "
+"internettilkobling og altså er tilkoplet i korte perioder (modem, ISDN eller liknende)."
 
 #. Description
 #: ../po/debian-tasks.desc:123
 msgid "DNS server"
-msgstr "DNS-tjener"
+msgstr "Navnetjener"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
+msgstr "Tar med navnetjeneren BIND og tilhørende dokumentasjon og verktøyspakker."
 
 #. Description
 #: ../po/debian-tasks.desc:130
 msgid "File server"
-msgstr "Fil-tjener"
+msgstr "Filtjener"
 
 #. Description
 #: ../po/debian-tasks.desc:130
 msgid "This task sets up your system to be a file server."
-msgstr ""
+msgstr "Med dette valget setter du opp systemet ditt som en filtjener."
 
 #. Description
 #: ../po/debian-tasks.desc:138
 msgid "French environment"
-msgstr ""
+msgstr "Fransk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:138
@@ -193,6 +213,8 @@ msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
 msgstr ""
+"Med dette valget installerer du pakker og dokumentasjon på fransk for å hjelpe "
+"fransktalende med å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:147
@@ -206,11 +228,14 @@ msgid ""
 "traditional textual unix games to card games, to fast-paced arcade games. It "
 "won't install all the games in Debian, but it is a good starting point."
 msgstr ""
+"Med dette valget installerer du et bredt utvalg av spill, fra tradisjonelle "
+"tekstbaserte unixspill til kortspill og arkadespill med høyt tempo. Den vil "
+"ikke installere alle spillene i Debian, men er et godt utgangspunkt."
 
 #. Description
 #: ../po/debian-tasks.desc:154
 msgid "German environment"
-msgstr ""
+msgstr "Tysk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:154
@@ -218,67 +243,69 @@ msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
 msgstr ""
+"Med dette valget installerer du pakker og dokumentasjon på tysk for å hjelpe "
+"tysktalende med å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:163
 msgid "Greek environment"
-msgstr ""
+msgstr "Gresk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:163
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
-msgstr ""
+msgstr "Med dette valget installerer du installerer pakker og dokumentasjon på gresk for å hjelpe gresktalende med å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:171
 msgid "Japanese environment"
-msgstr ""
+msgstr "Japansk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:171
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
-msgstr ""
+msgstr "Med dette valget installerer du pakker som gjør det lettere for japansktalende å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:184
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #. Description
 #: ../po/debian-tasks.desc:184
 msgid "A java development environment."
-msgstr ""
+msgstr "Utviklingsmiljø for java."
 
 #. Description
 #: ../po/debian-tasks.desc:192
 msgid "Debian Jr."
-msgstr ""
+msgstr "Debian Jr."
 
 #. Description
 #: ../po/debian-tasks.desc:192
 msgid "Debian Jr. is a collection of Debian packages suitable for children."
-msgstr ""
+msgstr "Debian jr. er en samling Debian-pakker som passer for barn."
 
 #. Description
 #: ../po/debian-tasks.desc:197
 msgid "Custom kernel compilation"
-msgstr ""
+msgstr "Tilpasset kjernekompilering"
 
 #. Description
 #: ../po/debian-tasks.desc:197
 msgid ""
 "This task includes everything you should need to build your own custom "
 "kernel."
-msgstr ""
+msgstr "Med dette valget installerer du alt du trenger for å bygge din egen, tilpassede kjerne."
 
 #. Description
 #: ../po/debian-tasks.desc:206
 msgid "Korean environment"
-msgstr ""
+msgstr "Koreansk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:206
@@ -286,11 +313,13 @@ msgid ""
 "This task installs programs, data files, fonts, and documentation to make it "
 "easier for Korean speakers to use Debian."
 msgstr ""
+"Med dette valget installerer du programmer, datafiler, skrifttyper og dokumentasjon på koreansk for å gjøre det lettere for koreansktalende å bruke "
+"Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:216
 msgid "Laptop"
-msgstr ""
+msgstr "Bærbar datamaskin"
 
 #. Description
 #: ../po/debian-tasks.desc:216
@@ -298,24 +327,24 @@ msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities laptops including IBM Thinkpads, "
 "Sony Vaios, Toshibas, and Dell Inspirons."
-msgstr ""
+msgstr "Dette er en samling verktøy som de med bærbare datamaskiner forventer å finne på et system. Det inneholder spesielle verktøy for enkelte bærbare, for eksempel maskiner av merkene IBM Thinkpad, Sony Vais, Toshiba og Dell Inspiron."
 
 #. Description
 #: ../po/debian-tasks.desc:226
 msgid "Linux Standard Base"
-msgstr ""
+msgstr "Linux Standard Base"
 
 #. Description
 #: ../po/debian-tasks.desc:226
 msgid ""
 "This task makes the system compliant with the Linux Standard Base, allowing "
 "you to install and use LSB packages."
-msgstr ""
+msgstr "Med dette valget gjør du systemet ditt kompatibelt med Linux Standard Base. Dermed kan du bruke LSB-pakker."
 
 #. Description
 #: ../po/debian-tasks.desc:234
 msgid "Mail server"
-msgstr ""
+msgstr "E-posttjener"
 
 #. Description
 #: ../po/debian-tasks.desc:234
@@ -323,18 +352,20 @@ msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
 msgstr ""
+"Med dette valget installerer du ulike pakker som er nyttige for en generell e-"
+"posttjener."
 
 #. Description
 #: ../po/debian-tasks.desc:242
 msgid "Usenet news server"
-msgstr ""
+msgstr "Usenet nyhetstjener"
 
 #. Description
 #: ../po/debian-tasks.desc:242
 msgid ""
 "This task selects the preferred version of the INN news server software for "
 "new Debian installations."
-msgstr ""
+msgstr "Med dette valget installerer du den foretrukne versjonen av INN nyhetstjener på nye Debian-installasjoner."
 
 #. Description
 #: ../po/debian-tasks.desc:242
@@ -344,12 +375,13 @@ msgid ""
 "pull in any required pieces. Only use this task if you intend to operate a "
 "server."
 msgstr ""
+"Du trenger ikke denne pakka hvis du bare vil lese nyheter fra en "
+"eksisterende tjener. Velg nyhetsleser-programmet for dette, og du får med de nødvendige pakkene. Bare bruk denne oppgaven dersom du vil ha en egen tjener."
 
 #. Description
 #: ../po/debian-tasks.desc:255
-#, fuzzy
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
-msgstr "Norsk (bokm�l og nynorsk) omgivelse"
+msgstr "Norsk (bokmål og nynorsk) miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:255
@@ -357,11 +389,13 @@ msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
 msgstr ""
+"Med dette valget installerer du pakker og dokumentasjon på norsk for å hjelpe "
+"norsktalende med å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:265
 msgid "Office environment"
-msgstr ""
+msgstr "Kontormiljø"
 
 #. Description
 #: ../po/debian-tasks.desc:265
@@ -369,12 +403,12 @@ msgid ""
 "This task provides a suite of office productivity software, including a word "
 "processor, a spreadsheet, a presentation program, and more. This is a rather "
 "large collection of software."
-msgstr ""
+msgstr "Med dette valget installerer du et sett med kontorverktøy, da også et skriveprogram, et regneark, et presentasjonsprogram med mere. Dette er en ganske stor samling programmer."
 
 #. Description
 #: ../po/debian-tasks.desc:275
 msgid "Polish environment"
-msgstr ""
+msgstr "Polsk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:275
@@ -382,21 +416,23 @@ msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
 msgstr ""
+"Med dette valget installerer du pakker og dokumentasjon på polsk for å hjelpe "
+"polsktalende med å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:284
 msgid "Print server"
-msgstr "Utskrifts-tjener"
+msgstr "Utskriftstjener"
 
 #. Description
 #: ../po/debian-tasks.desc:284
 msgid "This task sets up your system to be a print server."
-msgstr ""
+msgstr "Med dette valget kan du sette opp systemet ditt til å være en utskriftstjener."
 
 #. Description
 #: ../po/debian-tasks.desc:293
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #. Description
 #: ../po/debian-tasks.desc:293
@@ -404,11 +440,13 @@ msgid ""
 "Many Python tools and extensions, for developing scripts and simple or "
 "complex applications in Python."
 msgstr ""
+"Mange Python-verktøy og utvidelser for utvikling av skript og enkle eller "
+"avanserte programmer i Python."
 
 #. Description
 #: ../po/debian-tasks.desc:301
 msgid "Russian environment"
-msgstr ""
+msgstr "Russisk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:301
@@ -416,6 +454,8 @@ msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
 msgstr ""
+"Med dette valget installerer du pakker og dokumentasjon på russisk for å hjelpe "
+"russisktalende med å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:310
@@ -429,55 +469,59 @@ msgid ""
 "fairly loose definition of 'scientific', this includes numerical analysis "
 "and computing, statistical data analysis as well as visualization."
 msgstr ""
+"Med dette valget installerer du programmer som passer for vitenskaplig arbeide. "
+"Hva som menes med «vitenskap» er en løs definisjon, så dette inkluderer nummerisk analyse og behandling, statistisk dataanalyse i tillegg til visualisering."
 
 #. Description
 #: ../po/debian-tasks.desc:317
 msgid "Spanish environment"
-msgstr ""
+msgstr "Spansk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:317
 msgid ""
 "This task installs programs, data files,  and documentation that makes it "
 "easier for Spanish speakers to use Debian."
-msgstr ""
+msgstr "Med dette valget installerer du programmer, datafiler og dokumentasjon på spansk for å hjelpe spansktalende med å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:326
 msgid "Tcl/Tk"
-msgstr ""
+msgstr "Tcl/Tk"
 
 #. Description
 #: ../po/debian-tasks.desc:326
 msgid ""
 "Packages commonly used in developing applications using the Tcl language and "
 "Tk Toolkit."
-msgstr ""
+msgstr "Pakker som er vanlige å bruke i forbindelse med utvikling med språket Tcl og Tk-verktøyssettet."
 
 #. Description
 #: ../po/debian-tasks.desc:335
 msgid "TeX/LaTeX environment"
-msgstr ""
+msgstr "TeX/LaTeX miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:335
 msgid "a TeX/LaTeX environment"
-msgstr ""
+msgstr "Et TeX/LaTeX miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:344
 msgid "Thai environment"
-msgstr ""
+msgstr "Thai miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:344
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
+"Med dette valget installerer du pakker som gjør det enklare for folk som snakkar "
+"Thai å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:354
 msgid "Conventional Unix server"
-msgstr ""
+msgstr "Standard Unix-tjener"
 
 #. Description
 #: ../po/debian-tasks.desc:354
@@ -486,14 +530,16 @@ msgid ""
 "multi-user unix system with remote users. Do be warned that this includes a "
 "number of daemons."
 msgstr ""
+"Med dette valget installerer du pakker som er typiske for et standard "
+"unix-flerbrukersystem med brukere som logger inn utenfre. Vær oppmerksom på at dette inkluderer en del nisser (deamons)."
 
 #. Description
 #: ../po/debian-tasks.desc:361
 msgid "Web server"
-msgstr ""
+msgstr "Vev-tjener"
 
 #. Description
 #: ../po/debian-tasks.desc:361
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
-msgstr ""
+msgid "This task selects a packages useful for a general purpose web server system."
+msgstr "Med dette valget installerer du pakker som er nyttige for et generelt system med en vev-tjener."
+
