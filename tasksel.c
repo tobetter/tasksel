@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.7 2000/04/22 00:52:33 tausq Exp $ */
+/* $Id: tasksel.c,v 1.8 2000/05/07 21:55:55 polish Exp $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -69,7 +69,7 @@ int doinstall(struct package_t **taskpkglist, int taskpkgcount,
     if (!testmode) pclose(todpkg);
 
     if (c == 0) {
-      fprintf(stderr, "No packages selected\n");
+      fprintf(stderr, _("No packages selected\n"));
       return 1;
     }
   } else {
