@@ -7,6 +7,7 @@ Description: Simplified Chinese environment
  to use Debian, using the simplified Chinese encoding.
 Key:
   cpanel
+# Is X really key for chinese?
   rxvt-ml
   chinput
   xcin
@@ -26,7 +27,6 @@ Packages:
   pydict
   fortune-zh
   xfonts-intl-chinese-big
-  cjk-latex
   tfm-arphic-gbsn00lp
   tfm-arphic-gkai00mp
   cce
@@ -39,6 +39,3 @@ Packages:
   gs-cjk-resource
   cmap-adobe-gb1
   unifont
-  openoffice.org-l10n-zh-cn
-  openoffice.org-help-zh-cn
-  kde-i18n-zhcn

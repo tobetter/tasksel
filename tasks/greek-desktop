@@ -1,0 +1,18 @@
+Task: greek-desktop
+Depends: desktop, greek
+Section: l10n
+Maintainer: Konstantinos Margaritis <markos@debian.org>
+Description: Greek desktop
+ This task makes the desktop be localised in Greek
+Key:
+Packages:
+ xfonts-intl-european
+ #xfonts-efont-unicode
+ #xfonts-efont-unicode-ib
+ kde-i18n-el
+ koffice-i18n-el
+ mozilla-locale-el
+ openoffice.org-l10n-el
+ openoffice.org-help-el
+ ttf-freefont
+ ttf-thryomanes

@@ -141,6 +141,17 @@ sub task_test {
 	return $task;
 }
 
+# Hides a task and marks it not to be installed if it depends on other
+# tasks.
+sub hide_dependent_tasks {
+	my $task=shift;
+	if (exists $task->{depends} && length $task->{depends}) {
+		$task->{_display} = 0;
+		$task->{_install} = 0;
+	}
+	return $task;
+}
+
 # Converts a list of tasks into a debconf list of their short descriptions.
 sub task_to_debconf {
 	join ", ", map {
@@ -197,6 +208,7 @@ tasksel [options]; where options is any combination of:
 }
 
 my @aptitude_install;
+my @tasks_to_install;
 my %options=getopts();
 if (@ARGV) {
 	if ($ARGV[0] eq "install") {
@@ -209,11 +221,13 @@ if (@ARGV) {
 	}
 }
 
-my @tasks=map { task_test($_) } grep { task_avail($_) } 
-          map { read_task_desc($_) } list_task_descs();
+my @tasks=map { hide_dependent_tasks($_) } map { task_test($_) }
+          grep { task_avail($_) }  map { read_task_desc($_) }
+	  list_task_descs();
 
-if ($options{"new-install"}) {
-	push @aptitude_install, map { "~t".$_->{task} } grep { $_->{_display} == 0 && $_->{_install} == 1 } @tasks;
+if (! $options{"new-install"}) {
+	# Don't install hidden tasks if this is not a new install.
+	map { $_->{_install} = 0 } grep { $_->{_display} == 0 } @tasks;
 }
 if ($options{"required"}) {
 	push @aptitude_install, "~prequired";
@@ -226,6 +240,7 @@ if ($options{"standard"}) {
 }
 
 my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
+map { $_->{_install} = 0 } @list; # don't install displayed tasks unless selected
 if (@list && ! $options{"no-ui"}) {
 	my $question="tasksel/tasks";
 	if ($options{"new-install"}) {
@@ -241,19 +256,30 @@ if (@list && ! $options{"no-ui"}) {
 	chomp $ret;
 	close IN;
 	unlink $tmpfile;
-	push @aptitude_install, map { "~t".$_->{task} } debconf_to_task($ret, @tasks);
+	map { $_->{_install} = 1 } debconf_to_task($ret, @tasks);
 	if (! $options{test} && $ret=~/manual package selection/) {
 		# Doing better than this calls for a way to queue stuff for
 		# install in aptitude and then enter interactive mode.
-		if (@aptitude_install) {
-			warning gettext("ignoring other selected packages in favour of manual package selection");
-		}
 		my $ret=system("aptitude") >> 8;
 		if ($ret != 0) {
 			error gettext("aptitude failed");
 		}
 	}
 }
+
+# Mark dependnent packages for install if their dependencies are met.
+foreach my $task (@tasks) {
+	if (! $task->{_install} && exists $task->{depends} && length $task->{depends} ) {
+		$task->{_install} = 1;
+		foreach my $dep (split(', ', $task->{depends})) {
+			if (! grep { $_->{task} eq $dep && $_->{_install} } @tasks) {
+				$task->{_install} = 0;
+			}
+		}
+	}
+}
+
+push @aptitude_install, map { "~t".$_->{task} } grep { $_->{_install} } @tasks;
 
 if (@aptitude_install) {
 	if ($options{test}) {

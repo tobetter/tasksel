@@ -1,0 +1,11 @@
+Task: japanese-desktop
+Depends: desktop, japanese
+Section: l10n
+Description: Japanese environment
+ This task makes the desktop be localised in Japanese
+Key:
+Packages:
+ openoffice.org-l10n-ja
+ kde-i18n-ja
+ openoffice.org-help-ja
+ mozilla-locale-ja

@@ -53,6 +53,10 @@ handles this by comparing the value of the Test-lang field of a task with
 the locale setting. Tests could also be used for things like automatically
 installing hardware support tasks on systems with the right hardware.
 
+There is rudimentary support for tasks that depend on other tasks. If a
+task has a Depends field, then it should only be installed if all the tasks
+listed as dependencies are installed.
+
 Packages listed for different tasks (and within a single task)
 should not conflict, or the results will be rather arbitrary.
 

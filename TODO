@@ -1,8 +1,1 @@
 - show already installed tasks
-- language tasks like spanish that include stuff like mozilla-locale-es-es
-  and openoffice.org-l10n-es pull in all of mozilla and openoffice, which
-  is often not the desired effect. Fixes would include:
-    - make these packages only recommend the main packages
-    - put the language packages in the tasks that pull in OOo and mozilla
-      (but this is hard to maintain)
-    - stop this translation splitting nonsense

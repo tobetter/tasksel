@@ -1,0 +1,14 @@
+Task: italian-desktop
+Depends: desktop, italian
+Section: l10n
+Description: Italian desktop
+ This task makes the desktop be localised in Italian
+Key:
+Packages:
+ xfonts-intl-european
+ openoffice.org-help-it
+ openoffice.org-hyphenation-it
+ openoffice.org-l10n-it
+ mozilla-locale-it
+ kde-i18n-it
+ koffice-i18n-it

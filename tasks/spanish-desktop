@@ -1,0 +1,12 @@
+Task: spanish-desktop
+Depends: desktop, spanish
+Section: l10n
+Description: Spanish desktop
+ This task makes the desktop be localised in Spanish
+Key:
+Packages: 
+ # Broken at the moment
+ #mozilla-locale-es
+ kde-i18n-es
+ openoffice.org-l10n-es
+ openoffice.org-help-es

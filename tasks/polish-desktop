@@ -1,0 +1,12 @@
+Task: polish-desktop
+Depends: desktop, polish
+Section: l10n
+Description: Polish desktop
+ This task makes the desktop be localised in Polish
+Key:
+Packages:
+ xfonts-biznet-iso-8859-2-base
+ xfonts-biznet-iso-8859-2-75dpi
+ xfonts-biznet-iso-8859-2-100dpi
+ openoffice.org-l10n-pl
+ kde-i18n-pl
