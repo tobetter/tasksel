@@ -426,6 +426,9 @@ sub main {
 		if ($ret=~/manual package selection/) {
 			unshift @aptitude_install, "--visual-preview";
 		}
+		
+		# Set _install flags based on user selection.
+		map { $_->{_install} = 0 } @list;
 		foreach my $task (debconf_to_task($ret, @tasks)) {
 			if (! $task->{_installed}) {
 				$task->{_install} = 1;
@@ -438,7 +441,7 @@ sub main {
 			}
 		}
 		# Clear screen before running aptitude.
-		if (@aptitude_remove || @aptitude_install) {
+		if ((@aptitude_remove || @aptitude_install) && ! $options{test}) {
 			system("clear");
 		}
 	}
