@@ -1,0 +1,146 @@
+# Spanish translation for tasksel
+# Copyright (C) 2000 Software in the Public Interest, Inc.
+# Enrique Zanardi <ezanard@debian.org>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel 0.1\n"
+"POT-Creation-Date: 2000-08-24 16:00+0100\n"
+"PO-Revision-Date: 2000-08-24 16:07+0100\n"
+"Last-Translator: Enrique Zanardi <ezanard@debian.org>\n"
+"Language-Team: Debian Spanish Team <debian-l10n-spanish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: ../slangui.c:111
+msgid "Unable to initialize the terminal"
+msgstr "No puedo inicializar el terminal"
+
+#: ../slangui.c:113
+msgid "Unable to initialize screen output"
+msgstr "No puedo inicializar la salida por pantalla"
+
+#: ../slangui.c:114
+msgid "Unable to initialize keyboard interface"
+msgstr "No puedo inicializar la interfaz de teclado"
+
+#: ../slangui.c:131
+msgid "Debian Task Installer"
+msgstr "Instalador de Tareas de Debian"
+
+#: ../slangui.c:132
+msgid "(c) 1999-2000 SPI and others"
+msgstr "(C) 1999-2000 SPI y otros"
+
+#: ../slangui.c:285
+msgid "^Finish"
+msgstr "^Finalizar"
+
+#: ../slangui.c:293 ../slangui.c:294
+msgid "Task ^Info"
+msgstr "^Información de la tarea"
+
+#: ../slangui.c:298 ../slangui.c:299
+msgid "^Help"
+msgstr "Ayuda (^H)"
+
+#: ../slangui.c:331
+msgid "Select task packages to install"
+msgstr "Escoja los paquetes de tareas que desee instalar"
+
+#: ../slangui.c:466
+msgid "Ok"
+msgstr "Aceptar"
+
+#: ../slangui.c:634
+msgid "Help"
+msgstr "Ayuda"
+
+#: ../slangui.c:635
+msgid ""
+"Task packages are \"metapackages\" that allow you to quickly installa "
+"selection of packages that performs a given task.\r\rThe main chooserlist "
+"shows a list of tasks that you can choose to install. The arrow keys moves "
+"the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the "
+"package at the cursor. You can also press A to select all packages, or N to "
+"deselect all packages. Pressing Q will exit this program and begin "
+"installation of your selected tasks.\r\rThank you for using Debian.\r\rPress "
+"enter to return to the task selection screen"
+msgstr ""
+"Los paquetes de tareas son \"metapaquetes\" que le permiten instalar "
+"rápidamente una selección de paquetes que desempeñan una tarea dada.\r\r"
+"La lista principal muestra una serie de tareas que usted puede escoger para "
+"instalar. Las teclas de flechas mueven el cursor. Pulsando INTRO o la BARRA "
+"ESPACIADORA cambia el estado de la selección del paquete que esté bajo el "
+"cursor. Puede pulsar también A para seleccionar todos los paquetes, o N para "
+"deseleccionar todos los paquetes. Pulsando Q saldrá del programa y comenzará "
+"la instalación de las tareas seleccionadas.\r\rGracias por usar Debian.\r\r"
+"Pulse intro para regresar a la pantalla de selección de tareas"
+
+#: ../slangui.c:669
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Dependent packages:\n"
+msgstr ""
+"Descripción:\n"
+"%s\n"
+"\n"
+"Paquetes que dependen de éste:\n"
+
+#: ../slangui.c:677
+msgid "(no description available)"
+msgstr "(no hay descripción disponible)"
+
+#: ../tasksel.c:26
+msgid "Unknown signal seen"
+msgstr "He recibido una señal desconocida"
+
+#: ../tasksel.c:32
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [opciones]; donde opciones es una combinación de:\n"
+
+#: ../tasksel.c:33
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- modo de pruebas; no ejecuta apt-get al salir"
+
+#: ../tasksel.c:34
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- pon las instalaciones en la cola; no instala los paquetes con "
+"apt-get;\n"
+"\t\tsólo los pone en la cola en dpkg"
+
+#: ../tasksel.c:35
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- instala todos los paquetes con prioridad 'requerido'"
+
+#: ../tasksel.c:36
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- instala todos los paquetes con prioridad 'importante'"
+
+#: ../tasksel.c:37
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- instala todos los paquetes con prioridad 'estandar'"
+
+#: ../tasksel.c:38
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr ""
+"-n -- no muestra la interfaz de usuario; normalmente se usará con -r o -i"
+
+#: ../tasksel.c:72 ../tasksel.c:100
+msgid "No packages selected\n"
+msgstr "No se ha seleccionado ningún paquete\n"
+
+#: ../tasksel.c:140
+msgid ""
+"No task packages found on this system.\n"
+"Did you update your available file?"
+msgstr ""
+"No se encontraron paquetes de tareas para este sistema.\n"
+"¿Está seguro de que actualizó su fichero de paquetes disponibles?"
