@@ -1,6 +1,6 @@
 XGETTEXT = xgettext --keyword=_
 
-all: C.po de.mo hu.mo ja.mo sv.mo pl.mo
+all: C.po cs.mo de.mo hu.mo ja.mo sv.mo pl.mo
 	touch build_stamp
 
 C.po:

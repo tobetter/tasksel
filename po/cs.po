@@ -1,0 +1,137 @@
+# Czech translation for tasksel.
+# Copyright (C) 2000 Software in the Public Interest, Inc.
+# Petr Cech <cech@debian.org>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel 1.0\n"
+"POT-Creation-Date: 2000-05-09 09:21+0200\n"
+"PO-Revision-Date: 2000-05-09 09:37+02:00\n"
+"Last-Translator: Petr Cech <cech@debian.org>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../slangui.c:111
+msgid "Unable to initialize the terminal"
+msgstr "Nelze nastavit terminál"
+
+#: ../slangui.c:113
+msgid "Unable to initialize screen output"
+msgstr "Nelze nastavit výstup na obrazovku"
+
+#: ../slangui.c:114
+msgid "Unable to initialize keyboard interface"
+msgstr "Nelze nastavit klávesnici"
+
+#: ../slangui.c:131
+msgid "Debian Task Installer"
+msgstr "Debian Task Installer"
+
+#: ../slangui.c:132
+msgid "(c) 1999-2000 SPI and others"
+msgstr "(C) 1999-2000 SPI a dal¹í"
+
+#: ../slangui.c:285
+msgid "^Finish"
+msgstr "^Zkonèi"
+
+#: ../slangui.c:293 ../slangui.c:294
+msgid "Task ^Info"
+msgstr "^Informace o tasku"
+
+#: ../slangui.c:298 ../slangui.c:299
+msgid "^Help"
+msgstr "^Nápovìda"
+
+#: ../slangui.c:331
+msgid "Select task packages to install"
+msgstr "Vyberte talk balíky k nainstalování"
+
+#: ../slangui.c:466
+msgid "Ok"
+msgstr "Ok"
+
+#: ../slangui.c:634
+msgid "Help"
+msgstr "Nápovìda"
+
+#: ../slangui.c:635
+msgid ""
+"Task packages are \"metapackages\" that allow you to quickly installa "
+"selection of packages that performs a given task.\r\rThe main chooserlist "
+"shows a list of tasks that you can choose to install. The arrow keys moves "
+"the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the "
+"package at the cursor. You can also press A to select all packages, or N to "
+"deselect all packages. Pressing Q will exit this program and begin "
+"installation of your selected tasks.\r\rThank you for using Debian.\r\rPress "
+"enter to return to the task selection screen"
+msgstr ""
+"Balíky task-* jsou \"metabalíky\". Ty umo¾òují rychlou instalaci výbìru\n"
+"balíkù plnících danou úlohu.\r\rV hlavním nabídka ukazuje seznam v¹ech úkolù, které mù¾ete nainstalovat. Kurzor se pohybuje ¹ipkami. Stiskem klávesy Enter nebo mezera zvolíte balík, na který ukazuje kurzor. Stiskem A zvolíte v¹echny balíky, stiskem N se v¹echny balíky odznaèí. Stisk klávesy Q ukonèí program a zaène instalování vybraných úkolù.\r\rDìkujeme, ¾e jste si vybral Debian.\r\rStisknìte Enter k zobrazení hlavní nabídky"
+
+#: ../slangui.c:669
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Dependent packages:\n"
+msgstr ""
+"Popis:\n"
+"%s\n"
+"\n"
+"Závisí na balících:\n"
+
+#: ../slangui.c:677
+msgid "(no description available)"
+msgstr "(popis není k dispozici)"
+
+#: ../tasksel.c:26
+msgid "Unknown signal seen"
+msgstr "Zachycen neznámý signál"
+
+#: ../tasksel.c:32
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [pøepínaèe]; kde pøepínaèe jsou libovolnou kombinací:\n"
+
+#: ../tasksel.c:33
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- testovací mód; po zkonèení nespustí apt-get"
+
+#: ../tasksel.c:34
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- odlo¾ená instalace; nenainstaluje balíky pomocí apt-get;\n"
+"\t\tprovede pouze nastavení databáze dpkg"
+
+#: ../tasksel.c:35
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- nainstaluj v¹echny balíky s prioritou required"
+
+#: ../tasksel.c:36
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- nainstaluj v¹echny balíky s prioritou important"
+
+#: ../tasksel.c:37
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- nainstaluj v¹echny balíky s prioritou standard"
+
+#: ../tasksel.c:38
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- nezobraz UI; obvykle pro pou¾ití s -r nebo -i"
+
+#: ../tasksel.c:72 ../tasksel.c:100
+msgid "No packages selected\n"
+msgstr "Nebyl vybrán ¾ádný balík\n"
+
+#: ../tasksel.c:140
+msgid ""
+"No task packages found on this system.\n"
+"Did you update your available file?"
+msgstr ""
+"V systému nebyl nalezen ¾ádný task balík.\n"
+"Byl soubor available aktualizován?"
