@@ -1,6 +1,15 @@
-/* $Id: data.h,v 1.3 2000/01/07 22:45:09 joeyh Exp $ */
+/* $Id: data.h,v 1.4 2000/02/06 22:12:32 tausq Exp $ */
 #ifndef _DATA_H
 #define _DATA_H
+
+typedef enum {
+  PRIORITY_UNKNOWN = 0,
+  PRIORITY_REQUIRED,
+  PRIORITY_IMPORTANT,
+  PRIORITY_STANDARD,
+  PRIORITY_OPTIONAL,
+  PRIORITY_EXTRA
+} priority_t;
 
 struct package_t {
   char *name;
@@ -13,6 +22,7 @@ struct package_t {
   char **recommends;
   int suggestscount;
   char **suggests;
+  priority_t priority;
   int selected;
 };
 

@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.7 2000/01/16 02:55:30 tausq Exp $ */
+/* $Id: data.c,v 1.8 2000/02/06 22:12:32 tausq Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -19,6 +19,7 @@
 #define RECOMMENDSFIELD  "Recommends: "
 #define SUGGESTSFIELD    "Suggests: "
 #define DESCRIPTIONFIELD "Description: "
+#define PRIORITYFIELD    "Priority: "
 #define STATUSFIELD      "Status: "
 #define AVAILABLEFILE    "/var/lib/dpkg/available"
 #define STATUSFILE       "/var/lib/dpkg/status"
@@ -118,9 +119,10 @@ static const char *filterdescription(const char *descin)
 }
 
 static void addpackage(struct packages_t *pkgs,
-		       const char *name, const char *dependsdesc, const char *recommendsdesc,
-		       const char *suggestsdesc, const char *shortdesc, const char *longdesc,
-		       const int istask)
+		       const char *name, const char *dependsdesc, 
+		       const char *recommendsdesc, const char *suggestsdesc, 
+		       const char *shortdesc, const char *longdesc,
+		       const priority_t priority, const int istask)
 {
   /* Adds package to the package list binary tree */
   struct package_t *node = NEW(struct package_t);
@@ -155,6 +157,7 @@ static void addpackage(struct packages_t *pkgs,
   
   node->shortdesc = STRDUP(shortdesc); 
   node->longdesc = STRDUP(longdesc);
+  node->priority = priority;
 
   if (dependsdesc) node->dependscount = splitlinkdesc(dependsdesc, &node->depends);
   if (recommendsdesc) node->recommendscount = splitlinkdesc(recommendsdesc, &node->recommends);
@@ -168,8 +171,8 @@ static void addpackage(struct packages_t *pkgs,
 /* public functions */
 struct package_t *packages_find(const struct packages_t *pkgs, const char *name)
 {
-  /* Given a package name, returns a pointer to the appropriate package_t structure
-   * or NULL if none is found */
+  /* Given a package name, returns a pointer to the appropriate package_t 
+   * structure or NULL if none is found */
   struct package_t pkg;
   void *result;
   
@@ -187,10 +190,6 @@ struct package_t **packages_enumerate(const struct packages_t *packages)
   /* Converts the packages binary tree into a array. Do not modify the returned array! It
    * is a static variable managed by this module */
 	
-  if (_packages_enumbuf != NULL) {
-    FREE(_packages_enumbuf);
-  }
- 
   _packages_enumbuf = MALLOC(sizeof(struct package_t *) * packages->count);
   if (_packages_enumbuf == NULL) 
     DIE("Cannot allocate memory for enumeration buffer");
@@ -203,11 +202,13 @@ struct package_t **packages_enumerate(const struct packages_t *packages)
 
 void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
 {
-  /* Populates internal data structures with information for an available file */
+  /* Populates internal data structures with information from an available 
+   * file */
   FILE *f;
   char buf[BUF_SIZE];
   char *name, *shortdesc, *longdesc;
-  char *dependsdesc, *recommendsdesc, *suggestsdesc;
+  char *dependsdesc, *recommendsdesc, *suggestsdesc, *prioritydesc;
+  priority_t priority;
   
   VERIFY(taskpkgs != NULL); VERIFY(pkgs != NULL);
  
@@ -222,6 +223,7 @@ void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
     if (MATCHFIELD(buf, PACKAGEFIELD)) {
       /*DPRINTF("Package = %s\n", FIELDDATA(buf, PACKAGEFIELD)); */
       name = shortdesc = longdesc = dependsdesc = recommendsdesc = suggestsdesc = NULL;
+      priority = PRIORITY_UNKNOWN;
       
       name = STRDUP(FIELDDATA(buf, PACKAGEFIELD));
       VERIFY(name != NULL);
@@ -241,6 +243,19 @@ void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
 	} else if (MATCHFIELD(buf, SUGGESTSFIELD)) {
           suggestsdesc = STRDUP(FIELDDATA(buf, SUGGESTSFIELD));
 	  VERIFY(suggestsdesc != NULL);
+	} else if (MATCHFIELD(buf, PRIORITYFIELD)) {
+	  prioritydesc = FIELDDATA(buf, PRIORITYFIELD);
+	  if (strcmp(prioritydesc, "required") == 0) {
+	    priority = PRIORITY_REQUIRED;
+	  } else if (strcmp(prioritydesc, "important") == 0) {
+            priority = PRIORITY_IMPORTANT;
+	  } else if (strcmp(prioritydesc, "standard") == 0) {
+	    priority = PRIORITY_STANDARD;
+	  } else if (strcmp(prioritydesc, "optional") == 0) {
+	    priority = PRIORITY_OPTIONAL;
+	  } else if (strcmp(prioritydesc, "extra") == 0) {
+	    priority = PRIORITY_EXTRA;
+	  }
 	} else if (MATCHFIELD(buf, DESCRIPTIONFIELD)) {
 	  shortdesc = STRDUP(FIELDDATA(buf, DESCRIPTIONFIELD));
 	  VERIFY(shortdesc != NULL);
@@ -261,10 +276,10 @@ void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
       }
 
       addpackage(pkgs, name, NULL, NULL, NULL, shortdesc,
-		 NULL, 0);
+		 NULL, priority, 0);
       if (strncmp(name, "task-", 5) == 0)
 	addpackage(taskpkgs, name, dependsdesc, recommendsdesc, suggestsdesc, 
-                   filterdescription(shortdesc), longdesc, 1);
+                   filterdescription(shortdesc), longdesc, priority, 1);
 	
       if (name != NULL) FREE(name);
       if (dependsdesc != NULL) FREE(dependsdesc);

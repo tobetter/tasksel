@@ -1,3 +1,20 @@
+tasksel (1.0-7) frozen unstable; urgency=low
+
+  * Adds -r, -i switches for installing required and important packages
+  * Adds -n option for non-interactive runs (for use with -r or -i)
+  * Make data.c read priority settings; made packages_enumerate 
+    reentrant
+
+ -- Randolph Chung <tausq@debian.org>  Sun,  6 Feb 2000 15:08:43 -0700
+
+tasksel (1.0-6) frozen unstable; urgency=low
+
+  * Fixed some really stupid bugs
+  * removed cvs build target from debian/rules (closes: #55621) [RC]
+  * fixed -q option to properly queue package installs
+
+ -- Randolph Chung <tausq@debian.org>  Wed, 19 Jan 2000 21:19:11 -0700
+
 tasksel (1.0-5) frozen unstable; urgency=low
 
   * Adds option to queue installs instead of running them immediately (-q)

@@ -16,7 +16,7 @@ commit-stamp:
 	cvs commit
 	touch commit-stamp
 
-build: commit build-stamp
+build: build-stamp
 build-stamp: 
 	dh_testdir
 

@@ -1,7 +1,7 @@
 PROGRAM = tasksel
 VERSION=\"1.0\"
 CC = gcc
-CFLAGS = -g -Wall  -Os
+CFLAGS = -g -Wall  #-Os
 DEFS = -DVERSION=$(VERSION) -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" #-DDEBUG
 LIBS = -lslang #-lccmalloc -ldl
 OBJS = tasksel.o slangui.o data.o util.o strutl.o
