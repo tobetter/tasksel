@@ -1,3 +1,17 @@
+tasksel (1.14) unstable; urgency=low
+
+  * Include sawfish-gnome in desktop task so gnome will have a WM.
+    Closes: #116609, #129999
+  * Make the basic-desktop task incude all of x-window-system (so it gets a
+    WM and xterm and so on), while the desktop task uses just
+    x-window-system-core (because it already has a WM and so on from
+    gnome and kde). Closes: #129217
+  * Removed pydb from python task, because Colin Watson said to. 
+    Closes: #129520
+  * it.po translation added, da.po added (Closes: #122668), ja.po updated.
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 27 Jan 2002 14:55:51 -0500
+
 tasksel (1.13) unstable; urgency=low
 
   * python-dev addition. Closes: #72972 
