@@ -1,0 +1,145 @@
+# Russian translation for tasksel.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Peter Novodvorsky <petya@logic.ru>, 2000.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel 1.0\n"
+"POT-Creation-Date: 2000-07-13 18:33+0400\n"
+"PO-Revision-Date: 2000-07-13 18:33+0400\n"
+"Last-Translator: Peter Novodvorsky <petya@logic.ru>\n"
+"Language-Team: Debian Russian Team <debian-russian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../slangui.c:111
+msgid "Unable to initialize the terminal"
+msgstr "Ошибка при инициализации терминала"
+
+#: ../slangui.c:113
+msgid "Unable to initialize screen output"
+msgstr "Ошибка при инициализации вывода на экран"
+
+#: ../slangui.c:114
+msgid "Unable to initialize keyboard interface"
+msgstr "Ошибка инициализации клавиатурного интерфейса"
+
+#: ../slangui.c:131
+msgid "Debian Task Installer"
+msgstr "Установщик Заданий Debian"
+
+#: ../slangui.c:132
+msgid "(c) 1999-2000 SPI and others"
+msgstr "(c) 1999-2000 SPI и все, все, все."
+
+#: ../slangui.c:285
+msgid "^Finish"
+msgstr "Закончить (^F)"
+
+#: ../slangui.c:293 ../slangui.c:294
+msgid "Task ^Info"
+msgstr "Информация о задании (^I)"
+
+#: ../slangui.c:298 ../slangui.c:299
+msgid "^Help"
+msgstr "Помощь (^H)"
+
+#: ../slangui.c:331
+msgid "Select task packages to install"
+msgstr "Выберите задания для установки"
+
+#: ../slangui.c:466
+msgid "Ok"
+msgstr "Ok"
+
+#: ../slangui.c:634
+msgid "Help"
+msgstr "Помощь"
+
+#: ../slangui.c:635
+msgid ""
+"Task packages are \"metapackages\" that allow you to quickly installa "
+"selection of packages that performs a given task.\r\rThe main chooserlist "
+"shows a list of tasks that you can choose to install. The arrow keys moves "
+"the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the "
+"package at the cursor. You can also press A to select all packages, or N to "
+"deselect all packages. Pressing Q will exit this program and begin "
+"installation of your selected tasks.\r\rThank you for using Debian.\r\rPress "
+"enter to return to the task selection screen"
+msgstr ""
+"Задания это \"мета-пакеты\" которые позволяют быстро установить "
+"набор пакетов для соответствующего задания.\r\rГлавный список содержит "
+"названия пакетов которые вы можете выбрать для установки. Кнопки со "
+"стрелками передвигают курсор. Нажимая ENTER или SPACEBAR вы "
+"включаете/исключаете пакет из тех, которые вы хотите установить. "
+"Также, вы можете нажать A и включить все пакеты или N и исключить их все. "
+"Нажав на Q вы выйдете из программы и начнется установка выбранных пакетов.\r\r"
+"Спасибо за использование Debian.\r\r Нажмите ENTER, чтобы вернуться к экрану "
+"выбора заданий."
+
+#: ../slangui.c:669
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Dependent packages:\n"
+msgstr ""
+"Описание:\n"
+"%s\n"
+"\n"
+"Зависимые пакеты:\n"
+
+#: ../slangui.c:677
+msgid "(no description available)"
+msgstr "(описания нет)"
+
+#: ../tasksel.c:26
+msgid "Unknown signal seen"
+msgstr "Получен неизвестный сигнал"
+
+#: ../tasksel.c:32
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "taskset [опции]; где опции, это комбинация из ключей:\n"
+
+#: ../tasksel.c:33
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- тестовый режим; не запускать apt-get на выходе"
+
+#: ../tasksel.c:34
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- положить запросы об установке в очередь; не устанавливать пакеты\n"
+"\t\tс apt-get; просто положить их в очередь dpkg"
+
+#: ../tasksel.c:35
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- установить все пакеты с приоритетом \"требуемый\""
+
+#: ../tasksel.c:36
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- установить все пакеты с приоритетом \"важный\""
+
+#: ../tasksel.c:37
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- установить все пакеты с приоритетом \"стандартный\""
+
+#: ../tasksel.c:38
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- не показывать пользовательский интерфейс; используется с -r и -i"
+
+#: ../tasksel.c:72 ../tasksel.c:100
+msgid "No packages selected\n"
+msgstr "Не выбрано ни одного пакета\n"
+
+#: ../tasksel.c:140
+msgid ""
+"No task packages found on this system.\n"
+"Did you update your available file?"
+msgstr ""
+"В системе не найдено ни одного пакета.\n"
+"Вы обновляли ваш файл доступных пакетов?"
