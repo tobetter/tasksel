@@ -4,6 +4,7 @@ tasksel (1.47) UNRELASED; urgency=low
     - Update kernel to 2.4.25. Remove bin86. Closes: #240383
     - Add ifplugd to laptop task.
     - Add a Herbrew task. Closes: #235450
+    - Some touchups based on #225357
   * dann frazier:
     - Fix segfault when it detects a package name w/ a task- prefix, that
       doesn't have a corresponding Section: tasks-foo field. Closes: #236397
