@@ -1,5 +1,11 @@
 tasksel (2.13) UNRELEASED; urgency=low
 
+  * Joey Hess
+    - Fix use of test programs to mark a task to be installed by default.
+      Only done for --new-install though. Closes: #274933
+    - To allow tasks with such test programs to co-exist with preseeding
+      (and not override preseeded values) use the seen flag to tell if
+      tasksel/first is preseeded.
   * Translations
     - Stefano Canepa
       - Italian updated (debian/po). Closes: #270123

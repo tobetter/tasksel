@@ -59,7 +59,7 @@ sub read_task_desc {
 				}
 			}
 			else {
-				print STDERR "parse error on line $. on $desc\n";
+				print STDERR "parse error in stanza $. of $desc\n";
 			}
 		}
 		if (%data) {
@@ -235,6 +235,7 @@ sub task_test {
 			}
 		}
 	}
+
 	return $task;
 }
 
@@ -396,15 +397,17 @@ sub main {
 	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
 	if (@list && ! $options{"no-ui"} && ! $options{install} && ! $options{remove}) {
 		if (! $options{"new-install"}) {
-			# find tasks that are already installed
+			# Find tasks that are already installed.
 			map { $_->{_installed} = task_installed($_) } @list;
+			# Don't install new tasks unless manually selected.
+			map { $_->{_install} = 0 } @list;
 		}
 		else {
-			# assume that no tasks are installed, to ensure
-			# that complete tasks get installed on new installs
+			# Assume that no tasks are installed, to ensure
+			# that complete tasks get installed on new
+			# installs.
 			map { $_->{_installed} = 0 } @list;
 		}
-		map { $_->{_install} = 0 } @list; # don't install displayed tasks unless selected
 		my $question="tasksel/tasks";
 		if ($options{"new-install"}) {
 			$question="tasksel/first";
@@ -413,7 +416,7 @@ sub main {
 		my $tmpfile=`tempfile`;
 		chomp $tmpfile;
 		system($debconf_helper, $tmpfile, task_to_debconf(@list),
-			($options{"new-install"} ? "-" : task_to_debconf(@default)),
+			task_to_debconf(@default),
 			$question);
 		open(IN, "<$tmpfile");
 		my $ret=<IN>;
