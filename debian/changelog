@@ -1,9 +1,42 @@
-tasksel (1.39) UNRELEASED; urgency=low
+tasksel (1.39) unstable; urgency=low
 
   * Jordi Mallach:
     - Add Catalan translation of task descriptions.
     - Update the Catalan translation of tasksel.
     - Add "catalan" task.
+  * Built on a system with only unstable in sources.list, and found and
+    removed the followimg packages that are only in stable:
+      qtcupts
+      cxterm-gb
+      cedictgb
+      kde-i18n-zhcngb2312
+      automake (replaced with automake1.7)
+      doc-linux-zh-text (replaced with kde-i18n-zhcn)
+      cxterm-big5
+      cedictb5
+      kde-i18n-zhtwbig5 (replaced with kde-i18n-zhtw)
+      scalable-cyrfonts-x11
+      openoffice.org-hyphenation-da
+      doc-linux-fr (replaced with -text)
+      gnome-card-games (merged into gnome-games)
+      lincity-x (replaced by lincity)
+      wgerman (replaced by wngerman)
+      igerman
+      cxterm-ks
+      ami-gnome
+      kde-i18n-ko
+      cupsys-pstoraster
+      kdelibs3-cups
+      python-gdk-imlib
+      python-glade
+      python-gnome
+      python-gtk
+      openoffice.org-hyphenation-ru
+      hyperlatex
+      kde-i18n-no (replacements -nn and -mb already listed)
+  * I welcome and solicit replacements for anything in the above list.
+  * Use cups client packages to satisfy the lpd requirement of the lsb
+    package.
 
  -- Joey Hess <joeyh@debian.org>  Mon, 10 Nov 2003 17:17:05 +0100
 
