@@ -3,7 +3,7 @@ verious general tasks a user might want to perform with a Debian system,
 lists of packages that they might use to perform the tasks, and grouping
 information to make related sets of tasks appear together.
 
-The file format is a rfs-822 style stanza, with fields named Task, Section,
+The file format is a rfc-822 style stanza, with fields named Task, Section,
 Description (which should include an extended descrition), and Packages.
 The Packages field should include the list of packages one per line after
 it, indented by one space each, like so:
