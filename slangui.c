@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.2 1999/11/21 22:30:55 tausq Exp $ */
+/* $Id: slangui.c,v 1.3 1999/11/21 23:15:47 cech Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is usually way too many
  *       global vars */
@@ -280,6 +280,8 @@ void ui_toggleselection(int index)
     SLsmg_write_string("( )");
   else
     SLsmg_write_string("(*)");
+
+  SLsmg_gotorc(_chooser_rowoffset + index - _chooser_topindex, _chooser_coloffset + 2);
   SLsmg_refresh();
 }
 
