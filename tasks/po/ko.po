@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-18 19:47-0500\n"
+"POT-Creation-Date: 2004-03-27 13:58+0200\n"
 "PO-Revision-Date: 2004-03-01 14:27+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <cwryu@debian.org>\n"
@@ -342,11 +342,27 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:227
+#, fuzzy
+msgid "Lithuanian environment"
+msgstr "타이어 환경"
+
+#. Description
+#: ../po/debian-tasks.desc:227
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Lithuanian to help "
+"Lithuanian speaking people use Debian."
+msgstr ""
+"이 태스크는 카탈로니아어를 사용하는 사람들이 데비안을 쓰는 데 도움이 되는 패"
+"키지와 문서들을 설치합니다."
+
+#. Description
+#: ../po/debian-tasks.desc:235
 msgid "Linux Standard Base"
 msgstr "Linux Standard Base"
 
 #. Description
-#: ../po/debian-tasks.desc:227
+#: ../po/debian-tasks.desc:235
 msgid ""
 "This task makes the system compliant with the Linux Standard Base, allowing "
 "you to install and use LSB packages."
@@ -355,12 +371,12 @@ msgstr ""
 "키지를 설치할 수 있습니다."
 
 #. Description
-#: ../po/debian-tasks.desc:235
+#: ../po/debian-tasks.desc:243
 msgid "Mail server"
 msgstr "메일 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:235
+#: ../po/debian-tasks.desc:243
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -368,12 +384,12 @@ msgstr ""
 "이 태스크는 일반적인 메일 서버 시스템에 필요한 여러가지 패키지를 선택합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:243
+#: ../po/debian-tasks.desc:251
 msgid "Usenet news server"
 msgstr "유즈넷 뉴스 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:243
+#: ../po/debian-tasks.desc:251
 msgid ""
 "This task selects the preferred version of the INN news server software for "
 "new Debian installations."
@@ -382,7 +398,7 @@ msgstr ""
 "설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:243
+#: ../po/debian-tasks.desc:251
 msgid ""
 "You do not need this package if you merely wish to read news from an "
 "existing server, just select the news reader program you desire and it will "
@@ -394,12 +410,12 @@ msgstr ""
 "버를 운영할 경우에만 이 태스크를 사용하십시오."
 
 #. Description
-#: ../po/debian-tasks.desc:256
+#: ../po/debian-tasks.desc:264
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "노르웨이어  (Bokmaal 및 Nynorsk) 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:256
+#: ../po/debian-tasks.desc:264
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -408,12 +424,12 @@ msgstr ""
 "지와 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:266
+#: ../po/debian-tasks.desc:274
 msgid "Office environment"
 msgstr "오피스 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:266
+#: ../po/debian-tasks.desc:274
 msgid ""
 "This task provides a suite of office productivity software, including a word "
 "processor, a spreadsheet, a presentation program, and more. This is a rather "
@@ -424,12 +440,12 @@ msgstr ""
 "히 크기가 큽니다."
 
 #. Description
-#: ../po/debian-tasks.desc:276
+#: ../po/debian-tasks.desc:284
 msgid "Polish environment"
 msgstr "폴란드어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:276
+#: ../po/debian-tasks.desc:284
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -438,22 +454,22 @@ msgstr ""
 "와 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:285
+#: ../po/debian-tasks.desc:293
 msgid "Print server"
 msgstr "인쇄 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:285
+#: ../po/debian-tasks.desc:293
 msgid "This task sets up your system to be a print server."
 msgstr "이 태스크는 시스템을 인쇄 서버로 준비합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:294
+#: ../po/debian-tasks.desc:302
 msgid "Python"
 msgstr "파이썬"
 
 #. Description
-#: ../po/debian-tasks.desc:294
+#: ../po/debian-tasks.desc:302
 msgid ""
 "Many Python tools and extensions, for developing scripts and simple or "
 "complex applications in Python."
@@ -462,12 +478,12 @@ msgstr ""
 "하기도 한 응용 프로그램들을 개발하는 데 필요합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:302
+#: ../po/debian-tasks.desc:310
 msgid "Russian environment"
 msgstr "러시아어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:302
+#: ../po/debian-tasks.desc:310
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -476,12 +492,12 @@ msgstr ""
 "와 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:311
+#: ../po/debian-tasks.desc:319
 msgid "Scientific applications"
 msgstr "공학용 프로그램"
 
 #. Description
-#: ../po/debian-tasks.desc:311
+#: ../po/debian-tasks.desc:319
 msgid ""
 "This task selects packages which are suitable for scientific work. Under a "
 "fairly loose definition of 'scientific', this includes numerical analysis "
@@ -492,12 +508,12 @@ msgstr ""
 "(visualization) 따위가 이에 해당됩니다."
 
 #. Description
-#: ../po/debian-tasks.desc:318
+#: ../po/debian-tasks.desc:326
 msgid "Spanish environment"
 msgstr "스페인어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:318
+#: ../po/debian-tasks.desc:326
 msgid ""
 "This task installs programs, data files,  and documentation that makes it "
 "easier for Spanish speakers to use Debian."
@@ -506,12 +522,12 @@ msgstr ""
 "데이터 파일 및 문서를 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:327
+#: ../po/debian-tasks.desc:335
 msgid "Tcl/Tk"
 msgstr "Tcl/Tk"
 
 #. Description
-#: ../po/debian-tasks.desc:327
+#: ../po/debian-tasks.desc:335
 msgid ""
 "Packages commonly used in developing applications using the Tcl language and "
 "Tk Toolkit."
@@ -519,34 +535,34 @@ msgstr ""
 "Tcl 언어 및 Tk 툴킷을 사용해 응용 프로그램을 개발하는 데 쓰이는 패키지."
 
 #. Description
-#: ../po/debian-tasks.desc:336
+#: ../po/debian-tasks.desc:344
 msgid "TeX/LaTeX environment"
 msgstr "TeX/LaTeX 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:336
+#: ../po/debian-tasks.desc:344
 msgid "a TeX/LaTeX environment"
 msgstr "TeX/LaTeX 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid "Thai environment"
 msgstr "타이어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
 "이 태스크는 타이어를 사용하는 사람들이 데비안을 쉽게 쓸 수 있는 패키지를 설치"
 "합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:355
+#: ../po/debian-tasks.desc:363
 msgid "Conventional Unix server"
 msgstr "전통적인 유닉스 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:355
+#: ../po/debian-tasks.desc:363
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -557,12 +573,12 @@ msgstr ""
 "오."
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid "Web server"
 msgstr "웹 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "이 태스크는 일반적인 웹 서버 시스템에 필요한 패키지들을 설치합니다."

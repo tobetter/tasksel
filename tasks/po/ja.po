@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.42\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-18 19:47-0500\n"
+"POT-Creation-Date: 2004-03-27 13:58+0200\n"
 "PO-Revision-Date: 2004-01-27 12:07+0900\n"
 "Last-Translator: Tomohiro KUBOTA <kubota@debian.org>\n"
 "Language-Team: Debian JP Project <debian-doc@debian.or.jp>\n"
@@ -348,11 +348,27 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:227
+#, fuzzy
+msgid "Lithuanian environment"
+msgstr "タイ語環境"
+
+#. Description
+#: ../po/debian-tasks.desc:227
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Lithuanian to help "
+"Lithuanian speaking people use Debian."
+msgstr ""
+"このタスクは、カタルーニャ語話者が Debian を使いやすくするために、カタルー"
+"ニャ語のパッケージやドキュメントをインストールします。"
+
+#. Description
+#: ../po/debian-tasks.desc:235
 msgid "Linux Standard Base"
 msgstr "Linux Standard Base"
 
 #. Description
-#: ../po/debian-tasks.desc:227
+#: ../po/debian-tasks.desc:235
 msgid ""
 "This task makes the system compliant with the Linux Standard Base, allowing "
 "you to install and use LSB packages."
@@ -361,12 +377,12 @@ msgstr ""
 "LSB パッケージをインストールしたり利用したりできるようになります。"
 
 #. Description
-#: ../po/debian-tasks.desc:235
+#: ../po/debian-tasks.desc:243
 msgid "Mail server"
 msgstr "メールサーバ"
 
 #. Description
-#: ../po/debian-tasks.desc:235
+#: ../po/debian-tasks.desc:243
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -375,12 +391,12 @@ msgstr ""
 "す。"
 
 #. Description
-#: ../po/debian-tasks.desc:243
+#: ../po/debian-tasks.desc:251
 msgid "Usenet news server"
 msgstr "Usenet ニュースサーバ"
 
 #. Description
-#: ../po/debian-tasks.desc:243
+#: ../po/debian-tasks.desc:251
 msgid ""
 "This task selects the preferred version of the INN news server software for "
 "new Debian installations."
@@ -389,7 +405,7 @@ msgstr ""
 "ルします。"
 
 #. Description
-#: ../po/debian-tasks.desc:243
+#: ../po/debian-tasks.desc:251
 msgid ""
 "You do not need this package if you merely wish to read news from an "
 "existing server, just select the news reader program you desire and it will "
@@ -401,12 +417,12 @@ msgstr ""
 "が、このタスクを利用してください。"
 
 #. Description
-#: ../po/debian-tasks.desc:256
+#: ../po/debian-tasks.desc:264
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "ノルウェー語 (ボークモールとニューノシュク) 環境"
 
 #. Description
-#: ../po/debian-tasks.desc:256
+#: ../po/debian-tasks.desc:264
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -415,12 +431,12 @@ msgstr ""
 "ウェー語話者が Debian を使いやすいようにします。"
 
 #. Description
-#: ../po/debian-tasks.desc:266
+#: ../po/debian-tasks.desc:274
 msgid "Office environment"
 msgstr "オフィス環境"
 
 #. Description
-#: ../po/debian-tasks.desc:266
+#: ../po/debian-tasks.desc:274
 msgid ""
 "This task provides a suite of office productivity software, including a word "
 "processor, a spreadsheet, a presentation program, and more. This is a rather "
@@ -430,12 +446,12 @@ msgstr ""
 "ンテーションツールなどを含みます。比較的大きなコレクションです。"
 
 #. Description
-#: ../po/debian-tasks.desc:276
+#: ../po/debian-tasks.desc:284
 msgid "Polish environment"
 msgstr "ポーランド語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:276
+#: ../po/debian-tasks.desc:284
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -444,22 +460,22 @@ msgstr ""
 "のプログラムとドキュメントをインストールします。<"
 
 #. Description
-#: ../po/debian-tasks.desc:285
+#: ../po/debian-tasks.desc:293
 msgid "Print server"
 msgstr "印刷サーバ"
 
 #. Description
-#: ../po/debian-tasks.desc:285
+#: ../po/debian-tasks.desc:293
 msgid "This task sets up your system to be a print server."
 msgstr "このタスクは、あなたのシステムを印刷サーバにします。"
 
 #. Description
-#: ../po/debian-tasks.desc:294
+#: ../po/debian-tasks.desc:302
 msgid "Python"
 msgstr "Python"
 
 #. Description
-#: ../po/debian-tasks.desc:294
+#: ../po/debian-tasks.desc:302
 msgid ""
 "Many Python tools and extensions, for developing scripts and simple or "
 "complex applications in Python."
@@ -468,12 +484,12 @@ msgstr ""
 "ら複雑なアプリケーションまでを Python で開発できるようになります。"
 
 #. Description
-#: ../po/debian-tasks.desc:302
+#: ../po/debian-tasks.desc:310
 msgid "Russian environment"
 msgstr "ロシア語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:302
+#: ../po/debian-tasks.desc:310
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -482,12 +498,12 @@ msgstr ""
 "ラムとドキュメントをインストールします。"
 
 #. Description
-#: ../po/debian-tasks.desc:311
+#: ../po/debian-tasks.desc:319
 msgid "Scientific applications"
 msgstr "科学的アプリケーション"
 
 #. Description
-#: ../po/debian-tasks.desc:311
+#: ../po/debian-tasks.desc:319
 msgid ""
 "This task selects packages which are suitable for scientific work. Under a "
 "fairly loose definition of 'scientific', this includes numerical analysis "
@@ -498,12 +514,12 @@ msgstr ""
 "います。"
 
 #. Description
-#: ../po/debian-tasks.desc:318
+#: ../po/debian-tasks.desc:326
 msgid "Spanish environment"
 msgstr "スペイン語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:318
+#: ../po/debian-tasks.desc:326
 msgid ""
 "This task installs programs, data files,  and documentation that makes it "
 "easier for Spanish speakers to use Debian."
@@ -512,12 +528,12 @@ msgstr ""
 "ログラム・データファイル・ドキュメントをインストールします。"
 
 #. Description
-#: ../po/debian-tasks.desc:327
+#: ../po/debian-tasks.desc:335
 msgid "Tcl/Tk"
 msgstr "Tcl/Tk"
 
 #. Description
-#: ../po/debian-tasks.desc:327
+#: ../po/debian-tasks.desc:335
 msgid ""
 "Packages commonly used in developing applications using the Tcl language and "
 "Tk Toolkit."
@@ -526,32 +542,32 @@ msgstr ""
 "ケージをインストールします。"
 
 #. Description
-#: ../po/debian-tasks.desc:336
+#: ../po/debian-tasks.desc:344
 msgid "TeX/LaTeX environment"
 msgstr "TeX/LaTeX 環境"
 
 #. Description
-#: ../po/debian-tasks.desc:336
+#: ../po/debian-tasks.desc:344
 msgid "a TeX/LaTeX environment"
 msgstr "TeX/LaTeX 環境"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid "Thai environment"
 msgstr "タイ語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr "このタスクは、タイ人が Debian を使いやすいようにします。"
 
 #. Description
-#: ../po/debian-tasks.desc:355
+#: ../po/debian-tasks.desc:363
 msgid "Conventional Unix server"
 msgstr "伝統的な Unix サーバ"
 
 #. Description
-#: ../po/debian-tasks.desc:355
+#: ../po/debian-tasks.desc:363
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -562,12 +578,12 @@ msgstr ""
 "してください。"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid "Web server"
 msgstr "ウェブサーバ"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""
