@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-29 13:21-0500\n"
-"PO-Revision-Date: 2004-06-13 00:36+0300\n"
+"PO-Revision-Date: 2004-06-22 22:37+0300\n"
 "Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
-"Language-Team: \n"
+"Language-Team: Hebrew\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
@@ -26,7 +26,8 @@ msgstr "לא יכול להקצות זיכרון לבאפר מספור"
 msgid ""
 "Fatal error encountered at %s:%d\n"
 "\t"
-msgstr "שגיאה פטלית קרתה ב-%s:%d\n"
+msgstr ""
+"שגיאה פטלית קרתה ב-%s:%d\n"
 "\t"
 
 #: ../macros.h:51
@@ -88,9 +89,8 @@ msgid "^Finish"
 msgstr "^סיום"
 
 #: ../slangui.c:401 ../slangui.c:402
-#, fuzzy
 msgid "Task ^Info"
-msgstr "Task ^Info"
+msgstr "מידע ^משימה"
 
 #: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
@@ -127,7 +127,16 @@ msgid ""
 "Thank you for using Debian.\n"
 "\n"
 "Press enter to return to the task selection screen"
-msgstr ""
+msgstr "משמיות מאפשרות  להתקין בקלות בחירות של חבילות שמשמשות משימה מסויימת.\n"
+"\n"
+"רשימת הבחירה הראשית מראה רשימה של משימות שתוכל להתקין."
+"מקשי החצים מזיזיות את הסמן, לחציה על Enter או רווח משנה את הבחירה של החבילה "
+"שהסמן נמצא בה. בנוסף תוכל ללחוץ A כדי לבחור את כל המשימות או N כדי לא לבחור אף "
+"אחת מהן. לחיצה על Q תצא מהתוכנה ותתקין את המשימות שנבחרו.\n"
+"\n"
+"תוכנה על השימוש ב-Debian\n"
+"\n"
+"הקש enter כדי לחזור למסך בחירת המשימות"
 
 #: ../slangui.c:824
 #, c-format
