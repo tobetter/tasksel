@@ -6,8 +6,7 @@ Description: desktop environment
  both the GNOME and KDE desktops, and provides a display manager
  which lets the user choose between the two.
 Packages:
-  # FIXME: not in a releasable state until it pulls in X too!
-  # task-x-window-system-core (?)
+  x-window-system-core
   # TODO: we really should have gnome meta-packages, which this
   # task could just pull in, rather than having to track all gnome here.
   gnome-session

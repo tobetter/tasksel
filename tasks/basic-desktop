@@ -9,15 +9,4 @@ Description: X window system
  providing x-terminal-emulator should also be installed to ensure a
  comfortable X experience.
 Packages:
-# FIXME: It would be better if Branden maintained this list by way of a
-# metapackage that we could just list here.
- xfree86-common
- xserver-common
- xserver-xfree86
- xlibs
- xfonts-base
- xfonts-100dpi
- xfonts-75dpi
- xfonts-scalable
- xbase-clients
- xutils
+ x-window-system-core
