@@ -2,6 +2,9 @@ tasksel (2.06) UNRELEASED; urgency=low
 
   * Joey Hess
     - Switch mozilla to mozilla-browser.
+    - Run aptitude --without-recommends when noninteractively installing
+      tasks, since tasks should be usable w/o recommends and recommends may
+      pull in unintended packages.
   * Kenshi Muto
     - Modified Japanese and Japanese-desktop (moved X applications to
       Japanese-desktop)

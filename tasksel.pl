@@ -283,7 +283,7 @@ push @aptitude_install, map { "~t".$_->{task} } grep { $_->{_install} } @tasks;
 
 if (@aptitude_install) {
 	if ($options{test}) {
-		print "aptitude -y install ".join(" ", @aptitude_install)."\n";
+		print "aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
 	}
 	else {
 		my $ret=system("aptitude", "-y", "install", @aptitude_install) >> 8;
