@@ -1,0 +1,61 @@
+# Translators, if you are not familiar with the PO format, gettext
+# documentation is worth reading, especially sections dedicated to
+# this format, e.g. by running:
+# info -n '(gettext)PO Files'
+# info -n '(gettext)Header Entry'
+# Some information specific to po-debconf are available at
+# /usr/share/doc/po-debconf/README-trans
+# or http://www.debian.org/intl/l10n/po-debconf/README-trans
+# Developers do not need to manually edit POT or PO files.
+# , fuzzy
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"PO-Revision-Date: 2004-08-23 16:16+0300\n"
+"Last-Translator: Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
+"Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#. Type: multiselect
+#. Description
+#: ../templates:4
+msgid ""
+"At the moment, only the core of Debian is installed. To tune the "
+"installation to your needs, you can choose to install one or more of the "
+"following predefined collections of software. Experienced users may prefer "
+"to select packages manually."
+msgstr ""
+"В момента са инсталирани само най-жизненоважните програми на Debian. За да нагласите системата към Вашите нужди, можете да изберете измежду един или повече от следните предварително зададени набори от софтуер. Опитните потребители може би ще предпочетат ръчно избиране на пакети."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:12
+msgid "${CHOICES}, manual package selection"
+msgstr "${CHOICES}, ръчно избиране на пакети"
+
+#. Type: multiselect
+#. Description
+#: ../templates:13
+msgid "Choose software to install:"
+msgstr "Изберете софтуер за инсталиране:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:13
+msgid ""
+"You can choose to install one or more of the following predefined "
+"collections of software."
+msgstr "Можете да изберете един или повече от предварително зададените набори от софтуер."
+
+#. Type: title
+#. Description
+#: ../templates:19
+msgid "Debian software selection"
+msgstr "Избор на софтуер от Debian"
+
