@@ -1,4 +1,11 @@
-$Id: TODO,v 1.10 2003/07/25 18:06:28 joeyh Exp $
+$Id: TODO,v 1.11 2003/07/25 23:56:36 joeyh Rel $
 - fix screen resize code (in dialogs, it doesn't work right)
 - figure out how to properly install the i18n stuff
 - show already installed tasks
+- language tasks like spanish that include stuff like mozilla-locale-es-es
+  and openoffice.org-l10n-es pull in all of mozilla and openoffice, which
+  is often not the desired effect. Fixes would include:
+    - make these packages only recommend the main packages
+    - put the language packages in the tasks that pull in OOo and mozilla
+      (but this is hard to maintain)
+    - stop this translation splitting nonsense

@@ -40,43 +40,10 @@ Key:
   gnome
 #endinclude
 Packages:
-  x-window-system-core
 # gdm allows picking between gnome and kde at login time
   gdm
   mozilla
   mozilla-psm
   menu
   abiword
-  gimp1.2
-#include gnome
-#Automatically added by doincludes.pl; do not edit.
-  gnome-core 
-  bug-buddy 
-  gconf-editor
-  evolution 
-  epiphany-browser 
-  gnumeric
-  abiword-gnome 
-  gnucash
-  xscreensaver-gnome
-  pan
-  gnome-gv
-  gnome
-#endinclude
-#include kde
-#Automatically added by doincludes.pl; do not edit.
-  fontconfig
-  kde-core
-  kde-amusements
-  kdeaddons
-  kdeadmin
-  kdeartwork
-  kdegraphics
-  kdemultimedia
-  kdenetwork
-  kdepim
-  kdeutils
-  koffice
-  quanta
-  kde
-#endinclude
+  gimp

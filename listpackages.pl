@@ -1,16 +1,22 @@
 #!/usr/bin/perl
 #
-# taskpackages directory
+# listpackages directory [field]
 #
 # This program spits out a list of all the packages listed in the tasks.
 #
 # If you go to auric, this command is then useful:
 #
-# for package in $(cat ~joeyh/tasklist); do
+# for package in $(listpackages); do
 #   madison -s testing -a "i386 all" $package >/dev/null || echo "No $package!"
 # done
+#
+# Or to see just key packages:
+#
+# listpackages tasks key
 
 my $dir=shift or die "no directory specified\n";
+my @toshow=qw{packages key};
+@toshow=@ARGV if @ARGV;
 
 use File::Find;
 find(\&processfile, $dir);
@@ -37,5 +43,7 @@ sub processfile {
 	}
 	close IN;
 
-	print join("\n", split(' ', $fields{packages}))."\n";
+	my @list;
+	push @list, split(' ', $fields{$_}) foreach @toshow;
+	print join("\n", @list)."\n" if @list;
 }

@@ -4,17 +4,13 @@ Description: Korean environment
  This task installs programs, data files, fonts, and documentation
  to make it easier for Korean speakers to use Debian.
 Key:
- locales
+ language-env
  manpages-ko
  cxterm-ks
  ami
 Packages:
- locales
- manpages-ko
  doc-linux-text-ko
  doc-debian-ko
- cxterm-ks
- ami
  xfonts-baekmuk
  ami-gnome
  hlatex

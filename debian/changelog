@@ -4,7 +4,6 @@ tasksel (1.26) unstable; urgency=low
     - Completed no.po.
   * Javier Fernández-Sanguino
     - Added missing useful packages to the spanish task
-    (including comments), maybe too much documentation (could be trimmed)?
   * Joey Hess
     - Updated copyright date range.
     - Make unselected buttons be the same color as the window itself.
@@ -12,7 +11,7 @@ tasksel (1.26) unstable; urgency=low
     - Note in README that the way to get a task added is a bug report against
       this package. Closes: #144533
     - Removed broken python-bobo from python task. Closes: #180925
-    - The python task is retarget at providing a subset of the more useful
+    - The python task is retargeted at providing a subset of the more useful
       python tools, instead of everything. Semi-randomly removed some stuff.
       Someone who uses python might want to take over maintainership of this
       task.
@@ -43,7 +42,7 @@ tasksel (1.26) unstable; urgency=low
     - Added kernel-compile task for custom kernel building. Closes: #184428
     - Blessed the idea of putting Maintainer fields in individual task files.
     - Removed nonexistant packages from tasks: netscape-zh-resource-477, 
-      dialdcost, hanterm
+      dialdcost, hanterm, tktabble-dev
     - Put cxterm-ks in korean task to replace hanterm. I hope that's right.
     - Rename mozilla-locale-es to mozilla-locale-es-es.
     - For chinese-t, use doc-linux-zh-text, which provides traditional
@@ -53,8 +52,22 @@ tasksel (1.26) unstable; urgency=low
     - Shortended the description of c-dev.
     - Renamed Essential field to Key, to prevent confusion.
     - Implemented dropping of tasks that are missing key packages.
+    - Enhanced listpackages.pl with support for listing key packages.
+    - makedesc.pl too.
+    - Key packages do not need to be listed under Packages too.
+    - Updated tcl/tk to 8.4.
+    - Removed localces from language tasks; language-env depends on it.
+    - Changed around what is Key and what is not, more changes than I can
+      record here.
+    - Don't expand lsb package's deps, we want the whole thing or nothing.
+    - Added makeoverride.pl, which will generate an override file from a
+      directory of task files.
+    - Remove user-de and user-es, language-env superscedes.
+    - Back to just gimp for desktop task.
+    - If a task is not in the task desc files, but is in the available file
+      as a Task: line, do not display it.
 
- -- Joey Hess <joeyh@debian.org>  Wed, 19 Mar 2003 23:12:33 +0100
+ -- Joey Hess <joeyh@debian.org>  Fri, 25 Jul 2003 15:21:50 -0400
 
 tasksel (1.25) unstable; urgency=low
 

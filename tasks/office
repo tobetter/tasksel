@@ -1,4 +1,4 @@
-Task: produc
+Task: office
 Section: user
 Description: Office environment
  This task provides a suite of office productivity software, including a
@@ -23,21 +23,5 @@ Key:
   gnome
 #endinclude
 Packages:
-  x-window-system-core
   menu
   openoffice.org
-#include gnome-office
-#Automatically added by doincludes.pl; do not edit.
-  gnome-core 
-  bug-buddy 
-  gconf-editor
-  evolution 
-  epiphany-browser 
-  gnumeric
-  abiword-gnome 
-  gnucash
-  xscreensaver-gnome
-  pan
-  gnome-gv
-  gnome
-#endinclude

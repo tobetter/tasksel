@@ -3,37 +3,8 @@ Section: user
 Description: Linux Standard Base
  This task makes the system compliant with the Linux Standard Base,
  allowing you to install and use LSB packages.
-Packages:
-#include lsb
-#Automatically added by doincludes.pl; do not edit.
-  lsb-release
-  libgl1
-  xlibs
-  libz1
-  exim 
-  at
-  bc
-  binutils
-  bsdmainutils
-  cpio
-  cron
-  file
-  libc6-dev 
-  locales
-  lpr
-  m4
-  make
-  man-db
-  mawk 
-  ncurses-term
-  passwd
-  patch
-  procps
-  psmisc
-  rsync
-  alien 
-  python 
-  debconf 
+Key:
+  # Not #included because it expandes to list virtual packages, which would
+  # make it not show on the list. Anyway, we want the whole thing, or
+  # nothing.
   lsb
-#endinclude
-

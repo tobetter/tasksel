@@ -51,3 +51,5 @@ clean:
 	rm -f $(PROGRAM) $(TASKDESC) *.o *~
 	$(MAKE) -C po clean
 
+override:
+	@perl makeoverride.pl $(DESCDIR)

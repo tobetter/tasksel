@@ -4,7 +4,6 @@ Description: Japanese environment
  This task installs packages that make it easier for Japanese speakers
  to use Debian.
 Key:
- locales
  language-env
  jfbterm
  kterm
@@ -12,17 +11,12 @@ Key:
  manpages-ja
  canna
 Packages:
- locales
- language-env
- jfbterm 
  ja-trans
  lv
  nkf
  doc-linux-ja-text
  doc-debian-ja
- manpages-ja
  xmanpages-ja
- kterm
  kinput2-canna-wnn
  skkinput
  asiya24-vfont
@@ -32,11 +26,9 @@ Packages:
  xfonts-kappa20
  xfonts-marumoji
  xfonts-shinonome
- xfonts-intl-japanese
  xfonts-intl-japanese-big
  ttf-xtt-wadalab-gothic
  ttf-xtt-watanabe-mincho
- canna
  canna-utils
  yc-el
  freewnn-jserver

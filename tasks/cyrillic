@@ -5,13 +5,11 @@ Description: Cyrillic environment
  order to use Cyrillic.  It supports Belarusian, Bulgarian,
  Macedonian, Russian, Serbian and Ukrainian.
 Key:
- language-env
- console-cyrillic
-Packages:
  # Easy configuration for some languages:
  language-env
  # Cyrillic on the console:
  console-cyrillic
+Packages:
  # Translates Cyrillic encodings.
  konwert
  # Keyboard state indicator and switcher for X:

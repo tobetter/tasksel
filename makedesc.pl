@@ -74,12 +74,17 @@ sub processfile {
 	# TODO: a better lint would incloude checks for conflicting
 	# packages. Hard tho.
 	if ($dolint) {
-		foreach (split ' ', $fields{packages}) {
-			if (! $package{$_}) {
-				print STDERR "$file: $_ is not a valid package.\n";
-			}
-			if ($notmain{$_}) {
-				print STDERR "$file: $_ is in $notmain{$_}.\n";
+		foreach my $field (qw(key packages)) {
+			foreach (split ' ', $fields{$field}) {
+				if (! $package{$_}) {
+					print STDERR "$file: $_ is not a valid package.\n";
+					if ($field eq 'key') {
+						die "Above package is Key -- fatal error!\n";
+					}
+				}
+				if ($notmain{$_}) {
+					print STDERR "$file: $_ is in $notmain{$_}.\n";
+				}
 			}
 		}
 	}

@@ -18,7 +18,8 @@ When the task is selected, any of those packages that are available will be
 selected.
 
 The Key field is the same, but packages listed in it must be available or
-the task should not be displayed at all.
+the task should not be displayed at all. There's no need to list packages
+in the Packages field if they are listed as Key.
 
 Comments may appear in the file, by prefixing a line with a hash mark
 ('#').
