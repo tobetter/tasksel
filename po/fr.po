@@ -24,6 +24,7 @@ msgid ""
 "Fatal error encountered at %s:%d\r\n"
 "\t"
 msgstr ""
+"Erreur fatale rencontrée dans %s : %d\r\n\t"
 
 #: ../macros.h:51
 #, c-format
@@ -31,11 +32,11 @@ msgid ""
 "I/O error at %s:%d\r\n"
 "\t"
 msgstr ""
+"Erreur d'E/S rencontrée dans %s : %d\r\n\t"
 
 #: ../slangui.c:18 ../slangui.c:19
-#, fuzzy
 msgid "(no description)"
-msgstr "(aucune description disponible)"
+msgstr "(sans description)"
 
 #: ../slangui.c:75
 msgid "End-user"
@@ -74,9 +75,9 @@ msgid "Unable to initialize keyboard interface"
 msgstr "Impossible d'initialiser le clavier"
 
 #: ../slangui.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "Installateur de tâches Debian v%s - (c) 1999-2000 SPI et al."
+msgstr "Installateur de tâches Debian v%s - (c) 1999-2003 SPI et al."
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -206,13 +207,12 @@ msgid "No packages selected\n"
 msgstr "Aucun paquet sélectionné\n"
 
 #: ../tasksel.c:192
-#, fuzzy
 msgid ""
 "No tasks found on this system.\n"
 "Did you update your available file? Try running dselect update.\n"
 msgstr ""
 "Aucune tâche n'a été trouvée sur ce système.\n"
-"Avez-vous mis à jour le fichier des tâches ?\n"
+"Avez-vous mis à jour le fichier des tâches ? Exécutez dselect update.\n"
 
 #: ../util.c:20
 msgid "Cannot allocate memory for strdup"
