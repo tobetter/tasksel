@@ -1,0 +1,16 @@
+Task: catalan
+Section: l10n
+Description: Catalan environment
+ This task installs packages and documentation in Catalan
+ to help Catalan speaking people use Debian.
+Key:
+ language-env
+Packages:
+ aspell-ca
+ icatalan
+ wcatalan
+ kde-i18n-ca
+ util-linux-locales
+ openoffice.org-l10n-ca
+ koffice-i18n-ca
+ mozilla-locale-ca

@@ -1,22 +1,22 @@
 # Catalan messages for Debian's tasksel.
-# Copyright (C) 2001 Software in the Public Interest, Inc.
-# Jordi Mallach <jordi@debian.org>, 2001.
-# $Id: ca.po,v 1.1 2001/11/24 14:51:24 jordi Rel $
+# Copyright © 2001, 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as the tasksel package.
+# Jordi Mallach <jordi@debian.org>, 2001, 2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 1.13\n"
-"POT-Creation-Date: 2001-11-23 00:58+0100\n"
-"PO-Revision-Date: 2001-11-24 15:48+0100\n"
+"Project-Id-Version: tasksel 1.34\n"
+"POT-Creation-Date: 2001-12-12 17:43+0100\n"
+"PO-Revision-Date: 2003-11-10 17:22+0100\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
-"Language-Team: Debian's Catalan l10n team <debian-l10n-catalan@lists.debian.org>\n"
+"Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../data.c:277 ../data.c:291
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr "No es pot reservar memoria per al buffer d'enumeració"
+msgstr "No es pot reservar memòria per al buffer d'enumeració"
 
 #: ../macros.h:42
 #, c-format
@@ -24,7 +24,7 @@ msgid ""
 "Fatal error encountered at %s:%d\r\n"
 "\t"
 msgstr ""
-"Error fatal trobat en %s:%d\r\n"
+"S'ha trobat un error fatal en %s:%d\\r\n"
 "\t"
 
 #: ../macros.h:51
@@ -33,7 +33,7 @@ msgid ""
 "I/O error at %s:%d\r\n"
 "\t"
 msgstr ""
-"Error de E/S en %s:%d\r\n"
+"Error d'E/S en %s:%d\\r\n"
 "\t"
 
 #: ../slangui.c:18 ../slangui.c:19
@@ -62,11 +62,11 @@ msgstr "Suport de maquinari"
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
-msgstr "Miscelània"
+msgstr "Miscel·lània"
 
 #: ../slangui.c:213
 msgid "Unable to initialize the terminal"
-msgstr "No s'ha pogut inicialitzar la terminal"
+msgstr "No s'ha pogut inicialitzar el terminal"
 
 #: ../slangui.c:215
 msgid "Unable to initialize screen output"
@@ -79,11 +79,11 @@ msgstr "No s'ha pogut inicialitzar la interfície del teclat"
 #: ../slangui.c:233
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
-msgstr "Instal·lador de tasques de Debian v%s - (c) 1999-2001 SPI i altres"
+msgstr "Instal·lador de tasques de Debian v%s - © 1999-2001 SPI i altres"
 
 #: ../slangui.c:387
 msgid "^Finish"
-msgstr "^Finalitzar"
+msgstr "^Finalitza"
 
 #: ../slangui.c:395 ../slangui.c:396
 msgid "Task ^Info"
@@ -99,7 +99,7 @@ msgstr "Seleccioneu les tasques a instal·lar"
 
 #: ../slangui.c:570
 msgid "Ok"
-msgstr "Acceptar"
+msgstr "D'acord"
 
 #: ../slangui.c:679 ../slangui.c:693 ../slangui.c:804
 #, c-format
@@ -126,19 +126,15 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"Les tasques vos permeten instal·lar una selecció de paquets que realitzen "
-"una tasca determinada,\n"
+"Les tasques vos permeten instal·lar una selecció de paquets que realitzen una tasca determinada.\n"
 "\n"
-"La llista de selecció principal mostra una llista de tasques que podeu "
-"elegir instal·lar. Les tecles de cursor moven la selecció. Polsar INTRO o la "
-"BARRA ESPACIADORA canvia la sel·lecció de la tasca en el cursor. També podeu "
-"polsar A per a seleccionar totes les tasques, o N per a deseleccionarles "
-"totes. Polsar Q sortirà d'aquest programa i començarà la instal·lació de "
-"les tasques seleccionades.\n"
+"La llista de selecció principal mostra una llista de tasques que podeu instal·lar. Les tecles de cursor mouen la selecció. Polsar INTRO o la BARRA ESPACIADORA canvia la sel·lecció de la tasca en el cursor. També podeu polsar A per a seleccionar totes les tasques, o N per a deseleccionarles totes. Polsar Q sortirà d'aquest programa i començarà la instal·lació de les tasques seleccionades.\n"
 "\n"
 "Gràcies per fer servir Debian.\n"
 "\n"
 "Polseu intro per tornar a la finestra de selecció de tasques"
+
+#: ../slangui.c:812
 #, c-format
 msgid ""
 "Description:\n"
@@ -149,7 +145,7 @@ msgstr ""
 "Descripció:\n"
 "%s\n"
 "\n"
-"Paquests inclosos:\n"
+"Paquets inclossos:\n"
 
 #: ../slangui.c:820
 msgid "(no description available)"
@@ -157,7 +153,7 @@ msgstr "(descripció no disponible)"
 
 #: ../tasksel.c:26
 msgid "Unknown signal seen"
-msgstr "Senyal desconeguda seen"
+msgstr "S'ha rebut un senyal desconegut"
 
 #: ../tasksel.c:32
 msgid "tasksel install <task>\n"
@@ -169,35 +165,35 @@ msgstr "tasksel [opcions]; on opcions és qualsevol combinació de:\n"
 
 #: ../tasksel.c:34
 msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- modo testeig; no executar apt-get al sortir"
+msgstr "-t -- mode de prova; no executa apt-get en sortir"
 
 #: ../tasksel.c:35
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- encolar instal·lacions; no instal·lar paquets amb apt-get;\n"
-"\t\tnomés encolar-los en dpkg"
+"-q -- encua instal·lacions; no instal·la paquets amb apt-get;\n"
+"\t\tnomés encola-los en dpkg"
 
 #: ../tasksel.c:36
 msgid "-r -- install all required-priority packages"
-msgstr "-r -- instal·lar tots els paquets amb prioritat requerit"
+msgstr "-r -- instal·la tots els paquets amb prioritat «requerit»"
 
 #: ../tasksel.c:37
 msgid "-i -- install all important-priority packages"
-msgstr "-i -- instal·lar tots els paquets amb prioritat important"
+msgstr "-i -- instal·la tots els paquets amb prioritat «important»"
 
 #: ../tasksel.c:38
 msgid "-s -- install all standard-priority packages"
-msgstr "-s -- instal·lar tots els paquets amb prioritat estandard"
+msgstr "-s -- instal·la tots els paquets amb prioritat «estàndard»"
 
 #: ../tasksel.c:39
 msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- no mostrar la IU; fer servir normalment amb -r o -i"
+msgstr "-n -- no mostra la IU; s'utilitza normalment amb -r o -i"
 
 #: ../tasksel.c:40
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- mostrar totes les tasques, inclús aquelles que no tenen paquets"
+msgstr "-a -- mostra totes les tasques, inclús aquelles que no tenen paquets"
 
 #: ../tasksel.c:81 ../tasksel.c:116
 msgid "No packages selected\n"
@@ -209,7 +205,7 @@ msgid ""
 "Did you update your available file?\n"
 msgstr ""
 "No s'han trobat tasques en aquest sistema.\n"
-"Heu actualitzat el vostre fitxer \"available\"?\n"
+"Heu actualitzat el vostre fitxer «available»?\n"
 
 #: ../util.c:20
 msgid "Cannot allocate memory for strdup"
