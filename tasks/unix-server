@@ -1,0 +1,33 @@
+Task: unix-server
+Section: server
+Description: conventional unix server
+ This task selects packages that would typically be found on a conventional
+ multi-user unix system with remote users. Do be warned that this includes
+ a number of daemons.
+Packages:
+ # remote login
+ ssh
+ telnetd # yeah, yeah
+ # communication with other users
+ talk
+ talkd
+ ytalk
+ finger
+ fingerd
+ # other useful daemons
+ ftpd
+ # interactive shells, because user's preferences vary
+ zsh
+ tcsh
+ ksh
+ # various console programs
+ screen
+ telnet
+ netcat
+ traceroute
+ mtr
+ man-db
+ manpages
+ emacs20 # nvi is in base
+ bsdgames # could add a few other console games, esp. multiuser ones
+ # maybe an irc client?
