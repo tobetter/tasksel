@@ -1,6 +1,6 @@
 Task: unix-server
 Section: server
-Description: conventional unix server
+Description: Conventional unix server
  This task selects packages that would typically be found on a conventional
  multi-user unix system with remote users. Do be warned that this includes
  a number of daemons.
@@ -28,9 +28,11 @@ Packages:
  mtr
  man-db
  manpages
- emacs21 # nvi is in base
+ emacs21
+ vim
  nethack # may be stretching the point
  bsdgames # fits description perfectly
  # could add a few other console games, esp. multiuser ones
  # maybe an irc client?
- # lynx is included in standard, so no need to list here
+ lynx
+ sudo

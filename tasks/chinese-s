@@ -1,9 +1,9 @@
 Task: chinese-s
 Section: l10n
-Description: simplified Chinese environment
+Description: Simplified Chinese environment
  This task installs programs, data files, fonts, and
- documentation that makes it easier to use Debian for
- Simplified-Chinese-related operations.
+ documentation that makes it easier for Chinese speakers
+ to use Debian, using the simplified Chinese encoding.
 Essential:
   cpanel
   rxvt-ml
@@ -48,4 +48,3 @@ Packages:
   language-env
   kde-i18n-zhcngb2312
   manpages-zh
-  netscape-zh-resource-477

@@ -1,6 +1,6 @@
 Task: desktop
 Section: user
-Description: desktop environment
+Description: Desktop environment
  This task provides basic "desktop" software, including a variety
  of session managers, file managers and web browsers. It incorporates
  both the GNOME and KDE desktops, and provides a display manager
@@ -9,55 +9,19 @@ Essential:
   x-window-system-core
 #include kde
 #Automatically added by doincludes.pl; do not edit.
-  kdelibs3
-  libarts 
-  libkmid 
-  kdebase 
-  kdebase-audiolibs 
-  kdebase-libs 
-  libkonq3 
-  konqueror 
-  kate 
-  konsole 
-  kdebase-doc 
-  kscreensaver 
-  kdewallpapers 
-  kuser
-  ksysv
-  kcron
-  kpackage
-  secpolicy
-  kghostview
-  kview
-  kmail
-  korn
-  ark
-  kab
-  karm
-  kcalc
-  kcharselect
-  kdepasswd
-  kdf
-  kedit
-  kfind
-  khexedit
-  kjots
-  knotes
-  kpm
-  kpaint
-  kiconedit
-  kfract
-  ksnapshot
-  kruler
-  kdict
-  kdm 
-  kit
-  knode
-  ksirc
+  fontconfig
+  kde-core
+  kde-amusements
+  kdeaddons
+  kdeadmin
+  kdeartwork
+  kdegraphics
+  kdemultimedia
+  kdenetwork
+  kdepim
+  kdeutils
   koffice
-  knewsticker
-  ktimer
-  kcoloredit
+  quanta
   kde
 #endinclude
 #include gnome
@@ -66,11 +30,13 @@ Essential:
   bug-buddy 
   gconf-editor
   evolution 
-  galeon 
+  epiphany-browser 
   gnumeric
-  abiword
+  abiword-gnome 
   gnucash
   xscreensaver-gnome
+  pan
+  gnome-gv
   gnome
 #endinclude
 Packages:
@@ -88,63 +54,29 @@ Packages:
   bug-buddy 
   gconf-editor
   evolution 
-  galeon 
+  epiphany-browser 
   gnumeric
-  abiword
+  abiword-gnome 
   gnucash
   xscreensaver-gnome
+  pan
+  gnome-gv
   gnome
 #endinclude
 #include kde
 #Automatically added by doincludes.pl; do not edit.
-  kdelibs3
-  libarts 
-  libkmid 
-  kdebase 
-  kdebase-audiolibs 
-  kdebase-libs 
-  libkonq3 
-  konqueror 
-  kate 
-  konsole 
-  kdebase-doc 
-  kscreensaver 
-  kdewallpapers 
-  kuser
-  ksysv
-  kcron
-  kpackage
-  secpolicy
-  kghostview
-  kview
-  kmail
-  korn
-  ark
-  kab
-  karm
-  kcalc
-  kcharselect
-  kdepasswd
-  kdf
-  kedit
-  kfind
-  khexedit
-  kjots
-  knotes
-  kpm
-  kpaint
-  kiconedit
-  kfract
-  ksnapshot
-  kruler
-  kdict
-  kdm 
-  kit
-  knode
-  ksirc
+  fontconfig
+  kde-core
+  kde-amusements
+  kdeaddons
+  kdeadmin
+  kdeartwork
+  kdegraphics
+  kdemultimedia
+  kdenetwork
+  kdepim
+  kdeutils
   koffice
-  knewsticker
-  ktimer
-  kcoloredit
+  quanta
   kde
 #endinclude

@@ -12,7 +12,7 @@ my $dir=shift or die "no directory specified\n";
 my %depends;
 {
 	local $/="\n\n";
-	if (! open (AVAIL, "/var/lib/dpkg/available")) {
+	if (! open (AVAIL, "apt-cache dumpavail |")) {
 		warn "cannot real available file, so not exanding includes\n";
 		exit;
 	}

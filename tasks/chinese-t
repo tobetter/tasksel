@@ -1,9 +1,9 @@
 Task: chinese-t
 Section: l10n
-Description: traditional Chinese environment
+Description: Traditional Chinese environment
  This task installs programs, data files, fonts, and
- documentation that makes it easier to use Debian for
- Traditional-Chinese-related operations.
+ documentation that makes it easier for Chinese speakers 
+ to use Debian, using the traditional Chinese encoding.
 Essential:
   cpanel
   rxvt-ml
@@ -14,7 +14,7 @@ Essential:
 Packages:
   locales
   debian-zh-faq-t
-  doc-linux-zh
+  doc-linux-zh-text
   x-ttcidfont-conf
   ttf-arphic-bsmi00lp
   ttf-arphic-bkai00mp
@@ -45,4 +45,3 @@ Packages:
   language-env
   kde-i18n-zhtwbig5
   manpages-zh
-  netscape-zh-resource-477

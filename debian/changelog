@@ -1,12 +1,57 @@
-tasksel (1.26) UNRELEASED; urgency=low
+tasksel (1.26) unstable; urgency=low
 
   * Petter Reinholdtsen
     - Completed no.po.
   * Javier Fernández-Sanguino
     - Added missing useful packages to the spanish task
     (including comments), maybe too much documentation (could be trimmed)?
+  * Joey Hess
+    - Updated copyright date range.
+    - Make unselected buttons be the same color as the window itself.
+      Matches look of new, fixed whiptail, and Closes: #122212
+    - Note in README that the way to get a task added is a bug report against
+      this package. Closes: #144533
+    - Removed broken python-bobo from python task. Closes: #180925
+    - The python task is retarget at providing a subset of the more useful
+      python tools, instead of everything. Semi-randomly removed some stuff.
+      Someone who uses python might want to take over maintainership of this
+      task.
+    - Capitalised first letter of every task, in an effort to look
+      "professional". Closes: #183109
+    - Removed the fortran task, not sufficiently used.
+    - Added mutt and spamassassin to mail server task.
+    - Fixed menu entry to give full path to su-to-root as it is in sbin for
+      some reason. Closes: #188367
+    - Replace gnome-gnomines with gnome-games in games task, package rename.
+      Closes: #190874
+    - Replace xtris with the currently popular tetrinet in games task.
+    - Make "available file" message recommend running dselect update.
+      Closes: #153016, #183690
+    - Replace netenv (with its nasty boot-time prompt) with guessnet (with
+      its slick new ifupdown integration) in laptop task.
+    - Add hdparm to laptop task, since many laptop users will want to use it
+      to speed up (or turn off!) their disks. Closes: #87450
+    - Add menu to office task.
+    - Added a java task. Closes: #108061
+    - Removed inlined Spanish translation of spanish task. However we should
+      add translations, it's not like that!
+    - Added a Thai task. Closes: #122663. Needs review since the bug's package
+      list was 2 years old.
+    - Cleaned up bad wording in most of the descriptions of the
+      language-specific tasks.
+    - Added sudo to unix-server.
+    - Added kernel-compile task for custom kernel building. Closes: #184428
+    - Blessed the idea of putting Maintainer fields in individual task files.
+    - Removed nonexistant packages from tasks: netscape-zh-resource-477, 
+      dialdcost, hanterm
+    - Put cxterm-ks in korean task to replace hanterm. I hope that's right.
+    - Rename mozilla-locale-es to mozilla-locale-es-es.
+    - For chinese-t, use doc-linux-zh-text, which provides traditional
+      chinese. doc-linux-zh-t went away.
+    - doincludes.pl and makedesc.pl use apt-cache dumpavail instead of
+      dselect available file, for more up-to-date information.
 
- -- Petter Reinholdtsen <pere@debian.org>  Wed, 19 Mar 2003 23:12:33 +0100
+ -- Joey Hess <joeyh@debian.org>  Wed, 19 Mar 2003 23:12:33 +0100
 
 tasksel (1.25) unstable; urgency=low
 

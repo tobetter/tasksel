@@ -1,0 +1,26 @@
+Task: kernel-compile
+Section: misc
+Description: Custom kernel compilation
+ This task includes everything you should need to build your own custom
+ kernel.
+Essential:
+ kernel-package
+ kernel-source
+Packages:
+ kernel-package
+ # This needs to track the current kernel-source version, unfortunatly.
+ # Virual packages will not do.
+ # How this works for other architectures, I really cannot say.
+ kernel-source-2.4.21
+ libc6-dev
+ debianutils
+ # Only on intel, but it will be ignored elsewhere.
+ bin86
+ # For make menuconfig and make xconfig
+ libncurses5-dev
+ tk8.4
+ # in case you want to apply a patch..
+ patch
+ diff
+ # debugging
+ ksymoops

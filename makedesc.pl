@@ -29,7 +29,7 @@ my %notmain;
 my $dolint=1;
 {
 	local $/="\n\n";
-	if (! open (AVAIL, "/var/lib/dpkg/available")) {
+	if (! open (AVAIL, "apt-cache dumpavail |")) {
 		warn "cannot real available file, so disabling lint check\n";
 		$dolint=0;
 	}

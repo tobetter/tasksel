@@ -1,6 +1,6 @@
 Task: mail-server
 Section: server
-Description: mail server
+Description: Mail server
  This task selects a variety of package useful for a general purpose mail
  server system.
 Essential:
@@ -8,11 +8,12 @@ Essential:
 Packages:
  qpopper # HELP: What's a good pop server?
  mailx
- # perhaps it should include a real mail reader too, but beware holy wars..
+ mutt
  exim
  procmail
  mailagent
  uw-imapd
  # HELP: what about some webmail thing?
-
- # TODO: add spam blocker stuff (SpamAssassin, whatever else is good)
+ spamassassin
+ # this would be nice, but it is not packaged yet.
+ #sa-exim

@@ -1,6 +1,6 @@
 Task: laptop
 Section: user
-Description: laptop system
+Description: Laptop system
  This is a collection of tools that laptop users will expect to find on a
  system.
 Essential:
@@ -10,9 +10,10 @@ Packages:
  apmd
  pcmcia-cs
  anacron
- netenv
+ guessnet
  irda-tools
  irda-common
  toshutils
  noflushd
  wireless-tools
+ hdparm

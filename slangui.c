@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.24 2001/11/22 17:53:48 tausq Rel $ */
+/* $Id: slangui.c,v 1.25 2003/07/25 17:33:24 joeyh Rel $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -183,9 +183,9 @@ void ui_init(int argc, char * const argv[], struct tasks_t *tasks, struct packag
   SLtt_set_color(STATUSOBJ, NULL, "yellow", "blue");
   SLtt_set_color(DIALOGOBJ, NULL, "black", "lightgray");
   SLtt_set_color(SELBUTTONOBJ, NULL, "lightgray", "blue");
-  SLtt_set_color(BUTTONOBJ, NULL, "lightgray", "red");
+  SLtt_set_color(BUTTONOBJ, NULL, "black", "lightgray");
   SLtt_set_color(SELHIGHLIGHT, NULL, "white", "blue");
-  SLtt_set_color(HIGHLIGHT, NULL, "white", "red");
+  SLtt_set_color(HIGHLIGHT, NULL, "white", "lightgray");
   SLtt_set_color(SCROLLBAR, NULL, "black", "lightgray");
   
   ui_resize();
@@ -230,7 +230,7 @@ void ui_resize(void)
   SLsmg_set_color(STATUSOBJ);
 
   snprintf(buf, 160,
-	   _("Debian Task Installer v%s - (c) 1999-2001 SPI and others"),
+	   _("Debian Task Installer v%s - (c) 1999-2003 SPI and others"),
 	   VERSION);
   SLsmg_gotorc(0, 0);
   SLsmg_write_nstring(buf, strlen(buf));

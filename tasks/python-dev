@@ -1,24 +1,17 @@
 Task: python-dev
 Section: devel
 Description: Python
- Almost all of the Debian-packaged Python tools
- and extensions, for developing scripts and simple or complex applications
- in Python.
+ Many Python tools and extensions, for developing scripts and simple or 
+ complex applications in Python.
 Essential:
  python
 Packages:
  python
  python-doc
  ddd
- dpkg-python
- gadfly
- gimp-python
- htmlgen
+ python-htmlgen
  idle
- python-bobo
- python-bobopos
  python-dev
- python-distutils
  python-examples
  python-extclass
  python-gdbm
@@ -27,22 +20,6 @@ Packages:
  python-glade
  python-gnome
  python-gtk
- python-imaging-sane
- python-imaging-tk
- python-kjbuckets
  python-ldap
  python-mpz
- python-mxdatetime
- python-mxstack
- python-mxtexttools
- python-mxtools
- python-netcdf
- python-newt
- python-numeric
- python-numeric-tutorial
- python-pam
- python-pmw
- python-pygresql
- python-tk
  python-xml
- pythondoc

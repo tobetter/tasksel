@@ -1,6 +1,6 @@
 Task: produc
 Section: user
-Description: office environment
+Description: Office environment
  This task provides a suite of office productivity software, including a
  word processor, a spreadsheat, a personal finance program, project
  management software, slide show and graphing software, and more.
@@ -13,15 +13,18 @@ Essential:
   bug-buddy 
   gconf-editor
   evolution 
-  galeon 
+  epiphany-browser 
   gnumeric
-  abiword
+  abiword-gnome 
   gnucash
   xscreensaver-gnome
+  pan
+  gnome-gv
   gnome
 #endinclude
 Packages:
   x-window-system-core
+  menu
   openoffice.org
 #include gnome-office
 #Automatically added by doincludes.pl; do not edit.
@@ -29,10 +32,12 @@ Packages:
   bug-buddy 
   gconf-editor
   evolution 
-  galeon 
+  epiphany-browser 
   gnumeric
-  abiword
+  abiword-gnome 
   gnucash
   xscreensaver-gnome
+  pan
+  gnome-gv
   gnome
 #endinclude

@@ -1,12 +1,8 @@
 Task: spanish
 Section: l10n
 Description: Spanish environment
- This 'task package' installs programs, data files,  and
- documentation that makes it easier to use Debian for
- Spanish-related operations.
- .
- Este paquete tarea instala programas y documentación que hace
- más fácil usar Debian para usuarios hispano-parlantes.
+ This task installs programs, data files,  and
+ documentation that makes it easier for Spanish speakers to use Debian.
 Essential:
  locales
  language-env
@@ -32,7 +28,7 @@ Packages:
  manpages-es
 # Other packages to i18n common software
  util-linux-locales
- mozilla-locale-es
+ mozilla-locale-es-es
  kde-i18n-es
  openoffice.org-l10n-es
  openoffice.org-spellcheck-es
