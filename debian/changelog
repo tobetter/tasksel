@@ -1,24 +1,21 @@
-tasksel (2.03) unstable; urgency=low
-
-  * Translations
-    - André Luís Lopes
-      - Added Brazilian Portuguese translation (debian/po/pt_BR.po).
-
- -- Andre Luis Lopes <andrelop@debian.org>  Fri, 25 Jun 2004 10:17:49 -0300
-
-tasksel (2.02) unstable; urgency=low
+tasksel (2.02) unstable; urgency=medium
 
   * Joey Hess
     - Save some space in desktop task by making it use
       gnome-desktop-environment as the key package for gnome, and only include
       all the rest of gnome if it's available.
+    - Fix broken Test-lang for italian, spanish, which justifies the medium
+      urgency. Closes: #256346
   * Translations
     - Carlos Z.F. Liu
       - Updated Simplified Chinese programs, tasks and debconf translations
     - Claus Hindsgaul
       - Initial Danish version 2 debconf translation
+    - André Luís Lopes
+      - Added Brazilian Portuguese translation (debian/po/pt_BR.po).
+    (some others not listed)
 
- -- Carlos Z.F. Liu <carlos_liu@yahoo.com>  Thu, 24 Jun 2004 17:31:20 +1200
+ -- Joey Hess <joeyh@debian.org>  Sat, 26 Jun 2004 09:34:07 -0400
 
 tasksel (2.01) unstable; urgency=low
 
