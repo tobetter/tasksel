@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.15 2000/01/16 02:55:30 tausq Exp $ */
+/* $Id: slangui.c,v 1.16 2000/02/26 10:16:37 karlheg Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -35,7 +35,7 @@
 
 #define NUM_BUTTONS   3
 #define BUTTON_NONE   0
-#define BUTTON_QUIT   1
+#define BUTTON_FINISH 1
 #define BUTTON_INFO   2
 #define BUTTON_HELP   3
 
@@ -129,7 +129,7 @@ void ui_resize(void)
 
   snprintf(buf, 160, "%s v%s - %s", 
                      _("Debian Task Installer"), VERSION,
-		     _("(c) 1999 SPI and others"));
+		     _("(c) 1999-2000 SPI and others"));
   SLsmg_gotorc(0, 0);
   SLsmg_write_nstring(buf, strlen(buf));
   
@@ -205,7 +205,7 @@ int ui_eventloop(void)
       	  ui_toggleselection(_chooserinfo.index);
       	  ui_redrawcursor(_chooserinfo.index);
 	}
-        else if (onitem == BUTTON_QUIT) {
+        else if (onitem == BUTTON_FINISH) {
 	  done = 1;
 	}
         else if (onitem == BUTTON_INFO) {
@@ -233,7 +233,7 @@ int ui_eventloop(void)
 		
       case 'H': case 'h': case SL_KEY_F(1): ui_showhelp(); break;
       case 'I': case 'i': ui_showpackageinfo(); break; 
-      case 'Q': case 'q': done = 1; break;
+      case 'F': case 'f': case 'Q': case 'q': done = 1; break;
     }
   }
   return ret;
@@ -280,9 +280,9 @@ int ui_drawbox(int obj, int r, int c, unsigned int dr, unsigned int dc,
 void _drawbutton(int which, int issel)
 {
   switch (which) {
-    case BUTTON_QUIT: // Left justified
+    case BUTTON_FINISH: // Left justified
       ui_button(_chooserinfo.rowoffset + _chooserinfo.height + 1,
-                _chooserinfo.coloffset + 3, _("^Quit"), issel);
+                _chooserinfo.coloffset + 3, _("^Finish"), issel);
       break;
     case BUTTON_INFO: //Centered
       /*
