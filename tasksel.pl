@@ -193,7 +193,6 @@ tasksel [options]; where options is any combination of:
 	-i -- install all important-priority packages
 	-s -- install all standard-priority packages
 	-n -- don't show UI; use with -r or -i usually
-	-a -- show all tasks, even those with no packages in them
 });
 }
 
