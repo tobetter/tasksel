@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.34\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-18 23:37+0200\n"
+"POT-Creation-Date: 2004-01-28 08:04+0100\n"
 "PO-Revision-Date: 2003-11-10 17:22+0100\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
@@ -22,20 +22,16 @@ msgstr "No es pot reservar memòria per al buffer d'enumeració"
 #: ../macros.h:42
 #, c-format
 msgid ""
-"Fatal error encountered at %s:%d\r\n"
+"Fatal error encountered at %s:%d\n"
 "\t"
-msgstr ""
-"S'ha trobat un error fatal en %s:%d\\r\n"
-"\t"
+msgstr "S'ha trobat un error fatal en %s:%d\\n\t"
 
 #: ../macros.h:51
 #, c-format
 msgid ""
-"I/O error at %s:%d\r\n"
+"I/O error at %s:%d\n"
 "\t"
-msgstr ""
-"Error d'E/S en %s:%d\\r\n"
-"\t"
+msgstr "Error d'E/S en %s:%d\\n\t"
 
 #: ../slangui.c:18 ../slangui.c:19
 msgid "(no description)"

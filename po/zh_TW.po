@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-18 23:37+0200\n"
+"POT-Creation-Date: 2004-01-28 08:04+0100\n"
 "PO-Revision-Date: 2000-10-21 15:26+0800\n"
 "Last-Translator: Anthony Wong <ypwong@debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,14 +20,14 @@ msgstr ""
 #: ../macros.h:42
 #, c-format
 msgid ""
-"Fatal error encountered at %s:%d\r\n"
+"Fatal error encountered at %s:%d\n"
 "\t"
 msgstr ""
 
 #: ../macros.h:51
 #, c-format
 msgid ""
-"I/O error at %s:%d\r\n"
+"I/O error at %s:%d\n"
 "\t"
 msgstr ""
 
@@ -123,11 +123,15 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"「任務軟件套件」可以助你安裝一系列用來達成某一任務的軟件。\r\r在第一個選單中"
-"顯示了一些可供安裝的任務。你可用方向鍵來移動浮標，按 ENTER 或空白鍵來選擇套"
-"件。你亦可按 A 來選擇所有套件，或按 N 來取消選擇所有套件。按 Q 便會脫離程式並"
-"開始安裝選擇了的任務。\r\r謝謝你使用 Debian。\r\r請按 Enter 回到任務選擇畫"
-"面。"
+"「任務軟件套件」可以助你安裝一系列用來達成某一任務的軟件。\n"
+"\n"
+"在第一個選單中顯示了一些可供安裝的任務。你可用方向鍵來移動浮標，按 ENTER 或空"
+"白鍵來選擇套件。你亦可按 A 來選擇所有套件，或按 N 來取消選擇所有套件。按 Q 便"
+"會脫離程式並開始安裝選擇了的任務。\n"
+"\n"
+"謝謝你使用 Debian。\n"
+"\n"
+"請按 Enter 回到任務選擇畫面。"
 
 #: ../slangui.c:818
 #, fuzzy, c-format

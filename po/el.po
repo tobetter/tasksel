@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-18 23:37+0200\n"
+"POT-Creation-Date: 2004-01-28 08:04+0100\n"
 "PO-Revision-Date: 2004-01-23 13:49EEST\n"
 "Last-Translator: Konstantinos Margaritis <markos@debian.org>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
@@ -27,7 +27,7 @@ msgstr "Αδύνατη η δέσμευση προσωρινής μνήμης γ�
 #: ../macros.h:42
 #, c-format
 msgid ""
-"Fatal error encountered at %s:%d\r\n"
+"Fatal error encountered at %s:%d\n"
 "\t"
 msgstr ""
 "Κάποιο ολέθριο σφάλμα συνέβη στο %s:%d\n"
@@ -37,7 +37,7 @@ msgstr ""
 #: ../macros.h:51
 #, c-format
 msgid ""
-"I/O error at %s:%d\r\n"
+"I/O error at %s:%d\n"
 "\t"
 msgstr ""
 "Συνέβη σφάλμα I/O στο %s:%d\n"
@@ -87,7 +87,8 @@ msgstr "Αδύνατη η αρχικοποίηση της διασύνδεσης
 #: ../slangui.c:239
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "Εγκαταστάτης Ομάδων Πακέτων του Debian v %s - (c) 1999-2003 SPI και άλλοι"
+msgstr ""
+"Εγκαταστάτης Ομάδων Πακέτων του Debian v %s - (c) 1999-2003 SPI και άλλοι"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -237,4 +238,3 @@ msgstr "Αδύνατη η δέσμευση %d bytes μνήμης"
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Αδύνατη η επαναδέσμευση %d bytes μνήμης"
-
