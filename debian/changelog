@@ -10,6 +10,10 @@ tasksel (1.52) UNRELEASED; urgency=low
      - openoffice.org is arch all, and so not a good candidate for the key
        package of the office task. Add openoffice.org-bin, to ensure that the
        task is only available on arches that have a full OOo build.
+     - The basic-desktop task is confusing, violates the one task per use of
+       the system tenet, does not interoperate well with the desktop task,
+       and is now removed. Closes: #249344 Users who want plain X should be
+       comfortable selecting the package by hand.
   * Translations
     - Kęstutis Biliūnas
       - Updated Lithuanian translation (tasks/po/lt.po).
