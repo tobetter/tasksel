@@ -9,8 +9,6 @@ tasksel (2.07) UNRELEASED; urgency=low
     - Modularised how the list of packages in a task is determined.
     - Play with server relevance values a bit to order web server and print
       server to the top.
-  * Christian Perrier
-    - regenerate po/tasksel.pot and update PO files
   * Per Olofsson
     - Added openoffice.org-help-sv and gimp-help-sv to swedish-desktop.
       Closes: #259832.
@@ -26,20 +24,12 @@ tasksel (2.07) UNRELEASED; urgency=low
       - Updated Lithuanian translation of tasks.
     - Claus Hindsgaul
       - Updated Danish translation of tasks.
-    - Christian Perrier
-      - Updated French translation of tasks.
-      - Updated French translation of the programs.
-    - Kenshi Muto
-      - Updated Japanese translation of tasks and programs.
-    - Carlos Z.F. Liu
-      - Updated Simplified Chinese translation of tasks.
-      - Updated Simplified Chinese translation of the programs.
-    - Miguel Figueiredo
-      - Updated Portuguese tasks and program translation.
-    - Eugeniy Meshcheryakov
+  * Christian Perrier
+    - Corrected Japanese desktop task description. Closes: #260233
+  * Eugeniy Meshcheryakov
       - Updated Ukrainian tasks and program translation.
 
- -- Christian Perrier <bubulle@kheops.frmug.org>  Mon, 19 Jul 2004 07:31:37 +0200
+ -- Christian Perrier <bubulle@debian.org>  Mon, 19 Jul 2004 17:25:38 +0200
 
 tasksel (2.06) unstable; urgency=medium
 
