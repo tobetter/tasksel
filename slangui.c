@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.19 2000/05/07 21:15:18 tausq Exp $ */
+/* $Id: slangui.c,v 1.20 2001/04/24 06:35:07 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -14,6 +14,8 @@
 #include "util.h"
 #include "strutl.h"
 #include "macros.h"
+
+#define TASK_PKG(t,f,d) ((t)->task_pkg ? (t)->task_pkg->f : (d))
 
 /* Slang object number mapping */
 #define DEFAULTOBJ   0
@@ -61,13 +63,14 @@ static struct _chooserinfo_t _chooserinfo = {3, 3, 0, 0, 0, 0, 0};
 static int _resizing = 0;
 static int _initialized = 0;
 static struct packages_t *_packages = NULL;
-static struct packages_t *_taskpackages = NULL;
-static struct package_t **_taskpackagesary = NULL;
+static struct tasks_t *_tasks = NULL;
+static struct task_t **_tasksary = NULL;
 
-void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct packages_t *pkgs)
+void ui_init(int argc, char * const argv[], struct tasks_t *tasks, struct packages_t *pkgs)
 {
-  _taskpackages = taskpkgs;
-  _taskpackagesary = packages_enumerate(taskpkgs);
+  _tasks = tasks;
+  _tasksary = tasks_enumerate(tasks);
+
   _packages = pkgs;
 	
   SLang_set_abort_signal(tasksel_signalhandler);
@@ -166,7 +169,7 @@ int ui_eventloop(void)
 	if (_chooserinfo.index > 0) 
 	  _chooserinfo.index--; 
 	else 
-	  _chooserinfo.index = _taskpackages->count - 1;
+	  _chooserinfo.index = _tasks->count - 1;
 	ui_redrawcursor(_chooserinfo.index);
         break;
       
@@ -177,7 +180,7 @@ int ui_eventloop(void)
       
       case SL_KEY_DOWN:
       	ui_clearcursor(_chooserinfo.index);
-	if (_chooserinfo.index < _taskpackages->count - 1) 
+	if (_chooserinfo.index < _tasks->count - 1) 
 	  _chooserinfo.index++; 
 	else 
 	  _chooserinfo.index = 0;
@@ -194,8 +197,8 @@ int ui_eventloop(void)
       case SL_KEY_NPAGE:
       	ui_clearcursor(_chooserinfo.index);
 	_chooserinfo.index += _chooserinfo.height;
-	if (_chooserinfo.index >= _taskpackages->count - 1)
-	  _chooserinfo.index = _taskpackages->count - 1;
+	if (_chooserinfo.index >= _tasks->count - 1)
+	  _chooserinfo.index = _tasks->count - 1;
 	ui_redrawcursor(_chooserinfo.index);
 	break;
 	
@@ -222,12 +225,12 @@ int ui_eventloop(void)
         break;
       
       case 'A': case 'a': 
-        for (i = 0; i < _taskpackages->count; i++) _taskpackagesary[i]->selected = 1;
+        for (i = 0; i < _tasks->count; i++) _tasksary[i]->selected = 1;
 	ui_drawscreen();
 	break;
 		
       case 'N': case 'n':
-        for (i = 0; i < _taskpackages->count; i++) _taskpackagesary[i]->selected = 0;
+        for (i = 0; i < _tasks->count; i++) _tasksary[i]->selected = 0;
 	ui_drawscreen();
 	break;
 		
@@ -331,7 +334,7 @@ int ui_drawscreen(void)
 	   _("Select task packages to install"));
   
   for (i = _chooserinfo.topindex; i < _chooserinfo.topindex + _chooserinfo.height; i++)
-    if (i < _taskpackages->count) ui_drawchooseritem(i);
+    if (i < _tasks->count) ui_drawchooseritem(i);
 
   ui_vscrollbar(_chooserinfo.rowoffset, _chooserinfo.coloffset + _chooserinfo.width - 1, _chooserinfo.height, 0);
   
@@ -549,40 +552,39 @@ void ui_dialog(int row, int col, int height, int width, char *title,
 void ui_drawchooseritem(int index)
 {
   char buf[1024];
-  ASSERT(_taskpackages != NULL);
-  if (index >= _taskpackages->count) 
-    DIE("Index out of bounds: %d >= %d", index, _taskpackages->count);
+  ASSERT(_tasks != NULL);
+  if (index >= _tasks->count) 
+    DIE("Index out of bounds: %d >= %d", index, _tasks->count);
   if (index < _chooserinfo.topindex) return;
   
   SLsmg_set_color(CHOOSEROBJ);
   SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, 
                _chooserinfo.coloffset + 1);
   snprintf(buf, 1024, "[%c] %s", 
-	   (_taskpackagesary[index]->selected == 0 ? ' ' : '*'),
-           _taskpackagesary[index]->prettyname);
+	   (_tasksary[index]->selected == 0 ? ' ' : '*'),
+           _tasksary[index]->prettyname);
   /* I fear the 1 below is an off-by-one error somewhere -- Joeyh */
   SLsmg_write_nstring(buf, _chooserinfo.width - 1);
   SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, 
-               _chooserinfo.coloffset + _taskpackages->maxnamelen + 7);
-  SLsmg_write_nstring(_taskpackagesary[index]->shortdesc, _chooserinfo.width - 
-                      _taskpackages->maxnamelen - 7);
+               _chooserinfo.coloffset + _tasks->maxnamelen + 7);
+  SLsmg_write_nstring(TASK_PKG(_tasksary[index], shortdesc, "(no description)"), _chooserinfo.width - _tasks->maxnamelen - 7);
 }
 
 void ui_toggleselection(int index)
 {
-  ASSERT(_taskpackages != NULL);
-  if (index >= _taskpackages->count) 
-    DIE("Index out of bounds: %d >= %d", index, _taskpackages->count);
+  ASSERT(_tasks != NULL);
+  if (index >= _tasks->count) 
+    DIE("Index out of bounds: %d >= %d", index, _tasks->count);
   
-  if (_taskpackagesary[index]->selected == 0)
-    _taskpackagesary[index]->selected = 1;
+  if (_tasksary[index]->selected == 0)
+    _tasksary[index]->selected = 1;
   else
-    _taskpackagesary[index]->selected = 0;
+    _tasksary[index]->selected = 0;
   
   SLsmg_set_color(CHOOSEROBJ);
   SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 1);
 
-  if (_taskpackagesary[index]->selected == 0)
+  if (_tasksary[index]->selected == 0)
     SLsmg_write_string("[ ]");
   else
     SLsmg_write_string("[*]");
@@ -596,7 +598,7 @@ void ui_redrawchooser(void)
 {
   int i;
   for (i = _chooserinfo.topindex; i < _chooserinfo.topindex + _chooserinfo.height; i++)
-    if (i < _taskpackages->count) ui_drawchooseritem(i);
+    if (i < _tasks->count) ui_drawchooseritem(i);
 }
 
 void ui_redrawcursor(int index)
@@ -613,10 +615,10 @@ void ui_redrawcursor(int index)
 
   ui_vscrollbar(_chooserinfo.rowoffset, _chooserinfo.coloffset + 
                 _chooserinfo.width - 1, _chooserinfo.height, 
-                ((double)index+1)/_taskpackages->count);
+                ((double)index+1)/_tasks->count);
   SLsmg_set_color(CURSOROBJ);
   SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 2);
-  SLsmg_write_string(_taskpackagesary[index]->selected == 0 ? " " : "*");
+  SLsmg_write_string(_tasksary[index]->selected == 0 ? " " : "*");
   
   SLsmg_refresh();
 }
@@ -625,7 +627,7 @@ void ui_clearcursor(int index)
 {
   SLsmg_set_color(DIALOGOBJ);
   SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 2);
-  SLsmg_write_string(_taskpackagesary[index]->selected == 0 ? " " : "*");
+  SLsmg_write_string(_tasksary[index]->selected == 0 ? " " : "*");
 }
 
 void ui_showhelp(void)
@@ -647,7 +649,8 @@ void ui_showhelp(void)
 
 void ui_showpackageinfo(void)
 {
-  struct package_t *pkg, *deppkg;
+  struct package_t *deppkg;
+  struct task_t *tsk;
   int i;
   int width = COLUMNS - 10;
   char buf[4096];
@@ -656,14 +659,14 @@ void ui_showpackageinfo(void)
   int bufleft;
   int index = _chooserinfo.index;
   
-  ASSERT(_taskpackages != NULL);
+  ASSERT(_tasks != NULL);
   _chooserinfo.whichwindow = DESCWINDOW;
-  if (index >= _taskpackages->count) DIE("Index out of bounds: %d >= %d", index, _taskpackages->count);
+  if (index >= _tasks->count) DIE("Index out of bounds: %d >= %d", index, _tasks->count);
   
-  pkg = _taskpackagesary[index];
-  ASSERT(pkg != NULL);
+  tsk = _tasksary[index];
+  ASSERT(tsk != NULL);
   
-  desc = reflowtext(width, pkg->longdesc); 
+  desc = reflowtext(width, TASK_PKG(tsk,longdesc,"(no long description)")); 
   
   /* pack buf with package info */
   snprintf(buf, sizeof(buf), _("Description:\n%s\n\nDependent packages:\n"), desc);
@@ -671,15 +674,15 @@ void ui_showpackageinfo(void)
   bufleft = sizeof(buf) - strlen(buf) - 1; 
   
   ASSERT(width < sizeof(shortbuf));
-  for (i = 0; i < pkg->dependscount; i++) {
-    deppkg = packages_find(_packages, pkg->depends[i]);
-    snprintf(shortbuf, sizeof(shortbuf), "%s - %s\n", pkg->depends[i], 
+  for (i = 0; i < tsk->packagescount; i++) {
+    deppkg = packages_find(_packages, tsk->packages[i]);
+    snprintf(shortbuf, sizeof(shortbuf), "%s - %s\n", tsk->packages[i], 
              ((deppkg && deppkg->shortdesc) ? deppkg->shortdesc : _("(no description available)")));
     strncat(buf, shortbuf, bufleft);
     bufleft = sizeof(buf) - strlen(buf) - 1;
   }
 
-  ui_dialog(2, 2, ROWS-4, COLUMNS-4, pkg->name, buf, 0, SCROLLBAR_VERT); 
+  ui_dialog(2, 2, ROWS-4, COLUMNS-4, tsk->name, buf, 0, SCROLLBAR_VERT); 
   _chooserinfo.whichwindow = CHOOSERWINDOW;
   ui_drawscreen();  
 }

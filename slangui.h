@@ -3,8 +3,9 @@
 #define _SLANGUI_H
 
 struct packages_t;
+struct tasks_t;
 
-void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct packages_t *packages);
+void ui_init(int argc, char * const argv[], struct tasks_t *tasks, struct packages_t *packages);
 int ui_shutdown(void);
 int ui_running(void);
 void ui_resize(void);

@@ -1,3 +1,21 @@
+tasksel (1.1-1) unstable; urgency=low
+
+  * Support "Task:" headers to include a package in a task.
+    .
+    Syntax is:
+        Package: foo
+        Task: bar, baz, quux
+    .
+    Note that tasks still require a task-* package in order to have a
+    description. Frontends could conceivably treat a task-foo package
+    being installed as meaning "automatically install new packages with
+    a Task: foo field, but don't worry about old packages that weren't
+    installed", similar to dselect's Standard handling, I think.
+    .
+    Patch thanks to Anthony Towns <aj@azure.humbug.org.au> 
+
+ -- Randolph Chung <tausq@debian.org>  Mon, 23 Apr 2001 23:34:57 -0700
+
 tasksel (1.0-10) frozen unstable; urgency=low
 
   * Release manager: needed for potato boot-floppies

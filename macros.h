@@ -1,4 +1,4 @@
-/* $Id: macros.h,v 1.2 1999/11/23 05:39:27 tausq Exp $ */
+/* $Id: macros.h,v 1.3 2001/04/24 06:35:07 tausq Rel $ */
 #ifndef _MACROS_H
 #define _MACROS_H
 
@@ -22,6 +22,7 @@
 #define ABORT abort()
 #define STRDUP(s) safe_strdup(s)
 #define MALLOC(sz) safe_malloc(sz)
+#define REALLOC(x,sz) safe_realloc(x,sz)
 #define FREE(p) safe_free((void **)&p);
 #else
 #define DPRINTF(fmt, arg...)
@@ -30,6 +31,7 @@
 #define ABORT exit(255)
 #define STRDUP(s) (s ? strdup(s) : NULL)
 #define MALLOC(sz) malloc(sz)
+#define REALLOC(x,sz) realloc(x,sz)
 #define FREE(p) if (p) free(p)
 #endif
   

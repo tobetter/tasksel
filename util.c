@@ -1,4 +1,4 @@
-/* $Id: util.c,v 1.2 1999/11/23 05:39:27 tausq Exp $ */
+/* $Id: util.c,v 1.3 2001/04/24 06:35:07 tausq Rel $ */
 #include "util.h"
 
 #include <string.h>
@@ -36,6 +36,15 @@ void *safe_malloc(int size)
   p = malloc(size);
   _num_mallocs++;
   if (p == NULL) DIE("Cannot allocate %d bytes of memory", size);
+  return p;
+}
+
+void *safe_realloc(void *x, size_t size)
+{
+  void *p;
+  p = realloc(x, size);
+  _num_mallocs++;
+  if (p == NULL) DIE("Cannot reallocate %d bytes of memory", size);
   return p;
 }
 

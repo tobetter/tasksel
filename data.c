@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.8 2000/02/06 22:12:32 tausq Exp $ */
+/* $Id: data.c,v 1.9 2001/04/24 06:35:07 tausq Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -15,6 +15,7 @@
 #include "macros.h"
 
 #define PACKAGEFIELD     "Package: "
+#define TASKFIELD        "Task: "
 #define DEPENDSFIELD     "Depends: "
 #define RECOMMENDSFIELD  "Recommends: "
 #define SUGGESTSFIELD    "Suggests: "
@@ -33,6 +34,10 @@ static struct package_t **_packages_enumbuf = NULL;
 static int _packages_enumcount = 0;
 static void *_packages_root = NULL;
 
+static struct task_t **_tasks_enumbuf = NULL;
+static int _tasks_enumcount = 0;
+static void *_tasks_root = NULL;
+
 /* private functions */
 static int packagecompare(const void *p1, const void *p2)
 {
@@ -50,6 +55,39 @@ static void packages_walk_enumerate(const void *nodep, const VISIT order, const 
   if (order == leaf || order == postorder) {
     _packages_enumcount++;
     _packages_enumbuf[_packages_enumcount - 1] = datap;
+  }
+}
+
+static void tasks_walk_enumerate(const void *nodep, const VISIT order, const int depth)
+{
+  /* adds nodep to list of nodes if we haven't visited this node before */
+  struct task_t *datap = *(struct task_t **)nodep;
+  if (order == leaf || order == postorder) {
+    _tasks_enumcount++;
+    _tasks_enumbuf[_tasks_enumcount - 1] = datap;
+  }
+}
+
+static int taskcompare(const struct task_t *l, const struct task_t *r)
+{
+  return strcmp(l->name, r->name);
+}
+
+static void tasks_walk_delete(const void *nodep, const VISIT order, const int depth)
+{
+  /* deletes memory associated with nodep */
+  struct task_t *datap = *(struct task_t **)nodep;
+  int i;
+
+  if (order == leaf || order == endorder) {
+    tdelete((void *)datap, &_tasks_root, taskcompare);
+    if (datap->name) FREE(datap->name);
+    if (datap->prettyname) FREE(datap->prettyname);
+    if (datap->packages) {
+      for (i = 0; i < datap->packagescount; i++) FREE(datap->packages[i]);
+      FREE(datap->packages);
+    }
+    FREE(datap);
   }
 }
 
@@ -118,7 +156,75 @@ static const char *filterdescription(const char *descin)
     return descin;
 }
 
-static void addpackage(struct packages_t *pkgs,
+
+static struct task_t *addtask(
+	struct tasks_t *tasks,
+	const char *taskname,
+	const char *package)
+{
+  struct task_t t = {0}, *task;
+  void *result;
+
+  t.name = (char*)taskname;
+  result = tfind(&t, &tasks->tasks, taskcompare);
+  if (result) {
+    task = *(struct task_t**)result;
+  } else {
+    int space = 1;
+    char *c;
+
+    task = NEW(struct task_t);
+    task->name = STRDUP(taskname);
+    task->task_pkg = NULL;
+    task->packages = MALLOC(sizeof(char*)*10);
+    task->packagesmax = 10;
+    task->packagescount = 0;
+    task->selected = 0;
+    c = task->prettyname = STRDUP(taskname);
+
+    /* Prettify name */
+    while (c[0]) {
+      if (c[0] == '-') {
+        c[0] = ' ';
+        space=1;
+      }
+      else if (space) {
+        c[0] = toupper(c[0]);
+        space=0;
+      }
+      c++;
+    }
+    /* Keep track of the longest name. */
+    if (tasks->maxnamelen < (c - task->prettyname))
+      tasks->maxnamelen = c - task->prettyname;
+
+    tsearch(task, &tasks->tasks, taskcompare);
+    tasks->count++;
+  }
+
+  {
+    char const *pch;
+    if (*package == '\0') return task;
+    for (pch = package; *pch; pch++) {
+      if ('a' <= *pch && *pch <= 'z') continue;
+      if ('0' <= *pch && *pch <= '9') continue;
+      if (*pch == '+' || *pch == '-' || *pch == '.') continue;
+      return task;
+    }
+  }
+
+  if (task->packagescount >= task->packagesmax) {
+    ASSERT(task->packagescount == task->packagesmax);
+    task->packagesmax *= 2;
+    task->packages = REALLOC(task->packages, task->packagesmax * sizeof(char*));
+  }
+  task->packages[task->packagescount++] = STRDUP(package);
+
+  return task;
+}
+
+static struct package_t *addpackage(
+		struct packages_t *pkgs,
 		       const char *name, const char *dependsdesc, 
 		       const char *recommendsdesc, const char *suggestsdesc, 
 		       const char *shortdesc, const char *longdesc,
@@ -166,6 +272,8 @@ static void addpackage(struct packages_t *pkgs,
   p = tsearch((void *)node, &pkgs->packages, packagecompare);
   VERIFY(p != NULL);
   pkgs->count++;
+
+  return node;
 }
 
 /* public functions */
@@ -187,8 +295,7 @@ struct package_t *packages_find(const struct packages_t *pkgs, const char *name)
 
 struct package_t **packages_enumerate(const struct packages_t *packages)
 {
-  /* Converts the packages binary tree into a array. Do not modify the returned array! It
-   * is a static variable managed by this module */
+  /* Converts a packages binary tree into an array */
 	
   _packages_enumbuf = MALLOC(sizeof(struct package_t *) * packages->count);
   if (_packages_enumbuf == NULL) 
@@ -200,21 +307,48 @@ struct package_t **packages_enumerate(const struct packages_t *packages)
   return _packages_enumbuf;
 }
 
-void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
+struct task_t **tasks_enumerate(const struct tasks_t *tasks)
+{
+  /* Converts the tasks binary tree into an array. */
+
+  _tasks_enumbuf = MALLOC(sizeof(struct task_t *) * tasks->count);
+  if (_tasks_enumbuf == NULL) 
+    DIE("Cannot allocate memory for enumeration buffer");
+  memset(_tasks_enumbuf, 0, sizeof(struct task_t *) * tasks->count);
+  _tasks_enumcount = 0;
+  twalk((void *)tasks->tasks, tasks_walk_enumerate);
+  ASSERT(_tasks_enumcount == tasks->count);
+  return _tasks_enumbuf;
+}
+
+static void walktasks(const void *t, const VISIT which, const int depth)
+{
+  struct task_t *task = *(struct task_t**)t;
+  int i;
+
+  if (which == postorder || which == leaf) {
+    fprintf(stderr, "Task %s:\n", task->prettyname);
+    for (i = 0; i < task->packagescount; i++) {
+      fprintf(stderr, "  %s\n", task->packages[i]);
+    }
+  }
+}
+
+void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
 {
   /* Populates internal data structures with information from an available 
    * file */
   FILE *f;
   char buf[BUF_SIZE];
   char *name, *shortdesc, *longdesc;
-  char *dependsdesc, *recommendsdesc, *suggestsdesc, *prioritydesc;
+  char *dependsdesc, *recommendsdesc, *suggestsdesc, *prioritydesc, *taskdesc;
   priority_t priority;
   
-  VERIFY(taskpkgs != NULL); VERIFY(pkgs != NULL);
+  VERIFY(pkgs != NULL); VERIFY(tasks != NULL);
  
   /* Initialization */
-  memset(taskpkgs, 0, sizeof(struct packages_t));
   memset(pkgs, 0, sizeof(struct packages_t));
+  memset(tasks, 0, sizeof(struct tasks_t));
 
   if ((f = fopen(AVAILABLEFILE, "r")) == NULL) PERROR(AVAILABLEFILE);
   while (!feof(f)) {
@@ -222,7 +356,7 @@ void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
     CHOMP(buf);
     if (MATCHFIELD(buf, PACKAGEFIELD)) {
       /*DPRINTF("Package = %s\n", FIELDDATA(buf, PACKAGEFIELD)); */
-      name = shortdesc = longdesc = dependsdesc = recommendsdesc = suggestsdesc = NULL;
+      name = shortdesc = longdesc = taskdesc = dependsdesc = recommendsdesc = suggestsdesc = NULL;
       priority = PRIORITY_UNKNOWN;
       
       name = STRDUP(FIELDDATA(buf, PACKAGEFIELD));
@@ -234,7 +368,10 @@ void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
 	CHOMP(buf);
 	if (buf[0] == 0) break;
 
-	if (MATCHFIELD(buf, DEPENDSFIELD)) {
+	if (MATCHFIELD(buf, TASKFIELD)) {
+          taskdesc = STRDUP(FIELDDATA(buf, TASKFIELD));
+	  VERIFY(taskdesc != NULL);
+	} else if (MATCHFIELD(buf, DEPENDSFIELD)) {
           dependsdesc = STRDUP(FIELDDATA(buf, DEPENDSFIELD));
 	  VERIFY(dependsdesc != NULL);
 	} else if (MATCHFIELD(buf, RECOMMENDSFIELD)) {
@@ -275,31 +412,58 @@ void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
 	}
       }
 
+      if (strncmp(name, "task-", 5) != 0) {
       addpackage(pkgs, name, NULL, NULL, NULL, shortdesc,
 		 NULL, priority, 0);
-      if (strncmp(name, "task-", 5) == 0)
-	addpackage(taskpkgs, name, dependsdesc, recommendsdesc, suggestsdesc, 
-                   filterdescription(shortdesc), longdesc, priority, 1);
+      } else {
+        struct package_t *p;
+	struct task_t *t;
+        int i;
+        p = addpackage(pkgs, name, dependsdesc, recommendsdesc, 
+		       suggestsdesc, filterdescription(shortdesc), 
+		       longdesc, priority, 0);
+        t = addtask(tasks, name+5, "");
+	t->task_pkg = p;
+        for (i = 0; i < p->dependscount; i++) {
+          addtask(tasks, name+5, p->depends[i]);
+        }
+      }
+
+      if (taskdesc != NULL) {
+        char **ts;
+        int tscount;
+        int i;
+
+        tscount = splitlinkdesc(taskdesc, &ts);
+        for (i = 0; i < tscount; i++) {
+          addtask(tasks, ts[i], name);
+          FREE(ts[i]);
+        }
+        FREE(ts);
+      }
 	
       if (name != NULL) FREE(name);
       if (dependsdesc != NULL) FREE(dependsdesc);
       if (recommendsdesc != NULL) FREE(recommendsdesc);
       if (suggestsdesc != NULL) FREE(suggestsdesc);
+      if (taskdesc != NULL) FREE(taskdesc);
       if (shortdesc != NULL) FREE(shortdesc);
       if (longdesc != NULL) FREE(longdesc);
     }
   };
   fclose(f);   
+
+  twalk(tasks->tasks, walktasks);
 }
 
-void packages_free(struct packages_t *taskpkgs, struct packages_t *pkgs)
+void packages_free(struct tasks_t *tasks, struct packages_t *pkgs)
 {
   /* Frees up memory allocated by packages_readlist */
-  _packages_root = taskpkgs->packages;
-  twalk(taskpkgs->packages, packages_walk_delete);
+  
+  _tasks_root = tasks->tasks;
+  twalk(tasks->tasks, tasks_walk_delete);
+
   _packages_root = pkgs->packages;
   twalk(pkgs->packages, packages_walk_delete);
-  if (_packages_enumbuf != NULL) FREE(_packages_enumbuf);
-  _packages_enumbuf = NULL;
 }
 

@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.9 2000/05/07 22:03:36 polish Exp $ */
+/* $Id: tasksel.c,v 1.10 2001/04/24 06:35:07 tausq Exp $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -39,7 +39,7 @@ void help(void)
   exit(0);
 }
 
-int doinstall(struct package_t **taskpkglist, int taskpkgcount,
+int doinstall(struct task_t **tasklist, int taskcount,
 	      struct package_t **pkglist, int pkgcount,
 	      unsigned char queueinstalls, unsigned char testmode)
 {
@@ -60,9 +60,15 @@ int doinstall(struct package_t **taskpkglist, int taskpkgcount,
         c++;
       }
     }
-    for (i = 0; i < taskpkgcount; i++) {
-      if (taskpkglist[i]->selected > 0) {
-        fprintf(todpkg, "%s install\n", taskpkglist[i]->name);
+    for (i = 0; i < taskcount; i++) {
+      if (tasklist[i]->selected > 0) {
+        int j;
+        if (tasklist[i]->task_pkg) {
+          fprintf(todpkg, "%s install\n", tasklist[i]->task_pkg->name);
+        }
+        for (j = 0; j < tasklist[i]->packagescount; j++) {
+          fprintf(todpkg, "%s install\n", tasklist[i]->packages[j]);
+        }
         c++;
       }
     }
@@ -82,11 +88,18 @@ int doinstall(struct package_t **taskpkglist, int taskpkgcount,
         c++;
       }
     }
-    for (i = 0; i < taskpkgcount; i++) {
-      if (taskpkglist[i]->selected > 0) { 
+    for (i = 0; i < taskcount; i++) {
+      if (tasklist[i]->selected > 0) { 
+        int j;
         /* TODO check buffer overflow; not likely, but still... */
-        strcat(buf, taskpkglist[i]->name);
+        if (tasklist[i]->task_pkg) {
+          strcat(buf, tasklist[i]->task_pkg->name);
+          strcat(buf, " ");
+        }
+        for (j = 0; j < tasklist[i]->packagescount; j++) {
+          strcat(buf, tasklist[i]->packages[j]);
         strcat(buf, " ");
+        }
         c++;
       }
     }
@@ -110,8 +123,10 @@ int main(int argc, char * const argv[])
   int i, c, r = 0;
   unsigned char testmode = 0, queueinstalls = 0, installreqd = 0;
   unsigned char installimp = 0, installstd = 0, noninteractive = 0;
-  struct packages_t taskpkgs, packages;
-  struct package_t **pkglist, **taskpkglist;
+  struct packages_t packages;
+  struct tasks_t tasks;
+  struct package_t **pkglist;
+  struct task_t **tasklist;
   
   signal(SIGWINCH, tasksel_signalhandler);
   
@@ -134,23 +149,21 @@ int main(int argc, char * const argv[])
     }
   }
   
-  packages_readlist(&taskpkgs, &packages);
+  packages_readlist(&tasks, &packages);
 
-  if (taskpkgs.count == 0) {
+  if (tasks.count == 0) {
     fprintf(stderr, _("No task packages found on this system.\nDid you update your available file?"));
     return 255;
   }
   
   if (noninteractive == 0) {
-    ui_init(argc, argv, &taskpkgs, &packages);
+    ui_init(argc, argv, &tasks, &packages);
     ui_drawscreen();
     r = ui_eventloop();
     ui_shutdown();
   }
     
-  taskpkglist = packages_enumerate(&taskpkgs);
   pkglist = packages_enumerate(&packages);
-
   if (installreqd || installimp || installstd) {
     for (i = 0; i < packages.count; i++) {
       if (installreqd && pkglist[i]->priority == PRIORITY_REQUIRED)
@@ -162,13 +175,14 @@ int main(int argc, char * const argv[])
     }
   }
 
-  if (r == 0) r = doinstall(taskpkglist, taskpkgs.count,
-		            pkglist, 
-			    (installreqd || installimp || installstd 
+  tasklist = tasks_enumerate(&tasks);
+  if (r == 0) {
+    r = doinstall(tasklist, tasks.count,
+	          pkglist, (installreqd || installimp || installstd 
 			       ? packages.count : 0),
                             queueinstalls, testmode);
-
-  packages_free(&taskpkgs, &packages);
+  }
+  packages_free(&tasks, &packages);
   
   return r;
 }

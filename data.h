@@ -1,4 +1,4 @@
-/* $Id: data.h,v 1.4 2000/02/06 22:12:32 tausq Exp $ */
+/* $Id: data.h,v 1.5 2001/04/24 06:35:07 tausq Exp $ */
 #ifndef _DATA_H
 #define _DATA_H
 
@@ -32,12 +32,29 @@ struct packages_t {
   void *packages;
 };
 
+struct task_t {
+  char *name;
+  char *prettyname;
+  struct package_t *task_pkg;
+  char **packages;
+  int packagescount;
+  int packagesmax;
+  int selected;
+};
+
+struct tasks_t {
+  int count;
+  int maxnamelen;
+  void *tasks;
+};
+
 /* Reads in a list of package and package descriptions */
-void packages_readlist(struct packages_t *taskpackages, struct packages_t *packages);
+void packages_readlist(struct tasks_t *tasks, struct packages_t *packages);
 /* free memory allocated to store packages */
-void packages_free(struct packages_t *taskpackages, struct packages_t *packages);
+void packages_free(struct tasks_t *tasks, struct packages_t *packages);
 
 struct package_t *packages_find(const struct packages_t *packages, const char *name);
 struct package_t **packages_enumerate(const struct packages_t *packages);
+struct task_t **tasks_enumerate(const struct tasks_t *tasks);
 
 #endif
