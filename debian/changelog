@@ -5,6 +5,9 @@ tasksel (1.16) unstable; urgency=medium
     not ship with woody, we still will get kde. Closes: #135797
   * The same include mechanism should probably be used for the other
     metapackages, like the junior stuff (and X?). But not right now.
+  * Removed junkbuster from dialup; probably not going to ship with woody, if
+    it manages to somehow it is really in too bad shape to expose newbies to
+    it. Closes: #131295
 
  -- Joey Hess <joeyh@debian.org>  Tue, 26 Feb 2002 11:17:36 -0500
 
