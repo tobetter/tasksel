@@ -17,7 +17,7 @@ Debian derived distributions can add a new .desc file to
 debian-tasks.desc to remove tasks.
 
 The file format is a rfc-822 style stanza, with fields named Task, Section,
-Description (which should include an extended descrition), Key, Depends, 
+Description (which should include an extended description), Key, Depends, 
 and optional Test- and Source fields. Here is an example:
 
 Task: desktop
