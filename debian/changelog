@@ -1,6 +1,7 @@
 tasksel (1.0-7) frozen unstable; urgency=low
 
-  * Adds -r, -i switches for installing required and important packages
+  * Adds -r, -i and -s switches for installing required, important and
+    standard priority packages
   * Adds -n option for non-interactive runs (for use with -r or -i)
   * Make data.c read priority settings; made packages_enumerate 
     reentrant

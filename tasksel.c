@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.5 2000/02/06 22:12:32 tausq Exp $ */
+/* $Id: tasksel.c,v 1.6 2000/02/07 01:09:53 tausq Exp $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -27,11 +27,12 @@ static void signalhandler(int sig)
 
 void help(void)
 {
-  fprintf(stderr, "tasksel [-t]\n");
+  fprintf(stderr, _("tasksel [options]; where options is any combination of:\n"));
   fprintf(stderr, "\t%s\n", _("-t -- test mode; don't actually run apt-get on exit"));
   fprintf(stderr, "\t%s\n", _("-q -- queue installs; do not install packages with apt-get;\n\t\tjust queue them in dpkg"));
   fprintf(stderr, "\t%s\n", _("-r -- install all required-priority packages"));
   fprintf(stderr, "\t%s\n", _("-i -- install all important-priority packages"));
+  fprintf(stderr, "\t%s\n", _("-s -- install all standard-priority packages"));
   fprintf(stderr, "\t%s\n\n", _("-n -- don't show UI; use with -r or -i usually"));
   exit(0);
 }
@@ -105,7 +106,7 @@ int main(int argc, char * const argv[])
 {
   int i, c, r = 0;
   unsigned char testmode = 0, queueinstalls = 0, installreqd = 0;
-  unsigned char installimp = 0, noninteractive = 0;
+  unsigned char installimp = 0, installstd = 0, noninteractive = 0;
   struct packages_t taskpkgs, packages;
   struct package_t **pkglist, **taskpkglist;
   
@@ -116,7 +117,7 @@ int main(int argc, char * const argv[])
   textdomain(PACKAGE);
   
   while (1) {
-    c = getopt(argc, argv, "tqrin");
+    c = getopt(argc, argv, "tqrins");
     if (c == -1) break;
 
     switch (c) {
@@ -124,6 +125,7 @@ int main(int argc, char * const argv[])
       case 'q': queueinstalls = 1; break;
       case 'r': installreqd = 1; break;
       case 'i': installimp = 1; break;
+      case 's': installstd = 1; break;
       case 'n': noninteractive = 1; break;
       default: help();
     }
@@ -146,19 +148,21 @@ int main(int argc, char * const argv[])
   taskpkglist = packages_enumerate(&taskpkgs);
   pkglist = packages_enumerate(&packages);
 
-  if (installreqd || installimp) {
+  if (installreqd || installimp || installstd) {
     for (i = 0; i < packages.count; i++) {
       if (installreqd && pkglist[i]->priority == PRIORITY_REQUIRED)
         pkglist[i]->selected = 1;
       if (installimp && pkglist[i]->priority == PRIORITY_IMPORTANT)
+	pkglist[i]->selected = 1;
+      if (installstd && pkglist[i]->priority == PRIORITY_STANDARD)
 	pkglist[i]->selected = 1;
     }
   }
 
   if (r == 0) r = doinstall(taskpkglist, taskpkgs.count,
 		            pkglist, 
-			    (installreqd || installimp ? packages.count 
-			                               : 0),
+			    (installreqd || installimp || installstd 
+			       ? packages.count : 0),
                             queueinstalls, testmode);
 
   packages_free(&taskpkgs, &packages);
