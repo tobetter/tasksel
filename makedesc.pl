@@ -25,6 +25,7 @@ my $dir=shift or die "no directory specified\n";
 my $file=shift or die "no file specified\n";
 
 my %package;
+my %notmain;
 my $dolint=1;
 {
 	local $/="\n\n";
@@ -35,6 +36,9 @@ my $dolint=1;
 	while (<AVAIL>) {
 		my ($package)=/Package:\s*(.*?)\n/;
 		$package{$package}=1;
+		if (/Section:\s*(contrib|non-free)/) {
+			$notmain{$package}=$1;
+		}
 	}
 	close AVAIL;
 }
@@ -73,6 +77,9 @@ sub processfile {
 		foreach (split ' ', $fields{packages}) {
 			if (! $package{$_}) {
 				print STDERR "$file: $_ is not a valid package.\n";
+			}
+			if ($notmain{$_}) {
+				print STDERR "$file: $_ is in $notmain{$_}.\n";
 			}
 		}
 	}
