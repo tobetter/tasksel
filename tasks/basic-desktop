@@ -4,9 +4,5 @@ Description: X window system
  This task provides the essential components for a standalone workstation
  running the X Window System. It provides the X libraries, an X server, a
  set of fonts, and a group of basic X clients and utilities.
- .
- It should be noted that a package providing x-window-manager and a package
- providing x-terminal-emulator should also be installed to ensure a
- comfortable X experience.
 Packages:
- x-window-system-core
+ x-window-system
