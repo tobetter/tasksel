@@ -83,6 +83,7 @@ sub list_avail {
 	# Might be better to use the perl apt bindings, but they are not
 	# currently in base.
 	open (AVAIL, "apt-cache dumpavail|");
+	local $_;
 	while (<AVAIL>) {
 		chomp;
 		if (/^Package: (.*)/) {
@@ -98,6 +99,7 @@ sub list_installed {
 	my @list;
 	local $/="\n\n";
 	open (STATUS, $statusfile);
+	local $_;
 	while (<STATUS>) {
 		if (/^Status: .* installed$/m && /Package: (.*)$/m) {
 			push @list, $1;
