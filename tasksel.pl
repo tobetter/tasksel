@@ -413,7 +413,8 @@ sub main {
 		my $tmpfile=`tempfile`;
 		chomp $tmpfile;
 		system($debconf_helper, $tmpfile, task_to_debconf(@list),
-			task_to_debconf(@default), $question);
+			($options{"new-install"} ? "-" : task_to_debconf(@default)),
+			$question);
 		open(IN, "<$tmpfile");
 		my $ret=<IN>;
 		chomp $ret;
