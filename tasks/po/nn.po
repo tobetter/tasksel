@@ -11,13 +11,14 @@ msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-15 20:35+0200\n"
-"PO-Revision-Date: 2004-02-24 23:40+0100\n"
+"PO-Revision-Date: 2004-04-23 18:17+0200\n"
 "Last-Translator: Håvard Korsvoll <korsvoll@skulelinux.no>\n"
 "Language-Team: Norwegian (Nynorsk) <i18n-nn@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3\n"
+"X-Generator: KBabel 1.3.1\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Description
 #: ../po/debian-tasks.desc:4
@@ -146,8 +147,7 @@ msgstr "SQL-database"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr "Denne oppgåva vel ut klient- og tenarpakkar for PostgreSQL-databasen."
 
 #. Description
@@ -203,8 +203,7 @@ msgstr "Namnetenar"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr "Tar med namnetenaren BIND og relatert dokumentasjon og verktøyspakkar."
 
 #. Description
@@ -214,11 +213,10 @@ msgstr "Filtenar"
 
 #. Description
 #: ../po/debian-tasks.desc:130
-#, fuzzy
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "Denne oppgåva set opp systemet ditt som ein filtenar."
+msgstr "Denne oppgåva set opp systemet ditt som ein filtenar som støttar både NetBIOS og NFS."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -280,19 +278,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid "Hebrew environment"
-msgstr "Gresk miljø"
+msgstr "Hebraisk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
 msgstr ""
-"Denne oppgåva installerer pakkar og dokumentasjon på gresk for å hjelpa "
-"gresktalande folk til å bruka Debian."
+"Denne oppgåva installerer pakkar og dokumentasjon på hebraisk for å hjelpa "
+"hebraisktalande folk til å bruka Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:179
@@ -338,8 +334,7 @@ msgstr "Tilpassa kjernekompilering"
 msgid ""
 "This task includes everything you should need to build your own custom "
 "kernel."
-msgstr ""
-"Denne oppgåva inneheld alt du treng for å byggja di eiga tilpassa kjerne."
+msgstr "Denne oppgåva inneheld alt du treng for å byggja di eiga tilpassa kjerne."
 
 #. Description
 #: ../po/debian-tasks.desc:214
@@ -363,31 +358,28 @@ msgstr "Laptop"
 
 #. Description
 #: ../po/debian-tasks.desc:224
-#, fuzzy
 msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities for laptops including IBM "
 "Thinkpads, Sony Vaios, Toshibas, and Dell Inspirons."
 msgstr ""
 "Dette er ei samling verktøy som laptop-brukarar vil forventa å finna på eit "
-"system. Det inneheld nokre spesielle verktøy for enkelte bærbare, som IBM "
+"system. Det inneheld nokre spesielle verktøy for bærbare, som IBM "
 "Thinkpads, Sony Vaios, Toshibas og Dell Inspiron."
 
 #. Description
 #: ../po/debian-tasks.desc:234
-#, fuzzy
 msgid "Lithuanian environment"
-msgstr "Thai miljø"
+msgstr "Litauisk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:234
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
 msgstr ""
-"Denne oppgåva installerer pakkar og dokumentasjon i katalansk for å hjelpa "
-"folk som snakkar katalansk til å bruka Debian."
+"Denne oppgåva installerer pakkar og dokumentasjon i litauisk for å hjelpa "
+"folk som snakkar litauisk til å bruka Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:242
@@ -552,9 +544,7 @@ msgstr "Spansk miljø"
 msgid ""
 "This task installs programs, data files,  and documentation that makes it "
 "easier for Spanish speakers to use Debian."
-msgstr ""
-"Denne oppgåva installerer program, datafiler og dokumentasjon på spansk for "
-"å hjelpa spansktalande folk til å bruka Debian."
+msgstr "Denne oppgåva installerer program, datafiler og dokumentasjon på spansk for å hjelpa spansktalande folk til å bruka Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:342
@@ -563,9 +553,8 @@ msgstr "TeX/LaTeX miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid ""
-"This task provides necessary packages for composing documents in TeX/LaTeX."
-msgstr ""
+msgid "This task provides necessary packages for composing documents in TeX/LaTeX."
+msgstr "Denne oppgåva installerer nausynte pakkar for å laga dokument i TeX/LaTeX."
 
 #. Description
 #: ../po/debian-tasks.desc:352
@@ -581,19 +570,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:361
-#, fuzzy
 msgid "Ukrainian environment"
-msgstr "Thai miljø"
+msgstr "Ukrainsk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:361
-#, fuzzy
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
 msgstr ""
-"Denne oppgåva installerer pakkar og dokumentasjon på russisk for å hjelpa "
-"russisktalande folk til å bruka Debian."
+"Denne oppgåva installerer pakkar og dokumentasjon på ukrainsk for å hjelpa "
+"ukrainsktalande folk til å bruka Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:370
@@ -618,8 +605,7 @@ msgstr "Vev-tenar"
 
 #. Description
 #: ../po/debian-tasks.desc:377
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
+msgid "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Denne oppgåva vel pakkar som er nyttige for eit generelt system med vev-"
 "tenar."
@@ -636,3 +622,4 @@ msgstr ""
 
 #~ msgid "a TeX/LaTeX environment"
 #~ msgstr "Eit TeX/LaTeX miljø"
+
