@@ -1,18 +1,15 @@
 # translation of el.po to Greek
-# translation of de.po to Greek
-# translation of de.po to
-# translation of de.po to
-# Translation file for tasksel to German.
-# Copyright (C) 2000, 2003, 2004 Free Software Foundation, Inc.
-# Othmar Pasteka <pasteka@kabsi.at>, 2000, 2003.
-# Konstantinos Margaritis <markos@debian.org>, 2003, 2004.
+# translation of tasksel.po to Greek
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Konstantinos Margaritis <markos@debian.org>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2004-01-23 13:49EEST\n"
+"POT-Creation-Date: 2004-03-12 16:22-0500\n"
+"PO-Revision-Date: 2004-03-27 17:17EEST\n"
 "Last-Translator: Konstantinos Margaritis <markos@debian.org>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +19,7 @@ msgstr ""
 
 #: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Αδύνατη η δέσμευση προσωρινής μνήμης για καταμέτρηση"
+msgstr "Αδύνατη η δέσμευση μνήμης για buffer καταμέτρησης"
 
 #: ../macros.h:42
 #, c-format
@@ -31,7 +28,6 @@ msgid ""
 "\t"
 msgstr ""
 "Κάποιο ολέθριο σφάλμα συνέβη στο %s:%d\n"
-"\n"
 "\t"
 
 #: ../macros.h:51
@@ -41,7 +37,6 @@ msgid ""
 "\t"
 msgstr ""
 "Συνέβη σφάλμα I/O στο %s:%d\n"
-"\n"
 "\t"
 
 #: ../slangui.c:18 ../slangui.c:19
@@ -66,7 +61,7 @@ msgstr "Ανάπτυξη Λογισμικού"
 
 #: ../slangui.c:79
 msgid "Localization"
-msgstr "Μεταφράσεις"
+msgstr "Γλωσσικό Περιβάλλον"
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
@@ -78,17 +73,16 @@ msgstr "Αδύνατη η αρχικοποίηση του τερματικού"
 
 #: ../slangui.c:221
 msgid "Unable to initialize screen output"
-msgstr "Αδύνατη η αρχικοποίηση της εξόδου οθόνης"
+msgstr "Αδύνατη η αρχικοποίηση της οθόνης"
 
 #: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
-msgstr "Αδύνατη η αρχικοποίηση της διασύνδεσης πληκτρολογίου"
+msgstr "Αδύνατη η αρχικοποιήση του πληκτρολογίου"
 
 #: ../slangui.c:239
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr ""
-"Εγκαταστάτης Ομάδων Πακέτων του Debian v %s - (c) 1999-2004 SPI και άλλοι"
+msgstr "Debian Task Installer v%s - (c) 1999-2004 SPI και άλλοι"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -96,7 +90,7 @@ msgstr "Τέλος"
 
 #: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
-msgstr "Πληροφορίες Ομάδας"
+msgstr "Πληροφορίες Ομάδος"
 
 #: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
@@ -108,7 +102,7 @@ msgstr "Επιλέξτε τις ομάδες πακέτων προς εγκατ�
 
 #: ../slangui.c:576
 msgid "Ok"
-msgstr "Εντάξει"
+msgstr "Οk"
 
 #: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
 #, c-format
@@ -189,8 +183,7 @@ msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- σειριακοποίηση των εγκαταστάσεων, δεν εγκαθιστά τα πακέτα με την apt-"
-"get,\n"
+"-q -- σειριακοποίηση των εγκαταστάσεων, δεν χρησιμοποιεί apt-get,\n"
 "\t\tαπλώς σειριακοποιεί τις εγκαταστάσεις με το dpkg"
 
 #: ../tasksel.c:43
@@ -211,9 +204,7 @@ msgstr "-n -- χωρίς απεικόνιση του μενού, για χρήσ
 
 #: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr ""
-"-a -- εμφάνιση όλων των ομάδων πακέτων, ακόμη και αυτών που δε περιλαμβάνουν "
-"πακέτα"
+msgstr "-a -- εμφάνιση όλων των ομάδων πακέτων, ακόμη και αυτών χωρίς πακέτα"
 
 #: ../tasksel.c:88 ../tasksel.c:123
 #, c-format
@@ -238,3 +229,4 @@ msgstr "Αδύνατη η δέσμευση %d bytes μνήμης"
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Αδύνατη η επαναδέσμευση %d bytes μνήμης"
+
