@@ -2,8 +2,8 @@ Task: laptop
 Section: hware
 Description: Laptop
  This is a collection of tools that laptop users will expect to find on a
- system. It includes some special utilities for IBM Thinkpad, Sony Vaio,
- Toshiba, and Dell Inspiron laptops.
+ system. It includes some special utilities laptops including IBM Thinkpads,
+ Sony Vaios, Toshibas, and Dell Inspirons.
 Key:
  apmd
  pcmcia-cs
@@ -34,3 +34,5 @@ Packages:
  sjog
  # Left out until there is less assembly required.
  #vaiostat
+ # transmeta crusoe
+ longrun
