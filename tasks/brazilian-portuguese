@@ -1,0 +1,21 @@
+Task: brazilian-portuguese
+Test-lang: pt_BR
+Section: l10n
+Maintainer: Otavio Salvador <otavio@debian.org>
+Description: Brazilian Portuguese environment
+ This task installs programs, data files,  and
+ documentation that makes it easier for Brazilian Portuguese speakers
+ to use Debian.
+Key:
+# language-env  - Need add support first.
+ manpages-pt
+Packages: 
+# Dictionaries
+ ibrazilian
+ aspell-pt-br
+# Other packages to i18n common software
+ util-linux-locales
+ mozilla-locale-ptbr
+ kde-i18n-ptbr
+ openoffice.org-l10n-pt-br
+ myspell-pt-br
