@@ -1,3 +1,10 @@
+tasksel (1.0-5) frozen unstable; urgency=low
+
+  * Adds option to queue installs instead of running them immediately (-q)
+  * Fixed a segfault that occurs when no task packages are found on the system
+
+ -- Randolph Chung <tausq@debian.org>  Sun, 16 Jan 2000 00:27:30 -0700
+
 tasksel (1.0-4) frozen unstable; urgency=low
 
   * More changes from Joey Hess; adds buttons to clear up main screen;
