@@ -1,14 +1,15 @@
 # Italian translation for tasksel
-# Copyright (C) 2002 Free Software Foundation, Inc.
-# Riccardo Fabris <frick@linux.it>, 2002.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# This file is distributed under the same license as the tasksel package.
+# Riccardo Fabris <frick@linux.it>, 2002-2004.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 1.12\n"
+"Project-Id-Version: tasksel 1.44\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2002-01-14 12:45+0100\n"
+"PO-Revision-Date: 2004-02-29 23:06+0100\n"
 "Last-Translator: Riccardo Fabris <frick@linux.it>\n"
 "Language-Team: italian <debian-l10n-italian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +35,7 @@ msgid ""
 "I/O error at %s:%d\n"
 "\t"
 msgstr ""
-"Errore I/O in %s:%d\n"
+"Errore di I/O in %s:%d\n"
 "\t"
 
 #: ../slangui.c:18 ../slangui.c:19
@@ -71,7 +72,7 @@ msgstr "Impossibile inizializzare il terminale"
 
 #: ../slangui.c:221
 msgid "Unable to initialize screen output"
-msgstr "Impossibile inizializzare l'output dello schermo"
+msgstr "Impossibile inizializzare l'output sullo schermo"
 
 #: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
@@ -80,7 +81,7 @@ msgstr "Impossibile inizializzare la tastiera"
 #: ../slangui.c:239
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "Debian Task Installer v%s - (c) 1999-2003 SPI e altri"
+msgstr "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -88,7 +89,7 @@ msgstr "^Finito"
 
 #: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
-msgstr "^Info sul task"
+msgstr "^Info sul Task"
 
 #: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
@@ -126,11 +127,11 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"I task permettono una rapida installazione di pacchetti per realizzare un "
-"certo compito.\n"
+"I task permettono di installare rapidamente gruppi di pacchetti scelti "
+"per svolgere determinati compiti.\n"
 "\n"
-"L'elenco principale riporta una lista di task che si può scegliere "
-"d'installare. I tasti freccia muovono il cursore. Premere INVIO o la barra "
+"L'elenco principale riporta una lista dei task installabili. "
+"I tasti freccia muovono il cursore. Premere INVIO o la barra "
 "spaziatrice commuta la selezione del task su cui si trova il cursore. Si può "
 "anche usare A per selezionare tutti i task, o N per deselezionarli tutti. "
 "Premere Q farà uscire dal programma e iniziare l'installazione dei task "
@@ -211,7 +212,7 @@ msgstr "Non è stato selezionato alcun pacchetto\n"
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
+msgstr "Non è stato trovato alcun task.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
@@ -226,11 +227,3 @@ msgstr "Impossibile allocare %d byte di memoria"
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Impossibile riallocare %d byte di memoria"
-
-#, fuzzy
-#~ msgid ""
-#~ "No tasks found on this system.\n"
-#~ "Did you update your available file? Try running dselect update.\n"
-#~ msgstr ""
-#~ "Non è stato trovato alcun task sul sistema.\n"
-#~ "E` stato aggiornato il file dei task disponibili?\n"
