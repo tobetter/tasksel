@@ -1,7 +1,7 @@
 XGETTEXT = xgettext --keyword=_
 
 %.po:
-	$(XGETTEXT) ../*.c
+	$(XGETTEXT) ../*.[ch]
 
 all: messages.po
 	touch build_stamp
