@@ -1,0 +1,227 @@
+# Italian translation for tasksel
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# Riccardo Fabris <frick@linux.it>, 2002.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel 1.12\n"
+"POT-Creation-Date: 2002-01-13 14:14+0100\n"
+"PO-Revision-Date: 2002-01-14 12:45+0100\n"
+"Last-Translator: Riccardo Fabris <frick@linux.it>\n"
+"Language-Team: italian <debian-l10n-italian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data.c:277 ../data.c:291
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr "Impossibile allocare memoria per il buffer dell'elenco"
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\r\n"
+"\t"
+msgstr ""
+"Errore fatale occorso in %s:%d\r\n"
+"\t"
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\r\n"
+"\t"
+msgstr ""
+"Errore I/O in %s:%d\r\n"
+"\t"
+
+#: ../slangui.c:18 ../slangui.c:19
+msgid "(no description)"
+msgstr "(nessuna descrizione)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr "Utente finale"
+
+#: ../slangui.c:76
+msgid "Servers"
+msgstr "Server"
+
+#: ../slangui.c:77
+msgid "Development"
+msgstr "Sviluppo"
+
+#: ../slangui.c:78
+msgid "Localization"
+msgstr "Localizzazione"
+
+#: ../slangui.c:79
+msgid "Hardware Support"
+msgstr "Supporto hardware"
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr "Varie"
+
+#: ../slangui.c:213
+msgid "Unable to initialize the terminal"
+msgstr "Impossibile inizializzare il terminale"
+
+#: ../slangui.c:215
+msgid "Unable to initialize screen output"
+msgstr "Impossibile inizializzare l'output dello schermo"
+
+#: ../slangui.c:216
+msgid "Unable to initialize keyboard interface"
+msgstr "Impossibile inizializzare la tastiera"
+
+#: ../slangui.c:233
+#, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
+msgstr "Debian Task Installer v%s - (c) 1999-2001 SPI e altri"
+
+#: ../slangui.c:387
+msgid "^Finish"
+msgstr "^Finito"
+
+#: ../slangui.c:395 ../slangui.c:396
+msgid "Task ^Info"
+msgstr "^Info sul task"
+
+#: ../slangui.c:400 ../slangui.c:401
+msgid "^Help"
+msgstr "^Help"
+
+#: ../slangui.c:435
+msgid "Select tasks to install"
+msgstr "Seleziona i task da installare"
+
+#: ../slangui.c:570
+msgid "Ok"
+msgstr "Ok"
+
+#: ../slangui.c:679 ../slangui.c:693 ../slangui.c:804
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr "Indice non consentito: %d >= %d"
+
+#: ../slangui.c:770
+msgid "Help"
+msgstr "Help"
+
+#. TRANS: don't wrap lines because of different screen sizes!
+#: ../slangui.c:771
+msgid ""
+"Tasks allow you to quickly install a selection of packages that performs a "
+"given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
+msgstr ""
+"I task permettono una rapida installazione di pacchetti per realizzare un "
+"certo compito.\n"
+"\n"
+"L'elenco principale riporta una lista di task che si può scegliere d'installare. "
+"I tasti freccia muovono il cursore. Premere INVIO o la barra spaziatrice commuta la "
+"selezione del task su cui si trova il cursore. Si può anche usare A per selezionare "
+"tutti i task, o N per deselezionarli tutti. Premere Q farà uscire dal programma e "
+"iniziare l'installazione dei task selezionati.\n"
+"\n"
+"Grazie per aver scelto Debian.\n"
+"\n"
+"Premere Invio per ritornare alla schermata di selezione dei task"
+
+#: ../slangui.c:812
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Included packages:\n"
+msgstr ""
+"Descrizione:\n"
+"%s\n"
+"\n"
+"Pacchetti contenuti:\n"
+
+#: ../slangui.c:820
+msgid "(no description available)"
+msgstr "(descrizione non disponibile)"
+
+#: ../tasksel.c:26
+msgid "Unknown signal seen"
+msgstr "Ricevuto segnale non previsto"
+
+#: ../tasksel.c:32
+msgid "tasksel install <task>\n"
+msgstr "tasksel install <task>\n"
+
+#: ../tasksel.c:33
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [opzioni]; dove `opzioni' è una combinazione di:\n"
+
+#: ../tasksel.c:34
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- modalità test; non esegue realmente apt-get all'uscita"
+
+#: ../tasksel.c:35
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- accoda le installazioni; non installa i pacchetti con apt-get;\n"
+"\t\tli accoda soltanto in dpkg"
+
+#: ../tasksel.c:36
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- installa tutti i pacchetti con priorità `richiesto'"
+
+#: ../tasksel.c:37
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- installa tutti i pacchetti con priorità `importante'"
+
+#: ../tasksel.c:38
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- installa tutti i pacchetti con priorità `standard'"
+
+#: ../tasksel.c:39
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- lavora a riga di comando; di solito si usa con -r o -i"
+
+#: ../tasksel.c:40
+msgid "-a -- show all tasks, even those with no packages in them"
+msgstr "-a -- mostra tutti i task, anche quelli vuoti"
+
+#: ../tasksel.c:81 ../tasksel.c:116
+msgid "No packages selected\n"
+msgstr "Non è stato selezionato alcun pacchetto\n"
+
+#: ../tasksel.c:168
+msgid ""
+"No tasks found on this system.\n"
+"Did you update your available file?\n"
+msgstr ""
+"Non è stato trovato alcun task sul sistema.\n"
+"E` stato aggiornato il file dei task disponibili?\n"
+
+#: ../util.c:20
+msgid "Cannot allocate memory for strdup"
+msgstr "Impossibile allocare memoria per strdup"
+
+#: ../util.c:38
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr "Impossibile allocare %d byte di memoria"
+
+#: ../util.c:47
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr "Impossibile riallocare %d byte di memoria"
