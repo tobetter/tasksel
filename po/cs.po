@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-07-31 21:32-0400\n"
-"PO-Revision-Date: 2000-05-09 09:37+02:00\n"
-"Last-Translator: Petr Cech <cech@debian.org>\n"
+"PO-Revision-Date: 2003-10-21 16:08+0200\n"
+"Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr ""
+msgstr "Nemohu alokovat pamì» pro výètový buffer"
 
 #: ../macros.h:42
 #, c-format
@@ -24,6 +24,8 @@ msgid ""
 "Fatal error encountered at %s:%d\r\n"
 "\t"
 msgstr ""
+"Kritická chyba na %s:%d\r\n"
+"\t"
 
 #: ../macros.h:51
 #, c-format
@@ -31,35 +33,36 @@ msgid ""
 "I/O error at %s:%d\r\n"
 "\t"
 msgstr ""
+"V/V chyba na %s:%d\r\n"
+"\t"
 
 #: ../slangui.c:18 ../slangui.c:19
-#, fuzzy
 msgid "(no description)"
 msgstr "(popis není k dispozici)"
 
 #: ../slangui.c:75
 msgid "End-user"
-msgstr ""
+msgstr "Koncový u¾ivatel"
 
 #: ../slangui.c:76
 msgid "Hardware Support"
-msgstr ""
+msgstr "Podpora hardware"
 
 #: ../slangui.c:77
 msgid "Servers"
-msgstr ""
+msgstr "Servery"
 
 #: ../slangui.c:78
 msgid "Development"
-msgstr ""
+msgstr "Vývoj"
 
 #: ../slangui.c:79
 msgid "Localization"
-msgstr ""
+msgstr "Lokalizace"
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Rùzné"
 
 #: ../slangui.c:219
 msgid "Unable to initialize the terminal"
@@ -74,9 +77,9 @@ msgid "Unable to initialize keyboard interface"
 msgstr "Nelze nastavit klávesnici"
 
 #: ../slangui.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "(C) 1999-2000 SPI a dal¹í"
+msgstr "Debian Task Installer v%s - (C) 1999-2000 SPI a dal¹í"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -84,16 +87,15 @@ msgstr "^Zkonèi"
 
 #: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
-msgstr "^Informace o tasku"
+msgstr "^Informace o úloze"
 
 #: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
 msgstr "^Nápovìda"
 
 #: ../slangui.c:441
-#, fuzzy
 msgid "Select tasks to install"
-msgstr "Vyberte talk balíky k nainstalování"
+msgstr "Vyberte úlohy k nainstalování"
 
 #: ../slangui.c:576
 msgid "Ok"
@@ -102,7 +104,7 @@ msgstr "Ok"
 #: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
 #, c-format
 msgid "Index out of bounds: %d >= %d"
-msgstr ""
+msgstr "Index mimo meze: %d >= %d"
 
 #: ../slangui.c:776
 msgid "Help"
@@ -110,7 +112,6 @@ msgstr "Nápovìda"
 
 #. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:777
-#, fuzzy
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
 "given task.\n"
@@ -125,16 +126,21 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"Balíky task-* jsou \"metabalíky\". Ty umo¾òují rychlou instalaci výbìru\n"
-"balíkù plnících danou úlohu.\r\rV hlavním nabídka ukazuje seznam v¹ech "
-"úkolù, které mù¾ete nainstalovat. Kurzor se pohybuje ¹ipkami. Stiskem "
-"klávesy Enter nebo mezera zvolíte balík, na který ukazuje kurzor. Stiskem A "
-"zvolíte v¹echny balíky, stiskem N se v¹echny balíky odznaèí. Stisk klávesy Q "
-"ukonèí program a zaène instalování vybraných úkolù.\r\rDìkujeme, ¾e jste si "
-"vybral Debian.\r\rStisknìte Enter k zobrazení hlavní nabídky"
+"Pøipravené úlohy vám umo¾ní rychlý výbìr a instalaci balíkù plnících danou "
+"úlohu.\n"
+"\n"
+"Hlavní nabídka ukazuje seznam v¹ech úloh, které mù¾ete nainstalovat. "
+"Kurzor se pohybuje ¹ipkami. Stiskem klávesy Enter nebo mezera zvolíte "
+"úlohu, na kterou kurzor ukazuje. Stiskem A vyberete v¹echny úlohy, stiskem "
+"N se v¹echny úlohy odznaèí. Stisk klávesy Q ukonèí program a zaène "
+"instalace vybraných úkolù.\n"
+"\n"
+"Dìkujeme, ¾e jste si vybrali Debian.\n"
+"\n"
+"Stisknìte Enter pro zobrazení hlavní nabídky"
 
 #: ../slangui.c:818
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Description:\n"
 "%s\n"
@@ -144,7 +150,7 @@ msgstr ""
 "Popis:\n"
 "%s\n"
 "\n"
-"Závisí na balících:\n"
+"Obsa¾ené balíky:\n"
 
 #: ../slangui.c:826
 msgid "(no description available)"
@@ -156,7 +162,7 @@ msgstr "Zachycen neznámý signál"
 
 #: ../tasksel.c:34
 msgid "tasksel install <task>\n"
-msgstr ""
+msgstr "tasksel install <úloha>\n"
 
 #: ../tasksel.c:35
 msgid "tasksel [options]; where options is any combination of:\n"
@@ -192,34 +198,30 @@ msgstr "-n -- nezobraz UI; obvykle pro pou¾ití s -r nebo -i"
 
 #: ../tasksel.c:42
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr ""
+msgstr "-a -- zobraz v¹echny úlohy, i kdy¾ neobsahují ¾ádné balíky"
 
 #: ../tasksel.c:83 ../tasksel.c:118
 msgid "No packages selected\n"
 msgstr "Nebyl vybrán ¾ádný balík\n"
 
 #: ../tasksel.c:192
-#, fuzzy
 msgid ""
 "No tasks found on this system.\n"
 "Did you update your available file? Try running dselect update.\n"
 msgstr ""
-"V systému nebyl nalezen ¾ádný task balík.\n"
-"Byl soubor available aktualizován?"
+"V systému nebyly nalezeny ¾ádné úlohy.\n"
+"Aktualizovali jste dostupné balíky? Zkuste spustit dselect update.\n"
 
 #: ../util.c:20
 msgid "Cannot allocate memory for strdup"
-msgstr ""
+msgstr "Nemohu alokovat pamì» pro strdup"
 
 #: ../util.c:38
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
-msgstr ""
+msgstr "Nemohu alokovat %d bajtù pamìti"
 
 #: ../util.c:47
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
-msgstr ""
-
-#~ msgid "Debian Task Installer"
-#~ msgstr "Debian Task Installer"
+msgstr "Nemohu realokovat %d bajtù pamìti"
