@@ -450,6 +450,11 @@ sub main {
 	# Add tasks to install.
 	push @aptitude_install, map { task_packages($_, 1) } grep { $_->{_install} } @tasks;
 
+	# Clear screen before running aptitude.
+	if (@aptitude_remove || @aptitude_install) {
+		system("clear");
+	}
+	
 	# Remove any packages we were asked to.
 	if (@aptitude_remove) {
 		if ($options{test}) {
