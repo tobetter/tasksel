@@ -1,17 +1,20 @@
+# translation of tasksel_tasks_po_fi.po.txt.po to Finnish
 # Copyright © 2003 SPI, Inc.
 # Tommi Vainikainen <thv+debian@iki.fi>, 2003.
+# Tapio Lehtonen <tale@debian.org>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 22:52-0500\n"
-"PO-Revision-Date: 2003-10-12 16:20+0300\n"
+"PO-Revision-Date: 2004-01-29 10:33+0200\n"
 "Last-Translator: Tommi Vainikainen <thv+debian@iki.fi>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
 
 #. Description
 #: ../po/debian-tasks.desc:4
@@ -26,13 +29,13 @@ msgid ""
 "of fonts, and a group of basic X clients and utilities."
 msgstr ""
 "Tarjoaa välttämättömät komponentit itsenäiseen työasemaan, jossa käytetään X-"
-"ikkunointijärjestelmää.  Tämä tarjoaa X-kirjastot, X-palvelimen, joukon "
-"kirjasimia ja läjän perus-X-asiakkaita ja -hyötyohjelmia."
+"ikkunointijärjestelmää. Tämä tarjoaa X-kirjastot, X-palvelimen, joukon "
+"kirjasimia ja joukon X-asiakasohjelmia ja -apuohjelmia."
 
 #. Description
 #: ../po/debian-tasks.desc:13
 msgid "Broadband internet connection"
-msgstr "Laajakaista-internet-yhteys"
+msgstr "Laajakaistainen internetyhteys"
 
 #. Description
 #: ../po/debian-tasks.desc:13
@@ -40,8 +43,8 @@ msgid ""
 "This task selects packages that address special needs of computers that "
 "connect to the internet using DSL, Cable, and the like."
 msgstr ""
-"Valitsee paketit, jotka kohdistuvat tietokoneiden, joissa on internet-"
-"yhteytenä DSL, kaapeli tai muu vastaava, erityistarpeisiin."
+"Valitsee paketit Internetiin DSL:llä, kaapelilla tai vastaavalla "
+"kytkeytyvien tietokoneiden erityistarpeisiin."
 
 #. Description
 #: ../po/debian-tasks.desc:21
@@ -53,23 +56,20 @@ msgstr "C ja C++"
 msgid ""
 "A complete environment for development of programs in the C and C++ "
 "programming languages."
-msgstr ""
-"Täydellinen ympäristö ohjelmien kehittämiseen C- ja C++-ohjelmointikielillä."
+msgstr "Täydellinen ympäristö ohjelmien kehittämiseen C- ja C++-ohjelmointikielillä."
 
 #. Description
 #: ../po/debian-tasks.desc:33
-#, fuzzy
 msgid "Catalan environment"
-msgstr "Japanilainen ympäristö"
+msgstr "Katalaanin ympäristö"
 
 #. Description
 #: ../po/debian-tasks.desc:33
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Catalan to help Catalan "
 "speaking people use Debian."
 msgstr ""
-"Asentaa paketit ja dokumentaation saksaksi auttamaan saksankielisiä "
+"Asentaa paketit ja dokumentaation katalaaniksi auttamaan katalaaninkielisiä "
 "henkilöitä Debianin käytössä."
 
 #. Description
@@ -117,7 +117,7 @@ msgid ""
 "Serbian and Ukrainian."
 msgstr ""
 "Asentaa kyrilliset kirjasimet ja muut ohjelmistot, jotka tarvitaan "
-"käytettäessä kyrillistä ympäristöä.  Tämä tukee valkovenäläistä, "
+"käytettäessä kyrillistä ympäristöä. Tämä tukee valkovenäläistä, "
 "bulgarialaista, makedonialaista, venäläistä, serbialaista ja ukrainalaista."
 
 #. Description
@@ -141,8 +141,7 @@ msgstr "SQL-tietokanta"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr "Valitsee asiakas- ja palvelinpaketit PostgreSQL-tietokannalle."
 
 #. Description
@@ -154,7 +153,7 @@ msgid ""
 "locking."
 msgstr ""
 "PostgreSQL on SQL-relaatiotietokanta, josta löytyy parantuva SQL92-"
-"yhteensopivuus ja joitain SQL3-ominaisuuksia.  Se sopii käytettäväksi monen "
+"yhteensopivuus ja joitain SQL3-ominaisuuksia. Se sopii käytettäväksi monen "
 "käyttäjän tietokantana johtuen sen kyvyistä transaktioihin ja "
 "hienojakoisesta lukituksesta."
 
@@ -172,7 +171,7 @@ msgid ""
 "choose between the two."
 msgstr ""
 "Tarjoaa perustyöpöytäohjelmistot sisältäen kokoelman istunnonhallitsimia, "
-"tiedostonhallintaa ja www-selaimia.  Tämä sisältää sekä Gnome- että KDE-"
+"tiedostonhallintaa ja www-selaimia. Tämä sisältää sekä Gnome- että KDE-"
 "työpöydät ja tarjoaa kirjautumisohjelman, joka antaa käyttäjän valita näiden "
 "väliltä."
 
@@ -198,8 +197,7 @@ msgstr "DNS-palvelin"
 
 #. Description
 #: ../po/debian-tasks.desc:122
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Valitsee BIND DNS-palvelimen ja siihen liittyvän ohjeistuksen sekä "
 "hyötyohjelmapaketit."
@@ -241,8 +239,8 @@ msgid ""
 "won't install all the games in Debian, but it is a good starting point."
 msgstr ""
 "Asentaa laajan valikoiman pelejä alkaen perinteisisä tekstipohjaisista Unix-"
-"peleistä korttipeleihin ja nopeatempoisiin toimintapeleihin.  Tämä ei asenna "
-"kaikkia pelejä Debianissa, mutta tarjoaa hyvän lähtökohdan."
+"peleistä korttipeleihin ja nopeatempoisiin toimintapeleihin. Tämä ei asenna "
+"kaikkia pelejä Debianissa, mutta tarjoaa hyvän alun."
 
 #. Description
 #: ../po/debian-tasks.desc:153
@@ -260,18 +258,16 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:162
-#, fuzzy
 msgid "Greek environment"
-msgstr "Ranskalainen ympäristö"
+msgstr "Kreikkalainen ympäristö"
 
 #. Description
 #: ../po/debian-tasks.desc:162
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
 msgstr ""
-"Asentaa paketit ja dokumentaation ranskaksi auttamaan ranskankielisiä "
+"Asentaa paketit ja dokumentaation kreikaksi auttamaan kreikankielisiä "
 "henkilöitä Debianin käytössä."
 
 #. Description
@@ -284,8 +280,7 @@ msgstr "Japanilainen ympäristö"
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
-msgstr ""
-"Asentaa paketit auttamaan japaninkielisiä henkilöitä Debianin käytössä."
+msgstr "Asentaa paketit auttamaan japaninkielisiä henkilöitä Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:183
@@ -310,14 +305,14 @@ msgstr "Debian Jr. on kokoelma Debian-paketteja, jotka soveltuvat lapsille."
 #. Description
 #: ../po/debian-tasks.desc:196
 msgid "Custom kernel compilation"
-msgstr "Räätälöity ytimen kääntö"
+msgstr "Itse muokattavan ytimen kääntö"
 
 #. Description
 #: ../po/debian-tasks.desc:196
 msgid ""
 "This task includes everything you should need to build your own custom "
 "kernel."
-msgstr "Sisältää kaiken mitä tarvitset kääntääksesi oman räätälöidyn ytimesi."
+msgstr "Sisältää kaiken mitä tarvitset kääntääksesi itse muokkaamasi ytimen."
 
 #. Description
 #: ../po/debian-tasks.desc:205
@@ -346,7 +341,7 @@ msgid ""
 "Sony Vaios, Toshibas, and Dell Inspirons."
 msgstr ""
 "Tämä on kokoelma työkaluja, jotka kannettavan tietokoneen käyttäjät "
-"odottavat löytävänsä järjestelmästä.  Tämä sisältää joitain "
+"odottavat löytävänsä järjestelmästä. Tämä sisältää joitain "
 "erikoishyötyohjelmia kannettavilla sisältäen IBM Thinkpadit, Sony Vaiot, "
 "Toshibat ja Dell Inspironit."
 
@@ -401,8 +396,8 @@ msgid ""
 "server."
 msgstr ""
 "Et tarvitse tätä pakettia jos haluat vain lukea nyyssejä jo olemassaolevalta "
-"palvelimelta.  Valitse vain haluamasi nyyssilukijaohjelma ja se tuo mukanaan "
-"tarvittavat palat.  Käytä tätä tehtävää vain jos haluat pitää palvelinta."
+"palvelimelta. Valitse vain haluamasi nyyssilukijaohjelma ja se tuo mukanaan "
+"tarvittavat palat. Käytä tätä tehtävää vain jos haluat pitää palvelinta."
 
 #. Description
 #: ../po/debian-tasks.desc:254
@@ -430,8 +425,8 @@ msgid ""
 "processor, a spreadsheet, a presentation program, and more. This is a rather "
 "large collection of software."
 msgstr ""
-"Tarjoaa toimistotyöskentelyohjelmistosarjan sisältäen tekstinkäsittelyn, "
-"taulukkolaskennan, esitelmäohjelmiston sekä muita.  Tämä on melko suuri "
+"Tarjoaa kokoelman toimistotyöskentelyohjelmia sisältäen tekstinkäsittelyn, "
+"taulukkolaskennan, esitelmäohjelmiston sekä muita. Tämä on melko suuri "
 "ohjelmistokokoelma."
 
 #. Description
@@ -469,7 +464,7 @@ msgid ""
 "Many Python tools and extensions, for developing scripts and simple or "
 "complex applications in Python."
 msgstr ""
-"Monia Python-työkaluja ja -laajennuksia skriptien ja yksinkertaisten tai "
+"Monia Python-työkaluja ja -laajennuksia komentotiedostojen ja yksinkertaisten tai "
 "monimutkaisten sovelluksien kehittämiseen Pythonilla."
 
 #. Description
@@ -498,7 +493,7 @@ msgid ""
 "fairly loose definition of 'scientific', this includes numerical analysis "
 "and computing, statistical data analysis as well as visualization."
 msgstr ""
-"Valitsee paketit, jotka soveltuvat tieteelliseen työhön.  Perustuen melko "
+"Valitsee paketit, jotka soveltuvat tieteelliseen työhön. Perustuen melko "
 "löyhään määritelmään \"tieteelliselle\" tämä sisältää numeerisen analyysin "
 "ja laskennan, tilastollisen data-analyysin sekä visualisoinnin."
 
@@ -528,7 +523,7 @@ msgid ""
 "Tk Toolkit."
 msgstr ""
 "Paketit, joita yleensä käytetään kehitettäessä sovelluksia Tcl-kielellä ja "
-"Tk-työkaluohjelmistoa."
+"Tk-työkaluohjelmistolla."
 
 #. Description
 #: ../po/debian-tasks.desc:334
@@ -562,9 +557,9 @@ msgid ""
 "multi-user unix system with remote users. Do be warned that this includes a "
 "number of daemons."
 msgstr ""
-"Valitsee paketit, jotka tyypillisesti löytyvät perinteisestä monikäyttäjä-"
-"Unix-järjestelmästä, jolla on etäkäyttäjiä.  Varoitus: tämä sisältää monia "
-"palveluita."
+"Valitsee paketit, jotka tyypillisesti löytyvät tavanomaisesta monen käyttäjän ja "
+"etäkäyttäjän Unix-järjestelmästä. Varoitus: tämä sisältää monia "
+"palveluita jotka käynnistyvät asennuksen jälkeen."
 
 #. Description
 #: ../po/debian-tasks.desc:360
@@ -573,8 +568,8 @@ msgstr "Www-palvelin"
 
 #. Description
 #: ../po/debian-tasks.desc:360
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
+msgid "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Valitsee paketit, jotka ovat hyödyllisiä yleiskäyttöisessä www-"
 "palvelinjärjestelmässä."
+
