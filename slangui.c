@@ -1,6 +1,7 @@
-/* $Id: slangui.c,v 1.1 1999/11/21 22:01:04 tausq Exp $ */
+/* $Id: slangui.c,v 1.2 1999/11/21 22:30:55 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
-/* TODO: the redraw code is a bit broken */
+/* TODO: the redraw code is a bit broken, also this module is usually way too many
+ *       global vars */
 #include "slangui.h"
 #include <slang.h>
 #include <libintl.h>
@@ -93,7 +94,7 @@ void ui_resize(void)
   
   _chooser_height = ROWS - 2 * _chooser_rowoffset;
   _chooser_width = COLUMNS - 2 * _chooser_coloffset;
-  ui_drawscreen();
+  ui_drawscreen(0);
   _resized = 1;
 }
 
@@ -140,12 +141,12 @@ int ui_eventloop(void)
 	
       case 'A': case 'a': 
         for (i = 0; i < _taskpackages->count; i++) _taskpackagesary[i]->selected = 1;
-	ui_drawscreen();
+	ui_drawscreen(pos);
 	break;
 		
       case 'N': case 'n':
         for (i = 0; i < _taskpackages->count; i++) _taskpackagesary[i]->selected = 0;
-	ui_drawscreen();
+	ui_drawscreen(pos);
 	break;
 		
       case 'H': case 'h': case SL_KEY_F(1): ui_showhelp(); break;
@@ -163,7 +164,7 @@ int ui_drawbox(int obj, int r, int c, unsigned int dr, unsigned int dc)
   return 0;
 }
 
-int ui_drawscreen(void)
+int ui_drawscreen(int index)
 {
   int i;
   char buf[160];
@@ -191,7 +192,7 @@ int ui_drawscreen(void)
   for (i = 0; i < _taskpackages->count && i < _chooser_height; i++)
     ui_drawchooseritem(i);
   
-  ui_redrawcursor(0);
+  ui_redrawcursor(index);
 
   SLsmg_refresh();
   _resized = 0;
@@ -285,7 +286,7 @@ void ui_toggleselection(int index)
 void ui_showhelp(void)
 {
   ui_dialog(3, 3, ROWS-6, COLUMNS-6, "Help", HELPTXT);
-  ui_drawscreen();
+  ui_drawscreen(0);
 }
 
 void ui_redrawchooser(int index)
@@ -343,6 +344,6 @@ void ui_showpackageinfo(int index)
   }
 
   ui_dialog(2, 2, ROWS-4, COLUMNS-4, pkg->name, buf); 
-  ui_drawscreen();  
+  ui_drawscreen(index);  
 }
 

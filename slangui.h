@@ -13,7 +13,7 @@ int ui_drawbox(int obj, int x, int y, unsigned int dx, unsigned int dy);
 void ui_button(int row, int col, char *txt);
 void ui_dialog(int row, int col, int height, int width, char *title, char *msg);
 
-int ui_drawscreen(void);
+int ui_drawscreen(int index);
 void ui_drawchooseritem(int index);
 void ui_toggleselection(int index);
 void ui_showhelp(void);
