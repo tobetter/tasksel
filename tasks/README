@@ -1,0 +1,41 @@
+Files in this directory with lowercase filenames contain descriptions of
+verious general tasks a user might want to perform with a Debian system,
+lists of packages that they might use to perform the tasks, and grouping
+information to make related sets of tasks appear together.
+
+The file format is a rfs-822 style stanza, with fields named Task, Section,
+Description (which should include an extended descrition), and Packages.
+The Packages field should include the list of packages one per line after
+it, indented by one space each, like so:
+
+Packages:
+ foo
+ bar
+ baz
+ ...
+
+Comments may appear in the file, by prefixing a line with a hash mark
+('#').
+
+Care should be taken when adding new tasks to ensure that the new task
+is suitably generic -- it should be something of value to a large number
+(at least 10%) of our users. It must not perform the same general purpose
+as some other existing task. It must contain packages that are the ones in
+most common use, and software that is of the best perceived quality.
+
+Packages listed for different tasks (and within a single task)
+should not conflict, or the results will be rather arbitrary.
+
+Packages that are only available on some architectures, or that may not
+be available on the user's installation media may still be listed. This 
+is no problem, they are simply ignored in those cases.
+
+Users are given the opportunity to drill down and select/unselect
+individual packages; the tasks they select only serve as a starting
+point. So err on the side of listing too many packages, rather than too
+few (but don't go overboard, since many users will not bother with
+package-level selection at first).
+
+Keep short descriptions short -- very short -- and to the point. Do not
+include details about what individual packages a task includes.
+
