@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-06-10 09:02+0200\n"
-"PO-Revision-Date: 2004-04-10 04:40+0700\n"
+"PO-Revision-Date: 2004-06-25 18:16+0700\n"
 "Last-Translator: I Gede Wijaya S <jaya@te.pdft.ugm.ac.id>\n"
 "Language-Team: Debian Indonesia <debid@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,178 +25,23 @@ msgid ""
 "\t-n -- don't show UI; use with -r or -i usually\n"
 "\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
+"Penggunaan:\n"
+"tasksel install <tugas>\n"
+"tasksel [pilihan-pilihan]; yang mana pilihan-pilihan dapat berupa "
+"kombinasi dari:\n"
+"\t-t -- mode uji coba; jangan melakukan apa-apa\n"
+"\t-r -- pasang semua paket dengan prioritas diperlukan (required)\n"
+"\t-i -- pasang semua paket dengan prioritas penting (important)\n"
+"\t-s -- pasang semua paket dengan prioritas standar\n"
+"\t-n -- jangan mengggunakan UI; biasa digunakan dengan -r atau -i\n"
+"\t-a -- tampilkan semua tugas, bahkan yang tidak memiliki paket didalamnya\n"
 
 #: ../tasksel.pl:250
 msgid "ignoring other selected packages in favour of manual package selection"
-msgstr ""
+msgstr "mengabaikan paket-paket terpilih lainnya demi pemilihan paket "
+"secara manual"
 
 #: ../tasksel.pl:254 ../tasksel.pl:266
 msgid "aptitude failed"
-msgstr ""
+msgstr "aptitude gagal"
 
-#~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "Tidak dapat mengalokasikan memori bagi penyangga enumerasi"
-
-#~ msgid ""
-#~ "Fatal error encountered at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Kesalahan fatal terjadi pada %s:%d\n"
-#~ "\t"
-
-#~ msgid ""
-#~ "I/O error at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Kesalahan I/O pada %s:%d\n"
-#~ "\t"
-
-#~ msgid "(no description)"
-#~ msgstr "(tidak ada deskripsi)"
-
-#~ msgid "End-user"
-#~ msgstr "Pengguna biasa"
-
-#~ msgid "Hardware Support"
-#~ msgstr "Dukungan Perangkat Keras"
-
-#~ msgid "Servers"
-#~ msgstr "Server-server"
-
-#~ msgid "Development"
-#~ msgstr "Pengembangan"
-
-#~ msgid "Localization"
-#~ msgstr "Penerjemahan Bahasa"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Lain-lain"
-
-#~ msgid "Unable to initialize the terminal"
-#~ msgstr "Tidak dapat menginisialisasi konsol"
-
-#~ msgid "Unable to initialize screen output"
-#~ msgstr "Tidak dapat menginisialisasi keluaran ke layar monitor"
-
-#~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "Tidak dapat menginisialisasi antarmuka keyboard"
-
-#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr "Debian Task Installer v%s - (c) 1999-2004 SPI dan pihak lain"
-
-#~ msgid "^Finish"
-#~ msgstr "^Selesai"
-
-#~ msgid "Task ^Info"
-#~ msgstr "^Informasi Task"
-
-#~ msgid "^Help"
-#~ msgstr "^Bantuan"
-
-#~ msgid "Select tasks to install"
-#~ msgstr "Pilih tugas-tugas bagi pemasangan paket"
-
-#~ msgid "Ok"
-#~ msgstr "Ok"
-
-#~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Indeks melebihi batas: %d >= %d"
-
-#~ msgid "Help"
-#~ msgstr "Bantuan"
-
-#~ msgid ""
-#~ "Tasks allow you to quickly install a selection of packages that performs "
-#~ "a given task.\n"
-#~ "\n"
-#~ "The main chooser list shows a list of tasks that you can choose to "
-#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
-#~ "toggles the selection of the task at the cursor. You can also press A to "
-#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-#~ "program and begin installation of your selected tasks.\n"
-#~ "\n"
-#~ "Thank you for using Debian.\n"
-#~ "\n"
-#~ "Press enter to return to the task selection screen"
-#~ msgstr ""
-#~ "Tugas-tugas memperbolehkan anda untuk memasang secara cepat paket-paket "
-#~ "pilihan yang telah ditentukan.\n"
-#~ "\n"
-#~ "Daftar pilihan utama menunjukkan sebuah daftar tugas berisikan pilihan "
-#~ "paket-paket yang ingin anda pasang. Tombol panah menggerakkan kursor. "
-#~ "Menekan ENTER atau SPACEBAR akan menandai pilihan ditempat kursor berada. "
-#~ "Anda juga dapat menekan A untuk memilih semua tugas, atau N untuk tidak "
-#~ "jadi memilih semua tugas. Menekan Q akan keluar dari program ini dan "
-#~ "memulai pemasangan paket yang telah anda tentukan sebelumnya.\n"
-#~ "\n"
-#~ "Terima kasih telah menggunakan Debian.\n"
-#~ "\n"
-#~ "Tekan ENTER untuk kembali ke layar pemilihan tugas"
-
-#~ msgid ""
-#~ "Description:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Included packages:\n"
-#~ msgstr ""
-#~ "Deskripsi:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Paket-paket yang disertakan:\n"
-
-#~ msgid "(no description available)"
-#~ msgstr "(Deskripsi tidak tersedia)"
-
-#~ msgid "Unknown signal seen"
-#~ msgstr "Sinyal asing ditemui"
-
-#~ msgid "tasksel install <task>\n"
-#~ msgstr "tasksel memasang <task>\n"
-
-#~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr ""
-#~ "tasksel [pilihan]; dimana pilihan adalah komibinasi-kombinasi dari:\n"
-
-#~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- mode tes; setelah keluar, jangan menjalankan perintah apt-get"
-
-#~ msgid ""
-#~ "-q -- queue installs; do not install packages with apt-get;\n"
-#~ "\t\tjust queue them in dpkg"
-#~ msgstr ""
-#~ "-q -- paket yang dipasang akan menjalani antrian; jangan memasang paket "
-#~ "dengan perintah apt-get;\n"
-#~ "\t\tcukup antrikan saja ke dpkg"
-
-#~ msgid "-r -- install all required-priority packages"
-#~ msgstr "-r --pasang semua paket yang memiliki prioritas dibutuhkan"
-
-#~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- pasang semua paket yang memiliki prioritas penting"
-
-#~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- pasang semua paket yang memiliki prioritas standar"
-
-#~ msgid "-n -- don't show UI; use with -r or -i usually"
-#~ msgstr ""
-#~ "-n -- jangan tampilkan UI; biasanya digunakan bersama-sama dengan -r atau "
-#~ "-i"
-
-#~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr ""
-#~ "-a -- tampilkan semua tugas, bahkan bagi yang tidak ada paket didalamnya"
-
-#~ msgid "No packages selected\n"
-#~ msgstr "Paket tidak dipilih\n"
-
-#~ msgid "No tasks found on this system.\n"
-#~ msgstr "Tugas tidak ditemukan pada sistem ini.\n"
-
-#~ msgid "Cannot allocate memory for strdup"
-#~ msgstr "Tidak dapat mengalokasikan memori bagi stdrup"
-
-#~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "Tidak dapat mengalokasikan memori sebesar %d byte"
-
-#~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "Tidak dapat mengalokasikan ulang memori sebesar %d byte"
