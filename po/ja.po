@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2004-01-19 22:47+0900\n"
+"POT-Creation-Date: 2004-06-07 22:54+0900\n"
+"PO-Revision-Date: 2004-06-07 22:57+0900\n"
 "Last-Translator: Tomohiro KUBOTA <kubota@debian.org>\n"
 "Language-Team: Debian Japanese List <debian-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -97,20 +97,20 @@ msgstr "ヘルプ (^H)"
 msgid "Select tasks to install"
 msgstr "インストールするタスクを選択してください"
 
-#: ../slangui.c:576
+#: ../slangui.c:582
 msgid "Ok"
 msgstr "了解"
 
-#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
+#: ../slangui.c:691 ../slangui.c:705 ../slangui.c:816
 #, c-format
 msgid "Index out of bounds: %d >= %d"
 msgstr "インデックスが上限を超えています: %d >= %d"
 
-#: ../slangui.c:776
+#: ../slangui.c:782
 msgid "Help"
 msgstr "ヘルプ"
 
-#: ../slangui.c:777
+#: ../slangui.c:783
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
 "given task.\n"
@@ -138,7 +138,7 @@ msgstr ""
 "\n"
 "Enter を押すとタスク選択画面に戻ります。"
 
-#: ../slangui.c:818
+#: ../slangui.c:824
 #, c-format
 msgid ""
 "Description:\n"
@@ -151,7 +151,7 @@ msgstr ""
 "\n"
 "選択パッケージ:\n"
 
-#: ../slangui.c:826
+#: ../slangui.c:832
 msgid "(no description available)"
 msgstr "(説明がありません)"
 
