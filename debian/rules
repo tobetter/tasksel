@@ -9,6 +9,11 @@ commit-stamp:
 build: build-stamp
 build-stamp: 
 	dh_testdir
+	# Handle norwegian translations
+	# Make transition copy while we wait for all users to change from
+	# no_NO to nb_NO
+	cp po/nb.po po/no.po
+	cp tasks/po/nb.po tasks/po/no.po
 	$(MAKE) DEBUG=0
 	touch build-stamp
 
@@ -19,7 +24,7 @@ clean:
 	-$(MAKE) clean
 	dh_clean
 	# Handle norwegian translations
-        # Remove transition copy while we wait for all users to change from
+	# Remove transition copy while we wait for all users to change from
 	# no_NO to nb_NO
 	$(RM) po/no.po
 	$(RM) tasks/po/no.po
@@ -38,11 +43,6 @@ binary-indep: build install
 binary-arch: build install
 	dh_testdir
 	dh_testroot
-	# Handle norwegian translations
-        # Make transition copy while we wait for all users to change from
-        # no_NO to nb_NO
-        cp po/nb.po po/no.po
-        cp tasks/po/nb.po tasks/po/no.po
 	dh_installdocs TODO README
 	dh_installmenu
 	dh_installman
