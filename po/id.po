@@ -1,0 +1,222 @@
+# Debian Indonesia translation of tasksel.
+# I Gede Wijaya S <jaya@te.pdft.ugm.ac.id>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel\n"
+"POT-Creation-Date: 2004-03-12 16:22-0500\n"
+"PO-Revision-Date: 2004-04-10 04:40+0700\n"
+"Last-Translator: I Gede Wijaya S <jaya@te.pdft.ugm.ac.id>\n"
+"Language-Team: Debian Indonesia <debid@yahoogroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data.c:307
+#: ../data.c:321
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr "Tidak dapat mengalokasikan memori bagi penyangga enumerasi"
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\n"
+"\t"
+msgstr ""
+"Kesalahan fatal terjadi pada %s:%d\n"
+"\t"
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\n"
+"\t"
+msgstr ""
+"Kesalahan I/O pada %s:%d\n"
+"\t"
+
+#: ../slangui.c:18
+#: ../slangui.c:19
+msgid "(no description)"
+msgstr "(tidak ada deskripsi)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr "Pengguna biasa"
+
+#: ../slangui.c:76
+msgid "Hardware Support"
+msgstr "Dukungan Perangkat Keras"
+
+#: ../slangui.c:77
+msgid "Servers"
+msgstr "Server-server"
+
+#: ../slangui.c:78
+msgid "Development"
+msgstr "Pengembangan"
+
+#: ../slangui.c:79
+msgid "Localization"
+msgstr "Penerjemahan Bahasa"
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr "Lain-lain"
+
+#: ../slangui.c:219
+msgid "Unable to initialize the terminal"
+msgstr "Tidak dapat menginisialisasi konsol"
+
+#: ../slangui.c:221
+msgid "Unable to initialize screen output"
+msgstr "Tidak dapat menginisialisasi keluaran ke layar monitor"
+
+#: ../slangui.c:222
+msgid "Unable to initialize keyboard interface"
+msgstr "Tidak dapat menginisialisasi antarmuka keyboard"
+
+#: ../slangui.c:239
+#, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
+msgstr "Debian Task Installer v%s - (c) 1999-2004 SPI dan pihak lain"
+
+#: ../slangui.c:393
+msgid "^Finish"
+msgstr "^Selesai"
+
+#: ../slangui.c:401
+#: ../slangui.c:402
+msgid "Task ^Info"
+msgstr "^Informasi Task"
+
+#: ../slangui.c:406
+#: ../slangui.c:407
+msgid "^Help"
+msgstr "^Bantuan"
+
+#: ../slangui.c:441
+msgid "Select tasks to install"
+msgstr "Pilih tugas-tugas bagi pemasangan paket"
+
+#: ../slangui.c:576
+msgid "Ok"
+msgstr "Ok"
+
+#: ../slangui.c:685
+#: ../slangui.c:699
+#: ../slangui.c:810
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr "Indeks melebihi batas: %d >= %d"
+
+#: ../slangui.c:776
+msgid "Help"
+msgstr "Bantuan"
+
+#: ../slangui.c:777
+msgid ""
+"Tasks allow you to quickly install a selection of packages that performs a given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the task at the cursor. You can also press A to select all tasks, or N to deselect all tasks. Pressing Q will exit this program and begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
+msgstr ""
+"Tugas-tugas memperbolehkan anda untuk memasang secara cepat paket-paket pilihan yang telah ditentukan.\n"
+"\n"
+"Daftar pilihan utama menunjukkan sebuah daftar tugas berisikan pilihan paket-paket yang ingin anda pasang. Tombol panah menggerakkan kursor. Menekan ENTER atau SPACEBAR akan menandai pilihan ditempat kursor berada. Anda juga dapat menekan A untuk memilih semua tugas, atau N untuk tidak jadi memilih semua tugas. Menekan Q akan keluar dari program ini dan memulai pemasangan paket yang telah anda tentukan sebelumnya.\n"
+"\n"
+"Terima kasih telah menggunakan Debian.\n"
+"\n"
+"Tekan ENTER untuk kembali ke layar pemilihan tugas"
+
+#: ../slangui.c:818
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Included packages:\n"
+msgstr ""
+"Deskripsi:\n"
+"%s\n"
+"\n"
+"Paket-paket yang disertakan:\n"
+
+#: ../slangui.c:826
+msgid "(no description available)"
+msgstr "(Deskripsi tidak tersedia)"
+
+#: ../tasksel.c:33
+msgid "Unknown signal seen"
+msgstr "Sinyal asing ditemui"
+
+#: ../tasksel.c:39
+#, c-format
+msgid "tasksel install <task>\n"
+msgstr "tasksel memasang <task>\n"
+
+#: ../tasksel.c:40
+#, c-format
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [pilihan]; dimana pilihan adalah komibinasi-kombinasi dari:\n"
+
+#: ../tasksel.c:41
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- mode tes; setelah keluar, jangan menjalankan perintah apt-get"
+
+#: ../tasksel.c:42
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- paket yang dipasang akan menjalani antrian; jangan memasang paket dengan perintah apt-get;\n"
+"\t\tcukup antrikan saja ke dpkg"
+
+#: ../tasksel.c:43
+msgid "-r -- install all required-priority packages"
+msgstr "-r --pasang semua paket yang memiliki prioritas dibutuhkan"
+
+#: ../tasksel.c:44
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- pasang semua paket yang memiliki prioritas penting"
+
+#: ../tasksel.c:45
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- pasang semua paket yang memiliki prioritas standar"
+
+#: ../tasksel.c:46
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- jangan tampilkan UI; biasanya digunakan bersama-sama dengan -r atau -i"
+
+#: ../tasksel.c:47
+msgid "-a -- show all tasks, even those with no packages in them"
+msgstr "-a -- tampilkan semua tugas, bahkan bagi yang tidak ada paket didalamnya"
+
+#: ../tasksel.c:88
+#: ../tasksel.c:123
+#, c-format
+msgid "No packages selected\n"
+msgstr "Paket tidak dipilih\n"
+
+#: ../tasksel.c:197
+#, c-format
+msgid "No tasks found on this system.\n"
+msgstr "Tugas tidak ditemukan pada sistem ini.\n"
+
+#: ../util.c:21
+msgid "Cannot allocate memory for strdup"
+msgstr "Tidak dapat mengalokasikan memori bagi stdrup"
+
+#: ../util.c:39
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr "Tidak dapat mengalokasikan memori sebesar %d byte"
+
+#: ../util.c:48
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr "Tidak dapat mengalokasikan ulang memori sebesar %d byte"
+
