@@ -142,11 +142,10 @@ msgid ""
 "\n"
 "Included packages:\n"
 msgstr ""
-"Описание:"
-"%s"
-""
-"Включени пакети:"
-""
+"Описание:\n"
+"%s\n"
+"\n"
+"Включени пакети:\n"
 
 #: ../slangui.c:826
 msgid "(no description available)"
@@ -159,14 +158,12 @@ msgstr "Прихванат е неизвестен сигнал"
 #: ../tasksel.c:39
 #, c-format
 msgid "tasksel install <task>\n"
-msgstr "tasksel install <задача>"
-""
+msgstr "tasksel install <задача>\n"
 
 #: ../tasksel.c:40
 #, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [опции]; където опциите са всяка комбинация от:"
-""
+msgstr "tasksel [опции]; където опциите са всяка комбинация от:\n"
 
 #: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
@@ -177,8 +174,8 @@ msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- забавено инсталиране; пакетите не се инсталират с apt-get;"
-"		просто се слагат в опашката за инсталиране на dpkg"
+"-q -- забавено инсталиране; пакетите не се инсталират с apt-get;\n"
+"\t\tпросто се слагат в опашката за инсталиране на dpkg"
 
 #: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
@@ -203,14 +200,12 @@ msgstr "-a -- показване на всички задачи, дори тез
 #: ../tasksel.c:88 ../tasksel.c:123
 #, c-format
 msgid "No packages selected\n"
-msgstr "Не са избрани пакети"
-""
+msgstr "Не са избрани пакети\n"
 
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr "Не са намерени задачи в системата."
-""
+msgstr "Не са намерени задачи в системата.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
