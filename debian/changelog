@@ -1,8 +1,11 @@
-tasksel (2.01) UNRELEASED; urgency=low
+tasksel (2.01) unstable; urgency=low
 
   * Joey Hess
     - Add hspell-gui to Hebrew task.
     - Merge office with desktop task, dropping gnucash.
+    - First release of rewritten tasksel to unstable.
+    - Fix base-config conflicts; 2.32 is the first released version to support
+      this tasksel.
   * Translations
     - Eugeniy Meshcheryakov
       - Updated Ukrainian translation
@@ -13,8 +16,10 @@ tasksel (2.01) UNRELEASED; urgency=low
       - Updated Lithuanian programs and debconf translations
     - Claus Hindsgaul
       - Updated Danish translation
+    - Håvard Korsvoll
+      - Updated Norwegian nynorsk translation of tasks. Closes: #249684
 
- -- Christian Perrier <bubulle@kheops.frmug.org>  Tue, 15 Jun 2004 08:26:08 +0200
+ -- Joey Hess <joeyh@debian.org>  Wed, 23 Jun 2004 11:41:16 -0400
 
 tasksel (2.00) experimental; urgency=low
 
