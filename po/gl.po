@@ -1,18 +1,21 @@
+# translation of gl.po to Galician
 # Galician translation of Debian's tasksel.
 # Copyright (C) 2001 Jacobo Tarrío Barreiro
 # Jacobo Tarrio <jtarrio@trasno.net>, 2001.
+# Héctor Fernández López <trorrr@yahoo.es>, 2004
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel\n"
+"Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-06-10 09:02+0200\n"
-"PO-Revision-Date: 2001-11-24 16:13+0100\n"
-"Last-Translator: Jacobo Tarrio <jtarrio@trasno.net>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
+"PO-Revision-Date: 2004-06-24 22:40+0200\n"
+"Last-Translator: Héctor Fernández López <trorrr@yahoo.es>\n"
+"Language-Team: Galician <trasno@ceu.fi.udc.es>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.1\n"
 
 #: ../tasksel.pl:188
 msgid ""
@@ -26,14 +29,23 @@ msgid ""
 "\t-n -- don't show UI; use with -r or -i usually\n"
 "\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
+"Uso:\n"
+"tasksel install <tarefa>\n"
+"tasksel [opcións]; opción pode ser unha combinación de::\n"
+"\t-t -- modo de proba (non cambia nada en realidade)\n"
+"\t-r -- instalar tódolos paquetes con prioridade \"necesario\"\n"
+"\t-i -- instalar tódolos paquetes con prioridade \"importante\" \n"
+"\t-s -- instalar tódolos paquetes con prioridade \"normal\"\n"
+"\t-n -- non mostrar interface de usuario, usao con -r ou -i\n"
+"\t-a -- mostrar tódalas tarefas, aínda que non teñan paquetes\n"
 
 #: ../tasksel.pl:250
 msgid "ignoring other selected packages in favour of manual package selection"
-msgstr ""
+msgstr "ignorando outras paquetes elixidos en favor de outros que foron elixidos de forma manual"
 
 #: ../tasksel.pl:254 ../tasksel.pl:266
 msgid "aptitude failed"
-msgstr ""
+msgstr "aptitude fallou"
 
 #~ msgid "Cannot allocate memory for enumeration buffer"
 #~ msgstr "Non se pode reservar memoria para o buffer de enumeración"
@@ -200,3 +212,4 @@ msgstr ""
 
 #~ msgid "Cannot reallocate %d bytes of memory"
 #~ msgstr "Non se puido reasignar %d bytes de memoria"
+
