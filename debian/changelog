@@ -1,3 +1,19 @@
+tasksel (1.3-3) unstable; urgency=low
+
+  * Modifications to existing tasks:
+    - added language-env to all language tasks that it supports
+    - added netatalk to file-server and print-server
+    - renamed modem to dialup, and added stuff for isdn and pppoe to it.
+      Also removed a few things like lynx from the task.
+    - added aviword to desktop, so there is a basic word processor in there
+    - added gimp to desktop too, it's too handy not to be there
+    - added lyx to tex
+  * New tasks:
+    - web-server -- currently includes only the bare basics, suggestions
+      appreciated.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 23 May 2001 23:50:32 -0400
+
 tasksel (1.3-2) unstable; urgency=low
 
   * Modifications to existing tasks:

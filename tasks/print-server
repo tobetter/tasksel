@@ -2,7 +2,8 @@ Task: print-server
 Section: server
 Description: print server
  This task sets up your system to be a print server. It includes
- the samba server for Windows OS/2 or DOS clients.
+ the samba server for Windows OS/2 or DOS clients, netatalk for Apple
+ clients, and a standard lpr for unix clients.
 Packages:
  samba
  samba-doc

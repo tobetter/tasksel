@@ -1,0 +1,9 @@
+Task: web-server
+Section: server
+Description: web server
+ This task selects a variety of package useful for a general purpose web
+ server system
+Packages:
+ apache
+ analog
+ # TODO: what else? dwww? cgi and/or dynamic web site stuff?

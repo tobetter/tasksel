@@ -1,0 +1,24 @@
+Task: dialup
+Section: hware
+Description: dialup utilities
+ This task selects packages that address special needs of computers
+ using a part-time dialup connection (by modem, ISDN, ADSL, or cable).
+Packages:
+ # Modem:
+ diald
+ dialdcost
+ ppp
+ pppconfig
+ wvdial
+ # ISDN:
+ isdnutils
+ #sox # This is in task-dialup-isdn, but why? Ask maintainer.
+ # DSL, cable:
+ pppoe
+ # Other handy stuff for dialup connections:
+ anacron
+ fetchmail
+ junkbuster
+ wwwoffle
+ leafnode
+ lftp
