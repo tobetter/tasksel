@@ -18,7 +18,7 @@ VERSION=$(shell expr "`dpkg-parsechangelog 2>/dev/null |grep Version:`" : '.*Ver
 LIBS=-lslang -ltextwrap #-lccmalloc -ldl
 OBJS=tasksel.o slangui.o data.o util.o strutl.o
 LANGS=ca cs da de el es fi fr gl hu it ja nl nn no pl pt_BR ru sv zh_TW
-LANGS_DESC=ca da de fi fr ja no pt_BR
+LANGS_DESC=ca da de el fi fr ja no pt_BR
 LOCALEDIR=$(DESTDIR)/usr/share/locale
 COMPILE = $(CC) $(CFLAGS) $(DEFS) -c
 LINK = $(CC) $(CFLAGS) $(DEFS) -o
@@ -40,6 +40,9 @@ updatepo:
 
 $(DESCPO)/build_stamp:
 	$(MAKE) -C $(DESCPO) LANGS="$(LANGS_DESC)"
+
+updatetaskspo:
+	$(MAKE) -C $(DESCPO) update LANGS="$(LANGS_DESC)"
 
 $(PROGRAM): $(OBJS) po/build_stamp
 	$(LINK) $(PROGRAM) $(OBJS) $(LIBS)
