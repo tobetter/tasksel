@@ -484,7 +484,7 @@ sub main {
 	}
 	
 	# And finally, act on selected tasks.
-	if (@aptitude_install) {
+	if (@aptitude_install || $manual_selection) {
 		# If the user selected no tasks and manual package
 		# selection, run aptitude w/o the --visual-preview parameter.
 		if (! @to_install && $manual_selection) {
