@@ -5,8 +5,10 @@ tasksel (1.43) UNRELEASED; urgency=low
     - Update tasks/po/fr.po.
     - Add "cs es nl" to LANGS_DESC in Makefile.
     - Rename po/C.po into po/tasksel.pot.
-    - Add po/tasksel.pot into subversion repository to help translators,
-      but it is not updated if only POT-Creation-Date has changed.
+    - Rename tasks/po/C.po into tasks/po/debian-tasks.pot.
+    - Add po/tasksel.pot and tasks/po/debian-tasks.pot into subversion
+      repository to help translators, but they are not updated if only
+      POT-Creation-Date has changed.
     - Sort tasks when generating debian-tasks.desc so that number lines
       in generated PO files do not change when different users build this
       file.
