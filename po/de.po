@@ -1,0 +1,149 @@
+# Translation file for tasksel to German.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Othmar Pasteka <pasteka@kabsi.at>, 2000.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel 0.1\n"
+"POT-Creation-Date: 2000-05-08 00:03+0200\n"
+"PO-Revision-Date: 2000-05-08 00:12+0200\n"
+"Last-Translator: Othmar Pasteka <pasteka@kabsi.at>\n"
+"Language-Team: German <de@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: ISO-8859-1\n"
+
+#: ../slangui.c:111
+msgid "Unable to initialize the terminal"
+msgstr "Initialisierung des Terminals schlug fehl"
+
+#: ../slangui.c:113
+msgid "Unable to initialize screen output"
+msgstr "Initialisierung der Bildausgabe schlug fehl"
+
+#: ../slangui.c:114
+msgid "Unable to initialize keyboard interface"
+msgstr "Initialisierung der Tastatur schlug fehl"
+
+#: ../slangui.c:131
+msgid "Debian Task Installer"
+msgstr "Debian Paketgruppen Installierer"
+
+#: ../slangui.c:132
+msgid "(c) 1999-2000 SPI and others"
+msgstr "(c) 1999-2000 SPI und andere"
+
+#: ../slangui.c:285
+msgid "^Finish"
+msgstr "^Fertig"
+
+#: ../slangui.c:293 ../slangui.c:294
+msgid "Task ^Info"
+msgstr "Aufgaben ^Info"
+
+#: ../slangui.c:298 ../slangui.c:299
+msgid "^Help"
+msgstr "^Hilfe"
+
+#: ../slangui.c:331
+msgid "Select task packages to install"
+msgstr "Wähle Paketgruppen zum installieren"
+
+#: ../slangui.c:466
+msgid "Ok"
+msgstr "Ok"
+
+#: ../slangui.c:634
+msgid "Help"
+msgstr "Help"
+
+#: ../slangui.c:635
+msgid ""
+"Task packages are \"metapackages\" that allow you to quickly installa "
+"selection of packages that performs a given task.\r\rThe main chooserlist "
+"shows a list of tasks that you can choose to install. The arrow keys moves "
+"the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the "
+"package at the cursor. You can also press A to select all packages, or N to "
+"deselect all packages. Pressing Q will exit this program and begin "
+"installation of your selected tasks.\r\rThank you for using Debian.\r\rPress "
+"enter to return to the task selection screen"
+msgstr ""
+"Paketgruppen sind Gruppierungen von Paketen, die es einem erlauben "
+"schnell und einfach eine Vielzahl von Paketen zu installieren, die ein "
+"gewisses Aufgabengebiet abdecken.\r\rDie Hauptauswahlliste zeigt eine Liste "
+"von Paketgruppen, die man installieren kann. Die Pfeiltasten bewegen den "
+"Cursor. Wenn man ENTER oder die LEERTASTE betätigt wird die Paketgruppe "
+"ausgewählt. Wenn man A drückt, so wählt man alle Paketgruppen aus, oder "
+"N um nichts zu wählen. Q beendet das Programm und startet die Installation "
+"der ausgewählten Paketgruppen.\r\rDanke, dass Sie Debian gewählt haben.\r\r"
+"Drücken Sie ENTER um zur Auswahlliste zurückzukommen"
+
+#: ../slangui.c:669
+#, c-format
+msgid ""
+"Description:\n"
+"%s\n"
+"\n"
+"Dependent packages:\n"
+msgstr ""
+"Beschreibung:\n"
+"%s\n"
+"\n"
+"Abhängige Pakete:\n"
+
+#: ../slangui.c:677
+msgid "(no description available)"
+msgstr "(keine Beschreibung verfügbar)"
+
+#: ../tasksel.c:26
+msgid "Unknown signal seen"
+msgstr "Unbekanntes Signal erhalten"
+
+#: ../tasksel.c:32
+msgid "tasksel [options]; where options is any combination of:\n"
+msgstr "tasksel [Optionen]; Optionen können folgende Kombinationen sein:\n"
+
+#: ../tasksel.c:33
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- Test Modus; apt-get wird beim Verlassen nicht ausgeführt"
+
+#: ../tasksel.c:34
+msgid ""
+"-q -- queue installs; do not install packages with apt-get;\n"
+"\t\tjust queue them in dpkg"
+msgstr ""
+"-q -- Installation aufschieben; Pakete werden nicht mit apt-get installiert;\n"
+"\t\tsie werden von dpkg installiert"
+
+#: ../tasksel.c:35
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- installiere alle Pakete mit Priorität \"required\""
+
+#: ../tasksel.c:36
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- installiere alle Pakete mit Priorität \"important\""
+
+#: ../tasksel.c:37
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- installiere alle Pakete mit Priorität \"standard\""
+
+#: ../tasksel.c:38
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr "-n -- zeige die Bedienoberfläche nicht; normalerweisemit -r oder -i aufgerufen"
+
+#: ../tasksel.c:72
+msgid "No packages selected\n"
+msgstr "Keine Pakete ausgewählt\n"
+
+#: ../tasksel.c:100
+msgid "No packages selected\n"
+msgstr "Keine Pakete ausgewählt\n"
+
+#: ../tasksel.c:140
+msgid ""
+"No task packages found on this system.\n"
+"Did you update your available file?"
+msgstr ""
+"Keine Paketgruppen auf diesem System gefunden.\n"
+"Wurde die \"available\" Datei aktualisiert?"
