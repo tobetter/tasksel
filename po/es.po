@@ -1,146 +1,232 @@
 # Spanish translation for tasksel
 # Copyright (C) 2000 Software in the Public Interest, Inc.
 # Enrique Zanardi <ezanard@debian.org>, 2000.
+# Javier Fernandez-Sanguino <jfs@debian.org>, 2003
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 0.1\n"
-"POT-Creation-Date: 2000-08-24 16:00+0100\n"
-"PO-Revision-Date: 2000-08-24 16:07+0100\n"
-"Last-Translator: Enrique Zanardi <ezanard@debian.org>\n"
+"POT-Creation-Date: 2003-03-06 23:13+0100\n"
+"PO-Revision-Date: 2003-03-06 23:15+0100\n"
+"Last-Translator: Javier Fernandez-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team: Debian Spanish Team <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: ../slangui.c:111
+#: ../data.c:277 ../data.c:291
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr "No puedo resevar memoria para el búfer de enumeración"
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\r\n"
+"\t"
+msgstr ""
+"Se encontró un error fata en %s:%d\r\n"
+"\t"
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\r\n"
+"\t"
+msgstr ""
+"Error de E/S en %s:%d\r\n"
+"\t"
+
+#: ../slangui.c:18 ../slangui.c:19
+msgid "(no description)"
+msgstr "(no hay descripción)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr "Usuario final"
+
+#: ../slangui.c:76
+msgid "Servers"
+msgstr "Servidores"
+
+#: ../slangui.c:77
+msgid "Development"
+msgstr "Desarrollo"
+
+#: ../slangui.c:78
+msgid "Localization"
+msgstr "Localización"
+
+#: ../slangui.c:79
+msgid "Hardware Support"
+msgstr "Soporte de hardware"
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr "Miscelánea"
+
+#: ../slangui.c:213
 msgid "Unable to initialize the terminal"
 msgstr "No puedo inicializar el terminal"
 
-#: ../slangui.c:113
+#: ../slangui.c:215
 msgid "Unable to initialize screen output"
 msgstr "No puedo inicializar la salida por pantalla"
 
-#: ../slangui.c:114
+#: ../slangui.c:216
 msgid "Unable to initialize keyboard interface"
 msgstr "No puedo inicializar la interfaz de teclado"
 
-#: ../slangui.c:131
-msgid "Debian Task Installer"
-msgstr "Instalador de Tareas de Debian"
+#: ../slangui.c:233
+msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
+msgstr "Instalador de tareas de Debian v %s (C) 1999-2001 SPI y otros"
 
-#: ../slangui.c:132
-msgid "(c) 1999-2000 SPI and others"
-msgstr "(C) 1999-2000 SPI y otros"
-
-#: ../slangui.c:285
+#: ../slangui.c:387
 msgid "^Finish"
 msgstr "^Finalizar"
 
-#: ../slangui.c:293 ../slangui.c:294
+#: ../slangui.c:395 ../slangui.c:396
 msgid "Task ^Info"
 msgstr "^Información de la tarea"
 
-#: ../slangui.c:298 ../slangui.c:299
+#: ../slangui.c:400 ../slangui.c:401
 msgid "^Help"
 msgstr "Ayuda (^H)"
 
-#: ../slangui.c:331
-msgid "Select task packages to install"
-msgstr "Escoja los paquetes de tareas que desee instalar"
+#: ../slangui.c:435
+msgid "Select tasks to install"
+msgstr "Escoja las tareas que desee instalar"
 
-#: ../slangui.c:466
+#: ../slangui.c:570
 msgid "Ok"
 msgstr "Aceptar"
 
-#: ../slangui.c:634
+#: ../slangui.c:679 ../slangui.c:693 ../slangui.c:804
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr "Índice fuera de rango: %d >= %d"
+
+#: ../slangui.c:770
 msgid "Help"
 msgstr "Ayuda"
 
-#: ../slangui.c:635
+#. TRANS: don't wrap lines because of different screen sizes!
+#: ../slangui.c:771
 msgid ""
-"Task packages are \"metapackages\" that allow you to quickly installa "
-"selection of packages that performs a given task.\r\rThe main chooserlist "
-"shows a list of tasks that you can choose to install. The arrow keys moves "
-"the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the "
-"package at the cursor. You can also press A to select all packages, or N to "
-"deselect all packages. Pressing Q will exit this program and begin "
-"installation of your selected tasks.\r\rThank you for using Debian.\r\rPress "
-"enter to return to the task selection screen"
+"Tasks allow you to quickly install a selection of packages that performs a "
+"given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
 msgstr ""
-"Los paquetes de tareas son \"metapaquetes\" que le permiten instalar "
-"rápidamente una selección de paquetes que desempeñan una tarea dada.\r\r"
+"Las le permite le permiten instalar rápidamente una selección de paquetes "
+"que desempeñan una tarea dada.\n"
+"\n"
 "La lista principal muestra una serie de tareas que usted puede escoger para "
 "instalar. Las teclas de flechas mueven el cursor. Pulsando INTRO o la BARRA "
-"ESPACIADORA cambia el estado de la selección del paquete que esté bajo el "
-"cursor. Puede pulsar también A para seleccionar todos los paquetes, o N para "
-"deseleccionar todos los paquetes. Pulsando Q saldrá del programa y comenzará "
-"la instalación de las tareas seleccionadas.\r\rGracias por usar Debian.\r\r"
+"ESPACIADORA cambia el estado de la selección de la tarea que esté bajo el "
+"cursor. Puede pulsar también A para seleccionar todas las tareas, o N para "
+"deseleccionar todas las tareas. Pulsando Q saldrá del programa y comenzará "
+"la instalación de las tareas seleccionadas.\n"
+"\n"
+"Gracias por usar Debian.\n"
+"\n"
 "Pulse intro para regresar a la pantalla de selección de tareas"
 
-#: ../slangui.c:669
-#, c-format
+#: ../slangui.c:812
 msgid ""
 "Description:\n"
 "%s\n"
 "\n"
-"Dependent packages:\n"
+"Included packages:\n"
 msgstr ""
 "Descripción:\n"
 "%s\n"
 "\n"
-"Paquetes que dependen de éste:\n"
+"Paquetes incluidos:\n"
 
-#: ../slangui.c:677
+#: ../slangui.c:820
 msgid "(no description available)"
 msgstr "(no hay descripción disponible)"
 
-#: ../tasksel.c:26
+#: ../tasksel.c:28
 msgid "Unknown signal seen"
 msgstr "He recibido una señal desconocida"
 
-#: ../tasksel.c:32
+#: ../tasksel.c:34
+msgid "tasksel install <task>\n"
+msgstr "instalación de tasksel <tarea>\n"
+
+#: ../tasksel.c:35
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [opciones]; donde opciones es una combinación de:\n"
 
-#: ../tasksel.c:33
+#: ../tasksel.c:36
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- modo de pruebas; no ejecuta apt-get al salir"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:37
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- pon las instalaciones en la cola; no instala los paquetes con "
-"apt-get;\n"
+"-q -- pon las instalaciones en la cola; no instala los paquetes con apt-"
+"get;\n"
 "\t\tsólo los pone en la cola en dpkg"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:38
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- instala todos los paquetes con prioridad 'requerido'"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:39
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- instala todos los paquetes con prioridad 'importante'"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:40
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- instala todos los paquetes con prioridad 'estandar'"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:41
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr ""
 "-n -- no muestra la interfaz de usuario; normalmente se usará con -r o -i"
 
-#: ../tasksel.c:72 ../tasksel.c:100
+#: ../tasksel.c:42
+msgid "-a -- show all tasks, even those with no packages in them"
+msgstr "-a -- muestra todas las tareas, incluso aquellas que no tienen "
+"paquetes"
+
+#: ../tasksel.c:83 ../tasksel.c:118
 msgid "No packages selected\n"
 msgstr "No se ha seleccionado ningún paquete\n"
 
-#: ../tasksel.c:140
+#: ../tasksel.c:190
 msgid ""
-"No task packages found on this system.\n"
-"Did you update your available file?"
+"No tasks found on this system.\n"
+"Did you update your available file?\n"
 msgstr ""
-"No se encontraron paquetes de tareas para este sistema.\n"
+"No se encontraron tareas en este sistema.\n"
 "¿Está seguro de que actualizó su fichero de paquetes disponibles?"
+
+#: ../util.c:20
+msgid "Cannot allocate memory for strdup"
+msgstr "No se pudo reservar memoria para strdup"
+
+#: ../util.c:38
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr "No se pudieron reservar %d bytes de memoria"
+
+#: ../util.c:47
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr "No se pudieron reasignar %d bytes de memoria"
+
+#~ msgid "Debian Task Installer"
+#~ msgstr "Instalador de Tareas de Debian"
