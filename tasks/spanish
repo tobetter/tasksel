@@ -13,10 +13,26 @@ Essential:
  manpages-es
  user-es
 Packages: 
+# System-wide configuration
  locales
  language-env
- doc-linux-es
  user-es
+# Dictionaries
  ispanish
  wspanish
+ aspell-es
+# Useful documentation for spanish-speakers
+ debian-guide-es
+ debrecipes-es
+ debian-reference-es
+ doc-debian-es
+ doc-linux-es
+ doc-es-misc
+ linux-tutorial-es
  manpages-es
+# Other packages to i18n common software
+ util-linux-locales
+ mozilla-locale-es
+ kde-i18n-es
+ openoffice.org-l10n-es
+ openoffice.org-spellcheck-es
