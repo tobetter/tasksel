@@ -1,7 +1,12 @@
 tasksel (1.37) UNRELEASED; urgency=low
 
-  * Miroslav Kure:
+  * Miroslav Kure
     - Update po/cs.po
+  * Denis Barbier
+    - Set LANGS_DESC="de fi fr ja no pt_BR" in top-level Makefile
+      to build and ship all translated tasks files, only de and ja
+      were previously installed.  Patch provided by Andre Luis Lopes.
+      Closes: #214108
 
  -- Denis Barbier <barbier@debian.org>  Tue, 21 Oct 2003 22:21:14 +0200
 
