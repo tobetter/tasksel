@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2000-10-21 15:26+0800\n"
+"PO-Revision-Date: 2004-02-20 10:58+0100\n"
 "Last-Translator: Anthony Wong <ypwong@debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=Big5\n"
@@ -32,9 +32,8 @@ msgid ""
 msgstr ""
 
 #: ../slangui.c:18 ../slangui.c:19
-#, fuzzy
 msgid "(no description)"
-msgstr "（沒有說明）"
+msgstr ""
 
 #: ../slangui.c:75
 msgid "End-user"
@@ -62,41 +61,41 @@ msgstr ""
 
 #: ../slangui.c:219
 msgid "Unable to initialize the terminal"
-msgstr "未能把終端初始化"
+msgstr "����端��"
 
 #: ../slangui.c:221
 msgid "Unable to initialize screen output"
-msgstr "未能把螢幕輸出初始化"
+msgstr "����輸���"
 
 #: ../slangui.c:222
 msgid "Unable to initialize keyboard interface"
-msgstr "未能把鍵盤介面初始化"
+msgstr "�������"
 
 #: ../slangui.c:239
 #, fuzzy, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr "(c) 1999-2000 SPI 及其他"
+msgstr "(c) 1999-2000 SPI ��"
 
 #: ../slangui.c:393
 msgid "^Finish"
-msgstr "完成"
+msgstr "�"
 
 #: ../slangui.c:401 ../slangui.c:402
 msgid "Task ^Info"
-msgstr "任務資訊"
+msgstr "任���"
 
 #: ../slangui.c:406 ../slangui.c:407
 msgid "^Help"
-msgstr "幫助"
+msgstr "幫�"
 
 #: ../slangui.c:441
 #, fuzzy
 msgid "Select tasks to install"
-msgstr "請選擇要安裝的任務軟件套件"
+msgstr "諸����任��件��"
 
 #: ../slangui.c:576
 msgid "Ok"
-msgstr "完結"
+msgstr "��"
 
 #: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
 #, c-format
@@ -105,7 +104,7 @@ msgstr ""
 
 #: ../slangui.c:776
 msgid "Help"
-msgstr "幫助"
+msgstr "幫�"
 
 #: ../slangui.c:777
 #, fuzzy
@@ -123,15 +122,15 @@ msgid ""
 "\n"
 "Press enter to return to the task selection screen"
 msgstr ""
-"「任務軟件套件」可以助你安裝一系列用來達成某一任務的軟件。\n"
+"任��件�件�以�����系���任��件�\n"
 "\n"
-"在第一個選單中顯示了一些可供安裝的任務。你可用方向鍵來移動浮標，按 ENTER 或空"
-"白鍵來選擇套件。你亦可按 A 來選擇所有套件，或按 N 來取消選擇所有套件。按 Q 便"
-"會脫離程式並開始安裝選擇了的任務。\n"
+"�第丸�中顯示��亯���任�佯����移�浮�� ENTER �"
+"�����件��亦�� A 侸��件� N �涸��件� Q �"
+"����並���裸��任�\n"
 "\n"
-"謝謝你使用 Debian。\n"
+"���使� Debian\n"
 "\n"
-"請按 Enter 回到任務選擇畫面。"
+"� Enter �任����"
 
 #: ../slangui.c:818
 #, fuzzy, c-format
@@ -141,18 +140,18 @@ msgid ""
 "\n"
 "Included packages:\n"
 msgstr ""
-"說明：\n"
+"說��\n"
 "%s\n"
 "\n"
-"依賴的套件：\n"
+"�賴��件�\n"
 
 #: ../slangui.c:826
 msgid "(no description available)"
-msgstr "（沒有說明）"
+msgstr "��說��"
 
 #: ../tasksel.c:33
 msgid "Unknown signal seen"
-msgstr "不明的 signal"
+msgstr "� signal"
 
 #: ../tasksel.c:39
 #, c-format
@@ -162,34 +161,34 @@ msgstr ""
 #: ../tasksel.c:40
 #, c-format
 msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [選項]；選項可以是以下的組合：\n"
+msgstr "tasksel [��]Ｘ�以�以���\n"
 
 #: ../tasksel.c:41
 msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t ─ 測試模式，在離開程式時不執行 apt-get"
+msgstr "-t  測試模�Ｈ����丷� apt-get"
 
 #: ../tasksel.c:42
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q ─ queue installs；不用 apt-get 安裝軟件，而只是在 dpkg 表示要安裝它們"
+"-q  queue installs�� apt-get ���件��� dpkg 表示����"
 
 #: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
-msgstr "-r ─ 安裝所有 priority 為 required 的套件"
+msgstr "-r  �� priority  required ��"
 
 #: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
-msgstr "-i ─ 安裝所有 priority 為 important 的套件"
+msgstr "-i  �� priority  important ��"
 
 #: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
-msgstr "-s ─ 安裝所有 priority 為 standard 的套件"
+msgstr "-s  �� priority  standard ��"
 
 #: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n ─ 不顯示介面；通常與 -r 或 -i 連用"
+msgstr ""
 
 #: ../tasksel.c:47
 msgid "-a -- show all tasks, even those with no packages in them"
@@ -198,7 +197,7 @@ msgstr ""
 #: ../tasksel.c:88 ../tasksel.c:123
 #, c-format
 msgid "No packages selected\n"
-msgstr "沒有選擇套件\n"
+msgstr "沸��件\\n"
 
 #: ../tasksel.c:197
 #, c-format
@@ -224,8 +223,8 @@ msgstr ""
 #~ "No tasks found on this system.\n"
 #~ "Did you update your available file? Try running dselect update.\n"
 #~ msgstr ""
-#~ "在這個系統中找不到任務套件。\n"
-#~ "你更新了你的“available”檔案沒有？"
+#~ "��系統中��任�件�\n"
+#~ "佴���available����"
 
 #~ msgid "Debian Task Installer"
-#~ msgstr "Debian 任務安裝介面"
+#~ msgstr "Debian 任����"
