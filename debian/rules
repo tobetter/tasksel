@@ -3,7 +3,7 @@
 commit: commit-stamp
 commit-stamp:
 	dh_testdir
-	cvs commit
+	svn commit
 	touch commit-stamp
 
 build: build-stamp

@@ -26,8 +26,8 @@ LINK = $(CC) $(CFLAGS) $(DEFS) -o
 all: $(PROGRAM) $(TASKDESC) $(DESCPO)/build_stamp
 
 $(TASKDESC): makedesc.pl $(DESCDIR)/[a-z]??*
-	perl doincludes.pl $(DESCDIR)
-	perl makedesc.pl $(DESCDIR) $(TASKDESC)
+	./doincludes.pl $(DESCDIR)
+	./makedesc.pl $(DESCDIR) $(TASKDESC)
 
 %.o: %.c
 	$(COMPILE) $<
@@ -72,7 +72,7 @@ clean:
 # It is run from a cron job, so should only generate output if there are
 # problems.
 override:
-	@cvs up tasks 2>&1 | grep -v ^U | grep -v ".cvspass" || true
-	@perl makeoverride.pl $(DESCDIR) > temp-override
+	@svn up tasks 2>&1 | grep -v ^U || true
+	@./makeoverride.pl $(DESCDIR) > temp-override
 	@cp temp-override /org/ftp.debian.org/scripts/external-overrides/task
 	@rm -f temp-override

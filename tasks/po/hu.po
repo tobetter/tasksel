@@ -11,144 +11,223 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-18 17:34-0700\n"
+"POT-Creation-Date: 2004-01-21 21:11-0500\n"
 "PO-Revision-Date: 2004-01-20 16:21+0100\n"
 "Last-Translator: VERÓK István <vi@fsf.hu>\n"
-"Language-Team: Hungarian Debian team <debian-l10n-hungarian@lists.debian.org>\n"
+"Language-Team: Hungarian Debian team <debian-l10n-hungarian@lists.debian."
+"org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #. Description
 #: ../po/debian-tasks.desc:3
-msgid "Simplified Chinese environment"
-msgstr "Egyszerűsített kínai írásra alkalmas környezet"
-
-#. Description
-#: ../po/debian-tasks.desc:3
-msgid ""
-"This task installs programs, data files, fonts, and documentation that makes "
-"it easier for Chinese speakers to use Debian, using the simplified Chinese "
-"encoding."
-msgstr ""
-"Ez a metacsomag kínaiul beszélők (és egyszerűsített kínai "
-"karakterkódolást használók) számára könnyíti meg a Debian "
-"használatát, ehhez nyújt különféle programokat, adatfájlokat, "
-"betűkészleteket és dokumentációt."
-
-#. Description
-#: ../po/debian-tasks.desc:18
-msgid "C and C++"
-msgstr "C és C++"
-
-#. Description
-#: ../po/debian-tasks.desc:18
-msgid ""
-"A complete environment for development of programs in the C and C++ "
-"programming languages."
-msgstr ""
-"C és C++ programnyelveken végzett fejlesztések számára biztosít "
-"teljesértékű környezetet."
-
-#. Description
-#: ../po/debian-tasks.desc:31
-msgid "X window system"
-msgstr "X ablakozórendszer"
-
-#. Description
-#: ../po/debian-tasks.desc:31
-msgid ""
-"This task provides the essential components for a standalone workstation "
-"running the X Window System. It provides the X libraries, an X server, a set "
-"of fonts, and a group of basic X clients and utilities."
-msgstr ""
-"Ez a metacsomag egy önálló munkaállomáson használt X "
-"ablakozórendszerhez szükséges részeket ad: az X-könyvtárakat, egy"
-"X-szervert, betűkészleteket, néhány alapvető X-klienst és "
-"segédprogramot."
-
-#. Description
-#: ../po/debian-tasks.desc:40
 msgid "Traditional Chinese environment"
 msgstr "Hagyományos kínai írásra alkalmas környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:40
+#: ../po/debian-tasks.desc:3
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
 "encoding."
 msgstr ""
-"Ez a metacsomag kínaiul beszélők (és hagyományos kínai "
-"karakterkódolást használók) számára könnyíti meg a Debian "
-"használatát, ehhez nyújt különféle programokat, adatfájlokat, "
-"betűkészleteket és dokumentációt."
+"Ez a metacsomag kínaiul beszélők (és hagyományos kínai karakterkódolást "
+"használók) számára könnyíti meg a Debian használatát, ehhez nyújt különféle "
+"programokat, adatfájlokat, betűkészleteket és dokumentációt."
 
 #. Description
-#: ../po/debian-tasks.desc:55
-msgid "Cyrillic environment"
-msgstr "Cirillbetűs írásra alkalmas környezet"
+#: ../po/debian-tasks.desc:18
+msgid "Korean environment"
+msgstr "Koreai környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:55
+#: ../po/debian-tasks.desc:18
 msgid ""
-"This task provides Cyrillic fonts and other software you will need in order "
-"to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
-"Serbian and Ukrainian."
+"This task installs programs, data files, fonts, and documentation to make it "
+"easier for Korean speakers to use Debian."
 msgstr ""
-"Ez a metacsomag cirillbetűs betűkészleteket és a cirillbetűs íráshoz "
-"szükséges egyéb programokat tartalmaz. Segítségével lehetővé válik "
-"a fehérorosz, bolgár, macedón, orosz, szerb és ukrán nyelvek "
-"használata."
+"Ez a metacsomag koreaiul beszélőknek szánt programokat, adatfájlokat, "
+"betűkészleteket és dokumentációt telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:65
+#: ../po/debian-tasks.desc:28
+msgid "Custom kernel compilation"
+msgstr "Egyedi rendszermag-fordítás"
+
+#. Description
+#: ../po/debian-tasks.desc:28
+msgid ""
+"This task includes everything you should need to build your own custom "
+"kernel."
+msgstr ""
+"Ez a metacsomag a saját egyedi rendszermagok lefordításához szükséges "
+"dolgokat telepíti."
+
+#. Description
+#: ../po/debian-tasks.desc:37
+msgid "Usenet news server"
+msgstr "Hírcsoport-kiszolgáló"
+
+#. Description
+#: ../po/debian-tasks.desc:37
+msgid ""
+"This task selects the preferred version of the INN news server software for "
+"new Debian installations."
+msgstr "Ez a metacsomag az INN hírkiszolgálót telepíti."
+
+#. Description
+#: ../po/debian-tasks.desc:37
+msgid ""
+"You do not need this package if you merely wish to read news from an "
+"existing server, just select the news reader program you desire and it will "
+"pull in any required pieces. Only use this task if you intend to operate a "
+"server."
+msgstr ""
+"Ha pusztán egy meglevő kiszolgáló nyújtotta híreket kívánja olvasni, nem "
+"szükséges ezt a csomagot telepítenie, elég mindössze egy hírolvasókliens. "
+"Csak saját szolgáltatás működtetéséhez van szükség a kiszolgálóra."
+
+#. Description
+#: ../po/debian-tasks.desc:50
+msgid "Thai environment"
+msgstr "Thai környezet"
+
+#. Description
+#: ../po/debian-tasks.desc:50
+msgid "This task installs packages that make it easier for Thai to use Debian."
+msgstr "Ez a csomag thai nyelven beszélőknek szánt csomagokat telepít."
+
+#. Description
+#: ../po/debian-tasks.desc:59
+msgid "Mail server"
+msgstr "Levelezőkiszolgáló"
+
+#. Description
+#: ../po/debian-tasks.desc:59
+msgid ""
+"This task selects a variety of package useful for a general purpose mail "
+"server system."
+msgstr ""
+"Ez a metacsomag egy általános célú levelezőkiszolgálóban használt csomagokat "
+"választ ki."
+
+#. Description
+#: ../po/debian-tasks.desc:68
+msgid "Conventional Unix server"
+msgstr "Hagyományos Unix-kiszolgáló"
+
+#. Description
+#: ../po/debian-tasks.desc:68
+msgid ""
+"This task selects packages that would typically be found on a conventional "
+"multi-user unix system with remote users. Do be warned that this includes a "
+"number of daemons."
+msgstr ""
+"Ez a metacsomag egy tipikus többfelhasználós (távolról is használható) Unix-"
+"rendszeren előforduló csomagokat telepít. Jó tudnia, hogy ezek közt vannak "
+"daemonokat futtató csomagok is."
+
+#. Description
+#: ../po/debian-tasks.desc:75
+msgid "Norwegian (Bokmaal and Nynorsk) environment"
+msgstr "Norvég (Bokmaal és Nynorsk) környezet"
+
+#. Description
+#: ../po/debian-tasks.desc:75
+msgid ""
+"This task installs packages and documentation in Norwegian to help Norwegian "
+"speaking people use Debian."
+msgstr ""
+"Ez a metacsomag norvégul beszélőknek (és írőknak) szánt csomagokat és "
+"dokumentációt telepít."
+
+#. Description
+#: ../po/debian-tasks.desc:84
+msgid "Games"
+msgstr "Játékok"
+
+#. Description
+#: ../po/debian-tasks.desc:84
+msgid ""
+"Selecting this task will install a broad selection of games, from "
+"traditional textual unix games to card games, to fast-paced arcade games. It "
+"won't install all the games in Debian, but it is a good starting point."
+msgstr ""
+"E metacsomag választásával játékok széleskörű választékát telepíti gépére: "
+"hagyományos szöveges unix-játékokat éppúgy, mint kártyajátékokat vagy gyors "
+"reflexeket igénylő ügyességi játékokat. Nem telepíti a Debianban található "
+"minden játékot, de jó kiindulópontot ad."
+
+#. Description
+#: ../po/debian-tasks.desc:91
+msgid "Java"
+msgstr "Java"
+
+#. Description
+#: ../po/debian-tasks.desc:91
+msgid "A java development environment."
+msgstr "Java fejlesztőkörnyezet."
+
+#. Description
+#: ../po/debian-tasks.desc:99
+msgid "C and C++"
+msgstr "C és C++"
+
+#. Description
+#: ../po/debian-tasks.desc:99
+msgid ""
+"A complete environment for development of programs in the C and C++ "
+"programming languages."
+msgstr ""
+"C és C++ programnyelveken végzett fejlesztések számára biztosít teljesértékű "
+"környezetet."
+
+#. Description
+#: ../po/debian-tasks.desc:111
+msgid "Print server"
+msgstr "Nyomtatókiszolgáló"
+
+#. Description
+#: ../po/debian-tasks.desc:111
+msgid "This task sets up your system to be a print server."
+msgstr ""
+"Ez a metacsomag megosztott nyomtatási képességekkel ruházza fel rendszerét."
+
+#. Description
+#: ../po/debian-tasks.desc:120
+msgid "Spanish environment"
+msgstr "Spanyol környezet"
+
+#. Description
+#: ../po/debian-tasks.desc:120
+msgid ""
+"This task installs programs, data files,  and documentation that makes it "
+"easier for Spanish speakers to use Debian."
+msgstr ""
+"Ez a metacsomag spanyolul beszélőknek szánt programokat, adatfájlokat és "
+"dokumentációt telepít."
+
+#. Description
+#: ../po/debian-tasks.desc:129
 msgid "Danish environment"
 msgstr "Dán környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:65
+#: ../po/debian-tasks.desc:129
 msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
 msgstr ""
-"Ez a metacsomag dánul beszélőknek szánt csomagokat és "
-"dokumentációt telepít."
+"Ez a metacsomag dánul beszélőknek szánt csomagokat és dokumentációt telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:73
-msgid "SQL database"
-msgstr "SQL-adatbázis"
-
-#. Description
-#: ../po/debian-tasks.desc:73
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Ez a metacsomag a PostgreSQL adatbáziskezelő kliens- és "
-"szerveroldali csomagjait telepíti."
-
-#. Description
-#: ../po/debian-tasks.desc:73
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"A PostgreSQL egy SQL nyelven lekérdezhető relációs adatbáziskezelő, "
-"egyre jobban közeledik a teljes SQL92-szabványhoz, és az SQL3 "
-"egyes tulajdonságaival is bír. Alkalmas többfelhasználós "
-"adatbáziselérésre, mivel tud tranzakciókat kezelni és finomfelbontású "
-"zárolást végezni."
-
-#. Description
-#: ../po/debian-tasks.desc:86
+#: ../po/debian-tasks.desc:138
 msgid "Desktop environment"
 msgstr "Grafikus munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:86
+#: ../po/debian-tasks.desc:138
 msgid ""
 "This task provides basic \"desktop\" software, including a variety of "
 "session managers, file managers and web browsers. It incorporates both the "
@@ -156,308 +235,183 @@ msgid ""
 "choose between the two."
 msgstr ""
 "Ez a metacsomag alapvető \"munkaasztal\"-jellegű szoftvereket biztosít, "
-"egyebek közt munkamenet-kezelőket, fájlkezelőket és webböngészőket. "
-"A GNOME- és a KDE-féle asztalt is tartalmazza, a bejelentkezés során "
-"választani is lehet a kettő közt."
+"egyebek közt munkamenet-kezelőket, fájlkezelőket és webböngészőket. A GNOME- "
+"és a KDE-féle asztalt is tartalmazza, a bejelentkezés során választani is "
+"lehet a kettő közt."
 
 #. Description
-#: ../po/debian-tasks.desc:97
-msgid "Dialup internet"
-msgstr "Betárcsázós internetkapcsolat"
+#: ../po/debian-tasks.desc:149
+msgid "Cyrillic environment"
+msgstr "Cirillbetűs írásra alkalmas környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:97
+#: ../po/debian-tasks.desc:149
 msgid ""
-"This task selects packages that address special needs of computers using a "
-"slow part-time dialup connection (by modem, ISDN, or similar)."
+"This task provides Cyrillic fonts and other software you will need in order "
+"to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
+"Serbian and Ukrainian."
 msgstr ""
-"Ez a metacsomag (pl. modemmel, ISDN-nel, stb. létesített) lassú, "
-"időleges internetkapcsolatoknál felmerülő szoftverigényeket elégít ki."
+"Ez a metacsomag cirillbetűs betűkészleteket és a cirillbetűs íráshoz "
+"szükséges egyéb programokat tartalmaz. Segítségével lehetővé válik a "
+"fehérorosz, bolgár, macedón, orosz, szerb és ukrán nyelvek használata."
 
 #. Description
-#: ../po/debian-tasks.desc:106
-msgid "DNS server"
-msgstr "DNS-kiszolgáló"
+#: ../po/debian-tasks.desc:159
+msgid "Russian environment"
+msgstr "Orosz környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:106
+#: ../po/debian-tasks.desc:159
 msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+"This task installs programs and documentation in Russian to help Russian "
+"speaking people use Debian."
 msgstr ""
-"A BIND DNS-kiszolgálócsomagot, valamint hozzá kapcsolódó "
-"dokumentációt és néhány segédprogramot telepít."
+"Ez a metacsomag oroszul beszélőknek szánt programokat és dokumentációt "
+"telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:113
+#: ../po/debian-tasks.desc:168
+msgid "Linux Standard Base"
+msgstr "Linux Standard Base"
+
+#. Description
+#: ../po/debian-tasks.desc:168
+msgid ""
+"This task makes the system compliant with the Linux Standard Base, allowing "
+"you to install and use LSB packages."
+msgstr ""
+"Ez a metacsomag a rendszert a Linux Standard Base szabványhoz igazító "
+"csomagokat telepít, lehetővé teszi ezzel LSB-csomagok telepítését és "
+"használatát."
+
+#. Description
+#: ../po/debian-tasks.desc:177
+msgid "X window system"
+msgstr "X ablakozórendszer"
+
+#. Description
+#: ../po/debian-tasks.desc:177
+msgid ""
+"This task provides the essential components for a standalone workstation "
+"running the X Window System. It provides the X libraries, an X server, a set "
+"of fonts, and a group of basic X clients and utilities."
+msgstr ""
+"Ez a metacsomag egy önálló munkaállomáson használt X ablakozórendszerhez "
+"szükséges részeket ad: az X-könyvtárakat, egyX-szervert, betűkészleteket, "
+"néhány alapvető X-klienst és segédprogramot."
+
+#. Description
+#: ../po/debian-tasks.desc:186
+msgid "Web server"
+msgstr "Webkiszolgáló"
+
+#. Description
+#: ../po/debian-tasks.desc:186
+msgid ""
+"This task selects a packages useful for a general purpose web server system."
+msgstr ""
+"Ez a metacsomag egy általános célú webkiszolgálón hasznos csomagokat telepít."
+
+#. Description
+#: ../po/debian-tasks.desc:194
 msgid "File server"
 msgstr "Fájlkiszolgáló"
 
 #. Description
-#: ../po/debian-tasks.desc:113
+#: ../po/debian-tasks.desc:194
 msgid "This task sets up your system to be a file server."
 msgstr "E metacsomag révén fájlszerveri képességekkel ruházhatja fel gépét."
 
 #. Description
-#: ../po/debian-tasks.desc:121
-msgid "Java"
-msgstr "Java"
-
-#. Description
-#: ../po/debian-tasks.desc:121
-msgid "A java development environment."
-msgstr "Java fejlesztőkörnyezet."
-
-#. Description
-#: ../po/debian-tasks.desc:129
-msgid "French environment"
-msgstr "Francia környezet"
-
-#. Description
-#: ../po/debian-tasks.desc:129
-msgid ""
-"This task installs packages and documentation in French to help French "
-"speaking people use Debian."
-msgstr ""
-"Ez a metacsomag franciául beszélőknek szánt csomagokat és "
-"dokumentációt telepít."
-
-#. Description
-#: ../po/debian-tasks.desc:138
-msgid "Games"
-msgstr "Játékok"
-
-#. Description
-#: ../po/debian-tasks.desc:138
-msgid ""
-"Selecting this task will install a broad selection of games, from "
-"traditional textual unix games to card games, to fast-paced arcade games. It "
-"won't install all the games in Debian, but it is a good starting point."
-msgstr ""
-"E metacsomag választásával játékok széleskörű választékát telepíti "
-"gépére: hagyományos szöveges unix-játékokat éppúgy, mint "
-"kártyajátékokat vagy gyors reflexeket igénylő ügyességi játékokat. "
-"Nem telepíti a Debianban található minden játékot, de jó "
-"kiindulópontot ad."
-
-#. Description
-#: ../po/debian-tasks.desc:145
-msgid "German environment"
-msgstr "Német környezet"
-
-#. Description
-#: ../po/debian-tasks.desc:145
-msgid ""
-"This task installs packages and documentation in German to help German "
-"speaking people use Debian."
-msgstr ""
-"Ez a metacsomag németül beszélőknek szánt csomagokat és "
-"dokumentációt telepít."
-
-#. Description
-#: ../po/debian-tasks.desc:154
+#: ../po/debian-tasks.desc:202
 msgid "Japanese environment"
 msgstr "Japán környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:154
+#: ../po/debian-tasks.desc:202
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
 msgstr ""
-"Ez a metacsomag japánul beszélőknek szánt csomagokat és "
-"dokumentációt telepít."
+"Ez a metacsomag japánul beszélőknek szánt csomagokat és dokumentációt "
+"telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:167
-msgid "Debian Jr."
-msgstr "ifj. Debian"
+#: ../po/debian-tasks.desc:215
+msgid "DNS server"
+msgstr "DNS-kiszolgáló"
 
 #. Description
-#: ../po/debian-tasks.desc:167
-msgid "Debian Jr. is a collection of Debian packages suitable for children."
-msgstr "Az ifj. Debian egy kisgyermekek számára készült "
-"Debian-csomagösszeállítás."
-
-#. Description
-#: ../po/debian-tasks.desc:172
-msgid "Korean environment"
-msgstr "Koreai környezet"
-
-#. Description
-#: ../po/debian-tasks.desc:172
+#: ../po/debian-tasks.desc:215
 msgid ""
-"This task installs programs, data files, fonts, and documentation to make it "
-"easier for Korean speakers to use Debian."
+"Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
-"Ez a metacsomag koreaiul beszélőknek szánt programokat, "
-"adatfájlokat, betűkészleteket és dokumentációt telepít."
+"A BIND DNS-kiszolgálócsomagot, valamint hozzá kapcsolódó dokumentációt és "
+"néhány segédprogramot telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:182
-msgid "Laptop"
-msgstr "Laptop"
+#: ../po/debian-tasks.desc:222
+msgid "Python"
+msgstr "Python"
 
 #. Description
-#: ../po/debian-tasks.desc:182
+#: ../po/debian-tasks.desc:222
 msgid ""
-"This is a collection of tools that laptop users will expect to find on a "
-"system. It includes some special utilities laptops including IBM Thinkpads, "
-"Sony Vaios, Toshibas, and Dell Inspirons."
+"Many Python tools and extensions, for developing scripts and simple or "
+"complex applications in Python."
 msgstr ""
-"Az e metacsomagban található eszközöknek főleg a "
-"laptophasználók fognak örülni. Egyes laptoptípusok számára (pl. IBM "
-"Thinkpad, Sony Vaio, egyes Toshiba modellek, Dell Inspiron, stb.) "
-"külön támogatást is nyújt."
+"Sok Python-eszköz és hozzávaló, egyszerű és bonyolultabb Python-alkalmazások "
+"fejlesztéséhez is."
 
 #. Description
-#: ../po/debian-tasks.desc:192
-msgid "Mail server"
-msgstr "Levelezőkiszolgáló"
-
-#. Description
-#: ../po/debian-tasks.desc:192
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Ez a metacsomag egy általános célú levelezőkiszolgálóban használt "
-"csomagokat választ ki."
-
-#. Description
-#: ../po/debian-tasks.desc:200
-msgid "Usenet news server"
-msgstr "Hírcsoport-kiszolgáló"
-
-#. Description
-#: ../po/debian-tasks.desc:200
-msgid ""
-"This task selects the preferred version of the INN news server software for "
-"new Debian installations."
-msgstr ""
-"Ez a metacsomag az INN hírkiszolgálót telepíti."
-
-#. Description
-#: ../po/debian-tasks.desc:200
-msgid ""
-"You do not need this package if you merely wish to read news from an "
-"existing server, just select the news reader program you desire and it will "
-"pull in any required pieces. Only use this task if you intend to operate a "
-"server."
-msgstr ""
-"Ha pusztán egy meglevő kiszolgáló nyújtotta híreket kívánja olvasni, "
-"nem szükséges ezt a csomagot telepítenie, elég mindössze egy "
-"hírolvasókliens. Csak saját szolgáltatás működtetéséhez van szükség "
-"a kiszolgálóra."
-
-#. Description
-#: ../po/debian-tasks.desc:214
+#: ../po/debian-tasks.desc:231
 msgid "Office environment"
 msgstr "Irodai környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:214
+#: ../po/debian-tasks.desc:231
 msgid ""
 "This task provides a suite of office productivity software, including a word "
 "processor, a spreadsheet, a presentation program, and more. This is a rather "
 "large collection of software."
 msgstr ""
 "Ez a metacsomag irodai munkában hasznos szoftvereket tartalmaz: "
-"szövegszerkesztőt, táblázatkezelőt, bemutatókészítőt, hogy csak "
-"kiragadott példákat említsünk. Az egész gyűjtemény viszonylag "
-"nagyméretű."
+"szövegszerkesztőt, táblázatkezelőt, bemutatókészítőt, hogy csak kiragadott "
+"példákat említsünk. Az egész gyűjtemény viszonylag nagyméretű."
 
 #. Description
-#: ../po/debian-tasks.desc:224
-msgid "Polish environment"
-msgstr "Lengyel környezet"
+#: ../po/debian-tasks.desc:241
+msgid "SQL database"
+msgstr "SQL-adatbázis"
 
 #. Description
-#: ../po/debian-tasks.desc:224
+#: ../po/debian-tasks.desc:241
 msgid ""
-"This task installs packages and documentation in Polish to help Polish "
-"speaking people use Debian."
+"This task selects client and server packages for the PostgreSQL database."
 msgstr ""
-"Ez a metacsomag lengyelül beszélőknek szánt csomagokat és "
-"dokumentációt telepít."
+"Ez a metacsomag a PostgreSQL adatbáziskezelő kliens- és szerveroldali "
+"csomagjait telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:233
-msgid "Print server"
-msgstr "Nyomtatókiszolgáló"
-
-#. Description
-#: ../po/debian-tasks.desc:233
-msgid "This task sets up your system to be a print server."
-msgstr ""
-"Ez a metacsomag megosztott nyomtatási képességekkel "
-"ruházza fel rendszerét."
-
-#. Description
-#: ../po/debian-tasks.desc:242
-msgid "Python"
-msgstr "Python"
-
-#. Description
-#: ../po/debian-tasks.desc:242
+#: ../po/debian-tasks.desc:241
 msgid ""
-"Many Python tools and extensions, for developing scripts and simple or "
-"complex applications in Python."
+"PostgreSQL is an SQL relational database, offering increasing SQL92 "
+"compliance and some SQL3 features.  It is suitable for use with multi-user "
+"database access, through its facilities for transactions and fine-grained "
+"locking."
 msgstr ""
-"Sok Python-eszköz és hozzávaló, egyszerű és bonyolultabb "
-"Python-alkalmazások fejlesztéséhez is."
+"A PostgreSQL egy SQL nyelven lekérdezhető relációs adatbáziskezelő, egyre "
+"jobban közeledik a teljes SQL92-szabványhoz, és az SQL3 egyes "
+"tulajdonságaival is bír. Alkalmas többfelhasználós adatbáziselérésre, mivel "
+"tud tranzakciókat kezelni és finomfelbontású zárolást végezni."
 
 #. Description
-#: ../po/debian-tasks.desc:250
-msgid "Russian environment"
-msgstr "Orosz környezet"
-
-#. Description
-#: ../po/debian-tasks.desc:250
-msgid ""
-"This task installs programs and documentation in Russian to help Russian "
-"speaking people use Debian."
-msgstr ""
-"Ez a metacsomag oroszul beszélőknek szánt programokat és "
-"dokumentációt telepít."
-
-#. Description
-#: ../po/debian-tasks.desc:259
-msgid "Scientific applications"
-msgstr "Tudományos alkalmazások"
-
-#. Description
-#: ../po/debian-tasks.desc:259
-msgid ""
-"This task selects packages which are suitable for scientific work. Under a "
-"fairly loose definition of 'scientific', this includes numerical analysis "
-"and computing, statistical data analysis as well as visualization."
-msgstr ""
-"Ez a metacsomag tudományos munkára fogható csomagokat "
-"telepít. A \"tudományos\" itt viszonylag lazán értendő, idevesszük "
-"a numerikus analízist és különféle számítási módszereket is, "
-"csakúgy, mint a statisztikai adatanalízist és a vizualizációt is."
-
-#. Description
-#: ../po/debian-tasks.desc:266
-msgid "Spanish environment"
-msgstr "Spanyol környezet"
-
-#. Description
-#: ../po/debian-tasks.desc:266
-msgid ""
-"This task installs programs, data files,  and documentation that makes it "
-"easier for Spanish speakers to use Debian."
-msgstr ""
-"Ez a metacsomag spanyolul beszélőknek szánt programokat, "
-"adatfájlokat és dokumentációt telepít."
-
-#. Description
-#: ../po/debian-tasks.desc:275
+#: ../po/debian-tasks.desc:253
 msgid "Tcl/Tk"
 msgstr "Tcl/Tk"
 
 #. Description
-#: ../po/debian-tasks.desc:275
+#: ../po/debian-tasks.desc:253
 msgid ""
 "Packages commonly used in developing applications using the Tcl language and "
 "Tk Toolkit."
@@ -466,77 +420,91 @@ msgstr ""
 "programfejlesztést segítő csomagok."
 
 #. Description
-#: ../po/debian-tasks.desc:284
+#: ../po/debian-tasks.desc:262
+msgid "Polish environment"
+msgstr "Lengyel környezet"
+
+#. Description
+#: ../po/debian-tasks.desc:262
+msgid ""
+"This task installs packages and documentation in Polish to help Polish "
+"speaking people use Debian."
+msgstr ""
+"Ez a metacsomag lengyelül beszélőknek szánt csomagokat és dokumentációt "
+"telepít."
+
+#. Description
+#: ../po/debian-tasks.desc:271
+msgid "Laptop"
+msgstr "Laptop"
+
+#. Description
+#: ../po/debian-tasks.desc:271
+msgid ""
+"This is a collection of tools that laptop users will expect to find on a "
+"system. It includes some special utilities laptops including IBM Thinkpads, "
+"Sony Vaios, Toshibas, and Dell Inspirons."
+msgstr ""
+"Az e metacsomagban található eszközöknek főleg a laptophasználók fognak "
+"örülni. Egyes laptoptípusok számára (pl. IBM Thinkpad, Sony Vaio, egyes "
+"Toshiba modellek, Dell Inspiron, stb.) külön támogatást is nyújt."
+
+#. Description
+#: ../po/debian-tasks.desc:281
 msgid "TeX/LaTeX environment"
 msgstr "TeX/LaTeX környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:284
+#: ../po/debian-tasks.desc:281
 msgid "a TeX/LaTeX environment"
 msgstr "Egy TeX/LaTeX környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:294
-msgid "Conventional Unix server"
-msgstr "Hagyományos Unix-kiszolgáló"
+#: ../po/debian-tasks.desc:290
+msgid "Catalan environment"
+msgstr "Katalán környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:294
+#: ../po/debian-tasks.desc:290
 msgid ""
-"This task selects packages that would typically be found on a conventional "
-"multi-user unix system with remote users. Do be warned that this includes a "
-"number of daemons."
+"This task installs packages and documentation in Catalan to help Catalan "
+"speaking people use Debian."
 msgstr ""
-"Ez a metacsomag egy tipikus többfelhasználós (távolról is "
-"használható) Unix-rendszeren előforduló csomagokat telepít. "
-"Jó tudnia, hogy ezek közt vannak daemonokat futtató "
-"csomagok is."
+"Ez a metacsomag katalánul beszélőknek szánt csomagokat és dokumentációt "
+"telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:301
-msgid "Web server"
-msgstr "Webkiszolgáló"
+#: ../po/debian-tasks.desc:298
+msgid "French environment"
+msgstr "Francia környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:301
+#: ../po/debian-tasks.desc:298
 msgid ""
-"This task selects a packages useful for a general purpose web server system."
+"This task installs packages and documentation in French to help French "
+"speaking people use Debian."
 msgstr ""
-"Ez a metacsomag egy általános célú webkiszolgálón hasznos "
-"csomagokat telepít."
+"Ez a metacsomag franciául beszélőknek szánt csomagokat és dokumentációt "
+"telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:309
-msgid "Thai environment"
-msgstr "Thai környezet"
+#: ../po/debian-tasks.desc:307
+msgid "Debian Jr."
+msgstr "ifj. Debian"
 
 #. Description
-#: ../po/debian-tasks.desc:309
-msgid "This task installs packages that make it easier for Thai to use Debian."
-msgstr "Ez a csomag thai nyelven beszélőknek szánt csomagokat telepít."
-
-#. Description
-#: ../po/debian-tasks.desc:318
-msgid "Linux Standard Base"
-msgstr "Linux Standard Base"
-
-#. Description
-#: ../po/debian-tasks.desc:318
-msgid ""
-"This task makes the system compliant with the Linux Standard Base, allowing "
-"you to install and use LSB packages."
+#: ../po/debian-tasks.desc:307
+msgid "Debian Jr. is a collection of Debian packages suitable for children."
 msgstr ""
-"Ez a metacsomag a rendszert a Linux Standard Base szabványhoz "
-"igazító csomagokat telepít, lehetővé teszi ezzel LSB-csomagok "
-"telepítését és használatát."
+"Az ifj. Debian egy kisgyermekek számára készült Debian-csomagösszeállítás."
 
 #. Description
-#: ../po/debian-tasks.desc:326
+#: ../po/debian-tasks.desc:312
 msgid "Broadband internet connection"
 msgstr "Szélessávú internetkapcsolat"
 
 #. Description
-#: ../po/debian-tasks.desc:326
+#: ../po/debian-tasks.desc:312
 msgid ""
 "This task selects packages that address special needs of computers that "
 "connect to the internet using DSL, Cable, and the like."
@@ -545,44 +513,78 @@ msgstr ""
 "internetkapcsolatoknál felmerülő szoftverigényeket elégít ki."
 
 #. Description
-#: ../po/debian-tasks.desc:334
-msgid "Custom kernel compilation"
-msgstr "Egyedi rendszermag-fordítás"
+#: ../po/debian-tasks.desc:320
+msgid "Scientific applications"
+msgstr "Tudományos alkalmazások"
 
 #. Description
-#: ../po/debian-tasks.desc:334
+#: ../po/debian-tasks.desc:320
 msgid ""
-"This task includes everything you should need to build your own custom "
-"kernel."
+"This task selects packages which are suitable for scientific work. Under a "
+"fairly loose definition of 'scientific', this includes numerical analysis "
+"and computing, statistical data analysis as well as visualization."
 msgstr ""
-"Ez a metacsomag a saját egyedi rendszermagok lefordításához "
-"szükséges dolgokat telepíti."
+"Ez a metacsomag tudományos munkára fogható csomagokat telepít. A \"tudományos"
+"\" itt viszonylag lazán értendő, idevesszük a numerikus analízist és "
+"különféle számítási módszereket is, csakúgy, mint a statisztikai "
+"adatanalízist és a vizualizációt is."
 
 #. Description
-#: ../po/debian-tasks.desc:343
-msgid "Catalan environment"
-msgstr "Katalán környezet"
+#: ../po/debian-tasks.desc:327
+msgid "German environment"
+msgstr "Német környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:343
+#: ../po/debian-tasks.desc:327
 msgid ""
-"This task installs packages and documentation in Catalan to help Catalan "
+"This task installs packages and documentation in German to help German "
 "speaking people use Debian."
 msgstr ""
-"Ez a metacsomag katalánul beszélőknek szánt csomagokat és "
-"dokumentációt telepít."
+"Ez a metacsomag németül beszélőknek szánt csomagokat és dokumentációt "
+"telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:351
-msgid "Norwegian (Bokmaal and Nynorsk) environment"
-msgstr "Norvég (Bokmaal és Nynorsk) környezet"
+#: ../po/debian-tasks.desc:336
+#, fuzzy
+msgid "Greek environment"
+msgstr "Francia környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:351
+#: ../po/debian-tasks.desc:336
+#, fuzzy
 msgid ""
-"This task installs packages and documentation in Norwegian to help Norwegian "
+"This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
 msgstr ""
-"Ez a metacsomag norvégul beszélőknek (és írőknak) szánt "
-"csomagokat és dokumentációt telepít."
+"Ez a metacsomag franciául beszélőknek szánt csomagokat és dokumentációt "
+"telepít."
 
+#. Description
+#: ../po/debian-tasks.desc:344
+msgid "Simplified Chinese environment"
+msgstr "Egyszerűsített kínai írásra alkalmas környezet"
+
+#. Description
+#: ../po/debian-tasks.desc:344
+msgid ""
+"This task installs programs, data files, fonts, and documentation that makes "
+"it easier for Chinese speakers to use Debian, using the simplified Chinese "
+"encoding."
+msgstr ""
+"Ez a metacsomag kínaiul beszélők (és egyszerűsített kínai karakterkódolást "
+"használók) számára könnyíti meg a Debian használatát, ehhez nyújt különféle "
+"programokat, adatfájlokat, betűkészleteket és dokumentációt."
+
+#. Description
+#: ../po/debian-tasks.desc:359
+msgid "Dialup internet"
+msgstr "Betárcsázós internetkapcsolat"
+
+#. Description
+#: ../po/debian-tasks.desc:359
+msgid ""
+"This task selects packages that address special needs of computers using a "
+"slow part-time dialup connection (by modem, ISDN, or similar)."
+msgstr ""
+"Ez a metacsomag (pl. modemmel, ISDN-nel, stb. létesített) lassú, időleges "
+"internetkapcsolatoknál felmerülő szoftverigényeket elégít ki."
