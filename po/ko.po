@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-10 09:02+0200\n"
-"PO-Revision-Date: 2004-06-18 02:36+0900\n"
+"POT-Creation-Date: 2004-07-08 19:35-0400\n"
+"PO-Revision-Date: 2004-07-10 03:01+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <cwryu@debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,6 @@ msgid ""
 "\t-i -- install all important-priority packages\n"
 "\t-s -- install all standard-priority packages\n"
 "\t-n -- don't show UI; use with -r or -i usually\n"
-"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
 "사용법:\n"
 "tasksel install <태스크>\n"
@@ -31,12 +30,11 @@ msgstr ""
 "\t-i -- 중요 우선순위의 꾸러미를 모두 설치합니다\n"
 "\t-s -- 표준 우선순위의 꾸러미를 모두 설치합니다\n"
 "\t-n -- 사용자 인터페이스를 보여주지 않습니다; 보통 -r 혹은 -i와 함께 사용\n"
-"\t-a -- 모든 태스크를 보여 줍니다 (그 안에 꾸러미가 없는 경우도)\n"
 
-#: ../tasksel.pl:250
+#: ../tasksel.pl:249
 msgid "ignoring other selected packages in favour of manual package selection"
 msgstr "다른 방법으로 선택한 꾸러미를 무시하고 수동 꾸러미 선택을 따릅니다"
 
-#: ../tasksel.pl:254 ../tasksel.pl:266
+#: ../tasksel.pl:253 ../tasksel.pl:265
 msgid "aptitude failed"
 msgstr "aptitude 실패"
