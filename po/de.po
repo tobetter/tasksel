@@ -14,53 +14,53 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: ISO-8859-1\n"
 
-#: ../slangui.c:111
+#: ../slangui.c:114
 msgid "Unable to initialize the terminal"
 msgstr "Initialisierung des Terminals schlug fehl"
 
-#: ../slangui.c:113
+#: ../slangui.c:116
 msgid "Unable to initialize screen output"
 msgstr "Initialisierung der Bildausgabe schlug fehl"
 
-#: ../slangui.c:114
+#: ../slangui.c:117
 msgid "Unable to initialize keyboard interface"
 msgstr "Initialisierung der Tastatur schlug fehl"
 
-#: ../slangui.c:131
+#: ../slangui.c:133
 msgid "Debian Task Installer"
-msgstr "Debian Paketgruppen Installierer"
+msgstr "Debian Task Installierer"
 
-#: ../slangui.c:132
+#: ../slangui.c:134
 msgid "(c) 1999-2000 SPI and others"
 msgstr "(c) 1999-2000 SPI und andere"
 
-#: ../slangui.c:285
+#: ../slangui.c:287
 msgid "^Finish"
 msgstr "^Fertig"
 
-#: ../slangui.c:293 ../slangui.c:294
+#: ../slangui.c:295 ../slangui.c:296
 msgid "Task ^Info"
-msgstr "Aufgaben ^Info"
+msgstr "Task ^Info"
 
-#: ../slangui.c:298 ../slangui.c:299
+#: ../slangui.c:300 ../slangui.c:301
 msgid "^Help"
 msgstr "^Hilfe"
 
-#: ../slangui.c:331
+#: ../slangui.c:333
 msgid "Select task packages to install"
-msgstr "Wähle Paketgruppen zum installieren"
+msgstr "Wählen Sie die Tasks zum Installieren"
 
-#: ../slangui.c:466
+#: ../slangui.c:468
 msgid "Ok"
 msgstr "Ok"
 
-#: ../slangui.c:634
+#: ../slangui.c:635
 msgid "Help"
 msgstr "Hilfe"
 
-#: ../slangui.c:635
+#: ../slangui.c:636
 msgid ""
-"Task packages are \"metapackages\" that allow you to quickly installa "
+"Task packages are \"metapackages\" that allow you to quickly install a "
 "selection of packages that performs a given task.\r\rThe main chooserlist "
 "shows a list of tasks that you can choose to install. The arrow keys moves "
 "the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the "
@@ -69,17 +69,16 @@ msgid ""
 "installation of your selected tasks.\r\rThank you for using Debian.\r\rPress "
 "enter to return to the task selection screen"
 msgstr ""
-"Paketgruppen sind Gruppierungen von Paketen, die es einem erlauben "
-"schnell und einfach eine Vielzahl von Paketen zu installieren, die ein "
-"gewisses Aufgabengebiet abdecken.\r\rDie Hauptauswahlliste zeigt eine Liste "
-"von Paketgruppen, die man installieren kann. Die Pfeiltasten bewegen den "
-"Cursor. Wenn man ENTER oder die LEERTASTE betätigt wird die Paketgruppe "
-"ausgewählt. Wenn man A drückt, so wählt man alle Paketgruppen aus, oder "
-"N um nichts zu wählen. Q beendet das Programm und startet die Installation "
-"der ausgewählten Paketgruppen.\r\rDanke, dass Sie Debian gewählt haben.\r\r"
-"Drücken Sie ENTER um zur Auswahlliste zurückzukommen"
+"Tasks sind zusammengehörende Pakete für ein bestimmtes Aufgabengebiet. "
+"Sie erlauben einem schnell und einfach Pakete für einen bestimmten Zweck zu "
+"installieren.\r\rDie Haupt-Auswahlliste zeigt eine Liste von Tasks, die man "
+"installieren kann. Mit den Pfeiltasten bewegt man den Cursor. Mit ENTER oder "
+"der LEERTASTE wählt man den gewünschten Task. Mit A wählt man alle Tasks, "
+"mit N wählt man gar keine Tasks aus. Mit Q beendet man das Programm und "
+"startet die Installation der ausgewählten Tasks.\r\rDanke, dass Sie Debian "
+"gewählt haben.\r\rDrücken Sie ENTER um zur Auswahlliste zurückzukommen."
 
-#: ../slangui.c:669
+#: ../slangui.c:671
 #, c-format
 msgid ""
 "Description:\n"
@@ -90,9 +89,9 @@ msgstr ""
 "Beschreibung:\n"
 "%s\n"
 "\n"
-"Abhängige Pakete:\n"
+"Abhängig von:\n"
 
-#: ../slangui.c:677
+#: ../slangui.c:679
 msgid "(no description available)"
 msgstr "(keine Beschreibung verfügbar)"
 
@@ -102,7 +101,7 @@ msgstr "Unbekanntes Signal erhalten"
 
 #: ../tasksel.c:32
 msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [Optionen]; Optionen können folgende Kombinationen sein:\n"
+msgstr "tasksel [Optionen]; folgende Optionen können Sie kombinieren:\n"
 
 #: ../tasksel.c:33
 msgid "-t -- test mode; don't actually run apt-get on exit"
@@ -113,8 +112,9 @@ msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q -- Installation aufschieben; Pakete werden nicht mit apt-get installiert;\n"
-"\t\tsie werden von dpkg installiert"
+"-q -- Installation aufschieben; Pakete werden nicht mit apt-get "
+"installiert;\n"
+"\t\tsie werden für dpkg vorgemerkt"
 
 #: ../tasksel.c:35
 msgid "-r -- install all required-priority packages"
@@ -130,20 +130,18 @@ msgstr "-s -- installiere alle Pakete mit Priorität \"standard\""
 
 #: ../tasksel.c:38
 msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- zeige die Bedienoberfläche nicht; normalerweise mit -r oder -i aufgerufen"
+msgstr ""
+"-n -- zeigt die Benutzeroberfläche nicht; wird normalerweise mit -r oder -i "
+"aufgerufen"
 
-#: ../tasksel.c:72
+#: ../tasksel.c:78 ../tasksel.c:113
 msgid "No packages selected\n"
 msgstr "Keine Pakete ausgewählt\n"
 
-#: ../tasksel.c:100
-msgid "No packages selected\n"
-msgstr "Keine Pakete ausgewählt\n"
-
-#: ../tasksel.c:140
+#: ../tasksel.c:155
 msgid ""
 "No task packages found on this system.\n"
 "Did you update your available file?"
 msgstr ""
-"Keine Paketgruppen auf diesem System gefunden.\n"
+"Keine Tasks auf diesem System gefunden.\n"
 "Wurde die \"available\" Datei aktualisiert?"
