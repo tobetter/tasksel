@@ -1,19 +1,27 @@
-tasksel (1.44) UNRELEASED; urgency=low
+tasksel (1.44) unstable; urgency=low
 
   * Joey Hess
     - Change from lynx to w3m in unix-server, as the priorities have changed.
-  * Jordi Mallach
-    - Change abiword to abiword-gnome in desktop, as gnome also tries to
-      install abiword-gnome, which conflicts the normal abiword.
-    - Add myspell-ca to catalan.
-    - Set myself as Maintainer: for catalan.
-  * Joey Hess
     - Remove abiword-gnome from the desktop task, since it is pulled in by
       the gnome metapackage.
+    - Kde is fixed, uncomment.
+    - Added "pl" to LANGS_DESC in Makefile.
+    - Hack up \n's in po/bg.po to satisfy msgfmt.
+  * Jordi Mallach
+    - Add myspell-ca to catalan.
+    - Set myself as Maintainer: for catalan.
   * Denis Barbier
     - Convert this changelog to UTF-8.
   * Ognyan Kulev
     - Mention LANGS and LANGS_DESC in README.translators.
+  * GOTO Masanori
+    - Upate Japanese task based on user feedback:
+        (1) removing unexisted packages (ttf-xtt-wadalab-gothic,
+            ttf-xtt-watanabe-mincho)
+        (2) adding useful Japanese fonts (xfonts-ayu, xfonts-kaname,
+            xfonts-mplus, ttf-kochi-gothic, ttf-kochi-mincho)
+        (3) add mozilla-locale-ja.
+      Closes: #229923
 
   * Updated translations:
     - Konstantinos Margaritis
@@ -40,8 +48,13 @@ tasksel (1.44) UNRELEASED; urgency=low
     - Ognyan Kulev
       - Initial Bulgarian translation (po/bg.po and tasks/po/bg.po)
       - Added "bg" to LANGS and LANGS_DESC in Makefile.
+    - André Dahlqvist
+      - Updated Swedish translation (po/sv.po). Closes: #232528
+    - Bartosz Fenski
+      - Added Polish tasks translation (tasks/po/pl.po) and updated
+        po/pl.po. Closes: #231139
 
- -- Ognyan Kulev <ogi@fmi.uni-sofia.bg>  Sun, 15 Feb 2004 16:12:20 +0200
+ -- Joey Hess <joeyh@debian.org>  Sun, 22 Feb 2004 11:41:39 -0500
 
 tasksel (1.43) unstable; urgency=high
 
