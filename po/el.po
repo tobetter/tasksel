@@ -3,16 +3,16 @@
 # translation of de.po to
 # translation of de.po to
 # Translation file for tasksel to German.
-# Copyright (C) 2000, 2003 Free Software Foundation, Inc.
+# Copyright (C) 2000, 2003, 2004 Free Software Foundation, Inc.
 # Othmar Pasteka <pasteka@kabsi.at>, 2000, 2003.
-# Konstantinos Margaritis <markos@debian.org>, 2003.
+# Konstantinos Margaritis <markos@debian.org>, 2003, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-18 23:37+0200\n"
-"PO-Revision-Date: 2003-12-28 19:53EEST\n"
+"PO-Revision-Date: 2004-01-19 21:49EEST\n"
 "Last-Translator: Konstantinos Margaritis <markos@debian.org>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -87,8 +87,7 @@ msgstr "Αδύνατη η αρχικοποίηση της διασύνδεσης
 #: ../slangui.c:239
 #, c-format
 msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
-msgstr ""
-"Εγκαταστάτης Ομάδων Πακέτων του Debian v %s - (c) 1999-2003 SPI και άλλοι"
+msgstr "Εγκαταστάτης Ομάδων Πακέτων του Debian v %s - (c) 1999-2003 SPI και άλλοι"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -223,7 +222,7 @@ msgstr "Δεν επιλέχθηκαν πακέτα\n"
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
+msgstr "Δε βρέθηκαν ομάδες πακέτων στο σύστημα.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
@@ -239,10 +238,3 @@ msgstr "Αδύνατη η δέσμευση %d bytes μνήμης"
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Αδύνατη η επαναδέσμευση %d bytes μνήμης"
 
-#~ msgid ""
-#~ "No tasks found on this system.\n"
-#~ "Did you update your available file? Try running dselect update.\n"
-#~ msgstr ""
-#~ "Δε βρέθηκαν ομάδες πακέτων στο σύστημα.\n"
-#~ "Μήπως δεν ανανεώσατε το αρχείο διαθέσιμων πακέτων available; Δοκιμάστε να "
-#~ "τρέξετε dselect update.\n"
