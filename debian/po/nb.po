@@ -1,0 +1,69 @@
+# translation of tasksel_debian.po to Norsk Bokmål
+# translation of tasksel_debian.po to Norwegian bokmål
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
+#    Developers do not need to manually edit POT or PO files.
+# Axel Bojer <axelb@skolelinux.no>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel_debian\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"PO-Revision-Date: 2004-08-29 23:12+0200\n"
+"Last-Translator: Axel Bojer <axelb@skolelinux.no>\n"
+"Language-Team: Norsk Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#. Type: multiselect
+#. Description
+#: ../templates:4
+msgid ""
+"At the moment, only the core of Debian is installed. To tune the "
+"installation to your needs, you can choose to install one or more of the "
+"following predefined collections of software. Experienced users may prefer "
+"to select packages manually."
+msgstr ""
+"Nå er det bare Debians grunnsystem som er installert. For å tilpasse "
+"installasjonen etter dine ønsker så kan du velge å installere en eller flere "
+"av de følgende forhåndsvalgte gruppene av programvare. Erfarne brukere vil "
+"kanskje foretrekke å velge pakker manuelt."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:12
+msgid "${CHOICES}, manual package selection"
+msgstr "${CHOICES}, manuelt pakkevalg"
+
+#. Type: multiselect
+#. Description
+#: ../templates:13
+msgid "Choose software to install:"
+msgstr "Velg hvilke programmer du vil installere:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:13
+msgid ""
+"You can choose to install one or more of the following predefined "
+"collections of software."
+msgstr ""
+"Du kan velge å installere en eller flere av de forhåndsvalgte samlingene med "
+"programvare."
+
+# Eller mener de: Utvalgte Debianprogrammer?
+#. Type: title
+#. Description
+#: ../templates:19
+msgid "Debian software selection"
+msgstr "Programvareutvalg for Debian"
