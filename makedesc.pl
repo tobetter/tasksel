@@ -30,7 +30,7 @@ use File::Find;
 find(\&processfile, $dir);
 
 sub processfile {
-	return unless /^[-_.A-Za-z0-9]+$/ and -f $_;
+	return unless /^[-_.a-z0-9]+$/ and -f $_;
 	open (IN, $_) or die "$_: $!";
 	my %fields;
 	my $field="";
