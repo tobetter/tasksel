@@ -4,6 +4,10 @@ Description: Russian environment
  This task installs modifications and documentation in Russian
  to help Russian speaking people using Debian.
 Maintainer: Peter Novodvorsky <nidd@debian.org>
+Essential:
+ locales
+ language-env
+ manpages-ru
 Packages:
  locales
  language-env

@@ -3,6 +3,10 @@ Section: l10n
 Description: Polish environment
  This task installs packages and documentation in Polish
  to help Polish speaking people use Debian.
+Essential:
+ locales
+ manpages-pl
+ language-env
 Packages:
  locales
  manpages-pl

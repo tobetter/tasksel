@@ -4,15 +4,24 @@ lists of packages that they might use to perform the tasks, and grouping
 information to make related sets of tasks appear together.
 
 The file format is a rfc-822 style stanza, with fields named Task, Section,
-Description (which should include an extended descrition), and Packages.
-The Packages field should include the list of packages one per line after
-it, indented by one space each, like so:
+Description (which should include an extended descrition), Essential, and
+Packages. The Packages field should include the list of packages one per
+line after it, indented by one space each, like so:
 
 Packages:
  foo
  bar
  baz
  ...
+
+When the task is selected, any of those packages that are available will be
+selected.
+
+The Essential field is the same, but packages listed in it must be
+available or the task should not be displayed at all. Items listed in the
+Essential field must be re-listed in the Packages field, currently, until
+the scripts that generate the overrides info are updated to know about this
+new field.
 
 Comments may appear in the file, by prefixing a line with a hash mark
 ('#').
@@ -28,7 +37,8 @@ should not conflict, or the results will be rather arbitrary.
 
 Packages that are only available on some architectures, or that may not
 be available on the user's installation media may still be listed. This 
-is no problem, they are simply ignored in those cases.
+is no problem, they are simply ignored in those cases. Take care listing
+such packages as Essential however.
 
 Users are given the opportunity to drill down and select/unselect
 individual packages; the tasks they select only serve as a starting
@@ -39,4 +49,3 @@ package-level selection at first).
 Keep short descriptions short -- very short -- and to the point. Do not
 include details about what individual packages a task includes, tasksel
 will do that for you.
-

@@ -3,6 +3,10 @@ Section: l10n
 Description: German environment
  This task installs packages and documentation in German
  to help German speaking people use Debian.
+Essential:
+ locales
+ language-env
+ manpages-de
 Packages:
  locales
  language-env

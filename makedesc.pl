@@ -4,7 +4,7 @@
 #
 # Scan the directory for files, and use the files to generate a task
 # description file. The format of the task description file is described in
-# tata.c. The format of the input files is:
+# data.c. The format of the input files is:
 #
 # Task: desktop
 # Section: user
@@ -85,7 +85,7 @@ sub processfile {
 	}
 
 	print OUT map { ucfirst($_).": ".$fields{$_}."\n" }
-		qw{task section description};
+		qw{task section description essential};
 	print OUT "\n";
 }
 

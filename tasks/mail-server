@@ -3,6 +3,8 @@ Section: server
 Description: mail server
  This task selects a variety of package useful for a general purpose mail
  server system.
+Essential:
+ exim
 Packages:
  qpopper # HELP: What's a good pop server?
  mailx

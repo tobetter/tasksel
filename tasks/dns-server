@@ -2,6 +2,8 @@ Task: dns-server
 Section: server
 Description: DNS server
  Selects the BIND DNS server, and related documentation and utility packages.
+Essential:
+ bind9
 Packages:
  bind9
  bind9-doc

@@ -1,10 +1,10 @@
 Task: file-server
 Section: server
 Description: file server
- This task sets up your system to be a file server. It includes
- the samba server for Windows, OS/2, or DOS clients, netatalk for Apple
- clients, and a NFS server.
-# HELP:L what about novell?
+ This task sets up your system to be a file server.
+Essential:
+ nfs-kernel-server
+ samba
 Packages:
  netatalk
  samba

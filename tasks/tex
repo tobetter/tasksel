@@ -1,7 +1,11 @@
 Task: tex
 Section: misc
 Description: TeX/LaTeX environment
- a complete TeX/LaTeX environment
+ a TeX/LaTeX environment
+Essential:
+ tetex-base
+ tetex-bin
+ tetex-extra
 Packages:
  bibindex
  bibtool

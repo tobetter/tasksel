@@ -5,6 +5,10 @@ Description: desktop environment
  of session managers, file managers and web browsers. It incorporates
  both the GNOME and KDE desktops, and provides a display manager
  which lets the user choose between the two.
+Essential:
+  x-window-system-core
+  # Just cause it's easy, no bias here...
+  kde
 Packages:
   x-window-system-core
   # TODO: we really should have gnome meta-packages, which this

@@ -4,6 +4,13 @@ Description: traditional Chinese environment
  This task installs programs, data files, fonts, and
  documentation that makes it easier to use Debian for
  Traditional-Chinese-related operations.
+Essential:
+  cpanel
+  rxvt-ml
+  chinput
+  xcin
+  zhcon
+  manpages-zh
 Packages:
   locales
   debian-zh-faq-t

@@ -11,40 +11,48 @@ Description: C and C++
   o Literate programming tools
   o C source analysis tools and tools to manipulate C source
   o Documentation
+Essential:
+ gcc
+ cpp
+ g++
+ make
+ binutils
+ strace
+ gdb
 Packages:
-  # C compiling:
-  gcc
-  cpp
-  make
-  binutils
-  flex
-  bison
-  gettext
-  # C docs:
-  glibc-doc
-  manpages-dev
-  # for C++
-  g++
-  stl-manual
-  # build systems
-  autoconf
-  automake
-  autoproject
-  libtool
-  # source manipulation and analysis
-  indent
-  cutils
-  liwc
-  cflow
-  metrics
-  # source control  
-  patch
-  cvs
-  # debugging
-  strace
-  ltrace
-  gdb
-  # literate programming
-  nowebm
-  c2man
-  cxref
+ # C compiling:
+ gcc
+ cpp
+ make
+ binutils
+ flex
+ bison
+ gettext
+ # C docs:
+ glibc-doc
+ manpages-dev
+ # for C++
+ g++
+ stl-manual
+ # build systems
+ autoconf
+ automake
+ autoproject
+ libtool
+ # source manipulation and analysis
+ indent
+ cutils
+ liwc
+ cflow
+ metrics
+ # source control  
+ patch
+ cvs
+ # debugging
+ strace
+ ltrace
+ gdb
+ # literate programming
+ nowebm
+ c2man
+ cxref

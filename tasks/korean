@@ -3,6 +3,11 @@ Section: l10n
 Description: Korean environment
  This task installs programs, data files, fonts, and documentations
  that make it easier to use Debian for Korean-related operations.
+Essential:
+ locales
+ manpages-ko
+ hanterm
+ ami
 Packages:
  locales
  manpages-ko

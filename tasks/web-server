@@ -1,8 +1,10 @@
 Task: web-server
 Section: server
 Description: web server
- This task selects a variety of package useful for a general purpose web
- server system
+ This task selects a packages useful for a general purpose web server
+ system.
+Essential:
+ apache
 Packages:
  apache
  analog

@@ -3,6 +3,14 @@ Section: l10n
 Description: Japanese environment
  This task installs packages that make it easier to use
  Debian for Japanese-related operations.
+Essential:
+ locales
+ language-env
+ jfbterm
+ kterm
+ xfonts-intl-japanese
+ manpages-ja
+ canna
 Packages:
  locales
  language-env
