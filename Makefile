@@ -3,7 +3,7 @@ VERSION=\"0.1\"
 CC = gcc
 CFLAGS = -g -Wall 
 DEFS = -DVERSION=$(VERSION) -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" #-DDEBUG
-LIBS = -lslang
+LIBS = -lslang #-lccmalloc -ldl
 OBJS = tasksel.o slangui.o data.o util.o strutl.o
 
 COMPILE = $(CC) $(CFLAGS) $(DEFS) -c

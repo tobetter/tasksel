@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.2 1999/11/23 05:39:27 tausq Exp $ */
+/* $Id: data.c,v 1.3 1999/12/13 03:01:33 tausq Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -245,5 +245,7 @@ void packages_free(struct packages_t *taskpkgs, struct packages_t *pkgs)
   twalk(taskpkgs->packages, packages_walk_delete);
   _packages_root = pkgs->packages;
   twalk(pkgs->packages, packages_walk_delete);
+  if (_packages_enumbuf != NULL) FREE(_packages_enumbuf);
+  _packages_enumbuf = NULL;
 }
 

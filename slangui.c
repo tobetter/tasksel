@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.5 1999/11/23 05:39:27 tausq Exp $ */
+/* $Id: slangui.c,v 1.6 1999/12/13 03:01:33 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -79,7 +79,7 @@ void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct 
   SLtt_set_color(POINTEROBJ, NULL, "brightblue", "cyan");
   SLtt_set_color(DESCOBJ, NULL, "black", "cyan");
   SLtt_set_color(STATUSOBJ, NULL, "yellow", "blue");
-  SLtt_set_color(DIALOGOBJ, NULL, "black", "white");
+  SLtt_set_color(DIALOGOBJ, NULL, "black", "lightgray");
   SLtt_set_color(BUTTONOBJ, NULL, "white", "red");
   
   ui_resize();
