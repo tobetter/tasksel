@@ -3,6 +3,11 @@ tasksel (2.25) UNRELEASED; urgency=low
   * Joey Hess
     - Add libtheora0 to desktop task so totem can play these files.
       (See #301262)
+  * Kęstutis Biliūnas
+    - Added openoffice.org-l10n-lt to lithuanian-desktop task.
+    - Commented out kde-i18n-lt as the Lithuanian language currently is
+      not supported by upstream.
+    - Added aspell-lt to lithuanian task.
 
  -- Joey Hess <joeyh@debian.org>  Thu, 24 Mar 2005 20:09:21 -0500
 
