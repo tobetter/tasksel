@@ -1,4 +1,4 @@
-/* $Id: data.h,v 1.2 2000/01/07 22:27:48 joeyh Exp $ */
+/* $Id: data.h,v 1.3 2000/01/07 22:45:09 joeyh Exp $ */
 #ifndef _DATA_H
 #define _DATA_H
 
@@ -18,6 +18,7 @@ struct package_t {
 
 struct packages_t {
   int count;
+  int maxnamelen;
   void *packages;
 };
 

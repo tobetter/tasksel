@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.5 2000/01/07 22:27:48 joeyh Exp $ */
+/* $Id: data.c,v 1.6 2000/01/07 22:45:09 joeyh Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -105,7 +105,8 @@ static int splitlinkdesc(const char *desc, char ***array)
 
 static void addpackage(struct packages_t *pkgs,
 		       const char *name, const char *dependsdesc, const char *recommendsdesc,
-		       const char *suggestsdesc, const char *shortdesc, const char *longdesc)
+		       const char *suggestsdesc, const char *shortdesc, const char *longdesc,
+		       const int istask)
 {
   /* Adds package to the package list binary tree */
   struct package_t *node = NEW(struct package_t);
@@ -118,25 +119,33 @@ static void addpackage(struct packages_t *pkgs,
   /* DPRINTF("Adding package %s to list\n", name); */
   memset(node, 0, sizeof(struct package_t));
   node->name = STRDUP(name);
-  c = node->prettyname = STRDUP(name+5);
-  while(c[0]) {
-    if (c[0] == '-') {
-      c[0] = ' ';
-      space=1;
+  
+  if (istask) {
+    c = node->prettyname = STRDUP(name+5);
+    /* Prettify name */
+    while (c[0]) {
+      if (c[0] == '-') {
+        c[0] = ' ';
+        space=1;
+      }
+      else if (space) {
+        c[0] = toupper(c[0]);
+        space=0;
+      }
+      c++;
     }
-    else if(space) {
-      c[0] = toupper(c[0]);
-      space=0;
-    }
-    c++;
+    /* Keep track of the longest name. */
+    if (pkgs->maxnamelen < (c - node->prettyname))
+      pkgs->maxnamelen = c - node->prettyname;
   }
+  
   node->shortdesc = STRDUP(shortdesc); 
   node->longdesc = STRDUP(longdesc);
 
   if (dependsdesc) node->dependscount = splitlinkdesc(dependsdesc, &node->depends);
   if (recommendsdesc) node->recommendscount = splitlinkdesc(recommendsdesc, &node->recommends);
   if (suggestsdesc) node->suggestscount = splitlinkdesc(suggestsdesc, &node->suggests);
-
+  
   p = tsearch((void *)node, &pkgs->packages, packagecompare);
   VERIFY(p != NULL);
   pkgs->count++;
@@ -237,10 +246,10 @@ void packages_readlist(struct packages_t *taskpkgs, struct packages_t *pkgs)
 	}
       }
 
-      addpackage(pkgs, name, NULL, NULL, NULL, shortdesc, NULL);
-      if (strncmp(name, "task-", 5) == 0) 
-	addpackage(taskpkgs, name, dependsdesc, recommendsdesc, suggestsdesc, shortdesc, longdesc);
-
+      addpackage(pkgs, name, NULL, NULL, NULL, shortdesc, NULL, 0);
+      if (strncmp(name, "task-", 5) == 0)
+	addpackage(taskpkgs, name, dependsdesc, recommendsdesc, suggestsdesc, shortdesc, longdesc, 1);
+	
       if (name != NULL) FREE(name);
       if (dependsdesc != NULL) FREE(dependsdesc);
       if (recommendsdesc != NULL) FREE(recommendsdesc);
