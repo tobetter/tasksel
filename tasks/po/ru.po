@@ -1,26 +1,26 @@
 # translation of tasks_ru.po to Russian
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004.
+# Eugene Konev <ejka@imfi.kspu.ru>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasks_ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-22 11:35+0700\n"
-"PO-Revision-Date: 2004-01-23 20:40+0100\n"
-"Last-Translator: Nikolai Prokoschenko <nikolai@prokoschenko.de>\n"
+"PO-Revision-Date: 2004-01-27 12:44+0700\n"
+"Last-Translator: Eugene Konev <ejka@imfi.kspu.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Description
 #: ../po/debian-tasks.desc:3
 msgid "Linux Standard Base"
-msgstr "Linux Standard Base"
+msgstr "Совместимость с Linux Standard Base"
 
 #. Description
 #: ../po/debian-tasks.desc:3
@@ -28,51 +28,55 @@ msgid ""
 "This task makes the system compliant with the Linux Standard Base, allowing "
 "you to install and use LSB packages."
 msgstr ""
+"Установить компоненты совместимости с Linux Standard Base, которые "
+"позволят вам устанавливать и использовать пакеты LSB."
 
 #. Description
 #: ../po/debian-tasks.desc:11
 msgid "TeX/LaTeX environment"
-msgstr ""
+msgstr "Среда TeX/LaTeX"
 
 #. Description
 #: ../po/debian-tasks.desc:11
 msgid "a TeX/LaTeX environment"
-msgstr ""
+msgstr "Установить компоненты TeX/LaTeX"
 
 #. Description
 #: ../po/debian-tasks.desc:20
 msgid "DNS server"
-msgstr ""
+msgstr "Сервер имен (DNS)"
 
 #. Description
 #: ../po/debian-tasks.desc:20
 msgid "Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
+msgstr "Установить сервер имен BIND, и соответствующие пакеты документации и инструментов."
 
 #. Description
 #: ../po/debian-tasks.desc:27
 msgid "Thai environment"
-msgstr ""
+msgstr "Поддержка тайского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:27
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на тайском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:36
 msgid "File server"
-msgstr ""
+msgstr "Файловый сервер"
 
 #. Description
 #: ../po/debian-tasks.desc:36
 msgid "This task sets up your system to be a file server."
-msgstr ""
+msgstr "Настроить систему для использования в качестве файлового сервера."
 
 #. Description
 #: ../po/debian-tasks.desc:45
 msgid "Desktop environment"
-msgstr ""
+msgstr "Рабочий стол"
 
 #. Description
 #: ../po/debian-tasks.desc:45
@@ -82,11 +86,14 @@ msgid ""
 "GNOME and KDE desktops, and provides a display manager which lets the user "
 "choose between the two."
 msgstr ""
+"\"Рабочий стол\" включает набор менеджеров сессий, менеджеров файлов и "
+"браузеров. Он также включает среды GNOME и KDE и менеджер входа "
+"в систему, позволяющий пользователю выбрать одну из них."
 
 #. Description
 #: ../po/debian-tasks.desc:56
 msgid "C and C++"
-msgstr ""
+msgstr "Языки программирования C и C++"
 
 #. Description
 #: ../po/debian-tasks.desc:56
@@ -94,11 +101,13 @@ msgid ""
 "A complete environment for development of programs in the C and C++ "
 "programming languages."
 msgstr ""
+"Полная рабочая среда для разработки программ на языках программирования "
+"C и C++."
 
 #. Description
 #: ../po/debian-tasks.desc:68
 msgid "Games"
-msgstr ""
+msgstr "Игры"
 
 #. Description
 #: ../po/debian-tasks.desc:68
@@ -107,11 +116,15 @@ msgid ""
 "traditional textual unix games to card games, to fast-paced arcade games. It "
 "won't install all the games in Debian, but it is a good starting point."
 msgstr ""
+"При выборе этой опции будет установлен большой набор игр: "
+"от традиционных текстовых и карточных до стремительных аркадных. "
+"Неплохо для начала, хотя не все игры, доступные в Debian, будут "
+"установлены."
 
 #. Description
 #: ../po/debian-tasks.desc:75
 msgid "Greek environment"
-msgstr ""
+msgstr "Поддержка греческого языка"
 
 #. Description
 #: ../po/debian-tasks.desc:75
@@ -119,11 +132,13 @@ msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на греческом языке."
 
 #. Description
 #: ../po/debian-tasks.desc:83
 msgid "Scientific applications"
-msgstr ""
+msgstr "Научные приложения"
 
 #. Description
 #: ../po/debian-tasks.desc:83
@@ -132,16 +147,19 @@ msgid ""
 "fairly loose definition of 'scientific', this includes numerical analysis "
 "and computing, statistical data analysis as well as visualization."
 msgstr ""
+"Установить приложения для научной работы. Под 'научными' мы понимаем "
+"приложения для численного анализа и вычислений, для обработки и визуализации "
+"статистических данных."
 
 #. Description
 #: ../po/debian-tasks.desc:90
 msgid "SQL database"
-msgstr ""
+msgstr "База данных SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:90
 msgid "This task selects client and server packages for the PostgreSQL database."
-msgstr ""
+msgstr "Установить клиентские и серверные компоненты СУБД PostgreSQL."
 
 #. Description
 #: ../po/debian-tasks.desc:90
@@ -151,11 +169,15 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
+"PostgreSQL -- реляционная SQL СУБД, с всёвозрастающей совместимостью с "
+"SQL92 и с некоторыми возможностями SQL3.  Она может использоваться для "
+"многопользовательских систем, благодаря своей поддержке транзакций и "
+"продуманной системе блокировок."
 
 #. Description
 #: ../po/debian-tasks.desc:102
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
-msgstr ""
+msgstr "Поддержка норвежского (Bokmaal и Nynorsk) языка "
 
 #. Description
 #: ../po/debian-tasks.desc:102
@@ -163,11 +185,13 @@ msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на норвежском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:111
 msgid "Russian environment"
-msgstr ""
+msgstr "Поддержка русского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:111
@@ -175,11 +199,13 @@ msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на русском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:120
 msgid "Spanish environment"
-msgstr ""
+msgstr "Поддержка испанского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:120
@@ -187,11 +213,13 @@ msgid ""
 "This task installs programs, data files,  and documentation that makes it "
 "easier for Spanish speakers to use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на испанском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:129
 msgid "Simplified Chinese environment"
-msgstr ""
+msgstr "Поддержка китайского языка (упрощённая кодировка)"
 
 #. Description
 #: ../po/debian-tasks.desc:129
@@ -200,11 +228,14 @@ msgid ""
 "it easier for Chinese speakers to use Debian, using the simplified Chinese "
 "encoding."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на китайском языке и использует упрощённую китайскую "
+"кодировку."
 
 #. Description
 #: ../po/debian-tasks.desc:144
 msgid "Traditional Chinese environment"
-msgstr ""
+msgstr "Поддержка китайского языка (традиционная кодировка)"
 
 #. Description
 #: ../po/debian-tasks.desc:144
@@ -213,21 +244,24 @@ msgid ""
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
 "encoding."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на китайском языке и использует традиционную китайскую "
+"кодировку."
 
 #. Description
 #: ../po/debian-tasks.desc:159
 msgid "Web server"
-msgstr ""
+msgstr "Веб-сервер"
 
 #. Description
 #: ../po/debian-tasks.desc:159
 msgid "This task selects a packages useful for a general purpose web server system."
-msgstr ""
+msgstr "Установить пакеты для создания веб-сервера."
 
 #. Description
 #: ../po/debian-tasks.desc:167
 msgid "Danish environment"
-msgstr ""
+msgstr "Поддержка датского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:167
@@ -235,11 +269,13 @@ msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на датском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:175
 msgid "Dialup internet"
-msgstr ""
+msgstr "Сеансовый доступ в интернет"
 
 #. Description
 #: ../po/debian-tasks.desc:175
@@ -247,11 +283,13 @@ msgid ""
 "This task selects packages that address special needs of computers using a "
 "slow part-time dialup connection (by modem, ISDN, or similar)."
 msgstr ""
+"Установить пакеты, необходимые для использования медленных сеансовых "
+"сетевых подключений (по модему, ISDN и т. п.)."
 
 #. Description
 #: ../po/debian-tasks.desc:184
 msgid "German environment"
-msgstr ""
+msgstr "Поддержка немецкого языка"
 
 #. Description
 #: ../po/debian-tasks.desc:184
@@ -259,11 +297,13 @@ msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на немецком языке."
 
 #. Description
 #: ../po/debian-tasks.desc:193
 msgid "French environment"
-msgstr ""
+msgstr "Поддержка французского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:193
@@ -271,21 +311,23 @@ msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на французском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:202
 msgid "Debian Jr."
-msgstr ""
+msgstr "Debian для детей (Debian Jr) "
 
 #. Description
 #: ../po/debian-tasks.desc:202
 msgid "Debian Jr. is a collection of Debian packages suitable for children."
-msgstr ""
+msgstr "Debian для детей. --.это набор пакетов с приложениями для детей. "
 
 #. Description
 #: ../po/debian-tasks.desc:207
 msgid "Laptop"
-msgstr ""
+msgstr "Переносной компьютер"
 
 #. Description
 #: ../po/debian-tasks.desc:207
@@ -294,11 +336,14 @@ msgid ""
 "system. It includes some special utilities laptops including IBM Thinkpads, "
 "Sony Vaios, Toshibas, and Dell Inspirons."
 msgstr ""
+"Набор инструментов, необходимых пользователю переносного компьютера. "
+"Здесь представлены инструменты для таких переносных компьютеров как IBM "
+"Thinkpad, Sony Vaio, Toshiba и Dell Inspiron."
 
 #. Description
 #: ../po/debian-tasks.desc:217
 msgid "Korean environment"
-msgstr ""
+msgstr "Поддержка корейского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:217
@@ -306,11 +351,13 @@ msgid ""
 "This task installs programs, data files, fonts, and documentation to make it "
 "easier for Korean speakers to use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на корейском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:227
 msgid "Python"
-msgstr ""
+msgstr "Язык программирования Python"
 
 #. Description
 #: ../po/debian-tasks.desc:227
@@ -318,11 +365,13 @@ msgid ""
 "Many Python tools and extensions, for developing scripts and simple or "
 "complex applications in Python."
 msgstr ""
+"Инструменты и расширения для Python. Для разработки скриптов и простых "
+"и сложных приложений на языке программирования Python."
 
 #. Description
 #: ../po/debian-tasks.desc:236
 msgid "Office environment"
-msgstr ""
+msgstr "Офисные приложения"
 
 #. Description
 #: ../po/debian-tasks.desc:236
@@ -331,11 +380,14 @@ msgid ""
 "processor, a spreadsheet, a presentation program, and more. This is a rather "
 "large collection of software."
 msgstr ""
+"Установить набор офисных приложений: текстовый процессор, электронную таблицу, "
+"программу создания презентаций и другие. В целом, это достаточно большой набор "
+"пакетов."
 
 #. Description
 #: ../po/debian-tasks.desc:246
 msgid "Broadband internet connection"
-msgstr ""
+msgstr "Постоянное подключение к интернет"
 
 #. Description
 #: ../po/debian-tasks.desc:246
@@ -343,11 +395,13 @@ msgid ""
 "This task selects packages that address special needs of computers that "
 "connect to the internet using DSL, Cable, and the like."
 msgstr ""
+"Установить пакеты, необходимые для использования постоянных сетевых "
+"подключений с использованием DSL, кабельных модемов и т. п."
 
 #. Description
 #: ../po/debian-tasks.desc:254
 msgid "Polish environment"
-msgstr ""
+msgstr "Поддержка польского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:254
@@ -355,11 +409,13 @@ msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на польском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:263
 msgid "Japanese environment"
-msgstr ""
+msgstr "Поддержка японского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:263
@@ -367,35 +423,37 @@ msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на японском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:276
 msgid "Custom kernel compilation"
-msgstr ""
+msgstr "Сборка собственного ядра"
 
 #. Description
 #: ../po/debian-tasks.desc:276
 msgid ""
 "This task includes everything you should need to build your own custom "
 "kernel."
-msgstr ""
+msgstr "Установить всё необходимое для сборки вашего собственного ядра."
 
 #. Description
 #: ../po/debian-tasks.desc:285
 msgid "Mail server"
-msgstr ""
+msgstr "Почтовый сервер "
 
 #. Description
 #: ../po/debian-tasks.desc:285
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
-msgstr ""
+msgstr "Установить пакеты для создания почтового сервера."
 
 #. Description
 #: ../po/debian-tasks.desc:293
 msgid "Tcl/Tk"
-msgstr ""
+msgstr "Tcl/Tk"
 
 #. Description
 #: ../po/debian-tasks.desc:293
@@ -403,28 +461,30 @@ msgid ""
 "Packages commonly used in developing applications using the Tcl language and "
 "Tk Toolkit."
 msgstr ""
+"Пакеты, обычно используемые для разработки приложений на  языке "
+"программирования Tcl с использованием набора компонентов Tk."
 
 #. Description
 #: ../po/debian-tasks.desc:302
 msgid "Java"
-msgstr ""
+msgstr "Язык программирования Java"
 
 #. Description
 #: ../po/debian-tasks.desc:302
 msgid "A java development environment."
-msgstr ""
+msgstr "Среда разработки для языка программирования Java. "
 
 #. Description
 #: ../po/debian-tasks.desc:310
 msgid "Usenet news server"
-msgstr ""
+msgstr "Сервер новостей Usenet "
 
 #. Description
 #: ../po/debian-tasks.desc:310
 msgid ""
 "This task selects the preferred version of the INN news server software for "
 "new Debian installations."
-msgstr ""
+msgstr "Установить пакеты для создания сервера новостей (INN). "
 
 #. Description
 #: ../po/debian-tasks.desc:310
@@ -434,21 +494,24 @@ msgid ""
 "pull in any required pieces. Only use this task if you intend to operate a "
 "server."
 msgstr ""
+"Если вы хотите просто читать новости, вам не нужен сервер новостей: "
+"достаточно клиентской программы. Установка сервера новостей нужна "
+"только тем, кто планирует создать собственный сервер новостей."
 
 #. Description
 #: ../po/debian-tasks.desc:323
 msgid "Print server"
-msgstr ""
+msgstr "Сервер печати"
 
 #. Description
 #: ../po/debian-tasks.desc:323
 msgid "This task sets up your system to be a print server."
-msgstr ""
+msgstr "Установить пакеты для создания сервера печати. "
 
 #. Description
 #: ../po/debian-tasks.desc:333
 msgid "X window system"
-msgstr ""
+msgstr "Система X window"
 
 #. Description
 #: ../po/debian-tasks.desc:333
@@ -457,11 +520,15 @@ msgid ""
 "running the X Window System. It provides the X libraries, an X server, a set "
 "of fonts, and a group of basic X clients and utilities."
 msgstr ""
+"Установить компоненты, необходимые для рабочей станции с системой X Window. "
+"Включает в себя библиотеки X, сервер X, набор шрифтов и набор простых "
+"приложений X и инструментов."
+"."
 
 #. Description
 #: ../po/debian-tasks.desc:342
 msgid "Catalan environment"
-msgstr ""
+msgstr "Поддержка каталонского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:342
@@ -469,11 +536,13 @@ msgid ""
 "This task installs packages and documentation in Catalan to help Catalan "
 "speaking people use Debian."
 msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для "
+"тех, кто говорит на каталонском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:351
 msgid "Conventional Unix server"
-msgstr ""
+msgstr "Традиционный сервер Unix"
 
 #. Description
 #: ../po/debian-tasks.desc:351
@@ -482,11 +551,14 @@ msgid ""
 "multi-user unix system with remote users. Do be warned that this includes a "
 "number of daemons."
 msgstr ""
+"Установить пакеты для задач, которые обычно выполняет традиционный "
+"многопользовательский сервер Unix с возможностью удаленного доступа. "
+"Учтите, что будут установлены несколько демонов."
 
 #. Description
 #: ../po/debian-tasks.desc:358
 msgid "Cyrillic environment"
-msgstr ""
+msgstr "Поддержка кириллицы"
 
 #. Description
 #: ../po/debian-tasks.desc:358
@@ -495,4 +567,7 @@ msgid ""
 "to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
 "Serbian and Ukrainian."
 msgstr ""
+"Установить набор кириллических шрифтов и набор инструментов, необходимых "
+"для поддержки кириллицы.  Поддерживаются белорусский, болгарский, македонский "
+"русский, сербский и украинский языки."
 
