@@ -1,0 +1,554 @@
+# translation of da.po to Danish
+# Danish translation for tasksel tasks.
+# Copyright (C) 2003 Claus Hindsgaul
+# Claus Hindsgaul <claus_h@image.dk>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: da\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-10-09 16:36-0400\n"
+"PO-Revision-Date: 2003-10-26 20:13+0100\n"
+"Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
+"Language-Team: Danish <dansk@klid.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#. Description
+#: ../po/debian-tasks.desc:4
+msgid "X window system"
+msgstr "X window-systemet"
+
+#. Description
+#: ../po/debian-tasks.desc:4
+msgid ""
+"This task provides the essential components for a standalone workstation "
+"running the X Window System. It provides the X libraries, an X server, a set "
+"of fonts, and a group of basic X clients and utilities."
+msgstr ""
+"Denne pakke indeholder de essentielle dele til en selvstændig "
+"arbejdsstation med X Window-systemet. Den har X-bibliotekerne, en "
+"X-server, en skrifttypesamling samt en række grundlæggende X-klienter."
+
+#. Description
+#: ../po/debian-tasks.desc:13
+msgid "Simplified Chinese environment"
+msgstr "Simplificeret kinesisk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:13
+msgid ""
+"This task installs programs, data files, fonts, and documentation that makes "
+"it easier for Chinese speakers to use Debian, using the simplified Chinese "
+"encoding."
+msgstr ""
+"Denne programsamling indeholder programmer, datafiler, "
+"skrifttyper og dokumentation, der letter brugen af "
+"Debian for kinesisk-sprogede med simplificeret kinesisk "
+"tegnsæt."
+
+#. Description
+#: ../po/debian-tasks.desc:28
+msgid "C and C++"
+msgstr "C og C++"
+
+#. Description
+#: ../po/debian-tasks.desc:28
+msgid ""
+"A complete environment for development of programs in the C and C++ "
+"programming languages."
+msgstr ""
+"Et komplet miljø for udvikling af programmer i programmeringssprogene "
+"C og C++."
+
+#. Description
+#: ../po/debian-tasks.desc:40
+msgid "SQL database"
+msgstr "SQL-database"
+
+#. Description
+#: ../po/debian-tasks.desc:40
+msgid "This task selects client and server packages for the PostgreSQL database."
+msgstr "Denne opgavepakke omfatter klient- og serverpakker til PostgreSQL-databasen."
+
+#. Description
+#: ../po/debian-tasks.desc:40
+msgid ""
+"PostgreSQL is an SQL relational database, offering increasing SQL92 "
+"compliance and some SQL3 features.  It is suitable for use with multi-user "
+"database access, through its facilities for transactions and fine-grained "
+"locking."
+msgstr ""
+"PostgreSQL er en SQL-relationsdatabase, der i højere og højere grad "
+"overholder SQL92 og har nogle SQL3-funktioner. Det vil passe til flerbruger "
+"databaseadgang på grund af dets transaktionsfaciliteter og finkornede "
+"fillåsning."
+
+#. Description
+#: ../po/debian-tasks.desc:52
+msgid "Traditional Chinese environment"
+msgstr "Traditionelt kinesisk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:52
+msgid ""
+"This task installs programs, data files, fonts, and documentation that makes "
+"it easier for Chinese speakers to use Debian, using the traditional Chinese "
+"encoding."
+msgstr ""
+"This task installs programs, data files, fonts, and "
+"documentation that makes it easier for Chinese speakers "
+"to use Debian, using the traditional Chinese encoding."
+
+#. Description
+#: ../po/debian-tasks.desc:67
+msgid "Cyrillic environment"
+msgstr "Kyrillisk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:67
+msgid ""
+"This task provides Cyrillic fonts and other software you will need in order "
+"to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
+"Serbian and Ukrainian."
+msgstr ""
+"Denne opgavepakke indeholder kyrilliske skrifttyper og programmer, "
+"du skal bruge for at kunne anvende kyrillisk skrift. Den understøtter "
+"hviderussisk, bulgarsk, makedonsk, russisk, serbisk og ukrainsk."
+
+#. Description
+#: ../po/debian-tasks.desc:77
+msgid "DNS server"
+msgstr "DNS-server"
+
+#. Description
+#: ../po/debian-tasks.desc:77
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
+msgstr "Vælger DNS-serveren BIND samt tilhørende dokumentation og værktøjsprogrammer."
+
+#. Description
+#: ../po/debian-tasks.desc:85
+msgid "Desktop environment"
+msgstr "Skrivebordsmiljø"
+
+#. Description
+#: ../po/debian-tasks.desc:85
+msgid ""
+"This task provides basic \"desktop\" software, including a variety of "
+"session managers, file managers and web browsers. It incorporates both the "
+"GNOME and KDE desktops, and provides a display manager which lets the user "
+"choose between the two."
+msgstr ""
+"Denne opgavepakke indeholder grundlæggende skriverbords-programmer, "
+"heriblandt forskellige program- og filhåndteringer samt browsere. "
+"Den indeholder både GNOME- og KDE-miljøerne samt et program, der "
+"lader brugeren vælge mellem dem."
+
+#. Description
+#: ../po/debian-tasks.desc:96
+msgid "Dialup internet"
+msgstr "Opkaldsforbindelse"
+
+#. Description
+#: ../po/debian-tasks.desc:96
+msgid ""
+"This task selects packages that address special needs of computers using a "
+"slow part-time dialup connection (by modem, ISDN, or similar)."
+msgstr ""
+"Denne pakkesamling tager hånd om de specielle behov, som "
+"computerbrugere med en langsom opkaldsforbindelse (modem, ISDN eller "
+"lignende) har."
+
+#. Description
+#: ../po/debian-tasks.desc:105
+msgid "Danish environment"
+msgstr "Dansk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:105
+msgid ""
+"This task installs packages and documentation in Danish to help Danish "
+"speaking people use Debian."
+msgstr ""
+"Denne opgavepakke installerer danske pakker og dokumentation, til brug for "
+"dansktalende Debianbrugere."
+
+#. Description
+#: ../po/debian-tasks.desc:113
+msgid "File server"
+msgstr "Filserver"
+
+#. Description
+#: ../po/debian-tasks.desc:113
+msgid "This task sets up your system to be a file server."
+msgstr "Denne opgavesamling sætter dit system op som filserver."
+
+#. Description
+#: ../po/debian-tasks.desc:121
+msgid "Linux Standard Base"
+msgstr "Linux standardbasis"
+
+#. Description
+#: ../po/debian-tasks.desc:121
+msgid ""
+"This task makes the system compliant with the Linux Standard Base, allowing "
+"you to install and use LSB packages."
+msgstr ""
+"Denne opgavepakke får systemet til at overholde specifikationerne "
+"i 'Linux Standard Base', så du kan installere og bruge LSB-pakker."
+
+#. Description
+#: ../po/debian-tasks.desc:129
+msgid "Java"
+msgstr "Java"
+
+#. Description
+#: ../po/debian-tasks.desc:129
+msgid "A java development environment."
+msgstr "Miljø for javaudvikling."
+
+#. Description
+#: ../po/debian-tasks.desc:137
+msgid "French environment"
+msgstr "Fransk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:137
+msgid ""
+"This task installs packages and documentation in French to help French "
+"speaking people use Debian."
+msgstr ""
+"Denne opgavepakke installerer franske pakker og dokumentation, til brug for "
+"fransktalende Debianbrugere."
+
+#. Description
+#: ../po/debian-tasks.desc:146
+msgid "Thai environment"
+msgstr "Thai miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:146
+msgid "This task installs packages that make it easier for Thai to use Debian."
+msgstr ""
+"Denne opgavepakke installerer pakker der gøre det lettere for Thai-talende "
+"at bruge Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:155
+msgid "Games"
+msgstr "Spil"
+
+#. Description
+#: ../po/debian-tasks.desc:155
+msgid ""
+"Selecting this task will install a broad selection of games, from "
+"traditional textual unix games to card games, to fast-paced arcade games. It "
+"won't install all the games in Debian, but it is a good starting point."
+msgstr ""
+"Med denne opgavepakke får du et bredt udvalg af spil. Lige fra "
+"traditionelle tekstbaserede unix-spil til kortspil og hæsblæsende "
+"arkadespil. Den vil ikke installere alle Debians spil, men er et godt "
+"udgangspunkt."
+
+#. Description
+#: ../po/debian-tasks.desc:162
+msgid "German environment"
+msgstr "Tysk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:162
+msgid ""
+"This task installs packages and documentation in German to help German "
+"speaking people use Debian."
+msgstr ""
+"Denne opgavepakke installerer tyske pakker og dokumentation, der skal hjælpe "
+"tysktalende i at bruge Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:172
+msgid "Office environment"
+msgstr "Kontormiljø"
+
+#. Description
+#: ../po/debian-tasks.desc:172
+msgid ""
+"This task provides a suite of office productivity software, including a word "
+"processor, a spreadsheat, a presentation program, and more. This is a rather "
+"large collection of software."
+msgstr ""
+"Denne opgavepakke indeholder en samling kontorprogrammer, herunder tekstbehandling, "
+"regneark, præsentationsprogram med mere. Det er en ret stor samling programmer."
+
+#. Description
+#: ../po/debian-tasks.desc:182
+msgid "Japanese environment"
+msgstr "Japansk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:182
+msgid ""
+"This task installs packages that make it easier for Japanese speakers to use "
+"Debian."
+msgstr ""
+"Denne programsamling installerer pakker, det gør det nemmere for "
+"japansk-sprogede at bruge Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:195
+msgid "Laptop"
+msgstr "Bærbar"
+
+#. Description
+#: ../po/debian-tasks.desc:195
+msgid ""
+"This is a collection of tools that laptop users will expect to find on a "
+"system. It includes some special utilities laptops including IBM Thinkpads, "
+"Sony Vaios, Toshibas, and Dell Inspirons."
+msgstr ""
+"Dette er en samling værktøjer, som brugere af bærbare computere forventer "
+"at have på deres system. Det omfatter bl.a. nogle specielle værktøjer til "
+"bærbare computer som f.eks. IBM Thinkpad, Sony Vaio, Toshiba og Dell"
+
+#. Description
+#: ../po/debian-tasks.desc:205
+msgid "Debian Jr."
+msgstr "Debian junior"
+
+#. Description
+#: ../po/debian-tasks.desc:205
+msgid "Debian Jr. is a collection of Debian packages suitable for children."
+msgstr " Debian Junior er en samling Debianpakker til børn."
+
+#. Description
+#: ../po/debian-tasks.desc:210
+msgid "Korean environment"
+msgstr "Koreansk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:210
+msgid ""
+"This task installs programs, data files, fonts, and documentation to make it "
+"easier for Korean speakers to use Debian."
+msgstr ""
+"Denne opgavepakke installerer programmer, datafiler, skrifttyper og "
+"dokumentation, der gør det nemmere for koransk-sprogede at bruge "
+"Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:221
+msgid "Broadband internet connection"
+msgstr "Bredbåndsforbindelse"
+
+#. Description
+#: ../po/debian-tasks.desc:221
+msgid ""
+"This task selects packages that address special needs of computers that "
+"connect to the internet using DSL, Cable, and the like."
+msgstr ""
+"Denne opgavepakke indeholder pakker for computere, der forbinder sig til "
+"internettet via DSL, kabelmodem og lignende."
+
+#. Description
+#: ../po/debian-tasks.desc:229
+msgid "Mail server"
+msgstr "Postserver"
+
+#. Description
+#: ../po/debian-tasks.desc:229
+msgid ""
+"This task selects a variety of package useful for a general purpose mail "
+"server system."
+msgstr ""
+"Denne opgavepakke omfatter et udvalg af pakker, der er nyttige på et "
+"almindeligt postserversystem."
+
+#. Description
+#: ../po/debian-tasks.desc:237
+msgid "Usenet news server"
+msgstr "Nyhedsgruppe-server"
+
+#. Description
+#: ../po/debian-tasks.desc:237
+msgid ""
+"This task selects the preferred version of the INN news server software for "
+"new Debian installations."
+msgstr ""
+"Denne opgavepakke indeholder den foretrukne udgave at INN-nyhedsgruppeserveren "
+"til nye Debian-installationer."
+
+#. Description
+#: ../po/debian-tasks.desc:237
+msgid ""
+"You do not need this package if you merely wish to read news from an "
+"existing server, just select the news reader program you desire and it will "
+"pull in any required pieces. Only use this task if you intend to operate a "
+"server."
+msgstr ""
+"Du behøver ikke denne pakke hvis du blot ønsker at læse nyhedsgrupper "
+"fra en eksisterende server. Vælg da blot det nyhedslæseprogram, du ønsker. "
+"Brug kun denne opgavepakke hvis du vil huse en nyhedsgruppeserver."
+
+#. Description
+#: ../po/debian-tasks.desc:250
+msgid "Scientific applications"
+msgstr "Videnskabelige programmer"
+
+#. Description
+#: ../po/debian-tasks.desc:250
+msgid ""
+"This task selects packages which are suitable for scientific work. Under a "
+"fairly loose definition of 'scientific', this includes numerical analysis "
+"and computing, statistical data analysis as well as visualization."
+msgstr ""
+"Denne programsamling indeholder nyttige pakker til bredt defineret "
+"'videnskabeligt' arbejde. Det omfatter numerisk analyse og beregninger, "
+"statistisk dataanalyse såvel som -visualisering."
+
+#. Description
+#: ../po/debian-tasks.desc:257
+msgid "Polish environment"
+msgstr "Polsk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:257
+msgid ""
+"This task installs packages and documentation in Polish to help Polish "
+"speaking people use Debian."
+msgstr ""
+"Denne opgavepakke installerer polske pakker og dokumentation, til brug for "
+"polsktalende Debianbrugere."
+
+#. Description
+#: ../po/debian-tasks.desc:266
+msgid "Print server"
+msgstr "Printerserver"
+
+#. Description
+#: ../po/debian-tasks.desc:266
+msgid "This task sets up your system to be a print server."
+msgstr "Denne opgavepakke sætter dit system op til at være printerserver."
+
+#. Description
+#: ../po/debian-tasks.desc:276
+msgid "Python"
+msgstr "Python"
+
+#. Description
+#: ../po/debian-tasks.desc:276
+msgid ""
+"Many Python tools and extensions, for developing scripts and simple or "
+"complex applications in Python."
+msgstr ""
+"Mange Python-værktøjer og udvidelser til udvikling af skripter såvel simple "
+"som komplekse programmer i Python."
+
+#. Description
+#: ../po/debian-tasks.desc:284
+msgid "Russian environment"
+msgstr "Russisk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:284
+msgid ""
+"This task installs programs and documentation in Russian to help Russian "
+"speaking people use Debian."
+msgstr ""
+"Denne pakkesamling indeholder programmer og russisk dokumentation "
+"til at gøre det lettere for russiskprogede at bruge Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:293
+msgid "Spanish environment"
+msgstr "Spansk miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:293
+msgid ""
+"This task installs programs, data files,  and documentation that makes it "
+"easier for Spanish speakers to use Debian."
+msgstr ""
+"Denne opgavepakke installerer programmer, datafiler og dokumentation, som "
+"gør det lettere for spansktalende at bruge Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:302
+msgid "Tcl/Tk"
+msgstr "Tcl/Tk"
+
+#. Description
+#: ../po/debian-tasks.desc:302
+msgid ""
+"Packages commonly used in developing applications using the Tcl language and "
+"Tk Toolkit."
+msgstr ""
+"Pakker, der typisk benyttes ved udvikling af programmer i sproget Tcl "
+"og med Tk-værktøjssættet."
+
+#. Description
+#: ../po/debian-tasks.desc:311
+msgid "TeX/LaTeX environment"
+msgstr "TeX/LaTeX-miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:311
+msgid "a TeX/LaTeX environment"
+msgstr "et TeX/LaTeX-miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:321
+msgid "Conventional Unix server"
+msgstr "Almindelig unix-server"
+
+#. Description
+#: ../po/debian-tasks.desc:321
+msgid ""
+"This task selects packages that would typically be found on a conventional "
+"multi-user unix system with remote users. Do be warned that this includes a "
+"number of daemons."
+msgstr ""
+"Denne opgavepakke vælger pakker, der typisk findes på et almindeligt "
+"flerbruger-unixsystem med fjernbrugere. Bemærk at de omfatter et antal "
+"dæmoner."
+
+#. Description
+#: ../po/debian-tasks.desc:328
+msgid "Web server"
+msgstr "Webserver"
+
+#. Description
+#: ../po/debian-tasks.desc:328
+msgid "This task selects a packages useful for a general purpose web server system."
+msgstr ""
+"Denne opgavepakke vælger pakker, der er nyttige på et almindeligt "
+"webserver-system."
+
+#. Description
+#: ../po/debian-tasks.desc:336
+msgid "Custom kernel compilation"
+msgstr "Egen kerne-oversættelse"
+
+#. Description
+#: ../po/debian-tasks.desc:336
+msgid ""
+"This task includes everything you should need to build your own custom "
+"kernel."
+msgstr ""
+"Denne opgavepakke indeholder alt hvad du behøver for at bygge din egen "
+"Linuxkerne."
+
+#. Description
+#: ../po/debian-tasks.desc:345
+msgid "Norwegian (Bokmaal and Nynorsk) environment"
+msgstr "Norsk (bokmål og nynorsk) miljø"
+
+#. Description
+#: ../po/debian-tasks.desc:345
+msgid ""
+"This task installs packages and documentation in Norwegian to help Norwegian "
+"speaking people use Debian."
+msgstr ""
+"Denne opgavepakke installerer norske pakker og dokumentation, til hjælp "
+"for norsktalende Debianbrugere."
+
