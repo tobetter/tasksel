@@ -13,11 +13,11 @@ my $testdir="/usr/lib/tasksel/tests";
 my $descdir="/usr/share/tasksel";
 
 sub warning {
-	print STDERR "taskel: @_\n";
+	print STDERR "tasksel: @_\n";
 }
 
 sub error {
-	print STDERR "taskel: @_\n";
+	print STDERR "tasksel: @_\n";
 	exit 1;
 }
 
