@@ -1,0 +1,14 @@
+Task: file-server
+Section: server
+Description: File server
+ This task sets up your system to be a file server. It includes
+ the samba server for Windows OS/2 or DOS clients, and a NFS server.
+Packages:
+ samba
+ samba-doc
+ smbclient
+ swat
+ smbfs
+ # Is this the best one? Will it work out of the box for new debian
+ # installs?
+ nfs-kernel-server
