@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.18 2003/09/16 23:38:46 joeyh Rel $ */
+/* $Id: tasksel.c,v 1.19 2003/10/31 20:36:22 joeyh Rel $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -14,6 +14,11 @@
 #include "slangui.h"
 #include "data.h"
 #include "macros.h"
+
+#ifndef PATH_MAX
+/* Hurd? Not the right fix really. */
+#define PATH_MAX 4096
+#endif
 
 void tasksel_signalhandler(int sig)
 {
