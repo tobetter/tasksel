@@ -1,4 +1,4 @@
-tasksel (1.37) UNRELEASED; urgency=low
+tasksel (1.37) unstable; urgency=low
 
   * Miroslav Kure
     - Update po/cs.po
@@ -16,9 +16,15 @@ tasksel (1.37) UNRELEASED; urgency=low
     - Add da to LANGS_DESC in top-level Makefile.
     - Update da.po ("a" as a shortcut key for quit was overridden by
       the "choose all tasks" behaviour. Used "f" instead)
-    
+  * Santiago Vila
+    - Define PATH_MAX if it is not, to allow building onthe Hurd
+      Closes: #218334
+  * Joey Hess
+    - Switch nethack-console for nethack, as the latter is only a
+      dummy package. Closes: #189785
+  * OOo is in main, office task will be useable. Hallelujah!
 
- -- Denis Barbier <barbier@debian.org>  Tue, 21 Oct 2003 22:21:14 +0200
+ -- Joey Hess <joeyh@debian.org>  Fri, 31 Oct 2003 15:20:12 -0500
 
 tasksel (1.36) unstable; urgency=low
 
