@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.13 2001/07/02 03:43:58 ajt Rel $ */
+/* $Id: data.c,v 1.14 2001/09/16 20:14:58 dwhedon Rel $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -70,8 +70,10 @@ static void tasks_walk_enumerate(const void *nodep, const VISIT order, const int
 }
 
 
-static int taskcompare(const struct task_t *l, const struct task_t *r)
+static int taskcompare(const void *lp, const void *rp)
 {
+  const struct task_t *l = (const struct task_t *)lp;
+  const struct task_t *r = (const struct task_t *)rp;
   return strcmp(l->name, r->name);
 }
 

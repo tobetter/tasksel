@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.22 2001/05/23 17:39:54 joeyh Rel $ */
+/* $Id: slangui.c,v 1.23 2001/09/16 20:14:58 dwhedon Rel $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -92,7 +92,7 @@ static char *getsectiondesc(char *sec) {
 
 static void initdisplayhints(void) {
   int i, j, k;
-  char *lastsec;
+  char *lastsec = NULL;
 
   _displaylines = 0;
   for (i = 0; i < _tasks->count; i++) {
@@ -112,7 +112,7 @@ static void initdisplayhints(void) {
       char *sec = TASK_SECTION(_tasksary[j]);
       if (strcmp(sec, sectiondesc[i].section) == 0) {
         _displayhint[k++] = -1;
-        for (j; j < _tasks->count; j++) {
+        for (; j < _tasks->count; j++) {
           char *sec = TASK_SECTION(_tasksary[j]);
           if (strcmp(sec, sectiondesc[i].section) == 0) {
             _displayhint[k++] = j;
@@ -140,9 +140,10 @@ static void initdisplayhints(void) {
   }
 }
 
-int taskseccompare(const struct task_t **pl, const struct task_t **pr)
+int taskseccompare(const void *pl, const void *pr)
 {
-  struct task_t *l = *pl, *r = *pr;
+  const struct task_t *l = *((const struct task_t **)pl);
+  const struct task_t *r = *((const struct task_t **)pr);
   char *ls = NULL, *rs = NULL;
   int y = strcmp(l->name, r->name);
   if (y == 0) return 0;
