@@ -1,10 +1,28 @@
-tasksel (2.12) UNRELEASED; urgency=low
+tasksel (2.12) unstable; urgency=low
 
+  * Joey Hess
+    - Support preseeding of tasksel/first.
+    - Remove samba stuff from print-server, since CUPS can talk directly to
+      windows clients via ipp.
+  * Anton Zinoviev
+    cyrillic:
+     - add additional languages in Test-lang - Belarusian, Kazakh,
+       Macedonian and Mongolian - they all are supported by
+       console-cyrillic.  I haven't updated the description of the package
+       though in order not to bother the translators.
+     - me as a maintainer of this task
+     - move language-env from the Key: section to the Packages: section
+       cyrillic-desktop:
+     - me as a maintainer of this task
+     - add "t1-cyrillic" in the Key: section
+     - add more scalable fonts in the Packages: section
+     - uncomment the bitmap fonts for Unicode
+    Closes: #271174
   * Translations
     - Bartosz Fenski
       - Polish updated (po and tasks/po). Closes: #270123
 
- -- Christian Perrier <bubulle@debian.org>  Sun,  5 Sep 2004 18:51:07 +0200
+ -- Joey Hess <joeyh@debian.org>  Sun, 12 Sep 2004 17:49:21 -0400
 
 tasksel (2.11) unstable; urgency=low
 
