@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: tasksel tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-29 11:46-0500\n"
-"PO-Revision-Date: 2004-03-11 22:30+0100\n"
+"PO-Revision-Date: 2004-03-30 00:24+0100\n"
 "Last-Translator: André Dahlqvist <andre.dahlqvist@telia.com>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -212,11 +212,12 @@ msgstr "Filserver"
 
 #. Description
 #: ../po/debian-tasks.desc:130
-#, fuzzy
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "Denna funktion konfigurerar ditt system till att vara en filserver."
+msgstr ""
+"Denna funktion konfigurerar ditt system till att vara en filserver, med stöd "
+"för både NetBIOS och NFS."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -279,19 +280,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid "Hebrew environment"
-msgstr "Grekisk miljö"
+msgstr "Hebreisk miljö"
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
 msgstr ""
-"Denna funktion installerar paket och dokumentation på grekiska för att "
-"hjälpa människor som talar grekiska att använda Debian."
+"Denna funktion installerar paket och dokumentation på hebreiska för att "
+"hjälpa människor som talar hebreiska att använda Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:179
@@ -362,7 +361,6 @@ msgstr "Bärbar dator"
 
 #. Description
 #: ../po/debian-tasks.desc:224
-#, fuzzy
 msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities for laptops including IBM "
@@ -370,23 +368,21 @@ msgid ""
 msgstr ""
 "Detta är en samling verktyg som användare av bärbara datorer förväntar sig "
 "att finna på ett system. Den inkluderar vissa speciella verktyg för bärbara "
-"datorer av typen Sony Vaio, Toshiba och Dell Inspiron."
+"datorer, däribland IBM Thinkpad, Sony Vaio, Toshiba och Dell Inspiron."
 
 #. Description
 #: ../po/debian-tasks.desc:234
-#, fuzzy
 msgid "Lithuanian environment"
-msgstr "Thailändsk miljö"
+msgstr "Litauisk miljö"
 
 #. Description
 #: ../po/debian-tasks.desc:234
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
 msgstr ""
-"Denna funktion installerar paket och dokumentation på katalanska för att "
-"hjälpa människor som talar katalanska att använda Debian."
+"Denna funktion installerar paket och dokumentation på litauiska för att "
+"hjälpa människor som talar litauiska att använda Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:242
@@ -579,6 +575,8 @@ msgstr "TeX/LaTeX-miljö"
 msgid ""
 "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
+"Denna funktion tillhandahåller paket som är nödvändiga för att typsätta "
+"dokument i TeX/LaTeX."
 
 #. Description
 #: ../po/debian-tasks.desc:361
@@ -620,6 +618,3 @@ msgid ""
 msgstr ""
 "Denna funktion väljer paket som är användbara för ett allmänt "
 "webbserversystem."
-
-#~ msgid "a TeX/LaTeX environment"
-#~ msgstr "En TeX/LaTeX-miljö"
