@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-29 11:46-0500\n"
-"PO-Revision-Date: 2004-03-27 13:32+0100\n"
+"PO-Revision-Date: 2004-03-30 18:20+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.org>\n"
 "Language-Team: Czech <provoz@debian.cz>\n"
 "MIME-Version: 1.0\n"
@@ -200,11 +200,12 @@ msgstr "Souborový server"
 
 #. Description
 #: ../po/debian-tasks.desc:130
-#, fuzzy
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "Úloha nastaví vá¹ systém pro roli souborového serveru."
+msgstr ""
+"Úloha nastaví vá¹ systém pro roli souborového serveru podporujícího jak "
+"NetBIOS, tak NFS."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -260,17 +261,15 @@ msgstr "Tato úloha nainstaluje programy a dokumentaci v øeètinì."
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid "Hebrew environment"
-msgstr "Øecké prostøedí"
+msgstr "Hebrejské prostøedí"
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
-msgstr "Tato úloha nainstaluje programy a dokumentaci v øeètinì."
+msgstr "Tato úloha nainstaluje programy a dokumentaci v hebrej¹tinì."
 
 #. Description
 #: ../po/debian-tasks.desc:179
@@ -340,15 +339,14 @@ msgstr "Notebook"
 
 #. Description
 #: ../po/debian-tasks.desc:224
-#, fuzzy
 msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities for laptops including IBM "
 "Thinkpads, Sony Vaios, Toshibas, and Dell Inspirons."
 msgstr ""
-"Toto je kolekce nástrojù, které ulehèí ¾ivot u¾ivatelùm s notebooky. Mimo "
-"jiné obsahuje utility pro konkrétní øady jako IBM Thinkpad, Sony Vaio, "
-"Toshiba a Dell Inspiron."
+"Toto je kolekce nástrojù, kterou na svém systému oèekávají u¾ivatelé s "
+"notebooky. Mimo jiné obsahuje utility pro konkrétní øady jako IBM Thinkpad, "
+"Sony Vaio, Toshiba a Dell Inspiron."
 
 #. Description
 #: ../po/debian-tasks.desc:234
@@ -536,6 +534,8 @@ msgstr "TeX/LaTeX"
 msgid ""
 "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
+"Tato úloha poskytuje nezbytné balíky pro vytváøení dokumentù v systému "
+"TeX/LaTeX."
 
 #. Description
 #: ../po/debian-tasks.desc:361
@@ -575,6 +575,3 @@ msgstr "Webový server"
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "Úloha vybere balíky u¾iteèné pro webový server."
-
-#~ msgid "a TeX/LaTeX environment"
-#~ msgstr "Prostøedí pro psaní dokumentù v TeXu/LaTeXu."
