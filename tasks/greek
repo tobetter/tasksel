@@ -1,13 +1,18 @@
 Task: greek
 Section: l10n
+Maintainer: Konstantinos Margaritis <markos@debian.org>
 Description: Greek environment
  This task installs packages and documentation in Greek
  to help Greek speaking people use Debian.
 Key:
  language-env
+ fonty
 Packages:
- xfonts-intl-european
- ttf-freefont
- openoffice.org-l10n-el
- kde-i18n-el
- openoffice.org-help-el
+  kde-i18n-el
+  koffice-i18n-el
+  # mozilla-locale-el
+  ttf-freefont
+  ttf-thryomanes
+  xfonts-intl-european
+  xfonts-efont-unicode
+  xfonts-efont-unicode-ib
