@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-29 11:46-0500\n"
+"POT-Creation-Date: 2004-04-01 17:50-0500\n"
 "PO-Revision-Date: 2004-03-30 16:34+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
@@ -218,7 +218,9 @@ msgstr "Servidor de fitxers"
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "Aquesta tasca configura el vostre sistema per a que siga un servidor de fitxers, suportant tant NetBIOS com NFS."
+msgstr ""
+"Aquesta tasca configura el vostre sistema per a que siga un servidor de "
+"fitxers, suportant tant NetBIOS com NFS."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -289,7 +291,9 @@ msgstr "Entorn en hebreu"
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
-msgstr "Aquesta tasca instal·la paquets i documentació en hebreu per a ajudar als usuaris de parla hebrea a utilitzar Debian."
+msgstr ""
+"Aquesta tasca instal·la paquets i documentació en hebreu per a ajudar als "
+"usuaris de parla hebrea a utilitzar Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:179
@@ -365,7 +369,11 @@ msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities for laptops including IBM "
 "Thinkpads, Sony Vaios, Toshibas, and Dell Inspirons."
-msgstr "Aquesta és una col·leció d'eines que els usuaris de portàtils esperen trobar al sistema. Inclou algunes utilitats especials que per a portàtils que inclouen els Thinkpad d'IBM, els Vaio de Sony, els Toshiba i els Inpiron de Dell."
+msgstr ""
+"Aquesta és una col·leció d'eines que els usuaris de portàtils esperen trobar "
+"al sistema. Inclou algunes utilitats especials que per a portàtils que "
+"inclouen els Thinkpad d'IBM, els Vaio de Sony, els Toshiba i els Inpiron de "
+"Dell."
 
 #. Description
 #: ../po/debian-tasks.desc:234
@@ -377,7 +385,9 @@ msgstr "Entorn en lituà"
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
-msgstr "Aquesta tasca instal·la paquets i documentació en lituà, per ajudar als usuaris de parla lituana a utilitzar Debian."
+msgstr ""
+"Aquesta tasca instal·la paquets i documentació en lituà, per ajudar als "
+"usuaris de parla lituana a utilitzar Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:242
@@ -551,48 +561,36 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid "Tcl/Tk"
-msgstr "Tcl/Tk"
-
-#. Description
-#: ../po/debian-tasks.desc:342
-msgid ""
-"Packages commonly used in developing applications using the Tcl language and "
-"Tk Toolkit."
-msgstr ""
-"Paquets utilitzats habitualment per al desenvolupament d'aplicacions que "
-"utilitzen el llenguatge Tcl i el toolkit Tk."
-
-#. Description
-#: ../po/debian-tasks.desc:351
 msgid "TeX/LaTeX environment"
 msgstr "Entorn de Tex/LaTeX"
 
 #. Description
-#: ../po/debian-tasks.desc:351
+#: ../po/debian-tasks.desc:342
 msgid ""
 "This task provides necessary packages for composing documents in TeX/LaTeX."
-msgstr "Aquesta tasca proveeix els paquets necessaris per a composar documents en TeX/LaTeX."
+msgstr ""
+"Aquesta tasca proveeix els paquets necessaris per a composar documents en "
+"TeX/LaTeX."
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "Thai environment"
 msgstr "Entorn en tailandès"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
 "Aquesta tasca instal·la paquets que fan l'ús de Debian més fàcil als usuaris "
 "tailandessos."
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid "Conventional Unix server"
 msgstr "Servidor UNIX convencional"
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -603,16 +601,26 @@ msgstr ""
 "inclou un nombre de dimonis."
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid "Web server"
 msgstr "Servidor web"
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Aquesta tasca selecciona paquets útils per a un servidor de web normal."
+
+#~ msgid "Tcl/Tk"
+#~ msgstr "Tcl/Tk"
+
+#~ msgid ""
+#~ "Packages commonly used in developing applications using the Tcl language "
+#~ "and Tk Toolkit."
+#~ msgstr ""
+#~ "Paquets utilitzats habitualment per al desenvolupament d'aplicacions que "
+#~ "utilitzen el llenguatge Tcl i el toolkit Tk."
 
 #~ msgid "a TeX/LaTeX environment"
 #~ msgstr "Un entorn amb TeX/LaTeX"

@@ -239,7 +239,7 @@ void ui_resize(void)
 	   _("Debian Task Installer v%s - (c) 1999-2004 SPI and others"),
 	   VERSION);
   SLsmg_gotorc(0, 0);
-  SLsmg_write_nstring(buf, strlen(buf));
+  SLsmg_write_string(buf);
   
   _resizing = 0;
   switch (_chooserinfo.whichwindow) {
@@ -350,7 +350,7 @@ int ui_eventloop(void)
 void ui_shadow(int y, int x, unsigned int dy, unsigned int dx)
 {
   int c;
-  unsigned short ch;
+  SLsmg_Char_Type ch;
   
   if (SLtt_Use_Ansi_Colors) {
     for (c=0;c<dy-1;c++) {
@@ -360,13 +360,13 @@ void ui_shadow(int y, int x, unsigned int dy, unsigned int dx)
        * character plus alternate character set attribute. -- JED
        */
       ch = SLsmg_char_at();
-      ch = (ch & 0x80FF) | (0x02 << 8);
+      ch = SLSMG_BUILD_CHAR(SLSMG_EXTRACT_CHAR(ch), 0x2);
       SLsmg_write_raw(&ch, 1);
     }
     for (c=0;c<dx;c++) {
       SLsmg_gotorc(y+dy, x+1+c);
       ch = SLsmg_char_at();
-      ch = (ch & 0x80FF) | (0x02 << 8);
+      ch = SLSMG_BUILD_CHAR(SLSMG_EXTRACT_CHAR(ch), 0x2);
       SLsmg_write_raw(&ch, 1);
     }
   }
@@ -398,12 +398,12 @@ void _drawbutton(int which, int issel)
        * of the other buttons into account.
        */
       ui_button(_chooserinfo.rowoffset + _chooserinfo.height + 1,
-                _chooserinfo.coloffset + (_chooserinfo.width - strlen(_("Task ^Info")) + 1) / 2,
+                _chooserinfo.coloffset + (_chooserinfo.width - ts_mbstrwidth(_("Task ^Info")) + 1) / 2,
                 _("Task ^Info"), issel);
       break;
     case BUTTON_HELP:  // Right justified
       ui_button(_chooserinfo.rowoffset + _chooserinfo.height + 1,
-                _chooserinfo.coloffset + _chooserinfo.width - 5 - strlen(_("^Help")) + 1,
+                _chooserinfo.coloffset + _chooserinfo.width - 5 - ts_mbstrwidth(_("^Help")) + 1,
                 _("^Help"), issel);
       break;
   }
@@ -512,18 +512,24 @@ void ui_button(int row, int col, char *txt, int selected)
   SLsmg_gotorc(row, col);
   SLsmg_write_char('<');
   /* Anything following a ^ in txt is highlighted, and the ^ removed. */
-  p = strchr(txt, '^');
+  p = ts_mbstrchr(txt, L'^');
   if (p) {
+    wchar_t w;
+    int ret;
+    
     if (p > txt) {
-      SLsmg_write_nstring(txt, p - txt);
+      SLsmg_write_nchars(txt, p - txt);
     }
     p++;
     if (selected)
       SLsmg_set_color(SELHIGHLIGHT);
     else
       SLsmg_set_color(HIGHLIGHT);
-    SLsmg_write_char(p[0]);
-    p++;
+    ret = mbtowc(&w, p, MB_CUR_MAX);
+    if (ret <=0)
+      return;
+    SLsmg_write_char(w);
+    p += ret;
     if (selected)
       SLsmg_set_color(SELBUTTONOBJ);
     else
@@ -537,7 +543,7 @@ void ui_button(int row, int col, char *txt, int selected)
 
 void ui_title(int row, int col, int width, char *title)
 {
-  int pos = col + (width - strlen(title))/2;
+  int pos = col + (width - ts_mbstrwidth(title))/2;
   SLsmg_gotorc(row, pos - 1);
   SLsmg_set_char_set(1);
   SLsmg_write_char(SLSMG_RTEE_CHAR);
@@ -564,7 +570,7 @@ static void ui_dialog_drawlines(int row, int col, int height, int width,
   SLsmg_fill_region(row+1, col+1, height-2, width-2, ' ');
   for (ri = topline; ri < numlines && ri - topline < height - hoffset; ri++) {
     SLsmg_gotorc(row + 1 + ri-topline, col + 1);
-    if (strlen(buf[ri]) > leftcol)
+    if (ts_mbstrwidth(buf[ri]) > leftcol)
       SLsmg_write_nstring(buf[ri]+leftcol, width - woffset);
   }
   if (scroll & SCROLLBAR_VERT && numlines > height-hoffset) 
@@ -671,7 +677,7 @@ void ui_drawsection(int row, int index)
   SLsmg_gotorc(row, _chooserinfo.coloffset + 1 + 2);
   snprintf(buf, 1024, " %s ", getsectiondesc(TASK_SECTION(_tasksary[index])));
   SLsmg_write_nstring(buf, _chooserinfo.width - 1 - 2);
-  spot = 1 + 2 + strlen(buf);
+  spot = 1 + 2 + ts_mbstrwidth(buf);
   if (spot > _chooserinfo.width / 2 - 3) spot = _chooserinfo.width / 2 - 3;
   SLsmg_gotorc(row, _chooserinfo.coloffset + spot);
   SLsmg_draw_hline( _chooserinfo.width / 2 - spot );

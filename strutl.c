@@ -17,3 +17,39 @@ char *reflowtext(int width, char *ptxt)
   return textwrap(&t, ptxt);
 }
 
+char *ts_mbstrchr(char *s, wchar_t c)
+{
+  char *p = s;
+
+  while (*p) {
+    wchar_t w;
+    int ret;
+
+    ret = mbtowc(&w, p, MB_CUR_MAX);
+    if (ret <= 0)
+      return NULL;
+    if (w == c)
+      return p;
+    p += ret;
+  }
+  return NULL;
+}
+
+int ts_mbstrwidth(const char *s)
+{
+  const char *p = s;
+  int width = 0;
+  
+  while (*p) {
+    wchar_t w;
+    int ret;
+
+    ret = mbtowc(&w, p, MB_CUR_MAX);
+    if (ret < 0) return 0;
+    if (ret == 0) break;
+    width += wcwidth(w);
+    p += ret;
+  }
+  return width;
+}
+

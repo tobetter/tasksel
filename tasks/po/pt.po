@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.43\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-29 11:46-0500\n"
+"POT-Creation-Date: 2004-04-01 17:50-0500\n"
 "PO-Revision-Date: 2004-03-31 18:45+0000\n"
 "Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
@@ -552,25 +552,11 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid "Tcl/Tk"
-msgstr "Tcl/Tk"
-
-#. Description
-#: ../po/debian-tasks.desc:342
-msgid ""
-"Packages commonly used in developing applications using the Tcl language and "
-"Tk Toolkit."
-msgstr ""
-"Pacotes normalmente utilizados para desenvolver aplicações utilizando a "
-"linguagem Tcl e o toolkit Tk."
-
-#. Description
-#: ../po/debian-tasks.desc:351
 msgid "TeX/LaTeX environment"
 msgstr "Ambiente Tex/LaTex"
 
 #. Description
-#: ../po/debian-tasks.desc:351
+#: ../po/debian-tasks.desc:342
 msgid ""
 "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
@@ -578,22 +564,23 @@ msgstr ""
 "TeX/LaTeX"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "Thai environment"
 msgstr "Ambiente Tailandês"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "This task installs packages that make it easier for Thai to use Debian."
-msgstr "Esta tarefa instala pacotes que ajudam quem fala Tailandês a utilizar Debian."
+msgstr ""
+"Esta tarefa instala pacotes que ajudam quem fala Tailandês a utilizar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid "Conventional Unix server"
 msgstr "Servidor de Unix convencional"
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -604,16 +591,26 @@ msgstr ""
 "vários daemons."
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid "Web server"
 msgstr "Servidor Web"
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Esta tarefa selecciona pacotes úteis para um sistema servidor web genérico."
+
+#~ msgid "Tcl/Tk"
+#~ msgstr "Tcl/Tk"
+
+#~ msgid ""
+#~ "Packages commonly used in developing applications using the Tcl language "
+#~ "and Tk Toolkit."
+#~ msgstr ""
+#~ "Pacotes normalmente utilizados para desenvolver aplicações utilizando a "
+#~ "linguagem Tcl e o toolkit Tk."
 
 #~ msgid "a TeX/LaTeX environment"
 #~ msgstr "um ambiente Tex/Latex"

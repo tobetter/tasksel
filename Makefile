@@ -8,10 +8,10 @@ CC=gcc
 CFLAGS=-g -Wall  #-Os
 DEBUG=1
 ifeq (0,$(DEBUG))
-DEFS=-DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" \
+DEFS=-DUTF8 -DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" \
      -DTASKDIR=\"$(TASKDIR)\"
 else
-DEFS=-DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" \
+DEFS=-DUTF8 -DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" \
      -DTASKDIR=\".\" -DDEBUG
 endif
 VERSION=$(shell expr "`dpkg-parsechangelog 2>/dev/null |grep Version:`" : '.*Version: \(.*\)' | cut -d - -f 1)

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-29 11:46-0500\n"
+"POT-Creation-Date: 2004-04-01 17:50-0500\n"
 "PO-Revision-Date: 2004-03-08 11:59+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Chinese/Traditional <tetralet@pchome.com.tw>\n"
@@ -526,45 +526,33 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid "Tcl/Tk"
-msgstr "Tcl/Tk"
-
-#. Description
-#: ../po/debian-tasks.desc:342
-msgid ""
-"Packages commonly used in developing applications using the Tcl language and "
-"Tk Toolkit."
-msgstr "使用 Tcl 語言和 Tk 工具組來進行程式開發時一般會使用到的套件。"
-
-#. Description
-#: ../po/debian-tasks.desc:351
 msgid "TeX/LaTeX environment"
 msgstr "TeX/LaTeX 環境"
 
 #. Description
-#: ../po/debian-tasks.desc:351
+#: ../po/debian-tasks.desc:342
 msgid ""
 "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "Thai environment"
 msgstr "泰語環境"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
 "此主題將安裝一些相關套件，以利於使用泰語的人們能更加方便地使用 Debian。"
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid "Conventional Unix server"
 msgstr "傳統 Unix 伺服器"
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -574,15 +562,23 @@ msgstr ""
 "一下，其中可是包括了為數眾多的 Daemon。"
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid "Web server"
 msgstr "Web 伺服器"
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "此主題提供了對於一般用途的的 web 伺服器系統而言極有用處的套件。"
+
+#~ msgid "Tcl/Tk"
+#~ msgstr "Tcl/Tk"
+
+#~ msgid ""
+#~ "Packages commonly used in developing applications using the Tcl language "
+#~ "and Tk Toolkit."
+#~ msgstr "使用 Tcl 語言和 Tk 工具組來進行程式開發時一般會使用到的套件。"
 
 #~ msgid "a TeX/LaTeX environment"
 #~ msgstr "一個 TeX/LaTeX 環境"

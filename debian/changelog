@@ -1,5 +1,11 @@
-tasksel (1.48) UNRELEASED; urgency=low
+tasksel (1.48) unstable; urgency=low
 
+  * Eugeniy Meshcheryako
+    - Fix utf8 support. Closes: #238739, #235433
+  * Joey Hess
+    - Move Debian Jr. to the misc ghetto.
+    - Dropped the tcl/tk task as not being a popular enough language these
+      days.
   * Translations:
     - Kęstutis Biliūnas
       - Updated Lithuanian translation (tasks/po/uk.po).
@@ -16,7 +22,7 @@ tasksel (1.48) UNRELEASED; urgency=low
     - Peter Mann
       - Updated Slovak translation (tasks/po/sk.po)
 
- -- Christian Perrier <bubulle@kheops.frmug.org>  Fri,  2 Apr 2004 09:06:30 +0200
+ -- Joey Hess <joeyh@debian.org>  Thu,  1 Apr 2004 17:48:14 -0500
 
 tasksel (1.47) unstable; urgency=low
 

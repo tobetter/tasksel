@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-29 11:46-0500\n"
+"POT-Creation-Date: 2004-04-01 17:50-0500\n"
 "PO-Revision-Date: 2004-03-31 02:57+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <cwryu@debian.org>\n"
@@ -204,7 +204,8 @@ msgstr "파일 서버"
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "이 태스크는 시스템을 파일 서버로 준비합니다. NetBIOS와 NFS를 모두 지원합니다."
+msgstr ""
+"이 태스크는 시스템을 파일 서버로 준비합니다. NetBIOS와 NFS를 모두 지원합니다."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -275,7 +276,9 @@ msgstr "히브리어 환경"
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
-msgstr "이 태스크는 히브리어를 사용하는 사람들이 데비안을 쓸 때 필요한 패키지와 문서들을 설치합니다."
+msgstr ""
+"이 태스크는 히브리어를 사용하는 사람들이 데비안을 쓸 때 필요한 패키지와 문서"
+"들을 설치합니다."
 
 #. Description
 #: ../po/debian-tasks.desc:179
@@ -350,7 +353,9 @@ msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities for laptops including IBM "
 "Thinkpads, Sony Vaios, Toshibas, and Dell Inspirons."
-msgstr "랩탑 사용자에게 필요한 도구들의 모음입니다. 이 태스크에는 IBM Thinkpad, Sony Vaio, Toshiba, Dell Inspiron 등 특정 랩탑에 필요한 유틸리티도 들어 있습니다."
+msgstr ""
+"랩탑 사용자에게 필요한 도구들의 모음입니다. 이 태스크에는 IBM Thinkpad, Sony "
+"Vaio, Toshiba, Dell Inspiron 등 특정 랩탑에 필요한 유틸리티도 들어 있습니다."
 
 #. Description
 #: ../po/debian-tasks.desc:234
@@ -362,7 +367,9 @@ msgstr "리투아니아어 환경"
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
-msgstr "이 태스크는 리투아니아어를 사용하는 사람들이 데비안을 쓰는 데 도움이 되는 패키지와 문서들을 설치합니다."
+msgstr ""
+"이 태스크는 리투아니아어를 사용하는 사람들이 데비안을 쓰는 데 도움이 되는 패"
+"키지와 문서들을 설치합니다."
 
 #. Description
 #: ../po/debian-tasks.desc:242
@@ -531,47 +538,35 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid "Tcl/Tk"
-msgstr "Tcl/Tk"
-
-#. Description
-#: ../po/debian-tasks.desc:342
-msgid ""
-"Packages commonly used in developing applications using the Tcl language and "
-"Tk Toolkit."
-msgstr ""
-"Tcl 언어 및 Tk 툴킷을 사용해 응용 프로그램을 개발하는 데 쓰이는 패키지."
-
-#. Description
-#: ../po/debian-tasks.desc:351
 msgid "TeX/LaTeX environment"
 msgstr "TeX/LaTeX 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:351
+#: ../po/debian-tasks.desc:342
 msgid ""
 "This task provides necessary packages for composing documents in TeX/LaTeX."
-msgstr "이 태스크는 Tex/LaTeX으로 문서를 작성할 때 필요한 패키지가 들어 있습니다."
+msgstr ""
+"이 태스크는 Tex/LaTeX으로 문서를 작성할 때 필요한 패키지가 들어 있습니다."
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "Thai environment"
 msgstr "타이어 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
 "이 태스크는 타이어를 사용하는 사람들이 데비안을 쉽게 쓸 수 있는 패키지를 설치"
 "합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid "Conventional Unix server"
 msgstr "전통적인 유닉스 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -582,12 +577,21 @@ msgstr ""
 "오."
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid "Web server"
 msgstr "웹 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "이 태스크는 일반적인 웹 서버 시스템에 필요한 패키지들을 설치합니다."
+
+#~ msgid "Tcl/Tk"
+#~ msgstr "Tcl/Tk"
+
+#~ msgid ""
+#~ "Packages commonly used in developing applications using the Tcl language "
+#~ "and Tk Toolkit."
+#~ msgstr ""
+#~ "Tcl 언어 및 Tk 툴킷을 사용해 응용 프로그램을 개발하는 데 쓰이는 패키지."

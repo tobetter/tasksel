@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-29 11:46-0500\n"
+"POT-Creation-Date: 2004-04-01 17:50-0500\n"
 "PO-Revision-Date: 2004-04-01 17:32+0200\n"
 "Last-Translator: Peter KLFMANiK Mann <Peter.Mann@tuke.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -542,24 +542,11 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid "Tcl/Tk"
-msgstr "Tcl/Tk"
-
-#. Description
-#: ../po/debian-tasks.desc:342
-msgid ""
-"Packages commonly used in developing applications using the Tcl language and "
-"Tk Toolkit."
-msgstr ""
-"Balíky zvyèajne pou¾ívané pre vývoj aplikácií v Tcl jazyku a Tk toolkite."
-
-#. Description
-#: ../po/debian-tasks.desc:351
 msgid "TeX/LaTeX environment"
 msgstr "TeX/LaTeX prostredie"
 
 #. Description
-#: ../po/debian-tasks.desc:351
+#: ../po/debian-tasks.desc:342
 msgid ""
 "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
@@ -567,24 +554,24 @@ msgstr ""
 "v systéme TeX/LaTeX."
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "Thai environment"
 msgstr "Thajské prostredie"
 
 #. Description
-#: ../po/debian-tasks.desc:361
+#: ../po/debian-tasks.desc:352
 msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr ""
 "Táto úloha nain¹taluje balíky, ktoré uµahèia pou¾ívanie Debianu v Thajskom "
 "prostredí."
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid "Conventional Unix server"
 msgstr "Be¾ný unixový server"
 
 #. Description
-#: ../po/debian-tasks.desc:371
+#: ../po/debian-tasks.desc:362
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -595,15 +582,24 @@ msgstr ""
 "Nezabudnite, ¾e to zahàòa mno¾stvo démonov."
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid "Web server"
 msgstr "WWW server"
 
 #. Description
-#: ../po/debian-tasks.desc:378
+#: ../po/debian-tasks.desc:369
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "Táto úloha vyberie balíky u¾itoèné pre v¹eobecný www server."
+
+#~ msgid "Tcl/Tk"
+#~ msgstr "Tcl/Tk"
+
+#~ msgid ""
+#~ "Packages commonly used in developing applications using the Tcl language "
+#~ "and Tk Toolkit."
+#~ msgstr ""
+#~ "Balíky zvyèajne pou¾ívané pre vývoj aplikácií v Tcl jazyku a Tk toolkite."
 
 #~ msgid "a TeX/LaTeX environment"
 #~ msgstr "prostredie pre písanie dokumentov v TeXu/LaTeXu."
