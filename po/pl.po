@@ -6,13 +6,63 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
-"POT-Creation-Date: 2001-10-07 16:29+0200\n"
-"PO-Revision-Date: 2001-10-07 17:00+0200\n"
+"POT-Creation-Date: 2001-11-23 22:14+0100\n"
+"PO-Revision-Date: 2001-11-23 22:30+0100\n"
 "Last-Translator: Marcin Owsiany <porridge@debian.org>\n"
 "Language-Team: Polish <porridge@debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../data.c:277 ../data.c:291
+msgid "Cannot allocate memory for enumeration buffer"
+msgstr "Nie uda³o siê zaalokowaæ pamiêci na bufor wyliczania"
+
+#: ../macros.h:42
+#, c-format
+msgid ""
+"Fatal error encountered at %s:%d\r\n"
+"\t"
+msgstr ""
+"Wyst±pi³ krytyczny b³±d: %s:%d\r\n"
+"\t"
+
+#: ../macros.h:51
+#, c-format
+msgid ""
+"I/O error at %s:%d\r\n"
+"\t"
+msgstr ""
+"B³±d wej¶cia/wyj¶cia: %s:%d\r\n"
+"\t"
+
+#: ../slangui.c:18 ../slangui.c:19
+msgid "(no description)"
+msgstr "(brak opisu)"
+
+#: ../slangui.c:75
+msgid "End-user"
+msgstr "U¿ytkownik"
+
+#: ../slangui.c:76
+msgid "Servers"
+msgstr "Serwery"
+
+#: ../slangui.c:77
+msgid "Development"
+msgstr "Programowanie"
+
+#: ../slangui.c:78
+msgid "Localization"
+msgstr "Obs³uga jêzyków"
+
+#: ../slangui.c:79
+msgid "Hardware Support"
+msgstr "Obs³uga sprzêtu"
+
+#: ../slangui.c:80
+msgid "Miscellaneous"
+msgstr "Ró¿ne"
 
 #: ../slangui.c:213
 msgid "Unable to initialize the terminal"
@@ -27,12 +77,9 @@ msgid "Unable to initialize keyboard interface"
 msgstr "Nie uda³o siê zainicjalizowaæ interfejsu klawiatury"
 
 #: ../slangui.c:233
-msgid "Debian Task Installer"
-msgstr "Instalator zadañ Debiana"
-
-#: ../slangui.c:234
-msgid "(c) 1999-2001 SPI and others"
-msgstr "(c) 1999-2001 SPI i inni"
+#, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
+msgstr "Instalator zadañ Debiana v%s - (c) 1999-2001 SPI i inni"
 
 #: ../slangui.c:387
 msgid "^Finish"
@@ -54,30 +101,46 @@ msgstr "Wybierz zadania do zainstalowania"
 msgid "Ok"
 msgstr "Ok"
 
+#: ../slangui.c:679 ../slangui.c:693 ../slangui.c:804
+#, c-format
+msgid "Index out of bounds: %d >= %d"
+msgstr "Nieprawid³owy indeks: %d >= %d"
+
 #: ../slangui.c:770
 msgid "Help"
 msgstr "Pomoc"
 
+#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:771
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\r\rThe main chooser list shows a list of tasks that you can "
-"choose to install. The arrow keys moves the cursor. Pressing ENTER or the "
-"SPACEBAR toggles the selection of the task at the cursor. You can also press "
-"A to select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-"program and begin installation of your selected tasks.\r\rThank you for "
-"using Debian.\r\rPress enter to return to the task selection screen"
+"given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
 msgstr ""
 "Zadania pozwalaj± szybko zainstalowaæ zbiór pakietów wykonuj±cych pewn± "
-"funkcjê.\r\rG³ówna lista przedstawia zadania, które mo¿esz zainstalowaæ. "
-"Klawisze strza³ek przesuwaj± kursor. Naci¶niêcie klawisza ENTER lub SPACJI "
-"powoduje zmianê zaznaczenia pakietu, przy którym znajduje siê kursor. Mo¿na "
-"tak¿e nacisn±æ A, aby wybraæ wszystkie pakiety, lub N, aby usun±æ "
-"zaznaczenie z wszystkich pakietów. Naci¶niêcie Q spowoduje zakoñczenie "
-"programu i rozpocznie instalacjê zaznaczonych zadañ.\r\rDziêkujemy za "
-"wybranie Debiana.\r\rProszê nacisn±æ ENTER, aby powróciæ do ekranu wyboru."
+"funkcjê.\n"
+"\n"
+"G³ówna lista przedstawia zadania, które mo¿na zainstalowaæ. Klawisze strza³ek "
+"przesuwaj± kursor. Naci¶niêcie klawisza ENTER lub SPACJI powoduje odwrócenie "
+"zaznaczenia zadania, przy którym znajduje siê kursor. Mo¿na tak¿e nacisn±æ A, "
+"aby wybraæ wszystkie pakiety, lub N, aby usun±æ zaznaczenie z wszystkich "
+"pakietów. Naci¶niêcie Q spowoduje zakoñczenie programu i rozpocznie "
+"instalacjê zaznaczonych zadañ.\n"
+"\n"
+"Dziêkujemy za wybranie Debiana.\n"
+"\n"
+"Proszê nacisn±æ ENTER, aby powróciæ do ekranu wyboru zadañ."
 
-#: ../slangui.c:808
+#: ../slangui.c:812
 #, c-format
 msgid ""
 "Description:\n"
@@ -90,7 +153,7 @@ msgstr ""
 "\n"
 "Zawarte pakiety:\n"
 
-#: ../slangui.c:816
+#: ../slangui.c:820
 msgid "(no description available)"
 msgstr "(brak opisu)"
 
@@ -99,14 +162,18 @@ msgid "Unknown signal seen"
 msgstr "Nieznany sygna³"
 
 #: ../tasksel.c:32
+msgid "tasksel install <task>\n"
+msgstr "tasksel install <zadanie>\n"
+
+#: ../tasksel.c:33
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [opcje]; gdzie opcje to kombinacja:\n"
 
-#: ../tasksel.c:33
+#: ../tasksel.c:34
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- tryb testowy; nie uruchamia apt-get przy wyj¶ciu"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:35
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -114,36 +181,51 @@ msgstr ""
 "-q -- kolejkuj instalacje; nie instaluj pakietów przy pomocy\n"
 "\t\tapt-get; jedynie kolejkuj je w dpkg"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:36
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- zainstaluj wszystkie wymagane pakiety"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:37
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- zainstaluj wszystkie wa¿ne pakiety"
 
-#: ../tasksel.c:37
+#: ../tasksel.c:38
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- zainstaluj wszystkie standardowe pakiety"
 
-#: ../tasksel.c:38
+#: ../tasksel.c:39
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr ""
 "-n -- nie pokazuj interfejsu u¿ytkownika; zazwyczaj\n"
 "\t\tu¿ywane z -r lub -i"
 
-#: ../tasksel.c:39
+#: ../tasksel.c:40
 msgid "-a -- show all tasks, even those with no packages in them"
 msgstr "-a -- pokazuj wszystkie zadania, nawet niezawieraj±ce pakietów"
 
-#: ../tasksel.c:80 ../tasksel.c:115
+#: ../tasksel.c:81 ../tasksel.c:116
 msgid "No packages selected\n"
 msgstr "Nie wybrano ¿adnych pakietów\n"
 
-#: ../tasksel.c:167
+#: ../tasksel.c:168
 msgid ""
 "No tasks found on this system.\n"
 "Did you update your available file?\n"
 msgstr ""
 "Nie znaleziono zadañ w systemie.\n"
 "Czy uaktualni³e¶(³a¶) plik dostêpnych pakietów?\n"
+
+#: ../util.c:20
+msgid "Cannot allocate memory for strdup"
+msgstr "Nie uda³o siê zaalokowaæ pamiêci dla funkcji strdup"
+
+#: ../util.c:38
+#, c-format
+msgid "Cannot allocate %d bytes of memory"
+msgstr "Nie uda³o siê zaalokowaæ %d bajtów pamiêci"
+
+#: ../util.c:47
+#, c-format
+msgid "Cannot reallocate %d bytes of memory"
+msgstr "Nie uda³o siê ponownie zaalokowaæ %d bajtów pamiêci"
+
