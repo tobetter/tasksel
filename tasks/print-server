@@ -5,10 +5,13 @@ Description: Print server
 Key:
  cupsys
  cupsys-pstoraster
- cupsomatic-ppd
  cupsys-client
  cupsys-bsd
 Packages:
+ foomatic-gui
+ foomatic-db-engine
+ foomatic-db-hpijs
+ foomatic-filters-ppds
  cupsys-driver-gimpprint
  kdelibs3-cups
  qtcups
