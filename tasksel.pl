@@ -225,11 +225,12 @@ if (@ARGV) {
 }
 
 my @tasks=map { hide_dependent_tasks($_) } map { task_test($_) }
-          grep { task_avail($_) }  map { read_task_desc($_) }
+          grep { task_avail($_) } map { read_task_desc($_) }
 	  list_task_descs();
 
 if ($options{"list-tasks"}) {
-	print $_->{task}."\n" foreach grep { $_->{_display} } @tasks;
+	print $_->{task}."\t".$_->{shortdesc}."\n"
+		foreach grep { $_->{_display} } @tasks;
 	exit(0);
 }
 
