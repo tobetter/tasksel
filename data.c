@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.10 2001/05/18 02:02:02 joeyh Exp $ */
+/* $Id: data.c,v 1.11 2001/05/20 12:05:54 ajt Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -216,9 +216,18 @@ static struct package_t *addpackage(
   if (recommendsdesc) node->recommendscount = splitlinkdesc(recommendsdesc, &node->recommends);
   if (suggestsdesc) node->suggestscount = splitlinkdesc(suggestsdesc, &node->suggests);
   
-  p = tsearch((void *)node, &pkgs->packages, packagecompare);
+  p = tsearch(node, &pkgs->packages, packagecompare);
   VERIFY(p != NULL);
-  pkgs->count++;
+  if (*(struct package_t**)p == node) {
+    pkgs->count++;
+  } else {
+    /* hmmm. this happens when there's a task- package and an entry in
+     * the task file. what to do about it? I *think* what's happening is
+     * the task- package is being replaced by the entry in the file, which
+     * would mean **p is getting leaked right now. XXX
+     */
+    fprintf(stderr, "W: duplicate task info for %s\n", node->name);
+  }
 
   return node;
 }
@@ -314,7 +323,9 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs)
   char buf[BUF_SIZE];
   char *task, *shortdesc, *longdesc, *section;
 
-  if ((f = fopen(fn, "r")) == NULL) PERROR(fn);
+  f = fopen(fn, "r");
+  if (f == NULL) PERROR(fn);
+
   while (!feof(f)) {
     fgets(buf, BUF_SIZE, f);
     CHOMP(buf);
@@ -364,8 +375,8 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs)
 	 * should include description and section fields and not need an
 	 * associated package. */
 	package = MALLOC(strlen(task) + 6);
-	package = STRDUP("task-");
-	strcat(package, task);
+	package = MALLOC(6 + strlen(task));
+	strcpy(package, "task-"); strcat(package, task);
 	p = addpackage(pkgs, package, NULL, NULL, NULL, shortdesc, longdesc,
 	               PRIORITY_UNKNOWN);
 	p->section = STRDUP(section);
@@ -461,8 +472,8 @@ void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
       }
 
       if (strncmp(name, "task-", 5) != 0) {
-      addpackage(pkgs, name, NULL, NULL, NULL, shortdesc,
-		 NULL, priority);
+        addpackage(pkgs, name, NULL, NULL, NULL, shortdesc,
+		   NULL, priority);
       } else {
         struct package_t *p;
 	struct task_t *t;

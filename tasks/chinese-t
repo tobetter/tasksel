@@ -1,0 +1,37 @@
+Task: chinese-t
+Section: l10n
+Description: Traditional Chinese environment
+ This 'task package' installs programs, data files, fonts, and
+ documentation that makes it easier to use Debian for
+ Traditional-Chinese-related operations.
+ .
+ Please read /usr/share/doc/task-chinese-t/README for more information.
+ .
+ (The 't' in the package name stands for 'Traditional Chinese')
+Packages:
+  locales (>= 2.2.3-1)
+  debian-zh-faq-s
+  doc-linux-zh
+  xfonts-arphic-bsmi00lp
+  xfonts-arphic-bkai00mp
+  xfonts-intl-chinese
+  rxvt-ml
+  xcin
+  chinput
+  zh-autoconvert
+  yiyantang
+  pydict
+  stardic
+  fortune-zh
+  cjk-latex
+  chdrv
+  yh
+  ttfprint
+  bg5ps
+  gs-cjk-resource
+  cmap-adobe-cns1
+  xfonts-cmex-big5p
+  unifont
+  cxterm-big5
+  kon2
+  cedictb5

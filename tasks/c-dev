@@ -1,0 +1,26 @@
+Task: c-dev
+Section: devel
+Description: Development in C
+ A metapackage containing dependencies and suggestions for a complete
+ environment for development of programs in the C programming language,
+ including:
+  o Tools common for C, C++ and Objective C development
+  o A C preprocessor
+  o A C compiler
+  o Development files of the standard C library
+  o Debugging tools
+  o Literate programming tools for C
+  o C source analysis tools and tools to manipulate C source
+Packages: 
+  # task-devel-common
+  gcc
+  cpp
+  manpages-dev
+  autoproject
+  nowebm
+  c2man
+  cxref
+  cutils
+  tendra
+  cflow
+  liwc

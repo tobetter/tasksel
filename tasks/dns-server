@@ -1,0 +1,12 @@
+Task: dns-server
+Section: server
+Source: bind9
+Description: DNS Server
+ Installs the BIND DNS server, and related documentation and utility packages.
+Packages:
+ bind9
+ bind9-doc
+ dnsutils
+ lwresd
+ dlint
+

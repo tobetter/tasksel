@@ -1,0 +1,53 @@
+Task: desktop
+Section: user
+Description: X Desktop
+ This package provides the basic "desktop" software, including a variety
+ of window managers, session managers, file managers and web browsers. It
+ incorporates the basic GNOME and KDE desktops, and provides a display
+ manager which gives lets the user choose between the two.
+Packages:
+  # task-x-window-system-core
+  wmaker
+  gnome-session
+  gnome-panel
+  gnome-control-center
+  imlib-base
+  gnome-terminal
+  gnome-applets
+  gmc
+  esound
+  gnome-users-guide-en
+  gnome-help
+  gdm
+  gnome-utils
+  kdebase
+  konqueror
+  konsole
+  kdebase-doc
+  kdewallpapers
+  kuser
+  ksysv
+  kcron
+  kpackage
+  ksysctrl
+  secpolicy
+  ark
+  kcalc
+  kdf
+  kdepasswd
+  kedit
+  kfind
+  khexedit
+  kjots
+  knotes
+  kpm
+  ktimemon
+  pixie
+  kpaint
+  kiconedit
+  ksnapshot
+  kruler
+  enlightenment
+  fvwm
+  qvwm
+  mozilla

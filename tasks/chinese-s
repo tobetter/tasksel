@@ -1,0 +1,38 @@
+Task: chinese-s
+Section: l10n
+Description: Simplified Chinese environment
+ This 'task package' installs programs, data files, fonts, and
+ documentation that makes it easier to use Debian for
+ Simplified-Chinese-related operations.
+ .
+ Please read /usr/share/doc/task-chinese-s/README for more information.
+ .
+ (The 's' in the package name stands for 'Simplified Chinese')
+Packages:
+  locales
+  debian-zh-faq-s
+  doc-linux-zh-s
+  xfonts-arphic-gbsn00lp
+  xfonts-arphic-gkai00mp
+  xfonts-intl-chinese
+  rxvt-ml
+  chinput
+  xcin
+  zh-autoconvert
+  yiyantang
+  stardic
+  fortune-zh
+  xfonts-intl-chinese-big
+  cjk-latex
+  cce
+  yh
+  gs-cjk-resource,
+  cmap-adobe-gb1
+  pydict
+  chdrv
+  kon2
+  jfbterm
+  cxterm-gb
+  unifont
+  cedictgb
+

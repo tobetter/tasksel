@@ -1,0 +1,36 @@
+Task: japanese
+Section: l10n
+Description: Japanese environment
+ This task package installs packages that makes it easier to use
+ Debian for Japanese-related operations.
+Packages:
+ locales,
+ jfbterm 
+ ja-trans
+ lv
+ nkf
+ doc-linux-ja
+ doc-debian-ja
+ manpages-ja
+ xmanpages-ja
+ kterm
+ kinput2-canna-wnn
+ skkinput
+ asiya24-vfont
+ watanabe-vfont
+ xfonts-base
+ xfonts-a12k12
+ xfonts-kappa20
+ xfonts-marumoji
+ xfonts-shinonome
+ xfonts-intl-japanese
+ xfonts-intl-japanese-big
+ ttf-xtt-wadalab-gothic
+ ttf-xtt-watanabe-mincho
+ canna
+ canna-utils
+ yc-el
+ freewnn-jserver
+ egg
+ skk
+ dbskkd-cdb

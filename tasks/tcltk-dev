@@ -1,0 +1,17 @@
+Task: tcltk-dev
+Section: devel
+Description: Developing Tcl/Tk applications
+ A metapackage containing dependencies for packages commonly used
+ in developing applications using the Tcl language and Tk Toolkit.
+ It includes:
+  o Script-level manpages
+  o C-level manpages
+  o C headers and libraries
+Packages:
+ tcl8.2-dev
+ tk8.2-dev
+ blt-dev
+ tktable-dev
+ itcl3.1-dev
+ itk3.1-dev
+ iwidgets3.1-dev

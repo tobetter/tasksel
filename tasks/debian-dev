@@ -1,0 +1,22 @@
+Task: debian-dev
+Section: devel
+Description: Debian package development
+ This task package installs packages needed to build Debian packages,
+ plus several other packages that while not strictly required, may make
+ your life easier. It also contains other information for developers like
+ the Debian policy and Debian specific manuals.
+Packages:
+  build-essential
+  cvs-buildpackage
+  lintian
+  debhelper
+  dh-make
+  debmake
+  devscripts 
+  dpkg-dev
+  dput
+  fakeroot
+  debian-policy
+  developers-reference
+  maint-guide
+  gnupg

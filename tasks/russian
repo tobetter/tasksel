@@ -1,0 +1,16 @@
+Task: russian
+Section: l10n
+Description: Russian-speaking environment
+ This task package installs modifications and documentation in russian
+ to help russian speaking people using Debian.
+ .
+ This package doesn't depend on packages that depend on X.
+Packages:
+ console-cyrillic
+ manpages-ru
+ irussian
+ mueller7-dict
+ konwert
+ re
+ xfonts-bolkhov-koi8r
+ xfonts-cronyx-koi8r-100dpi

@@ -1,0 +1,17 @@
+Task: fortran-dev
+Section: devel
+Description: Fortran development environment
+ This package depends on a number of other packages.  When installed
+ with all its dependencies it provides a reasonably complete environment
+ for Fortran 77 development.  It also suggest a couple of other packages
+ which may be of use to Fortran programmers, but does not suggest
+ general tools like editors.
+ .
+ Removing this package will not remove any functionality from your
+ system - it exists purely to provide dependencies on other packages.
+Packages:
+ g77
+ ftnchek
+ fweb
+ slatec
+ asa

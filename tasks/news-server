@@ -1,0 +1,12 @@
+Task: news-server
+Section: server
+Description: USENET News Server
+ This package will select the preferred version of the INN news server
+ software for new Debian installations.
+ .
+ You do not need this package if you merely wish to read news from an
+ existing server, just select the news reader program you desire and it
+ will pull in any required pieces.  Only use this package if you intend
+ to operate a server.
+Packages:
+ inn2

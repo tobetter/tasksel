@@ -1,0 +1,17 @@
+Task: laptop
+Section: hware
+Description: A selection of tools for laptop users
+ This is a collection of tools that laptop users will expect to find on a
+ system.
+ .
+ Power management
+ PCMCIA
+ cron control
+Pacakges:
+ apmd
+ pcmcia-cs
+ anacron
+ netenv
+ irda-tools
+ irda-common
+ toshutils

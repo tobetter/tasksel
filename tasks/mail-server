@@ -1,0 +1,8 @@
+Task: mail-server
+Section: server
+Description: IMAP Server
+ This is a server for the IMAP protocol.  IMAP allows you to keep your
+ mail folders on a central server and access them from multiple locations.
+Packages:
+ uw-imapd
+ imap-server

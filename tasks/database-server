@@ -1,0 +1,16 @@
+Task: database-server
+Section: server
+Description: PostgreSQL database
+ This package installs client and server packages for the PostgreSQL database.
+ .
+ PostgreSQL is an SQL relational database, offering increasing SQL92
+ compliance and some SQL3 features.  It is suitable for use with multi-user
+ database access, through its facilities for transactions and fine-grained
+ locking.
+Packages: 
+ postgresql
+ postgresql-client
+ pgaccess
+ postgresql-doc
+ postgresql-contrib
+ libecpg3
