@@ -69,3 +69,4 @@ clean:
 override:
 	@cvs up tasks 2>&1 | grep -v ^U | grep -v ".cvspass" || true
 	@perl makeoverride.pl $(DESCDIR) > ../tasks.sid
+	@gzip < ../tasks.sid > ../tasks.sid.gz
