@@ -3,19 +3,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-06 19:41-0400\n"
+"POT-Creation-Date: 2004-07-25 18:37-0400\n"
 "PO-Revision-Date: 2004-07-10 03:06+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <cwryu@debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Type: multiselect
-#. Choices
-#: ../templates:3
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, 수동으로 꾸러미 선택"
 
 #. Type: multiselect
 #. Description
@@ -30,6 +24,12 @@ msgstr ""
 "음 미리 정의해 둔 소프트웨어 모음 중 설치하려는 소프트웨어 모음을 선택하십시"
 "오. 무엇을 설치해야 할 지 잘 아는 경험 많은 사용자라면 수동으로 꾸러미를 선택"
 "하는 쪽이 더 좋을 수도 있습니다."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:12
+msgid "${CHOICES}, manual package selection"
+msgstr "${CHOICES}, 수동으로 꾸러미 선택"
 
 #. Type: multiselect
 #. Description

@@ -6,19 +6,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 2.04\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-06 19:41-0400\n"
+"POT-Creation-Date: 2004-07-25 18:37-0400\n"
 "PO-Revision-Date: 2004-07-03 13:24+0200\n"
 "Last-Translator: Javier Fernandez-Sanguino <jfs@debian.org>\n"
 "Language-Team: Debian Spanish Team <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
-
-#. Type: multiselect
-#. Choices
-#: ../templates:3
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, selección manual de paquetes"
 
 #. Type: multiselect
 #. Description
@@ -33,6 +27,12 @@ msgstr ""
 "instalación de las siguientes colecciones predefinidas de programas ara "
 "adaptar más la instalación a sus necesidades. Los usuarios expertos puede "
 "que deseen seleccionar los paquetes manualmente."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:12
+msgid "${CHOICES}, manual package selection"
+msgstr "${CHOICES}, selección manual de paquetes"
 
 #. Type: multiselect
 #. Description

@@ -15,19 +15,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-06 19:41-0400\n"
+"POT-Creation-Date: 2004-07-25 18:37-0400\n"
 "PO-Revision-Date: 2004-06-29 16:53+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
 "Language-Team: debian-l10n-dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Type: multiselect
-#. Choices
-#: ../templates:3
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, handmatige selectie van pakketten"
 
 #. Type: multiselect
 #. Description
@@ -42,6 +36,12 @@ msgstr ""
 "behoeften aan te passen kunt u een of meer van de voorgedefinieerde "
 "softwarecollecties installeren. Ervaren gebruikers verkiezen mogelijks om de "
 "te installeren pakketten manueel te installeren."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:12
+msgid "${CHOICES}, manual package selection"
+msgstr "${CHOICES}, handmatige selectie van pakketten"
 
 #. Type: multiselect
 #. Description

@@ -14,19 +14,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-06 19:41-0400\n"
+"POT-Creation-Date: 2004-07-25 18:37-0400\n"
 "PO-Revision-Date: 2004-06-25 14:18+0300\n"
 "Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
 "Language-Team: Hebrew\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Type: multiselect
-#. Choices
-#: ../templates:3
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, בחירת חבילות ידנית"
 
 #. Type: multiselect
 #. Description
@@ -40,6 +34,12 @@ msgstr ""
 "ברגע זה, רק הליבה של Debian מותקנת. כדי לכוונן את ההתקנה לצרכים שלך, תוכל "
 "לבחור להתקין אחד או יותר של אוספי התוכנה שהוגדרו. משתמשים מנוסים אולי יעדיפו "
 "לבחור חבילות ידנית."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:12
+msgid "${CHOICES}, manual package selection"
+msgstr "${CHOICES}, בחירת חבילות ידנית"
 
 #. Type: multiselect
 #. Description
