@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-10 00:33-0400\n"
+"POT-Creation-Date: 2004-04-15 20:35+0200\n"
 "PO-Revision-Date: 2004-03-30 09:59+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
@@ -580,12 +580,28 @@ msgstr ""
 "žmonėms naudotis Debian'u."
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid "Ukrainian environment"
+msgstr "Lietuvių kalbos aplinka"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs programs and documentation in Ukrainian to help Ukrainian "
+"speaking people use Debian."
+msgstr ""
+"Šis uždavinys įdiegia programas ir rusiškus dokumentus, kad padėtų rusų "
+"kalba kalbantiems žmonėms naudotis Debian'u."
+
+#. Description
+#: ../po/debian-tasks.desc:370
 msgid "Conventional Unix server"
 msgstr "Įprastas Unix serveris"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -596,12 +612,12 @@ msgstr ""
 "įdiegta keletas demonų."
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid "Web server"
 msgstr "Žiniatinklio (web) serveris"
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-10 00:33-0400\n"
+"POT-Creation-Date: 2004-04-15 20:35+0200\n"
 "PO-Revision-Date: 2004-02-07 19:08+0200\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
@@ -572,12 +572,28 @@ msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr "Asentaa paketit auttamaan thainkielisiä Debianin käytössä."
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid "Ukrainian environment"
+msgstr "Thailainen ympäristö"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs programs and documentation in Ukrainian to help Ukrainian "
+"speaking people use Debian."
+msgstr ""
+"Asentaa ohjelmat ja dokumentaation venäjäksi auttamaan venäjänkielisiä "
+"Debianin käytössä."
+
+#. Description
+#: ../po/debian-tasks.desc:370
 msgid "Conventional Unix server"
 msgstr "Perinteinen Unix-palvelin"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -588,12 +604,12 @@ msgstr ""
 "palveluita jotka käynnistyvät asennuksen jälkeen."
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid "Web server"
 msgstr "Www-palvelin"
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""

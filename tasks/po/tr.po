@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-10 00:33-0400\n"
+"POT-Creation-Date: 2004-04-15 20:35+0200\n"
 "PO-Revision-Date: 2004-04-11 02:43+0300\n"
 "Last-Translator: Çağatay Tengiz <cagatay@tengiz.net>\n"
 "Language-Team: Turkish <debian-l10n-turkish@lists.debian.org>\n"
@@ -213,8 +213,9 @@ msgstr "Dosya sunucusu"
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "Hem NetBIOS hem de NFS'i destekleyen bu görev ve sisteminizi dosya "
-"sunucusu olacak şekilde ayarlar."
+msgstr ""
+"Hem NetBIOS hem de NFS'i destekleyen bu görev ve sisteminizi dosya sunucusu "
+"olacak şekilde ayarlar."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -571,12 +572,28 @@ msgstr ""
 "içerir."
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid "Ukrainian environment"
+msgstr "Litvanyaca desteği"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs programs and documentation in Ukrainian to help Ukrainian "
+"speaking people use Debian."
+msgstr ""
+"Bu·görev·Rusça·konuşan·kullanıcılar·için·Debian'ın·kullanımını "
+"kolaylaştıracak paket ve belgeleri içerir."
+
+#. Description
+#: ../po/debian-tasks.desc:370
 msgid "Conventional Unix server"
 msgstr "Geleneksel Unix Sunucusu"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -587,12 +604,12 @@ msgstr ""
 "(daemon) içerebilir."
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid "Web server"
 msgstr "Web sunucusu"
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr "Bu görev genel amaçlı bir web sunucusu için gerekli paketleri seçer."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.42\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-10 00:33-0400\n"
+"POT-Creation-Date: 2004-04-15 20:35+0200\n"
 "PO-Revision-Date: 2004-01-27 12:07+0900\n"
 "Last-Translator: Tomohiro KUBOTA <kubota@debian.org>\n"
 "Language-Team: Debian JP Project <debian-doc@debian.or.jp>\n"
@@ -569,12 +569,28 @@ msgid "This task installs packages that make it easier for Thai to use Debian."
 msgstr "このタスクは、タイ人が Debian を使いやすいようにします。"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid "Ukrainian environment"
+msgstr "タイ語環境"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs programs and documentation in Ukrainian to help Ukrainian "
+"speaking people use Debian."
+msgstr ""
+"このタスクは、ロシア語話者が Debian を使いやすくするために、ロシア語のプログ"
+"ラムとドキュメントをインストールします。"
+
+#. Description
+#: ../po/debian-tasks.desc:370
 msgid "Conventional Unix server"
 msgstr "伝統的な Unix サーバ"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -585,12 +601,12 @@ msgstr ""
 "してください。"
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid "Web server"
 msgstr "ウェブサーバ"
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""

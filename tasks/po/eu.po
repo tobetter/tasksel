@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-10 00:33-0400\n"
+"POT-Creation-Date: 2004-04-15 20:35+0200\n"
 "PO-Revision-Date: 2004-04-13 20:16+0200\n"
 "Last-Translator: Piarres Beobide Egaña <pi@beobide.net>\n"
 "Language-Team: Euskara <eu@li.org>\n"
@@ -119,8 +119,8 @@ msgid ""
 "Serbian and Ukrainian."
 msgstr ""
 "Ataza honek letra-tipo zirilikloa eta hau erabiltze4ko behar dituzun beste "
-"programa batzukinstalatuko ditu.  Honek Bilorusiera, Bulgariera, Mazedoniera, "
-"Rusiera, Serbiera eta Ukraniera Onartzen ditu."
+"programa batzukinstalatuko ditu.  Honek Bilorusiera, Bulgariera, "
+"Mazedoniera, Rusiera, Serbiera eta Ukraniera Onartzen ditu."
 
 #. Description
 #: ../po/debian-tasks.desc:81
@@ -143,7 +143,8 @@ msgstr "SQL databasea"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid "This task selects client and server packages for the PostgreSQL database."
+msgid ""
+"This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Ataza honek PostgreSQL databasearentzat zerbitzari eta bezero paketeak "
 "instalatuko ditu."
@@ -156,9 +157,9 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
-"PostreSQL  dabatase erlazional bat da, SQL92 hedatutako kompilazioa eta SQL3 eginbide batzuk eskeintzen ditu. Hau erabiltzaile anitzek "
-"database "
-"sarrera erabiltzeko bere transakzio erreztasun eta blokeo fina erabiltzen du."
+"PostreSQL  dabatase erlazional bat da, SQL92 hedatutako kompilazioa eta SQL3 "
+"eginbide batzuk eskeintzen ditu. Hau erabiltzaile anitzek database sarrera "
+"erabiltzeko bere transakzio erreztasun eta blokeo fina erabiltzen du."
 
 #. Description
 #: ../po/debian-tasks.desc:102
@@ -199,8 +200,10 @@ msgstr "DNS zerbitzaria"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid "Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "BIND DNS zerbitzaria eta berari buruzko dokumentazioa instalatuko ditu."
+msgid ""
+"Selects the BIND DNS server, and related documentation and utility packages."
+msgstr ""
+"BIND DNS zerbitzaria eta berari buruzko dokumentazioa instalatuko ditu."
 
 #. Description
 #: ../po/debian-tasks.desc:130
@@ -485,7 +488,8 @@ msgstr "Inprinatze zerbitzaria"
 #. Description
 #: ../po/debian-tasks.desc:300
 msgid "This task sets up your system to be a print server."
-msgstr "Ataza honek zure sistema inprimatze zerbitzari bat izateko prestatzen du."
+msgstr ""
+"Ataza honek zure sistema inprimatze zerbitzari bat izateko prestatzen du."
 
 #. Description
 #: ../po/debian-tasks.desc:309
@@ -527,8 +531,9 @@ msgid ""
 "fairly loose definition of 'scientific', this includes numerical analysis "
 "and computing, statistical data analysis as well as visualization."
 msgstr ""
-"Ataza hauek lan zientifikoa egiteko, lan zientifikoaren definizio murritz batetan, "
-"behar diren paketeak instalatuko ditu. Honek zenbakizko analisia eta komputazioa, data estatistiko analiasi eta ikusketa ditu barnean."
+"Ataza hauek lan zientifikoa egiteko, lan zientifikoaren definizio murritz "
+"batetan, behar diren paketeak instalatuko ditu. Honek zenbakizko analisia "
+"eta komputazioa, data estatistiko analiasi eta ikusketa ditu barnean."
 
 #. Description
 #: ../po/debian-tasks.desc:333
@@ -551,7 +556,8 @@ msgstr "TeX/LaTeX ingurunea"
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid "This task provides necessary packages for composing documents in TeX/LaTeX."
+msgid ""
+"This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
 "Ataza honek TEX/LATEX sisteman dokumentoak egiteko pakete erabilienak "
 "instalatzen ditu."
@@ -569,12 +575,28 @@ msgstr ""
 "Thailandiarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid "Ukrainian environment"
+msgstr "Ingurune Lituaniarra"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs programs and documentation in Ukrainian to help Ukrainian "
+"speaking people use Debian."
+msgstr ""
+"Ataza honek Errusierazko dokumentazio eta paketeak instalatuko ditu "
+"Errusiarrei laguntzeko."
+
+#. Description
+#: ../po/debian-tasks.desc:370
 msgid "Conventional Unix server"
 msgstr "Ohizko Unix Zerbitzaria"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -585,14 +607,14 @@ msgstr ""
 "batzui instalatuko dituela."
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid "Web server"
 msgstr "Web zerbitzaria"
 
 #. Description
-#: ../po/debian-tasks.desc:369
-msgid "This task selects a packages useful for a general purpose web server system."
+#: ../po/debian-tasks.desc:377
+msgid ""
+"This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Ataza honek web zerbitzari sistema batek behar dituen pakete erabilienak "
 "instalatzen ditu."
-

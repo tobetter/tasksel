@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-debian-tasks_ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-01 17:50-0500\n"
+"POT-Creation-Date: 2004-04-15 20:35+0200\n"
 "PO-Revision-Date: 2004-04-12 18:19+0800\n"
 "Last-Translator: Eugene Konev <ejka@imfi.kspu.ru>\n"
 "Language-Team: Russian <l10n-russian@lists.debian.org>\n"
@@ -16,7 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Description
@@ -144,7 +145,8 @@ msgstr "База данных SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid "This task selects client and server packages for the PostgreSQL database."
+msgid ""
+"This task selects client and server packages for the PostgreSQL database."
 msgstr "Установить клиентские и серверные компоненты СУБД PostgreSQL."
 
 #. Description
@@ -198,7 +200,8 @@ msgstr "Сервер имён (DNS)"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid "Selects the BIND DNS server, and related documentation and utility packages."
+msgid ""
+"Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Установить сервер имён BIND, и соответствующие пакеты документации и "
 "инструментов."
@@ -213,7 +216,9 @@ msgstr "Файловый сервер"
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "Настроить систему для использования в качестве файлового сервера (NetBIOS и NFS)."
+msgstr ""
+"Настроить систему для использования в качестве файлового сервера (NetBIOS и "
+"NFS)."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -546,7 +551,8 @@ msgstr "Среда TeX/LaTeX"
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid "This task provides necessary packages for composing documents in TeX/LaTeX."
+msgid ""
+"This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr "Установить пакеты для создания документов в TeX/LaTeX."
 
 #. Description
@@ -562,12 +568,28 @@ msgstr ""
 "говорит на тайском языке."
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid "Ukrainian environment"
+msgstr "Поддержка литовского языка"
+
+#. Description
+#: ../po/debian-tasks.desc:361
+#, fuzzy
+msgid ""
+"This task installs programs and documentation in Ukrainian to help Ukrainian "
+"speaking people use Debian."
+msgstr ""
+"Установить пакеты, позволяющие облегчить использование Debian для тех, кто "
+"говорит на русском языке."
+
+#. Description
+#: ../po/debian-tasks.desc:370
 msgid "Conventional Unix server"
 msgstr "Традиционный сервер Unix"
 
 #. Description
-#: ../po/debian-tasks.desc:362
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task selects packages that would typically be found on a conventional "
 "multi-user unix system with remote users. Do be warned that this includes a "
@@ -578,12 +600,12 @@ msgstr ""
 "что будут установлены несколько демонов."
 
 #. Description
-#: ../po/debian-tasks.desc:369
+#: ../po/debian-tasks.desc:377
 msgid "Web server"
 msgstr "Веб-сервер"
 
 #. Description
-#: ../po/debian-tasks.desc:369
-msgid "This task selects a packages useful for a general purpose web server system."
+#: ../po/debian-tasks.desc:377
+msgid ""
+"This task selects a packages useful for a general purpose web server system."
 msgstr "Установить пакеты для создания веб-сервера."
-
