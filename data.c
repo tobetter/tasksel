@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.15 2001/11/22 17:53:48 tausq Rel $ */
+/* $Id: data.c,v 1.16 2003/07/25 18:06:28 joeyh Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -17,6 +17,7 @@
 
 #define PACKAGEFIELD     "Package: "
 #define TASKFIELD        "Task: "
+#define KEYFIELD         "Key:" /* multiline; no space necessary */
 #define DEPENDSFIELD     "Depends: "
 #define RECOMMENDSFIELD  "Recommends: "
 #define SUGGESTSFIELD    "Suggests: "
@@ -325,10 +326,12 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs,
    * contained in Task fields in the Packages file.) */
   FILE *f;
   char buf[BUF_SIZE];
+  char *pkgname, *s;
   char *task, *shortdesc, *longdesc, *section;
   struct package_t *p;
   struct task_t *t;
   char *package;
+  int key_missing;
   
   f = fopen(fn, "r");
   if (f == NULL) PERROR(fn);
@@ -340,11 +343,12 @@ void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs,
       shortdesc = longdesc = section = NULL;
       task = STRDUP(FIELDDATA(buf, TASKFIELD));
       VERIFY(task != NULL);
+      key_missing=0;
       
       while (!feof(f)) {
         fgets(buf, BUF_SIZE, f);
 dontmakemethink:
-  /* after reading the Description:, we make actually have some more fields.
+  /* after reading the Description:, we may actually have some more fields.
    * but the only way we might know this is if we've just read one of those
    * fields. to ensure we don't miss it, we immediately goto the label above
    * when we realise our mistake. a computer scientist would use lookahead
@@ -372,12 +376,35 @@ dontmakemethink:
 	    }
 	  } while (buf[0] != '\n' && !feof(f));
 	  break;
+	} else if (MATCHFIELD(buf, KEYFIELD)) {
+	  do {
+	    if (fgets(buf, BUF_SIZE, f) == 0)
+	      break;
+	    if (buf[0] != ' ') goto dontmakemethink;
+	    CHOMP(buf);
+	    pkgname=buf;
+            while(pkgname[0] == ' ')
+	      pkgname++;
+	    s=pkgname+strlen(pkgname)-1;
+	    while(s[0] == ' ') {
+	      s[0]='\0';
+	      s--;
+	    }
+	    if (pkgname) {
+              if (! packages_find(pkgs, pkgname)) {
+                DPRINTF("task %s is missing required package %s\n", task, pkgname);
+		if (! showempties) {
+		  key_missing=1;
+		}
+	      }
+	    }
+	  } while (buf[0] != '\n' && !feof(f));
 	}
       }
       
       /* packages_readlist must be called before this function, so we can
-       * tell if any packages are in this task, and ignore it if none are. */
-      if (showempties || tasks_find(tasks, task)) {
+       * tell if any packages are in this task, and ignore it if none are */
+      if (showempties || (!key_missing && tasks_find(tasks, task))) {
 	/* This is a fake package to go with the task. I add the task-
 	 * prefix to the package name to ensure that adding this fake
 	 * package stomps on the toes of no real package. */
@@ -404,7 +431,7 @@ dontmakemethink:
   }
   fclose(f);
 }
-	
+
 void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
 {
   /* Populates internal data structures with information from an available 

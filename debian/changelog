@@ -50,6 +50,9 @@ tasksel (1.26) unstable; urgency=low
       chinese. doc-linux-zh-t went away.
     - doincludes.pl and makedesc.pl use apt-cache dumpavail instead of
       dselect available file, for more up-to-date information.
+    - Shortended the description of c-dev.
+    - Renamed Essential field to Key, to prevent confusion.
+    - Implemented dropping of tasks that are missing key packages.
 
  -- Joey Hess <joeyh@debian.org>  Wed, 19 Mar 2003 23:12:33 +0100
 

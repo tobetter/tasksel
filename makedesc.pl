@@ -85,7 +85,7 @@ sub processfile {
 	}
 
 	print OUT map { ucfirst($_).": ".$fields{$_}."\n" }
-		qw{task section description essential};
+		qw{task section description key};
 	print OUT "\n";
 }
 
