@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-07-19 07:19+0200\n"
-"PO-Revision-Date: 2004-03-13 00:03GMT\n"
+"PO-Revision-Date: 2004-07-20 15:19GMT\n"
 "Last-Translator: Dennis Stampfer <seppy@debian.org>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,171 +33,20 @@ msgid ""
 "\t    --task-packages list available packages in a task\n"
 "\t    --task-desc     returns the description of a task\n"
 msgstr ""
+"Usage:\n"
+"tasksel install <Task>\n"
+"tasksel [Optionen]; Wobei Optionen eine Kombination von folgendem:\n"
+"\t-t, --test          Test-Modus. Nichts ändern\n"
+"\t-r, --required      Installiert Pakete mit Priorität »required«\n"
+"\t-i, --important     Installiert Pakete mit Priorität »important«\n"
+"\t-s, --standard      Installiert Pakete mit Priorität»standard«\n"
+"\t-n, --no-ui         Keine Oberfläche Zeigen, nur mit -r oder -i sinnvoll\n"
+"\t    --new-install   Installiert einige Tasks automatisch\n"
+"\t    --list-tasks    Zeigt Tasks an und verlässt das Programm\n"
+"\t    --task-packages Zeigt vorhandene Pakete in einem Taks\n"
+"\t    --task-desc     Gibt die Beschreibung eines Tasks aus\n"
 
 #: ../tasksel.pl:358 ../tasksel.pl:386
 msgid "aptitude failed"
-msgstr ""
+msgstr "Aptitude fehlgeschlagen"
 
-#~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "Konnte keine Speicher für den Enumeration-Buffer reservieren"
-
-#~ msgid ""
-#~ "Fatal error encountered at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Schlimmer Fehler bei %s:%d aufgetreten\n"
-#~ "\t"
-
-#~ msgid ""
-#~ "I/O error at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "I/O-Fehler bei %s.%d\n"
-#~ "\t"
-
-#~ msgid "(no description)"
-#~ msgstr "(keine Beschreibung)"
-
-#~ msgid "End-user"
-#~ msgstr "Endbenutzer"
-
-#~ msgid "Hardware Support"
-#~ msgstr "Hardware-Unterstützung"
-
-#~ msgid "Servers"
-#~ msgstr "Server"
-
-#~ msgid "Development"
-#~ msgstr "Entwicklung"
-
-#~ msgid "Localization"
-#~ msgstr "Lokalisation"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Verschiedenes"
-
-#~ msgid "Unable to initialize the terminal"
-#~ msgstr "Initialisierung des Terminals schlug fehl"
-
-#~ msgid "Unable to initialize screen output"
-#~ msgstr "Initialisierung der Bildausgabe schlug fehl"
-
-#~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "Initialisierung der Tastatur schlug fehl"
-
-#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr "Debian Task-Installer v%s - (c) 1999-2004 SPI und andere"
-
-#~ msgid "^Finish"
-#~ msgstr "^Fertig"
-
-#~ msgid "Task ^Info"
-#~ msgstr "Task ^Info"
-
-#~ msgid "^Help"
-#~ msgstr "^Hilfe"
-
-#~ msgid "Select tasks to install"
-#~ msgstr "Wählen Sie die zu installierenden Tasks"
-
-#~ msgid "Ok"
-#~ msgstr "Ok"
-
-#~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Index außerhalb der Begrenzung: %d >= %d"
-
-#~ msgid "Help"
-#~ msgstr "Hilfe"
-
-#~ msgid ""
-#~ "Tasks allow you to quickly install a selection of packages that performs "
-#~ "a given task.\n"
-#~ "\n"
-#~ "The main chooser list shows a list of tasks that you can choose to "
-#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
-#~ "toggles the selection of the task at the cursor. You can also press A to "
-#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-#~ "program and begin installation of your selected tasks.\n"
-#~ "\n"
-#~ "Thank you for using Debian.\n"
-#~ "\n"
-#~ "Press enter to return to the task selection screen"
-#~ msgstr ""
-#~ "Tasks erlauben Ihnen schnell und einfach Pakete für einen bestimmten "
-#~ "Zweck zu installieren.\n"
-#~ "\n"
-#~ " Die Haupt-Auswahlliste zeigt eine Liste von Tasks, die man installieren "
-#~ "kann. Mit den Pfeiltasten bewegt man den Cursor. Mit ENTER oder der "
-#~ "LEERTASTE wählt man den gewünschten Task. Mit A wählt man alle Tasks, mit "
-#~ "N wählt man gar keine Tasks aus. Mit Q beendet man das Programm und "
-#~ "startet die Installation der ausgewählten Tasks.\n"
-#~ "\n"
-#~ " Danke, dass Sie Debian gewählt haben.\n"
-#~ "\n"
-#~ " Drücken Sie ENTER um zur Auswahlliste zurückzukommen."
-
-#~ msgid ""
-#~ "Description:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Included packages:\n"
-#~ msgstr ""
-#~ "Beschreibung:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "enthaltene Pakete:\n"
-
-#~ msgid "(no description available)"
-#~ msgstr "(keine Beschreibung verfügbar)"
-
-#~ msgid "Unknown signal seen"
-#~ msgstr "Unbekanntes Signal erhalten"
-
-#~ msgid "tasksel install <task>\n"
-#~ msgstr "tasksel install <task>\n"
-
-#~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr "tasksel [Optionen]; folgende Optionen können Sie kombinieren:\n"
-
-#~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- Test Modus; apt-get wird beim verlassen nicht ausgeführt"
-
-#~ msgid ""
-#~ "-q -- queue installs; do not install packages with apt-get;\n"
-#~ "\t\tjust queue them in dpkg"
-#~ msgstr ""
-#~ "-q -- Installation aufschieben; Pakete werden nicht mit apt-get "
-#~ "installiert;\n"
-#~ "\t\tsie werden für dpkg vorgemerkt"
-
-#~ msgid "-r -- install all required-priority packages"
-#~ msgstr "-r -- installiere alle Pakete mit Priorität \"required\""
-
-#~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- installiere alle Pakete mit Priorität \"important\""
-
-#~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- installiere alle Pakete mit Priorität \"standard\""
-
-#~ msgid "-n -- don't show UI; use with -r or -i usually"
-#~ msgstr ""
-#~ "-n -- zeigt die Benutzeroberfläche nicht; wird normalerweise mit -r oder -"
-#~ "i aufgerufen"
-
-#~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr "-a -- zeige alle Tasks, auch diejenigen, die keine Pakete enthalten"
-
-#~ msgid "No packages selected\n"
-#~ msgstr "Keine Pakete ausgewählt\n"
-
-#~ msgid "No tasks found on this system.\n"
-#~ msgstr "Keine Tasks auf diesem System gefunden.\n"
-
-#~ msgid "Cannot allocate memory for strdup"
-#~ msgstr "Konnte keinen Speicher für strdup reservieren"
-
-#~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "Konnte %d Byte im Speicher nicht reservieren"
-
-#~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "Konnte %d Byte im Speicher nicht neu zuteilen"
