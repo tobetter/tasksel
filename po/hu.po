@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 0.1\n"
-"POT-Creation-Date: 2000-02-07 07:45+0100\n"
-"PO-Revision-Date: 2000-02-07 07:50+0100\n"
+"POT-Creation-Date: 2000-06-30 14:16+0200\n"
+"PO-Revision-Date: 2000-06-30 14:53+0100\n"
 "Last-Translator: Risko Gergely <risko@njszki.hu>\n"
 "Language-Team: Hungarian Debian team <forditas@njszki.hu>\n"
 "MIME-Version: 1.0\n"
@@ -31,12 +31,12 @@ msgid "Debian Task Installer"
 msgstr "Debian Task telepítõ"
 
 #: ../slangui.c:132
-msgid "(c) 1999 SPI and others"
-msgstr "(c) 1999 SPI és mások"
+msgid "(c) 1999-2000 SPI and others"
+msgstr "(c) 1999-2000 SPI és mások"
 
 #: ../slangui.c:285
-msgid "^Quit"
-msgstr "^Quit"
+msgid "^Finish"
+msgstr "^Befejezés"
 
 #: ../slangui.c:293 ../slangui.c:294
 msgid "Task ^Info"
@@ -58,7 +58,27 @@ msgstr "Ok"
 msgid "Help"
 msgstr "Súgó"
 
-#: ../slangui.c:660
+#: ../slangui.c:635
+msgid ""
+"Task packages are \"metapackages\" that allow you to quickly installa "
+"selection of packages that performs a given task.\r\rThe main chooserlist "
+"shows a list of tasks that you can choose to install. The arrow keys moves "
+"the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the "
+"package at the cursor. You can also press A to select all packages, or N to "
+"deselect all packages. Pressing Q will exit this program and begin "
+"installation of your selected tasks.\r\rThank you for using Debian.\r\rPress "
+"enter to return to the task selection screen"
+msgstr ""
+"A task csomagok olyan \"métacsomagok\" amelyek lehetõvé teszik, hogy nagyon "
+"gyorsan kiválaszd egy adott feladathoz szükséges csomagokat.\r\rA fõ lista "
+"azokat a taskokat mutatja, amit telepítésre választhatsz. A kurzort a "
+"nyilakkal mozgathatod. Az ENTER vagy a SPACE a kiválasztott csomag állapotát "
+"változtatja. Továbbá használható az A az összes csomag kiválasztásához, "
+"az N pedig az összes deaktiválásához. A Q gombbal kiléphetsz a programból "
+"és elkezdõdik a taskok telepítése.\r\rKöszönöm, hogy a Debiant használod.\r\r "
+"Nyomd meg az entert, hogy a taskok választó képernyõjéhez juss"
+
+#: ../slangui.c:669
 #, c-format
 msgid ""
 "Description:\n"
@@ -71,23 +91,24 @@ msgstr ""
 "\n"
 "Szükséges csomagok:\n"
 
-#: ../slangui.c:668
+#: ../slangui.c:677
 msgid "(no description available)"
 msgstr "(leírás nem érhetõ el)"
 
-#: ../tasksel.c:23
+#: ../tasksel.c:26
 msgid "Unknown signal seen"
 msgstr "Ismeretnel signal"
 
-#: ../tasksel.c:30
+#: ../tasksel.c:32
 msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [options]; ahol az options bármilyen kombinációja a következõknek:\n"
+msgstr ""
+"tasksel [options]; ahol az options bármilyen kombinációja a következõknek:\n"
 
-#: ../tasksel.c:31
+#: ../tasksel.c:33
 msgid "-t -- test mode; don't actually run apt-get on exit"
 msgstr "-t -- test mode; nem futtatja az apt-get-et kilépéskor"
 
-#: ../tasksel.c:32
+#: ../tasksel.c:34
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
@@ -95,30 +116,30 @@ msgstr ""
 "-q -- queue installs; nem telepíti a csomagokat az apt-get-tel;\n"
 "\t\tcsak a dpkg sorba rakja be õket"
 
-#: ../tasksel.c:33
+#: ../tasksel.c:35
 msgid "-r -- install all required-priority packages"
 msgstr "-r -- az összes required prioritású csomag telepítése"
 
-#: ../tasksel.c:34
+#: ../tasksel.c:36
 msgid "-i -- install all important-priority packages"
 msgstr "-i -- az összes important priritású csomag telepítése"
 
-#: ../tasksel.c:35
+#: ../tasksel.c:37
 msgid "-s -- install all standard-priority packages"
 msgstr "-s -- az összes standard prioritású csomag telepítése"
 
-#: ../tasksel.c:36
+#: ../tasksel.c:38
 msgid "-n -- don't show UI; use with -r or -i usually"
 msgstr "-n -- nem mutat UI-t; a -r vagy -i opcióhoz"
 
-#: ../tasksel.c:137
+#: ../tasksel.c:72 ../tasksel.c:100
+msgid "No packages selected\n"
+msgstr "Nincsenek csomagok kiválasztva\n"
+
+#: ../tasksel.c:140
 msgid ""
 "No task packages found on this system.\n"
 "Did you update your available file?"
 msgstr ""
 "Task csomagok nem találhatóak a rendszeren.\n"
 "Frissítetted az available file-odat?"
-
-#~ msgid " h - Help    SPACE - Toggle selection    i - Task info    q - Exit"
-#~ msgstr ""
-#~ " h - Súgó    SPACE - válsztás            i - Task info    q - Kilépés"
