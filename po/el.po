@@ -1,5 +1,6 @@
 # translation of el.po to 
 # translation of el.po to
+# translation of el.po to
 # translation of tasksel_po_el.po to
 # translation of el.po to
 # translation of el.po to
@@ -15,20 +16,19 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-07-20 22:44-0400\n"
-"PO-Revision-Date: 2004-07-21 13:30+0300\n"
+"PO-Revision-Date: 2004-07-22 19:27+0300\n"
 "Last-Translator: George Papamichelakis <george@step.gr>\n"
 "Language-Team:  <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 "\n"
 "\n"
 "\n"
 
 #: ../tasksel.pl:241
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -46,11 +46,12 @@ msgid ""
 msgstr ""
 "Χρήση:\n"
 "tasksel install <task>\n"
+"tasksel remove <tasksel>\n"
 "tasksel [επιλογές]; όπου επιλογές μπορούν να είναι:\n"
-"\t-t -- test mode; δοκιμαστικά χωρίς εκτέλεση εργασίας\n"
-"\t-r -- εγκατάσταση όλων των πακέτων required-priority\n"
-"\t-i -- εγκατάσταση όλων των πακέτων important-priority\n"
-"\t-s -- εγκατάσταση όλων των πακέτων standard-priority\n"
+"\t-t --test           δοκιμαστικά χωρίς εκτέλεση εργασίας\n"
+"\t-r --required   εγκατάσταση όλων των πακέτων required-priority\n"
+"\t-i --important  εγκατάσταση όλων των πακέτων important-priority\n"
+"\t-s --standard   εγκατάσταση όλων των πακέτων standard-priority\n"
 "\t-n -- no ui  χρήση σε συνδυασμό με το -r ή -i συνήθως\n"
 "\t    --new-install   αυτόματη εγκατάσταση μερικών εργασιών\n"
 "\t    --list-tasks    εμφάνιση των εργασιών και έξοδος\n"
@@ -60,3 +61,4 @@ msgstr ""
 #: ../tasksel.pl:392 ../tasksel.pl:403
 msgid "aptitude failed"
 msgstr "το aptitude απέτυχε"
+
