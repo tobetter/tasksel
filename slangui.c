@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.18 2000/05/07 21:13:04 tausq Exp $ */
+/* $Id: slangui.c,v 1.19 2000/05/07 21:15:18 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -639,7 +639,7 @@ void ui_showhelp(void)
     "selection of the package at the cursor. You can also press A to select " \
     "all packages, or N to deselect all packages. Pressing Q will exit this " \
     "program and begin installation of your selected tasks.\r\rThank you for " \
-    "using Debian.\r\rPress enter to return to the task selection screen")
+    "using Debian.\r\rPress enter to return to the task selection screen"),
 	    1, SCROLLBAR_VERT);
   _chooserinfo.whichwindow = CHOOSERWINDOW;
   ui_drawscreen();
