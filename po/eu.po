@@ -1,14 +1,15 @@
-# translation of tasksel.po to Euskara
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Spanish translation for tasksel
+# Copyright (C) 2000 Software in the Public Interest, Inc.
+# Enrique Zanardi <ezanard@debian.org>, 2000.
+# Javier Fernandez-Sanguino <jfs@debian.org>, 2003.
 # Piarres Beobide Egaña <pi@beobide.net>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel\n"
+"Project-Id-Version: tasksel 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-10 09:02+0200\n"
-"PO-Revision-Date: 2004-06-21 17:30+0200\n"
+"POT-Creation-Date: 2004-07-14 15:31-0400\n"
+"PO-Revision-Date: 2004-07-16 19:14+0200\n"
 "Last-Translator: Piarres Beobide Egaña <pi@beobide.net>\n"
 "Language-Team: Euskara <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +18,7 @@ msgstr ""
 "X-Generator: KBabel 1.3.1\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../tasksel.pl:188
+#: ../tasksel.pl:199
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -27,97 +28,96 @@ msgid ""
 "\t-i -- install all important-priority packages\n"
 "\t-s -- install all standard-priority packages\n"
 "\t-n -- don't show UI; use with -r or -i usually\n"
-"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
 "Erabilera:\n"
-"tasksel insltall <ataza>\n"
-"tasksel [aukerak]; non aukera hauetako bat den:\n"
-"\t-t -- test mode; ez du benetean ezer egiten\n"
-"\t-r -- beharrezko lehentasuna futen pakete guztiak instalatu\n"
-"\t-i -- garrantzitsu lehentasuna futen pakete guztiak instalatu\n"
-"\t-s -- standard lehentasuna futen pakete guztiak instalatu\n"
-"\t-n -- ez interfazea erakutsi, arruntean -r -i rekin erabiltzen da\n"
-"\t-a -- Ataza guztiak erakutsi, nahiz ez paketerik eduki\n"
+"tasksel install <ataza>\n"
+"taskel [aukerak]; Non aukerak hauen nahasmen bat den:\n"
+"-t -- froga modua; Egiaz ez du ezer egiten\n"
+"-r --«beharrezko» lehenespeneko pakete guztiak instalatu\n"
+"-i -- instalar todos los paquetes de prioridad «garrantzitsu»\n"
+"-s -- instalar todos los paquetes de prioridad «standard»\n"
+"-n -- Ez erabiltzaile interfazea bistarazi. Normalean -r, -i edo -s rekin\n"
 
-#: ../tasksel.pl:250
-msgid "ignoring other selected packages in favour of manual package selection"
-msgstr "aukeratutako beste paketeak eskuz aukeratutakoengatik alde batera uzten"
-
-#: ../tasksel.pl:254 ../tasksel.pl:266
+#: ../tasksel.pl:265 ../tasksel.pl:291
 msgid "aptitude failed"
-msgstr "aptitude hutsa"
+msgstr "aptitudek huts egin du"
+
+#~ msgid ""
+#~ "ignoring other selected packages in favour of manual package selection"
+#~ msgstr ""
+#~ "ignorando otros paquetes seleccionados para hacer la selección manual de "
+#~ "paquetes"
 
 #~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "Ezin da numerazio buferrerako memoria ezleitu"
+#~ msgstr "No puedo resevar memoria para el búfer de enumeración"
 
 #~ msgid ""
 #~ "Fatal error encountered at %s:%d\n"
 #~ "\t"
 #~ msgstr ""
-#~ "%s-n errore konponezin bat aurkiturik: %d\n"
+#~ "Se encontró un error fatal en %s:%d\n"
 #~ "\t"
 
 #~ msgid ""
 #~ "I/O error at %s:%d\n"
 #~ "\t"
 #~ msgstr ""
-#~ "S/I errorea %s-n:%d\n"
+#~ "Error de E/S en %s:%d\n"
 #~ "\t"
 
 #~ msgid "(no description)"
-#~ msgstr "(Azalpenik gabea)"
+#~ msgstr "(no hay descripción)"
 
 #~ msgid "End-user"
-#~ msgstr "Erabiltzaile aplikazioak"
+#~ msgstr "Usuario final"
 
 #~ msgid "Hardware Support"
-#~ msgstr "Hardware Onarpena"
+#~ msgstr "Soporte de hardware"
 
 #~ msgid "Servers"
-#~ msgstr "Zerbitzariak"
+#~ msgstr "Servidores"
 
 #~ msgid "Development"
-#~ msgstr "Garatzaileak"
+#~ msgstr "Desarrollo"
 
 #~ msgid "Localization"
-#~ msgstr "Kokapena"
+#~ msgstr "Localización"
 
 #~ msgid "Miscellaneous"
-#~ msgstr "Denetarik"
+#~ msgstr "Miscelánea"
 
 #~ msgid "Unable to initialize the terminal"
-#~ msgstr "Ezin da terminala abiarazi"
+#~ msgstr "No puedo inicializar el terminal"
 
 #~ msgid "Unable to initialize screen output"
-#~ msgstr "Ezin da pantaila irteera abiarazi"
+#~ msgstr "No puedo inicializar la salida por pantalla"
 
 #~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "Ezin da teklatu interfazea abiarazi"
+#~ msgstr "No puedo inicializar la interfaz de teclado"
 
 #~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr ""
-#~ "Debian Ataza Instalatzailea v %s - (c) 19999-2004 SPI eta beste hainbat"
+#~ msgstr "Instalador de tareas de Debian v %s (C) 1999-2004 SPI y otros"
 
 #~ msgid "^Finish"
-#~ msgstr "^Amaiera"
+#~ msgstr "^Finalizar"
 
 #~ msgid "Task ^Info"
-#~ msgstr "Ataza ^Informazioa"
+#~ msgstr "^Información de la tarea"
 
 #~ msgid "^Help"
-#~ msgstr "^Laguntza"
+#~ msgstr "Ayuda (^H)"
 
 #~ msgid "Select tasks to install"
-#~ msgstr "Hautatu instalatzeko atazak"
+#~ msgstr "Escoja las tareas que desee instalar"
 
 #~ msgid "Ok"
-#~ msgstr "Ados"
+#~ msgstr "Aceptar"
 
 #~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Indizea - mugetik kanpora: %d >= %d"
+#~ msgstr "Índice fuera de rango: %d >= %d"
 
 #~ msgid "Help"
-#~ msgstr "Laguntza"
+#~ msgstr "Ayuda"
 
 #~ msgid ""
 #~ "Tasks allow you to quickly install a selection of packages that performs "
@@ -133,18 +133,19 @@ msgstr "aptitude hutsa"
 #~ "\n"
 #~ "Press enter to return to the task selection screen"
 #~ msgstr ""
-#~ "Atazek eskatutako eginkizuna betetzen duten pakete aukeraketa bat "
-#~ "instalatzeko aukera ematen dizu.\n"
+#~ "Las tareas le permite le permiten instalar rápidamente una selección de "
+#~ "paquetes que desempeñan una tarea dada.\n"
 #~ "\n"
-#~ "Lehen autaketa pantailak aukera ditzazkezun ataza zerrenda erakusten du. "
-#~ "Gezi teklek kurtsorea mugitzen dute. ENTER edo BARRA joaz kutsorea dagoen "
-#~ "atazaren egoera aldatzen duzu.A joaz ataza guztiak aukeratuko dira, eta N "
-#~ "joaz danak ezabatu. Q joaz programa itxi eta aukeratutako atazen "
-#~ "instalazioa abiarazioko da.\n"
+#~ "La lista principal muestra una serie de tareas que usted puede escoger "
+#~ "para instalar. Las teclas de flechas mueven el cursor. Pulsando INTRO o "
+#~ "la BARRA ESPACIADORA cambia el estado de la selección de la tarea que "
+#~ "esté bajo el cursor. Puede pulsar también A para seleccionar todas las "
+#~ "tareas, o N para deseleccionar todas las tareas. Pulsando Q saldrá del "
+#~ "programa y comenzará la instalación de las tareas seleccionadas.\n"
 #~ "\n"
-#~ "Mila Esker Debian erabiltzeagatik.\n"
+#~ "Gracias por usar Debian.\n"
 #~ "\n"
-#~ "enter sakatu atazaka aukeraketa pantailara itzultzeko"
+#~ "Pulse intro para regresar a la pantalla de selección de tareas"
 
 #~ msgid ""
 #~ "Description:\n"
@@ -152,60 +153,74 @@ msgstr "aptitude hutsa"
 #~ "\n"
 #~ "Included packages:\n"
 #~ msgstr ""
-#~ "Azalpena; \n"
+#~ "Descripción:\n"
 #~ "%s\n"
 #~ "\n"
-#~ "Paketeak:\n"
+#~ "Paquetes incluidos:\n"
 
 #~ msgid "(no description available)"
-#~ msgstr "(Ez dago azalpen eskuragarritik)"
+#~ msgstr "(no hay descripción disponible)"
 
 #~ msgid "Unknown signal seen"
-#~ msgstr "Seinale ezezaguna ikusiri"
+#~ msgstr "He recibido una señal desconocida"
 
 #~ msgid "tasksel install <task>\n"
-#~ msgstr "tasksel install <task>\n"
+#~ msgstr "instalación de tasksel <tarea>\n"
 
 #~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr "tasksel [aukera]; nonm aukera hauetako edozein konbinazio da:\n"
+#~ msgstr "tasksel [opciones]; donde opciones es una combinación de:\n"
 
 #~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- test modua; orain ez abiaraz apt-get edo atera"
+#~ msgstr "-t -- modo de pruebas; no ejecuta apt-get al salir"
 
 #~ msgid ""
 #~ "-q -- queue installs; do not install packages with apt-get;\n"
 #~ "\t\tjust queue them in dpkg"
 #~ msgstr ""
-#~ "-q -- hilarako instalazioa; ez instalatu paketeak apt-get erabiliaz;\n"
-#~ "\t\tbakarrik dpkg-ren hilaran jarri."
+#~ "-q -- pon las instalaciones en la cola; no instala los paquetes con apt-"
+#~ "get;\n"
+#~ "\t\tsólo los pone en la cola en dpkg"
 
 #~ msgid "-r -- install all required-priority packages"
-#~ msgstr "-r -- Instalatu beharrezkoa lehentasuna duten pakete guztiak"
+#~ msgstr "-r -- instala todos los paquetes con prioridad 'requerido'"
 
 #~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- instalatu garratzitsu lehentasuna duten pakete guztiak"
+#~ msgstr "-i -- instala todos los paquetes con prioridad 'importante'"
 
 #~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- instalatu lehentasuna normala duten pakete guztiak"
+#~ msgstr "-s -- instala todos los paquetes con prioridad 'estandar'"
 
 #~ msgid "-n -- don't show UI; use with -r or -i usually"
-#~ msgstr "-n -- ez erakusti UI; normalean -r edo -i-rekin batera"
+#~ msgstr ""
+#~ "-n -- no muestra la interfaz de usuario; normalmente se usará con -r o -i"
 
 #~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr "-a -- erakutsi ataza guztiak, nahi ez egon paketerik barnean"
+#~ msgstr ""
+#~ "-a -- muestra todas las tareas, incluso aquellas que no tienen paquetes"
 
 #~ msgid "No packages selected\n"
-#~ msgstr "Ez dago paketerik aukeraturik\n"
+#~ msgstr "No se ha seleccionado ningún paquete\n"
 
 #~ msgid "No tasks found on this system.\n"
-#~ msgstr "Ez dira atazik aurkitu sistema honetan.\n"
+#~ msgstr "No se encontró ninguna tarea en este sistema.\n"
 
 #~ msgid "Cannot allocate memory for strdup"
-#~ msgstr "Ezin da strdup-entzat memoria ezleitu"
+#~ msgstr "No se pudo reservar memoria para strdup"
 
 #~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "Ezin dira %d bite memoria esleitu"
+#~ msgstr "No se pudieron reservar %d bytes de memoria"
 
 #~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "Ezin dira %d bite memoria berresleitu"
+#~ msgstr "No se pudieron reasignar %d bytes de memoria"
+
+#~ msgid ""
+#~ "No tasks found on this system.\n"
+#~ "Did you update your available file? Try running dselect update.\n"
+#~ msgstr ""
+#~ "No se encontraron tareas en este sistema.\n"
+#~ "¿Está seguro de que actualizó su fichero de paquetes disponibles? "
+#~ "Intenteejecutar «dselect update».\n"
+
+#~ msgid "Debian Task Installer"
+#~ msgstr "Instalador de Tareas de Debian"
 
