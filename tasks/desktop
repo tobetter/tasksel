@@ -9,8 +9,10 @@ Description: Desktop environment
 Key:
   x-window-system-core
   kde
-  gnome
+  gnome-desktop-environment
 Packages:
+# full gnome is not listed as key to save some space
+  gnome
 # gdm allows picking between gnome and kde at login time
   gdm
   mozilla

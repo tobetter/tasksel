@@ -1,5 +1,9 @@
 tasksel (2.02) unstable; urgency=low
 
+  * Joey Hess
+    - Save some space in desktop task by making it use
+      gnome-desktop-environment as the key package for gnome, and only include
+      all the rest of gnome if it's available.
   * Translations
     - Carlos Z.F. Liu
       - Updated Simplified Chinese programs, tasks and debconf translations
