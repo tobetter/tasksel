@@ -12,12 +12,12 @@ msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-18 19:47-0500\n"
-"PO-Revision-Date: 2004-01-28 11:26+0100\n"
+"PO-Revision-Date: 2004-03-21 20:52+0100\n"
 "Last-Translator: VERÓK István <vi@fsf.hu>\n"
 "Language-Team: Hungarian Debian team <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #. Description
 #: ../po/debian-tasks.desc:4
@@ -31,8 +31,8 @@ msgid ""
 "running the X Window System. It provides the X libraries, an X server, a set "
 "of fonts, and a group of basic X clients and utilities."
 msgstr ""
-"Ez a metacsomag egy önálló munkaállomáson használt X ablakozórendszerhez "
-"szükséges részeket ad: az X-könyvtárakat, egyX-szervert, betűkészleteket, "
+"Ez a metacsomag önálló munkaállomásokon használt X ablakozórendszerhez "
+"szükséges részeket ad: az X-könyvtárakat, egy X-szervert, betűkészleteket, "
 "néhány alapvető X-klienst és segédprogramot."
 
 #. Description
@@ -46,7 +46,7 @@ msgid ""
 "This task selects packages that address special needs of computers that "
 "connect to the internet using DSL, Cable, and the like."
 msgstr ""
-"Ez a metacsomag (pl.·DSL-en, kábeltévén, stb. létesített) gyors "
+"Ez a metacsomag (pl. DSL-en, kábeltévén, stb. létesített) gyors "
 "internetkapcsolatoknál felmerülő szoftverigényeket elégít ki."
 
 #. Description
@@ -246,9 +246,9 @@ msgid ""
 "won't install all the games in Debian, but it is a good starting point."
 msgstr ""
 "E metacsomag választásával játékok széleskörű választékát telepíti gépére: "
-"hagyományos szöveges unix-játékokat éppúgy, mint kártyajátékokat vagy gyors "
+"hagyományos szöveges Unix-játékokat éppúgy, mint kártyajátékokat vagy gyors "
 "reflexeket igénylő ügyességi játékokat. Nem telepíti a Debianban található "
-"minden játékot, de jó kiindulópontot ad."
+"valamennyi játékot, de jó kiindulópontot ad."
 
 #. Description
 #: ../po/debian-tasks.desc:154
@@ -369,7 +369,7 @@ msgid ""
 "you to install and use LSB packages."
 msgstr ""
 "Ez a metacsomag a rendszert a Linux Standard Base szabványhoz igazító "
-"csomagokat telepít, lehetővé teszi ezzel LSB-csomagok telepítését és "
+"csomagokat telepít, lehetővé téve ezzel LSB-csomagok telepítését és "
 "használatát."
 
 #. Description
@@ -383,7 +383,7 @@ msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
 msgstr ""
-"Ez a metacsomag egy általános célú levelezőkiszolgálóban használt csomagokat "
+"Ez a metacsomag általános célú levelezőkiszolgálókban használt csomagokat "
 "választ ki."
 
 #. Description
@@ -406,9 +406,9 @@ msgid ""
 "pull in any required pieces. Only use this task if you intend to operate a "
 "server."
 msgstr ""
-"Ha pusztán egy meglevő kiszolgáló nyújtotta híreket kívánja olvasni, nem "
-"szükséges ezt a csomagot telepítenie, elég mindössze egy hírolvasókliens. "
-"Csak saját szolgáltatás működtetéséhez van szükség a kiszolgálóra."
+"Ha pusztán egy meglevő kiszolgáló nyújtotta híreket kíván olvasni, nem "
+"szükséges ezt a csomagot telepítenie, elég csupán egy hírolvasókliens. "
+"Csak saját hírszolgáltatás működtetéséhez van szükség a kiszolgálóra."
 
 #. Description
 #: ../po/debian-tasks.desc:256
@@ -421,7 +421,7 @@ msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
 msgstr ""
-"Ez a metacsomag norvégul beszélőknek (és írőknak) szánt csomagokat és "
+"Ez a metacsomag norvégul beszélőknek szánt csomagokat és "
 "dokumentációt telepít."
 
 #. Description
@@ -476,8 +476,8 @@ msgid ""
 "Many Python tools and extensions, for developing scripts and simple or "
 "complex applications in Python."
 msgstr ""
-"Sok Python-eszköz és hozzávaló, egyszerű és bonyolultabb Python-alkalmazások "
-"fejlesztéséhez is."
+"Sok Python-eszköz és különféle hozzávalók, egyszerű és bonyolultabb "
+"Python-alkalmazások fejlesztéséhez is."
 
 #. Description
 #: ../po/debian-tasks.desc:302
@@ -505,10 +505,10 @@ msgid ""
 "fairly loose definition of 'scientific', this includes numerical analysis "
 "and computing, statistical data analysis as well as visualization."
 msgstr ""
-"Ez a metacsomag tudományos munkára fogható csomagokat telepít. A \"tudományos"
-"\" itt viszonylag lazán értendő, idevesszük a numerikus analízist és "
-"különféle számítási módszereket is, csakúgy, mint a statisztikai "
-"adatanalízist és a vizualizációt is."
+"Ez a metacsomag tudományos munkára fogható csomagokat telepít. A "
+"\"tudományos\" itt viszonylag lazán értendő, idevesszük "
+"a numerikus analízist és különféle számítási módszereket is, "
+"csakúgy, mint a statisztikai adatanalízist és a vizualizációt is."
 
 #. Description
 #: ../po/debian-tasks.desc:318
@@ -585,3 +585,4 @@ msgid ""
 "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Ez a metacsomag egy általános célú webkiszolgálón hasznos csomagokat telepít."
+
