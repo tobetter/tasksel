@@ -1,20 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Romanian translation
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Eddy Petrisor <eddy_petrisor@yahoo.com>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 1.0\n"
+"Project-Id-Version: tasksel_po\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-06-10 09:02+0200\n"
-"PO-Revision-Date: 2004-03-29 22:46GMT+2\n"
+"PO-Revision-Date: 2004-07-10 23:29+0300\n"
 "Last-Translator: Eddy Petrisor <eddy_petrisor@yahoo.com>\n"
-"Language-Team: Romanian\n"
+"Language-Team: Romanian <Romanian>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.5\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #: ../tasksel.pl:188
 msgid ""
@@ -28,14 +28,23 @@ msgid ""
 "\t-n -- don't show UI; use with -r or -i usually\n"
 "\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
+"Utilizare:\n"
+"tasksel install <sarcinÄƒ>\n"
+"tasksel [opÅ£iuni]; unde opÅ£iuni reprezintÄƒ orice combinaÅ£ie dintre:\n"
+"\t-t -- mod test; nu se face nimic\n"
+"\t-r -- instaleazÄƒ toate pachetele cu prioritate \"necesar\"\n"
+"\t-i -- instaleazÄƒ toate pachetele cu prioritate \"important\"\n"
+"\t-s -- instaleazÄƒ toate pachetele cu prioritate \"standard\"\n"
+"\t-n -- nu afiÅŸeazÄƒ interfaÅ£a utilizator; folosit de obicei cu -r sau -i\n"
+"\t-a -- afiÅŸeazÄƒ toate sarcinile, chiar ÅŸi cele care nu conÅ£in pachete\n"
 
 #: ../tasksel.pl:250
 msgid "ignoring other selected packages in favour of manual package selection"
-msgstr ""
+msgstr "se ingorÄƒ celelalte pachete selectate Ã®n favoarea selecÅ£iei manuale de pachete"
 
 #: ../tasksel.pl:254 ../tasksel.pl:266
 msgid "aptitude failed"
-msgstr ""
+msgstr "aptitude a eÅŸuat"
 
 #~ msgid "Cannot allocate memory for enumeration buffer"
 #~ msgstr "Nu se poate aloca memorie pentru tamponul (buffer) de enumerare"
@@ -44,7 +53,7 @@ msgstr ""
 #~ "Fatal error encountered at %s:%d\n"
 #~ "\t"
 #~ msgstr ""
-#~ "Eroare fatalã întâlnitã la %s:%d\n"
+#~ "Eroare fatalÄƒ Ã®ntÃ¢lnitÄƒ la %s:%d\n"
 #~ "\t"
 
 #~ msgid ""
@@ -55,7 +64,7 @@ msgstr ""
 #~ "\t"
 
 #~ msgid "(no description)"
-#~ msgstr "(fãrã descriere)"
+#~ msgstr "(fÄƒrÄƒ descriere)"
 
 #~ msgid "End-user"
 #~ msgstr "Utilizator (final)"
@@ -76,34 +85,34 @@ msgstr ""
 #~ msgstr "Diverse"
 
 #~ msgid "Unable to initialize the terminal"
-#~ msgstr "Nu s-a putut inişializa terminalul"
+#~ msgstr "Nu s-a putut iniÅ£ializa terminalul"
 
 #~ msgid "Unable to initialize screen output"
-#~ msgstr "Nu s-a putut inişializa ieºirea-ecran"
+#~ msgstr "Nu s-a putut iniÅ£ializa ieÅŸirea-ecran"
 
 #~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "Nu s-a putut inişializa interfaşa cu tastatura"
+#~ msgstr "Nu s-a putut iniÅ£ializa interfaÅ£a cu tastatura"
 
 #~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr "Instalerul de sarcini Debian v%s - (c) 1999-2004 SPI ºi alşii"
+#~ msgstr "Instalerul de sarcini Debian v%s - (c) 1999-2004 SPI ÅŸi alÅ£ii"
 
 #~ msgid "^Finish"
-#~ msgstr "S^fârºit"
+#~ msgstr "S^fÃ¢rÅŸit"
 
 #~ msgid "Task ^Info"
-#~ msgstr "^Informaşii despre sarcinã"
+#~ msgstr "^InformaÅ£ii despre sarcinÄƒ"
 
 #~ msgid "^Help"
 #~ msgstr "A^jutor"
 
 #~ msgid "Select tasks to install"
-#~ msgstr "Selecteazã sarcinile de instalat"
+#~ msgstr "SelecteazÄƒ sarcinile de instalat"
 
 #~ msgid "Ok"
 #~ msgstr "Ok"
 
 #~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Index în afara limitelor: %d >= %d"
+#~ msgstr "Index Ã®n afara limitelor: %d >= %d"
 
 #~ msgid "Help"
 #~ msgstr "Ajutor"
@@ -122,19 +131,19 @@ msgstr ""
 #~ "\n"
 #~ "Press enter to return to the task selection screen"
 #~ msgstr ""
-#~ "Sarcinile vã permit sã instalaşi rapid o selecşie de pachete care "
-#~ "desfãºoarã o anumitã sarcinã.\n"
+#~ "Sarcinile vÄƒ permit sÄƒ instalaÅ£i rapid o selecÅ£ie de pachete care "
+#~ "desfÄƒÅŸoarÄƒ o anumitÄƒ sarcinÄƒ.\n"
 #~ "\n"
-#~ "Pagina de alegere principalã afiºeazã o listã de sarcini pe care puteşi "
-#~ "alege sã le instalaşi. Sãgeşile miºcã cursorul. Prin apãsarea tastei "
-#~ "ENTER sau SPATIU inverseazã selecşia sarcinii din dreptul cursorului. "
-#~ "Puteşi, de asemenea, sã apãsaşi pe A pentru a selecta toate sarcinile, "
-#~ "sau pe N pentru a de-selecta toate sarcinile. Apãsând Q, veşi pãrãsi "
-#~ "acest program ºi se va începe instalarea sarcinilor selectate de dvs.\n"
+#~ "Pagina de alegere principalÄƒ afiÅŸeazÄƒ o listÄƒ de sarcini pe care puteÅ£i "
+#~ "alege sÄƒ le instalaÅ£i. SÄƒgeÅ£ile miÅŸcÄƒ cursorul. Prin apÄƒsarea tastei "
+#~ "ENTER sau SPATIU inverseazÄƒ selecÅ£ia sarcinii din dreptul cursorului. "
+#~ "PuteÅ£i, de asemenea, sÄƒ apÄƒsaÅ£i pe A pentru a selecta toate sarcinile, "
+#~ "sau pe N pentru a de-selecta toate sarcinile. ApÄƒsÃ¢nd Q, veÅ£i pÄƒrÄƒsi "
+#~ "acest program ÅŸi se va Ã®ncepe instalarea sarcinilor selectate de dvs.\n"
 #~ "\n"
-#~ "Vã multumim pentru cã utilizaşi Debian. \n"
+#~ "VÄƒ multumim pentru cÄƒ utilizaÅ£i Debian. \n"
 #~ "\n"
-#~ "Apãsaşi enter pentru a vã întoarce la ecranul de selecşie"
+#~ "ApÄƒsaÅ£i enter pentru a vÄƒ Ã®ntoarce la ecranul de selecÅ£ie"
 
 #~ msgid ""
 #~ "Description:\n"
@@ -148,54 +157,55 @@ msgstr ""
 #~ "Pachete incluse:\n"
 
 #~ msgid "(no description available)"
-#~ msgstr "(fãrã descriere disponibilã)"
+#~ msgstr "(fÄƒrÄƒ descriere disponibilÄƒ)"
 
 #~ msgid "Unknown signal seen"
 #~ msgstr "S-a observat un semnal necunoscut"
 
 #~ msgid "tasksel install <task>\n"
-#~ msgstr "tasksel install <sarcinã>\n"
+#~ msgstr "tasksel install <sarcinÄƒ>\n"
 
 #~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr "tasksel [opşiuni]; unde optiuni reprezintã orice combinaşie din:\n"
+#~ msgstr "tasksel [opÅ£iuni]; unde optiuni reprezintÄƒ orice combinaÅ£ie din:\n"
 
 #~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- mod test; nu ruleazã de fapt apt-get la ieºire"
+#~ msgstr "-t -- mod test; nu ruleazÄƒ de fapt apt-get la ieÅŸire"
 
 #~ msgid ""
 #~ "-q -- queue installs; do not install packages with apt-get;\n"
 #~ "\t\tjust queue them in dpkg"
 #~ msgstr ""
-#~ "-q -- instalare \"în coadã\"; nu instaleazã pachetele cu apt-get;\n"
-#~ "\t\tdoar le pune în coada lui dpkg"
+#~ "-q -- instalare \"Ã®n coadÄƒ\"; nu instaleazÄƒ pachetele cu apt-get;\n"
+#~ "\t\tdoar le pune Ã®n coada lui dpkg"
 
 #~ msgid "-r -- install all required-priority packages"
-#~ msgstr "-r -- instaleazã toate pachetele de prioritate \"necesar\""
+#~ msgstr "-r -- instaleazÄƒ toate pachetele de prioritate \"necesar\""
 
 #~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- instaleazã toate pachetele de prioritate \"important\""
+#~ msgstr "-i -- instaleazÄƒ toate pachetele de prioritate \"important\""
 
 #~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-i -- instaleazã toate pachetele de prioritate \"standard\""
+#~ msgstr "-i -- instaleazÄƒ toate pachetele de prioritate \"standard\""
 
 #~ msgid "-n -- don't show UI; use with -r or -i usually"
 #~ msgstr ""
-#~ "-n -- nu afiºa interfaşa utilizator (UI); utilizat de obicei cu -r sau -i"
+#~ "-n -- nu afiÅŸa interfaÅ£a utilizator (UI); utilizat de obicei cu -r sau -i"
 
 #~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr "-a -- afiºeazã toate sarcinile, chiar ºi cele fãrã pachete în ele"
+#~ msgstr "-a -- afiÅŸeazÄƒ toate sarcinile, chiar ÅŸi cele fÄƒrÄƒ pachete Ã®n ele"
 
 #~ msgid "No packages selected\n"
 #~ msgstr "Nu s-a selectat nici un pachet\n"
 
 #~ msgid "No tasks found on this system.\n"
-#~ msgstr "Nu s-au gãsit sarcini pe acest sistem.\n"
+#~ msgstr "Nu s-au gÄƒsit sarcini pe acest sistem.\n"
 
 #~ msgid "Cannot allocate memory for strdup"
 #~ msgstr "Nu se poate aloca memorie pentru strdup"
 
 #~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "Nu se pot aloca %d octeşi în memorie"
+#~ msgstr "Nu se pot aloca %d octeÅ£i Ã®n memorie"
 
 #~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "Nu se pot realoca %d octeşi în memorie"
+#~ msgstr "Nu se pot realoca %d octeÅ£i Ã®n memorie"
+
