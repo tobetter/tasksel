@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel\n"
+"POT-Creation-Date: 2000-01-10 08:46+0100\n"
+"PO-Revision-Date: 2000-01-10 09:10+0100\n"
+"Last-Translator: Risko Gergely <risko@njszki.hu>\n"
+"Language-Team: Hungarian Debian team <forditas@njszki.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: ISO-8859-2\n"
+
+#: ../slangui.c:109
+msgid "Unable to initialize the terminal"
+msgstr "A terminál megnyitása szikertelen"
+
+#: ../slangui.c:111
+msgid "Unable to initialize screen output"
+msgstr "A képernyõ kimenetének megnyitása sikertelen"
+
+#: ../slangui.c:112
+msgid "Unable to initialize keyboard interface"
+msgstr "A billentyû inicializása nem sikerült"
+
+#: ../slangui.c:129
+msgid "Debian Task Installer"
+msgstr "Debian Task telepítõ"
+
+#: ../slangui.c:130
+msgid "(c) 1999 SPI and others"
+msgstr "(c) 1999 SPI és mások"
+
+#: ../slangui.c:135
+msgid " h - Help    SPACE - Toggle selection    i - Task info    q - Exit"
+msgstr " h - Súgó    SPACE - válsztás            i - Task info    q - Kilépés"
+
+#: ../slangui.c:264
+msgid "Select task packages to install"
+msgstr "Válaszd ki a telepítendõ taskokat"
+
+#: ../slangui.c:415
+msgid "Help"
+msgstr "Súgó"
+
+#: ../slangui.c:449
+msgid "(no description available)"
+msgstr "(leírás nem érhetõ el)"
+
+#: ../tasksel.c:22
+msgid "Unknown signal seen"
+msgstr "Ismeretnel signal"
+
+#: ../tasksel.c:30
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- test mode; nem futtatja az apt-get-et kilépéskor"
