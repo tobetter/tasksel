@@ -59,7 +59,7 @@ sub read_task_desc {
 				}
 			}
 			else {
-				print STDERR "parse error on line $.\n";
+				print STDERR "parse error on line $. on $desc\n";
 			}
 		}
 		if (%data) {
