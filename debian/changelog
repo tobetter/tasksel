@@ -1,3 +1,14 @@
+tasksel (1.0-3) unstable; urgency=low
+
+  * Lots of changes from Joey Hess: (re bug#54250)
+    - Uses [ ] instead of ( ) for consistency with dbootstrap
+    - Changed highlighting, buttons and prompting behavior
+    - left justify screen title
+    - cosmetic changes to list display
+  * tasksel now has its own cvs respository
+
+ -- Randolph Chung <tausq@debian.org>  Sun,  9 Jan 2000 22:58:22 -0700
+
 tasksel (1.0-2) unstable; urgency=low
 
   * Alpha sorts package names (closes: #52960)
