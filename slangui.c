@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.17 2000/04/22 00:52:33 tausq Exp $ */
+/* $Id: slangui.c,v 1.18 2000/05/07 21:13:04 tausq Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -14,7 +14,6 @@
 #include "util.h"
 #include "strutl.h"
 #include "macros.h"
-#include "help.h"
 
 /* Slang object number mapping */
 #define DEFAULTOBJ   0
@@ -632,7 +631,16 @@ void ui_clearcursor(int index)
 void ui_showhelp(void)
 {
   _chooserinfo.whichwindow = HELPWINDOW;
-  ui_dialog(3, 3, ROWS - 7, COLUMNS - 10, _("Help"), HELPTXT, 1, SCROLLBAR_VERT);
+  ui_dialog(3, 3, ROWS - 7, COLUMNS - 10, _("Help"), 
+  _("Task packages are \"metapackages\" that allow you to quickly install" \
+    "a selection of packages that performs a given task.\r\rThe main chooser" \
+    "list shows a list of tasks that you can choose to install. The arrow " \
+    "keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the " \
+    "selection of the package at the cursor. You can also press A to select " \
+    "all packages, or N to deselect all packages. Pressing Q will exit this " \
+    "program and begin installation of your selected tasks.\r\rThank you for " \
+    "using Debian.\r\rPress enter to return to the task selection screen")
+	    1, SCROLLBAR_VERT);
   _chooserinfo.whichwindow = CHOOSERWINDOW;
   ui_drawscreen();
 }
