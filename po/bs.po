@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
-"POT-Creation-Date: 2004-01-28 08:04+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-10 09:02+0200\n"
 "PO-Revision-Date: 2004-02-01 14:41+0100\n"
 "Last-Translator: Safir Šećerović <sapphire@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@lugbih.org>\n"
@@ -14,211 +15,186 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data.c:307
-#: ../data.c:321
-msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Ne mogu alocirati memoriju za enumeration buffer"
-
-#: ../macros.h:42
-#, c-format
+#: ../tasksel.pl:188
 msgid ""
-"Fatal error encountered at %s:%d\n"
-"\t"
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t -- test mode; don't really do anything\n"
+"\t-r -- install all required-priority packages\n"
+"\t-i -- install all important-priority packages\n"
+"\t-s -- install all standard-priority packages\n"
+"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
-"Došlo je fatalne greške na %s:%d\n"
-"\t"
 
-#: ../macros.h:51
-#, c-format
-msgid ""
-"I/O error at %s:%d\n"
-"\t"
+#: ../tasksel.pl:250
+msgid "ignoring other selected packages in favour of manual package selection"
 msgstr ""
-"I/O greška na %s:%d\n"
-"\t"
 
-#: ../slangui.c:18
-#: ../slangui.c:19
-msgid "(no description)"
-msgstr "(bez opisa)"
-
-#: ../slangui.c:75
-msgid "End-user"
-msgstr "Krajnji korisnik"
-
-#: ../slangui.c:76
-msgid "Hardware Support"
-msgstr "Podrška za hardware"
-
-#: ../slangui.c:77
-msgid "Servers"
-msgstr "Serveri"
-
-#: ../slangui.c:78
-msgid "Development"
-msgstr "Razvoj"
-
-#: ../slangui.c:79
-msgid "Localization"
-msgstr "Lokalizacija"
-
-#: ../slangui.c:80
-msgid "Miscellaneous"
-msgstr "Razno"
-
-#: ../slangui.c:219
-msgid "Unable to initialize the terminal"
-msgstr "Ne mogu pokrenuti terminal"
-
-#: ../slangui.c:221
-msgid "Unable to initialize screen output"
-msgstr "Ne mogu pokrenuti izlaz na ekran"
-
-#: ../slangui.c:222
-msgid "Unable to initialize keyboard interface"
-msgstr "Ne mogu pokrenuti interfejs tastature"
-
-#: ../slangui.c:239
-#, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Debian Task Installer v%s - (c) 1999-2004 SPI i ostali"
-
-#: ../slangui.c:393
-msgid "^Finish"
-msgstr "^Završi"
-
-#: ../slangui.c:401
-#: ../slangui.c:402
-msgid "Task ^Info"
-msgstr "Task ^Info"
-
-#: ../slangui.c:406
-#: ../slangui.c:407
-msgid "^Help"
-msgstr "^Pomoć"
-
-#: ../slangui.c:441
-msgid "Select tasks to install"
-msgstr "Izaberite zadatke za instaliranje"
-
-#: ../slangui.c:576
-msgid "Ok"
-msgstr "Ok"
-
-#: ../slangui.c:685
-#: ../slangui.c:699
-#: ../slangui.c:810
-#, c-format
-msgid "Index out of bounds: %d >= %d"
-msgstr "Indeks van granica: %d >= %d"
-
-#: ../slangui.c:776
-msgid "Help"
-msgstr "Pomoć"
-
-#: ../slangui.c:777
-msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a given task.\n"
-"\n"
-"The main chooser list shows a list of tasks that you can choose to install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the selection of the task at the cursor. You can also press A to select all tasks, or N to deselect all tasks. Pressing Q will exit this program and begin installation of your selected tasks.\n"
-"\n"
-"Thank you for using Debian.\n"
-"\n"
-"Press enter to return to the task selection screen"
+#: ../tasksel.pl:254 ../tasksel.pl:266
+msgid "aptitude failed"
 msgstr ""
-"Zadaci vam omogućavaju da na brzinu instalirate kolekciju paketa koji su namjenjeni za dati zadatak.\n"
-"\n"
-"Glavni izbornik pokazuje spisak zadataka koje možete odabrati za instaliranje. Tipke sa strelicama pomjeraju kurzor. Pritiskom na ENTER ili SPACE (razmaknicu) vrši se odabir zadatka na kojem se kurzor nalazi. Možete takođe pritisnuti tipku A da izaberete sve zadatke ili tipku N da poništite izbor svih zadataka. Pritiskom na tipku Q izlazite iz ovog programa i započinjete instalaciju izabranih zadataka.\n"
-"\n"
-"Hvala vam što koristite Debian.\n"
-"\n"
-"Pritisnite enter da biste se vratili na prozor za izbor zadataka"
 
-#: ../slangui.c:818
-#, c-format
-msgid ""
-"Description:\n"
-"%s\n"
-"\n"
-"Included packages:\n"
-msgstr ""
-"Opis:\n"
-"%s\n"
-"\n"
-"Uključeni paketi:\n"
+#~ msgid "Cannot allocate memory for enumeration buffer"
+#~ msgstr "Ne mogu alocirati memoriju za enumeration buffer"
 
-#: ../slangui.c:826
-msgid "(no description available)"
-msgstr "(opis nedostupan)"
+#~ msgid ""
+#~ "Fatal error encountered at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "Došlo je fatalne greške na %s:%d\n"
+#~ "\t"
 
-#: ../tasksel.c:33
-msgid "Unknown signal seen"
-msgstr "Primjećen nepoznat signal"
+#~ msgid ""
+#~ "I/O error at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "I/O greška na %s:%d\n"
+#~ "\t"
 
-#: ../tasksel.c:39
-#, c-format
-msgid "tasksel install <task>\n"
-msgstr "tasksel install <zadatak>\n"
+#~ msgid "(no description)"
+#~ msgstr "(bez opisa)"
 
-#: ../tasksel.c:40
-#, c-format
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [opcije]; gdje su opcije bilo koja kombinacija od:\n"
+#~ msgid "End-user"
+#~ msgstr "Krajnji korisnik"
 
-#: ../tasksel.c:41
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- testni mod; nemoj stvarno pokretati apt-get pri izlasku iz programa"
+#~ msgid "Hardware Support"
+#~ msgstr "Podrška za hardware"
 
-#: ../tasksel.c:42
-msgid ""
-"-q -- queue installs; do not install packages with apt-get;\n"
-"\t\tjust queue them in dpkg"
-msgstr ""
-"-q -- redno instaliranje; ne instaliraj pakete s apt-get;\n"
-"\t\tsamo ih poredaj u dpkg"
+#~ msgid "Servers"
+#~ msgstr "Serveri"
 
-#: ../tasksel.c:43
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- instaliraj sve pakete sa prioritetom required"
+#~ msgid "Development"
+#~ msgstr "Razvoj"
 
-#: ../tasksel.c:44
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- instaliraj sve pakete sa prioritetom important"
+#~ msgid "Localization"
+#~ msgstr "Lokalizacija"
 
-#: ../tasksel.c:45
-msgid "-s -- install all standard-priority packages"
-msgstr "-s -- instaliraj sve pakete sa prioritetom standard"
+#~ msgid "Miscellaneous"
+#~ msgstr "Razno"
 
-#: ../tasksel.c:46
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- ne prikazuj UI; obično se koristi sa -r ili -i"
+#~ msgid "Unable to initialize the terminal"
+#~ msgstr "Ne mogu pokrenuti terminal"
 
-#: ../tasksel.c:47
-msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- prikaži sve zadatke, čak i one koji ne sadrže pakete"
+#~ msgid "Unable to initialize screen output"
+#~ msgstr "Ne mogu pokrenuti izlaz na ekran"
 
-#: ../tasksel.c:88
-#: ../tasksel.c:123
-#, c-format
-msgid "No packages selected\n"
-msgstr "Paketi nisu odabrani\n"
+#~ msgid "Unable to initialize keyboard interface"
+#~ msgstr "Ne mogu pokrenuti interfejs tastature"
 
-#: ../tasksel.c:197
-#, c-format
-msgid "No tasks found on this system.\n"
-msgstr "Zadaci nisu pronađeni na ovom sistemu.\n"
+#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
+#~ msgstr "Debian Task Installer v%s - (c) 1999-2004 SPI i ostali"
 
-#: ../util.c:21
-msgid "Cannot allocate memory for strdup"
-msgstr "Ne mogu alocirati memoriju za strdup"
+#~ msgid "^Finish"
+#~ msgstr "^Završi"
 
-#: ../util.c:39
-#, c-format
-msgid "Cannot allocate %d bytes of memory"
-msgstr "Ne mogu alocirati %d bajtova memorije"
+#~ msgid "Task ^Info"
+#~ msgstr "Task ^Info"
 
-#: ../util.c:48
-#, c-format
-msgid "Cannot reallocate %d bytes of memory"
-msgstr "Ne mogu realocirati %d bajtova memorije"
+#~ msgid "^Help"
+#~ msgstr "^Pomoć"
 
+#~ msgid "Select tasks to install"
+#~ msgstr "Izaberite zadatke za instaliranje"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Index out of bounds: %d >= %d"
+#~ msgstr "Indeks van granica: %d >= %d"
+
+#~ msgid "Help"
+#~ msgstr "Pomoć"
+
+#~ msgid ""
+#~ "Tasks allow you to quickly install a selection of packages that performs "
+#~ "a given task.\n"
+#~ "\n"
+#~ "The main chooser list shows a list of tasks that you can choose to "
+#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
+#~ "toggles the selection of the task at the cursor. You can also press A to "
+#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
+#~ "program and begin installation of your selected tasks.\n"
+#~ "\n"
+#~ "Thank you for using Debian.\n"
+#~ "\n"
+#~ "Press enter to return to the task selection screen"
+#~ msgstr ""
+#~ "Zadaci vam omogućavaju da na brzinu instalirate kolekciju paketa koji su "
+#~ "namjenjeni za dati zadatak.\n"
+#~ "\n"
+#~ "Glavni izbornik pokazuje spisak zadataka koje možete odabrati za "
+#~ "instaliranje. Tipke sa strelicama pomjeraju kurzor. Pritiskom na ENTER "
+#~ "ili SPACE (razmaknicu) vrši se odabir zadatka na kojem se kurzor nalazi. "
+#~ "Možete takođe pritisnuti tipku A da izaberete sve zadatke ili tipku N da "
+#~ "poništite izbor svih zadataka. Pritiskom na tipku Q izlazite iz ovog "
+#~ "programa i započinjete instalaciju izabranih zadataka.\n"
+#~ "\n"
+#~ "Hvala vam što koristite Debian.\n"
+#~ "\n"
+#~ "Pritisnite enter da biste se vratili na prozor za izbor zadataka"
+
+#~ msgid ""
+#~ "Description:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Included packages:\n"
+#~ msgstr ""
+#~ "Opis:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Uključeni paketi:\n"
+
+#~ msgid "(no description available)"
+#~ msgstr "(opis nedostupan)"
+
+#~ msgid "Unknown signal seen"
+#~ msgstr "Primjećen nepoznat signal"
+
+#~ msgid "tasksel install <task>\n"
+#~ msgstr "tasksel install <zadatak>\n"
+
+#~ msgid "tasksel [options]; where options is any combination of:\n"
+#~ msgstr "tasksel [opcije]; gdje su opcije bilo koja kombinacija od:\n"
+
+#~ msgid "-t -- test mode; don't actually run apt-get on exit"
+#~ msgstr ""
+#~ "-t -- testni mod; nemoj stvarno pokretati apt-get pri izlasku iz programa"
+
+#~ msgid ""
+#~ "-q -- queue installs; do not install packages with apt-get;\n"
+#~ "\t\tjust queue them in dpkg"
+#~ msgstr ""
+#~ "-q -- redno instaliranje; ne instaliraj pakete s apt-get;\n"
+#~ "\t\tsamo ih poredaj u dpkg"
+
+#~ msgid "-r -- install all required-priority packages"
+#~ msgstr "-r -- instaliraj sve pakete sa prioritetom required"
+
+#~ msgid "-i -- install all important-priority packages"
+#~ msgstr "-i -- instaliraj sve pakete sa prioritetom important"
+
+#~ msgid "-s -- install all standard-priority packages"
+#~ msgstr "-s -- instaliraj sve pakete sa prioritetom standard"
+
+#~ msgid "-n -- don't show UI; use with -r or -i usually"
+#~ msgstr "-n -- ne prikazuj UI; obično se koristi sa -r ili -i"
+
+#~ msgid "-a -- show all tasks, even those with no packages in them"
+#~ msgstr "-a -- prikaži sve zadatke, čak i one koji ne sadrže pakete"
+
+#~ msgid "No packages selected\n"
+#~ msgstr "Paketi nisu odabrani\n"
+
+#~ msgid "No tasks found on this system.\n"
+#~ msgstr "Zadaci nisu pronađeni na ovom sistemu.\n"
+
+#~ msgid "Cannot allocate memory for strdup"
+#~ msgstr "Ne mogu alocirati memoriju za strdup"
+
+#~ msgid "Cannot allocate %d bytes of memory"
+#~ msgstr "Ne mogu alocirati %d bajtova memorije"
+
+#~ msgid "Cannot reallocate %d bytes of memory"
+#~ msgstr "Ne mogu realocirati %d bajtova memorije"

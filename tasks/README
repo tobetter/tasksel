@@ -24,11 +24,34 @@ in the Packages field if they are listed as Key.
 Comments may appear in the file, by prefixing a line with a hash mark
 ('#').
 
-Care should be taken when adding new tasks to ensure that the new task
-is suitably generic -- it should be something of value to a large number
-(at least 10%) of our users. It must not perform the same general purpose
-as some other existing task. It must contain packages that are the ones in
-most common use, and software that is of the best perceived quality.
+Care should be taken when adding new tasks to ensure that the new task is
+suitably generic -- it should be something of value to a large number (at
+least 25%) of our users; and 90% of our users should be able to understand
+what the task is from only its short description. It must not perform the
+same general purpose as some other existing task. It must contain packages
+that are the ones in most common use, and software that is of the best
+perceived quality. These criteria are relaxed some if the task has an
+appropriate test program. No more than 10 tasks should ever be displayed by
+the program, so if there are more, the least-used tasks must be removed
+when adding a new one.
+
+There is support for automatically installing tasks based on test programs.
+If a task has a Test-* field, then a program in /usr/lib/tasksel/tests/
+will be run. For example Test-lang fields cause /usr/lib/tasksel/tests/lang
+to be run. The test is passed first the name of the tasks, and then the
+contents of the field as parameters. The exit code of the test controls
+what to do with the task:
+
+0 - do not display, but do install task
+1 - do not display task
+2 - display task, marked for installation
+3 - display task, not marked for installation
+
+One use of these tests is in automatically selecting a language task
+appropriate for the user's locale, and hiding the rest. The lang test
+handles this by comparing the value of the Test-lang field of a task with
+the locale setting. Tests could also be used for things like automatically
+installing hardware support tasks on systems with the right hardware.
 
 Packages listed for different tasks (and within a single task)
 should not conflict, or the results will be rather arbitrary.

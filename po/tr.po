@@ -1,230 +1,211 @@
 # Turkish translation of tasksel. 
 # This file is distributed under the same license as the tasksel package.
-# Cagatay Tengiz <cagatay@tengiz.net>, 2004.
+# Recai Oktaş <roktas@omu.edu.tr>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-18 23:37+0200\n"
-"PO-Revision-Date: 2004-03-29 19:00+0300\n"
-"Last-Translator: Cagatay Tengiz <cagatay@tengiz.net>\n"
+"POT-Creation-Date: 2004-06-10 09:02+0200\n"
+"PO-Revision-Date: 2004-06-19 19:31+0300\n"
+"Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team:  Debian l10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms:  nplurals=1; plural=0;\n"
 
-#: ../data.c:307 ../data.c:321
-msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Liste tamponu için bellek ayrılamadı"
-
-#: ../macros.h:42
-#, c-format
+#: ../tasksel.pl:188
 msgid ""
-"Fatal error encountered at %s:%d\n"
-"\t"
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t -- test mode; don't really do anything\n"
+"\t-r -- install all required-priority packages\n"
+"\t-i -- install all important-priority packages\n"
+"\t-s -- install all standard-priority packages\n"
+"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
-"Ölümcül hata -- %s:%d\n"
-"\t"
+"Kullanım:\n"
+"tasksel install <görev>\n"
+"tasksel [seçenekler]; seçenekler aşağıdadır:\n"
+"\t-t -- sınama kipi; herhangi bir işlem yapma\n"
+"\t-r -- \"gerekli\" öncelikli bütün paketleri kur\n"
+"\t-i -- \"önemli\" öncelikli bütün paketleri kur\n"
+"\t-s -- \"standart\" öncelikli bütün paketleri kur\n"
+"\t-n -- arayüz (UI) gösterme; genellikle -r veya -i ile kullanılır\n"
+"\t-a -- bütün görevleri göster, herhangi bir pakete sahip olmayanlar da dahil\n"
 
-#: ../macros.h:51
-#, c-format
-msgid ""
-"I/O error at %s:%d\n"
-"\t"
-msgstr ""
-"G/Ç (I/O) hatası: %s:%d\n"
-"\t"
+#: ../tasksel.pl:250
+msgid "ignoring other selected packages in favour of manual package selection"
+msgstr "seçilen diğer paketler elle seçim yapmak üzere gözardı ediliyor"
 
-#: ../slangui.c:18 ../slangui.c:19
-msgid "(no description)"
-msgstr "(açıklama yok)"
+#: ../tasksel.pl:254 ../tasksel.pl:266
+msgid "aptitude failed"
+msgstr "aptitude başarısız"
 
-#: ../slangui.c:75
-msgid "End-user"
-msgstr "Son kullanıcı"
+#~ msgid "Cannot allocate memory for enumeration buffer"
+#~ msgstr "Liste tamponu için bellek ayrılamadı"
 
-#: ../slangui.c:76
-msgid "Hardware Support"
-msgstr "Donanım Desteği"
+#~ msgid ""
+#~ "Fatal error encountered at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "Ölümcül hata -- %s:%d\n"
+#~ "\t"
 
-#: ../slangui.c:77
-msgid "Servers"
-msgstr "Sunucular"
+#~ msgid ""
+#~ "I/O error at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "G/Ç (I/O) hatası: %s:%d\n"
+#~ "\t"
 
-#: ../slangui.c:78
-msgid "Development"
-msgstr "Geliştirme"
+#~ msgid "(no description)"
+#~ msgstr "(açıklama yok)"
 
-#: ../slangui.c:79
-msgid "Localization"
-msgstr "Yerelleştirme"
+#~ msgid "End-user"
+#~ msgstr "Son kullanıcı"
 
-#: ../slangui.c:80
-msgid "Miscellaneous"
-msgstr "Çeşitli"
+#~ msgid "Hardware Support"
+#~ msgstr "Donanım Desteği"
 
-#: ../slangui.c:219
-msgid "Unable to initialize the terminal"
-msgstr "Terminal başlatılamadı"
+#~ msgid "Servers"
+#~ msgstr "Sunucular"
 
-#: ../slangui.c:221
-msgid "Unable to initialize screen output"
-msgstr "Ekran çıktısı üretilemiyor"
+#~ msgid "Development"
+#~ msgstr "Geliştirme"
 
-#: ../slangui.c:222
-msgid "Unable to initialize keyboard interface"
-msgstr "Klavye arayüzü başlatılamadı"
+#~ msgid "Localization"
+#~ msgstr "Yerelleştirme"
 
-#: ../slangui.c:239
-#, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Debian Görev Kurucusu v%s - (c) 1999-2004 SPI ve diğerleri"
+#~ msgid "Miscellaneous"
+#~ msgstr "Çeşitli"
 
-#: ../slangui.c:393
-msgid "^Finish"
-msgstr "Bitir (^F)"
+#~ msgid "Unable to initialize the terminal"
+#~ msgstr "Terminal başlatılamadı"
 
-#: ../slangui.c:401 ../slangui.c:402
-msgid "Task ^Info"
-msgstr "Açıklama (^I)"
+#~ msgid "Unable to initialize screen output"
+#~ msgstr "Ekran çıktısı üretilemiyor"
 
-#: ../slangui.c:406 ../slangui.c:407
-msgid "^Help"
-msgstr "Yardım (^H)"
+#~ msgid "Unable to initialize keyboard interface"
+#~ msgstr "Klavye arayüzü başlatılamadı"
 
-#: ../slangui.c:441
-msgid "Select tasks to install"
-msgstr "Kurulacak görevleri seçin"
+#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
+#~ msgstr "Debian Görev Kurucusu v%s - (c) 1999-2004 SPI ve diğerleri"
 
-#: ../slangui.c:576
-msgid "Ok"
-msgstr "Tamam"
+#~ msgid "^Finish"
+#~ msgstr "Bitir (^F)"
 
-#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
-#, c-format
-msgid "Index out of bounds: %d >= %d"
-msgstr "Sınırlar harici gösterge: %d >= %d"
+#~ msgid "Task ^Info"
+#~ msgstr "Açıklama (^I)"
 
-#: ../slangui.c:776
-msgid "Help"
-msgstr "Yardım"
+#~ msgid "^Help"
+#~ msgstr "Yardım (^H)"
 
-#: ../slangui.c:777
-msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\n"
-"\n"
-"The main chooser list shows a list of tasks that you can choose to install. "
-"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
-"selection of the task at the cursor. You can also press A to select all "
-"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
-"begin installation of your selected tasks.\n"
-"\n"
-"Thank you for using Debian.\n"
-"\n"
-"Press enter to return to the task selection screen"
-msgstr ""
-"Görevler, seçilen göreve yönelik paketlerin hızlıca kurulmalarını "
-"sağlar.\n"
-"\n"
-"Ana seçim listesi kurulmasını seçebileceğiniz görevlerin listesini sunar."
-"Ok tuşları imleci hareket ettirir. ENTER veya BOŞLUK TUŞU imlecin "
-"bulunduğu görevi seçer veya seçimi kaldırır. Tüm görevleri seçmek için A "
-"tuşu, tüm seçimleri iptal etmek için N tuşları kullanılabilir. Q tuşu ile "
-"bu program sonlandırılır ve seçmiş olduğunuz görevlerin kurulumuna "
-"geçilir.\n"
-"\n"
-"Debian kullandığınız için teşekkürler.\n"
-"\n"
-"Görev seçimi ekranına geri dönmek için enter'a basınız."
+#~ msgid "Select tasks to install"
+#~ msgstr "Kurulacak görevleri seçin"
 
-#: ../slangui.c:818
-#, c-format
-msgid ""
-"Description:\n"
-"%s\n"
-"\n"
-"Included packages:\n"
-msgstr ""
-"Açıklama:\n"
-"%s\n"
-"\n"
-"İçerdiği paketler:\n"
+#~ msgid "Ok"
+#~ msgstr "Tamam"
 
-#: ../slangui.c:826
-msgid "(no description available)"
-msgstr "(herhangi bir açıklama yok)"
+#~ msgid "Index out of bounds: %d >= %d"
+#~ msgstr "Sınırlar harici gösterge: %d >= %d"
 
-#: ../tasksel.c:33
-msgid "Unknown signal seen"
-msgstr "Bilinmeyen sinyal alındı"
+#~ msgid "Help"
+#~ msgstr "Yardım"
 
-#: ../tasksel.c:39
-#, c-format
-msgid "tasksel install <task>\n"
-msgstr "tasksel install <görev>\n"
+#~ msgid ""
+#~ "Tasks allow you to quickly install a selection of packages that performs "
+#~ "a given task.\n"
+#~ "\n"
+#~ "The main chooser list shows a list of tasks that you can choose to "
+#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
+#~ "toggles the selection of the task at the cursor. You can also press A to "
+#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
+#~ "program and begin installation of your selected tasks.\n"
+#~ "\n"
+#~ "Thank you for using Debian.\n"
+#~ "\n"
+#~ "Press enter to return to the task selection screen"
+#~ msgstr ""
+#~ "Görevler, seçilen göreve yönelik paketlerin hızlıca kurulmalarını "
+#~ "sağlar.\n"
+#~ "\n"
+#~ "Ana seçim listesi kurulmasını seçebileceğiniz görevlerin listesini sunar."
+#~ "Ok tuşları imleci hareket ettirir. ENTER veya BOŞLUK TUŞU imlecin "
+#~ "bulunduğu görevi seçer veya seçimi kaldırır. Tüm görevleri seçmek için A "
+#~ "tuşu, tüm seçimleri iptal etmek için N tuşları kullanılabilir. Q tuşu ile "
+#~ "bu program sonlandırılır ve seçmiş olduğunuz görevlerin kurulumuna "
+#~ "geçilir.\n"
+#~ "\n"
+#~ "Debian kullandığınız için teşekkürler.\n"
+#~ "\n"
+#~ "Görev seçimi ekranına geri dönmek için enter'a basınız."
 
-#: ../tasksel.c:40
-#, c-format
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [seçenekler]; seçenekler aşağıdakilerin bir kombinasyonudur:\n"
+#~ msgid ""
+#~ "Description:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Included packages:\n"
+#~ msgstr ""
+#~ "Açıklama:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "İçerdiği paketler:\n"
 
-#: ../tasksel.c:41
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- test modu, çıkışta apt-get'i çalıştırma"
+#~ msgid "(no description available)"
+#~ msgstr "(herhangi bir açıklama yok)"
 
-#: ../tasksel.c:42
-msgid ""
-"-q -- queue installs; do not install packages with apt-get;\n"
-"\t\tjust queue them in dpkg"
-msgstr ""
-"-q -- kurulumları kuyruğa at, paketleri apt-get ile kurma;\n"
-"\t\tyalnızca dpkg kuyruğuna at"
+#~ msgid "Unknown signal seen"
+#~ msgstr "Bilinmeyen sinyal alındı"
 
-#: ../tasksel.c:43
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- gerekli-öncelikli tüm paketleri kur"
+#~ msgid "tasksel install <task>\n"
+#~ msgstr "tasksel install <görev>\n"
 
-#: ../tasksel.c:44
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- önemli-öncelikli tüm paketleri kur"
+#~ msgid "tasksel [options]; where options is any combination of:\n"
+#~ msgstr ""
+#~ "tasksel [seçenekler]; seçenekler aşağıdakilerin bir kombinasyonudur:\n"
 
-#: ../tasksel.c:45
-msgid "-s -- install all standard-priority packages"
-msgstr "-s -- standart-öncelikli tüm paketleri kur"
+#~ msgid "-t -- test mode; don't actually run apt-get on exit"
+#~ msgstr "-t -- test modu, çıkışta apt-get'i çalıştırma"
 
-#: ../tasksel.c:46
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr ""
-"-n -- kullanıcı arayüzünü gösterme; genelde -r veya -i ile birlikte "
-"kullanılır"
+#~ msgid ""
+#~ "-q -- queue installs; do not install packages with apt-get;\n"
+#~ "\t\tjust queue them in dpkg"
+#~ msgstr ""
+#~ "-q -- kurulumları kuyruğa at, paketleri apt-get ile kurma;\n"
+#~ "\t\tyalnızca dpkg kuyruğuna at"
 
-#: ../tasksel.c:47
-msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- tüm görevleri göster, içlerinde hiç paket olmasa bile"
+#~ msgid "-r -- install all required-priority packages"
+#~ msgstr "-r -- gerekli-öncelikli tüm paketleri kur"
 
-#: ../tasksel.c:88 ../tasksel.c:123
-#, c-format
-msgid "No packages selected\n"
-msgstr "Seçilmiş paket yok\n"
+#~ msgid "-i -- install all important-priority packages"
+#~ msgstr "-i -- önemli-öncelikli tüm paketleri kur"
 
-#: ../tasksel.c:197
-#, c-format
-msgid "No tasks found on this system.\n"
-msgstr "Bu sistemde hiç görev bulunamadı.\n"
+#~ msgid "-s -- install all standard-priority packages"
+#~ msgstr "-s -- standart-öncelikli tüm paketleri kur"
 
-#: ../util.c:21
-msgid "Cannot allocate memory for strdup"
-msgstr "strdup için bellek ayrılamıyor"
+#~ msgid "-n -- don't show UI; use with -r or -i usually"
+#~ msgstr ""
+#~ "-n -- kullanıcı arayüzünü gösterme; genelde -r veya -i ile birlikte "
+#~ "kullanılır"
 
-#: ../util.c:39
-#, c-format
-msgid "Cannot allocate %d bytes of memory"
-msgstr "%d·byte'lık·bellek·birimi·ayrılamadı"
+#~ msgid "-a -- show all tasks, even those with no packages in them"
+#~ msgstr "-a -- tüm görevleri göster, içlerinde hiç paket olmasa bile"
 
-#: ../util.c:48
-#, c-format
-msgid "Cannot reallocate %d bytes of memory"
-msgstr "%d byte'lık bellek yeniden ayrılamadı"
+#~ msgid "No packages selected\n"
+#~ msgstr "Seçilmiş paket yok\n"
+
+#~ msgid "No tasks found on this system.\n"
+#~ msgstr "Bu sistemde hiç görev bulunamadı.\n"
+
+#~ msgid "Cannot allocate memory for strdup"
+#~ msgstr "strdup için bellek ayrılamıyor"
+
+#~ msgid "Cannot allocate %d bytes of memory"
+#~ msgstr "%d·byte'lık·bellek·birimi·ayrılamadı"
+
+#~ msgid "Cannot reallocate %d bytes of memory"
+#~ msgstr "%d byte'lık bellek yeniden ayrılamadı"

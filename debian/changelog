@@ -1,8 +1,57 @@
-tasksel (1.53) UNRELEASED; urgency=low
+tasksel (2.01) UNRELEASED; urgency=low
 
   * Joey Hess
+    - Add hspell-gui to Hebrew task.
+    - Merge office with desktop task, dropping gnucash.
+  * Translations
+    - Eugeniy Meshcheryakov
+      - Updated Ukrainian translation
+    - Christian Perrier
+      - Updated POT files and PO files accordingly
+      - Updated French programs and debconf translations
+   - Kęstutis Biliūnas
+      - Updated Lithuanian programs and debconf translations
+    - Claus Hindsgaul
+      - Updated Danish translation
+
+ -- Christian Perrier <bubulle@kheops.frmug.org>  Tue, 15 Jun 2004 08:26:08 +0200
+
+tasksel (2.00) experimental; urgency=low
+
+  * Joey Hess
+    - Rewrote tasksel to use debconf for the UI, and support test programs
+      for flexible automatic task selection, etc.
+      Closes: #65992, #103363, #105718, #234216, #251419, #251638, #251639
+      Closes: #244949, #251743
+    - Tagged all the language tasks with Test-lang fields holding the
+      language that the task is useful for, to allow for autoselection
+      of languages matching the installation language.
     - Add fortune-mod to the desktop task as a gnome or kde screensaver does
       very silly things w/o it.
+    - Adopted new, stricter criteria for task additions. Removed the following
+      tasks, which did not meet it: c-dev, java-dev, python-dev, broadband,
+      dialup, laptop, junior, kernel-compile, science, tex, games, lsb,
+      unix-server. Some of these (laptop, etc) could be reinstated if tests
+      were developed for them.
+      Closes: #192747, #249309, #234393, #202878, #249702, #142873, #186085
+      Closes: #237255, #245649, #254329
+    - Added a dependency on liblocale-gettext-perl.
+    - Added a dependency on aptitude, which is used to do the work of
+      installing tasks, etc.
+    - Added a conflicts with older debconf versions that do not work
+      with tasksel.
+    - Tasksel now accepts long options in addition to the short ones.
+    - The -q option is not yet re-implemented, and I hope not to implement
+      it, as to do so would mean a lot more messing with the package
+      database. This breaks older base-config's, so conflict with them.
+    - The -a option is also not yet re-implemented.
+    - Add --new-install option, intended to be used by base-config to make
+      tasksel enter a special mode more suited for initial system installs.
+    - Fixes "tasksel install". Closes: #165628
+    - Fix man page internal section.
+    - Rejiggered the maintainer and uploader fields.
+    - Update copyright.
+    - Add Italian task.
   * Changwoo Ryu
     - Replaced old IM ami from Korean task with descent nabi and imhangul.
     - Added more fonts and docs to Korean task.
@@ -16,7 +65,7 @@ tasksel (1.53) UNRELEASED; urgency=low
     - Tomohiro KUBOTA (久保田智広)
       - Updated Japanese tasks translation
 
- -- Christian Perrier <bubulle@debian.org>  Wed, 26 May 2004 23:08:26 -0300
+ -- Joey Hess <joeyh@debian.org>  Tue,  8 Jun 2004 13:32:12 -0400
 
 tasksel (1.52) unstable; urgency=high
 

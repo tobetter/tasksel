@@ -50,6 +50,7 @@ binary-arch: build install
 	dh_link
 	dh_strip
 	dh_compress
+	dh_installdebconf
 	dh_fixperms
 	dh_installdeb
 	dh_shlibdeps

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-12 16:22-0500\n"
+"POT-Creation-Date: 2004-06-10 09:02+0200\n"
 "PO-Revision-Date: 2004-03-29 22:46GMT+2\n"
 "Last-Translator: Eddy Petrisor <eddy_petrisor@yahoo.com>\n"
 "Language-Team: Romanian\n"
@@ -16,215 +16,186 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.5\n"
 
-#: ../data.c:307 ../data.c:321
-msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Nu se poate aloca memorie pentru tamponul (buffer) de enumerare"
-
-#: ../macros.h:42
-#, c-format
+#: ../tasksel.pl:188
 msgid ""
-"Fatal error encountered at %s:%d\n"
-"\t"
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t -- test mode; don't really do anything\n"
+"\t-r -- install all required-priority packages\n"
+"\t-i -- install all important-priority packages\n"
+"\t-s -- install all standard-priority packages\n"
+"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
-"Eroare fatalã întâlnitã la %s:%d\n"
-"\t"
 
-#: ../macros.h:51
-#, c-format
-msgid ""
-"I/O error at %s:%d\n"
-"\t"
+#: ../tasksel.pl:250
+msgid "ignoring other selected packages in favour of manual package selection"
 msgstr ""
-"Eroare I/E la %s:%d\n"
-"\t"
 
-#: ../slangui.c:18 ../slangui.c:19
-msgid "(no description)"
-msgstr "(fãrã descriere)"
-
-#: ../slangui.c:75
-msgid "End-user"
-msgstr "Utilizator (final)"
-
-#: ../slangui.c:76
-msgid "Hardware Support"
-msgstr "Suport hardware"
-
-#: ../slangui.c:77
-msgid "Servers"
-msgstr "Servere"
-
-#: ../slangui.c:78
-msgid "Development"
-msgstr "Dezvoltare"
-
-#: ../slangui.c:79
-msgid "Localization"
-msgstr "Localizare"
-
-#: ../slangui.c:80
-msgid "Miscellaneous"
-msgstr "Diverse"
-
-#: ../slangui.c:219
-msgid "Unable to initialize the terminal"
-msgstr "Nu s-a putut iniþializa terminalul"
-
-#: ../slangui.c:221
-msgid "Unable to initialize screen output"
-msgstr "Nu s-a putut iniþializa ieºirea-ecran"
-
-#: ../slangui.c:222
-msgid "Unable to initialize keyboard interface"
-msgstr "Nu s-a putut iniþializa interfaþa cu tastatura"
-
-#: ../slangui.c:239
-#, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Instalerul de sarcini Debian v%s - (c) 1999-2004 SPI ºi alþii"
-
-#: ../slangui.c:393
-msgid "^Finish"
-msgstr "S^fârºit"
-
-#: ../slangui.c:401 ../slangui.c:402
-msgid "Task ^Info"
-msgstr "^Informaþii despre sarcinã"
-
-#: ../slangui.c:406 ../slangui.c:407
-msgid "^Help"
-msgstr "A^jutor"
-
-#: ../slangui.c:441
-msgid "Select tasks to install"
-msgstr "Selecteazã sarcinile de instalat"
-
-#: ../slangui.c:576
-msgid "Ok"
-msgstr "Ok"
-
-#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
-#, c-format
-msgid "Index out of bounds: %d >= %d"
-msgstr "Index în afara limitelor: %d >= %d"
-
-#: ../slangui.c:776
-msgid "Help"
-msgstr "Ajutor"
-
-#: ../slangui.c:777
-msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\n"
-"\n"
-"The main chooser list shows a list of tasks that you can choose to install. "
-"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
-"selection of the task at the cursor. You can also press A to select all "
-"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
-"begin installation of your selected tasks.\n"
-"\n"
-"Thank you for using Debian.\n"
-"\n"
-"Press enter to return to the task selection screen"
+#: ../tasksel.pl:254 ../tasksel.pl:266
+msgid "aptitude failed"
 msgstr ""
-"Sarcinile vã permit sã instalaþi rapid o selecþie de pachete care desfãºoarã "
-"o anumitã sarcinã.\n"
-"\n"
-"Pagina de alegere principalã afiºeazã o listã de sarcini pe care puteþi "
-"alege sã le instalaþi. Sãgeþile miºcã cursorul. Prin apãsarea tastei ENTER "
-"sau SPATIU inverseazã selecþia sarcinii din dreptul cursorului. Puteþi, "
-"de asemenea, sã apãsaþi pe A pentru a selecta toate sarcinile, sau pe N "
-"pentru a de-selecta toate sarcinile. Apãsând Q, veþi pãrãsi acest program "
-"ºi se va începe instalarea sarcinilor selectate de dvs.\n"
-"\n"
-"Vã multumim pentru cã utilizaþi Debian. \n"
-"\n"
-"Apãsaþi enter pentru a vã întoarce la ecranul de selecþie"
 
-#: ../slangui.c:818
-#, c-format
-msgid ""
-"Description:\n"
-"%s\n"
-"\n"
-"Included packages:\n"
-msgstr ""
-"Descriere:\n"
-"%s\n"
-"\n"
-"Pachete incluse:\n"
+#~ msgid "Cannot allocate memory for enumeration buffer"
+#~ msgstr "Nu se poate aloca memorie pentru tamponul (buffer) de enumerare"
 
-#: ../slangui.c:826
-msgid "(no description available)"
-msgstr "(fãrã descriere disponibilã)"
+#~ msgid ""
+#~ "Fatal error encountered at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "Eroare fatalã întâlnitã la %s:%d\n"
+#~ "\t"
 
-#: ../tasksel.c:33
-msgid "Unknown signal seen"
-msgstr "S-a observat un semnal necunoscut"
+#~ msgid ""
+#~ "I/O error at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "Eroare I/E la %s:%d\n"
+#~ "\t"
 
-#: ../tasksel.c:39
-#, c-format
-msgid "tasksel install <task>\n"
-msgstr "tasksel install <sarcinã>\n"
+#~ msgid "(no description)"
+#~ msgstr "(fãrã descriere)"
 
-#: ../tasksel.c:40
-#, c-format
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [opþiuni]; unde optiuni reprezintã orice combinaþie din:\n"
+#~ msgid "End-user"
+#~ msgstr "Utilizator (final)"
 
-#: ../tasksel.c:41
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- mod test; nu ruleazã de fapt apt-get la ieºire"
+#~ msgid "Hardware Support"
+#~ msgstr "Suport hardware"
 
-#: ../tasksel.c:42
-msgid ""
-"-q -- queue installs; do not install packages with apt-get;\n"
-"\t\tjust queue them in dpkg"
-msgstr ""
-"-q -- instalare \"în coadã\"; nu instaleazã pachetele cu apt-get;\n"
-"\t\tdoar le pune în coada lui dpkg"
+#~ msgid "Servers"
+#~ msgstr "Servere"
 
-#: ../tasksel.c:43
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- instaleazã toate pachetele de prioritate \"necesar\""
+#~ msgid "Development"
+#~ msgstr "Dezvoltare"
 
-#: ../tasksel.c:44
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- instaleazã toate pachetele de prioritate \"important\""
+#~ msgid "Localization"
+#~ msgstr "Localizare"
 
-#: ../tasksel.c:45
-msgid "-s -- install all standard-priority packages"
-msgstr "-i -- instaleazã toate pachetele de prioritate \"standard\""
+#~ msgid "Miscellaneous"
+#~ msgstr "Diverse"
 
-#: ../tasksel.c:46
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- nu afiºa interfaþa utilizator (UI); utilizat de obicei cu -r sau -i"
+#~ msgid "Unable to initialize the terminal"
+#~ msgstr "Nu s-a putut iniþializa terminalul"
 
-#: ../tasksel.c:47
-msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- afiºeazã toate sarcinile, chiar ºi cele fãrã pachete în ele"
+#~ msgid "Unable to initialize screen output"
+#~ msgstr "Nu s-a putut iniþializa ieºirea-ecran"
 
-#: ../tasksel.c:88 ../tasksel.c:123
-#, c-format
-msgid "No packages selected\n"
-msgstr "Nu s-a selectat nici un pachet\n"
+#~ msgid "Unable to initialize keyboard interface"
+#~ msgstr "Nu s-a putut iniþializa interfaþa cu tastatura"
 
-#: ../tasksel.c:197
-#, c-format
-msgid "No tasks found on this system.\n"
-msgstr "Nu s-au gãsit sarcini pe acest sistem.\n"
+#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
+#~ msgstr "Instalerul de sarcini Debian v%s - (c) 1999-2004 SPI ºi alþii"
 
-#: ../util.c:21
-msgid "Cannot allocate memory for strdup"
-msgstr "Nu se poate aloca memorie pentru strdup"
+#~ msgid "^Finish"
+#~ msgstr "S^fârºit"
 
-#: ../util.c:39
-#, c-format
-msgid "Cannot allocate %d bytes of memory"
-msgstr "Nu se pot aloca %d octeþi în memorie"
+#~ msgid "Task ^Info"
+#~ msgstr "^Informaþii despre sarcinã"
 
-#: ../util.c:48
-#, c-format
-msgid "Cannot reallocate %d bytes of memory"
-msgstr "Nu se pot realoca %d octeþi în memorie"
+#~ msgid "^Help"
+#~ msgstr "A^jutor"
 
+#~ msgid "Select tasks to install"
+#~ msgstr "Selecteazã sarcinile de instalat"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Index out of bounds: %d >= %d"
+#~ msgstr "Index în afara limitelor: %d >= %d"
+
+#~ msgid "Help"
+#~ msgstr "Ajutor"
+
+#~ msgid ""
+#~ "Tasks allow you to quickly install a selection of packages that performs "
+#~ "a given task.\n"
+#~ "\n"
+#~ "The main chooser list shows a list of tasks that you can choose to "
+#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
+#~ "toggles the selection of the task at the cursor. You can also press A to "
+#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
+#~ "program and begin installation of your selected tasks.\n"
+#~ "\n"
+#~ "Thank you for using Debian.\n"
+#~ "\n"
+#~ "Press enter to return to the task selection screen"
+#~ msgstr ""
+#~ "Sarcinile vã permit sã instalaþi rapid o selecþie de pachete care "
+#~ "desfãºoarã o anumitã sarcinã.\n"
+#~ "\n"
+#~ "Pagina de alegere principalã afiºeazã o listã de sarcini pe care puteþi "
+#~ "alege sã le instalaþi. Sãgeþile miºcã cursorul. Prin apãsarea tastei "
+#~ "ENTER sau SPATIU inverseazã selecþia sarcinii din dreptul cursorului. "
+#~ "Puteþi, de asemenea, sã apãsaþi pe A pentru a selecta toate sarcinile, "
+#~ "sau pe N pentru a de-selecta toate sarcinile. Apãsând Q, veþi pãrãsi "
+#~ "acest program ºi se va începe instalarea sarcinilor selectate de dvs.\n"
+#~ "\n"
+#~ "Vã multumim pentru cã utilizaþi Debian. \n"
+#~ "\n"
+#~ "Apãsaþi enter pentru a vã întoarce la ecranul de selecþie"
+
+#~ msgid ""
+#~ "Description:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Included packages:\n"
+#~ msgstr ""
+#~ "Descriere:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Pachete incluse:\n"
+
+#~ msgid "(no description available)"
+#~ msgstr "(fãrã descriere disponibilã)"
+
+#~ msgid "Unknown signal seen"
+#~ msgstr "S-a observat un semnal necunoscut"
+
+#~ msgid "tasksel install <task>\n"
+#~ msgstr "tasksel install <sarcinã>\n"
+
+#~ msgid "tasksel [options]; where options is any combination of:\n"
+#~ msgstr "tasksel [opþiuni]; unde optiuni reprezintã orice combinaþie din:\n"
+
+#~ msgid "-t -- test mode; don't actually run apt-get on exit"
+#~ msgstr "-t -- mod test; nu ruleazã de fapt apt-get la ieºire"
+
+#~ msgid ""
+#~ "-q -- queue installs; do not install packages with apt-get;\n"
+#~ "\t\tjust queue them in dpkg"
+#~ msgstr ""
+#~ "-q -- instalare \"în coadã\"; nu instaleazã pachetele cu apt-get;\n"
+#~ "\t\tdoar le pune în coada lui dpkg"
+
+#~ msgid "-r -- install all required-priority packages"
+#~ msgstr "-r -- instaleazã toate pachetele de prioritate \"necesar\""
+
+#~ msgid "-i -- install all important-priority packages"
+#~ msgstr "-i -- instaleazã toate pachetele de prioritate \"important\""
+
+#~ msgid "-s -- install all standard-priority packages"
+#~ msgstr "-i -- instaleazã toate pachetele de prioritate \"standard\""
+
+#~ msgid "-n -- don't show UI; use with -r or -i usually"
+#~ msgstr ""
+#~ "-n -- nu afiºa interfaþa utilizator (UI); utilizat de obicei cu -r sau -i"
+
+#~ msgid "-a -- show all tasks, even those with no packages in them"
+#~ msgstr "-a -- afiºeazã toate sarcinile, chiar ºi cele fãrã pachete în ele"
+
+#~ msgid "No packages selected\n"
+#~ msgstr "Nu s-a selectat nici un pachet\n"
+
+#~ msgid "No tasks found on this system.\n"
+#~ msgstr "Nu s-au gãsit sarcini pe acest sistem.\n"
+
+#~ msgid "Cannot allocate memory for strdup"
+#~ msgstr "Nu se poate aloca memorie pentru strdup"
+
+#~ msgid "Cannot allocate %d bytes of memory"
+#~ msgstr "Nu se pot aloca %d octeþi în memorie"
+
+#~ msgid "Cannot reallocate %d bytes of memory"
+#~ msgstr "Nu se pot realoca %d octeþi în memorie"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-28 08:04+0100\n"
+"POT-Creation-Date: 2004-06-10 09:02+0200\n"
 "PO-Revision-Date: 2004-03-13 19:46MET\n"
 "Last-Translator: Petter Reinholdtsen <pere@hungry.com>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -15,217 +15,189 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.5\n"
 
+#: ../tasksel.pl:188
+msgid ""
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t -- test mode; don't really do anything\n"
+"\t-r -- install all required-priority packages\n"
+"\t-i -- install all important-priority packages\n"
+"\t-s -- install all standard-priority packages\n"
+"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-a -- show all tasks, even those with no packages in them\n"
+msgstr ""
+
+#: ../tasksel.pl:250
+msgid "ignoring other selected packages in favour of manual package selection"
+msgstr ""
+
+#: ../tasksel.pl:254 ../tasksel.pl:266
+msgid "aptitude failed"
+msgstr ""
+
 # grisenorsk!
-#: ../data.c:307 ../data.c:321
-msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Kan ikke tilordne minne til oppramsingslageret"
+#~ msgid "Cannot allocate memory for enumeration buffer"
+#~ msgstr "Kan ikke tilordne minne til oppramsingslageret"
 
-#: ../macros.h:42
-#, c-format
-msgid ""
-"Fatal error encountered at %s:%d\n"
-"\t"
-msgstr ""
-"Fatal feil ved %s:%d\n"
-"\t"
+#~ msgid ""
+#~ "Fatal error encountered at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "Fatal feil ved %s:%d\n"
+#~ "\t"
 
-#: ../macros.h:51
-#, c-format
-msgid ""
-"I/O error at %s:%d\n"
-"\t"
-msgstr ""
-"I/O feil ved %s:%d\n"
-"\t"
+#~ msgid ""
+#~ "I/O error at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "I/O feil ved %s:%d\n"
+#~ "\t"
 
-#: ../slangui.c:18 ../slangui.c:19
-msgid "(no description)"
-msgstr "(ingen beskrivelse)"
+#~ msgid "(no description)"
+#~ msgstr "(ingen beskrivelse)"
 
-#: ../slangui.c:75
-msgid "End-user"
-msgstr "Sluttbruker"
+#~ msgid "End-user"
+#~ msgstr "Sluttbruker"
 
-#: ../slangui.c:76
-msgid "Hardware Support"
-msgstr "Maskinvarestøtte"
+#~ msgid "Hardware Support"
+#~ msgstr "Maskinvarestøtte"
 
-#: ../slangui.c:77
-msgid "Servers"
-msgstr "Tjenere"
+#~ msgid "Servers"
+#~ msgstr "Tjenere"
 
-#: ../slangui.c:78
-msgid "Development"
-msgstr "Utvikling"
+#~ msgid "Development"
+#~ msgstr "Utvikling"
 
-#: ../slangui.c:79
-msgid "Localization"
-msgstr "Lokalisering"
+#~ msgid "Localization"
+#~ msgstr "Lokalisering"
 
-#: ../slangui.c:80
-msgid "Miscellaneous"
-msgstr "Forskjellig"
+#~ msgid "Miscellaneous"
+#~ msgstr "Forskjellig"
 
-#: ../slangui.c:219
-msgid "Unable to initialize the terminal"
-msgstr "Klarte ikke å initiere terminalen"
+#~ msgid "Unable to initialize the terminal"
+#~ msgstr "Klarte ikke å initiere terminalen"
 
 # bør justeres i forhold til hva som forrårsaker feilmeldingen
-#: ../slangui.c:221
-msgid "Unable to initialize screen output"
-msgstr "Klarte ikke å initiere skjermutskrift"
+#~ msgid "Unable to initialize screen output"
+#~ msgstr "Klarte ikke å initiere skjermutskrift"
 
-#: ../slangui.c:222
-msgid "Unable to initialize keyboard interface"
-msgstr "Klarte ikke å initiere tastatur"
+#~ msgid "Unable to initialize keyboard interface"
+#~ msgstr "Klarte ikke å initiere tastatur"
 
-#: ../slangui.c:239
-#, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Installasjon av Debian-profiler v%s - (c) 1999-2004 SPI med flere"
+#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
+#~ msgstr "Installasjon av Debian-profiler v%s - (c) 1999-2004 SPI med flere"
 
-#: ../slangui.c:393
-msgid "^Finish"
-msgstr "^Avslutt"
+#~ msgid "^Finish"
+#~ msgstr "^Avslutt"
 
-#: ../slangui.c:401 ../slangui.c:402
-msgid "Task ^Info"
-msgstr "Profil^info"
+#~ msgid "Task ^Info"
+#~ msgstr "Profil^info"
 
-#: ../slangui.c:406 ../slangui.c:407
-msgid "^Help"
-msgstr "^Hjelp"
+#~ msgid "^Help"
+#~ msgstr "^Hjelp"
 
-#: ../slangui.c:441
-msgid "Select tasks to install"
-msgstr "Velg profil(er) som skal installeres"
+#~ msgid "Select tasks to install"
+#~ msgstr "Velg profil(er) som skal installeres"
 
-#: ../slangui.c:576
-msgid "Ok"
-msgstr "Ok"
+#~ msgid "Ok"
+#~ msgstr "Ok"
 
-#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
-#, c-format
-msgid "Index out of bounds: %d >= %d"
-msgstr "Indeksen er utenfor grenseverdier: %d >= %d"
+#~ msgid "Index out of bounds: %d >= %d"
+#~ msgstr "Indeksen er utenfor grenseverdier: %d >= %d"
 
-#: ../slangui.c:776
-msgid "Help"
-msgstr "Hjelp"
+#~ msgid "Help"
+#~ msgstr "Hjelp"
 
-#: ../slangui.c:777
-msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\n"
-"\n"
-"The main chooser list shows a list of tasks that you can choose to install. "
-"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
-"selection of the task at the cursor. You can also press A to select all "
-"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
-"begin installation of your selected tasks.\n"
-"\n"
-"Thank you for using Debian.\n"
-"\n"
-"Press enter to return to the task selection screen"
-msgstr ""
-"Profiler lar deg hurtig velge et knippe pakker som utfører en gitt oppgave.\n"
-"\n"
-"Listen viser en liste med profiler som du kan velge. Piltastene beveger "
-"pekeren. Linjeskift eller mellomromstasten velger profilen under pekeren. Du "
-"kan også trykke A for å velge alle profiler, eller N for å fjerne alle "
-"valgte profiler. Q avslutter programmet og begynner installasjonen av de "
-"valgte profilene.\n"
-"\n"
-"Takk for at du bruker Debian.\n"
-"\n"
-"Press linjeskift for å returnere til forrige skjerm"
+#~ msgid ""
+#~ "Tasks allow you to quickly install a selection of packages that performs "
+#~ "a given task.\n"
+#~ "\n"
+#~ "The main chooser list shows a list of tasks that you can choose to "
+#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
+#~ "toggles the selection of the task at the cursor. You can also press A to "
+#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
+#~ "program and begin installation of your selected tasks.\n"
+#~ "\n"
+#~ "Thank you for using Debian.\n"
+#~ "\n"
+#~ "Press enter to return to the task selection screen"
+#~ msgstr ""
+#~ "Profiler lar deg hurtig velge et knippe pakker som utfører en gitt "
+#~ "oppgave.\n"
+#~ "\n"
+#~ "Listen viser en liste med profiler som du kan velge. Piltastene beveger "
+#~ "pekeren. Linjeskift eller mellomromstasten velger profilen under pekeren. "
+#~ "Du kan også trykke A for å velge alle profiler, eller N for å fjerne alle "
+#~ "valgte profiler. Q avslutter programmet og begynner installasjonen av de "
+#~ "valgte profilene.\n"
+#~ "\n"
+#~ "Takk for at du bruker Debian.\n"
+#~ "\n"
+#~ "Press linjeskift for å returnere til forrige skjerm"
 
-#: ../slangui.c:818
-#, c-format
-msgid ""
-"Description:\n"
-"%s\n"
-"\n"
-"Included packages:\n"
-msgstr ""
-"Beskrivelse:\n"
-"%s\n"
-"\n"
-"Inkluderte pakker:\n"
+#~ msgid ""
+#~ "Description:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Included packages:\n"
+#~ msgstr ""
+#~ "Beskrivelse:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Inkluderte pakker:\n"
 
-#: ../slangui.c:826
-msgid "(no description available)"
-msgstr "(ingen beskrivelse tilgjengelig)"
+#~ msgid "(no description available)"
+#~ msgstr "(ingen beskrivelse tilgjengelig)"
 
-#: ../tasksel.c:33
-msgid "Unknown signal seen"
-msgstr "Mottok ukjent signal"
+#~ msgid "Unknown signal seen"
+#~ msgstr "Mottok ukjent signal"
 
-#: ../tasksel.c:39
-#, c-format
-msgid "tasksel install <task>\n"
-msgstr "tasksel install <profil>\n"
+#~ msgid "tasksel install <task>\n"
+#~ msgstr "tasksel install <profil>\n"
 
-#: ../tasksel.c:40
-#, c-format
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [valg]; hvor valg kan være en kombinasjon av:\n"
+#~ msgid "tasksel [options]; where options is any combination of:\n"
+#~ msgstr "tasksel [valg]; hvor valg kan være en kombinasjon av:\n"
 
-#: ../tasksel.c:41
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- test modus; ikke kjør apt-get når tasksel avslutter"
+#~ msgid "-t -- test mode; don't actually run apt-get on exit"
+#~ msgstr "-t -- test modus; ikke kjør apt-get når tasksel avslutter"
 
-#: ../tasksel.c:42
-msgid ""
-"-q -- queue installs; do not install packages with apt-get;\n"
-"\t\tjust queue them in dpkg"
-msgstr ""
-"-q -- legg installasjonen i kø; ikke installer pakkene med apt-get;\n"
-"\t\tlegg de i køen til dpkg"
+#~ msgid ""
+#~ "-q -- queue installs; do not install packages with apt-get;\n"
+#~ "\t\tjust queue them in dpkg"
+#~ msgstr ""
+#~ "-q -- legg installasjonen i kø; ikke installer pakkene med apt-get;\n"
+#~ "\t\tlegg de i køen til dpkg"
 
-#: ../tasksel.c:43
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- installer alle pakkene med prioritet «nødvendig»"
+#~ msgid "-r -- install all required-priority packages"
+#~ msgstr "-r -- installer alle pakkene med prioritet «nødvendig»"
 
-#: ../tasksel.c:44
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- installer alle pakkene med prioritet «viktig»"
+#~ msgid "-i -- install all important-priority packages"
+#~ msgstr "-i -- installer alle pakkene med prioritet «viktig»"
 
-#: ../tasksel.c:45
-msgid "-s -- install all standard-priority packages"
-msgstr "-s -- installer alle pakkene med prioritet «standard»"
+#~ msgid "-s -- install all standard-priority packages"
+#~ msgstr "-s -- installer alle pakkene med prioritet «standard»"
 
-#: ../tasksel.c:46
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- ikke vis grensesnitt; brukes vanligvis med -r eller -i"
+#~ msgid "-n -- don't show UI; use with -r or -i usually"
+#~ msgstr "-n -- ikke vis grensesnitt; brukes vanligvis med -r eller -i"
 
-#: ../tasksel.c:47
-msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- vis alle tasks, selv de som ikke inneholder noen pakker"
+#~ msgid "-a -- show all tasks, even those with no packages in them"
+#~ msgstr "-a -- vis alle tasks, selv de som ikke inneholder noen pakker"
 
-#: ../tasksel.c:88 ../tasksel.c:123
-#, c-format
-msgid "No packages selected\n"
-msgstr "Ingen pakker valgt\n"
+#~ msgid "No packages selected\n"
+#~ msgstr "Ingen pakker valgt\n"
 
-#: ../tasksel.c:197
-#, c-format
-msgid "No tasks found on this system.\n"
-msgstr "Ingen profiler funnet pÃ¥ dette systemet.\n"
+#~ msgid "No tasks found on this system.\n"
+#~ msgstr "Ingen profiler funnet pÃ¥ dette systemet.\n"
 
-#: ../util.c:21
-msgid "Cannot allocate memory for strdup"
-msgstr "Kan ikke allokere minne for strdup"
+#~ msgid "Cannot allocate memory for strdup"
+#~ msgstr "Kan ikke allokere minne for strdup"
 
-#: ../util.c:39
-#, c-format
-msgid "Cannot allocate %d bytes of memory"
-msgstr "Klarte ikke å allokere %d bytes av minnet"
+#~ msgid "Cannot allocate %d bytes of memory"
+#~ msgstr "Klarte ikke å allokere %d bytes av minnet"
 
-#: ../util.c:48
-#, c-format
-msgid "Cannot reallocate %d bytes of memory"
-msgstr "Kan ikke reallokere %d bytes med minne"
+#~ msgid "Cannot reallocate %d bytes of memory"
+#~ msgstr "Kan ikke reallokere %d bytes med minne"
 
 #~ msgid ""
 #~ "No tasks found on this system.\n"

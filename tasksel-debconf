@@ -1,0 +1,16 @@
+#!/bin/sh
+# because debconf sucks
+. /usr/share/debconf/confmodule
+set -e
+tmpfile=$1
+choices="$2"
+defaults="$3"
+question=$4
+db_settitle tasksel/title
+db_subst $question CHOICES "$choices"
+db_set $question "$defaults"
+db_input high $question || true
+db_go || true
+db_fset $question seen false
+db_get $question
+echo "$RET" >$tmpfile

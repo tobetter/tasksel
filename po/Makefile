@@ -5,8 +5,8 @@ MOS:=$(addsuffix .mo, $(LANGS))
 all: $(POTFILE) $(MOS)
 	touch build_stamp
 
-$(POTFILE): ../*.[ch]
-	$(XGETTEXT) -o $(POTFILE)-update ../*.[ch]
+$(POTFILE): ../tasksel.pl
+	$(XGETTEXT) -o $(POTFILE)-update ../tasksel.pl
 	if test -f $(POTFILE); then \
 	  if diff -I '^"POT-Creation-Date:' -I '^Report-Msgid-Bugs-To:' $(POTFILE) $(POTFILE)-update >/dev/null 2>&1; then \
 	      rm -f $(POTFILE)-update; \

@@ -6,220 +6,193 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-28 08:04+0100\n"
+"POT-Creation-Date: 2004-06-10 09:02+0200\n"
 "PO-Revision-Date: 2004-02-13 13:18+0100\n"
 "Last-Translator: André Dahlqvist <andre.dahlqvist@telia.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data.c:307 ../data.c:321
-msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Kan inte allokera minne för uppräkningsbufferten"
-
-#: ../macros.h:42
-#, c-format
+#: ../tasksel.pl:188
 msgid ""
-"Fatal error encountered at %s:%d\n"
-"\t"
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t -- test mode; don't really do anything\n"
+"\t-r -- install all required-priority packages\n"
+"\t-i -- install all important-priority packages\n"
+"\t-s -- install all standard-priority packages\n"
+"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
-"Ödesdigert fel uppstod på %s:%d\n"
-"\t"
 
-#: ../macros.h:51
-#, c-format
-msgid ""
-"I/O error at %s:%d\n"
-"\t"
+#: ../tasksel.pl:250
+msgid "ignoring other selected packages in favour of manual package selection"
 msgstr ""
-"I/O-fel på %s:%d\n"
-"\t"
 
-#: ../slangui.c:18 ../slangui.c:19
-msgid "(no description)"
-msgstr "(ingen beskrivning)"
-
-#: ../slangui.c:75
-msgid "End-user"
-msgstr "Slutanvändare"
-
-#: ../slangui.c:76
-msgid "Hardware Support"
-msgstr "Maskinvarustöd"
-
-#: ../slangui.c:77
-msgid "Servers"
-msgstr "Servrar"
-
-#: ../slangui.c:78
-msgid "Development"
-msgstr "Utveckling"
-
-#: ../slangui.c:79
-msgid "Localization"
-msgstr "Språkanpassning"
-
-#: ../slangui.c:80
-msgid "Miscellaneous"
-msgstr "Blandat"
-
-#: ../slangui.c:219
-msgid "Unable to initialize the terminal"
-msgstr "Kunde inte initiera terminalen"
-
-#: ../slangui.c:221
-msgid "Unable to initialize screen output"
-msgstr "Kunde inte initiera skärmutdata"
-
-#: ../slangui.c:222
-msgid "Unable to initialize keyboard interface"
-msgstr "Kunde inte initiera tangentbordsgränssnittet"
-
-#: ../slangui.c:239
-#, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Debians funktionspaketsinstallerare - © 1999-2004 SPI med flera"
-
-#: ../slangui.c:393
-msgid "^Finish"
-msgstr "^Avsluta"
-
-#: ../slangui.c:401 ../slangui.c:402
-msgid "Task ^Info"
-msgstr "^Funktionsinfo"
-
-#: ../slangui.c:406 ../slangui.c:407
-msgid "^Help"
-msgstr "^Hjälp"
-
-#: ../slangui.c:441
-msgid "Select tasks to install"
-msgstr "Välj funktioner att installera"
-
-#: ../slangui.c:576
-msgid "Ok"
-msgstr "Ok"
-
-#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
-#, c-format
-msgid "Index out of bounds: %d >= %d"
-msgstr "Index utanför gränser: %d >= %d"
-
-#: ../slangui.c:776
-msgid "Help"
-msgstr "Hjälp"
-
-#: ../slangui.c:777
-msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\n"
-"\n"
-"The main chooser list shows a list of tasks that you can choose to install. "
-"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
-"selection of the task at the cursor. You can also press A to select all "
-"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
-"begin installation of your selected tasks.\n"
-"\n"
-"Thank you for using Debian.\n"
-"\n"
-"Press enter to return to the task selection screen"
+#: ../tasksel.pl:254 ../tasksel.pl:266
+msgid "aptitude failed"
 msgstr ""
-"Funktionspaket låter dig snabbt installera ett urval av paket för att "
-"utföra en specifik funktion.\n"
-"\n"
-"Huvudvalslistan visar en lista över funktioner du kan välja att installera. "
-"Piltangenterna flyttar markören. Om du trycker ENTER eller MELLANSLAG ändrar "
-"du valet av paketet vid markören. Du kan även trycka A för att välja alla "
-"paket, eller N för att avmarkera alla paket. Trycker du Q kommer "
-"programmet avslutas, och valda funktioner kommer att installeras.\n"
-"\n"
-"Tack för att du använder Debian.\n"
-"\n"
-"Tryck Enter för att återgå till funktionsvalsskärmen"
 
-#: ../slangui.c:818
-#, c-format
-msgid ""
-"Description:\n"
-"%s\n"
-"\n"
-"Included packages:\n"
-msgstr ""
-"Beskrivning:\n"
-"%s\n"
-"\n"
-"Paket som ingår:\n"
+#~ msgid "Cannot allocate memory for enumeration buffer"
+#~ msgstr "Kan inte allokera minne för uppräkningsbufferten"
 
-#: ../slangui.c:826
-msgid "(no description available)"
-msgstr "(beskrivning saknas)"
+#~ msgid ""
+#~ "Fatal error encountered at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "Ödesdigert fel uppstod på %s:%d\n"
+#~ "\t"
 
-#: ../tasksel.c:33
-msgid "Unknown signal seen"
-msgstr "Okänd signal mottagen"
+#~ msgid ""
+#~ "I/O error at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "I/O-fel på %s:%d\n"
+#~ "\t"
 
-#: ../tasksel.c:39
-#, c-format
-msgid "tasksel install <task>\n"
-msgstr "tasksel install <funktion>\n"
+#~ msgid "(no description)"
+#~ msgstr "(ingen beskrivning)"
 
-#: ../tasksel.c:40
-#, c-format
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [flaggor]; där flaggor kan vara en kombination av:\n"
+#~ msgid "End-user"
+#~ msgstr "Slutanvändare"
 
-#: ../tasksel.c:41
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- testläge; kör inte apt-get vid avslutning"
+#~ msgid "Hardware Support"
+#~ msgstr "Maskinvarustöd"
 
-#: ../tasksel.c:42
-msgid ""
-"-q -- queue installs; do not install packages with apt-get;\n"
-"\t\tjust queue them in dpkg"
-msgstr ""
-"-q -- köa installatioenr; installera inte paket med apt-get;\n"
-"\t\tköa dem bara i dpkg"
+#~ msgid "Servers"
+#~ msgstr "Servrar"
 
-#: ../tasksel.c:43
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- installera alla paket med prioriteten \"krävs\""
+#~ msgid "Development"
+#~ msgstr "Utveckling"
 
-#: ../tasksel.c:44
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- installera alla paket med prioriteten \"viktig\""
+#~ msgid "Localization"
+#~ msgstr "Språkanpassning"
 
-#: ../tasksel.c:45
-msgid "-s -- install all standard-priority packages"
-msgstr "-s -- installera alla paket med prioriteten \"normal\""
+#~ msgid "Miscellaneous"
+#~ msgstr "Blandat"
 
-#: ../tasksel.c:46
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- visa inte användargränssnittet; använd normalt med -r eller -i"
+#~ msgid "Unable to initialize the terminal"
+#~ msgstr "Kunde inte initiera terminalen"
 
-#: ../tasksel.c:47
-msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- visa alla funktionspaket, även tomma sådana"
+#~ msgid "Unable to initialize screen output"
+#~ msgstr "Kunde inte initiera skärmutdata"
 
-#: ../tasksel.c:88 ../tasksel.c:123
-#, c-format
-msgid "No packages selected\n"
-msgstr "Inga paket valda\n"
+#~ msgid "Unable to initialize keyboard interface"
+#~ msgstr "Kunde inte initiera tangentbordsgränssnittet"
 
-#: ../tasksel.c:197
-#, c-format
-msgid "No tasks found on this system.\n"
-msgstr "Inga funktionspaket hittades på det här systemet.\n"
+#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
+#~ msgstr "Debians funktionspaketsinstallerare - © 1999-2004 SPI med flera"
 
-#: ../util.c:21
-msgid "Cannot allocate memory for strdup"
-msgstr "Kan inte allokera minne för strdup"
+#~ msgid "^Finish"
+#~ msgstr "^Avsluta"
 
-#: ../util.c:39
-#, c-format
-msgid "Cannot allocate %d bytes of memory"
-msgstr "Kan inte allokera %d byte minne"
+#~ msgid "Task ^Info"
+#~ msgstr "^Funktionsinfo"
 
-#: ../util.c:48
-#, c-format
-msgid "Cannot reallocate %d bytes of memory"
-msgstr "Kan inte återallokera %d byte minne"
+#~ msgid "^Help"
+#~ msgstr "^Hjälp"
+
+#~ msgid "Select tasks to install"
+#~ msgstr "Välj funktioner att installera"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Index out of bounds: %d >= %d"
+#~ msgstr "Index utanför gränser: %d >= %d"
+
+#~ msgid "Help"
+#~ msgstr "Hjälp"
+
+#~ msgid ""
+#~ "Tasks allow you to quickly install a selection of packages that performs "
+#~ "a given task.\n"
+#~ "\n"
+#~ "The main chooser list shows a list of tasks that you can choose to "
+#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
+#~ "toggles the selection of the task at the cursor. You can also press A to "
+#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
+#~ "program and begin installation of your selected tasks.\n"
+#~ "\n"
+#~ "Thank you for using Debian.\n"
+#~ "\n"
+#~ "Press enter to return to the task selection screen"
+#~ msgstr ""
+#~ "Funktionspaket låter dig snabbt installera ett urval av paket för att "
+#~ "utföra en specifik funktion.\n"
+#~ "\n"
+#~ "Huvudvalslistan visar en lista över funktioner du kan välja att "
+#~ "installera. Piltangenterna flyttar markören. Om du trycker ENTER eller "
+#~ "MELLANSLAG ändrar du valet av paketet vid markören. Du kan även trycka A "
+#~ "för att välja alla paket, eller N för att avmarkera alla paket. Trycker "
+#~ "du Q kommer programmet avslutas, och valda funktioner kommer att "
+#~ "installeras.\n"
+#~ "\n"
+#~ "Tack för att du använder Debian.\n"
+#~ "\n"
+#~ "Tryck Enter för att återgå till funktionsvalsskärmen"
+
+#~ msgid ""
+#~ "Description:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Included packages:\n"
+#~ msgstr ""
+#~ "Beskrivning:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Paket som ingår:\n"
+
+#~ msgid "(no description available)"
+#~ msgstr "(beskrivning saknas)"
+
+#~ msgid "Unknown signal seen"
+#~ msgstr "Okänd signal mottagen"
+
+#~ msgid "tasksel install <task>\n"
+#~ msgstr "tasksel install <funktion>\n"
+
+#~ msgid "tasksel [options]; where options is any combination of:\n"
+#~ msgstr "tasksel [flaggor]; där flaggor kan vara en kombination av:\n"
+
+#~ msgid "-t -- test mode; don't actually run apt-get on exit"
+#~ msgstr "-t -- testläge; kör inte apt-get vid avslutning"
+
+#~ msgid ""
+#~ "-q -- queue installs; do not install packages with apt-get;\n"
+#~ "\t\tjust queue them in dpkg"
+#~ msgstr ""
+#~ "-q -- köa installatioenr; installera inte paket med apt-get;\n"
+#~ "\t\tköa dem bara i dpkg"
+
+#~ msgid "-r -- install all required-priority packages"
+#~ msgstr "-r -- installera alla paket med prioriteten \"krävs\""
+
+#~ msgid "-i -- install all important-priority packages"
+#~ msgstr "-i -- installera alla paket med prioriteten \"viktig\""
+
+#~ msgid "-s -- install all standard-priority packages"
+#~ msgstr "-s -- installera alla paket med prioriteten \"normal\""
+
+#~ msgid "-n -- don't show UI; use with -r or -i usually"
+#~ msgstr ""
+#~ "-n -- visa inte användargränssnittet; använd normalt med -r eller -i"
+
+#~ msgid "-a -- show all tasks, even those with no packages in them"
+#~ msgstr "-a -- visa alla funktionspaket, även tomma sådana"
+
+#~ msgid "No packages selected\n"
+#~ msgstr "Inga paket valda\n"
+
+#~ msgid "No tasks found on this system.\n"
+#~ msgstr "Inga funktionspaket hittades på det här systemet.\n"
+
+#~ msgid "Cannot allocate memory for strdup"
+#~ msgstr "Kan inte allokera minne för strdup"
+
+#~ msgid "Cannot allocate %d bytes of memory"
+#~ msgstr "Kan inte allokera %d byte minne"
+
+#~ msgid "Cannot reallocate %d bytes of memory"
+#~ msgstr "Kan inte återallokera %d byte minne"

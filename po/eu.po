@@ -7,221 +7,205 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-29 13:21-0500\n"
-"PO-Revision-Date: 2004-04-23 17:47+0200\n"
+"POT-Creation-Date: 2004-06-10 09:02+0200\n"
+"PO-Revision-Date: 2004-06-21 17:30+0200\n"
 "Last-Translator: Piarres Beobide Egaña <pi@beobide.net>\n"
-"Language-Team: Euskara <eu@li.org>\n"
+"Language-Team: Euskara <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../data.c:307 ../data.c:321
-msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Ezin da numerazio buferrerako memoria ezleitu"
-
-#: ../macros.h:42
-#, c-format
+#: ../tasksel.pl:188
 msgid ""
-"Fatal error encountered at %s:%d\n"
-"\t"
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t -- test mode; don't really do anything\n"
+"\t-r -- install all required-priority packages\n"
+"\t-i -- install all important-priority packages\n"
+"\t-s -- install all standard-priority packages\n"
+"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
-"%s-n errore konponezin bat aurkiturik: %d\n"
-"\t"
+"Erabilera:\n"
+"tasksel insltall <ataza>\n"
+"tasksel [aukerak]; non aukera hauetako bat den:\n"
+"\t-t -- test mode; ez du benetean ezer egiten\n"
+"\t-r -- beharrezko lehentasuna futen pakete guztiak instalatu\n"
+"\t-i -- garrantzitsu lehentasuna futen pakete guztiak instalatu\n"
+"\t-s -- standard lehentasuna futen pakete guztiak instalatu\n"
+"\t-n -- ez interfazea erakutsi, arruntean -r -i rekin erabiltzen da\n"
+"\t-a -- Ataza guztiak erakutsi, nahiz ez paketerik eduki\n"
 
-#: ../macros.h:51
-#, c-format
-msgid ""
-"I/O error at %s:%d\n"
-"\t"
-msgstr ""
-"S/I errorea %s-n:%d\n"
-"\t"
+#: ../tasksel.pl:250
+msgid "ignoring other selected packages in favour of manual package selection"
+msgstr "aukeratutako beste paketeak eskuz aukeratutakoengatik alde batera uzten"
 
-#: ../slangui.c:18 ../slangui.c:19
-msgid "(no description)"
-msgstr "(Azalpenik gabea)"
+#: ../tasksel.pl:254 ../tasksel.pl:266
+msgid "aptitude failed"
+msgstr "aptitude hutsa"
 
-#: ../slangui.c:75
-msgid "End-user"
-msgstr "Erabiltzaile aplikazioak"
+#~ msgid "Cannot allocate memory for enumeration buffer"
+#~ msgstr "Ezin da numerazio buferrerako memoria ezleitu"
 
-#: ../slangui.c:76
-msgid "Hardware Support"
-msgstr "Hardware Onarpena"
+#~ msgid ""
+#~ "Fatal error encountered at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "%s-n errore konponezin bat aurkiturik: %d\n"
+#~ "\t"
 
-#: ../slangui.c:77
-msgid "Servers"
-msgstr "Zerbitzariak"
+#~ msgid ""
+#~ "I/O error at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "S/I errorea %s-n:%d\n"
+#~ "\t"
 
-#: ../slangui.c:78
-msgid "Development"
-msgstr "Garatzaileak"
+#~ msgid "(no description)"
+#~ msgstr "(Azalpenik gabea)"
 
-#: ../slangui.c:79
-msgid "Localization"
-msgstr "Kokapena"
+#~ msgid "End-user"
+#~ msgstr "Erabiltzaile aplikazioak"
 
-#: ../slangui.c:80
-msgid "Miscellaneous"
-msgstr "Denetarik"
+#~ msgid "Hardware Support"
+#~ msgstr "Hardware Onarpena"
 
-#: ../slangui.c:219
-msgid "Unable to initialize the terminal"
-msgstr "Ezin da terminala abiarazi"
+#~ msgid "Servers"
+#~ msgstr "Zerbitzariak"
 
-#: ../slangui.c:221
-msgid "Unable to initialize screen output"
-msgstr "Ezin da pantaila irteera abiarazi"
+#~ msgid "Development"
+#~ msgstr "Garatzaileak"
 
-#: ../slangui.c:222
-msgid "Unable to initialize keyboard interface"
-msgstr "Ezin da teklatu interfazea abiarazi"
+#~ msgid "Localization"
+#~ msgstr "Kokapena"
 
-#: ../slangui.c:239
-#, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Debian Ataza Instalatzailea v %s - (c) 19999-2004 SPI eta beste hainbat"
+#~ msgid "Miscellaneous"
+#~ msgstr "Denetarik"
 
-#: ../slangui.c:393
-msgid "^Finish"
-msgstr "^Amaiera"
+#~ msgid "Unable to initialize the terminal"
+#~ msgstr "Ezin da terminala abiarazi"
 
-#: ../slangui.c:401 ../slangui.c:402
-msgid "Task ^Info"
-msgstr "Ataza ^Informazioa"
+#~ msgid "Unable to initialize screen output"
+#~ msgstr "Ezin da pantaila irteera abiarazi"
 
-#: ../slangui.c:406 ../slangui.c:407
-msgid "^Help"
-msgstr "^Laguntza"
+#~ msgid "Unable to initialize keyboard interface"
+#~ msgstr "Ezin da teklatu interfazea abiarazi"
 
-#: ../slangui.c:441
-msgid "Select tasks to install"
-msgstr "Hautatu instalatzeko atazak"
+#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
+#~ msgstr ""
+#~ "Debian Ataza Instalatzailea v %s - (c) 19999-2004 SPI eta beste hainbat"
 
-#: ../slangui.c:582
-msgid "Ok"
-msgstr "Ados"
+#~ msgid "^Finish"
+#~ msgstr "^Amaiera"
 
-#: ../slangui.c:691 ../slangui.c:705 ../slangui.c:816
-#, c-format
-msgid "Index out of bounds: %d >= %d"
-msgstr "Indizea - mugetik kanpora: %d >= %d"
+#~ msgid "Task ^Info"
+#~ msgstr "Ataza ^Informazioa"
 
-#: ../slangui.c:782
-msgid "Help"
-msgstr "Laguntza"
+#~ msgid "^Help"
+#~ msgstr "^Laguntza"
 
-#: ../slangui.c:783
-msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\n"
-"\n"
-"The main chooser list shows a list of tasks that you can choose to install. "
-"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
-"selection of the task at the cursor. You can also press A to select all "
-"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
-"begin installation of your selected tasks.\n"
-"\n"
-"Thank you for using Debian.\n"
-"\n"
-"Press enter to return to the task selection screen"
-msgstr ""
-"Atazek eskatutako eginkizuna betetzen duten pakete aukeraketa bat instalatzeko "
-"aukera ematen dizu.\n"
-"\n"
-"Lehen autaketa pantailak aukera ditzazkezun ataza zerrenda erakusten du. "
-"Gezi teklek kurtsorea mugitzen dute. ENTER edo BARRA joaz kutsorea dagoen "
-"atazaren egoera aldatzen duzu.A joaz ataza guztiak aukeratuko dira, eta N joaz danak ezabatu. Q joaz programa itxi eta aukeratutako atazen instalazioa abiarazioko da.\n"
-"\n"
-"Mila Esker Debian erabiltzeagatik.\n"
-"\n"
-"enter sakatu atazaka aukeraketa pantailara itzultzeko"
+#~ msgid "Select tasks to install"
+#~ msgstr "Hautatu instalatzeko atazak"
 
-#: ../slangui.c:824
-#, c-format
-msgid ""
-"Description:\n"
-"%s\n"
-"\n"
-"Included packages:\n"
-msgstr ""
-"Azalpena; \n"
-"%s\n"
-"\n"
-"Paketeak:\n"
+#~ msgid "Ok"
+#~ msgstr "Ados"
 
-#: ../slangui.c:832
-msgid "(no description available)"
-msgstr "(Ez dago azalpen eskuragarritik)"
+#~ msgid "Index out of bounds: %d >= %d"
+#~ msgstr "Indizea - mugetik kanpora: %d >= %d"
 
-#: ../tasksel.c:33
-msgid "Unknown signal seen"
-msgstr "Seinale ezezaguna ikusiri"
+#~ msgid "Help"
+#~ msgstr "Laguntza"
 
-#: ../tasksel.c:39
-#, c-format
-msgid "tasksel install <task>\n"
-msgstr "tasksel install <task>\n"
+#~ msgid ""
+#~ "Tasks allow you to quickly install a selection of packages that performs "
+#~ "a given task.\n"
+#~ "\n"
+#~ "The main chooser list shows a list of tasks that you can choose to "
+#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
+#~ "toggles the selection of the task at the cursor. You can also press A to "
+#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
+#~ "program and begin installation of your selected tasks.\n"
+#~ "\n"
+#~ "Thank you for using Debian.\n"
+#~ "\n"
+#~ "Press enter to return to the task selection screen"
+#~ msgstr ""
+#~ "Atazek eskatutako eginkizuna betetzen duten pakete aukeraketa bat "
+#~ "instalatzeko aukera ematen dizu.\n"
+#~ "\n"
+#~ "Lehen autaketa pantailak aukera ditzazkezun ataza zerrenda erakusten du. "
+#~ "Gezi teklek kurtsorea mugitzen dute. ENTER edo BARRA joaz kutsorea dagoen "
+#~ "atazaren egoera aldatzen duzu.A joaz ataza guztiak aukeratuko dira, eta N "
+#~ "joaz danak ezabatu. Q joaz programa itxi eta aukeratutako atazen "
+#~ "instalazioa abiarazioko da.\n"
+#~ "\n"
+#~ "Mila Esker Debian erabiltzeagatik.\n"
+#~ "\n"
+#~ "enter sakatu atazaka aukeraketa pantailara itzultzeko"
 
-#: ../tasksel.c:40
-#, c-format
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [aukera]; nonm aukera hauetako edozein konbinazio da:\n"
+#~ msgid ""
+#~ "Description:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Included packages:\n"
+#~ msgstr ""
+#~ "Azalpena; \n"
+#~ "%s\n"
+#~ "\n"
+#~ "Paketeak:\n"
 
-#: ../tasksel.c:41
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- test modua; orain ez abiaraz apt-get edo atera"
+#~ msgid "(no description available)"
+#~ msgstr "(Ez dago azalpen eskuragarritik)"
 
-#: ../tasksel.c:42
-msgid ""
-"-q -- queue installs; do not install packages with apt-get;\n"
-"\t\tjust queue them in dpkg"
-msgstr ""
-"-q -- hilarako instalazioa; ez instalatu paketeak apt-get erabiliaz;\n"
-"\t\tbakarrik dpkg-ren hilaran jarri."
+#~ msgid "Unknown signal seen"
+#~ msgstr "Seinale ezezaguna ikusiri"
 
-#: ../tasksel.c:43
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- Instalatu beharrezkoa lehentasuna duten pakete guztiak"
+#~ msgid "tasksel install <task>\n"
+#~ msgstr "tasksel install <task>\n"
 
-#: ../tasksel.c:44
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- instalatu garratzitsu lehentasuna duten pakete guztiak"
+#~ msgid "tasksel [options]; where options is any combination of:\n"
+#~ msgstr "tasksel [aukera]; nonm aukera hauetako edozein konbinazio da:\n"
 
-#: ../tasksel.c:45
-msgid "-s -- install all standard-priority packages"
-msgstr "-s -- instalatu lehentasuna normala duten pakete guztiak"
+#~ msgid "-t -- test mode; don't actually run apt-get on exit"
+#~ msgstr "-t -- test modua; orain ez abiaraz apt-get edo atera"
 
-#: ../tasksel.c:46
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- ez erakusti UI; normalean -r edo -i-rekin batera"
+#~ msgid ""
+#~ "-q -- queue installs; do not install packages with apt-get;\n"
+#~ "\t\tjust queue them in dpkg"
+#~ msgstr ""
+#~ "-q -- hilarako instalazioa; ez instalatu paketeak apt-get erabiliaz;\n"
+#~ "\t\tbakarrik dpkg-ren hilaran jarri."
 
-#: ../tasksel.c:47
-msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- erakutsi ataza guztiak, nahi ez egon paketerik barnean"
+#~ msgid "-r -- install all required-priority packages"
+#~ msgstr "-r -- Instalatu beharrezkoa lehentasuna duten pakete guztiak"
 
-#: ../tasksel.c:88 ../tasksel.c:123
-#, c-format
-msgid "No packages selected\n"
-msgstr "Ez dago paketerik aukeraturik\n"
+#~ msgid "-i -- install all important-priority packages"
+#~ msgstr "-i -- instalatu garratzitsu lehentasuna duten pakete guztiak"
 
-#: ../tasksel.c:197
-#, c-format
-msgid "No tasks found on this system.\n"
-msgstr "Ez dira atazik aurkitu sistema honetan.\n"
+#~ msgid "-s -- install all standard-priority packages"
+#~ msgstr "-s -- instalatu lehentasuna normala duten pakete guztiak"
 
-#: ../util.c:21
-msgid "Cannot allocate memory for strdup"
-msgstr "Ezin da strdup-entzat memoria ezleitu"
+#~ msgid "-n -- don't show UI; use with -r or -i usually"
+#~ msgstr "-n -- ez erakusti UI; normalean -r edo -i-rekin batera"
 
-#: ../util.c:39
-#, c-format
-msgid "Cannot allocate %d bytes of memory"
-msgstr "Ezin dira %d bite memoria esleitu"
+#~ msgid "-a -- show all tasks, even those with no packages in them"
+#~ msgstr "-a -- erakutsi ataza guztiak, nahi ez egon paketerik barnean"
 
-#: ../util.c:48
-#, c-format
-msgid "Cannot reallocate %d bytes of memory"
-msgstr "Ezin dira %d bite memoria berresleitu"
+#~ msgid "No packages selected\n"
+#~ msgstr "Ez dago paketerik aukeraturik\n"
+
+#~ msgid "No tasks found on this system.\n"
+#~ msgstr "Ez dira atazik aurkitu sistema honetan.\n"
+
+#~ msgid "Cannot allocate memory for strdup"
+#~ msgstr "Ezin da strdup-entzat memoria ezleitu"
+
+#~ msgid "Cannot allocate %d bytes of memory"
+#~ msgstr "Ezin dira %d bite memoria esleitu"
+
+#~ msgid "Cannot reallocate %d bytes of memory"
+#~ msgstr "Ezin dira %d bite memoria berresleitu"
 

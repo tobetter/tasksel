@@ -1,29 +1,14 @@
-PROGRAM=tasksel
 DOMAIN=debian-tasks
 TASKDESC=$(DOMAIN).desc
 TASKDIR=/usr/share/tasksel
 DESCDIR=tasks
 DESCPO=$(DESCDIR)/po
-CC=gcc
-CFLAGS=-g -Wall  #-Os
-DEBUG=1
-ifeq (0,$(DEBUG))
-DEFS=-DUTF8 -DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" \
-     -DTASKDIR=\"$(TASKDIR)\"
-else
-DEFS=-DUTF8 -DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" \
-     -DTASKDIR=\".\" -DDEBUG
-endif
 VERSION=$(shell expr "`dpkg-parsechangelog 2>/dev/null |grep Version:`" : '.*Version: \(.*\)' | cut -d - -f 1)
-LIBS=-lslang -ltextwrap #-lccmalloc -ldl
-OBJS=tasksel.o slangui.o data.o util.o strutl.o
 LANGS=bg bs ca cs cy da de el es fi fr gl hu id it ja ko lt nb nl nn pl pt pt_BR ru sk sl sq sv tr uk zh_CN zh_TW
 LANGS_DESC=bg bs ca cs cy da de el es fi fr hu id it ja ko lt nb nl nn pl pt pt_BR ru sk sl sq sv tr uk zh_CN zh_TW
 LOCALEDIR=$(DESTDIR)/usr/share/locale
-COMPILE = $(CC) $(CFLAGS) $(DEFS) -c
-LINK = $(CC) $(CFLAGS) $(DEFS) -o
 
-all: $(PROGRAM) $(TASKDESC) $(DESCPO)/build_stamp
+all: $(TASKDESC) $(DESCPO)/build_stamp po/build_stamp
 
 $(TASKDESC): makedesc.pl $(DESCDIR)/[a-z]??*
 	./doincludes.pl $(DESCDIR)
@@ -44,27 +29,28 @@ $(DESCPO)/build_stamp:
 updatetaskspo:
 	$(MAKE) -C $(DESCPO) update LANGS="$(LANGS_DESC)"
 
-$(PROGRAM): $(OBJS) po/build_stamp
-	$(LINK) $(PROGRAM) $(OBJS) $(LIBS)
-
 install:
-	install -m 755 tasksel $(DESTDIR)/usr/bin
+	install -d $(DESTDIR)/usr/bin $(DESTDIR)$(TASKDIR) \
+		$(DESTDIR)/usr/lib/tasksel/tests \
+		$(DESTDIR)/usr/share/man/man8
+	install -m 755 tasksel.pl $(DESTDIR)/usr/bin/tasksel
+	install -m 755 tasksel-debconf $(DESTDIR)/usr/lib/tasksel/
 	install -m 0644 $(TASKDESC) $(DESTDIR)$(TASKDIR)
-	pod2man --center "Debian specific manpage" --release $(VERSION) tasksel.pod | gzip -9c > $(DESTDIR)/usr/share/man/man8/tasksel.8.gz
+	pod2man --section=8 --center "Debian specific manpage" --release $(VERSION) tasksel.pod | gzip -9c > $(DESTDIR)/usr/share/man/man8/tasksel.8.gz
 	for lang in $(LANGS); do \
-	  [ ! -d $(LOCALEDIR)/$$lang/LC_MESSAGES/ ] && mkdir -p $(LOCALEDIR)/$$lang/LC_MESSAGES/; \
-	  install -m 644 po/$$lang.mo $(LOCALEDIR)/$$lang/LC_MESSAGES/$(PROGRAM).mo; \
+		[ ! -d $(LOCALEDIR)/$$lang/LC_MESSAGES/ ] && mkdir -p $(LOCALEDIR)/$$lang/LC_MESSAGES/; \
+		install -m 644 po/$$lang.mo $(LOCALEDIR)/$$lang/LC_MESSAGES/tasksel.mo; \
 	done
 	for lang in $(LANGS_DESC); do \
-	  [ ! -d $(LOCALEDIR)/$$lang/LC_MESSAGES/ ] && mkdir -p $(LOCALEDIR)/$$lang/LC_MESSAGES/; \
-	  install -m 644 tasks/po/$$lang.mo $(LOCALEDIR)/$$lang/LC_MESSAGES/$(DOMAIN).mo; \
+		[ ! -d $(LOCALEDIR)/$$lang/LC_MESSAGES/ ] && mkdir -p $(LOCALEDIR)/$$lang/LC_MESSAGES/; \
+		install -m 644 tasks/po/$$lang.mo $(LOCALEDIR)/$$lang/LC_MESSAGES/$(DOMAIN).mo; \
+	done
+	for test in tests/*; do \
+		install -m 755 $$test $(DESTDIR)/usr/lib/tasksel/tests/; \
 	done
 
-test:
-	$(MAKE) -C scratch
-
 clean:
-	rm -f $(PROGRAM) $(TASKDESC) *.o *~
+	rm -f $(TASKDESC) *~
 	$(MAKE) -C po clean
 	$(MAKE) -C $(DESCPO) clean
 

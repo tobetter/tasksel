@@ -94,7 +94,8 @@ sub processfile {
 		}
 	}
 
-	foreach (qw{task section relevance description key}) {
+	foreach (qw{task section relevance description key}, 
+	         grep(/^test-(.*)/, keys %fields)) {
 		print OUT ucfirst($_).": ".$fields{$_}."\n" if length $fields{$_};
 	}
 	print OUT "\n";

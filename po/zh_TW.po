@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-28 08:04+0100\n"
+"POT-Creation-Date: 2004-06-10 09:02+0200\n"
 "PO-Revision-Date: 2004-03-08 10:25+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Chinese/Traditional <tetralet@pchome.com.tw>\n"
@@ -15,211 +15,182 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: ../data.c:307 ../data.c:321
-msgid "Cannot allocate memory for enumeration buffer"
-msgstr "無法替 Enumeration Buffer 配置記憶體"
-
-#: ../macros.h:42
-#, c-format
+#: ../tasksel.pl:188
 msgid ""
-"Fatal error encountered at %s:%d\n"
-"\t"
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t -- test mode; don't really do anything\n"
+"\t-r -- install all required-priority packages\n"
+"\t-i -- install all important-priority packages\n"
+"\t-s -- install all standard-priority packages\n"
+"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
-"在 %s:%d 發生了嚴重錯誤\n"
-"\t"
 
-#: ../macros.h:51
-#, c-format
-msgid ""
-"I/O error at %s:%d\n"
-"\t"
+#: ../tasksel.pl:250
+msgid "ignoring other selected packages in favour of manual package selection"
 msgstr ""
-"在 %s:%d 發生了 I/O 錯誤\n"
-"\t"
 
-#: ../slangui.c:18 ../slangui.c:19
-msgid "(no description)"
-msgstr "(沒有說明)"
-
-#: ../slangui.c:75
-msgid "End-user"
-msgstr "一般使用者"
-
-#: ../slangui.c:76
-msgid "Hardware Support"
-msgstr "硬體支援"
-
-#: ../slangui.c:77
-msgid "Servers"
-msgstr "伺服器"
-
-#: ../slangui.c:78
-msgid "Development"
-msgstr "開發環境"
-
-#: ../slangui.c:79
-msgid "Localization"
-msgstr "區域化"
-
-#: ../slangui.c:80
-msgid "Miscellaneous"
-msgstr "雜項"
-
-#: ../slangui.c:219
-msgid "Unable to initialize the terminal"
-msgstr "無法初始化終端畫面"
-
-#: ../slangui.c:221
-msgid "Unable to initialize screen output"
-msgstr "無法初始化螢幕輸出"
-
-#: ../slangui.c:222
-msgid "Unable to initialize keyboard interface"
-msgstr "無法初始化鍵盤界面"
-
-#: ../slangui.c:239
-#, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Debian 主題安裝程式 v%s - (c) 1999-2004 SPI 及其它"
-
-#: ../slangui.c:393
-msgid "^Finish"
-msgstr "完成 (^F)"
-
-#: ../slangui.c:401 ../slangui.c:402
-msgid "Task ^Info"
-msgstr "主題資訊 (^I)"
-
-#: ../slangui.c:406 ../slangui.c:407
-msgid "^Help"
-msgstr "求助 (^H)"
-
-#: ../slangui.c:441
-msgid "Select tasks to install"
-msgstr "請選取所要安裝的主題"
-
-#: ../slangui.c:576
-msgid "Ok"
-msgstr "完成"
-
-#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
-#, c-format
-msgid "Index out of bounds: %d >= %d"
-msgstr "索引超出了邊界：%d >= %d"
-
-#: ../slangui.c:776
-msgid "Help"
-msgstr "求助"
-
-#: ../slangui.c:777
-msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\n"
-"\n"
-"The main chooser list shows a list of tasks that you can choose to install. "
-"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
-"selection of the task at the cursor. You can also press A to select all "
-"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
-"begin installation of your selected tasks.\n"
-"\n"
-"Thank you for using Debian.\n"
-"\n"
-"Press enter to return to the task selection screen"
+#: ../tasksel.pl:254 ../tasksel.pl:266
+msgid "aptitude failed"
 msgstr ""
-"主題可以讓您快速得針對特定主題所提供的套件組合進行安裝。\n"
-"\n"
-"在主要選單中列出了一系列可以讓您選取並進行安裝的主題。"
-"您可以使用方向鍵來移動遊標。按 輸入鍵或 空白鍵 可以選取遊標所在位置的主題。"
-"您也可以按 A 來選取所有的主題，或按 N 來取消選取所有主題。"
-"按 Q 便會離開此程式並開始進行所選取主題的安裝作業。\n"
-"\n"
-"感謝您使用 Debian。\n"
-"\n"
-"請按 輸入鍵 來回到主題選取畫面。"
 
-#: ../slangui.c:818
-#, c-format
-msgid ""
-"Description:\n"
-"%s\n"
-"\n"
-"Included packages:\n"
-msgstr ""
-"說明：\n"
-"%s\n"
-"\n"
-"所包含的套件：\n"
+#~ msgid "Cannot allocate memory for enumeration buffer"
+#~ msgstr "無法替 Enumeration Buffer 配置記憶體"
 
-#: ../slangui.c:826
-msgid "(no description available)"
-msgstr "(沒有提供說明)"
+#~ msgid ""
+#~ "Fatal error encountered at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "在 %s:%d 發生了嚴重錯誤\n"
+#~ "\t"
 
-#: ../tasksel.c:33
-msgid "Unknown signal seen"
-msgstr "發現不明的信號 (signal)"
+#~ msgid ""
+#~ "I/O error at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "在 %s:%d 發生了 I/O 錯誤\n"
+#~ "\t"
 
-#: ../tasksel.c:39
-#, c-format
-msgid "tasksel install <task>\n"
-msgstr "tasksel install <主題>\n"
+#~ msgid "(no description)"
+#~ msgstr "(沒有說明)"
 
-#: ../tasksel.c:40
-#, c-format
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [選項]﹔其中選項可以由以下所組成：\n"
+#~ msgid "End-user"
+#~ msgstr "一般使用者"
 
-#: ../tasksel.c:41
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- 測試模式﹔在離開程式時並不會實地執行 apt-get"
+#~ msgid "Hardware Support"
+#~ msgstr "硬體支援"
 
-#: ../tasksel.c:42
-msgid ""
-"-q -- queue installs; do not install packages with apt-get;\n"
-"\t\tjust queue them in dpkg"
-msgstr ""
-"-q -- 佇列安裝﹔不使用 apt-get 來安裝套件﹔\n"
-"\t\t而是將它們放到 dpkg 的安裝佇列中"
+#~ msgid "Servers"
+#~ msgstr "伺服器"
 
-#: ../tasksel.c:43
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- 安裝所有優先等級為『必須 (required)』的套件"
+#~ msgid "Development"
+#~ msgstr "開發環境"
 
-#: ../tasksel.c:44
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- 安裝所有優先等級為『重要 (important)』的套件"
+#~ msgid "Localization"
+#~ msgstr "區域化"
 
-#: ../tasksel.c:45
-msgid "-s -- install all standard-priority packages"
-msgstr "-s -- 安裝所有優先等級為『標準 (standard)』的套件"
+#~ msgid "Miscellaneous"
+#~ msgstr "雜項"
 
-#: ../tasksel.c:46
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- 不顯示使用者界面﹔通常與 -r 或 -i 一併使用"
+#~ msgid "Unable to initialize the terminal"
+#~ msgstr "無法初始化終端畫面"
 
-#: ../tasksel.c:47
-msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- 顯示所有主題，包括沒有包含任何套件的空主題"
+#~ msgid "Unable to initialize screen output"
+#~ msgstr "無法初始化螢幕輸出"
 
-#: ../tasksel.c:88 ../tasksel.c:123
-#, c-format
-msgid "No packages selected\n"
-msgstr "沒有選取任何套件\n"
+#~ msgid "Unable to initialize keyboard interface"
+#~ msgstr "無法初始化鍵盤界面"
 
-#: ../tasksel.c:197
-#, c-format
-msgid "No tasks found on this system.\n"
-msgstr "在本系統中找不到任何主題。\n"
+#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
+#~ msgstr "Debian 主題安裝程式 v%s - (c) 1999-2004 SPI 及其它"
 
-#: ../util.c:21
-msgid "Cannot allocate memory for strdup"
-msgstr "無法為 strdup 配置記憶體"
+#~ msgid "^Finish"
+#~ msgstr "完成 (^F)"
 
-#: ../util.c:39
-#, c-format
-msgid "Cannot allocate %d bytes of memory"
-msgstr "無法配置 %d bytes 的記憶體"
+#~ msgid "Task ^Info"
+#~ msgstr "主題資訊 (^I)"
 
-#: ../util.c:48
-#, c-format
-msgid "Cannot reallocate %d bytes of memory"
-msgstr "無法重新配置 %d bytes 的記憶體"
+#~ msgid "^Help"
+#~ msgstr "求助 (^H)"
+
+#~ msgid "Select tasks to install"
+#~ msgstr "請選取所要安裝的主題"
+
+#~ msgid "Ok"
+#~ msgstr "完成"
+
+#~ msgid "Index out of bounds: %d >= %d"
+#~ msgstr "索引超出了邊界：%d >= %d"
+
+#~ msgid "Help"
+#~ msgstr "求助"
+
+#~ msgid ""
+#~ "Tasks allow you to quickly install a selection of packages that performs "
+#~ "a given task.\n"
+#~ "\n"
+#~ "The main chooser list shows a list of tasks that you can choose to "
+#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
+#~ "toggles the selection of the task at the cursor. You can also press A to "
+#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
+#~ "program and begin installation of your selected tasks.\n"
+#~ "\n"
+#~ "Thank you for using Debian.\n"
+#~ "\n"
+#~ "Press enter to return to the task selection screen"
+#~ msgstr ""
+#~ "主題可以讓您快速得針對特定主題所提供的套件組合進行安裝。\n"
+#~ "\n"
+#~ "在主要選單中列出了一系列可以讓您選取並進行安裝的主題。您可以使用方向鍵來移"
+#~ "動遊標。按 輸入鍵或 空白鍵 可以選取遊標所在位置的主題。您也可以按 A 來選取"
+#~ "所有的主題，或按 N 來取消選取所有主題。按 Q 便會離開此程式並開始進行所選取"
+#~ "主題的安裝作業。\n"
+#~ "\n"
+#~ "感謝您使用 Debian。\n"
+#~ "\n"
+#~ "請按 輸入鍵 來回到主題選取畫面。"
+
+#~ msgid ""
+#~ "Description:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Included packages:\n"
+#~ msgstr ""
+#~ "說明：\n"
+#~ "%s\n"
+#~ "\n"
+#~ "所包含的套件：\n"
+
+#~ msgid "(no description available)"
+#~ msgstr "(沒有提供說明)"
+
+#~ msgid "Unknown signal seen"
+#~ msgstr "發現不明的信號 (signal)"
+
+#~ msgid "tasksel install <task>\n"
+#~ msgstr "tasksel install <主題>\n"
+
+#~ msgid "tasksel [options]; where options is any combination of:\n"
+#~ msgstr "tasksel [選項]﹔其中選項可以由以下所組成：\n"
+
+#~ msgid "-t -- test mode; don't actually run apt-get on exit"
+#~ msgstr "-t -- 測試模式﹔在離開程式時並不會實地執行 apt-get"
+
+#~ msgid ""
+#~ "-q -- queue installs; do not install packages with apt-get;\n"
+#~ "\t\tjust queue them in dpkg"
+#~ msgstr ""
+#~ "-q -- 佇列安裝﹔不使用 apt-get 來安裝套件﹔\n"
+#~ "\t\t而是將它們放到 dpkg 的安裝佇列中"
+
+#~ msgid "-r -- install all required-priority packages"
+#~ msgstr "-r -- 安裝所有優先等級為『必須 (required)』的套件"
+
+#~ msgid "-i -- install all important-priority packages"
+#~ msgstr "-i -- 安裝所有優先等級為『重要 (important)』的套件"
+
+#~ msgid "-s -- install all standard-priority packages"
+#~ msgstr "-s -- 安裝所有優先等級為『標準 (standard)』的套件"
+
+#~ msgid "-n -- don't show UI; use with -r or -i usually"
+#~ msgstr "-n -- 不顯示使用者界面﹔通常與 -r 或 -i 一併使用"
+
+#~ msgid "-a -- show all tasks, even those with no packages in them"
+#~ msgstr "-a -- 顯示所有主題，包括沒有包含任何套件的空主題"
+
+#~ msgid "No packages selected\n"
+#~ msgstr "沒有選取任何套件\n"
+
+#~ msgid "No tasks found on this system.\n"
+#~ msgstr "在本系統中找不到任何主題。\n"
+
+#~ msgid "Cannot allocate memory for strdup"
+#~ msgstr "無法為 strdup 配置記憶體"
+
+#~ msgid "Cannot allocate %d bytes of memory"
+#~ msgstr "無法配置 %d bytes 的記憶體"
+
+#~ msgid "Cannot reallocate %d bytes of memory"
+#~ msgstr "無法重新配置 %d bytes 的記憶體"

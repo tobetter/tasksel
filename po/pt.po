@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.43\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-28 08:04+0100\n"
+"POT-Creation-Date: 2004-06-10 09:02+0200\n"
 "PO-Revision-Date: 2004-01-30 19:15+0000\n"
 "Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
@@ -15,211 +15,184 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data.c:307 ../data.c:321
-msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Não foi possível alocar buffer de enumeração"
-
-#: ../macros.h:42
-#, c-format
+#: ../tasksel.pl:188
 msgid ""
-"Fatal error encountered at %s:%d\n"
-"\t"
-msgstr "Erro fatal encontrado em %s:%d\n"
-"\t"
-
-#: ../macros.h:51
-#, c-format
-msgid ""
-"I/O error at %s:%d\n"
-"\t"
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t -- test mode; don't really do anything\n"
+"\t-r -- install all required-priority packages\n"
+"\t-i -- install all important-priority packages\n"
+"\t-s -- install all standard-priority packages\n"
+"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
-"Erro de E/S em %s:%d\n"
-"\t"
 
-#: ../slangui.c:18 ../slangui.c:19
-msgid "(no description)"
-msgstr "(sem descrição)"
-
-#: ../slangui.c:75
-msgid "End-user"
-msgstr "Utilizador final"
-
-#: ../slangui.c:76
-msgid "Hardware Support"
-msgstr "Suporte de Hardware"
-
-#: ../slangui.c:77
-msgid "Servers"
-msgstr "Servidores"
-
-#: ../slangui.c:78
-msgid "Development"
-msgstr "Desenvolvimento"
-
-#: ../slangui.c:79
-msgid "Localization"
-msgstr "Localização"
-
-#: ../slangui.c:80
-msgid "Miscellaneous"
-msgstr "Miscelânea"
-
-#: ../slangui.c:219
-msgid "Unable to initialize the terminal"
-msgstr "Não foi possível inicializar o terminal"
-
-#: ../slangui.c:221
-msgid "Unable to initialize screen output"
-msgstr "Não foi possível inicializar a saída para o ecrã"
-
-#: ../slangui.c:222
-msgid "Unable to initialize keyboard interface"
-msgstr "Não foi possível inicializar o interface de teclado"
-
-#: ../slangui.c:239
-#, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Instalador de Tarefas Debian v%s - (c) 1999-2004 SPI e outros"
-
-#: ../slangui.c:393
-msgid "^Finish"
-msgstr "^Finalizar"
-
-#: ../slangui.c:401 ../slangui.c:402
-msgid "Task ^Info"
-msgstr "^Info Tarefa"
-
-#: ../slangui.c:406 ../slangui.c:407
-msgid "^Help"
-msgstr "^Help"
-
-#: ../slangui.c:441
-msgid "Select tasks to install"
-msgstr "Seleccione tarefas a instalar"
-
-#: ../slangui.c:576
-msgid "Ok"
-msgstr "Ok"
-
-#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
-#, c-format
-msgid "Index out of bounds: %d >= %d"
-msgstr "Index fora de limites: %d >= %d"
-
-#: ../slangui.c:776
-msgid "Help"
-msgstr "Ajuda"
-
-#: ../slangui.c:777
-msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\n"
-"\n"
-"The main chooser list shows a list of tasks that you can choose to install. "
-"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
-"selection of the task at the cursor. You can also press A to select all "
-"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
-"begin installation of your selected tasks.\n"
-"\n"
-"Thank you for using Debian.\n"
-"\n"
-"Press enter to return to the task selection screen"
+#: ../tasksel.pl:250
+msgid "ignoring other selected packages in favour of manual package selection"
 msgstr ""
-"Tarefas permitem instalar rapidamente um conjunto de pacotes que fazem uma "
-"determinada tarefa.\n"
-"\n"
-"A lista de escolha principal mostra uma lista de tarefas que podes escolher "
-"instalar. As teclas com setas movem o cursor. Pressionando ENTER ou a BARRAdeESPAÇOS muda a selecção de uma tarefa onde está posicionado o cursor. Também "
-"podes pressionar A para escolher todas as tarefas, ou N para seleccionar "
-"nenhuma. Pressionando Q este programa termina e começa a instalação das "
-"tarefas seleccionadas.\n"
-"\n"
-"Obrigado por utilizar Debian.\n"
-"\n"
-"Pressione enter para voltar ao menu de selecção de pacotes"
 
-#: ../slangui.c:818
-#, c-format
-msgid ""
-"Description:\n"
-"%s\n"
-"\n"
-"Included packages:\n"
+#: ../tasksel.pl:254 ../tasksel.pl:266
+msgid "aptitude failed"
 msgstr ""
-"Descrição:\n"
-"%s\n"
-"\n"
 
-#: ../slangui.c:826
-msgid "(no description available)"
-msgstr "(sem descrição disponível)"
+#~ msgid "Cannot allocate memory for enumeration buffer"
+#~ msgstr "Não foi possível alocar buffer de enumeração"
 
-#: ../tasksel.c:33
-msgid "Unknown signal seen"
-msgstr "Visto sinal desconhecido"
+#~ msgid ""
+#~ "Fatal error encountered at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "Erro fatal encontrado em %s:%d\n"
+#~ "\t"
 
-#: ../tasksel.c:39
-#, c-format
-msgid "tasksel install <task>\n"
-msgstr "tasksel install <tarefa>\n"
+#~ msgid ""
+#~ "I/O error at %s:%d\n"
+#~ "\t"
+#~ msgstr ""
+#~ "Erro de E/S em %s:%d\n"
+#~ "\t"
 
-#: ../tasksel.c:40
-#, c-format
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [opções]: onde as opções são qualquer combinação de:\n"
+#~ msgid "(no description)"
+#~ msgstr "(sem descrição)"
 
-#: ../tasksel.c:41
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- modo teste; não corre apt-get ao sair"
+#~ msgid "End-user"
+#~ msgstr "Utilizador final"
 
-#: ../tasksel.c:42
-msgid ""
-"-q -- queue installs; do not install packages with apt-get;\n"
-"\t\tjust queue them in dpkg"
-msgstr ""
-"-q -- instalações queue; não instalar pacotes com apt-get;\n"
-"\t\tapenas por a fila no dpkg"
+#~ msgid "Hardware Support"
+#~ msgstr "Suporte de Hardware"
 
-#: ../tasksel.c:43
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- instalar todos os pacotes com prioridade-required"
+#~ msgid "Servers"
+#~ msgstr "Servidores"
 
-#: ../tasksel.c:44
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- instalar todos os pacotes com prioridade-important"
+#~ msgid "Development"
+#~ msgstr "Desenvolvimento"
 
-#: ../tasksel.c:45
-msgid "-s -- install all standard-priority packages"
-msgstr "-s -- instalar todos os pacotes com prioridade-standard"
+#~ msgid "Localization"
+#~ msgstr "Localização"
 
-#: ../tasksel.c:46
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- não mostrar o UI; normalmente usar com -r ou -i"
+#~ msgid "Miscellaneous"
+#~ msgstr "Miscelânea"
 
-#: ../tasksel.c:47
-msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- mostrar todas as tarefas, mesmo aquelas sem pacotes nelas"
+#~ msgid "Unable to initialize the terminal"
+#~ msgstr "Não foi possível inicializar o terminal"
 
-#: ../tasksel.c:88 ../tasksel.c:123
-#, c-format
-msgid "No packages selected\n"
-msgstr "Nenhum pacote seleccionado\n"
+#~ msgid "Unable to initialize screen output"
+#~ msgstr "Não foi possível inicializar a saída para o ecrã"
 
-#: ../tasksel.c:197
-#, c-format
-msgid "No tasks found on this system.\n"
-msgstr "Não foram encontradas tarefas neste sistema.\n"
+#~ msgid "Unable to initialize keyboard interface"
+#~ msgstr "Não foi possível inicializar o interface de teclado"
 
-#: ../util.c:21
-msgid "Cannot allocate memory for strdup"
-msgstr "Não foi possível alocar memória par ao strdup"
+#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
+#~ msgstr "Instalador de Tarefas Debian v%s - (c) 1999-2004 SPI e outros"
 
-#: ../util.c:39
-#, c-format
-msgid "Cannot allocate %d bytes of memory"
-msgstr "Não foi possível alocar %d bytes de memória"
+#~ msgid "^Finish"
+#~ msgstr "^Finalizar"
 
-#: ../util.c:48
-#, c-format
-msgid "Cannot reallocate %d bytes of memory"
-msgstr "Não foi possível realocar %d bytes de memória"
+#~ msgid "Task ^Info"
+#~ msgstr "^Info Tarefa"
+
+#~ msgid "^Help"
+#~ msgstr "^Help"
+
+#~ msgid "Select tasks to install"
+#~ msgstr "Seleccione tarefas a instalar"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Index out of bounds: %d >= %d"
+#~ msgstr "Index fora de limites: %d >= %d"
+
+#~ msgid "Help"
+#~ msgstr "Ajuda"
+
+#~ msgid ""
+#~ "Tasks allow you to quickly install a selection of packages that performs "
+#~ "a given task.\n"
+#~ "\n"
+#~ "The main chooser list shows a list of tasks that you can choose to "
+#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
+#~ "toggles the selection of the task at the cursor. You can also press A to "
+#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
+#~ "program and begin installation of your selected tasks.\n"
+#~ "\n"
+#~ "Thank you for using Debian.\n"
+#~ "\n"
+#~ "Press enter to return to the task selection screen"
+#~ msgstr ""
+#~ "Tarefas permitem instalar rapidamente um conjunto de pacotes que fazem "
+#~ "uma determinada tarefa.\n"
+#~ "\n"
+#~ "A lista de escolha principal mostra uma lista de tarefas que podes "
+#~ "escolher instalar. As teclas com setas movem o cursor. Pressionando ENTER "
+#~ "ou a BARRAdeESPAÇOS muda a selecção de uma tarefa onde está posicionado o "
+#~ "cursor. Também podes pressionar A para escolher todas as tarefas, ou N "
+#~ "para seleccionar nenhuma. Pressionando Q este programa termina e começa a "
+#~ "instalação das tarefas seleccionadas.\n"
+#~ "\n"
+#~ "Obrigado por utilizar Debian.\n"
+#~ "\n"
+#~ "Pressione enter para voltar ao menu de selecção de pacotes"
+
+#~ msgid ""
+#~ "Description:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Included packages:\n"
+#~ msgstr ""
+#~ "Descrição:\n"
+#~ "%s\n"
+#~ "\n"
+
+#~ msgid "(no description available)"
+#~ msgstr "(sem descrição disponível)"
+
+#~ msgid "Unknown signal seen"
+#~ msgstr "Visto sinal desconhecido"
+
+#~ msgid "tasksel install <task>\n"
+#~ msgstr "tasksel install <tarefa>\n"
+
+#~ msgid "tasksel [options]; where options is any combination of:\n"
+#~ msgstr "tasksel [opções]: onde as opções são qualquer combinação de:\n"
+
+#~ msgid "-t -- test mode; don't actually run apt-get on exit"
+#~ msgstr "-t -- modo teste; não corre apt-get ao sair"
+
+#~ msgid ""
+#~ "-q -- queue installs; do not install packages with apt-get;\n"
+#~ "\t\tjust queue them in dpkg"
+#~ msgstr ""
+#~ "-q -- instalações queue; não instalar pacotes com apt-get;\n"
+#~ "\t\tapenas por a fila no dpkg"
+
+#~ msgid "-r -- install all required-priority packages"
+#~ msgstr "-r -- instalar todos os pacotes com prioridade-required"
+
+#~ msgid "-i -- install all important-priority packages"
+#~ msgstr "-i -- instalar todos os pacotes com prioridade-important"
+
+#~ msgid "-s -- install all standard-priority packages"
+#~ msgstr "-s -- instalar todos os pacotes com prioridade-standard"
+
+#~ msgid "-n -- don't show UI; use with -r or -i usually"
+#~ msgstr "-n -- não mostrar o UI; normalmente usar com -r ou -i"
+
+#~ msgid "-a -- show all tasks, even those with no packages in them"
+#~ msgstr "-a -- mostrar todas as tarefas, mesmo aquelas sem pacotes nelas"
+
+#~ msgid "No packages selected\n"
+#~ msgstr "Nenhum pacote seleccionado\n"
+
+#~ msgid "No tasks found on this system.\n"
+#~ msgstr "Não foram encontradas tarefas neste sistema.\n"
+
+#~ msgid "Cannot allocate memory for strdup"
+#~ msgstr "Não foi possível alocar memória par ao strdup"
+
+#~ msgid "Cannot allocate %d bytes of memory"
+#~ msgstr "Não foi possível alocar %d bytes de memória"
+
+#~ msgid "Cannot reallocate %d bytes of memory"
+#~ msgstr "Não foi possível realocar %d bytes de memória"

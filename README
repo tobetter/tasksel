@@ -1,38 +1,18 @@
-$Id: README,v 1.4 2003/09/16 23:38:46 joeyh Rel $
-Task Selection UI v0.1
-Nov 20, 1999
-Randolph Chung <tausq@debian.org>
+The interface uses debconf for consistency with the rest of the Debian
+installer.
 
-Here's a first cut at a task selection user interface.
-
-The interface GUI is based on libslang. It has no other special library 
-dependencies.
-
-On startup, the tasksel program will read
-/usr/share/tasksel/debian-tasks.desc for information about what tasks are
-available and their descriptions and sections. Next it will read the output
-of apt-cache dumpavail. Task: fields can be used to state that a package
-belongs to a task or tasks. Also, the package names are used to identify
-task packages (matching "task-*").
-
-The tasks will be presented in a simple list selection screen with
-their short descriptions.  Users can drill down into the tasks to
-see detailed descriptions and some information about the packages in the
-task.
+On startup, the tasksel program will read all *.desc files in
+/usr/share/tasksel/ for information about what tasks are available. The
+tasks will be presented in a simple list selection screen with their short
+descriptions.
 
 On exit, tasksel executes the appropriate apt-get command to install the
 selected packages. If the -t option is given, then tasksel prints out the
 command line to use to stdout instead. All other messages are printed to
 stderr.
 
-The appropriate display strings in the source have been marked with gettext 
-macros, though I have never done any other i18n work and am not sure if it 
-is done correctly at the moment.
-
-A word on building.... use make CFLAGS="-Os" to get a smaller binary. The
-default build rule produces binaries with debugging symbols. You can also
-turn on -DDEBUG to get extra debugging info.
-
-Comments and suggestions are most welcome.
-
 To get a new task added, please file a bug report on tasksel.
+
+Debian derived distributions can add a new .desc file to
+/usr/share/tasksel/ to add additional tasks, or modify/divert
+debian-tasks.desc to remove tasks.

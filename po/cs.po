@@ -1,226 +1,46 @@
 # Czech translation for tasksel.
 # Copyright (C) 2000 Software in the Public Interest, Inc.
 # Petr Cech <cech@debian.org>, 2000.
+# Miroslav Kure <kurem@debian.cz>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 1.0\n"
+"Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2004-01-19 19:44+0100\n"
+"POT-Creation-Date: 2004-06-10 09:02+0200\n"
+"PO-Revision-Date: 2004-06-10 20:03+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data.c:307 ../data.c:321
-msgid "Cannot allocate memory for enumeration buffer"
-msgstr "Nemohu alokovat pamì» pro výètový buffer"
-
-#: ../macros.h:42
-#, c-format
+#: ../tasksel.pl:188
 msgid ""
-"Fatal error encountered at %s:%d\n"
-"\t"
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t -- test mode; don't really do anything\n"
+"\t-r -- install all required-priority packages\n"
+"\t-i -- install all important-priority packages\n"
+"\t-s -- install all standard-priority packages\n"
+"\t-n -- don't show UI; use with -r or -i usually\n"
+"\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
-"Kritická chyba na %s:%d\n"
-"\t"
+"Pou¾ití:\n"
+"tasksel install <úloha>\n"
+"tasksel [volby]; kde volby je libovolná kombinace:\n"
+"\t-t -- testovací re¾im; pouze simuluje provádìné èinnosti\n"
+"\t-r -- instaluje v¹echny balíky s prioritou vy¾adované\n"
+"\t-i -- instaluje v¹echny balíky s prioritou dùle¾ité\n"
+"\t-s -- instaluje v¹echny balíky s prioritou standardní\n"
+"\t-n -- nezobrazí UI; obvykle v kombinaci s -r nebo -i\n"
+"\t-a -- zobrazí v¹echny úlohy, i kdy¾ neobsahují ¾ádné balíky\n"
 
-#: ../macros.h:51
-#, c-format
-msgid ""
-"I/O error at %s:%d\n"
-"\t"
-msgstr ""
-"V/V chyba na %s:%d\n"
-"\t"
+#: ../tasksel.pl:250
+msgid "ignoring other selected packages in favour of manual package selection"
+msgstr "ignoruji ostatní vybrané balíky ve prospìch ruènì vybraných balíkù"
 
-#: ../slangui.c:18 ../slangui.c:19
-msgid "(no description)"
-msgstr "(popis není k dispozici)"
-
-#: ../slangui.c:75
-msgid "End-user"
-msgstr "Koncový u¾ivatel"
-
-#: ../slangui.c:76
-msgid "Hardware Support"
-msgstr "Podpora hardware"
-
-#: ../slangui.c:77
-msgid "Servers"
-msgstr "Servery"
-
-#: ../slangui.c:78
-msgid "Development"
-msgstr "Vývoj"
-
-#: ../slangui.c:79
-msgid "Localization"
-msgstr "Lokalizace"
-
-#: ../slangui.c:80
-msgid "Miscellaneous"
-msgstr "Rùzné"
-
-#: ../slangui.c:219
-msgid "Unable to initialize the terminal"
-msgstr "Nelze nastavit terminál"
-
-#: ../slangui.c:221
-msgid "Unable to initialize screen output"
-msgstr "Nelze nastavit výstup na obrazovku"
-
-#: ../slangui.c:222
-msgid "Unable to initialize keyboard interface"
-msgstr "Nelze nastavit klávesnici"
-
-#: ../slangui.c:239
-#, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Debian Task Installer v%s - (C) 1999-2004 SPI a dal¹í"
-
-#: ../slangui.c:393
-msgid "^Finish"
-msgstr "^Zkonèi"
-
-#: ../slangui.c:401 ../slangui.c:402
-msgid "Task ^Info"
-msgstr "^Informace o úloze"
-
-#: ../slangui.c:406 ../slangui.c:407
-msgid "^Help"
-msgstr "^Nápovìda"
-
-#: ../slangui.c:441
-msgid "Select tasks to install"
-msgstr "Vyberte úlohy k nainstalování"
-
-#: ../slangui.c:576
-msgid "Ok"
-msgstr "Ok"
-
-#: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
-#, c-format
-msgid "Index out of bounds: %d >= %d"
-msgstr "Index mimo meze: %d >= %d"
-
-#: ../slangui.c:776
-msgid "Help"
-msgstr "Nápovìda"
-
-#: ../slangui.c:777
-msgid ""
-"Tasks allow you to quickly install a selection of packages that performs a "
-"given task.\n"
-"\n"
-"The main chooser list shows a list of tasks that you can choose to install. "
-"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
-"selection of the task at the cursor. You can also press A to select all "
-"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
-"begin installation of your selected tasks.\n"
-"\n"
-"Thank you for using Debian.\n"
-"\n"
-"Press enter to return to the task selection screen"
-msgstr ""
-"Pøipravené úlohy vám umo¾ní rychlý výbìr a instalaci balíkù plnících danou "
-"úlohu.\n"
-"\n"
-"Hlavní nabídka ukazuje seznam v¹ech úloh, které mù¾ete nainstalovat. Kurzor "
-"se pohybuje ¹ipkami. Stiskem klávesy Enter nebo mezera zvolíte úlohu, na "
-"kterou kurzor ukazuje. Stiskem A vyberete v¹echny úlohy, stiskem N se "
-"v¹echny úlohy odznaèí. Stisk klávesy Q ukonèí program a zaène instalace "
-"vybraných úkolù.\n"
-"\n"
-"Dìkujeme, ¾e jste si vybrali Debian.\n"
-"\n"
-"Stisknìte Enter pro zobrazení hlavní nabídky"
-
-#: ../slangui.c:818
-#, c-format
-msgid ""
-"Description:\n"
-"%s\n"
-"\n"
-"Included packages:\n"
-msgstr ""
-"Popis:\n"
-"%s\n"
-"\n"
-"Obsa¾ené balíky:\n"
-
-#: ../slangui.c:826
-msgid "(no description available)"
-msgstr "(popis není k dispozici)"
-
-#: ../tasksel.c:33
-msgid "Unknown signal seen"
-msgstr "Zachycen neznámý signál"
-
-#: ../tasksel.c:39
-#, c-format
-msgid "tasksel install <task>\n"
-msgstr "tasksel install <úloha>\n"
-
-#: ../tasksel.c:40
-#, c-format
-msgid "tasksel [options]; where options is any combination of:\n"
-msgstr "tasksel [pøepínaèe]; kde pøepínaèe jsou libovolnou kombinací:\n"
-
-#: ../tasksel.c:41
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "-t -- testovací mód; po zkonèení nespustí apt-get"
-
-#: ../tasksel.c:42
-msgid ""
-"-q -- queue installs; do not install packages with apt-get;\n"
-"\t\tjust queue them in dpkg"
-msgstr ""
-"-q -- odlo¾ená instalace; nenainstaluje balíky pomocí apt-get;\n"
-"\t\tprovede pouze nastavení databáze dpkg"
-
-#: ../tasksel.c:43
-msgid "-r -- install all required-priority packages"
-msgstr "-r -- nainstaluj v¹echny balíky s prioritou required"
-
-#: ../tasksel.c:44
-msgid "-i -- install all important-priority packages"
-msgstr "-i -- nainstaluj v¹echny balíky s prioritou important"
-
-#: ../tasksel.c:45
-msgid "-s -- install all standard-priority packages"
-msgstr "-s -- nainstaluj v¹echny balíky s prioritou standard"
-
-#: ../tasksel.c:46
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr "-n -- nezobraz UI; obvykle pro pou¾ití s -r nebo -i"
-
-#: ../tasksel.c:47
-msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a -- zobraz v¹echny úlohy, i kdy¾ neobsahují ¾ádné balíky"
-
-#: ../tasksel.c:88 ../tasksel.c:123
-#, c-format
-msgid "No packages selected\n"
-msgstr "Nebyl vybrán ¾ádný balík\n"
-
-#: ../tasksel.c:197
-#, c-format
-msgid "No tasks found on this system.\n"
-msgstr "V systému nebyly nalezeny ¾ádné úlohy.\n"
-
-#: ../util.c:21
-msgid "Cannot allocate memory for strdup"
-msgstr "Nemohu alokovat pamì» pro strdup"
-
-#: ../util.c:39
-#, c-format
-msgid "Cannot allocate %d bytes of memory"
-msgstr "Nemohu alokovat %d bajtù pamìti"
-
-#: ../util.c:48
-#, c-format
-msgid "Cannot reallocate %d bytes of memory"
-msgstr "Nemohu realokovat %d bajtù pamìti"
+#: ../tasksel.pl:254 ../tasksel.pl:266
+msgid "aptitude failed"
+msgstr "aptitude selhala"
