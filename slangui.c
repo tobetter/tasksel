@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.7 1999/12/29 16:10:01 tausq Exp $ */
+/* $Id: slangui.c,v 1.8 2000/01/07 11:27:56 joeyh Exp $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -16,13 +16,13 @@
 
 /* Slang object number mapping */
 #define DEFAULTOBJ   0
-#define CHOOSEROBJ   1
-#define DESCOBJ      2
-#define STATUSOBJ    3
-#define DIALOGOBJ    4
-#define POINTEROBJ   5
-#define BUTTONOBJ    6
-#define SHADOWOBJ    7
+#define SHADOWOBJ    1 /* Has to be 1 due to slang weirdness */
+#define CHOOSEROBJ   2
+#define DESCOBJ      3
+#define STATUSOBJ    4
+#define DIALOGOBJ    5
+#define CURSOROBJ    6
+#define BUTTONOBJ    7
 
 #define CHOOSERWINDOW 0
 #define DESCWINDOW    1
@@ -76,13 +76,13 @@ void ui_init(int argc, char * const argv[], struct packages_t *taskpkgs, struct 
   
   /* assign attributes to objects */
   SLtt_set_color(DEFAULTOBJ, NULL, "white", "blue");
+  SLtt_set_color(SHADOWOBJ, NULL, "gray", "black");
   SLtt_set_color(CHOOSEROBJ, NULL, "black", "lightgray");
-  SLtt_set_color(POINTEROBJ, NULL, "brightblue", "lightgray");
+  SLtt_set_color(CURSOROBJ, NULL, "lightgray", "blue");
   SLtt_set_color(DESCOBJ, NULL, "black", "cyan");
   SLtt_set_color(STATUSOBJ, NULL, "yellow", "blue");
   SLtt_set_color(DIALOGOBJ, NULL, "black", "lightgray");
-  SLtt_set_color(BUTTONOBJ, NULL, "white", "red");
-  SLtt_set_color(SHADOWOBJ, NULL, "black", "black");
+  SLtt_set_color(BUTTONOBJ, NULL, "white", "blue");
   
   ui_resize();
   _initialized = 1;
@@ -118,7 +118,7 @@ void ui_resize(void)
 */
    
   _chooserinfo.height = ROWS - 2 * _chooserinfo.rowoffset;
-  _chooserinfo.width = COLUMNS - 2 * _chooserinfo.coloffset;
+  _chooserinfo.width = COLUMNS - 2 *_chooserinfo.coloffset;
 
   SLsmg_cls();
   
@@ -126,10 +126,10 @@ void ui_resize(void)
   SLsmg_set_color(STATUSOBJ);
 
   snprintf(buf, 160, "%s v%s - %s", 
-                     _(" Debian Task Installer"), VERSION, 
-		     _("(c) 1999 SPI and others "));
-
-  write_centered_str(0, 0, COLUMNS, buf);
+                     _("Debian Task Installer"), VERSION,
+		     _("(c) 1999 SPI and others"));
+  SLsmg_gotorc(0, 0);
+  SLsmg_write_nstring(buf, strlen(buf));
   
   write_centered_str(ROWS-1, 0, COLUMNS,
                      _(" h - Help    SPACE - Toggle selection    i - Task info    q - Exit"));
@@ -158,6 +158,7 @@ int ui_eventloop(void)
     switch (c) {
       case SL_KEY_UP:
       case SL_KEY_LEFT:
+      	ui_clearcursor(_chooserinfo.index);
 	if (_chooserinfo.index > 0) 
 	  _chooserinfo.index--; 
 	else 
@@ -167,6 +168,7 @@ int ui_eventloop(void)
 	
       case SL_KEY_DOWN:
       case SL_KEY_RIGHT:
+      	ui_clearcursor(_chooserinfo.index);
 	if (_chooserinfo.index < _taskpackages->count - 1) 
 	  _chooserinfo.index++; 
 	else 
@@ -175,12 +177,14 @@ int ui_eventloop(void)
 	break;
 	
       case SL_KEY_PPAGE:
+      	ui_clearcursor(_chooserinfo.index);
 	_chooserinfo.index -= _chooserinfo.height;
 	if (_chooserinfo.index < 0) _chooserinfo.index = 0;
 	ui_redrawcursor(_chooserinfo.index);
 	break;
 	
       case SL_KEY_NPAGE:
+      	ui_clearcursor(_chooserinfo.index);
 	_chooserinfo.index += _chooserinfo.height;
 	if (_chooserinfo.index >= _taskpackages->count - 1)
 	  _chooserinfo.index = _taskpackages->count - 1;
@@ -188,7 +192,10 @@ int ui_eventloop(void)
 	break;
 	
       case SL_KEY_ENTER: case '\r': case '\n':
-      case ' ': ui_toggleselection(_chooserinfo.index); break;
+      case ' ':
+      	ui_toggleselection(_chooserinfo.index);
+      	ui_redrawcursor(_chooserinfo.index);
+      break;
 	
       case 'A': case 'a': 
         for (i = 0; i < _taskpackages->count; i++) _taskpackagesary[i]->selected = 1;
@@ -208,18 +215,41 @@ int ui_eventloop(void)
   return ret;
 }
 
+void ui_shadow(int y, int x, unsigned int dy, unsigned int dx)
+{
+  int c;
+  unsigned short ch;
+  
+  if (SLtt_Use_Ansi_Colors) {
+    for (c=0;c<dy-1;c++) {
+      SLsmg_gotorc(c+1+y,x+dx);
+      /*
+       * Note: 0x02 corresponds to the current color.  0x80FF gets the
+       * character plus alternate character set attribute. -- JED
+       */
+      ch = SLsmg_char_at();
+      ch = (ch & 0x80FF) | (0x02 << 8);
+      SLsmg_write_raw(&ch,SHADOWOBJ);
+    }
+    for (c=0;c<dx;c++) {
+      SLsmg_gotorc(y+dy,x+1+c);
+      ch = SLsmg_char_at();
+      ch = (ch & 0x80FF) | (0x02 << 8);
+      SLsmg_write_raw(&ch,SHADOWOBJ);
+    }
+  }
+}
+
 int ui_drawbox(int obj, int r, int c, unsigned int dr, unsigned int dc, 
                int shadow)
 {
-  if (shadow) {
-    SLsmg_set_color(SHADOWOBJ);
-    SLsmg_fill_region(r+dr, c+1, 1, dc, ' ');
-    SLsmg_fill_region(r+1, c+dc, dr, 1, ' ');
-  }
+  if (shadow)
+    ui_shadow(r, c, dr, dc);
+
   SLsmg_set_color(obj);
   SLsmg_draw_box(r, c, dr, dc);
   SLsmg_fill_region(r+1, c+1, dr-2, dc-2, ' ');
-	  
+
   return 0;
 }
 
@@ -229,10 +259,10 @@ int ui_drawscreen(void)
 	
   /* Draw the chooser screen */
   SLsmg_set_color(DEFAULTOBJ);
-  write_centered_str(1, 0, COLUMNS, 
-		     _("Select the task package(s) appropriate for your system:"));
   ui_drawbox(CHOOSEROBJ, _chooserinfo.rowoffset - 1, _chooserinfo.coloffset - 1, _chooserinfo.height + 2, _chooserinfo.width + 2, 1);
-
+  ui_title(_chooserinfo.rowoffset - 1, _chooserinfo.coloffset - 1, COLUMNS - 3, 
+	   _("Select task packages to install"));
+ 
   for (i = _chooserinfo.topindex; i < _chooserinfo.topindex + _chooserinfo.height; i++)
     if (i < _taskpackages->count) ui_drawchooseritem(i);
   
@@ -246,15 +276,30 @@ void ui_button(int row, int col, char *txt)
 {
   SLsmg_set_color(BUTTONOBJ);
   SLsmg_gotorc(row, col);
-  SLsmg_write_char(' ');
+  SLsmg_write_char('<');
   SLsmg_write_string(txt);
+  SLsmg_write_char('>');
+}
+
+void ui_title(int row, int col, int width, char *title)
+{
+  int pos = col + (width - strlen(title))/2;
+  SLsmg_gotorc(row, pos - 1);
+  SLsmg_set_char_set(1);
+  SLsmg_write_char(SLSMG_RTEE_CHAR);
+  SLsmg_set_char_set(0);
   SLsmg_write_char(' ');
+  SLsmg_write_string(title);
+  SLsmg_write_char(' ');
+  SLsmg_set_char_set(1);
+  SLsmg_write_char(SLSMG_LTEE_CHAR);
+  SLsmg_set_char_set(0);
 }
 
 void ui_dialog(int row, int col, int height, int width, char *title, char *msg, int reflow)
 {
   char *reflowbuf;
-  int ri, c, pos;
+  int ri, c;
   char *line, *txt;
 
   if (reflow)
@@ -267,13 +312,8 @@ void ui_dialog(int row, int col, int height, int width, char *title, char *msg, 
   ui_drawbox(DIALOGOBJ, row, col, height, width, 1);
   SLsmg_fill_region(row+1, col+1, height-2, width-2, ' ');
   
-  if (title) {
-    pos = col + (width - strlen(title))/2;
-    SLsmg_gotorc(row, pos);
-    SLsmg_write_char(' ');
-    SLsmg_write_string(title);
-    SLsmg_write_char(' ');
-  }
+  if (title)
+    ui_title(row, col, width, title);
   
   if (reflowbuf != NULL) {
     txt = reflowbuf;
@@ -285,7 +325,7 @@ void ui_dialog(int row, int col, int height, int width, char *title, char *msg, 
     }
   }
 
-  ui_button(row+height-2, col+(width-4)/2, " OK ");
+  ui_button(row+height-2, col+(width-4)/2, "Ok");
   
   SLsmg_refresh();
   SLsig_block_signals();
@@ -305,12 +345,13 @@ void ui_drawchooseritem(int index)
   if (index < _chooserinfo.topindex) return;
   
   SLsmg_set_color(CHOOSEROBJ);
-  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset);
+  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 1);
   
-  snprintf(buf, 1024, "   (%c) %s: %s", 
+  snprintf(buf, 1024, "[%c] %s: %s", 
 	   (_taskpackagesary[index]->selected == 0 ? ' ' : '*'),
-           _taskpackagesary[index]->name+5, _taskpackagesary[index]->shortdesc);  
-  SLsmg_write_nstring(buf, _chooserinfo.width);
+           _taskpackagesary[index]->name+5, _taskpackagesary[index]->shortdesc);
+  /* I fear the 1 below is an off-by-one error somewhere -- Joeyh */
+  SLsmg_write_nstring(buf, _chooserinfo.width - 1);
 }
 
 void ui_toggleselection(int index)
@@ -324,14 +365,14 @@ void ui_toggleselection(int index)
     _taskpackagesary[index]->selected = 0;
   
   SLsmg_set_color(CHOOSEROBJ);
-  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 3);
+  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 1);
 
   if (_taskpackagesary[index]->selected == 0)
-    SLsmg_write_string("( )");
+    SLsmg_write_string("[ ]");
   else
-    SLsmg_write_string("(*)");
+    SLsmg_write_string("[*]");
 
-  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 2);
+  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 3);
   SLsmg_refresh();
 }
 
@@ -354,17 +395,23 @@ void ui_redrawcursor(int index)
     ui_redrawchooser();
   }
 
-  SLsmg_set_color(POINTEROBJ);
-  SLsmg_fill_region(_chooserinfo.rowoffset, _chooserinfo.coloffset, _chooserinfo.height, 3, ' ');
-  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset);
-  SLsmg_write_string("->");
+  SLsmg_set_color(CURSOROBJ);
+  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 2);
+  SLsmg_write_string(_taskpackagesary[index]->selected == 0 ? " " : "*");
   SLsmg_refresh();
+}
+
+void ui_clearcursor(int index)
+{
+  SLsmg_set_color(DIALOGOBJ);
+  SLsmg_gotorc(_chooserinfo.rowoffset + index - _chooserinfo.topindex, _chooserinfo.coloffset + 2);
+  SLsmg_write_string(_taskpackagesary[index]->selected == 0 ? " " : "*");
 }
 
 void ui_showhelp(void)
 {
   _chooserinfo.whichwindow = HELPWINDOW;
-  ui_dialog(3, 3, ROWS-6, COLUMNS-6, _("Help"), HELPTXT, 1);
+  ui_dialog(3, 3, ROWS - 9, COLUMNS - 10, _("Help"), HELPTXT, 1);
   _chooserinfo.whichwindow = CHOOSERWINDOW;
   ui_drawscreen();
 }

@@ -10,8 +10,10 @@ int ui_running(void);
 void ui_resize(void);
 int ui_eventloop(void);
 
+void ui_shadow(int x, int y, unsigned int dx, unsigned int dy);
 int ui_drawbox(int obj, int x, int y, unsigned int dx, unsigned int dy, int shadow);
 void ui_button(int row, int col, char *txt);
+void ui_title(int row, int col, int width, char *title);
 void ui_dialog(int row, int col, int height, int width, char *title, char *msg, int reflow);
 
 int ui_drawscreen(void);
@@ -21,5 +23,6 @@ void ui_showhelp(void);
 void ui_showpackageinfo(void);
 void ui_redrawchooser(void);
 void ui_redrawcursor(int index);
+void ui_clearcursor(int index);
 
 #endif
