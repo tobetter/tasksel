@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.1 1999/11/21 22:01:04 tausq Exp $ */
+/* $Id: tasksel.c,v 1.2 1999/11/21 22:35:25 tausq Exp $ */
 #include "tasksel.h"
 
 #include <string.h>
@@ -56,7 +56,7 @@ int main(int argc, char * const argv[])
   
   packages_readlist(&taskpkgs, &packages);
   ui_init(argc, argv, &taskpkgs, &packages);
-  ui_drawscreen();
+  ui_drawscreen(0);
   r = ui_eventloop();
   ui_shutdown();
 
