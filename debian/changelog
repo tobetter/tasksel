@@ -1,4 +1,4 @@
-tasksel (1.51) UNRELEASED; urgency=low
+tasksel (1.51) unstable; urgency=medium
 
   * Joey Hess
     - Update kernel source version in custom kernel task once more.
@@ -8,6 +8,8 @@ tasksel (1.51) UNRELEASED; urgency=low
     - Add openoffice.org-help-en to the office task for English help files.
       Closes: #246106
     - Add resolvconf to the dialup and broadband tasks. Closes: #229617
+    - Add myspell-en-{us,gb} to office task, by analogy with the language
+      tasks that include the myspell stuff.
   * Rene Engelhard
     - Updated 'greek', 'korean', 'norwegian' and 'thai' tasks
   * Eugeniy Meshcheryakov
@@ -32,7 +34,7 @@ tasksel (1.51) UNRELEASED; urgency=low
     - Peter Mann
       - Updated Slovak tasks translation.  Closes: #247110
 
- -- Joey Hess <joeyh@debian.org>  Wed, 28 Apr 2004 15:27:30 -0400
+ -- Joey Hess <joeyh@debian.org>  Thu,  6 May 2004 21:30:59 -0400
 
 tasksel (1.50) unstable; urgency=low
 
