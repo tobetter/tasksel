@@ -75,6 +75,53 @@ sub all_tasks {
 	map { read_task_desc($_) } list_task_descs();
 }
 
+# Returns a list of all available packages.
+sub list_avail {
+	my @list;
+	# Might be better to use the perl apt bindings, but they are not
+	# currently in base.
+	open (AVAIL, "apt-cache dumpavail|");
+	while (<AVAIL>) {
+		chomp;
+		if (/^Package: (.*)/) {
+			push @list, $1;
+		}
+	}
+	close AVAIL;
+	return @list;
+}
+
+my %avail_pkgs;
+# Given a package name, checks to see if it's available. Memoised.
+sub package_avail {
+	my $package=shift;
+	
+	if (! %avail_pkgs) {
+		foreach my $pkg (list_avail()) {
+			$avail_pkgs{$pkg} = 1;
+		}
+	}
+
+	return $avail_pkgs{$package};
+}
+
+# Given a task hash, checks if its key packages are available.
+sub task_avail {
+	local $_;
+	my $task=shift;
+	if (! ref $task->{key}) {
+		return 1;
+	}
+	else {
+		foreach my $pkg (@{$task->{key}}) {
+			if (! package_avail($pkg)) {
+				return 0;
+			}
+		}
+		return 1;
+	}
+}
+
 # Given task hash, returns a list of all available packages in the task.
 # If the aptitude_tasks parameter is true, then it does not expand tasks
 # that aptitude knows about, and just returns aptitude task syntax for
@@ -105,49 +152,9 @@ sub task_packages {
 	}
 	else {
 		# external method
-		@list=split "\n", `$packagesdir/$task->{packages} $task->{task}`;
+		@list=grep package_avail, split "\n", `$packagesdir/$task->{packages} $task->{task}`;
 	}
 	return @list;
-}
-
-# Returns a list of all available packages.
-sub list_avail {
-	my @list;
-	# Might be better to use the perl apt bindings, but they are not
-	# currently in base.
-	open (AVAIL, "apt-cache dumpavail|");
-	while (<AVAIL>) {
-		chomp;
-		if (/^Package: (.*)/) {
-			push @list, $1;
-		}
-	}
-	close AVAIL;
-	return @list;
-}
-
-# Given a task hash, checks if its key packages are available.
-my %avail_pkgs;
-sub task_avail {
-	local $_;
-	my $task=shift;
-	if (! ref $task->{key}) {
-		return 1;
-	}
-	else {
-		if (! %avail_pkgs) {
-			foreach my $pkg (list_avail()) {
-				$avail_pkgs{$pkg} = 1;
-			}
-		}
-
-		foreach my $pkg (@{$task->{key}}) {
-			if (! $avail_pkgs{$pkg}) {
-				return 0;
-			}
-		}
-		return 1;
-	}
 }
 
 # Given a task hash, runs any test program specified in its data, and sets
@@ -274,7 +281,10 @@ sub main {
 	if (exists $options{"task-packages"}) {
 		my @tasks=all_tasks();
 		foreach my $taskname (@{$options{"task-packages"}}) {
-			print "$_\n" foreach task_packages(grep { $_->{task} eq $taskname } @tasks);
+			my $task=name_to_task($taskname, @tasks);
+			if ($task) {
+				print "$_\n" foreach task_packages($task);
+			}
 		}
 		exit(0);
 	}
