@@ -66,7 +66,10 @@ clean:
 	$(MAKE) -C $(DESCPO) clean
 
 # This taget is run on auric to generate the overrides files.
+# It is run from a cron job, so should only generate output if there are
+# problems.
 override:
 	@cvs up tasks 2>&1 | grep -v ^U | grep -v ".cvspass" || true
-	@perl makeoverride.pl $(DESCDIR) > ../tasks.sid
-	@gzip < ../tasks.sid > ../tasks.sid.gz
+	@perl makeoverride.pl $(DESCDIR) > temp-override
+	@cp temp-override /org/ftp.debian.org/scripts/external-overrides/task
+	@rm -f temp-override
