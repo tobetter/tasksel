@@ -1,5 +1,5 @@
 PROGRAM = tasksel
-VERSION=\"0.1\"
+VERSION=\"1.0\"
 CC = gcc
 CFLAGS = -g -Wall  -Os
 DEFS = -DVERSION=$(VERSION) -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" #-DDEBUG
