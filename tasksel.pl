@@ -249,7 +249,7 @@ if (@list && ! $options{"no-ui"}) {
 		if (@aptitude_install) {
 			warning gettext("ignoring other selected packages in favour of manual package selection");
 		}
-		my $ret=system(system "aptitude") >> 8;
+		my $ret=system("aptitude") >> 8;
 		if ($ret != 0) {
 			error gettext("aptitude failed");
 		}
