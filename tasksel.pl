@@ -216,13 +216,13 @@ my @tasks=map { task_test($_) } grep { task_avail($_) }
 if ($options{"new-install"}) {
 	push @aptitude_install, map { "~t".$_->{task} } grep { $_->{_display} == 0 && $_->{_install} == 1 } @tasks;
 }
-if ($options{required}) {
+if ($options{"required"}) {
 	push @aptitude_install, "~prequired";
 }
-if ($options{important}) {
+if ($options{"important"}) {
 	push @aptitude_install, "~pimportant";
 }
-if ($options{standard}) {
+if ($options{"standard"}) {
 	push @aptitude_install, "~pstandard";
 }
 

@@ -4,6 +4,8 @@ tasksel (2.03) UNRELEASED; urgency=low
     - Add brazilian-portuguese task.
     - Fix how aptitude is called when using manual selection. 
       Closes: #256604
+    - Enquote the required, important and standard options because this
+      was missed.  
   * Translations
     - André Luís Lopes
       - Updated Brazilian Portuguese translation of tasks.
