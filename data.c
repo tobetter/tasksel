@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.18 2003/08/01 01:39:35 joeyh Rel $ */
+/* $Id: data.c,v 1.19 2003/08/01 01:54:55 joeyh Rel $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -427,7 +427,6 @@ dontmakemethink:
 	      strcat(longdesc, buf + 1);
 	    }
 	  } while (buf[0] != '\n' && !feof(f));
-          longdesc = STRDUP(dgettext(domainname, longdesc));
 	  break;
 	} else if (MATCHFIELD(buf, KEYFIELD)) {
 	  do {
@@ -453,6 +452,17 @@ dontmakemethink:
 	}
       }
       
+      /* Munge long desc to something that gettext might be able to use. */
+      while ((l = strchr(longdesc, '\n'))) {
+        l[0] = ' ';
+      }
+      l = longdesc+strlen(longdesc) - 1;
+      while (l[0] == '\n' || l[0] == ' ') {
+      	l[0] = '\0';
+	l--;
+      }
+      longdesc = STRDUP(dgettext(domainname, longdesc));
+
       /* packages_readlist must be called before this function, so we can
        * tell if any packages are in this task, and ignore it if none are */
       if (showempties || (!key_missing && tasks_find(tasks, task))) {
