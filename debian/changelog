@@ -1,3 +1,21 @@
+tasksel (1.22) unstable; urgency=low
+
+  * Switched from emacs20 to emacs21. Closes: #152018
+  * Added Danish language task by Claus Hindsgaul <claus_h@image.dk>.
+  * Fixed OOo name. Closes: #158936
+  * Patch from Jeff Licquia <licquia@progeny.com> to make tasksel use all
+    *.desc files in /usr/share/tasksel, to allow third parties to drop in
+     their own additional tasks.
+  * This build, at least, will not contain CVS dirs in the source package
+    (because I build with DH_ALWAYS_EXCLUDE=CVS set, and pass -ICVS to
+    dpkg-buildpackage. Closes: #148759
+  * Added wireless-tools to the laptop task as laptops increasingly use
+    wireless cards. I think adding wavemon too is a bit too much.
+    Closes: #168948
+  * Make the tasksel menu entry work as non-root. Closes: #144340
+
+ -- Joey Hess <joeyh@debian.org>  Thu,  5 Dec 2002 13:44:43 -0500
+
 tasksel (1.21) unstable; urgency=low
 
   * This is aimed at sid, not woody.

@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.14 2001/11/22 17:53:48 tausq Rel $ */
+/* $Id: tasksel.c,v 1.15 2002/12/05 18:49:07 joeyh Rel $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -8,6 +8,8 @@
 #include <locale.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/types.h>
+#include <dirent.h>
 
 #include "slangui.h"
 #include "data.h"
@@ -131,6 +133,10 @@ int main(int argc, char * const argv[])
   struct tasks_t tasks;
   struct package_t **pkglist;
   struct task_t **tasklist;
+  struct dirent *taskdirentry;
+  DIR *taskdir;
+  char desc_path[PATH_MAX];
+  char *extension;
   
   signal(SIGWINCH, tasksel_signalhandler);
   
@@ -161,8 +167,24 @@ int main(int argc, char * const argv[])
   /* Must read packages first. */
   packages_readlist(&tasks, &packages);
   
-  /* TODO: should probably read in all files in a directory. */
-  taskfile_read(TASKDESC, &tasks, &packages, showempties);
+  /* Read in all task description files in the TASKDIR directory. */
+  taskdir = opendir(TASKDIR);
+  for (taskdirentry = readdir(taskdir); taskdirentry != NULL;
+       taskdirentry = readdir(taskdir)) {
+    for (extension = taskdirentry->d_name; *extension != '\0'; extension++) ;
+    extension -= 5;
+    if (extension <= taskdirentry->d_name)
+      continue;
+    if (strcmp(extension, ".desc") != 0)
+      continue;
+
+    strncpy(desc_path, TASKDIR, sizeof(desc_path) - 1);
+    strncat(desc_path, "/", sizeof(desc_path) - 2);
+    strncat(desc_path, taskdirentry->d_name, 
+	    sizeof(desc_path) - strlen(taskdirentry->d_name) - 2);
+    taskfile_read(desc_path, &tasks, &packages, showempties);
+  }
+  closedir(taskdir);
 
   if (tasks.count == 0) {
     fprintf(stderr, _("No tasks found on this system.\nDid you update your available file?\n"));

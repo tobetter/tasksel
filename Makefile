@@ -1,15 +1,16 @@
 PROGRAM=tasksel
 TASKDESC=debian-tasks.desc
+TASKDIR=/usr/share/tasksel
 DESCDIR=tasks/
 CC=gcc
 CFLAGS=-g -Wall  #-Os
 DEBUG=1
 ifeq (0,$(DEBUG))
 DEFS=-DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" \
-     -DTASKDESC=\"/usr/share/tasksel/$(TASKDESC)\"
+     -DTASKDIR=\"$(TASKDIR)\"
 else
 DEFS=-DVERSION=\"$(VERSION)\" -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" \
-     -DTASKDESC=\"$(TASKDESC)\" -DDEBUG
+     -DTASKDIR=\".\" -DDEBUG
 endif
 VERSION=$(shell expr "`dpkg-parsechangelog 2>/dev/null |grep Version:`" : '.*Version: \(.*\)' | cut -d - -f 1)
 LIBS=-lslang #-lccmalloc -ldl
@@ -36,7 +37,7 @@ $(PROGRAM): $(OBJS) po/build_stamp
 
 install:
 	install -m 755 tasksel $(DESTDIR)/usr/bin
-	install -m 0644 $(TASKDESC) $(DESTDIR)/usr/share/tasksel
+	install -m 0644 $(TASKDESC) $(DESTDIR)$(TASKDIR)
 	pod2man --center "Debian specific manpage" --release $(VERSION) tasksel.pod | gzip -9c > $(DESTDIR)/usr/share/man/man8/tasksel.8.gz
 	for lang in $(LANGS); do \
 	  [ ! -d $(LOCALEDIR)/$$lang/LC_MESSAGES/ ] && mkdir -p $(LOCALEDIR)/$$lang/LC_MESSAGES/; \
