@@ -5,7 +5,7 @@ CFLAGS=-g -Wall  #-Os
 DEFS=-DVERSION=$(VERSION) -DPACKAGE=\"$(PROGRAM)\" -DLOCALEDIR=\"/usr/share/locale\" #-DDEBUG
 LIBS=-lslang #-lccmalloc -ldl
 OBJS=tasksel.o slangui.o data.o util.o strutl.o
-LANGS=de hu sv pl
+LANGS=de hu ja sv pl
 LOCALEDIR=$(DESTDIR)/usr/share/locale
 
 COMPILE = $(CC) $(CFLAGS) $(DEFS) -c
