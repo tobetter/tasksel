@@ -45,7 +45,7 @@ sub read_task_desc {
 				if (@lines && $lines[0] =~ /^\s+/) {
 					# multi-line field
 					my @values;
-					if (defined $values && length $value) {
+					if (defined $value && length $value) {
 						push @values, $value;
 					}
 					while (@lines && $lines[0] =~ /^\s+(.*)/) {
