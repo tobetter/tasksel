@@ -240,6 +240,7 @@ sub name_to_task {
 sub usage {
 	print STDERR gettext(q{Usage:
 tasksel install <task>
+tasksel remove <task>
 tasksel [options]; where options is any combination of:
 	-t, --test          test mode; don't really do anything
 	-r, --required      install all required-priority packages
@@ -267,6 +268,10 @@ sub getopts {
 	if (@ARGV && $ARGV[0] eq "install") {
 		shift @ARGV;
 		$ret{install} = shift @ARGV;
+	}
+	if (@ARGV && $ARGV[0] eq "remove") {
+		shift @ARGV;
+		$ret{remove} = shift @ARGV;
 	}
 	if (@ARGV) {
 		usage();
@@ -331,10 +336,15 @@ sub main {
 		my $task=name_to_task($options{"install"}, @tasks);
 		$task->{_install} = 1 if $task;
 	}
+	my @aptitude_remove;
+	if ($options{"remove"}) {
+		my $task=name_to_task($options{"remove"}, @tasks);
+		push @aptitude_remove, task_packages($task, 0);
+	}
 	
 	# The interactive bit.
 	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
-	if (@list && ! $options{"no-ui"} && ! $options{install}) {
+	if (@list && ! $options{"no-ui"} && ! $options{install} && ! $options{remove}) {
 		map { $_->{_install} = 0 } @list; # don't install displayed tasks unless selected
 		my $question="tasksel/tasks";
 		if ($options{"new-install"}) {
@@ -378,6 +388,17 @@ sub main {
 		}
 		else {
 			my $ret=system("aptitude", "--without-recommends", "-y", "install", @aptitude_install) >> 8;
+			if ($ret != 0) {
+				error gettext("aptitude failed");
+			}
+		}
+	}
+	if (@aptitude_remove) {
+		if ($options{test}) {
+			print "aptitude remove ".join(" ", @aptitude_remove)."\n";
+		}
+		else {
+			my $ret=system("aptitude", "remove", @aptitude_remove) >> 8;
 			if ($ret != 0) {
 				error gettext("aptitude failed");
 			}
