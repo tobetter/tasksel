@@ -51,5 +51,7 @@ clean:
 	rm -f $(PROGRAM) $(TASKDESC) *.o *~
 	$(MAKE) -C po clean
 
+# This taget is run on auric to generate the overrides files.
 override:
-	@perl makeoverride.pl $(DESCDIR)
+	cvs up tasks
+	perl makeoverride.pl $(DESCDiR) > ../tasks.sid
