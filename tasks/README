@@ -58,3 +58,7 @@ candidates for removal..)
 Debian developers aside from the tasksel maintenance team may take over
 maintenance of tasks. Talk with the tasksel developers first, and then put
 your name in a Maintainer field in the task file you're maintaining.
+
+Note that while you may put non-free or contrib packages in tasks, they
+will not propigate out to the Task fields in the Packages files in the
+Debian archive.

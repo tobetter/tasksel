@@ -5,3 +5,8 @@ Description: Linux Standard Base
  allowing you to install and use LSB packages.
 Key:
   lsb
+Packages:
+ # lsn requires a print server, and would pull in lpd if left to itself
+ # Since the print task uses cups, use cups here too.
+ cupsys-client
+ cupsys-bsd
