@@ -4,15 +4,16 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Eugene Konev <ejka@imfi.kspu.ru>, 2004.
 # Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004.
+# Yuri Kozlov <yuray@id.ru>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-debian-tasks_ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-05-06 21:31-0400\n"
-"PO-Revision-Date: 2004-04-20 11:10+0200\n"
-"Last-Translator: Nikolai Prokoschenko <nikolai@prokoschenko.de>\n"
-"Language-Team: Russian <debian-russian@lists.debian.org>\n"
+"POT-Creation-Date: 2004-04-28 15:23-0400\n"
+"PO-Revision-Date: 2004-05-15 15:54+0400\n"
+"Last-Translator: Yuri Kozlov <yuray@id.ru>\n"
+"Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -147,8 +148,7 @@ msgstr "База данных SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr "Установить клиентские и серверные компоненты СУБД PostgreSQL."
 
 #. Description
@@ -202,8 +202,7 @@ msgstr "Сервер имён (DNS)"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Установить сервер имён BIND, и соответствующие пакеты документации и "
 "инструментов."
@@ -553,8 +552,7 @@ msgstr "Среда TeX/LaTeX"
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid ""
-"This task provides necessary packages for composing documents in TeX/LaTeX."
+msgid "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr "Установить пакеты для создания документов в TeX/LaTeX."
 
 #. Description
@@ -571,19 +569,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:361
-#, fuzzy
 msgid "Turkish environment"
-msgstr "Поддержка датского языка"
+msgstr "Поддержка турецкого языка"
 
 #. Description
 #: ../po/debian-tasks.desc:361
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
 msgstr ""
 "Установить пакеты, позволяющие облегчить использование Debian для тех, кто "
-"говорит на польском языке."
+"говорит на турецком языке."
 
 #. Description
 #: ../po/debian-tasks.desc:371
@@ -622,6 +618,6 @@ msgstr "Веб-сервер"
 
 #. Description
 #: ../po/debian-tasks.desc:387
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
+msgid "This task selects a packages useful for a general purpose web server system."
 msgstr "Установить пакеты для создания веб-сервера."
+
