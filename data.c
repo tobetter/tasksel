@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.9 2001/04/24 06:35:07 tausq Exp $ */
+/* $Id: data.c,v 1.10 2001/05/18 02:02:02 joeyh Exp $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -21,6 +21,7 @@
 #define SUGGESTSFIELD    "Suggests: "
 #define DESCRIPTIONFIELD "Description: "
 #define PRIORITYFIELD    "Priority: "
+#define SECTIONFIELD     "Section: "
 #define STATUSFIELD      "Status: "
 #define AVAILABLEFILE    "/var/lib/dpkg/available"
 #define STATUSFILE       "/var/lib/dpkg/status"
@@ -68,6 +69,7 @@ static void tasks_walk_enumerate(const void *nodep, const VISIT order, const int
   }
 }
 
+
 static int taskcompare(const struct task_t *l, const struct task_t *r)
 {
   return strcmp(l->name, r->name);
@@ -82,7 +84,6 @@ static void tasks_walk_delete(const void *nodep, const VISIT order, const int de
   if (order == leaf || order == endorder) {
     tdelete((void *)datap, &_tasks_root, taskcompare);
     if (datap->name) FREE(datap->name);
-    if (datap->prettyname) FREE(datap->prettyname);
     if (datap->packages) {
       for (i = 0; i < datap->packagescount; i++) FREE(datap->packages[i]);
       FREE(datap->packages);
@@ -144,19 +145,6 @@ static int splitlinkdesc(const char *desc, char ***array)
   return elts;
 }
 
-static const char *filterdescription(const char *descin)
-{
-  /* !!!!!TODO!!!!!!!!!
-   * This is a very ugly hack. It exists here until the package descriptions
-   * are properly fixed. :-(
-   */
-  if (strstr(descin, "Metapackage for ") || strstr(descin, "metapackage for "))
-    return (descin+16);
-  else
-    return descin;
-}
-
-
 static struct task_t *addtask(
 	struct tasks_t *tasks,
 	const char *taskname,
@@ -170,9 +158,6 @@ static struct task_t *addtask(
   if (result) {
     task = *(struct task_t**)result;
   } else {
-    int space = 1;
-    char *c;
-
     task = NEW(struct task_t);
     task->name = STRDUP(taskname);
     task->task_pkg = NULL;
@@ -180,24 +165,6 @@ static struct task_t *addtask(
     task->packagesmax = 10;
     task->packagescount = 0;
     task->selected = 0;
-    c = task->prettyname = STRDUP(taskname);
-
-    /* Prettify name */
-    while (c[0]) {
-      if (c[0] == '-') {
-        c[0] = ' ';
-        space=1;
-      }
-      else if (space) {
-        c[0] = toupper(c[0]);
-        space=0;
-      }
-      c++;
-    }
-    /* Keep track of the longest name. */
-    if (tasks->maxnamelen < (c - task->prettyname))
-      tasks->maxnamelen = c - task->prettyname;
-
     tsearch(task, &tasks->tasks, taskcompare);
     tasks->count++;
   }
@@ -224,46 +191,26 @@ static struct task_t *addtask(
 }
 
 static struct package_t *addpackage(
-		struct packages_t *pkgs,
+		       struct packages_t *pkgs,
 		       const char *name, const char *dependsdesc, 
 		       const char *recommendsdesc, const char *suggestsdesc, 
 		       const char *shortdesc, const char *longdesc,
-		       const priority_t priority, const int istask)
+		       const priority_t priority)
 {
   /* Adds package to the package list binary tree */
   struct package_t *node = NEW(struct package_t);
   void *p;
-  char *c;
-  char space=1;
   
   VERIFY(name != NULL);
   
   /* DPRINTF("Adding package %s to list\n", name); */
   memset(node, 0, sizeof(struct package_t));
   node->name = STRDUP(name);
-  
-  if (istask) {
-    c = node->prettyname = STRDUP(name+5);
-    /* Prettify name */
-    while (c[0]) {
-      if (c[0] == '-') {
-        c[0] = ' ';
-        space=1;
-      }
-      else if (space) {
-        c[0] = toupper(c[0]);
-        space=0;
-      }
-      c++;
-    }
-    /* Keep track of the longest name. */
-    if (pkgs->maxnamelen < (c - node->prettyname))
-      pkgs->maxnamelen = c - node->prettyname;
-  }
-  
   node->shortdesc = STRDUP(shortdesc); 
   node->longdesc = STRDUP(longdesc);
   node->priority = priority;
+  node->section = NULL;
+  node->pseudopackage = 0;
 
   if (dependsdesc) node->dependscount = splitlinkdesc(dependsdesc, &node->depends);
   if (recommendsdesc) node->recommendscount = splitlinkdesc(recommendsdesc, &node->recommends);
@@ -293,6 +240,22 @@ struct package_t *packages_find(const struct packages_t *pkgs, const char *name)
     return *(struct package_t **)result;
 }
 
+struct task_t *tasks_find(const struct tasks_t *tasks, const char *name)
+{
+  /* Given a task name, returns a pointer to the appropriate task_t
+   * structure or NULL if none is found */
+  struct task_t task;
+  void *result;
+
+  task.name = (char *)name;
+  result = tfind((void *)&task, &tasks->tasks, taskcompare);
+
+  if (result == NULL)
+    return NULL;
+  else
+    return *(struct task_t **)result;
+}
+
 struct package_t **packages_enumerate(const struct packages_t *packages)
 {
   /* Converts a packages binary tree into an array */
@@ -318,6 +281,8 @@ struct task_t **tasks_enumerate(const struct tasks_t *tasks)
   _tasks_enumcount = 0;
   twalk((void *)tasks->tasks, tasks_walk_enumerate);
   ASSERT(_tasks_enumcount == tasks->count);
+  qsort(_tasks_enumbuf, tasks->count, sizeof(struct task_t *), 
+	taskcompare);
   return _tasks_enumbuf;
 }
 
@@ -327,13 +292,98 @@ static void walktasks(const void *t, const VISIT which, const int depth)
   int i;
 
   if (which == postorder || which == leaf) {
-    fprintf(stderr, "Task %s:\n", task->prettyname);
+    fprintf(stderr, "Task %s [%s]:\n", task->name, 
+	(task->task_pkg ? task->task_pkg->section : "misc"));
     for (i = 0; i < task->packagescount; i++) {
       fprintf(stderr, "  %s\n", task->packages[i]);
     }
   }
 }
 
+void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs)
+{
+  /* Reads a task definition file, and populates internal data structures
+   * with information about the tasks defined therein.
+   * 
+   * The format of the task definition file is a series of stanzas,
+   * seperated by blank lines. Each stanza is in rfc-822 format, and
+   * contains fields named Task, Description (with extended desc), and
+   * Section. (The information about what packages belong in a task is
+   * contained in Task fields in the Packages file.) */
+  FILE *f;
+  char buf[BUF_SIZE];
+  char *task, *shortdesc, *longdesc, *section;
+
+  if ((f = fopen(fn, "r")) == NULL) PERROR(fn);
+  while (!feof(f)) {
+    fgets(buf, BUF_SIZE, f);
+    CHOMP(buf);
+    if (MATCHFIELD(buf, TASKFIELD)) {
+      shortdesc = longdesc = section = NULL;
+      task = STRDUP(FIELDDATA(buf, TASKFIELD));
+      VERIFY(task != NULL);
+      
+      while (!feof(f)) {
+        fgets(buf, BUF_SIZE, f);
+	CHOMP(buf);
+	if (buf[0] == 0) break;
+
+	if (MATCHFIELD(buf, SECTIONFIELD)) {
+	  section = STRDUP(FIELDDATA(buf, SECTIONFIELD));
+	} else if (MATCHFIELD(buf, DESCRIPTIONFIELD)) {
+	  shortdesc = STRDUP(FIELDDATA(buf, DESCRIPTIONFIELD));
+	  VERIFY(shortdesc != NULL);
+	  do {
+	    if (fgets(buf, BUF_SIZE, f) == 0)
+              break;
+	    if (buf[0] != ' ') break;
+	    if (buf[1] == '.') buf[1] = ' ';
+	    if (longdesc == NULL) {
+	      longdesc = (char *)MALLOC(strlen(buf) + 1);
+	      strcpy(longdesc, buf + 1);
+	    } else {
+	      longdesc = realloc(longdesc, strlen(longdesc) + strlen(buf) + 1);
+	      strcat(longdesc, buf + 1);
+	    }
+	  } while (buf[0] != '\n' && !feof(f));
+	  break;
+	}
+      }
+      
+      /* packages_readlist must be called before this function, so we can
+       * tell if any packages are in this task, and ignore it if none are. */
+      if (tasks_find(tasks, task)) {
+        struct package_t *p;
+        struct task_t *t;
+	char *package;
+
+	/* This is a fake package to go with the task. I add the task-
+	 * prefix to the package name to ensure that adding this fake
+	 * package stomps on the toes of no real package. */
+        /* FIXME: It should not be necessary to do this; instead task_t
+	 * should include description and section fields and not need an
+	 * associated package. */
+	package = MALLOC(strlen(task) + 6);
+	package = STRDUP("task-");
+	strcat(package, task);
+	p = addpackage(pkgs, package, NULL, NULL, NULL, shortdesc, longdesc,
+	               PRIORITY_UNKNOWN);
+	p->section = STRDUP(section);
+	p->pseudopackage = 1;
+	
+        t = addtask(tasks, task, "");
+        t->task_pkg = p;
+      };
+
+      if (task != NULL) FREE(task);
+      if (shortdesc != NULL) FREE(shortdesc);
+      if (longdesc != NULL) FREE(longdesc);
+      if (section != NULL) FREE(section);
+    }
+  }
+  fclose(f);
+}
+	
 void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
 {
   /* Populates internal data structures with information from an available 
@@ -342,21 +392,16 @@ void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
   char buf[BUF_SIZE];
   char *name, *shortdesc, *longdesc;
   char *dependsdesc, *recommendsdesc, *suggestsdesc, *prioritydesc, *taskdesc;
+  char *section;
   priority_t priority;
   
-  VERIFY(pkgs != NULL); VERIFY(tasks != NULL);
- 
-  /* Initialization */
-  memset(pkgs, 0, sizeof(struct packages_t));
-  memset(tasks, 0, sizeof(struct tasks_t));
-
   if ((f = fopen(AVAILABLEFILE, "r")) == NULL) PERROR(AVAILABLEFILE);
   while (!feof(f)) {
     fgets(buf, BUF_SIZE, f);
     CHOMP(buf);
     if (MATCHFIELD(buf, PACKAGEFIELD)) {
       /*DPRINTF("Package = %s\n", FIELDDATA(buf, PACKAGEFIELD)); */
-      name = shortdesc = longdesc = taskdesc = dependsdesc = recommendsdesc = suggestsdesc = NULL;
+      name = shortdesc = longdesc = taskdesc = dependsdesc = recommendsdesc = suggestsdesc = section = NULL;
       priority = PRIORITY_UNKNOWN;
       
       name = STRDUP(FIELDDATA(buf, PACKAGEFIELD));
@@ -380,6 +425,8 @@ void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
 	} else if (MATCHFIELD(buf, SUGGESTSFIELD)) {
           suggestsdesc = STRDUP(FIELDDATA(buf, SUGGESTSFIELD));
 	  VERIFY(suggestsdesc != NULL);
+	} else if (MATCHFIELD(buf, SECTIONFIELD)) {
+	  section = STRDUP(FIELDDATA(buf, SECTIONFIELD));
 	} else if (MATCHFIELD(buf, PRIORITYFIELD)) {
 	  prioritydesc = FIELDDATA(buf, PRIORITYFIELD);
 	  if (strcmp(prioritydesc, "required") == 0) {
@@ -397,7 +444,8 @@ void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
 	  shortdesc = STRDUP(FIELDDATA(buf, DESCRIPTIONFIELD));
 	  VERIFY(shortdesc != NULL);
 	  do {
-	    fgets(buf, BUF_SIZE, f);
+            if (fgets(buf, BUF_SIZE, f) == 0)
+              break;
 	    if (buf[0] != ' ') break;
 	    if (buf[1] == '.') buf[1] = ' ';
 	    if (longdesc == NULL) {
@@ -414,14 +462,23 @@ void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
 
       if (strncmp(name, "task-", 5) != 0) {
       addpackage(pkgs, name, NULL, NULL, NULL, shortdesc,
-		 NULL, priority, 0);
+		 NULL, priority);
       } else {
         struct package_t *p;
 	struct task_t *t;
         int i;
         p = addpackage(pkgs, name, dependsdesc, recommendsdesc, 
-		       suggestsdesc, filterdescription(shortdesc), 
-		       longdesc, priority, 0);
+		       suggestsdesc, shortdesc, 
+		       longdesc, priority);
+#if 1
+        if (strncmp(section, "tasks-", 6) == 0) {
+	  p->section = STRDUP(section+6);
+	} else {
+	  p->section = "junk";
+	}
+#else
+	p->section = STRDUP(section);
+#endif
         t = addtask(tasks, name+5, "");
 	t->task_pkg = p;
         for (i = 0; i < p->dependscount; i++) {
@@ -449,16 +506,17 @@ void packages_readlist(struct tasks_t *tasks, struct packages_t *pkgs)
       if (taskdesc != NULL) FREE(taskdesc);
       if (shortdesc != NULL) FREE(shortdesc);
       if (longdesc != NULL) FREE(longdesc);
+      if (section != NULL) FREE(section);
     }
   };
   fclose(f);   
 
-  twalk(tasks->tasks, walktasks);
+  /*twalk(tasks->tasks, walktasks);*/
 }
 
 void packages_free(struct tasks_t *tasks, struct packages_t *pkgs)
 {
-  /* Frees up memory allocated by packages_readlist */
+  /* Frees up memory allocated by taskfile_read and packages_readlist */
   
   _tasks_root = tasks->tasks;
   twalk(tasks->tasks, tasks_walk_delete);

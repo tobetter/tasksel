@@ -1,4 +1,4 @@
-$Id: README,v 1.1 1999/11/21 22:01:04 tausq Exp $
+$Id: README,v 1.2 2001/05/18 02:02:02 joeyh Rel $
 Task Selection UI v0.1
 Nov 20, 1999
 Randolph Chung <tausq@debian.org>
@@ -8,11 +8,17 @@ Here's a first cut at a task selection user interface.
 The interface GUI is based on libslang. It has no other special library 
 dependencies.
 
-On startup, the tasksel program will read /var/lib/dpkg/available to
-identify task packages (matching "task-*"). These packages will be
-presented in a simple list selection screen with their short descriptions.
-Users can drill down into the task packages to see detailed descriptions and
-some information about the packages in the task.
+On startup, the tasksel program will read
+/usr/share/tasksel/debian-tasks.desc for information about what tasks are
+available and their descriptions and sections. Next it will read
+/var/lib/dpkg/available. Task: fields in that file can be used to state
+that a package belongs to a task or tasks. Also, the package names are used 
+to identify task packages (matching "task-*").
+
+The tasks will be presented in a simple list selection screen with
+their short descriptions.  Users can drill down into the tasks to
+see detailed descriptions and some information about the packages in the
+task.
 
 On exit, tasksel executes the appropriate apt-get command to install the
 selected packages. If the -t option is given, then tasksel prints out the

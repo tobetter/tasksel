@@ -1,3 +1,37 @@
+tasksel (1.3-1) unstable; urgency=low
+
+  * Added support for task description files.
+  * Read in /usr/share/tasksel/debian-tasks.desc as a task description
+    file.
+  * Added makedesc.pl, a program to generate a task description file from
+    a set of task descriptions.
+  * Got rid of all the name prettification code since it is no longer used
+    anyway.
+  * Killed filterdescription, the task packages in woody actually don't
+    have that problem anymore.
+  * Don't move cursor to the right after a task is selected.
+  * Removed unused tasksel.man from source package (keep pod).
+  * Fixed an obscure bug if a task package happened to be the last thing in
+    the available file.
+  * Enable debug mode by default, but turn it off when building from the
+    rules file.
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 17 May 2001 14:47:06 -0400
+
+tasksel (1.2-1) unstable; urgency=low
+
+  * Use "Section:" fields to break tasks into different sections. Have a
+    hardcoded list of default sections, with a defined order; remaining
+    sections get added to the end, in alphabetical order. Sections that
+    don't match "tasks-*" are ignored.
+
+  * "tasksel install foo bar baz" as a replacement for "apt-get install
+    task-foo task-bar task-baz"
+
+  * Increase the size of the "apt-get install" command line buffer.
+
+ -- Anthony Towns <aj@azure.humbug.org.au>  Tue, 15 May 2001 15:02:01 +1000
+
 tasksel (1.1-1) unstable; urgency=low
 
   * Support "Task:" headers to include a package in a task.

@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.10 2001/04/24 06:35:07 tausq Exp $ */
+/* $Id: tasksel.c,v 1.11 2001/05/18 02:02:02 joeyh Exp $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -45,7 +45,7 @@ int doinstall(struct task_t **tasklist, int taskcount,
 {
   int i, c = 0;
   FILE *todpkg;
-  char buf[8192];
+  char buf[20480];
 
   if (queueinstalls) {
     if (testmode)
@@ -63,7 +63,7 @@ int doinstall(struct task_t **tasklist, int taskcount,
     for (i = 0; i < taskcount; i++) {
       if (tasklist[i]->selected > 0) {
         int j;
-        if (tasklist[i]->task_pkg) {
+        if (tasklist[i]->task_pkg && ! tasklist[i]->task_pkg->pseudopackage) {
           fprintf(todpkg, "%s install\n", tasklist[i]->task_pkg->name);
         }
         for (j = 0; j < tasklist[i]->packagescount; j++) {
@@ -92,7 +92,7 @@ int doinstall(struct task_t **tasklist, int taskcount,
       if (tasklist[i]->selected > 0) { 
         int j;
         /* TODO check buffer overflow; not likely, but still... */
-        if (tasklist[i]->task_pkg) {
+        if (tasklist[i]->task_pkg && ! tasklist[i]->task_pkg->pseudopackage) {
           strcat(buf, tasklist[i]->task_pkg->name);
           strcat(buf, " ");
         }
@@ -149,7 +149,15 @@ int main(int argc, char * const argv[])
     }
   }
   
+  /* Initialization */
+  memset(&packages, 0, sizeof(struct packages_t));
+  memset(&tasks, 0, sizeof(struct tasks_t));
+  
+  /* Must read packages first. */
   packages_readlist(&tasks, &packages);
+  
+  /* TODO: should probably read in all files in a directory. */
+  taskfile_read(TASKDESC, &tasks, &packages);
 
   if (tasks.count == 0) {
     fprintf(stderr, _("No task packages found on this system.\nDid you update your available file?"));
@@ -176,6 +184,23 @@ int main(int argc, char * const argv[])
   }
 
   tasklist = tasks_enumerate(&tasks);
+  if (noninteractive) {
+    if (optind + 1 < argc && strcmp(argv[optind], "install") == 0) {
+      for (optind++; optind < argc; optind++) {
+        /* mark task argv[optind] for install, if it exists */
+        int i;
+        for (i = 0; i < tasks.count; i++) {
+          if (strcmp(tasklist[i]->name, argv[optind]) == 0) break;
+        }
+        if (i == tasks.count) {
+          printf("E: %s: no such task\n", argv[optind]);
+        } else {
+          tasklist[i]->selected = 1;
+        }
+      }
+    }
+  }
+
   if (r == 0) {
     r = doinstall(tasklist, tasks.count,
 	          pkglist, (installreqd || installimp || installstd 

@@ -1,4 +1,4 @@
-/* $Id: data.h,v 1.5 2001/04/24 06:35:07 tausq Exp $ */
+/* $Id: data.h,v 1.6 2001/05/18 02:02:02 joeyh Exp $ */
 #ifndef _DATA_H
 #define _DATA_H
 
@@ -13,7 +13,6 @@ typedef enum {
 
 struct package_t {
   char *name;
-  char *prettyname;
   char *shortdesc;
   char *longdesc;
   int dependscount;
@@ -22,19 +21,19 @@ struct package_t {
   char **recommends;
   int suggestscount;
   char **suggests;
+  char *section;
   priority_t priority;
   int selected;
+  int pseudopackage;
 };
 
 struct packages_t {
   int count;
-  int maxnamelen;
   void *packages;
 };
 
 struct task_t {
   char *name;
-  char *prettyname;
   struct package_t *task_pkg;
   char **packages;
   int packagescount;
@@ -44,16 +43,18 @@ struct task_t {
 
 struct tasks_t {
   int count;
-  int maxnamelen;
   void *tasks;
 };
 
-/* Reads in a list of package and package descriptions */
+/* Reads in a list of tasks from task description file */
+void taskfile_read(char *fn, struct tasks_t *tasks, struct packages_t *pkgs);
+/* Reads in a list of package and package descriptions from available file */
 void packages_readlist(struct tasks_t *tasks, struct packages_t *packages);
 /* free memory allocated to store packages */
 void packages_free(struct tasks_t *tasks, struct packages_t *packages);
 
 struct package_t *packages_find(const struct packages_t *packages, const char *name);
+struct task_t *tasks_find(const struct tasks_t *tasks, const char *name);
 struct package_t **packages_enumerate(const struct packages_t *packages);
 struct task_t **tasks_enumerate(const struct tasks_t *tasks);
 

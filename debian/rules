@@ -21,7 +21,7 @@ build-stamp:
 	dh_testdir
 
 	# Add here commands to compile the package.
-	$(MAKE) 
+	$(MAKE) DEBUG=0
 
 	touch build-stamp
 

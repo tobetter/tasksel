@@ -8,7 +8,7 @@ tasksel
 
 =head1 DESCRIPTION
 
-tasksel shows all available task packages and allows to user to select
+tasksel shows all available tasks and allows to user to select
 ones to install
 
 =head1 SEE ALSO
@@ -17,6 +17,7 @@ dpkg(8), apt-get(8)
 
 =head1 FILES
 
+F</usr/share/tasksel/debian-tasks.desc>
 F</var/lib/dpkg/available>
 
 =head1 AUTHOR
