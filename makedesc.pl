@@ -90,8 +90,9 @@ sub processfile {
 		}
 	}
 
-	print OUT map { ucfirst($_).": ".$fields{$_}."\n" }
-		qw{task section relevance description key};
+	foreach (qw{task section relevance description key}) {
+		print OUT ucfirst($_).": ".$fields{$_}."\n" if length $fields{$_};
+	}
 	print OUT "\n";
 }
 
