@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-01 17:50-0500\n"
-"PO-Revision-Date: 2004-03-12 22:15GMT\n"
+"PO-Revision-Date: 2004-04-04 21:00GMT\n"
 "Last-Translator: Dennis Stampfer <seppy@debian.org>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -107,13 +107,13 @@ msgid ""
 "encoding."
 msgstr ""
 "Dieser Task installiert Programme, Dateien, Schriftarten und Dokumentation, "
-"die es einfacher machen, Debian ür chinesisch sprechende Personen zu "
+"die es einfacher machen, Debian für chinesisch sprechende Personen zu "
 "verwenden, die die traditionelle Kodierung verwenden."
 
 #. Description
 #: ../po/debian-tasks.desc:71
 msgid "Cyrillic environment"
-msgstr "kyrillische Umgebung"
+msgstr "Kyrillische Umgebung"
 
 #. Description
 #: ../po/debian-tasks.desc:71
@@ -147,10 +147,8 @@ msgstr "SQL-Datenbank"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Dieser Task wählt Client- und Serverpakete für die PostgreSQL-Datenbank."
+msgid "This task selects client and server packages for the PostgreSQL database."
+msgstr "Dieser Task wählt Client- und Serverpakete für die PostgreSQL-Datenbank."
 
 #. Description
 #: ../po/debian-tasks.desc:89
@@ -205,10 +203,8 @@ msgstr "DNS-Server"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Wählt den BIND DNS-Server und verwandte Dokumentation und Hilfspakete aus."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
+msgstr "Wählt den BIND DNS-Server und verwandte Dokumentation und Hilfspakete aus."
 
 #. Description
 #: ../po/debian-tasks.desc:130
@@ -217,11 +213,12 @@ msgstr "Datei-Server"
 
 #. Description
 #: ../po/debian-tasks.desc:130
-#, fuzzy
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "Dieser Task richtet Ihr System als Datei-Server ein."
+msgstr ""
+"Dieser Task richtet Ihr System als Datei-Server ein. NetBIOS und NFS werden "
+"unterstützt."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -284,19 +281,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid "Hebrew environment"
-msgstr "Griechische Umgebung"
+msgstr "Hebräische Umgebung"
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
 msgstr ""
-"Dieser Task installiert Pakete und Dokumentationen auf Griechisch, die "
-"griechisch sprechenden Benutzern in Debian behilflich sind."
+"Dieser Task installiert Programme und Dokumentationen auf Hebräisch, die "
+"hebräisch sprechenden Benutzern von Debian behilflich sind."
 
 #. Description
 #: ../po/debian-tasks.desc:179
@@ -320,7 +315,7 @@ msgstr "Java"
 #. Description
 #: ../po/debian-tasks.desc:192
 msgid "A java development environment."
-msgstr "EIne Java-Entwicklungsmgebung"
+msgstr "Eine Java-Entwicklungsmgebung"
 
 #. Description
 #: ../po/debian-tasks.desc:200
@@ -370,31 +365,28 @@ msgstr "Laptop"
 
 #. Description
 #: ../po/debian-tasks.desc:224
-#, fuzzy
 msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities for laptops including IBM "
 "Thinkpads, Sony Vaios, Toshibas, and Dell Inspirons."
 msgstr ""
 "Das ist eine Zusammenstellung von Werkzeugen, die Laptopbenutzer auf ihren "
-"System erwarten. Es enthält einige spezielle Werkzeuge für u.a. IBM "
+"System erwarten. Es enthält einige spezielle Werkzeuge für Laptops wie IBM "
 "Thinkpads, Sony Vaios, Toshibas und Dell Inspirons."
 
 #. Description
 #: ../po/debian-tasks.desc:234
-#, fuzzy
 msgid "Lithuanian environment"
-msgstr "Thailändische Umgebung"
+msgstr "Litauische Umgebung"
 
 #. Description
 #: ../po/debian-tasks.desc:234
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
 msgstr ""
-"Dieser Task installiert Pakete und Dokumentationen in Katalanisch, die "
-"katalanisch sprechenden Benutzern in Debian behilflich sind."
+"Dieser Task installiert Pakete und Dokumentationen auf Litauisch, die "
+"litauisch sprechenden Benutzern in Debian behilflich sind."
 
 #. Description
 #: ../po/debian-tasks.desc:242
@@ -463,7 +455,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Dieser Task installiert Pakete und Dokumentationen in Norwegisch, die "
-"norwegisch sprechenden Benutzenr in Debian behilflich sind."
+"norwegisch sprechenden Benutzern in Debian behilflich sind."
 
 #. Description
 #: ../po/debian-tasks.desc:281
@@ -571,9 +563,10 @@ msgstr "TeX/LaTeX-Umgebung"
 
 #. Description
 #: ../po/debian-tasks.desc:342
-msgid ""
-"This task provides necessary packages for composing documents in TeX/LaTeX."
+msgid "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
+"Dieser Task stellt wichtige Pakete zum Erstellen von TeX/LaTeX Dokumenten "
+"bereit."
 
 #. Description
 #: ../po/debian-tasks.desc:352
@@ -610,21 +603,8 @@ msgstr "Web-Server"
 
 #. Description
 #: ../po/debian-tasks.desc:369
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
+msgid "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Dieser Task wählt Pakete aus, die für den allgemeinen Gebrauch als Web-"
 "Server nützlich sind."
 
-#~ msgid "Tcl/Tk"
-#~ msgstr "Tcl/Tk"
-
-#~ msgid ""
-#~ "Packages commonly used in developing applications using the Tcl language "
-#~ "and Tk Toolkit."
-#~ msgstr ""
-#~ "Pakete, die normalerweise für die Entwicklung von Anwendungen mit der Tcl-"
-#~ "Sprache und dem Tk-Toolkit gebraucht werden."
-
-#~ msgid "a TeX/LaTeX environment"
-#~ msgstr "eine TeX/LaTeX-Umgebung"
