@@ -351,13 +351,8 @@ sub main {
 		close IN;
 		unlink $tmpfile;
 		map { $_->{_install} = 1 } debconf_to_task($ret, @tasks);
-		if (! $options{test} && $ret=~/manual package selection/) {
-			# Doing better than this calls for a way to queue stuff for
-			# install in aptitude and then enter interactive mode.
-			my $ret=system("aptitude") >> 8;
-			if ($ret != 0) {
-				error gettext("aptitude failed");
-			}
+		if ($ret=~/manual package selection/) {
+			unshift @aptitude_install, "--visual-preview";
 		}
 	}
 

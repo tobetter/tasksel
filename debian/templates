@@ -9,7 +9,7 @@ _Description: Choose software to install:
 
 Template: tasksel/tasks
 Type: multiselect
-Choices: ${CHOICES}
+Choices: ${CHOICES}, manual package selection
 _Description: Choose software to install:
  You can choose to install one or more of the following predefined
  collections of software.
