@@ -39,13 +39,13 @@ sub read_task_desc {
 		my @lines=split("\n");
 		while (@lines) {
 			my $line=shift(@lines);
-			if ($line=~/^([^ ]+): (.*)/) {
+			if ($line=~/^([^ ]+):(?: (.*))?/) {
 				my ($key, $value)=($1, $2);
 				$key=lc($key);
 				if (@lines && $lines[0] =~ /^\s+/) {
 					# multi-line field
 					my @values;
-					if (length $value) {
+					if (defined $values && length $value) {
 						push @values, $value;
 					}
 					while (@lines && $lines[0] =~ /^\s+(.*)/) {
