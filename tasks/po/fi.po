@@ -1,3 +1,4 @@
+# translation of fi.po to Finnish
 # translation of tasksel_tasks_po_fi.po.txt.po to Finnish
 # Copyright © 2003 SPI, Inc.
 # Tommi Vainikainen <thv+debian@iki.fi>, 2003.
@@ -5,11 +6,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasks\n"
+"Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 22:52-0500\n"
-"PO-Revision-Date: 2004-01-29 10:33+0200\n"
-"Last-Translator: Tommi Vainikainen <thv+debian@iki.fi>\n"
+"PO-Revision-Date: 2004-02-07 19:08+0200\n"
+"Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
@@ -30,12 +31,12 @@ msgid ""
 msgstr ""
 "Tarjoaa välttämättömät komponentit itsenäiseen työasemaan, jossa käytetään X-"
 "ikkunointijärjestelmää. Tämä tarjoaa X-kirjastot, X-palvelimen, joukon "
-"kirjasimia ja joukon X-asiakasohjelmia ja -apuohjelmia."
+"kirjasintyyppejä, X-asiakasohjelmia ja -apuohjelmia."
 
 #. Description
 #: ../po/debian-tasks.desc:13
 msgid "Broadband internet connection"
-msgstr "Laajakaistainen internetyhteys"
+msgstr "Laajakaistainen Internetyhteys"
 
 #. Description
 #: ../po/debian-tasks.desc:13
@@ -70,7 +71,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Asentaa paketit ja dokumentaation katalaaniksi auttamaan katalaaninkielisiä "
-"henkilöitä Debianin käytössä."
+"Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:41
@@ -84,9 +85,9 @@ msgid ""
 "it easier for Chinese speakers to use Debian, using the simplified Chinese "
 "encoding."
 msgstr ""
-"Asentaa ohjelmat, datatiedostot, kirjasimet ja dokumentaation auttamaan "
-"kiinankielisiä henkilöitä Debianin käytössä kun käytössä on "
-"yksinkertaistettu kiinalainen merkistö."
+"Asentaa ohjelmat, datatiedostot, kirjasintyypit ja dokumentaation auttamaan "
+"kiinankielisiä Debianin käytössä kun käytössä on yksinkertaistettu "
+"kiinalainen merkistö."
 
 #. Description
 #: ../po/debian-tasks.desc:56
@@ -100,9 +101,9 @@ msgid ""
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
 "encoding."
 msgstr ""
-"Asentaa ohjelmat, datatiedostot, kirjasimet ja dokumentaation auttamaan "
-"kiinankielisiä henkilöitä Debianin käytössä kun käytössä on perinteinen "
-"kiinalainen merkistö.b"
+"Asentaa ohjelmat, datatiedostot, kirjasintyypit ja dokumentaation auttamaan "
+"kiinankielisiä Debianin käytössä kun käytössä on perinteinen "
+"kiinalainen merkistö."
 
 #. Description
 #: ../po/debian-tasks.desc:71
@@ -116,9 +117,9 @@ msgid ""
 "to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
 "Serbian and Ukrainian."
 msgstr ""
-"Asentaa kyrilliset kirjasimet ja muut ohjelmistot, jotka tarvitaan "
-"käytettäessä kyrillistä ympäristöä. Tämä tukee valkovenäläistä, "
-"bulgarialaista, makedonialaista, venäläistä, serbialaista ja ukrainalaista."
+"Asentaa kyrilliset kirjasintyypit ja muut ohjelmistot, jotka tarvitaan "
+"käytettäessä kyrillistä ympäristöä. Tämä tukee valkovenäjää, "
+"bulgariaa, makedoniaa, venäjää, serbiaa ja ukrainaa."
 
 #. Description
 #: ../po/debian-tasks.desc:81
@@ -132,7 +133,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Asentaa paketit ja dokumentaation tanskaksi auttamaan tanskankielisiä "
-"henkilöitä Debianin käytössä."
+"Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:89
@@ -170,7 +171,7 @@ msgid ""
 "GNOME and KDE desktops, and provides a display manager which lets the user "
 "choose between the two."
 msgstr ""
-"Tarjoaa perustyöpöytäohjelmistot sisältäen kokoelman istunnonhallitsimia, "
+"Tarjoaa perustyöpöytäohjelmistot, muun muassa istunnonhallitsimia, "
 "tiedostonhallintaa ja www-selaimia. Tämä sisältää sekä Gnome- että KDE-"
 "työpöydät ja tarjoaa kirjautumisohjelman, joka antaa käyttäjän valita näiden "
 "väliltä."
@@ -186,9 +187,9 @@ msgid ""
 "This task selects packages that address special needs of computers using a "
 "slow part-time dialup connection (by modem, ISDN, or similar)."
 msgstr ""
-"Valitsee paketit, jotka kohdistuvat tietokoneiden, joissa käytetään hidasta "
-"osa-aikaista soittoyhteyttä (modeemilla, ISDN:llä tai muulla vastaavalla), "
-"erityistarpeisiin."
+"Valitsee paketit hidasta vain osan aikaa päällä olevaa"
+"soittoyhteyttä käyttävien tietokoneiden erityistarpeisiin "
+"(modeemi, ISDN tai vastaava)."
 
 #. Description
 #: ../po/debian-tasks.desc:122
@@ -199,7 +200,7 @@ msgstr "DNS-palvelin"
 #: ../po/debian-tasks.desc:122
 msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
-"Valitsee BIND DNS-palvelimen ja siihen liittyvän ohjeistuksen sekä "
+"Valitsee BIND DNS-palvelimen, siihen liittyvän ohjeistuksen sekä "
 "hyötyohjelmapaketit."
 
 #. Description
@@ -224,7 +225,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Asentaa paketit ja dokumentaation ranskaksi auttamaan ranskankielisiä "
-"henkilöitä Debianin käytössä."
+"Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:146
@@ -254,7 +255,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Asentaa paketit ja dokumentaation saksaksi auttamaan saksankielisiä "
-"henkilöitä Debianin käytössä."
+"Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:162
@@ -268,7 +269,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Asentaa paketit ja dokumentaation kreikaksi auttamaan kreikankielisiä "
-"henkilöitä Debianin käytössä."
+"Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:170
@@ -280,7 +281,7 @@ msgstr "Japanilainen ympäristö"
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
-msgstr "Asentaa paketit auttamaan japaninkielisiä henkilöitä Debianin käytössä."
+msgstr "Asentaa paketit auttamaan japaninkielisiä Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:183
@@ -325,8 +326,8 @@ msgid ""
 "This task installs programs, data files, fonts, and documentation to make it "
 "easier for Korean speakers to use Debian."
 msgstr ""
-"Asentaa ohjelmat, datatiedostot, kirjasimet ja dokumentaation auttamaan "
-"koreankielisiä henkilöitä Debianin käytössä."
+"Asentaa ohjelmat, datatiedostot, kirjasintyypit ja dokumentaation auttamaan "
+"koreankielisiä Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:215
@@ -342,8 +343,8 @@ msgid ""
 msgstr ""
 "Tämä on kokoelma työkaluja, jotka kannettavan tietokoneen käyttäjät "
 "odottavat löytävänsä järjestelmästä. Tämä sisältää joitain "
-"erikoishyötyohjelmia kannettavilla sisältäen IBM Thinkpadit, Sony Vaiot, "
-"Toshibat ja Dell Inspironit."
+"erikoishyötyohjelmia joillekin kannettaville, muun muassa IBM Thinkpad, Sony Vaio, "
+"Toshiba ja Dell Inspiron."
 
 #. Description
 #: ../po/debian-tasks.desc:225
@@ -402,7 +403,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:254
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
-msgstr "Norjalainen (bokmal ja nynorsk) ympäristö"
+msgstr "Norjalainen (bokmål ja nynorsk) ympäristö"
 
 #. Description
 #: ../po/debian-tasks.desc:254
@@ -411,7 +412,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Asentaa paketit ja dokumentaation norjaksi auttamaan norjankielisiä "
-"henkilöitä Debianin käytössä."
+"Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:264
@@ -441,7 +442,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Asentaa paketit ja dokumentaation puolaksi auttamaan puolankielisiä "
-"henkilöitä Debianin käytössä."
+"Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:283
@@ -479,7 +480,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Asentaa ohjelmat ja dokumentaation venäjäksi auttamaan venäjänkielisiä "
-"henkilöitä Debianin käytössä."
+"Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:309
@@ -509,7 +510,7 @@ msgid ""
 "easier for Spanish speakers to use Debian."
 msgstr ""
 "Asentaa ohjelmat, datatiedostot ja dokumentaation espanjaksi auttamaan "
-"espanjankielisiä henkilöitä Debianin käytössä."
+"espanjankielisiä Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:325
@@ -543,7 +544,7 @@ msgstr "Thailainen ympäristö"
 #. Description
 #: ../po/debian-tasks.desc:343
 msgid "This task installs packages that make it easier for Thai to use Debian."
-msgstr "Asentaa paketit auttamaan thainkielisiä henkilöitä Debianin käytössä."
+msgstr "Asentaa paketit auttamaan thainkielisiä Debianin käytössä."
 
 #. Description
 #: ../po/debian-tasks.desc:353
