@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-01-18 23:37+0200\n"
-"PO-Revision-Date: 2003-10-24 18:57+0900\n"
+"POT-Creation-Date: 2004-01-19 22:45+0900\n"
+"PO-Revision-Date: 2004-01-19 22:47+0900\n"
 "Last-Translator: Tomohiro KUBOTA <kubota@debian.org>\n"
 "Language-Team: Debian Japanese List <debian-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -209,7 +209,7 @@ msgstr "パッケージは選択されませんでした\n"
 #: ../tasksel.c:197
 #, c-format
 msgid "No tasks found on this system.\n"
-msgstr ""
+msgstr "このシステムにはタスクリストがありません。\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
@@ -224,13 +224,3 @@ msgstr "%d バイトのメモリが確保できません"
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "%d バイトのメモリが再確保できません"
-
-#~ msgid ""
-#~ "No tasks found on this system.\n"
-#~ "Did you update your available file? Try running dselect update.\n"
-#~ msgstr ""
-#~ "このシステムにはタスクリストがありません。\n"
-#~ "available ファイルは更新しましたか? dselect の update を試してください。\n"
-
-#~ msgid "Debian Task Installer"
-#~ msgstr "Debian タスクインストーラ"
