@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-06-10 09:02+0200\n"
-"PO-Revision-Date: 2004-02-04 00:50+0100\n"
+"PO-Revision-Date: 2004-06-29 11:58+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@o2.pl>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -26,183 +26,22 @@ msgid ""
 "\t-n -- don't show UI; use with -r or -i usually\n"
 "\t-a -- show all tasks, even those with no packages in them\n"
 msgstr ""
+"Sposób u¿ycia:\n"
+"tasksel install <zadanie>\n"
+"tasksel [opcje]; gdzie opcje mog± byæ kombinacj± poni¿szych:\n"
+"\t-t -- tryb testowy; nic nie robi w rzeczywisto¶ci\n"
+"\t-r -- instaluj wszystkie pakiety z priorytetem wymagane\n"
+"\t-i -- instaluj wszystkie pakiety z priorytetem wa¿ne\n"
+"\t-s -- instaluj wszystkie pakiety z priorytetem standardowe\n"
+"\t-n -- nie pokazuj interfejsu u¿ytkownika; u¿ywane zazwyczaj z -r lub -i\n"
+"\t-a -- poka¿ wszystkie zadania, nawet te bez pakietów\n"
 
 #: ../tasksel.pl:250
 msgid "ignoring other selected packages in favour of manual package selection"
-msgstr ""
+msgstr "ignorowanie innych wybranych pakietów w celu rêcznego wyboru"
 
 #: ../tasksel.pl:254 ../tasksel.pl:266
 msgid "aptitude failed"
-msgstr ""
+msgstr "b³±d aptitude"
 
-#~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "Nie uda³o siê zaalokowaæ pamiêci na bufor wyliczania"
 
-#~ msgid ""
-#~ "Fatal error encountered at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Wyst±pi³ krytyczny b³±d: %s:%d\n"
-#~ "\t"
-
-#~ msgid ""
-#~ "I/O error at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "B³±d wej¶cia/wyj¶cia: %s:%d\n"
-#~ "\t"
-
-#~ msgid "(no description)"
-#~ msgstr "(brak opisu)"
-
-#~ msgid "End-user"
-#~ msgstr "U¿ytkownik"
-
-#~ msgid "Hardware Support"
-#~ msgstr "Obs³uga sprzêtu"
-
-#~ msgid "Servers"
-#~ msgstr "Serwery"
-
-#~ msgid "Development"
-#~ msgstr "Programowanie"
-
-#~ msgid "Localization"
-#~ msgstr "Obs³uga jêzyków"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Ró¿ne"
-
-#~ msgid "Unable to initialize the terminal"
-#~ msgstr "Nie uda³o siê zainicjalizowaæ terminala"
-
-#~ msgid "Unable to initialize screen output"
-#~ msgstr "Nie uda³o siê zainicjalizowaæ biblioteki slang"
-
-#~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "Nie uda³o siê zainicjalizowaæ interfejsu klawiatury"
-
-#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr "Instalator zadañ Debiana v%s - (c) 1999-2004 SPI i inni"
-
-#~ msgid "^Finish"
-#~ msgstr "^Zakoñcz"
-
-#~ msgid "Task ^Info"
-#~ msgstr "^Informacja na temat zadania"
-
-#~ msgid "^Help"
-#~ msgstr "^Pomoc"
-
-#~ msgid "Select tasks to install"
-#~ msgstr "Wybierz zadania do zainstalowania"
-
-#~ msgid "Ok"
-#~ msgstr "Ok"
-
-#~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Nieprawid³owy indeks: %d >= %d"
-
-#~ msgid "Help"
-#~ msgstr "Pomoc"
-
-#~ msgid ""
-#~ "Tasks allow you to quickly install a selection of packages that performs "
-#~ "a given task.\n"
-#~ "\n"
-#~ "The main chooser list shows a list of tasks that you can choose to "
-#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
-#~ "toggles the selection of the task at the cursor. You can also press A to "
-#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-#~ "program and begin installation of your selected tasks.\n"
-#~ "\n"
-#~ "Thank you for using Debian.\n"
-#~ "\n"
-#~ "Press enter to return to the task selection screen"
-#~ msgstr ""
-#~ "Zadania pozwalaj± szybko zainstalowaæ zbiór pakietów wykonuj±cych pewn± "
-#~ "funkcjê.\n"
-#~ "\n"
-#~ "G³ówna lista przedstawia zadania, które mo¿na zainstalowaæ. Klawisze "
-#~ "strza³ek przesuwaj± kursor. Naci¶niêcie klawisza ENTER lub SPACJI "
-#~ "powoduje odwrócenie zaznaczenia zadania, przy którym znajduje siê kursor. "
-#~ "Mo¿na tak¿e nacisn±æ A, aby wybraæ wszystkie pakiety, lub N, aby usun±æ "
-#~ "zaznaczenie z wszystkich pakietów. Naci¶niêcie Q spowoduje zakoñczenie "
-#~ "programu i rozpocznie instalacjê zaznaczonych zadañ.\n"
-#~ "\n"
-#~ "Dziêkujemy za wybranie Debiana.\n"
-#~ "\n"
-#~ "Proszê nacisn±æ ENTER, aby powróciæ do ekranu wyboru zadañ."
-
-#~ msgid ""
-#~ "Description:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Included packages:\n"
-#~ msgstr ""
-#~ "Opis:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Zawarte pakiety:\n"
-
-#~ msgid "(no description available)"
-#~ msgstr "(brak opisu)"
-
-#~ msgid "Unknown signal seen"
-#~ msgstr "Nieznany sygna³"
-
-#~ msgid "tasksel install <task>\n"
-#~ msgstr "tasksel install <zadanie>\n"
-
-#~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr "tasksel [opcje]; gdzie opcje to kombinacja:\n"
-
-#~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- tryb testowy; nie uruchamia apt-get przy wyj¶ciu"
-
-#~ msgid ""
-#~ "-q -- queue installs; do not install packages with apt-get;\n"
-#~ "\t\tjust queue them in dpkg"
-#~ msgstr ""
-#~ "-q -- kolejkuj instalacje; nie instaluj pakietów przy pomocy\n"
-#~ "\t\tapt-get; jedynie kolejkuj je w dpkg"
-
-#~ msgid "-r -- install all required-priority packages"
-#~ msgstr "-r -- zainstaluj wszystkie wymagane pakiety"
-
-#~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- zainstaluj wszystkie wa¿ne pakiety"
-
-#~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- zainstaluj wszystkie standardowe pakiety"
-
-#~ msgid "-n -- don't show UI; use with -r or -i usually"
-#~ msgstr ""
-#~ "-n -- nie pokazuj interfejsu u¿ytkownika; zazwyczaj\n"
-#~ "\t\tu¿ywane z -r lub -i"
-
-#~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr "-a -- pokazuj wszystkie zadania, nawet niezawieraj±ce pakietów"
-
-#~ msgid "No packages selected\n"
-#~ msgstr "Nie wybrano ¿adnych pakietów\n"
-
-#~ msgid "No tasks found on this system.\n"
-#~ msgstr "Nie znaleziono ¿adnych zadañ w systemie.\n"
-
-#~ msgid "Cannot allocate memory for strdup"
-#~ msgstr "Nie uda³o siê zaalokowaæ pamiêci dla funkcji strdup"
-
-#~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "Nie uda³o siê zaalokowaæ %d bajtów pamiêci"
-
-#~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "Nie uda³o siê ponownie zaalokowaæ %d bajtów pamiêci"
-
-#, fuzzy
-#~ msgid ""
-#~ "No tasks found on this system.\n"
-#~ "Did you update your available file? Try running dselect update.\n"
-#~ msgstr ""
-#~ "Nie znaleziono zadañ w systemie.\n"
-#~ "Czy uaktualni³e¶(³a¶) plik dostêpnych pakietów?\n"
