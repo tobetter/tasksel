@@ -1,0 +1,19 @@
+Task: ukrainian
+Section: l10n
+Description: Ukrainian environment
+ This task installs programs and documentation in Ukrainian
+ to help Ukrainian speaking people use Debian.
+Maintainer: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>
+Key:
+ language-env
+Packages:
+ console-cyrillic
+ aspell-ukr
+ konwert
+ re
+ xfonts-bolkhov-koi8u-75dpi
+ xfonts-bolkhov-koi8u-misc
+ xfonts-cronyx-koi8u-100dpi
+ xfonts-intl-european
+ kde-i18n-uk
+ mozilla-firefox-locale-uk
