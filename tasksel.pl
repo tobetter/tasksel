@@ -286,7 +286,7 @@ if (@aptitude_install) {
 		print "aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
 	}
 	else {
-		my $ret=system("aptitude", "-y", "install", @aptitude_install) >> 8;
+		my $ret=system("aptitude", "--without-recommends", "-y", "install", @aptitude_install) >> 8;
 		if ($ret != 0) {
 			error gettext("aptitude failed");
 		}
