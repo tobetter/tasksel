@@ -8,12 +8,21 @@ Description: Desktop environment
  which lets the user choose between the two.
 Key:
   x-window-system-core
-  kde
 # The basics of gnome, not the whole thing.
   gnome-desktop-environment
+# This could probably be reduced more.
+  kde-core
+  kdeadmin
+  kdeartwork
+  kdegraphics
+  kdemultimedia
+  kdenetwork
+  kdeutils
+  kdepim
 Packages:
   gdm
   gnome
+  kde
 # gnome whines if there's no xscreensaver
   xscreensaver
 # a screen saver does silly things without this

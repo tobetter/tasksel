@@ -1,10 +1,13 @@
-tasksel (2.15) UNRELEASED; urgency=low
+tasksel (2.15) unstable; urgency=high
 
   * Joey Hess
     - Fix email address. Closes: #276031
     - Drop apparently useless libecpg4 from database-server. Closes: #275890
+    - Reduce set of kde stuff that is key for the desktop task, in an attempt
+      to make CD 1 continue to fit, similar to what was done with gnome
+      earlier.
 
- -- Joey Hess <joeyh@debian.org>  Mon, 11 Oct 2004 14:03:41 -0400
+ -- Joey Hess <joeyh@debian.org>  Thu, 11 Nov 2004 22:19:50 -0500
 
 tasksel (2.14) unstable; urgency=medium
 
