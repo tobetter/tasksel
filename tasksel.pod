@@ -4,12 +4,39 @@ tasksel - a user interface for installing tasks
 
 =head1 SYNOPSIS
 
-tasksel
+tasksel install <task>
+
+tasksel [options]
 
 =head1 DESCRIPTION
 
 tasksel shows all available tasks and allows to user to select
 ones to install
+
+
+=head1 OPTIONS
+
+=item B<-t>
+	test mode; don't actually run apt-get on exit
+
+=item B<-q>
+	queue installs; do not install packages with apt-get; just
+	queue them in dpkg
+
+=item B<-r>
+	install all required-priority packages
+
+=item B<-i>
+        install all important-priority packages
+
+=item B<-s>
+	install all standard-priority packages
+
+=item B<-n>
+	don't show UI; use with -r or -i usually
+
+=item B<-a>
+	show all tasks, even those with no packages in them
 
 =head1 SEE ALSO
 

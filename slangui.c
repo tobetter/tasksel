@@ -1,4 +1,4 @@
-/* $Id: slangui.c,v 1.23 2001/09/16 20:14:58 dwhedon Rel $ */
+/* $Id: slangui.c,v 1.24 2001/11/22 17:53:48 tausq Rel $ */
 /* slangui.c - SLang user interface routines */
 /* TODO: the redraw code is a bit broken, also this module is using way too many
  *       global vars */
@@ -15,8 +15,8 @@
 #include "strutl.h"
 #include "macros.h"
 
-#define TASK_SHORTDESC(t) ((t)->task_pkg ? (t)->task_pkg->shortdesc : "(no description)")
-#define TASK_LONGDESC(t) ((t)->task_pkg ? (t)->task_pkg->longdesc : "(no description)")
+#define TASK_SHORTDESC(t) ((t)->task_pkg ? (t)->task_pkg->shortdesc : _("(no description)"))
+#define TASK_LONGDESC(t) ((t)->task_pkg ? (t)->task_pkg->longdesc : _("(no description)"))
 
 #define TASK_SECTION(t) ((t)->task_pkg && (t)->task_pkg->section ? (t)->task_pkg->section : "misc")
 
@@ -72,12 +72,12 @@ static int *_displayhint = NULL;
 static int _displaylines;
 
 struct { char *section, *desc; } sectiondesc[] = {
-  { "user",   "End-user" },
-  { "server", "Servers" },
-  { "devel",  "Development" },
-  { "l10n",   "Localization" },
-  { "hware",  "Hardware Support" },
-  { "misc",   "Miscellaneous" },
+  { "user",   N_("End-user") },
+  { "server", N_("Servers") },
+  { "devel",  N_("Development") },
+  { "l10n",   N_("Localization") },
+  { "hware",  N_("Hardware Support") },
+  { "misc",   N_("Miscellaneous") },
   {0}
 };
 
@@ -85,7 +85,7 @@ static char *getsectiondesc(char *sec) {
   int i;
   for (i = 0; sectiondesc[i].section; i++)
     if (strcmp(sec, sectiondesc[i].section) == 0)
-      return sectiondesc[i].desc;
+      return _(sectiondesc[i].desc);
 
   return sec;
 }
@@ -229,9 +229,9 @@ void ui_resize(void)
   /* Show version and status lines */
   SLsmg_set_color(STATUSOBJ);
 
-  snprintf(buf, 160, "%s v%s - %s", 
-                     _("Debian Task Installer"), VERSION,
-		     _("(c) 1999-2001 SPI and others"));
+  snprintf(buf, 160,
+	   _("Debian Task Installer v%s - (c) 1999-2001 SPI and others"),
+	   VERSION);
   SLsmg_gotorc(0, 0);
   SLsmg_write_nstring(buf, strlen(buf));
   
@@ -676,7 +676,7 @@ void ui_drawtask(int row, int index)
   char buf[1024];
   ASSERT(_tasks != NULL);
   if (index >= _tasks->count) 
-    DIE("Index out of bounds: %d >= %d", index, _tasks->count);
+    DIE(_("Index out of bounds: %d >= %d"), index, _tasks->count);
   
   SLsmg_set_color(CHOOSEROBJ);
   SLsmg_gotorc(row, _chooserinfo.coloffset + 1);
@@ -690,7 +690,7 @@ void ui_toggletask(int row, int index)
 {
   ASSERT(_tasks != NULL);
   if (index >= _tasks->count) 
-    DIE("Index out of bounds: %d >= %d", index, _tasks->count);
+    DIE(_("Index out of bounds: %d >= %d"), index, _tasks->count);
   
   if (_tasksary[index]->selected == 0)
     _tasksary[index]->selected = 1;
@@ -769,13 +769,16 @@ void ui_showhelp(void)
   _chooserinfo.whichwindow = HELPWINDOW;
   ui_dialog(3, 3, ROWS - 7, COLUMNS - 10, _("Help"), 
   _("Tasks allow you to quickly install " \
-    "a selection of packages that performs a given task.\r\rThe main chooser " \
-    "list shows a list of tasks that you can choose to install. The arrow " \
-    "keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the " \
-    "selection of the task at the cursor. You can also press A to select " \
-    "all tasks, or N to deselect all tasks. Pressing Q will exit this " \
-    "program and begin installation of your selected tasks.\r\rThank you for " \
-    "using Debian.\r\rPress enter to return to the task selection screen"),
+    "a selection of packages that performs a given task.\n\nThe main " \
+    "chooser list shows a list of tasks that you can choose to " \
+    "install. The arrow keys moves the cursor. Pressing ENTER or the " \
+    "SPACEBAR toggles the selection of the task at the cursor. You can " \
+    "also press A to select all tasks, or N to deselect all tasks. " \
+    "Pressing Q will exit this program and begin installation of your " \
+    "selected tasks.\n\n" \
+    "Thank you for using Debian.\n\n" \
+    "Press enter to return to the task selection screen"
+    /* TRANS: don't wrap lines because of different screen sizes! */),
 	    1, SCROLLBAR_VERT);
   _chooserinfo.whichwindow = CHOOSERWINDOW;
   ui_drawscreen();
@@ -797,7 +800,8 @@ void ui_showpackageinfo(void)
   
   ASSERT(_tasks != NULL);
   _chooserinfo.whichwindow = DESCWINDOW;
-  if (index >= _tasks->count) DIE("Index out of bounds: %d >= %d", index, _tasks->count);
+  if (index >= _tasks->count)
+    DIE(_("Index out of bounds: %d >= %d"), index, _tasks->count);
   
   tsk = _tasksary[index];
   ASSERT(tsk != NULL);

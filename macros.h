@@ -1,4 +1,4 @@
-/* $Id: macros.h,v 1.3 2001/04/24 06:35:07 tausq Rel $ */
+/* $Id: macros.h,v 1.4 2001/11/22 17:53:48 tausq Rel $ */
 #ifndef _MACROS_H
 #define _MACROS_H
 
@@ -39,7 +39,7 @@
 #define DIE(fmt, arg...) \
   do { \
     if (ui_running()) ui_shutdown(); \
-    fprintf(stderr, "Fatal error encountered at %s:%d\r\n\t", __FILE__, __LINE__); \
+    fprintf(stderr, _("Fatal error encountered at %s:%d\r\n\t"), __FILE__, __LINE__); \
     fprintf(stderr, fmt, ##arg); \
     fprintf(stderr, "\r\n"); \
     ABORT; \
@@ -48,12 +48,14 @@
 #define PERROR(ctx) \
   do { \
     if (ui_running()) ui_shutdown(); \
-    fprintf(stderr, "I/O error at %s:%d\r\n\t", __FILE__, __LINE__); \
+    fprintf(stderr, _("I/O error at %s:%d\r\n\t"), __FILE__, __LINE__); \
     fprintf(stderr, "%s: %s\r\n", ctx, strerror(errno)); \
     ABORT; \
   } while (0);
   
 #define NEW(S) (S *)MALLOC(sizeof(S))
 #define _(s)   gettext(s)
+#define gettext_noop(s)  (s)
+#define N_(s) gettext_noop (s)
   
 #endif

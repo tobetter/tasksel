@@ -1,4 +1,4 @@
-XGETTEXT = xgettext --keyword=_
+XGETTEXT = xgettext --keyword=_ --keyword=N_ --add-comments=TRANS:
 MOS:=$(addsuffix .mo, $(LANGS))
 
 all: C.po $(MOS)

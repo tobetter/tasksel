@@ -1,4 +1,4 @@
-/* $Id: data.c,v 1.14 2001/09/16 20:14:58 dwhedon Rel $ */
+/* $Id: data.c,v 1.15 2001/11/22 17:53:48 tausq Rel $ */
 /* data.c - encapsulates functions for reading a package listing like dpkg's available file
  *          Internally, packages are stored in a binary tree format to faciliate search operations
  */
@@ -9,6 +9,7 @@
 #include <search.h>
 #include <string.h>
 #include <ctype.h>
+#include <libintl.h>
 
 #include "slangui.h"
 #include "util.h"
@@ -273,7 +274,7 @@ struct package_t **packages_enumerate(const struct packages_t *packages)
 	
   _packages_enumbuf = MALLOC(sizeof(struct package_t *) * packages->count);
   if (_packages_enumbuf == NULL) 
-    DIE("Cannot allocate memory for enumeration buffer");
+    DIE(_("Cannot allocate memory for enumeration buffer"));
   memset(_packages_enumbuf, 0, sizeof(struct package_t *) * packages->count);
   _packages_enumcount = 0;
   twalk((void *)packages->packages, packages_walk_enumerate);
@@ -287,7 +288,7 @@ struct task_t **tasks_enumerate(const struct tasks_t *tasks)
 
   _tasks_enumbuf = MALLOC(sizeof(struct task_t *) * tasks->count);
   if (_tasks_enumbuf == NULL) 
-    DIE("Cannot allocate memory for enumeration buffer");
+    DIE(_("Cannot allocate memory for enumeration buffer"));
   memset(_tasks_enumbuf, 0, sizeof(struct task_t *) * tasks->count);
   _tasks_enumcount = 0;
   twalk((void *)tasks->tasks, tasks_walk_enumerate);

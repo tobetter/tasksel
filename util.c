@@ -1,4 +1,4 @@
-/* $Id: util.c,v 1.3 2001/04/24 06:35:07 tausq Rel $ */
+/* $Id: util.c,v 1.4 2001/11/22 17:53:48 tausq Rel $ */
 #include "util.h"
 
 #include <string.h>
@@ -17,7 +17,7 @@ char *safe_strdup(const char *s)
   if (s != NULL) {
     p = strdup(s);
     _num_mallocs++;
-    if (p == NULL) DIE("Cannot allocate memory for strdup");
+    if (p == NULL) DIE(_("Cannot allocate memory for strdup"));
     return p;
   } else {
     return NULL;
@@ -35,7 +35,7 @@ void *safe_malloc(int size)
   
   p = malloc(size);
   _num_mallocs++;
-  if (p == NULL) DIE("Cannot allocate %d bytes of memory", size);
+  if (p == NULL) DIE(_("Cannot allocate %d bytes of memory"), size);
   return p;
 }
 
@@ -44,7 +44,7 @@ void *safe_realloc(void *x, size_t size)
   void *p;
   p = realloc(x, size);
   _num_mallocs++;
-  if (p == NULL) DIE("Cannot reallocate %d bytes of memory", size);
+  if (p == NULL) DIE(_("Cannot reallocate %d bytes of memory"), size);
   return p;
 }
 

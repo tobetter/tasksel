@@ -1,4 +1,4 @@
-/* $Id: tasksel.c,v 1.13 2001/07/02 03:43:58 ajt Rel $ */
+/* $Id: tasksel.c,v 1.14 2001/11/22 17:53:48 tausq Rel $ */
 #include "tasksel.h"
 
 #include <stdio.h>
@@ -29,6 +29,7 @@ void tasksel_signalhandler(int sig)
 
 void help(void)
 {
+  fprintf(stderr, _("tasksel install <task>\n"));
   fprintf(stderr, _("tasksel [options]; where options is any combination of:\n"));
   fprintf(stderr, "\t%s\n", _("-t -- test mode; don't actually run apt-get on exit"));
   fprintf(stderr, "\t%s\n", _("-q -- queue installs; do not install packages with apt-get;\n\t\tjust queue them in dpkg"));
