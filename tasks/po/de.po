@@ -1,20 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# First author unknown.
+# Rene Engelhard <rene@debian.org>, 2004.
+# Dennis Stampfer <seppy@debian.org>, 2004.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-12 16:22-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator:Rene Engelhard <rene@debian.org>\n"
-"Language-Team: German <LL@li.org>\n"
+"POT-Creation-Date: 2004-03-10 14:27-0500\n"
+"PO-Revision-Date: 2004-03-12 22:15GMT\n"
+"Last-Translator: Dennis Stampfer <seppy@debian.org>\n"
+"Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
 
 #. Description
 #: ../po/debian-tasks.desc:4
@@ -145,10 +147,8 @@ msgstr "SQL-Datenbank"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Dieser Task wählt Client- und Serverpakete für die PostgreSQL-Datenbank."
+msgid "This task selects client and server packages for the PostgreSQL database."
+msgstr "Dieser Task wählt Client- und Serverpakete für die PostgreSQL-Datenbank."
 
 #. Description
 #: ../po/debian-tasks.desc:89
@@ -203,14 +203,11 @@ msgstr "DNS-Server"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Wählt den BIND DNS-Server und verwandte Dokumentation und Hilfspakete aus."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
+msgstr "Wählt den BIND DNS-Server und verwandte Dokumentation und Hilfspakete aus."
 
 #. Description
 #: ../po/debian-tasks.desc:130
-#, fuzzy
 msgid "File server"
 msgstr "Datei-Server"
 
@@ -226,17 +223,15 @@ msgstr "Französische Umgebung"
 
 #. Description
 #: ../po/debian-tasks.desc:138
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
 msgstr ""
-"Dieser Task installiert Pakete und Dokumentationen in Französisch, die "
-"französisch sprechende Benutzer in Debian behilflich sind."
+"Dieser Task installiert Pakete und Dokumentationen auf Französisch, die "
+"französisch sprechenden Benutzern in Debian behilflich sind."
 
 #. Description
 #: ../po/debian-tasks.desc:147
-#, fuzzy
 msgid "Games"
 msgstr "Spiele"
 
@@ -268,19 +263,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:163
-#, fuzzy
 msgid "Greek environment"
-msgstr "Französische Umgebung"
+msgstr "Griechische Umgebung"
 
 #. Description
 #: ../po/debian-tasks.desc:163
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
 msgstr ""
-"Dieser Task installiert Pakete und Dokumentationen in Französisch, die "
-"französisch sprechende Benutzer in Debian behilflich sind."
+"Dieser Task installiert Pakete und Dokumentationen auf Griechisch, die "
+"griechisch sprechenden Benutzern in Debian behilflich sind."
 
 #. Description
 #: ../po/debian-tasks.desc:172
@@ -315,7 +308,7 @@ msgstr "Debian Jr."
 #: ../po/debian-tasks.desc:193
 msgid "Debian Jr. is a collection of Debian packages suitable for children."
 msgstr ""
-"Debian jr. ist eine Zusammenstellung von Debian Paketen, die für Kinder "
+"Debian Jr. ist eine Zusammenstellung von Debian Paketen, die für Kinder "
 "geeignet sind."
 
 #. Description
@@ -349,7 +342,6 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:217
-#, fuzzy
 msgid "Laptop"
 msgstr "Laptop"
 
@@ -380,7 +372,6 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:235
-#, fuzzy
 msgid "Mail server"
 msgstr "Mail-Server"
 
@@ -395,7 +386,6 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:243
-#, fuzzy
 msgid "Usenet news server"
 msgstr "Usenet-News-Server"
 
@@ -437,7 +427,6 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:266
-#, fuzzy
 msgid "Office environment"
 msgstr "Büroumgebung"
 
@@ -463,8 +452,8 @@ msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
 msgstr ""
-"Dieser Task installiert polnische Pakete und Dokumentation, um polnisch- "
-"sprachigen Leuten dabei zu helfen, Debian zu benutzen."
+"Dieser Task installiert Polnische Pakete und Dokumentation, um polnisch-"
+"sprechenden Menschen dabei zu helfen, Debian zu benutzen."
 
 #. Description
 #: ../po/debian-tasks.desc:285
@@ -487,7 +476,7 @@ msgid ""
 "Many Python tools and extensions, for developing scripts and simple or "
 "complex applications in Python."
 msgstr ""
-"Viele Python-Werkzeuge und -erweiterungen, zum Entwickeln von Skripten und "
+"Viele Python-Werkzeuge und -Erweiterungen, zum Entwickeln von Skripten und "
 "kleinen oder komplexen Anwendungen mit Python."
 
 #. Description
@@ -506,9 +495,8 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:311
-#, fuzzy
 msgid "Scientific applications"
-msgstr "Wissenschaftliche Programme"
+msgstr "Wissenschaftliche Anwendungen"
 
 #. Description
 #: ../po/debian-tasks.desc:311
@@ -558,11 +546,10 @@ msgstr "TeX/LaTeX-Umgebung"
 #. Description
 #: ../po/debian-tasks.desc:336
 msgid "a TeX/LaTeX environment"
-msgstr "eine TeX/LaTeX-Umgebung."
+msgstr "eine TeX/LaTeX-Umgebung"
 
 #. Description
 #: ../po/debian-tasks.desc:345
-#, fuzzy
 msgid "Thai environment"
 msgstr "Thailändische Umgebung"
 
@@ -575,9 +562,8 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:355
-#, fuzzy
 msgid "Conventional Unix server"
-msgstr "traditioneller Unix-Server"
+msgstr "Traditioneller Unix-Server"
 
 #. Description
 #: ../po/debian-tasks.desc:355
@@ -592,75 +578,13 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:362
-#, fuzzy
 msgid "Web server"
 msgstr "Web-Server"
 
 #. Description
 #: ../po/debian-tasks.desc:362
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
+msgid "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Dieser Task wählt Pakete aus, die für den allgemeinen Gebrauch als Web-"
 "Server nützlich sind."
 
-#, fuzzy
-#~ msgid "dns-server"
-#~ msgstr "Drucker-Server"
-
-#, fuzzy
-#~ msgid "dialup"
-#~ msgstr "Dialup System"
-
-#, fuzzy
-#~ msgid "file-server"
-#~ msgstr "Datei-Server"
-
-#~ msgid "games"
-#~ msgstr "Spiele"
-
-#, fuzzy
-#~ msgid "laptop"
-#~ msgstr "Laptop"
-
-#, fuzzy
-#~ msgid "korean"
-#~ msgstr "Fortran"
-
-#, fuzzy
-#~ msgid "mail-server"
-#~ msgstr "Mail-Server"
-
-#, fuzzy
-#~ msgid "news-server"
-#~ msgstr "Usenet-News-Server"
-
-#, fuzzy
-#~ msgid "print-server"
-#~ msgstr "Drucker-Server"
-
-#, fuzzy
-#~ msgid "python-dev"
-#~ msgstr "Python"
-
-#, fuzzy
-#~ msgid "unix-server"
-#~ msgstr "Mail-Server"
-
-#, fuzzy
-#~ msgid "web-server"
-#~ msgstr "Web-Server"
-
-#, fuzzy
-#~ msgid "Laptop system"
-#~ msgstr "Laptop"
-
-#~ msgid "Invoke the command `set-language-env' after installing this task."
-#~ msgstr "Rufen Sie nach der Installation den Befehl »set-language-env« auf."
-
-#~ msgid ""
-#~ "This task provides a reasonably complete environment for Fortran 77 "
-#~ "development."
-#~ msgstr ""
-#~ "Dieser Task stellt eine ziemlich vollständige Umgebung für die Fortran 77-"
-#~ "Entwicklung zur Verfügung."

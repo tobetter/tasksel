@@ -3,23 +3,24 @@
 # Copyright (C) 2000, 2003, 2004 Free Software Foundation, Inc.
 # Othmar Pasteka <pasteka@kabsi.at>, 2000, 2003.
 # Rene Engelhard <rene@debian.org>, 2004.
+# Dennis Stampfer <seppy@debian.org>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: de\n"
+"Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2004-02-21 02:16+0100\n"
-"Last-Translator: Rene Engelhard <rene@debian.org>\n"
-"Language-Team: german <de@li.org>\n"
+"PO-Revision-Date: 2004-03-12 22:04GMT\n"
+"Last-Translator: Dennis Stampfer <seppy@debian.org>\n"
+"Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.2\n"
+"X-Generator: KBabel 0.9.5\n"
 
 #: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
-msgstr ""
+msgstr "Konnte keine Speicher für den Enumeration-Buffer reservieren"
 
 #: ../macros.h:42
 #, c-format
@@ -27,8 +28,7 @@ msgid ""
 "Fatal error encountered at %s:%d\n"
 "\t"
 msgstr ""
-"Schlimmer Fehler bei %s.%d aufgetreten\n"
-"\n"
+"Schlimmer Fehler bei %s:%d aufgetreten\n"
 "\t"
 
 #: ../macros.h:51
@@ -38,13 +38,11 @@ msgid ""
 "\t"
 msgstr ""
 "I/O-Fehler bei %s.%d\n"
-"\n"
 "\t"
 
 #: ../slangui.c:18 ../slangui.c:19
-#, fuzzy
 msgid "(no description)"
-msgstr "(keine Beschreibung verfügbar)"
+msgstr "(keine Beschreibung)"
 
 #: ../slangui.c:75
 msgid "End-user"
@@ -84,8 +82,8 @@ msgstr "Initialisierung der Tastatur schlug fehl"
 
 #: ../slangui.c:239
 #, c-format
-msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-msgstr "Debian Task-Installierer v%s - (c) 1999-2004 SPI und andere"
+msgid "Debian Task Installer v%s - (c) 1999-2003 SPI and others"
+msgstr "Debian Task-Installer v%s - (c) 1999-2003 SPI und andere"
 
 #: ../slangui.c:393
 msgid "^Finish"
@@ -110,7 +108,7 @@ msgstr "Ok"
 #: ../slangui.c:685 ../slangui.c:699 ../slangui.c:810
 #, c-format
 msgid "Index out of bounds: %d >= %d"
-msgstr ""
+msgstr "Index außerhalb der Begrenzung: %d >= %d"
 
 #: ../slangui.c:776
 msgid "Help"
@@ -222,23 +220,15 @@ msgstr "Keine Tasks auf diesem System gefunden.\n"
 
 #: ../util.c:21
 msgid "Cannot allocate memory for strdup"
-msgstr ""
+msgstr "Konnte keinen Speicher für strdup reservieren"
 
 #: ../util.c:39
 #, c-format
 msgid "Cannot allocate %d bytes of memory"
-msgstr ""
+msgstr "Konnte %d Byte im Speicher nicht reservieren"
 
 #: ../util.c:48
 #, c-format
 msgid "Cannot reallocate %d bytes of memory"
-msgstr ""
-
-#~ msgid ""
-#~ "No tasks found on this system.\n"
-#~ "Did you update your available file? Try running dselect update.\n"
-#~ msgstr ""
-#~ "Keine Tasks auf diesem System gefunden.\n"
-#~ "Wurde die \"available\" Datei aktualisiert? Versuchen Sie, dselect update "
-#~ "auszuführen.\n"
+msgstr "Konnte %d Byte im Speicher nicht neu zuteilen"
 
