@@ -1,22 +1,23 @@
 XGETTEXT = xgettext --keyword=_ --keyword=N_ --add-comments=TRANS:
+POTFILE = tasksel.pot
 MOS:=$(addsuffix .mo, $(LANGS))
 
-all: C.po $(MOS)
+all: $(POTFILE) $(MOS)
 	touch build_stamp
 
-C.po:
+$(POTFILE):
 	$(XGETTEXT) -o $@ ../*.[ch]
 
 %.mo: %.po
 	msgfmt -o $@ $<
 
 clean:
-	-rm -f C.po build_stamp
+	-rm -f $(POTFILE) build_stamp
 	-rm -f *.mo
 
 update: $(addprefix update-, $(LANGS))
 
-update-%: %.po C.po
+update-%: %.po $(POTFILE)
 	mv $< $<.bak
-	msgmerge $<.bak C.po > $<
+	msgmerge $<.bak $(POTFILE) > $<
 
