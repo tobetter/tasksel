@@ -200,7 +200,6 @@ sub task_packages {
 	}
 	else {
 		# external method
-		print "$packagesdir/$task->{packages} $task->{task}\n";
 		@list=grep { package_avail($_) } split("\n", `$packagesdir/$task->{packages} $task->{task}`);
 	}
 	return @list;
