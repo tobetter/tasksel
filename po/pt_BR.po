@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.11\n"
-"POT-Creation-Date: 2001-11-19 21:53-0200\n"
+"POT-Creation-Date: 2002-01-27 19:12-0200\n"
 "PO-Revision-Date: 2001-11-19 22:36-0200\n"
 "Last-Translator: Andre Luis Lopes <andrelop@ig.com.br>\n"
 "Language-Team: Debian-BR <debian-l10n-portuguese@lists.debian.org>\n"
@@ -13,152 +13,47 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data.c:17
-msgid "Package: "
-msgstr "Pacote:"
-
-#: ../data.c:18
-msgid "Task: "
-msgstr "Tarefa:"
-
-#: ../data.c:19
-msgid "Depends: "
-msgstr "Depende:"
-
-#: ../data.c:20
-msgid "Recommends: "
-msgstr "Recomenda:"
-
-#: ../data.c:21
-msgid "Suggests: "
-msgstr "Sugere:"
-
-#: ../data.c:22
-msgid "Description: "
-msgstr "Descrição:"
-
-#: ../data.c:23
-msgid "Priority: "
-msgstr "Prioridade:"
-
-#: ../data.c:24
-msgid "Section: "
-msgstr "Seção:"
-
-#: ../data.c:25
-msgid "Status: "
-msgstr "Estado:"
-
-#: ../data.c:26
-msgid "/var/lib/dpkg/available"
-msgstr "/var/lib/dpkg/available"
-
-#: ../data.c:27
-msgid "/var/lib/dpkg/status"
-msgstr "/var/lib/dpkg/status"
-
-#: ../data.c:142
-msgid ","
-msgstr ","
-
-#: ../data.c:231
-#, c-format
-msgid "W: duplicate task info for %s\n"
-msgstr "W: informação duplicada de tarefa para %s\n"
-
-#: ../data.c:276 ../data.c:290
+#: ../data.c:277 ../data.c:291
 msgid "Cannot allocate memory for enumeration buffer"
 msgstr "Não foi possível alocar memória para o buffer de enumeração"
 
-#: ../data.c:306
+#: ../macros.h:42
 #, c-format
-msgid "Task %s [%s]:\n"
-msgstr "Tarefa %s [%s]:\n"
+msgid ""
+"Fatal error encountered at %s:%d\r\n"
+"\t"
+msgstr ""
+"Erro fatal encontrado em %s:%d\r\n"
+"\t"
 
-#: ../data.c:307 ../slangui.c:21 ../slangui.c:80
-msgid "misc"
-msgstr "miscelânea"
-
-#: ../data.c:309
+#: ../macros.h:51
 #, c-format
-msgid "  %s\n"
-msgstr "  %s\n"
-
-#: ../data.c:332 ../data.c:418
-msgid "r"
-msgstr "r"
-
-#: ../data.c:388 ../data.c:490
-msgid "task-"
-msgstr "tarefa-"
-
-#: ../data.c:459
-msgid "required"
-msgstr "requerido"
-
-#: ../data.c:461
-msgid "important"
-msgstr "importante"
-
-#: ../data.c:463
-msgid "standard"
-msgstr "padrão"
-
-#: ../data.c:465
-msgid "optional"
-msgstr "opcional"
-
-#: ../data.c:467
-msgid "extra"
-msgstr "extra"
-
-#: ../data.c:501
-msgid "tasks-"
-msgstr "tarefas-"
-
-#: ../data.c:504
-msgid "junk"
-msgstr "lixo"
+msgid ""
+"I/O error at %s:%d\r\n"
+"\t"
+msgstr ""
+"Erro de I/O em %s:%d\r\n"
+"\t"
 
 #: ../slangui.c:18 ../slangui.c:19
 msgid "(no description)"
 msgstr "(sem descrição)"
 
 #: ../slangui.c:75
-msgid "user"
-msgstr "usuário"
-
-#: ../slangui.c:75
 msgid "End-user"
 msgstr "Usuário-final"
-
-#: ../slangui.c:76
-msgid "server"
-msgstr "servidor"
 
 #: ../slangui.c:76
 msgid "Servers"
 msgstr "Servidores"
 
 #: ../slangui.c:77
-msgid "devel"
-msgstr "desenv"
-
-#: ../slangui.c:77
 msgid "Development"
 msgstr "Desenvolvimento"
 
 #: ../slangui.c:78
-msgid "l10n"
-msgstr "l10n"
-
-#: ../slangui.c:78
 msgid "Localization"
 msgstr "Localização"
-
-#: ../slangui.c:79
-msgid "hware"
-msgstr "hardware"
 
 #: ../slangui.c:79
 msgid "Hardware Support"
@@ -167,41 +62,6 @@ msgstr "Suporte à Hardware"
 #: ../slangui.c:80
 msgid "Miscellaneous"
 msgstr "Miscelânea"
-
-#: ../slangui.c:178 ../slangui.c:187 ../slangui.c:188
-msgid "white"
-msgstr "branco"
-
-#: ../slangui.c:178 ../slangui.c:181 ../slangui.c:183 ../slangui.c:185
-#: ../slangui.c:187
-msgid "blue"
-msgstr "azul"
-
-#: ../slangui.c:179
-msgid "gray"
-msgstr "cinza"
-
-#: ../slangui.c:179 ../slangui.c:180 ../slangui.c:182 ../slangui.c:184
-#: ../slangui.c:189
-msgid "black"
-msgstr "preto"
-
-#: ../slangui.c:180 ../slangui.c:181 ../slangui.c:184 ../slangui.c:185
-#: ../slangui.c:186 ../slangui.c:189
-msgid "lightgray"
-msgstr "cinza claro"
-
-#: ../slangui.c:182
-msgid "cyan"
-msgstr "ciano"
-
-#: ../slangui.c:183
-msgid "yellow"
-msgstr "amarelo"
-
-#: ../slangui.c:186 ../slangui.c:188
-msgid "red"
-msgstr "vermelho"
 
 #: ../slangui.c:213
 msgid "Unable to initialize the terminal"
@@ -215,18 +75,10 @@ msgstr "Não foi possível inicializar a tela de saída"
 msgid "Unable to initialize keyboard interface"
 msgstr "Não foi possível inicializar a interface de teclado"
 
-#: ../slangui.c:232
-#, c-format
-msgid "%s v%s - %s"
-msgstr "%s v%s - %s"
-
 #: ../slangui.c:233
-msgid "Debian Task Installer"
-msgstr "Instalador de Tarefas Debian"
-
-#: ../slangui.c:234
-msgid "(c) 1999-2001 SPI and others"
-msgstr "(c) 1999-2001 SPI e outros"
+#, c-format
+msgid "Debian Task Installer v%s - (c) 1999-2001 SPI and others"
+msgstr "Instalador de Tarefas Debian versão %s (c) 1999-2001 SPI e outros"
 
 #: ../slangui.c:387
 msgid "^Finish"
@@ -248,72 +100,47 @@ msgstr "Selecionar tarefas a instalar"
 msgid "Ok"
 msgstr "Ok"
 
-#: ../slangui.c:603 ../strutl.c:48 ../strutl.c:57 ../strutl.c:64
-#: ../tasksel.c:40
-msgid "\n"
-msgstr ""
-
-#: ../slangui.c:660 ../slangui.c:679 ../slangui.c:693 ../slangui.c:800
+#: ../slangui.c:679 ../slangui.c:693 ../slangui.c:804
 #, c-format
 msgid "Index out of bounds: %d >= %d"
 msgstr "Índice fora dos limites: %d >= %d"
-
-#: ../slangui.c:666
-#, c-format
-msgid " %s "
-msgstr " %s "
-
-#: ../slangui.c:684
-#, c-format
-msgid "[%c] %s"
-msgstr "[%c] %s"
-
-#: ../slangui.c:708
-msgid "[ ]"
-msgstr "[ ]"
-
-#: ../slangui.c:710
-msgid "[*]"
-msgstr "[*]"
-
-#: ../slangui.c:743 ../slangui.c:763
-msgid "*"
-msgstr "*"
-
-#: ../slangui.c:746
-msgid "#"
-msgstr "#"
-
-#: ../slangui.c:748 ../slangui.c:763 ../tasksel.c:89 ../tasksel.c:99
-#: ../tasksel.c:103
-msgid " "
-msgstr " "
 
 #: ../slangui.c:770
 msgid "Help"
 msgstr "Ajuda"
 
+#. TRANS: don't wrap lines because of different screen sizes!
 #: ../slangui.c:771
 msgid ""
 "Tasks allow you to quickly install a selection of packages that performs a "
-"given task. The main chooser list shows a list of tasks that you can choose "
-"to install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
-"toggles the selection of the task at the cursor. You can also press A to "
-"select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-"program and begin installation of your selected tasks. Thank you for using "
-"Debian. Press enter to return to the task selection screen"
+"given task.\n"
+"\n"
+"The main chooser list shows a list of tasks that you can choose to install. "
+"The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR toggles the "
+"selection of the task at the cursor. You can also press A to select all "
+"tasks, or N to deselect all tasks. Pressing Q will exit this program and "
+"begin installation of your selected tasks.\n"
+"\n"
+"Thank you for using Debian.\n"
+"\n"
+"Press enter to return to the task selection screen"
 msgstr ""
-"As tarefas permitem que você instale rapidamente uma seleção de pacotes que "
-"executam uma determinada tarefa. A lista de escolhas principal exibe uma "
-"lista do que você pode escolher para instalar. As setas de direção movem o "
-"cursor. Pressionar ENTER ou BARRA DE ESPAÇO marca a seleção da tarefa sob o "
-"cursor. Você pode também pressionar A para selecionar todas as tarefas ou N "
-"para retirar a seleção de todas as tarefas. Pressionar Q encerrará este "
-"programa e iniciará a instalação das tarefas que foram selecionadas. Obrigado "
-"por escolher o Debian. Pressione ENTER para retornar a tela de seleção de "
-"tarefas."
+"Tarefas permitem que você instale rapidamente uma seleção de pacotes "
+"que executam uma determinada tarefa.\n"
+"\n"
+"A lista de escolhas principal exibe uma lista das tarefas que você "
+"pode escolher para instalar. As setas de direção movem o cursor. "
+"Pressionar ENTER ou BARRA DE ESPAÇO marca a seleção da tarefa sob "
+"o cursor. Você pode também pressionar A para selecionar todas as "
+"tarefas ou N para retirar a seleção de todas as tarefas. Pressionar "
+"Q encerrará este programa e iniciará a instalação das tarefas que "
+"foram selecionadas.\n"
+"\n"
+"Obrigado por usar o Debian.\n"
+"\n"
+"Pressione ENTER para retornar a tela de seleção de tarefas."
 
-#: ../slangui.c:808
+#: ../slangui.c:812
 #, c-format
 msgid ""
 "Description:\n"
@@ -326,97 +153,60 @@ msgstr ""
 "\n"
 "Pacotes incluídos:\n"
 
-#: ../slangui.c:815
-#, c-format
-msgid "%s - %s\n"
-msgstr "%s - %s\n"
-
-#: ../slangui.c:816
+#: ../slangui.c:820
 msgid "(no description available)"
 msgstr "(sem descrição disponível)"
-
-#: ../tasksel.c:26 ../tasksel.c:111
-#, c-format
-msgid "%s\n"
-msgstr "%s\n"
 
 #: ../tasksel.c:26
 msgid "Unknown signal seen"
 msgstr "Visualizado sinal desconhecido"
 
 #: ../tasksel.c:32
+msgid "tasksel install <task>\n"
+msgstr "tasksel install <tarefa>\n"
+
+#: ../tasksel.c:33
 msgid "tasksel [options]; where options is any combination of:\n"
 msgstr "tasksel [opções]; onde opções é uma combinação de:\n"
 
-#: ../tasksel.c:33 ../tasksel.c:34 ../tasksel.c:35 ../tasksel.c:36
-#: ../tasksel.c:37 ../tasksel.c:38 ../tasksel.c:39
-#, c-format
-msgid "\t%s\n"
-msgstr "\t%s\n"
-
-#: ../tasksel.c:33
-msgid "-t -- test mode; don't actually run apt-get on exit"
-msgstr "--t-- modo de teste; atualmente não executa apt-get na saída"
-
 #: ../tasksel.c:34
+msgid "-t -- test mode; don't actually run apt-get on exit"
+msgstr "-t -- modo de teste; atualmente não executa apt-get na saída"
+
+#: ../tasksel.c:35
 msgid ""
 "-q -- queue installs; do not install packages with apt-get;\n"
 "\t\tjust queue them in dpkg"
 msgstr ""
-"-q-- coloca instalações na fila; não instala pacotes com apt-get;\n"
+"-q -- coloca instalações na fila; não instala pacotes com apt-get;\n"
 "\t\tsomente os coloca na fila no dpkg"
 
-#: ../tasksel.c:35
-msgid "-r -- install all required-priority packages"
-msgstr "-r-- instala todos pacotes com prioridade requerida"
-
 #: ../tasksel.c:36
-msgid "-i -- install all important-priority packages"
-msgstr "-i-- instala todos os pacotes com prioridade importante"
+msgid "-r -- install all required-priority packages"
+msgstr "-r -- instala todos pacotes com prioridade requerida"
 
 #: ../tasksel.c:37
-msgid "-s -- install all standard-priority packages"
-msgstr "-s-- instala todos os pacotes com prioridade padrão"
+msgid "-i -- install all important-priority packages"
+msgstr "-i -- instala todos os pacotes com prioridade importante"
 
 #: ../tasksel.c:38
-msgid "-n -- don't show UI; use with -r or -i usually"
-msgstr ""
-"-n-- nãe exibe a interca de usuário (UI); usado normalmente com -r ou -i"
+msgid "-s -- install all standard-priority packages"
+msgstr "-s -- instala todos os pacotes com prioridade padrão"
 
 #: ../tasksel.c:39
+msgid "-n -- don't show UI; use with -r or -i usually"
+msgstr ""
+"-n -- nãe exibe a interface de usuário (UI); usado normalmente com -r ou -i"
+
+#: ../tasksel.c:40
 msgid "-a -- show all tasks, even those with no packages in them"
-msgstr "-a-- exibe todas as tarefas; mesmo aquelas que não contém pacotes"
+msgstr "-a -- exibe todas as tarefas; mesmo aquelas que não contém pacotes"
 
-#: ../tasksel.c:56
-msgid "dpkg --set-selections"
-msgstr "dpkg --set-selections"
-
-#: ../tasksel.c:56
-msgid "w"
-msgstr "w"
-
-#: ../tasksel.c:58
-msgid "Cannot send output to dpkg"
-msgstr "Não foi possível enviar a saída ao dpkg"
-
-#: ../tasksel.c:61 ../tasksel.c:69 ../tasksel.c:72
-#, c-format
-msgid "%s install\n"
-msgstr "%s instalar\n"
-
-#: ../tasksel.c:80 ../tasksel.c:115
+#: ../tasksel.c:81 ../tasksel.c:116
 msgid "No packages selected\n"
 msgstr "Nenhum pacote selecionado\n"
 
-#: ../tasksel.c:84
-msgid "apt-get install "
-msgstr "apt-get install "
-
-#: ../tasksel.c:141
-msgid "tqrinsa"
-msgstr "tqrinsa"
-
-#: ../tasksel.c:167
+#: ../tasksel.c:168
 msgid ""
 "No tasks found on this system.\n"
 "Did you update your available file?\n"
@@ -424,22 +214,9 @@ msgstr ""
 "Nenhuma tarefa encontrada neste sistema.\n"
 "Você atualizou seu arquivo de tarefas disponíveis ?\n"
 
-#: ../tasksel.c:192
-msgid "install"
-msgstr "instalar"
-
-#: ../tasksel.c:200
-#, c-format
-msgid "E: %s: no such task\n"
-msgstr "E: %s: tarefa não existente\n"
-
 #: ../util.c:20
 msgid "Cannot allocate memory for strdup"
 msgstr "Não foi possível alocar memória para strdup"
-
-#: ../util.c:32
-msgid "Attempting to allocate 0 bytes!"
-msgstr "Tentativa de alocar 0 bytes!"
 
 #: ../util.c:38
 #, c-format
@@ -451,12 +228,185 @@ msgstr "Não foi possível alocar %d bytes de memória"
 msgid "Cannot reallocate %d bytes of memory"
 msgstr "Não foi possível realocar %d bytes de memória"
 
-#: ../util.c:54
-msgid "Attempting to dereference NULL pointer"
-msgstr "Tentative de dereferenciar um ponteiro NULL"
+#~ msgid "Package: "
+#~ msgstr "Pacote:"
 
-#: ../util.c:64
-#, c-format
-msgid "Outstanding mallocs : %d\n"
-msgstr "Alocações de memória consideráveis: %d\n"
+#~ msgid "Task: "
+#~ msgstr "Tarefa:"
 
+#~ msgid "Depends: "
+#~ msgstr "Depende:"
+
+#~ msgid "Recommends: "
+#~ msgstr "Recomenda:"
+
+#~ msgid "Suggests: "
+#~ msgstr "Sugere:"
+
+#~ msgid "Description: "
+#~ msgstr "Descrição:"
+
+#~ msgid "Priority: "
+#~ msgstr "Prioridade:"
+
+#~ msgid "Section: "
+#~ msgstr "Seção:"
+
+#~ msgid "Status: "
+#~ msgstr "Estado:"
+
+#~ msgid "/var/lib/dpkg/available"
+#~ msgstr "/var/lib/dpkg/available"
+
+#~ msgid "/var/lib/dpkg/status"
+#~ msgstr "/var/lib/dpkg/status"
+
+#~ msgid ","
+#~ msgstr ","
+
+#~ msgid "W: duplicate task info for %s\n"
+#~ msgstr "W: informação duplicada de tarefa para %s\n"
+
+#~ msgid "Task %s [%s]:\n"
+#~ msgstr "Tarefa %s [%s]:\n"
+
+#~ msgid "misc"
+#~ msgstr "miscelânea"
+
+#~ msgid "  %s\n"
+#~ msgstr "  %s\n"
+
+#~ msgid "r"
+#~ msgstr "r"
+
+#~ msgid "task-"
+#~ msgstr "tarefa-"
+
+#~ msgid "required"
+#~ msgstr "requerido"
+
+#~ msgid "important"
+#~ msgstr "importante"
+
+#~ msgid "standard"
+#~ msgstr "padrão"
+
+#~ msgid "optional"
+#~ msgstr "opcional"
+
+#~ msgid "extra"
+#~ msgstr "extra"
+
+#~ msgid "tasks-"
+#~ msgstr "tarefas-"
+
+#~ msgid "junk"
+#~ msgstr "lixo"
+
+#~ msgid "user"
+#~ msgstr "usuário"
+
+#~ msgid "server"
+#~ msgstr "servidor"
+
+#~ msgid "devel"
+#~ msgstr "desenv"
+
+#~ msgid "l10n"
+#~ msgstr "l10n"
+
+#~ msgid "hware"
+#~ msgstr "hardware"
+
+#~ msgid "white"
+#~ msgstr "branco"
+
+#~ msgid "blue"
+#~ msgstr "azul"
+
+#~ msgid "gray"
+#~ msgstr "cinza"
+
+#~ msgid "black"
+#~ msgstr "preto"
+
+#~ msgid "lightgray"
+#~ msgstr "cinza claro"
+
+#~ msgid "cyan"
+#~ msgstr "ciano"
+
+#~ msgid "yellow"
+#~ msgstr "amarelo"
+
+#~ msgid "red"
+#~ msgstr "vermelho"
+
+#~ msgid "%s v%s - %s"
+#~ msgstr "%s v%s - %s"
+
+#~ msgid "Debian Task Installer"
+#~ msgstr "Instalador de Tarefas Debian"
+
+#~ msgid " %s "
+#~ msgstr " %s "
+
+#~ msgid "[%c] %s"
+#~ msgstr "[%c] %s"
+
+#~ msgid "[ ]"
+#~ msgstr "[ ]"
+
+#~ msgid "[*]"
+#~ msgstr "[*]"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "#"
+#~ msgstr "#"
+
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "%s - %s\n"
+#~ msgstr "%s - %s\n"
+
+#~ msgid "%s\n"
+#~ msgstr "%s\n"
+
+#~ msgid "\t%s\n"
+#~ msgstr "\t%s\n"
+
+#~ msgid "dpkg --set-selections"
+#~ msgstr "dpkg --set-selections"
+
+#~ msgid "w"
+#~ msgstr "w"
+
+#~ msgid "Cannot send output to dpkg"
+#~ msgstr "Não foi possível enviar a saída ao dpkg"
+
+#~ msgid "%s install\n"
+#~ msgstr "%s instalar\n"
+
+#~ msgid "apt-get install "
+#~ msgstr "apt-get install "
+
+#~ msgid "tqrinsa"
+#~ msgstr "tqrinsa"
+
+#~ msgid "install"
+#~ msgstr "instalar"
+
+#~ msgid "E: %s: no such task\n"
+#~ msgstr "E: %s: tarefa não existente\n"
+
+#~ msgid "Attempting to allocate 0 bytes!"
+#~ msgstr "Tentativa de alocar 0 bytes!"
+
+#~ msgid "Attempting to dereference NULL pointer"
+#~ msgstr "Tentative de dereferenciar um ponteiro NULL"
+
+#~ msgid "Outstanding mallocs : %d\n"
+#~ msgstr "Alocações de memória consideráveis: %d\n"
