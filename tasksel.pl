@@ -188,7 +188,7 @@ sub getopts {
 	my %ret;
 	Getopt::Long::Configure ("bundling");
 	if (! GetOptions(\%ret, "test|t", "required|r", "important|i", 
-		   "standard|s", "no-ui|n", "new-install")) {
+		   "standard|s", "no-ui|n", "new-install", "list-tasks")) {
 		usage();
 		exit(1);
 	}
@@ -199,17 +199,20 @@ sub usage {
 	print STDERR gettext(q{Usage:
 tasksel install <task>
 tasksel [options]; where options is any combination of:
-	-t -- test mode; don't really do anything
-	-r -- install all required-priority packages
-	-i -- install all important-priority packages
-	-s -- install all standard-priority packages
-	-n -- don't show UI; use with -r or -i usually
+	-t, --test         test mode; don't really do anything
+	-r, --required     install all required-priority packages
+	-i, --important    install all important-priority packages
+	-s, --standard     install all standard-priority packages
+	-n, --no-ui        don't show UI; use with -r or -i usually
+	    --new-install  atomatically install some tasks
+	    --list-tasks   list tasks that would be displayed and exit
 });
 }
 
 my @aptitude_install;
 my @tasks_to_install;
 my %options=getopts();
+
 if (@ARGV) {
 	if ($ARGV[0] eq "install") {
 		shift;
@@ -224,6 +227,11 @@ if (@ARGV) {
 my @tasks=map { hide_dependent_tasks($_) } map { task_test($_) }
           grep { task_avail($_) }  map { read_task_desc($_) }
 	  list_task_descs();
+
+if ($options{"list-tasks"}) {
+	print $_->{task}."\n" foreach grep { $_->{_display} } @tasks;
+	exit(0);
+}
 
 if (! $options{"new-install"}) {
 	# Don't install hidden tasks if this is not a new install.

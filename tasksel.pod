@@ -17,25 +17,35 @@ ones to install
 
 =over 4
 
-=item B<-t>
+=item B<-t>, B<--test>
 
 test mode; don't actually run apt-get on exit
 
-=item B<-r>
+=item B<-r>, B<--required>
 
 install all required-priority packages
 
-=item B<-i>
+=item B<-i>, B<--important>
 
 install all important-priority packages
 
-=item B<-s>
+=item B<-s>, B<--standard>
 
 install all standard-priority packages
 
-=item B<-n>
+=item B<-n>, B<--no-ui>
 
 don't show UI; use with -r or -i usually
+
+=item B<--new-install>
+
+automatically select some tasks without even displaying them to the user;
+used during new Debian installs.
+
+=item B<--list-tasks>
+
+list on stdout the tasks that would be displayed in the tasksel intserface,
+and exit
 
 =back
 
