@@ -1,3 +1,16 @@
+tasksel (2.11) UNRELEASED...TO SARGE; urgency=low
+
+  * Translations
+    - Tetralet
+      - Updated all Traditional Chinese translations. Closes: #267523
+    - Ognyan Kulev
+      - Updated Bulgarian translations (tasks/po/bg.po and po/bg.po).
+      - Initial Bulgarian translation of debian/po/bg.po.
+    - Dennis Stampfer
+      - Update German translations (debconf, tasks)
+
+ -- Dennis Stampfer <seppy@debian.org>  Wed, 25 Aug 2004 21:36:22 +0200
+
 tasksel (2.10) unstable; urgency=low
 
   * Otavio Salvador
@@ -14,13 +27,8 @@ tasksel (2.10) unstable; urgency=low
       - Update Catalan translation of tasks, program and debconf templates.
     - Miguel Figueiredo
       - Portuguese translation pt.po: Initial program, debconf update.
-    - Tetralet
-      - Updated all Traditional Chinese translations. Closes: #267523
-    - Ognyan Kulev
-      - Updated Bulgarian translations (tasks/po/bg.po and po/bg.po).
-      - Initial Bulgarian translation of debian/po/bg.po.
 
- -- Ognyan Kulev <ogi@fmi.uni-sofia.bg>  Mon, 23 Aug 2004 16:03:15 +0300
+ -- Joey Hess <joeyh@debian.org>  Thu, 19 Aug 2004 18:26:34 +0100
 
 tasksel (2.09) unstable; urgency=critical
 
