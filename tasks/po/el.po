@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-29 11:46-0500\n"
-"PO-Revision-Date: 2004-03-27 17:37EEST\n"
+"PO-Revision-Date: 2004-04-01 13:46EEST\n"
 "Last-Translator: Konstantinos Margaritis <markos@debian.org>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -145,8 +145,7 @@ msgstr "Βάση Δεδομένων SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:89
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Αυτή η ομάδα εγκαθιστά πακέτα για λογισμικό πελάτη και εξυπηρετητή για τη "
 "βάση δεδομένων PostgreSQL."
@@ -206,8 +205,7 @@ msgstr "Διακομιστής Ονομάτων (DNS)"
 
 #. Description
 #: ../po/debian-tasks.desc:123
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Επιλέγει για εγκατάσταση το διακομιστή ονομάτων BIND, και σχετικά εργαλεία "
 "και οδηγίες χρήσης."
@@ -219,13 +217,12 @@ msgstr "Διακομιστής Αρχείων"
 
 #. Description
 #: ../po/debian-tasks.desc:130
-#, fuzzy
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
 msgstr ""
 "Αυτή η ομάδα ρυθμίζει τον υπολογιστή σας να λειτουργεί ως διακομιστής "
-"αρχείων."
+"αρχείων (NetBIOS και NFS)."
 
 #. Description
 #: ../po/debian-tasks.desc:139
@@ -288,19 +285,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid "Hebrew environment"
-msgstr "Ελληνικό περιβάλλον"
+msgstr "Εβραϊκό περιβάλλον"
 
 #. Description
 #: ../po/debian-tasks.desc:173
-#, fuzzy
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
 msgstr ""
 "Αυτή η ομάδα εγκαθιστά πακέτα και οδηγίες χρήσης στα Ελληνικά, για τους "
-"Έλληνες χρήστες του Debian."
+"Εβραικά χρήστες του Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:179
@@ -334,8 +329,7 @@ msgstr "Debian Jr."
 #. Description
 #: ../po/debian-tasks.desc:200
 msgid "Debian Jr. is a collection of Debian packages suitable for children."
-msgstr ""
-"Το Debian Jr. είναι μια συλλογή προγραμμάτων του Debian κατάλληλα για παιδιά."
+msgstr "Το Debian Jr. είναι μια συλλογή προγραμμάτων του Debian κατάλληλα για παιδιά."
 
 #. Description
 #: ../po/debian-tasks.desc:205
@@ -372,7 +366,6 @@ msgstr "Φορητός υπολογιστής"
 
 #. Description
 #: ../po/debian-tasks.desc:224
-#, fuzzy
 msgid ""
 "This is a collection of tools that laptop users will expect to find on a "
 "system. It includes some special utilities for laptops including IBM "
@@ -586,9 +579,10 @@ msgstr "Περιβάλλον TeX/LaTeX"
 
 #. Description
 #: ../po/debian-tasks.desc:351
-msgid ""
-"This task provides necessary packages for composing documents in TeX/LaTeX."
+msgid "This task provides necessary packages for composing documents in TeX/LaTeX."
 msgstr ""
+"Τα πακέτα αυτά χρησιμοποιούνται στην σύνταξη και δημιουργία κειμένων με το "
+"σύστημα TeX/LaTeX."
 
 #. Description
 #: ../po/debian-tasks.desc:361
@@ -625,11 +619,8 @@ msgstr "Διακομιστής Ιστοσελίδων"
 
 #. Description
 #: ../po/debian-tasks.desc:378
-msgid ""
-"This task selects a packages useful for a general purpose web server system."
+msgid "This task selects a packages useful for a general purpose web server system."
 msgstr ""
 "Η ομάδα αυτή επιλέγει για εγκατάσταση πακέτα χρήσιμα για ένα διακομιστή "
 "ιστοσελίδων γενικών αναγκών."
 
-#~ msgid "a TeX/LaTeX environment"
-#~ msgstr "ένα περιβάλλον TeX/LaTeX"
