@@ -9,13 +9,12 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-01-28 08:04+0100\n"
-"PO-Revision-Date: 2004-01-19 03:14+0100\n"
+"PO-Revision-Date: 2004-03-21 20:36+0100\n"
 "Last-Translator: VERÓK István <vi@fsf.hu>\n"
-"Language-Team: Hungarian Debian team <debian-l10n-hungarian@lists.debian."
-"org>\n"
+"Language-Team: Hungarian Debian team <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../data.c:307 ../data.c:321
 msgid "Cannot allocate memory for enumeration buffer"
@@ -61,7 +60,7 @@ msgstr "Fejlesztés"
 
 #: ../slangui.c:79
 msgid "Localization"
-msgstr "Szövegfordítás"
+msgstr "Nyelvi testreszabás"
 
 #: ../slangui.c:80
 msgid "Miscellaneous"
@@ -165,7 +164,7 @@ msgstr "Ismeretlen jelzés (signal)"
 #: ../tasksel.c:39
 #, c-format
 msgid "tasksel install <task>\n"
-msgstr "taskselÂˇinstallÂˇ<task>\n"
+msgstr "tasksel install <task>\n"
 
 #: ../tasksel.c:40
 #, c-format
@@ -186,15 +185,15 @@ msgstr ""
 
 #: ../tasksel.c:43
 msgid "-r -- install all required-priority packages"
-msgstr "-r -- az összes required (szükséges) prioritású csomag telepítése"
+msgstr "-r -- az összes \"required\" (szükséges) prioritású csomag telepítése"
 
 #: ../tasksel.c:44
 msgid "-i -- install all important-priority packages"
-msgstr "-i -- az összes important (fontos) prioritású csomag telepítése"
+msgstr "-i -- az összes \"important\" (fontos) prioritású csomag telepítése"
 
 #: ../tasksel.c:45
 msgid "-s -- install all standard-priority packages"
-msgstr "-s -- az összes standard prioritású csomag telepítése"
+msgstr "-s -- az összes \"standard\" prioritású csomag telepítése"
 
 #: ../tasksel.c:46
 msgid "-n -- don't show UI; use with -r or -i usually"
