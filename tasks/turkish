@@ -1,0 +1,15 @@
+Task: turkish
+Section: l10n
+Description: Turkish environment
+ This task installs packages and documentation in Turkish
+ to help Turkish speaking people use Debian.
+Maintainer: Recai Oktas <roktas@omu.edu.tr>
+Key:
+ language-env
+ locales
+ manpages-tr
+Packages:
+ fonty
+ console-terminus
+ xfonts-terminus
+ util-linux-locales
