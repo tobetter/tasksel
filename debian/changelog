@@ -8,12 +8,20 @@ tasksel (2.25) UNRELEASED; urgency=low
     - Commented out kde-i18n-lt as the Lithuanian language currently is
       not supported by upstream.
     - Added aspell-lt to lithuanian task.
+  * Christian Perrier
+    - Fix errors in English descriptions of tasks:
+      - web-server: "select packages"
+      - *-desktop : "localises the desktop"
+                    "that make it"
+      - thai      : "for Thai speaking people"
+      All translations unfuzzied
+      Closes: #306081
   * Translations
     - All Bosnian translations completed by Safir Secerovic
     - All Malagasy translations added by Jaonary Rabarisoa
     - Fixes to Danish translations of language tasks by Claus Hindsgaul
 
- -- Christian Perrier <bubulle@kheops.frmug.org>  Thu, 31 Mar 2005 16:53:33 +0200
+ -- Christian Perrier <bubulle@debian.org>  Sun, 24 Apr 2005 10:12:41 +0200
 
 tasksel (2.24) unstable; urgency=low
 
