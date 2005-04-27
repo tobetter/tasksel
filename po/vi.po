@@ -1,0 +1,52 @@
+# translation of tasksel to Vietnamese
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the tasksel package.
+# Phan Vinh Thinh <teppi@vnoss.org>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-02-15 13:19-0500\n"
+"PO-Revision-Date: 2005-04-27 00:51+0400\n"
+"Last-Translator: Phan Vinh Thinh <teppi@vnoss.org>\n"
+"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../tasksel.pl:293
+msgid ""
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel remove <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t, --test          test mode; don't really do anything\n"
+"\t-r, --required      install all required-priority packages\n"
+"\t-i, --important     install all important-priority packages\n"
+"\t-s, --standard      install all standard-priority packages\n"
+"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
+"\t    --new-install   automatically install some tasks\n"
+"\t    --list-tasks    list tasks that would be displayed and exit\n"
+"\t    --task-packages list available packages in a task\n"
+"\t    --task-desc     returns the description of a task\n"
+msgstr ""
+"Sử dụng:\n"
+"tasksel install <task>\n"
+"tasksel remove <task>\n"
+"tasksel [tùychọn]; trong đó tùychọn là bất kỳ sự kết hợp nào của:\n"
+"\t-t, --test          chế độ thử nghiệm; không thực sự làm gì\n"
+"\t-r, --required      cài đặt mọi gói có quyền ưu tiên đã yêu cầu\n"
+"\t-i, --important     cài đặt mọi gói có quyền ưu tiên quan trọng\n"
+"\t-s, --standard      cài đặt mọi gói có quyền ưu tiên cơ bản\n"
+"\t-n, --no-ui         không hiển thị đồ họa; thường dùng với -r hoặc -i\n"
+"\t    --new-install   tự động cài một số nhóm chương trình\n"
+"\t    --list-tasks    liệt kê những nhóm chương trình sẽ hiển thị và thoát\n"
+"\t    --task-packages liệt kê những gói có trong một nhóm\n"
+"\t    --task-desc     đưa ra mô tả của một nhóm\n"
+
+#: ../tasksel.pl:481 ../tasksel.pl:497 ../tasksel.pl:514
+msgid "aptitude failed"
+msgstr "aptitude không thành công"
+
