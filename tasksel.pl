@@ -426,6 +426,9 @@ sub main {
 			$question);
 		open(IN, "<$tmpfile");
 		my $ret=<IN>;
+		if (! defined $ret) {
+			die "tasksel canceled\n";
+		}
 		chomp $ret;
 		close IN;
 		unlink $tmpfile;

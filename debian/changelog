@@ -40,6 +40,7 @@ tasksel (2.25) UNRELEASED; urgency=low
       looking at the LANG variable in everyday use.
     - Rename Packages field in input task files to Packages-list to allow
       really specifying a Packages value.
+    - Deal better with ctrl-c cancel while in debconf.
   * Kęstutis Biliūnas
     - Added openoffice.org-l10n-lt to lithuanian-desktop task.
     - Commented out kde-i18n-lt as the Lithuanian language currently is
