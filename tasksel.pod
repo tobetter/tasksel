@@ -66,7 +66,8 @@ dpkg(8), apt-get(8)
 
 =head1 FILES
 
-F</usr/share/tasksel/debian-tasks.desc>
+F</usr/share/tasksel/*.desc> and 
+F</usr/local/share/tasksel/*.desc> are used to define tasks.
 
 =head1 AUTHOR
 

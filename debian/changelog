@@ -17,6 +17,7 @@ tasksel (2.25) UNRELEASED; urgency=low
     - Add printconf to print-server for automatic printer setup. Closes: #293108
     - Add windbind to file-server since it's commonly used with samba.
       Closes: #292936
+    - Look for desc files in /usr/local/share/tasksel too. Closes: #286170
   * Kęstutis Biliūnas
     - Added openoffice.org-l10n-lt to lithuanian-desktop task.
     - Commented out kde-i18n-lt as the Lithuanian language currently is

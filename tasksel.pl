@@ -12,6 +12,7 @@ my $debconf_helper="/usr/lib/tasksel/tasksel-debconf";
 my $testdir="/usr/lib/tasksel/tests";
 my $packagesdir="/usr/lib/tasksel/packages";
 my $descdir="/usr/share/tasksel";
+my $localdescdir="/usr/local/share/tasksel";
 my $statusfile="/var/lib/dpkg/status";
 
 sub warning {
@@ -25,7 +26,7 @@ sub error {
 
 # A list of all available task desc files.
 sub list_task_descs {
-	return glob "$descdir/*.desc";
+	return glob("$descdir/*.desc"), glob("$localdescdir/*.desc");
 }
 
 # Returns a list of hashes; hash values are arrays for multi-line fields.
