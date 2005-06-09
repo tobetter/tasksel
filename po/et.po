@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-02-15 13:19-0500\n"
+"PO-Revision-Date: 2005-06-05 18:24+0300\n"
+"Last-Translator: Siim Põder <windo@windowlicker.dyn.ee>\n"
+"Language-Team: Debiani installeri eestindus <debian-boot-et@linux.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Estonian\n"
+"X-Poedit-Country: ESTONIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../tasksel.pl:293
+msgid ""
+"Usage:\n"
+"tasksel install <task>\n"
+"tasksel remove <task>\n"
+"tasksel [options]; where options is any combination of:\n"
+"\t-t, --test          test mode; don't really do anything\n"
+"\t-r, --required      install all required-priority packages\n"
+"\t-i, --important     install all important-priority packages\n"
+"\t-s, --standard      install all standard-priority packages\n"
+"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
+"\t    --new-install   automatically install some tasks\n"
+"\t    --list-tasks    list tasks that would be displayed and exit\n"
+"\t    --task-packages list available packages in a task\n"
+"\t    --task-desc     returns the description of a task\n"
+msgstr ""
+"Kasutus:\n"
+"tasksel install <ülesanne>\n"
+"tasksel remove <ülesanne>\n"
+"tasksel [valikud]; kus valikud on kombinatsioon järgnevaist:\n"
+"\t-t, --test          testirežiim; ära tegelikult miskit tee\n"
+"\t-r, --required      paigalda pakid 'vajalikud' prioriteediga\n"
+"\t-i, --important     paigalda pakid 'olulised' prioriteediga\n"
+"\t-s, --standard      paigalda pakid 'tavalised' prioriteediga\n"
+"\t-n, --no-ui         ära näita kasutajaliidest; koos -r või -i valikuga\n"
+"\t    --new-install   paigalda mõned ülesanded automaatselt\n"
+"\t    --list-tasks    loetle väljastatavad ülesanded ning välju\n"
+"\t    --task-packages loetle ülesande saadaval pakid ning välju\n"
+"\t    --task-desc     tagastab ülesande kirjelduse\n"
+
+#: ../tasksel.pl:481
+#: ../tasksel.pl:497
+#: ../tasksel.pl:514
+msgid "aptitude failed"
+msgstr "aptitude luhtus"
+
