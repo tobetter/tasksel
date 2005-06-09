@@ -9,6 +9,10 @@ tasksel (2.25) UNRELEASED; urgency=low
       support printing of asian fonts. Closes: #305148
     - Remove language-env from chinese-t, since language-env does not support
       Chinese simplified yet. See #301496
+    - Add scim-chewing and m17n-env to chinese-t-desktop, remove old cpanel
+      and chinput input methods. Closes: #301496
+    - Also remove language-env from chinese-s as it doesn't support that
+      either, and remove obsolete cpanel from chinese-s-desktop too.
   * Kęstutis Biliūnas
     - Added openoffice.org-l10n-lt to lithuanian-desktop task.
     - Commented out kde-i18n-lt as the Lithuanian language currently is
