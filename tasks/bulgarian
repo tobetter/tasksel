@@ -1,0 +1,14 @@
+Task: bulgarian
+Test-lang: bg
+Depends: cyrillic
+Section: l10n
+Description: Bulgarian environment
+ This task installs programs and data files that make it easier for
+ Bulgarian speakers to use Debian.
+Maintainer: Anton Zinoviev <zinoviev@debian.org>
+Key:
+Packages:
+ aspell-bg
+ ibulgarian
+ wbulgarian
+ cbedic

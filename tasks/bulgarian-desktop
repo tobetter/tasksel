@@ -1,0 +1,11 @@
+Task: bulgarian-desktop
+Depends: desktop, bulgarian
+Section: l10n
+Description: Bulgarian desktop
+ This task makes the desktop be localised in Bulgarian.
+Maintainer: Anton Zinoviev <zinoviev@debian.org>
+Key:
+Packages:
+ kde-i18n-bg
+ myspell-bg
+ kbedic
