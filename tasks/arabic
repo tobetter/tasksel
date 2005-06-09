@@ -1,0 +1,12 @@
+Task: arabic
+Test-lang: ar
+Section: l10n
+Description: Arabic environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Arabic speakers
+ to use Debian.
+Key:
+  language-env
+Packages:
+  xfonts-intl-arabic
+  ttf-arabeyes
