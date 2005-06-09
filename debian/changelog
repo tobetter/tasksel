@@ -14,6 +14,9 @@ tasksel (2.25) UNRELEASED; urgency=low
     - Also remove language-env from chinese-s as it doesn't support that
       either, and remove obsolete cpanel from chinese-s-desktop too.
     - Add basic Arabic tasks. Closes: #282493
+    - Add printconf to print-server for automatic printer setup. Closes: #293108
+    - Add windbind to file-server since it's commonly used with samba.
+      Closes: #292936
   * Kęstutis Biliūnas
     - Added openoffice.org-l10n-lt to lithuanian-desktop task.
     - Commented out kde-i18n-lt as the Lithuanian language currently is
