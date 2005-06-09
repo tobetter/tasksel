@@ -7,6 +7,8 @@ tasksel (2.25) UNRELEASED; urgency=low
       Anton Zinoviev. Closes: #271178
     - Add tf2pt1, ttf2pt1-chinese and ttfprint to chinese-s an chinese-t to
       support printing of asian fonts. Closes: #305148
+    - Remove language-env from chinese-t, since language-env does not support
+      Chinese simplified yet. See #301496
   * Kęstutis Biliūnas
     - Added openoffice.org-l10n-lt to lithuanian-desktop task.
     - Commented out kde-i18n-lt as the Lithuanian language currently is
