@@ -23,26 +23,10 @@ ones to install
 
 test mode; don't actually run apt-get on exit
 
-=item B<-r>, B<--required>
-
-install all required-priority packages
-
-=item B<-i>, B<--important>
-
-install all important-priority packages
-
-=item B<-s>, B<--standard>
-
-install all standard-priority packages
-
-=item B<-n>, B<--no-ui>
-
-don't show UI; use with -r or -i usually
-
 =item B<--new-install>
 
 automatically select some tasks without even displaying them to the user;
-used during new Debian installs.
+default other tasks to on; used during new Debian installs.
 
 =item B<--list-tasks>
 

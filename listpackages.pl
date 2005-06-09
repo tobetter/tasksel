@@ -15,7 +15,7 @@
 # listpackages tasks key
 
 my $dir=shift or die "no directory specified\n";
-my @toshow=qw{packages key};
+my @toshow=qw{packages-list key};
 @toshow=@ARGV if @ARGV;
 
 use File::Find;

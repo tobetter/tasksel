@@ -186,7 +186,7 @@ sub task_packages {
 	
 	my @list;
 	if ($task->{packages} eq 'task-fields') {
-		# task-fields method one is built-in for speed.
+		# task-fields method is built-in for speed.
 		if ($aptitude_tasks) {
 			return '~t^'.$task->{task}.'$';
 		}
@@ -204,6 +204,11 @@ sub task_packages {
 			close AVAIL;
 		}
 	}
+	elsif ($task->{packages} eq 'standard') {
+		# standard method is built in since it cannot easily be
+		# implemented externally.
+		return "~pstandard", "~prequired", "~pimportant";
+	}
 	else {
 		# external method
 		@list=grep { package_avail($_) } split("\n", `$packagesdir/$task->{packages} $task->{task}`);
@@ -215,6 +220,9 @@ sub task_packages {
 # the _display and _install fields to 1 or 0 depending on its result.
 sub task_test {
 	my $task=shift;
+	my $new_install=shift;
+	$ENV{NEW_INSTALL}=$new_install if defined $new_install;
+	
 	$task->{_display} = 1;
 	$task->{_install} = 0;
 	foreach my $test (grep /^test-.*/, keys %$task) {
@@ -239,7 +247,8 @@ sub task_test {
 			}
 		}
 	}
-
+	
+	delete $ENV{NEW_INSTALL};
 	return $task;
 }
 
@@ -298,10 +307,6 @@ tasksel install <task>
 tasksel remove <task>
 tasksel [options]; where options is any combination of:
 	-t, --test          test mode; don't really do anything
-	-r, --required      install all required-priority packages
-	-i, --important     install all important-priority packages
-	-s, --standard      install all standard-priority packages
-	-n, --no-ui         don't show UI; use with -r or -i usually
 	    --new-install   automatically install some tasks
 	    --list-tasks    list tasks that would be displayed and exit
 	    --task-packages list available packages in a task
@@ -313,8 +318,7 @@ tasksel [options]; where options is any combination of:
 sub getopts {
 	my %ret;
 	Getopt::Long::Configure ("bundling");
-	if (! GetOptions(\%ret, "test|t", "required|r", "important|i", 
-		   "standard|s", "no-ui|n", "new-install", "list-tasks",
+	if (! GetOptions(\%ret, "test|t", "new-install", "list-tasks",
 		   "task-packages=s@", "task-desc=s")) {
 		usage();
 		exit(1);
@@ -338,7 +342,8 @@ sub getopts {
 sub main {
 	my %options=getopts();
 
-	# Options that output stuff and don't need a full processed list of tasks.
+	# Options that output stuff and don't need a full processed list of
+	# tasks.
 	if (exists $options{"task-packages"}) {
 		my @tasks=all_tasks();
 		foreach my $taskname (@{$options{"task-packages"}}) {
@@ -363,7 +368,7 @@ sub main {
 
 	# This is relatively expensive, get the full list of available tasks and
 	# mark them.
-	my @tasks=map { hide_dependent_tasks($_) } map { task_test($_) }
+	my @tasks=map { hide_dependent_tasks($_) } map { task_test($_, $options{"new-install"}) }
 	          grep { task_avail($_) } all_tasks();
 	
 	if ($options{"list-tasks"}) {
@@ -379,15 +384,6 @@ sub main {
 		# Don't install hidden tasks if this is not a new install.
 		map { $_->{_install} = 0 } grep { $_->{_display} == 0 } @tasks;
 	}
-	if ($options{"required"}) {
-		push @aptitude_install, "~prequired";
-	}
-	if ($options{"important"}) {
-		push @aptitude_install, "~pimportant";
-	}
-	if ($options{"standard"}) {
-		push @aptitude_install, "~pstandard";
-	}
 	if ($options{"install"}) {
 		my $task=name_to_task($options{"install"}, @tasks);
 		$task->{_install} = 1 if $task;
@@ -402,7 +398,7 @@ sub main {
 	my $interactive=0;
 	my $manual_selection=0;
 	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
-	if (@list && ! $options{"no-ui"} && ! $options{install} && ! $options{remove}) {
+	if (@list && ! $options{install} && ! $options{remove}) {
 		$interactive=1;
 		if (! $options{"new-install"}) {
 			# Find tasks that are already installed.

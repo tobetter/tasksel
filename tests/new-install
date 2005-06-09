@@ -1,12 +1,21 @@
 #!/bin/sh
 #
-# Simple test script to automatically install/skip/mark/show tasks.
+# Controls behavior for a task on new install or not. 
 #
 # To enable this test insert your tasks stanza a keyword like:
 #
-# Test-force: mark
+# Test-new-install: mark skip
+#
+# This will cause the task to be marked for install on new install, and
+# hidden otherwise.
 
-case "$2" in
+if [ "$NEW_INSTALL" ]; then
+	var=$2
+else
+	var=$3
+fi
+
+case "$var" in
 	install)
 		exit 0 # do not display, but do install task
 	;;

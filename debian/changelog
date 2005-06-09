@@ -26,6 +26,20 @@ tasksel (2.25) UNRELEASED; urgency=low
     - Allow later task descs to override earlier ones, useful if you
       want to blow away the standard Debian tasks, perhaps by using Test-force
       to hide them. Closes: #274936
+    - Add a "new-install" test script (and export NEW_INSTALL for test
+      scripts), to allow special control of tasks during new installs.
+    - Add a new "standard" task which defaults to being marked for install
+      on new installs and is otherwise hidden (because removing it makes
+      little sense), and which causes all standard or above priority packages
+      to be installed. Closes: #301273, #298702
+    - Remove the -r, -i, and -s switches as unnecessary given the standard
+      task.
+    - Remove the -n switch since it was intended to be used with other removed
+      switches.
+    - Make the lang test only do anything on new installs, to avoid tasksel
+      looking at the LANG variable in everyday use.
+    - Rename Packages field in input task files to Packages-list to allow
+      really specifying a Packages value.
   * Kęstutis Biliūnas
     - Added openoffice.org-l10n-lt to lithuanian-desktop task.
     - Commented out kde-i18n-lt as the Lithuanian language currently is
@@ -48,7 +62,7 @@ tasksel (2.25) UNRELEASED; urgency=low
     - Estonian translations of tasks by Siim Põder. Closes: #312463
     - Estonian translations of tasksel by Siim Põder. Closes: #312462
 
- -- Christian Perrier <bubulle@debian.org>  Wed, 27 Apr 2005 20:10:52 +0200
+ -- Joey Hess <joeyh@debian.org>  Thu,  9 Jun 2005 19:30:45 -0400
 
 tasksel (2.24) unstable; urgency=low
 

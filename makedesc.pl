@@ -14,7 +14,7 @@
 #   into a graphical login screen, at which point you can choose which of
 #   these desktops you wish to use on a per-user basis. You can further
 #   customise your desktop once installed.
-# Packages:
+# Packages-list:
 #  kdebase
 #  gdm
 #  ...
@@ -76,7 +76,7 @@ sub processfile {
 	# TODO: a better lint would incloude checks for conflicting
 	# packages. Hard tho.
 	if ($dolint) {
-		foreach my $field (qw(key packages)) {
+		foreach my $field (qw(key packages-list)) {
 			foreach (split ' ', $fields{$field}) {
 				if (! $package{$_}) {
 					print STDERR "$file: $_ is not a valid package.\n";
@@ -94,11 +94,14 @@ sub processfile {
 		}
 	}
 
-	foreach (qw{task section relevance description key depends}, 
+	if (exists $fields{"packages-list"}) {
+		$fields{packages}="task-fields";
+	}
+	
+	foreach (qw{task section relevance description key depends packages}, 
 	         grep(/^test-(.*)/, keys %fields)) {
 		print OUT ucfirst($_).": ".$fields{$_}."\n" if length $fields{$_};
 	}
-	print OUT "Packages: task-fields\n";
 	print OUT "\n";
 }
 
