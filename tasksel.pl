@@ -76,6 +76,8 @@ sub read_task_desc {
 
 # Loads info for all tasks, and returns a set of task structures.
 sub all_tasks {
+	my %seen;
+	grep { $seen{$_->{task}}++; $seen{$_->{task}} < 2 }
 	map { read_task_desc($_) } list_task_descs();
 }
 

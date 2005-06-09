@@ -23,6 +23,9 @@ tasksel (2.25) UNRELEASED; urgency=low
       adding Test-force lines to tasks that force them to be installed,
       skipped, marked, or shown, without needing to write any code,
       and may be useful for CDDs. Closes: #275303
+    - Allow later task descs to override earlier ones, useful if you
+      want to blow away the standard Debian tasks, perhaps by using Test-force
+      to hide them. Closes: #274936
   * Kęstutis Biliūnas
     - Added openoffice.org-l10n-lt to lithuanian-desktop task.
     - Commented out kde-i18n-lt as the Lithuanian language currently is
