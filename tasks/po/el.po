@@ -1,4 +1,4 @@
-# translation of el.po to 
+# translation of el.po to
 # translation of el.po to
 # translation of el.po to
 # translation of tasksel_tasks_po_el.po to Greek
@@ -8,43 +8,41 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Konstantinos Margaritis <markos@debian.org>, 2004.
 # George Papamichelakis <george@step.gr>, 2004.
+# Greek Translation Team <debian-l10n-greek@lists.debian.org>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-06-09 19:35-0400\n"
-"PO-Revision-Date: 2004-07-20 20:34+0300\n"
-"Last-Translator: George Papamichelakis <george@step.gr>\n"
-"Language-Team:  <debian-l10n-greek@lists.debian.org>\n"
+"PO-Revision-Date: 2005-06-10 11:12EEST\n"
+"Last-Translator: Greek Translation Team <debian-l10n-greek@lists.debian.org>\n"
+"Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.9.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 
 #. Description
 #: ../po/debian-tasks.desc:3
-#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Arabic speakers to use Debian."
 msgstr ""
-"Αυτή η ομάδα εγκαθιστά πακέτα και οδηγίες χρήσης στα Ισπανικά για χρήστες "
+"Αυτή η ομάδα εγκαθιστά πακέτα και οδηγίες χρήσης στα Αραβικά για χρήστες "
 "του Debian που ομιλούν αυτή τη γλώσσα."
 
 #. Description
 #: ../po/debian-tasks.desc:14
-#, fuzzy
 msgid "Arabic environment"
-msgstr "Ταϊλανδέζικο περιβάλλον"
+msgstr "Αραβικό περιβάλλον"
 
 #. Description
 #: ../po/debian-tasks.desc:14
-#, fuzzy
 msgid "This task makes the desktop be localised in Arabic"
-msgstr "Αυτή η ομάδα ρυθμίζει το περιβάλλον εργασίας στα Ταϊλανδέζικα"
+msgstr "Αυτή η ομάδα ρυθμίζει το περιβάλλον εργασίας στα Αραβικά"
 
 #. Description
 #: ../po/debian-tasks.desc:21
@@ -68,36 +66,31 @@ msgstr "Βραζιλιάνικο Πορτογαλικό περιβάλλον ε�
 #. Description
 #: ../po/debian-tasks.desc:32
 msgid "This task localises the desktop in Brasilian Portuguese."
-msgstr ""
-"Αυτή η ομάδα ρυθμίζει το περιβάλλον εργασίας για Βραζιλιάνικα Πορτογαλικά."
+msgstr "Αυτή η ομάδα ρυθμίζει το περιβάλλον εργασίας για Βραζιλιάνικα Πορτογαλικά."
 
 #. Description
 #: ../po/debian-tasks.desc:39
-#, fuzzy
 msgid "Bulgarian environment"
-msgstr "Iταλικό περιβάλλον"
+msgstr "Βουλγάρικο περιβάλλον"
 
 #. Description
 #: ../po/debian-tasks.desc:39
-#, fuzzy
 msgid ""
 "This task installs programs and data files that make it easier for Bulgarian "
 "speakers to use Debian."
 msgstr ""
 "Αυτή η ομάδα εγκαθιστά πακέτα χρήσιμα σε χρήστες του Debian που ομιλούν "
-"Κορεάτικα."
+"Βουλγάρικα."
 
 #. Description
 #: ../po/debian-tasks.desc:48
-#, fuzzy
 msgid "Bulgarian desktop"
-msgstr "Ιταλικό περιβάλλον εργασίας"
+msgstr "Βουλγάρικο περιβάλλον εργασίας"
 
 #. Description
 #: ../po/debian-tasks.desc:48
-#, fuzzy
 msgid "This task makes the desktop be localised in Bulgarian."
-msgstr "Αυτή η ομάδα ρυθμίζει το περιβάλλον εργασίας στα Ιταλικά."
+msgstr "Αυτή η ομάδα ρυθμίζει το περιβάλλον εργασίας στα Βουλγάρικα."
 
 #. Description
 #: ../po/debian-tasks.desc:55
@@ -232,8 +225,7 @@ msgstr "Βάση Δεδομένων SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:148
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Αυτή η ομάδα εγκαθιστά πακέτα για λογισμικό πελάτη και εξυπηρετητή για τη "
 "βάση δεδομένων PostgreSQL."
@@ -278,8 +270,7 @@ msgstr "Διακομιστής Ονομάτων (DNS)"
 
 #. Description
 #: ../po/debian-tasks.desc:182
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Επιλέγει για εγκατάσταση το διακομιστή ονομάτων BIND, και σχετικά εργαλεία "
 "και οδηγίες χρήσης."
@@ -397,7 +388,7 @@ msgstr "Αυτή η ομάδα ρυθμίζει το περιβάλλον εργ
 #. Description
 #: ../po/debian-tasks.desc:268
 msgid "Italian environment"
-msgstr "Iταλικό περιβάλλον"
+msgstr "Ιταλικό περιβάλλον"
 
 #. Description
 #: ../po/debian-tasks.desc:268
@@ -405,7 +396,7 @@ msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
 msgstr ""
-"Αυτή η ομάδα εγκαθιστά πακέτα και οδηγίες χρήσης στα Iταλικά για χρήστες του "
+"Αυτή η ομάδα εγκαθιστά πακέτα και οδηγίες χρήσης στα Ιταλικά για χρήστες του "
 "Debian που ομιλούν αυτή τη γλώσσα."
 
 #. Description
@@ -613,13 +604,12 @@ msgstr "Αυτή η ομάδα ρυθμίζει το περιβάλλον εργ
 #. Description
 #: ../po/debian-tasks.desc:433
 msgid "standard system"
-msgstr ""
+msgstr "τυπικό σύστημα"
 
 #. Description
 #: ../po/debian-tasks.desc:433
-#, fuzzy
 msgid "This task causes the standard base system to be installed."
-msgstr "Η ομάδα αυτή ρυθμίζει το σύστημά σας για εξυπηρέτηση εκτυπώσεων."
+msgstr "Η ομάδα αυτή εγκαθιστά ένα τυπικό βασικό σύστημα.."
 
 #. Description
 #: ../po/debian-tasks.desc:440
@@ -724,8 +714,8 @@ msgstr "Διακομιστής Ιστοσελίδων"
 
 #. Description
 #: ../po/debian-tasks.desc:513
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Η ομάδα αυτή επιλέγει για εγκατάσταση πακέτα χρήσιμα για ένα διακομιστή "
 "ιστοσελίδων γενικών αναγκών."
+
