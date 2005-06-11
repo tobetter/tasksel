@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:39+0200\n"
+"POT-Creation-Date: 2005-06-11 08:38+0200\n"
 "PO-Revision-Date: 2004-08-20 00:34+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -596,9 +596,8 @@ msgstr "Linux 基本標準"
 
 #. Description
 #: ../po/debian-tasks.desc:433
-#, fuzzy
-msgid "This task causes the standard base system to be installed."
-msgstr "此主題將把您的系統設置成一台列印伺服器。"
+msgid "This task installs a reasonably small character-mode system."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:440
@@ -706,6 +705,10 @@ msgstr "Web 伺服器"
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "此主題提供了對於一般用途的的 web 伺服器系統而言極有用處的套件。"
+
+#, fuzzy
+#~ msgid "This task causes the standard base system to be installed."
+#~ msgstr "此主題將把您的系統設置成一台列印伺服器。"
 
 #~ msgid "Office environment"
 #~ msgstr "辦公室環境"

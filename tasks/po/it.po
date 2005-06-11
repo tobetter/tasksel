@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.51\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:39+0200\n"
+"POT-Creation-Date: 2005-06-11 08:38+0200\n"
 "PO-Revision-Date: 2004-08-27 00:49+0200\n"
 "Last-Translator: Giuseppe Sacco <eppesuig@debian.org>\n"
 "Language-Team: italian <tp@lists.linux.it>\n"
@@ -620,9 +620,8 @@ msgstr "Linux Standard Base"
 
 #. Description
 #: ../po/debian-tasks.desc:433
-#, fuzzy
-msgid "This task causes the standard base system to be installed."
-msgstr "Questo task configura il sistema come server di stampa."
+msgid "This task installs a reasonably small character-mode system."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:440
@@ -734,6 +733,10 @@ msgstr "Server Web"
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "Questo task installa pacchetti utili per un server Web generico."
+
+#, fuzzy
+#~ msgid "This task causes the standard base system to be installed."
+#~ msgstr "Questo task configura il sistema come server di stampa."
 
 #~ msgid "Office environment"
 #~ msgstr "Ambiente \"office\""

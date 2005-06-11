@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.42\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:39+0200\n"
-"PO-Revision-Date: 2005-06-11 07:26+0200\n"
+"POT-Creation-Date: 2005-06-11 08:38+0200\n"
+"PO-Revision-Date: 2005-06-11 08:39+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -640,8 +640,10 @@ msgstr "Système standard"
 
 #. Description
 #: ../po/debian-tasks.desc:433
-msgid "This task causes the standard base system to be installed."
-msgstr "Cette tâche installe le système de base standard."
+msgid "This task installs a reasonably small character-mode system."
+msgstr ""
+"Cette tâche installe un système de taille relativement raisonnable, en mode "
+"caractère uniquement."
 
 #. Description
 #: ../po/debian-tasks.desc:440
@@ -756,6 +758,9 @@ msgstr "Serveur web"
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "Cette tâche choisit les paquets utiles pour un serveur web générique."
+
+#~ msgid "This task causes the standard base system to be installed."
+#~ msgstr "Cette tâche installe le système de base standard."
 
 #~ msgid "Office environment"
 #~ msgstr "Environnement bureautique"

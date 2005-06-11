@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:39+0200\n"
+"POT-Creation-Date: 2005-06-11 08:38+0200\n"
 "PO-Revision-Date: 2004-07-21 22:57+0300\n"
 "Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
 "Language-Team: Hebrew <eo@li.org>\n"
@@ -620,12 +620,10 @@ msgstr "משימה זאת הופכת את שולחן העבודה למותאם �
 msgid "Standard system"
 msgstr ""
 
-#  Description
 #. Description
 #: ../po/debian-tasks.desc:433
-#, fuzzy
-msgid "This task causes the standard base system to be installed."
-msgstr "משימה זאת מגדירה את המערכת שלך כשרת הדפסות."
+msgid "This task installs a reasonably small character-mode system."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:440
@@ -742,3 +740,8 @@ msgstr "שרת Web"
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "משימה זאת בוחרת חבילות שעוזרות להקמת שרת WEB."
+
+#  Description
+#, fuzzy
+#~ msgid "This task causes the standard base system to be installed."
+#~ msgstr "משימה זאת מגדירה את המערכת שלך כשרת הדפסות."

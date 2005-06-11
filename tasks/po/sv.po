@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:39+0200\n"
+"POT-Creation-Date: 2005-06-11 08:38+0200\n"
 "PO-Revision-Date: 2004-07-24 23:44+0200\n"
 "Last-Translator: Per Olofsson <pelle@dsv.su.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
@@ -620,9 +620,8 @@ msgstr "Linux Standard Base"
 
 #. Description
 #: ../po/debian-tasks.desc:433
-#, fuzzy
-msgid "This task causes the standard base system to be installed."
-msgstr "Denna funktion konfigurerar ditt system för att vara utskriftsserver."
+msgid "This task installs a reasonably small character-mode system."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:440
@@ -736,6 +735,11 @@ msgid ""
 msgstr ""
 "Denna funktion väljer paket som är användbara för ett webbserversystem för "
 "allmänt bruk."
+
+#, fuzzy
+#~ msgid "This task causes the standard base system to be installed."
+#~ msgstr ""
+#~ "Denna funktion konfigurerar ditt system för att vara utskriftsserver."
 
 #~ msgid "Office environment"
 #~ msgstr "Kontorsmiljö"
