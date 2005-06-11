@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-30 13:29-0400\n"
+"POT-Creation-Date: 2005-06-11 07:41+0200\n"
 "PO-Revision-Date: 2004-08-28 17:01+0200\n"
 "Last-Translator: Håvard Korsvoll <korsvoll@skulelinux.no>\n"
 "Language-Team: Norwegian nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -22,17 +22,14 @@ msgstr ""
 "X-Generator: KBabel 1.0.2\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../tasksel.pl:290
+#: ../tasksel.pl:305
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
 "tasksel [options]; where options is any combination of:\n"
 "\t-t, --test          test mode; don't really do anything\n"
-"\t-r, --required      install all required-priority packages\n"
-"\t-i, --important     install all important-priority packages\n"
-"\t-s, --standard      install all standard-priority packages\n"
-"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
 "\t    --task-packages list available packages in a task\n"
@@ -52,7 +49,7 @@ msgstr ""
 "\t    --task-packages list opp tilgjengelege pakkar i ei oppgåve\n"
 "\t    --task-desc     returnerer skildringa av ei oppgåve\n"
 
-#: ../tasksel.pl:465 ../tasksel.pl:478
+#: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
 msgid "aptitude failed"
 msgstr "aptitude feila"
 

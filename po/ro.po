@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-30 13:29-0400\n"
+"POT-Creation-Date: 2005-06-11 07:41+0200\n"
 "PO-Revision-Date: 2004-07-27 22:40+0300\n"
 "Last-Translator: Eddy Petrisor <eddy_petrisor@yahoo.com>\n"
 "Language-Team: Romanian <Romanian>\n"
@@ -16,17 +16,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
 
-#: ../tasksel.pl:290
+#: ../tasksel.pl:305
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
 "tasksel [options]; where options is any combination of:\n"
 "\t-t, --test          test mode; don't really do anything\n"
-"\t-r, --required      install all required-priority packages\n"
-"\t-i, --important     install all important-priority packages\n"
-"\t-s, --standard      install all standard-priority packages\n"
-"\t-n, --no-ui         don't show UI; use with -r or -i usually\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
 "\t    --task-packages list available packages in a task\n"
@@ -48,7 +45,7 @@ msgstr ""
 "\t    --task-packages listează pachetele disponibile într-o sarcină\n"
 "\t    --task-desc     întoarce descrierea unei sarcini\n"
 
-#: ../tasksel.pl:465 ../tasksel.pl:478
+#: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
 msgid "aptitude failed"
 msgstr "aptitude a eşuat"
 
