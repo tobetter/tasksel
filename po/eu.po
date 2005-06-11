@@ -1,25 +1,23 @@
-# Spanish translation for tasksel
-# Copyright (C) 2000 Software in the Public Interest, Inc.
-# Enrique Zanardi <ezanard@debian.org>, 2000.
-# Javier Fernandez-Sanguino <jfs@debian.org>, 2003.
-# Piarres Beobide Egaña <pi@beobide.net>, 2004.
-#
+# translation of tasksel.po to Euskara
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
+# I�aki Larra�aga Murgoitio, <dooteo@euskalgnu.org>, 2005
+# Piarres Beobide <pi@beobide.net> 2005
+
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 0.1\n"
+"Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-06-11 07:41+0200\n"
-"PO-Revision-Date: 2004-07-25 18:08+0200\n"
-"Last-Translator: Piarres Beobide Egaña <pi@beobide.net>\n"
-"Language-Team: Euskara <librezale@librezale.org>\n"
+"PO-Revision-Date: 2005-06-11 16:00+0200\n"
+"Last-Translator: Piarres Beobide\n"
+"Language-Team:  Librezale.org <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #: ../tasksel.pl:305
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -32,201 +30,17 @@ msgid ""
 "\t    --task-desc     returns the description of a task\n"
 msgstr ""
 "Erabilera:\n"
-"tasksel install <ataza>\n"
-"tasksel remove <task>\n"
-"taskel [aukerak]; Non aukerak hauen nahasmen bat den:\n"
-"\t-t, --test          froga modua; Egiaz ez du ezer egiten\n"
-"\t-r, --required      beharrezko lehenespeneko pakete guztiak instalatu\n"
-"\t-i, --important     garrantzitsu lehenespeneko pakete guztiak instalatu\n"
-"\t-s, --standard      standard lehenespeneko pakete guztiak instalatu\n"
-"\t-n, --no-ui         Ez interfazea bistaratu; -r edo  -i -rekin arruntean \n"
-"\t    --new-install   Zenabit ataza automatikoki instalatu\n"
-"\t    --list-tasks    Bistarazi erakuts daitezken atazak eta irten\n"
-"\t    --task-packages Ataza batetako paketeak bistarazi\n"
-"\t    --task-desc     Ataza baten argibideak bistarazi\n"
+"tasksel install <atazak>\n"
+"tasksel remove <atazak>\n"
+"tasksel [aukerak]; aukerak honakoen conbinazioa izan daitee:\n"
+"\t-t, --test          proba modua, ez du ezer egiten\n"
+"\t    --new-install   ataza batzuk automatikoki instalatzeko\n"
+"\t    --list-tasks    atazen zerrenda bistaratu eta irten egiten da\n"
+"\t    --task-packages ataza bateko pakete eskuragarriak \n"
+"                          zerrendatzen ditu\n"
+"\t    --task-desc     ataza baten azalpena itzultzen du\n"
 
 #: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
 msgid "aptitude failed"
-msgstr "aptitudek huts egin du"
+msgstr "aptitude-k huts egin du"
 
-#~ msgid ""
-#~ "ignoring other selected packages in favour of manual package selection"
-#~ msgstr ""
-#~ "ignorando otros paquetes seleccionados para hacer la selección manual de "
-#~ "paquetes"
-
-#~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "No puedo resevar memoria para el búfer de enumeración"
-
-#~ msgid ""
-#~ "Fatal error encountered at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Se encontró un error fatal en %s:%d\n"
-#~ "\t"
-
-#~ msgid ""
-#~ "I/O error at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Error de E/S en %s:%d\n"
-#~ "\t"
-
-#~ msgid "(no description)"
-#~ msgstr "(no hay descripción)"
-
-#~ msgid "End-user"
-#~ msgstr "Usuario final"
-
-#~ msgid "Hardware Support"
-#~ msgstr "Soporte de hardware"
-
-#~ msgid "Servers"
-#~ msgstr "Servidores"
-
-#~ msgid "Development"
-#~ msgstr "Desarrollo"
-
-#~ msgid "Localization"
-#~ msgstr "Localización"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Miscelánea"
-
-#~ msgid "Unable to initialize the terminal"
-#~ msgstr "No puedo inicializar el terminal"
-
-#~ msgid "Unable to initialize screen output"
-#~ msgstr "No puedo inicializar la salida por pantalla"
-
-#~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "No puedo inicializar la interfaz de teclado"
-
-#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr "Instalador de tareas de Debian v %s (C) 1999-2004 SPI y otros"
-
-#~ msgid "^Finish"
-#~ msgstr "^Finalizar"
-
-#~ msgid "Task ^Info"
-#~ msgstr "^Información de la tarea"
-
-#~ msgid "^Help"
-#~ msgstr "Ayuda (^H)"
-
-#~ msgid "Select tasks to install"
-#~ msgstr "Escoja las tareas que desee instalar"
-
-#~ msgid "Ok"
-#~ msgstr "Aceptar"
-
-#~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Índice fuera de rango: %d >= %d"
-
-#~ msgid "Help"
-#~ msgstr "Ayuda"
-
-#~ msgid ""
-#~ "Tasks allow you to quickly install a selection of packages that performs "
-#~ "a given task.\n"
-#~ "\n"
-#~ "The main chooser list shows a list of tasks that you can choose to "
-#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
-#~ "toggles the selection of the task at the cursor. You can also press A to "
-#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-#~ "program and begin installation of your selected tasks.\n"
-#~ "\n"
-#~ "Thank you for using Debian.\n"
-#~ "\n"
-#~ "Press enter to return to the task selection screen"
-#~ msgstr ""
-#~ "Las tareas le permite le permiten instalar rápidamente una selección de "
-#~ "paquetes que desempeñan una tarea dada.\n"
-#~ "\n"
-#~ "La lista principal muestra una serie de tareas que usted puede escoger "
-#~ "para instalar. Las teclas de flechas mueven el cursor. Pulsando INTRO o "
-#~ "la BARRA ESPACIADORA cambia el estado de la selección de la tarea que "
-#~ "esté bajo el cursor. Puede pulsar también A para seleccionar todas las "
-#~ "tareas, o N para deseleccionar todas las tareas. Pulsando Q saldrá del "
-#~ "programa y comenzará la instalación de las tareas seleccionadas.\n"
-#~ "\n"
-#~ "Gracias por usar Debian.\n"
-#~ "\n"
-#~ "Pulse intro para regresar a la pantalla de selección de tareas"
-
-#~ msgid ""
-#~ "Description:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Included packages:\n"
-#~ msgstr ""
-#~ "Descripción:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Paquetes incluidos:\n"
-
-#~ msgid "(no description available)"
-#~ msgstr "(no hay descripción disponible)"
-
-#~ msgid "Unknown signal seen"
-#~ msgstr "He recibido una señal desconocida"
-
-#~ msgid "tasksel install <task>\n"
-#~ msgstr "instalación de tasksel <tarea>\n"
-
-#~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr "tasksel [opciones]; donde opciones es una combinación de:\n"
-
-#~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- modo de pruebas; no ejecuta apt-get al salir"
-
-#~ msgid ""
-#~ "-q -- queue installs; do not install packages with apt-get;\n"
-#~ "\t\tjust queue them in dpkg"
-#~ msgstr ""
-#~ "-q -- pon las instalaciones en la cola; no instala los paquetes con apt-"
-#~ "get;\n"
-#~ "\t\tsólo los pone en la cola en dpkg"
-
-#~ msgid "-r -- install all required-priority packages"
-#~ msgstr "-r -- instala todos los paquetes con prioridad 'requerido'"
-
-#~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- instala todos los paquetes con prioridad 'importante'"
-
-#~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- instala todos los paquetes con prioridad 'estandar'"
-
-#~ msgid "-n -- don't show UI; use with -r or -i usually"
-#~ msgstr ""
-#~ "-n -- no muestra la interfaz de usuario; normalmente se usará con -r o -i"
-
-#~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr ""
-#~ "-a -- muestra todas las tareas, incluso aquellas que no tienen paquetes"
-
-#~ msgid "No packages selected\n"
-#~ msgstr "No se ha seleccionado ningún paquete\n"
-
-#~ msgid "No tasks found on this system.\n"
-#~ msgstr "No se encontró ninguna tarea en este sistema.\n"
-
-#~ msgid "Cannot allocate memory for strdup"
-#~ msgstr "No se pudo reservar memoria para strdup"
-
-#~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "No se pudieron reservar %d bytes de memoria"
-
-#~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "No se pudieron reasignar %d bytes de memoria"
-
-#~ msgid ""
-#~ "No tasks found on this system.\n"
-#~ "Did you update your available file? Try running dselect update.\n"
-#~ msgstr ""
-#~ "No se encontraron tareas en este sistema.\n"
-#~ "¿Está seguro de que actualizó su fichero de paquetes disponibles? "
-#~ "Intenteejecutar «dselect update».\n"
-
-#~ msgid "Debian Task Installer"
-#~ msgstr "Instalador de Tareas de Debian"
