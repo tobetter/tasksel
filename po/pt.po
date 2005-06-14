@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the tasksel package.
 # Miguel Figueiredo <elmig@debianPT.org>, 2004.
 #
+# 14-06-2005 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-06-11 07:41+0200\n"
-"PO-Revision-Date: 2004-08-06 15:33+0000\n"
-"Last-Translator: Miguel Figueiredo <elmig@debianPT.org>\n"
+"PO-Revision-Date: 2005-06-14 15:33+0000\n"
+"Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team: Portuguese Translation Team <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:305
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -31,12 +32,8 @@ msgstr ""
 "Utilização:\n"
 "tasksel install <tarefa>\n"
 "tasksel remove <tarefa>\n"
-"tasksel [opções]; onde as opções são qualquer combinação de:\n"
+"tasksel [opções]; onde opções é qualquer combinação de:\n"
 "\t-t, --test          modo de teste; na verdade não faz nada\n"
-"\t-r, --required      instala todos os pacotes com required-priority\n"
-"\t-i, --important     instala todos os pacotes com important-priority\n"
-"\t-s, --standard      instala todos os pacotes com standard-priority\n"
-"\t-n, --no-ui         não mostra a UI; utiliza-se normalmente com -r ou -i\n"
 "\t    --new-install   instalar automaticamente algumas tarefas\n"
 "\t    --list-tasks    lista tarefas que serão mostradas e sai\n"
 "\t    --task-packages lista pacotes disponíveis numa tarefa\n"
