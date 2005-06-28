@@ -1,20 +1,19 @@
 # Debian Indonesia translation of tasksel.
 # I Gede Wijaya S <jaya@te.pdft.ugm.ac.id>, 2004.
-#
+# Parlin Imanuel <parlin_i@yahoo.com>, 2005.
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-06-11 07:41+0200\n"
-"PO-Revision-Date: 2004-07-21 16:43+0700\n"
-"Last-Translator: I Gede Wijaya S <jaya@te.pdft.ugm.ac.id>\n"
+"PO-Revision-Date: 2005-06-28 16:25+0700\n"
+"Last-Translator: Parlin Imanuel <parlin_i@yahoo.com>\n"
 "Language-Team: Debian Indonesia <debid@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:305
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -32,11 +31,6 @@ msgstr ""
 "tasksel [pilihan-pilihan]; yang mana pilihan-pilihan dapat berupa kombinasi "
 "dari:\n"
 "\t-t, --test          mode uji coba; jangan melakukan apa-apa\n"
-"\t-r, --required      pasang semua paket dengan prioritas diperlukan\n"
-"\t-i, --important     pasang semua paket dengan prioritas penting\n"
-"\t-s, --standard      pasang semua paket dengan prioritas standar\n"
-"\t-n, --no-ui         jangan gunakan UI; biasanya digunakan dengan -r atau -"
-"i\n"
 "\t    --new-install   secara otomatis memasang beberapa tugas\n"
 "\t    --list-tasks    tampilkan daftar tugas-tugas dan keluar\n"
 "\t    --task-packages tampilkan paket-paket yang tersedia dalam tugas\n"
