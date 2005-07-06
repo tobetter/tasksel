@@ -1,4 +1,4 @@
-tasksel (2.26) unstable; urgency=low
+tasksel (2.26) UNRELEASED; urgency=low
 
   * Joey Hess
     - Remove doc-linux-zh-s, mozilla-locale-auto, debian-guide-es,
@@ -10,6 +10,9 @@ tasksel (2.26) unstable; urgency=low
       out of the box so are not appropriate for a task anyway.
     - That's all the cruft in tasks. Closes: #260250
     - Add Czech tasks by Miroslav Kure. Closes: #313181
+    - Add laptop task, with autodetection. Depend on laptop-detect.
+      Closes: #287414
+    
   * Konstantinos Margaritis
     - Updated Greek task, specifically:
       - Added fonts ttf-mgopen (higher quality than ttf-freefont)

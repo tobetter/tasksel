@@ -8,7 +8,7 @@ Build-Depends: po-debconf, debhelper (>= 4), gettext, dpkg-dev (>= 1.9.0)
 
 Package: tasksel
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1)
+Depends: ${shlibs:Depends}, ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1), laptop-detect
 Conflicts: debconf (<< 1.4.27), base-config (<< 2.32)
 Description: Tool for selecting tasks for installation on Debian system
  This package provides 'tasksel', a simple interface for users who

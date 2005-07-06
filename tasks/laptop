@@ -1,0 +1,12 @@
+Task: standard
+Section: user
+Description: Laptop
+ This task installs software useful for a laptop.
+Test-laptop: 1
+Packages-list:
+ acpid
+ apmd
+ acpi
+ apm
+ pcmcia-cs
+ wireless-tools
