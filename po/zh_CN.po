@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: tasksel 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-06-11 07:41+0200\n"
-"PO-Revision-Date: 2005-07-07 15:41+1200\n"
+"PO-Revision-Date: 2005-07-07 21:44+1200\n"
 "Last-Translator: Carlos Z.F. Liu <carlos_liu@yahoo.com>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8-bit\n"
 
 #: ../tasksel.pl:305
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -35,7 +34,7 @@ msgstr ""
 "\t    --new-install   自动安装某些软件集\n"
 "\t    --list-tasks    列出将要显示的软件集并退出\n"
 "\t    --task-packages 列出某软件集中的软件包\n"
-"\t    --task-desc     显示软件集的说明\n"
+"\t    --task-desc     显示某软件集的说明信息\n"
 
 #: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
 msgid "aptitude failed"
