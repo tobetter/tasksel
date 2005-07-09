@@ -1,11 +1,17 @@
 tasksel (2.27) UNRELEASED; urgency=low
 
+  [ Joey Hess ]
+  * Automatically default to selecting desktop task on new installs
+    if the machine has sufficient ram, disk, and other characteristics that
+    suggest it will be used as a desktop. This is just a guess, but is better
+    than no guess.
+
   * Translations of tasks
     - Updated Bulgarian translation (Ognyan Kulev)
   * Program translations
     - Updated Bulgarian translation (Ognyan Kulev)
 
- -- Ognyan Kulev <ogi@fmi.uni-sofia.bg>  Thu,  7 Jul 2005 20:58:46 +0300
+ -- Joey Hess <joeyh@debian.org>  Sat,  9 Jul 2005 17:36:57 +0300
 
 tasksel (2.26) unstable; urgency=low
 
