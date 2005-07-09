@@ -1,4 +1,4 @@
-tasksel (2.27) UNRELEASED; urgency=low
+tasksel (2.27) unstable; urgency=low
 
   [ Joey Hess ]
   * Automatically default to selecting desktop task on new installs
@@ -6,6 +6,9 @@ tasksel (2.27) UNRELEASED; urgency=low
     suggest it will be used as a desktop. This is just a guess, but is better
     than no guess.
   * Add slovak task by Peter Mann. Closes: #315813
+
+  [ Otavio Salvador ]
+  * Switch Brazilian timezone selection back to cities.
 
   * Translations of tasks
     - Updated Bulgarian translation (Ognyan Kulev)
