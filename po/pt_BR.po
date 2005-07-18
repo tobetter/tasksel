@@ -2,12 +2,14 @@
 # Copyright (C) 2001 Free Software Foundation, Inc.
 # Andre Luis Lopes <andrelop@ig.com.br>, 2001.
 # Andre Luis Lopes <andrelop@debian.org>, 2004.
+# Andre Luis Lopes <andrelop@debian.org>, 2005.
+
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: debian-l10n-portuguese@lists.debian.org\n"
 "POT-Creation-Date: 2005-06-11 07:41+0200\n"
-"PO-Revision-Date: 2004-07-22 20:32-0300\n"
+"PO-Revision-Date: 2005-07-18 13:24-0300\n"
 "Last-Translator: Andre Luis Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:305
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -32,10 +33,6 @@ msgstr ""
 "tasksel remove <tarefa>\n"
 "tasksel [opções]; onde opções é uma combinação de:\n"
 "\t-t --test           modo de teste; não faz nada na verdade\n"
-"\t-r --required       instala todos os pacotes de prioridade required\n"
-"\t-i --important      instala todos os pacotes de prioridade important\n"
-"\t-s --standard       instala todos os pacotes de prioridade standard\n"
-"\t-n --no-ui          não exibe interface; normalmente usado com -r ou -i\n"
 "\t   --new-install    instala automaticamente algumas tarefas\n"
 "\t   --list-tasks     lista tarefas que seriam exibidas e finaliza\n"
 "\t   --task-packages  lista pacotes disponíveis em uma tarefa\n"
