@@ -1,21 +1,20 @@
 # tasksel
 # Copyright (C) 2000 Free Software Foundation, Inc.
 # Marcin Owsiany <porridge@debian.org>, 2000, 2001.
-# Bartosz Feñski aka fEnIo <fenio@o2.pl>, 2004
+# Bartosz Feñski aka fEnIo <fenio@debian.org>, 2004, 2005
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-06-11 07:41+0200\n"
-"PO-Revision-Date: 2004-09-05 18:05+0200\n"
-"Last-Translator: Bartosz Fenski <fenio@o2.pl>\n"
+"PO-Revision-Date: 2005-07-27 15:20+0200\n"
+"Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:305
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -32,10 +31,6 @@ msgstr ""
 "tasksel remove <zadanie>\n"
 "tasksel [opcje]; gdzie opcje mog± byæ kombinacj± poni¿szych:\n"
 "\t-t, --test          tryb testowy; nic nie robi w rzeczywisto¶ci\n"
-"\t-r, --required      instaluj pakiety z priorytetem wymagany\n"
-"\t-i, --important     instaluj pakiety z priorytetem wa¿ny\n"
-"\t-s, --standard      instaluj pakiety z priorytetem standardowy\n"
-"\t-n, --no-ui         bez interfejsu; u¿ywane g³ównie z -r lub -i\n"
 "\t    --new-install   automatycznie instaluj niektóre zadania\n"
 "\t    --list-tasks    wy¶wietl zadania i zakoñcz\n"
 "\t    --task-packages wy¶wietl pakiety z zadania\n"
