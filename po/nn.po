@@ -1,8 +1,4 @@
 # translation of tasksel.po to Norwegian nynorsk
-# translation of tasksel.po to Norwegian (Nynorsk)
-# translation of tasksel.po to Norwegian (Nynorsk)
-# translation of tasksel.po to
-# translation of tasksel.po to
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Håvard Korsvoll <korsvoll@stud.ntnu.no>, 2004.
@@ -13,7 +9,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-06-11 07:41+0200\n"
-"PO-Revision-Date: 2004-08-28 17:01+0200\n"
+"PO-Revision-Date: 2005-07-31 11:25+0200\n"
 "Last-Translator: Håvard Korsvoll <korsvoll@skulelinux.no>\n"
 "Language-Team: Norwegian nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +19,6 @@ msgstr ""
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../tasksel.pl:305
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -40,10 +35,6 @@ msgstr ""
 "tasksel remove <oppgåve>\n"
 "tasksel [val], der val er ein vilkårleg kombinasjon av:\n"
 "\t-t, --test          testmodus, gjer ingen endringar\n"
-"\t-r, --required      installerer alle pakkar med prioritet påkrevd\n"
-"\t-i, --important     installerer alle pakkar med prioritet viktig\n"
-"\t-s, --standard      installerer alle pakkar med prioritet standard\n"
-"\t-n, --no-ui         ikkje vis UI, vanlegvis brukt saman med -r eller -i\n"
 "\t    --new-install   installerer automatisk nokre oppgåver\n"
 "\t    --list-tasks    list opp oppgåver som vil bli vist og avslutt\n"
 "\t    --task-packages list opp tilgjengelege pakkar i ei oppgåve\n"
