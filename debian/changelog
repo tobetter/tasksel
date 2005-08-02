@@ -10,9 +10,11 @@ tasksel (2.29) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Priority inflation a-la-debootstrap. Closes: #318753
   * gimpprint rename
-  * Add anacron to laptop. 
+  * Add anacron to laptop.
+  * Remove force test script since as Free pointed out it's a subet of the
+    functionality of new-install. Closes: #317753
 
- -- Joey Hess <joeyh@debian.org>  Mon, 25 Jul 2005 13:30:16 -0400
+ -- Joey Hess <joeyh@debian.org>  Fri, 29 Jul 2005 19:35:31 -0400
 
 tasksel (2.28) unstable; urgency=low
 
