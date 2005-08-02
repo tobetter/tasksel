@@ -124,7 +124,7 @@ sub package_avail {
 		}
 	}
 
-	return $avail_pkgs{$package};
+	return $avail_pkgs{$package} || package_installed($package);
 }
 
 my %installed_pkgs;
