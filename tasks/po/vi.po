@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-08 14:02-0400\n"
+"POT-Creation-Date: 2005-08-08 14:10-0400\n"
 "PO-Revision-Date: 2005-07-10 17:37+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -293,11 +293,33 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:206
+#, fuzzy
+msgid ""
+"This task installs programs, data files, fonts, and documentation that makes "
+"it easier for Dutch speakers to use Debian."
+msgstr ""
+"Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
+"liệu giúp người dùng nói tiếng Ả Rập sử dụng Debian dễ dàng hơn."
+
+#. Description
+#: ../po/debian-tasks.desc:217
+#, fuzzy
+msgid "Dutch environment"
+msgstr "Môi trường tiếng Séc"
+
+#. Description
+#: ../po/debian-tasks.desc:217
+#, fuzzy
+msgid "This task makes the desktop be localised in Dutch"
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ả Rập."
+
+#. Description
+#: ../po/debian-tasks.desc:229
 msgid "File server"
 msgstr "Trình phục vụ tập tin"
 
 #. Description
-#: ../po/debian-tasks.desc:206
+#: ../po/debian-tasks.desc:229
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
@@ -306,12 +328,12 @@ msgstr ""
 "trợ cả NetBIOS và NFS."
 
 #. Description
-#: ../po/debian-tasks.desc:216
+#: ../po/debian-tasks.desc:239
 msgid "French environment"
 msgstr "Môi trường tiếng Pháp"
 
 #. Description
-#: ../po/debian-tasks.desc:216
+#: ../po/debian-tasks.desc:239
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -320,22 +342,22 @@ msgstr ""
 "nói tiếng Pháp."
 
 #. Description
-#: ../po/debian-tasks.desc:227
+#: ../po/debian-tasks.desc:250
 msgid "French desktop"
 msgstr "Màn hình nền tiếng Pháp"
 
 #. Description
-#: ../po/debian-tasks.desc:227
+#: ../po/debian-tasks.desc:250
 msgid "This task localises the desktop in French."
 msgstr "Công việc này địa phương hóa giao diện sang tiếng Pháp."
 
 #. Description
-#: ../po/debian-tasks.desc:234
+#: ../po/debian-tasks.desc:257
 msgid "German environment"
 msgstr "Môi trường Đức"
 
 #. Description
-#: ../po/debian-tasks.desc:234
+#: ../po/debian-tasks.desc:257
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -344,22 +366,22 @@ msgstr ""
 "dùng Debian nói tiếng Đức."
 
 #. Description
-#: ../po/debian-tasks.desc:245
+#: ../po/debian-tasks.desc:268
 msgid "German desktop"
 msgstr "Màn hình nền Tiếng Đức"
 
 #. Description
-#: ../po/debian-tasks.desc:245
+#: ../po/debian-tasks.desc:268
 msgid "This task localises the desktop in German."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Đức."
 
 #. Description
-#: ../po/debian-tasks.desc:252
+#: ../po/debian-tasks.desc:275
 msgid "Greek environment"
 msgstr "Môi trường Hy Lạp"
 
 #. Description
-#: ../po/debian-tasks.desc:252
+#: ../po/debian-tasks.desc:275
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -368,22 +390,22 @@ msgstr ""
 "người dùng Debian nói tiếng Hy Lạp."
 
 #. Description
-#: ../po/debian-tasks.desc:262
+#: ../po/debian-tasks.desc:285
 msgid "Greek desktop"
 msgstr "Màn hình nền Hy Lạp"
 
 #. Description
-#: ../po/debian-tasks.desc:262
+#: ../po/debian-tasks.desc:285
 msgid "This task localises the desktop in Greek."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Hy Lạp."
 
 #. Description
-#: ../po/debian-tasks.desc:269
+#: ../po/debian-tasks.desc:292
 msgid "Hebrew environment"
 msgstr "Môi trường Do Thái"
 
 #. Description
-#: ../po/debian-tasks.desc:269
+#: ../po/debian-tasks.desc:292
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -392,22 +414,22 @@ msgstr ""
 "người dùng Debian nói tiếng Do Thái."
 
 #. Description
-#: ../po/debian-tasks.desc:277
+#: ../po/debian-tasks.desc:300
 msgid "Hebrew desktop"
 msgstr "Màn hình nền Do Thái"
 
 #. Description
-#: ../po/debian-tasks.desc:277
+#: ../po/debian-tasks.desc:300
 msgid "This task localises the desktop in Hebrew."
 msgstr "Công việc này địa phương hóa giao diện tiếng Do Thái."
 
 #. Description
-#: ../po/debian-tasks.desc:284
+#: ../po/debian-tasks.desc:307
 msgid "Italian environment"
 msgstr "Môi trường tiếng Ý"
 
 #. Description
-#: ../po/debian-tasks.desc:284
+#: ../po/debian-tasks.desc:307
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -416,22 +438,22 @@ msgstr ""
 "dùng Debian nói tiếng Ý."
 
 #. Description
-#: ../po/debian-tasks.desc:295
+#: ../po/debian-tasks.desc:318
 msgid "Italian desktop"
 msgstr "Màn hình nền tiếng Ý"
 
 #. Description
-#: ../po/debian-tasks.desc:295
+#: ../po/debian-tasks.desc:318
 msgid "This task localises the desktop in Italian."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Ý."
 
 #. Description
-#: ../po/debian-tasks.desc:302
+#: ../po/debian-tasks.desc:325
 msgid "Japanese environment"
 msgstr "Môi trường tiếng Nhật"
 
 #. Description
-#: ../po/debian-tasks.desc:302
+#: ../po/debian-tasks.desc:325
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -440,22 +462,22 @@ msgstr ""
 "Debian dễ dàng hơn."
 
 #. Description
-#: ../po/debian-tasks.desc:314
+#: ../po/debian-tasks.desc:337
 msgid "Japanese desktop environment"
 msgstr "Môi trường làm việc tiếng Nhật"
 
 #. Description
-#: ../po/debian-tasks.desc:314
+#: ../po/debian-tasks.desc:337
 msgid "This task localises the desktop in Japanese."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Nhật."
 
 #. Description
-#: ../po/debian-tasks.desc:321
+#: ../po/debian-tasks.desc:344
 msgid "Korean environment"
 msgstr "Môi trường tiếng Hàn"
 
 #. Description
-#: ../po/debian-tasks.desc:321
+#: ../po/debian-tasks.desc:344
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
@@ -464,32 +486,32 @@ msgstr ""
 "Debian dễ dàng hơn."
 
 #. Description
-#: ../po/debian-tasks.desc:333
+#: ../po/debian-tasks.desc:356
 msgid "Korean desktop"
 msgstr "Màn hình nền tiếng Hàn"
 
 #. Description
-#: ../po/debian-tasks.desc:333
+#: ../po/debian-tasks.desc:356
 msgid "This task localises the desktop in Korean."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Hàn Quốc."
 
 #. Description
-#: ../po/debian-tasks.desc:340
+#: ../po/debian-tasks.desc:363
 msgid "Laptop"
 msgstr "Máy tính xách tay"
 
 #. Description
-#: ../po/debian-tasks.desc:340
+#: ../po/debian-tasks.desc:363
 msgid "This task installs software useful for a laptop."
 msgstr "Công việc này cài đặt phầm mềm có ích cho máy tính xách tay."
 
 #. Description
-#: ../po/debian-tasks.desc:347
+#: ../po/debian-tasks.desc:370
 msgid "Lithuanian environment"
 msgstr "Môi trường tiếng Li-tu-a-ni"
 
 #. Description
-#: ../po/debian-tasks.desc:347
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -498,22 +520,22 @@ msgstr ""
 "người dùng Debian nói tiếng Li-tu-a-ni"
 
 #. Description
-#: ../po/debian-tasks.desc:357
+#: ../po/debian-tasks.desc:380
 msgid "Lithuanian desktop"
 msgstr "Màn hình tiếng Li-tu-a-ni"
 
 #. Description
-#: ../po/debian-tasks.desc:357
+#: ../po/debian-tasks.desc:380
 msgid "This task localises the desktop in Lithuanian."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Li-tu-an-i."
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:387
 msgid "Mail server"
 msgstr "Trình phục vụ thư"
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:387
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -522,12 +544,12 @@ msgstr ""
 "thường dụng."
 
 #. Description
-#: ../po/debian-tasks.desc:373
+#: ../po/debian-tasks.desc:396
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Môi trường Na Uy (Bokmaal và Nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:373
+#: ../po/debian-tasks.desc:396
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -536,22 +558,22 @@ msgstr ""
 "dùng Debian nói tiếng Na Uy."
 
 #. Description
-#: ../po/debian-tasks.desc:384
+#: ../po/debian-tasks.desc:407
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "Màn hình nền Na Uy (Bokmaal và Nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:384
+#: ../po/debian-tasks.desc:407
 msgid "This task localises the desktop in Norwegian."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Na Uy."
 
 #. Description
-#: ../po/debian-tasks.desc:391
+#: ../po/debian-tasks.desc:414
 msgid "Polish environment"
 msgstr "Môi trường Ba lan"
 
 #. Description
-#: ../po/debian-tasks.desc:391
+#: ../po/debian-tasks.desc:414
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -560,33 +582,33 @@ msgstr ""
 "người dùng Debian nói tiếng Ba Lan."
 
 #. Description
-#: ../po/debian-tasks.desc:402
+#: ../po/debian-tasks.desc:425
 msgid "Polish desktop"
 msgstr "Màn hình nền Ba lan"
 
 #. Description
-#: ../po/debian-tasks.desc:402
+#: ../po/debian-tasks.desc:425
 msgid "This task localises the desktop in Polish."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Ba Lan."
 
 #. Description
-#: ../po/debian-tasks.desc:410
+#: ../po/debian-tasks.desc:433
 msgid "Print server"
 msgstr "Trình phục vụ in"
 
 #. Description
-#: ../po/debian-tasks.desc:410
+#: ../po/debian-tasks.desc:433
 msgid "This task sets up your system to be a print server."
 msgstr "Công việc này thiết lập hệ thống bạn có khả năng trình phục vụ in."
 
 #. Description
-#: ../po/debian-tasks.desc:420
+#: ../po/debian-tasks.desc:443
 #, fuzzy
 msgid "Romanian environment"
 msgstr "Môi trường U-cợ-rainh"
 
 #. Description
-#: ../po/debian-tasks.desc:420
+#: ../po/debian-tasks.desc:443
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
@@ -596,24 +618,24 @@ msgstr ""
 "dùng Debian nói tiếng Ý."
 
 #. Description
-#: ../po/debian-tasks.desc:431
+#: ../po/debian-tasks.desc:454
 #, fuzzy
 msgid "Romanian desktop"
 msgstr "Màn hình U-cra-in"
 
 #. Description
-#: ../po/debian-tasks.desc:431
+#: ../po/debian-tasks.desc:454
 #, fuzzy
 msgid "This task localises the desktop in Romanian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng U-cra-in."
 
 #. Description
-#: ../po/debian-tasks.desc:438
+#: ../po/debian-tasks.desc:461
 msgid "Russian environment"
 msgstr "Môi trường Nga"
 
 #. Description
-#: ../po/debian-tasks.desc:438
+#: ../po/debian-tasks.desc:461
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -622,22 +644,22 @@ msgstr ""
 "dùng Debian nói tiếng Nga."
 
 #. Description
-#: ../po/debian-tasks.desc:449
+#: ../po/debian-tasks.desc:472
 msgid "Russian desktop"
 msgstr "Màn hình nền tiếng Nga"
 
 #. Description
-#: ../po/debian-tasks.desc:449
+#: ../po/debian-tasks.desc:472
 msgid "This task localises the desktop in Russian."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Nga."
 
 #. Description
-#: ../po/debian-tasks.desc:456
+#: ../po/debian-tasks.desc:479
 msgid "Slovak environment"
 msgstr "Môi trường tiếng Xlô-vak"
 
 #. Description
-#: ../po/debian-tasks.desc:456
+#: ../po/debian-tasks.desc:479
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
@@ -646,22 +668,22 @@ msgstr ""
 "người dùng Debian nói tiếng Xlô-vak."
 
 #. Description
-#: ../po/debian-tasks.desc:464
+#: ../po/debian-tasks.desc:487
 msgid "Slovak desktop"
 msgstr "Màn hình nền tiếng Xlô-vak"
 
 #. Description
-#: ../po/debian-tasks.desc:464
+#: ../po/debian-tasks.desc:487
 msgid "This task localises the desktop in Slovak."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Xlô-vak."
 
 #. Description
-#: ../po/debian-tasks.desc:471
+#: ../po/debian-tasks.desc:494
 msgid "Spanish environment"
 msgstr "Môi trường Tây Ban Nha"
 
 #. Description
-#: ../po/debian-tasks.desc:471
+#: ../po/debian-tasks.desc:494
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -670,32 +692,32 @@ msgstr ""
 "người dùng nói tiếng Tây Ban Nha sử dụng Debian dễ dàng hơn."
 
 #. Description
-#: ../po/debian-tasks.desc:482
+#: ../po/debian-tasks.desc:505
 msgid "Spanish desktop"
 msgstr "Màn hình nền Tây Ban Nha"
 
 #. Description
-#: ../po/debian-tasks.desc:482
+#: ../po/debian-tasks.desc:505
 msgid "This task localises the desktop in Spanish."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Tây Ban Nha."
 
 #. Description
-#: ../po/debian-tasks.desc:489
+#: ../po/debian-tasks.desc:512
 msgid "Standard system"
 msgstr "Hệ thống chuẩn"
 
 #. Description
-#: ../po/debian-tasks.desc:489
+#: ../po/debian-tasks.desc:512
 msgid "This task installs a reasonably small character-mode system."
 msgstr "Công việc này cài đặt một hệ thống chế độ ký tự nhỏ thích hợp."
 
 #. Description
-#: ../po/debian-tasks.desc:496
+#: ../po/debian-tasks.desc:519
 msgid "Swedish environment"
 msgstr "Môi trường Thụy Điển"
 
 #. Description
-#: ../po/debian-tasks.desc:496
+#: ../po/debian-tasks.desc:519
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -704,22 +726,22 @@ msgstr ""
 "người dùng Debian nói tiếng Thụy Điển."
 
 #. Description
-#: ../po/debian-tasks.desc:506
+#: ../po/debian-tasks.desc:529
 msgid "Swedish desktop"
 msgstr "Màn hình nền Thụy Điển"
 
 #. Description
-#: ../po/debian-tasks.desc:506
+#: ../po/debian-tasks.desc:529
 msgid "This task localises the desktop in Swedish."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Thụy Điển."
 
 #. Description
-#: ../po/debian-tasks.desc:513
+#: ../po/debian-tasks.desc:536
 msgid "Thai environment"
 msgstr "Môi trường Thái"
 
 #. Description
-#: ../po/debian-tasks.desc:513
+#: ../po/debian-tasks.desc:536
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
@@ -728,22 +750,22 @@ msgstr ""
 "dàng hơn."
 
 #. Description
-#: ../po/debian-tasks.desc:525
+#: ../po/debian-tasks.desc:548
 msgid "Thai desktop"
 msgstr "Màn hình nền tiếng Thái"
 
 #. Description
-#: ../po/debian-tasks.desc:525
+#: ../po/debian-tasks.desc:548
 msgid "This task localises the desktop in Thai."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Thái."
 
 #. Description
-#: ../po/debian-tasks.desc:532
+#: ../po/debian-tasks.desc:555
 msgid "Turkish environment"
 msgstr "Môi trường Thổ Nhĩ Kỳ"
 
 #. Description
-#: ../po/debian-tasks.desc:532
+#: ../po/debian-tasks.desc:555
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -752,22 +774,22 @@ msgstr ""
 "người dùng Debian nói tiếng Thổ."
 
 #. Description
-#: ../po/debian-tasks.desc:544
+#: ../po/debian-tasks.desc:567
 msgid "Turkish desktop"
 msgstr "Màn hình nền Thổ Nhĩ Kỳ"
 
 #. Description
-#: ../po/debian-tasks.desc:544
+#: ../po/debian-tasks.desc:567
 msgid "This task localises the desktop in Turkish."
 msgstr "Công việc này địa phương hóa giao diện bằng tiếng Thổ Nhĩ Kỳ."
 
 #. Description
-#: ../po/debian-tasks.desc:551
+#: ../po/debian-tasks.desc:574
 msgid "Ukrainian environment"
 msgstr "Môi trường U-cợ-rainh"
 
 #. Description
-#: ../po/debian-tasks.desc:551
+#: ../po/debian-tasks.desc:574
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -776,29 +798,26 @@ msgstr ""
 "người dùng Debian nói tiếng U-cợ-rainh."
 
 #. Description
-#: ../po/debian-tasks.desc:561
+#: ../po/debian-tasks.desc:584
 msgid "Ukrainian desktop"
 msgstr "Màn hình U-cra-in"
 
 #. Description
-#: ../po/debian-tasks.desc:561
+#: ../po/debian-tasks.desc:584
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng U-cra-in."
 
 #. Description
-#: ../po/debian-tasks.desc:569
+#: ../po/debian-tasks.desc:592
 msgid "Web server"
 msgstr "Trình phục vụ Mạng"
 
 #. Description
-#: ../po/debian-tasks.desc:569
+#: ../po/debian-tasks.desc:592
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Nhón này chọn các gói hỗ trợ cho một hệ thống phục vụ Mạng thường dụng."
-
-#~ msgid "This task makes the desktop be localised in Arabic."
-#~ msgstr "Công việc này giúp hiển thị giao diện tiếng Ả Rập."
 
 #~ msgid "This task makes the desktop be localised in Bulgarian."
 #~ msgstr "Công việc này giúp hiển thị giao diện tiếng Bul-ga-ri."
