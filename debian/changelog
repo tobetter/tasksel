@@ -6,8 +6,11 @@ tasksel (2.30) UNRELEASED; urgency=low
     openoffice.org have been weakened to suggests. So of the openoffice stuff
     commented out in 2.11, only openoffice.org itself remains as an arch all
     package depending on the arch any openoffice.org-bin.
+  * Remove openoffice.org-gtk-gnome and openoffice.org-kde from greek-desktop
+    as they not greek specific. But they do seem useful, so add them to
+    desktop.
 
- -- Joey Hess <joeyh@debian.org>  Mon,  8 Aug 2005 17:56:59 -0400
+ -- Joey Hess <joeyh@debian.org>  Mon,  8 Aug 2005 18:02:07 -0400
 
 tasksel (2.29) unstable; urgency=low
 
