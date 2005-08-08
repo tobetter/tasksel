@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-17 14:53+0300\n"
+"POT-Creation-Date: 2005-08-08 14:02-0400\n"
 "PO-Revision-Date: 2005-08-07 11:49GMT\n"
 "Last-Translator: Dennis Stampfer <seppy@debian.org>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
@@ -241,8 +241,10 @@ msgstr "SQL-Datenbank"
 
 #. Description
 #: ../po/debian-tasks.desc:163
-msgid "This task selects client and server packages for the PostgreSQL database."
-msgstr "Dieser Task wählt Client- und Serverpakete für die PostgreSQL-Datenbank."
+msgid ""
+"This task selects client and server packages for the PostgreSQL database."
+msgstr ""
+"Dieser Task wählt Client- und Serverpakete für die PostgreSQL-Datenbank."
 
 #. Description
 #: ../po/debian-tasks.desc:163
@@ -282,8 +284,10 @@ msgstr "DNS-Server"
 
 #. Description
 #: ../po/debian-tasks.desc:198
-msgid "Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "Wählt den BIND DNS-Server und verwandte Dokumentation und Hilfspakete aus."
+msgid ""
+"Selects the BIND DNS server, and related documentation and utility packages."
+msgstr ""
+"Wählt den BIND DNS-Server und verwandte Dokumentation und Hilfspakete aus."
 
 #. Description
 #: ../po/debian-tasks.desc:206
@@ -575,11 +579,39 @@ msgstr "Dieser Task richtet Ihr System als Druck-Server ein."
 
 #. Description
 #: ../po/debian-tasks.desc:420
+#, fuzzy
+msgid "Romanian environment"
+msgstr "Ukrainische Umgebung"
+
+#. Description
+#: ../po/debian-tasks.desc:420
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Romanian to help Romanian "
+"speaking people use Debian."
+msgstr ""
+"Dieser Task installiert Pakete und Dokumentationen auf Italienisch, die "
+"Italienisch sprechenden Benutzern in Debian behilflich sind."
+
+#. Description
+#: ../po/debian-tasks.desc:431
+#, fuzzy
+msgid "Romanian desktop"
+msgstr "Ukrainischer Desktop"
+
+#. Description
+#: ../po/debian-tasks.desc:431
+#, fuzzy
+msgid "This task localises the desktop in Romanian."
+msgstr "Dieser Task lokalisiert den Desktop Ukrainisch."
+
+#. Description
+#: ../po/debian-tasks.desc:438
 msgid "Russian environment"
 msgstr "Russische Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:420
+#: ../po/debian-tasks.desc:438
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -588,22 +620,22 @@ msgstr ""
 "sprechenden Benutzern in Debian behilflich sind."
 
 #. Description
-#: ../po/debian-tasks.desc:431
+#: ../po/debian-tasks.desc:449
 msgid "Russian desktop"
 msgstr "Russischer Desktop"
 
 #. Description
-#: ../po/debian-tasks.desc:431
+#: ../po/debian-tasks.desc:449
 msgid "This task localises the desktop in Russian."
 msgstr "Dieser Task lokalisiert den Desktop Russisch."
 
 #. Description
-#: ../po/debian-tasks.desc:438
+#: ../po/debian-tasks.desc:456
 msgid "Slovak environment"
 msgstr "Slovakische Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:438
+#: ../po/debian-tasks.desc:456
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
@@ -612,22 +644,22 @@ msgstr ""
 "Slovakisch sprechenden Benutzern in Debian behilflich sind."
 
 #. Description
-#: ../po/debian-tasks.desc:446
+#: ../po/debian-tasks.desc:464
 msgid "Slovak desktop"
 msgstr "Slovakischer Desktop"
 
 #. Description
-#: ../po/debian-tasks.desc:446
+#: ../po/debian-tasks.desc:464
 msgid "This task localises the desktop in Slovak."
 msgstr "Dieser Task lokalisiert den Desktop Slovakisch."
 
 #. Description
-#: ../po/debian-tasks.desc:453
+#: ../po/debian-tasks.desc:471
 msgid "Spanish environment"
 msgstr "spanische Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:453
+#: ../po/debian-tasks.desc:471
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -636,32 +668,32 @@ msgstr ""
 "einfacher machen, Debian für spanisch sprechende Personen zu verwenden."
 
 #. Description
-#: ../po/debian-tasks.desc:464
+#: ../po/debian-tasks.desc:482
 msgid "Spanish desktop"
 msgstr "Spanischer Desktop"
 
 #. Description
-#: ../po/debian-tasks.desc:464
+#: ../po/debian-tasks.desc:482
 msgid "This task localises the desktop in Spanish."
 msgstr "Dieser Task lokalisiert den Desktop Spanisch."
 
 #. Description
-#: ../po/debian-tasks.desc:471
+#: ../po/debian-tasks.desc:489
 msgid "Standard system"
 msgstr "Standard-System"
 
 #. Description
-#: ../po/debian-tasks.desc:471
+#: ../po/debian-tasks.desc:489
 msgid "This task installs a reasonably small character-mode system."
 msgstr "Dieser Task installiert ein brauchbares, textbasiertes System."
 
 #. Description
-#: ../po/debian-tasks.desc:478
+#: ../po/debian-tasks.desc:496
 msgid "Swedish environment"
 msgstr "Schwedische Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:478
+#: ../po/debian-tasks.desc:496
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -670,22 +702,22 @@ msgstr ""
 "Menschen dabei zu helfen, Debian zu benutzen."
 
 #. Description
-#: ../po/debian-tasks.desc:488
+#: ../po/debian-tasks.desc:506
 msgid "Swedish desktop"
 msgstr "Schwedischer Desktop"
 
 #. Description
-#: ../po/debian-tasks.desc:488
+#: ../po/debian-tasks.desc:506
 msgid "This task localises the desktop in Swedish."
 msgstr "Dieser Taks lokalisiert den Desktop Schwedisch."
 
 #. Description
-#: ../po/debian-tasks.desc:495
+#: ../po/debian-tasks.desc:513
 msgid "Thai environment"
 msgstr "Thailändische Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:495
+#: ../po/debian-tasks.desc:513
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
@@ -694,22 +726,22 @@ msgstr ""
 "zu benutzen."
 
 #. Description
-#: ../po/debian-tasks.desc:507
+#: ../po/debian-tasks.desc:525
 msgid "Thai desktop"
 msgstr "Thailändischer Desktop"
 
 #. Description
-#: ../po/debian-tasks.desc:507
+#: ../po/debian-tasks.desc:525
 msgid "This task localises the desktop in Thai."
 msgstr "Dieser Task lokalisiert den Desktop Thailändisch."
 
 #. Description
-#: ../po/debian-tasks.desc:514
+#: ../po/debian-tasks.desc:532
 msgid "Turkish environment"
 msgstr "Türkische Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:514
+#: ../po/debian-tasks.desc:532
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -718,22 +750,22 @@ msgstr ""
 "Menschen dabei zu helfen, Debian zu benutzen."
 
 #. Description
-#: ../po/debian-tasks.desc:526
+#: ../po/debian-tasks.desc:544
 msgid "Turkish desktop"
 msgstr "Türkischer Desktop"
 
 #. Description
-#: ../po/debian-tasks.desc:526
+#: ../po/debian-tasks.desc:544
 msgid "This task localises the desktop in Turkish."
 msgstr "Dieser Task installiert den Desktop Türkisch."
 
 #. Description
-#: ../po/debian-tasks.desc:533
+#: ../po/debian-tasks.desc:551
 msgid "Ukrainian environment"
 msgstr "Ukrainische Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:533
+#: ../po/debian-tasks.desc:551
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -742,24 +774,24 @@ msgstr ""
 "ukrainisch sprechenden Benutzern in Debian behilflich sind."
 
 #. Description
-#: ../po/debian-tasks.desc:543
+#: ../po/debian-tasks.desc:561
 msgid "Ukrainian desktop"
 msgstr "Ukrainischer Desktop"
 
 #. Description
-#: ../po/debian-tasks.desc:543
+#: ../po/debian-tasks.desc:561
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Dieser Task lokalisiert den Desktop Ukrainisch."
 
 #. Description
-#: ../po/debian-tasks.desc:551
+#: ../po/debian-tasks.desc:569
 msgid "Web server"
 msgstr "Web-Server"
 
 #. Description
-#: ../po/debian-tasks.desc:551
-msgid "This task selects packages useful for a general purpose web server system."
+#: ../po/debian-tasks.desc:569
+msgid ""
+"This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Dieser Task wählt Pakete aus, die für den allgemeinen Gebrauch als Web-"
 "Server nützlich sind."
-

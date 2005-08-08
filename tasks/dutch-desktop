@@ -1,0 +1,13 @@
+Task: dutch-desktop
+Depends: desktop, dutch
+Section: l10n
+Description: Dutch environment
+ This task makes the desktop be localised in Dutch
+Maintainer: Frans Pop <fjp@debian.org>
+Key:
+Packages:
+  kde-i18n-nl
+  mozilla-firefox-locale-nl-nl
+  openoffice.org-l10n-nl
+  myspell-nl
+  aspell-nl

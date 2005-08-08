@@ -1,0 +1,14 @@
+Task: dutch
+Test-lang: nl
+Section: l10n
+Description: Dutch environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Dutch speakers
+ to use Debian.
+Maintainer: Frans Pop <fjp@debian.org>
+Key:
+# language-env      # Does not support Dutch
+Packages:
+# manpages-nl       # Outdated
+  idutch
+  wdutch
