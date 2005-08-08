@@ -1,0 +1,19 @@
+Task: romanian-desktop
+Depends: desktop, romanian
+Section: l10n
+Description: Romanian desktop
+ This task localises the desktop in Romanian.
+Maintainer: Eddy Petrişor <eddy.petrisor@gmail.com>
+Key:
+Packages-list:
+# fonty
+ xfonts-terminus
+ kde-i18n-ro
+# koffice-i18n-ro
+# openoffice.org-l10n-ro
+ mozilla-firefox-locale-ro-ro
+# this appears to be one of the few fonts that has t with comma bellow
+ ttf-dejavu
+ ttf-freefont
+# is this ok?
+# xfonts-base-transcoded

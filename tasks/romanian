@@ -1,0 +1,19 @@
+Task: romanian
+Test-lang: ro
+Section: l10n
+Description: Romanian environment
+ This task installs packages and documentation in Romanian
+ to help Romanian speaking people use Debian.
+Maintainer: Eddy Petrişor <eddy.petrisor@gmail.com>
+Key:
+ language-env
+ locales
+#there is no manpages-ro package at the moment
+# manpages-ro
+Packages-list:
+ console-terminus
+ util-linux-locales
+# None of the dictionaries below are avalable as a debian package yet
+ # aspell-ro
+ # iromanian
+ # myspell-ro

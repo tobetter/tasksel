@@ -1,20 +1,24 @@
+# translation of ro.po to Romanian
 # Romanian translation
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the tasksel package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Eddy Petrisor <eddy_petrisor@yahoo.com>, 2004.
+# Eddy Petrișor <eddy_petrisor@yahoo.com>, 2004, 2005.
+# Eddy Petrișor <eddy.petrisor@gmail.com>, 2004, 2005.
+# Eddy Petrişor <eddy.petrisor@gmail.com>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-07-17 14:53+0300\n"
-"PO-Revision-Date: 2005-06-25 21:27+0200\n"
+"PO-Revision-Date: 2005-08-05 02:22+0300\n"
 "Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
-"Language-Team: Romanian <Romanian>\n"
+"Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=3; plural=((n!=1)+(n>19))\n"
 
 #. Description
 #: ../po/debian-tasks.desc:3
@@ -23,7 +27,7 @@ msgid ""
 "it easier for Arabic speakers to use Debian."
 msgstr ""
 "Acestă sarcină instalează programe, fişiere de date, fonturi şi documentaţie "
-"care uşurează vorbitorilor de arabă, folosirea Debian."
+"care uşurează, vorbitorilor de arabă, folosirea Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:14
@@ -32,9 +36,8 @@ msgstr "Mediu arab"
 
 #. Description
 #: ../po/debian-tasks.desc:14
-#, fuzzy
 msgid "This task localises the desktop in Arabic."
-msgstr "Această sarcină localizează mediul de birou în thailandeză."
+msgstr "Această sarcină localizează mediul de birou în arabă."
 
 #. Description
 #: ../po/debian-tasks.desc:21
@@ -53,14 +56,14 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:32
 msgid "Brazilian Portuguese desktop"
-msgstr "Sistem portughez brazilian"
+msgstr "Sistem de birou portughez brazilian"
 
 #. Description
 #: ../po/debian-tasks.desc:32
 msgid "This task localises the desktop in Brasilian Portuguese."
 msgstr ""
-"Aceasta face ca sistemul prezinte suport de localizare în portugheză "
-"braziliană"
+"Această sarcină localizează mediul de birou în portugheză "
+"braziliană."
 
 #. Description
 #: ../po/debian-tasks.desc:39
@@ -83,9 +86,8 @@ msgstr "Sistem de birou bulgar"
 
 #. Description
 #: ../po/debian-tasks.desc:48
-#, fuzzy
 msgid "This task localises the desktop in Bulgarian."
-msgstr "Această sarcină localizează mediul de birou în rusă."
+msgstr "Această sarcină localizează mediul de birou în bulgară."
 
 #. Description
 #: ../po/debian-tasks.desc:55
@@ -104,12 +106,12 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:65
 msgid "Catalan desktop"
-msgstr "Sistem catalan"
+msgstr "Sistem de birou catalan"
 
 #. Description
 #: ../po/debian-tasks.desc:65
 msgid "This task localises the desktop in Catalan."
-msgstr "Aceasta face ca sistemul prezinte suport de localizare în catalană"
+msgstr "Această sarcină localizează mediul de birou în în catalană."
 
 #. Description
 #: ../po/debian-tasks.desc:72
@@ -130,7 +132,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:84
 msgid "Simplified Chinese desktop"
-msgstr "Sistem chinezesc simplificat"
+msgstr "Sistem de birou chinezesc simplificat"
 
 #. Description
 #: ../po/debian-tasks.desc:84
@@ -177,7 +179,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:121
 msgid "Cyrillic desktop"
-msgstr "Sistem chirilic"
+msgstr "Sistem de birou chirilic"
 
 #. Description
 #: ../po/debian-tasks.desc:121
@@ -191,31 +193,27 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:131
-#, fuzzy
 msgid "Czech environment"
-msgstr "Mediu francez"
+msgstr "Mediu ceh"
 
 #. Description
 #: ../po/debian-tasks.desc:131
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Czech to help Czech "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba franceză, pentru "
-"a ajuta vorbitorii de franceză să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba cehă, pentru "
+"a ajuta vorbitorii de cehă să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:139
-#, fuzzy
 msgid "Czech desktop"
-msgstr "Sistem francez"
+msgstr "Sistem de birou ceh"
 
 #. Description
 #: ../po/debian-tasks.desc:139
-#, fuzzy
 msgid "This task localises the desktop in Czech."
-msgstr "Această sarcină localizează mediul de birou în franceză."
+msgstr "Această sarcină localizează mediul de birou în cehă."
 
 #. Description
 #: ../po/debian-tasks.desc:146
@@ -234,7 +232,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:156
 msgid "Danish desktop"
-msgstr "Sistem danez"
+msgstr "Sistem de birou danez"
 
 #. Description
 #: ../po/debian-tasks.desc:156
@@ -248,8 +246,7 @@ msgstr "Bază de date SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:163
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Acestă sarcină selectează pachetele client şi server pentru baza de date "
 "PostgreSQL."
@@ -262,7 +259,7 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
-"PostgreSQL este o bază de date SQL relaţională, care oferă o confomitate "
+"PostgreSQL este o bază de date relaţională SQL, care oferă o compatibilitate "
 "ridicată cu SQL92 şi câteva facilităţi SQL3. Este potrivită pentru acces "
 "multi-utilizator la baza de date, prin facilităţile sale pentru tranzacţii "
 "şi mecanismele de interblocare rafinate."
@@ -270,7 +267,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:177
 msgid "Desktop environment"
-msgstr "Mediu desktop"
+msgstr "Mediu de birou"
 
 #. Description
 #: ../po/debian-tasks.desc:177
@@ -280,9 +277,9 @@ msgid ""
 "GNOME and KDE desktops, and provides a display manager which lets the user "
 "choose between the two."
 msgstr ""
-"Acestă sarcină oferă programele de bază pentru \"desktop\", inclusiv o "
-"varietate de manageri de sesiuni, manageri de fişiere şî browsere de "
-"internet (web). Încorporeză atât desktop-ul GNOME cât şi pe cel KDE, şi "
+"Acestă sarcină oferă programele de bază pentru sisteme de birou, inclusiv o "
+"varietate de manageri de sesiuni, manageri de fişiere şi navigatoare de "
+"internet. Încorporeză atât mediul de birou GNOME cât şi mediul KDE, şi "
 "oferă un manager de ecran care permite utilizatorului opţiunea de a selecta "
 "dintre cele două."
 
@@ -293,8 +290,7 @@ msgstr "Server DNS"
 
 #. Description
 #: ../po/debian-tasks.desc:198
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Selectează serverul DNS BIND, şi documentaţie pentru acesta, cât şi pachete "
 "de utilitare."
@@ -330,7 +326,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:227
 msgid "French desktop"
-msgstr "Sistem francez"
+msgstr "Sistem de birou francez"
 
 #. Description
 #: ../po/debian-tasks.desc:227
@@ -354,7 +350,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:245
 msgid "German desktop"
-msgstr "Sistem german"
+msgstr "Sistem de birou german"
 
 #. Description
 #: ../po/debian-tasks.desc:245
@@ -378,7 +374,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:262
 msgid "Greek desktop"
-msgstr "Sistem grecesc"
+msgstr "Sistem de birou grecesc"
 
 #. Description
 #: ../po/debian-tasks.desc:262
@@ -402,7 +398,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:277
 msgid "Hebrew desktop"
-msgstr "Sistem ebraic"
+msgstr "Sistem de birou ebraic"
 
 #. Description
 #: ../po/debian-tasks.desc:277
@@ -426,7 +422,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:295
 msgid "Italian desktop"
-msgstr "Sistem italian"
+msgstr "Sistem de birou italian"
 
 #. Description
 #: ../po/debian-tasks.desc:295
@@ -450,7 +446,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:314
 msgid "Japanese desktop environment"
-msgstr "Sistem japonez"
+msgstr "Sistem de birou japonez"
 
 #. Description
 #: ../po/debian-tasks.desc:314
@@ -474,7 +470,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:333
 msgid "Korean desktop"
-msgstr "Sistem corean"
+msgstr "Sistem de birou corean"
 
 #. Description
 #: ../po/debian-tasks.desc:333
@@ -489,7 +485,7 @@ msgstr "Laptop"
 #. Description
 #: ../po/debian-tasks.desc:340
 msgid "This task installs software useful for a laptop."
-msgstr ""
+msgstr "Această sarcină instalează programe utile pentru un laptop."
 
 #. Description
 #: ../po/debian-tasks.desc:347
@@ -508,7 +504,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:357
 msgid "Lithuanian desktop"
-msgstr "Sistem lituanian"
+msgstr "Sistem de birou lituanian"
 
 #. Description
 #: ../po/debian-tasks.desc:357
@@ -532,7 +528,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:373
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
-msgstr "Mediu novegian (bokmaal şi nynorsk)"
+msgstr "Mediu norvegian (bokmaal şi nynorsk)"
 
 #. Description
 #: ../po/debian-tasks.desc:373
@@ -546,7 +542,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:384
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
-msgstr "Sistem novegian (bokmaal şi nynorsk)"
+msgstr "Sistem de birou norvegian (bokmaal şi nynorsk)"
 
 #. Description
 #: ../po/debian-tasks.desc:384
@@ -570,7 +566,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:402
 msgid "Polish desktop"
-msgstr "Sistem polonez"
+msgstr "Sistem de birou polonez"
 
 #. Description
 #: ../po/debian-tasks.desc:402
@@ -585,8 +581,7 @@ msgstr "Server de listare (print)"
 #. Description
 #: ../po/debian-tasks.desc:410
 msgid "This task sets up your system to be a print server."
-msgstr ""
-"Această sarcină vă peregăteşte sistemul dvs. să fie un server de listare."
+msgstr "Această sarcină vă peregăteşte sistemul dvs. să fie un server de listare."
 
 #. Description
 #: ../po/debian-tasks.desc:420
@@ -605,7 +600,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:431
 msgid "Russian desktop"
-msgstr "Sistem rusesc"
+msgstr "Sistem de birou rusesc"
 
 #. Description
 #: ../po/debian-tasks.desc:431
@@ -614,31 +609,27 @@ msgstr "Această sarcină localizează mediul de birou în rusă."
 
 #. Description
 #: ../po/debian-tasks.desc:438
-#, fuzzy
 msgid "Slovak environment"
-msgstr "Mediu coreean"
+msgstr "Mediu slovac"
 
 #. Description
 #: ../po/debian-tasks.desc:438
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba italiană, pentru "
-"a ajuta vorbitorii de italiană să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba slovacă, pentru "
+"a ajuta vorbitorii de slovacă să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:446
-#, fuzzy
 msgid "Slovak desktop"
-msgstr "Sistem corean"
+msgstr "Sistem de birou slovac"
 
 #. Description
 #: ../po/debian-tasks.desc:446
-#, fuzzy
 msgid "This task localises the desktop in Slovak."
-msgstr "Această sarcină localizează mediul de birou în coreană."
+msgstr "Această sarcină localizează mediul de birou în slovacă."
 
 #. Description
 #: ../po/debian-tasks.desc:453
@@ -657,7 +648,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:464
 msgid "Spanish desktop"
-msgstr "Sistem spaniol"
+msgstr "Sistem de birou spaniol"
 
 #. Description
 #: ../po/debian-tasks.desc:464
@@ -667,7 +658,7 @@ msgstr "Această sarcină localizează mediul de birou în spaniolă."
 #. Description
 #: ../po/debian-tasks.desc:471
 msgid "Standard system"
-msgstr "Sistem standard"
+msgstr "Sistem de birou standard"
 
 #. Description
 #: ../po/debian-tasks.desc:471
@@ -693,7 +684,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:488
 msgid "Swedish desktop"
-msgstr "Sistem suedez"
+msgstr "Sistem de birou suedez"
 
 #. Description
 #: ../po/debian-tasks.desc:488
@@ -717,7 +708,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:507
 msgid "Thai desktop"
-msgstr "Sistem thai"
+msgstr "Sistem de birou thai"
 
 #. Description
 #: ../po/debian-tasks.desc:507
@@ -741,7 +732,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:526
 msgid "Turkish desktop"
-msgstr "Sistem turcesc"
+msgstr "Sistem de birou turcesc"
 
 #. Description
 #: ../po/debian-tasks.desc:526
@@ -751,7 +742,7 @@ msgstr "Această sarcină localizează mediul de birou în turcă."
 #. Description
 #: ../po/debian-tasks.desc:533
 msgid "Ukrainian environment"
-msgstr "Mediu ucrainian"
+msgstr "Mediu ucrainean"
 
 #. Description
 #: ../po/debian-tasks.desc:533
@@ -759,13 +750,13 @@ msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează programe şi documentaţie în limba ucrainiană "
-"pentru a ajuta vorbitorii de ucrainiană să folosească Debian."
+"Acestă sarcină instalează programe şi documentaţie în limba ucraineană "
+"pentru a ajuta vorbitorii de ucraineană să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:543
 msgid "Ukrainian desktop"
-msgstr "Sistem ucrainian"
+msgstr "Sistem de birou ucrainean"
 
 #. Description
 #: ../po/debian-tasks.desc:543
@@ -779,213 +770,8 @@ msgstr "Server de web"
 
 #. Description
 #: ../po/debian-tasks.desc:551
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Acestă sarcină selectează un pachet util pentru un server de web de uz "
 "general."
 
-#~ msgid "This task makes the desktop be localised in Arabic."
-#~ msgstr ""
-#~ "Această sarcină face ca sistemul de birou să prezinte suport de "
-#~ "localizare arabă."
-
-#~ msgid "This task makes the desktop be localised in Bulgarian."
-#~ msgstr ""
-#~ "Această sarcină face ca sistemul de birou să prezinte suport de "
-#~ "localizare în bulgară."
-
-#, fuzzy
-#~ msgid "This task causes the standard base system to be installed."
-#~ msgstr ""
-#~ "Această sarcină vă peregăteşte sistemul dvs. să fie un server de listare."
-
-#~ msgid "Office environment"
-#~ msgstr "Mediu de birou (office)"
-
-#~ msgid ""
-#~ "This task provides a suite of office productivity software, including a "
-#~ "word processor, a spreadsheet, a presentation program, and more. This is "
-#~ "a rather large collection of software."
-#~ msgstr ""
-#~ "Acestă sarcină oferă un pachet de programe de productivitate pentru "
-#~ "birou, inclusiv un procesor de texte, un calculator tabelar, un program "
-#~ "de prezentari, şi altele. Acesta este o colecţie destul de consistentă de "
-#~ "programe."
-
-#~ msgid "X window system"
-#~ msgstr "Sistemul de ferestre X"
-
-#~ msgid ""
-#~ "This task provides the essential components for a standalone workstation "
-#~ "running the X Window System. It provides the X libraries, an X server, a "
-#~ "set of fonts, and a group of basic X clients and utilities."
-#~ msgstr ""
-#~ "Acestă sarcină oferă componentele esenţiale pentru o staţie independentă "
-#~ "care rulează sistemul de ferestre X. Ea furnizează bibliotecile X, un "
-#~ "server de X, un set de font-uri, şi un grup de clienţi şi utilitare de X."
-
-#~ msgid "Broadband internet connection"
-#~ msgstr "Conexiune inernet de tip bandă largă"
-
-#~ msgid ""
-#~ "This task selects packages that address special needs of computers that "
-#~ "connect to the internet using DSL, Cable, and the like."
-#~ msgstr ""
-#~ "Acestă sarcină selectează pachetele care satisfac nevoi deosebite pentru "
-#~ "calculatoarele care se conectează la internet folosind DSL, cablu şi "
-#~ "similare."
-
-#~ msgid "C and C++"
-#~ msgstr "C şi C++"
-
-#~ msgid ""
-#~ "A complete environment for development of programs in the C and C++ "
-#~ "programming languages."
-#~ msgstr ""
-#~ "Un mediu complet pentru dezvoltarea de programe în limbajele de progamare "
-#~ "C şi C++."
-
-#~ msgid "Dialup internet"
-#~ msgstr "Internet prin dial-up"
-
-#~ msgid ""
-#~ "This task selects packages that address special needs of computers using "
-#~ "a slow part-time dialup connection (by modem, ISDN, or similar)."
-#~ msgstr ""
-#~ "Acestă sarcină selectează pachetele care satisfac nevoi deosebite ale "
-#~ "calculatoarelor care folosesc conexiuni temporare lente (prin modem, "
-#~ "ISDN, sau similare)."
-
-#~ msgid "Games"
-#~ msgstr "Jocuri"
-
-#~ msgid ""
-#~ "Selecting this task will install a broad selection of games, from "
-#~ "traditional textual unix games to card games, to fast-paced arcade games. "
-#~ "It won't install all the games in Debian, but it is a good starting point."
-#~ msgstr ""
-#~ "Selectând această sarcină, se va instala o selecţie largă de jocuri, de "
-#~ "la jocurile tradiţionale în mod text, pe unix şi jocuri de cărţi până la "
-#~ "jocuri alerte de tip arcade. Nu va instala toate jocurile din Debian, dar "
-#~ "e un bun punct de plecare."
-
-#~ msgid "Java"
-#~ msgstr "Java"
-
-#~ msgid "A java development environment."
-#~ msgstr "Un mediu de dezvoltare java."
-
-#~ msgid "Debian Jr."
-#~ msgstr "Debian Jr."
-
-#~ msgid "Debian Jr. is a collection of Debian packages suitable for children."
-#~ msgstr "Debian Jr. este o colecţie de pachete Debian potrivite copiilor."
-
-#~ msgid "Custom kernel compilation"
-#~ msgstr "Compilare particularizată a nucleului (kernel)"
-
-#~ msgid ""
-#~ "This task includes everything you should need to build your own custom "
-#~ "kernel."
-#~ msgstr ""
-#~ "Acestă sarcină include tot ceea ce aveţi nevoie pentru a vă compila un "
-#~ "nucleu de sistem (kernel) particularizat."
-
-#~ msgid ""
-#~ "This is a collection of tools that laptop users will expect to find on a "
-#~ "system. It includes some special utilities for laptops including IBM "
-#~ "Thinkpads, Sony Vaios, Toshibas, and Dell Inspirons."
-#~ msgstr ""
-#~ "Acesta este o colecţie de unelte pe care utilizatorii de laptop-uri se "
-#~ "aşteptă să le găsească pe un sistem. Ea include câteva utilitare speciale "
-#~ "pentru laptop-uri, inclusiv IBM Thinkpad, Sony Vaio, Toshiba şi Dell "
-#~ "Inspirion."
-
-#~ msgid ""
-#~ "This task makes the system compliant with the Linux Standard Base, "
-#~ "allowing you to install and use LSB packages."
-#~ msgstr ""
-#~ "Această sarcină vă face sistemul conform cu baza standard Linux, "
-#~ "permiţându-vă să instalaţi şi să folosiţi pachetele LSB (baza standard "
-#~ "Linux)."
-
-#~ msgid "Usenet news server"
-#~ msgstr "Server de ştiri Usenet"
-
-#~ msgid ""
-#~ "This task selects the preferred version of the INN news server software "
-#~ "for new Debian installations."
-#~ msgstr ""
-#~ "Acestă sarcină selectează versiunea preferată a programelor pentru "
-#~ "servere de ştiri INN, pentru noile instalări Debian."
-
-#~ msgid ""
-#~ "You do not need this package if you merely wish to read news from an "
-#~ "existing server, just select the news reader program you desire and it "
-#~ "will pull in any required pieces. Only use this task if you intend to "
-#~ "operate a server."
-#~ msgstr ""
-#~ "Nu aveţi nevoie de acest pachet dacă doriţi doar să citiţi ştiri de pe un "
-#~ "server existent, doar selectaţi programul cititor de şitri dorit şi el va "
-#~ "\"trage\" piesele necesare lui. Folosiţi acestă sarcină doar dacă "
-#~ "intenţionaţi să aveţi un server."
-
-#~ msgid "Python"
-#~ msgstr "Python"
-
-#~ msgid ""
-#~ "Many Python tools and extensions, for developing scripts and simple or "
-#~ "complex applications in Python."
-#~ msgstr ""
-#~ "Multe unelte şi extensii Python, pentru dezvoltarea de scripturi şi "
-#~ "aplicaţii simple sau complexe în Python."
-
-#~ msgid "Scientific applications"
-#~ msgstr "Aplicaţii ştiinţifice"
-
-#~ msgid ""
-#~ "This task selects packages which are suitable for scientific work. Under "
-#~ "a fairly loose definition of 'scientific', this includes numerical "
-#~ "analysis and computing, statistical data analysis as well as "
-#~ "visualization."
-#~ msgstr ""
-#~ "Acestă sarcină selectează pachetele potrivite activităţilor ştiinţifice. "
-#~ "Sub o definiţie lejeră a cuvântului 'ştiinţifice', aici este inclusă "
-#~ "analiza şi calculul numeric, analiza datelor statistice, cât şi "
-#~ "vizualizarea acestora."
-
-#~ msgid "TeX/LaTeX environment"
-#~ msgstr "Mediu TeX/LaTeX"
-
-#~ msgid ""
-#~ "This task provides necessary packages for composing documents in TeX/"
-#~ "LaTeX."
-#~ msgstr ""
-#~ "Această sarcină oferă pachetele necesare pentru a compune documente în "
-#~ "TeX/LaTeX."
-
-#~ msgid "Conventional Unix server"
-#~ msgstr "Server Unix convenţional"
-
-#~ msgid ""
-#~ "This task selects packages that would typically be found on a "
-#~ "conventional multi-user unix system with remote users. Do be warned that "
-#~ "this includes a number of daemons."
-#~ msgstr ""
-#~ "Acestă sarcină selectează pachetele care, tipic, se găsesc pe un sistem "
-#~ "multi-utilizator unix convenţional cu utilizatori la distanţă. Atenţie "
-#~ "deoarece aici sunt incluse o serie de daemon-i (servicii)."
-
-#~ msgid "Tcl/Tk"
-#~ msgstr "Tcl/Tk"
-
-#~ msgid ""
-#~ "Packages commonly used in developing applications using the Tcl language "
-#~ "and Tk Toolkit."
-#~ msgstr ""
-#~ "Pachete utilizate, în general, în dezvoltarea de aplicaţii folosind "
-#~ "limbajul Tcl şi pachetul de unelte Tk."
-
-#~ msgid "a TeX/LaTeX environment"
-#~ msgstr "un mediu TeX/LaTeX"
