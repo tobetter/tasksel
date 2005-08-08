@@ -9,8 +9,17 @@ tasksel (2.30) UNRELEASED; urgency=low
   * Remove openoffice.org-gtk-gnome and openoffice.org-kde from greek-desktop
     as they not greek specific. But they do seem useful, so add them to
     desktop.
+  * Split out kde and gnome stuff from desktop into kde-desktop and
+    gnome-desktop.
+  * Both depend on the main desktop task (so both will be installed if
+    available when the desktop task is selected), and both are hidden since
+    a user should not need to choose between them.
+  * This allows CDs to leave off either KDE or Gnome (or both!) and still
+    get a working desktop task.
+  * It also allows derivitives to more easily choose to include only one of
+    the environments (via preseeding or by unhiding the tasks).
 
- -- Joey Hess <joeyh@debian.org>  Mon,  8 Aug 2005 18:02:07 -0400
+ -- Joey Hess <joeyh@debian.org>  Mon,  8 Aug 2005 18:16:27 -0400
 
 tasksel (2.29) unstable; urgency=low
 

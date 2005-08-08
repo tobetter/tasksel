@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-08 14:10-0400\n"
+"POT-Creation-Date: 2005-08-08 19:00-0400\n"
 "PO-Revision-Date: 2004-07-20 00:10+0200\n"
 "Last-Translator: Piarres Beobide Egaña <pi@beobide.net>\n"
 "Language-Team: Euskara <librezale@librezale.org>\n"
@@ -281,30 +281,24 @@ msgstr "Idazmahai Ingurunea"
 #. Description
 #: ../po/debian-tasks.desc:177
 msgid ""
-"This task provides basic \"desktop\" software, including a variety of "
-"session managers, file managers and web browsers. It incorporates both the "
-"GNOME and KDE desktops, and provides a display manager which lets the user "
-"choose between the two."
+"This task provides basic desktop software and serves as a basis for the "
+"Gnome and KDE desktop tasks."
 msgstr ""
-"Ataza honek oinarrizko \"mahaigain\" softwarea instalatuko du, hainbat saio, "
-"fitxategi eta web kudeatzaile barne. Honek bai GNOME bai KDE instalatuko "
-"ditu eta berauen artean hautatzeko erabiltzaileari aukera emango duen "
-"softwarea."
 
 #. Description
-#: ../po/debian-tasks.desc:198
+#: ../po/debian-tasks.desc:187
 msgid "DNS server"
 msgstr "DNS zerbitzaria"
 
 #. Description
-#: ../po/debian-tasks.desc:198
+#: ../po/debian-tasks.desc:187
 msgid ""
 "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "BIND DNS zerbitzaria eta berari buruzko dokumentazioa instalatuko ditu."
 
 #. Description
-#: ../po/debian-tasks.desc:206
+#: ../po/debian-tasks.desc:195
 #, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
@@ -314,24 +308,24 @@ msgstr ""
 "erabiltzaile Korearrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:217
+#: ../po/debian-tasks.desc:206
 #, fuzzy
 msgid "Dutch environment"
 msgstr "Ingurune Frantsesa"
 
 #. Description
-#: ../po/debian-tasks.desc:217
+#: ../po/debian-tasks.desc:206
 #, fuzzy
 msgid "This task makes the desktop be localised in Dutch"
 msgstr "Ataza honek Idazmahaia Thailandieraz ezarriko du"
 
 #. Description
-#: ../po/debian-tasks.desc:229
+#: ../po/debian-tasks.desc:218
 msgid "File server"
 msgstr "Fitxategi zerbitzaria"
 
 #. Description
-#: ../po/debian-tasks.desc:229
+#: ../po/debian-tasks.desc:218
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
@@ -340,12 +334,12 @@ msgstr ""
 "zerbitzari bat izateko behar dituen pakete erabilienak instalatzen ditu."
 
 #. Description
-#: ../po/debian-tasks.desc:239
+#: ../po/debian-tasks.desc:228
 msgid "French environment"
 msgstr "Ingurune Frantsesa"
 
 #. Description
-#: ../po/debian-tasks.desc:239
+#: ../po/debian-tasks.desc:228
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -354,23 +348,23 @@ msgstr ""
 "erabiltzaile Frantziarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:250
+#: ../po/debian-tasks.desc:239
 msgid "French desktop"
 msgstr "Idazmahai Frantziarra"
 
 #. Description
-#: ../po/debian-tasks.desc:250
+#: ../po/debian-tasks.desc:239
 #, fuzzy
 msgid "This task localises the desktop in French."
 msgstr "Ataza honek Idazmahaia Frantsesez ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:257
+#: ../po/debian-tasks.desc:246
 msgid "German environment"
 msgstr "Ingurune Alemaniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:257
+#: ../po/debian-tasks.desc:246
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -379,23 +373,36 @@ msgstr ""
 "erabiltzaile Alemandarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:268
+#: ../po/debian-tasks.desc:257
 msgid "German desktop"
 msgstr "Mahaigain Alemaniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:268
+#: ../po/debian-tasks.desc:257
 #, fuzzy
 msgid "This task localises the desktop in German."
 msgstr "Ataza honek Idazmahaia Alemanieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:275
+#: ../po/debian-tasks.desc:265
+#, fuzzy
+msgid "Gnome desktop environment"
+msgstr "Mahaigain Japoniarra"
+
+#. Description
+#: ../po/debian-tasks.desc:265
+msgid ""
+"This task provides basic \"desktop\" software using the Gnome desktop "
+"environment."
+msgstr ""
+
+#. Description
+#: ../po/debian-tasks.desc:276
 msgid "Greek environment"
 msgstr "Ingurune Grekoa"
 
 #. Description
-#: ../po/debian-tasks.desc:275
+#: ../po/debian-tasks.desc:276
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -404,23 +411,23 @@ msgstr ""
 "Grekoei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:285
+#: ../po/debian-tasks.desc:286
 msgid "Greek desktop"
 msgstr "Mahaigain Grekoa"
 
 #. Description
-#: ../po/debian-tasks.desc:285
+#: ../po/debian-tasks.desc:286
 #, fuzzy
 msgid "This task localises the desktop in Greek."
 msgstr "Ataza honek Idazmahaia Grekoz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:292
+#: ../po/debian-tasks.desc:293
 msgid "Hebrew environment"
 msgstr "Ingurune Hebraitarra"
 
 #. Description
-#: ../po/debian-tasks.desc:292
+#: ../po/debian-tasks.desc:293
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -429,23 +436,23 @@ msgstr ""
 "erabiltzaile Hebraitarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:300
+#: ../po/debian-tasks.desc:301
 msgid "Hebrew desktop"
 msgstr "Mahaingain Hebraitarra"
 
 #. Description
-#: ../po/debian-tasks.desc:300
+#: ../po/debian-tasks.desc:301
 #, fuzzy
 msgid "This task localises the desktop in Hebrew."
 msgstr "Ataza honek Idazmahaia Hebraitarrez ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:307
+#: ../po/debian-tasks.desc:308
 msgid "Italian environment"
 msgstr "Ingurune Italiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:307
+#: ../po/debian-tasks.desc:308
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -454,23 +461,23 @@ msgstr ""
 "erabiltzaile Italiarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:318
+#: ../po/debian-tasks.desc:319
 msgid "Italian desktop"
 msgstr "Mahaigain Italiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:318
+#: ../po/debian-tasks.desc:319
 #, fuzzy
 msgid "This task localises the desktop in Italian."
 msgstr "Ataza honek Idazmahaia Italieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:325
+#: ../po/debian-tasks.desc:326
 msgid "Japanese environment"
 msgstr "Ingurune Japoniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:325
+#: ../po/debian-tasks.desc:326
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -479,23 +486,36 @@ msgstr ""
 "erabiltzaile Japoniarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:337
+#: ../po/debian-tasks.desc:338
 msgid "Japanese desktop environment"
 msgstr "Mahaigain Japoniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:337
+#: ../po/debian-tasks.desc:338
 #, fuzzy
 msgid "This task localises the desktop in Japanese."
 msgstr "Ataza honek Idazmahaia Japonieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:344
+#: ../po/debian-tasks.desc:346
+#, fuzzy
+msgid "KDE desktop environment"
+msgstr "Idazmahai Ingurunea"
+
+#. Description
+#: ../po/debian-tasks.desc:346
+msgid ""
+"This task provides basic \"desktop\" software using the K Desktop "
+"Environment."
+msgstr ""
+
+#. Description
+#: ../po/debian-tasks.desc:364
 msgid "Korean environment"
 msgstr "Ingurune Korearra"
 
 #. Description
-#: ../po/debian-tasks.desc:344
+#: ../po/debian-tasks.desc:364
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
@@ -504,33 +524,33 @@ msgstr ""
 "erabiltzaile Korearrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:356
+#: ../po/debian-tasks.desc:376
 msgid "Korean desktop"
 msgstr "Mahaigain Korearra"
 
 #. Description
-#: ../po/debian-tasks.desc:356
+#: ../po/debian-tasks.desc:376
 #, fuzzy
 msgid "This task localises the desktop in Korean."
 msgstr "Ataza honek Idazmahaia Koreeraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:363
+#: ../po/debian-tasks.desc:383
 msgid "Laptop"
 msgstr "Portatilak"
 
 #. Description
-#: ../po/debian-tasks.desc:363
+#: ../po/debian-tasks.desc:383
 msgid "This task installs software useful for a laptop."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:390
 msgid "Lithuanian environment"
 msgstr "Ingurune Lituaniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:390
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -539,23 +559,23 @@ msgstr ""
 "erabiltzaile Lituaniarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:380
+#: ../po/debian-tasks.desc:400
 msgid "Lithuanian desktop"
 msgstr "Mahaigain Lituaniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:380
+#: ../po/debian-tasks.desc:400
 #, fuzzy
 msgid "This task localises the desktop in Lithuanian."
 msgstr "Ataza honek Idazmahaia Lituanieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:387
+#: ../po/debian-tasks.desc:407
 msgid "Mail server"
 msgstr "Posta Zerbitzaria"
 
 #. Description
-#: ../po/debian-tasks.desc:387
+#: ../po/debian-tasks.desc:407
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -564,12 +584,12 @@ msgstr ""
 "instalatuko du."
 
 #. Description
-#: ../po/debian-tasks.desc:396
+#: ../po/debian-tasks.desc:416
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Ingurune Norvegiera (Bokmaal eta Nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:396
+#: ../po/debian-tasks.desc:416
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -578,23 +598,23 @@ msgstr ""
 "Norbegiarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:407
+#: ../po/debian-tasks.desc:427
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "Mahaigain Norvegiarra (Bokmaal eta Nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:407
+#: ../po/debian-tasks.desc:427
 #, fuzzy
 msgid "This task localises the desktop in Norwegian."
 msgstr "Ataza honek Idazmahaia Norvegieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:414
+#: ../po/debian-tasks.desc:434
 msgid "Polish environment"
 msgstr "Ingurunea Poloniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:414
+#: ../po/debian-tasks.desc:434
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -603,35 +623,35 @@ msgstr ""
 "Poloniarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:425
+#: ../po/debian-tasks.desc:445
 msgid "Polish desktop"
 msgstr "Mahaigain Poloniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:425
+#: ../po/debian-tasks.desc:445
 #, fuzzy
 msgid "This task localises the desktop in Polish."
 msgstr "Ataza honek Idazmahaia Polonieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:433
+#: ../po/debian-tasks.desc:453
 msgid "Print server"
 msgstr "Inprimatze zerbitzaria"
 
 #. Description
-#: ../po/debian-tasks.desc:433
+#: ../po/debian-tasks.desc:453
 msgid "This task sets up your system to be a print server."
 msgstr ""
 "Ataza honek zure sistema inprimatze zerbitzari bat izateko prestatzen du."
 
 #. Description
-#: ../po/debian-tasks.desc:443
+#: ../po/debian-tasks.desc:463
 #, fuzzy
 msgid "Romanian environment"
 msgstr "Ingurune Ukraniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:443
+#: ../po/debian-tasks.desc:463
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
@@ -641,24 +661,24 @@ msgstr ""
 "erabiltzaile Italiarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:454
+#: ../po/debian-tasks.desc:474
 #, fuzzy
 msgid "Romanian desktop"
 msgstr "Mahaigain Ukraniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:454
+#: ../po/debian-tasks.desc:474
 #, fuzzy
 msgid "This task localises the desktop in Romanian."
 msgstr "Ataza honek Idazmahaia Ukranieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:461
+#: ../po/debian-tasks.desc:481
 msgid "Russian environment"
 msgstr "Ingurune Errusiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:461
+#: ../po/debian-tasks.desc:481
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -667,24 +687,24 @@ msgstr ""
 "erabiltzaile Errusiarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:472
+#: ../po/debian-tasks.desc:492
 msgid "Russian desktop"
 msgstr "Mahaigain Errursiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:472
+#: ../po/debian-tasks.desc:492
 #, fuzzy
 msgid "This task localises the desktop in Russian."
 msgstr "Ataza honek Idazmahaia Errusieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:479
+#: ../po/debian-tasks.desc:499
 #, fuzzy
 msgid "Slovak environment"
 msgstr "Ingurune Korearra"
 
 #. Description
-#: ../po/debian-tasks.desc:479
+#: ../po/debian-tasks.desc:499
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
@@ -694,24 +714,24 @@ msgstr ""
 "erabiltzaile Italiarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:487
+#: ../po/debian-tasks.desc:507
 #, fuzzy
 msgid "Slovak desktop"
 msgstr "Mahaigain Korearra"
 
 #. Description
-#: ../po/debian-tasks.desc:487
+#: ../po/debian-tasks.desc:507
 #, fuzzy
 msgid "This task localises the desktop in Slovak."
 msgstr "Ataza honek Idazmahaia Koreeraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:494
+#: ../po/debian-tasks.desc:514
 msgid "Spanish environment"
 msgstr "Ingurune Espainiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:494
+#: ../po/debian-tasks.desc:514
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -720,34 +740,34 @@ msgstr ""
 "erabiltzaile Espainiarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:505
+#: ../po/debian-tasks.desc:525
 msgid "Spanish desktop"
 msgstr "Mahaigain Espainiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:505
+#: ../po/debian-tasks.desc:525
 #, fuzzy
 msgid "This task localises the desktop in Spanish."
 msgstr "Ataza honek Idazmahaia Gazteleraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:512
+#: ../po/debian-tasks.desc:532
 #, fuzzy
 msgid "Standard system"
 msgstr "Linux Estandar Oinarria"
 
 #. Description
-#: ../po/debian-tasks.desc:512
+#: ../po/debian-tasks.desc:532
 msgid "This task installs a reasonably small character-mode system."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:519
+#: ../po/debian-tasks.desc:539
 msgid "Swedish environment"
 msgstr "Ingurune Suediarra"
 
 #. Description
-#: ../po/debian-tasks.desc:519
+#: ../po/debian-tasks.desc:539
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -756,23 +776,23 @@ msgstr ""
 "Suediarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:529
+#: ../po/debian-tasks.desc:549
 msgid "Swedish desktop"
 msgstr "Mahaigain Suediarra"
 
 #. Description
-#: ../po/debian-tasks.desc:529
+#: ../po/debian-tasks.desc:549
 #, fuzzy
 msgid "This task localises the desktop in Swedish."
 msgstr "Ataza honek Idazmahaia Suedieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:536
+#: ../po/debian-tasks.desc:556
 msgid "Thai environment"
 msgstr "Ingurune Thailandiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:536
+#: ../po/debian-tasks.desc:556
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
@@ -781,23 +801,23 @@ msgstr ""
 "erabiltzaile Thailandiarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:548
+#: ../po/debian-tasks.desc:568
 msgid "Thai desktop"
 msgstr "Mahaigain Thailandiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:548
+#: ../po/debian-tasks.desc:568
 #, fuzzy
 msgid "This task localises the desktop in Thai."
 msgstr "Ataza honek Idazmahaia Thailandieraz ezarriko du"
 
 #. Description
-#: ../po/debian-tasks.desc:555
+#: ../po/debian-tasks.desc:575
 msgid "Turkish environment"
 msgstr "Ingurune Turkiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:555
+#: ../po/debian-tasks.desc:575
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -806,23 +826,23 @@ msgstr ""
 "Erabiltzaile Turkiarrei laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:567
+#: ../po/debian-tasks.desc:587
 msgid "Turkish desktop"
 msgstr "Mahaigain Turkiarra"
 
 #. Description
-#: ../po/debian-tasks.desc:567
+#: ../po/debian-tasks.desc:587
 #, fuzzy
 msgid "This task localises the desktop in Turkish."
 msgstr "Ataza honek Idazmahaia Turkieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:574
+#: ../po/debian-tasks.desc:594
 msgid "Ukrainian environment"
 msgstr "Ingurune Ukraniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:574
+#: ../po/debian-tasks.desc:594
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -831,28 +851,39 @@ msgstr ""
 "erabiltzaile Ukraniarrei  laguntzeko."
 
 #. Description
-#: ../po/debian-tasks.desc:584
+#: ../po/debian-tasks.desc:604
 msgid "Ukrainian desktop"
 msgstr "Mahaigain Ukraniarra"
 
 #. Description
-#: ../po/debian-tasks.desc:584
+#: ../po/debian-tasks.desc:604
 #, fuzzy
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Ataza honek Idazmahaia Ukranieraz ezarriko du."
 
 #. Description
-#: ../po/debian-tasks.desc:592
+#: ../po/debian-tasks.desc:612
 msgid "Web server"
 msgstr "Web zerbitzaria"
 
 #. Description
-#: ../po/debian-tasks.desc:592
+#: ../po/debian-tasks.desc:612
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Ataza honek web zerbitzari sistema batek behar dituen pakete erabilienak "
 "instalatzen ditu."
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software, including a variety of "
+#~ "session managers, file managers and web browsers. It incorporates both "
+#~ "the GNOME and KDE desktops, and provides a display manager which lets the "
+#~ "user choose between the two."
+#~ msgstr ""
+#~ "Ataza honek oinarrizko \"mahaigain\" softwarea instalatuko du, hainbat "
+#~ "saio, fitxategi eta web kudeatzaile barne. Honek bai GNOME bai KDE "
+#~ "instalatuko ditu eta berauen artean hautatzeko erabiltzaileari aukera "
+#~ "emango duen softwarea."
 
 #, fuzzy
 #~ msgid "This task makes the desktop be localised in Bulgarian."

@@ -1,37 +1,20 @@
 Task: desktop
-Relevance: 8
 Section: user
+Relevance: 8
 Test-desktop: 1
 Description: Desktop environment
- This task provides basic "desktop" software, including a variety
- of session managers, file managers and web browsers. It incorporates
- both the GNOME and KDE desktops, and provides a display manager
- which lets the user choose between the two.
+ This task provides basic desktop software and serves as a basis for the
+ Gnome and KDE desktop tasks.
 Key:
   x-window-system-core
-# The basics of gnome, not the whole thing.
-  gnome-desktop-environment
-# This could probably be reduced more.
-  kde-core
-  kdeadmin
-  kdeartwork
-  kdegraphics
-  kdemultimedia
-  kdenetwork
-  kdeutils
-  kdepim
 Packages-list:
-  gdm
-  gnome
-  kde
-# gnome whines if there's no xscreensaver
-  xscreensaver
-# a screen saver does silly things without this
-  fortune-mod
   menu
+# firefox is the most popular web browser at the moment, although both
+# gnome and kde offer their own too
   mozilla-firefox
 # mozilla printing
   mozilla-psm
+# the gimp is the best image editor, no matter the desktop
   gimp
 # openoffice is the best word processor / office suite at the moment
   openoffice.org-bin
@@ -42,6 +25,10 @@ Packages-list:
   openoffice.org-help-en
   myspell-en-us
   myspell-en-gb
+# synaptic fits in better with gnome than kde, so if we got a good
+# qt-based package manager, this might be moved to gnome-desktop
   synaptic
-# allow totem to play theora files
-  libtheora0
+# Since neither the gnome nor kde desktop tasks may be available, include
+# enough basic X stuff here for a minally useful desktop without them.
+  twm
+  xterm

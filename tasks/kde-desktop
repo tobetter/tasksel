@@ -1,0 +1,21 @@
+Task: kde-desktop
+Relevance: 8
+Section: user
+Depends: desktop
+Test-new-install: skip skip
+Description: KDE desktop environment
+ This task provides basic "desktop" software using the K Desktop
+ Environment.
+Key:
+# This could probably be reduced more.
+  kde-core
+  kdeadmin
+  kdeartwork
+  kdegraphics
+  kdemultimedia
+  kdenetwork
+  kdeutils
+  kdepim
+Packages-list:
+  kde
+  openoffice.org-kde
