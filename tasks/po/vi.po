@@ -1,4 +1,4 @@
-# translation of tasksel tasks to Vietnamese
+# Translation of tasksel tasks to Vietnamese
 # Copyright © 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the tasksel_tasks package.
 # Phan Vinh Thinh <teppi@vnoss.org>, 2005.
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: tasksel tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-08 19:29-0400\n"
-"PO-Revision-Date: 2005-07-10 17:37+0930\n"
+"PO-Revision-Date: 2005-08-19 21:03+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -270,7 +270,7 @@ msgstr "Môi trường làm việc"
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "Gnome and KDE desktop tasks."
-msgstr ""
+msgstr "Công việc này cung cấp phần mềm bàn làm việc cơ bản và đáp ứng là cơ sở cho các công việc Gnome và KDE đều."
 
 #. Description
 #: ../po/debian-tasks.desc:187
@@ -286,25 +286,23 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:195
-#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
 msgstr ""
 "Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
-"liệu giúp người dùng nói tiếng Ả Rập sử dụng Debian dễ dàng hơn."
+"liệu giúp người dùng nói tiếng Hoà-lan sử dụng Debian dễ dàng hơn."
 
 #. Description
 #: ../po/debian-tasks.desc:206
 #, fuzzy
 msgid "Dutch environment"
-msgstr "Môi trường tiếng Séc"
+msgstr "Môi trường tiếng Hoà-lan"
 
 #. Description
 #: ../po/debian-tasks.desc:206
-#, fuzzy
 msgid "This task makes the desktop be localised in Dutch"
-msgstr "Công việc này giúp hiển thị giao diện tiếng Ả Rập."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hoà-lan."
 
 #. Description
 #: ../po/debian-tasks.desc:218
@@ -370,16 +368,15 @@ msgstr "Công việc này địa phương hóa giao diện bằng tiếng Đức
 
 #. Description
 #: ../po/debian-tasks.desc:265
-#, fuzzy
 msgid "Gnome desktop environment"
-msgstr "Môi trường làm việc tiếng Nhật"
+msgstr "Môi trường bàn làm việc Gnome"
 
 #. Description
 #: ../po/debian-tasks.desc:265
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
 "environment."
-msgstr ""
+msgstr "Công việc này cung cấp phần mềm bàn làm việc cơ bản, dùng môi trường bàn làm việc Gnome."
 
 #. Description
 #: ../po/debian-tasks.desc:276
@@ -479,16 +476,15 @@ msgstr "Công việc này địa phương hóa giao diện bằng tiếng Nhật
 
 #. Description
 #: ../po/debian-tasks.desc:346
-#, fuzzy
 msgid "KDE desktop environment"
-msgstr "Môi trường làm việc"
+msgstr "Môi trường bàn làm việc KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:346
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
-msgstr ""
+msgstr "Công việc này cung cấp phần mềm bàn làm việc cơ bản dùng môi trường bàn làm việc KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:364
@@ -622,31 +618,27 @@ msgstr "Công việc này thiết lập hệ thống bạn có khả năng trìn
 
 #. Description
 #: ../po/debian-tasks.desc:463
-#, fuzzy
 msgid "Romanian environment"
-msgstr "Môi trường U-cợ-rainh"
+msgstr "Môi trường Lỗ-má-ni"
 
 #. Description
 #: ../po/debian-tasks.desc:463
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
 msgstr ""
-"Công việc này cài đặt những chương trình, và tài liệu tiếng Ý giúp người "
-"dùng Debian nói tiếng Ý."
+"Công việc này cài đặt những chương trình, và tài liệu tiếng Lỗ-má-ni giúp người "
+"dùng Debian nói tiếng Lỗ-má-ni."
 
 #. Description
 #: ../po/debian-tasks.desc:474
-#, fuzzy
 msgid "Romanian desktop"
-msgstr "Màn hình U-cra-in"
+msgstr "Màn hình Lỗ-má-ni"
 
 #. Description
 #: ../po/debian-tasks.desc:474
-#, fuzzy
 msgid "This task localises the desktop in Romanian."
-msgstr "Công việc này giúp hiển thị giao diện tiếng U-cra-in."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Lỗ-má-ni."
 
 #. Description
 #: ../po/debian-tasks.desc:481
@@ -837,18 +829,3 @@ msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Nhón này chọn các gói hỗ trợ cho một hệ thống phục vụ Mạng thường dụng."
-
-#~ msgid ""
-#~ "This task provides basic \"desktop\" software, including a variety of "
-#~ "session managers, file managers and web browsers. It incorporates both "
-#~ "the GNOME and KDE desktops, and provides a display manager which lets the "
-#~ "user choose between the two."
-#~ msgstr ""
-#~ "Công việc này cung cấp những phần mềm cho môi trường làm việc cơ bản, gồm "
-#~ "các trình quản lý buổi làm việc khác nhau, trình quản lý tập tin và trình "
-#~ "duyệt Mạng. Công việc này kết hợp với cả môi trường KDE và GNOME, và cung "
-#~ "cấp một trình quản lý bộ trình bày cho phép người dùng chọn một trong hai "
-#~ "môi trường nói trên."
-
-#~ msgid "This task makes the desktop be localised in Bulgarian."
-#~ msgstr "Công việc này giúp hiển thị giao diện tiếng Bul-ga-ri."
