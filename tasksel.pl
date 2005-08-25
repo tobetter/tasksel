@@ -184,9 +184,16 @@ sub task_packages {
 	my $task=shift;
 	my $aptitude_tasks=shift;
 	
-	my @list;
+	my %list;
+
+	# key packages are always included
+	if (ref $task->{key}) {
+		map { $list{$_}=1 } @{$task->{key}};
+	}
+		
 	if ($task->{packages} eq 'task-fields') {
-		# task-fields method is built-in for speed.
+		# task-fields method is built-in for speed and to support
+		# aptitude task definitions
 		if ($aptitude_tasks) {
 			return '~t^'.$task->{task}.'$';
 		}
@@ -197,7 +204,7 @@ sub task_packages {
 				if (/^Task: (.*)/m) {
 					my @tasks=split(", ", $1);
 					if (grep { $_ eq $task->{task} } @tasks) { 
-						push @list, $1 if /^Package: (.*)/m;
+						$list{$1}=1 if /^Package: (.*)/m;
 					}
 				}
 			}
@@ -211,9 +218,21 @@ sub task_packages {
 	}
 	else {
 		# external method
-		@list=grep { package_avail($_) } split("\n", `$packagesdir/$task->{packages} $task->{task}`);
+		my ($method, @params);
+		if (ref $task->{packages}) {
+			@params=@{$task->{packages}};
+			$method=shift @params;
+		}
+		else {
+			$method=$task->{packages};
+		}
+		
+		map { $list{$_}=1 }
+			grep { package_avail($_) }
+			split(' ', `$packagesdir/$method $task->{task} @params`);
 	}
-	return @list;
+
+	return keys %list;
 }
 
 # Given a task hash, runs any test program specified in its data, and sets

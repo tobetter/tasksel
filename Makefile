@@ -49,6 +49,9 @@ install:
 	for test in tests/*; do \
 		install -m 755 $$test $(DESTDIR)/usr/lib/tasksel/tests/; \
 	done
+	for package in packages/*; do \
+		install -m 755 $$package $(DESTDIR)/usr/lib/tasksel/packages/; \
+	done
 
 clean:
 	rm -f $(TASKDESC) *~

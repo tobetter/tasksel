@@ -10,8 +10,22 @@ tasksel (2.31) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Fix dutch tasks. Closes: #323415
- 
- -- Joey Hess <joeyh@debian.org>  Tue, 16 Aug 2005 20:31:21 -0400
+  * Explicitly add Packages: task-fields lines to all the tasks in tasks/
+    so it's less of a special case from how task definitions generally work.
+  * Key packages are always included in a task, and need not be explicitly
+    listed by the Packages field, although it's ok if they are.
+  * Allow package list programs to output the list separated by any
+    whitespace, not just newlines.
+  * Pass params from Packages: fields to the program that is run.
+  * Add a "list" method, supporting easy user-defined tasks with no coding
+    or overrides hacking needed, vis:
+      Packages: list
+        package-1
+        package-2
+        ...
+  * Some docs improvements in this area.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 24 Aug 2005 17:31:01 -0400
 
 tasksel (2.30) unstable; urgency=low
 

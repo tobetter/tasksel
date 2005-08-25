@@ -3,13 +3,13 @@ Section: user
 Description: Laptop
  This task installs software useful for a laptop.
 Test-laptop: 1
+Packages: task-fields
 Packages-list:
 # TODO: probably ought to make the list dynamic depending on the laptop
 # model, etc
  acpid
  apmd
  acpi
- apm
  pcmcia-cs
  wireless-tools
  xfree86-driver-synaptics
