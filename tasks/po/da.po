@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-24 21:41-0400\n"
-"PO-Revision-Date: 2005-07-11 13:50+0200\n"
+"PO-Revision-Date: 2005-08-29 22:53+0200\n"
 "Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -240,10 +240,8 @@ msgstr "SQL-database"
 
 #. Description
 #: ../po/debian-tasks.desc:163
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Denne opgavepakke omfatter klient- og serverpakker til PostgreSQL-databasen."
+msgid "This task selects client and server packages for the PostgreSQL database."
+msgstr "Denne opgavepakke omfatter klient- og serverpakker til PostgreSQL-databasen."
 
 #. Description
 #: ../po/debian-tasks.desc:163
@@ -269,6 +267,8 @@ msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "Gnome and KDE desktop tasks."
 msgstr ""
+"Denne opgavepakke indeholder grundlæggende skrivebordsprogrammer, og fungerer "
+"som fundament for skrivebordsmiljø-opgavepakkerne Gnome og KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:187
@@ -277,32 +277,27 @@ msgstr "DNS-server"
 
 #. Description
 #: ../po/debian-tasks.desc:187
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Vælger DNS-serveren BIND samt tilhørende dokumentation og værktøjsprogrammer."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
+msgstr "Vælger DNS-serveren BIND samt tilhørende dokumentation og værktøjsprogrammer."
 
 #. Description
 #: ../po/debian-tasks.desc:195
-#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
 msgstr ""
 "Denne opgavepakke installerer programmer, datafiler, skrifttyper og "
-"dokumentation, der gør det nemmere for arabisksprogede at bruge Debian."
+"dokumentation, der gør det nemmere for hollandsksprogede at bruge Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:204
-#, fuzzy
 msgid "Dutch environment"
-msgstr "Tjekkisk miljø"
+msgstr "Hollandsk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:204
-#, fuzzy
 msgid "This task makes the desktop be localised in Dutch"
-msgstr "Denne opgavepakke gør skrivebordet arabisk."
+msgstr "Denne opgavepakke gør skrivebordet hollandsk"
 
 #. Description
 #: ../po/debian-tasks.desc:211
@@ -368,9 +363,8 @@ msgstr "Denne opgavepakke gør skrivebordet tysk."
 
 #. Description
 #: ../po/debian-tasks.desc:258
-#, fuzzy
 msgid "Gnome desktop environment"
-msgstr "Japansk skrivebordsmiljø"
+msgstr "Skrivebordsmiljøet Gnome"
 
 #. Description
 #: ../po/debian-tasks.desc:258
@@ -378,6 +372,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
 "environment."
 msgstr ""
+"Denne opgavepakke giver de grundlæggende skrivebordsprogrammer med "
+"skrivebordsmiljøet Gnome."
 
 #. Description
 #: ../po/debian-tasks.desc:269
@@ -477,9 +473,8 @@ msgstr "Denne opgavepakke gør skrivebordet japansk."
 
 #. Description
 #: ../po/debian-tasks.desc:339
-#, fuzzy
 msgid "KDE desktop environment"
-msgstr "Skrivebordsmiljø"
+msgstr "Skrivebordsmiljøet KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:339
@@ -487,6 +482,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
 msgstr ""
+"Denne opgavepakke giver de grundlæggende skrivebordsprogrammer med "
+"skrivebordsmiljøet KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:357
@@ -620,31 +617,27 @@ msgstr "Denne opgavepakke sætter dit system op til at være printerserver."
 
 #. Description
 #: ../po/debian-tasks.desc:456
-#, fuzzy
 msgid "Romanian environment"
-msgstr "Ukrainsk miljø"
+msgstr "Rumænsk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:456
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
 msgstr ""
-"Denne opgavepakke installerer Italienske pakker og dokumentation, der skal "
-"hjælpe italiensksprogede med at bruge Debian."
+"Denne opgavepakke installerer Rumænske pakker og dokumentation, der skal "
+"hjælpe rumænsksprogede med at bruge Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:467
-#, fuzzy
 msgid "Romanian desktop"
-msgstr "Ukrainsk skrivebord"
+msgstr "Rumænsk skrivebord"
 
 #. Description
 #: ../po/debian-tasks.desc:467
-#, fuzzy
 msgid "This task localises the desktop in Romanian."
-msgstr "Denne opgavepakke gør skrivebordet ukrainsk."
+msgstr "Denne opgavepakke gør skrivebordet rumænsk."
 
 #. Description
 #: ../po/debian-tasks.desc:474
@@ -812,7 +805,7 @@ msgid ""
 "speaking people use Debian."
 msgstr ""
 "Denne opgavepakke indeholder programmer og ukrainsk dokumentation til at "
-"gøre det lettere for ukrainskprogede at bruge Debian"
+"gøre det lettere for ukrainskprogede at bruge Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:597
@@ -831,8 +824,7 @@ msgstr "Webserver"
 
 #. Description
 #: ../po/debian-tasks.desc:605
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Denne opgavepakke vælger pakker, der er nyttige på et almindeligt webserver-"
 "system."
@@ -1038,3 +1030,4 @@ msgstr ""
 
 #~ msgid "a TeX/LaTeX environment"
 #~ msgstr "et TeX/LaTeX-miljø"
+
