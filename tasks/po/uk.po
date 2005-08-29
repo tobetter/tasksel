@@ -9,15 +9,14 @@ msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-24 21:41-0400\n"
-"PO-Revision-Date: 2005-07-03 15:33+0300\n"
+"PO-Revision-Date: 2005-08-29 19:16+0300\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
-"Language-Team: Ukrainian <ukrainian>\n"
+"Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Description
 #: ../po/debian-tasks.desc:3
@@ -60,8 +59,7 @@ msgstr "Стільниця з підтримкою бразильської по
 #. Description
 #: ../po/debian-tasks.desc:32
 msgid "This task localises the desktop in Brasilian Portuguese."
-msgstr ""
-"Це завдання робить стільницю локалізованою бразильською португальською."
+msgstr "Це завдання робить стільницю локалізованою бразильською португальською."
 
 #. Description
 #: ../po/debian-tasks.desc:39
@@ -243,10 +241,8 @@ msgstr "База даних SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:163
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Це завдання вибирає клієнтські та серверні пакунки для бази даних PostgreSQL."
+msgid "This task selects client and server packages for the PostgreSQL database."
+msgstr "Це завдання вибирає клієнтські та серверні пакунки для бази даних PostgreSQL."
 
 #. Description
 #: ../po/debian-tasks.desc:163
@@ -270,7 +266,7 @@ msgstr "Стільниця"
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "Gnome and KDE desktop tasks."
-msgstr ""
+msgstr "Це завдання надає базове програмне забезпечення для стільниці і є базисом для завдань Gnome та KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:187
@@ -279,33 +275,29 @@ msgstr "Сервер DNS"
 
 #. Description
 #: ../po/debian-tasks.desc:187
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Вибирає DNS сервер BIND та пов'язані з ним пакунки документації та "
 "інструментів."
 
 #. Description
 #: ../po/debian-tasks.desc:195
-#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
 msgstr ""
 "Це завдання програми, файли даних, шрифти та документацію, що дозволяють "
-"полегшити використання Debian для тих, хто розмовляє арабською."
+"полегшити використання Debian для тих, хто розмовляє голландською."
 
 #. Description
 #: ../po/debian-tasks.desc:204
-#, fuzzy
 msgid "Dutch environment"
-msgstr "Підтримка чеської мови"
+msgstr "Підтримка голландської мови"
 
 #. Description
 #: ../po/debian-tasks.desc:204
-#, fuzzy
 msgid "This task makes the desktop be localised in Dutch"
-msgstr "Це завдання робить стільницю локалізованою польською."
+msgstr "Це завдання робить стільницю локалізованою голландською."
 
 #. Description
 #: ../po/debian-tasks.desc:211
@@ -371,16 +363,15 @@ msgstr "Це завдання робить стільницю локалізов
 
 #. Description
 #: ../po/debian-tasks.desc:258
-#, fuzzy
 msgid "Gnome desktop environment"
-msgstr "Стільниця з підтримкою японської"
+msgstr "Стільниця Gnome"
 
 #. Description
 #: ../po/debian-tasks.desc:258
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
 "environment."
-msgstr ""
+msgstr "Це завдання надає основне програмне забезпечення для стільниці з використанням Gnome."
 
 #. Description
 #: ../po/debian-tasks.desc:269
@@ -480,16 +471,15 @@ msgstr "Це завдання робить стільницю локалізов
 
 #. Description
 #: ../po/debian-tasks.desc:339
-#, fuzzy
 msgid "KDE desktop environment"
-msgstr "Стільниця"
+msgstr "Стільниця KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:339
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
-msgstr ""
+msgstr "Це завдання надає основне програмне забезпечення для стільниці з використанням K Desktop Environment."
 
 #. Description
 #: ../po/debian-tasks.desc:357
@@ -518,12 +508,12 @@ msgstr "Це завдання робить стільницю локалізов
 #. Description
 #: ../po/debian-tasks.desc:376
 msgid "Laptop"
-msgstr ""
+msgstr "Лептоп"
 
 #. Description
 #: ../po/debian-tasks.desc:376
 msgid "This task installs software useful for a laptop."
-msgstr ""
+msgstr "Це завдання встановлює програмне забезпечення корисне для лептопів."
 
 #. Description
 #: ../po/debian-tasks.desc:383
@@ -619,36 +609,31 @@ msgstr "Сервер друку"
 #. Description
 #: ../po/debian-tasks.desc:446
 msgid "This task sets up your system to be a print server."
-msgstr ""
-"Це завдання налаштовує вашу систему для використання в якості сервера друку."
+msgstr "Це завдання налаштовує вашу систему для використання в якості сервера друку."
 
 #. Description
 #: ../po/debian-tasks.desc:456
-#, fuzzy
 msgid "Romanian environment"
-msgstr "Підтримка української мови"
+msgstr "Підтримка румунської мови"
 
 #. Description
 #: ../po/debian-tasks.desc:456
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
 msgstr ""
-"Це завдання встановлює пакунки, що дозволяють полегшити використання Debian "
-"тим, хто розмовляє італійською мовою."
+"Це завдання встановлює пакунки та документацію, що дозволяють полегшити використання Debian "
+"тим, хто розмовляє румунською мовою."
 
 #. Description
 #: ../po/debian-tasks.desc:467
-#, fuzzy
 msgid "Romanian desktop"
-msgstr "Стільниця з підтримкою української"
+msgstr "Стільниця з підтримкою румунської"
 
 #. Description
 #: ../po/debian-tasks.desc:467
-#, fuzzy
 msgid "This task localises the desktop in Romanian."
-msgstr "Це завдання робить стільницю локалізованою українською."
+msgstr "Це завдання робить стільницю локалізованою румунською."
 
 #. Description
 #: ../po/debian-tasks.desc:474
@@ -676,31 +661,27 @@ msgstr "Це завдання робить стільницю локалізов
 
 #. Description
 #: ../po/debian-tasks.desc:492
-#, fuzzy
 msgid "Slovak environment"
-msgstr "Підтримка корейської мови"
+msgstr "Підтримка словацької мови"
 
 #. Description
 #: ../po/debian-tasks.desc:492
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
 msgstr ""
-"Це завдання встановлює пакунки, що дозволяють полегшити використання Debian "
-"тим, хто розмовляє італійською мовою."
+"Це завдання встановлює пакунки та документацію, що дозволяють полегшити використання Debian "
+"тим, хто розмовляє словацькою мовою."
 
 #. Description
 #: ../po/debian-tasks.desc:500
-#, fuzzy
 msgid "Slovak desktop"
-msgstr "Стільниця з підтримкою корейської"
+msgstr "Стільниця з підтримкою словацької"
 
 #. Description
 #: ../po/debian-tasks.desc:500
-#, fuzzy
 msgid "This task localises the desktop in Slovak."
-msgstr "Це завдання робить стільницю локалізованою корейською."
+msgstr "Це завдання робить стільницю локалізованою словацькою."
 
 #. Description
 #: ../po/debian-tasks.desc:507
@@ -839,18 +820,8 @@ msgstr "Web-сервер"
 
 #. Description
 #: ../po/debian-tasks.desc:605
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Це завдання вибирає пакунки, що корисні для web-сервера загального "
 "призначення."
 
-#~ msgid ""
-#~ "This task provides basic \"desktop\" software, including a variety of "
-#~ "session managers, file managers and web browsers. It incorporates both "
-#~ "the GNOME and KDE desktops, and provides a display manager which lets the "
-#~ "user choose between the two."
-#~ msgstr ""
-#~ "Це завдання надає набір менеджерів сеансів, файлових менеджерів та "
-#~ "переглядачів тенет. Воно містить середовища GNOME та KDE, та менеджер "
-#~ "дисплея, який дозволяє користувачу вибирати між ними."
