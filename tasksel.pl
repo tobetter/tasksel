@@ -324,7 +324,7 @@ sub usage {
 	print STDERR gettext(q{Usage:
 tasksel install <task>
 tasksel remove <task>
-tasksel [options]; where options is any combination of:
+tasksel [options]
 	-t, --test          test mode; don't really do anything
 	    --new-install   automatically install some tasks
 	    --list-tasks    list tasks that would be displayed and exit
