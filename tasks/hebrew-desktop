@@ -3,11 +3,14 @@ Depends: desktop, hebrew
 Section: l10n
 Description: Hebrew desktop
  This task localises the desktop in Hebrew.
-Maintainer: Shlomi Loubaton <loubaton.shlomi@012.net.il>
+Maintainer: Debian Hebrew Team <debian-hebrew-common@lists.alioth.debian.org>
 Key:
 Packages: task-fields
 Packages-list:
  hspell-gui
+ hdate-applet
  kde-i18n-he
  koffice-i18n-he
  openoffice.org-l10n-he
+ mozilla-firefox-locale-he-il
+ mozilla-firefox-theme-rtlclassic
