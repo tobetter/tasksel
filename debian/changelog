@@ -6,7 +6,11 @@ tasksel (2.32) UNRELEASED; urgency=low
     - Updated Danish translation (Claus Hindsgaul)
     - Updated Lithuanian translation (Kęstutis Biliūnas)
 
- -- Eugeniy Meshcheryakov <eugen@debian.org>  Mon, 29 Aug 2005 19:18:06 +0300
+  [ Joey Hess ]
+  * Temporarily disabled kde-desktop task since kdegraphics is uninstallable
+    even in testing ATM.
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 22 Sep 2005 10:03:10 +0200
 
 tasksel (2.31) unstable; urgency=low
 
