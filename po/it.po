@@ -2,13 +2,13 @@
 # Copyright (C) 2004 Free Software Foundation, Inc.
 # This file is distributed under the same license as the newtasksel package.
 # Riccardo Fabris <frick@linux.it>, 2002-2004.
-# Giuseppe Sacco <eppesuig@debian.org>, 2004.
+# Giuseppe Sacco <eppesuig@debian.org>, 2004-2005.
 msgid ""
 msgstr ""
 "Project-Id-Version: newtasksel 2.01\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-06-11 07:41+0200\n"
-"PO-Revision-Date: 2004-08-27 00:31+0200\n"
+"PO-Revision-Date: 2005-10-13 10:13+0200\n"
 "Last-Translator: Giuseppe Sacco <eppesuig@debian.org>\n"
 "Language-Team: italian <debian-l10n-italian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:305
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -33,13 +32,9 @@ msgstr ""
 "tasksel remove <task>\n"
 "tasksel [opzioni]; dove opzioni è una combinazione di:\n"
 "\t-t, --test          modalità di test; non esegue veramente le operazioni\n"
-"\t-r, --required      installa tutti i pacchetti con priorità required\n"
-"\t-i, --important     installa tutti i pacchetti con priorità important\n"
-"\t-s, --standard      installa tutti i pacchetti con priorità standard\n"
-"\t-n, --no-ui         non mostra l'interfaccia utente; da usare con -r o -i\n"
-"\t    --new-install   installa automaticamante alcuni task\n"
-"\t    --list-task     elenca i tasck che verrebbero installati ed esce\n"
-"\t    --task-packages elenca tutti i task disponibili\n"
+"            --new-install   installa automaticamante alcuni task\n"
+"\t    --list-task     elenca i task che verrebbero installati ed esce\n"
+"\t    --task-packages elenca tutti i pacchetti disponibili per task\n"
 "\t    --tasc-desc     restituisce la descrizione di un task\n"
 
 #: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
