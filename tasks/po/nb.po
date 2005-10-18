@@ -1,3 +1,4 @@
+# translation of nb.po to Norwegian Bokmål
 # translation of tasksel_tasks.po to Norwegian Bokmål
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
@@ -10,10 +11,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel_tasks\n"
+"Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-09-22 10:17+0200\n"
-"PO-Revision-Date: 2005-07-03 14:15+0200\n"
+"PO-Revision-Date: 2005-10-18 13:09+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -244,8 +245,7 @@ msgstr "SQL-database"
 
 #. Description
 #: ../po/debian-tasks.desc:163
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr "Dette oppgaven gir klient- og tjenerpakker for databasen PostgreSQL."
 
 #. Description
@@ -271,6 +271,8 @@ msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "Gnome and KDE desktop tasks."
 msgstr ""
+"Denne oppgaven gir fundamentale programmer for skrivebordet og "
+"fungerer som underlag for oppgavene for Gnome og KDE-skrivebord."
 
 #. Description
 #: ../po/debian-tasks.desc:187
@@ -279,32 +281,27 @@ msgstr "Navnetjener"
 
 #. Description
 #: ../po/debian-tasks.desc:187
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Tar med navnetjeneren BIND og tilhørende dokumentasjon og verktøyspakker."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
+msgstr "Tar med navnetjeneren BIND og tilhørende dokumentasjon og verktøyspakker."
 
 #. Description
 #: ../po/debian-tasks.desc:195
-#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
 msgstr ""
 "Denne oppgaven installerer programmer, datafiler, skrifttyper og "
-"dokumentasjon som gjør det lettere for arabisktalende å bruke Debian."
+"dokumentasjon som gjør det lettere for nederlandsktalende å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:204
-#, fuzzy
 msgid "Dutch environment"
-msgstr "Tsjekkisk miljø"
+msgstr "Nederlandsk miljø"
 
 #. Description
 #: ../po/debian-tasks.desc:204
-#, fuzzy
 msgid "This task makes the desktop be localised in Dutch"
-msgstr "Denne oppgaven gir et polsk skrivebord."
+msgstr "Denne oppgaven gir et nederlandsk skrivebord."
 
 #. Description
 #: ../po/debian-tasks.desc:211
@@ -370,16 +367,15 @@ msgstr "Denne oppgaven gir et tysk skrivebord."
 
 #. Description
 #: ../po/debian-tasks.desc:258
-#, fuzzy
 msgid "Gnome desktop environment"
-msgstr "Japansk skrivebord"
+msgstr "Gnome skrivebordsmiljø"
 
 #. Description
 #: ../po/debian-tasks.desc:258
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
 "environment."
-msgstr ""
+msgstr "Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med skrivebordsmiljøet Gnome."
 
 #. Description
 #: ../po/debian-tasks.desc:269
@@ -463,8 +459,7 @@ msgstr "Japansk miljø"
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
-msgstr ""
-"Denne oppgaven installerer pakker som hjelper japansktalende å bruke Debian."
+msgstr "Denne oppgaven installerer pakker som hjelper japansktalende å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:331
@@ -486,8 +481,7 @@ msgstr "Koreanske omgivelser"
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
-msgstr ""
-"Denne oppgaven installerer pakker som hjelper koreansktalande å bruke Debian."
+msgstr "Denne oppgaven installerer pakker som hjelper koreansktalande å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:350
@@ -502,12 +496,12 @@ msgstr "Denne oppgaven gir et koreansk skrivebord."
 #. Description
 #: ../po/debian-tasks.desc:357
 msgid "Laptop"
-msgstr ""
+msgstr "Bærbar"
 
 #. Description
 #: ../po/debian-tasks.desc:357
 msgid "This task installs software useful for a laptop."
-msgstr ""
+msgstr "Denne oppgaven installerer programvare nyttig for en bærbar maskin."
 
 #. Description
 #: ../po/debian-tasks.desc:364
@@ -607,31 +601,27 @@ msgstr "Denne oppgaven setter systemet ditt opp til å være en utskriftstjener.
 
 #. Description
 #: ../po/debian-tasks.desc:437
-#, fuzzy
 msgid "Romanian environment"
-msgstr "Ukrainske omgivelser"
+msgstr "Rumenske omgivelser"
 
 #. Description
 #: ../po/debian-tasks.desc:437
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
 msgstr ""
 "Denne oppgaven installerer pakker og dokumentasjon som hjelper "
-"italiensktalende å bruke Debian."
+"rumensktalende å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:448
-#, fuzzy
 msgid "Romanian desktop"
-msgstr "Ukrainsk skrivebord"
+msgstr "Rumensk skrivebord"
 
 #. Description
 #: ../po/debian-tasks.desc:448
-#, fuzzy
 msgid "This task localises the desktop in Romanian."
-msgstr "Denne oppgaven gir et ukrainsk skrivebord."
+msgstr "Denne oppgaven gir et rumensk skrivebord."
 
 #. Description
 #: ../po/debian-tasks.desc:455
@@ -659,31 +649,27 @@ msgstr "Denne oppgaven gir et russisk skrivebord."
 
 #. Description
 #: ../po/debian-tasks.desc:473
-#, fuzzy
 msgid "Slovak environment"
-msgstr "Koreanske omgivelser"
+msgstr "Slovakiske omgivelser"
 
 #. Description
 #: ../po/debian-tasks.desc:473
-#, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
 msgstr ""
 "Denne oppgaven installerer pakker og dokumentasjon som hjelper "
-"italiensktalende å bruke Debian."
+"slovakisktalende å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:481
-#, fuzzy
 msgid "Slovak desktop"
-msgstr "Koreansk skrivebord"
+msgstr "Slovakisk skrivebord"
 
 #. Description
 #: ../po/debian-tasks.desc:481
-#, fuzzy
 msgid "This task localises the desktop in Slovak."
-msgstr "Denne oppgaven gir et koreansk skrivebord."
+msgstr "Denne oppgaven gir et slovakisk skrivebord."
 
 #. Description
 #: ../po/debian-tasks.desc:488
@@ -753,8 +739,7 @@ msgstr "Thai miljø"
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
-msgstr ""
-"Denne oppgaven installerer pakker som hjelper Thai-talende å bruke Debian."
+msgstr "Denne oppgaven installerer pakker som hjelper Thai-talende å bruke Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:542
@@ -821,8 +806,7 @@ msgstr "Nettjener"
 
 #. Description
 #: ../po/debian-tasks.desc:586
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Denne oppgaven installerer pakker som er nyttige for et generelt system med "
 "en nettjener."
@@ -837,3 +821,4 @@ msgstr ""
 #~ "med ulike øktbehandlere, filbehandlere og nettlesere. Pakken inneholder "
 #~ "både GNOME og KDE, og gir en innloggingsvelger som lar deg velge mellom "
 #~ "de to."
+
