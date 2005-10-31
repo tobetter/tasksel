@@ -1,7 +1,10 @@
 tasksel (2.33) UNRELEASED; urgency=low
 
+  [ Joey Hess ]
   * Update Hebrew tasks. Closes: #323241
   * Remove doc-debian-ko. Closes: #330111
+  * Remove openoffice.org-kde from desktop task (was already in kde-desktop
+    task).
 
   [ Translations of tasks ]
     - Updated Japanese translation. (Kenshi Muto)
@@ -16,7 +19,7 @@ tasksel (2.33) UNRELEASED; urgency=low
     - Updated Russian translation (Yuri Kozlov). Closes: #334251
     - Updated Swedish translation (Daniel Nylander). Closes: #333810, #333815
 
- -- Bart Cornelis (cobaco) <cobaco@linux.be>  Sat,  1 Oct 2005 17:12:25 +0200
+ -- Joey Hess <joeyh@debian.org>  Mon, 31 Oct 2005 13:51:37 -0500
 
 tasksel (2.32) unstable; urgency=low
 
