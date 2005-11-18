@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2005-04-27 00:51+0400\n"
 "Last-Translator: Phan Vinh Thinh <teppi@vnoss.org>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -18,40 +18,38 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
 msgstr ""
 "Hiện thời chỉ có phần lõi của Debian là đã cài đặt. Để tiếp tục tiến trình "
-"cài đặt cho phù hợp với yêu cầu của mình, người dùng có thể chọn cài "
-"một hoặc một vài những nhóm chương trình sau. Người dùng có kinh "
-"nghiệm có thể muốn tự chọn các gói *.deb riêng rẽ."
-
-#. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, lựa chọn gói thủ công"
+"cài đặt cho phù hợp với yêu cầu của mình, người dùng có thể chọn cài một "
+"hoặc một vài những nhóm chương trình sau. Người dùng có kinh nghiệm có thể "
+"muốn tự chọn các gói *.deb riêng rẽ."
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "Chọn phần mềm để cài đặt:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
-msgstr "Có thể chọn cài đặt một hoặc một vài những nhóm chương trình xác định sẵn sau."
+msgstr ""
+"Có thể chọn cài đặt một hoặc một vài những nhóm chương trình xác định sẵn "
+"sau."
 
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "Lựa chọn phần mềm Debian"
 
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, lựa chọn gói thủ công"

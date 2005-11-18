@@ -16,8 +16,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2005-02-16 16:54+0100\n"
 "Last-Translator: Jacobo Tarrío <jtarrio@debian.org>\n"
 "Language-Team: Galician <trasno@ceu.fi.udc.es>\n"
@@ -29,11 +29,11 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
 msgstr ""
 "Nestes momentos só está instalado o sistema base de Debian. Para axustar a "
 "instalación ás súas necesidades pode instalar unha ou máis de entre as "
@@ -41,20 +41,14 @@ msgstr ""
 "seguramente prefiran elixir os paquetes a man."
 
 #. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, selección manual de paquetes"
-
-#. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "Escolla o software que quere instalar:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -63,6 +57,9 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "Selección de software de Debian"
+
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, selección manual de paquetes"

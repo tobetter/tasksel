@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2005-09-28 17:53+0200\n"
 "Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -26,11 +26,11 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
 msgstr ""
 "Momentálne je nainštalovaný iba základ Debianu. Aby ste si vyladili systém "
 "podľa svojich potrieb, môžete teraz inštalovať tzv. úlohy. Úlohy sú "
@@ -38,29 +38,25 @@ msgstr ""
 "vybrať balíky manuálne."
 
 #. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, manuálny výber balíkov"
-
-#. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "Zvoľte programy na inštaláciu:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
 msgstr ""
 "Teraz môžete inštalovať jednu alebo viac pripravených kolekcií softvéru."
 
-
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "Výber programov pre Debian"
+
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, manuálny výber balíkov"

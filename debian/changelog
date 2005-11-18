@@ -1,3 +1,17 @@
+tasksel (2.34) UNRELEASED; urgency=low
+
+  * Manual package selection is now less of a special case, with an actual
+    task entry for it that can have test scripts like other task entries,
+    etc.
+  * Check for running under the debconf frontend and if it is, do as much as
+    possible to avoid outputting non-debconf protocol to stdout, including:
+    - Don't display the manual task.
+    - Don't clear the screen before running aptitude.
+    Before this can be used in a first stage debian install, we'll still need
+    to deal with dpkg/apt output.
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 18 Nov 2005 14:38:52 -0500
+
 tasksel (2.33) unstable; urgency=low
 
   [ Joey Hess ]

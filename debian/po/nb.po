@@ -15,8 +15,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2004-08-29 23:12+0200\n"
 "Last-Translator: Axel Bojer <axelb@skolelinux.no>\n"
 "Language-Team: Norsk Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -28,11 +28,11 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
 msgstr ""
 "Nå er det bare Debians grunnsystem som er installert. For å tilpasse "
 "installasjonen etter dine ønsker så kan du velge å installere en eller flere "
@@ -40,20 +40,14 @@ msgstr ""
 "kanskje foretrekke å velge pakker manuelt."
 
 #. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, manuelt pakkevalg"
-
-#. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "Velg hvilke programmer du vil installere:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -64,6 +58,9 @@ msgstr ""
 # Eller mener de: Utvalgte Debianprogrammer?
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "Programvareutvalg for Debian"
+
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, manuelt pakkevalg"

@@ -1,15 +1,14 @@
 Template: tasksel/first
 Type: multiselect
-_Choices: ${CHOICES}, manual package selection
+Choices: ${CHOICES}
 _Description: Choose software to install:
  At the moment, only the core of Debian is installed. To tune the
- installation to your needs, you can choose to install one or more of the
- following predefined collections of software. Experienced users may prefer
- to select packages manually.
+ system to your needs, you can choose to install one or more of the
+ following predefined collections of software.
 
 Template: tasksel/tasks
 Type: multiselect
-_Choices: ${CHOICES}, manual package selection
+Choices: ${CHOICES}
 _Description: Choose software to install:
  You can choose to install one or more of the following predefined
  collections of software.

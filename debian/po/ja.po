@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2004-06-24 16:31+0900\n"
 "Last-Translator: Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
@@ -26,11 +26,11 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
 msgstr ""
 "現時点では、Debian のコアのみがインストールされている状態です。あなたのニーズ"
 "に合うようにホストを調整するために、以下の定義済みソフトウェアコレクションか"
@@ -38,20 +38,14 @@ msgstr ""
 "とを選ぶのもよいでしょう。"
 
 #. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, 手動でパッケージを選択"
-
-#. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "インストールするソフトウェアの選択:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -61,6 +55,9 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "Debian のソフトウェア選択"
+
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, 手動でパッケージを選択"

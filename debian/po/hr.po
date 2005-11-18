@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer HR\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2004-07-13 23:51+0200\n"
 "Last-Translator: Kruno <kruno@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -14,11 +14,11 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
 msgstr ""
 "Zasad je samo Debianova jezgra instalirana. Da prilagodite instalaciju "
 "svojim potrebama, mo¾ete izabrati koju od nekoliko slijedeæih "
@@ -26,20 +26,14 @@ msgstr ""
 "izabir paketa."
 
 #. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, ruèni izabir paketa"
-
-#. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "Izaberite programe za instalaciju:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -48,6 +42,9 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "Izbor Debianovih programa"
+
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, ruèni izabir paketa"

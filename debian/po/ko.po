@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2004-07-10 03:06+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <cwryu@debian.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
 msgstr ""
 "현재 데비안의 핵심적인 부분만 설치되어 있습니다. 필요한 것을 설치하려면, 다"
 "음 미리 정의해 둔 소프트웨어 모음 중 설치하려는 소프트웨어 모음을 선택하십시"
@@ -26,20 +26,14 @@ msgstr ""
 "하는 쪽이 더 좋을 수도 있습니다."
 
 #. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, 수동으로 꾸러미 선택"
-
-#. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "설치할 소프트웨어 선택:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -49,6 +43,9 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "데비안 소프트웨어 선택"
+
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, 수동으로 꾸러미 선택"

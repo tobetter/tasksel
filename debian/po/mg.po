@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mg\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2005-03-31 10:25+0200\n"
 "Last-Translator: Jaonary Rabarisoa <mpandikateny@linuxmg.org>\n"
 "Language-Team: Malagasy <mpandikateny@linuxmg.org>\n"
@@ -27,41 +27,39 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
 msgstr ""
-"Hatramin'izao dia mbola ny fototr'i Debian ihany no voapetraka. Mba hampifanarahana ny fametrahana amin'izay ilainao azy dia afaka maetraka ny iray na maromaro amin'ireto "
-"finkambanana rindrankajy voafantina ireto ianao. Ireo izay efa za-draharaha dia afaka misafidy "
-"an-tanana ny fonosana izay ilainy."
-
-#. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, safidy an-tanana ny fonosana"
+"Hatramin'izao dia mbola ny fototr'i Debian ihany no voapetraka. Mba "
+"hampifanarahana ny fametrahana amin'izay ilainao azy dia afaka maetraka ny "
+"iray na maromaro amin'ireto finkambanana rindrankajy voafantina ireto ianao. "
+"Ireo izay efa za-draharaha dia afaka misafidy an-tanana ny fonosana izay "
+"ilainy."
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "Fidio ny rindrankajy izay hapetraka :"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
 msgstr ""
-"Afaka mametraka ny iray na maromaro amin'ireto fikambanana "
-"rindrankajy ireto ianao."
+"Afaka mametraka ny iray na maromaro amin'ireto fikambanana rindrankajy ireto "
+"ianao."
 
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "Safidy ny rindrankajy Debian"
 
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, safidy an-tanana ny fonosana"

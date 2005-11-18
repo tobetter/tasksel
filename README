@@ -47,7 +47,9 @@ the packages you want to include in the task in the following lines.
 In Debian, we mostly use the "task-fields" method, which is built into
 tasksel, and looks for Task fields in the control data of available
 packages, that list the name of the task. Another available method is
-"standard", which just installs all standard priority packages.
+"standard", which just installs all standard priority packages, and another
+is "manual", which, as a special case, runs aptitude interactively to
+select what to install.
 
 It's also possible to define other methods, by adding programs to
 /usr/lib/tasksel/packages/. Then list the name of the program as the first

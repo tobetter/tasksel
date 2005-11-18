@@ -60,7 +60,7 @@ sub read_task_desc {
 				}
 			}
 			else {
-				print STDERR "parse error in stanza $. of $desc\n";
+				warning "parse error in stanza $. of $desc";
 			}
 		}
 		if (%data) {
@@ -215,6 +215,10 @@ sub task_packages {
 		# standard method is built in since it cannot easily be
 		# implemented externally.
 		return "~pstandard", "~prequired", "~pimportant";
+	}
+	elsif ($task->{packages} eq 'manual') {
+		# manual package selection is a special case
+		return;
 	}
 	else {
 		# external method
@@ -397,8 +401,6 @@ sub main {
 		exit(0);
 	}
 	
-	# Now work out what to tell aptitude to install.
-	my @aptitude_install;
 	if (! $options{"new-install"}) {
 		# Don't install hidden tasks if this is not a new install.
 		map { $_->{_install} = 0 } grep { $_->{_display} == 0 } @tasks;
@@ -415,7 +417,6 @@ sub main {
 	
 	# The interactive bit.
 	my $interactive=0;
-	my $manual_selection=0;
 	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
 	if (@list && ! $options{install} && ! $options{remove}) {
 		$interactive=1;
@@ -451,9 +452,6 @@ sub main {
 		chomp $ret;
 		close IN;
 		unlink $tmpfile;
-		if ($ret=~/manual package selection/) {
-			$manual_selection=1;
-		}
 		
 		# Set _install flags based on user selection.
 		map { $_->{_install} = 0 } @list;
@@ -482,12 +480,21 @@ sub main {
 		}
 	}
 
-	# Add tasks to install.
-	my @to_install=map { task_packages($_, 1) } grep { $_->{_install} } @tasks;
-	push @aptitude_install, @to_install;
+	# Add tasks to install and see if any selected task requires manual
+	# selection.
+	my @aptitude_install;
+	my $manual_selection=0;
+	foreach my $task (grep { $_->{_install} } @tasks) {
+		push @aptitude_install, task_packages($task, 1);
+		if ($task->{packages} eq 'manual') {
+			$manual_selection=1;
+		}
+	}
 	
-	# Clear screen before running aptitude.
-	if ($interactive && (@aptitude_remove || @aptitude_install) && ! $options{test}) {
+	# Clear screen before running aptitude unless we're in a debconf
+	# frontend already.
+	if ($interactive && (@aptitude_remove || @aptitude_install)
+	    && ! $options{test} && ! $ENV{DEBIAN_HAS_FRONTEND}) {
 		system("clear");
 	}
 
@@ -508,7 +515,7 @@ sub main {
 	if (@aptitude_install || $manual_selection) {
 		# If the user selected no tasks and manual package
 		# selection, run aptitude w/o the --visual-preview parameter.
-		if (! @to_install && $manual_selection) {
+		if (! @aptitude_install && $manual_selection) {
 			if ($options{test}) {
 				print "aptitude\n";
 			}

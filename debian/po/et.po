@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel debian\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2005-06-05 18:26+0300\n"
 "Last-Translator: Siim Põder <windo@windowlicker.dyn.ee>\n"
 "Language-Team: Debiani installeri eestindus <debian-boot-et@linux.ee>\n"
@@ -29,30 +29,35 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
-msgid "At the moment, only the core of Debian is installed. To tune the installation to your needs, you can choose to install one or more of the following predefined collections of software. Experienced users may prefer to select packages manually."
-msgstr "Hetkel on paigaldatud vaid Debiani tuumik. Et paigaldus oma vajadustele häälestada, võid valida mõned järgnevaist eeldefineeritud tarkvara kogumitest. Kogenud kasutajad võivad eelistada pakkide käsitsi valimist."
-
-#. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, manuaalne pakivalik"
+#, fuzzy
+msgid ""
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+"Hetkel on paigaldatud vaid Debiani tuumik. Et paigaldus oma vajadustele "
+"häälestada, võid valida mõned järgnevaist eeldefineeritud tarkvara "
+"kogumitest. Kogenud kasutajad võivad eelistada pakkide käsitsi valimist."
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "Vali paigaldatav tarkvara:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
-msgid "You can choose to install one or more of the following predefined collections of software."
+#: ../templates:12
+msgid ""
+"You can choose to install one or more of the following predefined "
+"collections of software."
 msgstr "Võid paigaldada mõned järgnevaist eeldefineeritud tarkvara kogumitest."
 
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "Debiani tarkvara valik"
 
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, manuaalne pakivalik"

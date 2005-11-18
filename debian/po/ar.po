@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian_po_ar\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2004-07-23 12:37+0300\n"
 "Last-Translator: Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
@@ -27,31 +27,25 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
 msgstr ""
 "حاليّاً لا شيء مثبّت سوى صميم دبيان. لضبط التّثبيت لاحتياجاتك يمكنك أن تثبّت "
 "واحداً أو أكثر من مجموعات البرامج المعرّفة مسبقاً التّالية. المستخدمون ذوو "
 "الخبرة يفضّلون انتقاء الحزم يدويّاً."
 
 #. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, انتقاء الحزم يدويّاً"
-
-#. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "اختر البرامج التي ستثبّت:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -59,6 +53,9 @@ msgstr "يمكنك أن تثبّت واحداً أو أكثر من مجموعا�
 
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "انتقاء برامج دبيان"
+
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, انتقاء الحزم يدويّاً"

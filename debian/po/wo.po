@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian_po\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-07-25 18:37-0400\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2005-11-18 14:50-0500\n"
 "PO-Revision-Date: 2005-07-08 18:40+0000\n"
 "Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
 "Language-Team: Wolof\n"
@@ -27,36 +27,38 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the "
-"installation to your needs, you can choose to install one or more of the "
-"following predefined collections of software. Experienced users may prefer "
-"to select packages manually."
-msgstr "Fimune nii, xol u Debian rekk la ñu istaleegun. Ngir dëppale istalaasioŋ bi ak say soxla, man ngaa tann a istale benn walla luko ëppu ci koleksioŋ u porogaraam yii ñu dajale ba noppi. Jëfandikoo kat yi am ekperyaas amaana ñu bëgg a tann paket yi ak seen loxo."
-
-#. Type: multiselect
-#. Choices
-#: ../templates:12
-msgid "${CHOICES}, manual package selection"
-msgstr "${CHOICES}, paket yi ñuy tann ak loxo"
+"At the moment, only the core of Debian is installed. To tune the system to "
+"your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+"Fimune nii, xol u Debian rekk la ñu istaleegun. Ngir dëppale istalaasioŋ bi "
+"ak say soxla, man ngaa tann a istale benn walla luko ëppu ci koleksioŋ u "
+"porogaraam yii ñu dajale ba noppi. Jëfandikoo kat yi am ekperyaas amaana ñu "
+"bëgg a tann paket yi ak seen loxo."
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid "Choose software to install:"
 msgstr "Tannal porogaraam booy istale:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:13
+#: ../templates:12
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
-msgstr "Man ngaa tann a istale benn walla luko ëppu ci koleksioŋ u porogaraam yi ñu dajale yii di ñëw."
+msgstr ""
+"Man ngaa tann a istale benn walla luko ëppu ci koleksioŋ u porogaraam yi ñu "
+"dajale yii di ñëw."
 
 #. Type: title
 #. Description
-#: ../templates:19
+#: ../templates:18
 msgid "Debian software selection"
 msgstr "Tann porogaraam yu Debian"
 
+#~ msgid "${CHOICES}, manual package selection"
+#~ msgstr "${CHOICES}, paket yi ñuy tann ak loxo"
