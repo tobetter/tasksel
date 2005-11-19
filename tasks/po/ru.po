@@ -1,3 +1,4 @@
+# translation of ru.po to Russian
 # translation of tasksel_tasks_po_ru.po to Russian
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
@@ -10,7 +11,7 @@ msgstr ""
 "Project-Id-Version: tasksel_tasks_po_ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-11-18 14:45-0500\n"
-"PO-Revision-Date: 2005-10-16 19:11+0400\n"
+"PO-Revision-Date: 2005-11-19 12:09+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -245,8 +246,7 @@ msgstr "База данных SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:163
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr "Установить клиентские и серверные компоненты СУБД PostgreSQL."
 
 #. Description
@@ -283,8 +283,7 @@ msgstr "Сервер имён (DNS)"
 
 #. Description
 #: ../po/debian-tasks.desc:187
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Установить сервер имён BIND, и соответствующие пакеты документации и "
 "инструментов."
@@ -553,12 +552,12 @@ msgstr "Установить пакеты для создания почтово
 #. Description
 #: ../po/debian-tasks.desc:391
 msgid "manual package selection"
-msgstr ""
+msgstr "выбор пакетов вручную"
 
 #. Description
 #: ../po/debian-tasks.desc:391
 msgid "Manually select packages to install in aptitude."
-msgstr ""
+msgstr "Выбор пакетов для установки вручную в aptitude."
 
 #. Description
 #: ../po/debian-tasks.desc:398
@@ -827,6 +826,6 @@ msgstr "Веб-сервер"
 
 #. Description
 #: ../po/debian-tasks.desc:594
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr "Установить пакеты для создания веб-сервера."
+
