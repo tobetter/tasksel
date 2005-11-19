@@ -3,12 +3,11 @@
 # Andre Luis Lopes <andrelop@ig.com.br>, 2001.
 # Andre Luis Lopes <andrelop@debian.org>, 2004.
 # Andre Luis Lopes <andrelop@debian.org>, 2005.
-
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
-"Report-Msgid-Bugs-To: debian-l10n-portuguese@lists.debian.org\n"
-"POT-Creation-Date: 2005-06-11 07:41+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-18 14:41-0500\n"
 "PO-Revision-Date: 2005-07-18 13:24-0300\n"
 "Last-Translator: Andre Luis Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR <debian-l10n-portuguese@lists.debian.org>\n"
@@ -16,12 +15,13 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../tasksel.pl:305
+#: ../tasksel.pl:328
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [options]; where options is any combination of:\n"
+"tasksel [options]\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
@@ -38,7 +38,7 @@ msgstr ""
 "\t   --task-packages  lista pacotes disponíveis em uma tarefa\n"
 "\t   --task-desc      retorna a descrição de uma tarefa\n"
 
-#: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
+#: ../tasksel.pl:509 ../tasksel.pl:525 ../tasksel.pl:542
 msgid "aptitude failed"
 msgstr "aptitude falhou"
 

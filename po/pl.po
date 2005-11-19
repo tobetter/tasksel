@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:41+0200\n"
+"POT-Creation-Date: 2005-11-18 14:41-0500\n"
 "PO-Revision-Date: 2005-07-27 15:20+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
@@ -14,12 +14,13 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../tasksel.pl:305
+#: ../tasksel.pl:328
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [options]; where options is any combination of:\n"
+"tasksel [options]\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
@@ -36,6 +37,6 @@ msgstr ""
 "\t    --task-packages wy¶wietl pakiety z zadania\n"
 "\t    --task-desc     wy¶wietl opis zadania\n"
 
-#: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
+#: ../tasksel.pl:509 ../tasksel.pl:525 ../tasksel.pl:542
 msgid "aptitude failed"
 msgstr "b³±d aptitude"

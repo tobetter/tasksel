@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Taksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:41+0200\n"
+"POT-Creation-Date: 2005-11-18 14:41-0500\n"
 "PO-Revision-Date: 2005-10-01 16:55+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
 "Language-Team: debian-l10n-dutch <debian-l10n-dutch@lists.debian.org>\n"
@@ -14,12 +14,13 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../tasksel.pl:305
+#: ../tasksel.pl:328
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [options]; where options is any combination of:\n"
+"tasksel [options]\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
@@ -29,16 +30,14 @@ msgstr ""
 "Gebruik:\n"
 "tasksel install <taak>\n"
 "tasksel remove <taak>\n"
-"tasksel [opties]; waarbij optie een willekeurige combinatie is van volgende:\n"
+"tasksel [opties]; waarbij optie een willekeurige combinatie is van "
+"volgende:\n"
 "\t-t, --test           test-modus, enkel simuleren niet echt uitvoeren\n"
 "\t    --new-install  automatische installatie van een aantal taken\n"
 "\t    --list-tasks    geef een lijst weer taken en sluit daarna af\n"
 "\t    --task-packages geef de beschikbare pakketten van een taak weer\n"
 "\t    --task-desc   geef de beschrijving van een taak weer\n"
 
-#: ../tasksel.pl:483
-#: ../tasksel.pl:499
-#: ../tasksel.pl:516
+#: ../tasksel.pl:509 ../tasksel.pl:525 ../tasksel.pl:542
 msgid "aptitude failed"
 msgstr "aptitude is mislukt"
-

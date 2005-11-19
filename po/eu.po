@@ -3,12 +3,11 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
 # Iñaki Larrañaga Murgoitio, <dooteo@euskalgnu.org>, 2005
 # Piarres Beobide <pi@beobide.net> 2005
-
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:41+0200\n"
+"POT-Creation-Date: 2005-11-18 14:41-0500\n"
 "PO-Revision-Date: 2005-06-11 16:00+0200\n"
 "Last-Translator: Piarres Beobide\n"
 "Language-Team:  Librezale.org <librezale@librezale.org>\n"
@@ -17,12 +16,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
 
-#: ../tasksel.pl:305
+#: ../tasksel.pl:328
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [options]; where options is any combination of:\n"
+"tasksel [options]\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
@@ -40,7 +40,6 @@ msgstr ""
 "                          zerrendatzen ditu\n"
 "\t    --task-desc     ataza baten azalpena itzultzen du\n"
 
-#: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
+#: ../tasksel.pl:509 ../tasksel.pl:525 ../tasksel.pl:542
 msgid "aptitude failed"
 msgstr "aptitude-k huts egin du"
-

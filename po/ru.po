@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_po_ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-08-24 21:31-0400\n"
+"POT-Creation-Date: 2005-11-18 14:41-0500\n"
 "PO-Revision-Date: 2005-11-19 12:08+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -23,12 +23,13 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../tasksel.pl:324
+#: ../tasksel.pl:328
+#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [options]; where options is any combination of:\n"
+"tasksel [options]\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
@@ -45,7 +46,6 @@ msgstr ""
 "\t    --task-packages показать список доступных пакетов в задании\n"
 "\t    --task-desc     показать описание задания\n"
 
-#: ../tasksel.pl:502 ../tasksel.pl:518 ../tasksel.pl:535
+#: ../tasksel.pl:509 ../tasksel.pl:525 ../tasksel.pl:542
 msgid "aptitude failed"
 msgstr "программа aptitude завершилась неудачно"
-

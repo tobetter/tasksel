@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:41+0200\n"
+"POT-Creation-Date: 2005-11-18 14:41-0500\n"
 "PO-Revision-Date: 2004-07-22 19:27+0300\n"
 "Last-Translator: George Papamichelakis <george@step.gr>\n"
 "Language-Team:  <debian-l10n-greek@lists.debian.org>\n"
@@ -29,13 +29,13 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../tasksel.pl:305
+#: ../tasksel.pl:328
 #, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [options]; where options is any combination of:\n"
+"tasksel [options]\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
@@ -56,6 +56,6 @@ msgstr ""
 "\t    --task-packages εμφάνιση των διαθέσιμων πακέτων σε μια εργασία\n"
 "\t    --task-desc     εμφάνισε την περιγραφή μιας εργασίας\n"
 
-#: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
+#: ../tasksel.pl:509 ../tasksel.pl:525 ../tasksel.pl:542
 msgid "aptitude failed"
 msgstr "το aptitude απέτυχε"
