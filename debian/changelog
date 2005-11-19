@@ -1,5 +1,6 @@
 tasksel (2.34) UNRELEASED; urgency=low
 
+  [ Joey Hess ]
   * Manual package selection is now less of a special case, with an actual
     task entry for it that can have test scripts like other task entries,
     etc.
@@ -10,7 +11,16 @@ tasksel (2.34) UNRELEASED; urgency=low
     Before this can be used in a first stage debian install, we'll still need
     to deal with dpkg/apt output.
 
- -- Joey Hess <joeyh@debian.org>  Fri, 18 Nov 2005 14:38:52 -0500
+  [ Translations of tasks ]
+  * French updated
+
+  [ Translations of programs ]
+  * French updated
+
+  [ Translations of debconf templates ]
+  * French updated
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 19 Nov 2005 11:05:10 +0100
 
 tasksel (2.33) unstable; urgency=low
 

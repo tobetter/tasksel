@@ -11,26 +11,25 @@
 #         or http://www.debian.org/intl/l10n/po-debconf/README-trans
 #
 #    Developers do not need to manually edit POT or PO files.
-# Christian Perrier <bubulle@debian.org>, 2004.
+# Christian Perrier <bubulle@debian.org>, 2004, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 2.00 debconf\n"
+"Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2005-11-18 14:50-0500\n"
-"PO-Revision-Date: 2004-08-26 14:05+0200\n"
+"PO-Revision-Date: 2005-11-19 11:05+0100\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n>1;\n"
 
 #. Type: multiselect
 #. Description
 #: ../templates:4
-#, fuzzy
 msgid ""
 "At the moment, only the core of Debian is installed. To tune the system to "
 "your needs, you can choose to install one or more of the following "
@@ -38,8 +37,7 @@ msgid ""
 msgstr ""
 "Actuellement, seul le système de base de Debian est installé. Pour adapter "
 "l'installation à vos besoins, vous pouvez choisir d'installer un ou "
-"plusieurs ensembles prédéfinis de logiciels. Les utilisateurs expérimentés "
-"préféreront probablement choisir eux-mêmes les paquets à installer."
+"plusieurs ensembles prédéfinis de logiciels."
 
 #. Type: multiselect
 #. Description
@@ -63,5 +61,3 @@ msgstr ""
 msgid "Debian software selection"
 msgstr "Sélection des logiciels Debian"
 
-#~ msgid "${CHOICES}, manual package selection"
-#~ msgstr "${CHOICES}, Choix manuel des paquets"
