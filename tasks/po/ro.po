@@ -1,27 +1,22 @@
-# translation of ro.po to Romanian
+# translation of tasksel/tasks to Romanian
 # Romanian translation
 # This file is distributed under the same license as the tasksel package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Eddy Petrișor <eddy_petrisor@yahoo.com>, 2004, 2005.
-# Eddy Petrișor <eddy.petrisor@gmail.com>, 2004, 2005.
-# Eddy Petrişor <eddy.petrisor@gmail.com>, 2005.
+# Eddy Petrişor <eddy.petrisor@gmail.com>, 2004, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel_tasks\n"
+"Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-11-18 14:45-0500\n"
-"PO-Revision-Date: 2005-08-16 03:24+0200\n"
-"Last-Translator: Eddy Petri�or <eddy.petrisor@gmail.com>\n"
+"PO-Revision-Date: 2005-11-20 21:46+0200\n"
+"Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=3; plural = ( n == 1 ? 0 : ( ( (n%100 > 19) || ((n%"
-"100 == 0) && (n != 0))) ? 2 : 1 ) )\n"
-"X-Poedit-Language: Romanian\n"
-"X-Poedit-Country: ROMANIA\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))\n"
 
 #. Description
 #: ../po/debian-tasks.desc:3
@@ -29,8 +24,8 @@ msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Arabic speakers to use Debian."
 msgstr ""
-"Acestă sarcină instalează programe, fişiere de date, fonturi şi "
-"documentaţie care uşurează, vorbitorilor de arabă, folosirea Debian."
+"Acestă sarcină instalează programe, fişiere de date, fonturi şi documentaţie "
+"care uşurează, vorbitorilor de arabă, folosirea Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:14
@@ -101,8 +96,8 @@ msgid ""
 "This task installs packages and documentation in Catalan to help Catalan "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba catalană, "
-"pentru a ajuta vorbitorii de catalană să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba catalană, pentru a "
+"ajuta vorbitorii de catalană să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:65
@@ -126,9 +121,9 @@ msgid ""
 "it easier for Chinese speakers to use Debian, using the simplified Chinese "
 "encoding."
 msgstr ""
-"Acestă sarcină instalează programe, fişiere de date, fonturi şi "
-"documentaţie care uşurează vorbitorilor de chineză folosirea Debian, "
-"utilizând codificarea chineză simplificată."
+"Acestă sarcină instalează programe, fişiere de date, fonturi şi documentaţie "
+"care uşurează vorbitorilor de chineză folosirea Debian, utilizând codificarea "
+"chineză simplificată."
 
 #. Description
 #: ../po/debian-tasks.desc:84
@@ -147,9 +142,9 @@ msgid ""
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
 "encoding."
 msgstr ""
-"Acestă sarcină instalează programe, fişiere de date, fonturi şi "
-"documentaţie care uşurează vorbitorilor de chineză folosirea Debian, "
-"utilizând codificarea chineză tradiţională."
+"Acestă sarcină instalează programe, fişiere de date, fonturi şi documentaţie "
+"care uşurează vorbitorilor de chineză folosirea Debian, utilizând codificarea "
+"chineză tradiţională."
 
 #. Description
 #: ../po/debian-tasks.desc:103
@@ -188,9 +183,9 @@ msgid ""
 "This task localises the desktop in Cyrillic. It supports Belarusian, "
 "Bulgarian, Macedonian, Russian, Serbian and Ukrainian."
 msgstr ""
-"Această sarcină face ca sistemul de birou să prezinte suport de localizare "
-"cu chirilice. Suportă limbile bielorusă, bulgară, macedoneană, rusă, sârbă "
-"şi ucraineană."
+"Această sarcină face ca sistemul de birou să prezinte suport de localizare cu "
+"chirilice. Suportă limbile bielorusă, bulgară, macedoneană, rusă, sârbă şi "
+"ucraineană."
 
 #. Description
 #: ../po/debian-tasks.desc:131
@@ -227,8 +222,8 @@ msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba daneză, pentru "
-"a ajuta vorbitorii de daneză să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba daneză, pentru a "
+"ajuta vorbitorii de daneză să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:156
@@ -247,8 +242,7 @@ msgstr "Bază de date SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:163
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Acestă sarcină selectează pachetele client şi server pentru baza de date "
 "PostgreSQL."
@@ -261,10 +255,10 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
-"PostgreSQL este o bază de date relaţională SQL, care oferă o "
-"compatibilitate ridicată cu SQL92 şi câteva facilităţi SQL3. Este "
-"potrivită pentru acces multi-utilizator la baza de date, prin facilităţile "
-"sale pentru tranzacţii şi mecanismele de interblocare rafinate."
+"PostgreSQL este o bază de date relaţională SQL, care oferă o compatibilitate "
+"ridicată cu SQL92 şi câteva facilităţi SQL3. Este potrivită pentru acces "
+"multi-utilizator la baza de date, prin facilităţile sale pentru tranzacţii şi "
+"mecanismele de interblocare rafinate."
 
 #. Description
 #: ../po/debian-tasks.desc:177
@@ -277,8 +271,8 @@ msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "Gnome and KDE desktop tasks."
 msgstr ""
-"Acestă sarcină furnizează un set minimal de aplicaţii pentru mediul grafic "
-"şi serveşte ca bază pentru sarcinile pentru mediile grafice GNOME şi KDE"
+"Acestă sarcină furnizează un set minimal de aplicaţii pentru mediul grafic şi "
+"serveşte ca bază pentru sarcinile pentru mediile grafice GNOME şi KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:187
@@ -287,11 +281,10 @@ msgstr "Server DNS"
 
 #. Description
 #: ../po/debian-tasks.desc:187
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
-"Selectează serverul DNS BIND, şi documentaţie pentru acesta, cât şi "
-"pachete de utilitare."
+"Selectează serverul DNS BIND, şi documentaţie pentru acesta, cât şi pachete "
+"de utilitare."
 
 #. Description
 #: ../po/debian-tasks.desc:195
@@ -299,8 +292,8 @@ msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
 msgstr ""
-"Acestă sarcină instalează programe, fişiere de date, fonturi şi "
-"documentaţie care uşurează, vorbitorilor de olandeză, folosirea Debian."
+"Acestă sarcină instalează programe, fişiere de date, fonturi şi documentaţie "
+"care uşurează, vorbitorilor de olandeză, folosirea Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:204
@@ -323,8 +316,8 @@ msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
 msgstr ""
-"Această sarcină vă peregăteşte sistemul dvs. să fie un server de fişiere "
-"care suportă atât NetBIOS cât şi NFS."
+"Această sarcină vă peregăteşte sistemul dvs. să fie un server de fişiere care "
+"suportă atât NetBIOS cât şi NFS."
 
 #. Description
 #: ../po/debian-tasks.desc:221
@@ -337,8 +330,8 @@ msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba franceză, "
-"pentru a ajuta vorbitorii de franceză să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba franceză, pentru a "
+"ajuta vorbitorii de franceză să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:232
@@ -361,8 +354,8 @@ msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba germană, pentru "
-"a ajuta vorbitorii de germană să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba germană, pentru a "
+"ajuta vorbitorii de germană să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:250
@@ -399,8 +392,8 @@ msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba greacă, pentru "
-"a ajuta vorbitorii de greacă să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba greacă, pentru a "
+"ajuta vorbitorii de greacă să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:279
@@ -423,8 +416,8 @@ msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează programe şi documentaţie în limba ebraică, "
-"pentru a ajuta vorbitorii de ebraică să folosească Debian."
+"Acestă sarcină instalează programe şi documentaţie în limba ebraică, pentru a "
+"ajuta vorbitorii de ebraică să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:294
@@ -447,8 +440,8 @@ msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba italiană, "
-"pentru a ajuta vorbitorii de italiană să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba italiană, pentru a "
+"ajuta vorbitorii de italiană să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:312
@@ -529,8 +522,8 @@ msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba lituaniană, "
-"pentru a ajuta vorbitorii de lituaniană să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba lituaniană, pentru "
+"a ajuta vorbitorii de lituaniană să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:374
@@ -559,12 +552,12 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:391
 msgid "manual package selection"
-msgstr ""
+msgstr "selecţie manuală a pachetelor"
 
 #. Description
 #: ../po/debian-tasks.desc:391
 msgid "Manually select packages to install in aptitude."
-msgstr ""
+msgstr "Selectaţi manual în aptitude pachetele de instalat."
 
 #. Description
 #: ../po/debian-tasks.desc:398
@@ -577,8 +570,8 @@ msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba norvegiană, "
-"pentru a ajuta vorbitorii de norvegiană să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba norvegiană, pentru "
+"a ajuta vorbitorii de norvegiană să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:409
@@ -601,8 +594,8 @@ msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba poloneză, "
-"pentru a ajuta vorbitorii de poloneză să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba poloneză, pentru a "
+"ajuta vorbitorii de poloneză să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:427
@@ -622,8 +615,7 @@ msgstr "Server de listare (print)"
 #. Description
 #: ../po/debian-tasks.desc:435
 msgid "This task sets up your system to be a print server."
-msgstr ""
-"Această sarcină vă peregăteşte sistemul dvs. să fie un server de listare."
+msgstr "Această sarcină vă peregăteşte sistemul dvs. să fie un server de listare."
 
 #. Description
 #: ../po/debian-tasks.desc:445
@@ -636,13 +628,13 @@ msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba română, pentru "
-"a ajuta vorbitorii de română să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba română, pentru a "
+"ajuta vorbitorii de română să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:456
 msgid "Romanian desktop"
-msgstr "Sistem de birou romănesc"
+msgstr "Sistem de birou românesc"
 
 #. Description
 #: ../po/debian-tasks.desc:456
@@ -684,8 +676,8 @@ msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba slovacă, pentru "
-"a ajuta vorbitorii de slovacă să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba slovacă, pentru a "
+"ajuta vorbitorii de slovacă să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:489
@@ -730,8 +722,8 @@ msgstr "Sistem de birou standard"
 #: ../po/debian-tasks.desc:514
 msgid "This task installs a reasonably small character-mode system."
 msgstr ""
-"Această sarcină instalează un sistem în mod caracter de dimensiune "
-"rezonabil de mică."
+"Această sarcină instalează un sistem în mod caracter de dimensiune rezonabil "
+"de mică."
 
 #. Description
 #: ../po/debian-tasks.desc:521
@@ -744,8 +736,8 @@ msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează pachete şi documentaţie în limba suedeză, pentru "
-"a ajuta vorbitorii de poloneză să folosească Debian."
+"Acestă sarcină instalează pachete şi documentaţie în limba suedeză, pentru a "
+"ajuta vorbitorii de poloneză să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:531
@@ -816,8 +808,8 @@ msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
 msgstr ""
-"Acestă sarcină instalează programe şi documentaţie în limba ucraineană "
-"pentru a ajuta vorbitorii de ucraineană să folosească Debian."
+"Acestă sarcină instalează programe şi documentaţie în limba ucraineană pentru "
+"a ajuta vorbitorii de ucraineană să folosească Debian."
 
 #. Description
 #: ../po/debian-tasks.desc:586
@@ -836,30 +828,8 @@ msgstr "Server de web"
 
 #. Description
 #: ../po/debian-tasks.desc:594
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Acestă sarcină selectează un pachet util pentru un server de web de uz "
 "general."
 
-#~ msgid "KDE desktop environment"
-#~ msgstr "Mediul grafic K (KDE)"
-
-#~ msgid ""
-#~ "This task provides basic \"desktop\" software using the K Desktop "
-#~ "Environment."
-#~ msgstr ""
-#~ "Acestă sarcină furnizează un set minimal de aplicaţii pentru mediul "
-#~ "grafic K (KDE)."
-
-#~ msgid ""
-#~ "This task provides basic \"desktop\" software, including a variety of "
-#~ "session managers, file managers and web browsers. It incorporates both "
-#~ "the GNOME and KDE desktops, and provides a display manager which lets the "
-#~ "user choose between the two."
-#~ msgstr ""
-#~ "Acestă sarcină oferă programele de bază pentru sisteme de birou, inclusiv "
-#~ "o varietate de manageri de sesiuni, manageri de fişiere şi navigatoare de "
-#~ "internet. Încorporeză atât mediul de birou GNOME cât şi mediul KDE, şi "
-#~ "oferă un manager de ecran care permite utilizatorului opţiunea de a "
-#~ "selecta dintre cele două."
