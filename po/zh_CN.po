@@ -1,21 +1,23 @@
-# Simplified Chinese translation for tasksel
-# Copyright (C) 2004
-# Carlos Z.F. Liu <carlos_liu@yahoo.com>
+# Simplified Chinese translation for tasksel.
+# This file is distributed under the same license as the tasksel package.
+#
+# Copyright:
+# Carlos Z.F. Liu <carlos_liu@yahoo.com>, 2004.
+# Ming Hua <minghua@rice.edu>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-11-18 14:41-0500\n"
-"PO-Revision-Date: 2005-07-07 21:44+1200\n"
-"Last-Translator: Carlos Z.F. Liu <carlos_liu@yahoo.com>\n"
+"PO-Revision-Date: 2005-11-25 22:01-0600\n"
+"Last-Translator: Ming Hua <minghua@rice.edu>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
 #: ../tasksel.pl:328
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -30,7 +32,7 @@ msgstr ""
 "用法：\n"
 "tasksel install <软件集>\n"
 "tasksel remove <软件集>\n"
-"tasksel [选项]，选项可以是以下任意组合：\n"
+"tasksel [选项]\n"
 "\t-t, --test          测试模式，不会真正执行任何操作\n"
 "\t    --new-install   自动安装某些软件集\n"
 "\t    --list-tasks    列出将要显示的软件集并退出\n"
