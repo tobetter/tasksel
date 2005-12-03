@@ -527,17 +527,23 @@ sub main {
 			}
 		}
 		else {
-			# Manaul selection and task installs, as best
-			# aptitude can do it currently.
+			my $aptitude;
 			if ($manual_selection) {
+				# Manaul selection and task installs, as best
+				# aptitude can do it currently. Disables use of
+				# debconf-apt-progress.
 				unshift @aptitude_install, "--visual-preview";
+				$aptitude="aptitude";
+			}
+			else {
+				$aptitude="debconf-apt-progress -- aptitude";
 			}
 			
 			if ($options{test}) {
-				print "aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
+				print "$aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
 			}
 			else {
-				my $ret=system("aptitude", "--without-recommends", "-y", "install", @aptitude_install) >> 8;
+				my $ret=system(split(' ', $aptitude), "--without-recommends", "-y", "install", @aptitude_install) >> 8;
 				if ($ret != 0) {
 					error gettext("aptitude failed");
 				}

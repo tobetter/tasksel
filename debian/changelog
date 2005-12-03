@@ -8,8 +8,9 @@ tasksel (2.34) UNRELEASED; urgency=low
     possible to avoid outputting non-debconf protocol to stdout, including:
     - Don't display the manual task.
     - Don't clear the screen before running aptitude.
-    Before this can be used in a first stage debian install, we'll still need
-    to deal with dpkg/apt output.
+  * Use debconf-apt-progress during installs (except if the user chooses
+    manual selection), to get a fancy progress bar and completly limit output
+    when run inside debconf to debconf protocol output.
 
   [ Translations of tasks ]
   * French updated
@@ -42,7 +43,7 @@ tasksel (2.34) UNRELEASED; urgency=low
   * Galician updated
   * Spanish updated
 
- -- Jacobo Tarrio <jtarrio@allenta.com>  Wed, 30 Nov 2005 11:43:18 +0100
+ -- Joey Hess <joeyh@debian.org>  Sat,  3 Dec 2005 18:13:29 -0500
 
 tasksel (2.33) unstable; urgency=low
 
