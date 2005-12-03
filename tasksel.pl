@@ -497,14 +497,26 @@ sub main {
 	    && ! $options{test} && ! $ENV{DEBIAN_HAS_FRONTEND}) {
 		system("clear");
 	}
+			
+	my $aptitude;
+	if ($manual_selection) {
+		# Manaul selection and task installs, as best
+		# aptitude can do it currently. Disables use of
+		# debconf-apt-progress.
+		unshift @aptitude_install, "--visual-preview";
+		$aptitude="aptitude";
+	}
+	else {
+		$aptitude="debconf-apt-progress -- aptitude";
+	}
 
 	# Remove any packages we were asked to.
 	if (@aptitude_remove) {
 		if ($options{test}) {
-			print "aptitude remove ".join(" ", @aptitude_remove)."\n";
+			print "$aptitude -y remove ".join(" ", @aptitude_remove)."\n";
 		}
 		else {
-			my $ret=system("aptitude", "remove", @aptitude_remove) >> 8;
+			my $ret=system(split(' ', $aptitude), "-y", "remove", @aptitude_remove) >> 8;
 			if ($ret != 0) {
 				error gettext("aptitude failed")." ($ret)";
 			}
@@ -527,21 +539,6 @@ sub main {
 			}
 		}
 		else {
-			my $aptitude;
-			if ($manual_selection) {
-				# Manaul selection and task installs, as best
-				# aptitude can do it currently. Disables use of
-				# debconf-apt-progress.
-				unshift @aptitude_install, "--visual-preview";
-				$aptitude="aptitude";
-			}
-			elsif (-x "/usr/bin/debconf-apt-progress") {
-				$aptitude="debconf-apt-progress -- aptitude";
-			}
-			else {
-				$aptitude="aptitude";
-			}
-			
 			if ($options{test}) {
 				print "$aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
 			}

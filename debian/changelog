@@ -11,6 +11,8 @@ tasksel (2.34) UNRELEASED; urgency=low
   * Use debconf-apt-progress during installs (except if the user chooses
     manual selection), to get a fancy progress bar and completly limit output
     when run inside debconf to debconf protocol output.
+  * Use debconf-apt-progress for removals too.
+  * Pass -y to aptitude remove.
 
   [ Translations of tasks ]
   * French updated
