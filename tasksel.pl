@@ -491,13 +491,6 @@ sub main {
 		}
 	}
 	
-	# Clear screen before running aptitude unless we're in a debconf
-	# frontend already.
-	if ($interactive && (@aptitude_remove || @aptitude_install)
-	    && ! $options{test} && ! $ENV{DEBIAN_HAS_FRONTEND}) {
-		system("clear");
-	}
-			
 	my $aptitude;
 	if ($manual_selection) {
 		# Manaul selection and task installs, as best

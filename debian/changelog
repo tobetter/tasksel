@@ -13,6 +13,7 @@ tasksel (2.34) UNRELEASED; urgency=low
     when run inside debconf to debconf protocol output.
   * Use debconf-apt-progress for removals too.
   * Pass -y to aptitude remove.
+  * Remove fairly obsolete screen clearing code
 
   [ Translations of tasks ]
   * French updated
@@ -45,7 +46,7 @@ tasksel (2.34) UNRELEASED; urgency=low
   * Galician updated
   * Spanish updated
 
- -- Joey Hess <joeyh@debian.org>  Sat,  3 Dec 2005 18:13:29 -0500
+ -- Joey Hess <joeyh@debian.org>  Sat,  3 Dec 2005 18:56:10 -0500
 
 tasksel (2.33) unstable; urgency=low
 
