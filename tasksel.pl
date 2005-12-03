@@ -503,7 +503,6 @@ sub main {
 		# Manaul selection and task installs, as best
 		# aptitude can do it currently. Disables use of
 		# debconf-apt-progress.
-		unshift @aptitude_install, "--visual-preview";
 		$aptitude="aptitude";
 	}
 	else {
@@ -539,6 +538,9 @@ sub main {
 			}
 		}
 		else {
+			if ($manual_selection) {
+				unshift @aptitude_install, "--visual-preview";
+			}
 			if ($options{test}) {
 				print "$aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
 			}
