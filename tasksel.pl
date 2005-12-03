@@ -535,8 +535,11 @@ sub main {
 				unshift @aptitude_install, "--visual-preview";
 				$aptitude="aptitude";
 			}
-			else {
+			elsif (-x "/usr/bin/debconf-apt-progress") {
 				$aptitude="debconf-apt-progress -- aptitude";
+			}
+			else {
+				$aptitude="aptitude";
 			}
 			
 			if ($options{test}) {
