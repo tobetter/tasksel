@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-11-18 14:41-0500\n"
-"PO-Revision-Date: 2005-10-10 22:56+0300\n"
+"PO-Revision-Date: 2005-12-05 01:08+0200\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team:  Debian l10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,6 @@ msgstr ""
 "Plural-Forms:  nplurals=1; plural=0;\n"
 
 #: ../tasksel.pl:328
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -31,7 +30,7 @@ msgstr ""
 "Kullanım:\n"
 "tasksel install <görev>\n"
 "tasksel remove  <görev>\n"
-"tasksel [seçenekler]; seçenekler aşağıdadır:\n"
+"tasksel [seçenekler]\n"
 "\t-t, --test          sınama kipi; herhangi bir işlem yapma\n"
 "\t    --new-install   bazı görevleri otomatik olarak kur\n"
 "\t    --list-tasks    gösterilecek görevleri listele ve çık\n"
@@ -41,172 +40,3 @@ msgstr ""
 #: ../tasksel.pl:509 ../tasksel.pl:525 ../tasksel.pl:542
 msgid "aptitude failed"
 msgstr "aptitude başarısız"
-
-#~ msgid ""
-#~ "ignoring other selected packages in favour of manual package selection"
-#~ msgstr "seçilen diğer paketler elle seçim yapmak üzere gözardı ediliyor"
-
-#~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "Liste tamponu için bellek ayrılamadı"
-
-#~ msgid ""
-#~ "Fatal error encountered at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Ölümcül hata -- %s:%d\n"
-#~ "\t"
-
-#~ msgid ""
-#~ "I/O error at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "G/Ç (I/O) hatası: %s:%d\n"
-#~ "\t"
-
-#~ msgid "(no description)"
-#~ msgstr "(açıklama yok)"
-
-#~ msgid "End-user"
-#~ msgstr "Son kullanıcı"
-
-#~ msgid "Hardware Support"
-#~ msgstr "Donanım Desteği"
-
-#~ msgid "Servers"
-#~ msgstr "Sunucular"
-
-#~ msgid "Development"
-#~ msgstr "Geliştirme"
-
-#~ msgid "Localization"
-#~ msgstr "Yerelleştirme"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Çeşitli"
-
-#~ msgid "Unable to initialize the terminal"
-#~ msgstr "Terminal başlatılamadı"
-
-#~ msgid "Unable to initialize screen output"
-#~ msgstr "Ekran çıktısı üretilemiyor"
-
-#~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "Klavye arayüzü başlatılamadı"
-
-#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr "Debian Görev Kurucusu v%s - (c) 1999-2004 SPI ve diğerleri"
-
-#~ msgid "^Finish"
-#~ msgstr "Bitir (^F)"
-
-#~ msgid "Task ^Info"
-#~ msgstr "Açıklama (^I)"
-
-#~ msgid "^Help"
-#~ msgstr "Yardım (^H)"
-
-#~ msgid "Select tasks to install"
-#~ msgstr "Kurulacak görevleri seçin"
-
-#~ msgid "Ok"
-#~ msgstr "Tamam"
-
-#~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Sınırlar harici gösterge: %d >= %d"
-
-#~ msgid "Help"
-#~ msgstr "Yardım"
-
-#~ msgid ""
-#~ "Tasks allow you to quickly install a selection of packages that performs "
-#~ "a given task.\n"
-#~ "\n"
-#~ "The main chooser list shows a list of tasks that you can choose to "
-#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
-#~ "toggles the selection of the task at the cursor. You can also press A to "
-#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-#~ "program and begin installation of your selected tasks.\n"
-#~ "\n"
-#~ "Thank you for using Debian.\n"
-#~ "\n"
-#~ "Press enter to return to the task selection screen"
-#~ msgstr ""
-#~ "Görevler, seçilen göreve yönelik paketlerin hızlıca kurulmalarını "
-#~ "sağlar.\n"
-#~ "\n"
-#~ "Ana seçim listesi kurulmasını seçebileceğiniz görevlerin listesini sunar."
-#~ "Ok tuşları imleci hareket ettirir. ENTER veya BOŞLUK TUŞU imlecin "
-#~ "bulunduğu görevi seçer veya seçimi kaldırır. Tüm görevleri seçmek için A "
-#~ "tuşu, tüm seçimleri iptal etmek için N tuşları kullanılabilir. Q tuşu ile "
-#~ "bu program sonlandırılır ve seçmiş olduğunuz görevlerin kurulumuna "
-#~ "geçilir.\n"
-#~ "\n"
-#~ "Debian kullandığınız için teşekkürler.\n"
-#~ "\n"
-#~ "Görev seçimi ekranına geri dönmek için enter'a basınız."
-
-#~ msgid ""
-#~ "Description:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Included packages:\n"
-#~ msgstr ""
-#~ "Açıklama:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "İçerdiği paketler:\n"
-
-#~ msgid "(no description available)"
-#~ msgstr "(herhangi bir açıklama yok)"
-
-#~ msgid "Unknown signal seen"
-#~ msgstr "Bilinmeyen sinyal alındı"
-
-#~ msgid "tasksel install <task>\n"
-#~ msgstr "tasksel install <görev>\n"
-
-#~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr ""
-#~ "tasksel [seçenekler]; seçenekler aşağıdakilerin bir kombinasyonudur:\n"
-
-#~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- test modu, çıkışta apt-get'i çalıştırma"
-
-#~ msgid ""
-#~ "-q -- queue installs; do not install packages with apt-get;\n"
-#~ "\t\tjust queue them in dpkg"
-#~ msgstr ""
-#~ "-q -- kurulumları kuyruğa at, paketleri apt-get ile kurma;\n"
-#~ "\t\tyalnızca dpkg kuyruğuna at"
-
-#~ msgid "-r -- install all required-priority packages"
-#~ msgstr "-r -- gerekli-öncelikli tüm paketleri kur"
-
-#~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- önemli-öncelikli tüm paketleri kur"
-
-#~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- standart-öncelikli tüm paketleri kur"
-
-#~ msgid "-n -- don't show UI; use with -r or -i usually"
-#~ msgstr ""
-#~ "-n -- kullanıcı arayüzünü gösterme; genelde -r veya -i ile birlikte "
-#~ "kullanılır"
-
-#~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr "-a -- tüm görevleri göster, içlerinde hiç paket olmasa bile"
-
-#~ msgid "No packages selected\n"
-#~ msgstr "Seçilmiş paket yok\n"
-
-#~ msgid "No tasks found on this system.\n"
-#~ msgstr "Bu sistemde hiç görev bulunamadı.\n"
-
-#~ msgid "Cannot allocate memory for strdup"
-#~ msgstr "strdup için bellek ayrılamıyor"
-
-#~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "%d·byte'lık·bellek·birimi·ayrılamadı"
-
-#~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "%d byte'lık bellek yeniden ayrılamadı"
