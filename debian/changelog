@@ -1,4 +1,4 @@
-tasksel (2.34) UNRELEASED; urgency=low
+tasksel (2.34) unstable; urgency=low
 
   [ Joey Hess ]
   * Manual package selection is now less of a special case, with an actual
@@ -8,9 +8,9 @@ tasksel (2.34) UNRELEASED; urgency=low
     possible to avoid outputting non-debconf protocol to stdout, including:
     - Don't display the manual task.
     - Don't clear the screen before running aptitude.
-  * Use debconf-apt-progress during installs (except if the user chooses
-    manual selection), to get a fancy progress bar and completly limit output
-    when run inside debconf to debconf protocol output.
+  * Use debconf-apt-progress during installs if available (except if the user
+    chooses manual selection), to get a fancy progress bar and completly limit
+    output when run inside debconf to debconf protocol output.
   * Use debconf-apt-progress for removals too.
   * Pass -y to aptitude remove.
   * Remove fairly obsolete screen clearing code

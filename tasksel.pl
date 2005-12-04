@@ -498,8 +498,11 @@ sub main {
 		# debconf-apt-progress.
 		$aptitude="aptitude";
 	}
-	else {
+	elsif (-x "/usr/bin/debconf-apt-progress") {
 		$aptitude="debconf-apt-progress -- aptitude";
+	}
+	else {
+		$aptitude="aptitude";
 	}
 
 	# Remove any packages we were asked to.
