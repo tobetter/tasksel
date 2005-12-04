@@ -334,8 +334,6 @@ tasksel [options]
 	    --list-tasks    list tasks that would be displayed and exit
 	    --task-packages list available packages in a task
 	    --task-desc     returns the description of a task
-	    --logfile file  send apt output to the file
-	    --logstderr     send apt output to stderr
 });
 }
 
@@ -344,8 +342,8 @@ sub getopts {
 	my %ret;
 	Getopt::Long::Configure ("bundling");
 	if (! GetOptions(\%ret, "test|t", "new-install", "list-tasks",
-		   "task-packages=s@", "task-desc=s", "logfile=s",
-		   "logstderr")) {
+		   "task-packages=s@", "task-desc=s",
+		   "debconf-apt-progress=s")) {
 		usage();
 		exit(1);
 	}
@@ -503,8 +501,8 @@ sub main {
 	}
 	elsif (-x "/usr/bin/debconf-apt-progress") {
 		$aptitude="debconf-apt-progress";
-		$aptitude.=" --logfile $options{logfile}" if exists $options{logfile};
-		$aptitude.=" --logstderr" if exists $options{logstderr};
+		$aptitude.=" $options{'debconf-apt-progress'}"
+			if exists $options{'debconf-apt-progress'};
 		$aptitude.=" -- aptitude";
 	}
 	else {

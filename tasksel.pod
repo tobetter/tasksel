@@ -42,13 +42,10 @@ Note that this option may be given more than once.
 
 outputs the extended description of the given task
 
-=item B<--logfile> file
+=item B<--debconf-apt-progress> options
 
-Send the normal output from apt to the given file.
-
-=item B<--logstderr>
-
-Send the normal output from apt to stderr.
+Pass the specified options to the debconf-apt-progress command that tasksel
+runs.
 
 =back
 
