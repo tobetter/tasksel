@@ -42,6 +42,14 @@ Note that this option may be given more than once.
 
 outputs the extended description of the given task
 
+=item B<--logfile> file
+
+Send the normal output from apt to the given file.
+
+=item B<--logstderr>
+
+Send the normal output from apt to stderr.
+
 =back
 
 =head1 SEE ALSO
