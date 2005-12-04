@@ -10,7 +10,7 @@
 # This will cause the task to be available only if tasksel is not running
 # in debconf.
 
-if [ "$DEBIAN_HAS_FRONTEND" ]; then
+if [ "$DEBIAN_HAS_FRONTEND" ] || [ "$DEBCONF_READFD" ]; then
 	if [ "$2" = true ]; then
 		exit 3 # display task, not marked for installation
 	fi
