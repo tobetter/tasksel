@@ -1,9 +1,13 @@
 tasksel (2.38) UNRELEASED; urgency=low
 
+  * mozilla-firefox is being renamed to firefox. Added firefox but left the
+    mozilla-firefox package in for now, until firefox reaches testing.
+  * mozilla-psm is not needed for firefox so removed it from the desktop task
+  
   [ Translations of programs ]
   * Vietnamese updated. Closes: #343848
 
- -- Christian Perrier <bubulle@debian.org>  Sun, 18 Dec 2005 09:08:15 +0100
+ -- Joey Hess <joeyh@debian.org>  Sun, 18 Dec 2005 16:28:43 -0500
 
 tasksel (2.37) unstable; urgency=low
 
