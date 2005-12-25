@@ -503,7 +503,7 @@ sub main {
 		$aptitude="debconf-apt-progress";
 		$aptitude.=" $options{'debconf-apt-progress'}"
 			if exists $options{'debconf-apt-progress'};
-		$aptitude.=" -- aptitude";
+		$aptitude.=" -- aptitude -q";
 	}
 	else {
 		$aptitude="aptitude";

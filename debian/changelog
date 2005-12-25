@@ -3,7 +3,7 @@ tasksel (2.38) UNRELEASED; urgency=low
   * mozilla-firefox is being renamed to firefox. Added firefox but left the
     mozilla-firefox package in for now, until firefox reaches testing.
   * mozilla-psm is not needed for firefox so removed it from the desktop task
-  
+
   [ Translations of debconf templates ]
   * Polish updated. Closes: #344140
   * Greek updated.
@@ -18,7 +18,13 @@ tasksel (2.38) UNRELEASED; urgency=low
   * Polish updated. Closes: #344140
   * Greek updated.
 
- -- Joey Hess <joeyh@debian.org>  Sun, 18 Dec 2005 16:28:43 -0500
+  [ Joey Hess ]
+  * When running aptitude in debconf-apt-progress, pass -q to it to disable
+    incremental progress displays being logged to stderr, since eg in d-i that
+    results in a lot (possibly many megabytes) of download progress info in
+    the logs.
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 25 Dec 2005 16:45:55 -0500
 
 tasksel (2.37) unstable; urgency=low
 
