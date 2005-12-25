@@ -1,4 +1,4 @@
-tasksel (2.38) UNRELEASED; urgency=low
+tasksel (2.38) unstable; urgency=low
 
   * mozilla-firefox is being renamed to firefox. Added firefox but left the
     mozilla-firefox package in for now, until firefox reaches testing.
@@ -30,7 +30,7 @@ tasksel (2.38) UNRELEASED; urgency=low
     to interoperate with d-i, which rather inexplicably uses 10 instead of 30
     to signal backup across process boundries.
 
- -- Joey Hess <joeyh@debian.org>  Sun, 25 Dec 2005 17:14:36 -0500
+ -- Joey Hess <joeyh@debian.org>  Sun, 25 Dec 2005 17:19:07 -0500
 
 tasksel (2.37) unstable; urgency=low
 
