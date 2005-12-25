@@ -440,13 +440,19 @@ sub main {
 		my @default = grep { $_->{_display} == 1 && ($_->{_install} == 1 || $_->{_installed} == 1) } @tasks;
 		my $tmpfile=`tempfile`;
 		chomp $tmpfile;
-		system($debconf_helper, $tmpfile,
+		my $ret=system($debconf_helper, $tmpfile,
 			task_to_debconf("shortdesc", @list),
 			task_to_debconf("shortdesctrans", @list),
 			task_to_debconf("shortdesc", @default),
-			$question);
+			$question) >> 8;
+		if ($ret == 30) {
+			exit 10; # back up
+		}
+		elsif ($ret != 0) {
+			error "debconf failed to run";
+		}
 		open(IN, "<$tmpfile");
-		my $ret=<IN>;
+		$ret=<IN>;
 		if (! defined $ret) {
 			die "tasksel canceled\n";
 		}

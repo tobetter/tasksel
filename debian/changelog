@@ -23,8 +23,14 @@ tasksel (2.38) UNRELEASED; urgency=low
     incremental progress displays being logged to stderr, since eg in d-i that
     results in a lot (possibly many megabytes) of download progress info in
     the logs.
+  * Support backing up from tasksel if it is run as part of a larger
+    debconf-using program such as d-i; while tasksel will not enable the
+    backup capb itself, if it is enabled and the user chooses to back up, it
+    will exit with code 10. Note that this code, rather than 30, was chosen
+    to interoperate with d-i, which rather inexplicably uses 10 instead of 30
+    to signal backup across process boundries.
 
- -- Joey Hess <joeyh@debian.org>  Sun, 25 Dec 2005 16:45:55 -0500
+ -- Joey Hess <joeyh@debian.org>  Sun, 25 Dec 2005 17:14:36 -0500
 
 tasksel (2.37) unstable; urgency=low
 

@@ -26,7 +26,7 @@ else
 fi
 
 db_input high $question || true
-db_go || true
+db_go # note: intentionally unguarded
 db_fset $question seen false
 db_get $question
 echo "$RET" >$tmpfile
