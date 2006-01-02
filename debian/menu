@@ -1,3 +1,2 @@
 ?package(tasksel):needs="text" section="Apps/System"\
-  title="Task selector"\
-  command="/usr/sbin/su-to-root -c /usr/bin/tasksel"
+  title="Task selector" command="su-to-root -c tasksel"
