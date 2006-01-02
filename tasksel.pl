@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 # Debian task selector, mark II.
-# Copyright 2004 by Joey Hess <joeyh@debian.org>.
+# Copyright 2004-2006 by Joey Hess <joeyh@debian.org>.
 # Licensed under the GPL, version 2 or higher.
 use Locale::gettext;
 use Getopt::Long;
@@ -14,6 +14,8 @@ my $packagesdir="/usr/lib/tasksel/packages";
 my $descdir="/usr/share/tasksel";
 my $localdescdir="/usr/local/share/tasksel";
 my $statusfile="/var/lib/dpkg/status";
+my $infodir="/usr/lib/tasksel/info";
+my $testmode=0;
 
 sub warning {
 	print STDERR "tasksel: @_\n";
@@ -22,6 +24,19 @@ sub warning {
 sub error {
 	print STDERR "tasksel: @_\n";
 	exit 1;
+}
+
+# Run a shell command except in test mode, and returns its exit code.
+# Prints the command in test mode. Parameters should be pre-split for
+# system.
+sub run {
+	if ($testmode) {
+		print join(" ", @_)."\n";
+		return 0;
+	}
+	else {
+		return system(@_) >> 8;
+	}
 }
 
 # A list of all available task desc files.
@@ -324,6 +339,21 @@ sub name_to_task {
 	return (grep { $_->{task} eq $name } @_)[0];
 }
 
+sub task_script {
+	my $task=shift;
+	my $script=shift;
+
+	my $path="$infodir/$task.$script";
+	if (-e $path && -x _) {
+		my $ret=run($path);
+		if ($ret != 0) {
+			warning("$path exited with nonzero code $ret");
+			return 0;
+		}
+	}
+	return 1;
+}
+
 sub usage {
 	print STDERR gettext(q{Usage:
 tasksel install <task>
@@ -360,11 +390,14 @@ sub getopts {
 		usage();
 		exit 1;
 	}
+	$testmode=1 if $ret{test}; # set global
 	return %ret;
 }
 
 sub main {
 	my %options=getopts();
+	my @tasks_remove;
+	my @tasks_install;
 
 	# Options that output stuff and don't need a full processed list of
 	# tasks.
@@ -410,10 +443,9 @@ sub main {
 		my $task=name_to_task($options{"install"}, @tasks);
 		$task->{_install} = 1 if $task;
 	}
-	my @aptitude_remove;
 	if ($options{"remove"}) {
 		my $task=name_to_task($options{"remove"}, @tasks);
-		push @aptitude_remove, task_packages($task, 0);
+		push @tasks_remove, $task;
 	}
 	
 	# The interactive bit.
@@ -470,12 +502,12 @@ sub main {
 		}
 		foreach my $task (@list) {
 			if (! $task->{_selected} && $task->{_installed}) {
-				push @aptitude_remove, task_packages($task, 0);
+				push @tasks_remove, $task;
 			}
 		}
 	}
 
-	# Mark dependnent packages for install if their dependencies are met.
+	# Mark dependenent tasks for install if their dependencies are met.
 	foreach my $task (@tasks) {
 		if (! $task->{_install} && exists $task->{depends} && length $task->{depends} ) {
 			$task->{_install} = 1;
@@ -489,73 +521,73 @@ sub main {
 
 	# Add tasks to install and see if any selected task requires manual
 	# selection.
-	my @aptitude_install;
 	my $manual_selection=0;
 	foreach my $task (grep { $_->{_install} } @tasks) {
-		push @aptitude_install, task_packages($task, 1);
+		push @tasks_install, $task;
 		if ($task->{packages} eq 'manual') {
 			$manual_selection=1;
 		}
 	}
 	
-	my $aptitude;
+	my @aptitude;
 	if ($manual_selection) {
 		# Manaul selection and task installs, as best
 		# aptitude can do it currently. Disables use of
 		# debconf-apt-progress.
-		$aptitude="aptitude";
+		@aptitude="aptitude";
 	}
 	elsif (-x "/usr/bin/debconf-apt-progress") {
-		$aptitude="debconf-apt-progress";
-		$aptitude.=" $options{'debconf-apt-progress'}"
+		@aptitude="debconf-apt-progress";
+		push @aptitude, split(' ', $options{'debconf-apt-progress'})
 			if exists $options{'debconf-apt-progress'};
-		$aptitude.=" -- aptitude -q";
+		push @aptitude, qw{-- aptitude -q};
 	}
 	else {
-		$aptitude="aptitude";
+		@aptitude="aptitude";
 	}
 
-	# Remove any packages we were asked to.
-	if (@aptitude_remove) {
-		if ($options{test}) {
-			print "$aptitude -y remove ".join(" ", @aptitude_remove)."\n";
+	# Task removal..
+	if (@tasks_remove) {
+		my @packages_remove=map { task_packages($_, 0) } @tasks_remove;
+		foreach my $task (@tasks_remove) {
+			task_script($task->{task}, "prerm");
 		}
-		else {
-			my $ret=system(split(' ', $aptitude), "-y", "remove", @aptitude_remove) >> 8;
-			if ($ret != 0) {
-				error gettext("aptitude failed")." ($ret)";
-			}
+		my $ret=run(@aptitude, "-y", "remove", @packages_remove);
+		if ($ret != 0) {
+			error gettext("aptitude failed")." ($ret)";
+		}
+		foreach my $task (@tasks_remove) {
+			task_script($task->{task}, "postrm");
 		}
 	}
 	
 	# And finally, act on selected tasks.
-	if (@aptitude_install || $manual_selection) {
-		# If the user selected no tasks and manual package
+	if (@tasks_install || $manual_selection) {
+		my @packages_install=map {task_packages($_, 1) } @tasks_install;
+		foreach my $task (@tasks_install) {
+			task_script($task->{task}, "preinst");
+		}
+		# If the user selected no other tasks and manual package
 		# selection, run aptitude w/o the --visual-preview parameter.
-		if (! @aptitude_install && $manual_selection) {
-			if ($options{test}) {
-				print "aptitude\n";
-			}
-			else {
-				my $ret=system("aptitude") >> 8;
-				if ($ret != 0) {
-					error gettext("aptitude failed")." ($ret)";
-				}
+		if (! @packages_install && $manual_selection) {
+			my $ret=run("aptitude");
+			if ($ret != 0) {
+				error gettext("aptitude failed")." ($ret)";
 			}
 		}
 		else {
 			if ($manual_selection) {
-				unshift @aptitude_install, "--visual-preview";
+				unshift @packages_install, "--visual-preview";
 			}
-			if ($options{test}) {
-				print "$aptitude --without-recommends -y install ".join(" ", @aptitude_install)."\n";
+			my $ret=run(@aptitude, "--without-recommends",
+			                       "-y", "install",
+					       @packages_install);
+			if ($ret != 0) {
+				error gettext("aptitude failed")." ($ret)";
 			}
-			else {
-				my $ret=system(split(' ', $aptitude), "--without-recommends", "-y", "install", @aptitude_install) >> 8;
-				if ($ret != 0) {
-					error gettext("aptitude failed");
-				}
-			}
+		}
+		foreach my $task (@tasks_install) {
+			task_script($task->{task}, "postinst");
 		}
 	}
 }

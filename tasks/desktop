@@ -31,3 +31,6 @@ Packages-list:
 # enough basic X stuff here for a minally useful desktop without them.
   twm
   xterm
+# support for X autoconfiguration. See also the desktop.preinst script.
+  read-edid
+  mdetect

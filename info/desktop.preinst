@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+# Neither mdetect or read-edid are strictly needed, but they make X
+# autoconfiguration work better. Need to install them before X is
+# preconfigured. Note that they are also listed as part of the task, which
+# will take care of their removal when the task is removed.
+for pkg in mdetect read-edid; do
+	if apt-cache show "$pkg" >/dev/null 2>&1 &&
+	   ! dpkg --get-selections | grep "$pkg" | grep -q install; then
+		apt-get -q -y -f install $pkg >/dev/null || true
+	fi
+done

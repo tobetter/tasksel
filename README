@@ -18,7 +18,7 @@ debian-tasks.desc to remove tasks.
 
 The file format is a rfc-822 style stanza, with fields named Task, Section,
 Description (which should include an extended description), Key, Packages, 
-Depends, and optional Test- and Source fields. Here is an example:
+Depends, Test- and Relevance fields. Here is an example:
 
 Task: graphical-games
 Section: user
@@ -83,3 +83,10 @@ listed as dependencies are installed.
 If a task is important enough that it should go near the top of its
 section, give it a relevance of 9 or 10. If a task is not likely to be
 used, give it a relevance of 1. Default is 5.
+
+tasksel also supports preinst, postinst, prerm, and postrm scripts for
+tasks. These are run before a task is installed, and after it is removed as
+with the dpkg scripts. These scripts sould be installed in
+/usr/lib/tasksel/info/, for example, /usr/lib/tasksel/info/desktop.preinst.
+Currently they are passed no parameters, but this might change later. These
+scripts should take care not to output anything to stdout.

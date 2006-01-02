@@ -32,6 +32,7 @@ updatetaskspo:
 install:
 	install -d $(DESTDIR)/usr/bin $(DESTDIR)$(TASKDIR) \
 		$(DESTDIR)/usr/lib/tasksel/tests \
+		$(DESTDIR)/usr/lib/tasksel/info \
 		$(DESTDIR)/usr/lib/tasksel/packages \
 		$(DESTDIR)/usr/share/man/man8
 	install -m 755 tasksel.pl $(DESTDIR)/usr/bin/tasksel
@@ -48,6 +49,9 @@ install:
 	done
 	for test in tests/*; do \
 		install -m 755 $$test $(DESTDIR)/usr/lib/tasksel/tests/; \
+	done
+	for script in info/*; do \
+		install -m 755 $$script $(DESTDIR)/usr/lib/tasksel/info/; \
 	done
 	for package in packages/*; do \
 		install -m 755 $$package $(DESTDIR)/usr/lib/tasksel/packages/; \
