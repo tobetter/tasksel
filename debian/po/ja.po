@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2005-11-18 14:50-0500\n"
-"PO-Revision-Date: 2004-06-24 16:31+0900\n"
+"PO-Revision-Date: 2006-01-05 08:44+0900\n"
 "Last-Translator: Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,16 +26,11 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:4
-#, fuzzy
 msgid ""
 "At the moment, only the core of Debian is installed. To tune the system to "
 "your needs, you can choose to install one or more of the following "
 "predefined collections of software."
-msgstr ""
-"現時点では、Debian のコアのみがインストールされている状態です。あなたのニーズ"
-"に合うようにホストを調整するために、以下の定義済みソフトウェアコレクションか"
-"ら 1 つ以上をインストールできます。上級ユーザは、手動でパッケージを選択するこ"
-"とを選ぶのもよいでしょう。"
+msgstr "現時点では、Debian のコアのみがインストールされている状態です。あなたのニーズに合うようにシステムを調整するために、以下の定義済みソフトウェアコレクションから 1 つ以上をインストールできます。"
 
 #. Type: multiselect
 #. Description
@@ -58,6 +53,3 @@ msgstr ""
 #: ../templates:18
 msgid "Debian software selection"
 msgstr "Debian のソフトウェア選択"
-
-#~ msgid "${CHOICES}, manual package selection"
-#~ msgstr "${CHOICES}, 手動でパッケージを選択"
