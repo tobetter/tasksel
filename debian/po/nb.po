@@ -1,3 +1,4 @@
+# translation of nb.po to Norwegian Bokmål
 # translation of tasksel_debian.po to Norsk Bokmål
 # translation of tasksel_debian.po to Norwegian bokmål
 #
@@ -11,33 +12,32 @@
 #         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
 #    Developers do not need to manually edit POT or PO files.
 # Axel Bojer <axelb@skolelinux.no>, 2004.
+# Bjørn Steensrud <bjornst@powertech.no>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel_debian\n"
+"Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2005-11-18 14:50-0500\n"
-"PO-Revision-Date: 2004-08-29 23:12+0200\n"
-"Last-Translator: Axel Bojer <axelb@skolelinux.no>\n"
-"Language-Team: Norsk Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"PO-Revision-Date: 2006-01-05 00:30+0100\n"
+"Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
+"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.10\n"
 
 #. Type: multiselect
 #. Description
 #: ../templates:4
-#, fuzzy
 msgid ""
 "At the moment, only the core of Debian is installed. To tune the system to "
 "your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
 "Nå er det bare Debians grunnsystem som er installert. For å tilpasse "
-"installasjonen etter dine ønsker så kan du velge å installere en eller flere "
-"av de følgende forhåndsvalgte gruppene av programvare. Erfarne brukere vil "
-"kanskje foretrekke å velge pakker manuelt."
+"systemet til dine behov, så kan du velge å installere en eller flere "
+"av de følgende forhåndsvalgte gruppene av programvare."
 
 #. Type: multiselect
 #. Description
@@ -64,3 +64,4 @@ msgstr "Programvareutvalg for Debian"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, manuelt pakkevalg"
+
