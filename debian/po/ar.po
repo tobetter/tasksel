@@ -1,3 +1,4 @@
+# translation of tasksel_debian_po.po to Arabic
 # translation of tasksel_debian_po_ar.po to Arabic
 #
 #    Translators, if you are not familiar with the PO format, gettext
@@ -10,38 +11,37 @@
 #         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
 #    Developers do not need to manually edit POT or PO files.
 # Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+# Ossama M. Khayat <okhayat@yahoo.com>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel_debian_po_ar\n"
+"Project-Id-Version: tasksel_debian_po\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2005-11-18 14:50-0500\n"
-"PO-Revision-Date: 2004-07-23 12:37+0300\n"
-"Last-Translator: Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>\n"
+"PO-Revision-Date: 2006-01-13 11:02+0300\n"
+"Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3\n"
+"X-Generator: KBabel 1.10.2\n"
 
 #. Type: multiselect
 #. Description
 #: ../templates:4
-#, fuzzy
 msgid ""
 "At the moment, only the core of Debian is installed. To tune the system to "
 "your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
-"حاليّاً لا شيء مثبّت سوى صميم دبيان. لضبط التّثبيت لاحتياجاتك يمكنك أن تثبّت "
-"واحداً أو أكثر من مجموعات البرامج المعرّفة مسبقاً التّالية. المستخدمون ذوو "
-"الخبرة يفضّلون انتقاء الحزم يدويّاً."
+"لا شيء مثبّت حالياً سوى صميم ديبيان. لضبط التثبيت لاحتياجاتك يمكنك تثبيت"
+"واحد أو أكثر من مجموعات البرامج المعرّفة مسبقاً التّالية."
 
 #. Type: multiselect
 #. Description
 #: ../templates:12
 msgid "Choose software to install:"
-msgstr "اختر البرامج التي ستثبّت:"
+msgstr "اختيار البرامج التي ستثبّت:"
 
 #. Type: multiselect
 #. Description
@@ -49,7 +49,7 @@ msgstr "اختر البرامج التي ستثبّت:"
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
-msgstr "يمكنك أن تثبّت واحداً أو أكثر من مجموعات البرامج المعرّفة مسبقاً التّالية."
+msgstr "يمكنك تثبيت واحد أو أكثر من مجموعات البرامج المعرّفة مسبقاً التّالية."
 
 #. Type: title
 #. Description
@@ -57,5 +57,3 @@ msgstr "يمكنك أن تثبّت واحداً أو أكثر من مجموعا�
 msgid "Debian software selection"
 msgstr "انتقاء برامج دبيان"
 
-#~ msgid "${CHOICES}, manual package selection"
-#~ msgstr "${CHOICES}, انتقاء الحزم يدويّاً"
