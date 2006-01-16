@@ -1,33 +1,32 @@
-# translation of tasksel_debian.po to Vietnamese
-# Copyright © 2005 Free Software Foundation, Inc.
+# Vietnamese translation for Tasksel Debian.
+# Copyright © 2005-2006 Free Software Foundation, Inc.
 # Phan Vinh Thinh <teppi@vnoss.org>, 2005.
-#
+# Clytie Siddall <clytie@riverland.net.au>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2005-11-18 14:50-0500\n"
-"PO-Revision-Date: 2005-04-27 00:51+0400\n"
-"Last-Translator: Phan Vinh Thinh <teppi@vnoss.org>\n"
+"PO-Revision-Date: 2006-01-13 16:08+1030\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: LocFactoryEditor 1.6b23\n"
 
 #. Type: multiselect
 #. Description
 #: ../templates:4
-#, fuzzy
 msgid ""
 "At the moment, only the core of Debian is installed. To tune the system to "
 "your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
 "Hiện thời chỉ có phần lõi của Debian là đã cài đặt. Để tiếp tục tiến trình "
-"cài đặt cho phù hợp với yêu cầu của mình, người dùng có thể chọn cài một "
-"hoặc một vài những nhóm chương trình sau. Người dùng có kinh nghiệm có thể "
-"muốn tự chọn các gói *.deb riêng rẽ."
+"cài đặt cho phù hợp với yêu cầu của mình, bạn có thể chọn cài một hoặc một "
+"vài những nhóm chương trình sau."
 
 #. Type: multiselect
 #. Description
@@ -50,6 +49,3 @@ msgstr ""
 #: ../templates:18
 msgid "Debian software selection"
 msgstr "Lựa chọn phần mềm Debian"
-
-#~ msgid "${CHOICES}, manual package selection"
-#~ msgstr "${CHOICES}, lựa chọn gói thủ công"
