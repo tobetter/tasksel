@@ -51,7 +51,6 @@ binary-indep: build install
 	dh_strip
 	dh_compress
 	dh_installdebconf
-	perl -pi -e 's/^Choices: \$${CHOICES}/Choices: \$${ORIGCHOICES}/' debian/tasksel/DEBIAN/templates
 	dh_fixperms
 	dh_installdeb
 	dh_shlibdeps

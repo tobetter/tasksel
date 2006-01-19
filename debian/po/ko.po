@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2005-11-27 23:31+0900\n"
 "Last-Translator: Sunjae Park <darehanl@gmail.com>\n"
 "Language-Team: Korean <debian-i18n-ko@lists.debian.org>\n"
@@ -23,6 +23,12 @@ msgid ""
 msgstr ""
 "현재 데비안의 핵심적인 부분만 설치되어 있습니다. 필요한 것을 설치하려면, 다"
 "음 소프트웨어 모음 중 설치하려는 소프트웨어 모음을 선택하십시오."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

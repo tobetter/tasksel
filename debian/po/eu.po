@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2005-06-11 16:04+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Librezale.org <librezale@librezale.org>\n"
@@ -36,6 +36,12 @@ msgstr ""
 "Momentu honetan, Debianen muina bakarrik duzu instalaturik. Instalakuntza "
 "zure beharretara egokitzeko, aurreaukeratutako pakete bilduma hauetako bat "
 "edo gehiago instalatu ditzakezu."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2004-12-13 20:20+0000\n"
 "Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team: Portuguese Translation Team <traduz@debianpt.org>\n"
@@ -27,6 +27,12 @@ msgstr ""
 "Neste momento, apenas o coração de Debian está instalado. Para afinar o "
 "sistema de acordo com as suas necessidades, pode escolher instalar uma ou "
 "mais das seguintes colecções de software pré-definidas."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

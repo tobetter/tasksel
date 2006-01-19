@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2005-12-20 12:05+0100\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
@@ -34,6 +34,12 @@ msgstr ""
 "W tym momencie tylko podstawowy system jest zainstalowany. By dostosowaæ "
 "instalacjê do Twoich potrzeb mo¿esz wybraæ instalacjê jednego lub wiêcej z "
 "poni¿szych predefiniowanych zestawów oprogramowania."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

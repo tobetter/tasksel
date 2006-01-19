@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2006-01-11 18:54+0200\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
@@ -23,7 +23,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Type: multiselect
 #. Description
@@ -33,9 +34,15 @@ msgid ""
 "your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
-"На даний момент, встановлена тільки основна частина Debian. Для того, "
-"щоб підлаштувати інсталяцію під ваші потреби, ви можете вибрати встановлення "
+"На даний момент, встановлена тільки основна частина Debian. Для того, щоб "
+"підлаштувати інсталяцію під ваші потреби, ви можете вибрати встановлення "
 "одного або кількох наступних наборів програмного забезпечення."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
@@ -58,4 +65,3 @@ msgstr ""
 #: ../templates:18
 msgid "Debian software selection"
 msgstr "Вибір програмного забезпечення Debian"
-

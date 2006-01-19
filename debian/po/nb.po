@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2006-01-05 00:30+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -36,8 +36,14 @@ msgid ""
 "predefined collections of software."
 msgstr ""
 "Nå er det bare Debians grunnsystem som er installert. For å tilpasse "
-"systemet til dine behov, så kan du velge å installere en eller flere "
-"av de følgende forhåndsvalgte gruppene av programvare."
+"systemet til dine behov, så kan du velge å installere en eller flere av de "
+"følgende forhåndsvalgte gruppene av programvare."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
@@ -64,4 +70,3 @@ msgstr "Programvareutvalg for Debian"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, manuelt pakkevalg"
-

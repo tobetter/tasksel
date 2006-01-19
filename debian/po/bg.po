@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2006-01-11 10:53+0200\n"
 "Last-Translator: Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
 "Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
@@ -29,7 +29,16 @@ msgid ""
 "At the moment, only the core of Debian is installed. To tune the system to "
 "your needs, you can choose to install one or more of the following "
 "predefined collections of software."
-msgstr "В момента са инсталирани само най-жизненоважните програми на Debian. За да нагласите системата към Вашите нужди, можете да изберете измежду един или повече от следните предварително зададени набори от софтуер."
+msgstr ""
+"В момента са инсталирани само най-жизненоважните програми на Debian. За да "
+"нагласите системата към Вашите нужди, можете да изберете измежду един или "
+"повече от следните предварително зададени набори от софтуер."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

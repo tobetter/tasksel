@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2005-11-20 21:58+0200\n"
 "Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
@@ -23,7 +23,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))\n"
+"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1))\n"
 
 #. Type: multiselect
 #. Description
@@ -34,8 +35,14 @@ msgid ""
 "predefined collections of software."
 msgstr ""
 "Momentan, numai nucleul sistemului Debian este instalat. Pentru a regla "
-"sistemul conform cu propriile dvs. necesităţi, puteţi alege să instalaţi "
-"una sau mai multe din următoarele colecţii predefinite de programe."
+"sistemul conform cu propriile dvs. necesităţi, puteţi alege să instalaţi una "
+"sau mai multe din următoarele colecţii predefinite de programe."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
@@ -58,4 +65,3 @@ msgstr ""
 #: ../templates:18
 msgid "Debian software selection"
 msgstr "Selecţia de programe Debian"
-

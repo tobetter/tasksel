@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tasksel_Debian HEAD\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2006-01-05 21:00+0600\n"
 "Last-Translator: Progga <progga@BengaLinux.Org>\n"
 "Language-Team: Bangla <core@BengaLinux.Org>\n"
@@ -26,6 +26,12 @@ msgstr ""
 "এই মুহূর্তে ডেবিয়ানের মূল অংশটুকুই কেবল ইনস্টল করা আছে।  সিস্টেমকে আপনার পছন্দমত "
 "সাজানোর জন্য পূর্বনির্ধারিত এই সফটওয়্যার সংগ্রহগুলো থেকে আপনি এক বা একাধিক সংগ্রহ "
 "ইনস্টল করতে পারেন।"
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

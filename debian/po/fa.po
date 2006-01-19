@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2004-06-27 12:15+0430\n"
 "Last-Translator: Arash Bijanzadeh <a.bijanzadeh@linuxiran.org>\n"
 "Language-Team: Farsi <fa@li.org>\n"
@@ -38,6 +38,12 @@ msgstr ""
 "شده با آنچه میخواهید، میتوانید یکی  از مجموعه از قبل تعریف شده را انتخاب "
 "کنید. کاربران پیش رفته تر ترجیح خواهند داد بسته ها را به صورت دستی انتخاب "
 "کنند."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2005-11-22 23:58+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
@@ -20,7 +20,16 @@ msgid ""
 "At the moment, only the core of Debian is installed. To tune the system to "
 "your needs, you can choose to install one or more of the following "
 "predefined collections of software."
-msgstr "Sa ngayon, ang pinaka-payak na sistema ng Debian ay nakaluklok. Upang maangkop ang pagkaluklok sa inyong mga pangangailangan, maaari kayong pumili na magluklok ng isa o ilan sa mga sumusunod na mga koleksyon ng software."
+msgstr ""
+"Sa ngayon, ang pinaka-payak na sistema ng Debian ay nakaluklok. Upang "
+"maangkop ang pagkaluklok sa inyong mga pangangailangan, maaari kayong pumili "
+"na magluklok ng isa o ilan sa mga sumusunod na mga koleksyon ng software."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

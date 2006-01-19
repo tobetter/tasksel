@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel/debian\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2004-08-19 16:46+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -36,6 +36,12 @@ msgstr ""
 "目前為止所安裝的只有 Debian 的核心。您可以在下列預先準備的組合套件中再選擇一"
 "些軟體來進行安裝，以使得安裝程序能更符合您的需求。而一些進階的使用者則也可以"
 "藉由手動來選擇套件。"
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

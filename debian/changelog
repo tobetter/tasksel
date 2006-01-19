@@ -41,12 +41,19 @@ tasksel (2.39) UNRELEASED; urgency=low
   * Add preinst script for desktop task, to install read-edid and mdetect
     for X server autoconfiguration.
   * Clean up executation of commands.
-  * Policy update.
+  * Install discover1 and xresprobe in desktop.preinst if not already
+    installed, both of these as well as laptop-detect are used by xserver-org
+    if available (tasksel already depends on laptop-detect, so it will already
+    be available).
 
   [ Eugeniy Meshcheryakov ]
   * Replaced aspell-ukr by aspell-uk in 'ukrainian' task.
 
- -- Eugeniy Meshcheryakov <eugen@debian.org>  Thu, 12 Jan 2006 16:20:05 +0200
+  [ Joey Hess ]
+  * Patch from Kenshi Muto to make translated task names be displayed.
+    Closes: #348716
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 19 Jan 2006 14:24:40 -0500
 
 tasksel (2.38) unstable; urgency=low
 

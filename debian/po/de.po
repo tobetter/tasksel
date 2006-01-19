@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel/debian/po\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2006-01-04 20:46+0100\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
@@ -36,6 +36,12 @@ msgstr ""
 "vordefinierten Software-Sammlungen installieren."
 
 #. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
+
+#. Type: multiselect
 #. Description
 #: ../templates:12
 msgid "Choose software to install:"
@@ -48,8 +54,8 @@ msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
 msgstr ""
-"Sie können eine oder mehrere der folgenden vordefinierten "
-"Software-Sammlungen zur Installation auswählen."
+"Sie können eine oder mehrere der folgenden vordefinierten Software-"
+"Sammlungen zur Installation auswählen."
 
 #. Type: title
 #. Description

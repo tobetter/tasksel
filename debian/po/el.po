@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2005-12-19 13:16+0200\n"
 "Last-Translator: George Papamichelakis <george@step.gr>\n"
 "Language-Team:  <debian-l10n-greek@lists.debian.org>\n"
@@ -36,6 +36,12 @@ msgstr ""
 "Για να ολοκληρώσετε την εγκατάσταση σύμφωνα με τις ανάγκες σας, μπορείτε να "
 "επιλέξετε την εγκατάσταση μιας ή και περισσοτέρων από τις ακόλουθες συλλογές "
 "από λογισμικό."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

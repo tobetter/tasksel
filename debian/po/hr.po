@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer HR\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2004-07-13 23:51+0200\n"
 "Last-Translator: Kruno <kruno@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -24,6 +24,12 @@ msgstr ""
 "svojim potrebama, mo¾ete izabrati koju od nekoliko slijedeæih "
 "prepostavljenih skupina programa. Iskusni korisnici mo¾da æe htjeti ruèni "
 "izabir paketa."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description

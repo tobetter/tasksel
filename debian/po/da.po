@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel v2\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2005-11-20 10:30+0100\n"
 "Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -35,6 +35,12 @@ msgstr ""
 "For øjeblikket er kun Debians kerne installeret. For at tilpasse "
 "installationen til dine behov, kan du vælge at installere en eller flere af "
 "følgende foruddefinerede programsamlinger."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
@@ -60,4 +66,3 @@ msgstr "Valg af Debianprogrammer"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, manuelt valg af pakker"
-

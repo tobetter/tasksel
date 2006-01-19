@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel debian\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2005-11-18 14:50-0500\n"
+"POT-Creation-Date: 2006-01-18 22:50+0900\n"
 "PO-Revision-Date: 2005-06-05 18:26+0300\n"
 "Last-Translator: Siim Põder <windo@windowlicker.dyn.ee>\n"
 "Language-Team: Debiani installeri eestindus <debian-boot-et@linux.ee>\n"
@@ -38,6 +38,12 @@ msgstr ""
 "Hetkel on paigaldatud vaid Debiani tuumik. Et paigaldus oma vajadustele "
 "häälestada, võid valida mõned järgnevaist eeldefineeritud tarkvara "
 "kogumitest. Kogenud kasutajad võivad eelistada pakkide käsitsi valimist."
+
+#. Type: multiselect
+#. Choices
+#: ../templates:11
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
