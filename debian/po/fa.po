@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-18 22:50+0900\n"
+"POT-Creation-Date: 2006-01-19 14:32-0500\n"
 "PO-Revision-Date: 2004-06-27 12:15+0430\n"
 "Last-Translator: Arash Bijanzadeh <a.bijanzadeh@linuxiran.org>\n"
 "Language-Team: Farsi <fa@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:4
+#: ../templates:5
 #, fuzzy
 msgid ""
 "At the moment, only the core of Debian is installed. To tune the system to "
@@ -41,19 +41,20 @@ msgstr ""
 
 #. Type: multiselect
 #. Choices
-#: ../templates:11
+#. Translators: translate ORIGCHOICES as CHOICES.
+#: ../templates:13
 msgid "${ORIGCHOICES}"
 msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:12
+#: ../templates:14
 msgid "Choose software to install:"
 msgstr "نرم‌افزار های مورد نیاز برای نصب را انتخاب کنید:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:12
+#: ../templates:14
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -63,7 +64,7 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:18
+#: ../templates:20
 msgid "Debian software selection"
 msgstr "انتخاب نرم‌افزرهای دبیان"
 

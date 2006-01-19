@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-18 22:50+0900\n"
+"POT-Creation-Date: 2006-01-19 14:32-0500\n"
 "PO-Revision-Date: 2006-01-07 12:46+0100\n"
 "Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:4
+#: ../templates:5
 msgid ""
 "At the moment, only the core of Debian is installed. To tune the system to "
 "your needs, you can choose to install one or more of the following "
@@ -26,19 +26,20 @@ msgstr ""
 
 #. Type: multiselect
 #. Choices
-#: ../templates:11
+#. Translators: translate ORIGCHOICES as CHOICES.
+#: ../templates:13
 msgid "${ORIGCHOICES}"
 msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:12
+#: ../templates:14
 msgid "Choose software to install:"
 msgstr "Zvoľte programy na inštaláciu:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:12
+#: ../templates:14
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -47,7 +48,7 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:18
+#: ../templates:20
 msgid "Debian software selection"
 msgstr "Výber programov pre Debian"
 
