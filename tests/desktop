@@ -59,7 +59,7 @@ enough_ram () {
 # suggest any task for which there is not enough disk.
 enough_disk () {
 	min_disk=2
-	disk=$(df /usr | tail -1 | awk '{print $4}')
+	disk=$(df -P /usr | tail -1 | awk '{print $4}')
 	if [ "$disk" ] && [ "$disk" -ge "$(expr $min_disk \* 1024 \* 1024)" ]; then
 		return 0
 	else

@@ -9,7 +9,10 @@ tasksel (2.40) UNRELEASED; urgency=low
   [ Translations of programs ]
     - Updated Punjabi (Gurmukhi).
 
- -- Christian Perrier <bubulle@debian.org>  Mon, 23 Jan 2006 23:14:35 +0100
+  [ Joey Hess ]
+  * Use df -P to avoid line wrapped df. Closes: #349623 
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 24 Jan 2006 14:19:47 -0500
 
 tasksel (2.39) unstable; urgency=low
 
