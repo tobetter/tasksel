@@ -1,0 +1,10 @@
+Task: persian-desktop
+Depends: desktop, persian
+Section: l10n
+Description: Persian environment
+ This task localises the desktop in Persian.
+Key:
+Packages: task-fields
+Packages-list:
+  kde-i18n-fa
+  koffice-i18n-fa
