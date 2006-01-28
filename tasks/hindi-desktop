@@ -1,0 +1,11 @@
+Task: hindi-desktop
+Depends: desktop, hindi
+Section: l10n
+Description: Hindi environment
+ This task localises the desktop in Hindi.
+Key:
+Packages: task-fields
+Packages-list:
+  kde-i18n-hi
+  koffice-i18n-hi
+  openoffice.org-l10n-hi-in

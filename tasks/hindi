@@ -1,0 +1,12 @@
+Task: hindi
+Test-lang: hi
+Section: l10n
+Description: Hindi environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Hindi speakers
+ to use Debian.
+Key:
+  language-env
+Packages: task-fields
+Packages-list:
+  ttf-devanagari-fonts
