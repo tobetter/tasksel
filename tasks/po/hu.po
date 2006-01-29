@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-18 14:45-0500\n"
+"POT-Creation-Date: 2006-01-29 09:22+0100\n"
 "PO-Revision-Date: 2004-07-25 13:23+0200\n"
 "Last-Translator: VERÓK István <vi@fsf.hu>\n"
 "Language-Team: Debian Hungarian Localization Team <debian-l10n>\n"
@@ -43,11 +43,33 @@ msgstr "Ez a metacsomag a munkaasztal thai fordítását telepíti."
 
 #. Description
 #: ../po/debian-tasks.desc:21
+#, fuzzy
+msgid ""
+"This task installs programs, data files, fonts, and documentation that makes "
+"it easier for Bengali speakers to use Debian."
+msgstr ""
+"Ez a metacsomag koreaiul beszélőknek szánt programokat, adatfájlokat, "
+"betűkészleteket és dokumentációt telepít."
+
+#. Description
+#: ../po/debian-tasks.desc:32
+#, fuzzy
+msgid "Bengali environment"
+msgstr "Olasz környezet"
+
+#. Description
+#: ../po/debian-tasks.desc:32
+#, fuzzy
+msgid "This task localises the desktop in Bengali."
+msgstr "Ez a metacsomag a munkaasztal thai fordítását telepíti."
+
+#. Description
+#: ../po/debian-tasks.desc:39
 msgid "Brazilian Portuguese environment"
 msgstr "Brazíliai portugál környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:21
+#: ../po/debian-tasks.desc:39
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Brazilian Portuguese speakers to use Debian."
@@ -56,23 +78,23 @@ msgstr ""
 "adatfájlokat és dokumentációt telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:32
+#: ../po/debian-tasks.desc:50
 msgid "Brazilian Portuguese desktop"
 msgstr "Brazíliai portugál munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:32
+#: ../po/debian-tasks.desc:50
 msgid "This task localises the desktop in Brasilian Portuguese."
 msgstr "Ez a metacsomag a munkaasztal brazíliai portugál fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:39
+#: ../po/debian-tasks.desc:57
 #, fuzzy
 msgid "Bulgarian environment"
 msgstr "Olasz környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:39
+#: ../po/debian-tasks.desc:57
 #, fuzzy
 msgid ""
 "This task installs programs and data files that make it easier for Bulgarian "
@@ -82,24 +104,24 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:48
+#: ../po/debian-tasks.desc:66
 #, fuzzy
 msgid "Bulgarian desktop"
 msgstr "Olasz munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:48
+#: ../po/debian-tasks.desc:66
 #, fuzzy
 msgid "This task localises the desktop in Bulgarian."
 msgstr "Ez a metacsomag a munkaasztal orosz fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:55
+#: ../po/debian-tasks.desc:73
 msgid "Catalan environment"
 msgstr "Katalán környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:55
+#: ../po/debian-tasks.desc:73
 msgid ""
 "This task installs packages and documentation in Catalan to help Catalan "
 "speaking people use Debian."
@@ -108,22 +130,22 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:65
+#: ../po/debian-tasks.desc:83
 msgid "Catalan desktop"
 msgstr "Katalán munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:65
+#: ../po/debian-tasks.desc:83
 msgid "This task localises the desktop in Catalan."
 msgstr "Ez a metacsomag a munkaasztal katalán fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:72
+#: ../po/debian-tasks.desc:90
 msgid "Simplified Chinese environment"
 msgstr "Egyszerűsített kínai írásra alkalmas környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:72
+#: ../po/debian-tasks.desc:90
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the simplified Chinese "
@@ -134,19 +156,19 @@ msgstr ""
 "programokat, adatfájlokat, betűkészleteket és dokumentációt."
 
 #. Description
-#: ../po/debian-tasks.desc:84
+#: ../po/debian-tasks.desc:102
 msgid "Simplified Chinese desktop"
 msgstr "Egyszerűsített kínai írású munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:84
+#: ../po/debian-tasks.desc:102
 #, fuzzy
 msgid "This task localises the desktop in Simplified Chinese."
 msgstr ""
 "Ez a metacsomag a munkaasztal egyszerűsített kínai írású fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:91
+#: ../po/debian-tasks.desc:109
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
@@ -157,24 +179,24 @@ msgstr ""
 "programokat, adatfájlokat, betűkészleteket és dokumentációt."
 
 #. Description
-#: ../po/debian-tasks.desc:103
+#: ../po/debian-tasks.desc:121
 msgid "Traditional Chinese environment"
 msgstr "Hagyományos kínai írásra alkalmas környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:103
+#: ../po/debian-tasks.desc:121
 #, fuzzy
 msgid "This task localises the desktop in Traditional Chinese."
 msgstr ""
 "Ez a metacsomag a munkaasztal hagyományos kínai írású fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:110
+#: ../po/debian-tasks.desc:128
 msgid "Cyrillic environment"
 msgstr "Cirillbetűs írásra alkalmas környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:110
+#: ../po/debian-tasks.desc:128
 msgid ""
 "This task provides Cyrillic fonts and other software you will need in order "
 "to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
@@ -185,12 +207,12 @@ msgstr ""
 "fehérorosz, bolgár, macedón, orosz, szerb és ukrán nyelvek használata."
 
 #. Description
-#: ../po/debian-tasks.desc:121
+#: ../po/debian-tasks.desc:139
 msgid "Cyrillic desktop"
 msgstr "Cirillbetűs írású munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:121
+#: ../po/debian-tasks.desc:139
 #, fuzzy
 msgid ""
 "This task localises the desktop in Cyrillic. It supports Belarusian, "
@@ -201,13 +223,13 @@ msgstr ""
 "ukrán nyelvek használata."
 
 #. Description
-#: ../po/debian-tasks.desc:131
+#: ../po/debian-tasks.desc:149
 #, fuzzy
 msgid "Czech environment"
 msgstr "Francia környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:131
+#: ../po/debian-tasks.desc:149
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Czech to help Czech "
@@ -217,24 +239,24 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:139
+#: ../po/debian-tasks.desc:157
 #, fuzzy
 msgid "Czech desktop"
 msgstr "Francia munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:139
+#: ../po/debian-tasks.desc:157
 #, fuzzy
 msgid "This task localises the desktop in Czech."
 msgstr "Ez a metacsomag a munkaasztal francia fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:146
+#: ../po/debian-tasks.desc:164
 msgid "Danish environment"
 msgstr "Dán környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:146
+#: ../po/debian-tasks.desc:164
 msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
@@ -242,23 +264,23 @@ msgstr ""
 "Ez a metacsomag dánul beszélőknek szánt csomagokat és dokumentációt telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:156
+#: ../po/debian-tasks.desc:174
 msgid "Danish desktop"
 msgstr "Dán munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:156
+#: ../po/debian-tasks.desc:174
 #, fuzzy
 msgid "This task localises the desktop in Danish."
 msgstr "Ez a metacsomag a munkaasztal dán fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:163
+#: ../po/debian-tasks.desc:181
 msgid "SQL database"
 msgstr "SQL-adatbázis"
 
 #. Description
-#: ../po/debian-tasks.desc:163
+#: ../po/debian-tasks.desc:181
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
@@ -266,7 +288,7 @@ msgstr ""
 "csomagjait telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:163
+#: ../po/debian-tasks.desc:181
 msgid ""
 "PostgreSQL is an SQL relational database, offering increasing SQL92 "
 "compliance and some SQL3 features.  It is suitable for use with multi-user "
@@ -279,24 +301,24 @@ msgstr ""
 "tud tranzakciókat kezelni és finomfelbontású zárolást végezni."
 
 #. Description
-#: ../po/debian-tasks.desc:177
+#: ../po/debian-tasks.desc:195
 msgid "Desktop environment"
 msgstr "Grafikus munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:177
+#: ../po/debian-tasks.desc:195
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "Gnome and KDE desktop tasks."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:187
+#: ../po/debian-tasks.desc:205
 msgid "DNS server"
 msgstr "DNS-kiszolgáló"
 
 #. Description
-#: ../po/debian-tasks.desc:187
+#: ../po/debian-tasks.desc:205
 msgid ""
 "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
@@ -304,7 +326,7 @@ msgstr ""
 "néhány segédprogramot telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:195
+#: ../po/debian-tasks.desc:213
 #, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
@@ -314,24 +336,24 @@ msgstr ""
 "betűkészleteket és dokumentációt telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:204
+#: ../po/debian-tasks.desc:222
 #, fuzzy
 msgid "Dutch environment"
 msgstr "Francia környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:204
+#: ../po/debian-tasks.desc:222
 #, fuzzy
 msgid "This task makes the desktop be localised in Dutch"
 msgstr "Ez a metacsomag a munkaasztal thai fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:211
+#: ../po/debian-tasks.desc:229
 msgid "File server"
 msgstr "Fájlkiszolgáló"
 
 #. Description
-#: ../po/debian-tasks.desc:211
+#: ../po/debian-tasks.desc:229
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
@@ -340,12 +362,12 @@ msgstr ""
 "gépét."
 
 #. Description
-#: ../po/debian-tasks.desc:221
+#: ../po/debian-tasks.desc:239
 msgid "French environment"
 msgstr "Francia környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:221
+#: ../po/debian-tasks.desc:239
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -354,23 +376,23 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:232
+#: ../po/debian-tasks.desc:250
 msgid "French desktop"
 msgstr "Francia munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:232
+#: ../po/debian-tasks.desc:250
 #, fuzzy
 msgid "This task localises the desktop in French."
 msgstr "Ez a metacsomag a munkaasztal francia fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:239
+#: ../po/debian-tasks.desc:257
 msgid "German environment"
 msgstr "Német környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:239
+#: ../po/debian-tasks.desc:257
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -379,36 +401,36 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:250
+#: ../po/debian-tasks.desc:268
 msgid "German desktop"
 msgstr "Német munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:250
+#: ../po/debian-tasks.desc:268
 #, fuzzy
 msgid "This task localises the desktop in German."
 msgstr "Ez a metacsomag a munkaasztal német fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:258
+#: ../po/debian-tasks.desc:276
 #, fuzzy
 msgid "Gnome desktop environment"
 msgstr "Japán munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:258
+#: ../po/debian-tasks.desc:276
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
 "environment."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:269
+#: ../po/debian-tasks.desc:287
 msgid "Greek environment"
 msgstr "Görög környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:269
+#: ../po/debian-tasks.desc:287
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -417,23 +439,23 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:279
+#: ../po/debian-tasks.desc:297
 msgid "Greek desktop"
 msgstr "Görög munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:279
+#: ../po/debian-tasks.desc:297
 #, fuzzy
 msgid "This task localises the desktop in Greek."
 msgstr "Ez a metacsomag a munkaasztal görög fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:286
+#: ../po/debian-tasks.desc:304
 msgid "Hebrew environment"
 msgstr "Héber környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:286
+#: ../po/debian-tasks.desc:304
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -442,23 +464,45 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:294
+#: ../po/debian-tasks.desc:312
 msgid "Hebrew desktop"
 msgstr "Héber munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:294
+#: ../po/debian-tasks.desc:312
 #, fuzzy
 msgid "This task localises the desktop in Hebrew."
 msgstr "Ez a metacsomag a munkaasztal héber fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:301
+#: ../po/debian-tasks.desc:319
+#, fuzzy
+msgid ""
+"This task installs programs, data files, fonts, and documentation that makes "
+"it easier for Hindi speakers to use Debian."
+msgstr ""
+"Ez a metacsomag koreaiul beszélőknek szánt programokat, adatfájlokat, "
+"betűkészleteket és dokumentációt telepít."
+
+#. Description
+#: ../po/debian-tasks.desc:330
+#, fuzzy
+msgid "Hindi environment"
+msgstr "Dán környezet"
+
+#. Description
+#: ../po/debian-tasks.desc:330
+#, fuzzy
+msgid "This task localises the desktop in Hindi."
+msgstr "Ez a metacsomag a munkaasztal dán fordítását telepíti."
+
+#. Description
+#: ../po/debian-tasks.desc:337
 msgid "Italian environment"
 msgstr "Olasz környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:301
+#: ../po/debian-tasks.desc:337
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -467,23 +511,23 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:348
 msgid "Italian desktop"
 msgstr "Olasz munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:348
 #, fuzzy
 msgid "This task localises the desktop in Italian."
 msgstr "Ez a metacsomag a munkaasztal olasz fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:319
+#: ../po/debian-tasks.desc:355
 msgid "Japanese environment"
 msgstr "Japán környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:319
+#: ../po/debian-tasks.desc:355
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -492,23 +536,23 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:331
+#: ../po/debian-tasks.desc:367
 msgid "Japanese desktop environment"
 msgstr "Japán munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:331
+#: ../po/debian-tasks.desc:367
 #, fuzzy
 msgid "This task localises the desktop in Japanese."
 msgstr "Ez a metacsomag a munkaasztal japán fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:338
+#: ../po/debian-tasks.desc:374
 msgid "Korean environment"
 msgstr "Koreai környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:338
+#: ../po/debian-tasks.desc:374
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
@@ -517,33 +561,33 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:350
+#: ../po/debian-tasks.desc:386
 msgid "Korean desktop"
 msgstr "Koreai munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:350
+#: ../po/debian-tasks.desc:386
 #, fuzzy
 msgid "This task localises the desktop in Korean."
 msgstr "Ez a metacsomag a munkaasztal koreai fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:357
+#: ../po/debian-tasks.desc:393
 msgid "Laptop"
 msgstr "Laptop"
 
 #. Description
-#: ../po/debian-tasks.desc:357
+#: ../po/debian-tasks.desc:393
 msgid "This task installs software useful for a laptop."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:400
 msgid "Lithuanian environment"
 msgstr "Litván környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:400
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -552,23 +596,23 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:374
+#: ../po/debian-tasks.desc:410
 msgid "Lithuanian desktop"
 msgstr "Litván munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:374
+#: ../po/debian-tasks.desc:410
 #, fuzzy
 msgid "This task localises the desktop in Lithuanian."
 msgstr "Ez a metacsomag a munkaasztal litván fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:381
+#: ../po/debian-tasks.desc:417
 msgid "Mail server"
 msgstr "Levelezőkiszolgáló"
 
 #. Description
-#: ../po/debian-tasks.desc:381
+#: ../po/debian-tasks.desc:417
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -577,22 +621,22 @@ msgstr ""
 "választ ki."
 
 #. Description
-#: ../po/debian-tasks.desc:391
+#: ../po/debian-tasks.desc:427
 msgid "manual package selection"
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:391
+#: ../po/debian-tasks.desc:427
 msgid "Manually select packages to install in aptitude."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:398
+#: ../po/debian-tasks.desc:434
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Norvég (Bokmaal és Nynorsk) környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:398
+#: ../po/debian-tasks.desc:434
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -601,23 +645,45 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:409
+#: ../po/debian-tasks.desc:445
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "Norvég (Bokmaal és Nynorsk) munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:409
+#: ../po/debian-tasks.desc:445
 #, fuzzy
 msgid "This task localises the desktop in Norwegian."
 msgstr "Ez a metacsomag a munkaasztal norvég fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:416
+#: ../po/debian-tasks.desc:452
+#, fuzzy
+msgid ""
+"This task installs programs, data files, fonts, and documentation that makes "
+"it easier for Persian speakers to use Debian."
+msgstr ""
+"Ez a metacsomag koreaiul beszélőknek szánt programokat, adatfájlokat, "
+"betűkészleteket és dokumentációt telepít."
+
+#. Description
+#: ../po/debian-tasks.desc:463
+#, fuzzy
+msgid "Persian environment"
+msgstr "Német környezet"
+
+#. Description
+#: ../po/debian-tasks.desc:463
+#, fuzzy
+msgid "This task localises the desktop in Persian."
+msgstr "Ez a metacsomag a munkaasztal német fordítását telepíti."
+
+#. Description
+#: ../po/debian-tasks.desc:470
 msgid "Polish environment"
 msgstr "Lengyel környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:416
+#: ../po/debian-tasks.desc:470
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -626,35 +692,57 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:427
+#: ../po/debian-tasks.desc:481
 msgid "Polish desktop"
 msgstr "Lengyel munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:427
+#: ../po/debian-tasks.desc:481
 #, fuzzy
 msgid "This task localises the desktop in Polish."
 msgstr "Ez a metacsomag a munkaasztal lengyel fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:435
+#: ../po/debian-tasks.desc:489
 msgid "Print server"
 msgstr "Nyomtatókiszolgáló"
 
 #. Description
-#: ../po/debian-tasks.desc:435
+#: ../po/debian-tasks.desc:489
 msgid "This task sets up your system to be a print server."
 msgstr ""
 "Ez a metacsomag megosztott nyomtatási képességekkel ruházza fel rendszerét."
 
 #. Description
-#: ../po/debian-tasks.desc:445
+#: ../po/debian-tasks.desc:499
+#, fuzzy
+msgid ""
+"This task installs programs, data files, fonts, and documentation that makes "
+"it easier for Punjabi speakers to use Debian."
+msgstr ""
+"Ez a metacsomag koreaiul beszélőknek szánt programokat, adatfájlokat, "
+"betűkészleteket és dokumentációt telepít."
+
+#. Description
+#: ../po/debian-tasks.desc:510
+#, fuzzy
+msgid "Punjabi environment"
+msgstr "Thai környezet"
+
+#. Description
+#: ../po/debian-tasks.desc:510
+#, fuzzy
+msgid "This task localises the desktop in Punjabi."
+msgstr "Ez a metacsomag a munkaasztal thai fordítását telepíti."
+
+#. Description
+#: ../po/debian-tasks.desc:517
 #, fuzzy
 msgid "Romanian environment"
 msgstr "Ukrán környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:445
+#: ../po/debian-tasks.desc:517
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
@@ -664,24 +752,24 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:456
+#: ../po/debian-tasks.desc:528
 #, fuzzy
 msgid "Romanian desktop"
 msgstr "Ukrán munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:456
+#: ../po/debian-tasks.desc:528
 #, fuzzy
 msgid "This task localises the desktop in Romanian."
 msgstr "Ez a metacsomag a munkaasztal ukrán fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:535
 msgid "Russian environment"
 msgstr "Orosz környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:535
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -690,24 +778,24 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:474
+#: ../po/debian-tasks.desc:546
 msgid "Russian desktop"
 msgstr "Orosz munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:474
+#: ../po/debian-tasks.desc:546
 #, fuzzy
 msgid "This task localises the desktop in Russian."
 msgstr "Ez a metacsomag a munkaasztal orosz fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:553
 #, fuzzy
 msgid "Slovak environment"
 msgstr "Koreai környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:553
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
@@ -717,24 +805,24 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:489
+#: ../po/debian-tasks.desc:561
 #, fuzzy
 msgid "Slovak desktop"
 msgstr "Koreai munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:489
+#: ../po/debian-tasks.desc:561
 #, fuzzy
 msgid "This task localises the desktop in Slovak."
 msgstr "Ez a metacsomag a munkaasztal koreai fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:496
+#: ../po/debian-tasks.desc:568
 msgid "Spanish environment"
 msgstr "Spanyol környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:496
+#: ../po/debian-tasks.desc:568
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -743,34 +831,34 @@ msgstr ""
 "dokumentációt telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:507
+#: ../po/debian-tasks.desc:579
 msgid "Spanish desktop"
 msgstr "Spanyol munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:507
+#: ../po/debian-tasks.desc:579
 #, fuzzy
 msgid "This task localises the desktop in Spanish."
 msgstr "Ez a metacsomag a munkaasztal spanyol fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:514
+#: ../po/debian-tasks.desc:586
 #, fuzzy
 msgid "Standard system"
 msgstr "Linux Standard Base"
 
 #. Description
-#: ../po/debian-tasks.desc:514
+#: ../po/debian-tasks.desc:586
 msgid "This task installs a reasonably small character-mode system."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:521
+#: ../po/debian-tasks.desc:593
 msgid "Swedish environment"
 msgstr "Svéd környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:521
+#: ../po/debian-tasks.desc:593
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -778,46 +866,46 @@ msgstr ""
 "Ez a metacsomag svédül beszélőknek szánt csomagokat és dokumentációt telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:531
+#: ../po/debian-tasks.desc:603
 msgid "Swedish desktop"
 msgstr "Svéd munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:531
+#: ../po/debian-tasks.desc:603
 #, fuzzy
 msgid "This task localises the desktop in Swedish."
 msgstr "Ez a metacsomag a munkaasztal svéd fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:538
+#: ../po/debian-tasks.desc:610
 msgid "Thai environment"
 msgstr "Thai környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:538
+#: ../po/debian-tasks.desc:610
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
 msgstr "Ez a metacsomag thai nyelven beszélőknek szánt csomagokat telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:550
+#: ../po/debian-tasks.desc:622
 msgid "Thai desktop"
 msgstr "Thai munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:550
+#: ../po/debian-tasks.desc:622
 #, fuzzy
 msgid "This task localises the desktop in Thai."
 msgstr "Ez a metacsomag a munkaasztal thai fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:557
+#: ../po/debian-tasks.desc:629
 msgid "Turkish environment"
 msgstr "Török környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:557
+#: ../po/debian-tasks.desc:629
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -826,23 +914,23 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:569
+#: ../po/debian-tasks.desc:641
 msgid "Turkish desktop"
 msgstr "Török munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:569
+#: ../po/debian-tasks.desc:641
 #, fuzzy
 msgid "This task localises the desktop in Turkish."
 msgstr "Ez a metacsomag a munkaasztal török fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:576
+#: ../po/debian-tasks.desc:648
 msgid "Ukrainian environment"
 msgstr "Ukrán környezet"
 
 #. Description
-#: ../po/debian-tasks.desc:576
+#: ../po/debian-tasks.desc:648
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -851,23 +939,23 @@ msgstr ""
 "telepít."
 
 #. Description
-#: ../po/debian-tasks.desc:586
+#: ../po/debian-tasks.desc:658
 msgid "Ukrainian desktop"
 msgstr "Ukrán munkaasztal"
 
 #. Description
-#: ../po/debian-tasks.desc:586
+#: ../po/debian-tasks.desc:658
 #, fuzzy
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Ez a metacsomag a munkaasztal ukrán fordítását telepíti."
 
 #. Description
-#: ../po/debian-tasks.desc:594
+#: ../po/debian-tasks.desc:666
 msgid "Web server"
 msgstr "Webkiszolgáló"
 
 #. Description
-#: ../po/debian-tasks.desc:594
+#: ../po/debian-tasks.desc:666
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
