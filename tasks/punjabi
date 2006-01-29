@@ -1,0 +1,12 @@
+Task: punjabi
+Test-lang: pa_IN
+Section: l10n
+Description: Punjabi environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Punjabi speakers
+ to use Debian.
+Key:
+  language-env
+Packages: task-fields
+Packages-list:
+  ttf-punjabi-fonts
