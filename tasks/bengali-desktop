@@ -1,0 +1,10 @@
+Task: bengali-desktop
+Depends: desktop, bengali
+Section: l10n
+Description: Bengali environment
+ This task localises the desktop in Bengali.
+Key:
+Packages: task-fields
+Packages-list:
+  kde-i18n-bn
+  openoffice.org-l10n-bn
