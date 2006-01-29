@@ -1,17 +1,18 @@
+# translation of tasksel-debian-tasks_ru.po to Russian
 # translation of ru.po to Russian
 # translation of tasksel_tasks_po_ru.po to Russian
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Eugene Konev <ejka@imfi.kspu.ru>, 2004.
 # Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004.
-# Yuri Kozlov <kozlov.y@gmail.com>, 2005.
+# Yuri Kozlov <kozlov.y@gmail.com>, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks_po_ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-29 09:22+0100\n"
-"PO-Revision-Date: 2005-11-19 12:09+0300\n"
+"PO-Revision-Date: 2006-01-29 14:41+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -44,25 +45,22 @@ msgstr "Это задание адаптирует рабочий стол дл�
 
 #. Description
 #: ../po/debian-tasks.desc:21
-#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Bengali speakers to use Debian."
 msgstr ""
 "Установить пакеты, позволяющие облегчить использование Debian для тех, кто "
-"говорит на арабском языке."
+"говорит на бенгальском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:32
-#, fuzzy
 msgid "Bengali environment"
-msgstr "Поддержка болгарского языка"
+msgstr "Поддержка бенгальского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:32
-#, fuzzy
 msgid "This task localises the desktop in Bengali."
-msgstr "Это задание адаптирует рабочий стол для тайского."
+msgstr "Это задание адаптирует рабочий стол для бенгальского."
 
 #. Description
 #: ../po/debian-tasks.desc:39
@@ -268,9 +266,8 @@ msgstr "База данных SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:181
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr "Установить клиентские и серверные компоненты СУБД PostgreSQL."
+msgid "This task selects client and server packages for the PostgreSQL database."
+msgstr "Установить компоненты клиента и сервера СУБД PostgreSQL."
 
 #. Description
 #: ../po/debian-tasks.desc:181
@@ -280,7 +277,7 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
-"PostgreSQL -- реляционная SQL СУБД, с всёвозрастающей совместимостью с SQL92 "
+"PostgreSQL -- реляционная SQL СУБД, с всё возрастающей совместимостью с SQL92 "
 "и с некоторыми возможностями SQL3. Она может использоваться для "
 "многопользовательских систем, благодаря своей поддержке транзакций и "
 "продуманной системе блокировок."
@@ -306,8 +303,7 @@ msgstr "Сервер имён (DNS)"
 
 #. Description
 #: ../po/debian-tasks.desc:205
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Установить сервер имён BIND, и соответствующие пакеты документации и "
 "инструментов."
@@ -457,25 +453,22 @@ msgstr "Это задание адаптирует рабочий стол дл�
 
 #. Description
 #: ../po/debian-tasks.desc:319
-#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Hindi speakers to use Debian."
 msgstr ""
 "Установить пакеты, позволяющие облегчить использование Debian для тех, кто "
-"говорит на арабском языке."
+"говорит на языке хинди."
 
 #. Description
 #: ../po/debian-tasks.desc:330
-#, fuzzy
 msgid "Hindi environment"
-msgstr "Поддержка датского языка"
+msgstr "Поддержка языка хинди"
 
 #. Description
 #: ../po/debian-tasks.desc:330
-#, fuzzy
 msgid "This task localises the desktop in Hindi."
-msgstr "Это задание адаптирует рабочий стол для датского."
+msgstr "Это задание адаптирует рабочий стол для хинди."
 
 #. Description
 #: ../po/debian-tasks.desc:337
@@ -557,7 +550,7 @@ msgstr "Для ноутбука"
 #. Description
 #: ../po/debian-tasks.desc:393
 msgid "This task installs software useful for a laptop."
-msgstr "Установить пакеты с программым обеспечением, полезным на ноутбуке."
+msgstr "Установить пакеты с программным обеспечением, полезным на ноутбуке."
 
 #. Description
 #: ../po/debian-tasks.desc:400
@@ -631,25 +624,22 @@ msgstr "Это задание адаптирует рабочий стол дл�
 
 #. Description
 #: ../po/debian-tasks.desc:452
-#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Persian speakers to use Debian."
 msgstr ""
 "Установить пакеты, позволяющие облегчить использование Debian для тех, кто "
-"говорит на арабском языке."
+"говорит на персидском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:463
-#, fuzzy
 msgid "Persian environment"
-msgstr "Поддержка немецкого языка"
+msgstr "Поддержка персидского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:463
-#, fuzzy
 msgid "This task localises the desktop in Persian."
-msgstr "Это задание адаптирует рабочий стол для немецкого."
+msgstr "Это задание адаптирует рабочий стол для персидского."
 
 #. Description
 #: ../po/debian-tasks.desc:470
@@ -687,25 +677,22 @@ msgstr "Установить пакеты для создания сервера
 
 #. Description
 #: ../po/debian-tasks.desc:499
-#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Punjabi speakers to use Debian."
 msgstr ""
 "Установить пакеты, позволяющие облегчить использование Debian для тех, кто "
-"говорит на арабском языке."
+"говорит на панджабском языке."
 
 #. Description
 #: ../po/debian-tasks.desc:510
-#, fuzzy
 msgid "Punjabi environment"
-msgstr "Поддержка арабского языка"
+msgstr "Поддержка панджабского языка"
 
 #. Description
 #: ../po/debian-tasks.desc:510
-#, fuzzy
 msgid "This task localises the desktop in Punjabi."
-msgstr "Это задание адаптирует рабочий стол для арабского."
+msgstr "Это задание адаптирует рабочий стол для панджабского."
 
 #. Description
 #: ../po/debian-tasks.desc:517
@@ -916,6 +903,6 @@ msgstr "Веб-сервер"
 
 #. Description
 #: ../po/debian-tasks.desc:666
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr "Установить пакеты для создания веб-сервера."
+
