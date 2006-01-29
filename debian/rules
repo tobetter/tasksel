@@ -18,11 +18,6 @@ clean:
 	rm -f build-stamp install-stamp commit-stamp
 	-$(MAKE) clean
 	dh_clean
-	# Handle norwegian translations
-	# Remove transition copy while we wait for all users to change from
-	# no_NO to nb_NO
-	$(RM) po/no.po
-	$(RM) tasks/po/no.po
 
 install: install-stamp
 install-stamp: build-stamp
