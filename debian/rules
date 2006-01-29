@@ -9,11 +9,6 @@ commit-stamp:
 build: build-stamp
 build-stamp: 
 	dh_testdir
-	# Handle norwegian translations
-	# Make transition copy while we wait for all users to change from
-	# no_NO to nb_NO
-	cp po/nb.po po/no.po
-	cp tasks/po/nb.po tasks/po/no.po
 	$(MAKE) DEBUG=0
 	touch build-stamp
 
