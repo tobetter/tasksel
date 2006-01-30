@@ -14,9 +14,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 2.07 debconf\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-19 14:32-0500\n"
-"PO-Revision-Date: 2005-11-20 11:06+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-01-19 15:15-0700\n"
+"PO-Revision-Date: 2006-01-30 17:57+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,14 +26,8 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:5
-msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
-"predefined collections of software."
-msgstr ""
-"För närvarande är enbart Debians baspaket installerade. För att anpassa "
-"installationen efter dina behov kan du välja att installera en eller flera "
-"av följande fördefinierade paketgrupper."
+msgid "At the moment, only the core of Debian is installed. To tune the system to your needs, you can choose to install one or more of the following predefined collections of software."
+msgstr "För närvarande är enbart Debians grundpaket installerade. För att anpassa installationen efter dina behov kan du välja att installera en eller flera av följande fördefinierade paketgrupper."
 
 #. Type: multiselect
 #. Choices
@@ -51,12 +45,8 @@ msgstr "Välj programvara att installera:"
 #. Type: multiselect
 #. Description
 #: ../templates:14
-msgid ""
-"You can choose to install one or more of the following predefined "
-"collections of software."
-msgstr ""
-"Du kan välja att installera en eller flera av följande fördefinierade "
-"paketgrupper."
+msgid "You can choose to install one or more of the following predefined collections of software."
+msgstr "Du kan välja att installera en eller flera av följande fördefinierade paketgrupper."
 
 #. Type: title
 #. Description
@@ -66,3 +56,4 @@ msgstr "Debians programvaruväljare"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, manuellt paketval"
+
