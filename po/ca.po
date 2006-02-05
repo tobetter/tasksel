@@ -1,14 +1,14 @@
 # Catalan messages for Debian's tasksel.
-# Copyright © 2001, 2003, 2004 Software in the Public Interest, Inc.
+# Copyright © 2001, 2003, 2004, 2006 Software in the Public Interest, Inc.
 # This file is distributed under the same license as the tasksel package.
-# Jordi Mallach <jordi@debian.org>, 2001, 2003, 2004.
+# Jordi Mallach <jordi@debian.org>, 2001, 2003, 2004, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel 2.09\n"
+"Project-Id-Version: tasksel 2.41\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-11-18 14:41-0500\n"
-"PO-Revision-Date: 2004-08-05 15:07+0200\n"
+"PO-Revision-Date: 2006-02-05 21:39+0100\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:328
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -31,17 +30,12 @@ msgstr ""
 "Forma d'ús:\n"
 "tasksel install <tasca>\n"
 "tasksel remove <tasca>\n"
-"tasksel [opcions]; on opcions és qualsevol combinació de:\n"
-"t-t, --test           mode de prova; no faces res\n"
-"t-r, --required       instal·la tots els paquets de prioritat «requerit»\n"
-"t-i, --important      instal·la tots els paquets de prioritat «important»\n"
-"t-s, --standard       instal·la tots els paquets de prioritat «estàndard»\n"
-"t-n  --no-ui          no mostres la interfície d'usuari; per a utilitzar\n"
-"                      amb -r o -i, normalment\n"
-"t    --new-install    instal·la automàticament algunes tasques\n"
-"t    --list-tasks     llista les tasques que es mostrarien i surt\n"
-"t    --task-packages  llista els paquets disponibles en una tasca\n"
-"t    --task-desc      torna la descripció d'una tasca\n"
+"tasksel [opcions]\n"
+"\t-t, --test           mode de prova; no faces res\n"
+"\t    --new-install    instal·la automàticament algunes tasques\n"
+"\t    --list-tasks     llista les tasques que es mostrarien i surt\n"
+"\t    --task-packages  llista els paquets disponibles en una tasca\n"
+"\t    --task-desc      mostra la descripció d'una tasca\n"
 
 #: ../tasksel.pl:509 ../tasksel.pl:525 ../tasksel.pl:542
 msgid "aptitude failed"
