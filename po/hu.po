@@ -8,15 +8,14 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-11-18 14:41-0500\n"
-"PO-Revision-Date: 2004-07-25 13:02+0200\n"
-"Last-Translator: VERÓK István <vi@fsf.hu>\n"
+"PO-Revision-Date: 2006-02-10 19:40+0100\n"
+"Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Debian Hungarian Localization Team <debian-l10n>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:328
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -28,204 +27,18 @@ msgid ""
 "\t    --task-packages list available packages in a task\n"
 "\t    --task-desc     returns the description of a task\n"
 msgstr ""
-"Használat módja:\n"
+"Használat:\n"
 "tasksel install <metacsomag>\n"
-"tasksel [kapcsolók]; a kapcsolók a következőkből kerülhetnek ki:\n"
-"\t-t, --test           teszt mód; nem hajtja végre élesben a telepítést\n"
-"\t-r, --required       minden \"required\" (szükséges) prioritású csomag "
-"telepítése\n"
-"\t-i, --important      minden \"important\" (fontos) prioritású csomag "
-"telepítése\n"
-"\t-s, --standard       minden \"standard\" prioritású csomag telepítése\n"
-"\t-n, --no-ui          nem mutat UI-t; általában az -r vagy -i kapcsolókkal "
-"használatos\n"
-"\t    --new-install    bizonyos metacsomagok automatikus telepítése\n"
-"\t    --list-tasks     megjelenítendő metacsomagok listázása majd kilépés\n"
-"\t    --task-packages  metacsomagban szereplő csomagok listázása\n"
-"\t    --task-desc      metacsomag leírása\n"
+"tasksel remove <metacsomag>\n"
+"tasksel [kapcsolók]\n"
+"\t-t, --test          teszt mód; nem végzi el valójában a műveletet\n"
+"\t    --new-install   egyes metacsomagok automatikus telepítése\n"
+"\t    --list-tasks    megjelenítendő metacsomagok listázása majd kilépés\n"
+"\t    --task-packages adott metacsomag csomagjainak listája\n"
+"\t    --task-desc     metacsomag leírása\n"
 
-#: ../tasksel.pl:509 ../tasksel.pl:525 ../tasksel.pl:542
+#: ../tasksel.pl:509
+#: ../tasksel.pl:525
+#: ../tasksel.pl:542
 msgid "aptitude failed"
 msgstr "aptitude-hiba"
-
-#~ msgid ""
-#~ "ignoring other selected packages in favour of manual package selection"
-#~ msgstr ""
-#~ "kézzel kiválasztott csomagok előnyben részesítése az egyéb választásokkal "
-#~ "szemben"
-
-#~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "Nincs elég memória a felsorolási puffer számára"
-
-#~ msgid ""
-#~ "Fatal error encountered at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "Helyrehozhatatlan hiba: %s:%d\n"
-#~ "\t"
-
-#~ msgid ""
-#~ "I/O error at %s:%d\n"
-#~ "\t"
-#~ msgstr ""
-#~ "I/O hiba: %s:%d\n"
-#~ "\t"
-
-#~ msgid "(no description)"
-#~ msgstr "(leírás nem érhető el)"
-
-#~ msgid "End-user"
-#~ msgstr "Végfelhasználói"
-
-#~ msgid "Hardware Support"
-#~ msgstr "Hardvertámogatás"
-
-#~ msgid "Servers"
-#~ msgstr "Kiszolgálók"
-
-#~ msgid "Development"
-#~ msgstr "Fejlesztés"
-
-#~ msgid "Localization"
-#~ msgstr "Nyelvi testreszabás"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Egyéb"
-
-#~ msgid "Unable to initialize the terminal"
-#~ msgstr "A terminál megnyitása nem sikerült"
-
-#~ msgid "Unable to initialize screen output"
-#~ msgstr "A képernyőre irányuló kimenet megnyitása nem sikerült"
-
-#~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "A billentyűzet inicializása nem sikerült"
-
-#~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr "Debian metacsomag-telepítő v%s - (c) 1999-2004 SPI és mások"
-
-#~ msgid "^Finish"
-#~ msgstr "^Befejezés"
-
-#~ msgid "Task ^Info"
-#~ msgstr "Metacsomag-^Info"
-
-#~ msgid "^Help"
-#~ msgstr "^Súgó"
-
-#~ msgid "Select tasks to install"
-#~ msgstr "Telepítendő metacsomagok kiválasztása"
-
-#~ msgid "Ok"
-#~ msgstr "Ok"
-
-#~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Indexhatár túllépése: %d >= %d"
-
-#~ msgid "Help"
-#~ msgstr "Súgó"
-
-#~ msgid ""
-#~ "Tasks allow you to quickly install a selection of packages that performs "
-#~ "a given task.\n"
-#~ "\n"
-#~ "The main chooser list shows a list of tasks that you can choose to "
-#~ "install. The arrow keys moves the cursor. Pressing ENTER or the SPACEBAR "
-#~ "toggles the selection of the task at the cursor. You can also press A to "
-#~ "select all tasks, or N to deselect all tasks. Pressing Q will exit this "
-#~ "program and begin installation of your selected tasks.\n"
-#~ "\n"
-#~ "Thank you for using Debian.\n"
-#~ "\n"
-#~ "Press enter to return to the task selection screen"
-#~ msgstr ""
-#~ "A metacsomagok révén gyorsan telepíthet fel bizonyos feladatokat "
-#~ "megkönnyítő csomagösszeállításokat \n"
-#~ "\n"
-#~ "A fő lista a telepíthető metacsomagokat mutatja. A kurzort a nyilakkal "
-#~ "mozgathatja. Az ENTER vagy a SPACE az aktuális metacsomag kiválasztott "
-#~ "voltát változtatja. Az A lenyomása az összes metacsomagot kiválasztja, az "
-#~ "N pedig az összes kiválasztást törli. A Q gombbal kilép a programból és "
-#~ "megindul a metacsomagok telepítése.\n"
-#~ "\n"
-#~ "Köszönjük, hogy a Debiant használja.\n"
-#~ "\n"
-#~ "Az ENTER gombbal most visszajut a metacsomag-választó képernyőre"
-
-#~ msgid ""
-#~ "Description:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Included packages:\n"
-#~ msgstr ""
-#~ "Leírás:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Feltelepített csomagok:\n"
-
-#~ msgid "(no description available)"
-#~ msgstr "(leírás nem érhető el)"
-
-#~ msgid "Unknown signal seen"
-#~ msgstr "Ismeretlen jelzés (signal)"
-
-#~ msgid "tasksel install <task>\n"
-#~ msgstr "tasksel install <task>\n"
-
-#~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr "tasksel [kapcsolók]; a kapcsolók a következőkből kerülhetnek ki:\n"
-
-#~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- teszt mód; kilépéskor nem futtatja az apt-get-et"
-
-#~ msgid ""
-#~ "-q -- queue installs; do not install packages with apt-get;\n"
-#~ "\t\tjust queue them in dpkg"
-#~ msgstr ""
-#~ "-q -- várakozósorba tevés; a csomagokat nem telepíti az apt-get-tel;\n"
-#~ "\t\tcsak a dpkg várakozósorába teszi be őket"
-
-#~ msgid "-r -- install all required-priority packages"
-#~ msgstr ""
-#~ "-r -- az összes \"required\" (szükséges) prioritású csomag telepítése"
-
-#~ msgid "-i -- install all important-priority packages"
-#~ msgstr "-i -- az összes \"important\" (fontos) prioritású csomag telepítése"
-
-#~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- az összes \"standard\" prioritású csomag telepítése"
-
-#~ msgid "-n -- don't show UI; use with -r or -i usually"
-#~ msgstr ""
-#~ "-n -- nem mutat UI-t; általában az -r vagy -i kapcsolókkal használatos"
-
-#~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr ""
-#~ "-a -- minden metacsomag kijelzése, még az alárendelt csomagokat nem "
-#~ "tartalmazóké is"
-
-#~ msgid "No packages selected\n"
-#~ msgstr "Nincs kiválasztva egy csomag sem\n"
-
-#~ msgid "No tasks found on this system.\n"
-#~ msgstr "A rendszer felderítése egy metacsomagot sem talált.\n"
-
-#~ msgid "Cannot allocate memory for strdup"
-#~ msgstr "Nem sikerült strdup (stringmásolás) céljára memóriát foglalni"
-
-#~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "Nem sikerült %d bájtnyi memóriát lefoglalni"
-
-#~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "Nem sikerült %d bájtnyi memóriát újrafoglalni"
-
-#, fuzzy
-#~ msgid ""
-#~ "No tasks found on this system.\n"
-#~ "Did you update your available file? Try running dselect update.\n"
-#~ msgstr ""
-#~ "Task csomagok nem talĂĄlhatĂłak a rendszeren.\n"
-#~ "FrissĂ­tetted az available file-odat?"
-
-#~ msgid "Debian Task Installer"
-#~ msgstr "Debian Task telepĂ­tĹ"
