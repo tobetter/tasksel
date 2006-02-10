@@ -8,17 +8,16 @@
 # or http://www.debian.org/intl/l10n/po-debconf/README-trans
 # Developers do not need to manually edit POT or PO files.
 # , fuzzy
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 2.00 debconf\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-01-19 14:32-0500\n"
-"PO-Revision-Date: 2004-06-27 14:02+0200\n"
-"Last-Translator: VERÓK István <vi@fsf.hu>\n"
-"Language-Team: Debian Hungarian Localization Team <debian-l10n-"
-"hungarian@lists.debian.org>\n"
+"PO-Revision-Date: 2006-02-10 20:39+0100\n"
+"Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
+"Language-Team: Debian Hungarian Localization Team <debian-l10n-hungarian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,16 +25,8 @@ msgstr ""
 #. Type: multiselect
 #. Description
 #: ../templates:5
-#, fuzzy
-msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
-"predefined collections of software."
-msgstr ""
-"Jelenleg csak a legszükségesebb Debian-csomagok vannak telepítve. Saját "
-"igényei szerint a további, előre összeválogatott csomaggyűjteményeket is "
-"telepítheti. Tapasztaltabb felhasználók számára a csomagok egyenkénti "
-"sajátkezű összeválogatásának lehetősége is nyitva áll."
+msgid "At the moment, only the core of Debian is installed. To tune the system to your needs, you can choose to install one or more of the following predefined collections of software."
+msgstr "A Debian alaprendszer telepítés kész. Most jön az egyéni igényeknek megfelelő kialakítás. Ez az alábbi nagy szoftver összeállítások telepítésével is elkezdhető."
 
 #. Type: multiselect
 #. Choices
@@ -53,16 +44,15 @@ msgstr "Telepíthető szoftverek:"
 #. Type: multiselect
 #. Description
 #: ../templates:14
-msgid ""
-"You can choose to install one or more of the following predefined "
-"collections of software."
-msgstr "A következő, előre összeválogatott csomaggyűjteményeket telepítheti."
+msgid "You can choose to install one or more of the following predefined collections of software."
+msgstr "A következő, előre összeválogatott szoftver gyűjtemények telepíthetők."
 
 #. Type: title
 #. Description
 #: ../templates:20
 msgid "Debian software selection"
-msgstr "Debian-szoftverek választéka"
+msgstr "Debian szoftver gyűjtemények"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, csomagok kézi kiválasztása"
+
