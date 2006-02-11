@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-29 09:22+0100\n"
+"POT-Creation-Date: 2006-02-11 10:12+0100\n"
 "PO-Revision-Date: 2006-01-29 17:43+0100\n"
 "Last-Translator: Jacobo Tarrío <jtarrio@debian.org>\n"
 "Language-Team: Galician <trasno@ceu.fi.udc.es>\n"
@@ -469,11 +469,39 @@ msgstr "Esta tarefa adapta o escritorio ao hindi."
 
 #. Description
 #: ../po/debian-tasks.desc:337
+#, fuzzy
+msgid "Hungarian environment"
+msgstr "Ambiente en búlgaro"
+
+#. Description
+#: ../po/debian-tasks.desc:337
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Hungarian to help Hungarian "
+"speaking people use Debian."
+msgstr ""
+"Esta tarefa instala paquetes e documentación en italiano para axudar aos "
+"falantes de italiano a empregar Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:345
+#, fuzzy
+msgid "Hungarian desktop"
+msgstr "Escritorio en búlgaro"
+
+#. Description
+#: ../po/debian-tasks.desc:345
+#, fuzzy
+msgid "This task localises the desktop in Hungarian."
+msgstr "Esta tarefa adapta o escritorio ao búlgaro."
+
+#. Description
+#: ../po/debian-tasks.desc:352
 msgid "Italian environment"
 msgstr "Ambiente en italiano"
 
 #. Description
-#: ../po/debian-tasks.desc:337
+#: ../po/debian-tasks.desc:352
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -482,22 +510,22 @@ msgstr ""
 "falantes de italiano a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:348
+#: ../po/debian-tasks.desc:363
 msgid "Italian desktop"
 msgstr "Escritorio en italiano"
 
 #. Description
-#: ../po/debian-tasks.desc:348
+#: ../po/debian-tasks.desc:363
 msgid "This task localises the desktop in Italian."
 msgstr "Esta tarefa adapta o escritorio ao italiano."
 
 #. Description
-#: ../po/debian-tasks.desc:355
+#: ../po/debian-tasks.desc:370
 msgid "Japanese environment"
 msgstr "Ambiente en xaponés"
 
 #. Description
-#: ../po/debian-tasks.desc:355
+#: ../po/debian-tasks.desc:370
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -506,22 +534,22 @@ msgstr ""
 "de xaponés."
 
 #. Description
-#: ../po/debian-tasks.desc:367
+#: ../po/debian-tasks.desc:382
 msgid "Japanese desktop environment"
 msgstr "Ambiente de escritorio en xaponés"
 
 #. Description
-#: ../po/debian-tasks.desc:367
+#: ../po/debian-tasks.desc:382
 msgid "This task localises the desktop in Japanese."
 msgstr "Esta tarefa adapta o escritorio ao xaponés."
 
 #. Description
-#: ../po/debian-tasks.desc:374
+#: ../po/debian-tasks.desc:389
 msgid "Korean environment"
 msgstr "Ambiente en coreano"
 
 #. Description
-#: ../po/debian-tasks.desc:374
+#: ../po/debian-tasks.desc:389
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
@@ -530,32 +558,32 @@ msgstr ""
 "de coreano."
 
 #. Description
-#: ../po/debian-tasks.desc:386
+#: ../po/debian-tasks.desc:401
 msgid "Korean desktop"
 msgstr "Escritorio en coreano"
 
 #. Description
-#: ../po/debian-tasks.desc:386
+#: ../po/debian-tasks.desc:401
 msgid "This task localises the desktop in Korean."
 msgstr "Esta tarefa adapta o escritorio ao coreano."
 
 #. Description
-#: ../po/debian-tasks.desc:393
+#: ../po/debian-tasks.desc:408
 msgid "Laptop"
 msgstr "Portátil"
 
 #. Description
-#: ../po/debian-tasks.desc:393
+#: ../po/debian-tasks.desc:408
 msgid "This task installs software useful for a laptop."
 msgstr "Esta tarefa instala software útil para un ordenador portátil."
 
 #. Description
-#: ../po/debian-tasks.desc:400
+#: ../po/debian-tasks.desc:415
 msgid "Lithuanian environment"
 msgstr "Ambiente en lituano"
 
 #. Description
-#: ../po/debian-tasks.desc:400
+#: ../po/debian-tasks.desc:415
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -564,22 +592,22 @@ msgstr ""
 "falantes de lituano a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:410
+#: ../po/debian-tasks.desc:425
 msgid "Lithuanian desktop"
 msgstr "Escritorio en lituano"
 
 #. Description
-#: ../po/debian-tasks.desc:410
+#: ../po/debian-tasks.desc:425
 msgid "This task localises the desktop in Lithuanian."
 msgstr "Esta tarefa adapta o escritorio ao lituano."
 
 #. Description
-#: ../po/debian-tasks.desc:417
+#: ../po/debian-tasks.desc:432
 msgid "Mail server"
 msgstr "Servidor de correo"
 
 #. Description
-#: ../po/debian-tasks.desc:417
+#: ../po/debian-tasks.desc:432
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -588,22 +616,22 @@ msgstr ""
 "correo de propósito xeral."
 
 #. Description
-#: ../po/debian-tasks.desc:427
+#: ../po/debian-tasks.desc:442
 msgid "manual package selection"
 msgstr "selección manual de paquetes"
 
 #. Description
-#: ../po/debian-tasks.desc:427
+#: ../po/debian-tasks.desc:442
 msgid "Manually select packages to install in aptitude."
 msgstr "Escoller manualmente os paquetes para instalar en aptitude."
 
 #. Description
-#: ../po/debian-tasks.desc:434
+#: ../po/debian-tasks.desc:449
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Ambiente en noruegués (bokmaal e nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:434
+#: ../po/debian-tasks.desc:449
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -612,17 +640,17 @@ msgstr ""
 "falantes de noruegués a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:445
+#: ../po/debian-tasks.desc:460
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "Escritorio en noruegués (bokmaal e nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:445
+#: ../po/debian-tasks.desc:460
 msgid "This task localises the desktop in Norwegian."
 msgstr "Esta tarefa adapta o escritorio ao noruegués."
 
 #. Description
-#: ../po/debian-tasks.desc:452
+#: ../po/debian-tasks.desc:467
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Persian speakers to use Debian."
@@ -631,22 +659,22 @@ msgstr ""
 "documentación que facilitan o emprego de Debian aos falantes de persa."
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:478
 msgid "Persian environment"
 msgstr "Ambiente en persa"
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:478
 msgid "This task localises the desktop in Persian."
 msgstr "Esta tarefa adapta o escritorio ao persa."
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:485
 msgid "Polish environment"
 msgstr "Ambiente en polaco"
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:485
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -655,28 +683,28 @@ msgstr ""
 "falantes de polaco a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:496
 msgid "Polish desktop"
 msgstr "Escritorio en polaco"
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:496
 msgid "This task localises the desktop in Polish."
 msgstr "Esta tarefa adapta o escritorio ao polaco."
 
 #. Description
-#: ../po/debian-tasks.desc:489
+#: ../po/debian-tasks.desc:504
 msgid "Print server"
 msgstr "Servidor de impresión"
 
 #. Description
-#: ../po/debian-tasks.desc:489
+#: ../po/debian-tasks.desc:504
 msgid "This task sets up your system to be a print server."
 msgstr ""
 "Esta tarefa configura o seu sistema para que sexa un servidor de impresión."
 
 #. Description
-#: ../po/debian-tasks.desc:499
+#: ../po/debian-tasks.desc:514
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Punjabi speakers to use Debian."
@@ -685,22 +713,22 @@ msgstr ""
 "documentación que facilitan o emprego de Debian aos falantes de punjabi."
 
 #. Description
-#: ../po/debian-tasks.desc:510
+#: ../po/debian-tasks.desc:525
 msgid "Punjabi environment"
 msgstr "Ambiente en punjabi"
 
 #. Description
-#: ../po/debian-tasks.desc:510
+#: ../po/debian-tasks.desc:525
 msgid "This task localises the desktop in Punjabi."
 msgstr "Esta tarefa adapta o escritorio ao punjabi."
 
 #. Description
-#: ../po/debian-tasks.desc:517
+#: ../po/debian-tasks.desc:532
 msgid "Romanian environment"
 msgstr "Ambiente en rumano"
 
 #. Description
-#: ../po/debian-tasks.desc:517
+#: ../po/debian-tasks.desc:532
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
@@ -709,22 +737,22 @@ msgstr ""
 "falantes de rumano a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:528
+#: ../po/debian-tasks.desc:543
 msgid "Romanian desktop"
 msgstr "Escritorio en rumano"
 
 #. Description
-#: ../po/debian-tasks.desc:528
+#: ../po/debian-tasks.desc:543
 msgid "This task localises the desktop in Romanian."
 msgstr "Esta tarefa adapta o escritorio ao rumano."
 
 #. Description
-#: ../po/debian-tasks.desc:535
+#: ../po/debian-tasks.desc:550
 msgid "Russian environment"
 msgstr "Ambiente en ruso"
 
 #. Description
-#: ../po/debian-tasks.desc:535
+#: ../po/debian-tasks.desc:550
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -733,22 +761,22 @@ msgstr ""
 "falantes de ruso a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:546
+#: ../po/debian-tasks.desc:561
 msgid "Russian desktop"
 msgstr "Escritorio en ruso"
 
 #. Description
-#: ../po/debian-tasks.desc:546
+#: ../po/debian-tasks.desc:561
 msgid "This task localises the desktop in Russian."
 msgstr "Esta tarefa adapta o escritorio ao ruso."
 
 #. Description
-#: ../po/debian-tasks.desc:553
+#: ../po/debian-tasks.desc:568
 msgid "Slovak environment"
 msgstr "Ambiente en eslovaco"
 
 #. Description
-#: ../po/debian-tasks.desc:553
+#: ../po/debian-tasks.desc:568
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
@@ -757,22 +785,22 @@ msgstr ""
 "falantes de eslovaco a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:561
+#: ../po/debian-tasks.desc:576
 msgid "Slovak desktop"
 msgstr "Escritorio en eslovaco"
 
 #. Description
-#: ../po/debian-tasks.desc:561
+#: ../po/debian-tasks.desc:576
 msgid "This task localises the desktop in Slovak."
 msgstr "Esta tarefa adapta o escritorio ao eslovaco."
 
 #. Description
-#: ../po/debian-tasks.desc:568
+#: ../po/debian-tasks.desc:583
 msgid "Spanish environment"
 msgstr "Ambiente en español"
 
 #. Description
-#: ../po/debian-tasks.desc:568
+#: ../po/debian-tasks.desc:583
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -781,32 +809,32 @@ msgstr ""
 "facilitan o emprego de Debian aos falantes de español"
 
 #. Description
-#: ../po/debian-tasks.desc:579
+#: ../po/debian-tasks.desc:594
 msgid "Spanish desktop"
 msgstr "Escritorio en español"
 
 #. Description
-#: ../po/debian-tasks.desc:579
+#: ../po/debian-tasks.desc:594
 msgid "This task localises the desktop in Spanish."
 msgstr "Esta tarefa adapta o escritorio ao español."
 
 #. Description
-#: ../po/debian-tasks.desc:586
+#: ../po/debian-tasks.desc:601
 msgid "Standard system"
 msgstr "Sistema estándar"
 
 #. Description
-#: ../po/debian-tasks.desc:586
+#: ../po/debian-tasks.desc:601
 msgid "This task installs a reasonably small character-mode system."
 msgstr "Esta tarefa instala un sistema pequeno en modo texto."
 
 #. Description
-#: ../po/debian-tasks.desc:593
+#: ../po/debian-tasks.desc:609
 msgid "Swedish environment"
 msgstr "Ambiente en sueco"
 
 #. Description
-#: ../po/debian-tasks.desc:593
+#: ../po/debian-tasks.desc:609
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -815,22 +843,22 @@ msgstr ""
 "falantes de sueco a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:603
+#: ../po/debian-tasks.desc:619
 msgid "Swedish desktop"
 msgstr "Escritorio en sueco"
 
 #. Description
-#: ../po/debian-tasks.desc:603
+#: ../po/debian-tasks.desc:619
 msgid "This task localises the desktop in Swedish."
 msgstr "Esta tarefa adapta o escritorio ao sueco."
 
 #. Description
-#: ../po/debian-tasks.desc:610
+#: ../po/debian-tasks.desc:626
 msgid "Thai environment"
 msgstr "Ambiente en tailandés"
 
 #. Description
-#: ../po/debian-tasks.desc:610
+#: ../po/debian-tasks.desc:626
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
@@ -839,22 +867,22 @@ msgstr ""
 "de tailandés."
 
 #. Description
-#: ../po/debian-tasks.desc:622
+#: ../po/debian-tasks.desc:638
 msgid "Thai desktop"
 msgstr "Escritorio en tailandés"
 
 #. Description
-#: ../po/debian-tasks.desc:622
+#: ../po/debian-tasks.desc:638
 msgid "This task localises the desktop in Thai."
 msgstr "Esta tarefa adapta o escritorio ao tailandés."
 
 #. Description
-#: ../po/debian-tasks.desc:629
+#: ../po/debian-tasks.desc:645
 msgid "Turkish environment"
 msgstr "Ambiente en turco"
 
 #. Description
-#: ../po/debian-tasks.desc:629
+#: ../po/debian-tasks.desc:645
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -863,22 +891,22 @@ msgstr ""
 "falantes de turco a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:641
+#: ../po/debian-tasks.desc:657
 msgid "Turkish desktop"
 msgstr "Escritorio en turco"
 
 #. Description
-#: ../po/debian-tasks.desc:641
+#: ../po/debian-tasks.desc:657
 msgid "This task localises the desktop in Turkish."
 msgstr "Esta tarefa adapta o escritorio ao turco."
 
 #. Description
-#: ../po/debian-tasks.desc:648
+#: ../po/debian-tasks.desc:664
 msgid "Ukrainian environment"
 msgstr "Ambiente en ucraíno"
 
 #. Description
-#: ../po/debian-tasks.desc:648
+#: ../po/debian-tasks.desc:664
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -887,22 +915,22 @@ msgstr ""
 "falantes de ucraíno a empregar Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:658
+#: ../po/debian-tasks.desc:674
 msgid "Ukrainian desktop"
 msgstr "Escritorio en ucraíno"
 
 #. Description
-#: ../po/debian-tasks.desc:658
+#: ../po/debian-tasks.desc:674
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Esta tarefa adapta o escritorio ao ucraíno."
 
 #. Description
-#: ../po/debian-tasks.desc:666
+#: ../po/debian-tasks.desc:682
 msgid "Web server"
 msgstr "Servidor web"
 
 #. Description
-#: ../po/debian-tasks.desc:666
+#: ../po/debian-tasks.desc:682
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:41+0200\n"
+"POT-Creation-Date: 2006-01-18 23:04+0900\n"
 "PO-Revision-Date: 2005-03-31 11:17+0200\n"
 "Last-Translator: Jaonary Rabarisoa <mpandikateny@linuxmg.org>\n"
 "Language-Team: Malagasy <mpandikateny@linuxmg.org>\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10\n"
 
-#: ../tasksel.pl:305
+#: ../tasksel.pl:358
 #, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [options]; where options is any combination of:\n"
+"tasksel [options]\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
@@ -43,6 +43,6 @@ msgstr ""
 "\t    --task-packages list available packages in a task\n"
 "\t    --task-desc     returns the description of a task\n"
 
-#: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
+#: ../tasksel.pl:557 ../tasksel.pl:575 ../tasksel.pl:586
 msgid "aptitude failed"
 msgstr "Tsy nandeha aptitude"
