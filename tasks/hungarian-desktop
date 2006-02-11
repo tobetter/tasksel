@@ -1,0 +1,24 @@
+Task: hungarian-desktop
+Depends: hungarian, desktop
+Section: l10n
+Description: Hungarian desktop
+ This task localises the desktop in Hungarian.
+Key:
+Packages: task-fields
+Packages-list:
+ gsfonts-x11
+ xfonts-biznet-100dpi
+ xfonts-biznet-base
+ ttf-dejavu
+ ttf-junicode
+ ttf-thryomanes
+ ttf-isabella
+ ttf-freefont
+ ttf-opensymbol
+ mozilla-firefox-locale-hu-hu
+ aspell-hu
+ openoffice.org-l10n-hu
+ openoffice.org-hunspell
+ myspell-hu
+ xfonts-terminus
+ kde-i18n-hu
