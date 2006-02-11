@@ -4,7 +4,7 @@ TASKDIR=/usr/share/tasksel
 DESCDIR=tasks
 DESCPO=$(DESCDIR)/po
 VERSION=$(shell expr "`dpkg-parsechangelog 2>/dev/null |grep Version:`" : '.*Version: \(.*\)' | cut -d - -f 1)
-LANGS=ar bg bn bs ca cs cy da de el es et eu fi fr gl he hr hu id it ja ko lt mg mk nb nl nn pa_IN pl pt pt_BR ro ru sk sl sq sv tl tr uk vi zh_CN zh_TW
+LANGS=ar bg bs ca cs cy da de el es et eu fi fr gl he hr hu id it ja ko lt mg mk nb nl nn pa_IN pl pt pt_BR ro ru sk sl sq sv tl tr uk vi zh_CN zh_TW
 LANGS_DESC=ar bg bn bs ca cs cy da de el es et eu fi fr gl he hr hu id it ja ko lt mg mk nb nl nn pa_IN pl pt pt_BR ro ru sk sl sq sv tl tr uk vi zh_CN zh_TW
 LOCALEDIR=$(DESTDIR)/usr/share/locale
 
