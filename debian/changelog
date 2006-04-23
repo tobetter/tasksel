@@ -21,7 +21,10 @@ tasksel (2.43) UNRELEASED; urgency=low
   * Fix the description of the Dutch desktop task to match other
     desktop tasks. Unfuzzy translations.
 
- -- Christian Perrier <bubulle@debian.org>  Sat, 22 Apr 2006 19:45:11 +0200
+  [ Joey Hess ]
+  * Switch back to x-window-system-core until xorg reaches testing.
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 23 Apr 2006 14:47:42 -0400
 
 tasksel (2.42) unstable; urgency=low
 
