@@ -23,8 +23,11 @@ tasksel (2.43) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Switch back to x-window-system-core until xorg reaches testing.
+  * Rename the "Depends" field to "Enhances" which is much closer to what it's
+    actually used for. A task such as french-desktop enchances systems with
+    the desktop and french tasks installed on it.
 
- -- Joey Hess <joeyh@debian.org>  Sun, 23 Apr 2006 14:47:42 -0400
+ -- Joey Hess <joeyh@debian.org>  Sun, 23 Apr 2006 15:58:13 -0400
 
 tasksel (2.42) unstable; urgency=low
 

@@ -18,7 +18,7 @@ debian-tasks.desc to remove tasks.
 
 The file format is a rfc-822 style stanza, with fields named Task, Section,
 Description (which should include an extended description), Key, Packages, 
-Depends, Test- and Relevance fields. Here is an example:
+Enhances, Test- and Relevance fields. Here is an example:
 
 Task: graphical-games
 Section: user
@@ -76,9 +76,12 @@ handles this by comparing the value of the Test-lang field of a task with
 the locale setting. Tests could also be used for things like automatically
 installing hardware support tasks on systems with the right hardware.
 
-There is rudimentary support for tasks that depend on other tasks. If a
-task has a Depends field, then it should only be installed if all the tasks
-listed as dependencies are installed.
+There is support for tasks that enhance other tasks. If a task has a
+Enhances field, then it should only be installed if all the tasks
+listed as in that field are installed. For example, a french-desktop task
+enchances a system that has both the french and desktop tasks, and will be
+automatically installed on such a system but not others. Such tasks are
+hidden from the menu.
 
 If a task is important enough that it should go near the top of its
 section, give it a relevance of 9 or 10. If a task is not likely to be

@@ -290,11 +290,11 @@ sub task_test {
 	return $task;
 }
 
-# Hides a task and marks it not to be installed if it depends on other
+# Hides a task and marks it not to be installed if it enhances other
 # tasks.
-sub hide_dependent_tasks {
+sub hide_enhancing_tasks {
 	my $task=shift;
-	if (exists $task->{depends} && length $task->{depends}) {
+	if (exists $task->{enhances} && length $task->{enhances}) {
 		$task->{_display} = 0;
 		$task->{_install} = 0;
 	}
@@ -425,7 +425,7 @@ sub main {
 
 	# This is relatively expensive, get the full list of available tasks and
 	# mark them.
-	my @tasks=map { hide_dependent_tasks($_) } map { task_test($_, $options{"new-install"}) }
+	my @tasks=map { hide_enhancing_tasks($_) } map { task_test($_, $options{"new-install"}) }
 	          grep { task_avail($_) } all_tasks();
 	
 	if ($options{"list-tasks"}) {
@@ -507,11 +507,11 @@ sub main {
 		}
 	}
 
-	# Mark dependenent tasks for install if their dependencies are met.
+	# Mark enhancing tasks for install if their dependencies are met.
 	foreach my $task (@tasks) {
-		if (! $task->{_install} && exists $task->{depends} && length $task->{depends} ) {
+		if (! $task->{_install} && exists $task->{enhances} && length $task->{enhances} ) {
 			$task->{_install} = 1;
-			foreach my $dep (split(', ', $task->{depends})) {
+			foreach my $dep (split(', ', $task->{enhances})) {
 				if (! grep { $_->{task} eq $dep && $_->{_install} } @tasks) {
 					$task->{_install} = 0;
 				}
