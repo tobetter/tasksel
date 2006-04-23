@@ -1,7 +1,5 @@
 tasksel (2.43) UNRELEASED; urgency=low
 
-  * Add menu-xdg to gnome desktop task to enable Debian menus there.
-
   [ Miroslav Kure ]
     - Added aspell-cs to the Czech task
 
@@ -22,6 +20,7 @@ tasksel (2.43) UNRELEASED; urgency=low
     desktop tasks. Unfuzzy translations.
 
   [ Joey Hess ]
+  * Add menu-xdg to gnome desktop task to enable Debian menus there.
   * Switch back to x-window-system-core until xorg reaches testing.
   * Rename the "Depends" field to "Enhances" which is much closer to what it's
     actually used for. A task such as french-desktop enchances systems with
