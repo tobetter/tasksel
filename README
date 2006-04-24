@@ -83,6 +83,9 @@ enchances a system that has both the french and desktop tasks, and will be
 automatically installed on such a system but not others. Such tasks are
 hidden from the menu.
 
+If two enhancing tasks have the same Provides field, then tasksel will
+try to avoid selecting them both.
+
 If a task is important enough that it should go near the top of its
 section, give it a relevance of 9 or 10. If a task is not likely to be
 used, give it a relevance of 1. Default is 5.

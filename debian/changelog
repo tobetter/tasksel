@@ -32,9 +32,6 @@ tasksel (2.43) UNRELEASED; urgency=low
     the new one & in testing now.
   * Run test scripts for enhancing tasks after task selection, to determine
     whether to install them.
-  * If an enhancing task is selected (by preseeding), make sure to select
-    the tasks it enhances too, but not other tasks that enhance them in
-    turn.
   * kde-desktop task is back. Not installed as part of the desktop task, and
     still hidden from the menu. But:
   * Support preseeding tasks to install using the task name, which is shorter
@@ -43,8 +40,16 @@ tasksel (2.43) UNRELEASED; urgency=low
   * Add kpackage to kde-desktop.
   * Move synaptic to gnome-desktop.
   * Add kdm to kde-desktop. Note that gdm is pulled in via gnome-desktop only.
+  * Add a Provides field, this is used to let tasksel know if two alternate
+    tasks, such as gnome-desktop and kde-desktop provide the same essential
+    thing. If so, tasksel will try to avoid selecting both for install.
+  * If an enhancing task is selected (by preseeding), make sure to select
+    the tasks it enhances too. The add any other tasks that also enhnce
+    those tasks, unless they provide the same thing. In other words, this
+    allows preseeding kde-desktop, and getting desktop and any appropriate
+    lang-desktop, but not gnome-desktop.
 
- -- Joey Hess <joeyh@debian.org>  Mon, 24 Apr 2006 13:56:58 -0400
+ -- Joey Hess <joeyh@debian.org>  Mon, 24 Apr 2006 14:16:05 -0400
 
 tasksel (2.42) unstable; urgency=low
 

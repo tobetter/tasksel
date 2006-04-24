@@ -506,29 +506,40 @@ sub main {
 		}
 	}
 
-	my @enhanced_install;
-	foreach my $task (grep { exists $_->{enhances} &&
+	# Select enhancing tasks for install.
+	my %provided;
+	foreach my $task (grep { $_->{_install} && exists $_->{enhances} &&
 	                         length $_->{enhances} } @tasks) {
-		if (! $task->{_install}) {
-			# Mark enhancing tasks for install if their
-			# dependencies are met and if their test fields
-			# mark them for install.
-			task_test($task, $options{"new-install"}, 0, 1);
-			foreach my $dep (list_to_tasks($task->{enhances}, @tasks)) {
-				if (! $dep->{_install}) {
-					$task->{_install} = 0;
-				}
-			}
-		}
-		else {
-			# If an enhancing task is already marked for
-			# install, probably by preseeding, mark the tasks
-			# it enhances for install.
-			push @enhanced_install, list_to_tasks($task->{enhances}, @tasks);
+		# If an enhancing task is already marked for
+		# install, probably by preseeding, mark the tasks
+		# it enhances for install.
+		map { $_->{_install}=1 } list_to_tasks($task->{enhances}, @tasks);
+		if (exists $task->{provides} && length $task->{provides}) {
+			$provided{$task->{provides}}=1;
 		}
 	}
-
-	map { $_->{_install} = 1 } @enhanced_install;
+	foreach my $task (grep { ! $_->{_install} && exists $_->{enhances} &&
+	                         length $_->{enhances} } @tasks) {
+		# Mark enhancing tasks for install if their
+		# dependencies are met and if their test fields
+		# mark them for install.
+		task_test($task, $options{"new-install"}, 0, 1);
+		foreach my $dep (list_to_tasks($task->{enhances}, @tasks)) {
+			if (! $dep->{_install}) {
+				$task->{_install} = 0;
+			}
+		}
+		# If two enhancing tasks that both provide
+		# the same thing, only install one of them.
+		if ($task->{_install} && exists $task->{provides} &&
+		    length $task->{provides}) {
+			if (exists $provided{$task->{provides}}) {
+				$task->{_install}=0;
+			}
+			print "$task provides: $task->{provides}\n";
+			$provided{$task->{provides}}=1;
+		}
+	}
 
 	# Add tasks to install and see if any selected task requires manual
 	# selection.
