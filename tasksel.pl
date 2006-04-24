@@ -259,10 +259,9 @@ sub task_packages {
 sub task_test {
 	my $task=shift;
 	my $new_install=shift;
+	$task->{_display} = shift; # default
+	$task->{_install} = shift; # default
 	$ENV{NEW_INSTALL}=$new_install if defined $new_install;
-	
-	$task->{_display} = 1;
-	$task->{_install} = 0;
 	foreach my $test (grep /^test-.*/, keys %$task) {
 		$test=~s/^test-//;
 		if (-x "$testdir/$test") {
@@ -314,11 +313,11 @@ sub task_to_debconf {
 }
 
 # Given a first parameter that is a debconf list of short descriptions of
-# tasks, and then a list of task hashes, returns a list of hashes for all
-# the tasks in the debconf list.
-sub debconf_to_task {
+# tasks, or a dependency style list of task names, and then a list of task
+# hashes, returns a list of hashes for all the tasks in the list.
+sub list_to_tasks {
 	my $list=shift;
-	my %desc_to_task = map { $_->{shortdesc} => $_ } @_;
+	my %desc_to_task = map { $_->{shortdesc} => $_, $_->{task} => $_ } @_;
 	return grep { defined } map { $desc_to_task{$_} } split ", ", $list;
 }
 
@@ -425,7 +424,7 @@ sub main {
 
 	# This is relatively expensive, get the full list of available tasks and
 	# mark them.
-	my @tasks=map { hide_enhancing_tasks($_) } map { task_test($_, $options{"new-install"}) }
+	my @tasks=map { hide_enhancing_tasks($_) } map { task_test($_, $options{"new-install"}, 1, 0) }
 	          grep { task_avail($_) } all_tasks();
 	
 	if ($options{"list-tasks"}) {
@@ -494,7 +493,7 @@ sub main {
 		
 		# Set _install flags based on user selection.
 		map { $_->{_install} = 0 } @list;
-		foreach my $task (debconf_to_task($ret, @tasks)) {
+		foreach my $task (list_to_tasks($ret, @tasks)) {
 			if (! $task->{_installed}) {
 				$task->{_install} = 1;
 			}
@@ -507,17 +506,29 @@ sub main {
 		}
 	}
 
-	# Mark enhancing tasks for install if their dependencies are met.
-	foreach my $task (@tasks) {
-		if (! $task->{_install} && exists $task->{enhances} && length $task->{enhances} ) {
-			$task->{_install} = 1;
-			foreach my $dep (split(', ', $task->{enhances})) {
-				if (! grep { $_->{task} eq $dep && $_->{_install} } @tasks) {
+	my @enhanced_install;
+	foreach my $task (grep { exists $_->{enhances} &&
+	                         length $_->{enhances} } @tasks) {
+		if (! $task->{_install}) {
+			# Mark enhancing tasks for install if their
+			# dependencies are met and if their test fields
+			# mark them for install.
+			task_test($task, $options{"new-install"}, 0, 1);
+			foreach my $dep (list_to_tasks($task->{enhances}, @tasks)) {
+				if (! $dep->{_install}) {
 					$task->{_install} = 0;
 				}
 			}
 		}
+		else {
+			# If an enhancing task is already marked for
+			# install, probably by preseeding, mark the tasks
+			# it enhanes for install, but avoid pulling in
+			# other enahncers.
+			push @enhanced_install, list_to_tasks($task->{enhances}, @tasks);
+		}
 	}
+	map { $_->{_install} = 1 } @enhanced_install;
 
 	# Add tasks to install and see if any selected task requires manual
 	# selection.

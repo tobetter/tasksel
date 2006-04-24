@@ -2,6 +2,7 @@ Task: kde-desktop
 Relevance: 8
 Section: user
 Enhances: desktop
+# Don't install this by default, gnome is the default ATM.
 Test-new-install: skip skip
 Description: KDE desktop environment
  This task provides basic "desktop" software using the K Desktop
