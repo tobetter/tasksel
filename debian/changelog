@@ -40,8 +40,11 @@ tasksel (2.43) UNRELEASED; urgency=low
   * Support preseeding tasks to install using the task name, which is shorter
     and nicer for preseeding than the short description. So for example,
     you can boot with tasksel/first=kde-desktop ..
+  * Add kpackage to kde-desktop.
+  * Move synaptic to gnome-desktop.
+  * Add kdm to kde-desktop. Note that gdm is pulled in via gnome-desktop only.
 
- -- Christian Perrier <bubulle@debian.org>  Mon, 24 Apr 2006 14:17:15 +0200
+ -- Joey Hess <joeyh@debian.org>  Mon, 24 Apr 2006 13:56:58 -0400
 
 tasksel (2.42) unstable; urgency=low
 

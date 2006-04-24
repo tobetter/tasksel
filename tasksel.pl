@@ -523,11 +523,11 @@ sub main {
 		else {
 			# If an enhancing task is already marked for
 			# install, probably by preseeding, mark the tasks
-			# it enhanes for install, but avoid pulling in
-			# other enahncers.
+			# it enhances for install.
 			push @enhanced_install, list_to_tasks($task->{enhances}, @tasks);
 		}
 	}
+
 	map { $_->{_install} = 1 } @enhanced_install;
 
 	# Add tasks to install and see if any selected task requires manual
