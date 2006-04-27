@@ -36,13 +36,14 @@ Packages: list
 The Key field lists packages that are essential to the task. If those
 packages are not available, then the task will not be available either. It
 need not list all the packages in the task, if some only serve to make it
-better when they are available. All Key packages will be selected for
-installation when a task is installed.
+better when they are available.
 
 The Packages field tells how to get a complete list of packages that are in
 the task. In the example above, it uses the "list" method, which is defined
 in /usr/lib/tasksel/packages/list. This simple method just lets you list
 the packages you want to include in the task in the following lines.
+All Key packages will be also be selected for installation when a task is
+installed.
 
 In Debian, we mostly use the "task-fields" method, which is built into
 tasksel, and looks for Task fields in the control data of available
