@@ -15,8 +15,26 @@ Packages-list:
   gnome-screensaver
 # allow totem to play theora files
   libtheora0
-  openoffice.org-gnome
 # enable debian menus
   menu-xdg
+# gnome menu editing
+  alacarte
 # package management
   synaptic
+  update-notifier
+# click on deb to install
+  gdebi
+# everyone uses bittorrent these days, right?
+  gnome-btdownload
+# and rss. epiphany integrates with liferea
+  liferea
+# and does instant messanging
+  gaim
+# and word processing
+  openoffice.org-gnome
+# and like clones of exchange with far too many features for some reason
+  evolution-exchange
+  evolution-plugins
+  evolution-webcal
+# various applets that are useful to have
+  deskbar-applet
