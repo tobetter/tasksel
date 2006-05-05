@@ -11,11 +11,8 @@ Key:
   gnome-desktop-environment
 Packages: task-fields
 Packages-list:
-# gnome whines if there's no xscreensaver
-  xscreensaver
   gnome
-# a screen saver does silly things without this
-  fortune-mod
+  gnome-screensaver
 # allow totem to play theora files
   libtheora0
   openoffice.org-gnome
