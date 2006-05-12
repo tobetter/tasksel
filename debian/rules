@@ -26,6 +26,7 @@ install-stamp: build-stamp
 	dh_clean -k
 	dh_installdirs
 	$(MAKE) install DESTDIR=`pwd`/debian/tasksel
+	$(MAKE) install-data DESTDIR=`pwd`/debian/tasksel-data
 	touch install-stamp
 
 binary-arch: build install

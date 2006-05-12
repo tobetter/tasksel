@@ -30,31 +30,44 @@ updatetaskspo:
 	$(MAKE) -C $(DESCPO) update LANGS="$(LANGS_DESC)"
 
 install:
-	install -d $(DESTDIR)/usr/bin $(DESTDIR)$(TASKDIR) \
+	install -d $(DESTDIR)/usr/bin \
 		$(DESTDIR)/usr/lib/tasksel/tests \
-		$(DESTDIR)/usr/lib/tasksel/info \
 		$(DESTDIR)/usr/lib/tasksel/packages \
 		$(DESTDIR)/usr/share/man/man8
 	install -m 755 tasksel.pl $(DESTDIR)/usr/bin/tasksel
 	install -m 755 tasksel-debconf $(DESTDIR)/usr/lib/tasksel/
-	install -m 0644 $(TASKDESC) $(DESTDIR)$(TASKDIR)
+	install -m 755 tests/new-install $(DESTDIR)/usr/lib/tasksel/tests/
+	install -m 755 tests/debconf $(DESTDIR)/usr/lib/tasksel/tests/
+	install -m 755 tests/lang $(DESTDIR)/usr/lib/tasksel/tests/
+	install -m 755 packages/list $(DESTDIR)/usr/lib/tasksel/packages/
 	pod2man --section=8 --center "Debian specific manpage" --release $(VERSION) tasksel.pod | gzip -9c > $(DESTDIR)/usr/share/man/man8/tasksel.8.gz
 	for lang in $(LANGS); do \
 		[ ! -d $(LOCALEDIR)/$$lang/LC_MESSAGES/ ] && mkdir -p $(LOCALEDIR)/$$lang/LC_MESSAGES/; \
 		install -m 644 po/$$lang.mo $(LOCALEDIR)/$$lang/LC_MESSAGES/tasksel.mo; \
 	done
-	for lang in $(LANGS_DESC); do \
-		[ ! -d $(LOCALEDIR)/$$lang/LC_MESSAGES/ ] && mkdir -p $(LOCALEDIR)/$$lang/LC_MESSAGES/; \
-		install -m 644 tasks/po/$$lang.mo $(LOCALEDIR)/$$lang/LC_MESSAGES/$(DOMAIN).mo; \
-	done
+
+install-data:
+	install -d $(DESTDIR)$(TASKDIR) \
+		$(DESTDIR)/usr/lib/tasksel/tests \
+		$(DESTDIR)/usr/lib/tasksel/info \
+		$(DESTDIR)/usr/lib/tasksel/packages
+	install -m 0644 $(TASKDESC) $(DESTDIR)$(TASKDIR)
 	for test in tests/*; do \
+		[ "$$test" = "tests/new-install" ] && continue; \
+		[ "$$test" = "tests/debconf" ] && continue; \
+		[ "$$test" = "tests/lang" ] && continue; \
 		install -m 755 $$test $(DESTDIR)/usr/lib/tasksel/tests/; \
 	done
 	for script in info/*; do \
 		install -m 755 $$script $(DESTDIR)/usr/lib/tasksel/info/; \
 	done
 	for package in packages/*; do \
+		[ "$$package" = "packages/list" ] && continue; \
 		install -m 755 $$package $(DESTDIR)/usr/lib/tasksel/packages/; \
+	done
+	for lang in $(LANGS_DESC); do \
+		[ ! -d $(LOCALEDIR)/$$lang/LC_MESSAGES/ ] && mkdir -p $(LOCALEDIR)/$$lang/LC_MESSAGES/; \
+		install -m 644 tasks/po/$$lang.mo $(LOCALEDIR)/$$lang/LC_MESSAGES/$(DOMAIN).mo; \
 	done
 
 clean:

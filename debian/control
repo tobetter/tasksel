@@ -3,15 +3,24 @@ Section: admin
 Priority: important
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Uploaders: Randolph Chung <tausq@debian.org>, Joey Hess <joeyh@debian.org>
-Standards-Version: 3.6.2
-Build-Depends: po-debconf, debhelper (>= 4), gettext, dpkg-dev (>= 1.9.0)
+Standards-Version: 3.7.2
+Build-Depends: po-debconf, debhelper (>= 5), gettext, dpkg-dev (>= 1.9.0)
 
 Package: tasksel
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1), laptop-detect
+Depends: ${shlibs:Depends}, ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1), laptop-detect, tasksel-data
 Conflicts: debconf (<< 1.4.27), base-config (<< 2.32)
 Description: Tool for selecting tasks for installation on Debian system
  This package provides 'tasksel', a simple interface for users who
  want to pick general tasks for installation on their Debian GNU/Linux
  system. This program is used during the installation process, but
  users can also use tasksel at any point.
+
+Package: tasksel-data
+Architecture: all
+Depends: tasksel (= ${source:Version})
+Conflicts: tasksel-data
+Description: Official tasks used for installation on Debian systems
+ This package provides the tasks for 'tasksel' to use to provide a
+ simple interface for users who want to pick general tasks for
+ installation on their Debian GNU/Linux system.
