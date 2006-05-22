@@ -1,9 +1,15 @@
-tasksel (2.46) UNRELEASED; urgency=low
+tasksel (2.46) unstable; urgency=low
 
+  [ Jordi Mallach ]
   * [ Translations of tasks ]
     - updated Catalan translation (Jordi Mallach)
 
- -- Jordi Mallach <jordi@debian.org>  Sat, 20 May 2006 23:19:26 +0200
+  [ Joey Hess ]
+  * tasksel-data: Conflict with old versions of tasksel.
+  * Move laptop-detect depends to tasksel-data as that's what uses it.
+  * Loosen dependencies between tasksel and -data, think this should be ok.
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 21 May 2006 21:26:43 -0500
 
 tasksel (2.45) unstable; urgency=low
 
