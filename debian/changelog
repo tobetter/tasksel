@@ -6,6 +6,7 @@ tasksel (2.46) unstable; urgency=low
 
   [ Joey Hess ]
   * tasksel-data: Conflict with old versions of tasksel.
+    Closes: #368408
   * Move laptop-detect depends to tasksel-data as that's what uses it.
   * Loosen dependencies between tasksel and -data, think this should be ok.
 
