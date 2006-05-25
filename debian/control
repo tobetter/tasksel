@@ -10,7 +10,7 @@ Package: tasksel
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1), tasksel-data
 Conflicts: debconf (<< 1.4.27), base-config (<< 2.32)
-Description: Tool for selecting tasks for installation on Debian system
+Description: Tool for selecting tasks for installation on Debian systems
  This package provides 'tasksel', a simple interface for users who
  want to configure their system to perform a specific task.
 
@@ -18,6 +18,6 @@ Package: tasksel-data
 Architecture: all
 Depends: tasksel, laptop-detect
 Conflicts: tasksel-data, tasksel (<< 2.46)
-Description: Official tasks used for installation on Debian systems
+Description: Official tasks used for installation of Debian systems
  This package contains data about the standard tasks available on a Debian
  system.
