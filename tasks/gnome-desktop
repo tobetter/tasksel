@@ -11,14 +11,19 @@ Key:
   gnome-desktop-environment
 Packages: task-fields
 Packages-list:
-  gnome
+# most of the gnome metapackage, except for desktop stuff
+  gnome-cups-manager
   gnome-screensaver
+  gnome-themes-extras
+  rhythmbox
 # allow totem to play theora files
   libtheora0
 # enable debian menus
   menu-xdg
 # gnome menu editing
   alacarte
+# partition editing
+  gparted
 # package management
   synaptic
   update-notifier
@@ -36,5 +41,8 @@ Packages-list:
   evolution-exchange
   evolution-plugins
   evolution-webcal
+  openoffice.org-evolution
 # various applets that are useful to have
   deskbar-applet
+# remote logins, both to windows and X
+  grdesktop

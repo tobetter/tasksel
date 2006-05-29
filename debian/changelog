@@ -1,6 +1,16 @@
 tasksel (2.48) UNRELEASED; urgency=low
 
   * More description-fu. Closes: #368853
+  * Add pbbuttonsd to laptop task for powerpc.
+  * Add openoffice.org-evolution to gnome desktop task for integration of
+    those two.
+  * Add grdesktop to gnome desktop task for remote logins, both to windows
+    and X.
+  * Add gparted to gnome desktop task so users can fiddle with partitions.
+  * Drop gnome metapackage, so that gnome-office isn't pulled in (we have
+    OOo), but re-include most of its other deps: gnome-cups-manager,
+    gnome-screensaver, gnome-themes-extras, rhythmbox.
+  * Above suggestions from Gustavo Franco.
 
   [ Translations of tasks ]
     - Updated Lithuanian (Kęstutis Biliūnas)
