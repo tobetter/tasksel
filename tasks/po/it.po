@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: tasksel 1.51\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-04-24 14:24-0400\n"
-"PO-Revision-Date: 2006-04-17 11:08+0200\n"
+"PO-Revision-Date: 2006-06-02 19:24+0200\n"
 "Last-Translator: Giuseppe Sacco <eppesuig@debian.org>\n"
 "Language-Team: italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
@@ -394,7 +394,7 @@ msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
 "environment."
 msgstr ""
-"Questo task fornisce il software per un \"desktop\" di base utilizzando "
+"Questo task fornisce il software per un «desktop» di base utilizzando "
 "l'ambiente Gnome."
 
 #. Description
@@ -538,19 +538,17 @@ msgstr "Questo task install un desktop localizzato in giapponese."
 
 #. Description
 #: ../po/debian-tasks.desc:390
-#, fuzzy
 msgid "KDE desktop environment"
-msgstr "Ambiente desktop"
+msgstr "Ambiente desktop KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:390
-#, fuzzy
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
 msgstr ""
-"Questo task fornisce il software per un \"desktop\" di base utilizzando "
-"l'ambiente Gnome."
+"Questo task fornisce il software per un «desktop» di base utilizzando "
+"l'ambiente K."
 
 #. Description
 #: ../po/debian-tasks.desc:410
@@ -878,7 +876,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:658
 msgid "Thai desktop"
-msgstr "Descktop tai"
+msgstr "Desktop tai"
 
 #. Description
 #: ../po/debian-tasks.desc:658
@@ -943,184 +941,3 @@ msgstr "Server Web"
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "Questo task installa pacchetti utili per un server Web generico."
-
-#~ msgid ""
-#~ "This task provides basic \"desktop\" software, including a variety of "
-#~ "session managers, file managers and web browsers. It incorporates both "
-#~ "the GNOME and KDE desktops, and provides a display manager which lets the "
-#~ "user choose between the two."
-#~ msgstr ""
-#~ "Questo task fornisce il software minimo per il \"desktop\", vale a dire "
-#~ "una serie di \"session manager\", \"file manager\" e browser web. Include "
-#~ "sia GNOME che KDE e fornisce un \"display manager\" che permette di "
-#~ "scegliere tra i due."
-
-#~ msgid "Office environment"
-#~ msgstr "Ambiente \"office\""
-
-#~ msgid ""
-#~ "This task provides a suite of office productivity software, including a "
-#~ "word processor, a spreadsheet, a presentation program, and more. This is "
-#~ "a rather large collection of software."
-#~ msgstr ""
-#~ "Questo task fornisce una serie di programmi per la produttività, "
-#~ "includendo un elaboratore testo, un foglio di calcolo, un programma per "
-#~ "le presentazioni e altro ancora. Questo è un insieme di software "
-#~ "piuttosto numeroso."
-
-#~ msgid "X window system"
-#~ msgstr "X Window System"
-
-#~ msgid ""
-#~ "This task provides the essential components for a standalone workstation "
-#~ "running the X Window System. It provides the X libraries, an X server, a "
-#~ "set of fonts, and a group of basic X clients and utilities."
-#~ msgstr ""
-#~ "Questo task comprende i componenti essenziali per una postazione di "
-#~ "lavoro autonoma che utilizzi il sistema grafico X. Include le librerie X, "
-#~ "un server X, una serie di tipi di carattere e un gruppo di clienti X di "
-#~ "base e altri programmi utili."
-
-#~ msgid "Broadband internet connection"
-#~ msgstr "Connessione ad internet a banda larga"
-
-#~ msgid ""
-#~ "This task selects packages that address special needs of computers that "
-#~ "connect to the internet using DSL, Cable, and the like."
-#~ msgstr ""
-#~ "Questo task seleziona pacchetti necessari all'utilizzo di computer che si "
-#~ "collegano ad internet via DSL, cavo e simili."
-
-#~ msgid "C and C++"
-#~ msgstr "C e C++"
-
-#~ msgid ""
-#~ "A complete environment for development of programs in the C and C++ "
-#~ "programming languages."
-#~ msgstr "Un ambiente completo per lo sviluppo di programmi in C e C++."
-
-#~ msgid "Dialup internet"
-#~ msgstr "Internet via modem"
-
-#~ msgid ""
-#~ "This task selects packages that address special needs of computers using "
-#~ "a slow part-time dialup connection (by modem, ISDN, or similar)."
-#~ msgstr ""
-#~ "Questo task include i pacchetti per quei computer che utilizzano "
-#~ "connessioni lente e non continue (via modem, ISDN e simili)."
-
-#~ msgid "Games"
-#~ msgstr "Giochi"
-
-#~ msgid ""
-#~ "Selecting this task will install a broad selection of games, from "
-#~ "traditional textual unix games to card games, to fast-paced arcade games. "
-#~ "It won't install all the games in Debian, but it is a good starting point."
-#~ msgstr ""
-#~ "Selezionando questo task verrà installata un'ampia selezione di giochi, "
-#~ "da quelli tradizionali unix in solo testo ai giochi di carte, agli arcade "
-#~ "frenetici. Non installerà tutti i giochi in Debian, ma è un buon inizio."
-
-#~ msgid "Java"
-#~ msgstr "Java"
-
-#~ msgid "A java development environment."
-#~ msgstr "Un ambiente di sviluppo Java."
-
-#~ msgid "Debian Jr."
-#~ msgstr "Debian Jr."
-
-#~ msgid "Debian Jr. is a collection of Debian packages suitable for children."
-#~ msgstr "Debian Jr. è una serie di pacchetti Debian ideata per i bambini."
-
-#~ msgid "Custom kernel compilation"
-#~ msgstr "Compilazione di kernel personalizzati"
-
-#~ msgid ""
-#~ "This task includes everything you should need to build your own custom "
-#~ "kernel."
-#~ msgstr ""
-#~ "Questo task include tutto ciò che server per compilare il proprio kernel."
-
-#~ msgid ""
-#~ "This is a collection of tools that laptop users will expect to find on a "
-#~ "system. It includes some special utilities for laptops including IBM "
-#~ "Thinkpads, Sony Vaios, Toshibas, and Dell Inspirons."
-#~ msgstr ""
-#~ "Questa è una serie di strumenti che gli utenti di computer portatili si "
-#~ "aspettano di trovare. Include alcuni strumenti particolari per gli IBM "
-#~ "Thinkpad, Sony Vaio, Toshiba e Dell Inspiron."
-
-#~ msgid ""
-#~ "This task makes the system compliant with the Linux Standard Base, "
-#~ "allowing you to install and use LSB packages."
-#~ msgstr ""
-#~ "Questo task rende il sistema aderente al Linux Standard Base, in modo da "
-#~ "permettere l'installazione di pacchetti LSB."
-
-#~ msgid "Usenet news server"
-#~ msgstr "Server di news Usenet"
-
-#~ msgid ""
-#~ "This task selects the preferred version of the INN news server software "
-#~ "for new Debian installations."
-#~ msgstr ""
-#~ "Questo task seleziona la versione preferita del server di news INN per "
-#~ "nuove installazioni di Debian."
-
-#~ msgid ""
-#~ "You do not need this package if you merely wish to read news from an "
-#~ "existing server, just select the news reader program you desire and it "
-#~ "will pull in any required pieces. Only use this task if you intend to "
-#~ "operate a server."
-#~ msgstr ""
-#~ "Questo pacchetto non è richiesto se si vuole solo leggere le news da un "
-#~ "server esistente, basta selezionare un programma per la lettura delle "
-#~ "news e questo prenderà tutti i pezzi che gli servono. Usare questo task "
-#~ "solo se si intende operare come server."
-
-#~ msgid "Python"
-#~ msgstr "Python"
-
-#~ msgid ""
-#~ "Many Python tools and extensions, for developing scripts and simple or "
-#~ "complex applications in Python."
-#~ msgstr ""
-#~ "Molti strumenti ed estensioni Python per sviluppare script e applicazioni "
-#~ "più o meno complesse in Python."
-
-#~ msgid "Scientific applications"
-#~ msgstr "Applicazioni scientifiche"
-
-#~ msgid ""
-#~ "This task selects packages which are suitable for scientific work. Under "
-#~ "a fairly loose definition of 'scientific', this includes numerical "
-#~ "analysis and computing, statistical data analysis as well as "
-#~ "visualization."
-#~ msgstr ""
-#~ "Questo task seleziona i pacchetti utilizzabili per lavori scientifici. "
-#~ "Secondo una definizione piuttosto libera di «scientifico», questo include "
-#~ "l'analisi numerica e computazionale, analisi di dati statistici e loro "
-#~ "visualizzazione."
-
-#~ msgid "TeX/LaTeX environment"
-#~ msgstr "Ambiente TeX/LaTeX"
-
-#~ msgid ""
-#~ "This task provides necessary packages for composing documents in TeX/"
-#~ "LaTeX."
-#~ msgstr ""
-#~ "Questo task fornisce tutti i pacchetti necessari per comporre documenti "
-#~ "in TeX/LaTeX."
-
-#~ msgid "Conventional Unix server"
-#~ msgstr "Server Unix convenzionale"
-
-#~ msgid ""
-#~ "This task selects packages that would typically be found on a "
-#~ "conventional multi-user unix system with remote users. Do be warned that "
-#~ "this includes a number of daemons."
-#~ msgstr ""
-#~ "Questo task seleziona i pacchetti che si trovano normalmente in un server "
-#~ "Unix multi utente, con utenti remoti. Attenzione che ci sono parecchi "
-#~ "demoni."
