@@ -4,6 +4,11 @@ tasksel (2.49) UNRELEASED; urgency=low
   * Add hardinfo to gnome-desktop task. Closes: #370318
   * Add acpi-support to laptop task.
   * Thai tasks update by Theppitak Karoonboonyanan. Closes: #374339
+  * Patch from bubulle to add a lot of basic language and/or language-desktop 
+    tasks for lackages that lacked one: icelandic, welsh, bosnian, 
+    finnish (Closes: #264986) slovenian, esperanto, galician, albanian, irish,
+    macedonian, portuguese, tagalong, estonian, croatian, belarusian, basque,
+    tamil. Closes: #325218
 
   [ Rene Engelhard ]
   * add myspell-sk to slovak task
@@ -11,7 +16,7 @@ tasksel (2.49) UNRELEASED; urgency=low
   [ Translations of tasks ]
     - Updated Bengali (Baishampayan Ghose)
 
- -- Joey Hess <joeyh@debian.org>  Sun, 18 Jun 2006 15:46:15 -0400
+ -- Joey Hess <joeyh@debian.org>  Sun, 18 Jun 2006 17:34:18 -0400
 
 tasksel (2.48) unstable; urgency=low
 

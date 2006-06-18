@@ -1,0 +1,12 @@
+Task: portuguese-desktop
+Depends: portuguese, desktop
+Section: l10n
+Description: Portuguese desktop
+ This task localises the desktop in Portuguese.
+Key:
+Packages: task-fields
+Packages-list:
+ xfonts-intl-european
+ openoffice.org-l10n-pt
+ openoffice.org-help-pt
+ mozilla-firefox-locale-pt-pt

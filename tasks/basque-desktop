@@ -1,0 +1,12 @@
+Task: basque-desktop
+Depends: desktop
+Section: l10n
+Test-lang: eu
+Description: Basque desktop
+ This task localises the desktop in Basque.
+Key:
+Packages: task-fields
+Packages-list:
+ mozilla-firefox-locale-eu
+ openoffice.org-l10n-eu
+ kde-i18n-eu
