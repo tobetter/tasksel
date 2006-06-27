@@ -19,11 +19,13 @@ tasksel (2.50) UNRELEASED; urgency=low
   * Add ttf-dejavu and firefox-locale-bg to bulgarian-desktop
   * Replace mozilla-locale-ca by firefox-locale-ca in the catalan-desktop
     task to fit choices in the desktop task
-  * Ditto for danish, german
+  * Ditto for danish, german, greek
+  * Remove Thunderbird l10n for Greek (no Thunderbird in the desktop task)
+  * Remove non existing openoffice.org-help-el in greek-desktop
   * Replace mozilla-firefox-locale-* by firefox-locale-* which are the real
     packages now
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 27 Jun 2006 22:59:47 +0200
+ -- Christian Perrier <bubulle@debian.org>  Tue, 27 Jun 2006 23:01:43 +0200
 
 tasksel (2.49) unstable; urgency=low
 
