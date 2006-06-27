@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-24 14:24-0400\n"
+"POT-Creation-Date: 2006-06-26 22:26-0400\n"
 "PO-Revision-Date: 2006-05-03 20:42+0300\n"
 "Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
@@ -16,10 +16,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.2\n"
-"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))\n"
+"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1))\n"
 
 #. Description
 #: ../po/debian-tasks.desc:3
+#, fuzzy
+msgid "Albanian desktop"
+msgstr "Sistem de birou românesc"
+
+#. Description
+#: ../po/debian-tasks.desc:3
+#, fuzzy
+msgid "This task localises the desktop in Albanian."
+msgstr "Această sarcină localizează mediul de birou în română."
+
+#. Description
+#: ../po/debian-tasks.desc:11
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Arabic speakers to use Debian."
@@ -28,17 +41,45 @@ msgstr ""
 "care uşurează, vorbitorilor de arabă, folosirea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:14
+#: ../po/debian-tasks.desc:22
 msgid "Arabic environment"
 msgstr "Mediu arab"
 
 #. Description
-#: ../po/debian-tasks.desc:14
+#: ../po/debian-tasks.desc:22
 msgid "This task localises the desktop in Arabic."
 msgstr "Această sarcină localizează mediul de birou în arabă."
 
 #. Description
-#: ../po/debian-tasks.desc:21
+#: ../po/debian-tasks.desc:29
+#, fuzzy
+msgid "Basque desktop"
+msgstr "Sistem de birou danez"
+
+#. Description
+#: ../po/debian-tasks.desc:29
+#, fuzzy
+msgid "This task localises the desktop in Basque."
+msgstr "Această sarcină localizează mediul de birou în japoneză."
+
+#. Description
+#: ../po/debian-tasks.desc:37
+#, fuzzy
+msgid "Belarusian environment"
+msgstr "Mediu bulgar"
+
+#. Description
+#: ../po/debian-tasks.desc:37
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Belarusian to help "
+"Belarusian speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba germană, pentru a "
+"ajuta vorbitorii de germană să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:47
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Bengali speakers to use Debian."
@@ -47,22 +88,34 @@ msgstr ""
 "care uşurează, vorbitorilor de bengali, folosirea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:32
+#: ../po/debian-tasks.desc:58
 msgid "Bengali environment"
 msgstr "Mediu bengali"
 
 #. Description
-#: ../po/debian-tasks.desc:32
+#: ../po/debian-tasks.desc:58
 msgid "This task localises the desktop in Bengali."
 msgstr "Această sarcină localizează mediul de birou în bengali."
 
 #. Description
-#: ../po/debian-tasks.desc:39
+#: ../po/debian-tasks.desc:65
+#, fuzzy
+msgid "Bosnian desktop"
+msgstr "Sistem de birou românesc"
+
+#. Description
+#: ../po/debian-tasks.desc:65
+#, fuzzy
+msgid "This task localises the desktop in Bosnian."
+msgstr "Această sarcină localizează mediul de birou în română."
+
+#. Description
+#: ../po/debian-tasks.desc:73
 msgid "Brazilian Portuguese environment"
 msgstr "Mediu portughez brazilian"
 
 #. Description
-#: ../po/debian-tasks.desc:39
+#: ../po/debian-tasks.desc:73
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Brazilian Portuguese speakers to use Debian."
@@ -71,22 +124,22 @@ msgstr ""
 "uşurează vorbitorilor de portugheză braziliană, folosirea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:50
+#: ../po/debian-tasks.desc:84
 msgid "Brazilian Portuguese desktop"
 msgstr "Sistem de birou portughez brazilian"
 
 #. Description
-#: ../po/debian-tasks.desc:50
+#: ../po/debian-tasks.desc:84
 msgid "This task localises the desktop in Brasilian Portuguese."
 msgstr "Această sarcină localizează mediul de birou în portugheză braziliană."
 
 #. Description
-#: ../po/debian-tasks.desc:57
+#: ../po/debian-tasks.desc:91
 msgid "Bulgarian environment"
 msgstr "Mediu bulgar"
 
 #. Description
-#: ../po/debian-tasks.desc:57
+#: ../po/debian-tasks.desc:91
 msgid ""
 "This task installs programs and data files that make it easier for Bulgarian "
 "speakers to use Debian."
@@ -95,22 +148,22 @@ msgstr ""
 "utilizarea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:66
+#: ../po/debian-tasks.desc:100
 msgid "Bulgarian desktop"
 msgstr "Sistem de birou bulgar"
 
 #. Description
-#: ../po/debian-tasks.desc:66
+#: ../po/debian-tasks.desc:100
 msgid "This task localises the desktop in Bulgarian."
 msgstr "Această sarcină localizează mediul de birou în bulgară."
 
 #. Description
-#: ../po/debian-tasks.desc:73
+#: ../po/debian-tasks.desc:107
 msgid "Catalan environment"
 msgstr "Mediu catalan"
 
 #. Description
-#: ../po/debian-tasks.desc:73
+#: ../po/debian-tasks.desc:107
 msgid ""
 "This task installs packages and documentation in Catalan to help Catalan "
 "speaking people use Debian."
@@ -119,22 +172,22 @@ msgstr ""
 "a ajuta vorbitorii de catalană să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:83
+#: ../po/debian-tasks.desc:117
 msgid "Catalan desktop"
 msgstr "Sistem de birou catalan"
 
 #. Description
-#: ../po/debian-tasks.desc:83
+#: ../po/debian-tasks.desc:117
 msgid "This task localises the desktop in Catalan."
 msgstr "Această sarcină localizează mediul de birou în în catalană."
 
 #. Description
-#: ../po/debian-tasks.desc:90
+#: ../po/debian-tasks.desc:124
 msgid "Simplified Chinese environment"
 msgstr "Mediu chinezesc simplificat"
 
 #. Description
-#: ../po/debian-tasks.desc:90
+#: ../po/debian-tasks.desc:124
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the simplified Chinese "
@@ -145,17 +198,17 @@ msgstr ""
 "codificarea chineză simplificată."
 
 #. Description
-#: ../po/debian-tasks.desc:102
+#: ../po/debian-tasks.desc:136
 msgid "Simplified Chinese desktop"
 msgstr "Sistem de birou chinezesc simplificat"
 
 #. Description
-#: ../po/debian-tasks.desc:102
+#: ../po/debian-tasks.desc:136
 msgid "This task localises the desktop in Simplified Chinese."
 msgstr "Această sarcină localizează mediul de birou în chineză simplificată."
 
 #. Description
-#: ../po/debian-tasks.desc:109
+#: ../po/debian-tasks.desc:143
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
@@ -166,22 +219,34 @@ msgstr ""
 "codificarea chineză tradiţională."
 
 #. Description
-#: ../po/debian-tasks.desc:121
+#: ../po/debian-tasks.desc:155
 msgid "Traditional Chinese environment"
 msgstr "Mediu chinezesc tradiţional"
 
 #. Description
-#: ../po/debian-tasks.desc:121
+#: ../po/debian-tasks.desc:155
 msgid "This task localises the desktop in Traditional Chinese."
 msgstr "Această sarcină localizează mediul de birou în chineză tradiţională."
 
 #. Description
-#: ../po/debian-tasks.desc:128
+#: ../po/debian-tasks.desc:162
+#, fuzzy
+msgid "Croatian desktop"
+msgstr "Sistem de birou catalan"
+
+#. Description
+#: ../po/debian-tasks.desc:162
+#, fuzzy
+msgid "This task localises the desktop in Croatian."
+msgstr "Această sarcină localizează mediul de birou în în catalană."
+
+#. Description
+#: ../po/debian-tasks.desc:170
 msgid "Cyrillic environment"
 msgstr "Mediu chirilic"
 
 #. Description
-#: ../po/debian-tasks.desc:128
+#: ../po/debian-tasks.desc:170
 msgid ""
 "This task provides Cyrillic fonts and other software you will need in order "
 "to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
@@ -192,12 +257,12 @@ msgstr ""
 "ucraineană."
 
 #. Description
-#: ../po/debian-tasks.desc:139
+#: ../po/debian-tasks.desc:181
 msgid "Cyrillic desktop"
 msgstr "Sistem de birou chirilic"
 
 #. Description
-#: ../po/debian-tasks.desc:139
+#: ../po/debian-tasks.desc:181
 msgid ""
 "This task localises the desktop in Cyrillic. It supports Belarusian, "
 "Bulgarian, Macedonian, Russian, Serbian and Ukrainian."
@@ -207,12 +272,12 @@ msgstr ""
 "şi ucraineană."
 
 #. Description
-#: ../po/debian-tasks.desc:149
+#: ../po/debian-tasks.desc:191
 msgid "Czech environment"
 msgstr "Mediu ceh"
 
 #. Description
-#: ../po/debian-tasks.desc:149
+#: ../po/debian-tasks.desc:191
 msgid ""
 "This task installs packages and documentation in Czech to help Czech "
 "speaking people use Debian."
@@ -221,22 +286,22 @@ msgstr ""
 "ajuta vorbitorii de cehă să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:157
+#: ../po/debian-tasks.desc:199
 msgid "Czech desktop"
 msgstr "Sistem de birou ceh"
 
 #. Description
-#: ../po/debian-tasks.desc:157
+#: ../po/debian-tasks.desc:199
 msgid "This task localises the desktop in Czech."
 msgstr "Această sarcină localizează mediul de birou în cehă."
 
 #. Description
-#: ../po/debian-tasks.desc:164
+#: ../po/debian-tasks.desc:206
 msgid "Danish environment"
 msgstr "Mediu danez"
 
 #. Description
-#: ../po/debian-tasks.desc:164
+#: ../po/debian-tasks.desc:206
 msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
@@ -245,29 +310,30 @@ msgstr ""
 "ajuta vorbitorii de daneză să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:174
+#: ../po/debian-tasks.desc:216
 msgid "Danish desktop"
 msgstr "Sistem de birou danez"
 
 #. Description
-#: ../po/debian-tasks.desc:174
+#: ../po/debian-tasks.desc:216
 msgid "This task localises the desktop in Danish."
 msgstr "Această sarcină localizează mediul de birou în daneză."
 
 #. Description
-#: ../po/debian-tasks.desc:181
+#: ../po/debian-tasks.desc:223
 msgid "SQL database"
 msgstr "Bază de date SQL"
 
 #. Description
-#: ../po/debian-tasks.desc:181
-msgid "This task selects client and server packages for the PostgreSQL database."
+#: ../po/debian-tasks.desc:223
+msgid ""
+"This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Acestă sarcină selectează pachetele client şi server pentru baza de date "
 "PostgreSQL."
 
 #. Description
-#: ../po/debian-tasks.desc:181
+#: ../po/debian-tasks.desc:223
 msgid ""
 "PostgreSQL is an SQL relational database, offering increasing SQL92 "
 "compliance and some SQL3 features.  It is suitable for use with multi-user "
@@ -280,12 +346,12 @@ msgstr ""
 "şi mecanismele de interblocare rafinate."
 
 #. Description
-#: ../po/debian-tasks.desc:195
+#: ../po/debian-tasks.desc:237
 msgid "Desktop environment"
 msgstr "Mediu de birou"
 
 #. Description
-#: ../po/debian-tasks.desc:195
+#: ../po/debian-tasks.desc:237
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "Gnome and KDE desktop tasks."
@@ -294,19 +360,20 @@ msgstr ""
 "şi serveşte ca bază pentru sarcinile pentru mediile grafice GNOME şi KDE"
 
 #. Description
-#: ../po/debian-tasks.desc:205
+#: ../po/debian-tasks.desc:247
 msgid "DNS server"
 msgstr "Server DNS"
 
 #. Description
-#: ../po/debian-tasks.desc:205
-msgid "Selects the BIND DNS server, and related documentation and utility packages."
+#: ../po/debian-tasks.desc:247
+msgid ""
+"Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Selectează serverul DNS BIND, şi documentaţie pentru acesta, cât şi pachete "
 "de utilitare."
 
 #. Description
-#: ../po/debian-tasks.desc:213
+#: ../po/debian-tasks.desc:255
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
@@ -315,22 +382,46 @@ msgstr ""
 "care uşurează, vorbitorilor de olandeză, folosirea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:222
+#: ../po/debian-tasks.desc:264
 msgid "Dutch environment"
 msgstr "Mediu olandez"
 
 #. Description
-#: ../po/debian-tasks.desc:222
+#: ../po/debian-tasks.desc:264
 msgid "This task localises the desktop in Dutch."
 msgstr "Această sarcină localizează mediul de birou în olandeză."
 
 #. Description
-#: ../po/debian-tasks.desc:229
+#: ../po/debian-tasks.desc:271
+#, fuzzy
+msgid "Esperanto desktop"
+msgstr "Sistem de birou german"
+
+#. Description
+#: ../po/debian-tasks.desc:271
+#, fuzzy
+msgid "This task localises the desktop in Esperanto."
+msgstr "Această sarcină localizează mediul de birou în germană."
+
+#. Description
+#: ../po/debian-tasks.desc:279
+#, fuzzy
+msgid "Estonian desktop"
+msgstr "Sistem de birou românesc"
+
+#. Description
+#: ../po/debian-tasks.desc:279
+#, fuzzy
+msgid "This task localises the desktop in Estonian."
+msgstr "Această sarcină localizează mediul de birou în română."
+
+#. Description
+#: ../po/debian-tasks.desc:287
 msgid "File server"
 msgstr "Server de fişiere"
 
 #. Description
-#: ../po/debian-tasks.desc:229
+#: ../po/debian-tasks.desc:287
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
@@ -339,12 +430,40 @@ msgstr ""
 "care suportă atât NetBIOS cât şi NFS."
 
 #. Description
-#: ../po/debian-tasks.desc:239
+#: ../po/debian-tasks.desc:297
+#, fuzzy
+msgid "Finnish environment"
+msgstr "Mediu danez"
+
+#. Description
+#: ../po/debian-tasks.desc:297
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Finnish to help Finnish "
+"speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba daneză, pentru a "
+"ajuta vorbitorii de daneză să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:305
+#, fuzzy
+msgid "Finnish desktop"
+msgstr "Sistem de birou danez"
+
+#. Description
+#: ../po/debian-tasks.desc:305
+#, fuzzy
+msgid "This task localises the desktop in Finnish."
+msgstr "Această sarcină localizează mediul de birou în daneză."
+
+#. Description
+#: ../po/debian-tasks.desc:312
 msgid "French environment"
 msgstr "Mediu francez"
 
 #. Description
-#: ../po/debian-tasks.desc:239
+#: ../po/debian-tasks.desc:312
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -353,22 +472,50 @@ msgstr ""
 "a ajuta vorbitorii de franceză să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:250
+#: ../po/debian-tasks.desc:323
 msgid "French desktop"
 msgstr "Sistem de birou francez"
 
 #. Description
-#: ../po/debian-tasks.desc:250
+#: ../po/debian-tasks.desc:323
 msgid "This task localises the desktop in French."
 msgstr "Această sarcină localizează mediul de birou în franceză."
 
 #. Description
-#: ../po/debian-tasks.desc:257
+#: ../po/debian-tasks.desc:330
+#, fuzzy
+msgid "Galician environment"
+msgstr "Mediu italian"
+
+#. Description
+#: ../po/debian-tasks.desc:330
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Galician to help Galician "
+"speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba italiană, pentru "
+"a ajuta vorbitorii de italiană să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:338
+#, fuzzy
+msgid "Galician desktop"
+msgstr "Sistem de birou italian"
+
+#. Description
+#: ../po/debian-tasks.desc:338
+#, fuzzy
+msgid "This task localises the desktop in Galician."
+msgstr "Această sarcină localizează mediul de birou în italiană."
+
+#. Description
+#: ../po/debian-tasks.desc:345
 msgid "German environment"
 msgstr "Mediu german"
 
 #. Description
-#: ../po/debian-tasks.desc:257
+#: ../po/debian-tasks.desc:345
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -377,22 +524,22 @@ msgstr ""
 "ajuta vorbitorii de germană să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:268
+#: ../po/debian-tasks.desc:356
 msgid "German desktop"
 msgstr "Sistem de birou german"
 
 #. Description
-#: ../po/debian-tasks.desc:268
+#: ../po/debian-tasks.desc:356
 msgid "This task localises the desktop in German."
 msgstr "Această sarcină localizează mediul de birou în germană."
 
 #. Description
-#: ../po/debian-tasks.desc:276
+#: ../po/debian-tasks.desc:364
 msgid "Gnome desktop environment"
 msgstr "Mediul grafic GNOME"
 
 #. Description
-#: ../po/debian-tasks.desc:276
+#: ../po/debian-tasks.desc:364
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
 "environment."
@@ -401,12 +548,12 @@ msgstr ""
 "GNOME."
 
 #. Description
-#: ../po/debian-tasks.desc:287
+#: ../po/debian-tasks.desc:375
 msgid "Greek environment"
 msgstr "Mediu grecesc"
 
 #. Description
-#: ../po/debian-tasks.desc:287
+#: ../po/debian-tasks.desc:375
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -415,22 +562,22 @@ msgstr ""
 "ajuta vorbitorii de greacă să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:297
+#: ../po/debian-tasks.desc:385
 msgid "Greek desktop"
 msgstr "Sistem de birou grecesc"
 
 #. Description
-#: ../po/debian-tasks.desc:297
+#: ../po/debian-tasks.desc:385
 msgid "This task localises the desktop in Greek."
 msgstr "Această sarcină localizează mediul de birou în greacă."
 
 #. Description
-#: ../po/debian-tasks.desc:304
+#: ../po/debian-tasks.desc:392
 msgid "Hebrew environment"
 msgstr "Mediu ebraic"
 
 #. Description
-#: ../po/debian-tasks.desc:304
+#: ../po/debian-tasks.desc:392
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -439,17 +586,17 @@ msgstr ""
 "a ajuta vorbitorii de ebraică să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:400
 msgid "Hebrew desktop"
 msgstr "Sistem de birou ebraic"
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:400
 msgid "This task localises the desktop in Hebrew."
 msgstr "Această sarcină localizează mediul de birou în ebraică."
 
 #. Description
-#: ../po/debian-tasks.desc:319
+#: ../po/debian-tasks.desc:407
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Hindi speakers to use Debian."
@@ -458,22 +605,22 @@ msgstr ""
 "care uşurează, vorbitorilor de hindi, folosirea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:330
+#: ../po/debian-tasks.desc:418
 msgid "Hindi environment"
 msgstr "Mediu hindus"
 
 #. Description
-#: ../po/debian-tasks.desc:330
+#: ../po/debian-tasks.desc:418
 msgid "This task localises the desktop in Hindi."
 msgstr "Această sarcină localizează mediul de birou în hindi."
 
 #. Description
-#: ../po/debian-tasks.desc:337
+#: ../po/debian-tasks.desc:425
 msgid "Hungarian environment"
 msgstr "Mediu maghiar"
 
 #. Description
-#: ../po/debian-tasks.desc:337
+#: ../po/debian-tasks.desc:425
 msgid ""
 "This task installs packages and documentation in Hungarian to help Hungarian "
 "speaking people use Debian."
@@ -482,22 +629,78 @@ msgstr ""
 "a ajuta vorbitorii de italiană să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:433
 msgid "Hungarian desktop"
 msgstr "Sistem de birou maghiar"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:433
 msgid "This task localises the desktop in Hungarian."
 msgstr "Această sarcină localizează mediul de birou în maghiară."
 
 #. Description
-#: ../po/debian-tasks.desc:352
+#: ../po/debian-tasks.desc:440
+#, fuzzy
+msgid "Icelandic environment"
+msgstr "Mediu italian"
+
+#. Description
+#: ../po/debian-tasks.desc:440
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Icelandic to help Icelandic "
+"speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba italiană, pentru "
+"a ajuta vorbitorii de italiană să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:448
+#, fuzzy
+msgid "Icelandic desktop"
+msgstr "Sistem de birou italian"
+
+#. Description
+#: ../po/debian-tasks.desc:448
+#, fuzzy
+msgid "This task localises the desktop in Icelandic."
+msgstr "Această sarcină localizează mediul de birou în italiană."
+
+#. Description
+#: ../po/debian-tasks.desc:455
+#, fuzzy
+msgid "Irish environment"
+msgstr "Mediu turcesc"
+
+#. Description
+#: ../po/debian-tasks.desc:455
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Irish to help Irish "
+"speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba turcă, pentru a "
+"ajuta vorbitorii de turcă să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:463
+#, fuzzy
+msgid "Irish desktop"
+msgstr "Sistem de birou turcesc"
+
+#. Description
+#: ../po/debian-tasks.desc:463
+#, fuzzy
+msgid "This task localises the desktop in Irish."
+msgstr "Această sarcină localizează mediul de birou în turcă."
+
+#. Description
+#: ../po/debian-tasks.desc:470
 msgid "Italian environment"
 msgstr "Mediu italian"
 
 #. Description
-#: ../po/debian-tasks.desc:352
+#: ../po/debian-tasks.desc:470
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -506,22 +709,22 @@ msgstr ""
 "a ajuta vorbitorii de italiană să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:363
+#: ../po/debian-tasks.desc:481
 msgid "Italian desktop"
 msgstr "Sistem de birou italian"
 
 #. Description
-#: ../po/debian-tasks.desc:363
+#: ../po/debian-tasks.desc:481
 msgid "This task localises the desktop in Italian."
 msgstr "Această sarcină localizează mediul de birou în italiană."
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:488
 msgid "Japanese environment"
 msgstr "Mediu japonez"
 
 #. Description
-#: ../po/debian-tasks.desc:370
+#: ../po/debian-tasks.desc:488
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -530,34 +733,35 @@ msgstr ""
 "utilizarea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:382
+#: ../po/debian-tasks.desc:500
 msgid "Japanese desktop environment"
 msgstr "Sistem de birou japonez"
 
 #. Description
-#: ../po/debian-tasks.desc:382
+#: ../po/debian-tasks.desc:500
 msgid "This task localises the desktop in Japanese."
 msgstr "Această sarcină localizează mediul de birou în japoneză."
 
 #. Description
-#: ../po/debian-tasks.desc:390
+#: ../po/debian-tasks.desc:508
 msgid "KDE desktop environment"
 msgstr "Mediu de birou KDE"
 
 #. Description
-#: ../po/debian-tasks.desc:390
+#: ../po/debian-tasks.desc:508
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
-msgstr "Acestă sarcină furnizează un set minimal de aplicaţii pentru mediul grafic K."
+msgstr ""
+"Acestă sarcină furnizează un set minimal de aplicaţii pentru mediul grafic K."
 
 #. Description
-#: ../po/debian-tasks.desc:410
+#: ../po/debian-tasks.desc:528
 msgid "Korean environment"
 msgstr "Mediu coreean"
 
 #. Description
-#: ../po/debian-tasks.desc:410
+#: ../po/debian-tasks.desc:528
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
@@ -566,32 +770,32 @@ msgstr ""
 "utilizarea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:422
+#: ../po/debian-tasks.desc:540
 msgid "Korean desktop"
 msgstr "Sistem de birou corean"
 
 #. Description
-#: ../po/debian-tasks.desc:422
+#: ../po/debian-tasks.desc:540
 msgid "This task localises the desktop in Korean."
 msgstr "Această sarcină localizează mediul de birou în coreană."
 
 #. Description
-#: ../po/debian-tasks.desc:429
+#: ../po/debian-tasks.desc:547
 msgid "Laptop"
 msgstr "Laptop"
 
 #. Description
-#: ../po/debian-tasks.desc:429
+#: ../po/debian-tasks.desc:547
 msgid "This task installs software useful for a laptop."
 msgstr "Această sarcină instalează programe utile pentru un laptop."
 
 #. Description
-#: ../po/debian-tasks.desc:436
+#: ../po/debian-tasks.desc:554
 msgid "Lithuanian environment"
 msgstr "Mediu lituanian"
 
 #. Description
-#: ../po/debian-tasks.desc:436
+#: ../po/debian-tasks.desc:554
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -600,22 +804,50 @@ msgstr ""
 "pentru a ajuta vorbitorii de lituaniană să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:446
+#: ../po/debian-tasks.desc:564
 msgid "Lithuanian desktop"
 msgstr "Sistem de birou lituanian"
 
 #. Description
-#: ../po/debian-tasks.desc:446
+#: ../po/debian-tasks.desc:564
 msgid "This task localises the desktop in Lithuanian."
 msgstr "Această sarcină localizează mediul de birou în lituaniană."
 
 #. Description
-#: ../po/debian-tasks.desc:453
+#: ../po/debian-tasks.desc:571
+#, fuzzy
+msgid "Macedonian environment"
+msgstr "Mediu românesc"
+
+#. Description
+#: ../po/debian-tasks.desc:571
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Macedonian to help "
+"Macedonian speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba română, pentru a "
+"ajuta vorbitorii de română să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:581
+#, fuzzy
+msgid "Macedonian desktop"
+msgstr "Sistem de birou românesc"
+
+#. Description
+#: ../po/debian-tasks.desc:581
+#, fuzzy
+msgid "This task localises the desktop in Macedonian."
+msgstr "Această sarcină localizează mediul de birou în română."
+
+#. Description
+#: ../po/debian-tasks.desc:588
 msgid "Mail server"
 msgstr "Server de poştă electronică"
 
 #. Description
-#: ../po/debian-tasks.desc:453
+#: ../po/debian-tasks.desc:588
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -624,22 +856,22 @@ msgstr ""
 "server de poştă electronică de uz general."
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:598
 msgid "manual package selection"
 msgstr "selecţie manuală a pachetelor"
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:598
 msgid "Manually select packages to install in aptitude."
 msgstr "Selectaţi manual în aptitude pachetele de instalat."
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:605
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Mediu norvegian (bokmaal şi nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:605
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -648,17 +880,17 @@ msgstr ""
 "pentru a ajuta vorbitorii de norvegiană să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:616
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "Sistem de birou norvegian (bokmaal şi nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:616
 msgid "This task localises the desktop in Norwegian."
 msgstr "Această sarcină localizează mediul de birou în norvegiană."
 
 #. Description
-#: ../po/debian-tasks.desc:488
+#: ../po/debian-tasks.desc:623
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Persian speakers to use Debian."
@@ -667,22 +899,22 @@ msgstr ""
 "care uşurează, vorbitorilor de persană, folosirea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:499
+#: ../po/debian-tasks.desc:634
 msgid "Persian environment"
 msgstr "Mediu persan"
 
 #. Description
-#: ../po/debian-tasks.desc:499
+#: ../po/debian-tasks.desc:634
 msgid "This task localises the desktop in Persian."
 msgstr "Această sarcină localizează mediul de birou în persană."
 
 #. Description
-#: ../po/debian-tasks.desc:506
+#: ../po/debian-tasks.desc:641
 msgid "Polish environment"
 msgstr "Mediu polonez"
 
 #. Description
-#: ../po/debian-tasks.desc:506
+#: ../po/debian-tasks.desc:641
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -691,27 +923,56 @@ msgstr ""
 "a ajuta vorbitorii de poloneză să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:517
+#: ../po/debian-tasks.desc:652
 msgid "Polish desktop"
 msgstr "Sistem de birou polonez"
 
 #. Description
-#: ../po/debian-tasks.desc:517
+#: ../po/debian-tasks.desc:652
 msgid "This task localises the desktop in Polish."
 msgstr "Această sarcină localizează mediul de birou în poloneză."
 
 #. Description
-#: ../po/debian-tasks.desc:525
+#: ../po/debian-tasks.desc:659
+#, fuzzy
+msgid "Portuguese environment"
+msgstr "Mediu portughez brazilian"
+
+#. Description
+#: ../po/debian-tasks.desc:659
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Portuguese to help "
+"Portuguese speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba greacă, pentru a "
+"ajuta vorbitorii de greacă să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:667
+#, fuzzy
+msgid "Portuguese desktop"
+msgstr "Sistem de birou portughez brazilian"
+
+#. Description
+#: ../po/debian-tasks.desc:667
+#, fuzzy
+msgid "This task localises the desktop in Portuguese."
+msgstr "Această sarcină localizează mediul de birou în portugheză braziliană."
+
+#. Description
+#: ../po/debian-tasks.desc:675
 msgid "Print server"
 msgstr "Server de listare (print)"
 
 #. Description
-#: ../po/debian-tasks.desc:525
+#: ../po/debian-tasks.desc:675
 msgid "This task sets up your system to be a print server."
-msgstr "Această sarcină vă peregăteşte sistemul dvs. să fie un server de listare."
+msgstr ""
+"Această sarcină vă peregăteşte sistemul dvs. să fie un server de listare."
 
 #. Description
-#: ../po/debian-tasks.desc:535
+#: ../po/debian-tasks.desc:685
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Punjabi speakers to use Debian."
@@ -720,22 +981,22 @@ msgstr ""
 "care uşurează, vorbitorilor de punjabi, folosirea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:546
+#: ../po/debian-tasks.desc:696
 msgid "Punjabi environment"
 msgstr "Mediu punjabi"
 
 #. Description
-#: ../po/debian-tasks.desc:546
+#: ../po/debian-tasks.desc:696
 msgid "This task localises the desktop in Punjabi."
 msgstr "Această sarcină localizează mediul de birou în punjabi."
 
 #. Description
-#: ../po/debian-tasks.desc:553
+#: ../po/debian-tasks.desc:703
 msgid "Romanian environment"
 msgstr "Mediu românesc"
 
 #. Description
-#: ../po/debian-tasks.desc:553
+#: ../po/debian-tasks.desc:703
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
@@ -744,22 +1005,22 @@ msgstr ""
 "ajuta vorbitorii de română să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:564
+#: ../po/debian-tasks.desc:714
 msgid "Romanian desktop"
 msgstr "Sistem de birou românesc"
 
 #. Description
-#: ../po/debian-tasks.desc:564
+#: ../po/debian-tasks.desc:714
 msgid "This task localises the desktop in Romanian."
 msgstr "Această sarcină localizează mediul de birou în română."
 
 #. Description
-#: ../po/debian-tasks.desc:571
+#: ../po/debian-tasks.desc:721
 msgid "Russian environment"
 msgstr "Mediu rusesc"
 
 #. Description
-#: ../po/debian-tasks.desc:571
+#: ../po/debian-tasks.desc:721
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -768,22 +1029,22 @@ msgstr ""
 "ajuta vorbitorii de rusă să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:582
+#: ../po/debian-tasks.desc:732
 msgid "Russian desktop"
 msgstr "Sistem de birou rusesc"
 
 #. Description
-#: ../po/debian-tasks.desc:582
+#: ../po/debian-tasks.desc:732
 msgid "This task localises the desktop in Russian."
 msgstr "Această sarcină localizează mediul de birou în rusă."
 
 #. Description
-#: ../po/debian-tasks.desc:589
+#: ../po/debian-tasks.desc:739
 msgid "Slovak environment"
 msgstr "Mediu slovac"
 
 #. Description
-#: ../po/debian-tasks.desc:589
+#: ../po/debian-tasks.desc:739
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
@@ -792,22 +1053,50 @@ msgstr ""
 "ajuta vorbitorii de slovacă să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:597
+#: ../po/debian-tasks.desc:747
 msgid "Slovak desktop"
 msgstr "Sistem de birou slovac"
 
 #. Description
-#: ../po/debian-tasks.desc:597
+#: ../po/debian-tasks.desc:747
 msgid "This task localises the desktop in Slovak."
 msgstr "Această sarcină localizează mediul de birou în slovacă."
 
 #. Description
-#: ../po/debian-tasks.desc:604
+#: ../po/debian-tasks.desc:754
+#, fuzzy
+msgid "Slovenian environment"
+msgstr "Mediu slovac"
+
+#. Description
+#: ../po/debian-tasks.desc:754
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Slovenian to help Slovenian "
+"speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba slovacă, pentru a "
+"ajuta vorbitorii de slovacă să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:762
+#, fuzzy
+msgid "Slovenian desktop"
+msgstr "Sistem de birou slovac"
+
+#. Description
+#: ../po/debian-tasks.desc:762
+#, fuzzy
+msgid "This task localises the desktop in Slovenian."
+msgstr "Această sarcină localizează mediul de birou în slovacă."
+
+#. Description
+#: ../po/debian-tasks.desc:769
 msgid "Spanish environment"
 msgstr "Mediu spaniol"
 
 #. Description
-#: ../po/debian-tasks.desc:604
+#: ../po/debian-tasks.desc:769
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -816,34 +1105,34 @@ msgstr ""
 "uşurează vorbitorilor de spaniolă, folosirea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:615
+#: ../po/debian-tasks.desc:780
 msgid "Spanish desktop"
 msgstr "Sistem de birou spaniol"
 
 #. Description
-#: ../po/debian-tasks.desc:615
+#: ../po/debian-tasks.desc:780
 msgid "This task localises the desktop in Spanish."
 msgstr "Această sarcină localizează mediul de birou în spaniolă."
 
 #. Description
-#: ../po/debian-tasks.desc:622
+#: ../po/debian-tasks.desc:787
 msgid "Standard system"
 msgstr "Sistem de birou standard"
 
 #. Description
-#: ../po/debian-tasks.desc:622
+#: ../po/debian-tasks.desc:787
 msgid "This task installs a reasonably small character-mode system."
 msgstr ""
 "Această sarcină instalează un sistem în mod caracter de dimensiune rezonabil "
 "de mică."
 
 #. Description
-#: ../po/debian-tasks.desc:629
+#: ../po/debian-tasks.desc:794
 msgid "Swedish environment"
 msgstr "Mediu suedez"
 
 #. Description
-#: ../po/debian-tasks.desc:629
+#: ../po/debian-tasks.desc:794
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -852,22 +1141,50 @@ msgstr ""
 "ajuta vorbitorii de poloneză să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:639
+#: ../po/debian-tasks.desc:804
 msgid "Swedish desktop"
 msgstr "Sistem de birou suedez"
 
 #. Description
-#: ../po/debian-tasks.desc:639
+#: ../po/debian-tasks.desc:804
 msgid "This task localises the desktop in Swedish."
 msgstr "Această sarcină localizează mediul de birou în suedeză."
 
 #. Description
-#: ../po/debian-tasks.desc:646
+#: ../po/debian-tasks.desc:811
+#, fuzzy
+msgid "Tagalog environment"
+msgstr "Mediu thai"
+
+#. Description
+#: ../po/debian-tasks.desc:811
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Tagalog to help Tagalog "
+"speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba catalană, pentru "
+"a ajuta vorbitorii de catalană să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:819
+#, fuzzy
+msgid "Tamil desktop"
+msgstr "Sistem de birou thai"
+
+#. Description
+#: ../po/debian-tasks.desc:819
+#, fuzzy
+msgid "This task localises the desktop in Tamil."
+msgstr "Această sarcină localizează mediul de birou în thailandeză."
+
+#. Description
+#: ../po/debian-tasks.desc:827
 msgid "Thai environment"
 msgstr "Mediu thai"
 
 #. Description
-#: ../po/debian-tasks.desc:646
+#: ../po/debian-tasks.desc:827
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
@@ -876,22 +1193,22 @@ msgstr ""
 "utilizarea Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:658
+#: ../po/debian-tasks.desc:837
 msgid "Thai desktop"
 msgstr "Sistem de birou thai"
 
 #. Description
-#: ../po/debian-tasks.desc:658
+#: ../po/debian-tasks.desc:837
 msgid "This task localises the desktop in Thai."
 msgstr "Această sarcină localizează mediul de birou în thailandeză."
 
 #. Description
-#: ../po/debian-tasks.desc:665
+#: ../po/debian-tasks.desc:844
 msgid "Turkish environment"
 msgstr "Mediu turcesc"
 
 #. Description
-#: ../po/debian-tasks.desc:665
+#: ../po/debian-tasks.desc:844
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -900,22 +1217,22 @@ msgstr ""
 "ajuta vorbitorii de turcă să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:677
+#: ../po/debian-tasks.desc:856
 msgid "Turkish desktop"
 msgstr "Sistem de birou turcesc"
 
 #. Description
-#: ../po/debian-tasks.desc:677
+#: ../po/debian-tasks.desc:856
 msgid "This task localises the desktop in Turkish."
 msgstr "Această sarcină localizează mediul de birou în turcă."
 
 #. Description
-#: ../po/debian-tasks.desc:684
+#: ../po/debian-tasks.desc:863
 msgid "Ukrainian environment"
 msgstr "Mediu ucrainean"
 
 #. Description
-#: ../po/debian-tasks.desc:684
+#: ../po/debian-tasks.desc:863
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -924,24 +1241,52 @@ msgstr ""
 "pentru a ajuta vorbitorii de ucraineană să folosească Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:694
+#: ../po/debian-tasks.desc:873
 msgid "Ukrainian desktop"
 msgstr "Sistem de birou ucrainean"
 
 #. Description
-#: ../po/debian-tasks.desc:694
+#: ../po/debian-tasks.desc:873
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Această sarcină localizează mediul de birou în ucraineană."
 
 #. Description
-#: ../po/debian-tasks.desc:702
+#: ../po/debian-tasks.desc:881
 msgid "Web server"
 msgstr "Server de web"
 
 #. Description
-#: ../po/debian-tasks.desc:702
-msgid "This task selects packages useful for a general purpose web server system."
+#: ../po/debian-tasks.desc:881
+msgid ""
+"This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Acestă sarcină selectează un pachet util pentru un server de web de uz "
 "general."
 
+#. Description
+#: ../po/debian-tasks.desc:890
+#, fuzzy
+msgid "Welsh environment"
+msgstr "Mediu polonez"
+
+#. Description
+#: ../po/debian-tasks.desc:890
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in Welsh to help Welsh "
+"speaking people use Debian."
+msgstr ""
+"Acestă sarcină instalează pachete şi documentaţie în limba poloneză, pentru "
+"a ajuta vorbitorii de poloneză să folosească Debian."
+
+#. Description
+#: ../po/debian-tasks.desc:898
+#, fuzzy
+msgid "Welsh desktop"
+msgstr "Sistem de birou polonez"
+
+#. Description
+#: ../po/debian-tasks.desc:898
+#, fuzzy
+msgid "This task localises the desktop in Welsh."
+msgstr "Această sarcină localizează mediul de birou în poloneză."
