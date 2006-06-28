@@ -19,12 +19,15 @@ tasksel (2.50) UNRELEASED; urgency=low
     - latvian-desktop
   * Add fonts:
     - ttf-indic-fonts to -desktop tasks for supported Indic languages
-    - ttf-dejavu to bulgarian-desktop
+    - ttf-dejavu:
+      bulgarian-desktop
+      macedonian-desktop
   * Add openoffice.org-l10n-xx to:
     - bosnian-desktop
     - farsi-desktop
     - irish-desktop
     - croatian-desktop
+    - macedonian-desktop
   * Add openoffice.org-help-xx to:
     - estonian-desktop
   * Add openoffice.org-thesaurus-xx to:
@@ -40,6 +43,7 @@ tasksel (2.50) UNRELEASED; urgency=low
   * Add kde-i18n-xx to:
     - irish-desktop
     - korean-desktop
+    - macedonian-desktop
   * Replace mozilla-locale-xx by firefox-locale-x in:
     - catalan-desktop
     - danish-desktop
