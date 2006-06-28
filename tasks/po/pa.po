@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-06-26 22:26-0400\n"
+"POT-Creation-Date: 2006-06-27 21:04-0400\n"
 "PO-Revision-Date: 2006-04-22 15:12+0530\n"
 "Last-Translator: A S Alam <apbrar@gmail.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
@@ -33,6 +33,11 @@ msgstr "ਇਹ ਕੰਮ ਵੇਹੜੇ ਨੂੰ ਰੋਮਾਨੀਆਈ ਬ�
 
 #. Description
 #: ../po/debian-tasks.desc:11
+msgid "Arabic environment"
+msgstr "ਅਰਬੀ ਵਾਤਾਵਰਣ"
+
+#. Description
+#: ../po/debian-tasks.desc:11
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Arabic speakers to use Debian."
@@ -41,8 +46,9 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:22
-msgid "Arabic environment"
-msgstr "ਅਰਬੀ ਵਾਤਾਵਰਣ"
+#, fuzzy
+msgid "Arabic desktop"
+msgstr "ਥਾਈ ਵੇਹੜਾ"
 
 #. Description
 #: ../po/debian-tasks.desc:22
@@ -78,6 +84,11 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:47
+msgid "Bengali environment"
+msgstr "ਬੰਗਾਲੀ ਵਾਤਾਵਰਣ"
+
+#. Description
+#: ../po/debian-tasks.desc:47
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Bengali speakers to use Debian."
@@ -87,8 +98,9 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:58
-msgid "Bengali environment"
-msgstr "ਬੰਗਾਲੀ ਵਾਤਾਵਰਣ"
+#, fuzzy
+msgid "Bengali desktop"
+msgstr "ਬੁਲਗਾਰੀਆਈ ਵੇਹੜਾ"
 
 #. Description
 #: ../po/debian-tasks.desc:58
@@ -205,6 +217,11 @@ msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਸਧਾਰਨ 
 
 #. Description
 #: ../po/debian-tasks.desc:143
+msgid "Traditional Chinese environment"
+msgstr "ਮੂਲ ਚੀਨੀ ਵਾਤਾਵਰਣ"
+
+#. Description
+#: ../po/debian-tasks.desc:143
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
@@ -215,7 +232,8 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:155
-msgid "Traditional Chinese environment"
+#, fuzzy
+msgid "Traditional Chinese desktop"
 msgstr "ਮੂਲ ਚੀਨੀ ਵਾਤਾਵਰਣ"
 
 #. Description
@@ -359,6 +377,11 @@ msgstr "BIND DNS ਸਰਵਰ ਅਤੇ ਇਹਨਾਂ ਨਾਲ ਸਬੰਧ�
 
 #. Description
 #: ../po/debian-tasks.desc:255
+msgid "Dutch environment"
+msgstr "ਡੱਚ ਵਾਤਾਵਰਣ"
+
+#. Description
+#: ../po/debian-tasks.desc:255
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
@@ -367,8 +390,9 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:264
-msgid "Dutch environment"
-msgstr "ਡੱਚ ਵਾਤਾਵਰਣ"
+#, fuzzy
+msgid "Dutch desktop"
+msgstr "ਚੈੱਕ ਵੇਹੜਾ"
 
 #. Description
 #: ../po/debian-tasks.desc:264
@@ -378,34 +402,46 @@ msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਡੱਚ ਵਿ
 #. Description
 #: ../po/debian-tasks.desc:271
 #, fuzzy
+msgid "Dzongkha desktop"
+msgstr "ਡੈਨਿਸ ਵੇਹੜਾ"
+
+#. Description
+#: ../po/debian-tasks.desc:271
+#, fuzzy
+msgid "This task localises the desktop in Dzongkha."
+msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਡੈਨਿਸ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#. Description
+#: ../po/debian-tasks.desc:279
+#, fuzzy
 msgid "Esperanto desktop"
 msgstr "ਜਰਮਨ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:271
+#: ../po/debian-tasks.desc:279
 #, fuzzy
 msgid "This task localises the desktop in Esperanto."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਜਰਮਨ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:279
+#: ../po/debian-tasks.desc:287
 #, fuzzy
 msgid "Estonian desktop"
 msgstr "ਰੋਮਾਨੀਆਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:279
+#: ../po/debian-tasks.desc:287
 #, fuzzy
 msgid "This task localises the desktop in Estonian."
 msgstr "ਇਹ ਕੰਮ ਵੇਹੜੇ ਨੂੰ ਰੋਮਾਨੀਆਈ ਬੋਲੀ ਲਈ ਤਿਆਰ ਕਰਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:287
+#: ../po/debian-tasks.desc:295
 msgid "File server"
 msgstr "ਫਾਇਲ ਸਰਵਰ"
 
 #. Description
-#: ../po/debian-tasks.desc:287
+#: ../po/debian-tasks.desc:295
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
@@ -414,13 +450,13 @@ msgstr ""
 "ਅਤੇ NFS ਲਈ ਸਹਾਇਕ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:297
+#: ../po/debian-tasks.desc:305
 #, fuzzy
 msgid "Finnish environment"
 msgstr "ਡੈਨਿਸ਼ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:297
+#: ../po/debian-tasks.desc:305
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Finnish to help Finnish "
@@ -429,24 +465,24 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਡੈਨਿਸ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:305
+#: ../po/debian-tasks.desc:313
 #, fuzzy
 msgid "Finnish desktop"
 msgstr "ਡੈਨਿਸ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:305
+#: ../po/debian-tasks.desc:313
 #, fuzzy
 msgid "This task localises the desktop in Finnish."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਡੈਨਿਸ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:320
 msgid "French environment"
 msgstr "ਫਰੈਂਚ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:320
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -454,23 +490,23 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਫਰੈਂਚ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:323
+#: ../po/debian-tasks.desc:331
 msgid "French desktop"
 msgstr "ਫਰੈਂਚ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:323
+#: ../po/debian-tasks.desc:331
 msgid "This task localises the desktop in French."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਫਰੈਂਚ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:330
+#: ../po/debian-tasks.desc:338
 #, fuzzy
 msgid "Galician environment"
 msgstr "ਇਤਾਲਵੀ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:330
+#: ../po/debian-tasks.desc:338
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Galician to help Galician "
@@ -480,24 +516,24 @@ msgstr ""
 "ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:338
+#: ../po/debian-tasks.desc:346
 #, fuzzy
 msgid "Galician desktop"
 msgstr "ਇਤਾਲਵੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:338
+#: ../po/debian-tasks.desc:346
 #, fuzzy
 msgid "This task localises the desktop in Galician."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਇਤਾਲਵੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid "German environment"
 msgstr "ਜਰਮਨ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -505,34 +541,35 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਜਰਮਨ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:356
+#: ../po/debian-tasks.desc:364
 msgid "German desktop"
 msgstr "ਜਰਮਨ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:356
+#: ../po/debian-tasks.desc:364
 msgid "This task localises the desktop in German."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਜਰਮਨ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:372
 msgid "Gnome desktop environment"
 msgstr "ਗਨੋਮ ਵੇਹੜਾ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:372
+#, fuzzy
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
-"environment."
+"desktop."
 msgstr "ਇਹ ਕੰਮ ਨਾਲ ਅਧਾਰ \"ਵੇਹੜਾ\" ਸਾਫਟਵੇਅਰ ਗਨੋਮ ਵੇਹੜੇ ਸਮੇਤ ਉਪਲੱਬਧ ਹੁੰਦੇ ਹਨ।"
 
 #. Description
-#: ../po/debian-tasks.desc:375
+#: ../po/debian-tasks.desc:383
 msgid "Greek environment"
 msgstr "ਗਰੀਕ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:375
+#: ../po/debian-tasks.desc:383
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -540,22 +577,22 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਗਰੀਕ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:385
+#: ../po/debian-tasks.desc:393
 msgid "Greek desktop"
 msgstr "ਗਰੀਕ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:385
+#: ../po/debian-tasks.desc:393
 msgid "This task localises the desktop in Greek."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਗਰੀਕ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:392
+#: ../po/debian-tasks.desc:400
 msgid "Hebrew environment"
 msgstr "ਹੈਬਰਿਓ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:392
+#: ../po/debian-tasks.desc:400
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -564,17 +601,22 @@ msgstr ""
 "ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:400
+#: ../po/debian-tasks.desc:408
 msgid "Hebrew desktop"
 msgstr "ਹੈਬਰਿਓ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:400
+#: ../po/debian-tasks.desc:408
 msgid "This task localises the desktop in Hebrew."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਹੈਬਰਿਊ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:407
+#: ../po/debian-tasks.desc:415
+msgid "Hindi environment"
+msgstr "ਹਿੰਦੀ ਵਾਤਾਵਰਣ"
+
+#. Description
+#: ../po/debian-tasks.desc:415
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Hindi speakers to use Debian."
@@ -582,22 +624,23 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਹਿੰਦੀ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:418
-msgid "Hindi environment"
-msgstr "ਹਿੰਦੀ ਵਾਤਾਵਰਣ"
+#: ../po/debian-tasks.desc:426
+#, fuzzy
+msgid "Hindi desktop"
+msgstr "ਡੈਨਿਸ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:418
+#: ../po/debian-tasks.desc:426
 msgid "This task localises the desktop in Hindi."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਹਿੰਦੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:425
+#: ../po/debian-tasks.desc:433
 msgid "Hungarian environment"
 msgstr "ਹੰਗਰੀਆਈ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:425
+#: ../po/debian-tasks.desc:433
 msgid ""
 "This task installs packages and documentation in Hungarian to help Hungarian "
 "speaking people use Debian."
@@ -606,23 +649,23 @@ msgstr ""
 "ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:433
+#: ../po/debian-tasks.desc:441
 msgid "Hungarian desktop"
 msgstr "ਹੰਗਰੀਆਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:433
+#: ../po/debian-tasks.desc:441
 msgid "This task localises the desktop in Hungarian."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਹੰਗਰੀਆਈ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:440
+#: ../po/debian-tasks.desc:448
 #, fuzzy
 msgid "Icelandic environment"
 msgstr "ਇਤਾਲਵੀ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:440
+#: ../po/debian-tasks.desc:448
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Icelandic to help Icelandic "
@@ -632,25 +675,25 @@ msgstr ""
 "ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:448
+#: ../po/debian-tasks.desc:456
 #, fuzzy
 msgid "Icelandic desktop"
 msgstr "ਇਤਾਲਵੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:448
+#: ../po/debian-tasks.desc:456
 #, fuzzy
 msgid "This task localises the desktop in Icelandic."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਇਤਾਲਵੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:455
+#: ../po/debian-tasks.desc:463
 #, fuzzy
 msgid "Irish environment"
 msgstr "ਤੁਰਕ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:455
+#: ../po/debian-tasks.desc:463
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Irish to help Irish "
@@ -660,24 +703,24 @@ msgstr ""
 "ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:471
 #, fuzzy
 msgid "Irish desktop"
 msgstr "ਤੁਰਕ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:471
 #, fuzzy
 msgid "This task localises the desktop in Irish."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਤੁਰਕ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:478
 msgid "Italian environment"
 msgstr "ਇਤਾਲਵੀ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:478
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -686,45 +729,46 @@ msgstr ""
 "ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:489
 msgid "Italian desktop"
 msgstr "ਇਤਾਲਵੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:489
 msgid "This task localises the desktop in Italian."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਇਤਾਲਵੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:488
+#: ../po/debian-tasks.desc:496
 msgid "Japanese environment"
 msgstr "ਜਾਪਾਨੀ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:488
+#: ../po/debian-tasks.desc:496
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
 msgstr "ਇਹ ਕਾਰਜ ਨਾਲ ਜਾਪਾਨੀ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:500
-msgid "Japanese desktop environment"
+#: ../po/debian-tasks.desc:508
+#, fuzzy
+msgid "Japanese desktop desktop"
 msgstr "ਜਾਪਾਨੀ ਵੇਹੜਾ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:500
+#: ../po/debian-tasks.desc:508
 msgid "This task localises the desktop in Japanese."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਜਾਪਾਨੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:508
+#: ../po/debian-tasks.desc:516
 #, fuzzy
 msgid "KDE desktop environment"
 msgstr "ਵੇਹੜਾ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:508
+#: ../po/debian-tasks.desc:516
 #, fuzzy
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
@@ -732,44 +776,56 @@ msgid ""
 msgstr "ਇਹ ਕੰਮ ਨਾਲ ਅਧਾਰ \"ਵੇਹੜਾ\" ਸਾਫਟਵੇਅਰ ਗਨੋਮ ਵੇਹੜੇ ਸਮੇਤ ਉਪਲੱਬਧ ਹੁੰਦੇ ਹਨ।"
 
 #. Description
-#: ../po/debian-tasks.desc:528
+#: ../po/debian-tasks.desc:536
+#, fuzzy
+msgid "Khmer desktop"
+msgstr "ਕੋਰੀਆਈ ਵੇਹੜਾ"
+
+#. Description
+#: ../po/debian-tasks.desc:536
+#, fuzzy
+msgid "This task localises the desktop in Khmer."
+msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਕੋਰੀਆਈ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#. Description
+#: ../po/debian-tasks.desc:544
 msgid "Korean environment"
 msgstr "ਕੋਰੀਆਈ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:528
+#: ../po/debian-tasks.desc:544
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
 msgstr "ਇਹ ਕਾਰਜ ਨਾਲ ਕੋਰੀਆਈ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:540
+#: ../po/debian-tasks.desc:556
 msgid "Korean desktop"
 msgstr "ਕੋਰੀਆਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:540
+#: ../po/debian-tasks.desc:556
 msgid "This task localises the desktop in Korean."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਕੋਰੀਆਈ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:547
+#: ../po/debian-tasks.desc:563
 msgid "Laptop"
 msgstr "ਲੈਪਟਾਪ"
 
 #. Description
-#: ../po/debian-tasks.desc:547
+#: ../po/debian-tasks.desc:563
 msgid "This task installs software useful for a laptop."
 msgstr "ਇਹ ਕਾਰਜ ਨਾਲ ਲੈਪਟਾਪ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ।"
 
 #. Description
-#: ../po/debian-tasks.desc:554
+#: ../po/debian-tasks.desc:570
 msgid "Lithuanian environment"
 msgstr "ਲੀਥੂਨੀਅਨ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:554
+#: ../po/debian-tasks.desc:570
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -778,23 +834,23 @@ msgstr ""
 "ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:564
+#: ../po/debian-tasks.desc:580
 msgid "Lithuanian desktop"
 msgstr "ਲੀਥੂਨੀਅਨ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:564
+#: ../po/debian-tasks.desc:580
 msgid "This task localises the desktop in Lithuanian."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਲੂਥੀਨੀਅਨ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:571
+#: ../po/debian-tasks.desc:587
 #, fuzzy
 msgid "Macedonian environment"
 msgstr "ਰੋਮਾਨੀਆਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:571
+#: ../po/debian-tasks.desc:587
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Macedonian to help "
@@ -804,24 +860,24 @@ msgstr ""
 "ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:581
+#: ../po/debian-tasks.desc:597
 #, fuzzy
 msgid "Macedonian desktop"
 msgstr "ਰੋਮਾਨੀਆਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:581
+#: ../po/debian-tasks.desc:597
 #, fuzzy
 msgid "This task localises the desktop in Macedonian."
 msgstr "ਇਹ ਕੰਮ ਵੇਹੜੇ ਨੂੰ ਰੋਮਾਨੀਆਈ ਬੋਲੀ ਲਈ ਤਿਆਰ ਕਰਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:588
+#: ../po/debian-tasks.desc:604
 msgid "Mail server"
 msgstr "ਪੱਤਰ ਸਰਵਰ"
 
 #. Description
-#: ../po/debian-tasks.desc:588
+#: ../po/debian-tasks.desc:604
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -829,22 +885,22 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਤੁਹਾਡੇ ਲਈ ਸਧਾਰਨ ਪੱਤਰ ਸਰਵਰ ਸਿਸਟਮ ਦੀ ਵਰਤੋਂ ਲਈ ਲੋੜੀਦੇ ਸਭ ਪੈਕੇਜਾਂ ਦੀ ਪਛਾਣ ਕਰਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:598
+#: ../po/debian-tasks.desc:614
 msgid "manual package selection"
 msgstr "ਦਸਤੀ ਪੈਕੇਜ ਚੋਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:598
+#: ../po/debian-tasks.desc:614
 msgid "Manually select packages to install in aptitude."
 msgstr "ਐਪਟੀਟਿਉਡ ਵਿੱਚ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਦਸਤੀ ਪੈਕੇਜ ਚੁਣੋ।"
 
 #. Description
-#: ../po/debian-tasks.desc:605
+#: ../po/debian-tasks.desc:621
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "ਨਾਰਵੇਗੀਅਨ (ਬੋਕਮਾਕ ਅਤੇ ਨਊਨੋਰਸਕ) ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:605
+#: ../po/debian-tasks.desc:621
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -853,17 +909,22 @@ msgstr ""
 "ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:616
+#: ../po/debian-tasks.desc:632
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "ਨਾਰਵੇਗੀਅਨ (ਬੋਕਮਾਕ ਅਤੇ ਨਊਨੋਰਸਕ) ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:616
+#: ../po/debian-tasks.desc:632
 msgid "This task localises the desktop in Norwegian."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਨਾਰਵੇਗੀਅਨ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:623
+#: ../po/debian-tasks.desc:639
+msgid "Persian environment"
+msgstr "ਪਰਸੀਆਈ ਵਾਤਾਵਰਣ"
+
+#. Description
+#: ../po/debian-tasks.desc:639
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Persian speakers to use Debian."
@@ -872,22 +933,23 @@ msgstr ""
 "ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:634
-msgid "Persian environment"
-msgstr "ਪਰਸੀਆਈ ਵਾਤਾਵਰਣ"
+#: ../po/debian-tasks.desc:650
+#, fuzzy
+msgid "Persian desktop"
+msgstr "ਜਰਮਨ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:634
+#: ../po/debian-tasks.desc:650
 msgid "This task localises the desktop in Persian."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਪਰਸ਼ੀਆਈ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:641
+#: ../po/debian-tasks.desc:657
 msgid "Polish environment"
 msgstr "ਪੋਲੈਂਡੀ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:641
+#: ../po/debian-tasks.desc:657
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -895,23 +957,23 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਪੋਲੈਂਡੀ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:652
+#: ../po/debian-tasks.desc:668
 msgid "Polish desktop"
 msgstr "ਪੋਲੈਂਡੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:652
+#: ../po/debian-tasks.desc:668
 msgid "This task localises the desktop in Polish."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਪੋਲੈਂਡੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:659
+#: ../po/debian-tasks.desc:675
 #, fuzzy
 msgid "Portuguese environment"
 msgstr "ਬਰਾਜ਼ੀਲੀ ਪੁਰਤਗਾਲੀ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:659
+#: ../po/debian-tasks.desc:675
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Portuguese to help "
@@ -920,29 +982,34 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਗਰੀਕ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:667
+#: ../po/debian-tasks.desc:683
 #, fuzzy
 msgid "Portuguese desktop"
 msgstr "ਬਰਾਜ਼ੀਲੀ ਪੁਰਤਗਾਲੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:667
+#: ../po/debian-tasks.desc:683
 #, fuzzy
 msgid "This task localises the desktop in Portuguese."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਬਰਾਜ਼ੀਲੀ ਪੁਰਤਗਾਲੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:675
+#: ../po/debian-tasks.desc:691
 msgid "Print server"
 msgstr "ਪ੍ਰਿੰਟ ਸਰਵਰ"
 
 #. Description
-#: ../po/debian-tasks.desc:675
+#: ../po/debian-tasks.desc:691
 msgid "This task sets up your system to be a print server."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਤੁਹਾਡੇ ਸਿਸਟਮ ਨੂੰ ਪ੍ਰਿੰਟ ਸਰਵਰ ਦੇ ਤੌਰ ਤੇ ਤਿਆਰ ਕੀਤਾ ਜਾਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:685
+#: ../po/debian-tasks.desc:701
+msgid "Punjabi environment"
+msgstr "ਪੰਜਾਬੀ (ਗੁਰਮੁਖੀ) ਵਾਤਾਵਰਣ"
+
+#. Description
+#: ../po/debian-tasks.desc:701
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Punjabi speakers to use Debian."
@@ -951,22 +1018,23 @@ msgstr ""
 "ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:696
-msgid "Punjabi environment"
-msgstr "ਪੰਜਾਬੀ (ਗੁਰਮੁਖੀ) ਵਾਤਾਵਰਣ"
+#: ../po/debian-tasks.desc:712
+#, fuzzy
+msgid "Punjabi desktop"
+msgstr "ਹੰਗਰੀਆਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:696
+#: ../po/debian-tasks.desc:712
 msgid "This task localises the desktop in Punjabi."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਪੰਜਾਬੀ (ਗੁਰਮੁਖੀ) ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:703
+#: ../po/debian-tasks.desc:719
 msgid "Romanian environment"
 msgstr "ਰੋਮਾਨੀਆਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:703
+#: ../po/debian-tasks.desc:719
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
@@ -975,22 +1043,22 @@ msgstr ""
 "ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:714
+#: ../po/debian-tasks.desc:730
 msgid "Romanian desktop"
 msgstr "ਰੋਮਾਨੀਆਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:714
+#: ../po/debian-tasks.desc:730
 msgid "This task localises the desktop in Romanian."
 msgstr "ਇਹ ਕੰਮ ਵੇਹੜੇ ਨੂੰ ਰੋਮਾਨੀਆਈ ਬੋਲੀ ਲਈ ਤਿਆਰ ਕਰਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:721
+#: ../po/debian-tasks.desc:737
 msgid "Russian environment"
 msgstr "ਰੂਸੀ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:721
+#: ../po/debian-tasks.desc:737
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -998,22 +1066,22 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਰੂਸੀ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:732
+#: ../po/debian-tasks.desc:748
 msgid "Russian desktop"
 msgstr "ਰੂਸੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:732
+#: ../po/debian-tasks.desc:748
 msgid "This task localises the desktop in Russian."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਰੂਸੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:739
+#: ../po/debian-tasks.desc:755
 msgid "Slovak environment"
 msgstr "ਸਲੋਵਾਕ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:739
+#: ../po/debian-tasks.desc:755
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
@@ -1022,23 +1090,23 @@ msgstr ""
 "ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:747
+#: ../po/debian-tasks.desc:763
 msgid "Slovak desktop"
 msgstr "ਸਲੋਵਾਕ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:747
+#: ../po/debian-tasks.desc:763
 msgid "This task localises the desktop in Slovak."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਸਲੋਵਾਕ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:754
+#: ../po/debian-tasks.desc:770
 #, fuzzy
 msgid "Slovenian environment"
 msgstr "ਸਲੋਵਾਕ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:754
+#: ../po/debian-tasks.desc:770
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovenian to help Slovenian "
@@ -1048,24 +1116,24 @@ msgstr ""
 "ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:762
+#: ../po/debian-tasks.desc:778
 #, fuzzy
 msgid "Slovenian desktop"
 msgstr "ਸਲੋਵਾਕ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:762
+#: ../po/debian-tasks.desc:778
 #, fuzzy
 msgid "This task localises the desktop in Slovenian."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਸਲੋਵਾਕ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:769
+#: ../po/debian-tasks.desc:785
 msgid "Spanish environment"
 msgstr "ਸਪੇਨੀ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:769
+#: ../po/debian-tasks.desc:785
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -1073,32 +1141,32 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਸਪੇਨੀ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:780
+#: ../po/debian-tasks.desc:796
 msgid "Spanish desktop"
 msgstr "ਸਪੇਨੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:780
+#: ../po/debian-tasks.desc:796
 msgid "This task localises the desktop in Spanish."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਸਪੇਨੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:787
+#: ../po/debian-tasks.desc:803
 msgid "Standard system"
 msgstr "ਮਿਆਰੀ ਸਿਸਟਮ"
 
 #. Description
-#: ../po/debian-tasks.desc:787
+#: ../po/debian-tasks.desc:803
 msgid "This task installs a reasonably small character-mode system."
 msgstr "ਇਹ ਢੰਗ ਨਾਲ ਇੱਕ ਖਾਸ ਤੌਰ ਉੱਤੇ ਛੋਟੇ ਅੱਖਰ-ਢੰਗ ਸਿਸਟਮ ਇੰਸਟਾਲ ਹੋਵੇਗਾ।"
 
 #. Description
-#: ../po/debian-tasks.desc:794
+#: ../po/debian-tasks.desc:810
 msgid "Swedish environment"
 msgstr "ਸਵੀਡਸ਼ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:794
+#: ../po/debian-tasks.desc:810
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -1107,23 +1175,23 @@ msgstr ""
 "ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:804
+#: ../po/debian-tasks.desc:820
 msgid "Swedish desktop"
 msgstr "ਸਵੀਡਸ਼ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:804
+#: ../po/debian-tasks.desc:820
 msgid "This task localises the desktop in Swedish."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਸਵੀਡਨੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:811
+#: ../po/debian-tasks.desc:827
 #, fuzzy
 msgid "Tagalog environment"
 msgstr "ਥਾਈ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:811
+#: ../po/debian-tasks.desc:827
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Tagalog to help Tagalog "
@@ -1133,46 +1201,46 @@ msgstr ""
 "ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:819
+#: ../po/debian-tasks.desc:835
 #, fuzzy
 msgid "Tamil desktop"
 msgstr "ਥਾਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:819
+#: ../po/debian-tasks.desc:835
 #, fuzzy
 msgid "This task localises the desktop in Tamil."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਥਾਈ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:827
+#: ../po/debian-tasks.desc:843
 msgid "Thai environment"
 msgstr "ਥਾਈ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:827
+#: ../po/debian-tasks.desc:843
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
 msgstr "ਇਹ ਕਾਰਜ ਨਾਲ ਥਾਈ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ।"
 
 #. Description
-#: ../po/debian-tasks.desc:837
+#: ../po/debian-tasks.desc:853
 msgid "Thai desktop"
 msgstr "ਥਾਈ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:837
+#: ../po/debian-tasks.desc:853
 msgid "This task localises the desktop in Thai."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਥਾਈ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:844
+#: ../po/debian-tasks.desc:860
 msgid "Turkish environment"
 msgstr "ਤੁਰਕ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:844
+#: ../po/debian-tasks.desc:860
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -1181,22 +1249,22 @@ msgstr ""
 "ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:856
+#: ../po/debian-tasks.desc:872
 msgid "Turkish desktop"
 msgstr "ਤੁਰਕ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:856
+#: ../po/debian-tasks.desc:872
 msgid "This task localises the desktop in Turkish."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਤੁਰਕ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:863
+#: ../po/debian-tasks.desc:879
 msgid "Ukrainian environment"
 msgstr "ਯੂਕਰੇਨੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:863
+#: ../po/debian-tasks.desc:879
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -1205,34 +1273,34 @@ msgstr ""
 "ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:873
+#: ../po/debian-tasks.desc:889
 msgid "Ukrainian desktop"
 msgstr "ਯੂਕਰੇਨੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:873
+#: ../po/debian-tasks.desc:889
 msgid "This task localises the desktop in Ukrainian."
 msgstr "ਇਹ ਕੰਮ ਵੇਹੜੇ ਨੂੰ ਯੂਕਰੇਨ ਬੋਲੀ ਲਈ ਤਿਆਰ ਕਰਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:881
+#: ../po/debian-tasks.desc:897
 msgid "Web server"
 msgstr "ਵੈਬ ਸਰਵਰ"
 
 #. Description
-#: ../po/debian-tasks.desc:881
+#: ../po/debian-tasks.desc:897
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "ਇਸ ਪੈਕੇਜ ਵਿੱਚ ਆਮ ਲੋੜੀਦੇ ਵੈੱਬ ਸਰਵਰ ਲਈ ਵਰਤੋਂ ਲਈ ਪੈਕੇਜ ਹਨ।"
 
 #. Description
-#: ../po/debian-tasks.desc:890
+#: ../po/debian-tasks.desc:906
 #, fuzzy
 msgid "Welsh environment"
 msgstr "ਪੋਲੈਂਡੀ ਵਾਤਾਵਰਣ"
 
 #. Description
-#: ../po/debian-tasks.desc:890
+#: ../po/debian-tasks.desc:906
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Welsh to help Welsh "
@@ -1241,13 +1309,25 @@ msgstr ""
 "ਇਹ ਕਾਰਜ ਨਾਲ ਪੋਲੈਂਡੀ ਬੋਲਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਡੇਬੀਅਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਾਰਜ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੰਸਟਾਲ ਹੁੰਦੇ ਹਨ"
 
 #. Description
-#: ../po/debian-tasks.desc:898
+#: ../po/debian-tasks.desc:914
 #, fuzzy
 msgid "Welsh desktop"
 msgstr "ਪੋਲੈਂਡੀ ਵੇਹੜਾ"
 
 #. Description
-#: ../po/debian-tasks.desc:898
+#: ../po/debian-tasks.desc:914
 #, fuzzy
 msgid "This task localises the desktop in Welsh."
 msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਪੋਲੈਂਡੀ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#. Description
+#: ../po/debian-tasks.desc:921
+#, fuzzy
+msgid "Xhosa desktop"
+msgstr "ਥਾਈ ਵੇਹੜਾ"
+
+#. Description
+#: ../po/debian-tasks.desc:921
+#, fuzzy
+msgid "This task localises the desktop in Xhosa."
+msgstr "ਇਸ ਕਾਰਜ ਨਾਲ ਵੇਹੜੇ ਨੂੰ ਥਾਈ ਵਿੱਚ ਤਿਆਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"

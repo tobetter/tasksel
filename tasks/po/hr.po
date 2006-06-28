@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer HR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-06-26 22:26-0400\n"
+"POT-Creation-Date: 2006-06-27 21:04-0400\n"
 "PO-Revision-Date: 2004-07-23 23:31+0200\n"
 "Last-Translator: Krunoslav Gernhard <kruno@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -29,6 +29,12 @@ msgstr "Ova zadaæa donosi radni stol lokaliziran na ukrajinski."
 #. Description
 #: ../po/debian-tasks.desc:11
 #, fuzzy
+msgid "Arabic environment"
+msgstr "Tajlandsko okru¾je"
+
+#. Description
+#: ../po/debian-tasks.desc:11
+#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Arabic speakers to use Debian."
@@ -39,8 +45,8 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:22
 #, fuzzy
-msgid "Arabic environment"
-msgstr "Tajlandsko okru¾je"
+msgid "Arabic desktop"
+msgstr "Tajlandski radni stol"
 
 #. Description
 #: ../po/debian-tasks.desc:22
@@ -79,6 +85,12 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:47
 #, fuzzy
+msgid "Bengali environment"
+msgstr "Talijansko okru¾je"
+
+#. Description
+#: ../po/debian-tasks.desc:47
+#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Bengali speakers to use Debian."
@@ -89,8 +101,8 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:58
 #, fuzzy
-msgid "Bengali environment"
-msgstr "Talijansko okru¾je"
+msgid "Bengali desktop"
+msgstr "Talijanski radni stol"
 
 #. Description
 #: ../po/debian-tasks.desc:58
@@ -215,6 +227,11 @@ msgstr "Ova zadaæa donosi radni stol lokaliziran na pojednostavljeni kineski."
 
 #. Description
 #: ../po/debian-tasks.desc:143
+msgid "Traditional Chinese environment"
+msgstr "Tradicionalno kinesko okru¾je"
+
+#. Description
+#: ../po/debian-tasks.desc:143
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
@@ -226,7 +243,8 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:155
-msgid "Traditional Chinese environment"
+#, fuzzy
+msgid "Traditional Chinese desktop"
 msgstr "Tradicionalno kinesko okru¾je"
 
 #. Description
@@ -381,6 +399,12 @@ msgstr "Izabire BIND DNS poslu¾itelj s odgovarajuæom dokumentacijom i alatima."
 #. Description
 #: ../po/debian-tasks.desc:255
 #, fuzzy
+msgid "Dutch environment"
+msgstr "Francusko okru¾je"
+
+#. Description
+#: ../po/debian-tasks.desc:255
+#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
@@ -391,8 +415,8 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:264
 #, fuzzy
-msgid "Dutch environment"
-msgstr "Francusko okru¾je"
+msgid "Dutch desktop"
+msgstr "Francuski radni stol."
 
 #. Description
 #: ../po/debian-tasks.desc:264
@@ -403,34 +427,46 @@ msgstr "Ova zadaæa donosi radni stol lokaliziran na tajlandski."
 #. Description
 #: ../po/debian-tasks.desc:271
 #, fuzzy
+msgid "Dzongkha desktop"
+msgstr "Danski radni stol"
+
+#. Description
+#: ../po/debian-tasks.desc:271
+#, fuzzy
+msgid "This task localises the desktop in Dzongkha."
+msgstr "Ova zadaæa donosi radni stol lokaliziran na danski."
+
+#. Description
+#: ../po/debian-tasks.desc:279
+#, fuzzy
 msgid "Esperanto desktop"
 msgstr "Njemaèki radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:271
+#: ../po/debian-tasks.desc:279
 #, fuzzy
 msgid "This task localises the desktop in Esperanto."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na njemaèki."
 
 #. Description
-#: ../po/debian-tasks.desc:279
+#: ../po/debian-tasks.desc:287
 #, fuzzy
 msgid "Estonian desktop"
 msgstr "Ukrajinski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:279
+#: ../po/debian-tasks.desc:287
 #, fuzzy
 msgid "This task localises the desktop in Estonian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na ukrajinski."
 
 #. Description
-#: ../po/debian-tasks.desc:287
+#: ../po/debian-tasks.desc:295
 msgid "File server"
 msgstr "Datoteèni poslu¾itelj"
 
 #. Description
-#: ../po/debian-tasks.desc:287
+#: ../po/debian-tasks.desc:295
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
@@ -439,13 +475,13 @@ msgstr ""
 "NetBIOS i NFS."
 
 #. Description
-#: ../po/debian-tasks.desc:297
+#: ../po/debian-tasks.desc:305
 #, fuzzy
 msgid "Finnish environment"
 msgstr "Dansko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:297
+#: ../po/debian-tasks.desc:305
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Finnish to help Finnish "
@@ -455,24 +491,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore danski."
 
 #. Description
-#: ../po/debian-tasks.desc:305
+#: ../po/debian-tasks.desc:313
 #, fuzzy
 msgid "Finnish desktop"
 msgstr "Danski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:305
+#: ../po/debian-tasks.desc:313
 #, fuzzy
 msgid "This task localises the desktop in Finnish."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na danski."
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:320
 msgid "French environment"
 msgstr "Francusko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:320
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -481,24 +517,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore francuski."
 
 #. Description
-#: ../po/debian-tasks.desc:323
+#: ../po/debian-tasks.desc:331
 msgid "French desktop"
 msgstr "Francuski radni stol."
 
 #. Description
-#: ../po/debian-tasks.desc:323
+#: ../po/debian-tasks.desc:331
 #, fuzzy
 msgid "This task localises the desktop in French."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na francuski."
 
 #. Description
-#: ../po/debian-tasks.desc:330
+#: ../po/debian-tasks.desc:338
 #, fuzzy
 msgid "Galician environment"
 msgstr "Talijansko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:330
+#: ../po/debian-tasks.desc:338
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Galician to help Galician "
@@ -508,24 +544,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:338
+#: ../po/debian-tasks.desc:346
 #, fuzzy
 msgid "Galician desktop"
 msgstr "Talijanski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:338
+#: ../po/debian-tasks.desc:346
 #, fuzzy
 msgid "This task localises the desktop in Galician."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid "German environment"
 msgstr "Njemaèko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -534,36 +570,36 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore njemaèki."
 
 #. Description
-#: ../po/debian-tasks.desc:356
+#: ../po/debian-tasks.desc:364
 msgid "German desktop"
 msgstr "Njemaèki radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:356
+#: ../po/debian-tasks.desc:364
 #, fuzzy
 msgid "This task localises the desktop in German."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na njemaèki."
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:372
 #, fuzzy
 msgid "Gnome desktop environment"
 msgstr "Japansko okru¾je radnog stola"
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:372
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
-"environment."
+"desktop."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:375
+#: ../po/debian-tasks.desc:383
 msgid "Greek environment"
 msgstr "Grèko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:375
+#: ../po/debian-tasks.desc:383
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -572,23 +608,23 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore grèki."
 
 #. Description
-#: ../po/debian-tasks.desc:385
+#: ../po/debian-tasks.desc:393
 msgid "Greek desktop"
 msgstr "Grèki radni stol."
 
 #. Description
-#: ../po/debian-tasks.desc:385
+#: ../po/debian-tasks.desc:393
 #, fuzzy
 msgid "This task localises the desktop in Greek."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na grèki."
 
 #. Description
-#: ../po/debian-tasks.desc:392
+#: ../po/debian-tasks.desc:400
 msgid "Hebrew environment"
 msgstr "Hebrejsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:392
+#: ../po/debian-tasks.desc:400
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -597,18 +633,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore hebrejski."
 
 #. Description
-#: ../po/debian-tasks.desc:400
+#: ../po/debian-tasks.desc:408
 msgid "Hebrew desktop"
 msgstr "Hebrejski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:400
+#: ../po/debian-tasks.desc:408
 #, fuzzy
 msgid "This task localises the desktop in Hebrew."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na hebrejski."
 
 #. Description
-#: ../po/debian-tasks.desc:407
+#: ../po/debian-tasks.desc:415
+#, fuzzy
+msgid "Hindi environment"
+msgstr "Dansko okru¾je"
+
+#. Description
+#: ../po/debian-tasks.desc:415
 #, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
@@ -618,25 +660,25 @@ msgstr ""
 "koja olakÅ¡ava uporabu Debiana osobama koje govore korejski."
 
 #. Description
-#: ../po/debian-tasks.desc:418
+#: ../po/debian-tasks.desc:426
 #, fuzzy
-msgid "Hindi environment"
-msgstr "Dansko okru¾je"
+msgid "Hindi desktop"
+msgstr "Danski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:418
+#: ../po/debian-tasks.desc:426
 #, fuzzy
 msgid "This task localises the desktop in Hindi."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na danski."
 
 #. Description
-#: ../po/debian-tasks.desc:425
+#: ../po/debian-tasks.desc:433
 #, fuzzy
 msgid "Hungarian environment"
 msgstr "Talijansko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:425
+#: ../po/debian-tasks.desc:433
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Hungarian to help Hungarian "
@@ -646,25 +688,25 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:433
+#: ../po/debian-tasks.desc:441
 #, fuzzy
 msgid "Hungarian desktop"
 msgstr "Talijanski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:433
+#: ../po/debian-tasks.desc:441
 #, fuzzy
 msgid "This task localises the desktop in Hungarian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na ruski."
 
 #. Description
-#: ../po/debian-tasks.desc:440
+#: ../po/debian-tasks.desc:448
 #, fuzzy
 msgid "Icelandic environment"
 msgstr "Talijansko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:440
+#: ../po/debian-tasks.desc:448
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Icelandic to help Icelandic "
@@ -674,25 +716,25 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:448
+#: ../po/debian-tasks.desc:456
 #, fuzzy
 msgid "Icelandic desktop"
 msgstr "Talijanski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:448
+#: ../po/debian-tasks.desc:456
 #, fuzzy
 msgid "This task localises the desktop in Icelandic."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:455
+#: ../po/debian-tasks.desc:463
 #, fuzzy
 msgid "Irish environment"
 msgstr "Tursko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:455
+#: ../po/debian-tasks.desc:463
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Irish to help Irish "
@@ -702,24 +744,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore turski."
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:471
 #, fuzzy
 msgid "Irish desktop"
 msgstr "Turski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:471
 #, fuzzy
 msgid "This task localises the desktop in Irish."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na turski."
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:478
 msgid "Italian environment"
 msgstr "Talijansko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:478
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -728,23 +770,23 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:489
 msgid "Italian desktop"
 msgstr "Talijanski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:489
 #, fuzzy
 msgid "This task localises the desktop in Italian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:488
+#: ../po/debian-tasks.desc:496
 msgid "Japanese environment"
 msgstr "Japansko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:488
+#: ../po/debian-tasks.desc:496
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -753,36 +795,49 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore japanski."
 
 #. Description
-#: ../po/debian-tasks.desc:500
-msgid "Japanese desktop environment"
+#: ../po/debian-tasks.desc:508
+#, fuzzy
+msgid "Japanese desktop desktop"
 msgstr "Japansko okru¾je radnog stola"
 
 #. Description
-#: ../po/debian-tasks.desc:500
+#: ../po/debian-tasks.desc:508
 #, fuzzy
 msgid "This task localises the desktop in Japanese."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na japanski."
 
 #. Description
-#: ../po/debian-tasks.desc:508
+#: ../po/debian-tasks.desc:516
 #, fuzzy
 msgid "KDE desktop environment"
 msgstr "Kuæno korisnièko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:508
+#: ../po/debian-tasks.desc:516
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:528
+#: ../po/debian-tasks.desc:536
+#, fuzzy
+msgid "Khmer desktop"
+msgstr "Korejski radni stol"
+
+#. Description
+#: ../po/debian-tasks.desc:536
+#, fuzzy
+msgid "This task localises the desktop in Khmer."
+msgstr "Ova zadaæa donosi radni stol lokaliziran na korejski."
+
+#. Description
+#: ../po/debian-tasks.desc:544
 msgid "Korean environment"
 msgstr "Korejsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:528
+#: ../po/debian-tasks.desc:544
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
@@ -791,33 +846,33 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore korejski."
 
 #. Description
-#: ../po/debian-tasks.desc:540
+#: ../po/debian-tasks.desc:556
 msgid "Korean desktop"
 msgstr "Korejski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:540
+#: ../po/debian-tasks.desc:556
 #, fuzzy
 msgid "This task localises the desktop in Korean."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na korejski."
 
 #. Description
-#: ../po/debian-tasks.desc:547
+#: ../po/debian-tasks.desc:563
 msgid "Laptop"
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:547
+#: ../po/debian-tasks.desc:563
 msgid "This task installs software useful for a laptop."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:554
+#: ../po/debian-tasks.desc:570
 msgid "Lithuanian environment"
 msgstr "Litvansko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:554
+#: ../po/debian-tasks.desc:570
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -826,24 +881,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore litvanski."
 
 #. Description
-#: ../po/debian-tasks.desc:564
+#: ../po/debian-tasks.desc:580
 msgid "Lithuanian desktop"
 msgstr "Litvanski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:564
+#: ../po/debian-tasks.desc:580
 #, fuzzy
 msgid "This task localises the desktop in Lithuanian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na litvanski."
 
 #. Description
-#: ../po/debian-tasks.desc:571
+#: ../po/debian-tasks.desc:587
 #, fuzzy
 msgid "Macedonian environment"
 msgstr "Ukrajinsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:571
+#: ../po/debian-tasks.desc:587
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Macedonian to help "
@@ -853,24 +908,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:581
+#: ../po/debian-tasks.desc:597
 #, fuzzy
 msgid "Macedonian desktop"
 msgstr "Ukrajinski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:581
+#: ../po/debian-tasks.desc:597
 #, fuzzy
 msgid "This task localises the desktop in Macedonian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na ukrajinski."
 
 #. Description
-#: ../po/debian-tasks.desc:588
+#: ../po/debian-tasks.desc:604
 msgid "Mail server"
 msgstr "Poslu¾itelj za e-po¹tu"
 
 #. Description
-#: ../po/debian-tasks.desc:588
+#: ../po/debian-tasks.desc:604
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -878,22 +933,22 @@ msgstr ""
 "Ova zadaæa izabire niz paketa korisnih za poslu¾itelj e-po¹te opæe namjene."
 
 #. Description
-#: ../po/debian-tasks.desc:598
+#: ../po/debian-tasks.desc:614
 msgid "manual package selection"
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:598
+#: ../po/debian-tasks.desc:614
 msgid "Manually select packages to install in aptitude."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:605
+#: ../po/debian-tasks.desc:621
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Norve¹ko (Bokmaal i Nynorsk) okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:605
+#: ../po/debian-tasks.desc:621
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -902,18 +957,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore norve¹ki."
 
 #. Description
-#: ../po/debian-tasks.desc:616
+#: ../po/debian-tasks.desc:632
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "Norve¹ki (Bokmaal i Nynorsk) radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:616
+#: ../po/debian-tasks.desc:632
 #, fuzzy
 msgid "This task localises the desktop in Norwegian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na norve¹ki."
 
 #. Description
-#: ../po/debian-tasks.desc:623
+#: ../po/debian-tasks.desc:639
+#, fuzzy
+msgid "Persian environment"
+msgstr "Njemaèko okru¾je"
+
+#. Description
+#: ../po/debian-tasks.desc:639
 #, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
@@ -923,24 +984,24 @@ msgstr ""
 "koja olakÅ¡ava uporabu Debiana osobama koje govore korejski."
 
 #. Description
-#: ../po/debian-tasks.desc:634
+#: ../po/debian-tasks.desc:650
 #, fuzzy
-msgid "Persian environment"
-msgstr "Njemaèko okru¾je"
+msgid "Persian desktop"
+msgstr "Njemaèki radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:634
+#: ../po/debian-tasks.desc:650
 #, fuzzy
 msgid "This task localises the desktop in Persian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na njemaèki."
 
 #. Description
-#: ../po/debian-tasks.desc:641
+#: ../po/debian-tasks.desc:657
 msgid "Polish environment"
 msgstr "Poljsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:641
+#: ../po/debian-tasks.desc:657
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -949,24 +1010,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore poljski."
 
 #. Description
-#: ../po/debian-tasks.desc:652
+#: ../po/debian-tasks.desc:668
 msgid "Polish desktop"
 msgstr "Poljski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:652
+#: ../po/debian-tasks.desc:668
 #, fuzzy
 msgid "This task localises the desktop in Polish."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na poljski."
 
 #. Description
-#: ../po/debian-tasks.desc:659
+#: ../po/debian-tasks.desc:675
 #, fuzzy
 msgid "Portuguese environment"
 msgstr "Brazilsko portugalsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:659
+#: ../po/debian-tasks.desc:675
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Portuguese to help "
@@ -976,29 +1037,35 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore grèki."
 
 #. Description
-#: ../po/debian-tasks.desc:667
+#: ../po/debian-tasks.desc:683
 #, fuzzy
 msgid "Portuguese desktop"
 msgstr "Brazilski portugalski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:667
+#: ../po/debian-tasks.desc:683
 #, fuzzy
 msgid "This task localises the desktop in Portuguese."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na brazilski portugalski."
 
 #. Description
-#: ../po/debian-tasks.desc:675
+#: ../po/debian-tasks.desc:691
 msgid "Print server"
 msgstr "Poslu¾itelj za ispis"
 
 #. Description
-#: ../po/debian-tasks.desc:675
+#: ../po/debian-tasks.desc:691
 msgid "This task sets up your system to be a print server."
 msgstr "Ova zadaæa pode¹ava va¹ sustav kao poslu¾itelj za ispis."
 
 #. Description
-#: ../po/debian-tasks.desc:685
+#: ../po/debian-tasks.desc:701
+#, fuzzy
+msgid "Punjabi environment"
+msgstr "Tajlandsko okru¾je"
+
+#. Description
+#: ../po/debian-tasks.desc:701
 #, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
@@ -1008,25 +1075,25 @@ msgstr ""
 "koja olakÅ¡ava uporabu Debiana osobama koje govore korejski."
 
 #. Description
-#: ../po/debian-tasks.desc:696
+#: ../po/debian-tasks.desc:712
 #, fuzzy
-msgid "Punjabi environment"
-msgstr "Tajlandsko okru¾je"
+msgid "Punjabi desktop"
+msgstr "Talijanski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:696
+#: ../po/debian-tasks.desc:712
 #, fuzzy
 msgid "This task localises the desktop in Punjabi."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na tajlandski."
 
 #. Description
-#: ../po/debian-tasks.desc:703
+#: ../po/debian-tasks.desc:719
 #, fuzzy
 msgid "Romanian environment"
 msgstr "Ukrajinsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:703
+#: ../po/debian-tasks.desc:719
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
@@ -1036,24 +1103,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:714
+#: ../po/debian-tasks.desc:730
 #, fuzzy
 msgid "Romanian desktop"
 msgstr "Ukrajinski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:714
+#: ../po/debian-tasks.desc:730
 #, fuzzy
 msgid "This task localises the desktop in Romanian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na ukrajinski."
 
 #. Description
-#: ../po/debian-tasks.desc:721
+#: ../po/debian-tasks.desc:737
 msgid "Russian environment"
 msgstr "Rusko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:721
+#: ../po/debian-tasks.desc:737
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -1062,24 +1129,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore ruski."
 
 #. Description
-#: ../po/debian-tasks.desc:732
+#: ../po/debian-tasks.desc:748
 msgid "Russian desktop"
 msgstr "Ruski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:732
+#: ../po/debian-tasks.desc:748
 #, fuzzy
 msgid "This task localises the desktop in Russian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na ruski."
 
 #. Description
-#: ../po/debian-tasks.desc:739
+#: ../po/debian-tasks.desc:755
 #, fuzzy
 msgid "Slovak environment"
 msgstr "Korejsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:739
+#: ../po/debian-tasks.desc:755
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
@@ -1089,25 +1156,25 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:747
+#: ../po/debian-tasks.desc:763
 #, fuzzy
 msgid "Slovak desktop"
 msgstr "Korejski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:747
+#: ../po/debian-tasks.desc:763
 #, fuzzy
 msgid "This task localises the desktop in Slovak."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na korejski."
 
 #. Description
-#: ../po/debian-tasks.desc:754
+#: ../po/debian-tasks.desc:770
 #, fuzzy
 msgid "Slovenian environment"
 msgstr "Korejsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:754
+#: ../po/debian-tasks.desc:770
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovenian to help Slovenian "
@@ -1117,24 +1184,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore talijanski."
 
 #. Description
-#: ../po/debian-tasks.desc:762
+#: ../po/debian-tasks.desc:778
 #, fuzzy
 msgid "Slovenian desktop"
 msgstr "Korejski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:762
+#: ../po/debian-tasks.desc:778
 #, fuzzy
 msgid "This task localises the desktop in Slovenian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na korejski."
 
 #. Description
-#: ../po/debian-tasks.desc:769
+#: ../po/debian-tasks.desc:785
 msgid "Spanish environment"
 msgstr "©panjolsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:769
+#: ../po/debian-tasks.desc:785
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -1143,33 +1210,33 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore ¹panjolski."
 
 #. Description
-#: ../po/debian-tasks.desc:780
+#: ../po/debian-tasks.desc:796
 msgid "Spanish desktop"
 msgstr "©panjolski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:780
+#: ../po/debian-tasks.desc:796
 #, fuzzy
 msgid "This task localises the desktop in Spanish."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na ¹panjolski."
 
 #. Description
-#: ../po/debian-tasks.desc:787
+#: ../po/debian-tasks.desc:803
 msgid "Standard system"
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:787
+#: ../po/debian-tasks.desc:803
 msgid "This task installs a reasonably small character-mode system."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:794
+#: ../po/debian-tasks.desc:810
 msgid "Swedish environment"
 msgstr "©vedsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:794
+#: ../po/debian-tasks.desc:810
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -1178,24 +1245,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore ¹vedski."
 
 #. Description
-#: ../po/debian-tasks.desc:804
+#: ../po/debian-tasks.desc:820
 msgid "Swedish desktop"
 msgstr "©vedski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:804
+#: ../po/debian-tasks.desc:820
 #, fuzzy
 msgid "This task localises the desktop in Swedish."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na ¹vedski."
 
 #. Description
-#: ../po/debian-tasks.desc:811
+#: ../po/debian-tasks.desc:827
 #, fuzzy
 msgid "Tagalog environment"
 msgstr "Tajlandsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:811
+#: ../po/debian-tasks.desc:827
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Tagalog to help Tagalog "
@@ -1205,24 +1272,24 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore katalanski."
 
 #. Description
-#: ../po/debian-tasks.desc:819
+#: ../po/debian-tasks.desc:835
 #, fuzzy
 msgid "Tamil desktop"
 msgstr "Tajlandski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:819
+#: ../po/debian-tasks.desc:835
 #, fuzzy
 msgid "This task localises the desktop in Tamil."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na tajlandski."
 
 #. Description
-#: ../po/debian-tasks.desc:827
+#: ../po/debian-tasks.desc:843
 msgid "Thai environment"
 msgstr "Tajlandsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:827
+#: ../po/debian-tasks.desc:843
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
@@ -1231,23 +1298,23 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore tajlandski."
 
 #. Description
-#: ../po/debian-tasks.desc:837
+#: ../po/debian-tasks.desc:853
 msgid "Thai desktop"
 msgstr "Tajlandski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:837
+#: ../po/debian-tasks.desc:853
 #, fuzzy
 msgid "This task localises the desktop in Thai."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na tajlandski."
 
 #. Description
-#: ../po/debian-tasks.desc:844
+#: ../po/debian-tasks.desc:860
 msgid "Turkish environment"
 msgstr "Tursko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:844
+#: ../po/debian-tasks.desc:860
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -1256,23 +1323,23 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore turski."
 
 #. Description
-#: ../po/debian-tasks.desc:856
+#: ../po/debian-tasks.desc:872
 msgid "Turkish desktop"
 msgstr "Turski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:856
+#: ../po/debian-tasks.desc:872
 #, fuzzy
 msgid "This task localises the desktop in Turkish."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na turski."
 
 #. Description
-#: ../po/debian-tasks.desc:863
+#: ../po/debian-tasks.desc:879
 msgid "Ukrainian environment"
 msgstr "Ukrajinsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:863
+#: ../po/debian-tasks.desc:879
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -1281,36 +1348,36 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore ukrajinski."
 
 #. Description
-#: ../po/debian-tasks.desc:873
+#: ../po/debian-tasks.desc:889
 msgid "Ukrainian desktop"
 msgstr "Ukrajinski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:873
+#: ../po/debian-tasks.desc:889
 #, fuzzy
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na ukrajinski."
 
 #. Description
-#: ../po/debian-tasks.desc:881
+#: ../po/debian-tasks.desc:897
 msgid "Web server"
 msgstr "Mre¾ni server"
 
 #. Description
-#: ../po/debian-tasks.desc:881
+#: ../po/debian-tasks.desc:897
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Ova zadaæa izabire niz paketa korisnih za mre¾ni poslu¾itelj opæe namjene."
 
 #. Description
-#: ../po/debian-tasks.desc:890
+#: ../po/debian-tasks.desc:906
 #, fuzzy
 msgid "Welsh environment"
 msgstr "Poljsko okru¾je"
 
 #. Description
-#: ../po/debian-tasks.desc:890
+#: ../po/debian-tasks.desc:906
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Welsh to help Welsh "
@@ -1320,16 +1387,28 @@ msgstr ""
 "olak¹ava uporabu Debiana osobama koje govore poljski."
 
 #. Description
-#: ../po/debian-tasks.desc:898
+#: ../po/debian-tasks.desc:914
 #, fuzzy
 msgid "Welsh desktop"
 msgstr "Poljski radni stol"
 
 #. Description
-#: ../po/debian-tasks.desc:898
+#: ../po/debian-tasks.desc:914
 #, fuzzy
 msgid "This task localises the desktop in Welsh."
 msgstr "Ova zadaæa donosi radni stol lokaliziran na poljski."
+
+#. Description
+#: ../po/debian-tasks.desc:921
+#, fuzzy
+msgid "Xhosa desktop"
+msgstr "Tajlandski radni stol"
+
+#. Description
+#: ../po/debian-tasks.desc:921
+#, fuzzy
+msgid "This task localises the desktop in Xhosa."
+msgstr "Ova zadaæa donosi radni stol lokaliziran na tajlandski."
 
 #~ msgid ""
 #~ "This task provides basic \"desktop\" software, including a variety of "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-06-26 22:26-0400\n"
+"POT-Creation-Date: 2006-06-27 21:04-0400\n"
 "PO-Revision-Date: 2004-11-20 05:02-0500\n"
 "Last-Translator: Dafydd Harries <daf@muse.19inch.net>\n"
 "Language-Team: Welsh <cy@pengwyn.linux.org.uk>\n"
@@ -29,6 +29,12 @@ msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Wcraineg"
 #. Description
 #: ../po/debian-tasks.desc:11
 #, fuzzy
+msgid "Arabic environment"
+msgstr "Amgylchedd Thai"
+
+#. Description
+#: ../po/debian-tasks.desc:11
+#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Arabic speakers to use Debian."
@@ -39,8 +45,8 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:22
 #, fuzzy
-msgid "Arabic environment"
-msgstr "Amgylchedd Thai"
+msgid "Arabic desktop"
+msgstr "Penbwrdd Thai"
 
 #. Description
 #: ../po/debian-tasks.desc:22
@@ -79,6 +85,12 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:47
 #, fuzzy
+msgid "Bengali environment"
+msgstr "Amgylchedd Eidaleg"
+
+#. Description
+#: ../po/debian-tasks.desc:47
+#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Bengali speakers to use Debian."
@@ -89,8 +101,8 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:58
 #, fuzzy
-msgid "Bengali environment"
-msgstr "Amgylchedd Eidaleg"
+msgid "Bengali desktop"
+msgstr "Penbwrdd Eidaleg"
 
 #. Description
 #: ../po/debian-tasks.desc:58
@@ -220,6 +232,11 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:143
+msgid "Traditional Chinese environment"
+msgstr "Amgylchedd Tsieinëeg Symleiddiedig"
+
+#. Description
+#: ../po/debian-tasks.desc:143
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
@@ -231,7 +248,8 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:155
-msgid "Traditional Chinese environment"
+#, fuzzy
+msgid "Traditional Chinese desktop"
 msgstr "Amgylchedd Tsieinëeg Symleiddiedig"
 
 #. Description
@@ -391,6 +409,12 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:255
 #, fuzzy
+msgid "Dutch environment"
+msgstr "Amgylchedd Ffrangeg"
+
+#. Description
+#: ../po/debian-tasks.desc:255
+#, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
@@ -401,8 +425,8 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:264
 #, fuzzy
-msgid "Dutch environment"
-msgstr "Amgylchedd Ffrangeg"
+msgid "Dutch desktop"
+msgstr "Penbwrdd Ffrangeg"
 
 #. Description
 #: ../po/debian-tasks.desc:264
@@ -413,34 +437,46 @@ msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Thai"
 #. Description
 #: ../po/debian-tasks.desc:271
 #, fuzzy
+msgid "Dzongkha desktop"
+msgstr "Penbwrdd Daneg"
+
+#. Description
+#: ../po/debian-tasks.desc:271
+#, fuzzy
+msgid "This task localises the desktop in Dzongkha."
+msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Naneg"
+
+#. Description
+#: ../po/debian-tasks.desc:279
+#, fuzzy
 msgid "Esperanto desktop"
 msgstr "Penbwrdd Almaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:271
+#: ../po/debian-tasks.desc:279
 #, fuzzy
 msgid "This task localises the desktop in Esperanto."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Almaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:279
+#: ../po/debian-tasks.desc:287
 #, fuzzy
 msgid "Estonian desktop"
 msgstr "Penbwrdd Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:279
+#: ../po/debian-tasks.desc:287
 #, fuzzy
 msgid "This task localises the desktop in Estonian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:287
+#: ../po/debian-tasks.desc:295
 msgid "File server"
 msgstr "Gweinydd ffeiliau"
 
 #. Description
-#: ../po/debian-tasks.desc:287
+#: ../po/debian-tasks.desc:295
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
@@ -449,13 +485,13 @@ msgstr ""
 "NetBIOS a NFS."
 
 #. Description
-#: ../po/debian-tasks.desc:297
+#: ../po/debian-tasks.desc:305
 #, fuzzy
 msgid "Finnish environment"
 msgstr "Amgylchedd Daneg"
 
 #. Description
-#: ../po/debian-tasks.desc:297
+#: ../po/debian-tasks.desc:305
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Finnish to help Finnish "
@@ -465,24 +501,24 @@ msgstr ""
 "cynorthwyo siaradwyr Daneg i ddefnyddio Debian. "
 
 #. Description
-#: ../po/debian-tasks.desc:305
+#: ../po/debian-tasks.desc:313
 #, fuzzy
 msgid "Finnish desktop"
 msgstr "Penbwrdd Daneg"
 
 #. Description
-#: ../po/debian-tasks.desc:305
+#: ../po/debian-tasks.desc:313
 #, fuzzy
 msgid "This task localises the desktop in Finnish."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Naneg"
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:320
 msgid "French environment"
 msgstr "Amgylchedd Ffrangeg"
 
 #. Description
-#: ../po/debian-tasks.desc:312
+#: ../po/debian-tasks.desc:320
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -491,24 +527,24 @@ msgstr ""
 "cynorthwyo siaradwyr Ffrangeg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:323
+#: ../po/debian-tasks.desc:331
 msgid "French desktop"
 msgstr "Penbwrdd Ffrangeg"
 
 #. Description
-#: ../po/debian-tasks.desc:323
+#: ../po/debian-tasks.desc:331
 #, fuzzy
 msgid "This task localises the desktop in French."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Ffrangeg"
 
 #. Description
-#: ../po/debian-tasks.desc:330
+#: ../po/debian-tasks.desc:338
 #, fuzzy
 msgid "Galician environment"
 msgstr "Amgylchedd Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:330
+#: ../po/debian-tasks.desc:338
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Galician to help Galician "
@@ -518,24 +554,24 @@ msgstr ""
 "cynorthwyo siaradwyr Eidaleg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:338
+#: ../po/debian-tasks.desc:346
 #, fuzzy
 msgid "Galician desktop"
 msgstr "Penbwrdd Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:338
+#: ../po/debian-tasks.desc:346
 #, fuzzy
 msgid "This task localises the desktop in Galician."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid "German environment"
 msgstr "Amgylchedd Almaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:345
+#: ../po/debian-tasks.desc:353
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -544,36 +580,36 @@ msgstr ""
 "cynorthwy siaradwyr Almaeneg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:356
+#: ../po/debian-tasks.desc:364
 msgid "German desktop"
 msgstr "Penbwrdd Almaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:356
+#: ../po/debian-tasks.desc:364
 #, fuzzy
 msgid "This task localises the desktop in German."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Almaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:372
 #, fuzzy
 msgid "Gnome desktop environment"
 msgstr "Amgylchedd penbwrdd Japanëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:364
+#: ../po/debian-tasks.desc:372
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
-"environment."
+"desktop."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:375
+#: ../po/debian-tasks.desc:383
 msgid "Greek environment"
 msgstr "Amgylchedd Groeg"
 
 #. Description
-#: ../po/debian-tasks.desc:375
+#: ../po/debian-tasks.desc:383
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -582,23 +618,23 @@ msgstr ""
 "cynorthwyo siaradwyr Groeg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:385
+#: ../po/debian-tasks.desc:393
 msgid "Greek desktop"
 msgstr "Penbwrdd Groeg"
 
 #. Description
-#: ../po/debian-tasks.desc:385
+#: ../po/debian-tasks.desc:393
 #, fuzzy
 msgid "This task localises the desktop in Greek."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Groeg"
 
 #. Description
-#: ../po/debian-tasks.desc:392
+#: ../po/debian-tasks.desc:400
 msgid "Hebrew environment"
 msgstr "Amgylchedd Hebraeg"
 
 #. Description
-#: ../po/debian-tasks.desc:392
+#: ../po/debian-tasks.desc:400
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -607,18 +643,24 @@ msgstr ""
 "cynorthwyo siaradwyr Hebraeg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:400
+#: ../po/debian-tasks.desc:408
 msgid "Hebrew desktop"
 msgstr "Penbwrdd Hebraeg"
 
 #. Description
-#: ../po/debian-tasks.desc:400
+#: ../po/debian-tasks.desc:408
 #, fuzzy
 msgid "This task localises the desktop in Hebrew."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Hebraeg"
 
 #. Description
-#: ../po/debian-tasks.desc:407
+#: ../po/debian-tasks.desc:415
+#, fuzzy
+msgid "Hindi environment"
+msgstr "Amgylchedd Daneg"
+
+#. Description
+#: ../po/debian-tasks.desc:415
 #, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
@@ -628,25 +670,25 @@ msgstr ""
 "i'w wneud e'n haws i siaradwyr Corëeg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:418
+#: ../po/debian-tasks.desc:426
 #, fuzzy
-msgid "Hindi environment"
-msgstr "Amgylchedd Daneg"
+msgid "Hindi desktop"
+msgstr "Penbwrdd Daneg"
 
 #. Description
-#: ../po/debian-tasks.desc:418
+#: ../po/debian-tasks.desc:426
 #, fuzzy
 msgid "This task localises the desktop in Hindi."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Naneg"
 
 #. Description
-#: ../po/debian-tasks.desc:425
+#: ../po/debian-tasks.desc:433
 #, fuzzy
 msgid "Hungarian environment"
 msgstr "Amgylchedd Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:425
+#: ../po/debian-tasks.desc:433
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Hungarian to help Hungarian "
@@ -656,25 +698,25 @@ msgstr ""
 "cynorthwyo siaradwyr Eidaleg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:433
+#: ../po/debian-tasks.desc:441
 #, fuzzy
 msgid "Hungarian desktop"
 msgstr "Penbwrdd Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:433
+#: ../po/debian-tasks.desc:441
 #, fuzzy
 msgid "This task localises the desktop in Hungarian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Rwsieg"
 
 #. Description
-#: ../po/debian-tasks.desc:440
+#: ../po/debian-tasks.desc:448
 #, fuzzy
 msgid "Icelandic environment"
 msgstr "Amgylchedd Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:440
+#: ../po/debian-tasks.desc:448
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Icelandic to help Icelandic "
@@ -684,25 +726,25 @@ msgstr ""
 "cynorthwyo siaradwyr Eidaleg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:448
+#: ../po/debian-tasks.desc:456
 #, fuzzy
 msgid "Icelandic desktop"
 msgstr "Penbwrdd Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:448
+#: ../po/debian-tasks.desc:456
 #, fuzzy
 msgid "This task localises the desktop in Icelandic."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:455
+#: ../po/debian-tasks.desc:463
 #, fuzzy
 msgid "Irish environment"
 msgstr "Amgylchedd Twrceg"
 
 #. Description
-#: ../po/debian-tasks.desc:455
+#: ../po/debian-tasks.desc:463
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Irish to help Irish "
@@ -712,24 +754,24 @@ msgstr ""
 "cynorthwyo siaradwyr Twrceg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:471
 #, fuzzy
 msgid "Irish desktop"
 msgstr "Penbwrdd Twrceg"
 
 #. Description
-#: ../po/debian-tasks.desc:463
+#: ../po/debian-tasks.desc:471
 #, fuzzy
 msgid "This task localises the desktop in Irish."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Nhwrceg"
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:478
 msgid "Italian environment"
 msgstr "Amgylchedd Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:470
+#: ../po/debian-tasks.desc:478
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -738,23 +780,23 @@ msgstr ""
 "cynorthwyo siaradwyr Eidaleg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:489
 msgid "Italian desktop"
 msgstr "Penbwrdd Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:481
+#: ../po/debian-tasks.desc:489
 #, fuzzy
 msgid "This task localises the desktop in Italian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:488
+#: ../po/debian-tasks.desc:496
 msgid "Japanese environment"
 msgstr "Amgylchedd Japanëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:488
+#: ../po/debian-tasks.desc:496
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -763,36 +805,49 @@ msgstr ""
 "Japanëeg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:500
-msgid "Japanese desktop environment"
+#: ../po/debian-tasks.desc:508
+#, fuzzy
+msgid "Japanese desktop desktop"
 msgstr "Amgylchedd penbwrdd Japanëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:500
+#: ../po/debian-tasks.desc:508
 #, fuzzy
 msgid "This task localises the desktop in Japanese."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Japanëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:508
+#: ../po/debian-tasks.desc:516
 #, fuzzy
 msgid "KDE desktop environment"
 msgstr "Amgylchedd penbwrdd"
 
 #. Description
-#: ../po/debian-tasks.desc:508
+#: ../po/debian-tasks.desc:516
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:528
+#: ../po/debian-tasks.desc:536
+#, fuzzy
+msgid "Khmer desktop"
+msgstr "Penbwrdd Corëeg"
+
+#. Description
+#: ../po/debian-tasks.desc:536
+#, fuzzy
+msgid "This task localises the desktop in Khmer."
+msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yng Nghorëeg"
+
+#. Description
+#: ../po/debian-tasks.desc:544
 msgid "Korean environment"
 msgstr "Amgylchedd Corëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:528
+#: ../po/debian-tasks.desc:544
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
@@ -801,33 +856,33 @@ msgstr ""
 "Corëeg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:540
+#: ../po/debian-tasks.desc:556
 msgid "Korean desktop"
 msgstr "Penbwrdd Corëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:540
+#: ../po/debian-tasks.desc:556
 #, fuzzy
 msgid "This task localises the desktop in Korean."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yng Nghorëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:547
+#: ../po/debian-tasks.desc:563
 msgid "Laptop"
 msgstr "Laptop"
 
 #. Description
-#: ../po/debian-tasks.desc:547
+#: ../po/debian-tasks.desc:563
 msgid "This task installs software useful for a laptop."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:554
+#: ../po/debian-tasks.desc:570
 msgid "Lithuanian environment"
 msgstr "Amgylchedd Lithwaneg"
 
 #. Description
-#: ../po/debian-tasks.desc:554
+#: ../po/debian-tasks.desc:570
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -836,24 +891,24 @@ msgstr ""
 "cynorthwyo siaradwyr Lithwaneg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:564
+#: ../po/debian-tasks.desc:580
 msgid "Lithuanian desktop"
 msgstr "Penbwrdd Lithwaneg"
 
 #. Description
-#: ../po/debian-tasks.desc:564
+#: ../po/debian-tasks.desc:580
 #, fuzzy
 msgid "This task localises the desktop in Lithuanian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Lithwaneg"
 
 #. Description
-#: ../po/debian-tasks.desc:571
+#: ../po/debian-tasks.desc:587
 #, fuzzy
 msgid "Macedonian environment"
 msgstr "Amgylchedd Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:571
+#: ../po/debian-tasks.desc:587
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Macedonian to help "
@@ -863,24 +918,24 @@ msgstr ""
 "cynorthwyo siaradwyr Eidaleg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:581
+#: ../po/debian-tasks.desc:597
 #, fuzzy
 msgid "Macedonian desktop"
 msgstr "Penbwrdd Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:581
+#: ../po/debian-tasks.desc:597
 #, fuzzy
 msgid "This task localises the desktop in Macedonian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:588
+#: ../po/debian-tasks.desc:604
 msgid "Mail server"
 msgstr "Gweinydd ebost"
 
 #. Description
-#: ../po/debian-tasks.desc:588
+#: ../po/debian-tasks.desc:604
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -889,22 +944,22 @@ msgstr ""
 "gweinydd ebost cyffredinol."
 
 #. Description
-#: ../po/debian-tasks.desc:598
+#: ../po/debian-tasks.desc:614
 msgid "manual package selection"
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:598
+#: ../po/debian-tasks.desc:614
 msgid "Manually select packages to install in aptitude."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:605
+#: ../po/debian-tasks.desc:621
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Amgylchedd Norwyeg (Bokmaal a Nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:605
+#: ../po/debian-tasks.desc:621
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -913,18 +968,24 @@ msgstr ""
 "cynorthwyo siaradwyr Norwyeg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:616
+#: ../po/debian-tasks.desc:632
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "Penbwrdd Norwyeg (Bokmaal a Nynorsk)"
 
 #. Description
-#: ../po/debian-tasks.desc:616
+#: ../po/debian-tasks.desc:632
 #, fuzzy
 msgid "This task localises the desktop in Norwegian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Norwyeg"
 
 #. Description
-#: ../po/debian-tasks.desc:623
+#: ../po/debian-tasks.desc:639
+#, fuzzy
+msgid "Persian environment"
+msgstr "Amgylchedd Almaeneg"
+
+#. Description
+#: ../po/debian-tasks.desc:639
 #, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
@@ -934,24 +995,24 @@ msgstr ""
 "i'w wneud e'n haws i siaradwyr Corëeg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:634
+#: ../po/debian-tasks.desc:650
 #, fuzzy
-msgid "Persian environment"
-msgstr "Amgylchedd Almaeneg"
+msgid "Persian desktop"
+msgstr "Penbwrdd Almaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:634
+#: ../po/debian-tasks.desc:650
 #, fuzzy
 msgid "This task localises the desktop in Persian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Almaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:641
+#: ../po/debian-tasks.desc:657
 msgid "Polish environment"
 msgstr "Amgylchedd Pwyleg"
 
 #. Description
-#: ../po/debian-tasks.desc:641
+#: ../po/debian-tasks.desc:657
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -960,24 +1021,24 @@ msgstr ""
 "cynorthwyo siaradwyr Pwyleg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:652
+#: ../po/debian-tasks.desc:668
 msgid "Polish desktop"
 msgstr "Penbwrdd Pwyleg"
 
 #. Description
-#: ../po/debian-tasks.desc:652
+#: ../po/debian-tasks.desc:668
 #, fuzzy
 msgid "This task localises the desktop in Polish."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli ym Mhwyleg"
 
 #. Description
-#: ../po/debian-tasks.desc:659
+#: ../po/debian-tasks.desc:675
 #, fuzzy
 msgid "Portuguese environment"
 msgstr "Amgylchedd Portiwgaleg Brasil"
 
 #. Description
-#: ../po/debian-tasks.desc:659
+#: ../po/debian-tasks.desc:675
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Portuguese to help "
@@ -987,13 +1048,13 @@ msgstr ""
 "cynorthwyo siaradwyr Groeg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:667
+#: ../po/debian-tasks.desc:683
 #, fuzzy
 msgid "Portuguese desktop"
 msgstr "Penbwrdd Portiwgaleg Brasil"
 
 #. Description
-#: ../po/debian-tasks.desc:667
+#: ../po/debian-tasks.desc:683
 #, fuzzy
 msgid "This task localises the desktop in Portuguese."
 msgstr ""
@@ -1001,17 +1062,23 @@ msgstr ""
 "Brasil"
 
 #. Description
-#: ../po/debian-tasks.desc:675
+#: ../po/debian-tasks.desc:691
 msgid "Print server"
 msgstr "Gweinydd argraffu"
 
 #. Description
-#: ../po/debian-tasks.desc:675
+#: ../po/debian-tasks.desc:691
 msgid "This task sets up your system to be a print server."
 msgstr "Mae'r tasg hwn yn paratoi eich system i fod yn weinydd argraffu."
 
 #. Description
-#: ../po/debian-tasks.desc:685
+#: ../po/debian-tasks.desc:701
+#, fuzzy
+msgid "Punjabi environment"
+msgstr "Amgylchedd Thai"
+
+#. Description
+#: ../po/debian-tasks.desc:701
 #, fuzzy
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
@@ -1021,25 +1088,25 @@ msgstr ""
 "i'w wneud e'n haws i siaradwyr Corëeg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:696
+#: ../po/debian-tasks.desc:712
 #, fuzzy
-msgid "Punjabi environment"
-msgstr "Amgylchedd Thai"
+msgid "Punjabi desktop"
+msgstr "Penbwrdd Eidaleg"
 
 #. Description
-#: ../po/debian-tasks.desc:696
+#: ../po/debian-tasks.desc:712
 #, fuzzy
 msgid "This task localises the desktop in Punjabi."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Thai"
 
 #. Description
-#: ../po/debian-tasks.desc:703
+#: ../po/debian-tasks.desc:719
 #, fuzzy
 msgid "Romanian environment"
 msgstr "Amgylchedd Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:703
+#: ../po/debian-tasks.desc:719
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
@@ -1049,24 +1116,24 @@ msgstr ""
 "cynorthwyo siaradwyr Eidaleg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:714
+#: ../po/debian-tasks.desc:730
 #, fuzzy
 msgid "Romanian desktop"
 msgstr "Penbwrdd Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:714
+#: ../po/debian-tasks.desc:730
 #, fuzzy
 msgid "This task localises the desktop in Romanian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:721
+#: ../po/debian-tasks.desc:737
 msgid "Russian environment"
 msgstr "Amgylchedd Rwsieg"
 
 #. Description
-#: ../po/debian-tasks.desc:721
+#: ../po/debian-tasks.desc:737
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -1075,24 +1142,24 @@ msgstr ""
 "cynorthwyo siaradwyr Rwsieg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:732
+#: ../po/debian-tasks.desc:748
 msgid "Russian desktop"
 msgstr "Penbwrdd Rwsieg"
 
 #. Description
-#: ../po/debian-tasks.desc:732
+#: ../po/debian-tasks.desc:748
 #, fuzzy
 msgid "This task localises the desktop in Russian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Rwsieg"
 
 #. Description
-#: ../po/debian-tasks.desc:739
+#: ../po/debian-tasks.desc:755
 #, fuzzy
 msgid "Slovak environment"
 msgstr "Amgylchedd Corëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:739
+#: ../po/debian-tasks.desc:755
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
@@ -1102,25 +1169,25 @@ msgstr ""
 "cynorthwyo siaradwyr Eidaleg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:747
+#: ../po/debian-tasks.desc:763
 #, fuzzy
 msgid "Slovak desktop"
 msgstr "Penbwrdd Corëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:747
+#: ../po/debian-tasks.desc:763
 #, fuzzy
 msgid "This task localises the desktop in Slovak."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yng Nghorëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:754
+#: ../po/debian-tasks.desc:770
 #, fuzzy
 msgid "Slovenian environment"
 msgstr "Amgylchedd Corëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:754
+#: ../po/debian-tasks.desc:770
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Slovenian to help Slovenian "
@@ -1130,24 +1197,24 @@ msgstr ""
 "cynorthwyo siaradwyr Eidaleg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:762
+#: ../po/debian-tasks.desc:778
 #, fuzzy
 msgid "Slovenian desktop"
 msgstr "Penbwrdd Corëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:762
+#: ../po/debian-tasks.desc:778
 #, fuzzy
 msgid "This task localises the desktop in Slovenian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yng Nghorëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:769
+#: ../po/debian-tasks.desc:785
 msgid "Spanish environment"
 msgstr "Amgylchedd Sbaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:769
+#: ../po/debian-tasks.desc:785
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -1156,34 +1223,34 @@ msgstr ""
 "gwneud hi'n haws i siaradwyr Sbaeneg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:780
+#: ../po/debian-tasks.desc:796
 msgid "Spanish desktop"
 msgstr "Penbwrdd Sbaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:780
+#: ../po/debian-tasks.desc:796
 #, fuzzy
 msgid "This task localises the desktop in Spanish."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Sbaeneg"
 
 #. Description
-#: ../po/debian-tasks.desc:787
+#: ../po/debian-tasks.desc:803
 #, fuzzy
 msgid "Standard system"
 msgstr "Sail Safonau Linux"
 
 #. Description
-#: ../po/debian-tasks.desc:787
+#: ../po/debian-tasks.desc:803
 msgid "This task installs a reasonably small character-mode system."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:794
+#: ../po/debian-tasks.desc:810
 msgid "Swedish environment"
 msgstr "Amgylchedd Swedeg"
 
 #. Description
-#: ../po/debian-tasks.desc:794
+#: ../po/debian-tasks.desc:810
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -1192,24 +1259,24 @@ msgstr ""
 "cynorthwyo siaradwyr Swedeg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:804
+#: ../po/debian-tasks.desc:820
 msgid "Swedish desktop"
 msgstr "Penbwrdd Swedeg"
 
 #. Description
-#: ../po/debian-tasks.desc:804
+#: ../po/debian-tasks.desc:820
 #, fuzzy
 msgid "This task localises the desktop in Swedish."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Swedeg"
 
 #. Description
-#: ../po/debian-tasks.desc:811
+#: ../po/debian-tasks.desc:827
 #, fuzzy
 msgid "Tagalog environment"
 msgstr "Amgylchedd Thai"
 
 #. Description
-#: ../po/debian-tasks.desc:811
+#: ../po/debian-tasks.desc:827
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Tagalog to help Tagalog "
@@ -1219,24 +1286,24 @@ msgstr ""
 "cynorthwyo siaradwyr Catalaneg i ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:819
+#: ../po/debian-tasks.desc:835
 #, fuzzy
 msgid "Tamil desktop"
 msgstr "Penbwrdd Thai"
 
 #. Description
-#: ../po/debian-tasks.desc:819
+#: ../po/debian-tasks.desc:835
 #, fuzzy
 msgid "This task localises the desktop in Tamil."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Thai"
 
 #. Description
-#: ../po/debian-tasks.desc:827
+#: ../po/debian-tasks.desc:843
 msgid "Thai environment"
 msgstr "Amgylchedd Thai"
 
 #. Description
-#: ../po/debian-tasks.desc:827
+#: ../po/debian-tasks.desc:843
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
@@ -1245,23 +1312,23 @@ msgstr ""
 "ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:837
+#: ../po/debian-tasks.desc:853
 msgid "Thai desktop"
 msgstr "Penbwrdd Thai"
 
 #. Description
-#: ../po/debian-tasks.desc:837
+#: ../po/debian-tasks.desc:853
 #, fuzzy
 msgid "This task localises the desktop in Thai."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Thai"
 
 #. Description
-#: ../po/debian-tasks.desc:844
+#: ../po/debian-tasks.desc:860
 msgid "Turkish environment"
 msgstr "Amgylchedd Twrceg"
 
 #. Description
-#: ../po/debian-tasks.desc:844
+#: ../po/debian-tasks.desc:860
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -1270,23 +1337,23 @@ msgstr ""
 "cynorthwyo siaradwyr Twrceg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:856
+#: ../po/debian-tasks.desc:872
 msgid "Turkish desktop"
 msgstr "Penbwrdd Twrceg"
 
 #. Description
-#: ../po/debian-tasks.desc:856
+#: ../po/debian-tasks.desc:872
 #, fuzzy
 msgid "This task localises the desktop in Turkish."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Nhwrceg"
 
 #. Description
-#: ../po/debian-tasks.desc:863
+#: ../po/debian-tasks.desc:879
 msgid "Ukrainian environment"
 msgstr "Amgylchedd Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:863
+#: ../po/debian-tasks.desc:879
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -1295,23 +1362,23 @@ msgstr ""
 "cynorthwyo siaradwyr Wcraineg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:873
+#: ../po/debian-tasks.desc:889
 msgid "Ukrainian desktop"
 msgstr "Penbwrdd Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:873
+#: ../po/debian-tasks.desc:889
 #, fuzzy
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Wcraineg"
 
 #. Description
-#: ../po/debian-tasks.desc:881
+#: ../po/debian-tasks.desc:897
 msgid "Web server"
 msgstr "Gweinydd Gwe"
 
 #. Description
-#: ../po/debian-tasks.desc:881
+#: ../po/debian-tasks.desc:897
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
@@ -1319,13 +1386,13 @@ msgstr ""
 "cyffredinol."
 
 #. Description
-#: ../po/debian-tasks.desc:890
+#: ../po/debian-tasks.desc:906
 #, fuzzy
 msgid "Welsh environment"
 msgstr "Amgylchedd Pwyleg"
 
 #. Description
-#: ../po/debian-tasks.desc:890
+#: ../po/debian-tasks.desc:906
 #, fuzzy
 msgid ""
 "This task installs packages and documentation in Welsh to help Welsh "
@@ -1335,16 +1402,28 @@ msgstr ""
 "cynorthwyo siaradwyr Pwyleg ddefnyddio Debian."
 
 #. Description
-#: ../po/debian-tasks.desc:898
+#: ../po/debian-tasks.desc:914
 #, fuzzy
 msgid "Welsh desktop"
 msgstr "Penbwrdd Pwyleg"
 
 #. Description
-#: ../po/debian-tasks.desc:898
+#: ../po/debian-tasks.desc:914
 #, fuzzy
 msgid "This task localises the desktop in Welsh."
 msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli ym Mhwyleg"
+
+#. Description
+#: ../po/debian-tasks.desc:921
+#, fuzzy
+msgid "Xhosa desktop"
+msgstr "Penbwrdd Thai"
+
+#. Description
+#: ../po/debian-tasks.desc:921
+#, fuzzy
+msgid "This task localises the desktop in Xhosa."
+msgstr "Mae'r tasg hwn yn gwneud i'r penbwrdd fod wedi ei leoli yn Thai"
 
 #~ msgid ""
 #~ "This task provides basic \"desktop\" software, including a variety of "
