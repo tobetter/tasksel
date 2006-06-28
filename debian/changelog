@@ -11,6 +11,8 @@ tasksel (2.50) UNRELEASED; urgency=low
   [ Christian Perrier ]
   * Correct the description of several -desktop tasks to use
     "XXXX desktop" instead of "XXXX environment"
+  * Add "nb" to languages which trigger the "norwegian" task so
+    that it's used for Bokmal
   * Added tasks for languages supported in D-I:
     - khmer-desktop
     - dzongkha-desktop
@@ -62,7 +64,7 @@ tasksel (2.50) UNRELEASED; urgency=low
   * Remove non existing myspell-xx in:
     - galician-desktop
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 27 Jun 2006 23:01:43 +0200
+ -- Christian Perrier <bubulle@debian.org>  Wed, 28 Jun 2006 20:47:39 +0200
 
 tasksel (2.49) unstable; urgency=low
 
