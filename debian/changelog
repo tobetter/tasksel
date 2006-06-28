@@ -9,24 +9,33 @@ tasksel (2.50) UNRELEASED; urgency=low
     - Updated Romanian (Eddy Petrişor)
 
   [ Christian Perrier ]
-  * Add a few more tasks for languages supported in D-I:
-    khmer-desktop, dzongkha-desktop, xhosa-desktop
   * Correct the description of several -desktop tasks to use
     "XXXX desktop" instead of "XXXX environment"
-  * Add fonts from the ttf-indic-fonts to -desktop tasks for supported
-    Indic languages
-  * Add openoffice.org-l10n-bs to bosnian-desktop
-  * Ditto for farsi-desktop
-  * Add openoffice.org-help-et to estonian-desktop
-  * Add ttf-dejavu and firefox-locale-bg to bulgarian-desktop
-  * Replace mozilla-locale-ca by firefox-locale-ca in the catalan-desktop
-    task to fit choices in the desktop task
-  * Ditto for danish, german, greek, spanish (adding both es-es and es-ar)
-  * Remove Thunderbird l10n for Greek (no Thunderbird in the desktop task)
-  * Remove non existing openoffice.org-help-el in greek-desktop
-  * Ditto for basque-desktop
-  * Replace mozilla-firefox-locale-* by firefox-locale-* which are the real
-    packages now
+  * Added tasks for languages supported in D-I:
+    - khmer-desktop
+    - dzongkha-desktop
+    - xhosa-desktop
+  * Add fonts:
+    - ttf-indic-fonts to -desktop tasks for supported Indic languages
+    - ttf-dejavu to bulgarian-desktop
+  * Add openoffice.org-l10n-xx to:
+    - bosnian-desktop
+    - farsi-desktop
+  * Add openoffice.org-help-xx to:
+    - estonian-desktop
+  * Add firefox-locale-xx to:
+    - bulgarian-desktop
+  * Replace mozilla-locale-xx by firefox-locale-x in:
+    - catalan-desktop
+    - danish-desktop
+    - german-desktop
+    - greek-desktop
+    - spanish-desktop (both es-es and es-ar)
+  * Remove Thunderbird l10n (no Thunderbird in the desktop task) from:
+    - greek-desktop
+  * Remove non existing openoffice.org-help-xx in:
+    - greek-desktop
+    - basque-desktop
 
  -- Christian Perrier <bubulle@debian.org>  Tue, 27 Jun 2006 23:01:43 +0200
 
