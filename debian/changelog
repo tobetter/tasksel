@@ -82,6 +82,19 @@ tasksel (2.50) UNRELEASED; urgency=low
   * Move myspell-xx from the base task to the desktop task for:
     - swedish-desktop
 
+  [ Kenshi Muto ]
+  * Updated japanese and japanese-desktop tasks.
+    - removed legacy xfonts packages from desktop task.
+    - bumped up lv for key package because less command or any other
+      pager can't handle Japanese manpage.
+    - took uim+anthy for default input method instead of canna.
+      There is an alternative, "scim". But scim can't run on CUI.
+    - removed ja-trans, doc-debian-ja, xmanpages-ja because they aren't
+      maintained for a long time.
+    - removed kterm and mlterm from desktop task. kterm can't support UTF8.
+      mlterm has too huge dependencies and GNOME or KDE will provide a good
+      UTF8 support terminal by default.
+
  -- Jacobo Tarrio <jtarrio@debian.org>  Thu, 29 Jun 2006 09:17:24 +0200
 
 tasksel (2.49) unstable; urgency=low

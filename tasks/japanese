@@ -7,15 +7,15 @@ Description: Japanese environment
 Key:
  language-env
  jfbterm
+ unifont
  manpages-ja
+# lv is required package for Japanese to see manpage. less can't handle.
+ lv
 Packages: task-fields
 Packages-list:
- ja-trans
- lv
  nkf
  doc-linux-ja-text
- doc-debian-ja
- canna
- canna-utils
- egg
+ anthy
+ uim-fep
+ uim-utils
  manpages-ja-dev
