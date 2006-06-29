@@ -114,7 +114,12 @@ tasksel (2.50) UNRELEASED; urgency=low
       mlterm has too huge dependencies and GNOME or KDE will provide a good
       UTF8 support terminal by default.
 
- -- Christian Perrier <bubulle@debian.org>  Thu, 29 Jun 2006 23:37:52 +0200
+  [ Joey Hess ]
+  * Include full CUPS support in the desktop task. This is functionally the
+    same as the print-server task due to how CUPS works, although the intent
+    is only to provide local printing support. Closes: #304845
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 29 Jun 2006 18:30:25 -0400
 
 tasksel (2.49) unstable; urgency=low
 
