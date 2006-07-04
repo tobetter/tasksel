@@ -1,3 +1,14 @@
+tasksel (2.51) UNRELEASED; urgency=low
+
+  * remove openoffice.org-hyphenation-fi from finnish-desktop again, only
+    provided by openoffice.org-soikko which is non-free
+  * galician: (re-)add myspell-gl-es.
+  * unify aspell/myspell usage in tasks, move them all to the "base" tasks instead
+    -desktop. They don't depend on anything big anyway (myspell) or are
+    already in the "normal" taks for other languages.
+
+ -- Rene Engelhard <rene@debian.org>  Tue,  4 Jul 2006 11:35:48 +0200
+
 tasksel (2.50) unstable; urgency=low
 
   [ Translations of programs ]
