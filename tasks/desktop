@@ -14,19 +14,16 @@ Packages-list:
 # firefox is the most popular web browser at the moment, although both
 # gnome and kde offer their own too
   firefox
-  firefox-locale-en-gb
-  firefox-locale-en-us
 # the gimp is the best image editor, no matter the desktop
   gimp
 # openoffice.org is the best word processor / office suite at the moment
   openoffice.org
-  openoffice.org-l10n-en-us
-  openoffice.org-l10n-en-gb
+# make help menu work
   openoffice.org-help-en-us
-  openoffice.org-help-en-gb
+# make thesaurus work
   openoffice.org-thesaurus-en-us
+# make spellchecker work
   myspell-en-us
-  myspell-en-gb
 # Since neither the gnome nor kde desktop tasks may be available, include
 # enough basic X stuff here for a minally useful desktop without them.
   twm

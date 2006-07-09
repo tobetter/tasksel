@@ -17,7 +17,15 @@ tasksel (2.51) UNRELEASED; urgency=low
     translators
   * Consequently change the khmer-desktop task
 
- -- Christian Perrier <bubulle@debian.org>  Sun,  9 Jul 2006 09:44:17 +0200
+  [ Joey Hess ]
+  * Remove openoffice.org-l10n-en-gb, openoffice.org-help-en-gb, 
+    myspell-en-gb, firefox-locale-en-gb from desktop task. Closes: #377510
+  * Remove openoffice.org-l10n-en-us from dekstop task; it's a dependency
+    of openoffice.org-common now.
+  * Remove firefox-locale-en-us from desktop task. AFAICS firefox works
+    fine in English w/o this installed.
+
+ -- Joey Hess <joeyh@debian.org>  Sun,  9 Jul 2006 16:57:25 -0400
 
 tasksel (2.50) unstable; urgency=low 
 
