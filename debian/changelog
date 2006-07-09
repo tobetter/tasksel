@@ -1,5 +1,6 @@
 tasksel (2.51) UNRELEASED; urgency=low
 
+  [ Rene Engelhard ]
   * remove openoffice.org-hyphenation-fi from finnish-desktop again, only
     provided by openoffice.org-soikko which is non-free
   * galician: (re-)add myspell-gl-es.
@@ -7,11 +8,16 @@ tasksel (2.51) UNRELEASED; urgency=low
     -desktop. They don't depend on anything big anyway (myspell) or are
     already in the "normal" taks for other languages.
 
-[ Translations of tasks ]
+  [ Translations of tasks ]
     - Updated Danish (Claus Hindsgaul)
     - Updated Romanian (Eddy Petrişor)
 
- -- Rene Engelhard <rene@debian.org>  Tue,  4 Jul 2006 11:35:48 +0200
+  [ Christian Perrier ]
+  * Add a khmer task, including khmerconverter, on recommendation of Khmer
+    translators
+  * Consequently change the khmer-desktop task
+
+ -- Christian Perrier <bubulle@debian.org>  Sun,  9 Jul 2006 09:44:17 +0200
 
 tasksel (2.50) unstable; urgency=low 
 
