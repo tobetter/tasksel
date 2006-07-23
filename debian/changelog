@@ -1,4 +1,4 @@
-tasksel (2.51) UNRELEASED; urgency=low
+tasksel (2.51) UNRELEASED; urgency=high
 
   [ Rene Engelhard ]
   * remove openoffice.org-hyphenation-fi from finnish-desktop again, only
@@ -20,14 +20,17 @@ tasksel (2.51) UNRELEASED; urgency=low
   * Consequently change the khmer-desktop task
 
   [ Joey Hess ]
-  * Remove openoffice.org-l10n-en-gb, openoffice.org-help-en-gb, 
+  * Remove openoffice.org-l10n-en-gb, openoffice.org-help-en-gb,
     myspell-en-gb, firefox-locale-en-gb from desktop task. Closes: #377510
   * Remove openoffice.org-l10n-en-us from dekstop task; it's a dependency
     of openoffice.org-common now.
   * Remove firefox-locale-en-us from desktop task. AFAICS firefox works
     fine in English w/o this installed.
+  * Remove empty albanian-desktop task.
+  * Fix several language-desktop tasks that incorrectly used the old Depends
+    field, not Enhances. Closes: #379021
 
- -- Joey Hess <joeyh@debian.org>  Sun,  9 Jul 2006 16:57:25 -0400
+ -- Joey Hess <joeyh@debian.org>  Sun, 23 Jul 2006 11:47:45 -0400
 
 tasksel (2.50) unstable; urgency=low 
 
