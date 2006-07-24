@@ -18,7 +18,5 @@ Packages-list:
  cpufrequtils
  hibernate
  hotkey-setup
-# powerpc only (not anymore though.. needs to be moved to hw-detect)
- pbbuttonsd
 # TODO: need to pick a cpu freq daemon, also, need something to probe and
 # load the right cpufreq_ module. See #367307 for details.

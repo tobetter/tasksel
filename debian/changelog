@@ -5,6 +5,10 @@ tasksel (2.52) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Remove accidentially included debugging info.
+  
+  [ Otavio Salvador ]
+  * Remove pbbuttonsd from laptop task. This will be handled by hw-detect
+    Debian Installer module. Refs: #379197
 
  -- Joey Hess <joeyh@debian.org>  Mon, 24 Jul 2006 11:20:59 -0400
 
