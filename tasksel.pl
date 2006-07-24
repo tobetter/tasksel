@@ -536,7 +536,6 @@ sub main {
 			if (exists $provided{$task->{provides}}) {
 				$task->{_install}=0;
 			}
-			print "$task provides: $task->{provides}\n";
 			$provided{$task->{provides}}=1;
 		}
 	}
