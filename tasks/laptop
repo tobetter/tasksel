@@ -17,6 +17,9 @@ Packages-list:
  anacron
  cpufrequtils
  hibernate
+# Works with hibernate, needs 2.6.17 kernel, but hibernate will fall back
+# if it doesn't work.
+ uswsusp
  hotkey-setup
 # TODO: need to pick a cpu freq daemon, also, need something to probe and
 # load the right cpufreq_ module. See #367307 for details.
