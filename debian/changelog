@@ -17,11 +17,17 @@ tasksel (2.52) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Add uswsusp to laptop task. This needs a 2.6.17 kernel, but hibernate will
     fall back from it to older methods if it doesn't work.
-  
-  [ Rene Engelhard ]
-  * fix typo in german-desktop task 
 
- -- Joey Hess <joeyh@debian.org>  Tue, 25 Jul 2006 17:05:56 -0400
+  [ Rene Engelhard ]
+  * fix typo in german-desktop task
+
+  [ Joey Hess ]
+  * Remove read-edid and mdetect from desktop task and desktop.preinst;
+    xserver-org no longer uses these.
+  * Add xresprobe and discover1 to desktop task so they will be removed
+    if it's removed (they were already being installed by desktop.preinst).
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 26 Jul 2006 11:01:11 -0400
 
 tasksel (2.51) unstable; urgency=high
 
