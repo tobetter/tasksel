@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-19 14:32-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2006-02-02 12:29+0100\n"
 "Last-Translator: Jure Cuhalev <gandalf@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -15,41 +15,52 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:  nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
-
-#. Type: multiselect
-#. Description
-#: ../templates:5
-msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
-"predefined collections of software."
-msgstr "Trenutno je nameščeno samo jedro Debiana. Sistem si lahko prilagodite, tako da namestite eno ali več vnaprej pripravljenih zbirk programske opreme."
+"Plural-Forms:  nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3);\n"
 
 #. Type: multiselect
 #. Choices
 #. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
+#. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#: ../templates:1001 ../templates:2001
 msgid "${ORIGCHOICES}"
 msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "Izberite programsko opremo za namestitev:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#: ../templates:1002
+#, fuzzy
+msgid ""
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+"Trenutno je nameščeno samo jedro Debiana. Sistem si lahko prilagodite, tako "
+"da namestite eno ali več vnaprej pripravljenih zbirk programske opreme."
+
+#. Type: multiselect
+#. Description
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
-msgstr "Med naslednjimi zbirkami vnaprej pripravljene programske opreme lahko izberete eno ali več."
+msgstr ""
+"Med naslednjimi zbirkami vnaprej pripravljene programske opreme lahko "
+"izberete eno ali več."
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "Debian izbira programske opreme"
-

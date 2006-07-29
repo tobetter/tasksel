@@ -1,14 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-19 14:32-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +25,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: multiselect
-#. Description
-#: ../templates:5
-msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
-"predefined collections of software."
-msgstr ""
-
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
 #. Type: multiselect
 #. Choices
 #. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
+#: ../templates:1001 ../templates:2001
 msgid "${ORIGCHOICES}"
 msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#: ../templates:1002
+msgid ""
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -48,6 +61,6 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+msgid "Software selection"
 msgstr ""

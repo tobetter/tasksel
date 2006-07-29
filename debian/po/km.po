@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-19 15:15-0700\n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2006-04-21 08:38+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -28,32 +28,38 @@ msgstr ""
 "X-Generator: KBabel 1.11\n"
 
 #. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#: ../templates:1001 ../templates:2001
+msgid "${ORIGCHOICES}"
+msgstr "${ORIGCHOICES}"
+
+#. Type: multiselect
 #. Description
-#: ../templates:5
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
+msgid "Choose software to install:"
+msgstr "ជ្រើស​កម្មវិធី​​​ត្រូវ​ដំឡើង ៖"
+
+#. Type: multiselect
+#. Description
+#: ../templates:1002
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
 "នៅ​ពេល​នេះ មាន​តែ​ផ្នែក​សំខាន់រ​បស់​ដេបៀន​​ទេ​ដែលត្រូវ​បាន​ដំឡើង ។ ដើម្បី​តម្រូវ​តាម​សេចក្ដី​ត្រូវការ​របស់​អ្នក "
 "អ្នក​អាច​ជ្រើស​​ ដើម្ប​​ដំឡើង​កម្មវិធី​មួយ ឬ​ច្រើន​ក្នុង​ចំណោម​កម្មវិធី​ដែល​បាន​ប្រមូលផ្ដុំ​ជាមុន​ដូច​​ខាង​ក្រោម ៖"
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
-msgid "${ORIGCHOICES}"
-msgstr "${ORIGCHOICES}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:14
-msgid "Choose software to install:"
-msgstr "ជ្រើស​កម្មវិធី​​​ត្រូវ​ដំឡើង ៖"
-
-#. Type: multiselect
-#. Description
-#: ../templates:14
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -61,7 +67,7 @@ msgstr "អ្នក​អាច​ជ្រើស​ដើម្បី​ដំ
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "ជម្រើស​កម្មវិធី​ដេបៀន"
-

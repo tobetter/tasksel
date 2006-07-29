@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel/debian\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-19 14:32-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2004-08-19 16:46+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -25,12 +25,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#: ../templates:1001 ../templates:2001
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
+
+#. Type: multiselect
 #. Description
-#: ../templates:5
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
+msgid "Choose software to install:"
+msgstr "選擇所要安裝的軟體："
+
+#. Type: multiselect
+#. Description
+#: ../templates:1002
 #, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
 "目前為止所安裝的只有 Debian 的核心。您可以在下列預先準備的組合套件中再選擇一"
@@ -38,21 +56,8 @@ msgstr ""
 "藉由手動來選擇套件。"
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
-msgid "${ORIGCHOICES}"
-msgstr "${CHOICES}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:14
-msgid "Choose software to install:"
-msgstr "選擇所要安裝的軟體："
-
-#. Type: multiselect
-#. Description
-#: ../templates:14
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -60,8 +65,9 @@ msgstr "您可以在下列預先準備的組合套件中，選擇一些軟體來
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "選擇 Debian 軟體"
 
 #~ msgid "${CHOICES}, manual package selection"

@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
-"POT-Creation-Date: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2006-03-03 14:16+0100\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
@@ -12,33 +13,48 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. Type: multiselect
-#. Description
-#: ../templates:5
-msgid "At the moment, only the core of Debian is installed. To tune the system to your needs, you can choose to install one or more of the following predefined collections of software."
-msgstr "Nuntempe, nur la baza Debiano estas instalita. Por agordi la sistemon al via bezono, vi eble instalu iun aŭ plurajn sekvantajn antaŭelektajn programarojn. "
-
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
 #. Type: multiselect
 #. Choices
 #. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
+#: ../templates:1001 ../templates:2001
 msgid "${ORIGCHOICES}"
 msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "Elektu instalotajn programojn :"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
-msgid "You can choose to install one or more of the following predefined collections of software."
-msgstr "Vi eble elektu instali iun aŭ plurajn sekvontajn antaŭelektajn programarojn."
+#: ../templates:1002
+#, fuzzy
+msgid ""
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+"Nuntempe, nur la baza Debiano estas instalita. Por agordi la sistemon al via "
+"bezono, vi eble instalu iun aŭ plurajn sekvantajn antaŭelektajn "
+"programarojn. "
+
+#. Type: multiselect
+#. Description
+#: ../templates:2002
+msgid ""
+"You can choose to install one or more of the following predefined "
+"collections of software."
+msgstr ""
+"Vi eble elektu instali iun aŭ plurajn sekvontajn antaŭelektajn programarojn."
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "Elektado de Debiana programaro"
-

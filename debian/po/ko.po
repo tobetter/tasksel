@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-19 14:32-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2005-11-27 23:31+0900\n"
 "Last-Translator: Sunjae Park <darehanl@gmail.com>\n"
 "Language-Team: Korean <debian-i18n-ko@lists.debian.org>\n"
@@ -14,32 +14,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#: ../templates:1001 ../templates:2001
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
+
+#. Type: multiselect
 #. Description
-#: ../templates:5
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
+msgid "Choose software to install:"
+msgstr "설치할 소프트웨어 선택:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:1002
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
 "현재 데비안의 핵심적인 부분만 설치되어 있습니다. 필요한 것을 설치하려면, 다"
 "음 소프트웨어 모음 중 설치하려는 소프트웨어 모음을 선택하십시오."
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
-msgid "${ORIGCHOICES}"
-msgstr "${CHOICES}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:14
-msgid "Choose software to install:"
-msgstr "설치할 소프트웨어 선택:"
-
-#. Type: multiselect
-#. Description
-#: ../templates:14
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -49,8 +55,9 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "데비안 소프트웨어 선택"
 
 #~ msgid "${CHOICES}, manual package selection"

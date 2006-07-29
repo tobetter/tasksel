@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 2.07 debconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-19 15:15-0700\n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2006-06-27 18:56+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
@@ -24,36 +24,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: multiselect
-#. Description
-#: ../templates:5
-msgid "At the moment, only the core of Debian is installed. To tune the system to your needs, you can choose to install one or more of the following predefined collections of software."
-msgstr "För närvarande är endast Debians grundpaket installerade. För att anpassa installationen efter dina behov kan du välja att installera en eller flera av följande fördefinierade paketsamlingar."
-
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
 #. Type: multiselect
 #. Choices
 #. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
+#: ../templates:1001 ../templates:2001
 msgid "${ORIGCHOICES}"
 msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "Välj programvara att installera:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
-msgid "You can choose to install one or more of the following predefined collections of software."
-msgstr "Du kan välja att installera en eller flera av följande fördefinierade paketsamlingar."
+#: ../templates:1002
+#, fuzzy
+msgid ""
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+"För närvarande är endast Debians grundpaket installerade. För att anpassa "
+"installationen efter dina behov kan du välja att installera en eller flera "
+"av följande fördefinierade paketsamlingar."
+
+#. Type: multiselect
+#. Description
+#: ../templates:2002
+msgid ""
+"You can choose to install one or more of the following predefined "
+"collections of software."
+msgstr ""
+"Du kan välja att installera en eller flera av följande fördefinierade "
+"paketsamlingar."
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "Debians programvaruväljare"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, manuellt paketval"
-

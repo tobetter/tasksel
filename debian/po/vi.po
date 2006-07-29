@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-19 14:32-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2006-01-13 16:08+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -17,11 +17,30 @@ msgstr ""
 "X-Generator: LocFactoryEditor 1.6b23\n"
 
 #. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#: ../templates:1001 ../templates:2001
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
+
+#. Type: multiselect
 #. Description
-#: ../templates:5
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
+msgid "Choose software to install:"
+msgstr "Chọn phần mềm để cài đặt:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:1002
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
 "Hiện thời chỉ có phần lõi của Debian là đã cài đặt. Để tiếp tục tiến trình "
@@ -29,21 +48,8 @@ msgstr ""
 "vài những nhóm chương trình sau."
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
-msgid "${ORIGCHOICES}"
-msgstr "${CHOICES}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:14
-msgid "Choose software to install:"
-msgstr "Chọn phần mềm để cài đặt:"
-
-#. Type: multiselect
-#. Description
-#: ../templates:14
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -53,6 +59,7 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "Lựa chọn phần mềm Debian"

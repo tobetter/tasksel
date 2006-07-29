@@ -13,46 +13,61 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 2.00 debconf\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-19 14:32-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2006-02-10 20:39+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
-"Language-Team: Debian Hungarian Localization Team <debian-l10n-hungarian@lists.debian.org>\n"
+"Language-Team: Debian Hungarian Localization Team <debian-l10n-"
+"hungarian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: multiselect
-#. Description
-#: ../templates:5
-msgid "At the moment, only the core of Debian is installed. To tune the system to your needs, you can choose to install one or more of the following predefined collections of software."
-msgstr "A Debian alaprendszer telepítés kész. Most jön az egyéni igényeknek megfelelő kialakítás. Ez az alábbi nagy szoftver összeállítások telepítésével is elkezdhető."
-
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
 #. Type: multiselect
 #. Choices
 #. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
+#: ../templates:1001 ../templates:2001
 msgid "${ORIGCHOICES}"
 msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "Telepíthető szoftverek:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
-msgid "You can choose to install one or more of the following predefined collections of software."
+#: ../templates:1002
+#, fuzzy
+msgid ""
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+"A Debian alaprendszer telepítés kész. Most jön az egyéni igényeknek "
+"megfelelő kialakítás. Ez az alábbi nagy szoftver összeállítások "
+"telepítésével is elkezdhető."
+
+#. Type: multiselect
+#. Description
+#: ../templates:2002
+msgid ""
+"You can choose to install one or more of the following predefined "
+"collections of software."
 msgstr "A következő, előre összeválogatott szoftver gyűjtemények telepíthetők."
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "Debian szoftver gyűjtemények"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, csomagok kézi kiválasztása"
-

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian_po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-19 15:15-0700\n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2006-05-22 15:57+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -15,38 +15,48 @@ msgstr ""
 "X-Generator: KBabel 1.10.2\n"
 
 #. Type: multiselect
-#. Description
-#: ../templates:5
-msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
-"predefined collections of software."
-msgstr "त्यो समयमा, डेवियनको कोर मात्र स्थापना भयो । तपाईँको आवश्यकता अनुसार प्रणालीलाई मिलान गर्न, तपाईँले निम्न पूर्व परिभाषित सफ्टवेयरको संकलनबाट एउटा वा धेरै स्थापना गर्न रोज्न सक्नुहुन्छ ।"
-
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
 #. Type: multiselect
 #. Choices
 #. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
+#: ../templates:1001 ../templates:2001
 msgid "${ORIGCHOICES}"
 msgstr "${ORIGCHOICES}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "स्थापना गर्न सफ्टवेयर रोज्नुहोस्:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#: ../templates:1002
+#, fuzzy
+msgid ""
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+"त्यो समयमा, डेवियनको कोर मात्र स्थापना भयो । तपाईँको आवश्यकता अनुसार प्रणालीलाई "
+"मिलान गर्न, तपाईँले निम्न पूर्व परिभाषित सफ्टवेयरको संकलनबाट एउटा वा धेरै स्थापना गर्न "
+"रोज्न सक्नुहुन्छ ।"
+
+#. Type: multiselect
+#. Description
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
-msgstr "तपाईँले निम्न पूर्व परिभाषित सफ्टवेयरको संकलनबाट एउटा वा धेरै स्थापना गर्न रोज्न सक्नुहुन्छ ।"
+msgstr ""
+"तपाईँले निम्न पूर्व परिभाषित सफ्टवेयरको संकलनबाट एउटा वा धेरै स्थापना गर्न रोज्न सक्नुहुन्छ ।"
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "डेवियन सफ्टवेयर छनौट"
-

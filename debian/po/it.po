@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-19 14:32-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2005-12-24 15:20+0100\n"
 "Last-Translator: Stefano Canepa <sc@linux.it>\n"
 "Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
@@ -15,11 +15,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#: ../templates:1001 ../templates:2001
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
+
+#. Type: multiselect
 #. Description
-#: ../templates:5
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
+msgid "Choose software to install:"
+msgstr "Scegliere il software da installare:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:1002
+#, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
 "Al momento, solo la parte principale di Debian è installata. Per adattare "
@@ -27,21 +46,8 @@ msgstr ""
 "più delle seguenti collezioni predefinite di software."
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
-msgid "${ORIGCHOICES}"
-msgstr "${CHOICES}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:14
-msgid "Choose software to install:"
-msgstr "Scegliere il software da installare:"
-
-#. Type: multiselect
-#. Description
-#: ../templates:14
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -51,8 +57,9 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "Selezione del software Debian"
 
 #~ msgid "${CHOICES}, manual package selection"

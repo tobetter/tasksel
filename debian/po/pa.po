@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian_po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-19 15:15-0700\n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2006-01-24 15:17+0530\n"
 "Last-Translator: Amanpreet Singh Alam <apbrar@gmail.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
@@ -26,43 +26,46 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: multiselect
-#. Description
-#: ../templates:5
-msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
-"predefined collections of software."
-msgstr ""
-"ਇਸ ਮੌਕੇ ਉੱਤੇ ਸਿਰਫ਼ ਮੁੱਢਲਾ ਡੇਬੀਅਨ ਹੀ ਇੰਸਟਾਲ ਹੈ। ਸਿਸਟਮ ਨੂੰ ਆਪਣੀ ਲੋੜ ਮੁਤਾਬਕ "
-"ਤਿਆਰ ਕਰਨ ਲਈ, ਤੁਸੀਂ ਹੇਠ ਦਿੱਤੇ ਸਾਫਟਵੇਅਰ ਭੰਡਾਰ ਵਿੱਚ ਇੱਕ ਜਾਂ ਵੱਧ ਦੀ ਚੋਣ ਕਰ "
-"ਸਕਦੇ ਹੋ।"
-
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
 #. Type: multiselect
 #. Choices
 #. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
+#: ../templates:1001 ../templates:2001
 msgid "${ORIGCHOICES}"
 msgstr "${CHOICES}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਾਫਟਵੇਅਰ ਚੋਣ:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:14
+#: ../templates:1002
+#, fuzzy
+msgid ""
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+"ਇਸ ਮੌਕੇ ਉੱਤੇ ਸਿਰਫ਼ ਮੁੱਢਲਾ ਡੇਬੀਅਨ ਹੀ ਇੰਸਟਾਲ ਹੈ। ਸਿਸਟਮ ਨੂੰ ਆਪਣੀ ਲੋੜ ਮੁਤਾਬਕ ਤਿਆਰ ਕਰਨ ਲਈ, ਤੁਸੀਂ "
+"ਹੇਠ ਦਿੱਤੇ ਸਾਫਟਵੇਅਰ ਭੰਡਾਰ ਵਿੱਚ ਇੱਕ ਜਾਂ ਵੱਧ ਦੀ ਚੋਣ ਕਰ ਸਕਦੇ ਹੋ।"
+
+#. Type: multiselect
+#. Description
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
-msgstr ""
-"ਤੁਸੀਂ ਹੇਠਾਂ ਦੇ ਸਾਫਟਵੇਅਰ ਭੰਡਾਰ ਵਿੱਚੋਂ ਇੱਕ ਜਾਂ ਵੱਧ ਭਾਗਾਂ ਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਚੋਣ "
-"ਕਰ ਸਕਦੇ ਹੋ।"
+msgstr "ਤੁਸੀਂ ਹੇਠਾਂ ਦੇ ਸਾਫਟਵੇਅਰ ਭੰਡਾਰ ਵਿੱਚੋਂ ਇੱਕ ਜਾਂ ਵੱਧ ਭਾਗਾਂ ਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਚੋਣ ਕਰ ਸਕਦੇ ਹੋ।"
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "ਡੇਬੀਅਨ ਸਾਫਟਵੇਅਰ ਚੋਣ"
-

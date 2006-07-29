@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mg\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-01-19 14:32-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-29 07:42+0200\n"
 "PO-Revision-Date: 2005-03-31 10:25+0200\n"
 "Last-Translator: Jaonary Rabarisoa <mpandikateny@linuxmg.org>\n"
 "Language-Team: Malagasy <mpandikateny@linuxmg.org>\n"
@@ -25,12 +25,30 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 
 #. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#. Type: multiselect
+#. Choices
+#. Translators: translate ORIGCHOICES as CHOICES.
+#: ../templates:1001 ../templates:2001
+msgid "${ORIGCHOICES}"
+msgstr "${CHOICES}"
+
+#. Type: multiselect
 #. Description
-#: ../templates:5
+#. Type: multiselect
+#. Description
+#: ../templates:1002 ../templates:2002
+msgid "Choose software to install:"
+msgstr "Fidio ny rindrankajy izay hapetraka :"
+
+#. Type: multiselect
+#. Description
+#: ../templates:1002
 #, fuzzy
 msgid ""
-"At the moment, only the core of Debian is installed. To tune the system to "
-"your needs, you can choose to install one or more of the following "
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
 "Hatramin'izao dia mbola ny fototr'i Debian ihany no voapetraka. Mba "
@@ -40,21 +58,8 @@ msgstr ""
 "ilainy."
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:13
-msgid "${ORIGCHOICES}"
-msgstr "${CHOICES}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:14
-msgid "Choose software to install:"
-msgstr "Fidio ny rindrankajy izay hapetraka :"
-
-#. Type: multiselect
-#. Description
-#: ../templates:14
+#: ../templates:2002
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -64,8 +69,9 @@ msgstr ""
 
 #. Type: title
 #. Description
-#: ../templates:20
-msgid "Debian software selection"
+#: ../templates:3001
+#, fuzzy
+msgid "Software selection"
 msgstr "Safidy ny rindrankajy Debian"
 
 #~ msgid "${CHOICES}, manual package selection"
