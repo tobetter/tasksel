@@ -15,7 +15,11 @@ tasksel (2.54) UNRELEASED; urgency=low
   [ Translations of tasks ]
     - Updated Czech (Miroslav Kure)
 
- -- Jacobo Tarrio <jtarrio@debian.org>  Mon, 31 Jul 2006 09:50:50 +0200
+  [ Joey Hess ]
+  * Add eject to desktop task as it's not installed by d-i in all cases and is
+    used by gnome.
+
+ -- Joey Hess <joeyh@debian.org>  Wed,  2 Aug 2006 23:25:43 -0400
 
 tasksel (2.53) unstable; urgency=high
 
