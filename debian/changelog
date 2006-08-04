@@ -2,6 +2,8 @@ tasksel (2.54) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Branding removal. Closes: #380093
+  * Add eject to desktop task as it's not installed by d-i in all cases and is
+    used by gnome.
 
   [ Debconf translations ]
     - Updated French (Christian Perrier)
@@ -17,11 +19,13 @@ tasksel (2.54) UNRELEASED; urgency=low
     - Updated Czech (Miroslav Kure)
     - Updated German (Jens Seidel)
 
-  [ Joey Hess ]
-  * Add eject to desktop task as it's not installed by d-i in all cases and is
-    used by gnome.
+  [ Rene Engelhard ]
+  * add new openoffice.org-help-* packages to their respective tasks (closes: #381099)
+  * add openoffice.org-l10n-pt to portuguese-desktop task, will be added
+    with OOo 2.0.4 (and as taskseliirc handles absent packages I add it now
+    before it gets forgotten)
 
- -- Joey Hess <joeyh@debian.org>  Wed,  2 Aug 2006 23:25:43 -0400
+ -- Rene Engelhard <rene@debian.org>  Sat,  5 Aug 2006 00:08:28 +0200
 
 tasksel (2.53) unstable; urgency=high
 
