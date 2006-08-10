@@ -1,4 +1,4 @@
-# translation of tasksel-templates.po to Ukrainian
+# translation of uk.po to Ukrainian
 #
 #    Translators, if you are not familiar with the PO format, gettext
 #    documentation is worth reading, especially sections dedicated to
@@ -9,22 +9,21 @@
 #            /usr/share/doc/po-debconf/README-trans
 #         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
 #    Developers do not need to manually edit POT or PO files.
-# Eugeniy Meshcheryakov <eugen@univ.kiev.ua>, 2004, 2006.
 #
+# Eugeniy Meshcheryakov <eugen@univ.kiev.ua>, 2004, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-07-29 07:42+0200\n"
-"PO-Revision-Date: 2006-01-11 18:54+0200\n"
+"PO-Revision-Date: 2006-08-10 22:23+0200\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Type: multiselect
 #. Choices
@@ -47,13 +46,12 @@ msgstr "Виберіть програмне забезпечення для вс
 #. Type: multiselect
 #. Description
 #: ../templates:1002
-#, fuzzy
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
 "to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
-"На даний момент, встановлена тільки основна частина Debian. Для того, щоб "
+"На даний момент, встановлена тільки основна частина системи. Для того, щоб "
 "підлаштувати інсталяцію під ваші потреби, ви можете вибрати встановлення "
 "одного або кількох наступних наборів програмного забезпечення."
 
@@ -70,6 +68,6 @@ msgstr ""
 #. Type: title
 #. Description
 #: ../templates:3001
-#, fuzzy
 msgid "Software selection"
-msgstr "Вибір програмного забезпечення Debian"
+msgstr "Вибір програмного забезпечення"
+
