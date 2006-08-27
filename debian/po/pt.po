@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-07-29 07:42+0200\n"
-"PO-Revision-Date: 2004-12-13 20:20+0000\n"
+"PO-Revision-Date: 2006-08-27 16:22+0000\n"
 "Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team: Portuguese Translation Team <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,13 +37,12 @@ msgstr "Escolha o software a instalar:"
 #. Type: multiselect
 #. Description
 #: ../templates:1002
-#, fuzzy
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
 "to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
-"Neste momento, apenas o coração de Debian está instalado. Para afinar o "
+"Neste momento, apenas está instalado o coração do sistema. Para afinar o "
 "sistema de acordo com as suas necessidades, pode escolher instalar uma ou "
 "mais das seguintes colecções de software pré-definidas."
 
@@ -60,9 +59,8 @@ msgstr ""
 #. Type: title
 #. Description
 #: ../templates:3001
-#, fuzzy
 msgid "Software selection"
-msgstr "Selecção de software Debian"
+msgstr "Selecção de software"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, selecção de pacotes manual"
