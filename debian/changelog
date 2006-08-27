@@ -55,13 +55,11 @@ tasksel (2.54) UNRELEASED; urgency=low
     - remove non-existing opeoffice.org-l10n-pt from portuguese-desktop
     - remove outdated mozilla-firefox-theme-rtlclassic from hebrew-desktop
     - replace wrong ttf-devanagari by ttf-devanagari-fonts in nepali-desktop
-    - replace xfonts-biznet-iso-8859-2-* by xfonts-biznet-* in
-      polish-desktop ad slovak-desktop. Add these bitmap ISO-885962
-      fonts to other tasks for ISO-885962 languages, for consistency:
-      czech-desktop romanian-desktop slovenian-desktop bosnian-desktop
-      croatian-desktop hungarian-desktop
+    - remove xfonts-biznet-iso-8859-2-* in
+      polish-desktop ad slovak-desktop. Add xfonts-terminus to all ISO-8859-2 
+      language tasks, for consistency.
 
- -- Christian Perrier <bubulle@debian.org>  Sun, 27 Aug 2006 12:51:13 +0200
+ -- Christian Perrier <bubulle@debian.org>  Sun, 27 Aug 2006 13:52:12 +0200
 
 tasksel (2.53) unstable; urgency=high
 
