@@ -48,8 +48,20 @@ tasksel (2.54) UNRELEASED; urgency=low
 
   [ Christian Perrier ]
   * add a gujarati-desktop task after activating that language in D-I
+  * correct some tasks for wrong packages:
+    - correct typoe for openoffice.org-l10n-bg in cyrillic-desktop
+    - replace myspell-cs by myspell-cs-cz in czech-desktop
+    - remove non-existing firefox-locale-ka from georgian-desktop
+    - remove non-existing opeoffice.org-l10n-pt from portuguese-desktop
+    - remove outdated mozilla-firefox-theme-rtlclassic from hebrew-desktop
+    - replace wrong ttf-devanagari by ttf-devanagari-fonts in nepali-desktop
+    - replace xfonts-biznet-iso-8859-2-* by xfonts-biznet-* in
+      polish-desktop ad slovak-desktop. Add these bitmap ISO-885962
+      fonts to other tasks for ISO-885962 languages, for consistency:
+      czech-desktop romanian-desktop slovenian-desktop bosnian-desktop
+      croatian-desktop hungarian-desktop
 
- -- Christian Perrier <bubulle@debian.org>  Sun, 27 Aug 2006 12:32:08 +0200
+ -- Christian Perrier <bubulle@debian.org>  Sun, 27 Aug 2006 12:51:13 +0200
 
 tasksel (2.53) unstable; urgency=high
 
