@@ -62,6 +62,12 @@ tasksel (2.54) UNRELEASED; urgency=low
       polish-desktop ad slovak-desktop. Add xfonts-terminus to all ISO-8859-2 
       language tasks, for consistency.
 
+  [ Gustavo Franco ]
+  * Add scanner support in desktop task using xsane.
+  * Add video playback and cd/dvd burn support to gnome-desktop using
+    totem-mozilla and bonfire respectively.
+  * Add two sets of gstreamer 0.10 plugins to allow totem play more formats.  
+
  -- Christian Perrier <bubulle@debian.org>  Sun, 27 Aug 2006 13:52:12 +0200
 
 tasksel (2.53) unstable; urgency=high

@@ -19,6 +19,11 @@ Packages-list:
   rhythmbox
 # allow totem to play theora files
   libtheora0
+# allow totem to play more formats 
+  gstreamer0.10-plugins-ugly
+  gstreamer0.10-ffmpeg
+# allow video playback in mozilla/xulrunner browsers
+  totem-mozilla
 # enable debian menus
   menu-xdg
 # gnome menu editing
@@ -51,3 +56,5 @@ Packages-list:
   firefox-gnome-support
 # hardware browser, broader scope than hal
   hardinfo
+# cd/dvd burner suite
+  bonfire
