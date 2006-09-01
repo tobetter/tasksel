@@ -61,16 +61,19 @@ tasksel (2.54) UNRELEASED; urgency=low
     - remove outdated mozilla-firefox-theme-rtlclassic from hebrew-desktop
     - replace wrong ttf-devanagari by ttf-devanagari-fonts in nepali-desktop
     - remove xfonts-biznet-iso-8859-2-* in
-      polish-desktop ad slovak-desktop. Add xfonts-terminus to all ISO-8859-2 
+      polish-desktop ad slovak-desktop. Add xfonts-terminus to all ISO-8859-2
       language tasks, for consistency.
 
   [ Gustavo Franco ]
   * Add scanner support in desktop task using xsane.
   * Add video playback and cd/dvd burn support to gnome-desktop using
     totem-mozilla and bonfire respectively.
-  * Add two sets of gstreamer 0.10 plugins to allow totem play more formats.  
+  * Add two sets of gstreamer 0.10 plugins to allow totem play more formats.
 
- -- Christian Perrier <bubulle@debian.org>  Sun, 27 Aug 2006 13:52:12 +0200
+  [ Joey Hess ]
+  * Add k3b to kde task. Closes: #385634
+
+ -- Joey Hess <joeyh@debian.org>  Fri,  1 Sep 2006 17:50:16 -0400
 
 tasksel (2.53) unstable; urgency=high
 
