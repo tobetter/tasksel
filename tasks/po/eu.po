@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-27 12:33+0200\n"
-"PO-Revision-Date: 2006-06-27 12:00+0200\n"
+"PO-Revision-Date: 2006-09-04 00:06+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: (n != 1)\n"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -333,10 +333,8 @@ msgstr "SQL datubasea"
 
 #. Description
 #: ../po/debian-tasks.desc:26001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Ataza honek PostgreSQL-ren bezero eta zerbitzari paketeak hautatzen ditu."
+msgid "This task selects client and server packages for the PostgreSQL database."
+msgstr "Ataza honek PostgreSQL-ren bezero eta zerbitzari paketeak hautatzen ditu."
 
 #. Description
 #: ../po/debian-tasks.desc:26001
@@ -371,8 +369,7 @@ msgstr "DNS zerbitzaria"
 
 #. Description
 #: ../po/debian-tasks.desc:28001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "BIND DNS zerbitzaria hautatzen du, dagokion dokumentazioaren eta utilitateen "
 "paketeekin."
@@ -596,15 +593,13 @@ msgstr "Ataza honek idazmahaia Grekoz ezartzen du."
 
 #. Description
 #: ../po/debian-tasks.desc:47001
-#, fuzzy
 msgid "Gujarati desktop"
-msgstr "Punjabiar idazmahaia"
+msgstr "Gujarati idazmahaia"
 
 #. Description
 #: ../po/debian-tasks.desc:47001
-#, fuzzy
 msgid "This task localises the desktop in Gujarati."
-msgstr "Ataz honek idazmahaia Punjaberaz ezartzen du."
+msgstr "Ataz honek idazmahaia Gujaratierara ezartzen du."
 
 #. Description
 #: ../po/debian-tasks.desc:48001
@@ -1366,8 +1361,7 @@ msgstr "Web zerbitzaria"
 
 #. Description
 #: ../po/debian-tasks.desc:110001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Ataza honek web zerbitzari sistema batek behar dituen oinarrizko paketeak "
 "instalatuko ditu."
@@ -1407,16 +1401,3 @@ msgstr "Xhosa Mahaigaina"
 msgid "This task localises the desktop in Xhosa."
 msgstr "Ataza honek idazmahaia Xhoseraz ezartzen du."
 
-#~ msgid "Albanian desktop"
-#~ msgstr "Albaniar idazmahaia"
-
-#~ msgid "This task localises the desktop in Albanian."
-#~ msgstr "Ataza honek idazmahaia Albanieraz ezartzen du."
-
-#, fuzzy
-#~ msgid ""
-#~ "This task provides basic \"desktop\" software using the Gnome desktop "
-#~ "desktop."
-#~ msgstr ""
-#~ "Ataza honek GNOME idazmahai ingurunea erabiliaz oinarrizko \"idazmahai\" "
-#~ "ingurune bat instalatzen du."
