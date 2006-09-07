@@ -8,7 +8,11 @@ tasksel (2.55) UNRELEASED; urgency=low
   [ Debconf translations ]
     - Updated Wolof (Mouhamadou Mamoune Mbacke)
 
- -- Jacobo Tarrio <jtarrio@debian.org>  Thu,  7 Sep 2006 11:44:28 +0200
+  [ Joey Hess ]
+  * Include xdg-utils in desktop task for use by third-party apps.
+    Closes: #386335
+
+ -- Joey Hess <joeyh@debian.org>  Thu,  7 Sep 2006 14:41:52 -0400
 
 tasksel (2.54) unstable; urgency=low
 
