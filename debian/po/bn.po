@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tasksel_Debian HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-29 07:42+0200\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2006-09-13 14:42-0400\n"
 "PO-Revision-Date: 2006-09-09 18:05+0600\n"
 "Last-Translator: Jamil Ahmed <jamil@bengalinux.org>\n"
 "Language-Team: Bangla <core@BengaLinux.Org>\n"
@@ -17,36 +17,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
-#. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
-#: ../templates:1001
-#: ../templates:2001
-msgid "${ORIGCHOICES}"
-msgstr "${ORIGCHOICES}"
-
-#. Type: multiselect
 #. Description
 #. Type: multiselect
 #. Description
-#: ../templates:1002
-#: ../templates:2002
+#: ../templates:1001 ../templates:2001
 msgid "Choose software to install:"
 msgstr "ইনস্টল করার জন্য সফটওয়্যার বেছে নিন:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:1002
-msgid "At the moment, only the core of the system is installed. To tune the system to your needs, you can choose to install one or more of the following predefined collections of software."
-msgstr "এই মুহূর্তে, ডেবিয়ানের মূল অংশটুকুই কেবল ইনস্টল করা আছে।  সিস্টেমকে আপনার পছন্দমত সাজানোর জন্য পূর্বনির্ধারিত এই সফটওয়্যার সংগ্রহগুলো থেকে আপনি এক বা একাধিক সংগ্রহ ইনস্টল করতে পারেন।"
+#: ../templates:1001
+msgid ""
+"At the moment, only the core of the system is installed. To tune the system "
+"to your needs, you can choose to install one or more of the following "
+"predefined collections of software."
+msgstr ""
+"এই মুহূর্তে, ডেবিয়ানের মূল অংশটুকুই কেবল ইনস্টল করা আছে।  সিস্টেমকে আপনার পছন্দমত "
+"সাজানোর জন্য পূর্বনির্ধারিত এই সফটওয়্যার সংগ্রহগুলো থেকে আপনি এক বা একাধিক সংগ্রহ "
+"ইনস্টল করতে পারেন।"
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
-msgid "You can choose to install one or more of the following predefined collections of software."
-msgstr "আপনি এই পূর্বনির্ধারিত সফটওয়্যার সংগ্রহগুলো থেকে এক বা একাধিক সংগ্রহ ইনস্টল করতে পারেন।"
+#: ../templates:2001
+msgid ""
+"You can choose to install one or more of the following predefined "
+"collections of software."
+msgstr ""
+"আপনি এই পূর্বনির্ধারিত সফটওয়্যার সংগ্রহগুলো থেকে এক বা একাধিক সংগ্রহ ইনস্টল করতে "
+"পারেন।"
 
 # FIXME
 #. Type: title
@@ -55,3 +53,5 @@ msgstr "আপনি এই পূর্বনির্ধারিত সফট
 msgid "Software selection"
 msgstr "সফটওয়্যার নির্বাচন"
 
+#~ msgid "${ORIGCHOICES}"
+#~ msgstr "${ORIGCHOICES}"

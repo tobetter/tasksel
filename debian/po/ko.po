@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_debian\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-29 07:42+0200\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2006-09-13 14:42-0400\n"
 "PO-Revision-Date: 2005-11-27 23:31+0900\n"
 "Last-Translator: Sunjae Park <darehanl@gmail.com>\n"
 "Language-Team: Korean <debian-i18n-ko@lists.debian.org>\n"
@@ -14,26 +14,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
+#. Description
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
+#. Description
 #: ../templates:1001 ../templates:2001
-msgid "${ORIGCHOICES}"
-msgstr "${CHOICES}"
-
-#. Type: multiselect
-#. Description
-#. Type: multiselect
-#. Description
-#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "설치할 소프트웨어 선택:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:1002
+#: ../templates:1001
 #, fuzzy
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
@@ -45,7 +35,7 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
+#: ../templates:2001
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -59,6 +49,9 @@ msgstr ""
 #, fuzzy
 msgid "Software selection"
 msgstr "데비안 소프트웨어 선택"
+
+#~ msgid "${ORIGCHOICES}"
+#~ msgstr "${CHOICES}"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, 수동으로 꾸러미 선택"

@@ -17,8 +17,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: km\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-29 07:42+0200\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2006-09-13 14:42-0400\n"
 "PO-Revision-Date: 2006-08-08 16:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -28,35 +28,27 @@ msgstr ""
 "X-Generator: KBabel 1.11.2\n"
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
+#. Description
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
+#. Description
 #: ../templates:1001 ../templates:2001
-msgid "${ORIGCHOICES}"
-msgstr "${ORIGCHOICES}"
-
-#. Type: multiselect
-#. Description
-#. Type: multiselect
-#. Description
-#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "ជ្រើស​កម្មវិធី​​​ត្រូវ​ដំឡើង ៖"
 
 #. Type: multiselect
 #. Description
-#: ../templates:1002
+#: ../templates:1001
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
 "to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
-msgstr "នៅ​ពេលនេះ មាន​តែ​ផ្នែក​សំខាន់​របស់​ប្រព័ន្ធ​ត្រូវ​បាន​ដំឡើង ។ ដើម្បី​ត្រឡប់​ប្រព័ន្ធ​តាម​តម្រូវការ​របស់​អ្នក អ្នក​អាច​ជ្រើស​ដើម្បី​ដំឡើង​ការ​ប្រមូលផ្ដុំ​កម្មវិធី​ដែល​បាន​កំណត់​ជា​មុន​ដូច​ខាង​ក្រោម ។are."
+msgstr ""
+"នៅ​ពេលនេះ មាន​តែ​ផ្នែក​សំខាន់​របស់​ប្រព័ន្ធ​ត្រូវ​បាន​ដំឡើង ។ ដើម្បី​ត្រឡប់​ប្រព័ន្ធ​តាម​តម្រូវការ​របស់​អ្នក អ្នក​"
+"អាច​ជ្រើស​ដើម្បី​ដំឡើង​ការ​ប្រមូលផ្ដុំ​កម្មវិធី​ដែល​បាន​កំណត់​ជា​មុន​ដូច​ខាង​ក្រោម ។are."
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
+#: ../templates:2001
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -68,3 +60,5 @@ msgstr "អ្នក​អាច​ជ្រើស​ដើម្បី​ដំ
 msgid "Software selection"
 msgstr "ជម្រើស​កម្មវិធី​"
 
+#~ msgid "${ORIGCHOICES}"
+#~ msgstr "${ORIGCHOICES}"

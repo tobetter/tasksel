@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel debian\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-29 07:42+0200\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2006-09-13 14:42-0400\n"
 "PO-Revision-Date: 2005-06-05 18:26+0300\n"
 "Last-Translator: Siim Põder <windo@windowlicker.dyn.ee>\n"
 "Language-Team: Debiani installeri eestindus <debian-boot-et@linux.ee>\n"
@@ -27,26 +27,16 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
+#. Description
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
+#. Description
 #: ../templates:1001 ../templates:2001
-msgid "${ORIGCHOICES}"
-msgstr "${CHOICES}"
-
-#. Type: multiselect
-#. Description
-#. Type: multiselect
-#. Description
-#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "Vali paigaldatav tarkvara:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:1002
+#: ../templates:1001
 #, fuzzy
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
@@ -59,7 +49,7 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
+#: ../templates:2001
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -71,6 +61,9 @@ msgstr "Võid paigaldada mõned järgnevaist eeldefineeritud tarkvara kogumitest
 #, fuzzy
 msgid "Software selection"
 msgstr "Debiani tarkvara valik"
+
+#~ msgid "${ORIGCHOICES}"
+#~ msgstr "${CHOICES}"
 
 #~ msgid "${CHOICES}, manual package selection"
 #~ msgstr "${CHOICES}, manuaalne pakivalik"

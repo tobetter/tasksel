@@ -20,8 +20,10 @@ tasksel (2.55) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Include xdg-utils in desktop task for use by third-party apps.
     Closes: #386335
+  * Use new debconf Choices-C feature to avoid translators needing to
+    translate Choices subst variables.
 
- -- Christian Perrier <bubulle@debian.org>  Wed, 13 Sep 2006 16:19:39 +0200
+ -- Joey Hess <joeyh@debian.org>  Wed, 13 Sep 2006 14:25:43 -0400
 
 tasksel (2.54) unstable; urgency=low
 

@@ -1,7 +1,7 @@
 Template: tasksel/first
 Type: multiselect
-# Translators: translate ORIGCHOICES as CHOICES.
-_Choices: ${ORIGCHOICES}
+Choices-C: ${ORIGCHOICES}
+Choices: ${CHOICES}
 _Description: Choose software to install:
  At the moment, only the core of the system is installed. To tune the
  system to your needs, you can choose to install one or more of the
@@ -9,8 +9,8 @@ _Description: Choose software to install:
 
 Template: tasksel/tasks
 Type: multiselect
-# Translators: translate ORIGCHOICES as CHOICES.
-_Choices: ${ORIGCHOICES}
+Choices-C: ${ORIGCHOICES}
+Choices: ${CHOICES}
 _Description: Choose software to install:
  You can choose to install one or more of the following predefined
  collections of software.

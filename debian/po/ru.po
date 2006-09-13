@@ -16,8 +16,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-templates_ru\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-29 07:42+0200\n"
+"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
+"POT-Creation-Date: 2006-09-13 14:42-0400\n"
 "PO-Revision-Date: 2006-07-31 21:42+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -29,26 +29,16 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
+#. Description
 #. Type: multiselect
-#. Choices
-#. Translators: translate ORIGCHOICES as CHOICES.
+#. Description
 #: ../templates:1001 ../templates:2001
-msgid "${ORIGCHOICES}"
-msgstr "${CHOICES}"
-
-#. Type: multiselect
-#. Description
-#. Type: multiselect
-#. Description
-#: ../templates:1002 ../templates:2002
 msgid "Choose software to install:"
 msgstr "Выберите устанавливаемое программное обеспечение:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:1002
+#: ../templates:1001
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
 "to your needs, you can choose to install one or more of the following "
@@ -60,7 +50,7 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
+#: ../templates:2001
 msgid ""
 "You can choose to install one or more of the following predefined "
 "collections of software."
@@ -74,3 +64,5 @@ msgstr ""
 msgid "Software selection"
 msgstr "Выбор программного обеспечения"
 
+#~ msgid "${ORIGCHOICES}"
+#~ msgstr "${CHOICES}"
