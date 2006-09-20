@@ -1,4 +1,4 @@
-tasksel (2.55) UNRELEASED; urgency=low
+tasksel (2.55) unstable; urgency=low
 
   [ Translations of tasks ]
     - Added Wolof (Mouhamadou Mamoune Mbacke)
@@ -30,12 +30,12 @@ tasksel (2.55) UNRELEASED; urgency=low
   * Remove gstreamer0.10-ffmpeg and gstreamer0.10-plugins-ugly, since
     these are only used by totem-gstreamer, which is not the current default
     totem (totem-xine). Closes: #388247
-  
+
   [ Per Olofsson ]
   * Update my email address.
   * Remove doc-linux-sv-html from swedish task, doesn't exist anymore.
 
- -- Joey Hess <joeyh@debian.org>  Tue, 19 Sep 2006 15:06:54 -0400
+ -- Joey Hess <joeyh@debian.org>  Wed, 20 Sep 2006 17:13:40 -0400
 
 tasksel (2.54) unstable; urgency=low
 
