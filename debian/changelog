@@ -5,8 +5,11 @@ tasksel (2.56) UNRELEASED; urgency=low
 
   [ Eugeniy Meshcheryakov ]
   * Fixed maintainer e-mail in 'unkrainian' and 'ukrainian-desktop' tasks.
+  * Removed uk from Test-lang for 'cyrillic' task.
+  * Added character-cell unicode fonts from 'cyrillic-desktop' task to
+    'ukrainian-desktop' task.
 
- -- Eugeniy Meshcheryakov <eugen@debian.org>  Thu, 21 Sep 2006 21:15:13 +0200
+ -- Eugeniy Meshcheryakov <eugen@debian.org>  Tue, 26 Sep 2006 22:40:29 +0200
 
 tasksel (2.55) unstable; urgency=low
 
