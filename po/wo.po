@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-11 07:41+0200\n"
+"POT-Creation-Date: 2006-07-26 15:49-0400\n"
 "PO-Revision-Date: 2005-07-08 18:00+0000\n"
 "Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
 "Language-Team: Wolof\n"
@@ -16,12 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
 
-#: ../tasksel.pl:305
+#: ../tasksel.pl:357
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [options]; where options is any combination of:\n"
+"tasksel [options]\n"
 "\t-t, --test          test mode; don't really do anything\n"
 "\t    --new-install   automatically install some tasks\n"
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
@@ -38,7 +38,6 @@ msgstr ""
 "\t    --task-packages wane list u paket yi am ci ab task\n"
 "\t    --task-desc     delloo melokaan wu ab task\n"
 
-#: ../tasksel.pl:483 ../tasksel.pl:499 ../tasksel.pl:516
+#: ../tasksel.pl:578 ../tasksel.pl:596 ../tasksel.pl:607
 msgid "aptitude failed"
 msgstr "aptitude antuwul"
-
