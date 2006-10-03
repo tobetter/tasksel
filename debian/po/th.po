@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-09-13 14:42-0400\n"
-"PO-Revision-Date: 2006-04-17 11:39+0700\n"
+"PO-Revision-Date: 2006-10-03 10:25+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,13 +25,12 @@ msgstr "เลือกซอฟต์แวร์ที่จะติดตั
 #. Type: multiselect
 #. Description
 #: ../templates:1001
-#, fuzzy
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
 "to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
-"ขณะนี้ โปรแกรมได้ติดตั้งเฉพาะแกนของเดเบียนเท่านั้น "
+"ขณะนี้ โปรแกรมได้ติดตั้งเฉพาะแกนของระบบเท่านั้น "
 "เพื่อที่จะปรับแต่งระบบให้เข้ากับความต้องการของคุณ "
 "คุณสามารถเลือกติดตั้งชุดซอฟต์แวร์ที่ได้รวบรวมเตรียมไว้ดังต่อไปนี้ตั้งแต่หนึ่งชุดขึ้นไป"
 
@@ -46,9 +45,8 @@ msgstr "คุณสามารถเลือกติดตั้งชุด
 #. Type: title
 #. Description
 #: ../templates:3001
-#, fuzzy
 msgid "Software selection"
-msgstr "การเลือกซอฟต์แวร์เดเบียน"
+msgstr "ชุดซอฟต์แวร์"
 
 #~ msgid "${ORIGCHOICES}"
 #~ msgstr "${CHOICES}"
