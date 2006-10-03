@@ -1,20 +1,20 @@
 # translation of mk.po to
 # translation of mk.po to Macedonian
+#
 # Georgi Stanojevski <glisha@gmail.com>, 2004, 2005, 2006.
 # Georgi Stanojevski <georgis@unet.com.mk>, 2006.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-09-13 14:42-0400\n"
-"PO-Revision-Date: 2006-01-16 12:29+0100\n"
+"PO-Revision-Date: 2006-10-03 08:23+0200\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #. Type: multiselect
 #. Description
@@ -27,15 +27,11 @@ msgstr "Одбери софтвер кој ќе се инсталира:"
 #. Type: multiselect
 #. Description
 #: ../templates:1001
-#, fuzzy
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
 "to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
-msgstr ""
-"Во моментот, само сржта на Дебиан е инстaлирана. За да ја средиш "
-"инсталацијата по твои потреби, може да одбереш да се инсталираат една или "
-"повеќе од предефинираните колекции на софтвер. "
+msgstr "Во моментот, само сржта на системот е инстaлирана. За да ја прилагодиш инсталацијата по твои потреби, може да одбереш да се инсталираат една или повеќе од следните предефинирани колекции на софтвер. "
 
 #. Type: multiselect
 #. Description
@@ -50,9 +46,6 @@ msgstr ""
 #. Type: title
 #. Description
 #: ../templates:3001
-#, fuzzy
 msgid "Software selection"
-msgstr "Селекција на софтвер  во Дебиан"
+msgstr "Селекција на софтвер"
 
-#~ msgid "${ORIGCHOICES}"
-#~ msgstr "${CHOICES}"
