@@ -42,7 +42,10 @@ tasksel (2.56) UNRELEASED; urgency=low
   [ Per Olofsson ]
   * Switch from pcmcia-cs to pcmciautils in the laptop task.
 
- -- Christian Perrier <bubulle@debian.org>  Tue,  3 Oct 2006 21:10:05 +0200
+  [ Joey Hess ]
+  * Add avahi-daemon and libnss-mdns to desktop task. Closes: #388549
+
+ -- Joey Hess <joeyh@debian.org>  Wed,  4 Oct 2006 19:06:57 -0400
 
 tasksel (2.55) unstable; urgency=low
 
