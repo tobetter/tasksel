@@ -35,6 +35,8 @@ Packages-list:
 # hardware detection (see also desktop.preinst)
   discover1
   xresprobe
+# sparc hardware detection
+  prtconf
 # Make sure that CDs etc can be ejected. May not be installed by d-i.
   eject
 # The following packages are the same as the packages in the print-server
