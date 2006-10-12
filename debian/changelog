@@ -13,6 +13,8 @@ tasksel (2.57) UNRELEASED; urgency=low
   * Add prtconf to desktop task, used on sparc for X hardware detection.
   * Add network-manager to desktop tasks. Hpefully it won't cause problems,
     but this is provisional to see if it does.
+  * Re-add gstreamer0.10-ffmpeg, since while totem doesn't use it, 
+    rhythmbox still does, to play things like wma files.
 
  -- Joey Hess <joeyh@debian.org>  Wed, 11 Oct 2006 22:28:06 -0400
 
