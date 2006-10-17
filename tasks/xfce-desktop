@@ -1,0 +1,24 @@
+Task: xfce-desktop
+Relevance: 8
+Section: user
+Enhances: desktop
+Provides: complete-desktop
+Description: Xfce desktop environment
+ This task provides basic "desktop" software using the Xfce desktop
+ environment.
+Key:
+# The basics of xfce, not the whole thing.
+  xfce4
+Packages: task-fields
+Packages-list:
+# well known xfce4 enhancements
+  xfce4-goodies
+# xfce text editor  
+  mousepad
+# xfce media player (uses xine)  
+  xfmedia
+# calendar application  
+  orage
+xfce4-mixer
+xfprint4
+xfce4-terminal
