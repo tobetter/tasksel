@@ -16,7 +16,13 @@ tasksel (2.58) UNRELEASED; urgency=low
   * Make the lang test support languages of the form ll_LL. Closes: #393966
   * Switch from brasero to the better-known and now more suitable gnomebaker.
 
- -- Joey Hess <joeyh@debian.org>  Thu, 19 Oct 2006 16:25:12 -0400
+  [ Rene Engelhard ]
+  * add openoffice.org-l10n-eo to esperanto-desktop
+  * add openoffice.org-gtk to xfce-desktop since -gtk also has an
+    effect on Xfce. Makes OOo look better and be able to use native
+    Gtk file dialogs.
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 19 Oct 2006 23:26:02 +0200
 
 tasksel (2.57) unstable; urgency=low
 
