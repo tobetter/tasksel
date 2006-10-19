@@ -5,8 +5,10 @@ if [ "$NEW_INSTALL" ]; then
 	set -e
 	shift 1
 	baselang=$(expr "$LANG" : '\(.*\)_')
+	fulllang=$(expr "$LANG" : '\(.*\)\.')
 	for locale in $@; do
 		if ( [ -n "$LANG" ] && [ "$LANG" = "$locale" ] ) || \
+		   ( [ -n "$fulllang" ] && [ "$fulllang" = "$locale" ] ) || \
 		   ( [ -n "$baselang" ] && [ "$baselang" = "$locale" ] ); then
 		   exit 0 # install without display
 		fi
