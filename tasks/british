@@ -1,0 +1,14 @@
+Task: british
+Test-lang: en_GB
+Section: l10n
+Description: British English environment
+ This task installs packages useful for British English users.
+Maintainer: Per Olofsson <pelle@debian.org>
+Key:
+ locales
+Packages: task-fields
+Packages-list:
+ util-linux-locales
+ ibritish
+ wbritish
+ myspell-en-gb
