@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-27 12:33+0200\n"
+"POT-Creation-Date: 2006-10-26 19:13+0200\n"
 "PO-Revision-Date: 2006-10-03 08:26+0200\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
@@ -136,11 +136,39 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:11001
+#, fuzzy
+msgid "British English environment"
+msgstr "Бенгалска средина"
+
+#. Description
+#: ../po/debian-tasks.desc:11001
+#, fuzzy
+msgid ""
+"This task installs packages and documentation in British English to help "
+"British English speaking people use Debian."
+msgstr ""
+"Оваа задача инсталира пакети и документација на фински да им помогне да "
+"луѓето кои зборуваат фински при користење на Дебиан."
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+#, fuzzy
+msgid "British English desktop"
+msgstr "Бенгалска работна околина"
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+#, fuzzy
+msgid "This task localises the desktop in British English."
+msgstr "Оваа задаја ја локализира работната околина на бенгалски."
+
+#. Description
+#: ../po/debian-tasks.desc:13001
 msgid "Bulgarian environment"
 msgstr "Бугарска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task installs programs and data files that make it easier for Bulgarian "
 "speakers to use Debian."
@@ -149,22 +177,22 @@ msgstr ""
 "бугарскипри користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:14001
 msgid "Bulgarian desktop"
 msgstr "Бугарска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:14001
 msgid "This task localises the desktop in Bulgarian."
 msgstr "Оваа задача ја локализира работната околина на бугарски."
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:15001
 msgid "Catalan environment"
 msgstr "Каталонска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:15001
 msgid ""
 "This task installs packages and documentation in Catalan to help Catalan "
 "speaking people use Debian."
@@ -173,22 +201,22 @@ msgstr ""
 "на луѓето што говорат Каталански да го користат Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:16001
 msgid "Catalan desktop"
 msgstr "Каталанска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:16001
 msgid "This task localises the desktop in Catalan."
 msgstr "Оваа задача ја локализира работната околина на Каталански."
 
 #. Description
-#: ../po/debian-tasks.desc:15001
+#: ../po/debian-tasks.desc:17001
 msgid "Simplified Chinese environment"
 msgstr "Средина на упростен кинески"
 
 #. Description
-#: ../po/debian-tasks.desc:15001
+#: ../po/debian-tasks.desc:17001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the simplified Chinese "
@@ -199,22 +227,22 @@ msgstr ""
 "Дебиан, користејќи го упростениот кинекси енкодинг."
 
 #. Description
-#: ../po/debian-tasks.desc:16001
+#: ../po/debian-tasks.desc:18001
 msgid "Simplified Chinese desktop"
 msgstr "Работна околина на упростен кинески"
 
 #. Description
-#: ../po/debian-tasks.desc:16001
+#: ../po/debian-tasks.desc:18001
 msgid "This task localises the desktop in Simplified Chinese."
 msgstr "Оваа задача ја локализира работната околина на упростен кинески."
 
 #. Description
-#: ../po/debian-tasks.desc:17001
+#: ../po/debian-tasks.desc:19001
 msgid "Traditional Chinese environment"
 msgstr "Средина на традиционален кинески"
 
 #. Description
-#: ../po/debian-tasks.desc:17001
+#: ../po/debian-tasks.desc:19001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
@@ -225,32 +253,32 @@ msgstr ""
 "Дебиан, користејќи го традиционалниот кинекси енкодинг."
 
 #. Description
-#: ../po/debian-tasks.desc:18001
+#: ../po/debian-tasks.desc:20001
 msgid "Traditional Chinese desktop"
 msgstr "Средина на традиционален кинески"
 
 #. Description
-#: ../po/debian-tasks.desc:18001
+#: ../po/debian-tasks.desc:20001
 msgid "This task localises the desktop in Traditional Chinese."
 msgstr "Оваа задача ја локализира работната околина на традиционален кинески."
 
 #. Description
-#: ../po/debian-tasks.desc:19001
+#: ../po/debian-tasks.desc:21001
 msgid "Croatian desktop"
 msgstr "Хрватска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:19001
+#: ../po/debian-tasks.desc:21001
 msgid "This task localises the desktop in Croatian."
 msgstr "Оваа задача ја локализира работната околина на хрватски."
 
 #. Description
-#: ../po/debian-tasks.desc:20001
+#: ../po/debian-tasks.desc:22001
 msgid "Cyrillic environment"
 msgstr "Кирилична средина"
 
 #. Description
-#: ../po/debian-tasks.desc:20001
+#: ../po/debian-tasks.desc:22001
 msgid ""
 "This task provides Cyrillic fonts and other software you will need in order "
 "to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
@@ -261,12 +289,12 @@ msgstr ""
 "украински."
 
 #. Description
-#: ../po/debian-tasks.desc:21001
+#: ../po/debian-tasks.desc:23001
 msgid "Cyrillic desktop"
 msgstr "Кирилична работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:21001
+#: ../po/debian-tasks.desc:23001
 msgid ""
 "This task localises the desktop in Cyrillic. It supports Belarusian, "
 "Bulgarian, Macedonian, Russian, Serbian and Ukrainian."
@@ -275,12 +303,12 @@ msgstr ""
 "белоруски, бугарски, македонски, руски, српски и украински."
 
 #. Description
-#: ../po/debian-tasks.desc:22001
+#: ../po/debian-tasks.desc:24001
 msgid "Czech environment"
 msgstr "Чешка средина"
 
 #. Description
-#: ../po/debian-tasks.desc:22001
+#: ../po/debian-tasks.desc:24001
 msgid ""
 "This task installs packages and documentation in Czech to help Czech "
 "speaking people use Debian."
@@ -289,22 +317,22 @@ msgstr ""
 "луѓето кои говорат чешки при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:23001
+#: ../po/debian-tasks.desc:25001
 msgid "Czech desktop"
 msgstr "Чешка работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:23001
+#: ../po/debian-tasks.desc:25001
 msgid "This task localises the desktop in Czech."
 msgstr "Оваа задача ја локализира работната околина на чешки."
 
 #. Description
-#: ../po/debian-tasks.desc:24001
+#: ../po/debian-tasks.desc:26001
 msgid "Danish environment"
 msgstr "Данска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:24001
+#: ../po/debian-tasks.desc:26001
 msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
@@ -313,29 +341,30 @@ msgstr ""
 "луѓето кои зборуваат Дански при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:25001
+#: ../po/debian-tasks.desc:27001
 msgid "Danish desktop"
 msgstr "Данска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:25001
+#: ../po/debian-tasks.desc:27001
 msgid "This task localises the desktop in Danish."
 msgstr "Оваа задача ја локализира работната околина на дански."
 
 #. Description
-#: ../po/debian-tasks.desc:26001
+#: ../po/debian-tasks.desc:28001
 msgid "SQL database"
 msgstr "SQL база на податоци"
 
 #. Description
-#: ../po/debian-tasks.desc:26001
-msgid "This task selects client and server packages for the PostgreSQL database."
+#: ../po/debian-tasks.desc:28001
+msgid ""
+"This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Оваа задача ги селектира клиентски и серверски пакети за PostgreSQL базата "
 "на податоци."
 
 #. Description
-#: ../po/debian-tasks.desc:26001
+#: ../po/debian-tasks.desc:28001
 msgid ""
 "PostgreSQL is an SQL relational database, offering increasing SQL92 "
 "compliance and some SQL3 features.  It is suitable for use with multi-user "
@@ -348,12 +377,12 @@ msgstr ""
 "и убаво-обмислено заклучување. "
 
 #. Description
-#: ../po/debian-tasks.desc:27001
+#: ../po/debian-tasks.desc:29001
 msgid "Desktop environment"
 msgstr "Работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:27001
+#: ../po/debian-tasks.desc:29001
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "Gnome and KDE desktop tasks."
@@ -362,22 +391,24 @@ msgstr ""
 "основа за Гном и КДЕ задачите."
 
 #. Description
-#: ../po/debian-tasks.desc:28001
+#: ../po/debian-tasks.desc:30001
 msgid "DNS server"
 msgstr "DNS сервер"
 
 #. Description
-#: ../po/debian-tasks.desc:28001
-msgid "Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "Го селектира BIND DNS серверот и пропратни алатки како и документација."
+#: ../po/debian-tasks.desc:30001
+msgid ""
+"Selects the BIND DNS server, and related documentation and utility packages."
+msgstr ""
+"Го селектира BIND DNS серверот и пропратни алатки како и документација."
 
 #. Description
-#: ../po/debian-tasks.desc:29001
+#: ../po/debian-tasks.desc:31001
 msgid "Dutch environment"
 msgstr "Холандска околина"
 
 #. Description
-#: ../po/debian-tasks.desc:29001
+#: ../po/debian-tasks.desc:31001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
@@ -386,52 +417,52 @@ msgstr ""
 "им помогне на луѓето кои говорат холандски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:30001
+#: ../po/debian-tasks.desc:32001
 msgid "Dutch desktop"
 msgstr "Холандска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:30001
+#: ../po/debian-tasks.desc:32001
 msgid "This task localises the desktop in Dutch."
 msgstr "Оваа задача ја локализира работната околина на холандски."
 
 #. Description
-#: ../po/debian-tasks.desc:31001
+#: ../po/debian-tasks.desc:33001
 msgid "Dzongkha desktop"
 msgstr "Џонга работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:31001
+#: ../po/debian-tasks.desc:33001
 msgid "This task localises the desktop in Dzongkha."
 msgstr "Оваа задача ја локализира работната околина на џонга."
 
 #. Description
-#: ../po/debian-tasks.desc:32001
+#: ../po/debian-tasks.desc:34001
 msgid "Esperanto desktop"
 msgstr "Есперанто работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:32001
+#: ../po/debian-tasks.desc:34001
 msgid "This task localises the desktop in Esperanto."
 msgstr "Оваа задача ја локализира работната околина на есперанто."
 
 #. Description
-#: ../po/debian-tasks.desc:33001
+#: ../po/debian-tasks.desc:35001
 msgid "Estonian desktop"
 msgstr "Естониска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:33001
+#: ../po/debian-tasks.desc:35001
 msgid "This task localises the desktop in Estonian."
 msgstr "Оваа задача ја локализира работната околина на естонски."
 
 #. Description
-#: ../po/debian-tasks.desc:34001
+#: ../po/debian-tasks.desc:36001
 msgid "File server"
 msgstr "Сервер за датотеки"
 
 #. Description
-#: ../po/debian-tasks.desc:34001
+#: ../po/debian-tasks.desc:36001
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
@@ -440,12 +471,12 @@ msgstr ""
 "и NetBIOS и NFS."
 
 #. Description
-#: ../po/debian-tasks.desc:35001
+#: ../po/debian-tasks.desc:37001
 msgid "Finnish environment"
 msgstr "Фиснак средина"
 
 #. Description
-#: ../po/debian-tasks.desc:35001
+#: ../po/debian-tasks.desc:37001
 msgid ""
 "This task installs packages and documentation in Finnish to help Finnish "
 "speaking people use Debian."
@@ -454,22 +485,22 @@ msgstr ""
 "луѓето кои зборуваат фински при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:36001
+#: ../po/debian-tasks.desc:38001
 msgid "Finnish desktop"
 msgstr "Финска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:36001
+#: ../po/debian-tasks.desc:38001
 msgid "This task localises the desktop in Finnish."
 msgstr "Оваа задача ја локализира работната околина на фински."
 
 #. Description
-#: ../po/debian-tasks.desc:37001
+#: ../po/debian-tasks.desc:39001
 msgid "French environment"
 msgstr "Француска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:37001
+#: ../po/debian-tasks.desc:39001
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
@@ -478,22 +509,22 @@ msgstr ""
 "на луѓето кои говорат француски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:38001
+#: ../po/debian-tasks.desc:40001
 msgid "French desktop"
 msgstr "Француска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:38001
+#: ../po/debian-tasks.desc:40001
 msgid "This task localises the desktop in French."
 msgstr "Оваа задача ја локализира работната околина на француски."
 
 #. Description
-#: ../po/debian-tasks.desc:39001
+#: ../po/debian-tasks.desc:41001
 msgid "Galician environment"
 msgstr "Галска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:39001
+#: ../po/debian-tasks.desc:41001
 msgid ""
 "This task installs packages and documentation in Galician to help Galician "
 "speaking people use Debian."
@@ -502,32 +533,32 @@ msgstr ""
 "луѓето кои говорат галски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:40001
+#: ../po/debian-tasks.desc:42001
 msgid "Galician desktop"
 msgstr "Галска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:40001
+#: ../po/debian-tasks.desc:42001
 msgid "This task localises the desktop in Galician."
 msgstr "Оваа задача ја локализира работната околина на галски."
 
 #. Description
-#: ../po/debian-tasks.desc:41001
+#: ../po/debian-tasks.desc:43001
 msgid "Georgian desktop"
 msgstr "Грузиска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:41001
+#: ../po/debian-tasks.desc:43001
 msgid "This task localises the desktop in Georgian."
 msgstr "Оваа задача ја локализира работната околина на грузиски."
 
 #. Description
-#: ../po/debian-tasks.desc:42001
+#: ../po/debian-tasks.desc:44001
 msgid "German environment"
 msgstr "Германска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:42001
+#: ../po/debian-tasks.desc:44001
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
@@ -536,34 +567,36 @@ msgstr ""
 "на луѓето кои говорат германски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:43001
+#: ../po/debian-tasks.desc:45001
 msgid "German desktop"
 msgstr "Германска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:43001
+#: ../po/debian-tasks.desc:45001
 msgid "This task localises the desktop in German."
 msgstr "Оваа задача ја локализира работната околина на германски."
 
 #. Description
-#: ../po/debian-tasks.desc:44001
+#: ../po/debian-tasks.desc:46001
 msgid "Gnome desktop environment"
 msgstr "Гном работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:44001
+#: ../po/debian-tasks.desc:46001
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
 "environment."
-msgstr "Оваа задача овозможува основен софтвер за „работна површина“ со ГНОМ десктоп околината."
+msgstr ""
+"Оваа задача овозможува основен софтвер за „работна површина“ со ГНОМ десктоп "
+"околината."
 
 #. Description
-#: ../po/debian-tasks.desc:45001
+#: ../po/debian-tasks.desc:47001
 msgid "Greek environment"
 msgstr "Гркчка средина"
 
 #. Description
-#: ../po/debian-tasks.desc:45001
+#: ../po/debian-tasks.desc:47001
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
@@ -572,32 +605,32 @@ msgstr ""
 "луѓето кои говорат грчки при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:46001
+#: ../po/debian-tasks.desc:48001
 msgid "Greek desktop"
 msgstr "Грчка работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:46001
+#: ../po/debian-tasks.desc:48001
 msgid "This task localises the desktop in Greek."
 msgstr "Оваа задача ја локализира работната околина на грчки."
 
 #. Description
-#: ../po/debian-tasks.desc:47001
+#: ../po/debian-tasks.desc:49001
 msgid "Gujarati desktop"
 msgstr "Гујарати работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:47001
+#: ../po/debian-tasks.desc:49001
 msgid "This task localises the desktop in Gujarati."
 msgstr "Оваа задаја ја локализира работната околина на гујарати."
 
 #. Description
-#: ../po/debian-tasks.desc:48001
+#: ../po/debian-tasks.desc:50001
 msgid "Hebrew environment"
 msgstr "Еврејска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:48001
+#: ../po/debian-tasks.desc:50001
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
@@ -606,22 +639,22 @@ msgstr ""
 "луѓето кои говорат еврејски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:49001
+#: ../po/debian-tasks.desc:51001
 msgid "Hebrew desktop"
 msgstr "Еврејска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:49001
+#: ../po/debian-tasks.desc:51001
 msgid "This task localises the desktop in Hebrew."
 msgstr "Оваа задача ја локализира работната околина на еврејски."
 
 #. Description
-#: ../po/debian-tasks.desc:50001
+#: ../po/debian-tasks.desc:52001
 msgid "Hindi environment"
 msgstr "Хинди околина"
 
 #. Description
-#: ../po/debian-tasks.desc:50001
+#: ../po/debian-tasks.desc:52001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Hindi speakers to use Debian."
@@ -630,22 +663,22 @@ msgstr ""
 "да им помогне на луѓето кои говорат хинди при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:51001
+#: ../po/debian-tasks.desc:53001
 msgid "Hindi desktop"
 msgstr "Хинду работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:51001
+#: ../po/debian-tasks.desc:53001
 msgid "This task localises the desktop in Hindi."
 msgstr "Оваа задача ја локализира работната околина на хинду."
 
 #. Description
-#: ../po/debian-tasks.desc:52001
+#: ../po/debian-tasks.desc:54001
 msgid "Hungarian environment"
 msgstr "Унгарска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:52001
+#: ../po/debian-tasks.desc:54001
 msgid ""
 "This task installs packages and documentation in Hungarian to help Hungarian "
 "speaking people use Debian."
@@ -654,22 +687,22 @@ msgstr ""
 "на луѓето кои говорат унгарски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:53001
+#: ../po/debian-tasks.desc:55001
 msgid "Hungarian desktop"
 msgstr "Унгарска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:53001
+#: ../po/debian-tasks.desc:55001
 msgid "This task localises the desktop in Hungarian."
 msgstr "Оваа задача ја локализира работната околина на унгарски."
 
 #. Description
-#: ../po/debian-tasks.desc:54001
+#: ../po/debian-tasks.desc:56001
 msgid "Icelandic environment"
 msgstr "Исландска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:54001
+#: ../po/debian-tasks.desc:56001
 msgid ""
 "This task installs packages and documentation in Icelandic to help Icelandic "
 "speaking people use Debian."
@@ -678,22 +711,22 @@ msgstr ""
 "на луѓето кои говорат исландски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:55001
+#: ../po/debian-tasks.desc:57001
 msgid "Icelandic desktop"
 msgstr "Исландска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:55001
+#: ../po/debian-tasks.desc:57001
 msgid "This task localises the desktop in Icelandic."
 msgstr "Оваа задача ја локализира работната околина на исландски."
 
 #. Description
-#: ../po/debian-tasks.desc:56001
+#: ../po/debian-tasks.desc:58001
 msgid "Irish environment"
 msgstr "Иркса средина"
 
 #. Description
-#: ../po/debian-tasks.desc:56001
+#: ../po/debian-tasks.desc:58001
 msgid ""
 "This task installs packages and documentation in Irish to help Irish "
 "speaking people use Debian."
@@ -702,22 +735,22 @@ msgstr ""
 "луѓето кои говорат ирски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:57001
+#: ../po/debian-tasks.desc:59001
 msgid "Irish desktop"
 msgstr "Ирска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:57001
+#: ../po/debian-tasks.desc:59001
 msgid "This task localises the desktop in Irish."
 msgstr "Оваа задача ја локализира работната околина на ирски."
 
 #. Description
-#: ../po/debian-tasks.desc:58001
+#: ../po/debian-tasks.desc:60001
 msgid "Italian environment"
 msgstr "Италијанска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:58001
+#: ../po/debian-tasks.desc:60001
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
@@ -726,22 +759,22 @@ msgstr ""
 "на луѓето кои говорат италијански при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:59001
+#: ../po/debian-tasks.desc:61001
 msgid "Italian desktop"
 msgstr "Италијанска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:59001
+#: ../po/debian-tasks.desc:61001
 msgid "This task localises the desktop in Italian."
 msgstr "Оваа задача ја локализира работната околина на италијански."
 
 #. Description
-#: ../po/debian-tasks.desc:60001
+#: ../po/debian-tasks.desc:62001
 msgid "Japanese environment"
 msgstr "Јапанска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:60001
+#: ../po/debian-tasks.desc:62001
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
@@ -750,22 +783,22 @@ msgstr ""
 "говорат јапонски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:61001
+#: ../po/debian-tasks.desc:63001
 msgid "Japanese desktop"
 msgstr "Јапонска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:61001
+#: ../po/debian-tasks.desc:63001
 msgid "This task localises the desktop in Japanese."
 msgstr "Оваа задача ја локализира работната околина на јапонски."
 
 #. Description
-#: ../po/debian-tasks.desc:62001
+#: ../po/debian-tasks.desc:64001
 msgid "KDE desktop environment"
 msgstr "КДЕ работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:62001
+#: ../po/debian-tasks.desc:64001
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
@@ -774,34 +807,36 @@ msgstr ""
 "околината."
 
 #. Description
-#: ../po/debian-tasks.desc:63001
+#: ../po/debian-tasks.desc:65001
 msgid "Khmer environment"
 msgstr "Kмери средина"
 
 #. Description
-#: ../po/debian-tasks.desc:63001
+#: ../po/debian-tasks.desc:65001
 msgid ""
 "This task installs packages and documentation in Khmer to help Khmer "
 "speaking people use Debian."
-msgstr "Оваа задача инсталира пакети и документација на кмерски за да им помогне на луѓето кои говорат кмерски при користење на Дебиан."
+msgstr ""
+"Оваа задача инсталира пакети и документација на кмерски за да им помогне на "
+"луѓето кои говорат кмерски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:64001
+#: ../po/debian-tasks.desc:66001
 msgid "Khmer desktop"
 msgstr "Кмери работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:64001
+#: ../po/debian-tasks.desc:66001
 msgid "This task localises the desktop in Khmer."
 msgstr "Оваа задача ја локализира работната околина на кмери."
 
 #. Description
-#: ../po/debian-tasks.desc:65001
+#: ../po/debian-tasks.desc:67001
 msgid "Korean environment"
 msgstr "Корејска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:65001
+#: ../po/debian-tasks.desc:67001
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
@@ -810,42 +845,42 @@ msgstr ""
 "при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:66001
+#: ../po/debian-tasks.desc:68001
 msgid "Korean desktop"
 msgstr "Корејска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:66001
+#: ../po/debian-tasks.desc:68001
 msgid "This task localises the desktop in Korean."
 msgstr "Оваа задача ја локализира работната околина на корејски."
 
 #. Description
-#: ../po/debian-tasks.desc:67001
+#: ../po/debian-tasks.desc:69001
 msgid "Laptop"
 msgstr "Лаптоп"
 
 #. Description
-#: ../po/debian-tasks.desc:67001
+#: ../po/debian-tasks.desc:69001
 msgid "This task installs software useful for a laptop."
 msgstr "Оваа задача инсталира софтвер погоден за лаптоп."
 
 #. Description
-#: ../po/debian-tasks.desc:68001
+#: ../po/debian-tasks.desc:70001
 msgid "Latvian desktop"
 msgstr "Латвиска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:68001
+#: ../po/debian-tasks.desc:70001
 msgid "This task localises the desktop in Latvian."
 msgstr "Оваа задача ја локализира работната околина на латвиски."
 
 #. Description
-#: ../po/debian-tasks.desc:69001
+#: ../po/debian-tasks.desc:71001
 msgid "Lithuanian environment"
 msgstr "Литванска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:69001
+#: ../po/debian-tasks.desc:71001
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
@@ -854,22 +889,22 @@ msgstr ""
 "на луѓето кои говорат литвански при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:70001
+#: ../po/debian-tasks.desc:72001
 msgid "Lithuanian desktop"
 msgstr "Литванска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:70001
+#: ../po/debian-tasks.desc:72001
 msgid "This task localises the desktop in Lithuanian."
 msgstr "Оваа задача ја локализира работната околина на литвански."
 
 #. Description
-#: ../po/debian-tasks.desc:71001
+#: ../po/debian-tasks.desc:73001
 msgid "Macedonian environment"
 msgstr "Македонска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:71001
+#: ../po/debian-tasks.desc:73001
 msgid ""
 "This task installs packages and documentation in Macedonian to help "
 "Macedonian speaking people use Debian."
@@ -878,22 +913,22 @@ msgstr ""
 "на луѓето кои говорат македонски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:72001
+#: ../po/debian-tasks.desc:74001
 msgid "Macedonian desktop"
 msgstr "Македонска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:72001
+#: ../po/debian-tasks.desc:74001
 msgid "This task localises the desktop in Macedonian."
 msgstr "Оваа задача ја локализира работната околина на македонски."
 
 #. Description
-#: ../po/debian-tasks.desc:73001
+#: ../po/debian-tasks.desc:75001
 msgid "Mail server"
 msgstr "Сервер за пошта"
 
 #. Description
-#: ../po/debian-tasks.desc:73001
+#: ../po/debian-tasks.desc:75001
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -902,42 +937,42 @@ msgstr ""
 "пошта."
 
 #. Description
-#: ../po/debian-tasks.desc:74001
+#: ../po/debian-tasks.desc:76001
 msgid "manual package selection"
 msgstr "рачен избор на пакети"
 
 #. Description
-#: ../po/debian-tasks.desc:74001
+#: ../po/debian-tasks.desc:76001
 msgid "Manually select packages to install in aptitude."
 msgstr "Во aptitude рачно избери пакети за да се инсталираат."
 
 #. Description
-#: ../po/debian-tasks.desc:75001
+#: ../po/debian-tasks.desc:77001
 msgid "Nepali desktop"
 msgstr "Непалска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:75001
+#: ../po/debian-tasks.desc:77001
 msgid "This task localises the desktop in Nepali."
 msgstr "Оваа задаја ја локализира работната околина на непалски."
 
 #. Description
-#: ../po/debian-tasks.desc:76001
+#: ../po/debian-tasks.desc:78001
 msgid "Northern Sami desktop"
 msgstr "Северно Сами работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:76001
+#: ../po/debian-tasks.desc:78001
 msgid "This task localises the desktop in Northern Sami."
 msgstr "Оваа задача ја локализира работната околина на северно сами."
 
 #. Description
-#: ../po/debian-tasks.desc:77001
+#: ../po/debian-tasks.desc:79001
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Норвешка (Bokmaal и Nynorsk) средина"
 
 #. Description
-#: ../po/debian-tasks.desc:77001
+#: ../po/debian-tasks.desc:79001
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
@@ -946,22 +981,22 @@ msgstr ""
 "луѓето кои говорат норвешки при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:78001
+#: ../po/debian-tasks.desc:80001
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "Норвешка (Bokmaal и Nynorsk) работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:78001
+#: ../po/debian-tasks.desc:80001
 msgid "This task localises the desktop in Norwegian."
 msgstr "Оваа задача ја локализира работната околина на норвешки."
 
 #. Description
-#: ../po/debian-tasks.desc:79001
+#: ../po/debian-tasks.desc:81001
 msgid "Persian environment"
 msgstr "Персиска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:79001
+#: ../po/debian-tasks.desc:81001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Persian speakers to use Debian."
@@ -970,22 +1005,22 @@ msgstr ""
 "да им помогне на луѓето кои говорат персиски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:80001
+#: ../po/debian-tasks.desc:82001
 msgid "Persian desktop"
 msgstr "Персиска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:80001
+#: ../po/debian-tasks.desc:82001
 msgid "This task localises the desktop in Persian."
 msgstr "Оваа задача ја локализира работната околина на персиски."
 
 #. Description
-#: ../po/debian-tasks.desc:81001
+#: ../po/debian-tasks.desc:83001
 msgid "Polish environment"
 msgstr "Полска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:81001
+#: ../po/debian-tasks.desc:83001
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
@@ -994,22 +1029,22 @@ msgstr ""
 "луѓето кои говорат полски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:82001
+#: ../po/debian-tasks.desc:84001
 msgid "Polish desktop"
 msgstr "Полска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:82001
+#: ../po/debian-tasks.desc:84001
 msgid "This task localises the desktop in Polish."
 msgstr "Оваа задача ја локализира работната околина на полски."
 
 #. Description
-#: ../po/debian-tasks.desc:83001
+#: ../po/debian-tasks.desc:85001
 msgid "Portuguese environment"
 msgstr "Португалска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:83001
+#: ../po/debian-tasks.desc:85001
 msgid ""
 "This task installs packages and documentation in Portuguese to help "
 "Portuguese speaking people use Debian."
@@ -1018,32 +1053,33 @@ msgstr ""
 "на луѓето кои говорат португалски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:84001
+#: ../po/debian-tasks.desc:86001
 msgid "Portuguese desktop"
 msgstr "Португалска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:84001
+#: ../po/debian-tasks.desc:86001
 msgid "This task localises the desktop in Portuguese."
-msgstr "Оваа задача овозможува работната околина да биде локализирана на португалски."
+msgstr ""
+"Оваа задача овозможува работната околина да биде локализирана на португалски."
 
 #. Description
-#: ../po/debian-tasks.desc:85001
+#: ../po/debian-tasks.desc:87001
 msgid "Print server"
 msgstr "Сервер за печатење"
 
 #. Description
-#: ../po/debian-tasks.desc:85001
+#: ../po/debian-tasks.desc:87001
 msgid "This task sets up your system to be a print server."
 msgstr "Оваа задача го подготвува твојот систем да биде сервер за печатење."
 
 #. Description
-#: ../po/debian-tasks.desc:86001
+#: ../po/debian-tasks.desc:88001
 msgid "Punjabi environment"
 msgstr "Пунџабска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:86001
+#: ../po/debian-tasks.desc:88001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Punjabi speakers to use Debian."
@@ -1052,22 +1088,22 @@ msgstr ""
 "да им помогне на луѓето кои говорат пунџабски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:87001
+#: ../po/debian-tasks.desc:89001
 msgid "Punjabi desktop"
 msgstr "Пунџаб работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:87001
+#: ../po/debian-tasks.desc:89001
 msgid "This task localises the desktop in Punjabi."
 msgstr "Оваа задаја ја локализира работната околина на пунџабски."
 
 #. Description
-#: ../po/debian-tasks.desc:88001
+#: ../po/debian-tasks.desc:90001
 msgid "Romanian environment"
 msgstr "Романска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:88001
+#: ../po/debian-tasks.desc:90001
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
@@ -1076,22 +1112,22 @@ msgstr ""
 "на луѓето кои говорат романски јазик при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:89001
+#: ../po/debian-tasks.desc:91001
 msgid "Romanian desktop"
 msgstr "Романска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:89001
+#: ../po/debian-tasks.desc:91001
 msgid "This task localises the desktop in Romanian."
 msgstr "Оваа задача ја локализира работната околина на романски."
 
 #. Description
-#: ../po/debian-tasks.desc:90001
+#: ../po/debian-tasks.desc:92001
 msgid "Russian environment"
 msgstr "Руска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:90001
+#: ../po/debian-tasks.desc:92001
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
@@ -1100,22 +1136,22 @@ msgstr ""
 "луѓето кои говорат руски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:91001
+#: ../po/debian-tasks.desc:93001
 msgid "Russian desktop"
 msgstr "Руска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:91001
+#: ../po/debian-tasks.desc:93001
 msgid "This task localises the desktop in Russian."
 msgstr "Оваа задача ја локализира работната околина на руски."
 
 #. Description
-#: ../po/debian-tasks.desc:92001
+#: ../po/debian-tasks.desc:94001
 msgid "Slovak environment"
 msgstr "Словачка средина"
 
 #. Description
-#: ../po/debian-tasks.desc:92001
+#: ../po/debian-tasks.desc:94001
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
@@ -1124,22 +1160,22 @@ msgstr ""
 "луѓето кои говорат словачки при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:93001
+#: ../po/debian-tasks.desc:95001
 msgid "Slovak desktop"
 msgstr "Словечка работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:93001
+#: ../po/debian-tasks.desc:95001
 msgid "This task localises the desktop in Slovak."
 msgstr "Оваа задача ја локализира работната околина на  словачки."
 
 #. Description
-#: ../po/debian-tasks.desc:94001
+#: ../po/debian-tasks.desc:96001
 msgid "Slovenian environment"
 msgstr "Словенска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:94001
+#: ../po/debian-tasks.desc:96001
 msgid ""
 "This task installs packages and documentation in Slovenian to help Slovenian "
 "speaking people use Debian."
@@ -1148,22 +1184,22 @@ msgstr ""
 "на луѓето кои говорат словенечки при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:95001
+#: ../po/debian-tasks.desc:97001
 msgid "Slovenian desktop"
 msgstr "Словенечка работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:95001
+#: ../po/debian-tasks.desc:97001
 msgid "This task localises the desktop in Slovenian."
 msgstr "Оваа задача ја локализира работната околина на  словенечки."
 
 #. Description
-#: ../po/debian-tasks.desc:96001
+#: ../po/debian-tasks.desc:98001
 msgid "Spanish environment"
 msgstr "Шпанска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:96001
+#: ../po/debian-tasks.desc:98001
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
@@ -1173,32 +1209,32 @@ msgstr ""
 "Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:97001
+#: ../po/debian-tasks.desc:99001
 msgid "Spanish desktop"
 msgstr "Шпанска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:97001
+#: ../po/debian-tasks.desc:99001
 msgid "This task localises the desktop in Spanish."
 msgstr "Оваа задача ја локализира работната околина на шпански."
 
 #. Description
-#: ../po/debian-tasks.desc:98001
+#: ../po/debian-tasks.desc:100001
 msgid "Standard system"
 msgstr "Основен систем"
 
 #. Description
-#: ../po/debian-tasks.desc:98001
+#: ../po/debian-tasks.desc:100001
 msgid "This task installs a reasonably small character-mode system."
 msgstr "Оваа задача инсталира разумно мал систем за режим на знаци."
 
 #. Description
-#: ../po/debian-tasks.desc:99001
+#: ../po/debian-tasks.desc:101001
 msgid "Swedish environment"
 msgstr "Шведска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:99001
+#: ../po/debian-tasks.desc:101001
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
@@ -1207,22 +1243,22 @@ msgstr ""
 "луѓето кои говорат шведски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:100001
+#: ../po/debian-tasks.desc:102001
 msgid "Swedish desktop"
 msgstr "Шведска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:100001
+#: ../po/debian-tasks.desc:102001
 msgid "This task localises the desktop in Swedish."
 msgstr "Оваа задача ја локализира работната околина на шведски."
 
 #. Description
-#: ../po/debian-tasks.desc:101001
+#: ../po/debian-tasks.desc:103001
 msgid "Tagalog environment"
 msgstr "Тагалог средина"
 
 #. Description
-#: ../po/debian-tasks.desc:101001
+#: ../po/debian-tasks.desc:103001
 msgid ""
 "This task installs packages and documentation in Tagalog to help Tagalog "
 "speaking people use Debian."
@@ -1231,22 +1267,38 @@ msgstr ""
 "луѓето што говорат тагалог да го користат Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:102001
+#: ../po/debian-tasks.desc:104001
+#, fuzzy
+msgid "Tamil environment"
+msgstr "Тајландска средина"
+
+#. Description
+#: ../po/debian-tasks.desc:104001
+#, fuzzy
+msgid ""
+"This task installs programs, data files, fonts, and documentation that makes "
+"it easier for Tamil speakers to use Debian."
+msgstr ""
+"Оваа задача инсталира програми, датотеки со податоци и документација на за "
+"да им помогне на луѓето кои говорат арапски при користење на Дебиан."
+
+#. Description
+#: ../po/debian-tasks.desc:105001
 msgid "Tamil desktop"
 msgstr "Тамислка работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:102001
+#: ../po/debian-tasks.desc:105001
 msgid "This task localises the desktop in Tamil."
 msgstr "Оваа задаја ја локализира работната околина на тамилски."
 
 #. Description
-#: ../po/debian-tasks.desc:103001
+#: ../po/debian-tasks.desc:106001
 msgid "Thai environment"
 msgstr "Тајландска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:103001
+#: ../po/debian-tasks.desc:106001
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
@@ -1255,22 +1307,22 @@ msgstr ""
 "Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:104001
+#: ../po/debian-tasks.desc:107001
 msgid "Thai desktop"
 msgstr "Тајландска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:104001
+#: ../po/debian-tasks.desc:107001
 msgid "This task localises the desktop in Thai."
 msgstr "Оваа задаја ја локализира работната околина на тајландски."
 
 #. Description
-#: ../po/debian-tasks.desc:105001
+#: ../po/debian-tasks.desc:108001
 msgid "Turkish environment"
 msgstr "Турска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:105001
+#: ../po/debian-tasks.desc:108001
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
@@ -1279,22 +1331,22 @@ msgstr ""
 "луѓето кои говорат турски при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:106001
+#: ../po/debian-tasks.desc:109001
 msgid "Turkish desktop"
 msgstr "Турска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:106001
+#: ../po/debian-tasks.desc:109001
 msgid "This task localises the desktop in Turkish."
 msgstr "Оваа задача ја локализира работната околина на турски."
 
 #. Description
-#: ../po/debian-tasks.desc:107001
+#: ../po/debian-tasks.desc:110001
 msgid "Ukrainian environment"
 msgstr "Украинска средина"
 
 #. Description
-#: ../po/debian-tasks.desc:107001
+#: ../po/debian-tasks.desc:110001
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
@@ -1303,42 +1355,44 @@ msgstr ""
 "на луѓето кои говорат украински при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:108001
+#: ../po/debian-tasks.desc:111001
 msgid "Ukrainian desktop"
 msgstr "Украинска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:108001
+#: ../po/debian-tasks.desc:111001
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Оваа задача ја локализира работната околина на украински."
 
 #. Description
-#: ../po/debian-tasks.desc:109001
+#: ../po/debian-tasks.desc:112001
 msgid "Vietnamese desktop"
 msgstr "Виетнамска работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:109001
+#: ../po/debian-tasks.desc:112001
 msgid "This task localises the desktop in Vietnamese."
 msgstr "Оваа задача ја локализира работната околина на виетнамски."
 
 #. Description
-#: ../po/debian-tasks.desc:110001
+#: ../po/debian-tasks.desc:113001
 msgid "Web server"
 msgstr "Сервер за мрежа(web server)"
 
 #. Description
-#: ../po/debian-tasks.desc:110001
-msgid "This task selects packages useful for a general purpose web server system."
-msgstr "Оваа задача селектира пакети корисни за општ сервер за интернет мрежата."
+#: ../po/debian-tasks.desc:113001
+msgid ""
+"This task selects packages useful for a general purpose web server system."
+msgstr ""
+"Оваа задача селектира пакети корисни за општ сервер за интернет мрежата."
 
 #. Description
-#: ../po/debian-tasks.desc:111001
+#: ../po/debian-tasks.desc:114001
 msgid "Welsh environment"
 msgstr "Велшка средина"
 
 #. Description
-#: ../po/debian-tasks.desc:111001
+#: ../po/debian-tasks.desc:114001
 msgid ""
 "This task installs packages and documentation in Welsh to help Welsh "
 "speaking people use Debian."
@@ -1347,22 +1401,41 @@ msgstr ""
 "луѓето кои говорат велшки при користење на Дебиан."
 
 #. Description
-#: ../po/debian-tasks.desc:112001
+#: ../po/debian-tasks.desc:115001
 msgid "Welsh desktop"
 msgstr "Велшка работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:112001
+#: ../po/debian-tasks.desc:115001
 msgid "This task localises the desktop in Welsh."
 msgstr "Оваа задача ја локализира работната околина на велшки."
 
 #. Description
-#: ../po/debian-tasks.desc:113001
+#: ../po/debian-tasks.desc:116001
+#, fuzzy
+msgid "Xfce desktop environment"
+msgstr "Гном работна околина"
+
+#. Description
+#: ../po/debian-tasks.desc:116001
+#, fuzzy
+msgid ""
+"This task provides basic \"desktop\" software using the Xfce desktop "
+"environment."
+msgstr ""
+"Оваа задача овозможува основен софтвер за „работна површина“ со ГНОМ десктоп "
+"околината."
+
+#. Description
+#: ../po/debian-tasks.desc:117001
 msgid "Xhosa desktop"
 msgstr "Кхоса работна околина"
 
 #. Description
-#: ../po/debian-tasks.desc:113001
+#: ../po/debian-tasks.desc:117001
 msgid "This task localises the desktop in Xhosa."
 msgstr "Оваа задаја ја локализира работната околина на кхоса."
 
+#, fuzzy
+#~ msgid "This task installs packages useful for British English users."
+#~ msgstr "Оваа задача инсталира софтвер погоден за лаптоп."
