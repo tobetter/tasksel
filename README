@@ -96,4 +96,7 @@ tasks. These are run before a task is installed, and after it is removed as
 with the dpkg scripts. These scripts sould be installed in
 /usr/lib/tasksel/info/, for example, /usr/lib/tasksel/info/desktop.preinst.
 Currently they are passed no parameters, but this might change later. These
-scripts should take care not to output anything to stdout.
+scripts should take care not to output anything to stdout. You are not
+encouraged to use these scripts to install any packages, as in some
+situations apt can hang prompting for a CD switch if run from one of these
+scripts.

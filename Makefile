@@ -49,7 +49,6 @@ install:
 install-data:
 	install -d $(DESTDIR)$(TASKDIR) \
 		$(DESTDIR)/usr/lib/tasksel/tests \
-		$(DESTDIR)/usr/lib/tasksel/info \
 		$(DESTDIR)/usr/lib/tasksel/packages
 	install -m 0644 $(TASKDESC) $(DESTDIR)$(TASKDIR)
 	for test in tests/*; do \
@@ -57,9 +56,6 @@ install-data:
 		[ "$$test" = "tests/debconf" ] && continue; \
 		[ "$$test" = "tests/lang" ] && continue; \
 		install -m 755 $$test $(DESTDIR)/usr/lib/tasksel/tests/; \
-	done
-	for script in info/*; do \
-		install -m 755 $$script $(DESTDIR)/usr/lib/tasksel/info/; \
 	done
 	for package in packages/*; do \
 		[ "$$package" = "packages/list" ] && continue; \
