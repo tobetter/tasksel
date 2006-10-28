@@ -1,35 +1,37 @@
 tasksel (2.58) UNRELEASED; urgency=low
 
-  [ Translations of tasks ]
-    - Updated Hungarian.
-    - Updated Indonesian.
-    - Updated Malagasy.
-    - Updated Hindi.
-    - Updated French.
-    - Updated Czech.
-    - Updated Romanian.
-    - Updated Slovak.
-    - Updated Danish.
-    - Updated Galician.
-    - Updated Korean.
-    - Updated Swedish.
-    - Updated Basque.
-    - Updated Lithuanian.
-    - Updated Spanish.
-    - Updated Brazilian Portuguese.
-    - Updated Japanese.
-    - Updated Thai.
-    - Updated Tagalog.
-    - Updated Gujarati.
-    - Updated Catalan.
-    - Updated Dutch.
+  [ Translations of tasks - alphabetical order ]
+    - Basque updated.
+    - Brazilian Portuguese updated.
+    - Catalan updated.
+    - Czech updated.
+    - Danish updated.
+    - Dutch updated.
+    - French updated.
+    - Galician updated.
+    - Gujarati updated.
+    - Hindi updated.
+    - Hungarian updated.
+    - Indonesian updated.
+    - Japanese updated.
+    - Korean updated.
+    - Lithuanian updated.
+    - Malagasy updated.
+    - Portuguese updated.
+    - Romanian updated.
+    - Slovak updated.
+    - Spanish updated.
+    - Swedish updated.
+    - Tagalog updated.
+    - Thai updated.
+    - Vietnamese updated.
 
   [ Translations of debconf templates ]
-    - Updated Malagasy.
+    - Malagasy updated.
 
   [ Translations of program messages ]
-    - Updated Indonesian.
-    - Updated Korean.
+    - Indonesian updated.
+    - Korean updated.
 
   [ Gustavo Franco ]
   * Add xfce-desktop task.
@@ -52,7 +54,7 @@ tasksel (2.58) UNRELEASED; urgency=low
   * add openoffice.org-gtk to xfce-desktop since -gtk also has an
     effect on Xfce. Makes OOo look better and be able to use native
     Gtk file dialogs.
-  
+
   [ Per Olofsson ]
   * Add bluetooth to laptop task. Closes: #381914.
   * Add british language task. Closes: #305132.
@@ -69,7 +71,7 @@ tasksel (2.58) UNRELEASED; urgency=low
   * However, this problem can still occur if third-party task scripts try to
     install packages. Document that.
 
- -- Joey Hess <joeyh@debian.org>  Fri, 27 Oct 2006 15:54:38 -0400
+ -- Christian Perrier <bubulle@debian.org>  Sat, 28 Oct 2006 07:00:13 +0200
 
 tasksel (2.57) unstable; urgency=low
 
