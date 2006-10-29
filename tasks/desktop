@@ -59,3 +59,5 @@ Packages-list:
 # mdns/zeroconf stuff
   avahi-daemon
   libnss-mdns
+# desktop machines might not be up 24/7
+  anacron
