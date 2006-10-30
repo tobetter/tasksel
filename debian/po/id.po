@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: tasksel-debian\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-09-13 14:42-0400\n"
-"PO-Revision-Date: 2004-12-15 18:19+0700\n"
+"PO-Revision-Date: 2006-10-30 19:34+0700\n"
 "Last-Translator: Parlin Imanuel Toh <parlin@ui.edu>\n"
 "Language-Team: Debian Indonesian <debid@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,6 @@ msgstr "Pilih perangkat lunak yang ingin diinstal:"
 #. Type: multiselect
 #. Description
 #: ../templates:1001
-#, fuzzy
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
 "to your needs, you can choose to install one or more of the following "
@@ -32,7 +31,7 @@ msgid ""
 msgstr ""
 "Saat ini hanya inti dari Debian yang terpasang. Untuk menyesuaikannya dengan "
 "kebutuhan anda, anda dapat memilih satu atau lebih kumpulan perangkat lunak "
-"yang telah didefinisikan sebelumnya."
+"yang telah didefinisikan berikut ini.."
 
 #. Type: multiselect
 #. Description
@@ -47,9 +46,8 @@ msgstr ""
 #. Type: title
 #. Description
 #: ../templates:3001
-#, fuzzy
 msgid "Software selection"
-msgstr "Pemilihan perangkat lunak Debian"
+msgstr "Pemilihan perangkat lunak"
 
 #~ msgid "${ORIGCHOICES}"
 #~ msgstr "${CHOICES}"
