@@ -8,15 +8,14 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-18 23:04+0900\n"
-"PO-Revision-Date: 2004-12-25 13:26+0100\n"
-"Last-Translator: Safir Šećerović <sapphire@linux.org.ba>\n"
+"PO-Revision-Date: 2006-10-31 12:08+0100\n"
+"Last-Translator: Safir Secerovic <sapphire@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:358
-#, fuzzy
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -31,17 +30,16 @@ msgstr ""
 "Upotreba:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [opcije]; gdje su opcije bilo koja kombinacija od:\n"
+"tasksel [opcije]\n"
 "\t-t, --test          testni mod; zapravo ne čini ništa\n"
-"\t-r, --required      instaliraj sve pakete zahtijevanog prioriteta\n"
-"\t-i, --important     instaliraj sve pakete važnog prioriteta\n"
-"\t-s, --standard      instaliraj sve pakete standardnog prioriteta\n"
-"\t-n, --no-ui         ne prikazuj UI; obično koristiti sa -r ili -i\n"
 "\t    --new-install   automatski instaliraj neke zadatke\n"
 "\t    --list-tasks    listaj zadatke koji bi bili prikazani i izađi\n"
 "\t    --task-packages listaj dostupne pakete u zadatku\n"
 "\t    --task-desc     ispisuje opis zadatka\n"
 
-#: ../tasksel.pl:557 ../tasksel.pl:575 ../tasksel.pl:586
+#: ../tasksel.pl:557
+#: ../tasksel.pl:575
+#: ../tasksel.pl:586
 msgid "aptitude failed"
-msgstr "aptitude nije uspio"
+msgstr "aptitude nije uspjeo"
+
