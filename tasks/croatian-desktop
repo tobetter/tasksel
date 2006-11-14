@@ -1,7 +1,8 @@
 Task: croatian-desktop
-Enhances: desktop
-Section: l10n
 Test-lang: hr
+Enhances: desktop, croatian
+Section: l10n
+Maintainer: Safir Secerovic <sapphire@linux.org.ba>
 Description: Croatian desktop
  This task localises the desktop in Croatian.
 Key:
@@ -9,5 +10,10 @@ Key:
 Packages: task-fields
 Packages-list:
  kde-i18n-hr
+ openoffice-hyphenation-hr
  openoffice.org-l10n-hr
+ sylpheed-claws-gtk2-i18n
+ xfonts-biznet-100dpi
+ xfonts-biznet-75dpi
+ xfonts-biznet-base
  xfonts-terminus
