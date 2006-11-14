@@ -1,6 +1,7 @@
 Task: bosnian
 Test-lang: bs
 Section: l10n
+Maintainer: Safir Secerovic <sapphire@linux.org.ba> 
 Description: Bosnian environment
  This task installs packages and documentation in Bosnian
  to help Bosnian speaking people use Debian.
@@ -8,3 +9,5 @@ Key:
  language-env
 Packages: task-fields
 Packages-list:
+  itools
+  myspell-hr
