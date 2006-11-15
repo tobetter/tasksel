@@ -67,7 +67,13 @@ tasksel (2.58) UNRELEASED; urgency=low
   * add openoffice.org-gtk to xfce-desktop since -gtk also has an
     effect on Xfce. Makes OOo look better and be able to use native
     Gtk file dialogs.
-
+  * add openoffice.org-l10n-sr-cs to serbian-desktop
+  * add openoffice.org-gcj to desktop; installing "openoffice.org" installs
+    gij anyway due to -base and -gcj speeds some things up
+  * add myspell-pl to polish task
+  * add openoffice.org-l10n-hi-in to hindi-desktop, remove -help-{bg,mk,sk}
+    from their respective tasks, not built anymore
+    
   [ Per Olofsson ]
   * Add bluetooth to laptop task. Closes: #381914.
   * Add british language task. Closes: #305132.
@@ -91,9 +97,9 @@ tasksel (2.58) UNRELEASED; urgency=low
   * Added Serbian tasks, thoroughly updated Bosnian and Croatian ones
 
   [ Translations of tasks ]
-  * Updated Dutch translation. 
+  * Updated Dutch translation.
 
- -- Bart Cornelis (cobaco) <cobaco@linux.be>  Wed, 15 Nov 2006 09:39:28 +0100
+ -- Rene Engelhard <rene@debian.org>  Wed, 15 Nov 2006 23:28:16 +0100
 
 tasksel (2.57) unstable; urgency=low
 
