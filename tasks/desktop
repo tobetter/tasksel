@@ -12,9 +12,10 @@ Packages-list:
   desktop-base
   menu
   hotkey-setup
-# firefox is the most popular web browser at the moment, although both
-# gnome and kde offer their own too
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
   firefox
+  iceweasel
 # the gimp is the best image editor, no matter the desktop
   gimp
 # openoffice.org is the best word processor / office suite at the moment
@@ -53,6 +54,7 @@ Packages-list:
   cupsys-driver-gutenprint
   gimp-print
   printconf
+  hpijs
 # Support for scanners
   xsane
 # For use by third-party apps.
