@@ -18,7 +18,12 @@ tasksel (2.59) UNRELEASED; urgency=low
   * Add iceweasel to desktop task is it conflicts/replaces firefox.
     Left firefox in there for the transition.
 
- -- Joey Hess <joeyh@debian.org>  Sat, 25 Nov 2006 17:10:29 -0500
+  [ Christian Perrier ]
+  * Portuguese task additions. Closes: #300317
+    - Replace old apsell-pt by aspell-pt-pt
+    - Add iportuguese and myspell-pt-pt
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 26 Nov 2006 06:51:10 +0100
 
 tasksel (2.58) unstable; urgency=low
 
