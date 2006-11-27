@@ -44,7 +44,7 @@ sub processfile {
 		
 		push @lines, $_ unless $skipping == 1;
 
-		if (/^#\s*include\s+(\w+)/) {
+		if (/^#\s*include\s+([-a-z0-9]+)\s*$/) {
 			my $pkg=$1;
 			if ($skipping) {
 				die "$file: nested includes near $_\n";
