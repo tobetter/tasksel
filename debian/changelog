@@ -16,6 +16,7 @@ tasksel (2.59) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Add hpijs to print server task.
   * Add iceweasel to desktop task is it conflicts/replaces firefox.
+    Closes: #400154
     Left firefox in there for the transition.
   * Remove gimp-print from print server task, since it's only a gimp printing
     plugin. It remains in the desktop task, which includes the gimp.
