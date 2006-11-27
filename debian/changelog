@@ -24,13 +24,16 @@ tasksel (2.59) UNRELEASED; urgency=low
   * Allow includes in tasks to refer to other tasks.
   * Use this to make the desktop task's list of printer drivers be taken
     from the print-server tasks's list.
+  * Remove no longer available packages from various language tasks.
+  * Remove ptrconf from desktop task. The actual package is sparc-utils, and
+    xorg depends on it on sparc.
 
   [ Christian Perrier ]
   * Portuguese task additions. Closes: #400317, #400542
     - Replace old apsell-pt by aspell-pt-pt
     - Add iportuguese, wportuguese and myspell-pt-pt
 
- -- Joey Hess <joeyh@debian.org>  Mon, 27 Nov 2006 15:33:10 -0500
+ -- Joey Hess <joeyh@debian.org>  Mon, 27 Nov 2006 15:39:38 -0500
 
 tasksel (2.58) unstable; urgency=low
 
