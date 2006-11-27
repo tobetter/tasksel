@@ -42,19 +42,6 @@ Packages-list:
   prtconf
 # Make sure that CDs etc can be ejected. May not be installed by d-i.
   eject
-# The following packages are the same as the packages in the print-server
-# task and provide printing via CUPS.
-  cupsys
-  cupsys-client
-  cupsys-bsd
-  foomatic-gui
-  foomatic-db-engine
-  foomatic-db-hpijs
-  foomatic-filters-ppds
-  foomatic-db-gutenprint
-  cupsys-driver-gutenprint
-  printconf
-  hpijs
 # Support for scanners
   xsane
 # For use by third-party apps.
@@ -64,3 +51,19 @@ Packages-list:
   libnss-mdns
 # desktop machines might not be up 24/7
   anacron
+# The following packages are the same as the packages in the print-server
+# task and provide printing via CUPS.
+#include print-server
+# Automatically added by doincludes.pl; do not edit.
+  foomatic-gui
+  foomatic-db-engine
+  foomatic-db-hpijs
+  foomatic-filters-ppds
+  foomatic-db-gutenprint
+  cupsys-driver-gutenprint
+  printconf
+  hpijs
+  cupsys
+  cupsys-client
+  cupsys-bsd
+#endinclude

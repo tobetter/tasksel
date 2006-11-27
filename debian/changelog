@@ -21,13 +21,16 @@ tasksel (2.59) UNRELEASED; urgency=low
   * Remove gimp-print from print server task, since it's only a gimp printing
     plugin. It remains in the desktop task, which includes the gimp.
     Closes: #400251
+  * Allow includes in tasks to refer to other tasks.
+  * Use this to make the desktop task's list of printer drivers be taken
+    from the print-server tasks's list.
 
   [ Christian Perrier ]
   * Portuguese task additions. Closes: #400317, #400542
     - Replace old apsell-pt by aspell-pt-pt
     - Add iportuguese, wportuguese and myspell-pt-pt
 
- -- Christian Perrier <bubulle@kheops.perrier.eu.org>  Mon, 27 Nov 2006 08:14:34 +0100
+ -- Joey Hess <joeyh@debian.org>  Mon, 27 Nov 2006 15:33:10 -0500
 
 tasksel (2.58) unstable; urgency=low
 

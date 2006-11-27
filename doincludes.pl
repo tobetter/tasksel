@@ -24,6 +24,8 @@ my %depends;
 	close AVAIL;
 }
 
+use Cwd;
+my $topdir=getcwd;
 use File::Find;
 find(\&processfile, $dir);
 
@@ -49,18 +51,22 @@ sub processfile {
 			if ($skipping) {
 				die "$file: nested includes near $_\n";
 			}
-			if (! exists $depends{$pkg}) {
-				warn "$file: #include $1 skipped; no such package. Leaving what was there alone.\n";
-				$skipping=-1;
+			if (-e $pkg) {
+				push @lines, "# Automatically added by doincludes.pl; do not edit.\n";
+				push @lines, map { chomp; "  $_\n" }
+				             `$topdir/listpackages.pl $pkg`;
+			}
+			elsif (! exists $depends{$pkg}) {
+				warn "$file: #include $dir/$pkg skipped; no such package. Leaving what was there alone.\n";
 			}
 			else {
-				push @lines, "#Automatically added by doincludes.pl; do not edit.\n";
+				push @lines, "# Automatically added by doincludes.pl; do not edit.\n";
 				# Split deps and remove alternates and versioned
 				# deps. Include the metapackage on the list.
 				push @lines, map { s/[|(].*//; "  $_\n" }
 				             split(/,\s+/, $depends{$pkg}), $pkg;
-				$skipping=1;
 			}
+			$skipping=1;
 		}
 	}
 	close IN;
