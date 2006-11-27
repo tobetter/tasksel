@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 #
-# listpackages directory [field]
+# listpackages directory|file
 #
 # This program spits out a list of all the packages listed in the tasks.
 #
-# If you go to auric, this command is then useful:
+# If you go to ftp-master, this command is then useful:
 #
 # for package in $(listpackages); do
 #   madison -s testing -a "i386 all" $package >/dev/null || echo "No $package!"
@@ -14,18 +14,26 @@
 #
 # listpackages tasks key
 
-my $dir=shift or die "no directory specified\n";
+my $what=shift or die "no directory or file specified\n";
 my @toshow=qw{packages-list key};
 @toshow=@ARGV if @ARGV;
 
-use File::Find;
-find(\&processfile, $dir);
+if (-d $what) {
+	use File::Find;
+	find(\&processfile, $what);
+}
+else {
+	processfile($what);
+}
 
 sub processfile {
-	my $file=$_; # File::Find craziness.
-	$file eq 'po' && -d $file && ($File::Find::prune = 1);
-	return if $File::Find::dir=~/\.svn/;
-	return unless $file =~ /^[-+_.a-z0-9]+$/ and -f $file;
+	my $file=shift;
+	if (! defined $file) {
+		$file=$_; # File::Find craziness.
+		$file eq 'po' && -d $file && ($File::Find::prune = 1);
+		return if $File::Find::dir=~/\.svn/;
+		return unless $file =~ /^[-+_.a-z0-9]+$/ and -f $file;
+	}
 	open (IN, $file) or die "$file: $!";
 	my %fields;
 	my $field="";
