@@ -51,8 +51,6 @@ Packages-list:
   anacron
 # The following packages are the same as the packages in the print-server
 # task and provide printing via CUPS.
-#include print-server
-# Automatically added by doincludes.pl; do not edit.
   foomatic-gui
   foomatic-db-engine
   foomatic-db-hpijs
@@ -64,4 +62,3 @@ Packages-list:
   cupsys
   cupsys-client
   cupsys-bsd
-#endinclude

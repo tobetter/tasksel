@@ -28,9 +28,6 @@ tasksel (2.59) UNRELEASED; urgency=low
   * Remove gimp-print from print server task, since it's only a gimp printing
     plugin. It remains in the desktop task, which includes the gimp.
     Closes: #400251
-  * Allow includes in tasks to refer to other tasks.
-  * Use this to make the desktop task's list of printer drivers be taken
-    from the print-server tasks's list.
   * Remove no longer available packages from various language tasks.
   * Remove ptrconf from desktop task. The actual package is sparc-utils, and
     xorg depends on it on sparc.
