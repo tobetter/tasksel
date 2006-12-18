@@ -3,7 +3,12 @@ tasksel (2.60) UNRELEASED; urgency=low
   [ Rene Engelhard ]
   * add openoffice.org-{l10n,help}-dz to dzonghka-desktop
 
- -- Rene Engelhard <rene@debian.org>  Thu, 14 Dec 2006 10:35:06 +0100
+  [ Joey Hess ]
+  * Add hplip to print server task, this is not needed from a driver POV,
+    but it provides hp-setup, which is a very convenient way to set up HP
+    printers with CUPS, and also some other utilities for these printers.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 18 Dec 2006 14:47:58 -0500
 
 tasksel (2.59) unstable; urgency=low
 
