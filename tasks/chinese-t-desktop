@@ -6,17 +6,19 @@ Description: Traditional Chinese desktop
 Key:
 Packages: task-fields
 Packages-list:
-  rxvt-ml
+  rxvt-beta
   mlterm
+  mlterm-tools
   rxvt-unicode-ml
   scim-chewing
-  m17n-env
+  im-switch
   scim-tables-zh
-  xcin
-  pydict
+  xfonts-wqy
+  gcin
+  stardict
   kde-i18n-zhtw
   x-ttcidfont-conf
-  ttf-arphic-bsmi00lp
+  ttf-arphic-uming
   ttf-arphic-bkai00mp
   xfonts-intl-chinese
   unifont
@@ -24,3 +26,4 @@ Packages-list:
   openoffice.org-help-zh-tw
   firefox-locale-zh-tw
   iceweasel-l10n-zh-tw
+  paps
