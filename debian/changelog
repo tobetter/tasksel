@@ -26,8 +26,14 @@ tasksel (2.60) UNRELEASED; urgency=low
     already pulls in kooka. Closes: #404554
   * Patch from Wen-Yen Chuang to update chinese-t-desktop. Closes: #404567
   * Add xdm to the xfce-desktop task.
+  * Since it's more important to have eg, the mousepad editor on the xfce CD
+    than OOo, change things around so that the CDs can prioritise the packages
+    from foo-desktop tasks over those from the core desktop task. This really
+    calls for three levels of importance in packages in tasks, but since there
+    are currently only 2, make do by moving fairly essential stuff into the
+    Key list for desktop.
 
- -- Joey Hess <joeyh@debian.org>  Thu, 28 Dec 2006 21:18:41 -0500
+ -- Joey Hess <joeyh@debian.org>  Thu, 28 Dec 2006 21:25:40 -0500
 
 tasksel (2.59) unstable; urgency=low
 

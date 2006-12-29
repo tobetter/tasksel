@@ -7,15 +7,23 @@ Description: Desktop environment
  Gnome and KDE desktop tasks.
 Key:
   xorg
-Packages: task-fields
-Packages-list:
   desktop-base
   menu
-  hotkey-setup
 # firefox (ne iceweasel) is the most popular web browser at the moment,
 # although both gnome and kde offer their own too
   firefox
   iceweasel
+# hardware detection
+  discover1
+  xresprobe
+# sound
+  alsa-utils
+  alsa-base
+# Make sure that CDs etc can be ejected. May not be installed by d-i.
+  eject
+Packages: task-fields
+Packages-list:
+  hotkey-setup
 # the gimp is the best image editor, no matter the desktop
   gimp
   gimp-print
@@ -32,14 +40,6 @@ Packages-list:
 # enough basic X stuff here for a minally useful desktop without them.
   twm
   xterm
-# sound
-  alsa-utils
-  alsa-base
-# hardware detection (see also desktop.preinst)
-  discover1
-  xresprobe
-# Make sure that CDs etc can be ejected. May not be installed by d-i.
-  eject
 # For use by third-party apps.
   xdg-utils
 # mdns/zeroconf stuff
