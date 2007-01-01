@@ -4,6 +4,16 @@ tasksel (2.60) UNRELEASED; urgency=low
   * add openoffice.org-{l10n,help}-dz to dzonghka-desktop
 
   [ Joey Hess ]
+  * Move xsane from common desktop task to gnome and xfce tasks. kde-desktop
+    already pulls in kooka. Closes: #404554
+  * Patch from Wen-Yen Chuang to update chinese-t-desktop. Closes: #404567
+  * Add xdm to the xfce-desktop task.
+  * Since it's more important to have eg, the mousepad editor on the xfce CD
+    than OOo, change things around so that the CDs can prioritise the packages
+    from foo-desktop tasks over those from the core desktop task. This really
+    calls for three levels of importance in packages in tasks, but since there
+    are currently only 2, make do by moving fairly essential stuff into the
+    Key list for desktop.
   * Add hplip to print server task, this is not needed from a driver POV,
     but it provides hp-setup, which is a very convenient way to set up HP
     printers with CUPS, and also some other utilities for these printers.
@@ -20,18 +30,6 @@ tasksel (2.60) UNRELEASED; urgency=low
 
   [ Translations of debconf templates ]
     - Slovenian updated
-
-  [ Joey Hess ]
-  * Move xsane from common desktop task to gnome and xfce tasks. kde-desktop
-    already pulls in kooka. Closes: #404554
-  * Patch from Wen-Yen Chuang to update chinese-t-desktop. Closes: #404567
-  * Add xdm to the xfce-desktop task.
-  * Since it's more important to have eg, the mousepad editor on the xfce CD
-    than OOo, change things around so that the CDs can prioritise the packages
-    from foo-desktop tasks over those from the core desktop task. This really
-    calls for three levels of importance in packages in tasks, but since there
-    are currently only 2, make do by moving fairly essential stuff into the
-    Key list for desktop.
 
  -- Joey Hess <joeyh@debian.org>  Thu, 28 Dec 2006 21:25:40 -0500
 
