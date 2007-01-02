@@ -1,4 +1,16 @@
-tasksel (2.60) UNRELEASED; urgency=low
+tasksel (2.61) unstable; urgency=low
+
+  * Increase the minimum free disk for automatic selection of the desktop task
+    to 3 gb. Needed since the desktop task has grown somewhat, to around 2.5
+    gb, and since several hundred megabytes are needed for debs in /var
+    (which might be on the same partition).
+    2.5 gb free is tested to currently work in a standard single-partition
+    layout when installing standard+desktop+laptop, so this leaves some room
+    for future bloat, and for localisation and other tasks. Closes: #405129
+
+ -- Joey Hess <joeyh@debian.org>  Tue,  2 Jan 2007 15:49:11 -0500
+
+tasksel (2.60) unstable; urgency=low
 
   [ Rene Engelhard ]
   * add openoffice.org-{l10n,help}-dz to dzonghka-desktop
@@ -31,7 +43,7 @@ tasksel (2.60) UNRELEASED; urgency=low
   [ Translations of debconf templates ]
     - Slovenian updated
 
- -- Joey Hess <joeyh@debian.org>  Thu, 28 Dec 2006 21:25:40 -0500
+ -- Joey Hess <joeyh@debian.org>  Thu, 28 Dec 2006 21:31:12 -0500
 
 tasksel (2.59) unstable; urgency=low
 

@@ -54,11 +54,12 @@ enough_ram () {
 	fi
 }
 
-# The desktop task requires 2 gb or so of disk in /usr. 
+# The desktop task requires 2 gb or so of disk in /usr, and .5 in /var for
+# the debs.
 # FIXME: this should really be generalised and used for tasksel to not
 # suggest any task for which there is not enough disk.
 enough_disk () {
-	min_disk=2
+	min_disk=3
 	disk=$(df -P /usr | tail -1 | awk '{print $4}')
 	if [ "$disk" ] && [ "$disk" -ge "$(expr $min_disk \* 1024 \* 1024)" ]; then
 		return 0
