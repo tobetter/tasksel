@@ -1,3 +1,11 @@
+tasksel (2.62) UNRELEASED; urgency=low
+
+  [ Per Olofsson ]
+  * Remove xserver-xorg-input-synaptics from laptop task - it's already
+    depended on by xorg which is in the desktop task.
+
+ -- Per Olofsson <pelle@debian.org>  Wed,  3 Jan 2007 14:16:17 +0100
+
 tasksel (2.61) unstable; urgency=low
 
   * Increase the minimum free disk for automatic selection of the desktop task
