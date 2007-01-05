@@ -4,7 +4,11 @@ tasksel (2.62) UNRELEASED; urgency=low
   * Remove xserver-xorg-input-synaptics from laptop task - it's already
     depended on by xorg which is in the desktop task.
 
- -- Per Olofsson <pelle@debian.org>  Wed,  3 Jan 2007 14:16:17 +0100
+  [ Joey Hess ]
+  * Explicitly add xserver-xorg-input-all and xserver-xorg-video-all
+    to the desktop task to work around #405639
+
+ -- Joey Hess <joeyh@debian.org>  Fri,  5 Jan 2007 16:56:05 -0500
 
 tasksel (2.61) unstable; urgency=low
 
