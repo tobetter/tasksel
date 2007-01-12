@@ -520,15 +520,19 @@ sub main {
 	}
 	foreach my $task (grep { ! $_->{_install} && exists $_->{enhances} &&
 	                         length $_->{enhances} } @tasks) {
-		# Mark enhancing tasks for install if their
-		# dependencies are met and if their test fields
-		# mark them for install.
-		task_test($task, $options{"new-install"}, 0, 1);
-		foreach my $dep (list_to_tasks($task->{enhances}, @tasks)) {
-			if (! $dep->{_install}) {
-				$task->{_install} = 0;
+		my @deps=list_to_tasks($task->{enhances}, @tasks);
+		if (@deps) {
+			# Mark enhancing tasks for install if their
+			# dependencies are met and if their test fields
+			# mark them for install.
+			task_test($task, $options{"new-install"}, 0, 1);
+			foreach my $dep (@deps) {
+				if (! $dep->{_install}) {
+					$task->{_install} = 0;
+				}
 			}
 		}
+
 		# If two enhancing tasks that both provide
 		# the same thing, only install one of them.
 		if ($task->{_install} && exists $task->{provides} &&
