@@ -11,10 +11,6 @@ Key:
   xserver-xorg-input-all
   desktop-base
   menu
-# firefox (ne iceweasel) is the most popular web browser at the moment,
-# although both gnome and kde offer their own too
-  firefox
-  iceweasel
 # hardware detection
   discover1
   xresprobe
@@ -25,6 +21,11 @@ Key:
   eject
 Packages: task-fields
 Packages-list:
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
+# XXX this really belongs in Key above, once the transition is over.
+  firefox
+  iceweasel
   hotkey-setup
 # the gimp is the best image editor, no matter the desktop
   gimp

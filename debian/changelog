@@ -1,9 +1,11 @@
-tasksel (2.63) UNRELEASED; urgency=low
+tasksel (2.63) unstable; urgency=emergency
 
   * Switch database-server to use postgres 8.1. (See #406399)
   * Remove foomatic-gui from print-server. Closes: #406616
+  * Iceweasel/firefox cannot be in Key for desktop, since they are not
+    both available in testing. Closes: #406630
 
- -- Joey Hess <joeyh@debian.org>  Fri, 12 Jan 2007 17:07:10 -0500
+ -- Joey Hess <joeyh@debian.org>  Fri, 12 Jan 2007 17:19:25 -0500
 
 tasksel (2.62) unstable; urgency=high
 
