@@ -1,7 +1,12 @@
 tasksel (2.64) UNRELEASED; urgency=low
 
   * Correct a bug that caused hidden enhancing tasks to be marked for install
-    if they enhanced no available tasks.
+    if they enhanced no available tasks. This is the problem that was
+    underlying #406630.
+  * Force epiphany into the gnome-desktop. It might not be pulled in via a
+    dependency since other web browsers can satisfy the dependency.
+    Closes: #370098
+  * Also add epiphany-extensions.
 
  -- Joey Hess <joeyh@debian.org>  Fri, 12 Jan 2007 17:38:02 -0500
 

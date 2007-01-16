@@ -11,6 +11,10 @@ Key:
   gnome-desktop-environment
 Packages: task-fields
 Packages-list:
+# May not get installed unless forced, if some other browser satisfies the
+# dependency, so force it.
+  epiphany-browser
+  epiphany-extensions
 # most of the gnome metapackage, except for desktop stuff
   gnome-cups-manager
   gnome-screensaver
