@@ -9,7 +9,9 @@ Description: Xfce desktop environment
 Key:
 # The basics of xfce, not the whole thing.
   xfce4
-  xdm
+# Would be better to use xdm here, but it's not currently installable from
+# d-i.
+  gdm
 Packages: task-fields
 Packages-list:
 # well known xfce4 enhancements

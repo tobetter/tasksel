@@ -1,3 +1,10 @@
+tasksel (2.65) UNRELEASED; urgency=low
+
+  * Switch xfce-desktop to use gdm, as xdm is currently not installable from
+    within d-i due to #407342.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 17 Jan 2007 13:53:55 -0500
+
 tasksel (2.64) unstable; urgency=low
 
   * Correct a bug that caused hidden enhancing tasks to be marked for install
