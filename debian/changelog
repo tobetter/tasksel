@@ -11,7 +11,11 @@ tasksel (2.67) UNRELEASED; urgency=low
   [ Translations of debconf templates ]
     - Esperanto updated.
 
- -- Christian Perrier <bubulle@debian.org>  Tue,  6 Feb 2007 05:50:32 +0100
+  [ Joey Hess ]
+  * Move foomatic-gui from desktop to gnome-desktop and xfce-desktop. It's not
+    needed in kde-desktop since kde has its own program. Closes: #411405
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 19 Feb 2007 23:26:54 -0500
 
 tasksel (2.66) unstable; urgency=medium
 
