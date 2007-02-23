@@ -15,7 +15,11 @@ tasksel (2.67) UNRELEASED; urgency=low
   * Move foomatic-gui from desktop to gnome-desktop and xfce-desktop. It's not
     needed in kde-desktop since kde has its own program. Closes: #411405
 
- -- Joey Hess <joeyh@debian.org>  Mon, 19 Feb 2007 23:26:54 -0500
+  [ Rene Engelhard ]
+  * remove openoffice.org-l10n-ar from arabic-desktop; gone
+  * add openoffice.org-{l10n,help}-gl to galician-desktop (new in OOo 2.2)
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 23 Feb 2007 13:37:47 +0100
 
 tasksel (2.66) unstable; urgency=medium
 
