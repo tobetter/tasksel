@@ -19,7 +19,12 @@ tasksel (2.67) UNRELEASED; urgency=low
   * remove openoffice.org-l10n-ar from arabic-desktop; gone
   * add openoffice.org-{l10n,help}-gl to galician-desktop (new in OOo 2.2)
 
- -- Rene Engelhard <rene@debian.org>  Fri, 23 Feb 2007 13:37:47 +0100
+  [ Joey Hess ]
+  * Remove gcin from chinese-t-desktop as it currently does not work well
+    with im-switch. (This can be reverted once version 1.3.3 is available).
+    Closes: #404567
+
+ -- Joey Hess <joeyh@debian.org>  Tue,  6 Mar 2007 13:34:58 -0500
 
 tasksel (2.66) unstable; urgency=medium
 
