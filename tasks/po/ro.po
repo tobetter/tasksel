@@ -1,24 +1,23 @@
-# translation of tasksel/tasks to Romanian
+# translation of ro.po to Romanian
 # Romanian translation
 # This file is distributed under the same license as the tasksel package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
-# Eddy Petrișor <eddy.petrisor@gmail.com>, 2004, 2005, 2006.
+# Eddy Petrișor <eddy.petrisor@gmail.com>, 2004, 2005, 2006, 2007.
 # Eddy Petrisor <eddy.petrisor@gmail.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-27 22:30+0200\n"
-"PO-Revision-Date: 2006-11-15 14:05+0200\n"
-"Last-Translator: Eddy Petrisor <eddy.petrisor@gmail.com>\n"
+"PO-Revision-Date: 2007-03-29 11:18+0300\n"
+"Last-Translator: Eddy Petrișor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
-"2:1))\n"
+"Plural-Forms:  nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -222,7 +221,7 @@ msgstr "Sistem de birou catalan"
 #. Description
 #: ../po/debian-tasks.desc:17001
 msgid "This task localises the desktop in Catalan."
-msgstr "Această sarcină localizează mediul de birou în în catalană."
+msgstr "Această sarcină localizează mediul de birou în catalană."
 
 #. Description
 #: ../po/debian-tasks.desc:18001
@@ -298,7 +297,7 @@ msgstr "Sistem de birou croat"
 #. Description
 #: ../po/debian-tasks.desc:23001
 msgid "This task localises the desktop in Croatian."
-msgstr "Această sarcină localizează mediul de birou în în croată."
+msgstr "Această sarcină localizează mediul de birou în croată."
 
 #. Description
 #: ../po/debian-tasks.desc:24001
@@ -386,8 +385,7 @@ msgstr "Bază de date SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:30001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "Acestă sarcină selectează pachetele client şi server pentru baza de date "
 "PostgreSQL."
@@ -426,8 +424,7 @@ msgstr "Server DNS"
 
 #. Description
 #: ../po/debian-tasks.desc:32001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "Selectează serverul DNS BIND, şi documentaţie pentru acesta, cât şi pachete "
 "de utilitare."
@@ -832,8 +829,7 @@ msgstr "Mediu de birou KDE"
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
-msgstr ""
-"Acestă sarcină furnizează un set minimal de aplicaţii pentru mediul grafic K."
+msgstr "Acestă sarcină furnizează un set minimal de aplicaţii pentru mediul grafic K."
 
 #. Description
 #: ../po/debian-tasks.desc:67001
@@ -901,7 +897,7 @@ msgstr "Sistem de birou leton"
 #. Description
 #: ../po/debian-tasks.desc:72001
 msgid "This task localises the desktop in Latvian."
-msgstr "Această sarcină localizează mediul de birou în în letonă."
+msgstr "Această sarcină localizează mediul de birou în letonă."
 
 #. Description
 #: ../po/debian-tasks.desc:73001
@@ -967,15 +963,13 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:78001
-#, fuzzy
 msgid "Malayalam desktop"
-msgstr "Sistem de birou catalan"
+msgstr "Sistem de birou malayalam"
 
 #. Description
 #: ../po/debian-tasks.desc:78001
-#, fuzzy
 msgid "This task localises the desktop in Malayalam."
-msgstr "Această sarcină localizează mediul de birou în în catalană."
+msgstr "Această sarcină localizează mediul de birou în malayalam."
 
 #. Description
 #: ../po/debian-tasks.desc:79001
@@ -1111,8 +1105,7 @@ msgstr "Server de listare (print)"
 #. Description
 #: ../po/debian-tasks.desc:90001
 msgid "This task sets up your system to be a print server."
-msgstr ""
-"Această sarcină vă peregăteşte sistemul dvs. să fie un server de listare."
+msgstr "Această sarcină vă peregăteşte sistemul dvs. să fie un server de listare."
 
 #. Description
 #: ../po/debian-tasks.desc:91001
@@ -1445,8 +1438,7 @@ msgstr "Server de web"
 
 #. Description
 #: ../po/debian-tasks.desc:118001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Acestă sarcină selectează un pachet util pentru un server de web de uz "
 "general."
@@ -1516,3 +1508,4 @@ msgstr "Această sarcină localizează mediul de birou în xhosa."
 #~ msgstr ""
 #~ "Acestă sarcină furnizează un set minimal de aplicaţii pentru mediul "
 #~ "grafic GNOME."
+
