@@ -1,20 +1,22 @@
-# translation of tasksel.po to Euskara
+# translation of eu.po to librezale
+# Inaki Larranaga Murgoitio, <dooteo@euskalgnu.org>, 2005.
+# Piarres Beobide <pi@beobide.net>, 2007.
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
-# Inaki Larranaga Murgoitio, <dooteo@euskalgnu.org>, 2005
 # Piarres Beobide <pi@beobide.net> 2005
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel\n"
+"Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-18 23:04+0900\n"
-"PO-Revision-Date: 2005-06-11 16:00+0200\n"
-"Last-Translator: Piarres Beobide\n"
-"Language-Team:  Librezale.org <librezale@librezale.org>\n"
+"PO-Revision-Date: 2007-04-07 23:03+0200\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
+"Language-Team: librezale <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../tasksel.pl:358
 msgid ""
@@ -29,15 +31,16 @@ msgid ""
 "\t    --task-desc     returns the description of a task\n"
 msgstr ""
 "Erabilera:\n"
-"tasksel install <atazak>\n"
-"tasksel remove <atazak>\n"
+"tasksel install <zereginak>\n"
+"tasksel remove <zereginak>\n"
 "tasksel [aukerak]\n"
 "\t-t, --test          proba modua; ez du ezer egiten\n"
-"\t    --new-install   ataza batzuk automatikoki instalatzeko\n"
-"\t    --list-tasks    atazen zerrenda bistaratu eta irten egiten da\n"
-"\t    --task-packages ataza bateko paketeak zerrendatzen ditu\n"
-"\t    --task-desc     ataza baten azalpena itzultzen du\n"
+"\t    --new-install   zeregin batzuk automatikoki instalatzeko\n"
+"\t    --list-tasks    zereginen zerrenda bistaratu eta irten egiten da\n"
+"\t    --task-packages zeregin bateko paketeak zerrendatzen ditu\n"
+"\t    --task-desc     zeregin baten azalpena itzultzen du\n"
 
 #: ../tasksel.pl:557 ../tasksel.pl:575 ../tasksel.pl:586
 msgid "aptitude failed"
 msgstr "aptitude-k huts egin du"
+
