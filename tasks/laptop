@@ -3,20 +3,21 @@ Section: user
 Description: Laptop
  This task installs software useful for a laptop.
 Test-laptop: 1
+Key:
+ acpid
+ hibernate
+ anacron
 Packages: task-fields
 Packages-list:
 # TODO: probably ought to make the list dynamic depending on the laptop
 # model, etc
- acpid
  apmd
  acpi
  acpi-support
  pcmciautils
  wireless-tools
  wpasupplicant
- anacron
  cpufrequtils
- hibernate
 # Works with hibernate, needs 2.6.17 kernel, but hibernate will fall back
 # if it doesn't work.
  uswsusp

@@ -52,7 +52,12 @@ tasksel (2.67) UNRELEASED; urgency=low
   [ Christian Perrier ]
   * Add a malayalam-desktop task. Closes: #416390
 
- -- Rene Engelhard <rene@debian.org>  Tue, 10 Apr 2007 01:46:07 +0200
+  [ Joey Hess ]
+  * Make a few packages key for the laptop task. This allows tasksel to
+    display the laptop task as installed, which it cannot do for tasks without
+    any key packages. Closes: #418816
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 13 Apr 2007 09:47:06 -0400
 
 tasksel (2.66) unstable; urgency=medium
 
