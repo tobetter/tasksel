@@ -56,8 +56,10 @@ tasksel (2.67) UNRELEASED; urgency=low
   * Make a few packages key for the laptop task. This allows tasksel to
     display the laptop task as installed, which it cannot do for tasks without
     any key packages. Closes: #418816
+  * Add gaim-libnotify to gnome-desktop. Needs to be manually turned on but
+    improves gnome integration of gaim.
 
- -- Joey Hess <joeyh@debian.org>  Fri, 13 Apr 2007 09:47:06 -0400
+ -- Joey Hess <joeyh@debian.org>  Tue, 17 Apr 2007 16:51:20 -0400
 
 tasksel (2.66) unstable; urgency=medium
 
