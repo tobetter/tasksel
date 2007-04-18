@@ -60,8 +60,14 @@ tasksel (2.67) UNRELEASED; urgency=low
     improves gnome integration of gaim.
   * Add avahi-autoipd to laptop task for zeroconf networking that doesn't
     get in the way.
+  * Remove the Provides fields, which were always obscure and is better done
+    via tests.
+  * Add a preseedable tasksel/desktop, which can be used to choose which
+    of gnome, kde, or xfce to pick to enhance the desktop task. It's a
+    multiselect value, so if you want you can even install more than one,
+    or none.
 
- -- Joey Hess <joeyh@debian.org>  Tue, 17 Apr 2007 20:25:12 -0400
+ -- Joey Hess <joeyh@debian.org>  Tue, 17 Apr 2007 20:57:03 -0400
 
 tasksel (2.66) unstable; urgency=medium
 

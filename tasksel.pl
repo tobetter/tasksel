@@ -507,40 +507,28 @@ sub main {
 	}
 
 	# Select enhancing tasks for install.
-	my %provided;
 	foreach my $task (grep { $_->{_install} && exists $_->{enhances} &&
 	                         length $_->{enhances} } @tasks) {
 		# If an enhancing task is already marked for
 		# install, probably by preseeding, mark the tasks
 		# it enhances for install.
 		map { $_->{_install}=1 } list_to_tasks($task->{enhances}, @tasks);
-		if (exists $task->{provides} && length $task->{provides}) {
-			$provided{$task->{provides}}=1;
-		}
 	}
 	foreach my $task (grep { ! $_->{_install} && exists $_->{enhances} &&
 	                         length $_->{enhances} } @tasks) {
 		my @deps=list_to_tasks($task->{enhances}, @tasks);
 		if (@deps) {
 			# Mark enhancing tasks for install if their
-			# dependencies are met and if their test fields
+			# dependencies are met and their test fields
 			# mark them for install.
+			$ENV{TESTING_ENHANCER}=1;
 			task_test($task, $options{"new-install"}, 0, 1);
+			delete $ENV{TESTING_ENHANCER};
 			foreach my $dep (@deps) {
 				if (! $dep->{_install}) {
 					$task->{_install} = 0;
 				}
 			}
-		}
-
-		# If two enhancing tasks that both provide
-		# the same thing, only install one of them.
-		if ($task->{_install} && exists $task->{provides} &&
-		    length $task->{provides}) {
-			if (exists $provided{$task->{provides}}) {
-				$task->{_install}=0;
-			}
-			$provided{$task->{provides}}=1;
 		}
 	}
 

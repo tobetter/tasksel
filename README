@@ -62,7 +62,7 @@ method described above is a simple example of such a program.
 There is support for automatically installing tasks based on test programs.
 If a task has a Test-* field, then a program in /usr/lib/tasksel/tests/
 will be run. For example Test-lang fields cause /usr/lib/tasksel/tests/lang
-to be run. The test is passed first the name of the tasks, and then the
+to be run. The test is passed first the name of the task, and then the
 contents of the field as parameters. The exit code of the test controls
 what to do with the task:
 
@@ -84,8 +84,9 @@ enchances a system that has both the french and desktop tasks, and will be
 automatically installed on such a system but not others. Such tasks are
 hidden from the menu.
 
-If two enhancing tasks have the same Provides field, then tasksel will
-try to avoid selecting them both.
+If two tasks both enhance the same task (ie, gnome-desktop and kde-desktop
+enhancing desktop), but only one should be selected, this can be
+accomplished by adding Test-* fields.
 
 If a task is important enough that it should go near the top of its
 section, give it a relevance of 9 or 10. If a task is not likely to be

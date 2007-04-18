@@ -15,6 +15,13 @@ _Description: Choose software to install:
  You can choose to install one or more of the following predefined
  collections of software.
 
+Template: tasksel/desktop
+Type: multiselect
+Choices: gnome, kde, xfce
+Default: gnome
+Description: The desktop environment to install when the desktop task is selected
+ This can be preseeded to change the default.
+
 Template: tasksel/title
 Type: title
 _Description: Software selection
