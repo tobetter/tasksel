@@ -58,8 +58,10 @@ tasksel (2.67) UNRELEASED; urgency=low
     any key packages. Closes: #418816
   * Add gaim-libnotify to gnome-desktop. Needs to be manually turned on but
     improves gnome integration of gaim.
+  * Add avahi-autoipd to laptop task for zeroconf networking that doesn't
+    get in the way.
 
- -- Joey Hess <joeyh@debian.org>  Tue, 17 Apr 2007 16:51:20 -0400
+ -- Joey Hess <joeyh@debian.org>  Tue, 17 Apr 2007 20:25:12 -0400
 
 tasksel (2.66) unstable; urgency=medium
 
