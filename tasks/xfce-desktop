@@ -3,6 +3,8 @@ Relevance: 8
 Section: user
 Enhances: desktop
 Provides: complete-desktop
+# Don't install this by default, gnome is the default ATM.
+Test-new-install: skip skip
 Description: Xfce desktop environment
  This task provides basic "desktop" software using the Xfce desktop
  environment.
