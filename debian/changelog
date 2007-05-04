@@ -10,7 +10,11 @@ tasksel (2.68) UNRELEASED; urgency=low
   * removed kde-i18n-ro from the romanian-desktop task since it doesn't make
     any sense to install that on default gnome desktop systems
 
- -- Christian Perrier <bubulle@debian.org>  Fri, 27 Apr 2007 20:20:09 +0300
+  [ Joey Hess ]
+  * Unversion postgresql packages in database-server to use new metapackages
+    that will pull in the right version.
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 04 May 2007 13:16:01 -0400
 
 tasksel (2.67) unstable; urgency=low
 
