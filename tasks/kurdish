@@ -1,0 +1,11 @@
+Task: kurdish
+Test-lang: ku
+Section: l10n
+Description: Kurdish environment
+ This task installs packages and documentation in Kurdish
+ to help Kurds use Debian.
+Key:
+Packages: task-fields
+Packages-list:
+ aspell-ku
+ myspell-ku
