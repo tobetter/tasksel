@@ -23,8 +23,10 @@ tasksel (2.68) UNRELEASED; urgency=low
   [ Per Olofsson ]
   * Switch to php5 in web-server task. Closes: #400966
   * Add cpufrequtils to desktop task.
+  * Add suspend and hibernate utilities to desktop task. New desktop
+    machines can usually suspend, and almost always hibernate.
 
- -- Per Olofsson <pelle@debian.org>  Sun, 27 May 2007 22:44:38 +0200
+ -- Per Olofsson <pelle@debian.org>  Tue, 29 May 2007 13:27:01 +0200
 
 tasksel (2.67) unstable; urgency=low
 
