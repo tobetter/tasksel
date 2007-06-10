@@ -27,7 +27,12 @@ tasksel (2.68) UNRELEASED; urgency=low
   * Add suspend and hibernate utilities to desktop task. New desktop
     machines can usually suspend, and almost always hibernate.
 
- -- Per Olofsson <pelle@debian.org>  Tue, 29 May 2007 13:27:01 +0200
+  [ Joey Hess ]
+  * Now that cpufrequtils takes care of loading cpu frequency scaling modules,
+    add cpufreqd to the laptop task. (But not to desktop, its default
+    configuration doesn't make good choices when there's no acpi power info.)
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 10 Jun 2007 03:30:58 -0400
 
 tasksel (2.67) unstable; urgency=low
 
