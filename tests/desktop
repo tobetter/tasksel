@@ -81,6 +81,20 @@ desktop_hardware () {
 	return 1
 }
 
+rack_hardware () {
+	if [ -x "`which dmidecode 2>/dev/null`" ] && \
+		dmidecode | grep -q 'Type: Rack Mount Chassis'; then
+		return 0
+	fi
+		
+	# XXX further heuristics here to avoid selecting the task on
+	# high-end hardware that's intended to be used as a server.
+	# For example, if it has two NICs with link, it's probably a
+	# server.
+
+	return 1
+}
+
 if ! enough_ram || ! enough_disk; then
 	unmark
 fi
@@ -92,12 +106,11 @@ fi
 if unlikely_desktop_architecture; then
 	unmark
 elif common_desktop_architecture; then
-	# XXX further heuristics here to avoid selecting the task on
-	# high-end hardware that's intended to be used as a server.
-	# For example, if it has two NICs with link, it's probably a
-	# server. If it's rackmountable, a server, etc.
-
-	mark # probably a desktop ...
+	if rack_hardware; then
+		unmark
+	else
+		mark # probably a desktop ...
+	fi
 else
 	# XXX further heuristics here
 	:
