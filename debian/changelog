@@ -1,4 +1,4 @@
-tasksel (2.68) UNRELEASED; urgency=low
+tasksel (2.68) unstable; urgency=low
 
   [ Joey Hess ]
   * Remove Randolph from uploaders as he isn't involved in tasksel anymore.
@@ -30,11 +30,11 @@ tasksel (2.68) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Powertop is de rigueur for laptops these days.
 
-  [ Dann Frazier ] 
+  [ Dann Frazier ]
   * Use dmidecode to check if the chassis is of type "rack".
     If it is, unmark the desktop task by default. Closes: #398981
 
- -- Joey Hess <joeyh@debian.org>  Sat, 23 Jun 2007 02:11:26 +0100
+ -- Joey Hess <joeyh@debian.org>  Mon, 25 Jun 2007 16:12:17 -0400
 
 tasksel (2.67) unstable; urgency=low
 
