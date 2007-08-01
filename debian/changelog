@@ -32,10 +32,13 @@ tasksel (2.69) UNRELEASED; urgency=low
     formats. Closes: #414408
 
   [ Christian Perrier ]
-  * Remove deprecated pango-libthai from the thai-desktop task. 
+  * Remove deprecated pango-libthai from the thai-desktop task.
     Closes: #433429
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 17 Jul 2007 19:35:47 +0200
+  [ Joey Hess ]
+  * Put in an ugly hack to support chained enhances.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 01 Aug 2007 17:16:09 -0400
 
 tasksel (2.68) unstable; urgency=low
 

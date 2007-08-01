@@ -506,27 +506,41 @@ sub main {
 		}
 	}
 
-	# Select enhancing tasks for install.
+	# If an enhancing task is already marked for
+	# install, probably by preseeding, mark the tasks
+	# it enhances for install.
 	foreach my $task (grep { $_->{_install} && exists $_->{enhances} &&
 	                         length $_->{enhances} } @tasks) {
-		# If an enhancing task is already marked for
-		# install, probably by preseeding, mark the tasks
-		# it enhances for install.
 		map { $_->{_install}=1 } list_to_tasks($task->{enhances}, @tasks);
 	}
-	foreach my $task (grep { ! $_->{_install} && exists $_->{enhances} &&
-	                         length $_->{enhances} } @tasks) {
-		my @deps=list_to_tasks($task->{enhances}, @tasks);
-		if (@deps) {
-			# Mark enhancing tasks for install if their
-			# dependencies are met and their test fields
-			# mark them for install.
-			$ENV{TESTING_ENHANCER}=1;
-			task_test($task, $options{"new-install"}, 0, 1);
-			delete $ENV{TESTING_ENHANCER};
-			foreach my $dep (@deps) {
-				if (! $dep->{_install}) {
-					$task->{_install} = 0;
+
+	# Select enhancing tasks for install.
+	# XXX FIXME ugly hack -- loop until enhances settle to handle
+	# chained enhances. This is sloow and could loop forever if
+	# there's a cycle.
+	my $enhances_needswork=1;
+	while ($enhances_needswork) {
+		$enhances_needswork=0;
+		foreach my $task (grep { ! $_->{_install} && exists $_->{enhances} &&
+		                         length $_->{enhances} } @tasks) {
+			my @deps=list_to_tasks($task->{enhances}, @tasks);
+			if (@deps) {
+				my $orig_state=$task->{_install};
+
+				# Mark enhancing tasks for install if their
+				# dependencies are met and their test fields
+				# mark them for install.
+				$ENV{TESTING_ENHANCER}=1;
+				task_test($task, $options{"new-install"}, 0, 1);
+				delete $ENV{TESTING_ENHANCER};
+				foreach my $dep (@deps) {
+					if (! $dep->{_install}) {
+						$task->{_install} = 0;
+					}
+				}
+
+				if ($task->{_install} != $orig_state) {
+					$enhances_needswork=1;
 				}
 			}
 		}
