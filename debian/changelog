@@ -27,6 +27,9 @@ tasksel (2.69) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Update menu file to use new section.
+  * Add arj and p7zip to gnome-desktop. These are recommended by file-roller
+    and useful for interoperability with windows users who commonly use these
+    formats. Closes: #414408
 
   [ Christian Perrier ]
   * Remove deprecated pango-libthai from the thai-desktop task. 
