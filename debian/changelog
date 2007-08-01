@@ -1,5 +1,11 @@
 tasksel (2.69) UNRELEASED; urgency=low
 
+  [ Translations of debconf templates ]
+    - Nepali updated. Closes: #435330
+
+  [ Translations of programs ]
+    - Nepali updated. Closes: #435329
+
   [ Translations of tasks ]
     - French updated.
     - Swedish updated.
@@ -14,6 +20,7 @@ tasksel (2.69) UNRELEASED; urgency=low
     - Arabic updated.
     - Thai updated.
     - Simplified Chinese updated.
+    - Nepali updated. Closes: #435331
 
   [ Lior Kaplan ]
   * Add iceweasel-l10n-ku to kurish-desktop task
@@ -21,7 +28,11 @@ tasksel (2.69) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Update menu file to use new section.
 
- -- Joey Hess <joeyh@debian.org>  Sun, 08 Jul 2007 16:53:23 -0400
+  [ Christian Perrier ]
+  * Remove deprecated pango-libthai from the thai-desktop task. 
+    Closes: #433429
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 17 Jul 2007 19:35:47 +0200
 
 tasksel (2.68) unstable; urgency=low
 
@@ -35,7 +46,7 @@ tasksel (2.68) unstable; urgency=low
     - Danish updated.
     - Russian updated.
 
-  [ Eddy Petrișor ]
+  [ Eddy Petri?or ]
   * removed kde-i18n-ro from the romanian-desktop task since it doesn't make
     any sense to install that on default gnome desktop systems
 
