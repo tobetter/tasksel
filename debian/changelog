@@ -53,6 +53,9 @@ tasksel (2.69) UNRELEASED; urgency=low
   * Add Debian Junior related tasks that enhances Debian Desktop.
     - gnome-jr-desktop: Includes junior-gnome and common junior packages.
     - kde-jr-desktop: Includes junior-kde and common junior packages.
+  * Add backup-server task.
+    - backup-server tasks uses bacula server (sqlite backend) and 
+      provides bacula console tools.
 
  -- Joey Hess <joeyh@debian.org>  Thu, 02 Aug 2007 13:25:14 -0400
 
