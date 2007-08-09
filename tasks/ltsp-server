@@ -1,0 +1,10 @@
+Task: ltsp-server
+Section: server
+Description: Ltsp server
+ This task sets up your system to be a Ltsp server.
+Key:
+ ltsp-server-standalone
+Packages: task-fields
+Packages-list:
+ ltspfs
+
