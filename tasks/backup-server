@@ -1,9 +1,0 @@
-Task: backup-server
-Section: server
-Description: Backup server
- This task sets up your system to be a backup server.
-Key:
- bacula-server
-Packages: task-fields
-Packages-list:
- bacula-console
