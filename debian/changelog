@@ -11,7 +11,11 @@ tasksel (2.70) UNRELEASED; urgency=low
     these languages (the package is orphaned and may be removed
     from the archive)
 
- -- Christian Perrier <bubulle@debian.org>  Thu, 01 Nov 2007 19:04:55 +0100
+  [ Joey Hess ]
+  * Fix a funky $_ problem that broke calling task prerms on remove.
+    (See #450777.)
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 10 Nov 2007 12:19:26 -0500
 
 tasksel (2.69) unstable; urgency=low
 

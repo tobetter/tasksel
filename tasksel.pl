@@ -575,8 +575,9 @@ sub main {
 
 	# Task removal..
 	if (@tasks_remove) {
-		my @packages_remove=map { task_packages($_, 0) } @tasks_remove;
+		my @packages_remove;
 		foreach my $task (@tasks_remove) {
+			push @packages_remove, task_packages($task, 0);
 			task_script($task->{task}, "prerm");
 		}
 		my $ret=run(@aptitude, "-y", "remove", @packages_remove);
