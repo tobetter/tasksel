@@ -572,32 +572,21 @@ sub main {
 	else {
 		@aptitude="aptitude";
 	}
-
-	# Task removal..
-	if (@tasks_remove) {
-		my @packages_remove;
-		foreach my $task (@tasks_remove) {
-			push @packages_remove, task_packages($task, 0);
-			task_script($task->{task}, "prerm");
-		}
-		my $ret=run(@aptitude, "-y", "remove", @packages_remove);
-		if ($ret != 0) {
-			error gettext("aptitude failed")." ($ret)";
-		}
-		foreach my $task (@tasks_remove) {
-			task_script($task->{task}, "postrm");
-		}
-	}
 	
 	# And finally, act on selected tasks.
-	if (@tasks_install || $manual_selection) {
-		my @packages_install=map {task_packages($_, 1) } @tasks_install;
+	if (@tasks_install || @tasks_remove || $manual_selection) {
+		my @args;
+		foreach my $task (@tasks_remove) {
+			push @args, map { "$_-" } task_packages($task, 0);
+			task_script($task->{task}, "prerm");
+		}
 		foreach my $task (@tasks_install) {
+			push @args, task_packages($task, 1);
 			task_script($task->{task}, "preinst");
 		}
 		# If the user selected no other tasks and manual package
 		# selection, run aptitude w/o the --visual-preview parameter.
-		if (! @packages_install && $manual_selection) {
+		if (! @args && $manual_selection) {
 			my $ret=run("aptitude");
 			if ($ret != 0) {
 				error gettext("aptitude failed")." ($ret)";
@@ -605,14 +594,17 @@ sub main {
 		}
 		else {
 			if ($manual_selection) {
-				unshift @packages_install, "--visual-preview";
+				unshift @args, "--visual-preview";
 			}
 			my $ret=run(@aptitude, "--without-recommends",
 			                       "-y", "install",
-					       @packages_install);
+					       @args);
 			if ($ret != 0) {
 				error gettext("aptitude failed")." ($ret)";
 			}
+		}
+		foreach my $task (@tasks_remove) {
+			task_script($task->{task}, "postrm");
 		}
 		foreach my $task (@tasks_install) {
 			task_script($task->{task}, "postinst");

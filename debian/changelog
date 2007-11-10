@@ -14,8 +14,11 @@ tasksel (2.70) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Fix a funky $_ problem that broke calling task prerms on remove.
     (See #450777.)
+  * Handle task removals in the same aptitude run as task installs
+    and manual selection, using "package-" to remove packages.
+    Closes: #450777
 
- -- Joey Hess <joeyh@debian.org>  Sat, 10 Nov 2007 12:19:26 -0500
+ -- Joey Hess <joeyh@debian.org>  Sat, 10 Nov 2007 12:30:17 -0500
 
 tasksel (2.69) unstable; urgency=low
 
