@@ -1,3 +1,18 @@
+tasksel (2.71) UNRELEASED; urgency=low
+
+  [ Kenshi Muto ]
+  * japanese, japanese-desktop: Add me Maintainer field.
+  * japanese-desktop: Replace ttf-kochi-* by current de-facto
+    ttf-sazanami-*.
+  * japanese: Remove language-env because it no longer helps UTF-8
+    environment.
+  * japanese-desktop: Add icedove and icedove-l10n-ja.
+    Evolution is too complex application for Japanese users. Plus
+    it always uses UTF-8 on a subject instead of ISO-2022-JP,
+    recommended encoding for Japanese.
+
+ -- Kenshi Muto <kmuto@debian.org>  Sun, 09 Dec 2007 15:23:25 +0900
+
 tasksel (2.70) unstable; urgency=low
 
   [ Per Olofsson ]

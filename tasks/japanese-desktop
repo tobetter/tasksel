@@ -1,6 +1,7 @@
 Task: japanese-desktop
 Enhances: desktop, japanese
 Section: l10n
+Maintainer: Kenshi Muto <kmuto@debian.org>
 Description: Japanese desktop
  This task localises the desktop in Japanese.
 Key:
@@ -9,9 +10,12 @@ Packages-list:
  kde-i18n-ja
  iceweasel-l10n-ja
  doc-linux-ja-html
- ttf-kochi-gothic
- ttf-kochi-mincho
+ ttf-sazanami-gothic
+ ttf-sazanami-mincho
  ttf-vlgothic
  uim
  openoffice.org-l10n-ja
  openoffice.org-help-ja
+ # evolution has a problem for Japanese, for example it uses always UTF-8 subject instead of iso-2022-jp used Japanese de-facto. I recommend icedove as default mailer for Japanese desktop users.
+ icedove
+ icedove-l10n-ja
