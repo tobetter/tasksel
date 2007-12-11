@@ -10,6 +10,9 @@ tasksel (2.71) UNRELEASED; urgency=low
     Evolution is too complex application for Japanese users. Plus
     it always uses UTF-8 on a subject instead of ISO-2022-JP,
     recommended encoding for Japanese.
+  * japanese, japanese-desktop: Move anthy and uim to japanese-desktop
+    from japanese. No one seems have a needs to input Japanese on
+    Linux console.
 
  -- Kenshi Muto <kmuto@debian.org>  Sun, 09 Dec 2007 15:23:25 +0900
 
