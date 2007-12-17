@@ -4,8 +4,8 @@
 if [ "$NEW_INSTALL" ]; then
 	set -e
 	shift 1
-	baselang=$(expr "$LANG" : '\(.*\)_')
-	fulllang=$(expr "$LANG" : '\(.*\)\.')
+	baselang=${LANG%%_*}
+	fulllang=${LANG%%.*}
 	for locale in $@; do
 		if ( [ -n "$LANG" ] && [ "$LANG" = "$locale" ] ) || \
 		   ( [ -n "$fulllang" ] && [ "$fulllang" = "$locale" ] ) || \

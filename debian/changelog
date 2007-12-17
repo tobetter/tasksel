@@ -14,6 +14,9 @@ tasksel (2.71) UNRELEASED; urgency=low
     from japanese. No one seems have a needs to input Japanese on
     Linux console.
 
+  [ Joey Hess ]
+  * tests/lang: More robust LANG parsing to support values such as "ml_IN".
+
  -- Kenshi Muto <kmuto@debian.org>  Sun, 09 Dec 2007 15:23:25 +0900
 
 tasksel (2.70) unstable; urgency=low
