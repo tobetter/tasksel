@@ -21,6 +21,10 @@ tasksel (2.71) UNRELEASED; urgency=low
   * Add initial amharic and amharic-desktop tasks
   * Move scim-* and fonts packages to Key packages for malayalam-desktop
 
+  [ Per Olofsson ]
+  * Remove hibernate from desktop task, as hal depends on and only uses
+    pm-utils.
+
  -- Christian Perrier <bubulle@debian.org>  Fri, 21 Dec 2007 18:06:12 +0100
 
 tasksel (2.70) unstable; urgency=low
