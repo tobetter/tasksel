@@ -25,6 +25,10 @@ tasksel (2.71) UNRELEASED; urgency=low
   * Remove hibernate from desktop task, as hal depends on and only uses
     pm-utils.
 
+  [ Joey Hess ]
+  * Remove discover1 and xresprobe from the desktop task. These are no longer
+    used by xorg 1:7.3+10. Hallelujah!
+
  -- Christian Perrier <bubulle@debian.org>  Fri, 21 Dec 2007 18:06:12 +0100
 
 tasksel (2.70) unstable; urgency=low
