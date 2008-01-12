@@ -1,4 +1,4 @@
-tasksel (2.71) UNRELEASED; urgency=low
+tasksel (2.71) unstable; urgency=low
 
   [ Kenshi Muto ]
   * japanese, japanese-desktop: Add me Maintainer field.
@@ -28,8 +28,9 @@ tasksel (2.71) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Remove discover1 and xresprobe from the desktop task. These are no longer
     used by xorg 1:7.3+10. Hallelujah!
+  * Pass -o APT::Install-Recommends=no to aptitude to work around bug #448561
 
- -- Christian Perrier <bubulle@debian.org>  Fri, 21 Dec 2007 18:06:12 +0100
+ -- Joey Hess <joeyh@debian.org>  Fri, 11 Jan 2008 21:36:24 -0500
 
 tasksel (2.70) unstable; urgency=low
 

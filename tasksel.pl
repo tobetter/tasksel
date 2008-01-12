@@ -597,6 +597,7 @@ sub main {
 				unshift @args, "--visual-preview";
 			}
 			my $ret=run(@aptitude, "--without-recommends",
+			                       "-o", "APT::Install-Recommends=no",
 			                       "-y", "install",
 					       @args);
 			if ($ret != 0) {
