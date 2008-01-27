@@ -17,7 +17,7 @@ Description: Tool for selecting tasks for installation on Debian systems
 
 Package: tasksel-data
 Architecture: all
-Depends: tasksel, laptop-detect [!s390]
+Depends: tasksel, laptop-detect
 Conflicts: tasksel (<< 2.67)
 Description: Official tasks used for installation of Debian systems
  This package contains data about the standard tasks available on a Debian
