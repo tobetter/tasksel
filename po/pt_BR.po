@@ -3,16 +3,17 @@
 # Andre Luis Lopes <andrelop@ig.com.br>, 2001.
 # Andre Luis Lopes <andrelop@debian.org>, 2004.
 # Andre Luis Lopes <andrelop@debian.org>, 2005.
+# Felipe Augusto van de Wiel (faw) <faw@debian.org>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-18 23:04+0900\n"
-"PO-Revision-Date: 2005-11-22 20:23-0200\n"
-"Last-Translator: Andre Luis Lopes <andrelop@debian.org>\n"
-"Language-Team: Debian-BR <debian-l10n-portuguese@lists.debian.org>\n"
+"PO-Revision-Date: 2008-02-10 00:47-0200\n"
+"Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
+"Language-Team: l10n portuguese <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:358
@@ -30,12 +31,12 @@ msgstr ""
 "Uso:\n"
 "tasksel install <tarefa>\n"
 "tasksel remove <tarefa>\n"
-"tasksel [opções]\n"
-"\t-t --test           modo de teste; não faz nada na verdade\n"
+"tasksel [opÃ§Ãµes]\n"
+"\t-t --test           modo de teste; nÃ£o faz nada na verdade\n"
 "\t   --new-install    instala automaticamente algumas tarefas\n"
 "\t   --list-tasks     lista tarefas que seriam exibidas e finaliza\n"
-"\t   --task-packages  lista pacotes disponíveis em uma tarefa\n"
-"\t   --task-desc      retorna a descrição de uma tarefa\n"
+"\t   --task-packages  lista pacotes disponÃ­veis em uma tarefa\n"
+"\t   --task-desc      retorna a descriÃ§Ã£o de uma tarefa\n"
 
 #: ../tasksel.pl:557 ../tasksel.pl:575 ../tasksel.pl:586
 msgid "aptitude failed"
@@ -44,11 +45,11 @@ msgstr "aptitude falhou"
 #~ msgid ""
 #~ "ignoring other selected packages in favour of manual package selection"
 #~ msgstr ""
-#~ "ignorando outros pacotes selecionados em favor de seleção manual de "
+#~ "ignorando outros pacotes selecionados em favor de seleÃ§Ã£o manual de "
 #~ "pacotes"
 
 #~ msgid "Cannot allocate memory for enumeration buffer"
-#~ msgstr "Não foi possível alocar memória para o buffer de enumeração"
+#~ msgstr "NÃ£o foi possÃ­vel alocar memÃ³ria para o buffer de enumeraÃ§Ã£o"
 
 #~ msgid ""
 #~ "Fatal error encountered at %s:%d\n"
@@ -65,13 +66,13 @@ msgstr "aptitude falhou"
 #~ "\t"
 
 #~ msgid "(no description)"
-#~ msgstr "(sem descrição)"
+#~ msgstr "(sem descriÃ§Ã£o)"
 
 #~ msgid "End-user"
-#~ msgstr "Usuário-final"
+#~ msgstr "UsuÃ¡rio-final"
 
 #~ msgid "Hardware Support"
-#~ msgstr "Suporte à Hardware"
+#~ msgstr "Suporte Ã  Hardware"
 
 #~ msgid "Servers"
 #~ msgstr "Servidores"
@@ -80,28 +81,28 @@ msgstr "aptitude falhou"
 #~ msgstr "Desenvolvimento"
 
 #~ msgid "Localization"
-#~ msgstr "Localização"
+#~ msgstr "LocalizaÃ§Ã£o"
 
 #~ msgid "Miscellaneous"
-#~ msgstr "Miscelânea"
+#~ msgstr "MiscelÃ¢nea"
 
 #~ msgid "Unable to initialize the terminal"
-#~ msgstr "Não foi possível inicializar o terminal"
+#~ msgstr "NÃ£o foi possÃ­vel inicializar o terminal"
 
 #~ msgid "Unable to initialize screen output"
-#~ msgstr "Não foi possível inicializar a tela de saída"
+#~ msgstr "NÃ£o foi possÃ­vel inicializar a tela de saÃ­da"
 
 #~ msgid "Unable to initialize keyboard interface"
-#~ msgstr "Não foi possível inicializar a interface de teclado"
+#~ msgstr "NÃ£o foi possÃ­vel inicializar a interface de teclado"
 
 #~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
-#~ msgstr "Instalador de Tarefas Debian versão %s (c) 1999-2004 SPI e outros"
+#~ msgstr "Instalador de Tarefas Debian versÃ£o %s (c) 1999-2004 SPI e outros"
 
 #~ msgid "^Finish"
 #~ msgstr "^Finalizar"
 
 #~ msgid "Task ^Info"
-#~ msgstr "^Informação de Tarefa"
+#~ msgstr "^InformaÃ§Ã£o de Tarefa"
 
 #~ msgid "^Help"
 #~ msgstr "Ajuda  ^H"
@@ -113,7 +114,7 @@ msgstr "aptitude falhou"
 #~ msgstr "Ok"
 
 #~ msgid "Index out of bounds: %d >= %d"
-#~ msgstr "Índice fora dos limites: %d >= %d"
+#~ msgstr "Ãndice fora dos limites: %d >= %d"
 
 #~ msgid "Help"
 #~ msgstr "Ajuda"
@@ -132,19 +133,19 @@ msgstr "aptitude falhou"
 #~ "\n"
 #~ "Press enter to return to the task selection screen"
 #~ msgstr ""
-#~ "Tarefas permitem que você instale rapidamente uma seleção de pacotes que "
+#~ "Tarefas permitem que vocÃª instale rapidamente uma seleÃ§Ã£o de pacotes que "
 #~ "executam uma determinada tarefa.\n"
 #~ "\n"
-#~ "A lista de escolhas principal exibe uma lista das tarefas que você pode "
-#~ "escolher para instalar. As setas de direção movem o cursor. Pressionar "
-#~ "ENTER ou BARRA DE ESPAÇO marca a seleção da tarefa sob o cursor. Você "
-#~ "pode também pressionar A para selecionar todas as tarefas ou N para "
-#~ "retirar a seleção de todas as tarefas. Pressionar Q encerrará este "
-#~ "programa e iniciará a instalação das tarefas que foram selecionadas.\n"
+#~ "A lista de escolhas principal exibe uma lista das tarefas que vocÃª pode "
+#~ "escolher para instalar. As setas de direÃ§Ã£o movem o cursor. Pressionar "
+#~ "ENTER ou BARRA DE ESPAÃ‡O marca a seleÃ§Ã£o da tarefa sob o cursor. VocÃª "
+#~ "pode tambÃ©m pressionar A para selecionar todas as tarefas ou N para "
+#~ "retirar a seleÃ§Ã£o de todas as tarefas. Pressionar Q encerrarÃ¡ este "
+#~ "programa e iniciarÃ¡ a instalaÃ§Ã£o das tarefas que foram selecionadas.\n"
 #~ "\n"
 #~ "Obrigado por usar o Debian.\n"
 #~ "\n"
-#~ "Pressione ENTER para retornar a tela de seleção de tarefas."
+#~ "Pressione ENTER para retornar a tela de seleÃ§Ã£o de tarefas."
 
 #~ msgid ""
 #~ "Description:\n"
@@ -152,13 +153,13 @@ msgstr "aptitude falhou"
 #~ "\n"
 #~ "Included packages:\n"
 #~ msgstr ""
-#~ "Descrição:\n"
+#~ "DescriÃ§Ã£o:\n"
 #~ "%s\n"
 #~ "\n"
-#~ "Pacotes incluídos:\n"
+#~ "Pacotes incluÃ­dos:\n"
 
 #~ msgid "(no description available)"
-#~ msgstr "(sem descrição disponível)"
+#~ msgstr "(sem descriÃ§Ã£o disponÃ­vel)"
 
 #~ msgid "Unknown signal seen"
 #~ msgstr "Visualizado sinal desconhecido"
@@ -167,16 +168,16 @@ msgstr "aptitude falhou"
 #~ msgstr "tasksel install <tarefa>\n"
 
 #~ msgid "tasksel [options]; where options is any combination of:\n"
-#~ msgstr "tasksel [opções]; onde opções é uma combinação de:\n"
+#~ msgstr "tasksel [opÃ§Ãµes]; onde opÃ§Ãµes Ã© uma combinaÃ§Ã£o de:\n"
 
 #~ msgid "-t -- test mode; don't actually run apt-get on exit"
-#~ msgstr "-t -- modo de teste; atualmente não executa apt-get na saída"
+#~ msgstr "-t -- modo de teste; atualmente nÃ£o executa apt-get na saÃ­da"
 
 #~ msgid ""
 #~ "-q -- queue installs; do not install packages with apt-get;\n"
 #~ "\t\tjust queue them in dpkg"
 #~ msgstr ""
-#~ "-q -- coloca instalações na fila; não instala pacotes com apt-get;\n"
+#~ "-q -- coloca instalaÃ§Ãµes na fila; nÃ£o instala pacotes com apt-get;\n"
 #~ "\t\tsomente os coloca na fila no dpkg"
 
 #~ msgid "-r -- install all required-priority packages"
@@ -186,15 +187,15 @@ msgstr "aptitude falhou"
 #~ msgstr "-i -- instala todos os pacotes com prioridade importante"
 
 #~ msgid "-s -- install all standard-priority packages"
-#~ msgstr "-s -- instala todos os pacotes com prioridade padrão"
+#~ msgstr "-s -- instala todos os pacotes com prioridade padrÃ£o"
 
 #~ msgid "-n -- don't show UI; use with -r or -i usually"
 #~ msgstr ""
-#~ "-n -- nãe exibe a interface de usuário (UI); usado normalmente com -r ou -"
+#~ "-n -- nÃ£e exibe a interface de usuÃ¡rio (UI); usado normalmente com -r ou -"
 #~ "i"
 
 #~ msgid "-a -- show all tasks, even those with no packages in them"
-#~ msgstr "-a -- exibe todas as tarefas; mesmo aquelas que não contém pacotes"
+#~ msgstr "-a -- exibe todas as tarefas; mesmo aquelas que nÃ£o contÃ©m pacotes"
 
 #~ msgid "No packages selected\n"
 #~ msgstr "Nenhum pacote selecionado\n"
@@ -203,13 +204,13 @@ msgstr "aptitude falhou"
 #~ msgstr "Nenhuma tarefa encontrada neste sistema.\n"
 
 #~ msgid "Cannot allocate memory for strdup"
-#~ msgstr "Não foi possível alocar memória para strdup"
+#~ msgstr "NÃ£o foi possÃ­vel alocar memÃ³ria para strdup"
 
 #~ msgid "Cannot allocate %d bytes of memory"
-#~ msgstr "Não foi possível alocar %d bytes de memória"
+#~ msgstr "NÃ£o foi possÃ­vel alocar %d bytes de memÃ³ria"
 
 #~ msgid "Cannot reallocate %d bytes of memory"
-#~ msgstr "Não foi possível realocar %d bytes de memória"
+#~ msgstr "NÃ£o foi possÃ­vel realocar %d bytes de memÃ³ria"
 
 #, fuzzy
 #~ msgid ""
@@ -217,7 +218,7 @@ msgstr "aptitude falhou"
 #~ "Did you update your available file? Try running dselect update.\n"
 #~ msgstr ""
 #~ "Nenhuma tarefa encontrada neste sistema.\n"
-#~ "Você atualizou seu arquivo de tarefas disponíveis ?\n"
+#~ "VocÃª atualizou seu arquivo de tarefas disponÃ­veis ?\n"
 
 #~ msgid "Package: "
 #~ msgstr "Pacote:"
@@ -235,13 +236,13 @@ msgstr "aptitude falhou"
 #~ msgstr "Sugere:"
 
 #~ msgid "Description: "
-#~ msgstr "Descrição:"
+#~ msgstr "DescriÃ§Ã£o:"
 
 #~ msgid "Priority: "
 #~ msgstr "Prioridade:"
 
 #~ msgid "Section: "
-#~ msgstr "Seção:"
+#~ msgstr "SeÃ§Ã£o:"
 
 #~ msgid "Status: "
 #~ msgstr "Estado:"
@@ -256,13 +257,13 @@ msgstr "aptitude falhou"
 #~ msgstr ","
 
 #~ msgid "W: duplicate task info for %s\n"
-#~ msgstr "W: informação duplicada de tarefa para %s\n"
+#~ msgstr "W: informaÃ§Ã£o duplicada de tarefa para %s\n"
 
 #~ msgid "Task %s [%s]:\n"
 #~ msgstr "Tarefa %s [%s]:\n"
 
 #~ msgid "misc"
-#~ msgstr "miscelânea"
+#~ msgstr "miscelÃ¢nea"
 
 #~ msgid "  %s\n"
 #~ msgstr "  %s\n"
@@ -280,7 +281,7 @@ msgstr "aptitude falhou"
 #~ msgstr "importante"
 
 #~ msgid "standard"
-#~ msgstr "padrão"
+#~ msgstr "padrÃ£o"
 
 #~ msgid "optional"
 #~ msgstr "opcional"
@@ -295,7 +296,7 @@ msgstr "aptitude falhou"
 #~ msgstr "lixo"
 
 #~ msgid "user"
-#~ msgstr "usuário"
+#~ msgstr "usuÃ¡rio"
 
 #~ msgid "server"
 #~ msgstr "servidor"
@@ -376,7 +377,7 @@ msgstr "aptitude falhou"
 #~ msgstr "w"
 
 #~ msgid "Cannot send output to dpkg"
-#~ msgstr "Não foi possível enviar a saída ao dpkg"
+#~ msgstr "NÃ£o foi possÃ­vel enviar a saÃ­da ao dpkg"
 
 #~ msgid "%s install\n"
 #~ msgstr "%s instalar\n"
@@ -391,7 +392,7 @@ msgstr "aptitude falhou"
 #~ msgstr "instalar"
 
 #~ msgid "E: %s: no such task\n"
-#~ msgstr "E: %s: tarefa não existente\n"
+#~ msgstr "E: %s: tarefa nÃ£o existente\n"
 
 #~ msgid "Attempting to allocate 0 bytes!"
 #~ msgstr "Tentativa de alocar 0 bytes!"
@@ -400,4 +401,4 @@ msgstr "aptitude falhou"
 #~ msgstr "Tentative de dereferenciar um ponteiro NULL"
 
 #~ msgid "Outstanding mallocs : %d\n"
-#~ msgstr "Alocações de memória consideráveis: %d\n"
+#~ msgstr "AlocaÃ§Ãµes de memÃ³ria considerÃ¡veis: %d\n"
