@@ -20,6 +20,11 @@ tasksel (2.72) UNRELEASED; urgency=low
   * Switch grome-desktop from gnome-btdownload to transmission-gtk.
     Closes: #463844
 
+  [ Otavio Salvador ]
+  * Change laptop-detect from a dependency to a recommendation. It will be
+    installed by d-i on specific architectures.
+  * Change desktop test to avoid testing twice if dmidecode is executable.
+
  -- Bart Cornelis (cobaco) <cobaco@linux.be>  Sat, 12 Jan 2008 18:00:12 +0100
 
 tasksel (2.71) unstable; urgency=low

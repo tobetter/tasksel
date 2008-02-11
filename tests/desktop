@@ -69,7 +69,8 @@ enough_disk () {
 }
 
 desktop_hardware () {
-	if laptop-detect; then
+	if which laptop-detect >/dev/null && \
+		laptop-detect; then
 		# Nearly always appropriate to include a desktop.
 		return 0
 	else
@@ -82,7 +83,7 @@ desktop_hardware () {
 }
 
 rack_hardware () {
-	if [ -x "`which dmidecode 2>/dev/null`" ] && \
+	if which dmidecode >/dev/null && \
 		dmidecode | grep -q 'Type: Rack Mount Chassis'; then
 		return 0
 	fi
