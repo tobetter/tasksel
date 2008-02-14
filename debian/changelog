@@ -1,3 +1,12 @@
+tasksel (2.73) UNRELEASED; urgency=high
+
+  * Revert r2034: "Remove discover1 and xresprobe from the desktop
+    task. These are no longer used by xorg 1:7.3+10. Hallelujah!" until
+    xorg is ready to go to testing and it shouldn't happen in time for
+    Debian Installer Lenny Beta1.
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 14 Feb 2008 09:29:14 -0200
+
 tasksel (2.72) unstable; urgency=medium
 
   [ Joey Hess ]
