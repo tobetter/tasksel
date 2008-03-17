@@ -14,6 +14,11 @@ Packages-list:
  apmd
  acpi
  acpi-support
+# nvclock and toshset are Recommended by acpi-support, but should be installed
+# by the laptop task because they are needed to make nv and toshset laptops
+# "just work".
+ nvclock
+ toshset
  pcmciautils
  wireless-tools
  wpasupplicant
