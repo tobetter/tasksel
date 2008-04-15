@@ -49,6 +49,9 @@ Packages-list:
   anacron
 # The following packages are the same as the packages in the print-server
 # task and provide printing via CUPS.
+  cupsys
+  cupsys-client
+  cupsys-bsd
   foomatic-db-engine
   foomatic-db-hpijs
   foomatic-filters-ppds
@@ -56,10 +59,9 @@ Packages-list:
   cupsys-driver-gutenprint
   printconf
   hpijs
+  hpijs-ppds
   hplip
-  cupsys
-  cupsys-client
-  cupsys-bsd
+  hp-ppd
   foo2zjs
 # CPU frequency scaling
   cpufrequtils
