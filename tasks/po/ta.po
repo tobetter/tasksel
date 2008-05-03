@@ -1,4 +1,4 @@
-# translation of ta.po to TAMIL
+# translation of ta.po to Tamil
 #  package name tasksel_tasks_po
 #  Tamil messages for debian-installer.
 #  Copyright (C) 2003 Software in the Public Interest, Inc.
@@ -6,15 +6,15 @@
 #
 #  Senthil Kumar B <senthilb@cdac.in> ,2006.
 #  Senthil Kumar B ,senthilb@cdac.in> ,2007.
-# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-11 21:37-0500\n"
-"PO-Revision-Date: 2007-08-17 16:54+0530\n"
+"PO-Revision-Date: 2008-05-03 20:57+0530\n"
 "Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
-"Language-Team: TAMIL <ubuntu-l10n-tam@lists.ubuntu.com>\n"
+"Language-Team: Tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,14 +22,12 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:1001
-#, fuzzy
 #| msgid "Arabic environment"
 msgid "Amharic environment"
-msgstr "அரபிக் சூழல்"
+msgstr "அம்ஹரிக் சூழல்"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
-#, fuzzy
 #| msgid ""
 #| "This task installs programs, data files, fonts, and documentation that "
 #| "makes it easier for Arabic speakers to use Debian."
@@ -37,22 +35,20 @@ msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Amharic speakers to use Debian."
 msgstr ""
-"நிரல், கோப்பு விவரம், எழத்துருக்கள் மற்றும் அறிக்கை ஆகியவற்றை நிறுவும், இது அரபிய மொழி "
+"இப்பணி நிரல், கோப்பு விவரம், எழத்துருக்கள் மற்றும் அறிக்கை ஆகியவற்றை நிறுவும், இது அம்ஹரிக் மொழி "
 "பேசுபவர்களுக்கு டெபியன் ( debian) பயன்பாட்டினை எளிதாக்கும்"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
 #| msgid "Arabic desktop"
 msgid "Amharic desktop"
-msgstr "அரபிக் மேஜை"
+msgstr "அம்ஹரிக் மேஜை"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
 #| msgid "This task localises the desktop in Arabic."
 msgid "This task localises the desktop in Amharic."
-msgstr "இது மேஜையை அரபிய மொழியில் உள்ளாக்கம் செய்யும்"
+msgstr "இது மேஜையை அம்ஹரிக் மொழியில் உள்ளாக்கம் செய்யும்"
 
 #. Description
 #: ../po/debian-tasks.desc:3001
@@ -184,8 +180,7 @@ msgstr "ப்ரெஸிலியன் போர்ச்சுகீஸ்( 
 #. Description
 #: ../po/debian-tasks.desc:13001
 msgid "This task localises the desktop in Brasilian Portuguese."
-msgstr ""
-"இது மேஜையை ப்ரெஸிலியன் போர்ச்சுகீஸ்( Brazilian Portuguese) மொழியில் உள்ளாக்கம் செய்யும்"
+msgstr "இது மேஜையை ப்ரெஸிலியன் போர்ச்சுகீஸ்( Brazilian Portuguese) மொழியில் உள்ளாக்கம் செய்யும்"
 
 #. Description
 #: ../po/debian-tasks.desc:14001
@@ -310,8 +305,7 @@ msgstr "பாரம்பரிய சைனிஸ் (Traditional Chinese) ம
 #. Description
 #: ../po/debian-tasks.desc:23001
 msgid "This task localises the desktop in Traditional Chinese."
-msgstr ""
-"இது மேஜையை  பாரம்பரிய சைனிஸ் (Traditional Chinese)  மொழியில் உள்ளாக்கம் செய்யும்"
+msgstr "இது மேஜையை  பாரம்பரிய சைனிஸ் (Traditional Chinese)  மொழியில் உள்ளாக்கம் செய்யும்"
 
 #. Description
 #: ../po/debian-tasks.desc:24001
@@ -424,8 +418,7 @@ msgstr "SQL தரவுத்தளம்"
 
 #. Description
 #: ../po/debian-tasks.desc:32001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
 "பொஸ்ட்க்ரே SQL (PostgreSQL) தரவுதளத்திற்காக ஆதரவாளர் மற்றும் சேவையக கட்டுகளை "
 "தேர்ந்தெடுக்க"
@@ -464,8 +457,7 @@ msgstr "DNS சேவையகம்"
 
 #. Description
 #: ../po/debian-tasks.desc:34001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
 "BIND DNS சேவையகம் மற்றும் தொடர்புபான அறிக்கைகள் மற்றும் பயன்படுத்த கூடிய(utility) "
 "கட்டுகளை தேர்ந்தெடுக்க"
@@ -1027,8 +1019,7 @@ msgstr "அஞ்சல் சேவையகம்"
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
-msgstr ""
-"இங்கு தேர்ந்தெடுக்கிற வகையான கட்டுகள் பொது வலைச் சேவையக அமைப்பிற்காக பயன்படுகிறது"
+msgstr "இங்கு தேர்ந்தெடுக்கிற வகையான கட்டுகள் பொது வலைச் சேவையக அமைப்பிற்காக பயன்படுகிறது"
 
 #. Description
 #: ../po/debian-tasks.desc:82001
@@ -1509,8 +1500,7 @@ msgstr "வலைச் சேவையகம்"
 
 #. Description
 #: ../po/debian-tasks.desc:122001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
+msgid "This task selects packages useful for a general purpose web server system."
 msgstr "இங்கு தேர்ந்தெடுக்கிற கட்டுகள் பொது வலைச் சேவையக அமைப்பிற்காக பயன்படுகிறது"
 
 #. Description
@@ -1560,3 +1550,4 @@ msgstr "எக்ஸ்ஹொஸ (Xhosa) மேஜை "
 #: ../po/debian-tasks.desc:126001
 msgid "This task localises the desktop in Xhosa."
 msgstr "இது மேஜையை எக்ஸ்ஹொஸ (Xhosa) மொழியில் உள்ளாக்கம் செய்யும்"
+
