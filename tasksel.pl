@@ -532,7 +532,6 @@ sub main {
 				next;
 			}
 
-			my @deps=list_to_tasks($task->{enhances}, @tasks);
 			if (@deps) {
 				my $orig_state=$task->{_install};
 
