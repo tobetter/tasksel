@@ -31,6 +31,8 @@ tasksel (2.74) UNRELEASED; urgency=low
   * Fix enhances handling in the case where a task enhances another
     task that is not available, or not installable. The enhancing task 
     should not be installed in this case. Closes:# 481255
+  * Move all packages out of Key for the korean task. It should be installed
+    even if some are unavailable.
 
  -- Jacobo Tarrio <jtarrio@debian.org>  Sun, 02 Mar 2008 23:57:54 +0000
 
