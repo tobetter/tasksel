@@ -27,6 +27,11 @@ tasksel (2.74) UNRELEASED; urgency=low
   [ Eddy Petri?or ]
   * added iceweasel-l10n-ro to the romanian-desktop task
 
+  [ Joey Hess ]
+  * Fix enhances handling in the case where a task enhances another
+    task that is not available, or not installable. The enhancing task 
+    should not be installed in this case. Closes:# 481255
+
  -- Jacobo Tarrio <jtarrio@debian.org>  Sun, 02 Mar 2008 23:57:54 +0000
 
 tasksel (2.73) unstable; urgency=high

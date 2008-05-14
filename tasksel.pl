@@ -523,6 +523,15 @@ sub main {
 		$enhances_needswork=0;
 		foreach my $task (grep { ! $_->{_install} && exists $_->{enhances} &&
 		                         length $_->{enhances} } @tasks) {
+			my %tasknames = map { $_->{task} => $_ } @tasks;
+			my @deps=map { $tasknames{$_} } split ", ", $task->{enhances};
+
+			if (grep { $_ eq undef } @deps) {
+				# task enhances an unavailable or
+				# uninstallable task
+				next;
+			}
+
 			my @deps=list_to_tasks($task->{enhances}, @tasks);
 			if (@deps) {
 				my $orig_state=$task->{_install};
