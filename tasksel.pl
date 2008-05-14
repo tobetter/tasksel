@@ -516,9 +516,10 @@ sub main {
 
 	# Select enhancing tasks for install.
 	# XXX FIXME ugly hack -- loop until enhances settle to handle
-	# chained enhances. This is sloow and could loop forever if
+	# chained enhances. This is ugly and could loop forever if
 	# there's a cycle.
 	my $enhances_needswork=1;
+	my %tested;
 	while ($enhances_needswork) {
 		$enhances_needswork=0;
 		foreach my $task (grep { ! $_->{_install} && exists $_->{enhances} &&
@@ -526,7 +527,7 @@ sub main {
 			my %tasknames = map { $_->{task} => $_ } @tasks;
 			my @deps=map { $tasknames{$_} } split ", ", $task->{enhances};
 
-			if (grep { $_ eq undef } @deps) {
+			if (grep { ! defined $_ } @deps) {
 				# task enhances an unavailable or
 				# uninstallable task
 				next;
@@ -538,9 +539,16 @@ sub main {
 				# Mark enhancing tasks for install if their
 				# dependencies are met and their test fields
 				# mark them for install.
-				$ENV{TESTING_ENHANCER}=1;
-				task_test($task, $options{"new-install"}, 0, 1);
-				delete $ENV{TESTING_ENHANCER};
+				if (! exists $tested{$task->{task}}) {
+					$ENV{TESTING_ENHANCER}=1;
+					task_test($task, $options{"new-install"}, 0, 1);
+					delete $ENV{TESTING_ENHANCER};
+					$tested{$task->{task}}=$task->{_install};
+				}
+				else {
+					$task->{_install}=$tested{$task->{task}};
+				}
+
 				foreach my $dep (@deps) {
 					if (! $dep->{_install}) {
 						$task->{_install} = 0;
