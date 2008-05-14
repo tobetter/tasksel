@@ -7,7 +7,6 @@ Description: Japanese desktop
 Key:
 Packages: task-fields
 Packages-list:
- kde-i18n-ja
  iceweasel-l10n-ja
  doc-linux-ja-html
  ttf-sazanami-gothic
@@ -18,6 +17,3 @@ Packages-list:
  anthy
  openoffice.org-l10n-ja
  openoffice.org-help-ja
- # evolution has a problem for Japanese, for example it uses always UTF-8 subject instead of iso-2022-jp used Japanese de-facto. I recommend icedove as default mailer for Japanese desktop users.
- icedove
- icedove-l10n-ja

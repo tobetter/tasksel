@@ -1,0 +1,14 @@
+Task: japanese-gnome-desktop
+Enhances: gnome-desktop, japanese
+Section: l10n
+Description: Japanese GNOME desktop
+ This task localises the GNOME desktop in Japanese.
+Key:
+Packages: task-fields
+Packages-list:
+ uim-applet-gnome
+ # evolution has a problem for Japanese, for example it uses always UTF-8
+ # subject instead of iso-2022-jp used Japanese de-facto. I recommend
+ # icedove as default mailer for Japanese desktop users.
+ icedove
+ icedove-l10n-ja
