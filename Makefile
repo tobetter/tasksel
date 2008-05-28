@@ -48,8 +48,7 @@ install:
 
 install-data:
 	install -d $(DESTDIR)$(TASKDIR) \
-		$(DESTDIR)/usr/lib/tasksel/tests \
-		$(DESTDIR)/usr/lib/tasksel/packages
+		$(DESTDIR)/usr/lib/tasksel/tests
 	install -m 0644 $(TASKDESC) $(DESTDIR)$(TASKDIR)
 	for test in tests/*; do \
 		[ "$$test" = "tests/new-install" ] && continue; \

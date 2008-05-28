@@ -8,6 +8,7 @@ tasksel (2.75) UNRELEASED; urgency=low
     - Removed commit target from rules file. (Doubt anyone uses it.)
     - DEBUG=0 has no effect when building anymore, removed that from rules
       file.
+  * Drop empty /usr/lib/tasksel/packages from tasksel-data.
 
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 
