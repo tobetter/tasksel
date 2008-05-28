@@ -4,6 +4,10 @@ tasksel (2.75) UNRELEASED; urgency=low
   * Add uim-applet-{kde,gnome} to the japanese desktop tasks, as
     Kenshi suggests.
   * Add libgl1-mesa-dri to the desktop task. Closes: #481464
+  * Use debhelper v7; rules file simplification.
+    - Removed commit target from rules file. (Doubt anyone uses it.)
+    - DEBUG=0 has no effect when building anymore, removed that from rules
+      file.
 
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 

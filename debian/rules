@@ -1,60 +1,18 @@
 #!/usr/bin/make -f
+%:
+	dh $@
 
 VERSION=$(shell LC_ALL=C dpkg-parsechangelog | grep ^Version: | cut -d ' ' -f 2)
 TARNAME=task-overrides_$(VERSION)_all.tar.gz
 
-commit: commit-stamp
-commit-stamp:
-	dh_testdir
-	svn commit
-	touch commit-stamp
-
-build: build-stamp
-build-stamp: 
-	dh_testdir
-	$(MAKE) DEBUG=0
-	touch build-stamp
-
-clean:
-	dh_testdir
-	dh_testroot
-	rm -f build-stamp install-stamp commit-stamp
-	$(MAKE) clean
-	dh_clean
-
-install: install-stamp
-install-stamp: build-stamp
-	dh_testdir
-	dh_testroot
-	dh_clean -k
-	dh_installdirs
+binary-indep:
+	dh $@ --before dh_auto_install
 	$(MAKE) install DESTDIR=`pwd`/debian/tasksel
 	$(MAKE) install-data DESTDIR=`pwd`/debian/tasksel-data
-	touch install-stamp
-
-binary-arch: build install
-
-binary-indep: build install
-	dh_testdir
-	dh_testroot
-	dh_installdocs TODO README
-	dh_installmenu
-	dh_installman
-	dh_installchangelogs
-	dh_link
-	dh_strip
-	dh_compress
-	dh_installdebconf
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
+	dh $@ --after dh_auto_install
 
 	# Add tarball with overrides file for byhand processing
 	cd debian/external-overrides && tar czvf ../../../$(TARNAME) .
 	dpkg-distaddfile $(TARNAME) byhand -
 
-
 binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install
