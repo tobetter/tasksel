@@ -8,7 +8,7 @@ LANGS=ar bg bn bs ca cs cy da de dz el eo es et eu fa fi fr gl gu he hi hr hu hy
 LANGS_DESC=ar bg bn bs ca cs cy da de dz el eo es et et eu fi fr gl gu he hi hr hu id it ja km ko lt lv mg mk nb ne nl nn pa pl pt_BR pt ro ru sk sl sq sv th tl tr uk vi wo zh_CN zh_TW
 LOCALEDIR=$(DESTDIR)/usr/share/locale
 
-all: $(TASKDESC) $(DESCPO)/build_stamp po/build_stamp
+all: $(TASKDESC) $(DESCPO)/build_stamp po/build_stamp override
 
 $(TASKDESC): makedesc.pl $(DESCDIR)/[a-z]??*
 	./doincludes.pl $(DESCDIR)
@@ -68,12 +68,11 @@ install-data:
 
 clean:
 	rm -f $(TASKDESC) *~
+	rm -rf debian/external-overrides
 	$(MAKE) -C po clean
 	$(MAKE) -C $(DESCPO) clean
 
 # This taget is run to generate the overrides files.
-# It is run from a cron job, so should only generate output if there are
-# problems.
 override:
-	@svn up tasks 2>&1 | grep -v ^U | grep -v "At revision" || true
-	@./makeoverride.pl $(DESCDIR) > external-overrides-task
+	@mkdir -p debian/external-overrides
+	@./makeoverride.pl $(DESCDIR) > debian/external-overrides/task
