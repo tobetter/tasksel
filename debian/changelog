@@ -12,6 +12,14 @@ tasksel (2.75) UNRELEASED; urgency=low
 
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 
+tasksel (2.74.2) unstable; urgency=medium
+
+  * Fix two perl warnings. Closes: #483469
+  * Memoize expensive test in enhances calculation.
+  * Medium urgency for b2.
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 29 May 2008 23:46:39 -0400
+
 tasksel (2.74.1) unstable; urgency=low
 
   [ Frans Pop ]
