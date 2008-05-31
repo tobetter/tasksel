@@ -24,7 +24,7 @@ find(\&processfile, $dir);
 sub processfile {
 	my $file=$_; # File::Find craziness.
 	$file eq 'po' && -d $file && ($File::Find::prune = 1);
-	return if $File::Find::dir=~/\.svn/;
+	return if $File::Find::dir=~/\.(svn|git)/;
 	return unless $file =~ /^[-+_.a-z0-9]+$/ and -f $file;
 	open (IN, $file) or die "$file: $!";
 	my %fields;
