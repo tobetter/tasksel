@@ -18,6 +18,8 @@ tasksel (2.75) UNRELEASED; urgency=low
   * system-config-printer also superscedes foomatic-gui in gnome-desktop.
   * Add gnome-games, used to be pulled in by g-d-e, but no longer, and we
     definitly want it.
+  * Add libpam-gnome-keyring to gnome desktop, following lead of the gnome
+    package.
 
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 
