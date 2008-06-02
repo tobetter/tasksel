@@ -16,6 +16,8 @@ tasksel (2.75) UNRELEASED; urgency=low
   * Swap out gnome-cups-manager for system-config-printer, following
     the lead of the gnome package.
   * system-config-printer also superscedes foomatic-gui in gnome-desktop.
+  * Add gnome-games, used to be pulled in by g-d-e, but no longer, and we
+    definitly want it.
 
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 
