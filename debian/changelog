@@ -22,6 +22,8 @@ tasksel (2.75) UNRELEASED; urgency=low
     package.
   * Add back gstreamer0.10-plugins-ugly since totem is back to using
     gstreamer.
+  * Remove gnomebaker. Add serpentine to handle audio CD burning. Joss says
+    that data CD burning can be handled by nautilus-cd-burner.
 
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 
