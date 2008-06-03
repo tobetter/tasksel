@@ -14,11 +14,6 @@ Key:
 # firefox (ne iceweasel) is the most popular web browser at the moment,
 # although both gnome and kde offer their own too
   iceweasel
-# sound
-  alsa-utils
-  alsa-base
-# Make sure that CDs etc can be ejected. May not be installed by d-i.
-  eject
 Packages: task-fields
 Packages-list:
   hotkey-setup
@@ -69,3 +64,8 @@ Packages-list:
   kerneloops
 # 3d accelleration (with free drivers)
   libgl1-mesa-dri
+# Make sure that CDs etc can be ejected. May not be installed by d-i.
+  eject
+# sound
+  alsa-utils
+  alsa-base
