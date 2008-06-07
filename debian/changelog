@@ -29,6 +29,9 @@ tasksel (2.75) UNRELEASED; urgency=low
   [ Kenshi Muto ]
   * Move jfbterm and unifont packages out of Key for the japanese task.
 
+  [ Christian Perrier ]
+  * No longer install console-cyrillic in the cyrillic task. Closes: #484748
+
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 
 tasksel (2.74.2) unstable; urgency=medium
