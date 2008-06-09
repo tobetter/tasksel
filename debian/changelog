@@ -45,6 +45,11 @@ tasksel (2.75) UNRELEASED; urgency=low
   [ Translations of tasks ]
   * Japanese updated
 
+  [ Joey Hess ]
+  * Move myspell from base language to lang-desktop tasks, as it is used by
+    gui programs. (hunspell left in base language tasks as it can be used at
+    the console.)
+
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 
 tasksel (2.74.2) unstable; urgency=medium
