@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the tasksel_tasks package.
 # Phan Vinh Thinh <teppi@vnoss.org>, 2005.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2008.
-# 
+#
 msgid ""
-""
-msgstr "Project-Id-Version: tasksel tasks\n"
+msgstr ""
+"Project-Id-Version: tasksel tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-11 21:37-0500\n"
+"POT-Creation-Date: 2008-06-09 16:26-0400\n"
 "PO-Revision-Date: 2008-01-28 21:28+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -18,1458 +18,2915 @@ msgstr "Project-Id-Version: tasksel tasks\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.7b1\n"
 
-#.Description
+#. Description
 #: ../po/debian-tasks.desc:1001
 msgid "Amharic environment"
 msgstr "Môi trường Am-ha-ríc"
 
-#.Description
+#. Description
 #: ../po/debian-tasks.desc:1001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Amharic speakers to use Debian."
-msgstr "Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng nói tiếng Am-ha-ríc sử dụng Debian dễ dàng hơn."
 
-#.Description
+#. Description
 #: ../po/debian-tasks.desc:2001
 msgid "Amharic desktop"
 msgstr "Màn hình nền Am-ha-ríc"
 
-#.Description
+#. Description
 #: ../po/debian-tasks.desc:2001
 msgid "This task localises the desktop in Amharic."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Am-ha-ríc."
 
-#.Description
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:3001 ../po/debian-tasks.desc:4001
+#, fuzzy
+#| msgid "Amharic desktop"
+msgid "Amharic GNOME desktop"
+msgstr "Màn hình nền Am-ha-ríc"
+
+#. Description
 #: ../po/debian-tasks.desc:3001
+#, fuzzy
+#| msgid "This task localises the desktop in Amharic."
+msgid "This task localises the GNOME desktop in Amharic."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Am-ha-ríc."
+
+#. Description
+#: ../po/debian-tasks.desc:4001
+#, fuzzy
+#| msgid "This task localises the desktop in Amharic."
+msgid "This task localises the KDE desktop in Amharic."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Am-ha-ríc."
+
+#. Description
+#: ../po/debian-tasks.desc:5001
 msgid "Arabic environment"
 msgstr "Môi trường A Rập"
 
-#.Description
-#: ../po/debian-tasks.desc:3001
+#. Description
+#: ../po/debian-tasks.desc:5001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Arabic speakers to use Debian."
-msgstr "Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng nói tiếng A Rập sử dụng Debian dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:4001
+#. Description
+#: ../po/debian-tasks.desc:6001
 msgid "Arabic desktop"
 msgstr "Màn hình nền A-rập"
 
-#.Description
-#: ../po/debian-tasks.desc:4001
+#. Description
+#: ../po/debian-tasks.desc:6001
 msgid "This task localises the desktop in Arabic."
 msgstr "Công việc này giúp hiển thị giao diện tiếng A-rập."
 
-#.Description
-#: ../po/debian-tasks.desc:5001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:7001 ../po/debian-tasks.desc:8001
+#, fuzzy
+#| msgid "Arabic desktop"
+msgid "Arabic GNOME desktop"
+msgstr "Màn hình nền A-rập"
+
+#. Description
+#: ../po/debian-tasks.desc:7001
+#, fuzzy
+#| msgid "This task localises the desktop in Arabic."
+msgid "This task localises the GNOME desktop in Arabic."
+msgstr "Công việc này giúp hiển thị giao diện tiếng A-rập."
+
+#. Description
+#: ../po/debian-tasks.desc:8001
+#, fuzzy
+#| msgid "This task localises the desktop in Arabic."
+msgid "This task localises the KDE desktop in Arabic."
+msgstr "Công việc này giúp hiển thị giao diện tiếng A-rập."
+
+#. Description
+#: ../po/debian-tasks.desc:9001
 msgid "Basque desktop"
 msgstr "Màn hình nền Ba-x-quợ"
 
-#.Description
-#: ../po/debian-tasks.desc:5001
+#. Description
+#: ../po/debian-tasks.desc:9001
 msgid "This task localises the desktop in Basque."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ba-x-quợ."
 
-#.Description
-#: ../po/debian-tasks.desc:6001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:10001 ../po/debian-tasks.desc:11001
+#, fuzzy
+#| msgid "Basque desktop"
+msgid "Basque GNOME desktop"
+msgstr "Màn hình nền Ba-x-quợ"
+
+#. Description
+#: ../po/debian-tasks.desc:10001
+#, fuzzy
+#| msgid "This task localises the desktop in Basque."
+msgid "This task localises the GNOME desktop in Basque."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ba-x-quợ."
+
+#. Description
+#: ../po/debian-tasks.desc:11001
+#, fuzzy
+#| msgid "This task localises the desktop in Basque."
+msgid "This task localises the KDE desktop in Basque."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ba-x-quợ."
+
+#. Description
+#: ../po/debian-tasks.desc:12001
 msgid "Belarusian environment"
 msgstr "Môi trường Be-la-ru-xợ"
 
-#.Description
-#: ../po/debian-tasks.desc:6001
+#. Description
+#: ../po/debian-tasks.desc:12001
 msgid ""
 "This task installs packages and documentation in Belarusian to help "
 "Belarusian speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Be-la-ru-xợ giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Be-la-ru-xợ giúp "
 "người dùng Debian nói tiếng Be-la-ru-xợ."
 
-#.Description
-#: ../po/debian-tasks.desc:7001
+#. Description
+#: ../po/debian-tasks.desc:13001
 msgid "Belarusian desktop"
 msgstr "Màn hình nền Be-la-ru-xợ"
 
-#.Description
-#: ../po/debian-tasks.desc:7001
+#. Description
+#: ../po/debian-tasks.desc:13001
 msgid "This task localises the desktop in Belarusian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Be-la-ru-xợ."
 
-#.Description
-#: ../po/debian-tasks.desc:8001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:14001 ../po/debian-tasks.desc:15001
+#, fuzzy
+#| msgid "Belarusian desktop"
+msgid "Belarusian GNOME desktop"
+msgstr "Màn hình nền Be-la-ru-xợ"
+
+#. Description
+#: ../po/debian-tasks.desc:14001
+#, fuzzy
+#| msgid "This task localises the desktop in Belarusian."
+msgid "This task localises the GNOME desktop in Belarusian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Be-la-ru-xợ."
+
+#. Description
+#: ../po/debian-tasks.desc:15001
+#, fuzzy
+#| msgid "This task localises the desktop in Belarusian."
+msgid "This task localises the KDE desktop in Belarusian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Be-la-ru-xợ."
+
+#. Description
+#: ../po/debian-tasks.desc:16001
 msgid "Bengali environment"
 msgstr "Môi trường Băng-gan"
 
-#.Description
-#: ../po/debian-tasks.desc:8001
+#. Description
+#: ../po/debian-tasks.desc:16001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Bengali speakers to use Debian."
-msgstr "Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng nói tiếng Băng-gan sử dụng Debian dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:9001
+#. Description
+#: ../po/debian-tasks.desc:17001
 msgid "Bengali desktop"
 msgstr "Màn hình nền Băng-gan"
 
-#.Description
-#: ../po/debian-tasks.desc:9001
+#. Description
+#: ../po/debian-tasks.desc:17001
 msgid "This task localises the desktop in Bengali."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Băng-gan."
 
-#.Description
-#: ../po/debian-tasks.desc:10001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:18001 ../po/debian-tasks.desc:19001
+#, fuzzy
+#| msgid "Bengali desktop"
+msgid "Bengali GNOME desktop"
+msgstr "Màn hình nền Băng-gan"
+
+#. Description
+#: ../po/debian-tasks.desc:18001
+#, fuzzy
+#| msgid "This task localises the desktop in Bengali."
+msgid "This task localises the GNOME desktop in Bengali."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Băng-gan."
+
+#. Description
+#: ../po/debian-tasks.desc:19001
+#, fuzzy
+#| msgid "This task localises the desktop in Bengali."
+msgid "This task localises the KDE desktop in Bengali."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Băng-gan."
+
+#. Description
+#: ../po/debian-tasks.desc:20001
 msgid "Bosnian environment"
 msgstr "Môi trường Bo-x-ni-a"
 
-#.Description
-#: ../po/debian-tasks.desc:10001
+#. Description
+#: ../po/debian-tasks.desc:20001
 msgid ""
 "This task installs packages and documentation in Bosnian to help Bosnian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Bo-x-ni-a giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Bo-x-ni-a giúp "
 "người dùng Debian nói tiếng Bo-x-ni-a."
 
-#.Description
-#: ../po/debian-tasks.desc:11001
+#. Description
+#: ../po/debian-tasks.desc:21001
 msgid "Bosnian desktop"
 msgstr "Màn hình nền Bo-x-ni-a"
 
-#.Description
-#: ../po/debian-tasks.desc:11001
+#. Description
+#: ../po/debian-tasks.desc:21001
 msgid "This task localises the desktop in Bosnian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Bo-x-ni-a."
 
-#.Description
-#: ../po/debian-tasks.desc:12001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:22001 ../po/debian-tasks.desc:23001
+#, fuzzy
+#| msgid "Bosnian desktop"
+msgid "Bosnian GNOME desktop"
+msgstr "Màn hình nền Bo-x-ni-a"
+
+#. Description
+#: ../po/debian-tasks.desc:22001
+#, fuzzy
+#| msgid "This task localises the desktop in Bosnian."
+msgid "This task localises the GNOME desktop in Bosnian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bo-x-ni-a."
+
+#. Description
+#: ../po/debian-tasks.desc:23001
+#, fuzzy
+#| msgid "This task localises the desktop in Bosnian."
+msgid "This task localises the KDE desktop in Bosnian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bo-x-ni-a."
+
+#. Description
+#: ../po/debian-tasks.desc:24001
 msgid "Brazilian Portuguese environment"
 msgstr "Môi trường Bồ Đào Nha cho người Bra-xin"
 
-#.Description
-#: ../po/debian-tasks.desc:12001
+#. Description
+#: ../po/debian-tasks.desc:24001
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Brazilian Portuguese speakers to use Debian."
-msgstr "Công việc này cài đặt những chương trình, tập tin dữ liệu và tài liệu giúp "
+msgstr ""
+"Công việc này cài đặt những chương trình, tập tin dữ liệu và tài liệu giúp "
 "người dùng Debian nói tiếng Bồ Đào Nha trong Bra-xin."
 
-#.Description
-#: ../po/debian-tasks.desc:13001
+#. Description
+#: ../po/debian-tasks.desc:25001
 msgid "Brazilian Portuguese desktop"
 msgstr "Màn hình nền Bồ Đào Nha kiểu Bra-xin"
 
-#.Description
-#: ../po/debian-tasks.desc:13001
+#. Description
+#: ../po/debian-tasks.desc:25001
 msgid "This task localises the desktop in Brasilian Portuguese."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Bồ Đào Nha của Bra-xin."
 
-#.Description
-#: ../po/debian-tasks.desc:14001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:26001 ../po/debian-tasks.desc:27001
+#, fuzzy
+#| msgid "Brazilian Portuguese desktop"
+msgid "Brazilian-portuguese GNOME desktop"
+msgstr "Màn hình nền Bồ Đào Nha kiểu Bra-xin"
+
+#. Description
+#: ../po/debian-tasks.desc:26001
+#, fuzzy
+#| msgid "This task localises the desktop in Brasilian Portuguese."
+msgid "This task localises the GNOME desktop in Brazilian Portuguese."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bồ Đào Nha của Bra-xin."
+
+#. Description
+#: ../po/debian-tasks.desc:27001
+#, fuzzy
+#| msgid "This task localises the desktop in Brasilian Portuguese."
+msgid "This task localises the KDE desktop in Brazilian Portuguese."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bồ Đào Nha của Bra-xin."
+
+#. Description
+#: ../po/debian-tasks.desc:28001
 msgid "British English environment"
 msgstr "Môi trường Quốc Anh"
 
-#.Description
-#: ../po/debian-tasks.desc:14001
+#. Description
+#: ../po/debian-tasks.desc:28001
 msgid ""
 "This task installs packages and documentation in British English to help "
 "British English speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Anh kiểu Quốc Anh "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Anh kiểu Quốc Anh "
 "giúp người dùng Debian nói tiếng Anh."
 
-#.Description
-#: ../po/debian-tasks.desc:15001
+#. Description
+#: ../po/debian-tasks.desc:29001
 msgid "British English desktop"
 msgstr "Màn hình nền Quốc Anh"
 
-#.Description
-#: ../po/debian-tasks.desc:15001
+#. Description
+#: ../po/debian-tasks.desc:29001
 msgid "This task localises the desktop in British English."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Quốc Anh."
 
-#.Description
-#: ../po/debian-tasks.desc:16001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:30001 ../po/debian-tasks.desc:31001
+#, fuzzy
+#| msgid "British English desktop"
+msgid "British GNOME desktop"
+msgstr "Màn hình nền Quốc Anh"
+
+#. Description
+#: ../po/debian-tasks.desc:30001
+#, fuzzy
+#| msgid "This task localises the desktop in Irish."
+msgid "This task localises the GNOME desktop in British."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ái-nhĩ-lan."
+
+#. Description
+#: ../po/debian-tasks.desc:31001
+#, fuzzy
+#| msgid "This task localises the desktop in Irish."
+msgid "This task localises the KDE desktop in British."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ái-nhĩ-lan."
+
+#. Description
+#: ../po/debian-tasks.desc:32001
 msgid "Bulgarian environment"
 msgstr "Môi trường Bảo-gia-lơi"
 
-#.Description
-#: ../po/debian-tasks.desc:16001
+#. Description
+#: ../po/debian-tasks.desc:32001
 msgid ""
 "This task installs programs and data files that make it easier for Bulgarian "
 "speakers to use Debian."
-msgstr "Công việc này cài đặt các chương trình và tập tin dữ liệu giúp người dùng "
+msgstr ""
+"Công việc này cài đặt các chương trình và tập tin dữ liệu giúp người dùng "
 "nói tiếng Bảo-gia-lơi sử dụng Debian dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:17001
+#. Description
+#: ../po/debian-tasks.desc:33001
 msgid "Bulgarian desktop"
 msgstr "Màn hình nền Bảo-gia-lơi"
 
-#.Description
-#: ../po/debian-tasks.desc:17001
+#. Description
+#: ../po/debian-tasks.desc:33001
 msgid "This task localises the desktop in Bulgarian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Bảo-gia-lơi."
 
-#.Description
-#: ../po/debian-tasks.desc:18001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:34001 ../po/debian-tasks.desc:35001
+#, fuzzy
+#| msgid "Bulgarian desktop"
+msgid "Bulgarian GNOME desktop"
+msgstr "Màn hình nền Bảo-gia-lơi"
+
+#. Description
+#: ../po/debian-tasks.desc:34001
+#, fuzzy
+#| msgid "This task localises the desktop in Bulgarian."
+msgid "This task localises the GNOME desktop in Bulgarian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bảo-gia-lơi."
+
+#. Description
+#: ../po/debian-tasks.desc:35001
+#, fuzzy
+#| msgid "This task localises the desktop in Bulgarian."
+msgid "This task localises the KDE desktop in Bulgarian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bảo-gia-lơi."
+
+#. Description
+#: ../po/debian-tasks.desc:36001
 msgid "Catalan environment"
 msgstr "Môi trường Ca-ta-lan"
 
-#.Description
-#: ../po/debian-tasks.desc:18001
+#. Description
+#: ../po/debian-tasks.desc:36001
 msgid ""
 "This task installs packages and documentation in Catalan to help Catalan "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những chương trình và tài liệu tiếng Ca-ta-lan giúp "
+msgstr ""
+"Công việc này cài đặt những chương trình và tài liệu tiếng Ca-ta-lan giúp "
 "người dùng Debian nói tiếng Ca-tal-an."
 
-#.Description
-#: ../po/debian-tasks.desc:19001
+#. Description
+#: ../po/debian-tasks.desc:37001
 msgid "Catalan desktop"
 msgstr "Màn hình nền Catalan"
 
-#.Description
-#: ../po/debian-tasks.desc:19001
+#. Description
+#: ../po/debian-tasks.desc:37001
 msgid "This task localises the desktop in Catalan."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ca-ta-lan."
 
-#.Description
-#: ../po/debian-tasks.desc:20001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:38001 ../po/debian-tasks.desc:39001
+#, fuzzy
+#| msgid "Catalan desktop"
+msgid "Catalan GNOME desktop"
+msgstr "Màn hình nền Catalan"
+
+#. Description
+#: ../po/debian-tasks.desc:38001
+#, fuzzy
+#| msgid "This task localises the desktop in Catalan."
+msgid "This task localises the GNOME desktop in Catalan."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ca-ta-lan."
+
+#. Description
+#: ../po/debian-tasks.desc:39001
+#, fuzzy
+#| msgid "This task localises the desktop in Catalan."
+msgid "This task localises the KDE desktop in Catalan."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ca-ta-lan."
+
+#. Description
+#: ../po/debian-tasks.desc:40001
 msgid "Simplified Chinese environment"
 msgstr "Môi trường Trung Quốc đơn giản"
 
-#.Description
-#: ../po/debian-tasks.desc:20001
+#. Description
+#: ../po/debian-tasks.desc:40001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the simplified Chinese "
 "encoding."
-msgstr "Công việc này cài đặt những chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt những chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng Debian nói tiếng Trung quốc, sử dụng mã ký tự tiếng "
 "Trung đơn giản."
 
-#.Description
-#: ../po/debian-tasks.desc:21001
+#. Description
+#: ../po/debian-tasks.desc:41001
 msgid "Simplified Chinese desktop"
 msgstr "Màn hình nền Trung đơn giản"
 
-#.Description
-#: ../po/debian-tasks.desc:21001
+#. Description
+#: ../po/debian-tasks.desc:41001
 msgid "This task localises the desktop in Simplified Chinese."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Trung đơn giản."
 
-#.Description
-#: ../po/debian-tasks.desc:22001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:42001 ../po/debian-tasks.desc:43001
+#, fuzzy
+#| msgid "Vietnamese desktop"
+msgid "Chinese-s GNOME desktop"
+msgstr "Màn hình nền Việt"
+
+#. Description
+#: ../po/debian-tasks.desc:42001
+#, fuzzy
+#| msgid "This task localises the desktop in Vietnamese."
+msgid "This task localises the GNOME desktop in Chinese-s."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Việt."
+
+#. Description
+#: ../po/debian-tasks.desc:43001
+#, fuzzy
+#| msgid "This task localises the desktop in Vietnamese."
+msgid "This task localises the KDE desktop in Chinese-s."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Việt."
+
+#. Description
+#: ../po/debian-tasks.desc:44001
 msgid "Traditional Chinese environment"
 msgstr "Môi trường Trung truyền thống"
 
-#.Description
-#: ../po/debian-tasks.desc:22001
+#. Description
+#: ../po/debian-tasks.desc:44001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that make "
 "it easier for Chinese speakers to use Debian, using the traditional Chinese "
 "encoding."
-msgstr "Công việc này cài đặt những chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt những chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng Debian nói tiếng Trung, sử dụng mã ký tự tiếng Trung "
 "truyền thống."
 
-#.Description
-#: ../po/debian-tasks.desc:23001
+#. Description
+#: ../po/debian-tasks.desc:45001
 msgid "Traditional Chinese desktop"
 msgstr "Màn hình nền Trung truyền thống"
 
-#.Description
-#: ../po/debian-tasks.desc:23001
+#. Description
+#: ../po/debian-tasks.desc:45001
 msgid "This task localises the desktop in Traditional Chinese."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Trung truyền thống."
 
-#.Description
-#: ../po/debian-tasks.desc:24001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:46001 ../po/debian-tasks.desc:47001
+#, fuzzy
+#| msgid "Vietnamese desktop"
+msgid "Chinese-t GNOME desktop"
+msgstr "Màn hình nền Việt"
+
+#. Description
+#: ../po/debian-tasks.desc:46001
+#, fuzzy
+#| msgid "This task localises the desktop in Vietnamese."
+msgid "This task localises the GNOME desktop in Chinese-t."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Việt."
+
+#. Description
+#: ../po/debian-tasks.desc:47001
+#, fuzzy
+#| msgid "This task localises the desktop in Vietnamese."
+msgid "This task localises the KDE desktop in Chinese-t."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Việt."
+
+#. Description
+#: ../po/debian-tasks.desc:48001
 msgid "Croatian environment"
 msgstr "Môi trường Cợ-rô-a-ti-a"
 
-#.Description
-#: ../po/debian-tasks.desc:24001
+#. Description
+#: ../po/debian-tasks.desc:48001
 msgid ""
 "This task installs packages and documentation in Croatian to help Croatian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những chương trình và tài liệu tiếng Cợ-rô-a-ti-a giúp "
+msgstr ""
+"Công việc này cài đặt những chương trình và tài liệu tiếng Cợ-rô-a-ti-a giúp "
 "người dùng Debian nói tiếng Cợ-rô-a-ti-a."
 
-#.Description
-#: ../po/debian-tasks.desc:25001
+#. Description
+#: ../po/debian-tasks.desc:49001
 msgid "Croatian desktop"
 msgstr "Màn hình nền Cợ-rô-a-ti-a"
 
-#.Description
-#: ../po/debian-tasks.desc:25001
+#. Description
+#: ../po/debian-tasks.desc:49001
 msgid "This task localises the desktop in Croatian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Cợ-rô-a-ti-a."
 
-#.Description
-#: ../po/debian-tasks.desc:26001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:50001 ../po/debian-tasks.desc:51001
+#, fuzzy
+#| msgid "Croatian desktop"
+msgid "Croatian GNOME desktop"
+msgstr "Màn hình nền Cợ-rô-a-ti-a"
+
+#. Description
+#: ../po/debian-tasks.desc:50001
+#, fuzzy
+#| msgid "This task localises the desktop in Croatian."
+msgid "This task localises the GNOME desktop in Croatian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Cợ-rô-a-ti-a."
+
+#. Description
+#: ../po/debian-tasks.desc:51001
+#, fuzzy
+#| msgid "This task localises the desktop in Croatian."
+msgid "This task localises the KDE desktop in Croatian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Cợ-rô-a-ti-a."
+
+#. Description
+#: ../po/debian-tasks.desc:52001
 msgid "Cyrillic environment"
 msgstr "Môi trường Ki-rin"
 
-#.Description
-#: ../po/debian-tasks.desc:26001
+#. Description
+#: ../po/debian-tasks.desc:52001
 msgid ""
 "This task provides Cyrillic fonts and other software you will need in order "
 "to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, Russian, "
 "Serbian and Ukrainian."
-msgstr "Công việc này cung cấp phông chữ Ki-rin và những phần mềm cần thiết để sử "
+msgstr ""
+"Công việc này cung cấp phông chữ Ki-rin và những phần mềm cần thiết để sử "
 "dụng chữ Ki-rin.  Nó hỗ trợ tiếng Bê-la-rút, Bảo-gia-lơi, Má-xê-đô-ni-a, "
 "Nga, Xéc-bi và U-cợ-rainh."
 
-#.Description
-#: ../po/debian-tasks.desc:27001
+#. Description
+#: ../po/debian-tasks.desc:53001
 msgid "Cyrillic desktop"
 msgstr "Màn hình nền Ki-rin"
 
-#.Description
-#: ../po/debian-tasks.desc:27001
+#. Description
+#: ../po/debian-tasks.desc:53001
 msgid ""
 "This task localises the desktop in Cyrillic. It supports Belarusian, "
 "Bulgarian, Macedonian, Russian, Serbian and Ukrainian."
-msgstr "Công việc này giúp hiển thị giao diện cho các ngôn ngữ dùng chữ Ki-rin. Hỗ "
+msgstr ""
+"Công việc này giúp hiển thị giao diện cho các ngôn ngữ dùng chữ Ki-rin. Hỗ "
 "trợ tiếng Bê-la-rút, Bảo-gia-lơi, Má-xê-đô-ni-a, Nga, Xéc-bi và U-cợ-rainh"
 
-#.Description
-#: ../po/debian-tasks.desc:28001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:54001 ../po/debian-tasks.desc:55001
+#, fuzzy
+#| msgid "Cyrillic desktop"
+msgid "Cyrillic GNOME desktop"
+msgstr "Màn hình nền Ki-rin"
+
+#. Description
+#: ../po/debian-tasks.desc:54001
+#, fuzzy
+#| msgid "This task localises the desktop in Arabic."
+msgid "This task localises the GNOME desktop in Cyrillic."
+msgstr "Công việc này giúp hiển thị giao diện tiếng A-rập."
+
+#. Description
+#: ../po/debian-tasks.desc:55001
+#, fuzzy
+#| msgid "This task localises the desktop in Arabic."
+msgid "This task localises the KDE desktop in Cyrillic."
+msgstr "Công việc này giúp hiển thị giao diện tiếng A-rập."
+
+#. Description
+#: ../po/debian-tasks.desc:56001
 msgid "Czech environment"
 msgstr "Môi trường Séc"
 
-#.Description
-#: ../po/debian-tasks.desc:28001
+#. Description
+#: ../po/debian-tasks.desc:56001
 msgid ""
 "This task installs packages and documentation in Czech to help Czech "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Séc giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Séc giúp người "
 "dùng Debian nói tiếng Séc."
 
-#.Description
-#: ../po/debian-tasks.desc:29001
+#. Description
+#: ../po/debian-tasks.desc:57001
 msgid "Czech desktop"
 msgstr "Màn hình nền Séc"
 
-#.Description
-#: ../po/debian-tasks.desc:29001
+#. Description
+#: ../po/debian-tasks.desc:57001
 msgid "This task localises the desktop in Czech."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Séc."
 
-#.Description
-#: ../po/debian-tasks.desc:30001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:58001 ../po/debian-tasks.desc:59001
+#, fuzzy
+#| msgid "Czech desktop"
+msgid "Czech GNOME desktop"
+msgstr "Màn hình nền Séc"
+
+#. Description
+#: ../po/debian-tasks.desc:58001
+#, fuzzy
+#| msgid "This task localises the desktop in Czech."
+msgid "This task localises the GNOME desktop in Czech."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Séc."
+
+#. Description
+#: ../po/debian-tasks.desc:59001
+#, fuzzy
+#| msgid "This task localises the desktop in Czech."
+msgid "This task localises the KDE desktop in Czech."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Séc."
+
+#. Description
+#: ../po/debian-tasks.desc:60001
 msgid "Danish environment"
 msgstr "Môi trường Đan Mạch"
 
-#.Description
-#: ../po/debian-tasks.desc:30001
+#. Description
+#: ../po/debian-tasks.desc:60001
 msgid ""
 "This task installs packages and documentation in Danish to help Danish "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Đan Mạch giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Đan Mạch giúp "
 "người dùng Debian nói tiếng Đan Mạch."
 
-#.Description
-#: ../po/debian-tasks.desc:31001
+#. Description
+#: ../po/debian-tasks.desc:61001
 msgid "Danish desktop"
 msgstr "Màn hình nền Đan Mạch"
 
-#.Description
-#: ../po/debian-tasks.desc:31001
+#. Description
+#: ../po/debian-tasks.desc:61001
 msgid "This task localises the desktop in Danish."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Đan Mạch."
 
-#.Description
-#: ../po/debian-tasks.desc:32001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:62001 ../po/debian-tasks.desc:63001
+#, fuzzy
+#| msgid "Danish desktop"
+msgid "Danish GNOME desktop"
+msgstr "Màn hình nền Đan Mạch"
+
+#. Description
+#: ../po/debian-tasks.desc:62001
+#, fuzzy
+#| msgid "This task localises the desktop in Danish."
+msgid "This task localises the GNOME desktop in Danish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Đan Mạch."
+
+#. Description
+#: ../po/debian-tasks.desc:63001
+#, fuzzy
+#| msgid "This task localises the desktop in Danish."
+msgid "This task localises the KDE desktop in Danish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Đan Mạch."
+
+#. Description
+#: ../po/debian-tasks.desc:64001
 msgid "SQL database"
 msgstr "Cơ sơ dữ liệu SQL"
 
-#.Description
-#: ../po/debian-tasks.desc:32001
+#. Description
+#: ../po/debian-tasks.desc:64001
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
-msgstr "Công việc này chọn các gói ứng dụng khách và trình phục vụ cho cơ sở dữ liệu "
+msgstr ""
+"Công việc này chọn các gói ứng dụng khách và trình phục vụ cho cơ sở dữ liệu "
 "kiểu PostgreSQL."
 
-#.Description
-#: ../po/debian-tasks.desc:32001
+#. Description
+#: ../po/debian-tasks.desc:64001
 msgid ""
 "PostgreSQL is an SQL relational database, offering increasing SQL92 "
 "compliance and some SQL3 features.  It is suitable for use with multi-user "
 "database access, through its facilities for transactions and fine-grained "
 "locking."
-msgstr "PostgreSQL là một cơ sở dữ liệu cách liên quan, cung cấp sự tương thích "
+msgstr ""
+"PostgreSQL là một cơ sở dữ liệu cách liên quan, cung cấp sự tương thích "
 "nhiều hơn với SQL92 và một vài tính năng của SQL3. Có thể dùng nó để cung "
 "cấp truy cập cho nhiều người dùng, thông qua khả năng giao dịch và khóa "
 "triệt để."
 
-#.Description
-#: ../po/debian-tasks.desc:33001
+#. Description
+#: ../po/debian-tasks.desc:65001
 msgid "Desktop environment"
 msgstr "Môi trường làm việc"
 
-#.Description
-#: ../po/debian-tasks.desc:33001
+#. Description
+#: ../po/debian-tasks.desc:65001
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "Gnome and KDE desktop tasks."
-msgstr "Công việc này cung cấp phần mềm màn hình nền cơ bản và đáp ứng là cơ sở cho "
+msgstr ""
+"Công việc này cung cấp phần mềm màn hình nền cơ bản và đáp ứng là cơ sở cho "
 "các công việc của môi trường làm việc Gnome và KDE."
 
-#.Description
-#: ../po/debian-tasks.desc:34001
+#. Description
+#: ../po/debian-tasks.desc:66001
 msgid "DNS server"
 msgstr "Trình phục vụ DNS"
 
-#.Description
-#: ../po/debian-tasks.desc:34001
+#. Description
+#: ../po/debian-tasks.desc:66001
 msgid ""
 "Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "Chọn gói trình phục vụ DNS kiểu BIND, gói tài liệu và tiện ích tương ứng."
+msgstr ""
+"Chọn gói trình phục vụ DNS kiểu BIND, gói tài liệu và tiện ích tương ứng."
 
-#.Description
-#: ../po/debian-tasks.desc:35001
+#. Description
+#: ../po/debian-tasks.desc:67001
 msgid "Dutch environment"
 msgstr "Môi trường Hoà Lan"
 
-#.Description
-#: ../po/debian-tasks.desc:35001
+#. Description
+#: ../po/debian-tasks.desc:67001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Dutch speakers to use Debian."
-msgstr "Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng nói tiếng Hoà Lan sử dụng Debian dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:36001
+#. Description
+#: ../po/debian-tasks.desc:68001
 msgid "Dutch desktop"
 msgstr "Màn hình nền Hoà Lan"
 
-#.Description
-#: ../po/debian-tasks.desc:36001
+#. Description
+#: ../po/debian-tasks.desc:68001
 msgid "This task localises the desktop in Dutch."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Hoà Lan."
 
-#.Description
-#: ../po/debian-tasks.desc:37001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:69001 ../po/debian-tasks.desc:70001
+#, fuzzy
+#| msgid "Dutch desktop"
+msgid "Dutch GNOME desktop"
+msgstr "Màn hình nền Hoà Lan"
+
+#. Description
+#: ../po/debian-tasks.desc:69001
+#, fuzzy
+#| msgid "This task localises the desktop in Dutch."
+msgid "This task localises the GNOME desktop in Dutch."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hoà Lan."
+
+#. Description
+#: ../po/debian-tasks.desc:70001
+#, fuzzy
+#| msgid "This task localises the desktop in Dutch."
+msgid "This task localises the KDE desktop in Dutch."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hoà Lan."
+
+#. Description
+#: ../po/debian-tasks.desc:71001
 msgid "Dzongkha desktop"
 msgstr "Màn hình nền Đ-xông-kha"
 
-#.Description
-#: ../po/debian-tasks.desc:37001
+#. Description
+#: ../po/debian-tasks.desc:71001
 msgid "This task localises the desktop in Dzongkha."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Đ-xông-kha."
 
-#.Description
-#: ../po/debian-tasks.desc:38001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:72001 ../po/debian-tasks.desc:73001
+#, fuzzy
+#| msgid "Dzongkha desktop"
+msgid "Dzongkha GNOME desktop"
+msgstr "Màn hình nền Đ-xông-kha"
+
+#. Description
+#: ../po/debian-tasks.desc:72001
+#, fuzzy
+#| msgid "This task localises the desktop in Dzongkha."
+msgid "This task localises the GNOME desktop in Dzongkha."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Đ-xông-kha."
+
+#. Description
+#: ../po/debian-tasks.desc:73001
+#, fuzzy
+#| msgid "This task localises the desktop in Dzongkha."
+msgid "This task localises the KDE desktop in Dzongkha."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Đ-xông-kha."
+
+#. Description
+#: ../po/debian-tasks.desc:74001
 msgid "Esperanto desktop"
 msgstr "Màn hình nền Ét-pe-ran-tô"
 
-#.Description
-#: ../po/debian-tasks.desc:38001
+#. Description
+#: ../po/debian-tasks.desc:74001
 msgid "This task localises the desktop in Esperanto."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ét-pe-ran-tô."
 
-#.Description
-#: ../po/debian-tasks.desc:39001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:75001 ../po/debian-tasks.desc:76001
+#, fuzzy
+#| msgid "Esperanto desktop"
+msgid "Esperanto GNOME desktop"
+msgstr "Màn hình nền Ét-pe-ran-tô"
+
+#. Description
+#: ../po/debian-tasks.desc:75001
+#, fuzzy
+#| msgid "This task localises the desktop in Esperanto."
+msgid "This task localises the GNOME desktop in Esperanto."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ét-pe-ran-tô."
+
+#. Description
+#: ../po/debian-tasks.desc:76001
+#, fuzzy
+#| msgid "This task localises the desktop in Esperanto."
+msgid "This task localises the KDE desktop in Esperanto."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ét-pe-ran-tô."
+
+#. Description
+#: ../po/debian-tasks.desc:77001
 msgid "Estonian desktop"
 msgstr "Màn hình nền Ex-tô-ni-a"
 
-#.Description
-#: ../po/debian-tasks.desc:39001
+#. Description
+#: ../po/debian-tasks.desc:77001
 msgid "This task localises the desktop in Estonian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ex-tô-ni-a."
 
-#.Description
-#: ../po/debian-tasks.desc:40001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:78001 ../po/debian-tasks.desc:79001
+#, fuzzy
+#| msgid "Estonian desktop"
+msgid "Estonian GNOME desktop"
+msgstr "Màn hình nền Ex-tô-ni-a"
+
+#. Description
+#: ../po/debian-tasks.desc:78001
+#, fuzzy
+#| msgid "This task localises the desktop in Estonian."
+msgid "This task localises the GNOME desktop in Estonian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ex-tô-ni-a."
+
+#. Description
+#: ../po/debian-tasks.desc:79001
+#, fuzzy
+#| msgid "This task localises the desktop in Estonian."
+msgid "This task localises the KDE desktop in Estonian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ex-tô-ni-a."
+
+#. Description
+#: ../po/debian-tasks.desc:80001
 msgid "File server"
 msgstr "Trình phục vụ tập tin"
 
-#.Description
-#: ../po/debian-tasks.desc:40001
+#. Description
+#: ../po/debian-tasks.desc:80001
 msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
-msgstr "Công việc này thiết lập hệ thống của bạn là trình phục vụ tập tin, hỗ trợ cả "
+msgstr ""
+"Công việc này thiết lập hệ thống của bạn là trình phục vụ tập tin, hỗ trợ cả "
 "NetBIOS lẫn NFS."
 
-#.Description
-#: ../po/debian-tasks.desc:41001
+#. Description
+#: ../po/debian-tasks.desc:81001
 msgid "Finnish environment"
 msgstr "Môi trường Phần Lan"
 
-#.Description
-#: ../po/debian-tasks.desc:41001
+#. Description
+#: ../po/debian-tasks.desc:81001
 msgid ""
 "This task installs packages and documentation in Finnish to help Finnish "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Phần Lan giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Phần Lan giúp "
 "người dùng Debian nói tiếng Phần Lan."
 
-#.Description
-#: ../po/debian-tasks.desc:42001
+#. Description
+#: ../po/debian-tasks.desc:82001
 msgid "Finnish desktop"
 msgstr "Màn hình nền Phần Lan"
 
-#.Description
-#: ../po/debian-tasks.desc:42001
+#. Description
+#: ../po/debian-tasks.desc:82001
 msgid "This task localises the desktop in Finnish."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Phần Lan."
 
-#.Description
-#: ../po/debian-tasks.desc:43001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:83001 ../po/debian-tasks.desc:84001
+#, fuzzy
+#| msgid "Finnish desktop"
+msgid "Finnish GNOME desktop"
+msgstr "Màn hình nền Phần Lan"
+
+#. Description
+#: ../po/debian-tasks.desc:83001
+#, fuzzy
+#| msgid "This task localises the desktop in Finnish."
+msgid "This task localises the GNOME desktop in Finnish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Phần Lan."
+
+#. Description
+#: ../po/debian-tasks.desc:84001
+#, fuzzy
+#| msgid "This task localises the desktop in Finnish."
+msgid "This task localises the KDE desktop in Finnish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Phần Lan."
+
+#. Description
+#: ../po/debian-tasks.desc:85001
 msgid "French environment"
 msgstr "Môi trường Pháp"
 
-#.Description
-#: ../po/debian-tasks.desc:43001
+#. Description
+#: ../po/debian-tasks.desc:85001
 msgid ""
 "This task installs packages and documentation in French to help French "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Pháp giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Pháp giúp người "
 "dùng Debian nói tiếng Pháp."
 
-#.Description
-#: ../po/debian-tasks.desc:44001
+#. Description
+#: ../po/debian-tasks.desc:86001
 msgid "French desktop"
 msgstr "Màn hình nền Pháp"
 
-#.Description
-#: ../po/debian-tasks.desc:44001
+#. Description
+#: ../po/debian-tasks.desc:86001
 msgid "This task localises the desktop in French."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Pháp."
 
-#.Description
-#: ../po/debian-tasks.desc:45001
+#. Description
+#: ../po/debian-tasks.desc:87001
+#, fuzzy
+#| msgid "French desktop"
+msgid "French GNOME desktop"
+msgstr "Màn hình nền Pháp"
+
+#. Description
+#: ../po/debian-tasks.desc:87001
+#, fuzzy
+#| msgid "This task localises the desktop in French."
+msgid "This task localises the GNOME desktop in French."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Pháp."
+
+#. Description
+#: ../po/debian-tasks.desc:88001
+#, fuzzy
+#| msgid "French desktop"
+msgid "French KDE desktop"
+msgstr "Màn hình nền Pháp"
+
+#. Description
+#: ../po/debian-tasks.desc:88001
+#, fuzzy
+#| msgid "This task localises the desktop in French."
+msgid "This task localises the KDE desktop in French."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Pháp."
+
+#. Description
+#: ../po/debian-tasks.desc:89001
 msgid "Galician environment"
 msgstr "Môi trường Ga-li-xi"
 
-#.Description
-#: ../po/debian-tasks.desc:45001
+#. Description
+#: ../po/debian-tasks.desc:89001
 msgid ""
 "This task installs packages and documentation in Galician to help Galician "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ga-li-xi giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ga-li-xi giúp "
 "người dùng Debian nói tiếng Ga-li-xi."
 
-#.Description
-#: ../po/debian-tasks.desc:46001
+#. Description
+#: ../po/debian-tasks.desc:90001
 msgid "Galician desktop"
 msgstr "Màn hình nền Ga-li-xi"
 
-#.Description
-#: ../po/debian-tasks.desc:46001
+#. Description
+#: ../po/debian-tasks.desc:90001
 msgid "This task localises the desktop in Galician."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ga-li-xi."
 
-#.Description
-#: ../po/debian-tasks.desc:47001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:91001 ../po/debian-tasks.desc:92001
+#, fuzzy
+#| msgid "Galician desktop"
+msgid "Galician GNOME desktop"
+msgstr "Màn hình nền Ga-li-xi"
+
+#. Description
+#: ../po/debian-tasks.desc:91001
+#, fuzzy
+#| msgid "This task localises the desktop in Galician."
+msgid "This task localises the GNOME desktop in Galician."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ga-li-xi."
+
+#. Description
+#: ../po/debian-tasks.desc:92001
+#, fuzzy
+#| msgid "This task localises the desktop in Galician."
+msgid "This task localises the KDE desktop in Galician."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ga-li-xi."
+
+#. Description
+#: ../po/debian-tasks.desc:93001
 msgid "Georgian desktop"
 msgstr "Màn hình nền Gi-oa-gi-a"
 
-#.Description
-#: ../po/debian-tasks.desc:47001
+#. Description
+#: ../po/debian-tasks.desc:93001
 msgid "This task localises the desktop in Georgian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Gi-oa-gi-a."
 
-#.Description
-#: ../po/debian-tasks.desc:48001
+#. Description
+#: ../po/debian-tasks.desc:94001
 msgid "German environment"
 msgstr "Môi trường Đức"
 
-#.Description
-#: ../po/debian-tasks.desc:48001
+#. Description
+#: ../po/debian-tasks.desc:94001
 msgid ""
 "This task installs packages and documentation in German to help German "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Đức giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Đức giúp người "
 "dùng Debian nói tiếng Đức."
 
-#.Description
-#: ../po/debian-tasks.desc:49001
+#. Description
+#: ../po/debian-tasks.desc:95001
 msgid "German desktop"
 msgstr "Màn hình nền Đức"
 
-#.Description
-#: ../po/debian-tasks.desc:49001
+#. Description
+#: ../po/debian-tasks.desc:95001
 msgid "This task localises the desktop in German."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Đức."
 
-#.Description
-#: ../po/debian-tasks.desc:50001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:96001 ../po/debian-tasks.desc:97001
+#, fuzzy
+#| msgid "German desktop"
+msgid "German GNOME desktop"
+msgstr "Màn hình nền Đức"
+
+#. Description
+#: ../po/debian-tasks.desc:96001
+#, fuzzy
+#| msgid "This task localises the desktop in German."
+msgid "This task localises the GNOME desktop in German."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Đức."
+
+#. Description
+#: ../po/debian-tasks.desc:97001
+#, fuzzy
+#| msgid "This task localises the desktop in German."
+msgid "This task localises the KDE desktop in German."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Đức."
+
+#. Description
+#: ../po/debian-tasks.desc:98001
 msgid "Gnome desktop environment"
 msgstr "Môi trường làm việc Gnome"
 
-#.Description
-#: ../po/debian-tasks.desc:50001
+#. Description
+#: ../po/debian-tasks.desc:98001
 msgid ""
 "This task provides basic \"desktop\" software using the Gnome desktop "
 "environment."
-msgstr "Công việc này cung cấp phần mềm « màn hình nền » cơ bản, dùng môi trường làm "
+msgstr ""
+"Công việc này cung cấp phần mềm « màn hình nền » cơ bản, dùng môi trường làm "
 "việc Gnome."
 
-#.Description
-#: ../po/debian-tasks.desc:51001
+#. Description
+#: ../po/debian-tasks.desc:99001
 msgid "Greek environment"
 msgstr "Môi trường Hy Lạp"
 
-#.Description
-#: ../po/debian-tasks.desc:51001
+#. Description
+#: ../po/debian-tasks.desc:99001
 msgid ""
 "This task installs packages and documentation in Greek to help Greek "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Hy Lạp giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Hy Lạp giúp người "
 "dùng Debian nói tiếng Hy Lạp."
 
-#.Description
-#: ../po/debian-tasks.desc:52001
+#. Description
+#: ../po/debian-tasks.desc:100001
 msgid "Greek desktop"
 msgstr "Màn hình nền Hy Lạp"
 
-#.Description
-#: ../po/debian-tasks.desc:52001
+#. Description
+#: ../po/debian-tasks.desc:100001
 msgid "This task localises the desktop in Greek."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Hy Lạp."
 
-#.Description
-#: ../po/debian-tasks.desc:53001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:101001 ../po/debian-tasks.desc:102001
+#, fuzzy
+#| msgid "Greek desktop"
+msgid "Greek GNOME desktop"
+msgstr "Màn hình nền Hy Lạp"
+
+#. Description
+#: ../po/debian-tasks.desc:101001
+#, fuzzy
+#| msgid "This task localises the desktop in Greek."
+msgid "This task localises the GNOME desktop in Greek."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hy Lạp."
+
+#. Description
+#: ../po/debian-tasks.desc:102001
+#, fuzzy
+#| msgid "This task localises the desktop in Greek."
+msgid "This task localises the KDE desktop in Greek."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hy Lạp."
+
+#. Description
+#: ../po/debian-tasks.desc:103001
 msgid "Gujarati desktop"
 msgstr "Màn hình nền Gu-gia-ra-ti"
 
-#.Description
-#: ../po/debian-tasks.desc:53001
+#. Description
+#: ../po/debian-tasks.desc:103001
 msgid "This task localises the desktop in Gujarati."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Gu-gia-ra-ti."
 
-#.Description
-#: ../po/debian-tasks.desc:54001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:104001 ../po/debian-tasks.desc:105001
+#, fuzzy
+#| msgid "Gujarati desktop"
+msgid "Gujurati GNOME desktop"
+msgstr "Màn hình nền Gu-gia-ra-ti"
+
+#. Description
+#: ../po/debian-tasks.desc:104001
+#, fuzzy
+#| msgid "This task localises the desktop in Gujarati."
+msgid "This task localises the GNOME desktop in Gujurati."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Gu-gia-ra-ti."
+
+#. Description
+#: ../po/debian-tasks.desc:105001
+#, fuzzy
+#| msgid "This task localises the desktop in Gujarati."
+msgid "This task localises the KDE desktop in Gujurati."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Gu-gia-ra-ti."
+
+#. Description
+#: ../po/debian-tasks.desc:106001
 msgid "Hebrew environment"
 msgstr "Môi trường Do Thái"
 
-#.Description
-#: ../po/debian-tasks.desc:54001
+#. Description
+#: ../po/debian-tasks.desc:106001
 msgid ""
 "This task installs programs and documentation in Hebrew to help Hebrew "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Do Thái giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Do Thái giúp "
 "người dùng Debian nói tiếng Do Thái."
 
-#.Description
-#: ../po/debian-tasks.desc:55001
+#. Description
+#: ../po/debian-tasks.desc:107001
 msgid "Hebrew desktop"
 msgstr "Màn hình nền Do Thái"
 
-#.Description
-#: ../po/debian-tasks.desc:55001
+#. Description
+#: ../po/debian-tasks.desc:107001
 msgid "This task localises the desktop in Hebrew."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Do Thái."
 
-#.Description
-#: ../po/debian-tasks.desc:56001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:108001 ../po/debian-tasks.desc:109001
+#, fuzzy
+#| msgid "Hebrew desktop"
+msgid "Hebrew GNOME desktop"
+msgstr "Màn hình nền Do Thái"
+
+#. Description
+#: ../po/debian-tasks.desc:108001
+#, fuzzy
+#| msgid "This task localises the desktop in Hebrew."
+msgid "This task localises the GNOME desktop in Hebrew."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Do Thái."
+
+#. Description
+#: ../po/debian-tasks.desc:109001
+#, fuzzy
+#| msgid "This task localises the desktop in Hebrew."
+msgid "This task localises the KDE desktop in Hebrew."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Do Thái."
+
+#. Description
+#: ../po/debian-tasks.desc:110001
 msgid "Hindi environment"
 msgstr "Môi trường Hin-đi"
 
-#.Description
-#: ../po/debian-tasks.desc:56001
+#. Description
+#: ../po/debian-tasks.desc:110001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Hindi speakers to use Debian."
-msgstr "Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng nói tiếng Hin-đi sử dụng Debian dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:57001
+#. Description
+#: ../po/debian-tasks.desc:111001
 msgid "Hindi desktop"
 msgstr "Màn hình nền Hin-đi"
 
-#.Description
-#: ../po/debian-tasks.desc:57001
+#. Description
+#: ../po/debian-tasks.desc:111001
 msgid "This task localises the desktop in Hindi."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Hin-đi."
 
-#.Description
-#: ../po/debian-tasks.desc:58001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:112001 ../po/debian-tasks.desc:113001
+#, fuzzy
+#| msgid "Hindi desktop"
+msgid "Hindi GNOME desktop"
+msgstr "Màn hình nền Hin-đi"
+
+#. Description
+#: ../po/debian-tasks.desc:112001
+#, fuzzy
+#| msgid "This task localises the desktop in Hindi."
+msgid "This task localises the GNOME desktop in Hindi."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hin-đi."
+
+#. Description
+#: ../po/debian-tasks.desc:113001
+#, fuzzy
+#| msgid "This task localises the desktop in Hindi."
+msgid "This task localises the KDE desktop in Hindi."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hin-đi."
+
+#. Description
+#: ../po/debian-tasks.desc:114001
 msgid "Hungarian environment"
 msgstr "Môi trường Hun-ga-ri"
 
-#.Description
-#: ../po/debian-tasks.desc:58001
+#. Description
+#: ../po/debian-tasks.desc:114001
 msgid ""
 "This task installs packages and documentation in Hungarian to help Hungarian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Hun-ga-ri giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Hun-ga-ri giúp "
 "người dùng Debian nói tiếng Hun-ga-ri."
 
-#.Description
-#: ../po/debian-tasks.desc:59001
+#. Description
+#: ../po/debian-tasks.desc:115001
 msgid "Hungarian desktop"
 msgstr "Màn hình nền Hun-ga-ri"
 
-#.Description
-#: ../po/debian-tasks.desc:59001
+#. Description
+#: ../po/debian-tasks.desc:115001
 msgid "This task localises the desktop in Hungarian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Hun-ga-ri."
 
-#.Description
-#: ../po/debian-tasks.desc:60001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:116001 ../po/debian-tasks.desc:117001
+#, fuzzy
+#| msgid "Hungarian desktop"
+msgid "Hungarian GNOME desktop"
+msgstr "Màn hình nền Hun-ga-ri"
+
+#. Description
+#: ../po/debian-tasks.desc:116001
+#, fuzzy
+#| msgid "This task localises the desktop in Hungarian."
+msgid "This task localises the GNOME desktop in Hungarian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hun-ga-ri."
+
+#. Description
+#: ../po/debian-tasks.desc:117001
+#, fuzzy
+#| msgid "This task localises the desktop in Hungarian."
+msgid "This task localises the KDE desktop in Hungarian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hun-ga-ri."
+
+#. Description
+#: ../po/debian-tasks.desc:118001
 msgid "Icelandic environment"
 msgstr "Môi trường tiếng Băng Đảo"
 
-#.Description
-#: ../po/debian-tasks.desc:60001
+#. Description
+#: ../po/debian-tasks.desc:118001
 msgid ""
 "This task installs packages and documentation in Icelandic to help Icelandic "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Băng Đảo giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Băng Đảo giúp "
 "người dùng Debian nói tiếng Băng Đảo."
 
-#.Description
-#: ../po/debian-tasks.desc:61001
+#. Description
+#: ../po/debian-tasks.desc:119001
 msgid "Icelandic desktop"
 msgstr "Màn hình nền Băng Đảo"
 
-#.Description
-#: ../po/debian-tasks.desc:61001
+#. Description
+#: ../po/debian-tasks.desc:119001
 msgid "This task localises the desktop in Icelandic."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Băng Đảo."
 
-#.Description
-#: ../po/debian-tasks.desc:62001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:120001 ../po/debian-tasks.desc:121001
+#, fuzzy
+#| msgid "Icelandic desktop"
+msgid "Icelandic GNOME desktop"
+msgstr "Màn hình nền Băng Đảo"
+
+#. Description
+#: ../po/debian-tasks.desc:120001
+#, fuzzy
+#| msgid "This task localises the desktop in Icelandic."
+msgid "This task localises the GNOME desktop in Icelandic."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Băng Đảo."
+
+#. Description
+#: ../po/debian-tasks.desc:121001
+#, fuzzy
+#| msgid "This task localises the desktop in Icelandic."
+msgid "This task localises the KDE desktop in Icelandic."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Băng Đảo."
+
+#. Description
+#: ../po/debian-tasks.desc:122001
 msgid "Irish environment"
 msgstr "Môi trường tiếng Ái-nhĩ-lan"
 
-#.Description
-#: ../po/debian-tasks.desc:62001
+#. Description
+#: ../po/debian-tasks.desc:122001
 msgid ""
 "This task installs packages and documentation in Irish to help Irish "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ái-nhĩ-lan giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ái-nhĩ-lan giúp "
 "người dùng Debian nói tiếng Ái-nhĩ-lan."
 
-#.Description
-#: ../po/debian-tasks.desc:63001
+#. Description
+#: ../po/debian-tasks.desc:123001
 msgid "Irish desktop"
 msgstr "Màn hình nền Ái-nhĩ-lan"
 
-#.Description
-#: ../po/debian-tasks.desc:63001
+#. Description
+#: ../po/debian-tasks.desc:123001
 msgid "This task localises the desktop in Irish."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ái-nhĩ-lan."
 
-#.Description
-#: ../po/debian-tasks.desc:64001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:124001 ../po/debian-tasks.desc:125001
+#, fuzzy
+#| msgid "Irish desktop"
+msgid "Irish GNOME desktop"
+msgstr "Màn hình nền Ái-nhĩ-lan"
+
+#. Description
+#: ../po/debian-tasks.desc:124001
+#, fuzzy
+#| msgid "This task localises the desktop in Irish."
+msgid "This task localises the GNOME desktop in Irish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ái-nhĩ-lan."
+
+#. Description
+#: ../po/debian-tasks.desc:125001
+#, fuzzy
+#| msgid "This task localises the desktop in Irish."
+msgid "This task localises the KDE desktop in Irish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ái-nhĩ-lan."
+
+#. Description
+#: ../po/debian-tasks.desc:126001
 msgid "Italian environment"
 msgstr "Môi trường tiếng Ý"
 
-#.Description
-#: ../po/debian-tasks.desc:64001
+#. Description
+#: ../po/debian-tasks.desc:126001
 msgid ""
 "This task installs packages and documentation in Italian to help Italian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ý giúp người dùng "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ý giúp người dùng "
 "Debian nói tiếng Ý."
 
-#.Description
-#: ../po/debian-tasks.desc:65001
+#. Description
+#: ../po/debian-tasks.desc:127001
 msgid "Italian desktop"
 msgstr "Màn hình nền tiếng Ý"
 
-#.Description
-#: ../po/debian-tasks.desc:65001
+#. Description
+#: ../po/debian-tasks.desc:127001
 msgid "This task localises the desktop in Italian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ý."
 
-#.Description
-#: ../po/debian-tasks.desc:66001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:128001 ../po/debian-tasks.desc:129001
+#, fuzzy
+#| msgid "Italian desktop"
+msgid "Italian GNOME desktop"
+msgstr "Màn hình nền tiếng Ý"
+
+#. Description
+#: ../po/debian-tasks.desc:128001
+#, fuzzy
+#| msgid "This task localises the desktop in Italian."
+msgid "This task localises the GNOME desktop in Italian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ý."
+
+#. Description
+#: ../po/debian-tasks.desc:129001
+#, fuzzy
+#| msgid "This task localises the desktop in Italian."
+msgid "This task localises the KDE desktop in Italian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ý."
+
+#. Description
+#: ../po/debian-tasks.desc:130001
 msgid "Japanese environment"
 msgstr "Môi trường tiếng Nhật"
 
-#.Description
-#: ../po/debian-tasks.desc:66001
+#. Description
+#: ../po/debian-tasks.desc:130001
 msgid ""
 "This task installs packages that make it easier for Japanese speakers to use "
 "Debian."
-msgstr "Công việc này cài đặt các gói giúp người dùng nói tiếng Nhật sử dụng Debian "
+msgstr ""
+"Công việc này cài đặt các gói giúp người dùng nói tiếng Nhật sử dụng Debian "
 "dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:67001
+#. Description
+#: ../po/debian-tasks.desc:131001
 msgid "Japanese desktop"
 msgstr "Màn hình nền Nhật"
 
-#.Description
-#: ../po/debian-tasks.desc:67001
+#. Description
+#: ../po/debian-tasks.desc:131001
 msgid "This task localises the desktop in Japanese."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Nhật."
 
-#.Description
-#: ../po/debian-tasks.desc:68001
+#. Description
+#: ../po/debian-tasks.desc:132001
+#, fuzzy
+#| msgid "Japanese desktop"
+msgid "Japanese GNOME desktop"
+msgstr "Màn hình nền Nhật"
+
+#. Description
+#: ../po/debian-tasks.desc:132001
+#, fuzzy
+#| msgid "This task localises the desktop in Japanese."
+msgid "This task localises the GNOME desktop in Japanese."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Nhật."
+
+#. Description
+#: ../po/debian-tasks.desc:133001
+#, fuzzy
+#| msgid "Japanese desktop"
+msgid "Japanese KDE desktop"
+msgstr "Màn hình nền Nhật"
+
+#. Description
+#: ../po/debian-tasks.desc:133001
+#, fuzzy
+#| msgid "This task localises the desktop in Japanese."
+msgid "This task localises the KDE desktop in Japanese."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Nhật."
+
+#. Description
+#: ../po/debian-tasks.desc:134001
 msgid "KDE desktop environment"
 msgstr "Môi trường làm việc KDE"
 
-#.Description
-#: ../po/debian-tasks.desc:68001
+#. Description
+#: ../po/debian-tasks.desc:134001
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
-msgstr "Công việc này cung cấp phần mềm « màn hình nền » cơ bản, dùng môi trường làm "
+msgstr ""
+"Công việc này cung cấp phần mềm « màn hình nền » cơ bản, dùng môi trường làm "
 "việc KDE."
 
-#.Description
-#: ../po/debian-tasks.desc:69001
+#. Description
+#: ../po/debian-tasks.desc:135001
 msgid "Khmer environment"
 msgstr "Môi trường Khơ-me"
 
-#.Description
-#: ../po/debian-tasks.desc:69001
+#. Description
+#: ../po/debian-tasks.desc:135001
 msgid ""
 "This task installs packages and documentation in Khmer to help Khmer "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Khơ-me giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Khơ-me giúp người "
 "dùng Debian nói tiếng Khơ-me."
 
-#.Description
-#: ../po/debian-tasks.desc:70001
+#. Description
+#: ../po/debian-tasks.desc:136001
 msgid "Khmer desktop"
 msgstr "Màn hình nền Khơ-me"
 
-#.Description
-#: ../po/debian-tasks.desc:70001
+#. Description
+#: ../po/debian-tasks.desc:136001
 msgid "This task localises the desktop in Khmer."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Khơ-me."
 
-#.Description
-#: ../po/debian-tasks.desc:71001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:137001 ../po/debian-tasks.desc:138001
+#, fuzzy
+#| msgid "Khmer desktop"
+msgid "Khmer GNOME desktop"
+msgstr "Màn hình nền Khơ-me"
+
+#. Description
+#: ../po/debian-tasks.desc:137001
+#, fuzzy
+#| msgid "This task localises the desktop in Khmer."
+msgid "This task localises the GNOME desktop in Khmer."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Khơ-me."
+
+#. Description
+#: ../po/debian-tasks.desc:138001
+#, fuzzy
+#| msgid "This task localises the desktop in Khmer."
+msgid "This task localises the KDE desktop in Khmer."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Khơ-me."
+
+#. Description
+#: ../po/debian-tasks.desc:139001
 msgid "Korean environment"
 msgstr "Môi trường Hàn"
 
-#.Description
-#: ../po/debian-tasks.desc:71001
+#. Description
+#: ../po/debian-tasks.desc:139001
 msgid ""
 "This task installs packages that make it easier for Korean speakers to use "
 "Debian."
-msgstr "Công việc này cài đặt các gói giúp người dùng nói tiếng Hàn sử dụng Debian "
+msgstr ""
+"Công việc này cài đặt các gói giúp người dùng nói tiếng Hàn sử dụng Debian "
 "dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:72001
+#. Description
+#: ../po/debian-tasks.desc:140001
 msgid "Korean desktop"
 msgstr "Màn hình nền tiếng Hàn"
 
-#.Description
-#: ../po/debian-tasks.desc:72001
+#. Description
+#: ../po/debian-tasks.desc:140001
 msgid "This task localises the desktop in Korean."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Hàn."
 
-#.Description
-#: ../po/debian-tasks.desc:73001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:141001 ../po/debian-tasks.desc:142001
+#, fuzzy
+#| msgid "Korean desktop"
+msgid "Korean GNOME desktop"
+msgstr "Màn hình nền tiếng Hàn"
+
+#. Description
+#: ../po/debian-tasks.desc:141001
+#, fuzzy
+#| msgid "This task localises the desktop in Korean."
+msgid "This task localises the GNOME desktop in Korean."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hàn."
+
+#. Description
+#: ../po/debian-tasks.desc:142001
+#, fuzzy
+#| msgid "This task localises the desktop in Korean."
+msgid "This task localises the KDE desktop in Korean."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Hàn."
+
+#. Description
+#: ../po/debian-tasks.desc:143001
 msgid "Kurdish environment"
 msgstr "Môi trường Kuổ-đít"
 
-#.Description
-#: ../po/debian-tasks.desc:73001
+#. Description
+#: ../po/debian-tasks.desc:143001
 msgid ""
 "This task installs packages and documentation in Kurdish to help Kurds use "
 "Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Kuổ-đít giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Kuổ-đít giúp "
 "người dùng Debian nói tiếng Kuổ-đít"
 
-#.Description
-#: ../po/debian-tasks.desc:74001
+#. Description
+#: ../po/debian-tasks.desc:144001
 msgid "Kurdish desktop"
 msgstr "Màn hình nền Kuổ-đít"
 
-#.Description
-#: ../po/debian-tasks.desc:74001
+#. Description
+#: ../po/debian-tasks.desc:144001
 msgid "This task localises the desktop in Kurdish."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Kuổ-đít."
 
-#.Description
-#: ../po/debian-tasks.desc:75001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:145001 ../po/debian-tasks.desc:146001
+#, fuzzy
+#| msgid "Kurdish desktop"
+msgid "Kurdish GNOME desktop"
+msgstr "Màn hình nền Kuổ-đít"
+
+#. Description
+#: ../po/debian-tasks.desc:145001
+#, fuzzy
+#| msgid "This task localises the desktop in Kurdish."
+msgid "This task localises the GNOME desktop in Kurdish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Kuổ-đít."
+
+#. Description
+#: ../po/debian-tasks.desc:146001
+#, fuzzy
+#| msgid "This task localises the desktop in Kurdish."
+msgid "This task localises the KDE desktop in Kurdish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Kuổ-đít."
+
+#. Description
+#: ../po/debian-tasks.desc:147001
 msgid "Laptop"
 msgstr "Máy tính xách tay"
 
-#.Description
-#: ../po/debian-tasks.desc:75001
+#. Description
+#: ../po/debian-tasks.desc:147001
 msgid "This task installs software useful for a laptop."
 msgstr "Công việc này cài đặt phầm mềm có ích cho máy tính xách tay."
 
-#.Description
-#: ../po/debian-tasks.desc:76001
+#. Description
+#: ../po/debian-tasks.desc:148001
 msgid "Latvian desktop"
 msgstr "Màn hình nền Lát-vi-a"
 
-#.Description
-#: ../po/debian-tasks.desc:76001
+#. Description
+#: ../po/debian-tasks.desc:148001
 msgid "This task localises the desktop in Latvian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Lát-vi-a."
 
-#.Description
-#: ../po/debian-tasks.desc:77001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:149001 ../po/debian-tasks.desc:150001
+#, fuzzy
+#| msgid "Latvian desktop"
+msgid "Latvian GNOME desktop"
+msgstr "Màn hình nền Lát-vi-a"
+
+#. Description
+#: ../po/debian-tasks.desc:149001
+#, fuzzy
+#| msgid "This task localises the desktop in Latvian."
+msgid "This task localises the GNOME desktop in Latvian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Lát-vi-a."
+
+#. Description
+#: ../po/debian-tasks.desc:150001
+#, fuzzy
+#| msgid "This task localises the desktop in Latvian."
+msgid "This task localises the KDE desktop in Latvian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Lát-vi-a."
+
+#. Description
+#: ../po/debian-tasks.desc:151001
 msgid "Lithuanian environment"
 msgstr "Môi trường tiếng Li-tu-a-ni"
 
-#.Description
-#: ../po/debian-tasks.desc:77001
+#. Description
+#: ../po/debian-tasks.desc:151001
 msgid ""
 "This task installs packages and documentation in Lithuanian to help "
 "Lithuanian speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tếng Li-tu-a-ni giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tếng Li-tu-a-ni giúp "
 "người dùng Debian nói tiếng Li-tu-a-ni"
 
-#.Description
-#: ../po/debian-tasks.desc:78001
+#. Description
+#: ../po/debian-tasks.desc:152001
 msgid "Lithuanian desktop"
 msgstr "Màn hình nền Li-tu-a-ni"
 
-#.Description
-#: ../po/debian-tasks.desc:78001
+#. Description
+#: ../po/debian-tasks.desc:152001
 msgid "This task localises the desktop in Lithuanian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Li-tu-an-i."
 
-#.Description
-#: ../po/debian-tasks.desc:79001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:153001 ../po/debian-tasks.desc:154001
+#, fuzzy
+#| msgid "Lithuanian desktop"
+msgid "Lithuanian GNOME desktop"
+msgstr "Màn hình nền Li-tu-a-ni"
+
+#. Description
+#: ../po/debian-tasks.desc:153001
+#, fuzzy
+#| msgid "This task localises the desktop in Lithuanian."
+msgid "This task localises the GNOME desktop in Lithuanian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Li-tu-an-i."
+
+#. Description
+#: ../po/debian-tasks.desc:154001
+#, fuzzy
+#| msgid "This task localises the desktop in Lithuanian."
+msgid "This task localises the KDE desktop in Lithuanian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Li-tu-an-i."
+
+#. Description
+#: ../po/debian-tasks.desc:155001
 msgid "Macedonian environment"
 msgstr "Môi trường Má-xê-đô-ni"
 
-#.Description
-#: ../po/debian-tasks.desc:79001
+#. Description
+#: ../po/debian-tasks.desc:155001
 msgid ""
 "This task installs packages and documentation in Macedonian to help "
 "Macedonian speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Má-xê-đô-ni giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Má-xê-đô-ni giúp "
 "người dùng Debian nói tiếng Má-xê-đô-ni."
 
-#.Description
-#: ../po/debian-tasks.desc:80001
+#. Description
+#: ../po/debian-tasks.desc:156001
 msgid "Macedonian desktop"
 msgstr "Màn hình nền Má-xê-đô-ni"
 
-#.Description
-#: ../po/debian-tasks.desc:80001
+#. Description
+#: ../po/debian-tasks.desc:156001
 msgid "This task localises the desktop in Macedonian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Má-xê-đô-ni."
 
-#.Description
-#: ../po/debian-tasks.desc:81001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:157001 ../po/debian-tasks.desc:158001
+#, fuzzy
+#| msgid "Macedonian desktop"
+msgid "Macedonian GNOME desktop"
+msgstr "Màn hình nền Má-xê-đô-ni"
+
+#. Description
+#: ../po/debian-tasks.desc:157001
+#, fuzzy
+#| msgid "This task localises the desktop in Macedonian."
+msgid "This task localises the GNOME desktop in Macedonian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Má-xê-đô-ni."
+
+#. Description
+#: ../po/debian-tasks.desc:158001
+#, fuzzy
+#| msgid "This task localises the desktop in Macedonian."
+msgid "This task localises the KDE desktop in Macedonian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Má-xê-đô-ni."
+
+#. Description
+#: ../po/debian-tasks.desc:159001
 msgid "Mail server"
 msgstr "Trình phục vụ thư"
 
-#.Description
-#: ../po/debian-tasks.desc:81001
+#. Description
+#: ../po/debian-tasks.desc:159001
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
-msgstr "Công việc này chọn các gói khác nhau hỗ trợ cho hệ thống trình phục vụ thư "
+msgstr ""
+"Công việc này chọn các gói khác nhau hỗ trợ cho hệ thống trình phục vụ thư "
 "thường dụng."
 
-#.Description
-#: ../po/debian-tasks.desc:82001
+#. Description
+#: ../po/debian-tasks.desc:160001
 msgid "Malayalam desktop"
 msgstr "Màn hình nền Malayam"
 
-#.Description
-#: ../po/debian-tasks.desc:82001
+#. Description
+#: ../po/debian-tasks.desc:160001
 msgid "This task localises the desktop in Malayalam."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Malayam."
 
-#.Description
-#: ../po/debian-tasks.desc:83001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:161001 ../po/debian-tasks.desc:162001
+#, fuzzy
+#| msgid "Malayalam desktop"
+msgid "Malayalam GNOME desktop"
+msgstr "Màn hình nền Malayam"
+
+#. Description
+#: ../po/debian-tasks.desc:161001
+#, fuzzy
+#| msgid "This task localises the desktop in Malayalam."
+msgid "This task localises the GNOME desktop in Malayalam."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Malayam."
+
+#. Description
+#: ../po/debian-tasks.desc:162001
+#, fuzzy
+#| msgid "This task localises the desktop in Malayalam."
+msgid "This task localises the KDE desktop in Malayalam."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Malayam."
+
+#. Description
+#: ../po/debian-tasks.desc:163001
 msgid "manual package selection"
 msgstr "tự chọn gói"
 
-#.Description
-#: ../po/debian-tasks.desc:83001
+#. Description
+#: ../po/debian-tasks.desc:163001
 msgid "Manually select packages to install in aptitude."
 msgstr "Tự chọn gói cần cài đặt bằng aptitude."
 
-#.Description
-#: ../po/debian-tasks.desc:84001
+#. Description
+#: ../po/debian-tasks.desc:164001
 msgid "Nepali desktop"
 msgstr "Màn hình nền Ne-pan"
 
-#.Description
-#: ../po/debian-tasks.desc:84001
+#. Description
+#: ../po/debian-tasks.desc:164001
 msgid "This task localises the desktop in Nepali."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ne-pan."
 
-#.Description
-#: ../po/debian-tasks.desc:85001
-msgid "Northern Sami desktop"
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:165001 ../po/debian-tasks.desc:166001
+#, fuzzy
+#| msgid "Nepali desktop"
+msgid "Nepali GNOME desktop"
+msgstr "Màn hình nền Ne-pan"
+
+#. Description
+#: ../po/debian-tasks.desc:165001
+#, fuzzy
+#| msgid "This task localises the desktop in Nepali."
+msgid "This task localises the GNOME desktop in Nepali."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ne-pan."
+
+#. Description
+#: ../po/debian-tasks.desc:166001
+#, fuzzy
+#| msgid "This task localises the desktop in Nepali."
+msgid "This task localises the KDE desktop in Nepali."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ne-pan."
+
+#. Description
+#: ../po/debian-tasks.desc:167001
+#, fuzzy
+#| msgid "Thai environment"
+msgid "North Sami environment"
+msgstr "Môi trường Thái"
+
+#. Description
+#: ../po/debian-tasks.desc:167001
+#, fuzzy
+#| msgid ""
+#| "This task installs packages and documentation in Norwegian to help "
+#| "Norwegian speaking people use Debian."
+msgid ""
+"This task installs packages and documentation in North Sami to help North "
+"Sami speaking people use Debian."
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Na Uy giúp người "
+"dùng Debian nói tiếng Na Uy."
+
+#. Description
+#: ../po/debian-tasks.desc:168001
+#, fuzzy
+#| msgid "Northern Sami desktop"
+msgid "North Sami desktop"
 msgstr "Màn hình nền Bắc Xa-mi"
 
-#.Description
-#: ../po/debian-tasks.desc:85001
-msgid "This task localises the desktop in Northern Sami."
+#. Description
+#: ../po/debian-tasks.desc:168001
+#, fuzzy
+#| msgid "This task localises the desktop in Northern Sami."
+msgid "This task localises the desktop in North Sami."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Bắc Xa-mi."
 
-#.Description
-#: ../po/debian-tasks.desc:86001
+#. Description
+#: ../po/debian-tasks.desc:169001
+#, fuzzy
+#| msgid "Northern Sami desktop"
+msgid "North Sami GNOME desktop"
+msgstr "Màn hình nền Bắc Xa-mi"
+
+#. Description
+#: ../po/debian-tasks.desc:169001
+#, fuzzy
+#| msgid "This task localises the desktop in Northern Sami."
+msgid "This task localises the GNOME desktop in North Sami."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bắc Xa-mi."
+
+#. Description
+#: ../po/debian-tasks.desc:170001
+#, fuzzy
+#| msgid "Northern Sami desktop"
+msgid "North Sami KDE desktop"
+msgstr "Màn hình nền Bắc Xa-mi"
+
+#. Description
+#: ../po/debian-tasks.desc:170001
+#, fuzzy
+#| msgid "This task localises the desktop in Northern Sami."
+msgid "This task localises the KDE desktop in North Sami."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bắc Xa-mi."
+
+#. Description
+#: ../po/debian-tasks.desc:171001
 msgid "Norwegian (Bokmaal and Nynorsk) environment"
 msgstr "Môi trường Na Uy (Bokmaal và Nynorsk)"
 
-#.Description
-#: ../po/debian-tasks.desc:86001
+#. Description
+#: ../po/debian-tasks.desc:171001
 msgid ""
 "This task installs packages and documentation in Norwegian to help Norwegian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Na Uy giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Na Uy giúp người "
 "dùng Debian nói tiếng Na Uy."
 
-#.Description
-#: ../po/debian-tasks.desc:87001
+#. Description
+#: ../po/debian-tasks.desc:172001
 msgid "Norwegian (Bokmaal and Nynorsk) desktop"
 msgstr "Màn hình nền Na Uy (Bokmaal và Nynorsk)"
 
-#.Description
-#: ../po/debian-tasks.desc:87001
+#. Description
+#: ../po/debian-tasks.desc:172001
 msgid "This task localises the desktop in Norwegian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Na Uy."
 
-#.Description
-#: ../po/debian-tasks.desc:88001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:173001 ../po/debian-tasks.desc:174001
+#, fuzzy
+#| msgid "Georgian desktop"
+msgid "Norwegian GNOME desktop"
+msgstr "Màn hình nền Gi-oa-gi-a"
+
+#. Description
+#: ../po/debian-tasks.desc:173001
+#, fuzzy
+#| msgid "This task localises the desktop in Norwegian."
+msgid "This task localises the GNOME desktop in Norwegian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Na Uy."
+
+#. Description
+#: ../po/debian-tasks.desc:174001
+#, fuzzy
+#| msgid "This task localises the desktop in Norwegian."
+msgid "This task localises the KDE desktop in Norwegian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Na Uy."
+
+#. Description
+#: ../po/debian-tasks.desc:175001
 msgid "Persian environment"
 msgstr "Môi trường Pha-xi"
 
-#.Description
-#: ../po/debian-tasks.desc:88001
+#. Description
+#: ../po/debian-tasks.desc:175001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Persian speakers to use Debian."
-msgstr "Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng nói tiếng Pha-xi sử dụng Debian dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:89001
+#. Description
+#: ../po/debian-tasks.desc:176001
 msgid "Persian desktop"
 msgstr "Màn hình nền Pha-xi"
 
-#.Description
-#: ../po/debian-tasks.desc:89001
+#. Description
+#: ../po/debian-tasks.desc:176001
 msgid "This task localises the desktop in Persian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Pha-xi."
 
-#.Description
-#: ../po/debian-tasks.desc:90001
+#. Description
+#: ../po/debian-tasks.desc:177001
+#, fuzzy
+#| msgid "Persian desktop"
+msgid "Persian GNOME desktop"
+msgstr "Màn hình nền Pha-xi"
+
+#. Description
+#: ../po/debian-tasks.desc:177001
+#, fuzzy
+#| msgid "This task localises the desktop in Persian."
+msgid "This task localises the GNOME desktop in Persian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Pha-xi."
+
+#. Description
+#: ../po/debian-tasks.desc:178001
+#, fuzzy
+#| msgid "Persian desktop"
+msgid "Persian KDE desktop"
+msgstr "Màn hình nền Pha-xi"
+
+#. Description
+#: ../po/debian-tasks.desc:178001
+#, fuzzy
+#| msgid "This task localises the desktop in Persian."
+msgid "This task localises the KDE desktop in Persian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Pha-xi."
+
+#. Description
+#: ../po/debian-tasks.desc:179001
 msgid "Polish environment"
 msgstr "Môi trường Ba lan"
 
-#.Description
-#: ../po/debian-tasks.desc:90001
+#. Description
+#: ../po/debian-tasks.desc:179001
 msgid ""
 "This task installs packages and documentation in Polish to help Polish "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ba Lan giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ba Lan giúp người "
 "dùng Debian nói tiếng Ba Lan."
 
-#.Description
-#: ../po/debian-tasks.desc:91001
+#. Description
+#: ../po/debian-tasks.desc:180001
 msgid "Polish desktop"
 msgstr "Màn hình nền Ba lan"
 
-#.Description
-#: ../po/debian-tasks.desc:91001
+#. Description
+#: ../po/debian-tasks.desc:180001
 msgid "This task localises the desktop in Polish."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ba Lan."
 
-#.Description
-#: ../po/debian-tasks.desc:92001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:181001 ../po/debian-tasks.desc:182001
+#, fuzzy
+#| msgid "Polish desktop"
+msgid "Polish GNOME desktop"
+msgstr "Màn hình nền Ba lan"
+
+#. Description
+#: ../po/debian-tasks.desc:181001
+#, fuzzy
+#| msgid "This task localises the desktop in Polish."
+msgid "This task localises the GNOME desktop in Polish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ba Lan."
+
+#. Description
+#: ../po/debian-tasks.desc:182001
+#, fuzzy
+#| msgid "This task localises the desktop in Polish."
+msgid "This task localises the KDE desktop in Polish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ba Lan."
+
+#. Description
+#: ../po/debian-tasks.desc:183001
 msgid "Portuguese environment"
 msgstr "Môi trường Bồ Đào Nha"
 
-#.Description
-#: ../po/debian-tasks.desc:92001
+#. Description
+#: ../po/debian-tasks.desc:183001
 msgid ""
 "This task installs packages and documentation in Portuguese to help "
 "Portuguese speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Bồ Đào Nha giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Bồ Đào Nha giúp "
 "người dùng Debian nói tiếng Bồ Đào Nha."
 
-#.Description
-#: ../po/debian-tasks.desc:93001
+#. Description
+#: ../po/debian-tasks.desc:184001
 msgid "Portuguese desktop"
 msgstr "Màn hình nền Bồ Đào Nha"
 
-#.Description
-#: ../po/debian-tasks.desc:93001
+#. Description
+#: ../po/debian-tasks.desc:184001
 msgid "This task localises the desktop in Portuguese."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Bồ Đào Nha."
 
-#.Description
-#: ../po/debian-tasks.desc:94001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:185001 ../po/debian-tasks.desc:186001
+#, fuzzy
+#| msgid "Portuguese desktop"
+msgid "Portuguese GNOME desktop"
+msgstr "Màn hình nền Bồ Đào Nha"
+
+#. Description
+#: ../po/debian-tasks.desc:185001
+#, fuzzy
+#| msgid "This task localises the desktop in Portuguese."
+msgid "This task localises the GNOME desktop in Portuguese."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bồ Đào Nha."
+
+#. Description
+#: ../po/debian-tasks.desc:186001
+#, fuzzy
+#| msgid "This task localises the desktop in Portuguese."
+msgid "This task localises the KDE desktop in Portuguese."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Bồ Đào Nha."
+
+#. Description
+#: ../po/debian-tasks.desc:187001
 msgid "Print server"
 msgstr "Trình phục vụ in"
 
-#.Description
-#: ../po/debian-tasks.desc:94001
+#. Description
+#: ../po/debian-tasks.desc:187001
 msgid "This task sets up your system to be a print server."
 msgstr "Công việc này thiết lập hệ thống bạn là trình phục vụ in."
 
-#.Description
-#: ../po/debian-tasks.desc:95001
+#. Description
+#: ../po/debian-tasks.desc:188001
 msgid "Punjabi environment"
 msgstr "Môi trường Pun-gia-bi"
 
-#.Description
-#: ../po/debian-tasks.desc:95001
+#. Description
+#: ../po/debian-tasks.desc:188001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Punjabi speakers to use Debian."
-msgstr "Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng nói tiếng Pun-cha-bi sử dụng Debian dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:96001
+#. Description
+#: ../po/debian-tasks.desc:189001
 msgid "Punjabi desktop"
 msgstr "Màn hình nền Pun-gia-bi"
 
-#.Description
-#: ../po/debian-tasks.desc:96001
+#. Description
+#: ../po/debian-tasks.desc:189001
 msgid "This task localises the desktop in Punjabi."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Pun-gia-bi."
 
-#.Description
-#: ../po/debian-tasks.desc:97001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:190001 ../po/debian-tasks.desc:191001
+#, fuzzy
+#| msgid "Punjabi desktop"
+msgid "Punjabi GNOME desktop"
+msgstr "Màn hình nền Pun-gia-bi"
+
+#. Description
+#: ../po/debian-tasks.desc:190001
+#, fuzzy
+#| msgid "This task localises the desktop in Punjabi."
+msgid "This task localises the GNOME desktop in Punjabi."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Pun-gia-bi."
+
+#. Description
+#: ../po/debian-tasks.desc:191001
+#, fuzzy
+#| msgid "This task localises the desktop in Punjabi."
+msgid "This task localises the KDE desktop in Punjabi."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Pun-gia-bi."
+
+#. Description
+#: ../po/debian-tasks.desc:192001
 msgid "Romanian environment"
 msgstr "Môi trường Lỗ-má-ni"
 
-#.Description
-#: ../po/debian-tasks.desc:97001
+#. Description
+#: ../po/debian-tasks.desc:192001
 msgid ""
 "This task installs packages and documentation in Romanian to help Romanian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Lỗ-má-ni giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Lỗ-má-ni giúp "
 "người dùng Debian nói tiếng Lỗ-má-ni."
 
-#.Description
-#: ../po/debian-tasks.desc:98001
+#. Description
+#: ../po/debian-tasks.desc:193001
 msgid "Romanian desktop"
 msgstr "Màn hình Lỗ-má-ni"
 
-#.Description
-#: ../po/debian-tasks.desc:98001
+#. Description
+#: ../po/debian-tasks.desc:193001
 msgid "This task localises the desktop in Romanian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Lỗ-má-ni."
 
-#.Description
-#: ../po/debian-tasks.desc:99001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:194001 ../po/debian-tasks.desc:195001
+#, fuzzy
+#| msgid "Romanian desktop"
+msgid "Romanian GNOME desktop"
+msgstr "Màn hình Lỗ-má-ni"
+
+#. Description
+#: ../po/debian-tasks.desc:194001
+#, fuzzy
+#| msgid "This task localises the desktop in Romanian."
+msgid "This task localises the GNOME desktop in Romanian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Lỗ-má-ni."
+
+#. Description
+#: ../po/debian-tasks.desc:195001
+#, fuzzy
+#| msgid "This task localises the desktop in Romanian."
+msgid "This task localises the KDE desktop in Romanian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Lỗ-má-ni."
+
+#. Description
+#: ../po/debian-tasks.desc:196001
 msgid "Russian environment"
 msgstr "Môi trường Nga"
 
-#.Description
-#: ../po/debian-tasks.desc:99001
+#. Description
+#: ../po/debian-tasks.desc:196001
 msgid ""
 "This task installs programs and documentation in Russian to help Russian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Nga giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Nga giúp người "
 "dùng Debian nói tiếng Nga."
 
-#.Description
-#: ../po/debian-tasks.desc:100001
+#. Description
+#: ../po/debian-tasks.desc:197001
 msgid "Russian desktop"
 msgstr "Màn hình nền Nga"
 
-#.Description
-#: ../po/debian-tasks.desc:100001
+#. Description
+#: ../po/debian-tasks.desc:197001
 msgid "This task localises the desktop in Russian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Nga."
 
-#.Description
-#: ../po/debian-tasks.desc:101001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:198001 ../po/debian-tasks.desc:199001
+#, fuzzy
+#| msgid "Russian desktop"
+msgid "Russian GNOME desktop"
+msgstr "Màn hình nền Nga"
+
+#. Description
+#: ../po/debian-tasks.desc:198001
+#, fuzzy
+#| msgid "This task localises the desktop in Russian."
+msgid "This task localises the GNOME desktop in Russian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Nga."
+
+#. Description
+#: ../po/debian-tasks.desc:199001
+#, fuzzy
+#| msgid "This task localises the desktop in Russian."
+msgid "This task localises the KDE desktop in Russian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Nga."
+
+#. Description
+#: ../po/debian-tasks.desc:200001
 msgid "Serbian environment"
 msgstr "Môi trường Xéc-bi"
 
-#.Description
-#: ../po/debian-tasks.desc:101001
+#. Description
+#: ../po/debian-tasks.desc:200001
 msgid ""
 "This task installs packages and documentation in Serbian to help Serbian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Xéc-bi giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Xéc-bi giúp người "
 "dùng Debian nói tiếng Xéc-bi."
 
-#.Description
-#: ../po/debian-tasks.desc:102001
+#. Description
+#: ../po/debian-tasks.desc:201001
 msgid "Serbian desktop"
 msgstr "Màn hình nền Xéc-bi"
 
-#.Description
-#: ../po/debian-tasks.desc:102001
+#. Description
+#: ../po/debian-tasks.desc:201001
 msgid "This task localises the desktop in Serbian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Xéc-bi."
 
-#.Description
-#: ../po/debian-tasks.desc:103001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:202001 ../po/debian-tasks.desc:203001
+#, fuzzy
+#| msgid "Serbian desktop"
+msgid "Serbian GNOME desktop"
+msgstr "Màn hình nền Xéc-bi"
+
+#. Description
+#: ../po/debian-tasks.desc:202001
+#, fuzzy
+#| msgid "This task localises the desktop in Serbian."
+msgid "This task localises the GNOME desktop in Serbian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Xéc-bi."
+
+#. Description
+#: ../po/debian-tasks.desc:203001
+#, fuzzy
+#| msgid "This task localises the desktop in Serbian."
+msgid "This task localises the KDE desktop in Serbian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Xéc-bi."
+
+#. Description
+#: ../po/debian-tasks.desc:204001
 msgid "Slovak environment"
 msgstr "Môi trường Xlô-vak"
 
-#.Description
-#: ../po/debian-tasks.desc:103001
+#. Description
+#: ../po/debian-tasks.desc:204001
 msgid ""
 "This task installs packages and documentation in Slovak to help Slovak "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Xlô-vak giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Xlô-vak giúp "
 "người dùng Debian nói tiếng Xlô-vak."
 
-#.Description
-#: ../po/debian-tasks.desc:104001
+#. Description
+#: ../po/debian-tasks.desc:205001
 msgid "Slovak desktop"
 msgstr "Màn hình nền Xlô-vak"
 
-#.Description
-#: ../po/debian-tasks.desc:104001
+#. Description
+#: ../po/debian-tasks.desc:205001
 msgid "This task localises the desktop in Slovak."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Xlô-vak."
 
-#.Description
-#: ../po/debian-tasks.desc:105001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:206001 ../po/debian-tasks.desc:207001
+#, fuzzy
+#| msgid "Slovak desktop"
+msgid "Slovak GNOME desktop"
+msgstr "Màn hình nền Xlô-vak"
+
+#. Description
+#: ../po/debian-tasks.desc:206001
+#, fuzzy
+#| msgid "This task localises the desktop in Slovak."
+msgid "This task localises the GNOME desktop in Slovak."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Xlô-vak."
+
+#. Description
+#: ../po/debian-tasks.desc:207001
+#, fuzzy
+#| msgid "This task localises the desktop in Slovak."
+msgid "This task localises the KDE desktop in Slovak."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Xlô-vak."
+
+#. Description
+#: ../po/debian-tasks.desc:208001
 msgid "Slovenian environment"
 msgstr "Môi trường Xlô-ven"
 
-#.Description
-#: ../po/debian-tasks.desc:105001
+#. Description
+#: ../po/debian-tasks.desc:208001
 msgid ""
 "This task installs packages and documentation in Slovenian to help Slovenian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Xlô-ven giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Xlô-ven giúp "
 "người dùng Debian nói tiếng Xlô-ven."
 
-#.Description
-#: ../po/debian-tasks.desc:106001
+#. Description
+#: ../po/debian-tasks.desc:209001
 msgid "Slovenian desktop"
 msgstr "Màn hình nền Xlô-ven"
 
-#.Description
-#: ../po/debian-tasks.desc:106001
+#. Description
+#: ../po/debian-tasks.desc:209001
 msgid "This task localises the desktop in Slovenian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Xlô-ven."
 
-#.Description
-#: ../po/debian-tasks.desc:107001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:210001 ../po/debian-tasks.desc:211001
+#, fuzzy
+#| msgid "Slovenian desktop"
+msgid "Slovenian GNOME desktop"
+msgstr "Màn hình nền Xlô-ven"
+
+#. Description
+#: ../po/debian-tasks.desc:210001
+#, fuzzy
+#| msgid "This task localises the desktop in Slovenian."
+msgid "This task localises the GNOME desktop in Slovenian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Xlô-ven."
+
+#. Description
+#: ../po/debian-tasks.desc:211001
+#, fuzzy
+#| msgid "This task localises the desktop in Slovenian."
+msgid "This task localises the KDE desktop in Slovenian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Xlô-ven."
+
+#. Description
+#: ../po/debian-tasks.desc:212001
 msgid "Spanish environment"
 msgstr "Môi trường Tây Ban Nha"
 
-#.Description
-#: ../po/debian-tasks.desc:107001
+#. Description
+#: ../po/debian-tasks.desc:212001
 msgid ""
 "This task installs programs, data files, and documentation that make it "
 "easier for Spanish speakers to use Debian."
-msgstr "Công việc này cài đặt những chương trình, tập tin dữ liệu và tài liệu giúp "
+msgstr ""
+"Công việc này cài đặt những chương trình, tập tin dữ liệu và tài liệu giúp "
 "người dùng nói tiếng Tây Ban Nha sử dụng Debian dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:108001
+#. Description
+#: ../po/debian-tasks.desc:213001
 msgid "Spanish desktop"
 msgstr "Màn hình nền Tây Ban Nha"
 
-#.Description
-#: ../po/debian-tasks.desc:108001
+#. Description
+#: ../po/debian-tasks.desc:213001
 msgid "This task localises the desktop in Spanish."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Tây Ban Nha."
 
-#.Description
-#: ../po/debian-tasks.desc:109001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:214001 ../po/debian-tasks.desc:215001
+#, fuzzy
+#| msgid "Spanish desktop"
+msgid "Spanish GNOME desktop"
+msgstr "Màn hình nền Tây Ban Nha"
+
+#. Description
+#: ../po/debian-tasks.desc:214001
+#, fuzzy
+#| msgid "This task localises the desktop in Spanish."
+msgid "This task localises the GNOME desktop in Spanish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Tây Ban Nha."
+
+#. Description
+#: ../po/debian-tasks.desc:215001
+#, fuzzy
+#| msgid "This task localises the desktop in Spanish."
+msgid "This task localises the KDE desktop in Spanish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Tây Ban Nha."
+
+#. Description
+#: ../po/debian-tasks.desc:216001
 msgid "Standard system"
 msgstr "Hệ thống chuẩn"
 
-#.Description
-#: ../po/debian-tasks.desc:109001
+#. Description
+#: ../po/debian-tasks.desc:216001
 msgid "This task installs a reasonably small character-mode system."
 msgstr "Công việc này cài đặt một hệ thống hơi nhỏ chế độ ký tự."
 
-#.Description
-#: ../po/debian-tasks.desc:110001
+#. Description
+#: ../po/debian-tasks.desc:217001
 msgid "Swedish environment"
 msgstr "Môi trường Thuỵ Điển"
 
-#.Description
-#: ../po/debian-tasks.desc:110001
+#. Description
+#: ../po/debian-tasks.desc:217001
 msgid ""
 "This task installs packages and documentation in Swedish to help Swedish "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Thuỵ Điển giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Thuỵ Điển giúp "
 "người dùng Debian nói tiếng Thuỵ Điển."
 
-#.Description
-#: ../po/debian-tasks.desc:111001
+#. Description
+#: ../po/debian-tasks.desc:218001
 msgid "Swedish desktop"
 msgstr "Màn hình nền Thuỵ Điển"
 
-#.Description
-#: ../po/debian-tasks.desc:111001
+#. Description
+#: ../po/debian-tasks.desc:218001
 msgid "This task localises the desktop in Swedish."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Thuỵ Điển."
 
-#.Description
-#: ../po/debian-tasks.desc:112001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:219001 ../po/debian-tasks.desc:220001
+#, fuzzy
+#| msgid "Swedish desktop"
+msgid "Swedish GNOME desktop"
+msgstr "Màn hình nền Thuỵ Điển"
+
+#. Description
+#: ../po/debian-tasks.desc:219001
+#, fuzzy
+#| msgid "This task localises the desktop in Swedish."
+msgid "This task localises the GNOME desktop in Swedish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Thuỵ Điển."
+
+#. Description
+#: ../po/debian-tasks.desc:220001
+#, fuzzy
+#| msgid "This task localises the desktop in Swedish."
+msgid "This task localises the KDE desktop in Swedish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Thuỵ Điển."
+
+#. Description
+#: ../po/debian-tasks.desc:221001
 msgid "Tagalog environment"
 msgstr "Môi trường Ta-ga-loc"
 
-#.Description
-#: ../po/debian-tasks.desc:112001
+#. Description
+#: ../po/debian-tasks.desc:221001
 msgid ""
 "This task installs packages and documentation in Tagalog to help Tagalog "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ta-ga-loc giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ta-ga-loc giúp "
 "người dùng Debian nói tiếng Ta-ga-loc."
 
-#.Description
-#: ../po/debian-tasks.desc:113001
+#. Description
+#: ../po/debian-tasks.desc:222001
 msgid "Tamil environment"
 msgstr "Môi trường Ta-min"
 
-#.Description
-#: ../po/debian-tasks.desc:113001
+#. Description
+#: ../po/debian-tasks.desc:222001
 msgid ""
 "This task installs programs, data files, fonts, and documentation that makes "
 "it easier for Tamil speakers to use Debian."
-msgstr "Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
+msgstr ""
+"Công việc này cài đặt các chương trình, tập tin dữ liệu, phông chữ và tài "
 "liệu giúp người dùng nói tiếng Ta-min sử dụng Debian dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:114001
+#. Description
+#: ../po/debian-tasks.desc:223001
 msgid "Tamil desktop"
 msgstr "Màn hình nền Ta-min"
 
-#.Description
-#: ../po/debian-tasks.desc:114001
+#. Description
+#: ../po/debian-tasks.desc:223001
 msgid "This task localises the desktop in Tamil."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ta-min."
 
-#.Description
-#: ../po/debian-tasks.desc:115001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:224001 ../po/debian-tasks.desc:225001
+#, fuzzy
+#| msgid "Tamil desktop"
+msgid "Tamil GNOME desktop"
+msgstr "Màn hình nền Ta-min"
+
+#. Description
+#: ../po/debian-tasks.desc:224001
+#, fuzzy
+#| msgid "This task localises the desktop in Tamil."
+msgid "This task localises the GNOME desktop in Tamil."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ta-min."
+
+#. Description
+#: ../po/debian-tasks.desc:225001
+#, fuzzy
+#| msgid "This task localises the desktop in Tamil."
+msgid "This task localises the KDE desktop in Tamil."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ta-min."
+
+#. Description
+#: ../po/debian-tasks.desc:226001
 msgid "Thai environment"
 msgstr "Môi trường Thái"
 
-#.Description
-#: ../po/debian-tasks.desc:115001
+#. Description
+#: ../po/debian-tasks.desc:226001
 msgid ""
 "This task installs packages that make it easier for Thai speaking people to "
 "use Debian."
-msgstr "Công việc này cài đặt các gói giúp người dùng nói tiếng Thái sử dụng Debian "
+msgstr ""
+"Công việc này cài đặt các gói giúp người dùng nói tiếng Thái sử dụng Debian "
 "dễ dàng hơn."
 
-#.Description
-#: ../po/debian-tasks.desc:116001
+#. Description
+#: ../po/debian-tasks.desc:227001
 msgid "Thai desktop"
 msgstr "Màn hình nền Thái"
 
-#.Description
-#: ../po/debian-tasks.desc:116001
+#. Description
+#: ../po/debian-tasks.desc:227001
 msgid "This task localises the desktop in Thai."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Thái."
 
-#.Description
-#: ../po/debian-tasks.desc:117001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:228001 ../po/debian-tasks.desc:229001
+#, fuzzy
+#| msgid "Thai desktop"
+msgid "Thai GNOME desktop"
+msgstr "Màn hình nền Thái"
+
+#. Description
+#: ../po/debian-tasks.desc:228001
+#, fuzzy
+#| msgid "This task localises the desktop in Thai."
+msgid "This task localises the GNOME desktop in Thai."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Thái."
+
+#. Description
+#: ../po/debian-tasks.desc:229001
+#, fuzzy
+#| msgid "This task localises the desktop in Thai."
+msgid "This task localises the KDE desktop in Thai."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Thái."
+
+#. Description
+#: ../po/debian-tasks.desc:230001
 msgid "Turkish environment"
 msgstr "Môi trường Thổ Nhĩ Kỳ"
 
-#.Description
-#: ../po/debian-tasks.desc:117001
+#. Description
+#: ../po/debian-tasks.desc:230001
 msgid ""
 "This task installs packages and documentation in Turkish to help Turkish "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Thổ Nhĩ Kỳ giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Thổ Nhĩ Kỳ giúp "
 "người dùng Debian nói tiếng Thổ Nhĩ Kỳ."
 
-#.Description
-#: ../po/debian-tasks.desc:118001
+#. Description
+#: ../po/debian-tasks.desc:231001
 msgid "Turkish desktop"
 msgstr "Màn hình nền Thổ Nhĩ Kỳ"
 
-#.Description
-#: ../po/debian-tasks.desc:118001
+#. Description
+#: ../po/debian-tasks.desc:231001
 msgid "This task localises the desktop in Turkish."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Thổ Nhĩ Kỳ."
 
-#.Description
-#: ../po/debian-tasks.desc:119001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:232001 ../po/debian-tasks.desc:233001
+#, fuzzy
+#| msgid "Turkish desktop"
+msgid "Turkish GNOME desktop"
+msgstr "Màn hình nền Thổ Nhĩ Kỳ"
+
+#. Description
+#: ../po/debian-tasks.desc:232001
+#, fuzzy
+#| msgid "This task localises the desktop in Turkish."
+msgid "This task localises the GNOME desktop in Turkish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Thổ Nhĩ Kỳ."
+
+#. Description
+#: ../po/debian-tasks.desc:233001
+#, fuzzy
+#| msgid "This task localises the desktop in Turkish."
+msgid "This task localises the KDE desktop in Turkish."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Thổ Nhĩ Kỳ."
+
+#. Description
+#: ../po/debian-tasks.desc:234001
 msgid "Ukrainian environment"
 msgstr "Môi trường U-cợ-rainh"
 
-#.Description
-#: ../po/debian-tasks.desc:119001
+#. Description
+#: ../po/debian-tasks.desc:234001
 msgid ""
 "This task installs programs and documentation in Ukrainian to help Ukrainian "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng U-cợ-rainh giúp "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng U-cợ-rainh giúp "
 "người dùng Debian nói tiếng U-cợ-rainh."
 
-#.Description
-#: ../po/debian-tasks.desc:120001
+#. Description
+#: ../po/debian-tasks.desc:235001
 msgid "Ukrainian desktop"
 msgstr "Màn hình nền U-cợ-rainh"
 
-#.Description
-#: ../po/debian-tasks.desc:120001
+#. Description
+#: ../po/debian-tasks.desc:235001
 msgid "This task localises the desktop in Ukrainian."
 msgstr "Công việc này giúp hiển thị giao diện tiếng U-cợ-rainh."
 
-#.Description
-#: ../po/debian-tasks.desc:121001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:236001 ../po/debian-tasks.desc:237001
+#, fuzzy
+#| msgid "Ukrainian desktop"
+msgid "Ukrainian GNOME desktop"
+msgstr "Màn hình nền U-cợ-rainh"
+
+#. Description
+#: ../po/debian-tasks.desc:236001
+#, fuzzy
+#| msgid "This task localises the desktop in Ukrainian."
+msgid "This task localises the GNOME desktop in Ukrainian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng U-cợ-rainh."
+
+#. Description
+#: ../po/debian-tasks.desc:237001
+#, fuzzy
+#| msgid "This task localises the desktop in Ukrainian."
+msgid "This task localises the KDE desktop in Ukrainian."
+msgstr "Công việc này giúp hiển thị giao diện tiếng U-cợ-rainh."
+
+#. Description
+#: ../po/debian-tasks.desc:238001
 msgid "Vietnamese desktop"
 msgstr "Màn hình nền Việt"
 
-#.Description
-#: ../po/debian-tasks.desc:121001
+#. Description
+#: ../po/debian-tasks.desc:238001
 msgid "This task localises the desktop in Vietnamese."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Việt."
 
-#.Description
-#: ../po/debian-tasks.desc:122001
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:239001 ../po/debian-tasks.desc:240001
+#, fuzzy
+#| msgid "Vietnamese desktop"
+msgid "Vietnamese GNOME desktop"
+msgstr "Màn hình nền Việt"
+
+#. Description
+#: ../po/debian-tasks.desc:239001
+#, fuzzy
+#| msgid "This task localises the desktop in Vietnamese."
+msgid "This task localises the GNOME desktop in Vietnamese."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Việt."
+
+#. Description
+#: ../po/debian-tasks.desc:240001
+#, fuzzy
+#| msgid "This task localises the desktop in Vietnamese."
+msgid "This task localises the KDE desktop in Vietnamese."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Việt."
+
+#. Description
+#: ../po/debian-tasks.desc:241001
 msgid "Web server"
 msgstr "Trình phục vụ Web"
 
-#.Description
-#: ../po/debian-tasks.desc:122001
+#. Description
+#: ../po/debian-tasks.desc:241001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "Nhón này chọn các gói hỗ trợ cho một hệ thống phục vụ Web thường dụng."
 
-#.Description
-#: ../po/debian-tasks.desc:123001
+#. Description
+#: ../po/debian-tasks.desc:242001
 msgid "Welsh environment"
 msgstr "Môi trường Ouen-s"
 
-#.Description
-#: ../po/debian-tasks.desc:123001
+#. Description
+#: ../po/debian-tasks.desc:242001
 msgid ""
 "This task installs packages and documentation in Welsh to help Welsh "
 "speaking people use Debian."
-msgstr "Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ouen-s giúp người "
+msgstr ""
+"Công việc này cài đặt những gói phần mềm và tài liệu tiếng Ouen-s giúp người "
 "dùng Debian nói tiếng Ouen-s."
 
-#.Description
-#: ../po/debian-tasks.desc:124001
+#. Description
+#: ../po/debian-tasks.desc:243001
 msgid "Welsh desktop"
 msgstr "Màn hình nền Ouen-s"
 
-#.Description
-#: ../po/debian-tasks.desc:124001
+#. Description
+#: ../po/debian-tasks.desc:243001
 msgid "This task localises the desktop in Welsh."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Ouen-s."
 
-#.Description
-#: ../po/debian-tasks.desc:125001
+#. Description
+#: ../po/debian-tasks.desc:244001
+#, fuzzy
+#| msgid "Welsh desktop"
+msgid "Welsh GNOME desktop"
+msgstr "Màn hình nền Ouen-s"
+
+#. Description
+#: ../po/debian-tasks.desc:244001
+#, fuzzy
+#| msgid "This task localises the desktop in Welsh."
+msgid "This task localises the GNOME desktop in Welsh."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ouen-s."
+
+#. Description
+#: ../po/debian-tasks.desc:245001
+#, fuzzy
+#| msgid "Welsh desktop"
+msgid "Welsh KDE desktop"
+msgstr "Màn hình nền Ouen-s"
+
+#. Description
+#: ../po/debian-tasks.desc:245001
+#, fuzzy
+#| msgid "This task localises the desktop in Welsh."
+msgid "This task localises the KDE desktop in Welsh."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Ouen-s."
+
+#. Description
+#: ../po/debian-tasks.desc:246001
 msgid "Xfce desktop environment"
 msgstr "Môi trường làm việc Xfce"
 
-#.Description
-#: ../po/debian-tasks.desc:125001
+#. Description
+#: ../po/debian-tasks.desc:246001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
-msgstr "Công việc này cung cấp phần mềm « màn hình nền » cơ bản, dùng môi trường làm "
+msgstr ""
+"Công việc này cung cấp phần mềm « màn hình nền » cơ bản, dùng môi trường làm "
 "việc Xfce."
 
-#.Description
-#: ../po/debian-tasks.desc:126001
+#. Description
+#: ../po/debian-tasks.desc:247001
 msgid "Xhosa desktop"
 msgstr "Màn hình nền Xô-xa"
 
-#.Description
-#: ../po/debian-tasks.desc:126001
+#. Description
+#: ../po/debian-tasks.desc:247001
 msgid "This task localises the desktop in Xhosa."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Xô-xa."
+
+#. Description
+#. Description
+#: ../po/debian-tasks.desc:248001 ../po/debian-tasks.desc:249001
+#, fuzzy
+#| msgid "Xhosa desktop"
+msgid "Xhosa GNOME desktop"
+msgstr "Màn hình nền Xô-xa"
+
+#. Description
+#: ../po/debian-tasks.desc:248001
+#, fuzzy
+#| msgid "This task localises the desktop in Xhosa."
+msgid "This task localises the GNOME desktop in Xhosa."
+msgstr "Công việc này giúp hiển thị giao diện tiếng Xô-xa."
+
+#. Description
+#: ../po/debian-tasks.desc:249001
+#, fuzzy
+#| msgid "This task localises the desktop in Xhosa."
+msgid "This task localises the KDE desktop in Xhosa."
 msgstr "Công việc này giúp hiển thị giao diện tiếng Xô-xa."
