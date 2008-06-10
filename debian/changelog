@@ -47,9 +47,8 @@ tasksel (2.75) UNRELEASED; urgency=low
   * French updated
 
   [ Joey Hess ]
-  * Move myspell from base language to lang-desktop tasks, as it is used by
-    gui programs. (hunspell left in base language tasks as it can be used at
-    the console.)
+  * Move myspell/hunspell from base language to lang-desktop tasks,
+    as it is used by gui programs.
   * Exclude hidden tasks from translation, since there is very little point
     in translating these and it causes much translator load, and bloats
     tasksel. For now, all tasks in Section l10n are excluded, which excludes
