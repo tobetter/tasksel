@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks_po_be.new\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-09 22:38+0200\n"
+"POT-Creation-Date: 2008-06-10 07:03+0200\n"
 "PO-Revision-Date: 2008-05-12 17:32+0300\n"
 "Last-Translator: Pavel Piatruk <piatruk.p@gmail.com>\n"
 "Language-Team: Belarusian (Official spelling) <i18n@mova.org>\n"
@@ -344,7 +344,7 @@ msgstr ""
 #: ../po/debian-tasks.desc:26001
 #, fuzzy
 #| msgid "Brazilian Portuguese desktop"
-msgid "Brazilian-portuguese GNOME desktop"
+msgid "Brazilian Portuguese GNOME desktop"
 msgstr "Працоўны стол па-партугальску для бразільцаў"
 
 #. Description
@@ -359,7 +359,7 @@ msgstr ""
 #: ../po/debian-tasks.desc:27001
 #, fuzzy
 #| msgid "Brazilian Portuguese desktop"
-msgid "Brazilian-portuguese KDE desktop"
+msgid "Brazilian Portuguese KDE desktop"
 msgstr "Працоўны стол па-партугальску для бразільцаў"
 
 #. Description
@@ -879,9 +879,13 @@ msgstr "Асяроддзе працоўнага стала"
 
 #. Description
 #: ../po/debian-tasks.desc:65001
+#, fuzzy
+#| msgid ""
+#| "This task provides basic desktop software and serves as a basis for the "
+#| "Gnome and KDE desktop tasks."
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
-"Gnome and KDE desktop tasks."
+"GNOME and KDE desktop tasks."
 msgstr ""
 "Гэта заданне забяспечвае асноўны набор праграм і служыць базай для заданняў "
 "працоўных сталоў Gnome і KDE."
@@ -1298,13 +1302,19 @@ msgstr "Гэта заданне перакладае працоўны стол �
 
 #. Description
 #: ../po/debian-tasks.desc:98001
-msgid "Gnome desktop environment"
-msgstr "Асяроддзе працоўнага стала Gnome"
+#, fuzzy
+#| msgid "KDE desktop environment"
+msgid "GNOME desktop environment"
+msgstr "Асяроддзе працоўнага стала KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:98001
+#, fuzzy
+#| msgid ""
+#| "This task provides basic \"desktop\" software using the Gnome desktop "
+#| "environment."
 msgid ""
-"This task provides basic \"desktop\" software using the Gnome desktop "
+"This task provides basic \"desktop\" software using the GNOME desktop "
 "environment."
 msgstr ""
 "Гэта заданне забяспечвае базавы набор \"працоўнага стала\" з дапамогай "
@@ -3270,3 +3280,6 @@ msgstr "Працоўны стол на мове коса"
 #| msgid "This task localises the desktop in Xhosa."
 msgid "This task localises the KDE desktop in Xhosa."
 msgstr "Гэта заданне перакладае працоўны стол на мову коса."
+
+#~ msgid "Gnome desktop environment"
+#~ msgstr "Асяроддзе працоўнага стала Gnome"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-09 22:38+0200\n"
+"POT-Creation-Date: 2008-06-10 07:03+0200\n"
 "PO-Revision-Date: 2008-05-05 21:37-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -343,7 +343,7 @@ msgstr ""
 #: ../po/debian-tasks.desc:26001
 #, fuzzy
 #| msgid "Brazilian Portuguese desktop"
-msgid "Brazilian-portuguese GNOME desktop"
+msgid "Brazilian Portuguese GNOME desktop"
 msgstr "Deasc Phortaingéilis na Brasaíle"
 
 #. Description
@@ -358,7 +358,7 @@ msgstr ""
 #: ../po/debian-tasks.desc:27001
 #, fuzzy
 #| msgid "Brazilian Portuguese desktop"
-msgid "Brazilian-portuguese KDE desktop"
+msgid "Brazilian Portuguese KDE desktop"
 msgstr "Deasc Phortaingéilis na Brasaíle"
 
 #. Description
@@ -879,9 +879,13 @@ msgstr "Timpeallacht deisce"
 
 #. Description
 #: ../po/debian-tasks.desc:65001
+#, fuzzy
+#| msgid ""
+#| "This task provides basic desktop software and serves as a basis for the "
+#| "Gnome and KDE desktop tasks."
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
-"Gnome and KDE desktop tasks."
+"GNOME and KDE desktop tasks."
 msgstr ""
 "Suiteálann an tasc seo bogearraí bunúsacha deisce agus is é dúshraith na "
 "dtascanna GNOME agus KDE."
@@ -1300,13 +1304,19 @@ msgstr "Cuireann an tasc seo an deasc in oiriúint don Ghearmáinis."
 
 #. Description
 #: ../po/debian-tasks.desc:98001
-msgid "Gnome desktop environment"
-msgstr "Timpeallacht GNOME"
+#, fuzzy
+#| msgid "KDE desktop environment"
+msgid "GNOME desktop environment"
+msgstr "Timpeallacht KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:98001
+#, fuzzy
+#| msgid ""
+#| "This task provides basic \"desktop\" software using the Gnome desktop "
+#| "environment."
 msgid ""
-"This task provides basic \"desktop\" software using the Gnome desktop "
+"This task provides basic \"desktop\" software using the GNOME desktop "
 "environment."
 msgstr ""
 "Suiteálann an tasc seo bogearraí bunúsacha \"deisce\" de chuid thimpeallacht "
@@ -3274,3 +3284,6 @@ msgstr "Deasc Chóisise"
 #| msgid "This task localises the desktop in Xhosa."
 msgid "This task localises the KDE desktop in Xhosa."
 msgstr "Cuireann an tasc seo an deasc in oiriúint don Chóisis."
+
+#~ msgid "Gnome desktop environment"
+#~ msgstr "Timpeallacht GNOME"
