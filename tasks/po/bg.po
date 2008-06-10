@@ -4,32 +4,31 @@
 # This file is distributed under the same license as the tasksel package.
 #
 # Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005, 2006.
-# Damyan Ivanov <dam@modsoftsys.com>, 2006, 2007, 2008.
+# Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.44\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-10 14:04-0400\n"
-"PO-Revision-Date: 2008-01-13 21:18+0200\n"
-"Last-Translator: \n"
-"Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
+"POT-Creation-Date: 2008-06-10 13:59-0400\n"
+"PO-Revision-Date: 2008-06-11 09:00+0300\n"
+"Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KAider 0.1\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
 msgid "SQL database"
-msgstr "SQL база данни"
+msgstr "База данни SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
+msgid "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
-"Тази задача избира клиентските и сървърските пакети на базата данни "
+"Тази задача избира пакетите за работа с базата данни "
 "PostgreSQL."
 
 #. Description
@@ -40,10 +39,10 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
-"PostgreSQL е SQL релационна база данни, която предлага широка поддръжка на "
-"стандарта SQL92, както и някои въведения на стандарта SQL3.  Подходяща е за "
+"PostgreSQL е релационна база данни, която предлага широка поддръжка на "
+"стандарта SQL92, както и някои въведения на стандарта SQL3. Подходяща е за "
 "използване при многопотребителски достъп до база данни заради нейните "
-"способности за транзакции и фино заключване."
+"способности за транзакции и прецизно заключване."
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -52,13 +51,12 @@ msgstr "Среда за работен плот"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "GNOME and KDE desktop tasks."
 msgstr ""
-"Тази задача осигурява софтуер за основен работен плот и служи за основа на "
-"задачите за работен плот Gnome и KDE."
+"Тази задача осигурява основен софтуер за работен плот и служи за основа на "
+"задачите за работните среди ГНОМ и КДЕ."
 
 #. Description
 #: ../po/debian-tasks.desc:3001
@@ -67,10 +65,9 @@ msgstr "DNS сървър"
 
 #. Description
 #: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
+msgid "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
-"Избира DNS сървърът BIND и свързаните с него пакети с документация и "
+"Избира DNS сървъра BIND и свързаните с него пакети с документация и "
 "инструменти."
 
 #. Description
@@ -84,38 +81,32 @@ msgid ""
 "This task sets up your system to be a file server, supporting both NetBIOS "
 "and NFS."
 msgstr ""
-"Тази задача настройва Вашата система за файлов сървър, поддържащ NetBIOS и "
+"Тази задача настройва системата за файлов сървър, поддържащ NetBIOS и "
 "NFS."
 
 #. Description
 #: ../po/debian-tasks.desc:5001
-#, fuzzy
 msgid "GNOME desktop environment"
-msgstr "Среда за работен плот"
+msgstr "Графична среда ГНОМ"
 
 #. Description
 #: ../po/debian-tasks.desc:5001
-#, fuzzy
 msgid ""
 "This task provides basic \"desktop\" software using the GNOME desktop "
 "environment."
-msgstr ""
-"Тази задача осигурява софтуер за основен работен плот, използвайки средата "
-"Gnome."
+msgstr "Тази задача осигурява софтуер за работен плот, използвайки средата ГНОМ."
 
 #. Description
 #: ../po/debian-tasks.desc:6001
 msgid "KDE desktop environment"
-msgstr "Среда за работен плот"
+msgstr "Графична среда КДЕ"
 
 #. Description
 #: ../po/debian-tasks.desc:6001
 msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
-msgstr ""
-"Тази задача осигурява софтуер за основен работен плот, използвайки средата "
-"KDE."
+msgstr "Тази задача осигурява софтуер за работен плот, използвайки средата KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:7001
@@ -138,8 +129,8 @@ msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
 msgstr ""
-"Тази задача избира разнообразни пакети, които са полезни в общоцелеви "
-"пощенски сървър."
+"Тази задача избира разнообразни пакети, които са полезни за пощенски сървър "
+"с общо предназначение."
 
 #. Description
 #: ../po/debian-tasks.desc:9001
@@ -149,17 +140,17 @@ msgstr "ръчно избиране на пакети"
 #. Description
 #: ../po/debian-tasks.desc:9001
 msgid "Manually select packages to install in aptitude."
-msgstr "Ръчно избиране на пакети, които да се инсталират с aptitude."
+msgstr "Ръчно избиране на пакети с aptitude."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
 msgid "Print server"
-msgstr "Сървър за отпечатване"
+msgstr "Сървър за печатане"
 
 #. Description
 #: ../po/debian-tasks.desc:10001
 msgid "This task sets up your system to be a print server."
-msgstr "Тази задача настройва системата Ви за сървър за отпечатване."
+msgstr "Тази задача настройва системата Ви за сървър за печатане."
 
 #. Description
 #: ../po/debian-tasks.desc:11001
@@ -178,9 +169,8 @@ msgstr "Уеб сървър"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr "Тази задача избира пакети, подходящи за общоцелеви уеб сървър."
+msgid "This task selects packages useful for a general purpose web server system."
+msgstr "Тази задача избира пакети, подходящи за уеб сървър."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -193,11 +183,11 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
-"Тази задача осигурява софтуер за основен работен плот, използвайки средата "
+"Тази задача осигурява софтуер за работен плот, използвайки средата "
 "Xfce."
 
 #~ msgid "Amharic environment"
-#~ msgstr "Среда за амхарски"
+#~ msgstr "Среда на амхарски"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
@@ -207,29 +197,25 @@ msgstr ""
 #~ "които улесняват говорещите амхарски потребители на Debian."
 
 #~ msgid "Amharic desktop"
-#~ msgstr "Работен плот за амхарски"
+#~ msgstr "Работен плот на амхарски"
 
 #~ msgid "This task localises the desktop in Amharic."
-#~ msgstr "Тази задача локализира работния плот за амхарски"
+#~ msgstr "Тази задача локализира работния плот на амхарски."
 
-#, fuzzy
 #~ msgid "Amharic GNOME desktop"
-#~ msgstr "Работен плот за амхарски"
+#~ msgstr "ГНОМ на амхарски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Amharic."
-#~ msgstr "Тази задача локализира работния плот за амхарски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на амхарски."
 
-#, fuzzy
 #~ msgid "Amharic KDE desktop"
-#~ msgstr "Работен плот за амхарски"
+#~ msgstr "КДЕ на амхарски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Amharic."
-#~ msgstr "Тази задача локализира работния плот за амхарски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на амхарски."
 
 #~ msgid "Arabic environment"
-#~ msgstr "Среда за арабски"
+#~ msgstr "Среда на арабски"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
@@ -239,83 +225,71 @@ msgstr ""
 #~ "които улесняват говорещите арабски потребители на Debian."
 
 #~ msgid "Arabic desktop"
-#~ msgstr "Работен плот за арабски"
+#~ msgstr "Работен плот на арабски"
 
 #~ msgid "This task localises the desktop in Arabic."
-#~ msgstr "Тази задача локализира работния плот за арабски"
+#~ msgstr "Тази задача локализира работния плот на арабски."
 
-#, fuzzy
 #~ msgid "Arabic GNOME desktop"
-#~ msgstr "Работен плот за арабски"
+#~ msgstr "ГНОМ на арабски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Arabic."
-#~ msgstr "Тази задача локализира работния плот за арабски"
+#~ msgstr "Тази задача локализира работния плот на арабски."
 
-#, fuzzy
 #~ msgid "Arabic KDE desktop"
-#~ msgstr "Работен плот за арабски"
+#~ msgstr "KDE на арабски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Arabic."
-#~ msgstr "Тази задача локализира работния плот за арабски"
+#~ msgstr "Тази задача локализира работния плот на арабски."
 
 #~ msgid "Basque desktop"
-#~ msgstr "Работен плот за баскски"
+#~ msgstr "Работен плот на баскски"
 
 #~ msgid "This task localises the desktop in Basque."
-#~ msgstr "Тази задача локализира работния плот за баскски"
+#~ msgstr "Тази задача локализира работния плот на баскски."
 
-#, fuzzy
 #~ msgid "Basque GNOME desktop"
-#~ msgstr "Работен плот за баскски"
+#~ msgstr "ГНОМ на баскски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Basque."
-#~ msgstr "Тази задача локализира работния плот за баскски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на баскски."
 
-#, fuzzy
 #~ msgid "Basque KDE desktop"
-#~ msgstr "Работен плот за баскски"
+#~ msgstr "КДЕ на баскски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Basque."
-#~ msgstr "Тази задача локализира работния плот за баскски"
+#~ msgstr "Тази задача локализира крафичната среда КДЕ на баскски."
 
 #~ msgid "Belarusian environment"
-#~ msgstr "Среда за белоруски"
+#~ msgstr "Среда на беларуски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Belarusian to help "
 #~ "Belarusian speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на белоруски в помощ на "
-#~ "говорещите белоруски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "беларуски потребители на Debian."
 
 #~ msgid "Belarusian desktop"
-#~ msgstr "Работен плот за белоруски"
+#~ msgstr "Работен плот на беларуски"
 
 #~ msgid "This task localises the desktop in Belarusian."
-#~ msgstr "Тази задача локализира работния плот за белоруски"
+#~ msgstr "Тази задача локализира работния плот на беларуски."
 
-#, fuzzy
 #~ msgid "Belarusian GNOME desktop"
-#~ msgstr "Работен плот за белоруски"
+#~ msgstr "ГНОМ на беларуски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Belarusian."
-#~ msgstr "Тази задача локализира работния плот за белоруски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на беларуски."
 
-#, fuzzy
 #~ msgid "Belarusian KDE desktop"
-#~ msgstr "Работен плот за белоруски"
+#~ msgstr "KDE на беларуски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Belarusian."
-#~ msgstr "Тази задача локализира работния плот за белоруски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на беларуски."
 
 #~ msgid "Bengali environment"
-#~ msgstr "Среда за бенгалски"
+#~ msgstr "Среда на бенгалски"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
@@ -325,61 +299,53 @@ msgstr ""
 #~ "които улесняват говорещите бенгалски потребители на Debian."
 
 #~ msgid "Bengali desktop"
-#~ msgstr "Работен плот за бенгалски"
+#~ msgstr "Работен плот на бенгалски"
 
 #~ msgid "This task localises the desktop in Bengali."
-#~ msgstr "Тази задача локализира работния плот за бенгалски"
+#~ msgstr "Тази задача локализира работния плот на бенгалски."
 
-#, fuzzy
 #~ msgid "Bengali GNOME desktop"
-#~ msgstr "Работен плот за бенгалски"
+#~ msgstr "ГНОМ на бенгалски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Bengali."
-#~ msgstr "Тази задача локализира работния плот за бенгалски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на бенгалски."
 
-#, fuzzy
 #~ msgid "Bengali KDE desktop"
-#~ msgstr "Работен плот за бенгалски"
+#~ msgstr "КДЕ на бенгалски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Bengali."
-#~ msgstr "Тази задача локализира работния плот за бенгалски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на бенгалски."
 
 #~ msgid "Bosnian environment"
-#~ msgstr "Среда за босненски"
+#~ msgstr "Среда на босненски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Bosnian to help Bosnian "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на босненски в помощ на "
-#~ "говорещите босненски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "босненски потребители на Debian."
 
 #~ msgid "Bosnian desktop"
-#~ msgstr "Работен плот за босненски"
+#~ msgstr "Работен плот на босненски"
 
 #~ msgid "This task localises the desktop in Bosnian."
-#~ msgstr "Тази задача локализира работния плот за босненски"
+#~ msgstr "Тази задача локализира работния плот на босненски."
 
-#, fuzzy
 #~ msgid "Bosnian GNOME desktop"
-#~ msgstr "Работен плот за босненски"
+#~ msgstr "ГНОМ на босненски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Bosnian."
-#~ msgstr "Тази задача локализира работния плот за босненски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на босненски."
 
-#, fuzzy
 #~ msgid "Bosnian KDE desktop"
-#~ msgstr "Работен плот за босненски"
+#~ msgstr "КДЕ на босненски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Bosnian."
-#~ msgstr "Тази задача локализира работния плот за босненски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на босненски."
 
 #~ msgid "Brazilian Portuguese environment"
-#~ msgstr "Среда за бразилски португалски"
+#~ msgstr "Среда на бразилски португалски"
 
 #~ msgid ""
 #~ "This task installs programs, data files, and documentation that make it "
@@ -389,29 +355,27 @@ msgstr ""
 #~ "улесняващи говорещите бразилски португалски потребители на Debian."
 
 #~ msgid "Brazilian Portuguese desktop"
-#~ msgstr "Работен плот за бразилски португалски"
+#~ msgstr "Работен плот на бразилски португалски"
 
 #~ msgid "This task localises the desktop in Brasilian Portuguese."
-#~ msgstr "Тази задача локализира работния плот за бразилски португалски."
+#~ msgstr "Тази задача локализира работния плот на бразилски португалски."
 
-#, fuzzy
 #~ msgid "Brazilian Portuguese GNOME desktop"
-#~ msgstr "Работен плот за бразилски португалски"
+#~ msgstr "ГНОМ на бразилски португалски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Brazilian Portuguese."
-#~ msgstr "Тази задача локализира работния плот за бразилски португалски."
+#~ msgstr ""
+#~ "Тази задача локализира графичната среда ГНОМ на бразилски португалски."
 
-#, fuzzy
 #~ msgid "Brazilian Portuguese KDE desktop"
-#~ msgstr "Работен плот за бразилски португалски"
+#~ msgstr "КДЕ на бразилски португалски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Brazilian Portuguese."
-#~ msgstr "Тази задача локализира работния плот за бразилски португалски."
+#~ msgstr ""
+#~ "Тази задача локализира графичната среда КДЕ на бразилски португалски."
 
 #~ msgid "British English environment"
-#~ msgstr "Среда за британски английски"
+#~ msgstr "Среда на британски английски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in British English to help "
@@ -421,29 +385,26 @@ msgstr ""
 #~ "помощ на говорещите британски английски език потребители на Debian."
 
 #~ msgid "British English desktop"
-#~ msgstr "Работен плот за британски английски"
+#~ msgstr "Работен плот на британски английски"
 
 #~ msgid "This task localises the desktop in British English."
-#~ msgstr "Тази задача локализира работния плот за британски английски"
+#~ msgstr "Тази задача локализира работния плот на британски английски."
 
-#, fuzzy
 #~ msgid "British GNOME desktop"
-#~ msgstr "Работен плот за британски английски"
+#~ msgstr "ГНОМ на британски английски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in British."
-#~ msgstr "Тази задача локализира работния плот за ирландски"
+#~ msgstr ""
+#~ "Тази задача локализира графичната среда ГНОМ на британски английски."
 
-#, fuzzy
 #~ msgid "British KDE desktop"
-#~ msgstr "Работен плот за британски английски"
+#~ msgstr "КДЕ на британски английски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in British."
-#~ msgstr "Тази задача локализира работния плот за ирландски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на британски английски."
 
 #~ msgid "Bulgarian environment"
-#~ msgstr "Среда за български"
+#~ msgstr "Среда на български"
 
 #~ msgid ""
 #~ "This task installs programs and data files that make it easier for "
@@ -453,61 +414,53 @@ msgstr ""
 #~ "говорещите български потребители на Debian."
 
 #~ msgid "Bulgarian desktop"
-#~ msgstr "Работен плот за български"
+#~ msgstr "Работен плот на български"
 
 #~ msgid "This task localises the desktop in Bulgarian."
-#~ msgstr "Тази задача локализира работния плот за български"
+#~ msgstr "Тази задача локализира работния плот на български."
 
-#, fuzzy
 #~ msgid "Bulgarian GNOME desktop"
-#~ msgstr "Работен плот за български"
+#~ msgstr "ГНОМ на български"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Bulgarian."
-#~ msgstr "Тази задача локализира работния плот за български"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на български."
 
-#, fuzzy
 #~ msgid "Bulgarian KDE desktop"
-#~ msgstr "Работен плот за български"
+#~ msgstr "КДЕ на български"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Bulgarian."
-#~ msgstr "Тази задача локализира работния плот за български"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на български."
 
 #~ msgid "Catalan environment"
-#~ msgstr "Среда за каталански"
+#~ msgstr "Среда на каталански"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Catalan to help Catalan "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на каталански в помощ на "
-#~ "говорящите каталански потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "каталански потребители на Debian."
 
 #~ msgid "Catalan desktop"
-#~ msgstr "Работен плот за каталански"
+#~ msgstr "Работен плот на каталански"
 
 #~ msgid "This task localises the desktop in Catalan."
-#~ msgstr "Тази задача локализира работния плот за каталански."
+#~ msgstr "Тази задача локализира работния плот на каталански."
 
-#, fuzzy
 #~ msgid "Catalan GNOME desktop"
-#~ msgstr "Работен плот за каталански"
+#~ msgstr "ГНОМ на каталански"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Catalan."
-#~ msgstr "Тази задача локализира работния плот за каталански."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на каталански."
 
-#, fuzzy
 #~ msgid "Catalan KDE desktop"
-#~ msgstr "Работен плот за каталански"
+#~ msgstr "КДЕ на каталански"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Catalan."
-#~ msgstr "Тази задача локализира работния плот за каталански."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на каталански."
 
 #~ msgid "Simplified Chinese environment"
-#~ msgstr "Среда за Simplified Chinese"
+#~ msgstr "Среда на опростен китайски"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
@@ -516,32 +469,28 @@ msgstr ""
 #~ msgstr ""
 #~ "Тази задача инсталира програми, файлове с данни, шрифтове и документация, "
 #~ "които улесняват говорещите китайски потребители на Debian, които "
-#~ "използват кодирането Simplified Chinese"
+#~ "използват опростен китайски."
 
 #~ msgid "Simplified Chinese desktop"
-#~ msgstr "Работен плот за Simplified Chinese"
+#~ msgstr "Работен плот на опростен китайски"
 
 #~ msgid "This task localises the desktop in Simplified Chinese."
-#~ msgstr "Тази задача локализира работния плот за опростен китайски"
+#~ msgstr "Тази задача локализира работния плот на опростен китайски."
 
-#, fuzzy
 #~ msgid "Chinese-s GNOME desktop"
-#~ msgstr "Работен плот за виетнамски"
+#~ msgstr "ГНОМ на опростен китайски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Chinese-s."
-#~ msgstr "Тази задача локализира работния плот за виетнамски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на опростен китайски."
 
-#, fuzzy
 #~ msgid "Chinese-s KDE desktop"
-#~ msgstr "Работен плот за виетнамски"
+#~ msgstr "КДЕ на опростен китайски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Chinese-s."
-#~ msgstr "Тази задача локализира работния плот за виетнамски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на опростен китайски."
 
 #~ msgid "Traditional Chinese environment"
-#~ msgstr "Среда за Traditional Chinese"
+#~ msgstr "Среда на традиционен китайски"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
@@ -550,644 +499,562 @@ msgstr ""
 #~ msgstr ""
 #~ "Тази задача инсталира програми, файлове с данни, шрифтове и документация, "
 #~ "които улесняват говорещите китайски потребители на Debian, които "
-#~ "използват кодирането Traditional Chinese"
+#~ "използват традиционен китайски."
 
 #~ msgid "Traditional Chinese desktop"
-#~ msgstr "Среда за традиционен китайски"
+#~ msgstr "Среда на традиционен китайски"
 
 #~ msgid "This task localises the desktop in Traditional Chinese."
-#~ msgstr "Тази задача локализира работния плот за традиционен китайски"
+#~ msgstr "Тази задача локализира работния плот на традиционен китайски."
 
-#, fuzzy
 #~ msgid "Chinese-t GNOME desktop"
-#~ msgstr "Работен плот за виетнамски"
+#~ msgstr "Работен плот на традиционен китайски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Chinese-t."
-#~ msgstr "Тази задача локализира работния плот за виетнамски"
+#~ msgstr ""
+#~ "Тази задача локализира графичната среда ГНОМ на традиционен китайски."
 
-#, fuzzy
 #~ msgid "Chinese-t KDE desktop"
-#~ msgstr "Работен плот за виетнамски"
+#~ msgstr "КДЕ на традиционен китайски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Chinese-t."
-#~ msgstr "Тази задача локализира работния плот за виетнамски"
+#~ msgstr ""
+#~ "Тази задача локализира графичната среда КДЕ на традиционен китайски."
 
 #~ msgid "Croatian environment"
-#~ msgstr "Среда за хърватски"
+#~ msgstr "Среда на хърватски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Croatian to help "
 #~ "Croatian speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на хърватски в помощ на "
-#~ "говорещите хърватски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "хърватски потребители на Debian."
 
 #~ msgid "Croatian desktop"
-#~ msgstr "Работен плот за хърватски"
+#~ msgstr "Работен плот на хърватски"
 
 #~ msgid "This task localises the desktop in Croatian."
-#~ msgstr "Тази задача локализира работния плот за хърватски."
+#~ msgstr "Тази задача локализира работния плот на хърватски."
 
-#, fuzzy
 #~ msgid "Croatian GNOME desktop"
-#~ msgstr "Работен плот за хърватски"
+#~ msgstr "ГНОМ на хърватски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Croatian."
-#~ msgstr "Тази задача локализира работния плот за хърватски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на хърватски."
 
-#, fuzzy
 #~ msgid "Croatian KDE desktop"
-#~ msgstr "Работен плот за хърватски"
+#~ msgstr "КДЕ на хърватски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Croatian."
-#~ msgstr "Тази задача локализира работния плот за хърватски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на хърватски."
 
 #~ msgid "Cyrillic environment"
-#~ msgstr "Среда за кирилица"
+#~ msgstr "Среда за работа с кирилица"
 
 #~ msgid ""
 #~ "This task provides Cyrillic fonts and other software you will need in "
 #~ "order to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, "
 #~ "Russian, Serbian and Ukrainian."
 #~ msgstr ""
-#~ "Тази задача осигурява кирилски шрифтове и друг софтуер, който ще ви е "
-#~ "нужен, за да използвате кирилица. Поддържат се езиците: беларуски, "
-#~ "български, македонски, руски, сръбски и украински."
+#~ "Тази задача осигурява шрифтове и друг софтуер, който ще ви е нужен, за да "
+#~ "използвате кирилица. Поддържат се езиците: беларуски, български, "
+#~ "македонски, руски, сръбски и украински."
 
 #~ msgid "Cyrillic desktop"
-#~ msgstr "Работен плот за кирилица"
+#~ msgstr "Работен плот за работа с кирилица"
 
 #~ msgid ""
 #~ "This task localises the desktop in Cyrillic. It supports Belarusian, "
 #~ "Bulgarian, Macedonian, Russian, Serbian and Ukrainian."
 #~ msgstr ""
-#~ "Тази задача локализира работния плот за кирилица. Поддържат се беларуски, "
-#~ "български, македонски, руски, сръбски и украински."
+#~ "Тази задача локализира работния плот за рабита с кирилица. Поддържат се "
+#~ "беларуски, български, македонски, руски, сръбски и украински."
 
-#, fuzzy
 #~ msgid "Cyrillic GNOME desktop"
-#~ msgstr "Работен плот за кирилица"
+#~ msgstr "ГНОМ с кирилица"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Cyrillic."
-#~ msgstr "Тази задача локализира работния плот за арабски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ за работа с кирилица."
 
-#, fuzzy
 #~ msgid "Cyrillic KDE desktop"
-#~ msgstr "Работен плот за кирилица"
+#~ msgstr "КДЕ с кирилица"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Cyrillic."
-#~ msgstr "Тази задача локализира работния плот за арабски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ за работа с кирилица."
 
 #~ msgid "Czech environment"
-#~ msgstr "Среда за чешки"
+#~ msgstr "Среда на чешки"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Czech to help Czech "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на чешки в помощ на "
-#~ "говорещите чешки потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите чешки "
+#~ "потребители на Debian."
 
 #~ msgid "Czech desktop"
-#~ msgstr "Работен плот за чешки"
+#~ msgstr "Работен плот на чешки"
 
 #~ msgid "This task localises the desktop in Czech."
-#~ msgstr "Тази задача локализира работния плот за чешки"
+#~ msgstr "Тази задача локализира работния плот на чешки."
 
-#, fuzzy
 #~ msgid "Czech GNOME desktop"
-#~ msgstr "Работен плот за чешки"
+#~ msgstr "ГНОМ на чешки"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Czech."
-#~ msgstr "Тази задача локализира работния плот за чешки"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на чешки."
 
-#, fuzzy
 #~ msgid "Czech KDE desktop"
-#~ msgstr "Работен плот за чешки"
+#~ msgstr "КДЕ на чешки"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Czech."
-#~ msgstr "Тази задача локализира работния плот за чешки"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на чешки."
 
 #~ msgid "Danish environment"
-#~ msgstr "Среда за датски"
+#~ msgstr "Среда на датски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Danish to help Danish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на датски в помощ на "
-#~ "говорещите датски език потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите датски "
+#~ "език потребители на Debian."
 
 #~ msgid "Danish desktop"
-#~ msgstr "Работен плот за датски"
+#~ msgstr "Работен плот на датски"
 
 #~ msgid "This task localises the desktop in Danish."
-#~ msgstr "Тази задача локализира работния плот за датски"
+#~ msgstr "Тази задача локализира работния плот на датски."
 
-#, fuzzy
 #~ msgid "Danish GNOME desktop"
-#~ msgstr "Работен плот за датски"
+#~ msgstr "ГНОМ на датски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Danish."
-#~ msgstr "Тази задача локализира работния плот за датски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на датски."
 
-#, fuzzy
 #~ msgid "Danish KDE desktop"
-#~ msgstr "Работен плот за датски"
+#~ msgstr "КДЕ на датски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Danish."
-#~ msgstr "Тази задача локализира работния плот за датски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на датски."
 
 #~ msgid "Dutch environment"
-#~ msgstr "Среда за датски"
+#~ msgstr "Среда на нидерландски"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Dutch speakers to use Debian."
 #~ msgstr ""
 #~ "Тази задача инсталира програми, файлове с данни, шрифтове и документация, "
-#~ "които улесняват говорещите датски потребители на Debian."
+#~ "които улесняват говорещите нидерландски потребители на Debian."
 
 #~ msgid "Dutch desktop"
-#~ msgstr "Работен плот за холандски"
+#~ msgstr "Работен плот на нидерландски"
 
 #~ msgid "This task localises the desktop in Dutch."
-#~ msgstr "Тази задача локализира работния плот за датски"
+#~ msgstr "Тази задача локализира работния плот на нидерландски."
 
-#, fuzzy
 #~ msgid "Dutch GNOME desktop"
-#~ msgstr "Работен плот за холандски"
+#~ msgstr "ГНОМ на нидерландски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Dutch."
-#~ msgstr "Тази задача локализира работния плот за датски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на нидерландски."
 
-#, fuzzy
 #~ msgid "Dutch KDE desktop"
-#~ msgstr "Работен плот за холандски"
+#~ msgstr "КДЕ на нидерландски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Dutch."
-#~ msgstr "Тази задача локализира работния плот за датски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на нидерландски."
 
 #~ msgid "Dzongkha desktop"
-#~ msgstr "Работен плот за джонка"
+#~ msgstr "Работен плот на джонка"
 
 #~ msgid "This task localises the desktop in Dzongkha."
-#~ msgstr "Тази задача локализира работния плот за джонка"
+#~ msgstr "Тази задача локализира работния плот на джонка."
 
-#, fuzzy
 #~ msgid "Dzongkha GNOME desktop"
-#~ msgstr "Работен плот за джонка"
+#~ msgstr "ГНОМ на джонка"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Dzongkha."
-#~ msgstr "Тази задача локализира работния плот за джонка"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на джонка."
 
-#, fuzzy
 #~ msgid "Dzongkha KDE desktop"
-#~ msgstr "Работен плот за джонка"
+#~ msgstr "КДЕ на джонка"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Dzongkha."
-#~ msgstr "Тази задача локализира работния плот за джонка"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на джонка."
 
 #~ msgid "Esperanto desktop"
-#~ msgstr "Работен плот за есперанто"
+#~ msgstr "Работен плот на есперанто"
 
 #~ msgid "This task localises the desktop in Esperanto."
-#~ msgstr "Тази задача локализира работния плот за есперанто"
+#~ msgstr "Тази задача локализира работния плот на есперанто."
 
-#, fuzzy
 #~ msgid "Esperanto GNOME desktop"
-#~ msgstr "Работен плот за есперанто"
+#~ msgstr "ГНОМ на есперанто"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Esperanto."
-#~ msgstr "Тази задача локализира работния плот за есперанто"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на есперанто."
 
-#, fuzzy
 #~ msgid "Esperanto KDE desktop"
-#~ msgstr "Работен плот за есперанто"
+#~ msgstr "КДЕ на есперанто"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Esperanto."
-#~ msgstr "Тази задача локализира работния плот за есперанто"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на есперанто."
 
 #~ msgid "Estonian desktop"
-#~ msgstr "Работен плот за естонски"
+#~ msgstr "Работен плот на естонски"
 
 #~ msgid "This task localises the desktop in Estonian."
-#~ msgstr "Тази задача локализира работния плот за естонски"
+#~ msgstr "Тази задача локализира работния плот на естонски."
 
-#, fuzzy
 #~ msgid "Estonian GNOME desktop"
-#~ msgstr "Работен плот за естонски"
+#~ msgstr "ГНОМ на естонски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Estonian."
-#~ msgstr "Тази задача локализира работния плот за естонски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на естонски."
 
-#, fuzzy
 #~ msgid "Estonian KDE desktop"
-#~ msgstr "Работен плот за естонски"
+#~ msgstr "КДЕ на естонски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Estonian."
-#~ msgstr "Тази задача локализира работния плот за естонски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на естонски."
 
 #~ msgid "Finnish environment"
-#~ msgstr "Среда за фински"
+#~ msgstr "Среда на фински"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Finnish to help Finnish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на фински в помощ на "
-#~ "говорещите фински език потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите фински "
+#~ "език потребители на Debian."
 
 #~ msgid "Finnish desktop"
-#~ msgstr "Работен плот за фински"
+#~ msgstr "Работен плот на фински"
 
 #~ msgid "This task localises the desktop in Finnish."
-#~ msgstr "Тази задача локализира работния плот за фински"
+#~ msgstr "Тази задача локализира работния плот на фински."
 
-#, fuzzy
 #~ msgid "Finnish GNOME desktop"
-#~ msgstr "Работен плот за фински"
+#~ msgstr "ГНОМ на фински"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Finnish."
-#~ msgstr "Тази задача локализира работния плот за фински"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на фински."
 
-#, fuzzy
 #~ msgid "Finnish KDE desktop"
-#~ msgstr "Работен плот за фински"
+#~ msgstr "КДЕ на фински"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Finnish."
-#~ msgstr "Тази задача локализира работния плот за фински"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на фински."
 
 #~ msgid "French environment"
-#~ msgstr "Среда за френски"
+#~ msgstr "Среда на френски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in French to help French "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на френски в помощ на "
-#~ "говорещите френски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите френски "
+#~ "потребители на Debian."
 
 #~ msgid "French desktop"
-#~ msgstr "Работен плот за френски"
+#~ msgstr "Работен плот на френски"
 
 #~ msgid "This task localises the desktop in French."
-#~ msgstr "Тази задача локализира работния плот за френски"
+#~ msgstr "Тази задача локализира работния плот на френски."
 
-#, fuzzy
 #~ msgid "French GNOME desktop"
-#~ msgstr "Работен плот за френски"
+#~ msgstr "ГНОМ на френски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in French."
-#~ msgstr "Тази задача локализира работния плот за френски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на френски."
 
-#, fuzzy
 #~ msgid "French KDE desktop"
-#~ msgstr "Работен плот за френски"
+#~ msgstr "КДЕ на френски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in French."
-#~ msgstr "Тази задача локализира работния плот за френски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на френски."
 
 #~ msgid "Galician environment"
-#~ msgstr "Среда за галски"
+#~ msgstr "Среда на галски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Galician to help "
 #~ "Galician speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на галски в помощ на "
-#~ "говорещите галски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите галски "
+#~ "потребители на Debian."
 
 #~ msgid "Galician desktop"
-#~ msgstr "Работен плот за галски"
+#~ msgstr "Работен плот на галски"
 
 #~ msgid "This task localises the desktop in Galician."
-#~ msgstr "Тази задача локализира работния плот за галски"
+#~ msgstr "Тази задача локализира работния плот на галски."
 
-#, fuzzy
 #~ msgid "Galician GNOME desktop"
-#~ msgstr "Работен плот за галски"
+#~ msgstr "ГНОМ на галски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Galician."
-#~ msgstr "Тази задача локализира работния плот за галски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на галски."
 
-#, fuzzy
 #~ msgid "Galician KDE desktop"
-#~ msgstr "Работен плот за галски"
+#~ msgstr "КДЕ на галски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Galician."
-#~ msgstr "Тази задача локализира работния плот за галски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на галски."
 
 #~ msgid "Georgian desktop"
-#~ msgstr "Работен плот за грузински"
+#~ msgstr "Работен плот на грузински"
 
 #~ msgid "This task localises the desktop in Georgian."
-#~ msgstr "Тази задача локализира работния плот за грузински"
+#~ msgstr "Тази задача локализира работния плот на грузински."
 
 #~ msgid "German environment"
-#~ msgstr "Среда за немски"
+#~ msgstr "Среда на немски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in German to help German "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на немски в помощ на "
-#~ "говорещите немски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите немски "
+#~ "потребители на Debian."
 
 #~ msgid "German desktop"
-#~ msgstr "Работен плот за немски"
+#~ msgstr "Работен плот на немски"
 
 #~ msgid "This task localises the desktop in German."
-#~ msgstr "Тази задача локализира работния плот за немски"
+#~ msgstr "Тази задача локализира работния плот на немски."
 
-#, fuzzy
 #~ msgid "German GNOME desktop"
-#~ msgstr "Работен плот за немски"
+#~ msgstr "ГНОМ на немски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in German."
-#~ msgstr "Тази задача локализира работния плот за немски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на немски."
 
-#, fuzzy
 #~ msgid "German KDE desktop"
-#~ msgstr "Работен плот за немски"
+#~ msgstr "КДЕ на немски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in German."
-#~ msgstr "Тази задача локализира работния плот за немски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на немски."
 
 #~ msgid "Greek environment"
-#~ msgstr "Среда за гръцки"
+#~ msgstr "Среда на гръцки"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Greek to help Greek "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на гръцки в помощ на "
-#~ "говорещите гръцки потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите гръцки "
+#~ "потребители на Debian."
 
 #~ msgid "Greek desktop"
-#~ msgstr "Работен плот за гръцки"
+#~ msgstr "Работен плот на гръцки"
 
 #~ msgid "This task localises the desktop in Greek."
-#~ msgstr "Тази задача локализира работния плот за гръцки"
+#~ msgstr "Тази задача локализира работния плот на гръцки."
 
-#, fuzzy
 #~ msgid "Greek GNOME desktop"
-#~ msgstr "Работен плот за гръцки"
+#~ msgstr "ГНОМ на гръцки"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Greek."
-#~ msgstr "Тази задача локализира работния плот за гръцки"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на гръцки."
 
-#, fuzzy
 #~ msgid "Greek KDE desktop"
-#~ msgstr "Работен плот за гръцки"
+#~ msgstr "КДЕ на гръцки"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Greek."
-#~ msgstr "Тази задача локализира работния плот за гръцки"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на гръцки."
 
 #~ msgid "Gujarati desktop"
-#~ msgstr "Работен плот за гуджаратски"
+#~ msgstr "Работен плот на гуджаратски"
 
 #~ msgid "This task localises the desktop in Gujarati."
-#~ msgstr "Тази задача локализира работния плот за гуджаратски"
+#~ msgstr "Тази задача локализира работния плот на гуджаратски."
 
-#, fuzzy
 #~ msgid "Gujurati GNOME desktop"
-#~ msgstr "Работен плот за гуджаратски"
+#~ msgstr "ГНОМ на гуджаратски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Gujurati."
-#~ msgstr "Тази задача локализира работния плот за гуджаратски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на гуджаратски."
 
-#, fuzzy
 #~ msgid "Gujurati KDE desktop"
-#~ msgstr "Работен плот за гуджаратски"
+#~ msgstr "КДЕ на гуджаратски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Gujurati."
-#~ msgstr "Тази задача локализира работния плот за гуджаратски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на гуджаратски."
 
 #~ msgid "Hebrew environment"
-#~ msgstr "Среда за еврейски"
+#~ msgstr "Среда на еврейски"
 
 #~ msgid ""
 #~ "This task installs programs and documentation in Hebrew to help Hebrew "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на еврейски в помощ на "
-#~ "говорещите еврейски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "еврейски потребители на Debian."
 
 #~ msgid "Hebrew desktop"
-#~ msgstr "Работен плот за еврейски"
+#~ msgstr "Работен плот на еврейски"
 
 #~ msgid "This task localises the desktop in Hebrew."
-#~ msgstr "Тази задача локализира работния плот за еврейски"
+#~ msgstr "Тази задача локализира работния плот на еврейски."
 
-#, fuzzy
 #~ msgid "Hebrew GNOME desktop"
-#~ msgstr "Работен плот за еврейски"
+#~ msgstr "ГНОМ на еврейски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Hebrew."
-#~ msgstr "Тази задача локализира работния плот за еврейски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на еврейски."
 
-#, fuzzy
 #~ msgid "Hebrew KDE desktop"
-#~ msgstr "Работен плот за еврейски"
+#~ msgstr "КДЕ на еврейски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Hebrew."
-#~ msgstr "Тази задача локализира работния плот за еврейски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на еврейски."
 
 #~ msgid "Hindi environment"
-#~ msgstr "Среда за хиндийски"
+#~ msgstr "Среда на хинди"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Hindi speakers to use Debian."
 #~ msgstr ""
 #~ "Тази задача инсталира програми, файлове с данни, шрифтове и документация, "
-#~ "които улесняват говорещите хиндийски потребители на Debian."
+#~ "които улесняват говорещите хинди потребители на Debian."
 
 #~ msgid "Hindi desktop"
-#~ msgstr "Работен плот за хинди"
+#~ msgstr "Работен плот на хинди"
 
 #~ msgid "This task localises the desktop in Hindi."
-#~ msgstr "Тази задача локализира работния плот за хиндийски"
+#~ msgstr "Тази задача локализира работния плот на хинди."
 
-#, fuzzy
 #~ msgid "Hindi GNOME desktop"
-#~ msgstr "Работен плот за хинди"
+#~ msgstr "ГНОМ на хинди"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Hindi."
-#~ msgstr "Тази задача локализира работния плот за хиндийски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на хинди."
 
-#, fuzzy
 #~ msgid "Hindi KDE desktop"
-#~ msgstr "Работен плот за хинди"
+#~ msgstr "КДЕ на хинди"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Hindi."
-#~ msgstr "Тази задача локализира работния плот за хиндийски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на хинди."
 
 #~ msgid "Hungarian environment"
-#~ msgstr "Среда за унгарски"
+#~ msgstr "Среда на унгарски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Hungarian to help "
 #~ "Hungarian speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на унгарски в помощ на "
-#~ "говорещите унгарски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "унгарски потребители на Debian."
 
 #~ msgid "Hungarian desktop"
-#~ msgstr "Работен плот за унгарски"
+#~ msgstr "Работен плот на унгарски"
 
 #~ msgid "This task localises the desktop in Hungarian."
-#~ msgstr "Тази задача локализира работния плот за унгарски"
+#~ msgstr "Тази задача локализира работния плот на унгарски."
 
-#, fuzzy
 #~ msgid "Hungarian GNOME desktop"
-#~ msgstr "Работен плот за унгарски"
+#~ msgstr "ГНОМ на унгарски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Hungarian."
-#~ msgstr "Тази задача локализира работния плот за унгарски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на унгарски."
 
-#, fuzzy
 #~ msgid "Hungarian KDE desktop"
-#~ msgstr "Работен плот за унгарски"
+#~ msgstr "КДЕ на унгарски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Hungarian."
-#~ msgstr "Тази задача локализира работния плот за унгарски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на унгарски."
 
 #~ msgid "Icelandic environment"
-#~ msgstr "Среда за исландски"
+#~ msgstr "Среда на исландски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Icelandic to help "
 #~ "Icelandic speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на исландски в помощ на "
-#~ "говорещите исландски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "исландски потребители на Debian."
 
 #~ msgid "Icelandic desktop"
-#~ msgstr "Работен плот за исландски"
+#~ msgstr "Работен плот на исландски"
 
 #~ msgid "This task localises the desktop in Icelandic."
-#~ msgstr "Тази задача локализира работния плот за исландски."
+#~ msgstr "Тази задача локализира работния плот на исландски."
 
-#, fuzzy
 #~ msgid "Icelandic GNOME desktop"
-#~ msgstr "Работен плот за исландски"
+#~ msgstr "ГНОМ на исландски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Icelandic."
-#~ msgstr "Тази задача локализира работния плот за исландски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на исландски."
 
-#, fuzzy
 #~ msgid "Icelandic KDE desktop"
-#~ msgstr "Работен плот за исландски"
+#~ msgstr "КДЕ на исландски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Icelandic."
-#~ msgstr "Тази задача локализира работния плот за исландски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на исландски."
 
 #~ msgid "Irish environment"
-#~ msgstr "Среда за ирландски"
+#~ msgstr "Среда на ирландски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Irish to help Irish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на ирландски в помощ на "
-#~ "говорещите ирналдски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "ирналдски потребители на Debian."
 
 #~ msgid "Irish desktop"
-#~ msgstr "Работен плот за ирландски"
+#~ msgstr "Работен плот на ирландски"
 
 #~ msgid "This task localises the desktop in Irish."
-#~ msgstr "Тази задача локализира работния плот за ирландски"
+#~ msgstr "Тази задача локализира работния плот на ирландски."
 
-#, fuzzy
 #~ msgid "Irish GNOME desktop"
-#~ msgstr "Работен плот за ирландски"
+#~ msgstr "ГНОМ на ирландски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Irish."
-#~ msgstr "Тази задача локализира работния плот за ирландски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на ирландски."
 
-#, fuzzy
 #~ msgid "Irish KDE desktop"
-#~ msgstr "Работен плот за ирландски"
+#~ msgstr "КДЕ на ирландски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Irish."
-#~ msgstr "Тази задача локализира работния плот за ирландски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на ирландски."
 
 #~ msgid "Italian environment"
-#~ msgstr "Среда за италиански"
+#~ msgstr "Среда на италиански"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Italian to help Italian "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на италиански в помощ на "
-#~ "говорящите италиански потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "италиански потребители на Debian."
 
 #~ msgid "Italian desktop"
-#~ msgstr "Работен плот за италиански"
+#~ msgstr "Работен плот на италиански"
 
 #~ msgid "This task localises the desktop in Italian."
-#~ msgstr "Тази задача локализира работния плот за италиански"
+#~ msgstr "Тази задача локализира работния плот на италиански."
 
-#, fuzzy
 #~ msgid "Italian GNOME desktop"
-#~ msgstr "Работен плот за италиански"
+#~ msgstr "ГНОМ на италиански"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Italian."
-#~ msgstr "Тази задача локализира работния плот за италиански"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на италиански."
 
-#, fuzzy
 #~ msgid "Italian KDE desktop"
-#~ msgstr "Работен плот за италиански"
+#~ msgstr "КДЕ на италиански"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Italian."
-#~ msgstr "Тази задача локализира работния плот за италиански"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на италиански."
 
 #~ msgid "Japanese environment"
-#~ msgstr "Среда за японски"
+#~ msgstr "Среда на японски"
 
 #~ msgid ""
 #~ "This task installs packages that make it easier for Japanese speakers to "
@@ -1197,61 +1064,53 @@ msgstr ""
 #~ "потребители на Debian."
 
 #~ msgid "Japanese desktop"
-#~ msgstr "Работен плот за японски"
+#~ msgstr "Работен плот на японски"
 
 #~ msgid "This task localises the desktop in Japanese."
-#~ msgstr "Тази задача локализира работния плот за японски"
+#~ msgstr "Тази задача локализира работния плот на японски."
 
-#, fuzzy
 #~ msgid "Japanese GNOME desktop"
-#~ msgstr "Работен плот за японски"
+#~ msgstr "ГНОМ на японски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Japanese."
-#~ msgstr "Тази задача локализира работния плот за японски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на японски."
 
-#, fuzzy
 #~ msgid "Japanese KDE desktop"
-#~ msgstr "Работен плот за японски"
+#~ msgstr "КДЕ на японски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Japanese."
-#~ msgstr "Тази задача локализира работния плот за японски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на японски."
 
 #~ msgid "Khmer environment"
-#~ msgstr "Среда за кхмерски"
+#~ msgstr "Среда на кхмерски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Khmer to help Khmer "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на кхмерски в помощ на "
-#~ "говорещите кхмерски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "кхмерски потребители на Debian."
 
 #~ msgid "Khmer desktop"
-#~ msgstr "Работен плот за кхмерски"
+#~ msgstr "Работен плот на кхмерски"
 
 #~ msgid "This task localises the desktop in Khmer."
-#~ msgstr "Тази задача локализира работния плот за кхмерски"
+#~ msgstr "Тази задача локализира работния плот на кхмерски."
 
-#, fuzzy
 #~ msgid "Khmer GNOME desktop"
-#~ msgstr "Работен плот за кхмерски"
+#~ msgstr "ГНОМ на кхмерски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Khmer."
-#~ msgstr "Тази задача локализира работния плот за кхмерски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на кхмерски."
 
-#, fuzzy
 #~ msgid "Khmer KDE desktop"
-#~ msgstr "Работен плот за кхмерски"
+#~ msgstr "КДЕ на кхмерски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Khmer."
-#~ msgstr "Тази задача локализира работния плот за кхмерски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на кхмерски."
 
 #~ msgid "Korean environment"
-#~ msgstr "Среда за корейски"
+#~ msgstr "Среда на корейски"
 
 #~ msgid ""
 #~ "This task installs packages that make it easier for Korean speakers to "
@@ -1261,259 +1120,219 @@ msgstr ""
 #~ "потребители на Debian."
 
 #~ msgid "Korean desktop"
-#~ msgstr "Работен плот за корейски"
+#~ msgstr "Работен плот на корейски"
 
 #~ msgid "This task localises the desktop in Korean."
-#~ msgstr "Тази задача локализира работния плот за корейски"
+#~ msgstr "Тази задача локализира работния плот на корейски."
 
-#, fuzzy
 #~ msgid "Korean GNOME desktop"
-#~ msgstr "Работен плот за корейски"
+#~ msgstr "ГНОМ на корейски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Korean."
-#~ msgstr "Тази задача локализира работния плот за корейски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на корейски."
 
-#, fuzzy
 #~ msgid "Korean KDE desktop"
-#~ msgstr "Работен плот за корейски"
+#~ msgstr "КДЕ на корейски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Korean."
-#~ msgstr "Тази задача локализира работния плот за корейски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на корейски."
 
 #~ msgid "Kurdish environment"
-#~ msgstr "Среда за кюрдски"
+#~ msgstr "Среда на кюрдски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Kurdish to help Kurds "
 #~ "use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на кюрдски в помощ на "
-#~ "говорещите кюрдски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите кюрдски "
+#~ "потребители на Debian."
 
 #~ msgid "Kurdish desktop"
-#~ msgstr "Работен плот за кюрдски"
+#~ msgstr "Работен плот на кюрдски"
 
 #~ msgid "This task localises the desktop in Kurdish."
-#~ msgstr "Тази задача локализира работния плот за кюрдски."
+#~ msgstr "Тази задача локализира работния плот на кюрдски."
 
-#, fuzzy
 #~ msgid "Kurdish GNOME desktop"
-#~ msgstr "Работен плот за кюрдски"
+#~ msgstr "ГНОМ на кюрдски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Kurdish."
-#~ msgstr "Тази задача локализира работния плот за кюрдски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на кюрдски."
 
-#, fuzzy
 #~ msgid "Kurdish KDE desktop"
-#~ msgstr "Работен плот за кюрдски"
+#~ msgstr "КДЕ на кюрдски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Kurdish."
-#~ msgstr "Тази задача локализира работния плот за кюрдски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на кюрдски."
 
 #~ msgid "Latvian desktop"
-#~ msgstr "Работен плот за латвийски"
+#~ msgstr "Работен плот на латвийски"
 
 #~ msgid "This task localises the desktop in Latvian."
-#~ msgstr "Тази задача локализира работния плот за латвийски."
+#~ msgstr "Тази задача локализира работния плот на латвийски."
 
-#, fuzzy
 #~ msgid "Latvian GNOME desktop"
-#~ msgstr "Работен плот за латвийски"
+#~ msgstr "ГНОМ на латвийски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Latvian."
-#~ msgstr "Тази задача локализира работния плот за латвийски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на латвийски."
 
-#, fuzzy
 #~ msgid "Latvian KDE desktop"
-#~ msgstr "Работен плот за латвийски"
+#~ msgstr "КДЕ на латвийски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Latvian."
-#~ msgstr "Тази задача локализира работния плот за латвийски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на латвийски."
 
 #~ msgid "Lithuanian environment"
-#~ msgstr "Среда за литовски"
+#~ msgstr "Среда на литовски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Lithuanian to help "
 #~ "Lithuanian speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на литовски в помощ на "
-#~ "говорящите литовски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "литовски потребители на Debian."
 
 #~ msgid "Lithuanian desktop"
-#~ msgstr "Работен плот за литовски"
+#~ msgstr "Работен плот на литовски"
 
 #~ msgid "This task localises the desktop in Lithuanian."
-#~ msgstr "Тази задача локализира работния плот за литовски"
+#~ msgstr "Тази задача локализира работния плот на литовски."
 
-#, fuzzy
 #~ msgid "Lithuanian GNOME desktop"
-#~ msgstr "Работен плот за литовски"
+#~ msgstr "ГНОМ на литовски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Lithuanian."
-#~ msgstr "Тази задача локализира работния плот за литовски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на литовски."
 
-#, fuzzy
 #~ msgid "Lithuanian KDE desktop"
-#~ msgstr "Работен плот за литовски"
+#~ msgstr "КДЕ на литовски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Lithuanian."
-#~ msgstr "Тази задача локализира работния плот за литовски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на литовски."
 
 #~ msgid "Macedonian environment"
-#~ msgstr "Среда за македонски"
+#~ msgstr "Среда на македонски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Macedonian to help "
 #~ "Macedonian speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на македонски в помощ на "
-#~ "говорещите македонски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "македонски потребители на Debian."
 
 #~ msgid "Macedonian desktop"
-#~ msgstr "Работен плот за македонски"
+#~ msgstr "Работен плот на македонски"
 
 #~ msgid "This task localises the desktop in Macedonian."
-#~ msgstr "Тази задача локализира работния плот за македонски."
+#~ msgstr "Тази задача локализира работния плот на македонски."
 
-#, fuzzy
 #~ msgid "Macedonian GNOME desktop"
-#~ msgstr "Работен плот за македонски"
+#~ msgstr "ГНОМ на македонски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Macedonian."
-#~ msgstr "Тази задача локализира работния плот за македонски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на македонски."
 
-#, fuzzy
 #~ msgid "Macedonian KDE desktop"
-#~ msgstr "Работен плот за македонски"
+#~ msgstr "КДЕ на македонски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Macedonian."
-#~ msgstr "Тази задача локализира работния плот за македонски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на македонски."
 
 #~ msgid "Malayalam desktop"
-#~ msgstr "Работен плот за малайски"
+#~ msgstr "Работен плот на малайски"
 
 #~ msgid "This task localises the desktop in Malayalam."
-#~ msgstr "Тази задача локализира работния плот за малайски."
+#~ msgstr "Тази задача локализира работния плот на малайски."
 
-#, fuzzy
 #~ msgid "Malayalam GNOME desktop"
-#~ msgstr "Работен плот за малайски"
+#~ msgstr "ГНОМ на малайски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Malayalam."
-#~ msgstr "Тази задача локализира работния плот за малайски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на малайски."
 
-#, fuzzy
 #~ msgid "Malayalam KDE desktop"
-#~ msgstr "Работен плот за малайски"
+#~ msgstr "КДЕ на малайски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Malayalam."
-#~ msgstr "Тази задача локализира работния плот за малайски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на малайски."
 
 #~ msgid "Nepali desktop"
-#~ msgstr "Работен плот за непалски"
+#~ msgstr "Работен плот на непалски"
 
 #~ msgid "This task localises the desktop in Nepali."
-#~ msgstr "Тази задача локализира работния плот за непалски"
+#~ msgstr "Тази задача локализира работния плот на непалски."
 
-#, fuzzy
 #~ msgid "Nepali GNOME desktop"
-#~ msgstr "Работен плот за непалски"
+#~ msgstr "ГНОМ на непалски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Nepali."
-#~ msgstr "Тази задача локализира работния плот за непалски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на непалски."
 
-#, fuzzy
 #~ msgid "Nepali KDE desktop"
-#~ msgstr "Работен плот за непалски"
+#~ msgstr "КДЕ на непалски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Nepali."
-#~ msgstr "Тази задача локализира работния плот за непалски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на непалски."
 
-#, fuzzy
 #~ msgid "North Sami environment"
-#~ msgstr "Среда за тайландски"
+#~ msgstr "Среда на северен сами"
 
-#, fuzzy
 #~ msgid ""
 #~ "This task installs packages and documentation in North Sami to help North "
 #~ "Sami speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на норвежки в помощ на "
-#~ "говорещите норвежки потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите северен "
+#~ "сами потребители на Debian."
 
-#, fuzzy
 #~ msgid "North Sami desktop"
-#~ msgstr "Работен плот за северен сами"
+#~ msgstr "Работен плот на северен сами"
 
-#, fuzzy
 #~ msgid "This task localises the desktop in North Sami."
-#~ msgstr "Тази задача локализира работния плот за северен сами"
+#~ msgstr "Тази задача локализира работния плот на северен сами."
 
-#, fuzzy
 #~ msgid "North Sami GNOME desktop"
-#~ msgstr "Работен плот за северен сами"
+#~ msgstr "ГНОМ на северен сами"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in North Sami."
-#~ msgstr "Тази задача локализира работния плот за северен сами"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на северен сами."
 
-#, fuzzy
 #~ msgid "North Sami KDE desktop"
-#~ msgstr "Работен плот за северен сами"
+#~ msgstr "КДЕ на северен сами"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in North Sami."
-#~ msgstr "Тази задача локализира работния плот за северен сами"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на северен сами."
 
 #~ msgid "Norwegian (Bokmaal and Nynorsk) environment"
-#~ msgstr "Среда за норвежки (Bokmaal и Nynorsk)"
+#~ msgstr "Среда на норвежки (Bokmaal и Nynorsk)"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Norwegian to help "
 #~ "Norwegian speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на норвежки в помощ на "
-#~ "говорещите норвежки потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "норвежки потребители на Debian."
 
 #~ msgid "Norwegian (Bokmaal and Nynorsk) desktop"
-#~ msgstr "Работен плот за норвежки (Bokmaal и Nynorsk)"
+#~ msgstr "Работен плот на норвежки (Bokmaal и Nynorsk)"
 
 #~ msgid "This task localises the desktop in Norwegian."
-#~ msgstr "Тази задача локализира работния плот за норвежки"
+#~ msgstr "Тази задача локализира работния плот на норвежки."
 
-#, fuzzy
 #~ msgid "Norwegian GNOME desktop"
-#~ msgstr "Работен плот за грузински"
+#~ msgstr "ГНОМ на грузински"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Norwegian."
-#~ msgstr "Тази задача локализира работния плот за норвежки"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на норвежки."
 
-#, fuzzy
 #~ msgid "Norwegian KDE desktop"
-#~ msgstr "Работен плот за грузински"
+#~ msgstr "КДЕ на норвежки"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Norwegian."
-#~ msgstr "Тази задача локализира работния плот за норвежки"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на норвежки."
 
 #~ msgid "Persian environment"
-#~ msgstr "Среда за персийски"
+#~ msgstr "Среда на персийски"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
@@ -1523,285 +1342,249 @@ msgstr ""
 #~ "които улесняват говорещите персийски потребители на Debian."
 
 #~ msgid "Persian desktop"
-#~ msgstr "Работен плот за персийски"
+#~ msgstr "Работен плот на персийски"
 
 #~ msgid "This task localises the desktop in Persian."
-#~ msgstr "Тази задача локализира работния плот за персийски."
+#~ msgstr "Тази задача локализира работния плот на персийски."
 
-#, fuzzy
 #~ msgid "Persian GNOME desktop"
-#~ msgstr "Работен плот за персийски"
+#~ msgstr "ГНОМ на персийски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Persian."
-#~ msgstr "Тази задача локализира работния плот за персийски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на персийски."
 
-#, fuzzy
 #~ msgid "Persian KDE desktop"
-#~ msgstr "Работен плот за персийски"
+#~ msgstr "КДЕ на персийски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Persian."
-#~ msgstr "Тази задача локализира работния плот за персийски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на персийски."
 
 #~ msgid "Polish environment"
-#~ msgstr "Среда за полски"
+#~ msgstr "Среда на полски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Polish to help Polish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на полски в помощ на "
-#~ "говорещите полски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите полски "
+#~ "потребители на Debian."
 
 #~ msgid "Polish desktop"
-#~ msgstr "Работен плот за полски"
+#~ msgstr "Работен плот на полски"
 
 #~ msgid "This task localises the desktop in Polish."
-#~ msgstr "Тази задача локализира работния плот за полски"
+#~ msgstr "Тази задача локализира работния плот на полски."
 
-#, fuzzy
 #~ msgid "Polish GNOME desktop"
-#~ msgstr "Работен плот за полски"
+#~ msgstr "ГНОМ на полски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Polish."
-#~ msgstr "Тази задача локализира работния плот за полски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на полски."
 
-#, fuzzy
 #~ msgid "Polish KDE desktop"
-#~ msgstr "Работен плот за полски"
+#~ msgstr "КДЕ на полски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Polish."
-#~ msgstr "Тази задача локализира работния плот за полски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на полски."
 
 #~ msgid "Portuguese environment"
-#~ msgstr "Среда за португалски"
+#~ msgstr "Среда на португалски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Portuguese to help "
 #~ "Portuguese speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на португалски в помощ на "
-#~ "говорещите португалски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "португалски потребители на Debian."
 
 #~ msgid "Portuguese desktop"
-#~ msgstr "Работен плот за португалски"
+#~ msgstr "Работен плот на португалски"
 
 #~ msgid "This task localises the desktop in Portuguese."
-#~ msgstr "Тази задача локализира работния плот за португалски."
+#~ msgstr "Тази задача локализира работния плот на португалски."
 
-#, fuzzy
 #~ msgid "Portuguese GNOME desktop"
-#~ msgstr "Работен плот за португалски"
+#~ msgstr "ГНОМ на португалски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Portuguese."
-#~ msgstr "Тази задача локализира работния плот за португалски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на португалски."
 
-#, fuzzy
 #~ msgid "Portuguese KDE desktop"
-#~ msgstr "Работен плот за португалски"
+#~ msgstr "КДЕ на португалски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Portuguese."
-#~ msgstr "Тази задача локализира работния плот за португалски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на португалски."
 
 #~ msgid "Punjabi environment"
-#~ msgstr "Среда за пунджабски"
+#~ msgstr "Среда на пунджаб"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Punjabi speakers to use Debian."
 #~ msgstr ""
 #~ "Тази задача инсталира програми, файлове с данни, шрифтове и документация, "
-#~ "които улесняват говорещите пунджабски потребители на Debian."
+#~ "които улесняват говорещите пунджаб потребители на Debian."
 
 #~ msgid "Punjabi desktop"
-#~ msgstr "Работен плот за пунджаб"
+#~ msgstr "Работен плот на пунджаб"
 
 #~ msgid "This task localises the desktop in Punjabi."
-#~ msgstr "Тази задача локализира работния плот за пунджабски"
+#~ msgstr "Тази задача локализира работния плот на пунджаб."
 
-#, fuzzy
 #~ msgid "Punjabi GNOME desktop"
-#~ msgstr "Работен плот за пунджаб"
+#~ msgstr "ГНОМ на пунджаб"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Punjabi."
-#~ msgstr "Тази задача локализира работния плот за пунджабски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на пунджаб."
 
-#, fuzzy
 #~ msgid "Punjabi KDE desktop"
-#~ msgstr "Работен плот за пунджаб"
+#~ msgstr "КДЕ на пунджаб"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Punjabi."
-#~ msgstr "Тази задача локализира работния плот за пунджабски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на пунджаб."
 
 #~ msgid "Romanian environment"
-#~ msgstr "Среда за румънски"
+#~ msgstr "Среда на румънски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Romanian to help "
 #~ "Romanian speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на ръмънски в помощ на "
-#~ "говорящите румънски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "румънски потребители на Debian."
 
 #~ msgid "Romanian desktop"
-#~ msgstr "Работен плот за румънски"
+#~ msgstr "Работен плот на румънски"
 
 #~ msgid "This task localises the desktop in Romanian."
-#~ msgstr "Тази задача локализира работния плот за румънски"
+#~ msgstr "Тази задача локализира работния плот на румънски."
 
-#, fuzzy
 #~ msgid "Romanian GNOME desktop"
-#~ msgstr "Работен плот за румънски"
+#~ msgstr "ГНОМ на румънски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Romanian."
-#~ msgstr "Тази задача локализира работния плот за румънски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на румънски."
 
-#, fuzzy
 #~ msgid "Romanian KDE desktop"
-#~ msgstr "Работен плот за румънски"
+#~ msgstr "КДЕ на румънски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Romanian."
-#~ msgstr "Тази задача локализира работния плот за румънски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на румънски."
 
 #~ msgid "Russian environment"
-#~ msgstr "Среда за руски"
+#~ msgstr "Среда на руски"
 
 #~ msgid ""
 #~ "This task installs programs and documentation in Russian to help Russian "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира програми и документация на руски в помощ на "
-#~ "говорещите руски потребители на Debian."
+#~ "Тази задача инсталира програми и документация в помощ на говорещите руски "
+#~ "потребители на Debian."
 
 #~ msgid "Russian desktop"
-#~ msgstr "Работен плот за руски"
+#~ msgstr "Работен плот на руски"
 
 #~ msgid "This task localises the desktop in Russian."
-#~ msgstr "Тази задача локализира работния плот за руски"
+#~ msgstr "Тази задача локализира работния плот на руски."
 
-#, fuzzy
 #~ msgid "Russian GNOME desktop"
-#~ msgstr "Работен плот за руски"
+#~ msgstr "ГНОМ на руски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Russian."
-#~ msgstr "Тази задача локализира работния плот за руски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на руски."
 
-#, fuzzy
 #~ msgid "Russian KDE desktop"
-#~ msgstr "Работен плот за руски"
+#~ msgstr "КДЕ на руски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Russian."
-#~ msgstr "Тази задача локализира работния плот за руски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на руски."
 
 #~ msgid "Serbian environment"
-#~ msgstr "Среда за сръбски"
+#~ msgstr "Среда на сръбски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Serbian to help Serbian "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на сръбски в помощ на "
-#~ "говорещите сръбски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите сръбски "
+#~ "потребители на Debian."
 
 #~ msgid "Serbian desktop"
-#~ msgstr "Работен плот за сръбски"
+#~ msgstr "Работен плот на сръбски"
 
 #~ msgid "This task localises the desktop in Serbian."
-#~ msgstr "Тази задача локализира работния плот за сръбски."
+#~ msgstr "Тази задача локализира работния плот на сръбски."
 
-#, fuzzy
 #~ msgid "Serbian GNOME desktop"
-#~ msgstr "Работен плот за сръбски"
+#~ msgstr "ГНОМ на сръбски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Serbian."
-#~ msgstr "Тази задача локализира работния плот за сръбски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на сръбски."
 
-#, fuzzy
 #~ msgid "Serbian KDE desktop"
-#~ msgstr "Работен плот за персийски"
+#~ msgstr "КДЕ на сръбски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Serbian."
-#~ msgstr "Тази задача локализира работния плот за сръбски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на сръбски."
 
 #~ msgid "Slovak environment"
-#~ msgstr "Среда за словашки"
+#~ msgstr "Среда на словашки"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Slovak to help Slovak "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на словашки в помощ на "
-#~ "говорящите словашки потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "словашки потребители на Debian."
 
 #~ msgid "Slovak desktop"
-#~ msgstr "Работен плот за словашки"
+#~ msgstr "Работен плот на словашки"
 
 #~ msgid "This task localises the desktop in Slovak."
-#~ msgstr "Тази задача локализира работния плот за словашки"
+#~ msgstr "Тази задача локализира работния плот на словашки."
 
-#, fuzzy
 #~ msgid "Slovak GNOME desktop"
-#~ msgstr "Работен плот за словашки"
+#~ msgstr "ГНОМ на словашки"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Slovak."
-#~ msgstr "Тази задача локализира работния плот за словашки"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на словашки."
 
-#, fuzzy
 #~ msgid "Slovak KDE desktop"
-#~ msgstr "Работен плот за словашки"
+#~ msgstr "КДЕ на словашки"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Slovak."
-#~ msgstr "Тази задача локализира работния плот за словашки"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на словашки."
 
 #~ msgid "Slovenian environment"
-#~ msgstr "Среда за словенски"
+#~ msgstr "Среда на словенски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Slovenian to help "
 #~ "Slovenian speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на словенски в помощ на "
-#~ "говорещите словенски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите "
+#~ "словенски потребители на Debian."
 
 #~ msgid "Slovenian desktop"
-#~ msgstr "Работен плот за словенски"
+#~ msgstr "Работен плот на словенски"
 
 #~ msgid "This task localises the desktop in Slovenian."
-#~ msgstr "Тази задача локализира работния плот за словенски."
+#~ msgstr "Тази задача локализира работния плот на словенски."
 
-#, fuzzy
 #~ msgid "Slovenian GNOME desktop"
-#~ msgstr "Работен плот за словенски"
+#~ msgstr "ГНОМ на словенски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Slovenian."
-#~ msgstr "Тази задача локализира работния плот за словенски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на словенски."
 
-#, fuzzy
 #~ msgid "Slovenian KDE desktop"
-#~ msgstr "Работен плот за словенски"
+#~ msgstr "КДЕ на словенски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Slovenian."
-#~ msgstr "Тази задача локализира работния плот за словенски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на словенски."
 
 #~ msgid "Spanish environment"
-#~ msgstr "Среда за испански"
+#~ msgstr "Среда на испански"
 
 #~ msgid ""
 #~ "This task installs programs, data files, and documentation that make it "
@@ -1811,71 +1594,63 @@ msgstr ""
 #~ "улесняващи говорещите испански потребители на Debian."
 
 #~ msgid "Spanish desktop"
-#~ msgstr "Работен плот за испански"
+#~ msgstr "Работен плот на испански"
 
 #~ msgid "This task localises the desktop in Spanish."
-#~ msgstr "Тази задача локализира работния плот за испански"
+#~ msgstr "Тази задача локализира работния плот на испански."
 
-#, fuzzy
 #~ msgid "Spanish GNOME desktop"
-#~ msgstr "Работен плот за испански"
+#~ msgstr "ГНОМ на испански"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Spanish."
-#~ msgstr "Тази задача локализира работния плот за испански"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на испански."
 
-#, fuzzy
 #~ msgid "Spanish KDE desktop"
-#~ msgstr "Работен плот за испански"
+#~ msgstr "КДЕ на испански"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Spanish."
-#~ msgstr "Тази задача локализира работния плот за испански"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на испански."
 
 #~ msgid "Swedish environment"
-#~ msgstr "Среда за шведски"
+#~ msgstr "Среда на шведски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Swedish to help Swedish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на шведски в помощ на "
-#~ "говорещите шведски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите шведски "
+#~ "потребители на Debian."
 
 #~ msgid "Swedish desktop"
-#~ msgstr "Работен плот за шведски"
+#~ msgstr "Работен плот на шведски"
 
 #~ msgid "This task localises the desktop in Swedish."
-#~ msgstr "Тази задача локализира работния плот за шведски"
+#~ msgstr "Тази задача локализира работния плот на шведски."
 
-#, fuzzy
 #~ msgid "Swedish GNOME desktop"
-#~ msgstr "Работен плот за шведски"
+#~ msgstr "ГНОМ на шведски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Swedish."
-#~ msgstr "Тази задача локализира работния плот за шведски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на шведски."
 
-#, fuzzy
 #~ msgid "Swedish KDE desktop"
-#~ msgstr "Работен плот за шведски"
+#~ msgstr "КДЕ на шведски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Swedish."
-#~ msgstr "Тази задача локализира работния плот за шведски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на шведски."
 
 #~ msgid "Tagalog environment"
-#~ msgstr "Среда за тегалог"
+#~ msgstr "Среда на тегалог"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Tagalog to help Tagalog "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на тегалог в помощ на "
-#~ "говорещите тегалог потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите тегалог "
+#~ "потребители на Debian."
 
 #~ msgid "Tamil environment"
-#~ msgstr "Среда за тамилски"
+#~ msgstr "Среда на тамилски"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
@@ -1885,198 +1660,170 @@ msgstr ""
 #~ "които улесняват говорещите тамилски потребители на Debian."
 
 #~ msgid "Tamil desktop"
-#~ msgstr "Работен плот за тамилски"
+#~ msgstr "Работен плот на тамилски"
 
 #~ msgid "This task localises the desktop in Tamil."
-#~ msgstr "Тази задача локализира работния плот за тамилски."
+#~ msgstr "Тази задача локализира работния плот на тамилски."
 
-#, fuzzy
 #~ msgid "Tamil GNOME desktop"
-#~ msgstr "Работен плот за тамилски"
+#~ msgstr "ГНОМ на тамилски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Tamil."
-#~ msgstr "Тази задача локализира работния плот за тамилски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на тамилски."
 
-#, fuzzy
 #~ msgid "Tamil KDE desktop"
-#~ msgstr "Работен плот за тамилски"
+#~ msgstr "КДЕ на тамилски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Tamil."
-#~ msgstr "Тази задача локализира работния плот за тамилски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на тамилски."
 
 #~ msgid "Thai environment"
-#~ msgstr "Среда за тайландски"
+#~ msgstr "Среда на тайски"
 
 #~ msgid ""
 #~ "This task installs packages that make it easier for Thai speaking people "
 #~ "to use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети, които улесняват говорещите тайландски "
+#~ "Тази задача инсталира пакети, които улесняват говорещите тайски "
 #~ "потребители на Debian."
 
 #~ msgid "Thai desktop"
-#~ msgstr "Работен плот за тайландски"
+#~ msgstr "Работен плот на тайски"
 
 #~ msgid "This task localises the desktop in Thai."
-#~ msgstr "Тази задача локализира работния плот за тайландски"
+#~ msgstr "Тази задача локализира работния плот на тайски."
 
-#, fuzzy
 #~ msgid "Thai GNOME desktop"
-#~ msgstr "Работен плот за тайландски"
+#~ msgstr "ГНОМ на тайски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Thai."
-#~ msgstr "Тази задача локализира работния плот за тайландски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на тайски."
 
-#, fuzzy
 #~ msgid "Thai KDE desktop"
-#~ msgstr "Работен плот за тайландски"
+#~ msgstr "КДЕ на тайски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Thai."
-#~ msgstr "Тази задача локализира работния плот за тайландски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на тайски."
 
 #~ msgid "Turkish environment"
-#~ msgstr "Среда за турски"
+#~ msgstr "Среда на турски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Turkish to help Turkish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на турски в помощ на "
-#~ "говорещите турски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите турски "
+#~ "потребители на Debian."
 
 #~ msgid "Turkish desktop"
-#~ msgstr "Работен плот за турски"
+#~ msgstr "Работен плот на турски"
 
 #~ msgid "This task localises the desktop in Turkish."
-#~ msgstr "Тази задача локализира работния плот за турски"
+#~ msgstr "Тази задача локализира работния плот на турски."
 
-#, fuzzy
 #~ msgid "Turkish GNOME desktop"
-#~ msgstr "Работен плот за турски"
+#~ msgstr "ГНОМ на турски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Turkish."
-#~ msgstr "Тази задача локализира работния плот за турски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на турски."
 
-#, fuzzy
 #~ msgid "Turkish KDE desktop"
-#~ msgstr "Работен плот за турски"
+#~ msgstr "КДЕ на турски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Turkish."
-#~ msgstr "Тази задача локализира работния плот за турски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на турски."
 
 #~ msgid "Ukrainian environment"
-#~ msgstr "Среда за украински"
+#~ msgstr "Среда на украински"
 
 #~ msgid ""
 #~ "This task installs programs and documentation in Ukrainian to help "
 #~ "Ukrainian speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира програми и документация на украински в помощ на "
-#~ "говорещите украински потребители на Debian."
+#~ "Тази задача инсталира програми и документация в помощ на говорещите "
+#~ "украински потребители на Debian."
 
 #~ msgid "Ukrainian desktop"
-#~ msgstr "Работен плот за украински"
+#~ msgstr "Работен плот на украински"
 
 #~ msgid "This task localises the desktop in Ukrainian."
-#~ msgstr "Тази задача локализира работния плот за украински"
+#~ msgstr "Тази задача локализира работния плот на украински."
 
-#, fuzzy
 #~ msgid "Ukrainian GNOME desktop"
-#~ msgstr "Работен плот за украински"
+#~ msgstr "ГНОМ на украински"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Ukrainian."
-#~ msgstr "Тази задача локализира работния плот за украински"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на украински."
 
-#, fuzzy
 #~ msgid "Ukrainian KDE desktop"
-#~ msgstr "Работен плот за украински"
+#~ msgstr "КДЕ на украински"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Ukrainian."
-#~ msgstr "Тази задача локализира работния плот за украински"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на украински."
 
 #~ msgid "Vietnamese desktop"
-#~ msgstr "Работен плот за виетнамски"
+#~ msgstr "Работен плот на виетнамски"
 
 #~ msgid "This task localises the desktop in Vietnamese."
-#~ msgstr "Тази задача локализира работния плот за виетнамски"
+#~ msgstr "Тази задача локализира работния плот на виетнамски."
 
-#, fuzzy
 #~ msgid "Vietnamese GNOME desktop"
-#~ msgstr "Работен плот за виетнамски"
+#~ msgstr "ГНОМ на виетнамски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Vietnamese."
-#~ msgstr "Тази задача локализира работния плот за виетнамски"
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на виетнамски."
 
-#, fuzzy
 #~ msgid "Vietnamese KDE desktop"
-#~ msgstr "Работен плот за виетнамски"
+#~ msgstr "КДЕ на виетнамски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Vietnamese."
-#~ msgstr "Тази задача локализира работния плот за виетнамски"
+#~ msgstr "Тази задача локализира графичната среда КДЕ на виетнамски."
 
 #~ msgid "Welsh environment"
-#~ msgstr "Среда за уелски"
+#~ msgstr "Среда на уелски"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Welsh to help Welsh "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Тази задача инсталира пакети и документация на уелски в помощ на "
-#~ "говорещите уелски потребители на Debian."
+#~ "Тази задача инсталира пакети и документация в помощ на говорещите уелски "
+#~ "потребители на Debian."
 
 #~ msgid "Welsh desktop"
-#~ msgstr "Работен плот за уелски"
+#~ msgstr "Работен плот на уелски"
 
 #~ msgid "This task localises the desktop in Welsh."
-#~ msgstr "Тази задача локализира работния плот за уелски."
+#~ msgstr "Тази задача локализира работния плот на уелски."
 
-#, fuzzy
 #~ msgid "Welsh GNOME desktop"
-#~ msgstr "Работен плот за уелски"
+#~ msgstr "ГНОМ на уелски"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Welsh."
-#~ msgstr "Тази задача локализира работния плот за уелски."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на уелски."
 
-#, fuzzy
 #~ msgid "Welsh KDE desktop"
-#~ msgstr "Работен плот за уелски"
+#~ msgstr "КДЕ на уелски"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Welsh."
-#~ msgstr "Тази задача локализира работния плот за уелски."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на уелски."
 
 #~ msgid "Xhosa desktop"
-#~ msgstr "Работен плот за коса"
+#~ msgstr "Работен плот на коса"
 
 #~ msgid "This task localises the desktop in Xhosa."
-#~ msgstr "Тази задача локализира работния плот за коса."
+#~ msgstr "Тази задача локализира работния плот на коса."
 
-#, fuzzy
 #~ msgid "Xhosa GNOME desktop"
-#~ msgstr "Работен плот за коса"
+#~ msgstr "ГНОМ на коса"
 
-#, fuzzy
 #~ msgid "This task localises the GNOME desktop in Xhosa."
-#~ msgstr "Тази задача локализира работния плот за коса."
+#~ msgstr "Тази задача локализира графичната среда ГНОМ на коса."
 
-#, fuzzy
 #~ msgid "Xhosa KDE desktop"
-#~ msgstr "Работен плот за коса"
+#~ msgstr "КДЕ на коса"
 
-#, fuzzy
 #~ msgid "This task localises the KDE desktop in Xhosa."
-#~ msgstr "Тази задача локализира работния плот за коса."
+#~ msgstr "Тази задача локализира графичната среда КДЕ на коса."
 
 #~ msgid "Gnome desktop environment"
 #~ msgstr "Работен плот на Gnome"
@@ -2295,3 +2042,4 @@ msgstr ""
 
 #~ msgid "a TeX/LaTeX environment"
 #~ msgstr "Среда·за·TeX/LaTeX"
+
