@@ -51,6 +51,11 @@ tasksel (2.75) UNRELEASED; urgency=low
   * Move myspell from base language to lang-desktop tasks, as it is used by
     gui programs. (hunspell left in base language tasks as it can be used at
     the console.)
+  * Exclude hidden tasks from translation, since there is very little point
+    in translating these and it causes much translator load, and bloats
+    tasksel. For now, all tasks in Section l10n are excluded, which excludes
+    the right set, currently. (With apologies to hard-working translators
+    for not having done this sooner.)
 
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 
