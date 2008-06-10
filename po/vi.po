@@ -4,10 +4,10 @@
 # Phan Vinh Thinh <teppi@vnoss.org>, 2005.
 # Clytie Siddall <clytie@riverland.net.au>, 2006.
 msgid ""
-""
-msgstr "Project-Id-Version: tasksel\n"
+msgstr ""
+"Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-18 23:04+0900\n"
+"POT-Creation-Date: 2008-05-14 17:41-0400\n"
 "PO-Revision-Date: 2006-10-17 15:33+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -17,7 +17,7 @@ msgstr "Project-Id-Version: tasksel\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6fc1\n"
 
-#: ../tasksel.pl:358
+#: ../tasksel.pl:357
 msgid ""
 "Usage:\n"
 "tasksel install <task>\n"
@@ -28,18 +28,18 @@ msgid ""
 "\t    --list-tasks    list tasks that would be displayed and exit\n"
 "\t    --task-packages list available packages in a task\n"
 "\t    --task-desc     returns the description of a task\n"
-msgstr "Cách sử dụng:\n"
+msgstr ""
+"Cách sử dụng:\n"
 "tasksel install <công_việc>\t_cài đặt_ công việc này\n"
 "tasksel remove <công_việc>\t_gỡ bỏ_ công việc này\n"
 "tasksel [tùy_chọn]\n"
 "\t-t, --test          \t\tchế độ _thử nghiệm_; không thực sự làm gì\n"
 "\t    --new-install   \ttự động _cài đặt_ một số cộng việc (_mới_)\n"
 "\t    --list-tasks    \t\t_liệt kê_ những _công việc_ sẽ hiển thị và thoát\n"
-"\t    --task-packages \tliệt kê những _gói_ có sẵn trong một _công việc_ nào đó\n"
+"\t    --task-packages \tliệt kê những _gói_ có sẵn trong một _công việc_ nào "
+"đó\n"
 "\t    --task-desc     \ttrả về _mô tả_ của một _công việc_ nào đó\n"
 
-#: ../tasksel.pl:557
-#: ../tasksel.pl:575
-#: ../tasksel.pl:586
+#: ../tasksel.pl:608 ../tasksel.pl:620
 msgid "aptitude failed"
 msgstr "Trình aptitude bị lỗi"

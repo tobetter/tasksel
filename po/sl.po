@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-26 15:49-0400\n"
+"POT-Creation-Date: 2008-05-14 17:41-0400\n"
 "PO-Revision-Date: 2006-12-27 10:58+0100\n"
 "Last-Translator: Matej Kovačič <matej.kovacic@owca.info>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
@@ -35,65 +35,85 @@ msgstr ""
 "\t-t, --test          testni način; ne naredi ničesar\n"
 "\t    --new-install   samodejno namesti določene opravilne pakete\n"
 "\t    --list-tasks    izpiše opravilne pakete in konča\n"
-"\t    --task-packages izpiše programske pakete, ki so na voljo v opravilnem paketu\n"
+"\t    --task-packages izpiše programske pakete, ki so na voljo v opravilnem "
+"paketu\n"
 "\t    --task-desc     izpiše opis opravilnega paketa\n"
 
-#: ../tasksel.pl:578
-#: ../tasksel.pl:596
-#: ../tasksel.pl:607
+#: ../tasksel.pl:608 ../tasksel.pl:620
 msgid "aptitude failed"
 msgstr "aptitude ni bil uspešen"
 
 #~ msgid "Cannot allocate memory for enumeration buffer"
 #~ msgstr "Ni mogoče dodeliti pomnilnika za števni medpomnilnik"
+
 #~ msgid ""
 #~ "Fatal error encountered at %s:%d\n"
 #~ "\t"
 #~ msgstr ""
 #~ "Usodna napaka pri %s:%d\n"
 #~ "\t"
+
 #~ msgid ""
 #~ "I/O error at %s:%d\n"
 #~ "\t"
 #~ msgstr ""
 #~ "Napaka I/O pri %s:%d\n"
 #~ "\t"
+
 #~ msgid "(no description)"
 #~ msgstr "(ni opisa)"
+
 #~ msgid "End-user"
 #~ msgstr "Končni uporabnik"
+
 #~ msgid "Hardware Support"
 #~ msgstr "Podpora strojne opreme"
+
 #~ msgid "Servers"
 #~ msgstr "Strežniki"
+
 #~ msgid "Development"
 #~ msgstr "Razvoj"
+
 #~ msgid "Localization"
 #~ msgstr "Krajevno prilagajanje"
+
 #~ msgid "Miscellaneous"
 #~ msgstr "Mešano"
+
 #~ msgid "Unable to initialize the terminal"
 #~ msgstr "Ni mogoče inicializirati terminala"
+
 #~ msgid "Unable to initialize screen output"
 #~ msgstr "Ni mogoče inicializirati izhoda na zaslon"
+
 #~ msgid "Unable to initialize keyboard interface"
 #~ msgstr "Ni mogoče inicializirati vmesnika tipkovnice"
+
 #~ msgid "Debian Task Installer v%s - (c) 1999-2004 SPI and others"
 #~ msgstr "Debianov opravilni namestilnik r%s - (c) 1999-2004 SPI in drugi"
+
 #~ msgid "^Finish"
 #~ msgstr "^Konec"
+
 #~ msgid "Task ^Info"
 #~ msgstr "Podatk^i o opravilih"
+
 #~ msgid "^Help"
 #~ msgstr "^Pomoč"
+
 #~ msgid "Select tasks to install"
 #~ msgstr "Izberite opravila, ki jih želite namestiti"
+
 #~ msgid "Ok"
 #~ msgstr "V redu"
+
 #~ msgid "Index out of bounds: %d >= %d"
 #~ msgstr "Kazalo je prekoračilo meje: %d >= %d"
+
 #~ msgid "Help"
 #~ msgstr "Pomoč"
+
 #~ msgid ""
 #~ "Tasks allow you to quickly install a selection of packages that performs "
 #~ "a given task.\n"
@@ -120,6 +140,7 @@ msgstr "aptitude ni bil uspešen"
 #~ "Hvala, ker uporabljate Debian.\n"
 #~ "\n"
 #~ "Pritisnite ENTER za vrnitev na zaslon z izbiro opravil."
+
 #~ msgid ""
 #~ "Description:\n"
 #~ "%s\n"
@@ -130,40 +151,55 @@ msgstr "aptitude ni bil uspešen"
 #~ "%s\n"
 #~ "\n"
 #~ "Vsebovani paketi:\n"
+
 #~ msgid "(no description available)"
 #~ msgstr "(opis ni na voljo)"
+
 #~ msgid "Unknown signal seen"
 #~ msgstr "Neznan signal"
+
 #~ msgid "tasksel install <task>\n"
 #~ msgstr "tasksel install <task>\n"
+
 #~ msgid "tasksel [options]; where options is any combination of:\n"
 #~ msgstr "tasksel [možnosti], kjer so možnosti poljubna kombinacija:\n"
+
 #~ msgid "-t -- test mode; don't actually run apt-get on exit"
 #~ msgstr "-t -- poskusni način, ki ob izhodu ne požene apt-get"
+
 #~ msgid ""
 #~ "-q -- queue installs; do not install packages with apt-get;\n"
 #~ "\t\tjust queue them in dpkg"
 #~ msgstr ""
 #~ "-q -- namestitve postavi v vrsto in paketov ne namesti z apt-get;\n"
 #~ "\t\tsamo postavi jih v vrsto za dpkg"
+
 #~ msgid "-r -- install all required-priority packages"
 #~ msgstr "-r -- namesti vse pakete z zahtevano prioriteto"
+
 #~ msgid "-i -- install all important-priority packages"
 #~ msgstr "-i -- namesti vse pakete s pomembno prioriteto"
+
 #~ msgid "-s -- install all standard-priority packages"
 #~ msgstr "-s -- namesti vse pakete z običajno prioriteto"
+
 #~ msgid "-n -- don't show UI; use with -r or -i usually"
 #~ msgstr "-n -- ne prikaže UI; ponavadi skupaj z -r ali -i"
+
 #~ msgid "-a -- show all tasks, even those with no packages in them"
 #~ msgstr "-a -- prikaže vsa opravila, tudi tista, ki ne vsebujejo paketov"
+
 #~ msgid "No packages selected\n"
 #~ msgstr "Ni izbranih paketov\n"
+
 #~ msgid "No tasks found on this system.\n"
 #~ msgstr "Na tem sistemu ni opravil.\n"
+
 #~ msgid "Cannot allocate memory for strdup"
 #~ msgstr "Ni mogoče dodeliti pomnilnika za strdup"
+
 #~ msgid "Cannot allocate %d bytes of memory"
 #~ msgstr "Ni mogoče dodeliti %d bajtov pomnilnika"
+
 #~ msgid "Cannot reallocate %d bytes of memory"
 #~ msgstr "Ni mogoče ponovno dodeliti %d bajtov pomnilnika"
-
