@@ -32,3 +32,6 @@ Packages-list:
   k3b-i18n
 # desktop network setup
   network-manager-kde
+# This is configured by d-i to be used to gain root on systems with no root
+# password. It is not enabled by default.
+  kdesudo
