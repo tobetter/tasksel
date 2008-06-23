@@ -67,6 +67,12 @@ tasksel (2.75) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * kde-desktop: include kdesuso. Closes: #485655
+  * gnome-desktop: Make gnome the Key package for this task. Needs
+    meta-gnome2 2.22.2~2, which syncs gnome to the past contents of the task.
+    Thanks to Josselin Mouette for the cooperation. Closes: #484121
+  * swfdec-mozilla is included as a dependency of gnome; provisionally 
+    follow through by including it in the desktop task as well.
+    Closes: #467324
 
  -- Joey Hess <joeyh@debian.org>  Wed, 14 May 2008 17:10:27 -0400
 

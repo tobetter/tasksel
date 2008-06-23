@@ -7,70 +7,47 @@ Description: GNOME desktop environment
  This task provides basic "desktop" software using the GNOME desktop
  environment.
 Key:
-# The basics of gnome, not the whole thing.
-  gnome-desktop-environment
+# The complete gnome environment, with selected extras
+  gnome
 Packages: task-fields
 Packages-list:
+# add gnome support for iceweasel, which is pulled in via the main desktop task
+  iceweasel-gnome-support
+# several packages recommend this, make sure it's available in case
+# things that depend on it are not available
+  gksu
 # May not get installed unless forced, if some other browser satisfies the
 # dependency, so force it.
   epiphany-browser
-  epiphany-extensions
-# most of the gnome metapackage, except for desktop stuff
-  system-config-printer
-  gnome-themes-extras
-  libpam-gnome-keyring
-# rhythmbox and gstreamer plugins
-  rhythmbox
+# for wma files, etc (recommended by totem)
   gstreamer0.10-ffmpeg
-  gstreamer0.10-plugins-ugly
-# allow video playback in mozilla/xulrunner browsers
-  totem-mozilla
+# The remainder of packages in this list are recommends/suggests of the
+# gnome metapackage (or of gnome-office in a few cases).
+#
 # enable debian menus
   menu-xdg
 # partition editing
   gparted
 # package management
-  synaptic
   update-notifier
-  gnome-app-install
-# debconf gnome frontend
-  libgnome2-perl
-# click on deb to install
-  gdebi
-# everyone uses bittorrent these days, right?
-  transmission-gtk
-# and rss. epiphany integrates with liferea
+# RSS reader
   liferea
-# and does instant messanging
+# instant messaging
   pidgin
-# and word processing
+# GNOME support in OOo
   openoffice.org-gnome
-# and like clones of exchange with far too many features for some reason
-  evolution-exchange
-  evolution-plugins
-  evolution-webcal
   openoffice.org-evolution
-# various applets that are useful to have
-  deskbar-applet
 # remote logins, both to windows and X
   tsclient
-# add gnome support for iceweasel, which is pulled in via the main desktop task
-  iceweasel-gnome-support
 # hardware browser, broader scope than hal
   hardinfo
-# audio CD burning (data CDs handled by nautilus-cd-burner)
-  serpentine
-# desktop network setup
+# network roaming
   network-manager-gnome
-# bluetooth applet for gnome
-  bluez-gnome
 # support for scanners
   xsane
-# recommended by file-roller, useful for interop with windows
-  arj
-  p7zip
-# solitare :-)
-  gnome-games
-# several packages recommend this, make sure it's available in case
-# things that depend on it are not available
-  gksu
+# vector drawing
+  inkscape
+# printer hotplugging
+  hal-cups-utils
+# digital camera import
+  gthumb
