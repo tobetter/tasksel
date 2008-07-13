@@ -34,6 +34,10 @@ tasksel (2.75) UNRELEASED; urgency=low
   * Correct the code for Belarusian in the cyrillic task
   * Correct spelling of "GNOME" in tasks descriptions
   * Correct spelling of "Brazilian Portuguese" in relevant tasks
+  * Replace 'NetBIOS' by 'CIFS' in the file-server task description
+    Unfuzzy translations by doing 's/NetBIOS\b/CIFS' on them.
+    Bengali and Hindi translations marked fuzzy as they had no
+    occurrence of 'NetBIOS' in the translated strings.
 
   [ Per Olofsson ]
   * Remove hpijs-ppds from desktop and print-server. hpijs can now
