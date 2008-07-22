@@ -1,5 +1,11 @@
 tasksel (2.75) unstable; urgency=low
 
+  Please note that this upload should not be allowed to reach testing before
+  meta-gnome2 2.22.2~2 does. However, I've been waiting on that for exactly
+  one month, and this version of tasksel does need to get into lenny for the
+  release.
+  
+  [ Joey Hess ]
   * Split out <lang>-{kde,gnome}-desktop tasks. Closes: #431173
   * Add uim-applet-{kde,gnome} to the japanese desktop tasks, as
     Kenshi suggests.
