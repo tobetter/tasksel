@@ -1,4 +1,4 @@
-tasksel (2.75) UNRELEASED; urgency=low
+tasksel (2.75) unstable; urgency=low
 
   * Split out <lang>-{kde,gnome}-desktop tasks. Closes: #431173
   * Add uim-applet-{kde,gnome} to the japanese desktop tasks, as
@@ -87,8 +87,9 @@ tasksel (2.75) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * finnish: Remove libenchant-voikko, add voikko-fi. Closes: #491077
+  * kde-destkop: Add kpowersave, a recommends of kdeutils. Closes: #491669
 
- -- Joey Hess <joeyh@debian.org>  Sun, 29 Jun 2008 20:46:03 +0300
+ -- Joey Hess <joeyh@debian.org>  Tue, 22 Jul 2008 00:06:39 -0400
 
 tasksel (2.74.2) unstable; urgency=medium
 
