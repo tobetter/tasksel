@@ -88,6 +88,9 @@ tasksel (2.75) unstable; urgency=low
   [ Joey Hess ]
   * finnish: Remove libenchant-voikko, add voikko-fi. Closes: #491077
   * kde-destkop: Add kpowersave, a recommends of kdeutils. Closes: #491669
+  * print-server, desktop: remove foomatic-db-{engine,hpijs,gutenprint},
+    which cups apparently does not use, instead using foomatic-filters-ppds.
+    Thanks, Per Olofsson for investigation. Closes: #485000
 
  -- Joey Hess <joeyh@debian.org>  Tue, 22 Jul 2008 00:06:39 -0400
 
