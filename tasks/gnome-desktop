@@ -16,6 +16,8 @@ Packages-list:
 # several packages recommend this, make sure it's available in case
 # things that depend on it are not available
   gksu
+# use rarian-compat instead of scrollkeeper
+ rarian-compat
 # May not get installed unless forced, if some other browser satisfies the
 # dependency, so force it.
   epiphany-browser
