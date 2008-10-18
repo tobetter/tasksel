@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-10 13:59-0400\n"
+"POT-Creation-Date: 2008-10-18 09:12-0300\n"
 "PO-Revision-Date: 2007-11-14 22:57+0100\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -124,11 +124,25 @@ msgstr "Denne oppgaven installerer programvare nyttig for en bærbar maskin."
 
 #. Description
 #: ../po/debian-tasks.desc:8001
+msgid "LXDE desktop environment"
+msgstr "LXDE skrivebordsmiljø"
+
+#. Description
+#: ../po/debian-tasks.desc:8001
+msgid ""
+"This task provides basic \"desktop\" software using the LXDE desktop "
+"environment."
+msgstr ""
+"Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
+"skrivebordsmiljøet LXDE."
+
+#. Description
+#: ../po/debian-tasks.desc:9001
 msgid "Mail server"
 msgstr "E-posttjener"
 
 #. Description
-#: ../po/debian-tasks.desc:8001
+#: ../po/debian-tasks.desc:9001
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -137,42 +151,42 @@ msgstr ""
 "posttjener."
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "manuelt pakkevalg"
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Velg manuelt i aptitude pakker som skal installeres."
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "Print server"
 msgstr "Utskriftstjener"
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "This task sets up your system to be a print server."
 msgstr "Denne oppgaven setter systemet ditt opp til å være en utskriftstjener."
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "Standard system"
 msgstr "Standardsystem"
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "This task installs a reasonably small character-mode system."
 msgstr "Denne oppgaven installerer et rimelig lite tekstbasert system."
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid "Web server"
 msgstr "Nett-tjener"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
@@ -180,32 +194,18 @@ msgstr ""
 "en nettjener."
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Xfce desktop environment"
 msgstr "Xfce skrivebordsmiljø"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
 "Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
 "skrivebordsmiljøet Xfce."
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid "LXDE desktop environment"
-msgstr "LXDE skrivebordsmiljø"
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
-"skrivebordsmiljøet LXDE."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Arabisk miljø"

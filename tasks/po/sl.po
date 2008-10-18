@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-10 13:59-0400\n"
+"POT-Creation-Date: 2008-10-18 09:12-0300\n"
 "PO-Revision-Date: 2006-11-20 14:02+0100\n"
 "Last-Translator: Matej Kovačič <matej.kovacic@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -126,11 +126,25 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:8001
+msgid "LXDE desktop environment"
+msgstr "LXDE namizno okolje"
+
+#. Description
+#: ../po/debian-tasks.desc:8001
+msgid ""
+"This task provides basic \"desktop\" software using the LXDE desktop "
+"environment."
+msgstr ""
+"To opravilo namesti osnovno \"namizno\" programsko opremo za namizno okolje "
+"LXDE."
+
+#. Description
+#: ../po/debian-tasks.desc:9001
 msgid "Mail server"
 msgstr "Poštni strežnik"
 
 #. Description
-#: ../po/debian-tasks.desc:8001
+#: ../po/debian-tasks.desc:9001
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -138,75 +152,61 @@ msgstr ""
 "To opravilo izbere številne pakete za splošno namenski poštni strežnik."
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "ročna izbira paketov"
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Ročno izberite pakete, ki jih želite namestiti v aptitude."
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "Print server"
 msgstr "Tiskalniški strežnik"
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "This task sets up your system to be a print server."
 msgstr "To opravilo spremeni vaš sistem v namenski tiskalniški strežnik."
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "Standard system"
 msgstr "Standardni sistem"
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "This task installs a reasonably small character-mode system."
 msgstr ""
 "To opravilo namesti sprejemljivo majhen sistem, ki deluje v znakovnem načinu."
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid "Web server"
 msgstr "Spletni strežnik"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "To opravilo izbere pakete, uporabne za splošno namenski spletni strežnik."
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Xfce desktop environment"
 msgstr "Xfce namizno okolje"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
 "To opravilo namesti osnovno \"namizno\" programsko opremo za namizno okolje "
 "Xfce."
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid "LXDE desktop environment"
-msgstr "LXDE namizno okolje"
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"To opravilo namesti osnovno \"namizno\" programsko opremo za namizno okolje "
-"LXDE."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Arabsko okolje"

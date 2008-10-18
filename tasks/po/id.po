@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-10 13:59-0400\n"
+"POT-Creation-Date: 2008-10-18 09:12-0300\n"
 "PO-Revision-Date: 2008-03-08 13:20+0700\n"
 "Last-Translator: Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>\n"
 "Language-Team: Debian Indonesia <debid@yahoogroups.com>\n"
@@ -130,12 +130,26 @@ msgstr "Penugasan ini menginstall perangkat lunak untuk laptop."
 #  Description
 #. Description
 #: ../po/debian-tasks.desc:8001
+msgid "LXDE desktop environment"
+msgstr "Lingkungan Desktop LXDE"
+
+#. Description
+#: ../po/debian-tasks.desc:8001
+msgid ""
+"This task provides basic \"desktop\" software using the LXDE desktop "
+"environment."
+msgstr ""
+"Penugasan ini menyediakan perangkat lunak \"desktop\" utama berbasis LXDE."
+
+#  Description
+#. Description
+#: ../po/debian-tasks.desc:9001
 msgid "Mail server"
 msgstr "Server Mail"
 
 #  Description
 #. Description
-#: ../po/debian-tasks.desc:8001
+#: ../po/debian-tasks.desc:9001
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -144,47 +158,47 @@ msgstr ""
 "secara umum sistem server mail."
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "pemilihan paket manual"
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Pilih paket-paket secara manual menggunakan aptitude."
 
 #  Description
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "Print server"
 msgstr "Server Print"
 
 #  Description
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "This task sets up your system to be a print server."
 msgstr ""
 "Penugasan ini mempersiapkan sistem anda untuk menjadi server print (cetak)"
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "Standard system"
 msgstr "Sistem Standar"
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "This task installs a reasonably small character-mode system."
 msgstr "Penugasan ini memasang sistem kecil berbasis konsol teks."
 
 #  Description
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid "Web server"
 msgstr "Server web"
 
 #  Description
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
@@ -193,31 +207,17 @@ msgstr ""
 
 #  Description
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Xfce desktop environment"
 msgstr "Lingkungan Desktop Xfce"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
 "Penugasan ini menyediakan perangkat lunak \"desktop\" utama berbasis Xfce."
-
-#  Description
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid "LXDE desktop environment"
-msgstr "Lingkungan Desktop LXDE"
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Penugasan ini menyediakan perangkat lunak \"desktop\" utama berbasis LXDE."
 
 #  Description
 #~ msgid "Amharic environment"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-10 13:59-0400\n"
+"POT-Creation-Date: 2008-10-18 09:12-0300\n"
 "PO-Revision-Date: 2008-02-06 19:07+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <debian-l10n-korean@lists.debian.org>\n"
@@ -114,11 +114,25 @@ msgstr "이 태스크는 노트북 컴퓨터 사용자에게 유용한 소프트
 
 #. Description
 #: ../po/debian-tasks.desc:8001
+msgid "LXDE desktop environment"
+msgstr "LXDE 데스크탑 환경"
+
+#. Description
+#: ../po/debian-tasks.desc:8001
+msgid ""
+"This task provides basic \"desktop\" software using the LXDE desktop "
+"environment."
+msgstr ""
+"이 태스크는 LXDE 데스크탑 환경을 이용한 \"기본\" 데스크탑용 소프트웨어를 제공"
+"합니다."
+
+#. Description
+#: ../po/debian-tasks.desc:9001
 msgid "Mail server"
 msgstr "메일 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:8001
+#: ../po/debian-tasks.desc:9001
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -126,72 +140,58 @@ msgstr ""
 "이 태스크는 일반적인 메일 서버 시스템에 필요한 여러가지 패키지를 선택합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "수동으로 패키지 선택하기"
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Aptitude에서 설치할 패키지를 수동으로 선택합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "Print server"
 msgstr "인쇄 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "This task sets up your system to be a print server."
 msgstr "이 태스크는 시스템을 인쇄 서버로 준비합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "Standard system"
 msgstr "표준 시스템"
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "This task installs a reasonably small character-mode system."
 msgstr "이 태스크는 비교적 작은 캐릭터모드 시스템을 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid "Web server"
 msgstr "웹 서버"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "이 태스크는 일반적인 웹 서버 시스템에 필요한 패키지들을 설치합니다."
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Xfce desktop environment"
 msgstr "Xfce 데스크탑 환경"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
 "이 태스크는 Xfce 데스크탑 환경을 이용한 \"기본\" 데스크탑용 소프트웨어를 제공"
-"합니다."
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid "LXDE desktop environment"
-msgstr "LXDE 데스크탑 환경"
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"이 태스크는 LXDE 데스크탑 환경을 이용한 \"기본\" 데스크탑용 소프트웨어를 제공"
 "합니다."
 
 #~ msgid "Amharic environment"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer HR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-10 13:59-0400\n"
+"POT-Creation-Date: 2008-10-18 09:12-0300\n"
 "PO-Revision-Date: 2006-11-15 04:01+0100\n"
 "Last-Translator: Safir Secerovic <sapphire@linux.org.ba>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -118,11 +118,25 @@ msgstr "Ova zadaæa donosi programe korisne za prijenosna raèunala."
 
 #. Description
 #: ../po/debian-tasks.desc:8001
+msgid "LXDE desktop environment"
+msgstr "LXDE radno okru¾enje"
+
+#. Description
+#: ../po/debian-tasks.desc:8001
+msgid ""
+"This task provides basic \"desktop\" software using the LXDE desktop "
+"environment."
+msgstr ""
+"Ova zadaæa instalira osnovne \"desktop\" programe koji koriste LXDE radno "
+"okru¾enje."
+
+#. Description
+#: ../po/debian-tasks.desc:9001
 msgid "Mail server"
 msgstr "Poslu¾itelj za e-po¹tu"
 
 #. Description
-#: ../po/debian-tasks.desc:8001
+#: ../po/debian-tasks.desc:9001
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -130,73 +144,59 @@ msgstr ""
 "Ova zadaæa izabire niz paketa korisnih za poslu¾itelj e-po¹te opæe namjene."
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "ruèni odabir paketa"
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Ruèno izabrati pakete za instalaciju u aptitudeu."
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "Print server"
 msgstr "Poslu¾itelj za ispis"
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "This task sets up your system to be a print server."
 msgstr "Ova zadaæa pode¹ava va¹ sustav kao poslu¾itelj za ispis."
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "Standard system"
 msgstr "Standardni sustav"
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "This task installs a reasonably small character-mode system."
 msgstr "Ova zadaæa instalira razmjerno malen sustav za rad u tekstualnom modu."
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid "Web server"
 msgstr "Mre¾ni server"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
 "Ova zadaæa izabire niz paketa korisnih za mre¾ni poslu¾itelj opæe namjene."
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Xfce desktop environment"
 msgstr "Xfce radno okru¾enje"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
 "Ova zadaæa instalira osnovne \"desktop\" programe koji koriste Xfce radno "
-"okru¾enje."
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid "LXDE desktop environment"
-msgstr "LXDE radno okru¾enje"
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Ova zadaæa instalira osnovne \"desktop\" programe koji koriste LXDE radno "
 "okru¾enje."
 
 #~ msgid "Amharic environment"

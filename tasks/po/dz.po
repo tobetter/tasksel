@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-10 13:59-0400\n"
+"POT-Creation-Date: 2008-10-18 09:12-0300\n"
 "PO-Revision-Date: 2007-12-03 13:58+0530\n"
 "Last-Translator: Jurmey Rabgay <jur_gay@yahoo.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -123,11 +123,25 @@ msgstr "འ་ནི་ལས་ཀ་འདི་གིས་ ལེཔ་ཊ�
 
 #. Description
 #: ../po/debian-tasks.desc:8001
+msgid "LXDE desktop environment"
+msgstr "ཨེགསི་ཨེེཕ་ཧི་ཨི་ ཌེཀསི་ཊོཔ་གི་མཐའ་འཁོར།"
+
+#. Description
+#: ../po/debian-tasks.desc:8001
+msgid ""
+"This task provides basic \"desktop\" software using the LXDE desktop "
+"environment."
+msgstr ""
+"འ་ནི་ལས་ཀ་འདི་གིས  ཨེགསི་ཨེེཕ་ཧི་ཨི་ ཌེཀ་སི་ཊོཔ་མཐའ་འཁོར་ལག་ལེན་འཐབ་ཐོག་ལས་ གཞི་རྩ་ \"desktop"
+"\"མཉན་ཆས་དེ་ཚུ་ སྤེལཝ་ཨིན།"
+
+#. Description
+#: ../po/debian-tasks.desc:9001
 msgid "Mail server"
 msgstr "ཡིག་འཕྲིན་སར་པར།"
 
 #. Description
-#: ../po/debian-tasks.desc:8001
+#: ../po/debian-tasks.desc:9001
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
@@ -136,42 +150,42 @@ msgstr ""
 "སྣ་ཁག་དེ་ཚུ་ སེལ་འཐུ་འབདཝ་ཨིན།"
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "ལག་ཐོག་ཐུམ་སྒྲིལ་སེལ་འཐུ།"
 
 #. Description
-#: ../po/debian-tasks.desc:9001
+#: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "ཐུམ་སྒྲིལ་ཚུ་ མྱུར་འཇུག་ནང་གཞི་བཙུགས་འབད་ནིའི་དོན་ལུ་ ལག་ཐོག་ནང་ལས་སེལ་འཐུ་འབད།"
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "Print server"
 msgstr "དཔར་བསྐྲུན་འབད་མི་ སར་བར།"
 
 #. Description
-#: ../po/debian-tasks.desc:10001
+#: ../po/debian-tasks.desc:11001
 msgid "This task sets up your system to be a print server."
 msgstr "འ་ནི་ལས་ཀ་འདི་གིས་་ཁྱོད་རང་གི་ རིམ་ལུགས་དེ་ དཔར་སྐྲུན་ སར་བར་འབད་་གཞི་སྒྲིག་འབད་འོང།"
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "Standard system"
 msgstr "ཚད་ལྡན་རིམ་ལུགས།"
 
 #. Description
-#: ../po/debian-tasks.desc:11001
+#: ../po/debian-tasks.desc:12001
 msgid "This task installs a reasonably small character-mode system."
 msgstr "འ་ནི་ལས་ཀ་འདི་གིས་ ཁུངས་ལྡན་གྱི་ ཡིག་འབྲུ་ཆུ་ཀུའི་ རིམ་ལུགས་ཅིག ་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid "Web server"
 msgstr "ཝེབ་ སར་བར།"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
@@ -179,28 +193,14 @@ msgstr ""
 "ཚུ་ སེལ་འཐུ་འབདཝ་ཨིན།"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Xfce desktop environment"
 msgstr "ཨེགསི་ཨེེཕ་ཧི་ཨི་ ཌེཀསི་ཊོཔ་གི་མཐའ་འཁོར།"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"འ་ནི་ལས་ཀ་འདི་གིས  ཨེགསི་ཨེེཕ་ཧི་ཨི་ ཌེཀ་སི་ཊོཔ་མཐའ་འཁོར་ལག་ལེན་འཐབ་ཐོག་ལས་ གཞི་རྩ་ \"desktop"
-"\"མཉན་ཆས་དེ་ཚུ་ སྤེལཝ་ཨིན།"
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid "LXDE desktop environment"
-msgstr "ཨེགསི་ཨེེཕ་ཧི་ཨི་ ཌེཀསི་ཊོཔ་གི་མཐའ་འཁོར།"
-
-#. Description
-#: ../po/debian-tasks.desc:13001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
 "environment."
 msgstr ""
 "འ་ནི་ལས་ཀ་འདི་གིས  ཨེགསི་ཨེེཕ་ཧི་ཨི་ ཌེཀ་སི་ཊོཔ་མཐའ་འཁོར་ལག་ལེན་འཐབ་ཐོག་ལས་ གཞི་རྩ་ \"desktop"
