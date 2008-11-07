@@ -1,8 +1,13 @@
 tasksel (2.77) UNRELEASED; urgency=low
 
+  [ Christian Perrier ]
   * Add manpages-fr-extra to the french task. Closes: #504199
 
- -- Christian Perrier <bubulle@debian.org>  Sun, 02 Nov 2008 07:31:14 +0100
+  [ Frans Pop ]
+  * gnome-desktop: revert to the smaller gnome-desktop-environment package
+    as key. Closes: #504659
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 07 Nov 2008 14:52:21 -0200
 
 tasksel (2.76) unstable; urgency=low
 
