@@ -1,0 +1,14 @@
+Task: telugu
+Test-lang: te
+Section: l10n
+Maintainer: Y Giridhar Appaji Nag <appaji@debian.org>
+Description: Telugu environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Telugu speakers
+ to use Debian.
+Key:
+  language-env
+Packages: task-fields
+Packages-list:
+  ttf-telugu-fonts
+  aspell-te
