@@ -40,11 +40,11 @@ Packages-list:
   anacron
 # The following packages are the same as the packages in the print-server
 # task and provide printing via CUPS.
-  cupsys
-  cupsys-client
-  cupsys-bsd
+  cups
+  cups-client
+  cups-bsd
   foomatic-filters-ppds
-  cupsys-driver-gutenprint
+  cups-driver-gutenprint
   printconf
   hpijs
   hplip
