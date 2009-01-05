@@ -15,7 +15,11 @@ tasksel (2.78) UNRELEASED; urgency=low
   [ Frans Pop ]
   * desktop, print-server: Use new cups packages. Closes: #505722
 
- -- Christian Perrier <bubulle@debian.org>  Wed, 12 Nov 2008 19:43:29 +0100
+  [ Otavio Salvador ]
+  * xfce-desktop: Apply patch from Yves-Alexis Perez <corsac@debian.org>
+    to include dbus-x11. Closes: #510300
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Mon, 05 Jan 2009 19:19:05 -0200
 
 tasksel (2.77) unstable; urgency=low
 
