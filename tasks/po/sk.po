@@ -1,16 +1,15 @@
 # tasksel - Slovak translation
 #
-# slovenske nazvy jazykov:
-# http://www.snk.sk/vecne_spracovanie/jazykoveda.html
-# http://www.snk.sk/swift_data/source/ODSD/doc/Jazyky_Nazvy.rtf
+# Peter Mann <Peter.Mann@tuke.sk>, 2008.
+# Ivan Masár <helix84@centrum.sk>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-18 09:12-0300\n"
-"PO-Revision-Date: 2008-04-30 09:46+0200\n"
-"Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
+"PO-Revision-Date: 2009-02-25 17:19+0100\n"
+"Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,13 +18,13 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:1001
 msgid "SQL database"
-msgstr "SQL databáza"
+msgstr "Databáza SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
-msgstr "Táto úloha vyberie klientske a serverové balíky PostgreSQL databázy."
+msgstr "Táto úloha vyberie klientské a serverové balíky databázy PostgreSQL."
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -43,7 +42,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:2001
 msgid "Desktop environment"
-msgstr "Stolný počítač"
+msgstr "Pracovné prostredie"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -51,8 +50,8 @@ msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "GNOME and KDE desktop tasks."
 msgstr ""
-"Táto úloha poskytuje základné \"desktop\" programy a predstavuje základ pre "
-"GNOME a KDE desktop úlohy."
+"Táto úloha poskytuje základné programy pracovného prostredia („desktop“) a "
+"slúži ako základ pre úlohy GNOME a KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:3001
@@ -83,7 +82,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:5001
 msgid "GNOME desktop environment"
-msgstr "Grafické prostredie GNOME"
+msgstr "Pracovné prostredie GNOME"
 
 #. Description
 #: ../po/debian-tasks.desc:5001
@@ -91,13 +90,13 @@ msgid ""
 "This task provides basic \"desktop\" software using the GNOME desktop "
 "environment."
 msgstr ""
-"Táto úloha poskytuje základné \"desktop\" programy pomocou použitia "
-"grafického prostredia GNOME."
+"Táto úloha poskytuje základné programy pracovného prostredia („desktop“) "
+"GNOME."
 
 #. Description
 #: ../po/debian-tasks.desc:6001
 msgid "KDE desktop environment"
-msgstr "Grafické prostredie KDE"
+msgstr "Pracovné prostredie KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:6001
@@ -105,23 +104,22 @@ msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
 msgstr ""
-"Táto úloha poskytuje základné \"desktop\" programy pomocou použitia "
-"grafického prostredia KDE."
+"Táto úloha poskytuje základné programy pracovného prostredia („desktop“) KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:7001
 msgid "Laptop"
-msgstr "Laptop"
+msgstr "Notebook"
 
 #. Description
 #: ../po/debian-tasks.desc:7001
 msgid "This task installs software useful for a laptop."
-msgstr "Táto úloha nainštaluje programy užitočné pre laptopy."
+msgstr "Táto úloha nainštaluje programy užitočné pre notebooky."
 
 #. Description
 #: ../po/debian-tasks.desc:8001
 msgid "LXDE desktop environment"
-msgstr "Grafické prostredie LXDE"
+msgstr "Pracovné prostredie LXDE"
 
 #. Description
 #: ../po/debian-tasks.desc:8001
@@ -129,8 +127,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the LXDE desktop "
 "environment."
 msgstr ""
-"Táto úloha poskytuje základné \"desktop\" programy pomocou použitia "
-"grafického prostredia LXDE."
+"Táto úloha poskytuje základné programy pracovného prostredia („desktop“) "
+"LXDE."
 
 #. Description
 #: ../po/debian-tasks.desc:9001
@@ -142,7 +140,7 @@ msgstr "Poštový server"
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
-msgstr "Táto úloha vyberie rôzne balíky užitočné pre poštový server."
+msgstr "Táto úloha vyberie rôzne balíky užitočné pre všeobecný poštový server."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -152,7 +150,8 @@ msgstr "manuálny výber balíkov"
 #. Description
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
-msgstr "Spustí aptitude, kde si manuálne zvolíte balíky na inštaláciu."
+msgstr ""
+"Spustí aptitude, kde si manuálne zvolíte balíky, ktoré chcete nainštalovať."
 
 #. Description
 #: ../po/debian-tasks.desc:11001
@@ -167,7 +166,7 @@ msgstr "Táto úloha nastaví váš systém na úlohu tlačového servera."
 #. Description
 #: ../po/debian-tasks.desc:12001
 msgid "Standard system"
-msgstr "štandartný systém"
+msgstr "štandardný systém"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
@@ -177,18 +176,18 @@ msgstr "Táto úloha nainštaluje rozumne malý systém v textovom režime."
 #. Description
 #: ../po/debian-tasks.desc:13001
 msgid "Web server"
-msgstr "Web server"
+msgstr "Webový server"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
-msgstr "Táto úloha vyberie balíky užitočné pre všeobecný web server."
+msgstr "Táto úloha vyberie balíky užitočné pre všeobecný webový server."
 
 #. Description
 #: ../po/debian-tasks.desc:14001
 msgid "Xfce desktop environment"
-msgstr "Grafické prostredie Xfce"
+msgstr "Pracovné prostredie Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:14001
@@ -196,8 +195,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
-"Táto úloha poskytuje základné \"desktop\" programy pomocou použitia "
-"grafického prostredia Xfce."
+"Táto úloha poskytuje základné programy pracovného prostredia („desktop“) "
+"Xfce."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Amharské prostredie"
