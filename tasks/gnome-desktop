@@ -11,49 +11,22 @@ Key:
   gnome-desktop-environment
 Packages: task-fields
 Packages-list:
-# The complete gnome environment, with selected extras
+# The complete gnome environment, with selected extras.
+# TODO: Everything in list below should be moved to its Depends/Recommends.
   gnome
 # add gnome support for iceweasel, which is pulled in via the main desktop task
   iceweasel-gnome-support
-# several packages recommend this, make sure it's available in case
-# things that depend on it are not available
-  gksu
 # use rarian-compat instead of scrollkeeper
- rarian-compat
+  rarian-compat
 # May not get installed unless forced, if some other browser satisfies the
 # dependency, so force it.
   epiphany-browser
-# for wma files, etc (recommended by totem)
-  gstreamer0.10-ffmpeg
-# The remainder of packages in this list are recommends/suggests of the
-# gnome metapackage (or of gnome-office in a few cases).
-#
-# enable debian menus
-  menu-xdg
-# partition editing
-  gparted
-# package management
-  update-notifier
-# RSS reader
-  liferea
-# instant messaging
-  pidgin
 # GNOME support in OOo
   openoffice.org-gnome
   openoffice.org-evolution
-# remote logins, both to windows and X
-  tsclient
-# hardware browser, broader scope than hal
-  hardinfo
-# network roaming
-  network-manager-gnome
 # support for scanners
   xsane
 # vector drawing
   inkscape
-# printer hotplugging
-  hal-cups-utils
-# digital camera import
-  gthumb
 # accessibility support
   gnome-accessibility

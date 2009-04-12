@@ -27,6 +27,21 @@ tasksel (2.79) UNRELEASED; urgency=low
   * Remove hibernate from laptop task. (Was already removed from desktop
     in favour of pm-utils.)
   * Install recommends by default.
+  * Remove kdeaccessibility from kde-desktop task. It is already
+    pulled in since kde depends on it.
+  * Remove kpackage from kde-desktop. kdeadmin depends on it.
+  * Remove kpowersave from kde-desktop. kde-utils pulls it in
+    via a recommends.
+  * Remove numerous things from gnome-desktop that the gnome
+    metapackage recommends. (menu-xdg, gparted, update-notifier,
+    liferea, tsclient, hardinfo, network-manager-gnome,
+    hal-cups-utils, gthumb)
+  * Remove pidgin from gnome-desktop. The gnome metapackage
+    recommends empathy | pidgin.
+  * Remove gksu from gnome-desktop, pulled in via recommends
+    from gnome-utils.
+  * Remove gstreamer0.10-ffmpeg, pulled in via recommends from
+    totem-gstreamer.
 
  -- Christian Perrier <bubulle@debian.org>  Mon, 09 Feb 2009 20:24:49 +0100
 

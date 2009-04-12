@@ -23,8 +23,6 @@ Packages-list:
   openoffice.org-kde
 # enable debian menus
   menu-xdg
-# package management
-  kpackage
 # debconf kde frontend
   libqt-perl
 # cd/dvd burner
@@ -35,8 +33,3 @@ Packages-list:
 # This is configured by d-i to be used to gain root on systems with no root
 # password. It is not enabled by default.
   kdesudo
-# kdeutils recommends this, and it's needed on laptop, and can also be
-# useful on desktops
-  kpowersave
-# accessibility support
-  kdeaccessibility
