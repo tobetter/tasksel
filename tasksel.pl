@@ -612,10 +612,7 @@ sub main {
 			if ($manual_selection) {
 				unshift @args, "--visual-preview";
 			}
-			my $ret=run(@aptitude, "--without-recommends",
-			                       "-o", "APT::Install-Recommends=no",
-			                       "-y", "install",
-					       @args);
+			my $ret=run(@aptitude, "-y", "install", @args);
 			if ($ret != 0) {
 				error gettext("aptitude failed")." ($ret)";
 			}
