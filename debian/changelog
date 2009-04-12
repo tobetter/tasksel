@@ -42,6 +42,8 @@ tasksel (2.79) UNRELEASED; urgency=low
     from gnome-utils.
   * Remove gstreamer0.10-ffmpeg, pulled in via recommends from
     totem-gstreamer.
+  * Remove nvclock and toshset from laptop task, pulled in via recommends
+    from acpi-support.
 
  -- Christian Perrier <bubulle@debian.org>  Mon, 09 Feb 2009 20:24:49 +0100
 
