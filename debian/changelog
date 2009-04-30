@@ -46,6 +46,9 @@ tasksel (2.79) UNRELEASED; urgency=low
   * Remove nvclock and toshset from laptop task, pulled in via recommends
     from acpi-support.
 
+  [ Otavio Salvador ]
+  * Add pm-utils to desktop and laptop tasks. Closes: #526250
+
  -- Christian Perrier <bubulle@debian.org>  Mon, 09 Feb 2009 20:24:49 +0100
 
 tasksel (2.78) unstable; urgency=low

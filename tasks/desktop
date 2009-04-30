@@ -66,3 +66,5 @@ Packages-list:
 # flash -- Note that gnome depends on swfdec-mozilla; if this is changed
 # here to a different flash player, it should also be changed there.
   swfdec-mozilla
+# ensure pm-utils is available
+  pm-utils
