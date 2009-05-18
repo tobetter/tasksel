@@ -7,23 +7,17 @@ Description: KDE desktop environment
  This task provides basic "desktop" software using the K Desktop
  Environment.
 Key:
-# This could probably be reduced more.
-  kde-core
-  kdeadmin
-  kdeartwork
-  kdegraphics
-  kdemultimedia
-  kdenetwork
-  kdeutils
-  kdepim
+# This meta package will install a kde default desktop, but we have not decide
+# yet what it should ship.
+  kde-standard
   kdm
 Packages: task-fields
 Packages-list:
-  kde
-  openoffice.org-kde
 # enable debian menus
   menu-xdg
-# debconf kde frontend
+# package management. Need something here, but please, no kpackage.
+#  kpackage 
+# debconf kde frontend. This will go away, see #522580
   libqt-perl
 # cd/dvd burner
   k3b
