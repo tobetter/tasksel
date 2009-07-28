@@ -5,6 +5,8 @@ tasksel (2.80) UNRELEASED; urgency=low
   * Add albanian-desktop. Closes: #507425
   * Add marathi and marathi-desktop tasks. Closes: #507424
   * Add mozvoikko to finnish-desktop. Closes: #503510
+  * Fix "tasksel --help shows \t instead of tabs" by
+    fixing tabs escaping in Spanish translation. Closes: #519458
 
  -- Christian Perrier <bubulle@debian.org>  Tue, 28 Jul 2009 11:22:47 +0200
 
