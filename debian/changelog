@@ -1,5 +1,6 @@
 tasksel (2.80) UNRELEASED; urgency=low
 
+  [ Christian Perrier ]
   * Add kannada-gnome-desktop and kannada-kde-desktop tasks
     Closes: #536549
   * Add albanian-desktop. Closes: #507425
@@ -8,7 +9,10 @@ tasksel (2.80) UNRELEASED; urgency=low
   * Fix "tasksel --help shows \t instead of tabs" by
     fixing tabs escaping in Spanish translation. Closes: #519458
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 28 Jul 2009 11:22:47 +0200
+  [ Otavio Salvador ]
+  * Fixes a typo in Gujarati language tasks. Closes: #538902
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Tue, 28 Jul 2009 06:26:13 -0300
 
 tasksel (2.79) unstable; urgency=low
 
