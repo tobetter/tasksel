@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-30 23:04+0200\n"
+"POT-Creation-Date: 2009-07-30 23:31+0200\n"
 "PO-Revision-Date: 2004-11-20 05:02-0500\n"
 "Last-Translator: Dafydd Harries <daf@muse.19inch.net>\n"
 "Language-Team: Welsh <cy@pengwyn.linux.org.uk>\n"
@@ -169,23 +169,39 @@ msgstr "Mae'r tasg hwn yn paratoi eich system i fod yn weinydd argraffu."
 #. Description
 #: ../po/debian-tasks.desc:12001
 #, fuzzy
+#| msgid "DNS server"
+msgid "SSH server"
+msgstr "Gweinydd DNS"
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+#, fuzzy
+#| msgid "This task sets up your system to be a print server."
+msgid ""
+"This task sets up your system to be remotely accessed throught SSH "
+"connections."
+msgstr "Mae'r tasg hwn yn paratoi eich system i fod yn weinydd argraffu."
+
+#. Description
+#: ../po/debian-tasks.desc:13001
+#, fuzzy
 msgid "Standard system utilities"
 msgstr "Sail Safonau Linux"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Web server"
 msgstr "Gweinydd Gwe"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
@@ -193,13 +209,13 @@ msgstr ""
 "cyffredinol."
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 #, fuzzy
 msgid "Xfce desktop environment"
 msgstr "Amgylchedd penbwrdd Japanëeg"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."

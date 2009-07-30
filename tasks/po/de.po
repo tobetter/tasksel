@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-30 23:04+0200\n"
+"POT-Creation-Date: 2009-07-30 23:31+0200\n"
 "PO-Revision-Date: 2008-01-13 17:53+0100\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
@@ -173,24 +173,40 @@ msgstr "Dieser Task richtet Ihr System als Druck-Server ein."
 #. Description
 #: ../po/debian-tasks.desc:12001
 #, fuzzy
+#| msgid "DNS server"
+msgid "SSH server"
+msgstr "DNS-Server"
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+#, fuzzy
+#| msgid "This task sets up your system to be a print server."
+msgid ""
+"This task sets up your system to be remotely accessed throught SSH "
+"connections."
+msgstr "Dieser Task richtet Ihr System als Druck-Server ein."
+
+#. Description
+#: ../po/debian-tasks.desc:13001
+#, fuzzy
 #| msgid "Standard system"
 msgid "Standard system utilities"
 msgstr "Standard-System"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Web server"
 msgstr "Web-Server"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
@@ -198,12 +214,12 @@ msgstr ""
 "Server nützlich sind."
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid "Xfce desktop environment"
 msgstr "Xfce-Desktop-Umgebung"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."

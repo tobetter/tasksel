@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks_po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-30 23:04+0200\n"
+"POT-Creation-Date: 2009-07-30 23:31+0200\n"
 "PO-Revision-Date: 2008-02-22 21:48+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
@@ -166,35 +166,51 @@ msgstr "هذه المهمّة تهيّئ نظامك ليكون خادم طباع
 #. Description
 #: ../po/debian-tasks.desc:12001
 #, fuzzy
+#| msgid "DNS server"
+msgid "SSH server"
+msgstr "خادم DNS"
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+#, fuzzy
+#| msgid "This task sets up your system to be a print server."
+msgid ""
+"This task sets up your system to be remotely accessed throught SSH "
+"connections."
+msgstr "هذه المهمّة تهيّئ نظامك ليكون خادم طباعة."
+
+#. Description
+#: ../po/debian-tasks.desc:13001
+#, fuzzy
 #| msgid "Standard system"
 msgid "Standard system utilities"
 msgstr "نظام قياسي"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Web server"
 msgstr "خادم وب"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "هذه المهمّة تنتقي حزماً مفيدة لنظام خادم وب للأغراض العامّة."
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid "Xfce desktop environment"
 msgstr "بيئة سطح مكتب XFCE"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."

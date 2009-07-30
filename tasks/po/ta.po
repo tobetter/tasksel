@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-30 23:04+0200\n"
+"POT-Creation-Date: 2009-07-30 23:31+0200\n"
 "PO-Revision-Date: 2008-05-03 20:57+0530\n"
 "Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
@@ -177,35 +177,51 @@ msgstr "இந்த செயல் உங்கள் அமைப்பை �
 #. Description
 #: ../po/debian-tasks.desc:12001
 #, fuzzy
+#| msgid "DNS server"
+msgid "SSH server"
+msgstr "DNS சேவையகம்"
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+#, fuzzy
+#| msgid "This task sets up your system to be a print server."
+msgid ""
+"This task sets up your system to be remotely accessed throught SSH "
+"connections."
+msgstr "இந்த செயல் உங்கள் அமைப்பை அச்சு சேவையகமாக மாற்றும்"
+
+#. Description
+#: ../po/debian-tasks.desc:13001
+#, fuzzy
 #| msgid "Standard system"
 msgid "Standard system utilities"
 msgstr "தரமானஅமைப்பு"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Web server"
 msgstr "வலைச் சேவையகம்"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "இங்கு தேர்ந்தெடுக்கிற கட்டுகள் பொது வலைச் சேவையக அமைப்பிற்காக பயன்படுகிறது"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid "Xfce desktop environment"
 msgstr "எக்ஸ் எப்ஃ ஸி (Xfce) மேஜை சுழல்"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."

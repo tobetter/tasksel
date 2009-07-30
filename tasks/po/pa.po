@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-30 23:04+0200\n"
+"POT-Creation-Date: 2009-07-30 23:31+0200\n"
 "PO-Revision-Date: 2007-06-02 23:20+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi <punjabi-l10n@lists.sf.net>\n"
@@ -165,35 +165,51 @@ msgstr "ਇਹ ਕੰਮ ਤੁਹਾਡੇ ਸਿਸਟਮ ਨੂੰ ਇੱਕ 
 #. Description
 #: ../po/debian-tasks.desc:12001
 #, fuzzy
+#| msgid "DNS server"
+msgid "SSH server"
+msgstr "DNS ਸਰਵਰ"
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+#, fuzzy
+#| msgid "This task sets up your system to be a print server."
+msgid ""
+"This task sets up your system to be remotely accessed throught SSH "
+"connections."
+msgstr "ਇਹ ਕੰਮ ਤੁਹਾਡੇ ਸਿਸਟਮ ਨੂੰ ਇੱਕ ਪਰਿੰਟ ਸਰਵਰ ਦੇ ਰੂਪ ਵਿੱਚ ਸੈੱਟ ਕਰਦਾ ਹੈ।"
+
+#. Description
+#: ../po/debian-tasks.desc:13001
+#, fuzzy
 #| msgid "Standard system"
 msgid "Standard system utilities"
 msgstr "ਮਿਆਰੀ ਸਿਸਟਮ"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Web server"
 msgstr "ਵੈੱਬ ਸਰਵਰ"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr "ਇਹ ਕੰਮ ਆਮ ਵਰਤੋਂ ਵਾਲੇ ਵੈੱਬ ਸਰਵਰ ਸਿਸਟਮ ਲਈ ਲਾਭਦਾਇਕ ਪੈਕੇਜ ਚੁਣਦਾ ਹੈ।"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid "Xfce desktop environment"
 msgstr "Xfce ਡੈਸਕਟਾਪ ਮਾਹੌਲ"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."

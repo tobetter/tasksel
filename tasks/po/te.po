@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-30 23:04+0200\n"
+"POT-Creation-Date: 2009-07-30 23:31+0200\n"
 "PO-Revision-Date: 2008-10-25 12:59+0530\n"
 "Last-Translator: Y Giridhar Appaji Nag <giridhar@appaji.net>\n"
 "Language-Team: Telugu <debian-in-workers@lists.alioth.debian.org>\n"
@@ -174,24 +174,41 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:12001
 #, fuzzy
+#| msgid "DNS server"
+msgid "SSH server"
+msgstr "డి.ఎన్.ఎస్. సర్వర్ (DNS server)"
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+#, fuzzy
+#| msgid "This task sets up your system to be a print server."
+msgid ""
+"This task sets up your system to be remotely accessed throught SSH "
+"connections."
+msgstr ""
+"ఈ టాస్కు (task) మీ సిస్టం (system) ను ముద్రణ సర్వర్ (print server) గా సిద్ధము చేస్తుంది."
+
+#. Description
+#: ../po/debian-tasks.desc:13001
+#, fuzzy
 #| msgid "Standard system"
 msgid "Standard system utilities"
 msgstr "సాధారణ (స్టాండర్డ్ [standard]) వ్యవస్థ"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Web server"
 msgstr "వెబ్ సర్వర్ (web server)"
 
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
@@ -199,12 +216,12 @@ msgstr ""
 "ఎన్నుకుంటుంది."
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid "Xfce desktop environment"
 msgstr "ఎక్స్ ఎఫ్ సి ఇ (Xfce) డెస్క్ టాప్ (desktop) పరిసరము"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."

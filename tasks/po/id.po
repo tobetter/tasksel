@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-30 23:04+0200\n"
+"POT-Creation-Date: 2009-07-30 23:31+0200\n"
 "PO-Revision-Date: 2008-03-08 13:20+0700\n"
 "Last-Translator: Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>\n"
 "Language-Team: Debian Indonesia <debid@yahoogroups.com>\n"
@@ -182,15 +182,34 @@ msgid "This task sets up your system to be a print server."
 msgstr ""
 "Penugasan ini mempersiapkan sistem anda untuk menjadi server print (cetak)"
 
+#  Description
 #. Description
 #: ../po/debian-tasks.desc:12001
+#, fuzzy
+#| msgid "DNS server"
+msgid "SSH server"
+msgstr "Server DNS"
+
+#  Description
+#. Description
+#: ../po/debian-tasks.desc:12001
+#, fuzzy
+#| msgid "This task sets up your system to be a print server."
+msgid ""
+"This task sets up your system to be remotely accessed throught SSH "
+"connections."
+msgstr ""
+"Penugasan ini mempersiapkan sistem anda untuk menjadi server print (cetak)"
+
+#. Description
+#: ../po/debian-tasks.desc:13001
 #, fuzzy
 #| msgid "Standard system"
 msgid "Standard system utilities"
 msgstr "Sistem Standar"
 
 #. Description
-#: ../po/debian-tasks.desc:12001
+#: ../po/debian-tasks.desc:13001
 msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
@@ -198,13 +217,13 @@ msgstr ""
 
 #  Description
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid "Web server"
 msgstr "Server web"
 
 #  Description
 #. Description
-#: ../po/debian-tasks.desc:13001
+#: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
@@ -213,12 +232,12 @@ msgstr ""
 
 #  Description
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid "Xfce desktop environment"
 msgstr "Lingkungan Desktop Xfce"
 
 #. Description
-#: ../po/debian-tasks.desc:14001
+#: ../po/debian-tasks.desc:15001
 msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
