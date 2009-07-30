@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2009-01-06 21:08+0100\n"
 "Last-Translator: astur <malditoastur@gmail.com>\n"
 "Language-Team: Asturian <softast-xeneral@lists.sourceforge.net>\n"
@@ -47,8 +47,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Entornu d'escritoriu"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Entornu d'escritoriu de Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -175,13 +177,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Sistema Standard"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Esta xera instala un sistema de mou carauter razonablemente pequeñu."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -207,3 +213,10 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr "Esta xera ufre los programes de \"escritoriu\" básicos qu'usen Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Entornu d'escritoriu"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr ""
+#~ "Esta xera instala un sistema de mou carauter razonablemente pequeñu."

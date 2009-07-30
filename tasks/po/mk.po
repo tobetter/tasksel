@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2006-11-21 19:59+0100\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
@@ -44,8 +44,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Работна околина"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce работна околина"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -170,13 +172,17 @@ msgstr "Оваа задача го подготвува твојот систе�
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Основен систем"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Оваа задача инсталира разумно мал систем за режим на знаци."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -203,6 +209,12 @@ msgid ""
 msgstr ""
 "Оваа задача овозможува основен софтвер за „работна површина“ со Xfce десктоп "
 "околината."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Работна околина"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Оваа задача инсталира разумно мал систем за режим на знаци."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Арапска средина"

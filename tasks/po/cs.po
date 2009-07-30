@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-01-14 18:21+0100\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
@@ -40,8 +40,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Desktopové prostředí"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Desktopové prostředí Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -167,13 +169,17 @@ msgstr "Úloha připraví váš počítač pro roli tiskového serveru."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Standardní systém"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Tato úloha nainstaluje rozumně malý systém v textovém režimu."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -199,6 +205,12 @@ msgid ""
 msgstr ""
 "Tato úloha poskytuje základní \"desktopové\" aplikace založené na "
 "desktopovém prostředí Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Desktopové prostředí"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Tato úloha nainstaluje rozumně malý systém v textovém režimu."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Amharské prostředí"

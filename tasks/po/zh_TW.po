@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-02-09 20:34+0800\n"
 "Last-Translator: Tetralet <tetralet@gmail.com>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -35,8 +35,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "桌面環境"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce 桌面環境"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -148,13 +150,17 @@ msgstr "此主題將把您的系統設置成一台列印伺服器。"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "標準系統"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "這個主題將會安裝小而美的文字模式系統。"
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -178,6 +184,12 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr "這個主題藉由 Xfce 桌面環境提供了基本的『桌面』軟體。"
+
+#~ msgid "Desktop environment"
+#~ msgstr "桌面環境"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "這個主題將會安裝小而美的文字模式系統。"
 
 #~ msgid "Amharic environment"
 #~ msgstr "阿姆哈拉語環境"

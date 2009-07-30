@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-01-17 01:35+0100\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Euskara <Librezale@librezale.org>\n"
@@ -43,8 +43,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Mahaigaina ingurunea"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce idazmahai ingurunea"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -172,13 +174,17 @@ msgstr "Zeregin honek sistema inprimatze-zerbitzaria izateko konfiguratzen du."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Sistema estandarra"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Zeregin honek karakete-modu sistema nahiko txiki bat instalatuko du"
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -206,6 +212,12 @@ msgid ""
 msgstr ""
 "Zeregin honek Xfce idazmahai ingurunea erabiliaz oinarrizko \"idazmahai\" "
 "ingurune bat instalatzen du."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Mahaigaina ingurunea"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Zeregin honek karakete-modu sistema nahiko txiki bat instalatuko du"
 
 #~ msgid "Amharic environment"
 #~ msgstr "Amharar ingurunea"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasks-gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2006-10-06 14:39+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
@@ -40,8 +40,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "ડેસ્કટોપ વાતાવરણ"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce ડેસ્કટોપ વાતાવરણ"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -159,13 +161,17 @@ msgstr "આ કાર્ય તમારી સિસ્ટમને પ્ર�
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "પ્રમાણભૂત સિસ્ટમ"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "આ કાર્ય પ્રમાણમાં નાની અક્ષર-સ્થિતી વાળી સિસ્ટમ સ્થાપિત કરે છે."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -190,6 +196,12 @@ msgid ""
 "environment."
 msgstr ""
 "આ કાર્ય Xfce ડેસ્કટોપ વાતાવરણનો ઉપયોગ કરીને સામાન્ય \"ડેસ્કટોપ\" સોફ્ટવેર પૂરું પાડે છે."
+
+#~ msgid "Desktop environment"
+#~ msgstr "ડેસ્કટોપ વાતાવરણ"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "આ કાર્ય પ્રમાણમાં નાની અક્ષર-સ્થિતી વાળી સિસ્ટમ સ્થાપિત કરે છે."
 
 #~ msgid "Amharic environment"
 #~ msgstr "અરેબિક વાતાવરણ"

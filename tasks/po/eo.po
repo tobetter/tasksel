@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2007-04-10 21:39+0200\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
@@ -43,8 +43,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Labortabla medio"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "'Xfce'-labortabla medio"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -168,13 +170,17 @@ msgstr "Tiu tasko agordas vian sistemon por fari ĝin printservilo. "
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Norma sistemo"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Tiu tasko instalas pravan malgrandan signaron, nur en konzoloj."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -200,6 +206,12 @@ msgid ""
 msgstr ""
 "Tiu tasko provizas bazajn labortablajn programojn kiuj uzas 'Xfce'-"
 "labortablan medion."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Labortabla medio"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Tiu tasko instalas pravan malgrandan signaron, nur en konzoloj."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Araba medio"

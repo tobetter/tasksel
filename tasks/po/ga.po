@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-05-05 21:37-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -39,8 +39,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Timpeallacht deisce"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Timpeallacht Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -166,13 +168,17 @@ msgstr "Déanann an tasc seo freastalaí priontála de do chóras."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Córas caighdeánach"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Suiteálann an tasc seo córas réasúnta beag neamhghrafach."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -200,6 +206,12 @@ msgid ""
 msgstr ""
 "Suiteálann an tasc seo bogearraí bunúsacha \"deisce\" de chuid thimpeallacht "
 "deisce Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Timpeallacht deisce"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Suiteálann an tasc seo córas réasúnta beag neamhghrafach."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Timpeallacht Amáirise"

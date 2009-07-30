@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-03-08 13:20+0700\n"
 "Last-Translator: Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>\n"
 "Language-Team: Debian Indonesia <debid@yahoogroups.com>\n"
@@ -46,8 +46,10 @@ msgstr ""
 #  Description
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Lingkungan Desktop"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Lingkungan Desktop Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -182,13 +184,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Sistem Standar"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Penugasan ini memasang sistem kecil berbasis konsol teks."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #  Description
 #. Description
@@ -218,6 +224,13 @@ msgid ""
 "environment."
 msgstr ""
 "Penugasan ini menyediakan perangkat lunak \"desktop\" utama berbasis Xfce."
+
+#  Description
+#~ msgid "Desktop environment"
+#~ msgstr "Lingkungan Desktop"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Penugasan ini memasang sistem kecil berbasis konsol teks."
 
 #  Description
 #~ msgid "Amharic environment"

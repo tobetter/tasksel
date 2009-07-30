@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel/tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-02-04 11:11+0100\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
@@ -42,8 +42,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "¦rodowisko graficzne"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Graficzne ¶rodowisko Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -168,13 +170,17 @@ msgstr "To zadanie ustawia system jako serwer druku."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "System podstawowy"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "To zadanie instaluje rozs±dnie ma³y system w trybie tekstowym."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -201,6 +207,12 @@ msgid ""
 msgstr ""
 "To zadanie instaluje podstawowe oprogramowanie \"biurkowe\" u¿ywaj±c "
 "¶rodowiska Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "¦rodowisko graficzne"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "To zadanie instaluje rozs±dnie ma³y system w trybie tekstowym."
 
 #~ msgid "Amharic environment"
 #~ msgstr "¦rodowisko amharskie"

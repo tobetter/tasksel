@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 2.54\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2007-08-30 20:05+0200\n"
 "Last-Translator: Stefano Canepa <sc@linux.it>\n"
 "Language-Team: italian <tp@lists.linux.it>\n"
@@ -42,8 +42,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Ambiente desktop"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Ambiente desktop Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -170,13 +172,17 @@ msgstr "Questo task configura il sistema come server di stampa."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Sistema standard"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Questo task installa un sistema minimo a caratteri."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -202,6 +208,12 @@ msgid ""
 msgstr ""
 "Questo task fornisce il software per un «desktop» di base utilizzando "
 "l'ambiente Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Ambiente desktop"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Questo task installa un sistema minimo a caratteri."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Ambiente arabo"

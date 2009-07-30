@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-01-13 17:53+0100\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
@@ -44,8 +44,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Desktop-Umgebung"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce-Desktop-Umgebung"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -170,13 +172,17 @@ msgstr "Dieser Task richtet Ihr System als Druck-Server ein."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Standard-System"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Dieser Task installiert ein brauchbares, textbasiertes System."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -204,6 +210,12 @@ msgid ""
 msgstr ""
 "Dieser Task bietet grundlegende »Desktop«-Software für die Xfce-Desktop-"
 "Umgebung an."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Desktop-Umgebung"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Dieser Task installiert ein brauchbares, textbasiertes System."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Amharische Umgebung"

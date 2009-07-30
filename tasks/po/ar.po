@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks_po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-02-22 21:48+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
@@ -45,8 +45,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "بيئة سطح مكتب"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "بيئة سطح مكتب XFCE"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -163,13 +165,17 @@ msgstr "هذه المهمّة تهيّئ نظامك ليكون خادم طباع
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "نظام قياسي"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "تقوم هذه المهمّة بتثبيت نظام بوضع حرفي character-mode صغير نسبياً."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -194,6 +200,12 @@ msgid ""
 "environment."
 msgstr ""
 "توفر هذه المهمة برامج \"سطح المكتب\" الأساسية باستخدام بيئة سطح المكتب XFCE."
+
+#~ msgid "Desktop environment"
+#~ msgstr "بيئة سطح مكتب"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "تقوم هذه المهمّة بتثبيت نظام بوضع حرفي character-mode صغير نسبياً."
 
 #~ msgid "Amharic environment"
 #~ msgstr "البيئة الأمهرية"

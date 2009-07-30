@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer HR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2006-11-15 04:01+0100\n"
 "Last-Translator: Safir Secerovic <sapphire@linux.org.ba>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -41,8 +41,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Radno okru¾enje ('desktop')"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce radno okru¾enje"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -165,13 +167,17 @@ msgstr "Ova zadaæa pode¹ava va¹ sustav kao poslu¾itelj za ispis."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Standardni sustav"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Ova zadaæa instalira razmjerno malen sustav za rad u tekstualnom modu."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -198,6 +204,13 @@ msgid ""
 msgstr ""
 "Ova zadaæa instalira osnovne \"desktop\" programe koji koriste Xfce radno "
 "okru¾enje."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Radno okru¾enje ('desktop')"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr ""
+#~ "Ova zadaæa instalira razmjerno malen sustav za rad u tekstualnom modu."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Arapsko okru¾enje"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2006-11-20 14:02+0100\n"
 "Last-Translator: Matej Kovačič <matej.kovacic@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -47,8 +47,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Namizno okolje"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce namizno okolje"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -173,14 +175,17 @@ msgstr "To opravilo spremeni vaš sistem v namenski tiskalniški strežnik."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Standardni sistem"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
 msgstr ""
-"To opravilo namesti sprejemljivo majhen sistem, ki deluje v znakovnem načinu."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -207,6 +212,14 @@ msgid ""
 msgstr ""
 "To opravilo namesti osnovno \"namizno\" programsko opremo za namizno okolje "
 "Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Namizno okolje"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr ""
+#~ "To opravilo namesti sprejemljivo majhen sistem, ki deluje v znakovnem "
+#~ "načinu."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Arabsko okolje"

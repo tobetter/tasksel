@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks_kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2007-08-20 15:00+0530\n"
 "Last-Translator: Vikram Vincent <vincentvikram@gmail.com>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
@@ -39,8 +39,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "ಗಣಕತೆರೆ ಪರಿಸರ"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "XFCE ಗಣಕತೆರೆ ಪರಿಸರ"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -153,12 +155,14 @@ msgstr "ಇದು ನಿಮ್ಮ ಗಣಕವ್ಯವಸ್ಥೆಯನ್ನ�
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+msgid "Standard system utilities"
 msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
 msgstr ""
 
 #. Description
@@ -183,6 +187,9 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr "ಇದು XFCE' ಗಣಕತೆರೆ ಪರಿಸರವನ್ನು ಬಳಸಿ ಮೂಲಭೂತ ಗಣಕತೆರೆ ತಂತ್ರಾಂಶವನ್ನು ಒದಗಿಸುವದು"
+
+#~ msgid "Desktop environment"
+#~ msgstr "ಗಣಕತೆರೆ ಪರಿಸರ"
 
 #~| msgid "Arabic environment"
 #~ msgid "Amharic environment"

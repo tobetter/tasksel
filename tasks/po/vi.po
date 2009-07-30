@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-06-11 17:39+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -46,8 +46,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Môi trường làm việc"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Môi trường làm việc Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -172,13 +174,17 @@ msgstr "Công việc này thiết lập hệ thống bạn là trình phục v�
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Hệ thống chuẩn"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Công việc này cài đặt một hệ thống hơi nhỏ chế độ ký tự."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -204,3 +210,9 @@ msgid ""
 msgstr ""
 "Công việc này cung cấp phần mềm « màn hình nền » cơ bản, dùng môi trường làm "
 "việc Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Môi trường làm việc"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Công việc này cài đặt một hệ thống hơi nhỏ chế độ ký tự."

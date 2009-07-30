@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2007-05-28 14:26+0200\n"
 "Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
 "Language-Team: Danish\n"
@@ -45,8 +45,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Skrivebordsmiljø"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Skrivebordsmiljøet Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -171,13 +173,17 @@ msgstr "Denne opgavepakke sætter dit system op til at være printerserver."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Standardsystem"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Denne opgavepakke installerer et ret småt tegnbaseret system."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -205,6 +211,12 @@ msgid ""
 msgstr ""
 "Denne opgavepakke giver de grundlæggende skrivebordsprogrammer med "
 "skrivebordsmiljøet Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Skrivebordsmiljø"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Denne opgavepakke installerer et ret småt tegnbaseret system."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Arabisk miljø"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-02-06 19:07+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <debian-l10n-korean@lists.debian.org>\n"
@@ -38,8 +38,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "데스크탑 환경"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce 데스크탑 환경"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -161,13 +163,17 @@ msgstr "이 태스크는 시스템을 인쇄 서버로 준비합니다."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "표준 시스템"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "이 태스크는 비교적 작은 캐릭터모드 시스템을 설치합니다."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -193,6 +199,12 @@ msgid ""
 msgstr ""
 "이 태스크는 Xfce 데스크탑 환경을 이용한 \"기본\" 데스크탑용 소프트웨어를 제공"
 "합니다."
+
+#~ msgid "Desktop environment"
+#~ msgstr "데스크탑 환경"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "이 태스크는 비교적 작은 캐릭터모드 시스템을 설치합니다."
 
 #~ msgid "Amharic environment"
 #~ msgstr "암하라어 환경"

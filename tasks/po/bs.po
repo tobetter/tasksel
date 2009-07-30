@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2006-11-15 03:57+0100\n"
 "Last-Translator: Safir Secerovic <sapphire@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
@@ -42,8 +42,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Desktop aplikacije"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "XFCE desktop okruženje"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -167,13 +169,17 @@ msgstr "Ovaj zadatak postavlja vaš sistem kao print server."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Standardni sistem"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Ovaj zadatak instalira razumno mali sistem u karakter modu."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -199,6 +205,12 @@ msgid ""
 msgstr ""
 "Ovaj zadatak pruža osnovni \"desktop\" software koristeći XFCE desktop "
 "okruženje."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Desktop aplikacije"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Ovaj zadatak instalira razumno mali sistem u karakter modu."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Podrška za arapski"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-07-07 08:18+0530\n"
 "Last-Translator: Sampada <sampadanakhare@gmail.com>\n"
 "Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai <janabhaaratii [at] "
@@ -41,8 +41,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "डेस्कटॉप परिवेश"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "एक्सएफासीई डेस्कटॉप परिवेश"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -160,13 +162,17 @@ msgstr "या कार्यात तुमचा संगणक छपा�
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "प्रमाणित प्रणाली"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "या द्वारे संयुक्तिकरित्या स्वल्पाक्षरे-विकल्प पद्धती संस्थापित करण्यात येइल."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -191,3 +197,9 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr "हे कार्य एक्सएफासीई डेस्कटॉप परिवेश वापरून मुलभुत \"desktop\" आज्ञावली पुरविते."
+
+#~ msgid "Desktop environment"
+#~ msgstr "डेस्कटॉप परिवेश"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "या द्वारे संयुक्तिकरित्या स्वल्पाक्षरे-विकल्प पद्धती संस्थापित करण्यात येइल."

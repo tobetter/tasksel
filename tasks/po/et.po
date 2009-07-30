@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2006-11-19 16:09+0300\n"
 "Last-Translator: Siim Põder <windo@p6drad-teel.net>\n"
 "Language-Team: linuxiabi <linuxiabi@hot.ee>\n"
@@ -43,8 +43,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Töölauaga keskkond"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce töölaua keskkond"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -166,13 +168,17 @@ msgstr "See ülesanne sätib su süsteemi printimis-serveriks."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Tavaline süsteem"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "See ülesanne paigaldav küllalt väiksemõõtmelise tekstipõhise süsteemi."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -199,6 +205,13 @@ msgid ""
 "environment."
 msgstr ""
 "See ülesanne tagab peamise \"töölaua\" tarkvare Xfce töölauakeskkonna näol."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Töölauaga keskkond"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr ""
+#~ "See ülesanne paigaldav küllalt väiksemõõtmelise tekstipõhise süsteemi."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Araabiakeelne keskkond"

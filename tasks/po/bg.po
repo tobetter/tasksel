@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.44\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-06-11 23:29+0300\n"
 "Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -45,8 +45,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Среда за работен плот"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Работен плот на Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -168,13 +170,17 @@ msgstr "Тази задача настройва системата Ви за с
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Стандартна система"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Тази задача инсталира сравнително малка система за работа в конзола."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -199,3 +205,10 @@ msgid ""
 "environment."
 msgstr ""
 "Тази задача осигурява софтуер за работен плот, използвайки средата Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Среда за работен плот"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr ""
+#~ "Тази задача инсталира сравнително малка система за работа в конзола."

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2007-06-02 23:20+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi <punjabi-l10n@lists.sf.net>\n"
@@ -47,8 +47,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "ਡੈਸਕਟਾਪ ਮਾਹੌਲ"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce ਡੈਸਕਟਾਪ ਮਾਹੌਲ"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -162,13 +164,17 @@ msgstr "ਇਹ ਕੰਮ ਤੁਹਾਡੇ ਸਿਸਟਮ ਨੂੰ ਇੱਕ 
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "ਮਿਆਰੀ ਸਿਸਟਮ"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "ਇਹ ਕੰਮ ਇੱਕ ਢੁੱਕਵਾਂ ਛੋਟੇ ਅੱਖਰ-ਪੜ੍ਹਨ ਸਿਸਟਮ ਇੰਸਟਾਲ ਕਰਦਾ ਹੈ।"
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -193,6 +199,12 @@ msgid ""
 "environment."
 msgstr ""
 "ਇਹ ਕੰਮ Xfce ਡੈਸਕਟਾਪ ਮਾਹੌਲ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਮੁੱਢਲਾ \"ਡੈਸਕਟਾਪ\" ਸਾਫਟਵੇਅਰ ਇੰਸਟਾਲ ਕਰਦਾ ਹੈ।"
+
+#~ msgid "Desktop environment"
+#~ msgstr "ਡੈਸਕਟਾਪ ਮਾਹੌਲ"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "ਇਹ ਕੰਮ ਇੱਕ ਢੁੱਕਵਾਂ ਛੋਟੇ ਅੱਖਰ-ਪੜ੍ਹਨ ਸਿਸਟਮ ਇੰਸਟਾਲ ਕਰਦਾ ਹੈ।"
 
 #~ msgid "Amharic environment"
 #~ msgstr "ਅਰਬੀ ਮਾਹੌਲ"

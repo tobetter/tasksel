@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks_po_ne\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2007-07-25 18:18+0545\n"
 "Last-Translator: shyam krishna bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -42,8 +42,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "डेस्कटप परिवेश"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce डेस्कटप परिवेश"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -164,13 +166,17 @@ msgstr "यो कार्यले तपाईँको प्रणाली
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "मानक प्रणाली"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "यो कार्यले समुचित रुपले सानो क्यारेक्टर मोड प्रणालीलाई स्थापना गर्दछ ।"
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -195,6 +201,12 @@ msgid ""
 "environment."
 msgstr ""
 "यो कार्यले Xfce डेस्कटप परिवेश प्रयोग गरेर आधारभूत \"डेस्कटप\" सफ्टवेयर उपलब्ध गराउँदछ ।"
+
+#~ msgid "Desktop environment"
+#~ msgstr "डेस्कटप परिवेश"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "यो कार्यले समुचित रुपले सानो क्यारेक्टर मोड प्रणालीलाई स्थापना गर्दछ ।"
 
 #~ msgid "Amharic environment"
 #~ msgstr "अरबी परिवेश"

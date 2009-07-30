@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2006-11-19 18:29+0100\n"
 "Last-Translator: Jaonary Rabarisoa <jaonary@free.fr>\n"
 "Language-Team: Malagasy <mpandikateny@linuxmg.org>\n"
@@ -45,8 +45,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Tontolo fiasana kisary"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Tontolo fiasana kisary Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -169,12 +171,16 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Standard system"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
 msgstr ""
 
 #. Description
@@ -200,3 +206,6 @@ msgid ""
 "environment."
 msgstr ""
 "Mametraka ireo rindran'asa kisary fototra izay miaraka amin'ny tontolo Xfce. "
+
+#~ msgid "Desktop environment"
+#~ msgstr "Tontolo fiasana kisary"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2006-11-20 09:09+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -44,8 +44,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "បរិស្ថាន​​ផ្ទៃតុ"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "បរិស្ថាន​ផ្ទៃតុ Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -159,13 +161,17 @@ msgstr "ភារកិច្ច​នេះ​​រៀបចំ​ប្រព
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "ប្រព័ន្ធ​ខ្នាត​គំរូ"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "ភារកិច្ច​នេះ​ដំឡើង​ប្រព័ន្ធ​របៀប​​តួអក្សរ​តូច​ដោយសមហេតុផល ។"
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -189,6 +195,12 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr "ភារកិច្ច​នេះ​ផ្ដល់​នូវ​កម្មវិធី \"ផ្ទៃតុ\" ជា​មូលដ្ឋាន​ ដោយ​ប្រើបរិស្ថាន​ផ្ទៃតុ Xfce ។"
+
+#~ msgid "Desktop environment"
+#~ msgstr "បរិស្ថាន​​ផ្ទៃតុ"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "ភារកិច្ច​នេះ​ដំឡើង​ប្រព័ន្ធ​របៀប​​តួអក្សរ​តូច​ដោយសមហេតុផល ។"
 
 #~ msgid "Amharic environment"
 #~ msgstr "បរិស្ថាន​​ភាសា​អារ៉ាប់"

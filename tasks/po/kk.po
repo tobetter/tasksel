@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2009-01-26 22:13+0600\n"
 "Last-Translator: Sarsenov D. <daur88@inbox.ru>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -43,8 +43,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Жұмыс үстелінің ортасы"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Xfce жұмыс үстелінің ортасы"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -161,15 +163,17 @@ msgstr "Бұл тапсырма жүйеңізді принт сервер ре�
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Стандартты жүйе"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
 msgstr ""
-"Бұл жинақ негізгі мәтіндік режимде жұмыс істейтін жүйе қолданатын "
-"бағдарламаларды ұсынады."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -193,3 +197,11 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr "Бұл тапсырма жұмыс үстелі ретінде Xfce ортасын ұсынады."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Жұмыс үстелінің ортасы"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr ""
+#~ "Бұл жинақ негізгі мәтіндік режимде жұмыс істейтін жүйе қолданатын "
+#~ "бағдарламаларды ұсынады."

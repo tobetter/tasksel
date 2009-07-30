@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2006-09-09 09:37+0200\n"
 "Last-Translator: Aigars Mahinovs <aigarius@debian.org>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
@@ -44,8 +44,9 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Darbagalda vide"
+#, fuzzy
+msgid "Graphical desktop environment"
+msgstr "KDE darbagalda vide"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -175,13 +176,17 @@ msgstr "Šī paku grupa uzstāda drukāšanas serverim nepieciešamās programma
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Standarta sistēma"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Šī paku grupa installē diezgan mazu teksta režīma sistēmu."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -211,3 +216,9 @@ msgid ""
 msgstr ""
 "Šī paku grupa nodrošina pamata darbagalda programmatūru K Darbagalda Vides "
 "(KDE) veidā."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Darbagalda vide"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Šī paku grupa installē diezgan mazu teksta režīma sistēmu."

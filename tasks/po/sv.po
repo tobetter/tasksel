@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-03-04 22:35+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
@@ -43,8 +43,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Skrivbordsmiljö"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Skrivbordsmiljön Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -170,13 +172,17 @@ msgstr "Denna funktion konfigurerar ditt system för att vara utskriftsserver."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Standard system"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Denna funktion installerar en rimligt litet text-baserat system."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -204,6 +210,12 @@ msgid ""
 msgstr ""
 "Denna funktion tillhandahåller programvara för en standard \"desktop\" med "
 "skrivbordsmiljön Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Skrivbordsmiljö"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Denna funktion installerar en rimligt litet text-baserat system."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Amharisk miljö"

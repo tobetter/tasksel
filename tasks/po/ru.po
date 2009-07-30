@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks_po_ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-01-14 20:42+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -48,8 +48,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Окружение рабочего стола"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Рабочий стол окружения Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -176,14 +178,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Стандартная система"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
 msgstr ""
-"Это задание устанавливает рационально маленькую систему с текстовым режимом."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -211,6 +216,14 @@ msgid ""
 msgstr ""
 "Это задание предлагает базовое программное обеспечение для \"рабочего стола"
 "\" с помощью рабочего стола окружения Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Окружение рабочего стола"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr ""
+#~ "Это задание устанавливает рационально маленькую систему с текстовым "
+#~ "режимом."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Амхарское окружение"

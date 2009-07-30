@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2008-05-03 20:57+0530\n"
 "Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
@@ -48,8 +48,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "மேஜை சுழல்"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "எக்ஸ் எப்ஃ ஸி (Xfce) மேஜை சுழல்"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -174,13 +176,17 @@ msgstr "இந்த செயல் உங்கள் அமைப்பை �
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "தரமானஅமைப்பு"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "சிறிய எழுத்து-முறை அமைப்பை போதுமான நேரத்தில் நிறுவும்"
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -206,6 +212,12 @@ msgid ""
 msgstr ""
 "இந்த செயல் எக்ஸ் எப்ஃ ஸி (Xfce) மேஜையை பயன்படுத்த தேவையான அடிப்படையான மேஜை "
 "( \"desktop\") மென்பொருளை வழங்கும்"
+
+#~ msgid "Desktop environment"
+#~ msgstr "மேஜை சுழல்"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "சிறிய எழுத்து-முறை அமைப்பை போதுமான நேரத்தில் நிறுவும்"
 
 #~ msgid "Amharic environment"
 #~ msgstr "அம்ஹரிக் சூழல்"

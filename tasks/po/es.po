@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.40\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2007-08-10 18:59+0200\n"
 "Last-Translator: Javier Fernandez-Sanguino Pena <jfs@debian.org>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -68,8 +68,10 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Entorno de escritorio"
+#, fuzzy
+#| msgid "Xfce desktop environment"
+msgid "Graphical desktop environment"
+msgstr "Entorno de escritorio de Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -194,13 +196,17 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "Standard system"
+#, fuzzy
+#| msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Sistema estándar"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
-msgstr "Esta tarea instala un sistema de modo caracter razonablemente pequeño."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -227,6 +233,13 @@ msgid ""
 "environment."
 msgstr ""
 "Esta tarea ofrece los programas de «escritorio» básicos que utilizan Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Entorno de escritorio"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr ""
+#~ "Esta tarea instala un sistema de modo caracter razonablemente pequeño."
 
 #~ msgid "Amharic environment"
 #~ msgstr "Entorno en árabe"

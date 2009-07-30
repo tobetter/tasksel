@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 09:12-0300\n"
+"POT-Creation-Date: 2009-07-30 23:04+0200\n"
 "PO-Revision-Date: 2004-11-20 05:02-0500\n"
 "Last-Translator: Dafydd Harries <daf@muse.19inch.net>\n"
 "Language-Team: Welsh <cy@pengwyn.linux.org.uk>\n"
@@ -41,8 +41,9 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-msgid "Desktop environment"
-msgstr "Amgylchedd penbwrdd"
+#, fuzzy
+msgid "Graphical desktop environment"
+msgstr "Amgylchedd penbwrdd Japanëeg"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -168,12 +169,14 @@ msgstr "Mae'r tasg hwn yn paratoi eich system i fod yn weinydd argraffu."
 #. Description
 #: ../po/debian-tasks.desc:12001
 #, fuzzy
-msgid "Standard system"
+msgid "Standard system utilities"
 msgstr "Sail Safonau Linux"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-msgid "This task installs a reasonably small character-mode system."
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
 msgstr ""
 
 #. Description
@@ -201,3 +204,6 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
+
+#~ msgid "Desktop environment"
+#~ msgstr "Amgylchedd penbwrdd"
