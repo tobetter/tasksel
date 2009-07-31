@@ -76,6 +76,10 @@ tasksel (2.80) UNRELEASED; urgency=low
     - Malayalam (adds a latvian task)
     - Polish
     - Russian
+  * Remove language-env for languages not supported by the package:
+    Amharic, Arabic, Bengali, Brazilian Portuguese, cyrillic, Greek, Hindi
+    Italian, Norwegian, Persian, Polish, Punjabi, Romanian, Tamil,
+    Telugu, Turkish
 
   [ Otavio Salvador ]
   * Fixes a typo in Gujarati language tasks. Closes: #538902
