@@ -33,6 +33,12 @@ tasksel (2.80) UNRELEASED; urgency=low
     - iceweasel-locale-uk droppe dfrom ukrainian-desktop
     - welsh-kde-desktop dropped (no more kde-i18n-cy)
   * Remove localisation *-gnome-desktop files that were empty
+  * Add an Openoffice.org thesaurus to languages that have one:
+    - French
+    - Hungarian
+    - Nepali
+    - Polish
+    - Russian
   * Add KDE l10n tasks for language that have a kde-i18n-* package:
     - Kazakh
   * Add kde-i18n-th to formerly empty thai-kde-desktop
@@ -43,6 +49,9 @@ tasksel (2.80) UNRELEASED; urgency=low
   * Add Openoffice.org help packages for language that have an
     openoffice.org-help-* package:
     - Catalan
+  * Add Openoffice.org thesaurus packages for language that have an
+    openoffice.org-thesaurus-* package:
+    - French
   * Add Iweweasel l10n packages for language that have an
     iceweasel-l10n-* package:
     - Belarusian
@@ -80,6 +89,8 @@ tasksel (2.80) UNRELEASED; urgency=low
     Amharic, Arabic, Bengali, Brazilian Portuguese, cyrillic, Greek, Hindi
     Italian, Norwegian, Persian, Polish, Punjabi, Romanian, Tamil,
     Telugu, Turkish
+  * Add manpages-* packages for languages that have one:
+    - Czech
 
   [ Otavio Salvador ]
   * Fixes a typo in Gujarati language tasks. Closes: #538902
