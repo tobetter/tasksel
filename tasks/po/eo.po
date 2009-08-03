@@ -3,14 +3,15 @@
 #
 # Copyright (C) 2006.
 # Serge Leblanc <serge.leblanc@wanadoo.fr>, 2006.
+# Felipe Castro <fefcas@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-30 23:31+0200\n"
-"PO-Revision-Date: 2007-04-10 21:39+0200\n"
-"Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
+"PO-Revision-Date: 2009-08-02 14:41-0300\n"
+"Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,15 +20,15 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:1001
 msgid "SQL database"
-msgstr "'SQL'-datumbazo"
+msgstr "Datumbazo SQL"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
-"Tiu tasko elektas klientajn kaj servilajn pakojn por administri la "
-"'PostgreSQL'-datumbazojn"
+"Tiu ĉi tasko elektas klientajn kaj servilajn pakojn por la datumbazo "
+"PostgreSQL."
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -37,16 +38,15 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
-"'PostgreSQL'-o estas 'SQL'-a rilata datumbazo, kiu liveras pligrandigitan "
-"'SQL92'-fidelecon kiel kelkaj funkcioj el 'SQL3'-o. Ĝi taŭgas por uzi en "
-"pluruzantaj medioj pro siaj transakciaj facilecoj kaj rigladaj kontroloj."
+"PostgreSQL estas rilata datumbazo SQL, kiu liveras ampleksiĝantan kongruon "
+"al SQL92 kaj kelkajn funkciojn el SQL3. Ĝi taŭgas por uzi en datumbazoj "
+"alirataj de pluraj uzantoj, per ĝiaj facilecoj por transakcioj kaj detaliga "
+"ŝlosado."
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "'Xfce'-labortabla medio"
+msgstr "Grafika labortabla medio"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -54,20 +54,20 @@ msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "GNOME and KDE desktop tasks."
 msgstr ""
-"Tiu tasko provizas principan labortablan programon kaj servas tiel bazo por "
-"'GNOME'-aj kaj 'KDE'-aj labortablaj taskoj."
+"Tiu ĉi tasko provizas bazan labortablan programaron kaj funkcias kiel bazon "
+"por la labortablaj taskoj GNOME kaj KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:3001
 msgid "DNS server"
-msgstr "'DNS'-servilo"
+msgstr "Servilo DNS"
 
 #. Description
 #: ../po/debian-tasks.desc:3001
 msgid ""
 "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
-"Elektu la 'BIND DNS'-servilon kaj relativajn dokumentojn kaj utilajn pakojn."
+"Elektas la servilon BIND DNS, ties rilatan dokumentadon kaj utiletajn pakojn."
 
 #. Description
 #: ../po/debian-tasks.desc:4001
@@ -80,12 +80,13 @@ msgid ""
 "This task sets up your system to be a file server, supporting both CIFS and "
 "NFS."
 msgstr ""
-"Tiu tasko agordas vian sistemon kiel 'CIFS'-a aŭ 'NFS'-a dosierservilo."
+"Tiu ĉi tasko preparas vian sistemon por esti dosier-servilo, subtenanta kaj "
+"CIFS kaj NFS."
 
 #. Description
 #: ../po/debian-tasks.desc:5001
 msgid "GNOME desktop environment"
-msgstr "'GNOME'-labortabla medio"
+msgstr "Labortabla medio GNOME"
 
 #. Description
 #: ../po/debian-tasks.desc:5001
@@ -93,13 +94,13 @@ msgid ""
 "This task provides basic \"desktop\" software using the GNOME desktop "
 "environment."
 msgstr ""
-"Tiu tasko provizas bazajn labortablajn programojn kiuj uzas 'GNOME'-"
-"labortablan medion."
+"Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
+"labortablan medion GNOME."
 
 #. Description
 #: ../po/debian-tasks.desc:6001
 msgid "KDE desktop environment"
-msgstr "'KDE'-labortabla medio"
+msgstr "Labortabla medio KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:6001
@@ -107,23 +108,23 @@ msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
 msgstr ""
-"Tiu tasko provizas bazajn labortablajn programojn kiuj uzas 'K Deskop'-"
-"labortablan medion."
+"Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
+"labortablan medion KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:7001
 msgid "Laptop"
-msgstr "portebla komputilo"
+msgstr "Portebla komputilo"
 
 #. Description
 #: ../po/debian-tasks.desc:7001
 msgid "This task installs software useful for a laptop."
-msgstr "Tiu tasko instalas utilantajn programojn por tekkomputilo."
+msgstr "Tiu ĉi tasko instalas utilan programaron por teko-komputilo."
 
 #. Description
 #: ../po/debian-tasks.desc:8001
 msgid "LXDE desktop environment"
-msgstr "'LXDE'-labortabla medio"
+msgstr "Labortabla medio LXDE"
 
 #. Description
 #: ../po/debian-tasks.desc:8001
@@ -131,8 +132,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the LXDE desktop "
 "environment."
 msgstr ""
-"Tiu tasko provizas bazajn labortablajn programojn kiuj uzas 'LXDE'-"
-"labortablan medion."
+"Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
+"labortablan medion LXDE."
 
 #. Description
 #: ../po/debian-tasks.desc:9001
@@ -145,18 +146,18 @@ msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
 msgstr ""
-"Tiu tasko elektas plurajn variajn pakojn utilaj por ĝenerala retpoŝtservila "
+"Tiu ĉi tasko elektas plurajn pakojn utilajn por ĝenerala retpoŝtservila "
 "sistemo."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
-msgstr "Mana elektado de pakoj"
+msgstr "Mem-elektado de pakoj"
 
 #. Description
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
-msgstr "Elektu mane instalotajn pakojn en 'aptitude'-programo."
+msgstr "Elektu vi mem instalotajn pakojn en aptitude."
 
 #. Description
 #: ../po/debian-tasks.desc:11001
@@ -166,30 +167,26 @@ msgstr "Print-servilo"
 #. Description
 #: ../po/debian-tasks.desc:11001
 msgid "This task sets up your system to be a print server."
-msgstr "Tiu tasko agordas vian sistemon por fari ĝin printservilo. "
+msgstr "Tiu ĉi tasko preparas vian sistemon por esti printservilo. "
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
 msgid "SSH server"
-msgstr "'DNS'-servilo"
+msgstr "Servilo SSH"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed throught SSH "
 "connections."
-msgstr "Tiu tasko agordas vian sistemon por fari ĝin printservilo. "
+msgstr ""
+"Tiu ĉi tasko preparas vian sistemon por esti alirata demalproksime per "
+"konektoj SSH. "
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
-#| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "Norma sistemo"
+msgstr "Ordinaraj sistem-utilaĵoj"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -197,6 +194,8 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
+"Tiu ĉi tasko preparas bazan uzant-medion, provizante pravigeble malgrandan "
+"elekton da servoj kaj iloj uzeblaj per la komand-linio."
 
 #. Description
 #: ../po/debian-tasks.desc:14001
@@ -207,12 +206,12 @@ msgstr "TTT-servilo"
 #: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
-msgstr "Tiu tasko elektas utilantajn pakojn por ĝenerala TTT-servila sistemo."
+msgstr "Tiu ĉi tasko elektas utilajn pakojn por ĝenerala TTT-servila sistemo."
 
 #. Description
 #: ../po/debian-tasks.desc:15001
 msgid "Xfce desktop environment"
-msgstr "'Xfce'-labortabla medio"
+msgstr "Labortabla medio Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:15001
@@ -220,8 +219,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
-"Tiu tasko provizas bazajn labortablajn programojn kiuj uzas 'Xfce'-"
-"labortablan medion."
+"Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
+"labortablan medion Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Labortabla medio"
