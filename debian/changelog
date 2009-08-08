@@ -1,4 +1,4 @@
-tasksel (2.80) UNRELEASED; urgency=low
+tasksel (2.80) unstable; urgency=low
 
   [ Christian Perrier ]
   * Add kannada-gnome-desktop, kannada-desktop and kannada-kde-desktop tasks
@@ -100,7 +100,7 @@ tasksel (2.80) UNRELEASED; urgency=low
   * Esperanto updated. Closes: #539656
   * Asturian updated. Closes: #539864
 
- -- Otavio Salvador <otavio@ossystems.com.br>  Tue, 28 Jul 2009 06:26:13 -0300
+ -- Joey Hess <joeyh@debian.org>  Sat, 08 Aug 2009 14:26:59 -0400
 
 tasksel (2.79) unstable; urgency=low
 
@@ -122,7 +122,7 @@ tasksel (2.79) unstable; urgency=low
   [ Christian Perrier ]
   * Add zh_HK to chinese-t task so that users
     of this locale get the Traditional Chinese task
-y    material installed. Closes: #517854
+    material installed. Closes: #517854
   * Same for zh_SG in Simplified Chinese task
   * Add accessibility packages to the gnome-desktop and kde-desktop
     tasks. Thanks to Samuel Thibault for the patch and leading the discussion
