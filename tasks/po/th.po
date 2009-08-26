@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-30 23:31+0200\n"
-"PO-Revision-Date: 2008-06-10 15:11+0700\n"
+"PO-Revision-Date: 2009-08-26 12:19+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -40,10 +40,8 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "สภาพแวดล้อมเดสก์ท็อป Xfce"
+msgstr "สภาพแวดล้อมเดสก์ท็อปแบบกราฟิกส์"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -158,26 +156,20 @@ msgstr "งานติดตั้งนี้ ติดตั้งระบ�
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
 msgid "SSH server"
-msgstr "เซิร์ฟเวอร์ DNS"
+msgstr "เซิร์ฟเวอร์ SSH"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed throught SSH "
 "connections."
-msgstr "งานติดตั้งนี้ ติดตั้งระบบของคุณให้เป็นเซิร์ฟเวอร์เครื่องพิมพ์"
+msgstr "งานติดตั้งนี้ ติดตั้งระบบของคุณให้สามารถเข้าถึงจากเครือข่ายได้ผ่านการเชื่อมต่อ SSH"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
-#| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "ระบบมาตรฐาน"
+msgstr "เครื่องมือมาตรฐานของระบบ"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -185,6 +177,8 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
+"งานติดตั้งนี้ ติดตั้งสภาพแวดล้อมพื้นฐานสำหรับการใช้งานของผู้ใช้ "
+"โดยจัดเตรียมบริการและเครื่องมือชุดเล็กๆ ที่สามารถใช้ผ่านบรรทัดคำสั่งได้"
 
 #. Description
 #: ../po/debian-tasks.desc:14001
