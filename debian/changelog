@@ -6,6 +6,7 @@ tasksel (2.81) UNRELEASED; urgency=low
   * Thai updated.
   * Russian updated. Closes: #545312
   * Lithuanian updated.
+  * Japanese updated.
 
   [ Christian Perrier ]
   * Update xfce-desktop task, matching Xfce 4.6 changes.
@@ -13,6 +14,10 @@ tasksel (2.81) UNRELEASED; urgency=low
     Closes: #545431
   * Drop console-cyrillic from russian and ukrainian tasks.
     Closes: #545715
+
+  [ Kenshi Muto ]
+  * Replace jfbterm with fbterm for japanese task.
+  * Add otf-ipafont to japanese-desktop task.
 
  -- Theppitak Karoonboonyanan <thep@debian.org>  Wed, 26 Aug 2009 12:22:29 +0700
 
