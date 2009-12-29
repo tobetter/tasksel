@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-30 23:31+0200\n"
-"PO-Revision-Date: 2008-01-18 19:32-0600\n"
-"Last-Translator: Ming Hua <minghua-guest@users.alioth.debian.org>\n"
+"PO-Revision-Date: 2009-11-27 20:38+0800\n"
+"Last-Translator: 苏运强 <wzssyqa@gmail.com>\n"
 "Language-Team: Simplified Chinese <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr "SQL 数据库"
 #: ../po/debian-tasks.desc:1001
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
-msgstr "此软件集包括 PostgreSQL 数据库的服务器端和客户端软件。"
+msgstr "此软件集选择 PostgreSQL 数据库的服务器端和客户端软件。"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -42,17 +42,16 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "Xfce 桌面环境"
+msgstr "图形桌面环境"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
 msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "GNOME and KDE desktop tasks."
-msgstr "此软件集将提供基本的桌面软件并作为 GNOME 和 KDE 桌面软件集的基础。"
+msgstr ""
+"此软件集将提供基本的桌面软件和服务以作为 GNOME 和 KDE 桌面软件集的基础。"
 
 #. Description
 #: ../po/debian-tasks.desc:3001
@@ -63,7 +62,7 @@ msgstr "DNS 服务器"
 #: ../po/debian-tasks.desc:3001
 msgid ""
 "Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "包含 BIND DNS 服务器以及相关文档和工具软件包。"
+msgstr "选择 BIND DNS 服务器以及相关文档和工具软件包。"
 
 #. Description
 #: ../po/debian-tasks.desc:4001
@@ -75,7 +74,7 @@ msgstr "文件服务器"
 msgid ""
 "This task sets up your system to be a file server, supporting both CIFS and "
 "NFS."
-msgstr "此软件集将把您的系统设置成一台支持 CIFS 和 NFS 的文件服务器。"
+msgstr "此软件集将把您的系统设置成一台同时支持 CIFS 和 NFS 的文件服务器。"
 
 #. Description
 #: ../po/debian-tasks.desc:5001
@@ -133,7 +132,7 @@ msgstr "邮件服务器"
 msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
-msgstr "此软件集选择了多种对普通邮件服务器系统有用的软件包。"
+msgstr "此软件集选择了对通用邮件服务器系统有用的一些软件包。"
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -157,26 +156,20 @@ msgstr "此软件集将会把您的系统设置成一台打印服务器。"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
 msgid "SSH server"
-msgstr "DNS 服务器"
+msgstr "SSH 服务器"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed throught SSH "
 "connections."
-msgstr "此软件集将会把您的系统设置成一台打印服务器。"
+msgstr "此软件集将会把您的系统设置为可以通过 SSH 连接远程访问。"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
-#| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "标准系统"
+msgstr "标准系统工具"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -184,6 +177,8 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
+"此软件集设置一个基本的用户环境，其提供一个合理且小的在命令行上可用的服务和工"
+"具的选择。"
 
 #. Description
 #: ../po/debian-tasks.desc:14001
@@ -194,7 +189,7 @@ msgstr "Web 服务器"
 #: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
-msgstr "此软件集包括一些对通用 web 服务器系统有用的软件包。"
+msgstr "此软件集选择一些对通用 web 服务器系统有用的软件包。"
 
 #. Description
 #: ../po/debian-tasks.desc:15001
