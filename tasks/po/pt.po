@@ -1,14 +1,14 @@
 # tasksel Portuguese translation 
 # Copyright (C) 2004 Miguel Figueiredo
 # This file is distributed under the same license as the tasksel package.
-# Miguel Figueiredo <elmig@debianpt.org>, 2004-2008.
+# Miguel Figueiredo <elmig@debianpt.org>, 2004-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-30 23:31+0200\n"
-"PO-Revision-Date: 2008-06-12 12:24+0100\n"
+"PO-Revision-Date: 2009-10-14 23:37+0100\n"
 "Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,8 @@ msgstr "Base de dados SQL"
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
-"Esta tarefa selecciona pacotes cliente e servidor para a base de dados."
+"Esta tarefa selecciona pacotes de cliente e servidor para a base de dados "
+"PostgreSQL."
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -38,14 +39,13 @@ msgstr ""
 "PostgreSQL é uma base de dados relacional, oferecendo conformidade melhorada "
 "de SQL92 e algumas características de SQL3. É apropriado para utilizar com "
 "acesso a bases de dados multi-utilizador, através de facilidades para "
-"transacções e fine-grained locking."
+"transacções e acesso exclusivo refinado."
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
 #| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "Ambiente de desktop Xfce"
+msgstr "Ambiente de trabalho gráfico"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -59,7 +59,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:3001
 msgid "DNS server"
-msgstr "Servidor DNS"
+msgstr "Servidor de DNS"
 
 #. Description
 #: ../po/debian-tasks.desc:3001
@@ -86,7 +86,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:5001
 msgid "GNOME desktop environment"
-msgstr "Ambiente de desktop GNOME"
+msgstr "Ambiente de trabalho GNOME"
 
 #. Description
 #: ../po/debian-tasks.desc:5001
@@ -95,12 +95,12 @@ msgid ""
 "environment."
 msgstr ""
 "Esta tarefa disponibiliza software básico de \"desktop\" utilizando o "
-"ambiente de desktop GNOME."
+"ambiente de trabalho GNOME."
 
 #. Description
 #: ../po/debian-tasks.desc:6001
 msgid "KDE desktop environment"
-msgstr "Ambiente de desktop KDE"
+msgstr "Ambiente de trabalho KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:6001
@@ -124,7 +124,7 @@ msgstr "Esta tarefa instala software útil para um portátil."
 #. Description
 #: ../po/debian-tasks.desc:8001
 msgid "LXDE desktop environment"
-msgstr "Ambiente de desktop LXDE"
+msgstr "Ambiente de trabalho LXDE"
 
 #. Description
 #: ../po/debian-tasks.desc:8001
@@ -133,7 +133,7 @@ msgid ""
 "environment."
 msgstr ""
 "Esta tarefa disponibiliza software de \"desktop\" básico utilizando o "
-"ambiente de desktop LXDE."
+"ambiente de trabalho LXDE."
 
 #. Description
 #: ../po/debian-tasks.desc:9001
@@ -171,26 +171,25 @@ msgstr "Esta tarefa prepara o sistema para ser um servidor de impressão."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
 #| msgid "DNS server"
 msgid "SSH server"
-msgstr "Servidor DNS"
+msgstr "Servidor SSH"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
 #| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed throught SSH "
 "connections."
-msgstr "Esta tarefa prepara o sistema para ser um servidor de impressão."
+msgstr ""
+"Esta tarefa prepara o sistema para ser acedido remotamente através de "
+"ligações SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
 #| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "Sistema Standard"
+msgstr "Utilitários standard de sistema"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -198,7 +197,10 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
-
+"Esta tarefa instala um ambiente de utilizador básico, disponibilizando uma "
+"selecção razoávelmente pequena de serviços e ferramentas utilizáveis na linha "
+"de comandos."
+ 
 #. Description
 #: ../po/debian-tasks.desc:14001
 msgid "Web server"
@@ -214,7 +216,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:15001
 msgid "Xfce desktop environment"
-msgstr "Ambiente de desktop Xfce"
+msgstr "Ambiente de trabalho Xfce"
 
 #. Description
 #: ../po/debian-tasks.desc:15001
@@ -223,7 +225,7 @@ msgid ""
 "environment."
 msgstr ""
 "Esta tarefa disponibiliza software de \"desktop\" básico utilizando o "
-"ambiente de desktop Xfce."
+"ambiente de trabalho Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Ambiente de Desktop"

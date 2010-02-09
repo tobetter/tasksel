@@ -1,17 +1,56 @@
-tasksel (2.81) UNRELEASED; urgency=low
+tasksel (2.82) UNRELEASED; urgency=low
+
+  [ Christian Perrier ]
+  * Add ttf-unikurdweb to kurdish-desktop
+    Closes: #564021
 
   [ Translations of tasks ]
+  * Traditional Chinese updated. Closes: #564037
+  * German updated. Closes: #565330
+  * Bengali updated.
+
+  [ Translations of debconf templates ]
+  * Bengali updated.
+
+  [ Josip Rodin ]
+  * Removed enca and texlive-lang-croatian from the base Croatian task,
+    closes: #564033.
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 07 Jan 2010 22:00:49 +0100
+
+tasksel (2.81) unstable; urgency=low
+
+  [ Translations of debconf messages ]
+  * Simplified Chinese updated.
+
+  [ Translations of programs ]
+  * Simplified Chinese updated.
+
+  [ Translations of tasks ]
+  * Simplified Chinese updated.
+  * Portuguese updated.
   * Slovak updated. Closes: #540822
   * Thai updated.
   * Russian updated. Closes: #545312
   * Lithuanian updated.
+  * Japanese updated.
+  * Belarussian updated. Closes: #562693
 
   [ Christian Perrier ]
   * Update xfce-desktop task, matching Xfce 4.6 changes.
     Thanks to Yves-Alexis Perez for the patch
     Closes: #545431
+  * Drop console-cyrillic from russian and ukrainian tasks.
+    Closes: #545715
 
- -- Theppitak Karoonboonyanan <thep@debian.org>  Wed, 26 Aug 2009 12:22:29 +0700
+  [ Kenshi Muto ]
+  * Replace jfbterm with fbterm for japanese task.
+  * Add otf-ipafont to japanese-desktop task.
+
+  [ Miroslav Kure ]
+  * Drop iczech from czech task (having aspell-cs is enough).
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Thu, 07 Jan 2010 00:50:18 -0200
 
 tasksel (2.80) unstable; urgency=low
 

@@ -4,13 +4,13 @@
 # This file is distributed under the same license as the tasksel package.
 #
 # Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005, 2006.
-# Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008.
+# Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 1.44\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-30 23:31+0200\n"
-"PO-Revision-Date: 2008-06-11 23:29+0300\n"
+"PO-Revision-Date: 2009-11-25 01:19+0200\n"
 "Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -45,10 +45,9 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
 #| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "Работен плот на Xfce"
+msgstr "Графична работна среда"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -170,26 +169,24 @@ msgstr "Тази задача настройва системата Ви за с
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
 #| msgid "DNS server"
 msgid "SSH server"
-msgstr "DNS сървър"
+msgstr "SSH сървър"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
 #| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed throught SSH "
 "connections."
-msgstr "Тази задача настройва системата Ви за сървър за печатане."
+msgstr ""
+"Тази задача настройва системата Ви за отдалечен достъп през SSH връзки."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
 #| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "Стандартна система"
+msgstr "Стандартни полезни програми"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -197,6 +194,8 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
+"Тази задача настройва основно потребителско обкръжение, предоставяйки "
+"приличен набор от услуги и инструменти за командния ред."
 
 #. Description
 #: ../po/debian-tasks.desc:14001

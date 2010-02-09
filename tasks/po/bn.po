@@ -5,31 +5,33 @@
 # Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2006.
 # Mahay Alam Khan (মাহে আলম খান) <makl10n@yahoo.com>, 2006.
 # Md. Rezwan Shahid <rezwan@ankur.org.bd>, 2009.
+# Loba Yeasmeen <loba@ankur.org.bd>, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: tasksel tasks HEAD\n"
+"Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-30 23:31+0200\n"
 "PO-Revision-Date: 2009-04-09 18:45+0600\n"
-"Last-Translator: Md. Rezwan Shahid <rezwan@ankur.org.bd>\n"
+"Last-Translator: Loba Yeasmeen <loba@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: WordForge 0.5-beta1\n"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
 msgid "SQL database"
-msgstr "এস.কিউ.এল. ডেটাবেস"
+msgstr "SQL ডেটাবেস"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
-"এই কাজটি পোস্টগ্রেস-এস.কিউ.এল. ডেটাবেসের জন্য ক্লায়েন্ট ও সার্ভার প্যাকেজ বাছাই করে।"
+"এই টাস্কটি PostgreSQL ডেটাবেসের জন্য ক্লায়েন্ট ও সার্ভার প্যাকেজ নির্বাচন করে থাকে।"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -39,16 +41,14 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
-"পোস্টগ্রেস-এস.কিউ.এল. একটি রিলেশনাল ডেটাবেস; এটির এস.কিউ.এল.-৯২ সমর্থন ক্রমশ "
-"বৃদ্ধি পাচ্ছে এবং এস.কিউ.এল.-৩ এর কিছু বৈশিষ্ট্যও এতে আছে।  এর রয়েছে ট্রানস্যাকশন ও "
-"উন্নত লকিং ব্যবস্থা এবং এ কারণে এটি মাল্টি-ইউজার ডেটাবেস হিসাবে ব্যবহারের উপযোগী।"
+"PostgreSQL হলো একটি SQL রিলেশনাল ডেটাবেস; এটির SQL92 সমর্থন ক্রমশ বৃদ্ধি পাচ্ছে "
+"এবং SQL3 এর কিছু বৈশিষ্ট্যও এতে আছে।  এর রয়েছে ট্রানস্যাকশন ও উন্নত লকিং ব্যবস্থা "
+"এবং এ কারণে এটি মাল্টি-ইউজার ডেটাবেস হিসাবে ব্যবহারের উপযোগী।"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "এক্সএফসিই ডেস্কটপ পরিবেশ"
+msgstr "গ্রাফিক্যাল ডেস্কটপ এনভায়রনমেন্ট"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -56,19 +56,19 @@ msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "GNOME and KDE desktop tasks."
 msgstr ""
-"এই কাজটি প্রাথমিক কিছু ডেস্কটপ সফটওয়্যার ইনস্টল করে এবং একই সাথে গনোম ও কে.ডি.ই. "
-"ডেস্কটপ সরবরাহকারী কাজের ভিত্তি হিসেবে কাজ করে।"
+"এই টাস্কটি প্রাথমিক কিছু ডেস্কটপ সফটওয়্যার সরবরাহ করে এবং একই সাথে GNOME এবং KDE "
+"ডেস্কটপ সরবরাহকারী টাস্কের ভিত্তি হিসেবে কাজ করে।"
 
 #. Description
 #: ../po/debian-tasks.desc:3001
 msgid "DNS server"
-msgstr "ডি.এন.এস. সার্ভার"
+msgstr "DNS সার্ভার"
 
 #. Description
 #: ../po/debian-tasks.desc:3001
 msgid ""
 "Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "বাইন্ড ডি.এন.এস. সার্ভার, সংশ্লিষ্ট সহায়িকা, ও ইউটিলিটি প্যাকেজ বেছে নেয়।"
+msgstr "BIND DNS সার্ভার, সংশ্লিষ্ট সহায়িকা, ও ইউটিলিটি প্যাকেজ নির্বাচন করা হবে।"
 
 #. Description
 #: ../po/debian-tasks.desc:4001
@@ -81,13 +81,13 @@ msgid ""
 "This task sets up your system to be a file server, supporting both CIFS and "
 "NFS."
 msgstr ""
-"এই কাজটি আপনার সিস্টেমে একটি ফাইল সার্ভার স্থাপন করে, এটি সি.আই.এফ.এস এবং এন.এফ."
-"এস. উভয়ই সমর্থন করে।"
+"এই টাস্কটি আপনার সিস্টেমে একটি ফাইল সার্ভার স্থাপন করে, এটি CIFS এবং NFS উভয়ই "
+"সমর্থন করে থাকে।"
 
 #. Description
 #: ../po/debian-tasks.desc:5001
 msgid "GNOME desktop environment"
-msgstr "গনোম ডেস্কটপ পরিবেশ"
+msgstr "GNOME ডেস্কটপ পরিবেশ"
 
 #. Description
 #: ../po/debian-tasks.desc:5001
@@ -95,12 +95,13 @@ msgid ""
 "This task provides basic \"desktop\" software using the GNOME desktop "
 "environment."
 msgstr ""
-"এই কাজটি গনোম ডেস্কটপ-এর সাহায্যে একটি সাধারণ \"ডেস্কটপ\" সফটওয়্যার উপস্থাপন করে।"
+"এই কাজটি GNOME ডেস্কটপ এনবায়রনমেন্টের সাহায্যে একটি সাধারণ \"ডেস্কটপ\" সফটওয়্যার "
+"সরবরাহ করে থাকে।"
 
 #. Description
 #: ../po/debian-tasks.desc:6001
 msgid "KDE desktop environment"
-msgstr "কে.ডি.ই. ডেস্কটপ"
+msgstr "KDE ডেস্কটপ এনভায়রনমেন্ট"
 
 #. Description
 #: ../po/debian-tasks.desc:6001
@@ -108,8 +109,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
 msgstr ""
-"এই কাজটি কে.ডি.ই. ডেস্কটপ-এর সাহায্যে একটি সাধারণ \"ডেস্কটপ\" সফটওয়্যার উপস্থাপন "
-"করে।"
+"এই কাজটি KDE ডেস্কটপ-এর সাহায্যে একটি সাধারণ \"ডেস্কটপ\" সফটওয়্যার সরবরাহ করে "
+"থাকে।"
 
 #. Description
 #: ../po/debian-tasks.desc:7001
@@ -119,12 +120,12 @@ msgstr "ল্যাপটপ"
 #. Description
 #: ../po/debian-tasks.desc:7001
 msgid "This task installs software useful for a laptop."
-msgstr "এই কাজটি ল্যাপটপের জন্য সহায়ক সফটওয়্যার ইনস্টল করে"
+msgstr "এই কাজটি ল্যাপটপের জন্য সহায়ক সফটওয়্যার ইনস্টল করে থাকে"
 
 #. Description
 #: ../po/debian-tasks.desc:8001
 msgid "LXDE desktop environment"
-msgstr "এক্সএফসিই ডেস্কটপ পরিবেশ"
+msgstr "LXDE ডেস্কটপ এনভায়রনমেন্ট"
 
 #. Description
 #: ../po/debian-tasks.desc:8001
@@ -132,13 +133,13 @@ msgid ""
 "This task provides basic \"desktop\" software using the LXDE desktop "
 "environment."
 msgstr ""
-"এই কাজটি এক্সএফসিই ডেস্কটপ-এর সাহায্যে একটি সাধারণ \"ডেস্কটপ\" সফটওয়্যার উপস্থাপন "
-"করে।"
+"এই টাস্কটি LXDE ডেস্কটপ এনভায়রনমেন্টের সাহায্যে একটি সাধারণ \"ডেস্কটপ\" সফটওয়্যার "
+"সরবরাহ করে থাকে।"
 
 #. Description
 #: ../po/debian-tasks.desc:9001
 msgid "Mail server"
-msgstr "মেিইল সার্ভার"
+msgstr "মেইল সার্ভার"
 
 #. Description
 #: ../po/debian-tasks.desc:9001
@@ -146,18 +147,18 @@ msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
 msgstr ""
-"এই কাজটি সাধারণ একটি মেিইল সার্ভার সিস্টেমের জন্য প্রয়োজনীয় বিভিন্ন প্যাকেজ বেছে "
-"নেয়।"
+"এই টাস্কটি সাধারণ একটি মেইল সার্ভার সিস্টেমের জন্য প্রয়োজনীয় বিভিন্ন প্যাকেজ "
+"নির্বাচন করে থাকে।"
 
 #. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
-msgstr "নিজহাতে প্যাকেজ নির্বাচন"
+msgstr "ম্যানুয়েল প্যাকেজ নির্বাচন"
 
 #. Description
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
-msgstr "অ্যাপটিটুড থেকে যেসব প্যাকেজ ইনস্টল করা হবে, তাদেরকে নিজহাতে নির্বাচন করুন।"
+msgstr "অ্যাপটিটুড থেকে যেসব প্যাকেজ ইনস্টল করার জন্য ম্যানুয়েলি নির্বাচন করুন।"
 
 #. Description
 #: ../po/debian-tasks.desc:11001
@@ -167,30 +168,26 @@ msgstr "প্রিন্ট সার্ভার"
 #. Description
 #: ../po/debian-tasks.desc:11001
 msgid "This task sets up your system to be a print server."
-msgstr "এই কাজটি আপনার সিস্টেমে একটি প্রিন্ট সার্ভার স্থাপন করে।"
+msgstr "এই টাস্কটি একটি প্রিন্ট সার্ভার হিসবে আপনার সিস্টেমটি নির্ধারণ করে থাকে।"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
 msgid "SSH server"
-msgstr "ডি.এন.এস. সার্ভার"
+msgstr "SSH সার্ভার"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed throught SSH "
 "connections."
-msgstr "এই কাজটি আপনার সিস্টেমে একটি প্রিন্ট সার্ভার স্থাপন করে।"
+msgstr ""
+"এই টাস্কটি SSH সংযোগ হিসেবে দূরবর্তী ব্যবহারের জন্য আপনার সিস্টেমটি নির্ধারণ করে "
+"থাকে। "
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
-#| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "প্রমিত সিস্টেম"
+msgstr "স্ট্যান্ডার্ড সিস্টেম ইউটিলিটি"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -198,23 +195,26 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
+"টাস্কটি একটি মূল ব্যবহারকারী এনভায়রনমেন্ট নির্ধারণ করে থাকে, কমান্ড লাইনে "
+"ব্যবহারযোগ্য সার্ভিস অথবা টুলের সংক্ষিপ্ত নির্বাচন করে থাকে। "
 
 #. Description
 #: ../po/debian-tasks.desc:14001
 msgid "Web server"
-msgstr "ওয়েব সার্ভাীর"
+msgstr "ওয়েব সার্ভার"
 
 #. Description
 #: ../po/debian-tasks.desc:14001
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
-"এই কাজটি একটি সাধারণ ওয়েব সার্ভার সিস্টেমের জন্য প্রয়োজনীয় প্যাকেজ বেছে নেয়।"
+"এই কাজটি একটি সাধারণ ওয়েব সার্ভার সিস্টেমের জন্য প্রয়োজনীয় প্যাকেজ নির্বাচন করে "
+"থাকে।"
 
 #. Description
 #: ../po/debian-tasks.desc:15001
 msgid "Xfce desktop environment"
-msgstr "এক্সএফসিই ডেস্কটপ পরিবেশ"
+msgstr "Xfce ডেস্কটপ এনভায়রনমেন্ট"
 
 #. Description
 #: ../po/debian-tasks.desc:15001
@@ -222,8 +222,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
-"এই কাজটি এক্সএফসিই ডেস্কটপ-এর সাহায্যে একটি সাধারণ \"ডেস্কটপ\" সফটওয়্যার উপস্থাপন "
-"করে।"
+"এই টাস্কটি Xfce ডেস্কটপ এনভায়রনমোন্টের সাহায্যে একটি সাধারণ \"ডেস্কটপ\" সফটওয়্যার "
+"সরবরাহ করে থাকে।"
 
 #~ msgid "Desktop environment"
 #~ msgstr "ডেস্কটপ পরিবেশ"
