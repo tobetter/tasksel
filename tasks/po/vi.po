@@ -2,14 +2,14 @@
 # Copyright © 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the tasksel_tasks package.
 # Phan Vinh Thinh <teppi@vnoss.org>, 2005.
-# Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel tasks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-30 23:31+0200\n"
-"PO-Revision-Date: 2010-02-09 17:18+0930\n"
+"PO-Revision-Date: 2010-03-06 18:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -141,17 +141,17 @@ msgstr "Trình phục vụ SSH"
 #. Description
 #: ../po/debian-tasks.desc:12001
 msgid "This task sets up your system to be remotely accessed throught SSH connections."
-msgstr "Công việc này thiết lập hệ thống này để cho phép truy cập đến qua kết nối SSH."
+msgstr "Công việc này thiết lập hệ thống này để cho phép truy cập từ xa qua kết nối SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
 msgid "Standard system utilities"
-msgstr "Tiện ích hệ thống chuẩn"
+msgstr "Tiến ích hệ thống chuẩn"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
 msgid "This task sets up a basic user environment, providing a reasonably small selection of services and tools usable on the command line."
-msgstr "Công việc này thiết lập một môi trường người dùng cơ bản, cung cấp một tập hợp hơi nhỏ các dịch vụ và công cụ có thể sử dụng trên dòng lệnh."
+msgstr "Công việc này thiết lập một môi trường người dùng cơ bản, cung cấp một phần chọn hơi nhỏ các dịch vụ và công cụ có thể sử dụng trên dòng lệnh."
 
 #. Description
 #: ../po/debian-tasks.desc:14001
@@ -161,7 +161,7 @@ msgstr "Trình phục vụ Web"
 #. Description
 #: ../po/debian-tasks.desc:14001
 msgid "This task selects packages useful for a general purpose web server system."
-msgstr "Công việc này chọn các gói hỗ trợ cho một hệ thống phục vụ Web thường dụng."
+msgstr "Nhón này chọn các gói hỗ trợ cho một hệ thống phục vụ Web thường dụng."
 
 #. Description
 #: ../po/debian-tasks.desc:15001
@@ -172,3 +172,9 @@ msgstr "Môi trường làm việc Xfce"
 #: ../po/debian-tasks.desc:15001
 msgid "This task provides basic \"desktop\" software using the Xfce desktop environment."
 msgstr "Công việc này cung cấp phần mềm « màn hình nền » cơ bản, dùng môi trường làm việc Xfce."
+
+#~ msgid "Desktop environment"
+#~ msgstr "Môi trường làm việc"
+
+#~ msgid "This task installs a reasonably small character-mode system."
+#~ msgstr "Công việc này cài đặt một hệ thống hơi nhỏ chế độ ký tự."
