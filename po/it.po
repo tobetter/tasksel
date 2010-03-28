@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the newtasksel package.
 # Riccardo Fabris <frick@linux.it>, 2002-2004.
 # Giuseppe Sacco <eppesuig@debian.org>, 2004-2005.
+# Milo Casagrande <milo@ubuntu.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: newtasksel 2.01\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-14 17:41-0400\n"
-"PO-Revision-Date: 2005-11-28 14:05+0100\n"
-"Last-Translator: Giuseppe Sacco <eppesuig@debian.org>\n"
-"Language-Team: italian <debian-l10n-italian@lists.debian.org>\n"
+"POT-Creation-Date: 2009-07-30 23:05+0200\n"
+"PO-Revision-Date: 2009-12-04 21:46+0100\n"
+"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-15\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../tasksel.pl:357
@@ -27,16 +28,16 @@ msgid ""
 "\t    --task-packages list available packages in a task\n"
 "\t    --task-desc     returns the description of a task\n"
 msgstr ""
-"Uso:\n"
+"Usage:\n"
 "tasksel install <task>\n"
 "tasksel remove <task>\n"
-"tasksel [opzioni]; dove opzioni Ë una combinazione di:\n"
-"\t-t, --test          modalit‡ di test; non esegue veramente le operazioni\n"
-"\t    --new-install   installa automaticamente alcuni task\n"
-"\t    --list-task     elenca i task che verrebbero mostrati ed esce\n"
-"\t    --task-packages elenca tutti i pacchetti disponibili per task\n"
-"\t    --task-desc     restituisce la descrizione di un task\n"
+"tasksel [OPZIONI]\n"
+"\t-t, --test          Modalit√† di prova, non installa nulla\n"
+"\t    --new-install   Installa automaticamente alcuni task\n"
+"\t    --list-tasks    Elenca i task ed esce\n"
+"\t    --task-packages Elenca i pacchetti disponibili in un task\n"
+"\t    --task-desc     Restituisce la descrizione di un task\n"
 
-#: ../tasksel.pl:608 ../tasksel.pl:620
+#: ../tasksel.pl:608 ../tasksel.pl:617
 msgid "aptitude failed"
 msgstr "aptitude ha dato errore"
