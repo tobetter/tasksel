@@ -7,6 +7,10 @@ tasksel (2.82) UNRELEASED; urgency=low
     Translations unfuzzied.
     Closes: #573085
   * Drop obsolete language-env from tasks. Closes: #413794
+  * Replace kde-i18n-* by kde-l10n-* in <language>-kde-desktop tasks
+    Thanks to Andrei Popescu for reporting this.
+  * drop dupplicated xfonts-terminus in romanian-desktop
+    Thanks to Andrei Popescu for reporting this.
 
   [ Translations of tasks ]
   * Traditional Chinese updated. Closes: #564037
