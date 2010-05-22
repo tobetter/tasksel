@@ -14,11 +14,12 @@ Packages-list:
   #gcin
   stardict
   ttf-arphic-ukai
-  xfonts-efont-unicode
+  #xfonts-efont-unicode		# seems inessential.
   x-ttcidfont-conf
   ttf-arphic-uming
-  xfonts-intl-chinese
-  unifont
+  #xfonts-intl-chinese		# seems inessential.
+  #unifont			# seems inessential.
+  ttf-wqy-zenhei 		# seems openjdk needs this to display Chinese.
   openoffice.org-l10n-zh-tw
   openoffice.org-help-zh-tw
   iceweasel-l10n-zh-tw
