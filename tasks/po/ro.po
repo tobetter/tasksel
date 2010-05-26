@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-30 23:31+0200\n"
-"PO-Revision-Date: 2007-03-29 11:18+0300\n"
+"PO-Revision-Date: 2010-05-21 19:38+0300\n"
 "Last-Translator: Eddy Petrișor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -48,10 +48,8 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "Mediul grafic Xfce"
+msgstr "Mediu grafic de birou"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -60,7 +58,7 @@ msgid ""
 "GNOME and KDE desktop tasks."
 msgstr ""
 "Acestă sarcină furnizează un set minimal de aplicații pentru mediul grafic "
-"și servește ca bază pentru sarcinile pentru mediile grafice GNOME și KDE."
+"și servește ca bază pentru sarcinile mediilor grafice GNOME și KDE."
 
 #. Description
 #: ../po/debian-tasks.desc:3001
@@ -86,7 +84,7 @@ msgid ""
 "This task sets up your system to be a file server, supporting both CIFS and "
 "NFS."
 msgstr ""
-"Această sarcină vă peregătește sistemul dvs. să fie un server de fișiere "
+"Această sarcină vă pregătește sistemul pentru a deveni un server de fișiere "
 "care suportă atât CIFS cât și NFS."
 
 #. Description
@@ -106,7 +104,7 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:6001
 msgid "KDE desktop environment"
-msgstr "Mediu de birou KDE"
+msgstr "Mediul grafic KDE"
 
 #. Description
 #: ../po/debian-tasks.desc:6001
@@ -114,7 +112,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
 msgstr ""
-"Acestă sarcină furnizează un set minimal de aplicații pentru mediul grafic K."
+"Acestă sarcină furnizează un set minimal de aplicații pentru mediul grafic "
+"KDE (K Desktop Environment)."
 
 #. Description
 #: ../po/debian-tasks.desc:7001
@@ -151,8 +150,8 @@ msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
 msgstr ""
-"Acestă sarcină selectează o varietate de pachetele utile pentru un sistem-"
-"server de poștă electronică de uz general."
+"Acestă sarcină selectează o varietate de pachetele utile pentru un server de "
+"poștă electronică de uz general."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -167,37 +166,31 @@ msgstr "Selectați manual în aptitude pachetele de instalat."
 #. Description
 #: ../po/debian-tasks.desc:11001
 msgid "Print server"
-msgstr "Server de listare (print)"
+msgstr "Server de tipărire"
 
 #. Description
 #: ../po/debian-tasks.desc:11001
 msgid "This task sets up your system to be a print server."
 msgstr ""
-"Această sarcină vă peregătește sistemul dvs. să fie un server de listare."
+"Această sarcină vă pregătește sistemul pentru a deveni un server de tipărire."
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
 msgid "SSH server"
-msgstr "Server DNS"
+msgstr "Server SSH"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed through SSH "
 "connections."
 msgstr ""
-"Această sarcină vă peregătește sistemul dvs. să fie un server de listare."
+"Această sarcină pregătește sistemul pentru a fi accesat prin conexiuni SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
-#| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "Sistem de birou standard"
+msgstr "Utilitare de sistem standard"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -205,6 +198,8 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
+"Această sarcină instalează un mediu de bază, oferind o mică selecție de "
+"servicii și utilitare pentru linia de comandă."
 
 #. Description
 #: ../po/debian-tasks.desc:14001
@@ -216,8 +211,7 @@ msgstr "Server de web"
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
-"Acestă sarcină selectează un pachet util pentru un server de web de uz "
-"general."
+"Acestă sarcină selectează pachete utile pentru un server web de uz general."
 
 #. Description
 #: ../po/debian-tasks.desc:15001
