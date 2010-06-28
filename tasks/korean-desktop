@@ -6,13 +6,14 @@ Description: Korean desktop
 Key:
 Packages: task-fields
 Packages-list:
- nabi
+ ibus-hangul
+ ttf-nanum
+ ttf-nanum-coding
  ttf-unfonts-core
  iceweasel-l10n-ko
- xfonts-baekmuk
- ttf-baekmuk
  openoffice.org-help-ko
  openoffice.org-l10n-ko
+ hunspell-ko
 # poppler-data which is non-free is needed to display
 # Korean on poppler applications.
  poppler-data
