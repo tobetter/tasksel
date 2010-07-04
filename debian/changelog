@@ -11,6 +11,8 @@ tasksel (2.82) UNRELEASED; urgency=low
     Thanks to Andrei Popescu for reporting this.
   * drop dupplicated xfonts-terminus in romanian-desktop
     Thanks to Andrei Popescu for reporting this.
+  * Replace iceweasel-l10n-fa-ir by iceweasel-l10n-fa in persian-desktop
+  * Drop Move ttf-farsiweb from standard task and add it to the persian-desktop taisk.
 
   [ Translations of tasks ]
   * Traditional Chinese updated. Closes: #564037
@@ -21,21 +23,34 @@ tasksel (2.82) UNRELEASED; urgency=low
   * Irish updated. Closes: #578197
   * Tamil updated. Closes: #578283
   * Romanian updated
+  * Khmer updated
   * Indonesian updated. Closes: #586614
+  * Ukrainian updated. Closes: #586863
+  * Kazakh (Sarsenov D.).  Closes: #587105
+  * Dzongkha (yumkee).
+  * Korean updated.
+  * Persian added. Closes: #587344
+  * Galician updated.
 
   [ Translations of debconf templates ]
   * Bengali updated.
   * Italian updated. Closes: #575650
   * Romanian updated
   * Indonesian updated. Closes: #586614
+  * Persian (Hadi Soufi).  Closes: #587080
+  * Kazakh (Sarsenov D.).  Closes: #587104
 
   [ Translations of programs ]
   * Italian updated. Closes: #575651
   * Indonesian updated. Closes: #586614
+  * Persian (Hadi Soufi).  Closes: #587081
+  * Kazakh (Sarsenov D.).  Closes: #587103
 
   [ Josip Rodin ]
   * Removed enca and texlive-lang-croatian from the base Croatian task,
     closes: #564033.
+
+  [ Christian Perrier ]
 
  -- Christian Perrier <bubulle@debian.org>  Thu, 07 Jan 2010 22:00:49 +0100
 

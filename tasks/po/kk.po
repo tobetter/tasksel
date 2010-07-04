@@ -9,9 +9,10 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-30 23:31+0200\n"
-"PO-Revision-Date: 2009-01-26 22:13+0600\n"
-"Last-Translator: Sarsenov D. <daur88@inbox.ru>\n"
+"PO-Revision-Date: 2010-06-24 14:31+0600\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
+"Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,15 +20,14 @@ msgstr ""
 #. Description
 #: ../po/debian-tasks.desc:1001
 msgid "SQL database"
-msgstr "SQL деректер базасы"
+msgstr "SQL дерекқоры"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
 msgid ""
 "This task selects client and server packages for the PostgreSQL database."
 msgstr ""
-"Бұл тапсырма PostgreSQL деректер базасы үшін клиент пен сервер дестелерін "
-"таңдайды."
+"Бұл тапсырма PostgreSQL дерекқоры үшін клиент пен сервер дестелерін таңдайды."
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -37,16 +37,13 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
-"PostgreSQL - SQL реляциялық деректер базасы. Ол SQL92 толығымен және SQL3 "
-"кейбір қасиеттерін қолдайды. Ол көп пайдаланушысы бар деректер базасы "
-"ретінде қолданылады."
+"PostgreSQL - SQL реляциялық дерекқоры. Ол SQL92 толығымен және SQL3 кейбір "
+"қасиеттерін қолдайды. Ол көп пайдаланушысы бар дерекқоры ретінде қолданылады."
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "Xfce жұмыс үстелінің ортасы"
+msgstr "Графикалық жұмыс үстел ортасы"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -163,26 +160,22 @@ msgstr "Бұл тапсырма жүйеңізді принт сервер ре�
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
 msgid "SSH server"
-msgstr "DNS сервері"
+msgstr "SSH сервері"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed through SSH "
 "connections."
-msgstr "Бұл тапсырма жүйеңізді принт сервер ретінде баптайды."
+msgstr ""
+"Бұл тапсырма жүйеңізді қашықтан сервер SSH байланыстарын қабылдайтындай "
+"баптайды."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
-#| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "Стандартты жүйе"
+msgstr "Жүйенің қалыпты утилиталары"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -190,6 +183,8 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
+"Бұл тапсырма негізгі пайдаланушы ортасын орнатады, онда қызметтердің аз "
+"таңдауы мен командалық жолда қолданылатын құралдар болады."
 
 #. Description
 #: ../po/debian-tasks.desc:14001
