@@ -50,7 +50,14 @@ tasksel (2.82) UNRELEASED; urgency=low
   * Removed enca and texlive-lang-croatian from the base Croatian task,
     closes: #564033.
 
-  [ Christian Perrier ]
+  [ Changwoo Ryu ]
+  * Update the Korean tasks.
+    - Use ibus/ibus-gtk/ibus-qt4 instead of nabi and imhangul
+      (korean-desktop, korean-{gnome,kde}-desktop)
+    - Use ttf-nanum and ttf-nanum-coding along with ttf-unfonts-core
+      (korean-desktop)
+    - Remove baekmuk fonts (korean-desktop)
+    - Add hunspell-ko (korean-desktop)
 
  -- Christian Perrier <bubulle@debian.org>  Thu, 07 Jan 2010 22:00:49 +0100
 
