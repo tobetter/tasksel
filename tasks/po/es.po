@@ -11,7 +11,7 @@
 #
 #
 #  Traductores, si no conoce el formato PO, merece la pena leer la 
-#  documentaciÛn de gettext, especialmente las secciones dedicadas a este
+#  documentaci√≥n de gettext, especialmente las secciones dedicadas a este
 #  formato, por ejemplo ejecutando:
 #         info -n '(gettext)PO Files'
 #         info -n '(gettext)Header Entry'
@@ -24,7 +24,7 @@
 #   especialmente las notas de traduccion en
 #   http://www.debian.org/intl/spanish/notas
 #
-# - La guÌa de traduccion de po's de debconf:
+# - La gu√≠a de traduccion de po's de debconf:
 #   /usr/share/doc/po-debconf/README-trans
 #   o http://www.debian.org/intl/l10n/po-debconf/README-trans
 #
@@ -33,13 +33,15 @@ msgstr ""
 "Project-Id-Version: tasksel 1.40\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-31 21:35-0300\n"
-"PO-Revision-Date: 2007-08-10 18:59+0200\n"
+"PO-Revision-Date: 2010-08-08 02:48+0200\n"
 "Last-Translator: Javier Fernandez-Sanguino Pena <jfs@debian.org>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-POFile-SpellExtra: multi BIND PostgreSQL GNOME KDE aptitude Desktop\n"
+"X-POFile-SpellExtra: Environment LXDE SSH DNS SQL Xfce CIFS\n"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -62,17 +64,15 @@ msgid ""
 "database access, through its facilities for transactions and fine-grained "
 "locking."
 msgstr ""
-"PostgreSQL es una base de datos relacional que es conforme al est·ndar SQL92 "
-"e incluye algunas funcionalidades de SQL3. Es apropiada para ser utilizada "
-"como una base de datos multi-usuario, gracias a su funcionalidad de "
-"transacciones y de bloqueo de grano fino."
+"PostgreSQL es una base de datos relacional que es conforme al est√°ndar "
+"SQL92 e incluye algunas funcionalidades de SQL3. Es apropiada para ser "
+"utilizada como una base de datos multi-usuario, gracias a su funcionalidad "
+"de transacciones y de bloqueo de grano fino."
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "Entorno de escritorio de Xfce"
+msgstr "Entorno de escritorio gr√°fico"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -80,7 +80,7 @@ msgid ""
 "This task provides basic desktop software and serves as a basis for the "
 "GNOME and KDE desktop tasks."
 msgstr ""
-"Esta tarea incluye los programas de escritorio b·sicos y sirve como base "
+"Esta tarea incluye los programas de escritorio b√°sicos y sirve como base "
 "para las tareas de GNOME y KDE."
 
 #. Description
@@ -93,7 +93,7 @@ msgstr "Servidor de DNS"
 msgid ""
 "Selects the BIND DNS server, and related documentation and utility packages."
 msgstr ""
-"Selecciona el servidor de DNS BIND, asÌ como paquetes con documentaciÛn y "
+"Selecciona el servidor de DNS BIND, as√≠ como paquetes con documentaci√≥n y "
 "utilidades relacionados."
 
 #. Description
@@ -121,7 +121,8 @@ msgid ""
 "This task provides basic \"desktop\" software using the GNOME desktop "
 "environment."
 msgstr ""
-"Esta tarea ofrece los programas de ´escritorioª b·sicos que utilizan GNOME."
+"Esta tarea ofrece los programas de ¬´escritorio¬ª b√°sicos que utilizan "
+"GNOME."
 
 #. Description
 #: ../po/debian-tasks.desc:6001
@@ -134,18 +135,18 @@ msgid ""
 "This task provides basic \"desktop\" software using the K Desktop "
 "Environment."
 msgstr ""
-"Esta tarea ofrece los programas de ´escritorioª b·sicos que utilizan el ´K "
-"Desktop Environmentª."
+"Esta tarea ofrece los programas de ¬´escritorio¬ª b√°sicos que utilizan el "
+"¬´K Desktop Environment¬ª."
 
 #. Description
 #: ../po/debian-tasks.desc:7001
 msgid "Laptop"
-msgstr "Ordenador port·til"
+msgstr "Ordenador port√°til"
 
 #. Description
 #: ../po/debian-tasks.desc:7001
 msgid "This task installs software useful for a laptop."
-msgstr "Esta tarea instala programas ˙tiles para ordenadores port·tiles."
+msgstr "Esta tarea instala programas √∫tiles para ordenadores port√°tiles."
 
 #. Description
 #: ../po/debian-tasks.desc:8001
@@ -158,7 +159,7 @@ msgid ""
 "This task provides basic \"desktop\" software using the LXDE desktop "
 "environment."
 msgstr ""
-"Esta tarea ofrece los programas de ´escritorioª b·sicos que utilizan LXDE."
+"Esta tarea ofrece los programas de ¬´escritorio¬ª b√°sicos que utilizan LXDE."
 
 #. Description
 #: ../po/debian-tasks.desc:9001
@@ -171,13 +172,13 @@ msgid ""
 "This task selects a variety of package useful for a general purpose mail "
 "server system."
 msgstr ""
-"Esta tarea incluye un conjunto de paquetes ˙til para instalar un servidor de "
-"correo de propÛsito general."
+"Esta tarea incluye un conjunto de paquetes √∫til para instalar un servidor "
+"de correo de prop√≥sito general."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
-msgstr "selecciÛn manual de paquetes"
+msgstr "selecci√≥n manual de paquetes"
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -197,27 +198,22 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
 msgid "SSH server"
-msgstr "Servidor de DNS"
+msgstr "Servidor SSH"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed through SSH "
 "connections."
 msgstr ""
-"Esta tarea prepara su sistema para convertirlo en un servidor de impresoras."
+"Esta tarea prepara su sistema para que pueda accederse a √©l de forma remota "
+"a trav√©s de conexiones SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
-#| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "Sistema est·ndar"
+msgstr "Utilidades est√°ndar del sistema"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -225,6 +221,9 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
+"Esta tarea prepara un entorno b√°sico de usuario que ofrece un conjunto "
+"razonable de servicios y herramientas que pueden utilizarse desde la l√≠nea "
+"de √≥rdenes."
 
 #. Description
 #: ../po/debian-tasks.desc:14001
@@ -236,8 +235,8 @@ msgstr "Servidor de web"
 msgid ""
 "This task selects packages useful for a general purpose web server system."
 msgstr ""
-"Esta tarea selecciona paquetes ˙tiles para instalar un servidor de web de "
-"propÛsito general."
+"Esta tarea selecciona paquetes √∫tiles para instalar un servidor de web de "
+"prop√≥sito general."
 
 #. Description
 #: ../po/debian-tasks.desc:15001
@@ -250,70 +249,70 @@ msgid ""
 "This task provides basic \"desktop\" software using the Xfce desktop "
 "environment."
 msgstr ""
-"Esta tarea ofrece los programas de ´escritorioª b·sicos que utilizan Xfce."
+"Esta tarea ofrece los programas de ¬´escritorio¬ª b√°sicos que utilizan Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Entorno de escritorio"
 
 #~ msgid "This task installs a reasonably small character-mode system."
 #~ msgstr ""
-#~ "Esta tarea instala un sistema de modo caracter razonablemente pequeÒo."
+#~ "Esta tarea instala un sistema de modo caracter razonablemente peque√±o."
 
 #~ msgid "Amharic environment"
-#~ msgstr "Entorno en ·rabe"
+#~ msgstr "Entorno en √°rabe"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Amharic speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "para hacer m·s f·cil el uso de Debian a usuarios que hablen ·rabe."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "para hacer m√°s f√°cil el uso de Debian a usuarios que hablen √°rabe."
 
 #~ msgid "Amharic desktop"
-#~ msgstr "Escritorio en ·rabe"
+#~ msgstr "Escritorio en √°rabe"
 
 #~ msgid "This task localises the desktop in Amharic."
-#~ msgstr "Esta tarea localiza el escritorio en ·rabe."
+#~ msgstr "Esta tarea localiza el escritorio en √°rabe."
 
 #~ msgid "Amharic GNOME desktop"
-#~ msgstr "Escritorio en ·rabe"
+#~ msgstr "Escritorio en √°rabe"
 
 #~ msgid "This task localises the GNOME desktop in Amharic."
-#~ msgstr "Esta tarea localiza el escritorio en ·rabe."
+#~ msgstr "Esta tarea localiza el escritorio en √°rabe."
 
 #~ msgid "Amharic KDE desktop"
-#~ msgstr "Escritorio en ·rabe"
+#~ msgstr "Escritorio en √°rabe"
 
 #~ msgid "This task localises the KDE desktop in Amharic."
-#~ msgstr "Esta tarea localiza el escritorio en ·rabe."
+#~ msgstr "Esta tarea localiza el escritorio en √°rabe."
 
 #~ msgid "Arabic environment"
-#~ msgstr "Entorno en ·rabe"
+#~ msgstr "Entorno en √°rabe"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Arabic speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "para hacer m·s f·cil el uso de Debian a usuarios que hablen ·rabe."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "para hacer m√°s f√°cil el uso de Debian a usuarios que hablen √°rabe."
 
 #~ msgid "Arabic desktop"
-#~ msgstr "Escritorio en ·rabe"
+#~ msgstr "Escritorio en √°rabe"
 
 #~ msgid "This task localises the desktop in Arabic."
-#~ msgstr "Esta tarea localiza el escritorio en ·rabe."
+#~ msgstr "Esta tarea localiza el escritorio en √°rabe."
 
 #~ msgid "Arabic GNOME desktop"
-#~ msgstr "Escritorio en ·rabe"
+#~ msgstr "Escritorio en √°rabe"
 
 #~ msgid "This task localises the GNOME desktop in Arabic."
-#~ msgstr "Esta tarea localiza el escritorio en ·rabe."
+#~ msgstr "Esta tarea localiza el escritorio en √°rabe."
 
 #~ msgid "Arabic KDE desktop"
-#~ msgstr "Escritorio en ·rabe"
+#~ msgstr "Escritorio en √°rabe"
 
 #~ msgid "This task localises the KDE desktop in Arabic."
-#~ msgstr "Esta tarea localiza el escritorio en ·rabe."
+#~ msgstr "Esta tarea localiza el escritorio en √°rabe."
 
 #~ msgid "Basque desktop"
 #~ msgstr "Escritorio en vasco"
@@ -340,7 +339,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Belarusian to help "
 #~ "Belarusian speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en bieloruso para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en bieloruso para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Belarusian desktop"
@@ -362,32 +361,32 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en bieloruso."
 
 #~ msgid "Bengali environment"
-#~ msgstr "Entorno en bengalÌ"
+#~ msgstr "Entorno en bengal√≠"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Bengali speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "para hacer m·s f·cil el uso de Debian a usuarios que hablen bengalÌ."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "para hacer m√°s f√°cil el uso de Debian a usuarios que hablen bengal√≠."
 
 #~ msgid "Bengali desktop"
-#~ msgstr "Escritorio en bengalÌ"
+#~ msgstr "Escritorio en bengal√≠"
 
 #~ msgid "This task localises the desktop in Bengali."
-#~ msgstr "Esta tarea localiza el escritorio en bengalÌ."
+#~ msgstr "Esta tarea localiza el escritorio en bengal√≠."
 
 #~ msgid "Bengali GNOME desktop"
-#~ msgstr "Escritorio en bengalÌ"
+#~ msgstr "Escritorio en bengal√≠"
 
 #~ msgid "This task localises the GNOME desktop in Bengali."
-#~ msgstr "Esta tarea localiza el escritorio en bengalÌ."
+#~ msgstr "Esta tarea localiza el escritorio en bengal√≠."
 
 #~ msgid "Bengali KDE desktop"
-#~ msgstr "Escritorio en bengalÌ"
+#~ msgstr "Escritorio en bengal√≠"
 
 #~ msgid "This task localises the KDE desktop in Bengali."
-#~ msgstr "Esta tarea localiza el escritorio en bengalÌ."
+#~ msgstr "Esta tarea localiza el escritorio en bengal√≠."
 
 #~ msgid "Bosnian environment"
 #~ msgstr "Entorno en bosnio"
@@ -396,7 +395,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Bosnian to help Bosnian "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en bosnio que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en bosnio que ayudan a "
 #~ "utilizar Debian a personas que hablen en bosnio."
 
 #~ msgid "Bosnian desktop"
@@ -418,122 +417,122 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en bosnio."
 
 #~ msgid "Brazilian Portuguese environment"
-#~ msgstr "Entorno en portuguÈs brasileÒo"
+#~ msgstr "Entorno en portugu√©s brasile√±o"
 
 #~ msgid ""
 #~ "This task installs programs, data files, and documentation that make it "
 #~ "easier for Brazilian Portuguese speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos y documentaciÛn que hace "
-#~ "m·s f·cil utilizar Debian para los que hablan portuguÈs brasileÒo."
+#~ "Esta tarea instala programas, ficheros de datos y documentaci√≥n que hace "
+#~ "m√°s f√°cil utilizar Debian para los que hablan portugu√©s brasile√±o."
 
 #~ msgid "Brazilian Portuguese desktop"
-#~ msgstr "Escritorio en portuguÈs brasileÒo"
+#~ msgstr "Escritorio en portugu√©s brasile√±o"
 
 #~ msgid "This task localises the desktop in Brasilian Portuguese."
 #~ msgstr ""
-#~ "Esta tarea configura el escrito para que estÈ localizado en portuguÈs "
-#~ "brasileÒo."
+#~ "Esta tarea configura el escrito para que est√© localizado en portugu√©s "
+#~ "brasile√±o."
 
 #~ msgid "Brazilian Portuguese GNOME desktop"
-#~ msgstr "Escritorio en portuguÈs brasileÒo"
+#~ msgstr "Escritorio en portugu√©s brasile√±o"
 
 #~ msgid "This task localises the GNOME desktop in Brazilian Portuguese."
 #~ msgstr ""
-#~ "Esta tarea configura el escrito para que estÈ localizado en portuguÈs "
-#~ "brasileÒo."
+#~ "Esta tarea configura el escrito para que est√© localizado en portugu√©s "
+#~ "brasile√±o."
 
 #~ msgid "Brazilian Portuguese KDE desktop"
-#~ msgstr "Escritorio en portuguÈs brasileÒo"
+#~ msgstr "Escritorio en portugu√©s brasile√±o"
 
 #~ msgid "This task localises the KDE desktop in Brazilian Portuguese."
 #~ msgstr ""
-#~ "Esta tarea configura el escrito para que estÈ localizado en portuguÈs "
-#~ "brasileÒo."
+#~ "Esta tarea configura el escrito para que est√© localizado en portugu√©s "
+#~ "brasile√±o."
 
 #~ msgid "British English environment"
-#~ msgstr "Entorno en inglÈs brit·nico"
+#~ msgstr "Entorno en ingl√©s brit√°nico"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in British English to help "
 #~ "British English speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en inglÈs brit·nico para "
+#~ "Esta tarea instala paquetes y documentaci√≥n en ingl√©s brit√°nico para "
 #~ "ayudar a utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "British English desktop"
-#~ msgstr "Escritorio en inglÈs brit·nico"
+#~ msgstr "Escritorio en ingl√©s brit√°nico"
 
 #~ msgid "This task localises the desktop in British English."
-#~ msgstr "Esta tarea localiza el escritorio en inglÈs brit·nico."
+#~ msgstr "Esta tarea localiza el escritorio en ingl√©s brit√°nico."
 
 #~ msgid "British GNOME desktop"
-#~ msgstr "Escritorio en inglÈs brit·nico"
+#~ msgstr "Escritorio en ingl√©s brit√°nico"
 
 #~ msgid "This task localises the GNOME desktop in British."
-#~ msgstr "Esta tarea localizado el escritorio en irlandÈs."
+#~ msgstr "Esta tarea localizado el escritorio en irland√©s."
 
 #~ msgid "British KDE desktop"
-#~ msgstr "Escritorio en inglÈs brit·nico"
+#~ msgstr "Escritorio en ingl√©s brit√°nico"
 
 #~ msgid "This task localises the KDE desktop in British."
-#~ msgstr "Esta tarea localizado el escritorio en irlandÈs."
+#~ msgstr "Esta tarea localizado el escritorio en irland√©s."
 
 #~ msgid "Bulgarian environment"
-#~ msgstr "Entorno en b˙lgaro"
+#~ msgstr "Entorno en b√∫lgaro"
 
 #~ msgid ""
 #~ "This task installs programs and data files that make it easier for "
 #~ "Bulgarian speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes que hace m·s f·cil el uso de Debian a "
-#~ "usuarios que hablen b˙lgaro."
+#~ "Esta tarea instala paquetes que hace m√°s f√°cil el uso de Debian a "
+#~ "usuarios que hablen b√∫lgaro."
 
 #~ msgid "Bulgarian desktop"
-#~ msgstr "Escritorio en b˙lgaro"
+#~ msgstr "Escritorio en b√∫lgaro"
 
 #~ msgid "This task localises the desktop in Bulgarian."
-#~ msgstr "Esta tarea localiza el escritorio en b˙lgaro."
+#~ msgstr "Esta tarea localiza el escritorio en b√∫lgaro."
 
 #~ msgid "Bulgarian GNOME desktop"
-#~ msgstr "Escritorio en b˙lgaro"
+#~ msgstr "Escritorio en b√∫lgaro"
 
 #~ msgid "This task localises the GNOME desktop in Bulgarian."
-#~ msgstr "Esta tarea localiza el escritorio en b˙lgaro."
+#~ msgstr "Esta tarea localiza el escritorio en b√∫lgaro."
 
 #~ msgid "Bulgarian KDE desktop"
-#~ msgstr "Escritorio en b˙lgaro"
+#~ msgstr "Escritorio en b√∫lgaro"
 
 #~ msgid "This task localises the KDE desktop in Bulgarian."
-#~ msgstr "Esta tarea localiza el escritorio en b˙lgaro."
+#~ msgstr "Esta tarea localiza el escritorio en b√∫lgaro."
 
 #~ msgid "Catalan environment"
-#~ msgstr "Entorno en catal·n"
+#~ msgstr "Entorno en catal√°n"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Catalan to help Catalan "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en catal·n que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en catal√°n que ayudan a "
 #~ "utilizar Debian a personas que hablen este idioma."
 
 #~ msgid "Catalan desktop"
-#~ msgstr "Escritorio en catal·n"
+#~ msgstr "Escritorio en catal√°n"
 
 #~ msgid "This task localises the desktop in Catalan."
-#~ msgstr "Esta tarea localiza el escritorio en catal·n."
+#~ msgstr "Esta tarea localiza el escritorio en catal√°n."
 
 #~ msgid "Catalan GNOME desktop"
-#~ msgstr "Escritorio en catal·n"
+#~ msgstr "Escritorio en catal√°n"
 
 #~ msgid "This task localises the GNOME desktop in Catalan."
-#~ msgstr "Esta tarea localiza el escritorio en catal·n."
+#~ msgstr "Esta tarea localiza el escritorio en catal√°n."
 
 #~ msgid "Catalan KDE desktop"
-#~ msgstr "Escritorio en catal·n"
+#~ msgstr "Escritorio en catal√°n"
 
 #~ msgid "This task localises the KDE desktop in Catalan."
-#~ msgstr "Esta tarea localiza el escritorio en catal·n."
+#~ msgstr "Esta tarea localiza el escritorio en catal√°n."
 
 #~ msgid "Simplified Chinese environment"
 #~ msgstr "Entorno en chino simplificado"
@@ -543,9 +542,9 @@ msgstr ""
 #~ "make it easier for Chinese speakers to use Debian, using the simplified "
 #~ "Chinese encoding."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "que hace m·s sencillo el uso de Debian a los usuarios que hablan chino, "
-#~ "utilizando para ello la codificaciÛn china simplificada."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "que hace m√°s sencillo el uso de Debian a los usuarios que hablan chino, "
+#~ "utilizando para ello la codificaci√≥n china simplificada."
 
 #~ msgid "Simplified Chinese desktop"
 #~ msgstr "Escritorio en chino simplificado"
@@ -573,9 +572,9 @@ msgstr ""
 #~ "make it easier for Chinese speakers to use Debian, using the traditional "
 #~ "Chinese encoding."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "que hacen m·s f·cil el uso de Debian a usuarios chinos que utilicen la "
-#~ "codificaciÛn china tradicional."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "que hacen m√°s f√°cil el uso de Debian a usuarios chinos que utilicen la "
+#~ "codificaci√≥n china tradicional."
 
 #~ msgid "Traditional Chinese desktop"
 #~ msgstr "Escritorio en chino tradicional"
@@ -602,7 +601,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Croatian to help "
 #~ "Croatian speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en croata que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en croata que ayudan a "
 #~ "utilizar Debian a personas que hablen este idioma."
 
 #~ msgid "Croatian desktop"
@@ -624,38 +623,38 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en croata."
 
 #~ msgid "Cyrillic environment"
-#~ msgstr "Entorno en cirÌlico"
+#~ msgstr "Entorno en cir√≠lico"
 
 #~ msgid ""
 #~ "This task provides Cyrillic fonts and other software you will need in "
 #~ "order to use Cyrillic.  It supports Belarusian, Bulgarian, Macedonian, "
 #~ "Russian, Serbian and Ukrainian."
 #~ msgstr ""
-#~ "Esta tarea incluye fuentes en cirÌlico asÌ como otros programas que "
-#~ "necesitar· si usa este alfabeto. Incluye soporte para bieloruso, b˙lgaro, "
-#~ "macedonio, ruso, serbio y ukraniano."
+#~ "Esta tarea incluye fuentes en cir√≠lico as√≠ como otros programas que "
+#~ "necesitar√° si usa este alfabeto. Incluye soporte para bieloruso, "
+#~ "b√∫lgaro, macedonio, ruso, serbio y ukraniano."
 
 #~ msgid "Cyrillic desktop"
-#~ msgstr "Escritorio en cirÌlico"
+#~ msgstr "Escritorio en cir√≠lico"
 
 #~ msgid ""
 #~ "This task localises the desktop in Cyrillic. It supports Belarusian, "
 #~ "Bulgarian, Macedonian, Russian, Serbian and Ukrainian."
 #~ msgstr ""
-#~ "Esta tarea localiza el escritorio en cirÌlico. Incluye soporte para "
-#~ "bieloruso, b˙lgaro, macedonio, ruso, serbio y ukraniano."
+#~ "Esta tarea localiza el escritorio en cir√≠lico. Incluye soporte para "
+#~ "bieloruso, b√∫lgaro, macedonio, ruso, serbio y ukraniano."
 
 #~ msgid "Cyrillic GNOME desktop"
-#~ msgstr "Escritorio en cirÌlico"
+#~ msgstr "Escritorio en cir√≠lico"
 
 #~ msgid "This task localises the GNOME desktop in Cyrillic."
-#~ msgstr "Esta tarea localiza el escritorio en ·rabe."
+#~ msgstr "Esta tarea localiza el escritorio en √°rabe."
 
 #~ msgid "Cyrillic KDE desktop"
-#~ msgstr "Escritorio en cirÌlico"
+#~ msgstr "Escritorio en cir√≠lico"
 
 #~ msgid "This task localises the KDE desktop in Cyrillic."
-#~ msgstr "Esta tarea localiza el escritorio en ·rabe."
+#~ msgstr "Esta tarea localiza el escritorio en √°rabe."
 
 #~ msgid "Czech environment"
 #~ msgstr "Entorno en checo"
@@ -664,7 +663,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Czech to help Czech "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en checo para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en checo para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Czech desktop"
@@ -686,60 +685,60 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en checo."
 
 #~ msgid "Danish environment"
-#~ msgstr "Entorno en danÈs"
+#~ msgstr "Entorno en dan√©s"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Danish to help Danish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en danÈs para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en dan√©s para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Danish desktop"
-#~ msgstr "Escritorio en danÈs"
+#~ msgstr "Escritorio en dan√©s"
 
 #~ msgid "This task localises the desktop in Danish."
-#~ msgstr "Esta tarea localiza el escritorio en danÈs."
+#~ msgstr "Esta tarea localiza el escritorio en dan√©s."
 
 #~ msgid "Danish GNOME desktop"
-#~ msgstr "Escritorio en danÈs"
+#~ msgstr "Escritorio en dan√©s"
 
 #~ msgid "This task localises the GNOME desktop in Danish."
-#~ msgstr "Esta tarea localiza el escritorio en danÈs."
+#~ msgstr "Esta tarea localiza el escritorio en dan√©s."
 
 #~ msgid "Danish KDE desktop"
-#~ msgstr "Escritorio en danÈs"
+#~ msgstr "Escritorio en dan√©s"
 
 #~ msgid "This task localises the KDE desktop in Danish."
-#~ msgstr "Esta tarea localiza el escritorio en danÈs."
+#~ msgstr "Esta tarea localiza el escritorio en dan√©s."
 
 #~ msgid "Dutch environment"
-#~ msgstr "Entorno en holandÈs"
+#~ msgstr "Entorno en holand√©s"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Dutch speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "para hacer m·s f·cil el uso de Debian a usuarios que hablen holandÈs."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "para hacer m√°s f√°cil el uso de Debian a usuarios que hablen holand√©s."
 
 #~ msgid "Dutch desktop"
-#~ msgstr "Escritorio en danÈs"
+#~ msgstr "Escritorio en dan√©s"
 
 #~ msgid "This task localises the desktop in Dutch."
-#~ msgstr "Esta tarea localiza el escritorio en holandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en holand√©s."
 
 #~ msgid "Dutch GNOME desktop"
-#~ msgstr "Escritorio en danÈs"
+#~ msgstr "Escritorio en dan√©s"
 
 #~ msgid "This task localises the GNOME desktop in Dutch."
-#~ msgstr "Esta tarea localiza el escritorio en holandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en holand√©s."
 
 #~ msgid "Dutch KDE desktop"
-#~ msgstr "Escritorio en danÈs"
+#~ msgstr "Escritorio en dan√©s"
 
 #~ msgid "This task localises the KDE desktop in Dutch."
-#~ msgstr "Esta tarea localiza el escritorio en holandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en holand√©s."
 
 #~ msgid "Dzongkha desktop"
 #~ msgstr "Escritorio en dzongkha"
@@ -796,60 +795,60 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en estonio."
 
 #~ msgid "Finnish environment"
-#~ msgstr "Entorno en finlandÈs"
+#~ msgstr "Entorno en finland√©s"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Finnish to help Finnish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en finlandÈs para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en finland√©s para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Finnish desktop"
-#~ msgstr "Escritorio en finlandÈs"
+#~ msgstr "Escritorio en finland√©s"
 
 #~ msgid "This task localises the desktop in Finnish."
-#~ msgstr "Esta tarea localiza el escritorio en finlandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en finland√©s."
 
 #~ msgid "Finnish GNOME desktop"
-#~ msgstr "Escritorio en finlandÈs"
+#~ msgstr "Escritorio en finland√©s"
 
 #~ msgid "This task localises the GNOME desktop in Finnish."
-#~ msgstr "Esta tarea localiza el escritorio en finlandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en finland√©s."
 
 #~ msgid "Finnish KDE desktop"
-#~ msgstr "Escritorio en finlandÈs"
+#~ msgstr "Escritorio en finland√©s"
 
 #~ msgid "This task localises the KDE desktop in Finnish."
-#~ msgstr "Esta tarea localiza el escritorio en finlandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en finland√©s."
 
 #~ msgid "French environment"
-#~ msgstr "Entorno en francÈs"
+#~ msgstr "Entorno en franc√©s"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in French to help French "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en francÈs para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en franc√©s para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "French desktop"
-#~ msgstr "Escritorio en francÈs"
+#~ msgstr "Escritorio en franc√©s"
 
 #~ msgid "This task localises the desktop in French."
-#~ msgstr "Esta tarea localiza el escritorio en francÈs."
+#~ msgstr "Esta tarea localiza el escritorio en franc√©s."
 
 #~ msgid "French GNOME desktop"
-#~ msgstr "Escritorio en francÈs"
+#~ msgstr "Escritorio en franc√©s"
 
 #~ msgid "This task localises the GNOME desktop in French."
-#~ msgstr "Esta tarea localiza el escritorio en francÈs."
+#~ msgstr "Esta tarea localiza el escritorio en franc√©s."
 
 #~ msgid "French KDE desktop"
-#~ msgstr "Escritorio en francÈs"
+#~ msgstr "Escritorio en franc√©s"
 
 #~ msgid "This task localises the KDE desktop in French."
-#~ msgstr "Esta tarea localiza el escritorio en francÈs."
+#~ msgstr "Esta tarea localiza el escritorio en franc√©s."
 
 #~ msgid "Galician environment"
 #~ msgstr "Entorno en gallego"
@@ -858,7 +857,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Galician to help "
 #~ "Galician speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en gallego que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en gallego que ayudan a "
 #~ "utilizar Debian a personas que hablen en gallego."
 
 #~ msgid "Galician desktop"
@@ -886,32 +885,32 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en georgiano."
 
 #~ msgid "German environment"
-#~ msgstr "Entorno en alem·n"
+#~ msgstr "Entorno en alem√°n"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in German to help German "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en alem·n para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en alem√°n para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "German desktop"
-#~ msgstr "Escritorio en alem·n"
+#~ msgstr "Escritorio en alem√°n"
 
 #~ msgid "This task localises the desktop in German."
-#~ msgstr "Esta tarea localiza el escritorio en alem·n."
+#~ msgstr "Esta tarea localiza el escritorio en alem√°n."
 
 #~ msgid "German GNOME desktop"
-#~ msgstr "Escritorio en alem·n"
+#~ msgstr "Escritorio en alem√°n"
 
 #~ msgid "This task localises the GNOME desktop in German."
-#~ msgstr "Esta tarea localiza el escritorio en alem·n."
+#~ msgstr "Esta tarea localiza el escritorio en alem√°n."
 
 #~ msgid "German KDE desktop"
-#~ msgstr "Escritorio en alem·n"
+#~ msgstr "Escritorio en alem√°n"
 
 #~ msgid "This task localises the KDE desktop in German."
-#~ msgstr "Esta tarea localiza el escritorio en alem·n."
+#~ msgstr "Esta tarea localiza el escritorio en alem√°n."
 
 #~ msgid "Greek environment"
 #~ msgstr "Entorno en griego"
@@ -920,7 +919,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Greek to help Greek "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en griego para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en griego para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Greek desktop"
@@ -942,22 +941,22 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en griego."
 
 #~ msgid "Gujarati desktop"
-#~ msgstr "Escritorio en guyaratÌ"
+#~ msgstr "Escritorio en guyarat√≠"
 
 #~ msgid "This task localises the desktop in Gujarati."
-#~ msgstr "Esta tarea localiza el escritorio en guyaratÌ"
+#~ msgstr "Esta tarea localiza el escritorio en guyarat√≠"
 
 #~ msgid "Gujarati GNOME desktop"
-#~ msgstr "Escritorio en guyaratÌ"
+#~ msgstr "Escritorio en guyarat√≠"
 
 #~ msgid "This task localises the GNOME desktop in Gujarati."
-#~ msgstr "Esta tarea localiza el escritorio en guyaratÌ"
+#~ msgstr "Esta tarea localiza el escritorio en guyarat√≠"
 
 #~ msgid "Gujarati KDE desktop"
-#~ msgstr "Escritorio en guyaratÌ"
+#~ msgstr "Escritorio en guyarat√≠"
 
 #~ msgid "This task localises the KDE desktop in Gujarati."
-#~ msgstr "Esta tarea localiza el escritorio en guyaratÌ"
+#~ msgstr "Esta tarea localiza el escritorio en guyarat√≠"
 
 #~ msgid "Hebrew environment"
 #~ msgstr "Entorno en hebreo"
@@ -966,7 +965,7 @@ msgstr ""
 #~ "This task installs programs and documentation in Hebrew to help Hebrew "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en hebreo para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en hebreo para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Hebrew desktop"
@@ -994,110 +993,110 @@ msgstr ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Hindi speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "para hacer m·s f·cil el uso de Debian a usuarios que hablen hindi."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "para hacer m√°s f√°cil el uso de Debian a usuarios que hablen hindi."
 
 #~ msgid "Hindi desktop"
-#~ msgstr "Escritorio en hind˙"
+#~ msgstr "Escritorio en hind√∫"
 
 #~ msgid "This task localises the desktop in Hindi."
 #~ msgstr "Esta tarea localiza el escritorio en hindi."
 
 #~ msgid "Hindi GNOME desktop"
-#~ msgstr "Escritorio en hind˙"
+#~ msgstr "Escritorio en hind√∫"
 
 #~ msgid "This task localises the GNOME desktop in Hindi."
 #~ msgstr "Esta tarea localiza el escritorio en hindi."
 
 #~ msgid "Hindi KDE desktop"
-#~ msgstr "Escritorio en hind˙"
+#~ msgstr "Escritorio en hind√∫"
 
 #~ msgid "This task localises the KDE desktop in Hindi."
 #~ msgstr "Esta tarea localiza el escritorio en hindi."
 
 #~ msgid "Hungarian environment"
-#~ msgstr "Entorno en h˙ngaro"
+#~ msgstr "Entorno en h√∫ngaro"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Hungarian to help "
 #~ "Hungarian speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en h˙ngaro que ayudan a "
-#~ "utilizar Debian a personas que hablen en h˙ngaro."
+#~ "Esta tarea instala paquetes y documentaci√≥n en h√∫ngaro que ayudan a "
+#~ "utilizar Debian a personas que hablen en h√∫ngaro."
 
 #~ msgid "Hungarian desktop"
-#~ msgstr "Escritorio en h˙ngaro"
+#~ msgstr "Escritorio en h√∫ngaro"
 
 #~ msgid "This task localises the desktop in Hungarian."
-#~ msgstr "Esta tarea localiza el escritorio en h˙ngaro."
+#~ msgstr "Esta tarea localiza el escritorio en h√∫ngaro."
 
 #~ msgid "Hungarian GNOME desktop"
-#~ msgstr "Escritorio en h˙ngaro"
+#~ msgstr "Escritorio en h√∫ngaro"
 
 #~ msgid "This task localises the GNOME desktop in Hungarian."
-#~ msgstr "Esta tarea localiza el escritorio en h˙ngaro."
+#~ msgstr "Esta tarea localiza el escritorio en h√∫ngaro."
 
 #~ msgid "Hungarian KDE desktop"
-#~ msgstr "Escritorio en h˙ngaro"
+#~ msgstr "Escritorio en h√∫ngaro"
 
 #~ msgid "This task localises the KDE desktop in Hungarian."
-#~ msgstr "Esta tarea localiza el escritorio en h˙ngaro."
+#~ msgstr "Esta tarea localiza el escritorio en h√∫ngaro."
 
 #~ msgid "Icelandic environment"
-#~ msgstr "Entorno en islandÈs"
+#~ msgstr "Entorno en island√©s"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Icelandic to help "
 #~ "Icelandic speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en islandÈs que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en island√©s que ayudan a "
 #~ "utilizar Debian a personas que hablen en ese idioma."
 
 #~ msgid "Icelandic desktop"
-#~ msgstr "Escritorio en islandÈs"
+#~ msgstr "Escritorio en island√©s"
 
 #~ msgid "This task localises the desktop in Icelandic."
-#~ msgstr "Esta tarea localiza el escritorio en islandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en island√©s."
 
 #~ msgid "Icelandic GNOME desktop"
-#~ msgstr "Escritorio en islandÈs"
+#~ msgstr "Escritorio en island√©s"
 
 #~ msgid "This task localises the GNOME desktop in Icelandic."
-#~ msgstr "Esta tarea localiza el escritorio en islandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en island√©s."
 
 #~ msgid "Icelandic KDE desktop"
-#~ msgstr "Escritorio en islandÈs"
+#~ msgstr "Escritorio en island√©s"
 
 #~ msgid "This task localises the KDE desktop in Icelandic."
-#~ msgstr "Esta tarea localiza el escritorio en islandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en island√©s."
 
 #~ msgid "Irish environment"
-#~ msgstr "Entorno en irlandÈs"
+#~ msgstr "Entorno en irland√©s"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Irish to help Irish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en irlandÈs ˙til para el "
+#~ "Esta tarea instala paquetes y documentaci√≥n en irland√©s √∫til para el "
 #~ "manejo de Debian por parte de usuarios que hablen este idioma."
 
 #~ msgid "Irish desktop"
-#~ msgstr "Escritorio en irlandÈs"
+#~ msgstr "Escritorio en irland√©s"
 
 #~ msgid "This task localises the desktop in Irish."
-#~ msgstr "Esta tarea localizado el escritorio en irlandÈs."
+#~ msgstr "Esta tarea localizado el escritorio en irland√©s."
 
 #~ msgid "Irish GNOME desktop"
-#~ msgstr "Escritorio en irlandÈs"
+#~ msgstr "Escritorio en irland√©s"
 
 #~ msgid "This task localises the GNOME desktop in Irish."
-#~ msgstr "Esta tarea localizado el escritorio en irlandÈs."
+#~ msgstr "Esta tarea localizado el escritorio en irland√©s."
 
 #~ msgid "Irish KDE desktop"
-#~ msgstr "Escritorio en irlandÈs"
+#~ msgstr "Escritorio en irland√©s"
 
 #~ msgid "This task localises the KDE desktop in Irish."
-#~ msgstr "Esta tarea localizado el escritorio en irlandÈs."
+#~ msgstr "Esta tarea localizado el escritorio en irland√©s."
 
 #~ msgid "Italian environment"
 #~ msgstr "Entorno en italiano"
@@ -1106,7 +1105,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Italian to help Italian "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en italiano que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en italiano que ayudan a "
 #~ "utilizar Debian a personas que hablen en italiano."
 
 #~ msgid "Italian desktop"
@@ -1128,32 +1127,32 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en italiano."
 
 #~ msgid "Japanese environment"
-#~ msgstr "Entorno en japonÈs"
+#~ msgstr "Entorno en japon√©s"
 
 #~ msgid ""
 #~ "This task installs packages that make it easier for Japanese speakers to "
 #~ "use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes que hace m·s f·cil el uso de Debian a "
+#~ "Esta tarea instala paquetes que hace m√°s f√°cil el uso de Debian a "
 #~ "usuarios japoneses."
 
 #~ msgid "Japanese desktop"
-#~ msgstr "Escritorio en japonÈs"
+#~ msgstr "Escritorio en japon√©s"
 
 #~ msgid "This task localises the desktop in Japanese."
-#~ msgstr "Esta tarea localiza el escritorio en japonÈs."
+#~ msgstr "Esta tarea localiza el escritorio en japon√©s."
 
 #~ msgid "Japanese GNOME desktop"
-#~ msgstr "Escritorio en japonÈs"
+#~ msgstr "Escritorio en japon√©s"
 
 #~ msgid "This task localises the GNOME desktop in Japanese."
-#~ msgstr "Esta tarea localiza el escritorio en japonÈs."
+#~ msgstr "Esta tarea localiza el escritorio en japon√©s."
 
 #~ msgid "Japanese KDE desktop"
-#~ msgstr "Escritorio en japonÈs"
+#~ msgstr "Escritorio en japon√©s"
 
 #~ msgid "This task localises the KDE desktop in Japanese."
-#~ msgstr "Esta tarea localiza el escritorio en japonÈs."
+#~ msgstr "Esta tarea localiza el escritorio en japon√©s."
 
 #~ msgid "Khmer environment"
 #~ msgstr "Entorno en khmer"
@@ -1162,7 +1161,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Khmer to help Khmer "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en khmer para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en khmer para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Khmer desktop"
@@ -1190,7 +1189,7 @@ msgstr ""
 #~ "This task installs packages that make it easier for Korean speakers to "
 #~ "use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes que hace m·s f·cil el uso de Debian a "
+#~ "Esta tarea instala paquetes que hace m√°s f√°cil el uso de Debian a "
 #~ "usuarios que hablen coreano."
 
 #~ msgid "Korean desktop"
@@ -1218,8 +1217,8 @@ msgstr ""
 #~ "This task installs packages and documentation in Kurdish to help Kurds "
 #~ "use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en kurdo ˙til para el manejo "
-#~ "de Debian por parte de usuarios que hablen este idioma."
+#~ "Esta tarea instala paquetes y documentaci√≥n en kurdo √∫til para el "
+#~ "manejo de Debian por parte de usuarios que hablen este idioma."
 
 #~ msgid "Kurdish desktop"
 #~ msgstr "Escritorio en kurdo"
@@ -1264,7 +1263,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Lithuanian to help "
 #~ "Lithuanian speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en lituano que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en lituano que ayudan a "
 #~ "utilizar Debian a personas que hablen este idioma."
 
 #~ msgid "Lithuanian desktop"
@@ -1292,7 +1291,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Macedonian to help "
 #~ "Macedonian speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en macedonio que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en macedonio que ayudan a "
 #~ "utilizar Debian a personas que hablen en ese idioma."
 
 #~ msgid "Macedonian desktop"
@@ -1332,31 +1331,31 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en malayalam."
 
 #~ msgid "Nepali desktop"
-#~ msgstr "Escritorio en nepalÌ"
+#~ msgstr "Escritorio en nepal√≠"
 
 #~ msgid "This task localises the desktop in Nepali."
-#~ msgstr "Esta tarea localiza el escritorio en nepalÌ."
+#~ msgstr "Esta tarea localiza el escritorio en nepal√≠."
 
 #~ msgid "Nepali GNOME desktop"
-#~ msgstr "Escritorio en nepalÌ"
+#~ msgstr "Escritorio en nepal√≠"
 
 #~ msgid "This task localises the GNOME desktop in Nepali."
-#~ msgstr "Esta tarea localiza el escritorio en nepalÌ."
+#~ msgstr "Esta tarea localiza el escritorio en nepal√≠."
 
 #~ msgid "Nepali KDE desktop"
-#~ msgstr "Escritorio en nepalÌ"
+#~ msgstr "Escritorio en nepal√≠"
 
 #~ msgid "This task localises the KDE desktop in Nepali."
-#~ msgstr "Esta tarea localiza el escritorio en nepalÌ."
+#~ msgstr "Esta tarea localiza el escritorio en nepal√≠."
 
 #~ msgid "North Sami environment"
-#~ msgstr "Entorno en tailandÈs"
+#~ msgstr "Entorno en tailand√©s"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in North Sami to help North "
 #~ "Sami speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en noruego que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en noruego que ayudan a "
 #~ "utilizar Debian a usuarios que hablen este idioma."
 
 #~ msgid "North Sami desktop"
@@ -1384,7 +1383,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Norwegian to help "
 #~ "Norwegian speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en noruego que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en noruego que ayudan a "
 #~ "utilizar Debian a usuarios que hablen este idioma."
 
 #~ msgid "Norwegian (Bokmaal and Nynorsk) desktop"
@@ -1412,8 +1411,8 @@ msgstr ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Persian speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "para hacer m·s f·cil el uso de Debian a usuarios que hablen persa."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "para hacer m√°s f√°cil el uso de Debian a usuarios que hablen persa."
 
 #~ msgid "Persian desktop"
 #~ msgstr "Escritorio en persa"
@@ -1440,8 +1439,8 @@ msgstr ""
 #~ "This task installs packages and documentation in Polish to help Polish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en polaco ˙til para el manejo "
-#~ "de Debian por parte de usuarios que hablen este idioma."
+#~ "Esta tarea instala paquetes y documentaci√≥n en polaco √∫til para el "
+#~ "manejo de Debian por parte de usuarios que hablen este idioma."
 
 #~ msgid "Polish desktop"
 #~ msgstr "Escritorio en polaco"
@@ -1462,63 +1461,63 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en polaco."
 
 #~ msgid "Portuguese environment"
-#~ msgstr "Entorno en portuguÈs"
+#~ msgstr "Entorno en portugu√©s"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Portuguese to help "
 #~ "Portuguese speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en portuguÈs para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en portugu√©s para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Portuguese desktop"
-#~ msgstr "Escritorio en portuguÈs"
+#~ msgstr "Escritorio en portugu√©s"
 
 #~ msgid "This task localises the desktop in Portuguese."
 #~ msgstr ""
-#~ "Esta tarea configura el escrito para que estÈ localizado en portuguÈs."
+#~ "Esta tarea configura el escrito para que est√© localizado en portugu√©s."
 
 #~ msgid "Portuguese GNOME desktop"
-#~ msgstr "Escritorio en portuguÈs"
+#~ msgstr "Escritorio en portugu√©s"
 
 #~ msgid "This task localises the GNOME desktop in Portuguese."
 #~ msgstr ""
-#~ "Esta tarea configura el escrito para que estÈ localizado en portuguÈs."
+#~ "Esta tarea configura el escrito para que est√© localizado en portugu√©s."
 
 #~ msgid "Portuguese KDE desktop"
-#~ msgstr "Escritorio en portuguÈs"
+#~ msgstr "Escritorio en portugu√©s"
 
 #~ msgid "This task localises the KDE desktop in Portuguese."
 #~ msgstr ""
-#~ "Esta tarea configura el escrito para que estÈ localizado en portuguÈs."
+#~ "Esta tarea configura el escrito para que est√© localizado en portugu√©s."
 
 #~ msgid "Punjabi environment"
-#~ msgstr "Entorno en panyabÌ"
+#~ msgstr "Entorno en panyab√≠"
 
 #~ msgid ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Punjabi speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "para hacer m·s f·cil el uso de Debian a usuarios que hablen panyabÌ."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "para hacer m√°s f√°cil el uso de Debian a usuarios que hablen panyab√≠."
 
 #~ msgid "Punjabi desktop"
 #~ msgstr "Escritorio en punjabi"
 
 #~ msgid "This task localises the desktop in Punjabi."
-#~ msgstr "Esta tarea localiza el escritorio en panyabÌ."
+#~ msgstr "Esta tarea localiza el escritorio en panyab√≠."
 
 #~ msgid "Punjabi GNOME desktop"
 #~ msgstr "Escritorio en punjabi"
 
 #~ msgid "This task localises the GNOME desktop in Punjabi."
-#~ msgstr "Esta tarea localiza el escritorio en panyabÌ."
+#~ msgstr "Esta tarea localiza el escritorio en panyab√≠."
 
 #~ msgid "Punjabi KDE desktop"
 #~ msgstr "Escritorio en punjabi"
 
 #~ msgid "This task localises the KDE desktop in Punjabi."
-#~ msgstr "Esta tarea localiza el escritorio en panyabÌ."
+#~ msgstr "Esta tarea localiza el escritorio en panyab√≠."
 
 #~ msgid "Romanian environment"
 #~ msgstr "Entorno en rumano"
@@ -1527,7 +1526,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Romanian to help "
 #~ "Romanian speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en rumano que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en rumano que ayudan a "
 #~ "utilizar Debian a personas que hablen en rumano."
 
 #~ msgid "Romanian desktop"
@@ -1555,7 +1554,7 @@ msgstr ""
 #~ "This task installs programs and documentation in Russian to help Russian "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas y documentaciÛn en ruso para ayudar a "
+#~ "Esta tarea instala programas y documentaci√≥n en ruso para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Russian desktop"
@@ -1583,7 +1582,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Serbian to help Serbian "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en serbio para ayudar a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en serbio para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Serbian desktop"
@@ -1611,7 +1610,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Slovak to help Slovak "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en esloveno que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en esloveno que ayudan a "
 #~ "utilizar Debian a personas que hablen ese idioma."
 
 #~ msgid "Slovak desktop"
@@ -1639,7 +1638,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Slovenian to help "
 #~ "Slovenian speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en esloveno que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en esloveno que ayudan a "
 #~ "utilizar Debian a personas que hablen en esloveno."
 
 #~ msgid "Slovenian desktop"
@@ -1661,33 +1660,32 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en esloveno."
 
 #~ msgid "Spanish environment"
-#~ msgstr "Entorno en espaÒol"
+#~ msgstr "Entorno en espa√±ol"
 
 #~ msgid ""
 #~ "This task installs programs, data files, and documentation that make it "
 #~ "easier for Spanish speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos y documentaciÛn en "
-#~ "espaÒol (castellano) ˙til para hispanoparlantes que deseen utilizar "
-#~ "Debian."
+#~ "Esta tarea instala programas, ficheros de datos y documentaci√≥n en espa√"
+#~ "±ol (castellano) √∫til para hispanoparlantes que deseen utilizar Debian."
 
 #~ msgid "Spanish desktop"
-#~ msgstr "Escritorio en espaÒol"
+#~ msgstr "Escritorio en espa√±ol"
 
 #~ msgid "This task localises the desktop in Spanish."
-#~ msgstr "Esta tarea localiza el escritorio en espaÒol."
+#~ msgstr "Esta tarea localiza el escritorio en espa√±ol."
 
 #~ msgid "Spanish GNOME desktop"
-#~ msgstr "Escritorio en espaÒol"
+#~ msgstr "Escritorio en espa√±ol"
 
 #~ msgid "This task localises the GNOME desktop in Spanish."
-#~ msgstr "Esta tarea localiza el escritorio en espaÒol."
+#~ msgstr "Esta tarea localiza el escritorio en espa√±ol."
 
 #~ msgid "Spanish KDE desktop"
-#~ msgstr "Escritorio en espaÒol"
+#~ msgstr "Escritorio en espa√±ol"
 
 #~ msgid "This task localises the KDE desktop in Spanish."
-#~ msgstr "Esta tarea localiza el escritorio en espaÒol."
+#~ msgstr "Esta tarea localiza el escritorio en espa√±ol."
 
 #~ msgid "Swedish environment"
 #~ msgstr "Entorno en sueco"
@@ -1696,8 +1694,8 @@ msgstr ""
 #~ "This task installs packages and documentation in Swedish to help Swedish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en ˙til ˙til para el manejo "
-#~ "de Debian por parte de usuarios que hablen este idioma."
+#~ "Esta tarea instala paquetes y documentaci√≥n en √∫til √∫til para el "
+#~ "manejo de Debian por parte de usuarios que hablen este idioma."
 
 #~ msgid "Swedish desktop"
 #~ msgstr "Escritorio en sueco"
@@ -1724,7 +1722,7 @@ msgstr ""
 #~ "This task installs packages and documentation in Tagalog to help Tagalog "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en tagalog que ayudan a "
+#~ "Esta tarea instala paquetes y documentaci√≥n en tagalog que ayudan a "
 #~ "utilizar Debian a personas que hablen este idioma."
 
 #~ msgid "Tamil environment"
@@ -1734,8 +1732,8 @@ msgstr ""
 #~ "This task installs programs, data files, fonts, and documentation that "
 #~ "makes it easier for Tamil speakers to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaciÛn "
-#~ "para hacer m·s f·cil el uso de Debian a usuarios que hablen tamil."
+#~ "Esta tarea instala programas, ficheros de datos, fuentes y documentaci√≥n "
+#~ "para hacer m√°s f√°cil el uso de Debian a usuarios que hablen tamil."
 
 #~ msgid "Tamil desktop"
 #~ msgstr "Escritorio en tamil"
@@ -1756,32 +1754,32 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en tamil."
 
 #~ msgid "Thai environment"
-#~ msgstr "Entorno en tailandÈs"
+#~ msgstr "Entorno en tailand√©s"
 
 #~ msgid ""
 #~ "This task installs packages that make it easier for Thai speaking people "
 #~ "to use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes que har·n m·s f·cil el uso de Debian a "
+#~ "Esta tarea instala paquetes que har√°n m√°s f√°cil el uso de Debian a "
 #~ "tailandeses."
 
 #~ msgid "Thai desktop"
-#~ msgstr "Escritorio en tailandÈs"
+#~ msgstr "Escritorio en tailand√©s"
 
 #~ msgid "This task localises the desktop in Thai."
-#~ msgstr "Esta tarea localiza el escritorio en tailandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en tailand√©s."
 
 #~ msgid "Thai GNOME desktop"
-#~ msgstr "Escritorio en tailandÈs"
+#~ msgstr "Escritorio en tailand√©s"
 
 #~ msgid "This task localises the GNOME desktop in Thai."
-#~ msgstr "Esta tarea localiza el escritorio en tailandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en tailand√©s."
 
 #~ msgid "Thai KDE desktop"
-#~ msgstr "Escritorio en tailandÈs"
+#~ msgstr "Escritorio en tailand√©s"
 
 #~ msgid "This task localises the KDE desktop in Thai."
-#~ msgstr "Esta tarea localiza el escritorio en tailandÈs."
+#~ msgstr "Esta tarea localiza el escritorio en tailand√©s."
 
 #~ msgid "Turkish environment"
 #~ msgstr "Entorno en turco"
@@ -1790,8 +1788,8 @@ msgstr ""
 #~ "This task installs packages and documentation in Turkish to help Turkish "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en turco ˙til para el manejo "
-#~ "de Debian por parte de usuarios que hablen este idioma."
+#~ "Esta tarea instala paquetes y documentaci√≥n en turco √∫til para el "
+#~ "manejo de Debian por parte de usuarios que hablen este idioma."
 
 #~ msgid "Turkish desktop"
 #~ msgstr "Escritorio en turco"
@@ -1818,7 +1816,7 @@ msgstr ""
 #~ "This task installs programs and documentation in Ukrainian to help "
 #~ "Ukrainian speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala programas y documentaciÛn en ukraniano para ayudar a "
+#~ "Esta tarea instala programas y documentaci√≥n en ukraniano para ayudar a "
 #~ "utilizar Debian a los usuarios que hablen este idioma."
 
 #~ msgid "Ukrainian desktop"
@@ -1858,32 +1856,32 @@ msgstr ""
 #~ msgstr "Esta tarea localiza el escritorio en vietnamita."
 
 #~ msgid "Welsh environment"
-#~ msgstr "Entorno en galÈs"
+#~ msgstr "Entorno en gal√©s"
 
 #~ msgid ""
 #~ "This task installs packages and documentation in Welsh to help Welsh "
 #~ "speaking people use Debian."
 #~ msgstr ""
-#~ "Esta tarea instala paquetes y documentaciÛn en galÈs ˙til para el manejo "
-#~ "de Debian por parte de usuarios que hablen este idioma."
+#~ "Esta tarea instala paquetes y documentaci√≥n en gal√©s √∫til para el "
+#~ "manejo de Debian por parte de usuarios que hablen este idioma."
 
 #~ msgid "Welsh desktop"
-#~ msgstr "Escritorio en galÈs"
+#~ msgstr "Escritorio en gal√©s"
 
 #~ msgid "This task localises the desktop in Welsh."
-#~ msgstr "Esta tarea localiza el escritorio en galÈs."
+#~ msgstr "Esta tarea localiza el escritorio en gal√©s."
 
 #~ msgid "Welsh GNOME desktop"
-#~ msgstr "Escritorio en galÈs"
+#~ msgstr "Escritorio en gal√©s"
 
 #~ msgid "This task localises the GNOME desktop in Welsh."
-#~ msgstr "Esta tarea localiza el escritorio en galÈs."
+#~ msgstr "Esta tarea localiza el escritorio en gal√©s."
 
 #~ msgid "Welsh KDE desktop"
-#~ msgstr "Escritorio en galÈs"
+#~ msgstr "Escritorio en gal√©s"
 
 #~ msgid "This task localises the KDE desktop in Welsh."
-#~ msgstr "Esta tarea localiza el escritorio en galÈs."
+#~ msgstr "Esta tarea localiza el escritorio en gal√©s."
 
 #~ msgid "Xhosa desktop"
 #~ msgstr "Escritorio en xhosa"
@@ -1905,8 +1903,8 @@ msgstr ""
 
 #~ msgid "This task installs packages useful for British English users."
 #~ msgstr ""
-#~ "Esta tarea instala programas √∫tiles para usuarios que hablen ingl√©s "
-#~ "brit√°nico"
+#~ "Esta tarea instala programas √É¬∫tiles para usuarios que hablen ingl√É¬©s "
+#~ "brit√É¬°nico"
 
 #~ msgid "Albanian desktop"
 #~ msgstr "Escritorio en ablano"
@@ -1918,8 +1916,8 @@ msgstr ""
 #~ "This task provides basic \"desktop\" software using the GNOME desktop "
 #~ "desktop."
 #~ msgstr ""
-#~ "Esta tarea provee los programas b√°sicos de ¬´escritorio¬ª que utilizan "
-#~ "el entorno de escritorio de GNOME."
+#~ "Esta tarea provee los programas b√É¬°sicos de √Ç¬´escritorio√Ç¬ª que "
+#~ "utilizan el entorno de escritorio de GNOME."
 
 #~ msgid ""
 #~ "This task provides basic \"desktop\" software, including a variety of "
@@ -1927,16 +1925,16 @@ msgstr ""
 #~ "the GNOME and KDE desktops, and provides a display manager which lets the "
 #~ "user choose between the two."
 #~ msgstr ""
-#~ "Esta tarea incluye programas de escritorio b√°sicos, incluyendo una serie "
-#~ "de gestores de sesi√≥n, gestores de ficheros y navegadores de web. "
-#~ "Incluye tanto el escritorio de GNOME y de KDE, as√≠ como un gestor de "
+#~ "Esta tarea incluye programas de escritorio b√É¬°sicos, incluyendo una "
+#~ "serie de gestores de sesi√É¬≥n, gestores de ficheros y navegadores de web. "
+#~ "Incluye tanto el escritorio de GNOME y de KDE, as√É¬≠ como un gestor de "
 #~ "interfaz que permite seleccionar entre ambos."
 
 #~ msgid "This task makes the desktop be localised in Bulgarian."
-#~ msgstr "Esta tarea localiza el escritorio en b√∫lgaro."
+#~ msgstr "Esta tarea localiza el escritorio en b√É¬∫lgaro."
 
 #~ msgid "This task causes the standard base system to be installed."
-#~ msgstr "Esta tarea instala el sistema base est√°ndar."
+#~ msgstr "Esta tarea instala el sistema base est√É¬°ndar."
 
 #~ msgid "Office environment"
 #~ msgstr "Entorno de oficina"
@@ -1946,9 +1944,9 @@ msgstr ""
 #~ "word processor, a spreadsheet, a presentation program, and more. This is "
 #~ "a rather large collection of software."
 #~ msgstr ""
-#~ "Esta tarea incluye herramientas ofim√°ticas, como un procesador de "
-#~ "textos, una hoja de c√°lculo, un programa de presentaciones... Se trata "
-#~ "de una recopilaci√≥n de programas muy grande."
+#~ "Esta tarea incluye herramientas ofim√É¬°ticas, como un procesador de "
+#~ "textos, una hoja de c√É¬°lculo, un programa de presentaciones... Se trata "
+#~ "de una recopilaci√É¬≥n de programas muy grande."
 
 #~ msgid "X window system"
 #~ msgstr "Sistema de ventanas X"
@@ -1958,20 +1956,20 @@ msgstr ""
 #~ "running the X Window System. It provides the X libraries, an X server, a "
 #~ "set of fonts, and a group of basic X clients and utilities."
 #~ msgstr ""
-#~ "Esta tarea incluye los componentes esenciales para que una estaci√≥n de "
+#~ "Esta tarea incluye los componentes esenciales para que una estaci√É¬≥n de "
 #~ "trabajo independiente ejecute el sistema de ventanas X. Incluye las "
-#~ "librer√≠as de las X, el servidor X, un conjunto de fuentes, y un grupo de "
-#~ "herramientas y clientes b√°sicos de X."
+#~ "librer√É¬≠as de las X, el servidor X, un conjunto de fuentes, y un grupo de "
+#~ "herramientas y clientes b√É¬°sicos de X."
 
 #~ msgid "Broadband internet connection"
-#~ msgstr "Conexi√≥n de Internet banda ancha"
+#~ msgstr "Conexi√É¬≥n de Internet banda ancha"
 
 #~ msgid ""
 #~ "This task selects packages that address special needs of computers that "
 #~ "connect to the internet using DSL, Cable, and the like."
 #~ msgstr ""
-#~ "Esta tarea selecciona paquetes que cubren las necesidades espec√≠ficas de "
-#~ "sistemas conectados a Internet a traves de tecnolog√≠as DSL, cable o "
+#~ "Esta tarea selecciona paquetes que cubren las necesidades espec√É¬≠ficas de "
+#~ "sistemas conectados a Internet a traves de tecnolog√É¬≠as DSL, cable o "
 #~ "similares."
 
 #~ msgid "C and C++"
@@ -1982,18 +1980,18 @@ msgstr ""
 #~ "programming languages."
 #~ msgstr ""
 #~ "Un entorno de desarrollo completo para programas escritos en los "
-#~ "lenguajes de programaci√≥n C y C++."
+#~ "lenguajes de programaci√É¬≥n C y C++."
 
 #~ msgid "Dialup internet"
-#~ msgstr "Conexi√≥n a Internet"
+#~ msgstr "Conexi√É¬≥n a Internet"
 
 #~ msgid ""
 #~ "This task selects packages that address special needs of computers using "
 #~ "a slow part-time dialup connection (by modem, ISDN, or similar)."
 #~ msgstr ""
 #~ "Esta tarea selecciona paquetes que cubren las necesidades de ordenadores "
-#~ "que deben utilizar una conexi√≥n lenta a Internet compartida (como es el "
-#~ "caso de un m√≥dem, RDSI o tecnolog√≠as similares)."
+#~ "que deben utilizar una conexi√É¬≥n lenta a Internet compartida (como es el "
+#~ "caso de un m√É¬≥dem, RDSI o tecnolog√É¬≠as similares)."
 
 #~ msgid "Games"
 #~ msgstr "Juegos"
@@ -2003,9 +2001,9 @@ msgstr ""
 #~ "traditional textual unix games to card games, to fast-paced arcade games. "
 #~ "It won't install all the games in Debian, but it is a good starting point."
 #~ msgstr ""
-#~ "Si selecciona esta tarea se instalar√° una amplia selecci√≥n de juegos, "
+#~ "Si selecciona esta tarea se instalar√É¬° una amplia selecci√É¬≥n de juegos, "
 #~ "desde juegos de Unix tradicionales a juegos de cartas, pasando por juegos "
-#~ "de arcada. No instalar√° todos los juegos disponibles en Debian, pero es "
+#~ "de arcada. No instalar√É¬° todos los juegos disponibles en Debian, pero es "
 #~ "un buen punto de partida."
 
 #~ msgid "Java"
@@ -2019,17 +2017,17 @@ msgstr ""
 
 #~ msgid "Debian Jr. is a collection of Debian packages suitable for children."
 #~ msgstr ""
-#~ "Debian junior es una colecci√≥n de paquetes de Debian preparada para los "
-#~ "m√°s peque√±os."
+#~ "Debian junior es una colecci√É¬≥n de paquetes de Debian preparada para los "
+#~ "m√É¬°s peque√É¬±os."
 
 #~ msgid "Custom kernel compilation"
-#~ msgstr "Compilaci√≥n a medida del n√∫cleo"
+#~ msgstr "Compilaci√É¬≥n a medida del n√É¬∫cleo"
 
 #~ msgid ""
 #~ "This task includes everything you should need to build your own custom "
 #~ "kernel."
 #~ msgstr ""
-#~ "Esta tarea incluye todo lo que necesita para construir su propio n√∫cleo "
+#~ "Esta tarea incluye todo lo que necesita para construir su propio n√É¬∫cleo "
 #~ "a medida."
 
 #~ msgid ""
@@ -2037,17 +2035,17 @@ msgstr ""
 #~ "system. It includes some special utilities for laptops including IBM "
 #~ "Thinkpads, Sony Vaios, Toshibas, and Dell Inspirons."
 #~ msgstr ""
-#~ "Esta es una colecci√≥n de herramientas que los usuarios de equipos port√"
+#~ "Esta es una colecci√É¬≥n de herramientas que los usuarios de equipos port√É¬"
 #~ "°tiles habitualmente esperan encontrar en un sistema. Esto incluye "
-#~ "algunas herramientas especiales para port√°tiles como los Thinkpads de "
+#~ "algunas herramientas especiales para port√É¬°tiles como los Thinkpads de "
 #~ "IBM, Vaios de Sony, Toshiba, e Inspiron de Dell."
 
 #~ msgid ""
 #~ "This task makes the system compliant with the Linux Standard Base, "
 #~ "allowing you to install and use LSB packages."
 #~ msgstr ""
-#~ "Esta tarea hace conforme a su sistema con el est√°ndar Linux Standard "
-#~ "Base, perimiti√©ndole instalar y utilizar paquetes LSB."
+#~ "Esta tarea hace conforme a su sistema con el est√É¬°ndar Linux Standard "
+#~ "Base, perimiti√É¬©ndole instalar y utilizar paquetes LSB."
 
 #~ msgid "Usenet news server"
 #~ msgstr "Servidor de noticias Usenet"
@@ -2056,7 +2054,7 @@ msgstr ""
 #~ "This task selects the preferred version of the INN news server software "
 #~ "for new Debian installations."
 #~ msgstr ""
-#~ "Esta tarea selecciona la versi√≥n recomendada del servidor de noticias "
+#~ "Esta tarea selecciona la versi√É¬≥n recomendada del servidor de noticias "
 #~ "INN para nuevas instalaciones de Debian."
 
 #~ msgid ""
@@ -2065,10 +2063,10 @@ msgstr ""
 #~ "will pull in any required pieces. Only use this task if you intend to "
 #~ "operate a server."
 #~ msgstr ""
-#~ "No necesita este paquete si s√≥lo desea leer noticias de un servidor "
-#~ "existente. Si desea √©sto simplemente seleccione el programa de lectura "
-#~ "de noticias que desee y √©sto traer√° todas las piezas necesarias. Escoja "
-#~ "s√≥lo esta tarea si desea operar un servidor."
+#~ "No necesita este paquete si s√É¬≥lo desea leer noticias de un servidor "
+#~ "existente. Si desea √É¬©sto simplemente seleccione el programa de lectura "
+#~ "de noticias que desee y √É¬©sto traer√É¬° todas las piezas necesarias. "
+#~ "Escoja s√É¬≥lo esta tarea si desea operar un servidor."
 
 #~ msgid "Python"
 #~ msgstr "Python"
@@ -2077,12 +2075,12 @@ msgstr ""
 #~ "Many Python tools and extensions, for developing scripts and simple or "
 #~ "complex applications in Python."
 #~ msgstr ""
-#~ "Esta tarea incluye muchas herramientas y extensiones de Python, √∫tiles "
+#~ "Esta tarea incluye muchas herramientas y extensiones de Python, √É¬∫tiles "
 #~ "para desarrollar guiones y aplicaciones simples y complejas en el "
 #~ "lenguaje Python."
 
 #~ msgid "Scientific applications"
-#~ msgstr "Aplicaciones cient√≠ficas"
+#~ msgstr "Aplicaciones cient√É¬≠ficas"
 
 #~ msgid ""
 #~ "This task selects packages which are suitable for scientific work. Under "
@@ -2090,10 +2088,10 @@ msgstr ""
 #~ "analysis and computing, statistical data analysis as well as "
 #~ "visualization."
 #~ msgstr ""
-#~ "Esta tarea selecciona paquetes √∫tiles para realizar trabajos cient√≠"
-#~ "ficos. Dentro de una definici√≥n amplia de ¬´cient√≠fico¬ª esto incluye "
-#~ "herramientas para an√°lisis y c√≥mputo n√∫merico, an√°lisis estad√≠stico "
-#~ "de datos as√≠ como herramientas de visualizaci√≥n."
+#~ "Esta tarea selecciona paquetes √É¬∫tiles para realizar trabajos cient√É¬≠"
+#~ "ficos. Dentro de una definici√É¬≥n amplia de √Ç¬´cient√É¬≠fico√Ç¬ª esto "
+#~ "incluye herramientas para an√É¬°lisis y c√É¬≥mputo n√É¬∫merico, an√É¬°lisis "
+#~ "estad√É¬≠stico de datos as√É¬≠ como herramientas de visualizaci√É¬≥n."
 
 #~ msgid "TeX/LaTeX environment"
 #~ msgstr "Entorno para TeX/LaTeX"
@@ -2113,8 +2111,8 @@ msgstr ""
 #~ "conventional multi-user unix system with remote users. Do be warned that "
 #~ "this includes a number of daemons."
 #~ msgstr ""
-#~ "Esta tarea incluye paquetes que se encontrar√≠an habitualmente en un "
-#~ "sistema multi-usuario Unix convencional que tenga tambi√©n usuarios "
+#~ "Esta tarea incluye paquetes que se encontrar√É¬≠an habitualmente en un "
+#~ "sistema multi-usuario Unix convencional que tenga tambi√É¬©n usuarios "
 #~ "remotos. Tenga en cuenta que esta tarea incluye una cierta cantidad de "
 #~ "servidores."
 
