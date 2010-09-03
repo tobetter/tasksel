@@ -4,6 +4,11 @@ tasksel (2.83) UNRELEASED; urgency=low
   * Spanish updated. Closes: #592180
   * Arabic updated. Closes: #592950
 
+  [ Christian Perrier ]
+  * Replace swfdec-mozilla by browser-plugin-gnash in the desktop
+    task as gnome has replaced its dependency on swfdec-gnome 
+    with mozilla-plugin-gnash. Closes: #595325
+
  -- Christian Perrier <bubulle@debian.org>  Sat, 07 Aug 2010 23:48:12 -0400
 
 tasksel (2.82) unstable; urgency=low

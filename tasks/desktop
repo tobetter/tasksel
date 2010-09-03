@@ -63,8 +63,8 @@ Packages-list:
 # sound
   alsa-utils
   alsa-base
-# flash -- Note that gnome depends on swfdec-mozilla; if this is changed
+# flash -- Note that gnome depends on browser-plugin-gnash; if this is changed
 # here to a different flash player, it should also be changed there.
-  swfdec-mozilla
+  browser-plugin-gnash
 # ensure pm-utils is available
   pm-utils
