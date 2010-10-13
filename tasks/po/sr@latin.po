@@ -1,0 +1,211 @@
+# Serbian/Latin messages for tasksel.
+# Copyright (C) 2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as the tasksel package.
+# Janos Guljas <janos@janos.in.rs>, 2010.
+# Karolina Kalic <karolina@janos.in.rs>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tasksel 2.82\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"PO-Revision-Date: 2010-08-09 00:36+0100\n"
+"Last-Translator: Janos Guljas <janos@janos.in.rs>\n"
+"Language-Team: Serbian\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Description
+#: ../po/debian-tasks.desc:1001
+msgid "SQL database"
+msgstr "SQL baza podataka"
+
+#. Description
+#: ../po/debian-tasks.desc:1001
+msgid ""
+"This task selects client and server packages for the PostgreSQL database."
+msgstr ""
+"Ovaj zadatak bira klijentske i serverske pakete za PostgreSQL bazu podataka."
+
+#. Description
+#: ../po/debian-tasks.desc:1001
+msgid ""
+"PostgreSQL is an SQL relational database, offering increasing SQL92 "
+"compliance and some SQL3 features.  It is suitable for use with multi-user "
+"database access, through its facilities for transactions and fine-grained "
+"locking."
+msgstr ""
+"PostgreSQL je relaciona SQL baza podataka koja podržava SQL92 standard i "
+"neke SQL3 mogućnosti.  Pogodna je za upotrebu kod baza podataka sa više "
+"korisnika, jer podržaca transakcije i specifična zaključavanja."
+
+#. Description
+#: ../po/debian-tasks.desc:2001
+msgid "Graphical desktop environment"
+msgstr "Grafičko desktop okruženje"
+
+#. Description
+#: ../po/debian-tasks.desc:2001
+msgid ""
+"This task provides basic desktop software and serves as a basis for the "
+"GNOME and KDE desktop tasks."
+msgstr ""
+"Ovaj zadatak pruža osnovni desktop softver i servise kao osnovu za GNOME i "
+"KDE desktop zadatke."
+
+#. Description
+#: ../po/debian-tasks.desc:3001
+msgid "DNS server"
+msgstr "DNS server"
+
+#. Description
+#: ../po/debian-tasks.desc:3001
+msgid ""
+"Selects the BIND DNS server, and related documentation and utility packages."
+msgstr "Bira BIND DNS server, povezanu dokumentaciju i alate."
+
+#. Description
+#: ../po/debian-tasks.desc:4001
+msgid "File server"
+msgstr "Fajl server"
+
+#. Description
+#: ../po/debian-tasks.desc:4001
+msgid ""
+"This task sets up your system to be a file server, supporting both CIFS and "
+"NFS."
+msgstr ""
+"Ovaj zadatak podešava sistem kao fajl server sa podrškom za CIFS i NFS."
+
+#. Description
+#: ../po/debian-tasks.desc:5001
+msgid "GNOME desktop environment"
+msgstr "GNOME desktop okruženje"
+
+#. Description
+#: ../po/debian-tasks.desc:5001
+msgid ""
+"This task provides basic \"desktop\" software using the GNOME desktop "
+"environment."
+msgstr ""
+"Ovaj zadatak pruža osnovni „desktop“ softver kroz GNOME desktop okruženje."
+
+#. Description
+#: ../po/debian-tasks.desc:6001
+msgid "KDE desktop environment"
+msgstr "KDE desktop okruženje"
+
+#. Description
+#: ../po/debian-tasks.desc:6001
+msgid ""
+"This task provides basic \"desktop\" software using the K Desktop "
+"Environment."
+msgstr ""
+"Ovaj zadatak pruža osnovni „desktop“ softver kroz KDE desktop okruženje."
+
+#. Description
+#: ../po/debian-tasks.desc:7001
+msgid "Laptop"
+msgstr "Laptop"
+
+#. Description
+#: ../po/debian-tasks.desc:7001
+msgid "This task installs software useful for a laptop."
+msgstr "Ovaj zadatak instalira softver koristan za laptop računare."
+
+#. Description
+#: ../po/debian-tasks.desc:8001
+msgid "LXDE desktop environment"
+msgstr "LXDE desktop okruženje"
+
+#. Description
+#: ../po/debian-tasks.desc:8001
+msgid ""
+"This task provides basic \"desktop\" software using the LXDE desktop "
+"environment."
+msgstr ""
+"Ovaj zadatak pruža osnovni „desktop“ softver kroz LXDE desktop okruženje."
+
+#. Description
+#: ../po/debian-tasks.desc:9001
+msgid "Mail server"
+msgstr "Mejl server"
+
+#. Description
+#: ../po/debian-tasks.desc:9001
+msgid ""
+"This task selects a variety of package useful for a general purpose mail "
+"server system."
+msgstr "Ovaj zadatak bira pakete korisne za mejl server za generalnu upotrebu."
+
+#. Description
+#: ../po/debian-tasks.desc:10001
+msgid "manual package selection"
+msgstr "ručno biranje paketa"
+
+#. Description
+#: ../po/debian-tasks.desc:10001
+msgid "Manually select packages to install in aptitude."
+msgstr "Ručno bira pakete za instalaciju sa aptitude-om."
+
+#. Description
+#: ../po/debian-tasks.desc:11001
+msgid "Print server"
+msgstr "Print server"
+
+#. Description
+#: ../po/debian-tasks.desc:11001
+msgid "This task sets up your system to be a print server."
+msgstr "Ovaj zadatak podešava sistem kao print server."
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+msgid "SSH server"
+msgstr "SSH server"
+
+#. Description
+#: ../po/debian-tasks.desc:12001
+msgid ""
+"This task sets up your system to be remotely accessed through SSH "
+"connections."
+msgstr "Ovaj zadatak podešava sistem za pritup preko SSH veze."
+
+#. Description
+#: ../po/debian-tasks.desc:13001
+msgid "Standard system utilities"
+msgstr "Standardni sistemski alati"
+
+#. Description
+#: ../po/debian-tasks.desc:13001
+msgid ""
+"This task sets up a basic user environment, providing a reasonably small "
+"selection of services and tools usable on the command line."
+msgstr ""
+"Ovaj zadatak podešava osnovno korisničko okruženje, obezbeđujući razumno "
+"mali broj servisa i alata za upotrebu u komandnoj liniji."
+
+#. Description
+#: ../po/debian-tasks.desc:14001
+msgid "Web server"
+msgstr "Veb server"
+
+#. Description
+#: ../po/debian-tasks.desc:14001
+msgid ""
+"This task selects packages useful for a general purpose web server system."
+msgstr "Ovaj zadatak bira pakete korisne za veb server za generalnu upotrebu."
+
+#. Description
+#: ../po/debian-tasks.desc:15001
+msgid "Xfce desktop environment"
+msgstr "Xfce desktop okruženje"
+
+#. Description
+#: ../po/debian-tasks.desc:15001
+msgid ""
+"This task provides basic \"desktop\" software using the Xfce desktop "
+"environment."
+msgstr ""
+"Ovaj zadatak pruža osnovni „desktop“ softver kroz Xfce desktop okruženje."
