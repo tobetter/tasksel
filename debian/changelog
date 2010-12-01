@@ -12,6 +12,7 @@ tasksel (2.86) UNRELEASED; urgency=low
   * Pre-Depend on debconf 1.5.34, to ensure that upgrades with
     an old debconf don't choke on sr@latin locale lines in the templates
     during preconfiguration. See #604153
+    Closes: #605569
 
   [ Debconf translations ]
   * Greek (Socrates VAVILIS).  Closes: #604443
