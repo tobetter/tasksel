@@ -1,4 +1,11 @@
-tasksel (2.86) UNRELEASED; urgency=low
+tasksel (2.87) UNRELEASED; urgency=low
+
+  * Drop to be obsoleted foomatic* and printconf from
+    print-server, lxde-desktop, xfce-desktop and desktop
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 01 Dec 2010 22:18:11 +0100
+
+tasksel (2.86) unstable; urgency=low
 
   [ Timur Birsh ]
   * Add kazakh-desktop task. Closes: #604708
@@ -7,8 +14,6 @@ tasksel (2.86) UNRELEASED; urgency=low
   * Drop vbetool and radeontool from the laptop task
     Closes: #604073
   * Also drop vbetool from the desktop task
-  * Drop to be obsoleted foomatic* and printconf from
-    print-server, lxde-desktop, xfce-desktop and desktop
 
   [ Joey Hess ]
   * Pre-Depend on debconf 1.5.34, to ensure that upgrades with
@@ -25,10 +30,7 @@ tasksel (2.86) UNRELEASED; urgency=low
   [ Translations of tasks ]
   * Greek (Emmanuel Galatoulas).  Closes: #604445
 
-  [ Christian Perrier ]
-  * 
-
- -- Christian Perrier <bubulle@debian.org>  Sat, 20 Nov 2010 08:00:53 +0100
+ -- Joey Hess <joeyh@debian.org>  Wed, 01 Dec 2010 15:00:19 -0400
 
 tasksel (2.85) unstable; urgency=low
 
