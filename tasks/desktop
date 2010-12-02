@@ -43,12 +43,14 @@ Packages-list:
   cups
   cups-client
   cups-bsd
-  system-config-printer
+  foomatic-db-engine
   cups-driver-gutenprint
   hpijs
   hplip
   hp-ppd
   foo2zjs
+# gui for configuration of the print server
+  system-config-printer
 # CPU frequency scaling
   cpufrequtils
 # Warn about and allow reporting kernel oopses.
