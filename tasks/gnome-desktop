@@ -8,29 +8,8 @@ Description: GNOME desktop environment
  environment.
 Key:
 # A very minimal gnome desktop, to ensure that it fits on a normal size CD.
-# TODO: move this list to a metapackage
   gnome-core
-  dmz-cursor-theme
-  epiphany-browser
   gdm3
-  desktop-base
-  evince
-  file-roller
-  gnome-about
-  gnome-keyring
-  gnome-screensaver
-  gnome-themes
-  gnome-user-guide
-  gtk2-engines
-  gvfs-backends
-  libgnome2-perl
-  policykit-1-gnome
-  gnome-disk-utility
-  gstreamer0.10-alsa
-  gstreamer0.10-plugins-base
-  gstreamer0.10-plugins-good
-  totem
-  evolution
 Packages: task-fields
 Packages-list:
 # accessibility support
