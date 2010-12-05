@@ -7,10 +7,37 @@ Description: GNOME desktop environment
  This task provides basic "desktop" software using the GNOME desktop
  environment.
 Key:
-# The standard gnome desktop environment
-  gnome-desktop-environment
+# A very minimal gnome desktop, to ensure that it fits on a normal size CD.
+# TODO: move this list to a metapackage
+  gnome-core
+  dmz-cursor-theme
+  epiphany-browser
+  gdm3
+  desktop-base
+  evince
+  file-roller
+  gnome-about
+  gnome-keyring
+  gnome-screensaver
+  gnome-themes
+  gnome-user-guide
+  gtk2-engines
+  gvfs-backends
+  libgnome2-perl
+  policykit-1-gnome
+  gnome-disk-utility
+  gstreamer0.10-alsa
+  gstreamer0.10-plugins-base
+  gstreamer0.10-plugins-good
+  totem
+  evolution
 Packages: task-fields
 Packages-list:
+# accessibility support
+  gnome-accessibility
+# The full gnome desktop environment should be included if possible
+# even if the larger gnome metapackage doesn't fit.
+  gnome-desktop-environment
 # The complete gnome environment, with selected extras.
 # TODO: Everything in list below should be moved to its Depends/Recommends.
   gnome
@@ -28,5 +55,3 @@ Packages-list:
   xsane
 # vector drawing
   inkscape
-# accessibility support
-  gnome-accessibility

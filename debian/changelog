@@ -7,6 +7,8 @@ tasksel (2.87) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Add foomatic-db-engine, still needed.
+  * Slim gnome-desktop's set of Key packages down to some that will hopefully
+    fit in CD#1 while still providing a usable gnome.
 
  -- Christian Perrier <bubulle@debian.org>  Wed, 01 Dec 2010 22:18:11 +0100
 
@@ -1367,7 +1369,7 @@ tasksel (2.51) unstable; urgency=high
 
  -- Joey Hess <joeyh@debian.org>  Sun, 23 Jul 2006 11:49:08 -0400
 
-tasksel (2.50) unstable; urgency=low 
+tasksel (2.50) unstable; urgency=low
 
   [ Translations of programs ] 
     - updated Malagasy (Jaonary Rabarisoa)
