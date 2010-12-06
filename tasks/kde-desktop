@@ -15,8 +15,9 @@ Packages-list:
   menu-xdg
 # package management. Need something here, but please, no kpackage.
 #  kpackage 
-# debconf kde frontend. This will go away, see #522580
-  libqt-perl
+# debconf kde frontend
+  libqtgui4-perl
+  libqtcore4-perl
 # cd/dvd burner
   k3b
   k3b-i18n
