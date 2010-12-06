@@ -1,11 +1,11 @@
-tasksel (2.88) UNRELEASED; urgency=low
+tasksel (2.88) unstable; urgency=low
 
   * Make gnome-core key, as of 1:2.30+7 it includes the rest of the stuff
     needed for key in gnome-desktop, except for gdm3. 
   * lxde-desktop: Add gdm to key, to ensure it's available on CDs.
   * kde-desktop: Add qt4 perl packages now used by debconf.
 
- -- Joey Hess <joeyh@debian.org>  Sun, 05 Dec 2010 15:54:59 -0400
+ -- Joey Hess <joeyh@debian.org>  Mon, 06 Dec 2010 16:51:09 -0400
 
 tasksel (2.87) unstable; urgency=low
 
