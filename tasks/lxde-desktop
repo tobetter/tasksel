@@ -9,6 +9,8 @@ Description: LXDE desktop environment
 Key:
 # The basics of lxde, not the whole thing.
   lxde-core
+# gdm is a recommend of lxde, but put it in key to ensure it's available.
+  gdm
 Packages: task-fields
 Packages-list:
 # lxde meta-package
