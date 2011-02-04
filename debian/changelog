@@ -1,6 +1,11 @@
 tasksel (2.89) UNRELEASED; urgency=low
 
+  [ Joey Hess ]
   * kde-desktop: Add kdeaccessibility. Closes: #610790
+
+  [ Otavio Salvador ]
+  * gnome-desktop: drop xsane since gnome meta-package depends on
+    simple-scan. Closes: #611951.
 
  -- Joey Hess <joeyh@debian.org>  Sat, 22 Jan 2011 15:22:59 -0400
 
