@@ -6,6 +6,9 @@ tasksel (2.89) UNRELEASED; urgency=low
   [ Otavio Salvador ]
   * gnome-desktop: drop xsane since gnome meta-package depends on
     simple-scan. Closes: #611951.
+  * hungarian-desktop: use hunspell-hu instead of myspell-hu to fix
+    spell checking on Iceweasel and OpenOffice. Thanks to Szabolcs
+    Siebenhofer <the7up@gmail.com> for the patch. Closes: #611937.
 
  -- Joey Hess <joeyh@debian.org>  Sat, 22 Jan 2011 15:22:59 -0400
 
