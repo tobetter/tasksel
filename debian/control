@@ -47,13 +47,13 @@ Recommends:
 	iceweasel,
 # the gimp is the best image editor, no matter the desktop
 	gimp,
-# openoffice.org is the best word processor / office suite at the moment
-	openoffice.org,
-	openoffice.org-gcj,
+# libreoffice is the best word processor / office suite at the moment
+	libreoffice,
+	libreoffice-gcj,
 # make help menu work
-	openoffice.org-help-en-us,
+	libreoffice-help-en-us,
 # make thesaurus work
-	openoffice.org-thesaurus-en-us,
+	mythes-en-us,
 # make spellchecker work
 	myspell-en-us,
 # For use by third-party apps.
@@ -120,8 +120,8 @@ Recommends:
 # satisfies the dependency, so force it.
 	epiphany-browser,
 # GNOME support in OOo
-	openoffice.org-gnome,
-	openoffice.org-evolution,
+	libreoffice-gnome,
+	libreoffice-evolution,
 # vector drawing
 	inkscape
 
@@ -154,7 +154,7 @@ Recommends:
 # no root password. It is not enabled by default.
 	kdesudo,
 # KDE-OpenOffice integration
-	openoffice.org-kde
+	libreoffice-kde
 
 Package: task-lxde-desktop
 Architecture: all
@@ -195,7 +195,7 @@ Recommends:
 	xfce4-mixer,
 	xfprint4,
 	xfce4-terminal,
-	openoffice.org-gtk,
+	libreoffice-gtk,
 # Xfce Desktop is really improved by using dbus
 	dbus-x11,
 # Support for scanners
@@ -410,7 +410,7 @@ Recommends:
 	ttf-kacst,
 	ttf-farsiweb,
 	iceweasel-l10n-ar,
-	openoffice.org-l10n-ar,
+	libreoffice-l10n-ar,
 	hunspell-ar
 
 Package: task-arabic-kde-desktop
@@ -435,7 +435,7 @@ Description: Asturian desktop
  This task localises the desktop in Asturian.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-ast
+	libreoffice-l10n-ast
 
 Package: task-basque
 Architecture: all
@@ -453,8 +453,8 @@ Description: Basque desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-eu,
-	openoffice.org-l10n-eu,
-	openoffice.org-help-eu
+	libreoffice-l10n-eu,
+	libreoffice-help-eu
 
 Package: task-basque-kde-desktop
 Architecture: all
@@ -478,7 +478,7 @@ Description: Belarusian desktop
  This task localises the desktop in Belarusian.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-be-by,
+	libreoffice-l10n-be-by,
 	iceweasel-l10n-be
 
 Package: task-belarusian-kde-desktop
@@ -505,7 +505,7 @@ Description: Bengali desktop
  This task localises the desktop in Bengali.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-bn,
+	libreoffice-l10n-bn,
 	iceweasel-l10n-bn-in,
 	iceweasel-l10n-bn-bd,
 	ttf-bengali-fonts
@@ -539,7 +539,7 @@ Description: Bosnian desktop
  This task localises the desktop in Bosnian.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-bs,
+	libreoffice-l10n-bs,
 	xfonts-biznet-100dpi,
 	xfonts-biznet-75dpi,
 	xfonts-biznet-base,
@@ -605,8 +605,8 @@ XBC-Maintainer: Per Olofsson <pelle@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-en-gb,
-	openoffice.org-help-en-gb,
-	openoffice.org-l10n-en-gb,
+	libreoffice-help-en-gb,
+	libreoffice-l10n-en-gb,
 	myspell-en-gb
 
 Package: task-british-kde-desktop
@@ -636,7 +636,7 @@ Description: Bulgarian desktop
 XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-bg,
+	libreoffice-l10n-bg,
 	iceweasel-l10n-bg,
 	ttf-dejavu,
 	myspell-bg
@@ -670,8 +670,8 @@ Description: Catalan desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-ca,
-	openoffice.org-l10n-ca,
-	openoffice.org-help-ca,
+	libreoffice-l10n-ca,
+	libreoffice-help-ca,
 	myspell-ca
 
 Package: task-catalan-kde-desktop
@@ -721,8 +721,8 @@ Recommends:
 	ttf-arphic-gbsn00lp,
 	ttf-arphic-gkai00mp,
 	unifont,
-	openoffice.org-l10n-zh-cn,
-	openoffice.org-help-zh-cn,
+	libreoffice-l10n-zh-cn,
+	libreoffice-help-zh-cn,
 	iceweasel-l10n-zh-cn,
 	paps,
 # poppler-data which is non-free is needed to display
@@ -776,8 +776,8 @@ Recommends:
 #unifont			# seems inessential.
 # seems openjdk needs this to display Chinese.
 	ttf-wqy-zenhei, 		
-	openoffice.org-l10n-zh-tw,
-	openoffice.org-help-zh-tw,
+	libreoffice-l10n-zh-tw,
+	libreoffice-help-zh-tw,
 	iceweasel-l10n-zh-tw,
 	paps,
 # poppler-data which is non-free is needed to display
@@ -814,8 +814,8 @@ Description: Croatian desktop
  This task localises the desktop in Croatian.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-hyphenation-hr,
-	openoffice.org-l10n-hr,
+	hyphen-hr,
+	libreoffice-l10n-hr,
 	xfonts-biznet-100dpi,
 	xfonts-biznet-75dpi,
 	xfonts-biznet-base,
@@ -877,9 +877,9 @@ Recommends:
 	xfonts-bolkhov-misc,
 	xfonts-bolkhov-75dpi,
 	xfonts-cronyx-100dpi,
-	openoffice.org-l10n-ru,
-	openoffice.org-l10n-be-by,
-	openoffice.org-l10n-bg
+	libreoffice-l10n-ru,
+	libreoffice-l10n-be-by,
+	libreoffice-l10n-bg
 
 Package: task-cyrillic-kde-desktop
 Architecture: all
@@ -905,9 +905,9 @@ Description: Czech desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-cs,
-	openoffice.org-l10n-cs,
-	openoffice.org-help-cs,
-	openoffice.org-thesaurus-cs,
+	libreoffice-l10n-cs,
+	libreoffice-help-cs,
+	mythes-cs,
 	xfonts-terminus,
 	myspell-cs-cz
 
@@ -938,8 +938,8 @@ Description: Danish desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-da,
-	openoffice.org-l10n-da,
-	openoffice.org-help-da
+	libreoffice-l10n-da,
+	libreoffice-help-da
 
 Package: task-danish-kde-desktop
 Architecture: all
@@ -969,8 +969,8 @@ Description: Dutch desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-nl,
-	openoffice.org-l10n-nl,
-	openoffice.org-help-nl,
+	libreoffice-l10n-nl,
+	libreoffice-help-nl,
 	myspell-nl
 
 Package: task-dutch-kde-desktop
@@ -988,8 +988,8 @@ Description: Dzongkha desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	ttf-dzongkha,
-	openoffice.org-l10n-dz,
-	openoffice.org-help-dz,
+	libreoffice-l10n-dz,
+	libreoffice-help-dz,
 	iceweasel-l10n-dz-bt
 
 Package: task-dzongkha-kde-desktop
@@ -1015,7 +1015,7 @@ Description: Esperanto desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	myspell-eo,
-	openoffice.org-l10n-eo,
+	libreoffice-l10n-eo,
 	iceweasel-l10n-eo
 
 Package: task-esperanto-kde-desktop
@@ -1041,8 +1041,8 @@ Description: Estonian desktop
  This task localises the desktop in Estonian.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-et,
-	openoffice.org-help-et,
+	libreoffice-l10n-et,
+	libreoffice-help-et,
 	iceweasel-l10n-et
 
 Package: task-estonian-kde-desktop
@@ -1059,9 +1059,9 @@ Description: Finnish desktop
  This task localises the desktop in Finnish.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-help-fi,
-	openoffice.org-l10n-fi,
-	openoffice.org-voikko,
+	libreoffice-help-fi,
+	libreoffice-l10n-fi,
+	libreoffice-voikko,
 	iceweasel-l10n-fi,
 	mozvoikko
 
@@ -1095,9 +1095,9 @@ Description: French desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	xfonts-intl-european,
-	openoffice.org-l10n-fr,
-	openoffice.org-help-fr,
-	openoffice.org-thesaurus-fr,
+	libreoffice-l10n-fr,
+	libreoffice-help-fr,
+	mythes-fr,
 	iceweasel-l10n-fr,
 	myspell-fr-gut
 
@@ -1124,8 +1124,8 @@ Description: Galician desktop
  This task localises the desktop in Galician.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-gl,
-	openoffice.org-help-gl,
+	libreoffice-l10n-gl,
+	libreoffice-help-gl,
 	iceweasel-l10n-gl
 
 Package: task-galician-kde-desktop
@@ -1143,7 +1143,7 @@ Description: Georgian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	ttf-bpg-georgian-fonts,
-	openoffice.org-l10n-ka,
+	libreoffice-l10n-ka,
 	iceweasel-l10n-ka
 
 Package: task-german
@@ -1169,14 +1169,14 @@ Description: German desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-de,
-	openoffice.org-help-de,
-	openoffice.org-l10n-de,
-	openoffice.org-thesaurus-de,
-	openoffice.org-thesaurus-de-ch,
-	openoffice.org-hyphenation-de,
-	myspell-de-de,
-	myspell-de-at,
-	myspell-de-ch
+	libreoffice-help-de,
+	libreoffice-l10n-de,
+	mythes-de,
+	mythes-de-ch,
+	hyphen-de,
+	hunspell-de-de,
+	hunspell-de-at,
+	hunspell-de-ch
 
 Package: task-german-kde-desktop
 Architecture: all
@@ -1208,10 +1208,10 @@ Recommends:
 #xfonts-efont-unicode-ib
 	ttf-freefont,
 	ttf-mgopen,
-	openoffice.org-l10n-el,
+	libreoffice-l10n-el,
 	iceweasel-l10n-el,
 	myspell-el-gr,
-	openoffice.org-help-el
+	libreoffice-help-el
 
 Package: task-greek-kde-desktop
 Architecture: all
@@ -1237,7 +1237,7 @@ Description: Gujarati desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	ttf-gujarati-fonts,
-	openoffice.org-l10n-gu-in,
+	libreoffice-l10n-gu-in,
 	iceweasel-l10n-gu-in
 
 Package: task-gujarati-kde-desktop
@@ -1272,7 +1272,7 @@ XBC-Maintainer: Debian Hebrew Team <debian-hebrew-common@lists.alioth.debian.org
 Depends: ${misc:Depends}, 
 Recommends:
 	hspell-gui,
-	openoffice.org-l10n-he,
+	libreoffice-l10n-he,
 	iceweasel-l10n-he,
 	myspell-he
 
@@ -1308,8 +1308,8 @@ Description: Hindi desktop
  This task localises the desktop in Hindi.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-hi-in,
-	openoffice.org-help-hi-in,
+	libreoffice-l10n-hi,
+	libreoffice-help-hi,
 	ttf-devanagari-fonts,
 	iceweasel-l10n-hi-in
 
@@ -1357,10 +1357,10 @@ Recommends:
 	ttf-sil-gentium,
 	ttf-okolaks,
 	xfonts-100dpi-transcoded,
-	openoffice.org-l10n-hu,
-	openoffice.org-help-hu,
-	openoffice.org-thesausus-hu,
-	openoffice.org-hyphenation-hu,
+	libreoffice-l10n-hu,
+	libreoffice-help-hu,
+	libreoffice-thesausus-hu,
+	hyphen-hu,
 	hunspell-hu,
 	xfonts-terminus
 
@@ -1404,7 +1404,7 @@ Description: Indonesian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-id,
-	openoffice.org-l10n-id
+	libreoffice-l10n-id
 
 Package: task-indonesian-kde-desktop
 Architecture: all
@@ -1430,7 +1430,7 @@ Description: Irish desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-ga-ie,
-	openoffice.org-l10n-ga,
+	libreoffice-l10n-ga,
 	myspell-ga
 
 Package: task-irish-kde-desktop
@@ -1465,9 +1465,9 @@ Description: Italian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	xfonts-intl-european,
-	openoffice.org-help-it,
-	openoffice.org-l10n-it,
-	openoffice.org-thesaurus-it,
+	libreoffice-help-it,
+	libreoffice-l10n-it,
+	mythes-it,
 	iceweasel-l10n-it,
 	myspell-it
 
@@ -1512,8 +1512,8 @@ Recommends:
 	uim,
 	uim-anthy,
 	anthy,
-	openoffice.org-l10n-ja,
-	openoffice.org-help-ja,
+	libreoffice-l10n-ja,
+	libreoffice-help-ja,
 	poppler-data
 
 Package: task-japanese-gnome-desktop
@@ -1587,8 +1587,8 @@ Description: Khmer desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	ttf-khmeros,
-	openoffice.org-l10n-km,
-	openoffice.org-help-km
+	libreoffice-l10n-km,
+	libreoffice-help-km
 
 Package: task-khmer-kde-desktop
 Architecture: all
@@ -1618,8 +1618,8 @@ Recommends:
 	ttf-nanum-coding,
 	ttf-unfonts-core,
 	iceweasel-l10n-ko,
-	openoffice.org-help-ko,
-	openoffice.org-l10n-ko,
+	libreoffice-help-ko,
+	libreoffice-l10n-ko,
 	hunspell-ko,
 # poppler-data which is non-free is needed to display
 # Korean on poppler applications.
@@ -1657,7 +1657,7 @@ Description: Kurdish desktop
  This task localises the desktop in Kurdish.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-ku,
+	libreoffice-l10n-ku,
 	ttf-dejavu,
 	iceweasel-l10n-ku,
 	myspell-ku,
@@ -1685,7 +1685,7 @@ Description: Latvian desktop
  This task localises the desktop in Latvian.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-lv,
+	libreoffice-l10n-lv,
 	iceweasel-l10n-lv
 
 Package: task-latvian-kde-desktop
@@ -1714,8 +1714,8 @@ Description: Lithuanian desktop
  This task localises the desktop in Lithuanian.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-lt,
-	openoffice.org-hyphenation-lt,
+	libreoffice-l10n-lt,
+	hyphen-lt,
 	iceweasel-l10n-lt,
 	myspell-lt
 
@@ -1742,7 +1742,7 @@ Description: Macedonian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-mk,
-	openoffice.org-l10n-mk,
+	libreoffice-l10n-mk,
 	ttf-dejavu
 
 Package: task-macedonian-kde-desktop
@@ -1770,7 +1770,7 @@ Depends: ${misc:Depends},
 	ttf-malayalam-fonts,
 	scim-tables-additional
 Recommends:
-	openoffice.org-l10n-ml-in,
+	libreoffice-l10n-ml-in,
 	iceweasel-l10n-ml
 
 Package: task-malayalam-gnome-desktop
@@ -1807,7 +1807,7 @@ Depends: ${misc:Depends},
 	ttf-devanagari-fonts
 Recommends:
 	iceweasel-l10n-mr,
-	openoffice.org-l10n-mr-in
+	libreoffice-l10n-mr-in
 
 Package: task-nepali-desktop
 Architecture: all
@@ -1816,8 +1816,8 @@ Description: Nepali desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	ttf-devanagari-fonts,
-	openoffice.org-l10n-ne,
-	openoffice.org-thesaurus-ne,
+	libreoffice-l10n-ne,
+	mythes-ne,
 	iceweasel-l10n-ne-np
 
 Package: task-nepali-kde-desktop
@@ -1865,8 +1865,8 @@ Description: Norwegian (Bokmaal and Nynorsk) desktop
 XBC-Maintainer: Petter Reinholdtsen <pere@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-nb,
-	openoffice.org-l10n-nn,
+	libreoffice-l10n-nb,
+	libreoffice-l10n-nn,
 	iceweasel-l10n-nb-no,
 	iceweasel-l10n-nn-no,
 	myspell-nn,
@@ -1897,7 +1897,7 @@ Description: Persian desktop
  This task localises the desktop in Persian.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-fa,
+	libreoffice-l10n-fa,
 	iceweasel-l10n-fa,
 	ttf-farsiweb,
 	iceweasel-l10n-fa-ir
@@ -1924,9 +1924,9 @@ Description: Polish desktop
  This task localises the desktop in Polish.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-pl,
-	openoffice.org-help-pl,
-	openoffice.org-thesaurus-pl,
+	libreoffice-l10n-pl,
+	libreoffice-help-pl,
+	mythes-pl,
 	iceweasel-l10n-pl,
 	xfonts-terminus,
 	myspell-pl
@@ -1957,8 +1957,8 @@ Description: Portuguese desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	xfonts-intl-european,
-	openoffice.org-l10n-pt,
-	openoffice.org-help-pt,
+	libreoffice-l10n-pt,
+	libreoffice-help-pt,
 	iceweasel-l10n-pt-pt,
 	myspell-pt-pt
 
@@ -1986,7 +1986,7 @@ Description: Punjabi desktop
  This task localises the desktop in Punjabi.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-pa-in,
+	libreoffice-l10n-pa-in,
 	ttf-punjabi-fonts,
 	iceweasel-l10n-pa-in
 
@@ -2020,7 +2020,7 @@ XBC-Maintainer: Eddy Petrişor <eddy.petrisor@gmail.com>
 Depends: ${misc:Depends}, 
 Recommends:
 # fonty
-	openoffice.org-l10n-ro,
+	libreoffice-l10n-ro,
 # this appears to be one of the few fonts that has t with comma bellow
 	ttf-dejavu,
 	ttf-freefont,
@@ -2065,9 +2065,9 @@ Recommends:
 	xfonts-bolkhov-koi8r-75dpi,
 	xfonts-bolkhov-koi8r-misc,
 	xfonts-cronyx-koi8r-100dpi,
-	openoffice.org-l10n-ru,
-	openoffice.org-help-ru,
-	openoffice.org-thesaurus-ru,
+	libreoffice-l10n-ru,
+	libreoffice-help-ru,
+	mythes-ru,
 	iceweasel-l10n-ru,
 	myspell-ru
 
@@ -2099,7 +2099,7 @@ Description: Serbian desktop
  This task localises the desktop in Serbian.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-sr,
+	libreoffice-l10n-sr,
 	iceweasel-l10n-sr,
 	xfonts-biznet-100dpi,
 	xfonts-biznet-75dpi,
@@ -2124,7 +2124,7 @@ Description: Sinhala desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	ttf-sinhala-lklug,
-	openoffice.org-l10n-si,
+	libreoffice-l10n-si,
 	iceweasel-l10n-si
 
 Package: task-sinhala-kde-desktop
@@ -2150,8 +2150,8 @@ Description: Slovak desktop
  This task localises the desktop in Slovak.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-sk,
-	openoffice.org-thesaurus-sk,
+	libreoffice-l10n-sk,
+	mythes-sk,
 	xfonts-terminus,
 	iceweasel-l10n-sk,
 	myspell-sk
@@ -2180,8 +2180,8 @@ Description: Slovenian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-sl,
-	openoffice.org-l10n-sl,
-	openoffice.org-help-sl,
+	libreoffice-l10n-sl,
+	libreoffice-help-sl,
 	xfonts-terminus,
 	myspell-sl
 
@@ -2199,7 +2199,7 @@ Description: South African English desktop
  This task localises the desktop in South African English.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-en-za
+	libreoffice-l10n-en-za
 
 Package: task-spanish
 Architecture: all
@@ -2225,8 +2225,8 @@ Description: Spanish desktop
  This task localises the desktop in Spanish.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-es,
-	openoffice.org-help-es,
+	libreoffice-l10n-es,
+	libreoffice-help-es,
 	iceweasel-l10n-es-ar,
 	iceweasel-l10n-es-cl,
 	iceweasel-l10n-es-mx,
@@ -2263,8 +2263,8 @@ XBC-Maintainer: Per Olofsson <pelle@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
 	gimp-help-sv,
-	openoffice.org-l10n-sv,
-	openoffice.org-help-sv,
+	libreoffice-l10n-sv,
+	libreoffice-help-sv,
 	iceweasel-l10n-sv-se,
 	myspell-sv-se
 
@@ -2302,7 +2302,7 @@ Description: Tamil desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	ttf-tamil-fonts,
-	openoffice.org-l10n-ta-in,
+	libreoffice-l10n-ta-in,
 	iceweasel-l10n-ta,
 	iceweasel-l10n-ta-lk
 
@@ -2333,7 +2333,7 @@ Description: Telugu desktop
  This task localises the desktop environment in Telugu.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-te-in,
+	libreoffice-l10n-te-in,
 	iceweasel-l10n-te,
 	ttf-telugu-fonts,
 	scim-tables-additional,
@@ -2374,7 +2374,7 @@ Depends: ${misc:Depends},
 Recommends:
 	xiterm+thai,
 	xfonts-thai,
-	openoffice.org-l10n-th,
+	libreoffice-l10n-th,
 	iceweasel-l10n-th,
 	myspell-th
 
@@ -2415,7 +2415,7 @@ XBC-Maintainer: Recai Oktas <roktas@omu.edu.tr>
 Depends: ${misc:Depends}, 
 Recommends:
 	xfonts-terminus,
-	openoffice.org-l10n-tr,
+	libreoffice-l10n-tr,
 	iceweasel-l10n-tr
 
 Package: task-turkish-kde-desktop
@@ -2453,7 +2453,7 @@ Recommends:
 	xfonts-bolkhov-75dpi,
 	xfonts-cronyx-100dpi,
 	xfonts-intl-european,
-	openoffice.org-l10n-uk,
+	libreoffice-l10n-uk,
 	iceweasel-l10n-uk,
 	ttf-dejavu,
 	myspell-uk
@@ -2472,7 +2472,7 @@ Description: Vietnamese desktop
  This task localises the desktop in Vietnamese.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-vi,
+	libreoffice-l10n-vi,
 	iceweasel-l10n-vi
 
 Package: task-vietnamese-kde-desktop
@@ -2497,7 +2497,7 @@ Description: Welsh desktop
  This task localises the desktop in Welsh.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-cy,
+	libreoffice-l10n-cy,
 	iceweasel-l10n-cy
 
 Package: task-xhosa-desktop
@@ -2506,7 +2506,7 @@ Description: Xhosa desktop
  This task localises the desktop in Xhosa.
 Depends: ${misc:Depends}, 
 Recommends:
-	openoffice.org-l10n-xh
+	libreoffice-l10n-xh
 
 Package: task-xhosa-kde-desktop
 Architecture: all
