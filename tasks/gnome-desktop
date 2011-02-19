@@ -7,28 +7,6 @@ Description: GNOME desktop environment
  This task provides basic "desktop" software using the GNOME desktop
  environment.
 Key:
-# A very minimal gnome desktop, to ensure that it fits on a normal size CD.
-  gnome-core
-  gdm3
+  task-gnome-desktop
 Packages: task-fields
 Packages-list:
-# accessibility support
-  gnome-accessibility
-# The full gnome desktop environment should be included if possible
-# even if the larger gnome metapackage doesn't fit.
-  gnome-desktop-environment
-# The complete gnome environment, with selected extras.
-# TODO: Everything in list below should be moved to its Depends/Recommends.
-  gnome
-# add gnome support for iceweasel, which is pulled in via the main desktop task
-  iceweasel-gnome-support
-# use rarian-compat instead of scrollkeeper
-  rarian-compat
-# May not get installed unless forced, if some other browser satisfies the
-# dependency, so force it.
-  epiphany-browser
-# GNOME support in OOo
-  openoffice.org-gnome
-  openoffice.org-evolution
-# vector drawing
-  inkscape

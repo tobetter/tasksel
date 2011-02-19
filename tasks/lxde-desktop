@@ -7,15 +7,6 @@ Description: LXDE desktop environment
  This task provides basic "desktop" software using the LXDE desktop
  environment.
 Key:
-# The basics of lxde, not the whole thing.
-  lxde-core
-# gdm is a recommend of lxde, but put it in key to ensure it's available.
-  gdm
+  task-lxde-desktop
 Packages: task-fields
 Packages-list:
-# lxde meta-package
-  lxde
-#  lxtask
-  openoffice.org-gtk
-# Support for scanners
-  xsane

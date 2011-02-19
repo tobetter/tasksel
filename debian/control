@@ -1,6 +1,6 @@
 Source: tasksel
-Section: admin
-Priority: important
+Section: tasks
+Priority: optional
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Uploaders: Joey Hess <joeyh@debian.org>, Otavio Salvador <otavio@debian.org>
 Standards-Version: 3.9.1
@@ -8,6 +8,8 @@ Build-Depends: po-debconf, debhelper (>= 7), gettext, dpkg-dev (>= 1.9.0)
 Vcs-Git: git://git.debian.org/git/tasksel/tasksel.git
 
 Package: tasksel
+Section: admin
+Priority: important
 Architecture: all
 Pre-Depends: debconf (>= 1.5.34) | cdebconf (>= 0.106)
 Depends: ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1), tasksel-data
@@ -17,6 +19,8 @@ Description: Tool for selecting tasks for installation on Debian systems
  want to configure their system to perform a specific task.
 
 Package: tasksel-data
+Section: admin
+Priority: important
 Architecture: all
 Depends: ${misc:Depends}, tasksel
 Recommends: laptop-detect
@@ -24,3 +28,185 @@ Conflicts: tasksel (<< 2.67)
 Description: Official tasks used for installation of Debian systems
  This package contains data about the standard tasks available on a Debian
  system.
+
+Package: task-desktop
+Architecture: all
+Depends:
+	xorg,
+	xserver-xorg-video-all,
+	xserver-xorg-input-all,
+	desktop-base,
+	menu
+Recommends:
+# The default desktop is gnome, but any can be used with this task.
+	task-gnome-desktop | task-kde-desktop | task-lxde-desktop | task-xfce-desktop,
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
+	iceweasel,
+# the gimp is the best image editor, no matter the desktop
+	gimp,
+# openoffice.org is the best word processor / office suite at the moment
+	openoffice.org,
+	openoffice.org-gcj,
+# make help menu work
+	openoffice.org-help-en-us,
+# make thesaurus work
+	openoffice.org-thesaurus-en-us,
+# make spellchecker work
+	myspell-en-us,
+# For use by third-party apps.
+	xdg-utils,
+# mdns/zeroconf stuff
+	avahi-daemon,
+	libnss-mdns,
+# desktop machines might not be up 24/7
+	anacron,
+# The following packages are the same as the packages in the
+# print-server task and provide printing via CUPS.
+	cups,
+	cups-client,
+	cups-bsd,
+	foomatic-db-engine,
+	cups-driver-gutenprint,
+	hpijs,
+	hplip,
+	hp-ppd,
+	foo2zjs,
+# gui for configuration of the print server
+	system-config-printer,
+# CPU frequency scaling
+	cpufrequtils,
+# Warn about and allow reporting kernel oopses.
+	kerneloops,
+# 3d acceleration (with free drivers)
+	libgl1-mesa-dri,
+# Make sure that CDs etc can be ejected. May not be installed by d-i.
+	eject,
+# sound
+	alsa-utils,
+	alsa-base,
+# flash -- Note that gnome recommends browser-plugin-gnash;
+# if this is changed here to a different flash player, it should
+# also be changed there.
+	browser-plugin-gnash,
+# ensure pm-utils is available
+	pm-utils
+Description: Debian desktop environment
+ This task package is used to install the Debian desktop.
+
+Package: task-gnome-desktop
+Architecture: all
+Depends:
+	task-desktop,
+# only depend on a very minimal gnome desktop, to ensure it fits on CD1
+	gnome-core,
+	gdm3
+Recommends:
+# Include accessibility support even if the gnome-desktop-environment
+# metapackage doesn't fit.
+	gnome-accessibility,
+# The full gnome desktop environment should be included if possible
+# even if the larger gnome metapackage doesn't fit.
+	gnome-desktop-environment,
+	gnome,
+# add gnome support for iceweasel, which is pulled in via the main
+# desktop task
+	iceweasel-gnome-support,
+# May not get installed unless forced, if some other browser
+# satisfies the dependency, so force it.
+	epiphany-browser,
+# GNOME support in OOo
+	openoffice.org-gnome,
+	openoffice.org-evolution,
+# vector drawing
+	inkscape
+Description: GNOME desktop environment
+ This task package is used to install the Debian desktop, featuring
+ the GNOME Decktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+
+Package: task-kde-desktop
+Architecture: all
+Depends:
+	task-desktop,
+	kde-standard,
+	kdm
+Recommends:
+# accessibility support
+	kdeaccessibility,
+# enable debian menus
+	menu-xdg,
+# package management. Need something here, but please, no kpackage.
+#  kpackage,
+# debconf kde frontend
+	libqtgui4-perl,
+	libqtcore4-perl,
+# cd/dvd burner
+	k3b,
+	k3b-i18n,
+# desktop network setup
+	network-manager-kde,
+# This is configured by d-i to be used to gain root on systems with
+# no root password. It is not enabled by default.
+	kdesudo,
+# KDE-OpenOffice integration
+	openoffice.org-kde
+Description: KDE desktop environment
+ This task package is used to install the Debian desktop, featuring
+ the KDE desktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+
+Package: task-lxde-desktop
+Architecture: all
+Depends:
+	task-desktop,
+# The basics of lxde, not the whole thing.
+	lxde-core,
+# gdm is a recommend of lxde, but put here to ensure it's available
+	gdm
+Recommends:
+	lxde,
+# lxtask,
+	xsane
+Description: LXDE desktop environment
+ This task package is used to install the Debian desktop, featuring
+ the LXDE desktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+
+Package: task-xfce-desktop
+Architecture: all
+Depends:
+	task-desktop,
+# The basics of xfce, not the whole thing.
+	xfce4,
+# Would be better to use xdm here?
+	gdm
+Recommends:
+# well known xfce4 enhancements
+	xfce4-goodies,
+# xfce text editor  
+	mousepad,
+# calendar application  
+	orage,
+	xfce4-mixer,
+	xfprint4,
+	xfce4-terminal,
+	openoffice.org-gtk,
+# Xfce Desktop is really improved by using dbus
+	dbus-x11,
+# Support for scanners
+	xsane,
+# media players
+	vlc,
+	quodlibet,
+# pdf viewer
+	epdfview,
+# icon theme
+	tango-icon-theme,
+	xfce4-power-manager,
+# network management
+	wicd
+Description: XFCE desktop environment
+ This task package is used to install the Debian desktop, featuring
+ the XFCE desktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
