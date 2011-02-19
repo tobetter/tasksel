@@ -210,3 +210,23 @@ Description: XFCE desktop environment
  This task package is used to install the Debian desktop, featuring
  the XFCE desktop environment, and with other packages that Debian users
  expect to have available on the desktop.
+
+Package: task-laptop
+Architecture: all
+Depends:
+	acpid,
+	anacron
+Recommends:
+	apmd,
+	acpi,
+	acpi-support,
+	pcmciautils,
+	wireless-tools,
+	wpasupplicant,
+	cpufrequtils,
+	avahi-autoipd,
+	bluetooth,
+	powertop,
+	pm-utils
+Description: Laptop
+ This task package installs software useful for a laptop.
