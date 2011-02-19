@@ -230,3 +230,38 @@ Recommends:
 	pm-utils
 Description: Laptop
  This task package installs software useful for a laptop.
+
+Package: task-web-server
+Architecture: all
+Depends:
+	apache2-mpm-prefork
+Recommends:
+	apache2-doc,
+	libapache2-mod-php5,
+	libapache2-mod-perl2,
+	libapache2-mod-python,
+	analog
+Description: Web server
+ This task selects packages useful for a general purpose web server
+ system.
+
+Package: task-mail-server
+Architecture: all
+Depends:
+	exim4
+Recommends:
+# HELP: What's a good pop server?
+	qpopper,
+	mailx,
+	mutt,
+	exim4-daemon-light,
+	exim4-config,
+	procmail,
+	mailagent,
+	uw-imapd,
+# HELP: what about some webmail thing?
+	spamassassin,
+	sa-exim,
+Description: Mail server
+ This task selects a variety of packages useful for a general purpose mail
+ server system.
