@@ -1,14 +1,14 @@
 # translation of tasksel_tasks_po_ne.po to Nepali
+# # translation of tasksel_tasks_po.po to Nepali
 # Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>, 2006.
 # Shiva Prasad Pokharel <pokharelshiva@hotmail.com>, 2006.
-# shyam krishna bal <shyamkrishna_bal@yahoo.com>, 2007.
-# # translation of tasksel_tasks_po.po to Nepali
+# shyam krishna bal <shyamkrishna_bal@yahoo.com>, 2007, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks_po_ne\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-31 21:35-0300\n"
-"PO-Revision-Date: 2007-07-25 18:18+0545\n"
+"PO-Revision-Date: 2011-02-18 16:44-0600\n"
 "Last-Translator: shyam krishna bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
 "Language: ne\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2;plural=(n!=1)\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.1\n"
 
 #. Description
 #: ../po/debian-tasks.desc:1001
@@ -43,10 +43,8 @@ msgstr ""
 
 #. Description
 #: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
 msgid "Graphical desktop environment"
-msgstr "Xfce डेस्कटप परिवेश"
+msgstr "ग्राफिकल डेस्कटप परिवेश"
 
 #. Description
 #: ../po/debian-tasks.desc:2001
@@ -167,26 +165,20 @@ msgstr "यो कार्यले तपाईँको प्रणाली
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
 msgid "SSH server"
-msgstr "DNS सर्भर"
+msgstr "SSH सर्भर"
 
 #. Description
 #: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
 msgid ""
 "This task sets up your system to be remotely accessed through SSH "
 "connections."
-msgstr "यो कार्यले तपाईँको प्रणालीलाई मुद्रण सर्भरको रुपमा सेट गर्दछ ।"
+msgstr "यो कार्यले तपाईँको प्रणालीलाई SSH जडानद्वारा रिमोट पहुंचको सेट गर्दछ ।"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
-#, fuzzy
-#| msgid "Standard system"
 msgid "Standard system utilities"
-msgstr "मानक प्रणाली"
+msgstr "मानक प्रणाली उपयोगिताहरु"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -194,6 +186,8 @@ msgid ""
 "This task sets up a basic user environment, providing a reasonably small "
 "selection of services and tools usable on the command line."
 msgstr ""
+"यो कार्यले साधरण प्रयोगकर्ता वातावरण स्थापितना गर्दै,थोरै भन्दा थोरै उपभोग्य सेवा र "
+"उपकरण आदेश रेखामा प्रदान गर्छ।"
 
 #. Description
 #: ../po/debian-tasks.desc:14001
