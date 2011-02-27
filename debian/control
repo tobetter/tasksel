@@ -214,9 +214,9 @@ Description: XFCE desktop environment
 Package: task-laptop
 Architecture: all
 Depends:
-	acpid,
 	anacron
 Recommends:
+	acpid,
 	apmd,
 	acpi,
 	acpi-support,
@@ -265,3 +265,16 @@ Recommends:
 Description: Mail server
  This task selects a variety of packages useful for a general purpose mail
  server system.
+
+Package: task-dns-server
+Architecture: all
+Depends:
+	bind9
+Recommends:
+	bind9-doc,
+	dnsutils,
+	lwresd,
+	dlint
+Descriptions: DNS Server
+ This task selects the BIND DNS server, and related documentation and
+ utility packages.
