@@ -12,7 +12,7 @@ Section: admin
 Priority: important
 Architecture: all
 Pre-Depends: debconf (>= 1.5.34) | cdebconf (>= 0.106)
-Depends: ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1), tasksel-data
+Depends: ${perl:Depends}, ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1), tasksel-data
 Conflicts: debconf (<< 1.4.27), base-config (<< 2.32)
 Description: Tool for selecting tasks for installation on Debian systems
  This package provides 'tasksel', a simple interface for users who
