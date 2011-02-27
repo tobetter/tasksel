@@ -11,6 +11,8 @@ packages. If the -t option is given, then tasksel prints out the command
 line to use to stdout instead. All other messages are printed to stderr.
 
 To get a new task added to Debian, please file a bug report on tasksel.
+Or, create a task package yourself, and then file a bug report on tasksel
+for it to be added to tasksel's UI.
 
 Debian derived distributions can add a new .desc file to
 /usr/share/tasksel/ to add additional tasks, or modify/divert
@@ -45,12 +47,12 @@ the packages you want to include in the task in the following lines.
 All Key packages will be also be selected for installation when a task is
 installed.
 
-In Debian, we mostly use the "task-fields" method, which is built into
-tasksel, and looks for Task fields in the control data of available
-packages, that list the name of the task. Another available method is
-"standard", which just installs all standard priority packages, and another
-is "manual", which, as a special case, runs aptitude interactively to
-select what to install.
+In Debian, we have switched to using task packages, so the task files just
+list the task packages as Key, and don't list other packages in the task
+(instead they are Depends and Recommends of the task package). Another
+available method is "standard", which just installs all standard priority
+packages, and another is "manual", which, as a special case, runs aptitude
+interactively to select what to install.
 
 It's also possible to define other methods, by adding programs to
 /usr/lib/tasksel/packages/. Then list the name of the program as the first
