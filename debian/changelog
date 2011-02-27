@@ -1,5 +1,6 @@
 tasksel (3.00) UNRELEASED; urgency=low
 
+  [ Joey Hess ]
   * Task packages are back! For now, the task-* metapackages are only
     used to hold Depends and Recommends; all other task info that tasksel
     uses remains in debian-tasks.desc. Plan is to migrate the rest into
@@ -11,6 +12,10 @@ tasksel (3.00) UNRELEASED; urgency=low
   * Moved iceweasel to Recommends of task-desktop; was in Key/Depends.
   * Moved acpid to Recommends of task-laptop from Depends, anticipating
     kFreeBSD laptops.
+
+  [ Christian Perrier ]
+  * Replace aspell-fi by libenchant-voikko in finnish task
+    Closes: #585840
 
  -- Joey Hess <joeyh@debian.org>  Sat, 26 Feb 2011 23:33:30 -0400
 
