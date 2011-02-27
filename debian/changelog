@@ -1,4 +1,4 @@
-tasksel (3.00) UNRELEASED; urgency=low
+tasksel (3.00) experimental; urgency=low
 
   [ Joey Hess ]
   * Task packages are back! For now, the task-* metapackages are only
@@ -12,6 +12,9 @@ tasksel (3.00) UNRELEASED; urgency=low
   * Moved iceweasel to Recommends of task-desktop; was in Key/Depends.
   * Moved acpid to Recommends of task-laptop from Depends, anticipating
     kFreeBSD laptops.
+  * Removed unnecessary Recommends of xfonts-base, which is included
+    in X anyway, and lintian complains about.
+  * Updated to debhelper v8.
 
   [ Christian Perrier ]
   * Replace aspell-fi by libenchant-voikko in finnish task
@@ -20,7 +23,7 @@ tasksel (3.00) UNRELEASED; urgency=low
   [ Translations of tasks ]
   * Nepali (shyam krishna bal).  Closes: #615007
 
- -- Joey Hess <joeyh@debian.org>  Sat, 26 Feb 2011 23:33:30 -0400
+ -- Joey Hess <joeyh@debian.org>  Sun, 27 Feb 2011 00:04:29 -0400
 
 tasksel (2.89) unstable; urgency=low
 
