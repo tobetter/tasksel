@@ -1,12 +1,26 @@
-tasksel (2.90) UNRELEASED; urgency=low
+tasksel (3.00) UNRELEASED; urgency=low
 
+  [ Joey Hess ]
+  * Task packages are back! For now, the task-* metapackages are only
+    used to hold Depends and Recommends; all other task info that tasksel
+    uses remains in debian-tasks.desc. Plan is to migrate the rest into
+    the task packages later, where possible.
+  * FTP-master: I've put the task packages in a new section, "tasks",
+    which I hope you'll approve & create.
+  * Remove rarian-compat from task-gnome-desktop. Dependencies on
+    scrollkeeper should default to rarian-compat by now.
+  * Moved iceweasel to Recommends of task-desktop; was in Key/Depends.
+  * Moved acpid to Recommends of task-laptop from Depends, anticipating
+    kFreeBSD laptops.
+
+  [ Christian Perrier ]
   * Replace aspell-fi by libenchant-voikko in finnish task
     Closes: #585840
 
   [ Translations of tasks ]
   * Nepali (shyam krishna bal).  Closes: #615007
 
- -- Christian Perrier <bubulle@debian.org>  Wed, 23 Feb 2011 19:51:31 +0100
+ -- Joey Hess <joeyh@debian.org>  Sat, 26 Feb 2011 23:33:30 -0400
 
 tasksel (2.89) unstable; urgency=low
 

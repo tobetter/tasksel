@@ -5,17 +5,6 @@ Description: Romanian desktop
  This task localises the desktop in Romanian.
 Maintainer: Eddy Petrişor <eddy.petrisor@gmail.com>
 Key:
+  task-romanian-desktop
 Packages: task-fields
 Packages-list:
-# fonty
- openoffice.org-l10n-ro
-# this appears to be one of the few fonts that has t with comma bellow
- ttf-dejavu
- ttf-freefont
-# is this ok?
-# xfonts-base-transcoded
-# Added because polish-desktop uses them
- xfonts-terminus
- iceweasel-l10n-ro
-# Not yet available.
- # myspell-ro

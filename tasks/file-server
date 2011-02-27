@@ -4,13 +4,6 @@ Description: File server
  This task sets up your system to be a file server, supporting both CIFS
  and NFS.
 Key:
- nfs-kernel-server
- samba
+  task-file-server
 Packages: task-fields
 Packages-list:
- samba-doc
- smbclient
- swat
- smbfs
- winbind
- smartmontools

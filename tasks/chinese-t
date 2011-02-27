@@ -6,14 +6,6 @@ Description: Traditional Chinese environment
  documentation that make it easier for Chinese speakers
  to use Debian, using the traditional Chinese encoding.
 Key:
-# jfbterm doesn't support input method. conflicts with gpm,
-# and needs enable FrameBuffer. It is not easy to use,
-# so that we decide to disable it here.
-# Please see http://moto.debian.org.tw/viewtopic.php?t=13004 for more details.
-# jfbterm
+  task-chinese-t
 Packages: task-fields
 Packages-list:
-# zh-autoconvert		# may use iconv instead.
-# quick-reference-zh-tw		# seems inessential.
-# ttf2pt1			# seems inessential.
-# ttf2pt1-chinese		# seems inessential.

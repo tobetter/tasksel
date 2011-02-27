@@ -7,33 +7,6 @@ Description: Xfce desktop environment
  This task provides basic "desktop" software using the Xfce desktop
  environment.
 Key:
-# The basics of xfce, not the whole thing.
-  xfce4
-# Would be better to use xdm here?
-  gdm
+  task-xfce-desktop
 Packages: task-fields
 Packages-list:
-# well known xfce4 enhancements
-  xfce4-goodies
-# xfce text editor  
-  mousepad
-# calendar application  
-  orage
-  xfce4-mixer
-  xfprint4
-  xfce4-terminal
-  openoffice.org-gtk
-# Xfce Desktop is really improved by using dbus
-  dbus-x11
-# Support for scanners
-  xsane
-# media players
-  vlc
-  quodlibet
-# pdf viewer
-  epdfview
-# icon theme
-  tango-icon-theme
-  xfce4-power-manager
-# network management
-  wicd

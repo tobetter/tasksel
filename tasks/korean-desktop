@@ -4,16 +4,6 @@ Section: l10n
 Description: Korean desktop
  This task localises the desktop in Korean.
 Key:
+  task-korean-desktop
 Packages: task-fields
 Packages-list:
- ibus-hangul
- ttf-nanum
- ttf-nanum-coding
- ttf-unfonts-core
- iceweasel-l10n-ko
- openoffice.org-help-ko
- openoffice.org-l10n-ko
- hunspell-ko
-# poppler-data which is non-free is needed to display
-# Korean on poppler applications.
- poppler-data

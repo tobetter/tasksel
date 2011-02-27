@@ -4,26 +4,6 @@ Section: l10n
 Description: Traditional Chinese desktop
  This task localises the desktop in Traditional Chinese.
 Key:
+  task-chinese-t-desktop
 Packages: task-fields
 Packages-list:
-  scim-chewing
-  im-switch
-  scim-tables-zh
-  xfonts-wqy
-  # Uncomment once gcin 1.3.3 is available.
-  #gcin
-  stardict
-  ttf-arphic-ukai
-  #xfonts-efont-unicode		# seems inessential.
-  x-ttcidfont-conf
-  ttf-arphic-uming
-  #xfonts-intl-chinese		# seems inessential.
-  #unifont			# seems inessential.
-  ttf-wqy-zenhei 		# seems openjdk needs this to display Chinese.
-  openoffice.org-l10n-zh-tw
-  openoffice.org-help-zh-tw
-  iceweasel-l10n-zh-tw
-  paps
-# poppler-data which is non-free is needed to display
-# Chinese on poppler applications.
-  poppler-data

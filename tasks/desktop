@@ -6,64 +6,6 @@ Description: Graphical desktop environment
  This task provides basic desktop software and serves as a basis for the
  GNOME and KDE desktop tasks.
 Key:
-  xorg
-  xserver-xorg-video-all
-  xserver-xorg-input-all
-  desktop-base
-  menu
-# firefox (ne iceweasel) is the most popular web browser at the moment,
-# although both gnome and kde offer their own too
-  iceweasel
+  task-desktop
 Packages: task-fields
 Packages-list:
-# the gimp is the best image editor, no matter the desktop
-  gimp
-# openoffice.org is the best word processor / office suite at the moment
-  openoffice.org
-  openoffice.org-gcj
-# make help menu work
-  openoffice.org-help-en-us
-# make thesaurus work
-  openoffice.org-thesaurus-en-us
-# make spellchecker work
-  myspell-en-us
-# Since neither the gnome nor kde desktop tasks may be available, include
-# enough basic X stuff here for a minally useful desktop without them.
-  twm
-  xterm
-# For use by third-party apps.
-  xdg-utils
-# mdns/zeroconf stuff
-  avahi-daemon
-  libnss-mdns
-# desktop machines might not be up 24/7
-  anacron
-# The following packages are the same as the packages in the print-server
-# task and provide printing via CUPS.
-  cups
-  cups-client
-  cups-bsd
-  foomatic-db-engine
-  cups-driver-gutenprint
-  hpijs
-  hplip
-  hp-ppd
-  foo2zjs
-# gui for configuration of the print server
-  system-config-printer
-# CPU frequency scaling
-  cpufrequtils
-# Warn about and allow reporting kernel oopses.
-  kerneloops
-# 3d acceleration (with free drivers)
-  libgl1-mesa-dri
-# Make sure that CDs etc can be ejected. May not be installed by d-i.
-  eject
-# sound
-  alsa-utils
-  alsa-base
-# flash -- Note that gnome recommends browser-plugin-gnash; if this is changed
-# here to a different flash player, it should also be changed there.
-  browser-plugin-gnash
-# ensure pm-utils is available
-  pm-utils

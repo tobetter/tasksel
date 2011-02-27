@@ -5,11 +5,6 @@ Description: Web server
  This task selects packages useful for a general purpose web server
  system.
 Key:
- apache2-mpm-prefork
+  task-web-server
 Packages: task-fields
 Packages-list:
- apache2-doc
- libapache2-mod-php5
- libapache2-mod-perl2
- libapache2-mod-python
- analog

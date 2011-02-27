@@ -1,6 +1,6 @@
 Source: tasksel
-Section: admin
-Priority: important
+Section: tasks
+Priority: optional
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Uploaders: Joey Hess <joeyh@debian.org>, Otavio Salvador <otavio@debian.org>
 Standards-Version: 3.9.1
@@ -8,15 +8,19 @@ Build-Depends: po-debconf, debhelper (>= 7), gettext, dpkg-dev (>= 1.9.0)
 Vcs-Git: git://git.debian.org/git/tasksel/tasksel.git
 
 Package: tasksel
+Section: admin
+Priority: important
 Architecture: all
 Pre-Depends: debconf (>= 1.5.34) | cdebconf (>= 0.106)
-Depends: ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1), tasksel-data
+Depends: ${perl:Depends}, ${misc:Depends}, liblocale-gettext-perl, aptitude (>= 0.2.15-1), tasksel-data
 Conflicts: debconf (<< 1.4.27), base-config (<< 2.32)
 Description: Tool for selecting tasks for installation on Debian systems
  This package provides 'tasksel', a simple interface for users who
  want to configure their system to perform a specific task.
 
 Package: tasksel-data
+Section: admin
+Priority: important
 Architecture: all
 Depends: ${misc:Depends}, tasksel
 Recommends: laptop-detect
@@ -24,3 +28,2497 @@ Conflicts: tasksel (<< 2.67)
 Description: Official tasks used for installation of Debian systems
  This package contains data about the standard tasks available on a Debian
  system.
+
+Package: task-desktop
+Architecture: all
+Description: Debian desktop environment
+ This task package is used to install the Debian desktop.
+Depends:
+	xorg,
+	xserver-xorg-video-all,
+	xserver-xorg-input-all,
+	desktop-base,
+	menu
+Recommends:
+# The default desktop is gnome, but any can be used with this task.
+	task-gnome-desktop | task-kde-desktop | task-lxde-desktop | task-xfce-desktop,
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
+	iceweasel,
+# the gimp is the best image editor, no matter the desktop
+	gimp,
+# openoffice.org is the best word processor / office suite at the moment
+	openoffice.org,
+	openoffice.org-gcj,
+# make help menu work
+	openoffice.org-help-en-us,
+# make thesaurus work
+	openoffice.org-thesaurus-en-us,
+# make spellchecker work
+	myspell-en-us,
+# For use by third-party apps.
+	xdg-utils,
+# mdns/zeroconf stuff
+	avahi-daemon,
+	libnss-mdns,
+# desktop machines might not be up 24/7
+	anacron,
+# The following packages are the same as the packages in the
+# print-server task and provide printing via CUPS.
+	cups,
+	cups-client,
+	cups-bsd,
+	foomatic-db-engine,
+	cups-driver-gutenprint,
+	hpijs,
+	hplip,
+	hp-ppd,
+	foo2zjs,
+# gui for configuration of the print server
+	system-config-printer,
+# CPU frequency scaling
+	cpufrequtils,
+# Warn about and allow reporting kernel oopses.
+	kerneloops,
+# 3d acceleration (with free drivers)
+	libgl1-mesa-dri,
+# Make sure that CDs etc can be ejected. May not be installed by d-i.
+	eject,
+# sound
+	alsa-utils,
+	alsa-base,
+# flash -- Note that gnome recommends browser-plugin-gnash;
+# if this is changed here to a different flash player, it should
+# also be changed there.
+	browser-plugin-gnash,
+# ensure pm-utils is available
+	pm-utils
+
+Package: task-gnome-desktop
+Architecture: all
+Description: GNOME desktop environment
+ This task package is used to install the Debian desktop, featuring
+ the GNOME Decktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+Depends:
+	task-desktop,
+# only depend on a very minimal gnome desktop, to ensure it fits on CD1
+	gnome-core,
+	gdm3
+Recommends:
+# Include accessibility support even if the gnome-desktop-environment
+# metapackage doesn't fit.
+	gnome-accessibility,
+# The full gnome desktop environment should be included if possible
+# even if the larger gnome metapackage doesn't fit.
+	gnome-desktop-environment,
+	gnome,
+# add gnome support for iceweasel, which is pulled in via the main
+# desktop task
+	iceweasel-gnome-support,
+# May not get installed unless forced, if some other browser
+# satisfies the dependency, so force it.
+	epiphany-browser,
+# GNOME support in OOo
+	openoffice.org-gnome,
+	openoffice.org-evolution,
+# vector drawing
+	inkscape
+
+Package: task-kde-desktop
+Architecture: all
+Description: KDE desktop environment
+ This task package is used to install the Debian desktop, featuring
+ the KDE desktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+Depends:
+	task-desktop,
+	kde-standard,
+	kdm
+Recommends:
+# accessibility support
+	kdeaccessibility,
+# enable debian menus
+	menu-xdg,
+# package management. Need something here, but please, no kpackage.
+#  kpackage,
+# debconf kde frontend
+	libqtgui4-perl,
+	libqtcore4-perl,
+# cd/dvd burner
+	k3b,
+	k3b-i18n,
+# desktop network setup
+	network-manager-kde,
+# This is configured by d-i to be used to gain root on systems with
+# no root password. It is not enabled by default.
+	kdesudo,
+# KDE-OpenOffice integration
+	openoffice.org-kde
+
+Package: task-lxde-desktop
+Architecture: all
+Description: LXDE desktop environment
+ This task package is used to install the Debian desktop, featuring
+ the LXDE desktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+Depends:
+	task-desktop,
+# The basics of lxde, not the whole thing.
+	lxde-core,
+# gdm is a recommend of lxde, but put here to ensure it's available
+	gdm
+Recommends:
+	lxde,
+# lxtask,
+	xsane
+
+Package: task-xfce-desktop
+Architecture: all
+Description: XFCE desktop environment
+ This task package is used to install the Debian desktop, featuring
+ the XFCE desktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+Depends:
+	task-desktop,
+# The basics of xfce, not the whole thing.
+	xfce4,
+# Would be better to use xdm here?
+	gdm
+Recommends:
+# well known xfce4 enhancements
+	xfce4-goodies,
+# xfce text editor  
+	mousepad,
+# calendar application  
+	orage,
+	xfce4-mixer,
+	xfprint4,
+	xfce4-terminal,
+	openoffice.org-gtk,
+# Xfce Desktop is really improved by using dbus
+	dbus-x11,
+# Support for scanners
+	xsane,
+# media players
+	vlc,
+	quodlibet,
+# pdf viewer
+	epdfview,
+# icon theme
+	tango-icon-theme,
+	xfce4-power-manager,
+# network management
+	wicd
+
+Package: task-laptop
+Architecture: all
+Description: Laptop
+ This task package installs software useful for a laptop.
+Depends:
+	anacron
+Recommends:
+	acpid,
+	apmd,
+	acpi,
+	acpi-support,
+	pcmciautils,
+	wireless-tools,
+	wpasupplicant,
+	cpufrequtils,
+	avahi-autoipd,
+	bluetooth,
+	powertop,
+	pm-utils
+
+Package: task-web-server
+Architecture: all
+Description: Web server
+ This task selects packages useful for a general purpose web server
+ system.
+Depends:
+	apache2-mpm-prefork
+Recommends:
+	apache2-doc,
+	libapache2-mod-php5,
+	libapache2-mod-perl2,
+	libapache2-mod-python,
+	analog
+
+Package: task-mail-server
+Architecture: all
+Description: Mail server
+ This task selects a variety of packages useful for a general purpose mail
+ server system.
+Depends:
+	exim4
+Recommends:
+# HELP: What's a good pop server?
+	qpopper,
+	mailx,
+	mutt,
+	exim4-daemon-light,
+	exim4-config,
+	procmail,
+	mailagent,
+	uw-imapd,
+# HELP: what about some webmail thing?
+	spamassassin,
+	sa-exim,
+
+Package: task-dns-server
+Architecture: all
+Description: DNS Server
+ This task selects the BIND DNS server, and related documentation and
+ utility packages.
+Depends:
+	bind9
+Recommends:
+	bind9-doc,
+	dnsutils,
+	lwresd,
+	dlint
+
+Package: task-print-server
+Architecture: all
+Description: Print server
+ This task sets up your system to be a print server.
+Depends:
+	cups,
+	cups-client,
+	cups-bsd
+Recommends:
+	foomatic-db-engine,
+	cups-driver-gutenprint,
+	hpijs,
+	hplip,
+	hp-ppd,
+	foo2zjs,
+# Note that this is not included in the desktop task, since it only
+# supports high-end postcript printers.
+	openprinting-ppds
+
+Package: task-ssh-server
+Architecture: all
+Description: SSH server
+ This task sets up your system to be remotely accessed through SSH
+ connections.
+Depends:
+	openssh-server
+Recommends:
+
+Package: task-standard
+Architecture: all
+Description: Standard system utilities
+ This task sets up a basic user environment, providing a reasonably
+ small selection of services and tools usable on the command line.
+
+
+Package: task-database-server
+Architecture: all
+# HELP: Would "relational database server" be a better short desk?
+# HELP: the folks on #debian-devel think if you want a db server, you
+# probably want to pick between postgres and mysql. Should this task live?
+Description: SQL database
+ This task selects client and server packages for the PostgreSQL database.
+ .
+ PostgreSQL is an SQL relational database, offering increasing SQL92
+ compliance and some SQL3 features.  It is suitable for use with multi-user
+ database access, through its facilities for transactions and fine-grained
+ locking.
+Depends:
+	postgresql
+Recommends:
+	postgresql-client,
+	postgresql-doc,
+	postgresql-contrib
+
+Package: task-file-server
+Architecture: all
+Description: File server
+ This task sets up your system to be a file server, supporting both CIFS
+ and NFS.
+Depends:
+	nfs-kernel-server,
+	samba
+Recommends:
+	samba-doc,
+	smbclient,
+	swat,
+	smbfs,
+	winbind,
+	smartmontools
+
+Package: task-finnish
+Architecture: all
+Description: Finnish environment
+ This task installs packages and documentation in Finnish
+ to help Finnish speaking people use Debian.
+Depends:
+Recommends:
+	tmispell-voikko,
+	voikko-fi,
+	libenchant-voikko
+
+Package: task-albanian-desktop
+Architecture: all
+Description: Albanian desktop
+ This task localises the desktop in Albanian.
+Depends:
+Recommends:
+	iceweasel-l10n-sq
+
+Package: task-amharic
+Architecture: all
+Description: Amharic environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Amharic speakers
+ to use Debian.
+Depends:
+Recommends:
+	aspell-am
+
+Package: task-amharic-desktop
+Architecture: all
+Description: Amharic desktop
+ This task localises the desktop in Amharic.
+Depends:
+	ttf-sil-abyssinica
+Recommends:
+	scim-tables-additional
+
+Package: task-amharic-kde-desktop
+Architecture: all
+Description: Amharic KDE desktop
+ This task localises the KDE desktop in Amharic.
+Depends:
+Recommends:
+
+Package: task-arabic
+Architecture: all
+Description: Arabic environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Arabic speakers
+ to use Debian.
+Depends:
+Recommends:
+	xfonts-intl-arabic,
+	ttf-arabeyes,
+	aspell-ar,
+	aspell-ar-large,
+	itools
+
+Package: task-arabic-desktop
+Architecture: all
+Description: Arabic desktop
+ This task localises the desktop in Arabic.
+Depends:
+Recommends:
+	ttf-kacst,
+	ttf-farsiweb,
+	iceweasel-l10n-ar,
+	openoffice.org-l10n-ar,
+	hunspell-ar
+
+Package: task-arabic-kde-desktop
+Architecture: all
+Description: Arabic KDE desktop
+ This task localises the KDE desktop in Arabic.
+Depends:
+Recommends:
+	kde-l10n-ar
+
+Package: task-asturian
+Architecture: all
+Description: Asturian environment
+ This task installs packages and documentation in Asturian
+ to help Asturian speaking people use Debian.
+Depends:
+Recommends:
+
+Package: task-asturian-desktop
+Architecture: all
+Description: Asturian desktop
+ This task localises the desktop in Asturian.
+Depends:
+Recommends:
+	openoffice.org-l10n-ast
+
+Package: task-basque
+Architecture: all
+Description: Basque environment
+ This task installs packages and documentation in Basque
+ to help Basque speaking people use Debian.
+Depends:
+Recommends:
+	aspell-eu-es
+
+Package: task-basque-desktop
+Architecture: all
+Description: Basque desktop
+ This task localises the desktop in Basque.
+Depends:
+Recommends:
+	iceweasel-l10n-eu,
+	openoffice.org-l10n-eu,
+	openoffice.org-help-eu
+
+Package: task-basque-kde-desktop
+Architecture: all
+Description: Basque KDE desktop
+ This task localises the KDE desktop in Basque.
+Depends:
+Recommends:
+	kde-l10n-eu
+
+Package: task-belarusian
+Architecture: all
+Description: Belarusian environment
+ This task installs packages and documentation in Belarusian
+ to help Belarusian speaking people use Debian.
+Depends:
+Recommends:
+
+Package: task-belarusian-desktop
+Architecture: all
+Description: Belarusian desktop
+ This task localises the desktop in Belarusian.
+Depends:
+Recommends:
+	openoffice.org-l10n-be-by,
+	iceweasel-l10n-be
+
+Package: task-belarusian-kde-desktop
+Architecture: all
+Description: Belarusian KDE desktop
+ This task localises the KDE desktop in Belarusian.
+Depends:
+Recommends:
+
+Package: task-bengali
+Architecture: all
+Description: Bengali environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Bengali speakers
+ to use Debian.
+Depends:
+Recommends:
+	ttf-bengali-fonts,
+	aspell-bn
+
+Package: task-bengali-desktop
+Architecture: all
+Description: Bengali desktop
+ This task localises the desktop in Bengali.
+Depends:
+Recommends:
+	openoffice.org-l10n-bn,
+	iceweasel-l10n-bn-in,
+	iceweasel-l10n-bn-bd,
+	ttf-bengali-fonts
+
+Package: task-bengali-kde-desktop
+Architecture: all
+Description: Bengali KDE desktop
+ This task localises the KDE desktop in Bengali.
+Depends:
+Recommends:
+	kde-l10n-bn
+
+Package: task-bosnian
+Architecture: all
+XBC-Maintainer: Safir Secerovic <sapphire@linux.org.ba> 
+Description: Bosnian environment
+ This task installs packages and documentation in Bosnian
+ to help Bosnian speaking people use Debian.
+Depends:
+	locales
+Recommends:
+	aspell-hr,
+	dict-freedict-scr-eng,
+	doc-linux-hr,
+	itools
+
+Package: task-bosnian-desktop
+Architecture: all
+XBC-Maintainer: Safir Secerovic <sapphire@linux.org.ba>
+Description: Bosnian desktop
+ This task localises the desktop in Bosnian.
+Depends:
+Recommends:
+	openoffice.org-l10n-bs,
+	xfonts-biznet-100dpi,
+	xfonts-biznet-75dpi,
+	xfonts-biznet-base,
+	xfonts-terminus,
+	myspell-hr
+
+Package: task-brazilian-portuguese
+Architecture: all
+XBC-Maintainer: Otavio Salvador <otavio@debian.org>
+Description: Brazilian Portuguese environment
+ This task installs programs, data files, and
+ documentation that make it easier for Brazilian Portuguese speakers
+ to use Debian.
+Depends:
+	manpages-pt
+Recommends:
+# Dictionaries
+	ibrazilian,
+	aspell-pt-br,
+	wbrazilian,
+# Other packages to i18n common software
+	util-linux-locales
+
+Package: task-brazilian-portuguese-desktop
+Architecture: all
+XBC-Maintainer: Otavio Salvador <otavio@debian.org>
+Description: Brazilian Portuguese desktop
+ This task localises the desktop in Brasilian Portuguese.
+Depends:
+Recommends:
+	iceweasel-l10n-pt-br,
+# Brazilian version of openoffice.
+# Note that this causes all the openoffice files to be renamed to broffice.
+	broffice.org,
+	myspell-pt-br
+
+Package: task-brazilian-portuguese-kde-desktop
+Architecture: all
+Description: Brazilian Portuguese KDE desktop
+ This task localises the KDE desktop in Brazilian Portuguese.
+Depends:
+Recommends:
+	kde-l10n-ptbr
+
+Package: task-british
+Architecture: all
+Description: British English environment
+ This task installs packages and documentation in British English
+ to help British English speaking people use Debian.
+XBC-Maintainer: Per Olofsson <pelle@debian.org>
+Depends:
+	locales
+Recommends:
+	util-linux-locales,
+	ibritish,
+	wbritish
+
+Package: task-british-desktop
+Architecture: all
+Description: British English desktop
+ This task localises the desktop in British English.
+XBC-Maintainer: Per Olofsson <pelle@debian.org>
+Depends:
+Recommends:
+	iceweasel-l10n-en-gb,
+	openoffice.org-help-en-gb,
+	openoffice.org-l10n-en-gb,
+	myspell-en-gb
+
+Package: task-british-kde-desktop
+Architecture: all
+Description: British KDE desktop
+ This task localises the KDE desktop in British.
+Depends:
+Recommends:
+	kde-l10n-engb
+
+Package: task-bulgarian
+Architecture: all
+Description: Bulgarian environment
+ This task installs programs and data files that make it easier for
+ Bulgarian speakers to use Debian.
+XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
+Depends:
+Recommends:
+	aspell-bg,
+	ibulgarian,
+	wbulgarian
+
+Package: task-bulgarian-desktop
+Architecture: all
+Description: Bulgarian desktop
+ This task localises the desktop in Bulgarian.
+XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
+Depends:
+Recommends:
+	openoffice.org-l10n-bg,
+	iceweasel-l10n-bg,
+	ttf-dejavu,
+	myspell-bg
+
+Package: task-bulgarian-kde-desktop
+Architecture: all
+Description: Bulgarian KDE desktop
+ This task localises the KDE desktop in Bulgarian.
+Depends:
+Recommends:
+	kde-l10n-bg
+
+Package: task-catalan
+Architecture: all
+XBC-Maintainer: Jordi Mallach <jordi@debian.org>
+Description: Catalan environment
+ This task installs packages and documentation in Catalan
+ to help Catalan speaking people use Debian.
+Depends:
+Recommends:
+	aspell-ca,
+	icatalan,
+	wcatalan,
+	util-linux-locales
+
+Package: task-catalan-desktop
+Architecture: all
+XBC-Maintainer: Jordi Mallach <jordi@debian.org>
+Description: Catalan desktop
+ This task localises the desktop in Catalan.
+Depends:
+Recommends:
+	iceweasel-l10n-ca,
+	openoffice.org-l10n-ca,
+	openoffice.org-help-ca,
+	myspell-ca
+
+Package: task-catalan-kde-desktop
+Architecture: all
+Description: Catalan KDE desktop
+ This task localises the KDE desktop in Catalan.
+Depends:
+Recommends:
+	kde-l10n-ca
+
+Package: task-chinese-s
+Architecture: all
+Description: Simplified Chinese environment
+ This task installs programs, data files, fonts, and
+ documentation that make it easier for Chinese speakers
+ to use Debian, using the simplified Chinese encoding.
+Depends:
+	jfbterm,
+	zhcon
+Recommends:
+	zh-autoconvert,
+	debian-zh-faq-s,
+	manpages-zh,
+	fortune-zh,
+# Printing support
+	ttf2pt1,
+	ttf2pt1-chinese
+
+Package: task-chinese-s-desktop
+Architecture: all
+Description: Simplified Chinese desktop
+ This task localises the desktop in Simplified Chinese.
+Depends:
+Recommends:
+	rxvt-ml,
+	mlterm,
+	rxvt-unicode-ml,
+	fcitx,
+	scim-pinyin,
+	im-switch,
+	xfonts-wqy,
+	scim-tables-zh,
+	stardic,
+	x-ttcidfont-conf,
+	xfonts-intl-chinese,
+	xfonts-intl-chinese-big,
+	ttf-arphic-gbsn00lp,
+	ttf-arphic-gkai00mp,
+	unifont,
+	openoffice.org-l10n-zh-cn,
+	openoffice.org-help-zh-cn,
+	iceweasel-l10n-zh-cn,
+	paps,
+# poppler-data which is non-free is needed to display
+# Chinese on poppler applications.
+	poppler-data
+
+Package: task-chinese-s-kde-desktop
+Architecture: all
+Description: Simplified Chinese KDE desktop
+ This task localises the KDE desktop in Simplified Chinese.
+Depends:
+Recommends:
+	kde-l10n-zhcn
+
+Package: task-chinese-t
+Architecture: all
+Description: Traditional Chinese environment
+ This task installs programs, data files, fonts, and
+ documentation that make it easier for Chinese speakers
+ to use Debian, using the traditional Chinese encoding.
+Depends:
+# jfbterm doesn't support input method. conflicts with gpm,
+# and needs enable FrameBuffer. It is not easy to use,
+# so that we decide to disable it here.
+# Please see http://moto.debian.org.tw/viewtopic.php?t=13004 for more details.
+# jfbterm
+Recommends:
+# zh-autoconvert		# may use iconv instead.
+# quick-reference-zh-tw		# seems inessential.
+# ttf2pt1			# seems inessential.
+# ttf2pt1-chinese		# seems inessential.
+
+Package: task-chinese-t-desktop
+Architecture: all
+Description: Traditional Chinese desktop
+ This task localises the desktop in Traditional Chinese.
+Depends:
+Recommends:
+	scim-chewing,
+	im-switch,
+	scim-tables-zh,
+	xfonts-wqy,
+# Uncomment once gcin 1.3.3 is available.
+#gcin
+	stardict,
+	ttf-arphic-ukai,
+#xfonts-efont-unicode		# seems inessential.
+	x-ttcidfont-conf,
+	ttf-arphic-uming,
+#xfonts-intl-chinese		# seems inessential.
+#unifont			# seems inessential.
+# seems openjdk needs this to display Chinese.
+	ttf-wqy-zenhei, 		
+	openoffice.org-l10n-zh-tw,
+	openoffice.org-help-zh-tw,
+	iceweasel-l10n-zh-tw,
+	paps,
+# poppler-data which is non-free is needed to display
+# Chinese on poppler applications.
+	poppler-data
+
+Package: task-chinese-t-kde-desktop
+Architecture: all
+Description: Traditional Chinese KDE desktop
+ This task localises the KDE desktop in Traditional Chinese.
+Depends:
+Recommends:
+	kde-l10n-zhtw
+
+Package: task-croatian
+Architecture: all
+XBC-Maintainer: Safir Secerovic <sapphire@linux.org.ba>
+Description: Croatian environment
+ This task installs packages and documentation in Croatian
+ to help Croatian speaking people use Debian.
+Depends:
+	locales
+Recommends:
+	aspell-hr,
+	dict-freedict-cro-eng,
+	dict-freedict-eng-cro,
+	dict-freedict-scr-eng,
+	doc-linux-hr
+
+Package: task-croatian-desktop
+Architecture: all
+XBC-Maintainer: Safir Secerovic <sapphire@linux.org.ba>
+Description: Croatian desktop
+ This task localises the desktop in Croatian.
+Depends:
+Recommends:
+	openoffice.org-hyphenation-hr,
+	openoffice.org-l10n-hr,
+	xfonts-biznet-100dpi,
+	xfonts-biznet-75dpi,
+	xfonts-biznet-base,
+	xfonts-terminus,
+	myspell-hr,
+	iceweasel-l10n-hr
+
+Package: task-croatian-kde-desktop
+Architecture: all
+Description: Croatian KDE desktop
+ This task localises the KDE desktop in Croatian.
+Depends:
+Recommends:
+	kde-l10n-hr
+
+Package: task-cyrillic
+Architecture: all
+Description: Cyrillic environment
+ This task provides Cyrillic fonts and other software you will need in
+ order to use Cyrillic.  It supports Belarusian, Bulgarian,
+ Macedonian, Russian, Serbian and Ukrainian.
+XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
+Depends:
+Recommends:
+# Translates Cyrillic encodings.
+	konwert
+
+Package: task-cyrillic-desktop
+Architecture: all
+Description: Cyrillic desktop
+ This task localises the desktop in Cyrillic.
+ It supports Belarusian, Bulgarian, Macedonian, Russian, Serbian and Ukrainian.
+XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
+Depends:
+	t1-cyrillic
+Recommends:
+# Keyboard state indicator and switcher for X:
+	xxkb,
+# The main stuff: fonts for X.
+	t1-teams,
+	ttf-arhangai,
+# For CP1251 (Belarusian and Bulgarian):
+	xfonts-bolkhov-cp1251-misc,
+	xfonts-bolkhov-cp1251-75dpi,
+	xfonts-cronyx-cp1251-100dpi,
+# For ISO 8859-5 (Macedonian and Serbian):
+	xfonts-cronyx-isocyr-misc,
+	xfonts-cronyx-isocyr-75dpi,
+	xfonts-cronyx-isocyr-100dpi,
+# For KOI8-R (Russian):
+	xfonts-bolkhov-koi8r-misc,
+	xfonts-bolkhov-koi8r-75dpi,
+	xfonts-cronyx-koi8r-100dpi,
+# For KOI8-U (Ukrainian):
+	xfonts-bolkhov-koi8u-misc,
+	xfonts-bolkhov-koi8u-75dpi,
+	xfonts-cronyx-koi8u-100dpi,
+# For Unicode:
+	xfonts-bolkhov-misc,
+	xfonts-bolkhov-75dpi,
+	xfonts-cronyx-100dpi,
+	openoffice.org-l10n-ru,
+	openoffice.org-l10n-be-by,
+	openoffice.org-l10n-bg
+
+Package: task-cyrillic-kde-desktop
+Architecture: all
+Description: Cyrillic KDE desktop
+ This task localises the KDE desktop in Cyrillic.
+Depends:
+Recommends:
+
+Package: task-czech
+Architecture: all
+Description: Czech environment
+ This task installs packages and documentation in Czech
+ to help Czech speaking people use Debian.
+Depends:
+	manpages-cs
+Recommends:
+	aspell-cs
+
+Package: task-czech-desktop
+Architecture: all
+Description: Czech desktop
+ This task localises the desktop in Czech.
+Depends:
+Recommends:
+	iceweasel-l10n-cs,
+	openoffice.org-l10n-cs,
+	openoffice.org-help-cs,
+	openoffice.org-thesaurus-cs,
+	xfonts-terminus,
+	myspell-cs-cz
+
+Package: task-czech-kde-desktop
+Architecture: all
+Description: Czech KDE desktop
+ This task localises the KDE desktop in Czech.
+Depends:
+Recommends:
+	kde-l10n-cs
+
+Package: task-danish
+Architecture: all
+Description: Danish environment
+ This task installs packages and documentation in Danish
+ to help Danish speaking people use Debian.
+Depends:
+Recommends:
+	aspell-da,
+	idanish,
+	wdanish,
+	util-linux-locales
+
+Package: task-danish-desktop
+Architecture: all
+Description: Danish desktop
+ This task localises the desktop in Danish.
+Recommends:
+	iceweasel-l10n-da,
+	openoffice.org-l10n-da,
+	openoffice.org-help-da
+
+Package: task-danish-kde-desktop
+Architecture: all
+Description: Danish KDE desktop
+ This task localises the KDE desktop in Danish.
+Depends:
+Recommends:
+	kde-l10n-da
+
+Package: task-dutch
+Architecture: all
+Description: Dutch environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Dutch speakers
+ to use Debian.
+Depends:
+Recommends:
+# manpages-nl       # Outdated
+	idutch,
+	wdutch,
+	aspell-nl
+
+Package: task-dutch-desktop
+Architecture: all
+Description: Dutch desktop
+ This task localises the desktop in Dutch.
+Depends:
+Recommends:
+	iceweasel-l10n-nl,
+	openoffice.org-l10n-nl,
+	openoffice.org-help-nl,
+	myspell-nl
+
+Package: task-dutch-kde-desktop
+Architecture: all
+Description: Dutch KDE desktop
+ This task localises the KDE desktop in Dutch.
+Depends:
+Recommends:
+	kde-l10n-nl
+
+Package: task-dzongkha-desktop
+Architecture: all
+Description: Dzongkha desktop
+ This task localises the desktop in Dzongkha.
+Depends:
+Recommends:
+	ttf-dzongkha,
+	openoffice.org-l10n-dz,
+	openoffice.org-help-dz,
+	iceweasel-l10n-dz-bt
+
+Package: task-dzongkha-kde-desktop
+Architecture: all
+Description: Dzongkha KDE desktop
+ This task localises the KDE desktop in Dzongkha.
+Depends:
+Recommends:
+
+Package: task-esperanto
+Architecture: all
+Description: Esperanto environment
+ This task installs packages and documentation in Esperanto
+ to help Esperanto speaking people use Debian.
+Depends:
+Recommends:
+	aspell-eo
+
+Package: task-esperanto-desktop
+Architecture: all
+Description: Esperanto desktop
+ This task localises the desktop in Esperanto.
+Depends:
+Recommends:
+	myspell-eo,
+	openoffice.org-l10n-eo,
+	iceweasel-l10n-eo
+
+Package: task-esperanto-kde-desktop
+Architecture: all
+Description: Esperanto KDE desktop
+ This task localises the KDE desktop in Esperanto.
+Depends:
+Recommends:
+	kde-l10n-eo
+
+Package: task-estonian
+Architecture: all
+Description: Estonian environment
+ This task installs packages and documentation in Estonian
+ to help Estonian speaking people use Debian.
+Depends:
+Recommends:
+	aspell-et
+
+Package: task-estonian-desktop
+Architecture: all
+Description: Estonian desktop
+ This task localises the desktop in Estonian.
+Depends:
+Recommends:
+	openoffice.org-l10n-et,
+	openoffice.org-help-et,
+	iceweasel-l10n-et
+
+Package: task-estonian-kde-desktop
+Architecture: all
+Description: Estonian KDE desktop
+ This task localises the KDE desktop in Estonian.
+Depends:
+Recommends:
+	kde-l10n-et
+
+Package: task-finnish-desktop
+Architecture: all
+Description: Finnish desktop
+ This task localises the desktop in Finnish.
+Depends:
+Recommends:
+	openoffice.org-help-fi,
+	openoffice.org-l10n-fi,
+	openoffice.org-voikko,
+	iceweasel-l10n-fi,
+	mozvoikko
+
+Package: task-finnish-kde-desktop
+Architecture: all
+Description: Finnish KDE desktop
+ This task localises the KDE desktop in Finnish.
+Depends:
+Recommends:
+	kde-l10n-fi
+
+Package: task-french
+Architecture: all
+Description: French environment
+ This task installs packages and documentation in French
+ to help French speaking people use Debian.
+Depends:
+	manpages-fr
+Recommends:
+	doc-linux-fr-text,
+	doc-debian-fr,
+	ifrench-gut,
+	wfrench,
+	aspell-fr,
+	manpages-fr-extra
+
+Package: task-french-desktop
+Architecture: all
+Description: French desktop
+ This task localises the desktop in French.
+Depends:
+Recommends:
+	xfonts-intl-european,
+	openoffice.org-l10n-fr,
+	openoffice.org-help-fr,
+	openoffice.org-thesaurus-fr,
+	iceweasel-l10n-fr,
+	myspell-fr-gut
+
+Package: task-french-kde-desktop
+Architecture: all
+Description: French KDE desktop
+ This task localises the KDE desktop in French.
+Depends:
+Recommends:
+	kde-l10n-fr
+
+Package: task-galician
+Architecture: all
+Description: Galician environment
+ This task installs packages and documentation in Galician
+ to help Galician speaking people use Debian.
+Depends:
+Recommends:
+	aspell-gl-minimos
+
+Package: task-galician-desktop
+Architecture: all
+Description: Galician desktop
+ This task localises the desktop in Galician.
+Depends:
+Recommends:
+	openoffice.org-l10n-gl,
+	openoffice.org-help-gl,
+	iceweasel-l10n-gl
+
+Package: task-galician-kde-desktop
+Architecture: all
+Description: Galician KDE desktop
+ This task localises the KDE desktop in Galician.
+Depends:
+Recommends:
+	kde-l10n-gl
+
+Package: task-georgian-desktop
+Architecture: all
+Description: Georgian desktop
+ This task localises the desktop in Georgian.
+Depends:
+Recommends:
+	ttf-bpg-georgian-fonts,
+	openoffice.org-l10n-ka,
+	iceweasel-l10n-ka
+
+Package: task-german
+Architecture: all
+Description: German environment
+ This task installs packages and documentation in German
+ to help German speaking people use Debian.
+Depends:
+	manpages-de
+Recommends:
+	wngerman,
+	ingerman,
+	doc-linux-de,
+	trans-de-en,
+	ding,
+	aspell-de,
+	aspell-de-alt
+
+Package: task-german-desktop
+Architecture: all
+Description: German desktop
+ This task localises the desktop in German.
+Depends:
+Recommends:
+	iceweasel-l10n-de,
+	openoffice.org-help-de,
+	openoffice.org-l10n-de,
+	openoffice.org-thesaurus-de,
+	openoffice.org-thesaurus-de-ch,
+	openoffice.org-hyphenation-de,
+	myspell-de-de,
+	myspell-de-at,
+	myspell-de-ch
+
+Package: task-german-kde-desktop
+Architecture: all
+Description: German KDE desktop
+ This task localises the KDE desktop in German.
+Depends:
+Recommends:
+	kde-l10n-de
+
+Package: task-greek
+Architecture: all
+XBC-Maintainer: Konstantinos Margaritis <markos@debian.org>
+Description: Greek environment
+ This task installs packages and documentation in Greek
+ to help Greek speaking people use Debian.
+Depends:
+Recommends:
+	aspell-el
+
+Package: task-greek-desktop
+Architecture: all
+XBC-Maintainer: Konstantinos Margaritis <markos@debian.org>
+Description: Greek desktop
+ This task localises the desktop in Greek.
+Depends:
+Recommends:
+	xfonts-intl-european,
+#xfonts-efont-unicode
+#xfonts-efont-unicode-ib
+	ttf-freefont,
+	ttf-mgopen,
+	openoffice.org-l10n-el,
+	iceweasel-l10n-el,
+	myspell-el-gr,
+	openoffice.org-help-el
+
+Package: task-greek-kde-desktop
+Architecture: all
+Description: Greek KDE desktop
+ This task localises the KDE desktop in Greek.
+Depends:
+Recommends:
+	kde-l10n-el
+
+Package: task-gujarati
+Architecture: all
+Description: Gujarati environment
+ This task installs packages and documentation in Gujarati
+ to help Gujarati speaking people use Debian.
+Depends:
+Recommends:
+	aspell-gu
+
+Package: task-gujarati-desktop
+Architecture: all
+Description: Gujarati desktop
+ This task localises the desktop in Gujarati.
+Depends:
+Recommends:
+	ttf-gujarati-fonts,
+	openoffice.org-l10n-gu-in,
+	iceweasel-l10n-gu-in
+
+Package: task-gujarati-kde-desktop
+Architecture: all
+Description: Gujarati KDE desktop
+ This task localises the KDE desktop in Gujarati.
+Depends:
+Recommends:
+	kde-l10n-gu
+
+Package: task-hebrew
+Architecture: all
+Description: Hebrew environment
+ This task installs programs and documentation in Hebrew
+ to help Hebrew speaking people use Debian.
+XBC-Maintainer: Debian Hebrew Team <debian-hebrew-common@lists.alioth.debian.org>
+Recommends:
+	libfribidi0,
+	libhdate1,
+	bidiv,
+	culmus,
+	hspell,
+	aspell-he,
+	mlterm
+
+Package: task-hebrew-desktop
+Architecture: all
+Description: Hebrew desktop
+ This task localises the desktop in Hebrew.
+XBC-Maintainer: Debian Hebrew Team <debian-hebrew-common@lists.alioth.debian.org>
+Depends:
+Recommends:
+	hspell-gui,
+	openoffice.org-l10n-he,
+	iceweasel-l10n-he,
+	myspell-he
+
+Package: task-hebrew-gnome-desktop
+Architecture: all
+Description: Hebrew GNOME desktop
+ This task localises the GNOME desktop in Hebrew.
+Depends:
+Recommends:
+	hdate-applet
+
+Package: task-hebrew-kde-desktop
+Architecture: all
+Description: Hebrew KDE desktop
+ This task localises the KDE desktop in Hebrew.
+Depends:
+Recommends:
+	kde-l10n-he
+
+Package: task-hindi
+Architecture: all
+Description: Hindi environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Hindi speakers
+ to use Debian.
+Depends:
+Recommends:
+	ttf-devanagari-fonts,
+	aspell-hi
+
+Package: task-hindi-desktop
+Architecture: all
+Description: Hindi desktop
+ This task localises the desktop in Hindi.
+Depends:
+Recommends:
+	openoffice.org-l10n-hi-in,
+	openoffice.org-help-hi-in,
+	ttf-devanagari-fonts,
+	iceweasel-l10n-hi-in
+
+Package: task-hindi-kde-desktop
+Architecture: all
+Description: Hindi KDE desktop
+ This task localises the KDE desktop in Hindi.
+Depends:
+Recommends:
+	kde-l10n-hi
+
+Package: task-hungarian
+Architecture: all
+Description: Hungarian environment
+ This task installs packages and documentation in Hungarian
+ to help Hungarian speaking people use Debian.
+Depends:
+Recommends:
+	hunspell,
+	aspell-hu,
+	ihungarian,
+	fortunes-debian-hints,
+	manpages-hu,
+	hunspell-hu
+
+Package: task-hungarian-desktop
+Architecture: all
+Description: Hungarian desktop
+ This task localises the desktop in Hungarian.
+Depends:
+	gsfonts-x11,
+	ttf-dejavu,
+	ttf-liberation,
+	ttf-freefont,
+	xfonts-base
+Recommends:
+	ttf-sil-andika,
+	ttf-tiresias,
+	iceweasel-l10n-hu,
+	ttf-junicode,
+	ttf-georgewilliams,
+	ttf-isabella,
+	ttf-opensymbol,
+	ttf-sil-doulos,
+	ttf-sil-charis,
+	ttf-sil-gentium,
+	ttf-okolaks,
+	xfonts-100dpi-transcoded,
+	openoffice.org-l10n-hu,
+	openoffice.org-help-hu,
+	openoffice.org-thesausus-hu,
+	openoffice.org-hyphenation-hu,
+	hunspell-hu,
+	xfonts-terminus
+
+Package: task-hungarian-kde-desktop
+Architecture: all
+Description: Hungarian KDE desktop
+ This task localises the KDE desktop in Hungarian.
+Depends:
+Recommends:
+	kde-l10n-hu
+
+Package: task-icelandic
+Architecture: all
+Description: Icelandic environment
+ This task installs packages and documentation in Icelandic
+ to help Icelandic speaking people use Debian.
+Depends:
+Recommends:
+	aspell-is
+
+Package: task-icelandic-desktop
+Architecture: all
+Description: Icelandic desktop
+ This task localises the desktop in Icelandic.
+Depends:
+Recommends:
+	iceweasel-l10n-is
+
+Package: task-icelandic-kde-desktop
+Architecture: all
+Description: Icelandic KDE desktop
+ This task localises the KDE desktop in Icelandic.
+Depends:
+Recommends:
+	kde-l10n-is
+
+Package: task-indonesian-desktop
+Architecture: all
+Description: Indonesian desktop
+ This task localises the desktop in Indonesian.
+Depends:
+Recommends:
+	iceweasel-l10n-id,
+	openoffice.org-l10n-id
+
+Package: task-indonesian-kde-desktop
+Architecture: all
+Description: Indonesian KDE desktop
+ This task localises the KDE desktop in Indonesian.
+Depends:
+Recommends:
+	kde-l10n-id
+
+Package: task-irish
+Architecture: all
+Description: Irish environment
+ This task installs packages and documentation in Irish
+ to help Irish speaking people use Debian.
+Depends:
+Recommends:
+	aspell-ga
+
+Package: task-irish-desktop
+Architecture: all
+Description: Irish desktop
+ This task localises the desktop in Irish.
+Depends:
+Recommends:
+	iceweasel-l10n-ga-ie,
+	openoffice.org-l10n-ga,
+	myspell-ga
+
+Package: task-irish-kde-desktop
+Architecture: all
+Description: Irish KDE desktop
+ This task localises the KDE desktop in Irish.
+Depends:
+Recommends:
+	kde-l10n-ga
+
+Package: task-italian
+Architecture: all
+Description: Italian environment
+ This task installs packages and documentation in Italian
+ to help Italian speaking people use Debian.
+Depends:
+	manpages-it
+Recommends:
+	aspell-it,
+	debian-reference-it,
+	doc-linux-it,
+	doc-linux-it-text,
+	fortunes-it,
+	iitalian,
+	maint-guide-it,
+	manpages-it,
+	witalian
+
+Package: task-italian-desktop
+Architecture: all
+Description: Italian desktop
+ This task localises the desktop in Italian.
+Depends:
+Recommends:
+	xfonts-intl-european,
+	openoffice.org-help-it,
+	openoffice.org-l10n-it,
+	openoffice.org-thesaurus-it,
+	iceweasel-l10n-it,
+	myspell-it
+
+Package: task-italian-kde-desktop
+Architecture: all
+Description: Italian KDE desktop
+ This task localises the KDE desktop in Italian.
+Depends:
+Recommends:
+	kde-l10n-it
+
+Package: task-japanese
+Architecture: all
+XBC-Maintainer: Kenshi Muto <kmuto@debian.org>
+Description: Japanese environment
+ This task installs packages that make it easier for Japanese speakers
+ to use Debian.
+Depends:
+	manpages-ja,
+# lv is required package for Japanese to see manpage. less can't handle.
+	lv
+Recommends:
+	fbterm,
+	unifont,
+	nkf,
+	doc-linux-ja-text,
+	manpages-ja-dev
+
+Package: task-japanese-desktop
+Architecture: all
+XBC-Maintainer: Kenshi Muto <kmuto@debian.org>
+Description: Japanese desktop
+ This task localises the desktop in Japanese.
+Depends:
+Recommends:
+	iceweasel-l10n-ja,
+	doc-linux-ja-html,
+	ttf-sazanami-gothic,
+	ttf-sazanami-mincho,
+	ttf-vlgothic,
+	otf-ipafont,
+	uim,
+	uim-anthy,
+	anthy,
+	openoffice.org-l10n-ja,
+	openoffice.org-help-ja,
+	poppler-data
+
+Package: task-japanese-gnome-desktop
+Architecture: all
+Description: Japanese GNOME desktop
+ This task localises the GNOME desktop in Japanese.
+Depends:
+Recommends:
+	uim-applet-gnome,
+# evolution has a problem for Japanese, for example it uses always UTF-8
+# subject instead of iso-2022-jp used Japanese de-facto. I recommend
+# icedove as default mailer for Japanese desktop users.
+	icedove,
+	icedove-l10n-ja
+
+Package: task-japanese-kde-desktop
+Architecture: all
+Description: Japanese KDE desktop
+ This task localises the KDE desktop in Japanese.
+Depends:
+Recommends:
+	kde-l10n-ja,
+	uim-applet-kde
+
+Package: task-kannada-desktop
+Architecture: all
+Description: Kannada desktop
+ This task localises the desktop in Kannada.
+Depends:
+	ttf-kannada-fonts,
+	scim-tables-additional,
+	iceweasel-l10n-kn
+
+Package: task-kannada-kde-desktop
+Architecture: all
+Description: Kannada KDE desktop
+ This task localises the KDE desktop in Kannada.
+Depends:
+	kde-l10n-kn
+
+Package: task-kazakh-desktop
+Architecture: all
+Description: Kazakh desktop
+ This task localises the desktop in Kazakh.
+XBC-Maintainer: Timur Birsh <taem@linukz.org>
+Depends:
+Recommends:
+	hunspell-kk
+
+Package: task-kazakh-kde-desktop
+Architecture: all
+Description: Kazakh KDE desktop
+ This task localises the KDE desktop in Kazakh.
+Depends:
+Recommends:
+	kde-l10n-kk
+
+Package: task-khmer
+Architecture: all
+Description: Khmer environment
+ This task installs packages and documentation in Khmer
+ to help Khmer speaking people use Debian.
+Depends:
+Recommends:
+	khmerconverter,
+
+Package: task-khmer-desktop
+Architecture: all
+Description: Khmer desktop
+ This task localises the desktop in Khmer.
+Depends:
+Recommends:
+	ttf-khmeros,
+	openoffice.org-l10n-km,
+	openoffice.org-help-km
+
+Package: task-khmer-kde-desktop
+Architecture: all
+Description: Khmer KDE desktop
+ This task localises the KDE desktop in Khmer.
+Depends:
+Recommends:
+	kde-l10n-km
+
+Package: task-korean
+Architecture: all
+Description: Korean environment
+ This task installs packages that make it easier for Korean speakers
+ to use Debian.
+Depends:
+Recommends:
+	jfbterm
+
+Package: task-korean-desktop
+Architecture: all
+Description: Korean desktop
+ This task localises the desktop in Korean.
+Depends:
+Recommends:
+	ibus-hangul,
+	ttf-nanum,
+	ttf-nanum-coding,
+	ttf-unfonts-core,
+	iceweasel-l10n-ko,
+	openoffice.org-help-ko,
+	openoffice.org-l10n-ko,
+	hunspell-ko,
+# poppler-data which is non-free is needed to display
+# Korean on poppler applications.
+	poppler-data
+
+Package: task-korean-gnome-desktop
+Architecture: all
+Description: Korean GNOME desktop
+ This task localises the GNOME desktop in Korean.
+Depends:
+Recommends:
+	ibus-gtk
+
+Package: task-korean-kde-desktop
+Architecture: all
+Description: Korean KDE desktop
+ This task localises the KDE desktop in Korean.
+Depends:
+Recommends:
+	ibus-qt4,
+	kde-l10n-ko
+
+Package: task-kurdish
+Architecture: all
+Description: Kurdish environment
+ This task installs packages and documentation in Kurdish
+ to help Kurds use Debian.
+Depends:
+Recommends:
+	aspell-ku
+
+Package: task-kurdish-desktop
+Architecture: all
+Description: Kurdish desktop
+ This task localises the desktop in Kurdish.
+Depends:
+Recommends:
+	openoffice.org-l10n-ku,
+	ttf-dejavu,
+	iceweasel-l10n-ku,
+	myspell-ku,
+	ttf-unikurdweb
+
+Package: task-kurdish-kde-desktop
+Architecture: all
+Description: Kurdish KDE desktop
+ This task localises the KDE desktop in Kurdish.
+Depends:
+Recommends:
+
+Package: task-latvian
+Architecture: all
+Description: Latvian environment
+ This task installs packages and documentation in Latvian
+ to help Latvian speaking people use Debian.
+Depends:
+Recommends:
+	aspell-lv
+
+Package: task-latvian-desktop
+Architecture: all
+Description: Latvian desktop
+ This task localises the desktop in Latvian.
+Depends:
+Recommends:
+	openoffice.org-l10n-lv,
+	iceweasel-l10n-lv
+
+Package: task-latvian-kde-desktop
+Architecture: all
+Description: Latvian KDE desktop
+ This task localises the KDE desktop in Latvian.
+Depends:
+Recommends:
+	kde-l10n-lv
+
+Package: task-lithuanian
+Architecture: all
+XBC-Maintainer: Kęstutis Biliūnas <kebil@kaunas.init.lt>
+Description: Lithuanian environment
+ This task installs packages and documentation in Lithuanian
+ to help Lithuanian speaking people use Debian.
+Depends:
+Recommends:
+	aspell-lt,
+	ilithuanian
+
+Package: task-lithuanian-desktop
+Architecture: all
+XBC-Maintainer: Kęstutis Biliūnas <kebil@kaunas.init.lt>
+Description: Lithuanian desktop
+ This task localises the desktop in Lithuanian.
+Depends:
+Recommends:
+	openoffice.org-l10n-lt,
+	openoffice.org-hyphenation-lt,
+	iceweasel-l10n-lt,
+	myspell-lt
+
+Package: task-lithuanian-kde-desktop
+Architecture: all
+Description: Lithuanian KDE desktop
+ This task localises the KDE desktop in Lithuanian.
+Depends:
+Recommends:
+	kde-l10n-lt
+
+Package: task-macedonian
+Architecture: all
+Description: Macedonian environment
+ This task installs packages and documentation in Macedonian
+ to help Macedonian speaking people use Debian.
+Depends:
+Recommends:
+
+Package: task-macedonian-desktop
+Architecture: all
+Description: Macedonian desktop
+ This task localises the desktop in Macedonian.
+Depends:
+Recommends:
+	iceweasel-l10n-mk,
+	openoffice.org-l10n-mk,
+	ttf-dejavu
+
+Package: task-macedonian-kde-desktop
+Architecture: all
+Description: Macedonian KDE desktop
+ This task localises the KDE desktop in Macedonian.
+Depends:
+Recommends:
+	kde-l10n-mk
+
+Package: task-malayalam
+Architecture: all
+Description: Malayalam environment
+ This task installs packages and documentation in Malayalam
+ to help Malayalam speaking people use Debian.
+Depends:
+Recommends:
+	aspell-ml
+
+Package: task-malayalam-desktop
+Architecture: all
+Description: Malayalam desktop
+ This task localises the desktop in Malayalam.
+Depends:
+	ttf-malayalam-fonts,
+	scim-tables-additional
+Recommends:
+	openoffice.org-l10n-ml-in,
+	iceweasel-l10n-ml
+
+Package: task-malayalam-gnome-desktop
+Architecture: all
+Description: Malayalam GNOME desktop
+ This task localises the GNOME desktop in Malayalam.
+Depends:
+Recommends:
+	scim-gtk2-immodule
+
+Package: task-malayalam-kde-desktop
+Architecture: all
+Description: Malayalam KDE desktop
+ This task localises the KDE desktop in Malayalam.
+Depends:
+Recommends:
+	kde-l10n-ml
+
+Package: task-marathi
+Architecture: all
+Description: Marathi environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Marathi speakers
+ to use Debian.
+Depends:
+Recommends:
+	aspell-mr
+
+Package: task-marathi-desktop
+Architecture: all
+Description: Marathi desktop
+ This task localises the desktop in Marathi.
+Depends:
+	ttf-devanagari-fonts
+Recommends:
+	iceweasel-l10n-mr,
+	openoffice.org-l10n-mr-in
+
+Package: task-nepali-desktop
+Architecture: all
+Description: Nepali desktop
+ This task localises the desktop in Nepali.
+Depends:
+Recommends:
+	ttf-devanagari-fonts,
+	openoffice.org-l10n-ne,
+	openoffice.org-thesaurus-ne,
+	iceweasel-l10n-ne-np
+
+Package: task-nepali-kde-desktop
+Architecture: all
+Description: Nepali KDE desktop
+ This task localises the KDE desktop in Nepali.
+Depends:
+Recommends:
+
+Package: task-northern-sami
+Architecture: all
+Description: Northern Sami environment
+ This task installs packages and documentation in Northern Sami
+ to help Northern Sami speaking people use Debian.
+Depends:
+Recommends:
+	hunspell,
+	hunspell-se
+
+Package: task-northern-sami-desktop
+Architecture: all
+Description: Northern Sami desktop
+ This task localises the desktop in Northern Sami.
+Depends:
+Recommends:
+
+Package: task-norwegian
+Architecture: all
+Description: Norwegian (Bokmaal and Nynorsk) environment
+ This task installs packages and documentation in Norwegian
+ to help Norwegian speaking people use Debian.
+XBC-Maintainer: Petter Reinholdtsen <pere@debian.org>
+Depends:
+	locales
+Recommends:
+	util-linux-locales,
+	wnorwegian,
+	inorwegian,
+	aspell-no
+
+Package: task-norwegian-desktop
+Architecture: all
+Description: Norwegian (Bokmaal and Nynorsk) desktop
+ This task localises the desktop in Norwegian.
+XBC-Maintainer: Petter Reinholdtsen <pere@debian.org>
+Depends:
+Recommends:
+	openoffice.org-l10n-nb,
+	openoffice.org-l10n-nn,
+	iceweasel-l10n-nb-no,
+	iceweasel-l10n-nn-no,
+	myspell-nn,
+	myspell-nb
+
+Package: task-norwegian-kde-desktop
+Architecture: all
+Description: Norwegian KDE desktop
+ This task localises the KDE desktop in Norwegian.
+Depends:
+Recommends:
+	kde-l10n-nb,
+	kde-l10n-nn
+
+Package: task-persian
+Architecture: all
+Description: Persian environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Persian speakers
+ to use Debian.
+Depends:
+Recommends:
+	aspell-fa
+
+Package: task-persian-desktop
+Architecture: all
+Description: Persian desktop
+ This task localises the desktop in Persian.
+Depends:
+Recommends:
+	openoffice.org-l10n-fa,
+	iceweasel-l10n-fa,
+	ttf-farsiweb,
+	iceweasel-l10n-fa-ir
+
+Package: task-polish
+Architecture: all
+Description: Polish environment
+ This task installs packages and documentation in Polish
+ to help Polish speaking people use Debian.
+Depends:
+	manpages-pl
+Recommends:
+	konwert,
+	ipolish,
+	wpolish,
+	doc-linux-pl,
+	manpages-pl-dev,
+	doc-linux-pl-html,
+	aspell-pl
+
+Package: task-polish-desktop
+Architecture: all
+Description: Polish desktop
+ This task localises the desktop in Polish.
+Depends:
+Recommends:
+	openoffice.org-l10n-pl,
+	openoffice.org-help-pl,
+	openoffice.org-thesaurus-pl,
+	iceweasel-l10n-pl,
+	xfonts-terminus,
+	myspell-pl
+
+Package: task-polish-kde-desktop
+Architecture: all
+Description: Polish KDE desktop
+ This task localises the KDE desktop in Polish.
+Depends:
+Recommends:
+	kde-l10n-pl
+
+Package: task-portuguese
+Architecture: all
+Description: Portuguese environment
+ This task installs packages and documentation in Portuguese
+ to help Portuguese speaking people use Debian.
+Depends:
+Recommends:
+	aspell-pt-pt,
+	iportuguese,
+	wportuguese
+
+Package: task-portuguese-desktop
+Architecture: all
+Description: Portuguese desktop
+ This task localises the desktop in Portuguese.
+Depends:
+Recommends:
+	xfonts-intl-european,
+	openoffice.org-l10n-pt,
+	openoffice.org-help-pt,
+	iceweasel-l10n-pt-pt,
+	myspell-pt-pt
+
+Package: task-portuguese-kde-desktop
+Architecture: all
+Description: Portuguese KDE desktop
+ This task localises the KDE desktop in Portuguese.
+Depends:
+Recommends:
+	kde-l10n-pt
+
+Package: task-punjabi
+Architecture: all
+Description: Punjabi environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Punjabi speakers
+ to use Debian.
+Depends:
+Recommends:
+	aspell-pa
+
+Package: task-punjabi-desktop
+Architecture: all
+Description: Punjabi desktop
+ This task localises the desktop in Punjabi.
+Depends:
+Recommends:
+	openoffice.org-l10n-pa-in,
+	ttf-punjabi-fonts,
+	iceweasel-l10n-pa-in
+
+Package: task-punjabi-kde-desktop
+Architecture: all
+Description: Punjabi KDE desktop
+ This task localises the KDE desktop in Punjabi.
+Depends:
+Recommends:
+	kde-l10n-pa
+
+Package: task-romanian
+Architecture: all
+Description: Romanian environment
+ This task installs packages and documentation in Romanian
+ to help Romanian speaking people use Debian.
+XBC-Maintainer: Eddy Petrişor <eddy.petrisor@gmail.com>
+Depends:
+Recommends:
+	console-terminus,
+	util-linux-locales,
+	aspell-ro,
+# None of the dictionaries below are avalable as a debian package yet
+# iromanian
+
+Package: task-romanian-desktop
+Architecture: all
+Description: Romanian desktop
+ This task localises the desktop in Romanian.
+XBC-Maintainer: Eddy Petrişor <eddy.petrisor@gmail.com>
+Depends:
+Recommends:
+# fonty
+	openoffice.org-l10n-ro,
+# this appears to be one of the few fonts that has t with comma bellow
+	ttf-dejavu,
+	ttf-freefont,
+# is this ok?
+# xfonts-base-transcoded
+# Added because polish-desktop uses them
+	xfonts-terminus,
+	iceweasel-l10n-ro,
+# Not yet available.
+# myspell-ro
+
+Package: task-romanian-kde-desktop
+Architecture: all
+Description: Romanian KDE desktop
+ This task localises the KDE desktop in Romanian.
+Depends:
+Recommends:
+	kde-l10n-ro
+
+Package: task-russian
+Architecture: all
+Description: Russian environment
+ This task installs programs and documentation in Russian
+ to help Russian speaking people use Debian.
+XBC-Maintainer: Peter Novodvorsky <nidd@debian.org>
+Depends:
+	manpages-ru
+Recommends:
+	irussian,
+	mueller7-dict,
+	konwert,
+	re,
+	aspell-ru
+
+Package: task-russian-desktop
+Architecture: all
+Description: Russian desktop
+ This task localises the desktop in Russian.
+XBC-Maintainer: Peter Novodvorsky <nidd@debian.org>
+Depends:
+Recommends:
+	xfonts-bolkhov-koi8r-75dpi,
+	xfonts-bolkhov-koi8r-misc,
+	xfonts-cronyx-koi8r-100dpi,
+	openoffice.org-l10n-ru,
+	openoffice.org-help-ru,
+	openoffice.org-thesaurus-ru,
+	iceweasel-l10n-ru,
+	myspell-ru
+
+Package: task-russian-kde-desktop
+Architecture: all
+Description: Russian KDE desktop
+ This task localises the KDE desktop in Russian.
+Depends:
+Recommends:
+	kde-l10n-ru
+
+Package: task-serbian
+Architecture: all
+XBC-Maintainer: Safir Secerovic <sapphire@linux.org.ba> 
+Description: Serbian environment
+ This task installs packages and documentation in Serbian
+ to help Serbian speaking people use Debian.
+Depends:
+Recommends:
+	dict-freedict-scr-eng,
+	doc-linux-hr,
+	opendict-plugins-lingvosoft,
+	texlive-lang-other
+
+Package: task-serbian-desktop
+Architecture: all
+XBC-Maintainer: Safir Secerovic <sapphire@linux.org.ba>
+Description: Serbian desktop
+ This task localises the desktop in Serbian.
+Depends:
+Recommends:
+	openoffice.org-l10n-sr,
+	iceweasel-l10n-sr,
+	xfonts-biznet-100dpi,
+	xfonts-biznet-75dpi,
+	xfonts-biznet-base,
+	xfonts-terminus
+
+Package: task-serbian-kde-desktop
+Architecture: all
+Description: Serbian KDE desktop
+ This task localises the KDE desktop in Serbian.
+Depends:
+Recommends:
+	kde-l10n-sr,
+	kde-l10n-srlatin,
+	koffice-i18n-sr,
+	koffice-i18n-srlatin
+
+Package: task-sinhala-desktop
+Architecture: all
+Description: Sinhala desktop
+ This task localises the desktop in Sinhala.
+Depends:
+Recommends:
+	ttf-sinhala-lklug,
+	openoffice.org-l10n-si,
+	iceweasel-l10n-si
+
+Package: task-sinhala-kde-desktop
+Architecture: all
+Description: Sinhala KDE desktop
+ This task localises the KDE desktop in Sinhala.
+Depends:
+Recommends:
+	kde-l10n-si
+
+Package: task-slovak
+Architecture: all
+Description: Slovak environment
+ This task installs packages and documentation in Slovak
+ to help Slovak speaking people use Debian.
+Depends:
+Recommends:
+	aspell-sk
+
+Package: task-slovak-desktop
+Architecture: all
+Description: Slovak desktop
+ This task localises the desktop in Slovak.
+Depends:
+Recommends:
+	openoffice.org-l10n-sk,
+	openoffice.org-thesaurus-sk,
+	xfonts-terminus,
+	iceweasel-l10n-sk,
+	myspell-sk
+
+Package: task-slovak-kde-desktop
+Architecture: all
+Description: Slovak KDE desktop
+ This task localises the KDE desktop in Slovak.
+Depends:
+Recommends:
+	kde-l10n-sk
+
+Package: task-slovenian
+Architecture: all
+Description: Slovenian environment
+ This task installs packages and documentation in Slovenian
+ to help Slovenian speaking people use Debian.
+Depends:
+Recommends:
+	aspell-sl
+
+Package: task-slovenian-desktop
+Architecture: all
+Description: Slovenian desktop
+ This task localises the desktop in Slovenian.
+Depends:
+Recommends:
+	iceweasel-l10n-sl,
+	openoffice.org-l10n-sl,
+	openoffice.org-help-sl,
+	xfonts-terminus,
+	myspell-sl
+
+Package: task-slovenian-kde-desktop
+Architecture: all
+Description: Slovenian KDE desktop
+ This task localises the KDE desktop in Slovenian.
+Depends:
+Recommends:
+	kde-l10n-sl
+
+Package: task-south-african-english-desktop
+Architecture: all
+Description: South African English desktop
+ This task localises the desktop in South African English.
+Depends:
+Recommends:
+	openoffice.org-l10n-en-za
+
+Package: task-spanish
+Architecture: all
+Description: Spanish environment
+ This task installs programs, data files, and
+ documentation that make it easier for Spanish speakers to use Debian.
+Depends:
+	manpages-es
+Recommends:
+# Dictionaries
+	ispanish,
+	wspanish,
+	aspell-es,
+# Useful documentation for spanish-speakers
+	debian-reference-es,
+	doc-debian-es,
+# Other packages to i18n common software
+	util-linux-locales
+
+Package: task-spanish-desktop
+Architecture: all
+Description: Spanish desktop
+ This task localises the desktop in Spanish.
+Depends:
+Recommends:
+	openoffice.org-l10n-es,
+	openoffice.org-help-es,
+	iceweasel-l10n-es-ar,
+	iceweasel-l10n-es-cl,
+	iceweasel-l10n-es-mx,
+	iceweasel-l10n-es-es,
+	myspell-es
+
+Package: task-spanish-kde-desktop
+Architecture: all
+Description: Spanish KDE desktop
+ This task localises the KDE desktop in Spanish.
+Depends:
+Recommends:
+	kde-l10n-es
+
+Package: task-swedish
+Architecture: all
+Description: Swedish environment
+ This task installs packages and documentation in Swedish
+ to help Swedish speaking people use Debian.
+XBC-Maintainer: Per Olofsson <pelle@debian.org>
+Depends:
+	locales
+Recommends:
+	util-linux-locales,
+	wswedish,
+	iswedish,
+	aspell-sv
+
+Package: task-swedish-desktop
+Architecture: all
+Description: Swedish desktop
+ This task localises the desktop in Swedish.
+XBC-Maintainer: Per Olofsson <pelle@debian.org>
+Depends:
+Recommends:
+	gimp-help-sv,
+	openoffice.org-l10n-sv,
+	openoffice.org-help-sv,
+	iceweasel-l10n-sv-se,
+	myspell-sv-se
+
+Package: task-swedish-kde-desktop
+Architecture: all
+Description: Swedish KDE desktop
+ This task localises the KDE desktop in Swedish.
+Depends:
+Recommends:
+	kde-l10n-sv
+
+Package: task-tagalog
+Architecture: all
+Description: Tagalog environment
+ This task installs packages and documentation in Tagalog
+ to help Tagalog speaking people use Debian.
+Depends:
+Recommends:
+	aspell-tl
+
+Package: task-tamil
+Architecture: all
+Description: Tamil environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Tamil speakers
+ to use Debian.
+Depends:
+Recommends:
+	aspell-ta
+
+Package: task-tamil-desktop
+Architecture: all
+Description: Tamil desktop
+ This task localises the desktop in Tamil.
+Depends:
+Recommends:
+	ttf-tamil-fonts,
+	openoffice.org-l10n-ta-in,
+	iceweasel-l10n-ta,
+	iceweasel-l10n-ta-lk
+
+Package: task-tamil-gnome-desktop
+Architecture: all
+Description: Tamil GNOME desktop
+ This task localises the GNOME desktop in Tamil.
+Depends:
+Recommends:
+	tamil-gtk2im
+
+Package: task-telugu
+Architecture: all
+XBC-Maintainer: Y Giridhar Appaji Nag <appaji@debian.org>
+Description: Telugu environment
+ This task installs programs, data files, fonts, and
+ documentation that makes it easier for Telugu speakers
+ to use Debian.
+Depends:
+Recommends:
+	ttf-telugu-fonts,
+	aspell-te
+
+Package: task-telugu-desktop
+Architecture: all
+XBC-Maintainer: Y Giridhar Appaji Nag <appaji@debian.org>
+Description: Telugu desktop
+ This task localises the desktop environment in Telugu.
+Depends:
+Recommends:
+	openoffice.org-l10n-te-in,
+	iceweasel-l10n-te,
+	ttf-telugu-fonts,
+	scim-tables-additional,
+	iiimf-le-unit
+
+Package: task-telugu-gnome-desktop
+Architecture: all
+XBC-Maintainer: Y Giridhar Appaji Nag <appaji@debian.org>
+Description: Telugu GNOME desktop environment
+ This task localises the GNOME desktop environment in Telugu.
+Depends:
+Recommends:
+	scim-gtk2-immodule
+
+Package: task-telugu-kde-desktop
+Architecture: all
+XBC-Maintainer: Y Giridhar Appaji Nag <appaji@debian.org>
+Description: Telugu KDE desktop environment
+ This task localises the KDE desktop environment in Telugu.
+Depends:
+Recommends:
+	scim-qtimm
+
+Package: task-thai
+Architecture: all
+Description: Thai environment
+ This task installs packages that make it easier for Thai speaking
+ people to use Debian.
+Depends:
+Recommends:
+	swath
+
+Package: task-thai-desktop
+Architecture: all
+Description: Thai desktop
+ This task localises the desktop in Thai.
+Depends:
+Recommends:
+	xiterm+thai,
+	xfonts-thai,
+	openoffice.org-l10n-th,
+	iceweasel-l10n-th,
+	myspell-th
+
+Package: task-thai-gnome-desktop
+Architecture: all
+Description: Thai GNOME desktop
+ This task localises the GNOME desktop in Thai.
+Depends:
+Recommends:
+	gtk-im-libthai
+
+Package: task-thai-kde-desktop
+Architecture: all
+Description: Thai KDE desktop
+ This task localises the KDE desktop in Thai.
+Depends:
+Recommends:
+	kde-l10n-th
+
+Package: task-turkish
+Architecture: all
+Description: Turkish environment
+ This task installs packages and documentation in Turkish
+ to help Turkish speaking people use Debian.
+XBC-Maintainer: Recai Oktas <roktas@omu.edu.tr>
+Depends:
+	locales,
+	manpages-tr
+Recommends:
+	console-terminus,
+	util-linux-locales
+
+Package: task-turkish-desktop
+Architecture: all
+Description: Turkish desktop
+ This task localises the desktop in Turkish.
+XBC-Maintainer: Recai Oktas <roktas@omu.edu.tr>
+Depends:
+Recommends:
+	xfonts-terminus,
+	openoffice.org-l10n-tr,
+	iceweasel-l10n-tr
+
+Package: task-turkish-kde-desktop
+Architecture: all
+Description: Turkish KDE desktop
+ This task localises the KDE desktop in Turkish.
+Depends:
+Recommends:
+	kde-l10n-tr
+
+Package: task-ukrainian
+Architecture: all
+Description: Ukrainian environment
+ This task installs programs and documentation in Ukrainian
+ to help Ukrainian speaking people use Debian.
+XBC-Maintainer: Eugeniy Meshcheryakov <eugen@debian.org>
+Depends:
+Recommends:
+	aspell-uk,
+	konwert,
+	iukrainian,
+	doc-debian-uk
+
+Package: task-ukrainian-desktop
+Architecture: all
+Description: Ukrainian desktop
+ This task localises the desktop in Ukrainian.
+XBC-Maintainer: Eugeniy Meshcheryakov <eugen@debian.org>
+Depends:
+Recommends:
+	xfonts-bolkhov-koi8u-75dpi,
+	xfonts-bolkhov-koi8u-misc,
+	xfonts-cronyx-koi8u-100dpi,
+	xfonts-bolkhov-misc,
+	xfonts-bolkhov-75dpi,
+	xfonts-cronyx-100dpi,
+	xfonts-intl-european,
+	openoffice.org-l10n-uk,
+	iceweasel-l10n-uk,
+	ttf-dejavu,
+	myspell-uk
+
+Package: task-ukrainian-kde-desktop
+Architecture: all
+Description: Ukrainian KDE desktop
+ This task localises the KDE desktop in Ukrainian.
+Depends:
+Recommends:
+	kde-l10n-uk
+
+Package: task-vietnamese-desktop
+Architecture: all
+Description: Vietnamese desktop
+ This task localises the desktop in Vietnamese.
+Depends:
+Recommends:
+	openoffice.org-l10n-vi,
+	iceweasel-l10n-vi
+
+Package: task-vietnamese-kde-desktop
+Architecture: all
+Description: Vietnamese KDE desktop
+ This task localises the KDE desktop in Vietnamese.
+Depends:
+Recommends:
+
+Package: task-welsh
+Architecture: all
+Description: Welsh environment
+ This task installs packages and documentation in Welsh
+ to help Welsh speaking people use Debian.
+Depends:
+Recommends:
+	aspell-cy
+
+Package: task-welsh-desktop
+Architecture: all
+Description: Welsh desktop
+ This task localises the desktop in Welsh.
+Depends:
+Recommends:
+	openoffice.org-l10n-cy,
+	iceweasel-l10n-cy
+
+Package: task-xhosa-desktop
+Architecture: all
+Description: Xhosa desktop
+ This task localises the desktop in Xhosa.
+Depends:
+Recommends:
+	openoffice.org-l10n-xh
+
+Package: task-xhosa-kde-desktop
+Architecture: all
+Description: Xhosa KDE desktop
+ This task localises the KDE desktop in Xhosa.
+Depends:
+Recommends:

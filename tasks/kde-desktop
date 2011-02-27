@@ -7,26 +7,6 @@ Description: KDE desktop environment
  This task provides basic "desktop" software using the K Desktop
  Environment.
 Key:
-  kde-standard
-  kdm
+  task-kde-desktop
 Packages: task-fields
 Packages-list:
-# accessibility support
-  kdeaccessibility
-# enable debian menus
-  menu-xdg
-# package management. Need something here, but please, no kpackage.
-#  kpackage 
-# debconf kde frontend
-  libqtgui4-perl
-  libqtcore4-perl
-# cd/dvd burner
-  k3b
-  k3b-i18n
-# desktop network setup
-  network-manager-kde
-# This is configured by d-i to be used to gain root on systems with no root
-# password. It is not enabled by default.
-  kdesudo
-# KDE-OpenOffice integration
-  openoffice.org-kde
