@@ -1,7 +1,7 @@
 Some notes for translators
 ==========================
 
-There are two directories containing translations:
+There are three directories containing translations:
 
   po/
 
@@ -9,12 +9,23 @@ There are two directories containing translations:
 
   tasks/po/
 
-    Contain the phrases used in the tasks themselves.
+    Contain the phrases used in (a few of) the tasks themselves.
 
-The text in both these directories need to be translated for the
-translation to be complete. You'll also need to translate the debconf
-templates, of course.
+  debian/po/
+
+    Contains the debconf templates.
 
 Your language should be listed in LANGS and LANGS_DESC variables
 in Makefile.  (LANGS is for translations in po/, and LANGS_DESC
 is for translations in tasks/po/.)
+
+You should also translate the Descriptions of the task-* packages.
+These are shown to the user when tasksel runs, so are actually 
+the most important thing to translate. This can be done via the
+The Debian Description Translation Project:
+<http://www.debian.org/intl/l10n/ddtp>
+
+When translating the Descriptions, the ones that matter are those
+tasks that are displayed to the user. Translating the Descriptions
+of the language-specific tasks, which are not shown to the user,
+is not a priority.
