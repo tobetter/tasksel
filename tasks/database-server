@@ -1,16 +1,4 @@
 Task: database-server
 Section: server
-# HELP: Would "relational database server" be a better short desk?
-# HELP: the folks on #debian-devel think if you want a db server, you
-# probably want to pick between postgres and mysql. Should this task live?
-Description: SQL database
- This task selects client and server packages for the PostgreSQL database.
- .
- PostgreSQL is an SQL relational database, offering increasing SQL92
- compliance and some SQL3 features.  It is suitable for use with multi-user
- database access, through its facilities for transactions and fine-grained
- locking.
 Key:
   task-database-server
-Packages: task-fields
-Packages-list: 

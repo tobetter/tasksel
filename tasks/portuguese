@@ -1,11 +1,6 @@
 Task: portuguese
-# This will we installed for both pt and pt_BR
+# This will be installed for both pt and pt_BR
 Test-lang: pt
 Section: l10n
-Description: Portuguese environment
- This task installs packages and documentation in Portuguese
- to help Portuguese speaking people use Debian.
 Key:
   task-portuguese
-Packages: task-fields
-Packages-list:

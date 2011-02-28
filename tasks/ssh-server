@@ -1,9 +1,4 @@
 Task: ssh-server
 Section: server
-Description: SSH server
- This task sets up your system to be remotely accessed through SSH
- connections.
 Key:
   task-ssh-server
-Packages: task-fields
-Packages-list:
