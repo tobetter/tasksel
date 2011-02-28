@@ -204,7 +204,10 @@ sub task_packages {
 	if (ref $task->{key}) {
 		map { $list{$_}=1 } @{$task->{key}};
 	}
-		
+	
+	if (! defined $task->{packages}) {
+		# only key
+	}
 	if ($task->{packages} eq 'task-fields') {
 		# task-fields method is built-in for speed and to support
 		# aptitude task definitions
@@ -606,7 +609,7 @@ sub main {
 	my $manual_selection=0;
 	foreach my $task (grep { $_->{_install} } @tasks) {
 		push @tasks_install, $task;
-		if ($task->{packages} eq 'manual') {
+		if (defined $task->{packages} && $task->{packages} eq 'manual') {
 			$manual_selection=1;
 		}
 	}
