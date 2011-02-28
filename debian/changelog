@@ -21,6 +21,10 @@ tasksel (3.00) experimental; urgency=low
   * Don't generate Task field overrides for tasks that have only Key
     packages. In other words, the Task field overrides are not needed,
     and are going away.
+  * Tasksel no longer looks for desc files in /usr/share/taksel/,
+    instead it looks in /usr/share/taksel/descs/. This was necessary
+    because aptitude crashes on the new debian-tasks.desc file without
+    Description fields.
 
   [ Christian Perrier ]
   * Replace aspell-fi by libenchant-voikko in finnish task

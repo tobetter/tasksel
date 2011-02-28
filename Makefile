@@ -47,9 +47,9 @@ install:
 	done
 
 install-data:
-	install -d $(DESTDIR)$(TASKDIR) \
+	install -d $(DESTDIR)$(TASKDIR)/descs \
 		$(DESTDIR)/usr/lib/tasksel/tests
-	install -m 0644 $(TASKDESC) $(DESTDIR)$(TASKDIR)
+	install -m 0644 $(TASKDESC) $(DESTDIR)$(TASKDIR)/descs
 	for test in tests/*; do \
 		[ "$$test" = "tests/new-install" ] && continue; \
 		[ "$$test" = "tests/debconf" ] && continue; \
