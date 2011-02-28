@@ -10,6 +10,14 @@ tasksel (3.00) experimental; urgency=low
   * Translators: DDTP translations of task packages are now displayed
     by tasksel, so it's important that the (visible) tasks' descriptions
     be translated there.
+  * Don't generate Task field overrides for tasks that have only Key
+    packages. In other words, the Task field overrides are not needed,
+    and are going away. The overrides file uploaded with this version
+    of tasksel is empty.
+  * Tasksel no longer looks for desc files in /usr/share/taksel/,
+    instead it looks in /usr/share/taksel/descs/. This was necessary
+    because aptitude crashes on the new debian-tasks.desc file without
+    Description fields.
   * Remove rarian-compat from task-gnome-desktop. Dependencies on
     scrollkeeper should default to rarian-compat by now.
   * Moved iceweasel to Recommends of task-desktop; was in Key/Depends.
@@ -18,13 +26,6 @@ tasksel (3.00) experimental; urgency=low
   * Removed unnecessary Recommends of xfonts-base, which is included
     in X anyway, and lintian complains about.
   * Updated to debhelper v8.
-  * Don't generate Task field overrides for tasks that have only Key
-    packages. In other words, the Task field overrides are not needed,
-    and are going away.
-  * Tasksel no longer looks for desc files in /usr/share/taksel/,
-    instead it looks in /usr/share/taksel/descs/. This was necessary
-    because aptitude crashes on the new debian-tasks.desc file without
-    Description fields.
 
   [ Christian Perrier ]
   * Replace aspell-fi by libenchant-voikko in finnish task
