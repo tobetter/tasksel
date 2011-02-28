@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2010-05-21 19:38+0300\n"
 "Last-Translator: Eddy Petrișor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
@@ -22,139 +22,6 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "Bază de date SQL"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Acestă sarcină selectează pachetele client și server pentru baza de date "
-"PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL este o bază de date relațională SQL, care oferă o compatibilitate "
-"ridicată cu SQL92 și câteva facilități SQL3. Este potrivită pentru acces "
-"multi-utilizator la baza de date, prin facilitățile sale pentru tranzacții "
-"și mecanismele de interblocare rafinate."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Mediu grafic de birou"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Acestă sarcină furnizează un set minimal de aplicații pentru mediul grafic "
-"și servește ca bază pentru sarcinile mediilor grafice GNOME și KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "Server DNS"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Selectează serverul DNS BIND, și documentație pentru acesta, cât și pachete "
-"de utilitare."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Server de fișiere"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Această sarcină vă pregătește sistemul pentru a deveni un server de fișiere "
-"care suportă atât CIFS cât și NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "Mediul grafic GNOME"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Acestă sarcină furnizează un set minimal de aplicații pentru mediul grafic "
-"GNOME."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "Mediul grafic KDE"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Acestă sarcină furnizează un set minimal de aplicații pentru mediul grafic "
-"KDE (K Desktop Environment)."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Laptop"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Această sarcină instalează programe utile pentru un laptop."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "Mediul grafic LXDE"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Acestă sarcină furnizează un set minimal de aplicații pentru mediul grafic "
-"LXDE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Server de poștă electronică"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Acestă sarcină selectează o varietate de pachetele utile pentru un server de "
-"poștă electronică de uz general."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "selecție manuală a pachetelor"
@@ -163,30 +30,6 @@ msgstr "selecție manuală a pachetelor"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Selectați manual în aptitude pachetele de instalat."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Server de tipărire"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr ""
-"Această sarcină vă pregătește sistemul pentru a deveni un server de tipărire."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "Server SSH"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Această sarcină pregătește sistemul pentru a fi accesat prin conexiuni SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -202,31 +45,139 @@ msgstr ""
 "Această sarcină instalează un mediu de bază, oferind o mică selecție de "
 "servicii și utilitare pentru linia de comandă."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Server de web"
+#~ msgid "SQL database"
+#~ msgstr "Bază de date SQL"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Acestă sarcină selectează pachete utile pentru un server web de uz general."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Acestă sarcină selectează pachetele client și server pentru baza de date "
+#~ "PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Mediul grafic Xfce"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL este o bază de date relațională SQL, care oferă o "
+#~ "compatibilitate ridicată cu SQL92 și câteva facilități SQL3. Este "
+#~ "potrivită pentru acces multi-utilizator la baza de date, prin "
+#~ "facilitățile sale pentru tranzacții și mecanismele de interblocare "
+#~ "rafinate."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Acestă sarcină furnizează un set minimal de aplicații pentru mediul grafic "
-"Xfce."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Mediu grafic de birou"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Acestă sarcină furnizează un set minimal de aplicații pentru mediul "
+#~ "grafic și servește ca bază pentru sarcinile mediilor grafice GNOME și KDE."
+
+#~ msgid "DNS server"
+#~ msgstr "Server DNS"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Selectează serverul DNS BIND, și documentație pentru acesta, cât și "
+#~ "pachete de utilitare."
+
+#~ msgid "File server"
+#~ msgstr "Server de fișiere"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Această sarcină vă pregătește sistemul pentru a deveni un server de "
+#~ "fișiere care suportă atât CIFS cât și NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "Mediul grafic GNOME"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Acestă sarcină furnizează un set minimal de aplicații pentru mediul "
+#~ "grafic GNOME."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "Mediul grafic KDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Acestă sarcină furnizează un set minimal de aplicații pentru mediul "
+#~ "grafic KDE (K Desktop Environment)."
+
+#~ msgid "Laptop"
+#~ msgstr "Laptop"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Această sarcină instalează programe utile pentru un laptop."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "Mediul grafic LXDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Acestă sarcină furnizează un set minimal de aplicații pentru mediul "
+#~ "grafic LXDE."
+
+#~ msgid "Mail server"
+#~ msgstr "Server de poștă electronică"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Acestă sarcină selectează o varietate de pachetele utile pentru un server "
+#~ "de poștă electronică de uz general."
+
+#~ msgid "Print server"
+#~ msgstr "Server de tipărire"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr ""
+#~ "Această sarcină vă pregătește sistemul pentru a deveni un server de "
+#~ "tipărire."
+
+#~ msgid "SSH server"
+#~ msgstr "Server SSH"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Această sarcină pregătește sistemul pentru a fi accesat prin conexiuni "
+#~ "SSH."
+
+#~ msgid "Web server"
+#~ msgstr "Server de web"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Acestă sarcină selectează pachete utile pentru un server web de uz "
+#~ "general."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Mediul grafic Xfce"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Acestă sarcină furnizează un set minimal de aplicații pentru mediul "
+#~ "grafic Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Mediu de birou"

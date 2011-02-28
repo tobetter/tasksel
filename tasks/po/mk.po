@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2006-11-21 19:59+0100\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
@@ -18,140 +18,6 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL база на податоци"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Оваа задача ги селектира клиентски и серверски пакети за PostgreSQL базата "
-"на податоци."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL е SQL релациона база со податоци, нудејќи зголем број на SQL92 "
-"подршка како и некои SQL3 особини. Применлива е за користење за повеќе "
-"кориснички пристап до база на податоци, преку нејзините погони за трансакции "
-"и убаво-обмислено заклучување. "
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
-msgid "Graphical desktop environment"
-msgstr "Xfce работна околина"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Оваа задача овозможува основен софтвер за работна површина и преставува "
-"основа за Гном и КДЕ задачите."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS сервер"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Го селектира BIND DNS серверот и пропратни алатки како и документација."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Сервер за датотеки"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Оваа задача го подготвува твојот систем да биде сервер за датотеки, подржува "
-"и CIFS и NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "Гном работна околина"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Оваа задача овозможува основен софтвер за „работна површина“ со ГНОМ десктоп "
-"околината."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "КДЕ работна околина"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Оваа задача овозможува основен софтвер за „работна површина“ со KДЕ десктоп "
-"околината."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Лаптоп"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Оваа задача инсталира софтвер погоден за лаптоп."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE работна околина"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Оваа задача овозможува основен софтвер за „работна површина“ со LXDE десктоп "
-"околината."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Сервер за пошта"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Оваа задача селектира број на пакети корисни за општ систем со сервер за "
-"пошта."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "рачен избор на пакети"
@@ -160,32 +26,6 @@ msgstr "рачен избор на пакети"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Во aptitude рачно избери пакети за да се инсталираат."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Сервер за печатење"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "Оваа задача го подготвува твојот систем да биде сервер за печатење."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
-msgid "SSH server"
-msgstr "DNS сервер"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr "Оваа задача го подготвува твојот систем да биде сервер за печатење."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -201,31 +41,138 @@ msgid ""
 "selection of services and tools usable on the command line."
 msgstr ""
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Сервер за мрежа(web server)"
+#~ msgid "SQL database"
+#~ msgstr "SQL база на податоци"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Оваа задача селектира пакети корисни за општ сервер за интернет мрежата."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Оваа задача ги селектира клиентски и серверски пакети за PostgreSQL "
+#~ "базата на податоци."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce работна околина"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL е SQL релациона база со податоци, нудејќи зголем број на SQL92 "
+#~ "подршка како и некои SQL3 особини. Применлива е за користење за повеќе "
+#~ "кориснички пристап до база на податоци, преку нејзините погони за "
+#~ "трансакции и убаво-обмислено заклучување. "
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Оваа задача овозможува основен софтвер за „работна површина“ со Xfce десктоп "
-"околината."
+#, fuzzy
+#~| msgid "Xfce desktop environment"
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Xfce работна околина"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Оваа задача овозможува основен софтвер за работна површина и преставува "
+#~ "основа за Гном и КДЕ задачите."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS сервер"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Го селектира BIND DNS серверот и пропратни алатки како и документација."
+
+#~ msgid "File server"
+#~ msgstr "Сервер за датотеки"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Оваа задача го подготвува твојот систем да биде сервер за датотеки, "
+#~ "подржува и CIFS и NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "Гном работна околина"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Оваа задача овозможува основен софтвер за „работна површина“ со ГНОМ "
+#~ "десктоп околината."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "КДЕ работна околина"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Оваа задача овозможува основен софтвер за „работна површина“ со KДЕ "
+#~ "десктоп околината."
+
+#~ msgid "Laptop"
+#~ msgstr "Лаптоп"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Оваа задача инсталира софтвер погоден за лаптоп."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE работна околина"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Оваа задача овозможува основен софтвер за „работна површина“ со LXDE "
+#~ "десктоп околината."
+
+#~ msgid "Mail server"
+#~ msgstr "Сервер за пошта"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Оваа задача селектира број на пакети корисни за општ систем со сервер за "
+#~ "пошта."
+
+#~ msgid "Print server"
+#~ msgstr "Сервер за печатење"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "Оваа задача го подготвува твојот систем да биде сервер за печатење."
+
+#, fuzzy
+#~| msgid "DNS server"
+#~ msgid "SSH server"
+#~ msgstr "DNS сервер"
+
+#, fuzzy
+#~| msgid "This task sets up your system to be a print server."
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr "Оваа задача го подготвува твојот систем да биде сервер за печатење."
+
+#~ msgid "Web server"
+#~ msgstr "Сервер за мрежа(web server)"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Оваа задача селектира пакети корисни за општ сервер за интернет мрежата."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce работна околина"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Оваа задача овозможува основен софтвер за „работна површина“ со Xfce "
+#~ "десктоп околината."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Работна околина"

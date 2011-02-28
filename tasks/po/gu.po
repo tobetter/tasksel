@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasks-gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2006-10-06 14:39+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
@@ -15,128 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL ડેટાબેઝ"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr "આ કાર્ય PostgreSQL ડેટાબેઝ માટે ક્લાયન્ટ અને સર્વર પેકેજો પસંદ કરે છે."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL એ SQL રીલેશનલ ડેટાબેઝ છે, જે SQL92 સાથે સંગતતા અને કેટલીક SQL3 લાક્ષણિકતાઓ "
-"ધરાવે છે.  તે અનેક-વપરાશકર્તા ડેટાબેઝ તરીકે, તેની પરિવહન અને સુંદર તાળું મારવાની વિશેષતા વડે "
-"વાપરી શકાય છે. "
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "ગ્રાફિકલ ડેસ્કટોપ વાતાવરણ"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"આ કાર્ય સામાન્ય ડેસ્કટોપ સોફ્ટવેર ગોઠવે છે અને જીનોમ અને કેડીઇ ડેસ્કટોપ કાર્યનાં પાયા તરીકે "
-"કાર્ય કરે છે."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS સર્વર"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "BIND DNS સર્વર, અને સંબંધિત દસ્તાવેજો અને સાધનોનાં પેકેજો પસંદ કરે છે."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "ફાઇલ સર્વર"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"આ કાર્ય તમારી સિસ્ટમને ફાઇલ સર્વર બનાવવા માટે, CIFS અને NFS નો આધાર આપીને ગોઠવે છે."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "જીનોમ ડેસ્કટોપ વાતાવરણ"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"આ કાર્ય સામાન્ય \"ડેસ્કટોપ\" સોફ્ટવેર જીનોમ ડેસ્કટોપ વાતાવરણ નો ઉપયોગ કરીને પૂરું પાડે છે."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE ડેસ્કટોપ વાતાવરણ"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"આ કાર્ય સામાન્ય \"ડેસ્કટોપ\" સોફ્ટવેર K ડેસ્કટોપ વાતાવરણ નો ઉપયોગ કરીને પૂરું પાડે છે."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "લેપટોપ"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "આ કાર્ય લેપટોપ માટે મદદરૂપ સોફ્ટવેર સ્થાપિત કરે છે."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE ડેસ્કટોપ વાતાવરણ"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"આ કાર્ય LXDE ડેસ્કટોપ વાતાવરણનો ઉપયોગ કરીને સામાન્ય \"ડેસ્કટોપ\" સોફ્ટવેર પૂરું પાડે છે."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "મેઇલ સર્વર"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr "આ કાર્ય સામાન્ય કામની મેઇલ સિસ્ટમ માટે વિવિધ પેકેજોની પસંદગી કરે છે."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -147,29 +25,6 @@ msgstr "જાતે પેકેજ પસંદગી"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "એપ્ટિટ્યુડમાં સ્થાપન કરવા માટે પેકેજો જાતે પસંદ કરો."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "પ્રિન્ટ સર્વર"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "આ કાર્ય તમારી સિસ્ટમને પ્રિન્ટ સર્વર તરીકે ગોઠવે છે."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "SSH સર્વર"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"આ કાર્ય તમારી સિસ્ટમને દૂરસ્થ રહીને SSH જોડાણો વડે ઉપયોગ કરી શકાય તે રીતે ગોઠવે છે."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -185,29 +40,122 @@ msgstr ""
 "આ કાર્ય સામાન્ય વપરાશકર્તા વાતાવરણ ગોઠવે છે, અમુક હદ સુધી નાનાં પ્રમાણમાં પસંદગીની સેવાઓ "
 "અને સાધનો આદેશ તરીકે ઉપયોગી થાય તેમ પૂરા પાડે છે."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "વેબ સર્વર"
+#~ msgid "SQL database"
+#~ msgstr "SQL ડેટાબેઝ"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr "આ કાર્ય સામાન્ય ઉપયોગનાં વેબ સર્વર સિસ્ટમ માટે ઉપયોગી પેકેજોની પસંદગી કરશે."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr "આ કાર્ય PostgreSQL ડેટાબેઝ માટે ક્લાયન્ટ અને સર્વર પેકેજો પસંદ કરે છે."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce ડેસ્કટોપ વાતાવરણ"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL એ SQL રીલેશનલ ડેટાબેઝ છે, જે SQL92 સાથે સંગતતા અને કેટલીક SQL3 "
+#~ "લાક્ષણિકતાઓ ધરાવે છે.  તે અનેક-વપરાશકર્તા ડેટાબેઝ તરીકે, તેની પરિવહન અને સુંદર તાળું "
+#~ "મારવાની વિશેષતા વડે વાપરી શકાય છે. "
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"આ કાર્ય Xfce ડેસ્કટોપ વાતાવરણનો ઉપયોગ કરીને સામાન્ય \"ડેસ્કટોપ\" સોફ્ટવેર પૂરું પાડે છે."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "ગ્રાફિકલ ડેસ્કટોપ વાતાવરણ"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "આ કાર્ય સામાન્ય ડેસ્કટોપ સોફ્ટવેર ગોઠવે છે અને જીનોમ અને કેડીઇ ડેસ્કટોપ કાર્યનાં પાયા "
+#~ "તરીકે કાર્ય કરે છે."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS સર્વર"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr "BIND DNS સર્વર, અને સંબંધિત દસ્તાવેજો અને સાધનોનાં પેકેજો પસંદ કરે છે."
+
+#~ msgid "File server"
+#~ msgstr "ફાઇલ સર્વર"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "આ કાર્ય તમારી સિસ્ટમને ફાઇલ સર્વર બનાવવા માટે, CIFS અને NFS નો આધાર આપીને ગોઠવે છે."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "જીનોમ ડેસ્કટોપ વાતાવરણ"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "આ કાર્ય સામાન્ય \"ડેસ્કટોપ\" સોફ્ટવેર જીનોમ ડેસ્કટોપ વાતાવરણ નો ઉપયોગ કરીને પૂરું પાડે "
+#~ "છે."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE ડેસ્કટોપ વાતાવરણ"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "આ કાર્ય સામાન્ય \"ડેસ્કટોપ\" સોફ્ટવેર K ડેસ્કટોપ વાતાવરણ નો ઉપયોગ કરીને પૂરું પાડે છે."
+
+#~ msgid "Laptop"
+#~ msgstr "લેપટોપ"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "આ કાર્ય લેપટોપ માટે મદદરૂપ સોફ્ટવેર સ્થાપિત કરે છે."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE ડેસ્કટોપ વાતાવરણ"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "આ કાર્ય LXDE ડેસ્કટોપ વાતાવરણનો ઉપયોગ કરીને સામાન્ય \"ડેસ્કટોપ\" સોફ્ટવેર પૂરું પાડે છે."
+
+#~ msgid "Mail server"
+#~ msgstr "મેઇલ સર્વર"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr "આ કાર્ય સામાન્ય કામની મેઇલ સિસ્ટમ માટે વિવિધ પેકેજોની પસંદગી કરે છે."
+
+#~ msgid "Print server"
+#~ msgstr "પ્રિન્ટ સર્વર"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "આ કાર્ય તમારી સિસ્ટમને પ્રિન્ટ સર્વર તરીકે ગોઠવે છે."
+
+#~ msgid "SSH server"
+#~ msgstr "SSH સર્વર"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "આ કાર્ય તમારી સિસ્ટમને દૂરસ્થ રહીને SSH જોડાણો વડે ઉપયોગ કરી શકાય તે રીતે ગોઠવે છે."
+
+#~ msgid "Web server"
+#~ msgstr "વેબ સર્વર"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr "આ કાર્ય સામાન્ય ઉપયોગનાં વેબ સર્વર સિસ્ટમ માટે ઉપયોગી પેકેજોની પસંદગી કરશે."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce ડેસ્કટોપ વાતાવરણ"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "આ કાર્ય Xfce ડેસ્કટોપ વાતાવરણનો ઉપયોગ કરીને સામાન્ય \"ડેસ્કટોપ\" સોફ્ટવેર પૂરું પાડે છે."
 
 #~ msgid "Desktop environment"
 #~ msgstr "ડેસ્કટોપ વાતાવરણ"

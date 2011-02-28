@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2007-03-28 18:03+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
@@ -18,141 +18,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "Database na SQL"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Pinipili nito ang mga paketeng pang-kliyente at pang-server para sa database "
-"na PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"Ang PostgreSQL ay isang SQL relational database, nagbibigay ng lumalawak na "
-"pagsunod sa SQL92 at ilan sa mga katangian ng SQL3.  Nararapat itong gamitin "
-"sa maramihang gumagamit sa pag-akses ng database, gamit ang kanyang mga "
-"kasangkapan para sa mga transaksyon at fine-grained locking."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
-msgid "Graphical desktop environment"
-msgstr "Kapaligirang desktop na xfce"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Nagdudulot ito ng payak na software na pang-desktop at nagiging batayan ng "
-"GNOME at KDE desktop."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS server"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Pinipili ang BIND DNS server, at kaugnay na babasahin at kasangkapang mga "
-"pakete."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "File server"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Inaayos nito ang sistema niyo upang maging file sever, na nagsusuporta ng "
-"CIFS at NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "Kapaligirang desktop na GNOME"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Nagdudulot ito ng pangunahing \"desktop\" software na gamit ang GNOME "
-"desktop environment."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "Kapaligirang Desktop na KDE"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Nagdudulot ito ng pangunahing \"desktop\" software na gamit ang K Desktop "
-"Environment."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Laptop"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Nagluluklok ito ng mga software na mahalaga sa laptop."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "Kapaligirang desktop na xfce"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Nagdudulot ito ng pangunahing \"desktop\" software na gamit ang xfce desktop "
-"environment."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Mail server"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Pinipili nito ang mga pakete na makakatulong sa pangkalahatang gamit na "
-"sistemang mail server."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -163,32 +28,6 @@ msgstr "mano-manong pagpili ng mga pakete"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Piliin ng mano-mano ang paketeng iluluklok sa aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Print server"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "Inaayos nito ang sistema niyo na maging print server."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
-msgid "SSH server"
-msgstr "DNS server"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr "Inaayos nito ang sistema niyo na maging print server."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -204,32 +43,140 @@ msgid ""
 "selection of services and tools usable on the command line."
 msgstr ""
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Web server"
+#~ msgid "SQL database"
+#~ msgstr "Database na SQL"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Pinipili nito ang mga pakete na mapakikinabangan sa pangkalahatang gamit na "
-"sistemang web server"
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Pinipili nito ang mga paketeng pang-kliyente at pang-server para sa "
+#~ "database na PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Kapaligirang desktop na xfce"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "Ang PostgreSQL ay isang SQL relational database, nagbibigay ng lumalawak "
+#~ "na pagsunod sa SQL92 at ilan sa mga katangian ng SQL3.  Nararapat itong "
+#~ "gamitin sa maramihang gumagamit sa pag-akses ng database, gamit ang "
+#~ "kanyang mga kasangkapan para sa mga transaksyon at fine-grained locking."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Nagdudulot ito ng pangunahing \"desktop\" software na gamit ang xfce desktop "
-"environment."
+#, fuzzy
+#~| msgid "Xfce desktop environment"
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Kapaligirang desktop na xfce"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Nagdudulot ito ng payak na software na pang-desktop at nagiging batayan "
+#~ "ng GNOME at KDE desktop."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS server"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Pinipili ang BIND DNS server, at kaugnay na babasahin at kasangkapang mga "
+#~ "pakete."
+
+#~ msgid "File server"
+#~ msgstr "File server"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Inaayos nito ang sistema niyo upang maging file sever, na nagsusuporta ng "
+#~ "CIFS at NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "Kapaligirang desktop na GNOME"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Nagdudulot ito ng pangunahing \"desktop\" software na gamit ang GNOME "
+#~ "desktop environment."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "Kapaligirang Desktop na KDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Nagdudulot ito ng pangunahing \"desktop\" software na gamit ang K Desktop "
+#~ "Environment."
+
+#~ msgid "Laptop"
+#~ msgstr "Laptop"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Nagluluklok ito ng mga software na mahalaga sa laptop."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "Kapaligirang desktop na xfce"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Nagdudulot ito ng pangunahing \"desktop\" software na gamit ang xfce "
+#~ "desktop environment."
+
+#~ msgid "Mail server"
+#~ msgstr "Mail server"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Pinipili nito ang mga pakete na makakatulong sa pangkalahatang gamit na "
+#~ "sistemang mail server."
+
+#~ msgid "Print server"
+#~ msgstr "Print server"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "Inaayos nito ang sistema niyo na maging print server."
+
+#, fuzzy
+#~| msgid "DNS server"
+#~ msgid "SSH server"
+#~ msgstr "DNS server"
+
+#, fuzzy
+#~| msgid "This task sets up your system to be a print server."
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr "Inaayos nito ang sistema niyo na maging print server."
+
+#~ msgid "Web server"
+#~ msgstr "Web server"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Pinipili nito ang mga pakete na mapakikinabangan sa pangkalahatang gamit "
+#~ "na sistemang web server"
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Kapaligirang desktop na xfce"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Nagdudulot ito ng pangunahing \"desktop\" software na gamit ang xfce "
+#~ "desktop environment."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Kapaligirang Desktop"

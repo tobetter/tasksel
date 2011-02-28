@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2010-11-14 22:09+0100\n"
 "Last-Translator: Vanja Cvelbar <cvelbar@gmail.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -21,138 +21,6 @@ msgstr ""
 "%100==4 ? 2 : 3);\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "Podatkovna zbirka SQL"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"To opravilo izbere odjemalce in strežniške pakete za podatkovno zbirko "
-"PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL je relacijska podatkovna zbirka SQL, ki ponuja naraščajočo "
-"skladnost s SQL92 in nekatere možnosti SQL3.  Primerna je za večuporabniški "
-"dostop do zbirk, predvsem zaradi spretnosti pri izvrševanju in "
-"drobnozrnatega zaklepanja."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Grafično namizno okolje"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"To opravilo namesti osnovno programje za namizje in je osnova za GNOME ali "
-"KDE namizna opravila."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "Strežnik DNS"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "Izbere strežnik BIND DNS ter povezano dokumentacijo in pripomočke."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Datotečni strežnik"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"To opravilo spremeni vaš sistem v namenski datotečni strežnik s podporo za "
-"CIFS in NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME namizno okolje"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"To opravilo namesti osnovno \"namizno\" programsko opremo za namizno okolje "
-"GNOME."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "Namizno okolje KDE"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"To opravilo namesti osnovno \"namizno\" programsko opremo za namizno okolje "
-"KDE (K Desktop Environment)."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Prenosnik"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr ""
-"To opravilo namesti programsko opremo, ki je uporabna na prenosnih "
-"računalnikih."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE namizno okolje"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"To opravilo namesti osnovno \"namizno\" programsko opremo za namizno okolje "
-"LXDE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Poštni strežnik"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"To opravilo izbere številne pakete za splošno namenski poštni strežnik."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "ročna izbira paketov"
@@ -161,30 +29,6 @@ msgstr "ročna izbira paketov"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Ročno izberite pakete, ki jih želite namestiti v aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Tiskalniški strežnik"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "To opravilo spremeni vaš sistem v namenski tiskalniški strežnik."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "Strežnik SSH"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"To opravilo doda vašemu sistem možnost, da se lahko nanj oddaljeno povežete "
-"preko protokola SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -200,31 +44,134 @@ msgstr ""
 "To opravilo nastavi osnovno uporabniško okolje, ki nudi primerno majhno "
 "izbiro servisov in orodij, ki se uporabljajo v ukazni vrstici."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Spletni strežnik"
+#~ msgid "SQL database"
+#~ msgstr "Podatkovna zbirka SQL"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"To opravilo izbere pakete, uporabne za splošno namenski spletni strežnik."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "To opravilo izbere odjemalce in strežniške pakete za podatkovno zbirko "
+#~ "PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce namizno okolje"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL je relacijska podatkovna zbirka SQL, ki ponuja naraščajočo "
+#~ "skladnost s SQL92 in nekatere možnosti SQL3.  Primerna je za "
+#~ "večuporabniški dostop do zbirk, predvsem zaradi spretnosti pri "
+#~ "izvrševanju in drobnozrnatega zaklepanja."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"To opravilo namesti osnovno \"namizno\" programsko opremo za namizno okolje "
-"Xfce."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Grafično namizno okolje"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "To opravilo namesti osnovno programje za namizje in je osnova za GNOME "
+#~ "ali KDE namizna opravila."
+
+#~ msgid "DNS server"
+#~ msgstr "Strežnik DNS"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr "Izbere strežnik BIND DNS ter povezano dokumentacijo in pripomočke."
+
+#~ msgid "File server"
+#~ msgstr "Datotečni strežnik"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "To opravilo spremeni vaš sistem v namenski datotečni strežnik s podporo "
+#~ "za CIFS in NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME namizno okolje"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "To opravilo namesti osnovno \"namizno\" programsko opremo za namizno "
+#~ "okolje GNOME."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "Namizno okolje KDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "To opravilo namesti osnovno \"namizno\" programsko opremo za namizno "
+#~ "okolje KDE (K Desktop Environment)."
+
+#~ msgid "Laptop"
+#~ msgstr "Prenosnik"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr ""
+#~ "To opravilo namesti programsko opremo, ki je uporabna na prenosnih "
+#~ "računalnikih."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE namizno okolje"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "To opravilo namesti osnovno \"namizno\" programsko opremo za namizno "
+#~ "okolje LXDE."
+
+#~ msgid "Mail server"
+#~ msgstr "Poštni strežnik"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "To opravilo izbere številne pakete za splošno namenski poštni strežnik."
+
+#~ msgid "Print server"
+#~ msgstr "Tiskalniški strežnik"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "To opravilo spremeni vaš sistem v namenski tiskalniški strežnik."
+
+#~ msgid "SSH server"
+#~ msgstr "Strežnik SSH"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "To opravilo doda vašemu sistem možnost, da se lahko nanj oddaljeno "
+#~ "povežete preko protokola SSH."
+
+#~ msgid "Web server"
+#~ msgstr "Spletni strežnik"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "To opravilo izbere pakete, uporabne za splošno namenski spletni strežnik."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce namizno okolje"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "To opravilo namesti osnovno \"namizno\" programsko opremo za namizno "
+#~ "okolje Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Namizno okolje"

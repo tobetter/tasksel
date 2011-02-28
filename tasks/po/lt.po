@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2009-09-07 09:27+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
@@ -15,140 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL duomenų bazė"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Šis uždavinys išrenka įdiegimui PostgreSQL duomenų bazes kliento ir serverio "
-"paketus."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL yra reliacinė SQL duomenų bazė, siūlanti didėjantį suderinamumą "
-"su SQL92 ir kai kuriomis SQL3 galimybėmis.  Dėka tranzakcijų galimybės ir "
-"gerai apgalvotos blokavimo sistemos, ji tinkama naudoti esant daugelio "
-"naudotojų kreipimuisi į duomenų bazę."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Grafinė darbastalio aplinka"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Šis uždavinys rūpinasi pagrindine darbastalio programine įranga ir tarnauja "
-"kaip GNOME ir KDE darbastalių įdiegimo uždavinių bazinė dalis."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "Vardų serveris (DNS)"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Parinks BIND DNS serverį ir atitinkamus dokumentacijos ir pagalbinių "
-"programų paketus."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Failų serveris"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Šis uždavinys atliks tokius Jūsų sistemos nustatymus, kad ji galės būti "
-"failų serveriu, dirbančiu abiem protokolais: CIFS ir NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME darbastalio aplinka"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Šis uždavinys rūpinasi pagrindine darbastalio programine įranga, naudojant "
-"GNOME darbastalio aplinką."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE darbastalio aplinka"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Šis uždavinys rūpinasi pagrindine darbastalio programine įranga, naudojant "
-"KDE darbastalio aplinką."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Portatyvinis kompiuteris (laptop)"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr ""
-"Šis uždavinys įdiegia portatyviniams kompiuteriams naudingas programas."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE darbastalio aplinka"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Šis uždavinys rūpinasi pagrindine darbastalio programine įranga, naudojant "
-"LXDE darbastalio aplinką."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Pašto serveris"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Šis uždavinys parinks daugybę paketų, naudingų bendros paskirties pašto "
-"serverio sistemai."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -159,32 +25,6 @@ msgstr "rankinis paketų pasirinkimas"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Rankiniu būdu pasirinkti paketus įdiegimui su aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Spausdinimo serveris"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr ""
-"Šis uždavinys atliks tokius Jūsų sistemos nustatymus, kad ji gales būti "
-"spausdinimo serveriu."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "SSH serveris"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Šis uždavinys atliks nustatymus, suteikiančius nuotolinę prieigą prie Jūsų "
-"sistemos SSH protokolu."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -200,29 +40,136 @@ msgstr ""
 "Šis uždavinys įdiegs bazinę naudotojo aplinką, suteikiančią gana nedidelį "
 "kiekį įrankių ir servisų, naudojamų komandinės eilutės pagalba.   "
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Žiniatinklio (web) serveris"
+#~ msgid "SQL database"
+#~ msgstr "SQL duomenų bazė"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Šis uždavinys parinks paketus, naudingus bendros paskirties žiniatinklio "
-"(web) serverio sistemai."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Šis uždavinys išrenka įdiegimui PostgreSQL duomenų bazes kliento ir "
+#~ "serverio paketus."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce darbastalio aplinka"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL yra reliacinė SQL duomenų bazė, siūlanti didėjantį "
+#~ "suderinamumą su SQL92 ir kai kuriomis SQL3 galimybėmis.  Dėka tranzakcijų "
+#~ "galimybės ir gerai apgalvotos blokavimo sistemos, ji tinkama naudoti "
+#~ "esant daugelio naudotojų kreipimuisi į duomenų bazę."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Šis uždavinys rūpinasi pagrindine darbastalio programine įranga, naudojant "
-"Xfce darbastalio aplinką."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Grafinė darbastalio aplinka"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Šis uždavinys rūpinasi pagrindine darbastalio programine įranga ir "
+#~ "tarnauja kaip GNOME ir KDE darbastalių įdiegimo uždavinių bazinė dalis."
+
+#~ msgid "DNS server"
+#~ msgstr "Vardų serveris (DNS)"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Parinks BIND DNS serverį ir atitinkamus dokumentacijos ir pagalbinių "
+#~ "programų paketus."
+
+#~ msgid "File server"
+#~ msgstr "Failų serveris"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Šis uždavinys atliks tokius Jūsų sistemos nustatymus, kad ji galės būti "
+#~ "failų serveriu, dirbančiu abiem protokolais: CIFS ir NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME darbastalio aplinka"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Šis uždavinys rūpinasi pagrindine darbastalio programine įranga, "
+#~ "naudojant GNOME darbastalio aplinką."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE darbastalio aplinka"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Šis uždavinys rūpinasi pagrindine darbastalio programine įranga, "
+#~ "naudojant KDE darbastalio aplinką."
+
+#~ msgid "Laptop"
+#~ msgstr "Portatyvinis kompiuteris (laptop)"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr ""
+#~ "Šis uždavinys įdiegia portatyviniams kompiuteriams naudingas programas."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE darbastalio aplinka"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Šis uždavinys rūpinasi pagrindine darbastalio programine įranga, "
+#~ "naudojant LXDE darbastalio aplinką."
+
+#~ msgid "Mail server"
+#~ msgstr "Pašto serveris"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Šis uždavinys parinks daugybę paketų, naudingų bendros paskirties pašto "
+#~ "serverio sistemai."
+
+#~ msgid "Print server"
+#~ msgstr "Spausdinimo serveris"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr ""
+#~ "Šis uždavinys atliks tokius Jūsų sistemos nustatymus, kad ji gales būti "
+#~ "spausdinimo serveriu."
+
+#~ msgid "SSH server"
+#~ msgstr "SSH serveris"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Šis uždavinys atliks nustatymus, suteikiančius nuotolinę prieigą prie "
+#~ "Jūsų sistemos SSH protokolu."
+
+#~ msgid "Web server"
+#~ msgstr "Žiniatinklio (web) serveris"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Šis uždavinys parinks paketus, naudingus bendros paskirties žiniatinklio "
+#~ "(web) serverio sistemai."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce darbastalio aplinka"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Šis uždavinys rūpinasi pagrindine darbastalio programine įranga, "
+#~ "naudojant Xfce darbastalio aplinką."

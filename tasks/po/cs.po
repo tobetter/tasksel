@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2009-08-01 08:10+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
@@ -15,134 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL databáze"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr "Tato úloha vybere klientské a serverové balíky databáze PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL je relační databáze nabízející stále lepší podporu SQL92 a "
-"některé vlastnosti SQL3. Díky své podpoře transakcí a jemnozrnnému zamykání "
-"je PostgreSQL vhodný k nasazení do víceuživatelského prostředí."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Grafické desktopové prostředí"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Tato úloha poskytuje základní desktopový software a slouží jako základ pro "
-"desktopové úlohy GNOME a KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS server"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Vybere DNS server BIND s přilehlou dokumentací a balíky s užitečnými "
-"utilitami."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Souborový server"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Úloha připraví váš systém pro roli souborového serveru podporujícího jak "
-"CIFS, tak NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "Desktopové prostředí GNOME"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Tato úloha poskytuje základní „desktopové“ aplikace založené na desktopovém "
-"prostředí GNOME."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "Desktopové prostředí KDE"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Tato úloha poskytuje základní „desktopové“ aplikace založené na desktopovém "
-"prostředí KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Notebook"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Tato úloha nainstaluje programy užitečné pro uživatele s notebooky."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "Desktopové prostředí LXDE"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Tato úloha poskytuje základní „desktopové“ aplikace založené na desktopovém "
-"prostředí LXDE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Poštovní server"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr "Úloha vybere různé balíky užitečné pro poštovní server."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -155,30 +27,6 @@ msgid "Manually select packages to install in aptitude."
 msgstr ""
 "Spustí aptitude, ve které si ručně vyberete balíky, které chcete "
 "nainstalovat."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Tiskový server"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "Úloha připraví váš systém pro roli tiskového serveru."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "SSH server"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Úloha nastaví váš systém tak, abyste se k němu mohli připojit vzdáleně přes "
-"SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -194,30 +42,129 @@ msgstr ""
 "Úloha připraví základní uživatelské prostředí, což je rozumně malý výběr "
 "služeb a nástrojů použitelných z příkazové řádky."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Webový server"
+#~ msgid "SQL database"
+#~ msgstr "SQL databáze"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr "Úloha vybere balíky užitečné pro webový server."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr "Tato úloha vybere klientské a serverové balíky databáze PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Desktopové prostředí Xfce"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL je relační databáze nabízející stále lepší podporu SQL92 a "
+#~ "některé vlastnosti SQL3. Díky své podpoře transakcí a jemnozrnnému "
+#~ "zamykání je PostgreSQL vhodný k nasazení do víceuživatelského prostředí."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Tato úloha poskytuje základní „desktopové“ aplikace založené na desktopovém "
-"prostředí Xfce."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Grafické desktopové prostředí"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Tato úloha poskytuje základní desktopový software a slouží jako základ "
+#~ "pro desktopové úlohy GNOME a KDE."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS server"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Vybere DNS server BIND s přilehlou dokumentací a balíky s užitečnými "
+#~ "utilitami."
+
+#~ msgid "File server"
+#~ msgstr "Souborový server"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Úloha připraví váš systém pro roli souborového serveru podporujícího jak "
+#~ "CIFS, tak NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "Desktopové prostředí GNOME"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Tato úloha poskytuje základní „desktopové“ aplikace založené na "
+#~ "desktopovém prostředí GNOME."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "Desktopové prostředí KDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Tato úloha poskytuje základní „desktopové“ aplikace založené na "
+#~ "desktopovém prostředí KDE."
+
+#~ msgid "Laptop"
+#~ msgstr "Notebook"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Tato úloha nainstaluje programy užitečné pro uživatele s notebooky."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "Desktopové prostředí LXDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Tato úloha poskytuje základní „desktopové“ aplikace založené na "
+#~ "desktopovém prostředí LXDE."
+
+#~ msgid "Mail server"
+#~ msgstr "Poštovní server"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr "Úloha vybere různé balíky užitečné pro poštovní server."
+
+#~ msgid "Print server"
+#~ msgstr "Tiskový server"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "Úloha připraví váš systém pro roli tiskového serveru."
+
+#~ msgid "SSH server"
+#~ msgstr "SSH server"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Úloha nastaví váš systém tak, abyste se k němu mohli připojit vzdáleně "
+#~ "přes SSH."
+
+#~ msgid "Web server"
+#~ msgstr "Webový server"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr "Úloha vybere balíky užitečné pro webový server."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Desktopové prostředí Xfce"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Tato úloha poskytuje základní „desktopové“ aplikace založené na "
+#~ "desktopovém prostředí Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Desktopové prostředí"

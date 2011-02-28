@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2010-10-18 21:21+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
@@ -15,139 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "Base de dades SQL"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Aquesta tasca selecciona paquets de client i servidor per a la base de dades "
-"PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL és una base de dades SQL relacional, que s'acomoda "
-"progressivament a SQL92, i algunes funcionalitats SQL3. És apropiada per a "
-"l'ús amb accés multiusuari a bases de dades, mitjançant les seues propietats "
-"per a transaccions i bloqueig molt precís."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Entorn d'escriptori gràfic"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Aquesta tasca proveeix amb programari bàsic d'escriptori, i serveix com a "
-"base per a les tasques d'escriptori GNOME i KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "Servidor de DNS"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Selecciona el servidor de DNS BIND, i els paquets de  documentació i "
-"utilitats relacionats."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Servidor de fitxers"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Aquesta tasca configura el vostre sistema per a que siga un servidor de "
-"fitxers, suportant tant CIFS com NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "Entorn d'escriptori GNOME"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Aquesta tasca proveeix amb programari bàsic d'«escriptori» emprant l'entorn "
-"d'escriptori GNOME."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "Entorn d'escriptori KDE"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Aquesta tasca proveeix amb programari bàsic d'«escriptori» emprant l'entorn "
-"d'escriptori KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Portàtil"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Aquesta tasca instaŀla programari útil per a un portàtil."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "Entorn d'escriptori LXDE"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Aquesta tasca proveeix amb programari bàsic d'«escriptori» emprant l'entorn "
-"d'escriptori LXDE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Servidor de correu"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Aquesta tasca selecciona una varietat de paquets útils per a un servidor de "
-"correu normal."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -158,31 +25,6 @@ msgstr "selecció manual dels paquets"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Seleccioneu manualment els paquets a instaŀlar amb l'aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Servidor d'impressió"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr ""
-"Aquesta tasca configura el vostre sistema per a ser un servidor d'impressió."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "Servidor de SSH"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Aquesta tasca configura el vostre sistema per a ser accessible remotament "
-"mitjançant connexions SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -198,31 +40,137 @@ msgstr ""
 "Aquesta tasca configura un entorn d'usuari bàsic, proveint una selecció "
 "raonablement petita de serveis i eines per a la línia d'ordres."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Servidor web"
+#~ msgid "SQL database"
+#~ msgstr "Base de dades SQL"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Aquesta tasca selecciona paquets útils per a un servidor de web normal."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Aquesta tasca selecciona paquets de client i servidor per a la base de "
+#~ "dades PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Entorn d'escriptori Xfce"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL és una base de dades SQL relacional, que s'acomoda "
+#~ "progressivament a SQL92, i algunes funcionalitats SQL3. És apropiada per "
+#~ "a l'ús amb accés multiusuari a bases de dades, mitjançant les seues "
+#~ "propietats per a transaccions i bloqueig molt precís."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Aquesta tasca proveeix amb programari bàsic d'«escriptori» emprant l'entorn "
-"d'escriptori Xfce."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Entorn d'escriptori gràfic"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Aquesta tasca proveeix amb programari bàsic d'escriptori, i serveix com a "
+#~ "base per a les tasques d'escriptori GNOME i KDE."
+
+#~ msgid "DNS server"
+#~ msgstr "Servidor de DNS"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Selecciona el servidor de DNS BIND, i els paquets de  documentació i "
+#~ "utilitats relacionats."
+
+#~ msgid "File server"
+#~ msgstr "Servidor de fitxers"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Aquesta tasca configura el vostre sistema per a que siga un servidor de "
+#~ "fitxers, suportant tant CIFS com NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "Entorn d'escriptori GNOME"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Aquesta tasca proveeix amb programari bàsic d'«escriptori» emprant "
+#~ "l'entorn d'escriptori GNOME."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "Entorn d'escriptori KDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Aquesta tasca proveeix amb programari bàsic d'«escriptori» emprant "
+#~ "l'entorn d'escriptori KDE."
+
+#~ msgid "Laptop"
+#~ msgstr "Portàtil"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Aquesta tasca instaŀla programari útil per a un portàtil."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "Entorn d'escriptori LXDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Aquesta tasca proveeix amb programari bàsic d'«escriptori» emprant "
+#~ "l'entorn d'escriptori LXDE."
+
+#~ msgid "Mail server"
+#~ msgstr "Servidor de correu"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Aquesta tasca selecciona una varietat de paquets útils per a un servidor "
+#~ "de correu normal."
+
+#~ msgid "Print server"
+#~ msgstr "Servidor d'impressió"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr ""
+#~ "Aquesta tasca configura el vostre sistema per a ser un servidor "
+#~ "d'impressió."
+
+#~ msgid "SSH server"
+#~ msgstr "Servidor de SSH"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Aquesta tasca configura el vostre sistema per a ser accessible remotament "
+#~ "mitjançant connexions SSH."
+
+#~ msgid "Web server"
+#~ msgstr "Servidor web"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Aquesta tasca selecciona paquets útils per a un servidor de web normal."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Entorn d'escriptori Xfce"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Aquesta tasca proveeix amb programari bàsic d'«escriptori» emprant "
+#~ "l'entorn d'escriptori Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Entorn d'escriptori"

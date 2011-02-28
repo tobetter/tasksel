@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel 2.80\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2009-09-06 15:52+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -25,138 +25,6 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "База данных SQL"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr "Это задание выбирает компоненты клиента и сервера СУБД PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL -- это реляционная SQL база данных с всё возрастающей "
-"совместимостью с SQL92 и с некоторыми возможностями SQL3. Она обеспечивает "
-"многопользовательский доступ к базам данных, благодаря поддержке транзакций "
-"и продуманной системе блокировок."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Графическое окружение рабочего стола"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Это задание предоставляет основное программное обеспечение для рабочего "
-"стола и служит основой для заданий рабочих столов GNOME и KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "Сервер DNS"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Это задание служит для установки сервера имён BIND DNS, соответствующих "
-"пакетов документации и инструментов."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Файловый сервер"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Это задание настраивает систему для использования в качестве файлового "
-"сервера через CIFS и NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "Окружение рабочего стола GNOME"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Это задание предоставляет базовое программное обеспечение для \"рабочего "
-"стола\" с помощью окружения рабочего стола GNOME."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "Окружение рабочего стола KDE"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Это задание предоставляет базовое программное обеспечение для \"рабочего "
-"стола\" с помощью окружения рабочего стола KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Для ноутбука"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr ""
-"Это задание устанавливает программное обеспечение, которое будет полезно на "
-"ноутбуке."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "Окружение рабочего стола LXDE"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Это задание предоставляет базовое программное обеспечение для \"рабочего "
-"стола\" с помощью окружения рабочего стола LXDE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Почтовый сервер"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Это задание выбирает пакеты для создания почтового сервера общего назначения."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "выбор пакетов вручную"
@@ -165,29 +33,6 @@ msgstr "выбор пакетов вручную"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Выбор пакетов вручную для установки с помощью aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Сервер печати"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr ""
-"Это задание настраивает систему для использования в качестве сервера печати."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "Сервер SSH"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr "Это задание настраивает удалённый доступ к системе по протоколу SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -203,29 +48,134 @@ msgstr ""
 "Это задание настраивает базовое пользовательское окружение, предоставляющие "
 "относительно маленький набор служб и инструментов командной строки."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Веб-сервер"
+#~ msgid "SQL database"
+#~ msgstr "База данных SQL"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Это задание выбирает пакеты для создания системы с веб-сервером общего "
-"назначения."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr "Это задание выбирает компоненты клиента и сервера СУБД PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Окружение рабочего стола Xfce"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL -- это реляционная SQL база данных с всё возрастающей "
+#~ "совместимостью с SQL92 и с некоторыми возможностями SQL3. Она "
+#~ "обеспечивает многопользовательский доступ к базам данных, благодаря "
+#~ "поддержке транзакций и продуманной системе блокировок."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Это задание предоставляет базовое программное обеспечение для \"рабочего "
-"стола\" с помощью окружения рабочего стола Xfce."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Графическое окружение рабочего стола"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Это задание предоставляет основное программное обеспечение для рабочего "
+#~ "стола и служит основой для заданий рабочих столов GNOME и KDE."
+
+#~ msgid "DNS server"
+#~ msgstr "Сервер DNS"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Это задание служит для установки сервера имён BIND DNS, соответствующих "
+#~ "пакетов документации и инструментов."
+
+#~ msgid "File server"
+#~ msgstr "Файловый сервер"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Это задание настраивает систему для использования в качестве файлового "
+#~ "сервера через CIFS и NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "Окружение рабочего стола GNOME"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Это задание предоставляет базовое программное обеспечение для \"рабочего "
+#~ "стола\" с помощью окружения рабочего стола GNOME."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "Окружение рабочего стола KDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Это задание предоставляет базовое программное обеспечение для \"рабочего "
+#~ "стола\" с помощью окружения рабочего стола KDE."
+
+#~ msgid "Laptop"
+#~ msgstr "Для ноутбука"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr ""
+#~ "Это задание устанавливает программное обеспечение, которое будет полезно "
+#~ "на ноутбуке."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "Окружение рабочего стола LXDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Это задание предоставляет базовое программное обеспечение для \"рабочего "
+#~ "стола\" с помощью окружения рабочего стола LXDE."
+
+#~ msgid "Mail server"
+#~ msgstr "Почтовый сервер"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Это задание выбирает пакеты для создания почтового сервера общего "
+#~ "назначения."
+
+#~ msgid "Print server"
+#~ msgstr "Сервер печати"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr ""
+#~ "Это задание настраивает систему для использования в качестве сервера "
+#~ "печати."
+
+#~ msgid "SSH server"
+#~ msgstr "Сервер SSH"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Это задание настраивает удалённый доступ к системе по протоколу SSH."
+
+#~ msgid "Web server"
+#~ msgstr "Веб-сервер"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Это задание выбирает пакеты для создания системы с веб-сервером общего "
+#~ "назначения."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Окружение рабочего стола Xfce"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Это задание предоставляет базовое программное обеспечение для \"рабочего "
+#~ "стола\" с помощью окружения рабочего стола Xfce."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2008-01-17 01:35+0100\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Euskara <Librezale@librezale.org>\n"
@@ -19,139 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL datubasea"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Zeregin honek PostgreSQL-ren bezero eta zerbitzari paketeak hautatzen ditu."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL  SQL datubase erlazionala da, SQL92 hedagarritasuna eta SQL3-eko "
-"zenbait funtzionalitate eskaintzen ditu. Egokia da hainbat erabiltzailek "
-"datubasea atzitzeko, bere transakzio eta blokeo finak direla medio."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Mahaigain grafiko ingurunea"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Zeregin honek GNOME eta KDE zereginarentzat beharrezko diren oinarrizko "
-"idazmahai eta zerbitzari softwareak instalatuko ditu."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS zerbitzaria"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"BIND DNS zerbitzaria hautatzen du, dagokion dokumentazioaren eta utilitateen "
-"paketeekin."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Fitxategi-zerbitzaria"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Zeregin honek sistema fitxategi-zerbitzaria izateko konfiguratzen du, CIFS "
-"eta NFS onartzen dituelarik."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME idazmahai ingurunea"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Zeregin honek GNOME idazmahai ingurunea erabiliaz oinarrizko \"idazmahai\" "
-"ingurune bat instalatzen du."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE Mahaigain ingurunea"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Zeregin honek KDE idazmahai ingurunea erabiliaz oinarrizko \"idazmahai\" "
-"ingurune bat instalatzen du."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Eramangarria"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr ""
-"Zeregin honek ordenagailu eramangarrientzat erabilgarri den softwarea "
-"instalatuko du."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE idazmahai ingurunea"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Zeregin honek LXDE idazmahai ingurunea erabiliaz oinarrizko \"idazmahai\" "
-"ingurune bat instalatzen du."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Posta zerbitzaria"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Zeregin honek posta-zerbitzari sistemarentzako orokorrak diren paketeak "
-"hautatzen ditu."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "eskuzko paketea aukeraketa"
@@ -160,30 +27,6 @@ msgstr "eskuzko paketea aukeraketa"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Aptitude bidez instalatuko diren paketeak eskuz aukeratu."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Inprimatze-zerbitzaria"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "Zeregin honek sistema inprimatze-zerbitzaria izateko konfiguratzen du."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "SSH zerbitzaria"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Zeregin honek sistema urrunetik SSH konexionen bidez atzitzeko konfigurarzen "
-"du."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -199,32 +42,139 @@ msgstr ""
 "Zeregin honek erabiltzaile ingurune basiko bat konfiguratzen du, komando "
 "lerroan erabilgarri diren tresna eta zerbitzu multzo batez hornituaz."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Web zerbitzaria"
+#~ msgid "SQL database"
+#~ msgstr "SQL datubasea"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Zeregin honek web zerbitzari sistema batek behar dituen oinarrizko paketeak "
-"instalatuko ditu."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Zeregin honek PostgreSQL-ren bezero eta zerbitzari paketeak hautatzen "
+#~ "ditu."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce idazmahai ingurunea"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL  SQL datubase erlazionala da, SQL92 hedagarritasuna eta SQL3-"
+#~ "eko zenbait funtzionalitate eskaintzen ditu. Egokia da hainbat "
+#~ "erabiltzailek datubasea atzitzeko, bere transakzio eta blokeo finak "
+#~ "direla medio."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Zeregin honek Xfce idazmahai ingurunea erabiliaz oinarrizko \"idazmahai\" "
-"ingurune bat instalatzen du."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Mahaigain grafiko ingurunea"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Zeregin honek GNOME eta KDE zereginarentzat beharrezko diren oinarrizko "
+#~ "idazmahai eta zerbitzari softwareak instalatuko ditu."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS zerbitzaria"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "BIND DNS zerbitzaria hautatzen du, dagokion dokumentazioaren eta "
+#~ "utilitateen paketeekin."
+
+#~ msgid "File server"
+#~ msgstr "Fitxategi-zerbitzaria"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Zeregin honek sistema fitxategi-zerbitzaria izateko konfiguratzen du, "
+#~ "CIFS eta NFS onartzen dituelarik."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME idazmahai ingurunea"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Zeregin honek GNOME idazmahai ingurunea erabiliaz oinarrizko \"idazmahai"
+#~ "\" ingurune bat instalatzen du."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE Mahaigain ingurunea"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Zeregin honek KDE idazmahai ingurunea erabiliaz oinarrizko \"idazmahai\" "
+#~ "ingurune bat instalatzen du."
+
+#~ msgid "Laptop"
+#~ msgstr "Eramangarria"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr ""
+#~ "Zeregin honek ordenagailu eramangarrientzat erabilgarri den softwarea "
+#~ "instalatuko du."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE idazmahai ingurunea"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Zeregin honek LXDE idazmahai ingurunea erabiliaz oinarrizko \"idazmahai\" "
+#~ "ingurune bat instalatzen du."
+
+#~ msgid "Mail server"
+#~ msgstr "Posta zerbitzaria"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Zeregin honek posta-zerbitzari sistemarentzako orokorrak diren paketeak "
+#~ "hautatzen ditu."
+
+#~ msgid "Print server"
+#~ msgstr "Inprimatze-zerbitzaria"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr ""
+#~ "Zeregin honek sistema inprimatze-zerbitzaria izateko konfiguratzen du."
+
+#~ msgid "SSH server"
+#~ msgstr "SSH zerbitzaria"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Zeregin honek sistema urrunetik SSH konexionen bidez atzitzeko "
+#~ "konfigurarzen du."
+
+#~ msgid "Web server"
+#~ msgstr "Web zerbitzaria"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Zeregin honek web zerbitzari sistema batek behar dituen oinarrizko "
+#~ "paketeak instalatuko ditu."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce idazmahai ingurunea"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Zeregin honek Xfce idazmahai ingurunea erabiliaz oinarrizko \"idazmahai\" "
+#~ "ingurune bat instalatzen du."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Mahaigaina ingurunea"

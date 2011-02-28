@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer HR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2010-07-07 14:30+0200\n"
 "Last-Translator: Josip Rodin <joy+ditrans@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -15,135 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL baza podataka"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Ova zadaæa izabire klijentske i poslu¾iteljske pakete za PostgreSQL bazu "
-"podataka."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL je SQL baza podataka koja nudi poveæanu SQL92 usklaðenost i neke "
-"SQL3 moguænosti. Pogodna je za vi¹ekorisnièki pristup bazi podataka, kroz "
-"svoje moguænosti transakcija i precizno razdijeljeno zakljuèavanje."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Grafièko radno okru¾enje"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Ova zadaæa instalira osnovne \"desktop\" programe te slu¾i kao osnova za "
-"zadaæe koje donose GNOME i KDE radna okru¾enja."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS poslu¾itelj"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "Izabire BIND DNS poslu¾itelj s odgovarajuæom dokumentacijom i alatima."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Datoteèni poslu¾itelj"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Ova zadaæa pode¹ava va¹ sustav kao datoteèni poslu¾itelj, podr¾avajuæi i "
-"CIFS i NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME radno okru¾enje"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Ova zadaæa instalira osnovne \"desktop\" programe koji koriste GNOME radno "
-"okru¾enje."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE radno okru¾enje"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Ova zadaæa instalira osnovne \"desktop\" programe koji koriste KDE radno "
-"okru¾enje."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Prijenosnik"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Ova zadaæa donosi programe korisne za prijenosna raèunala."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE radno okru¾enje"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Ova zadaæa instalira osnovne \"desktop\" programe koji koriste LXDE radno "
-"okru¾enje."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Poslu¾itelj za e-po¹tu"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Ova zadaæa izabire niz paketa korisnih za poslu¾itelj e-po¹te opæe namjene."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -154,30 +25,6 @@ msgstr "ruèni odabir paketa"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Ruèno izabrati pakete za instalaciju u aptitudeu."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Poslu¾itelj za ispis"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "Ova zadaæa pode¹ava va¹ sustav kao poslu¾itelj za ispis."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "SSH poslu¾itelj"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Ova zadaæa pode¹ava va¹ sustav tako da mu se mo¾e pristupiti sa udaljene "
-"lokacije kroz SSH veze."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -193,31 +40,133 @@ msgstr ""
 "Ova zadaæa pode¹ava osnovno korisnièko okru¾enje, uz razmjerno malen izbor "
 "usluga i alata koji se mogu koristiti putem naredbenog retka."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Mre¾ni server"
+#~ msgid "SQL database"
+#~ msgstr "SQL baza podataka"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Ova zadaæa izabire niz paketa korisnih za mre¾ni poslu¾itelj opæe namjene."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Ova zadaæa izabire klijentske i poslu¾iteljske pakete za PostgreSQL bazu "
+#~ "podataka."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce radno okru¾enje"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL je SQL baza podataka koja nudi poveæanu SQL92 usklaðenost i "
+#~ "neke SQL3 moguænosti. Pogodna je za vi¹ekorisnièki pristup bazi podataka, "
+#~ "kroz svoje moguænosti transakcija i precizno razdijeljeno zakljuèavanje."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Ova zadaæa instalira osnovne \"desktop\" programe koji koriste Xfce radno "
-"okru¾enje."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Grafièko radno okru¾enje"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Ova zadaæa instalira osnovne \"desktop\" programe te slu¾i kao osnova za "
+#~ "zadaæe koje donose GNOME i KDE radna okru¾enja."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS poslu¾itelj"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Izabire BIND DNS poslu¾itelj s odgovarajuæom dokumentacijom i alatima."
+
+#~ msgid "File server"
+#~ msgstr "Datoteèni poslu¾itelj"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Ova zadaæa pode¹ava va¹ sustav kao datoteèni poslu¾itelj, podr¾avajuæi i "
+#~ "CIFS i NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME radno okru¾enje"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Ova zadaæa instalira osnovne \"desktop\" programe koji koriste GNOME "
+#~ "radno okru¾enje."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE radno okru¾enje"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Ova zadaæa instalira osnovne \"desktop\" programe koji koriste KDE radno "
+#~ "okru¾enje."
+
+#~ msgid "Laptop"
+#~ msgstr "Prijenosnik"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Ova zadaæa donosi programe korisne za prijenosna raèunala."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE radno okru¾enje"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Ova zadaæa instalira osnovne \"desktop\" programe koji koriste LXDE radno "
+#~ "okru¾enje."
+
+#~ msgid "Mail server"
+#~ msgstr "Poslu¾itelj za e-po¹tu"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Ova zadaæa izabire niz paketa korisnih za poslu¾itelj e-po¹te opæe "
+#~ "namjene."
+
+#~ msgid "Print server"
+#~ msgstr "Poslu¾itelj za ispis"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "Ova zadaæa pode¹ava va¹ sustav kao poslu¾itelj za ispis."
+
+#~ msgid "SSH server"
+#~ msgstr "SSH poslu¾itelj"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Ova zadaæa pode¹ava va¹ sustav tako da mu se mo¾e pristupiti sa udaljene "
+#~ "lokacije kroz SSH veze."
+
+#~ msgid "Web server"
+#~ msgstr "Mre¾ni server"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Ova zadaæa izabire niz paketa korisnih za mre¾ni poslu¾itelj opæe namjene."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce radno okru¾enje"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Ova zadaæa instalira osnovne \"desktop\" programe koji koriste Xfce radno "
+#~ "okru¾enje."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Radno okru¾enje ('desktop')"

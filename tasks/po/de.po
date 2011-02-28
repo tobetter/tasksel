@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2010-01-14 21:20+0100\n"
 "Last-Translator: Holger Wansing <linux@wansing-online.de>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
@@ -18,137 +18,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL-Datenbank"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Dieser Task wählt Client- und Serverpakete für die PostgreSQL-Datenbank."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL ist eine relationale Datenbank, die zunehmende SQL92-Konformität "
-"und einige SQL3-Funktionen bietet. Sie ist aufgrund ihrer Fähigkeiten für "
-"»Transaktionen« und feinkörniges Sperren (locking) für Mehrbenutzer-"
-"Datenbankzugriff geeignet."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Grafische Desktop-Umgebung"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Dieser Task stellt grundlegende Desktop-Software bereit und dient als Basis "
-"für die GNOME- und KDE-Desktop-Tasks."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS-Server"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Wählt den BIND DNS-Server und verwandte Dokumentation und Hilfspakete aus."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Datei-Server"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Dieser Task richtet Ihr System als Datei-Server ein. CIFS und NFS werden "
-"unterstützt."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME-Desktop-Umgebung"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Dieser Task stellt grundlegende »Desktop«-Software für die GNOME-Desktop-"
-"Umgebung bereit."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE-Desktop-Umgebung"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Dieser Task stellt grundlegende »Desktop«-Software für die KDE-Desktop-"
-"Umgebung bereit."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Laptop"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Dieser Task installiert Programme, die für Laptops nützlich sind."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE-Desktop-Umgebung"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Dieser Task stellt grundlegende »Desktop«-Software für die LXDE-Desktop-"
-"Umgebung bereit."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Mail-Server"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Dieser Task wählt Pakete aus, die für einen universellen Mail-Server "
-"nützlich sind."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -159,30 +28,6 @@ msgstr "Manuelle Paketauswahl"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Manuelle Auswahl zu installierender Pakete in aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Druck-Server"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "Dieser Task richtet Ihr System als Druck-Server ein."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "SSH-Server"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Dieser Task richtet Ihr System so ein, dass über SSH-Verbindungen von fern "
-"darauf zugegriffen werden kann."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -199,29 +44,131 @@ msgstr ""
 "kleine, aber vernünftige Auswahl von Diensten und Werkzeugen für die "
 "Kommandozeile bereit."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Web-Server"
+#~ msgid "SQL database"
+#~ msgstr "SQL-Datenbank"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Dieser Task wählt Pakete aus, die für einen universellen Web-Server nützlich "
-"sind."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Dieser Task wählt Client- und Serverpakete für die PostgreSQL-Datenbank."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce-Desktop-Umgebung"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL ist eine relationale Datenbank, die zunehmende SQL92-"
+#~ "Konformität und einige SQL3-Funktionen bietet. Sie ist aufgrund ihrer "
+#~ "Fähigkeiten für »Transaktionen« und feinkörniges Sperren (locking) für "
+#~ "Mehrbenutzer-Datenbankzugriff geeignet."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Dieser Task stellt grundlegende »Desktop«-Software für die Xfce-Desktop-"
-"Umgebung bereit."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Grafische Desktop-Umgebung"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Dieser Task stellt grundlegende Desktop-Software bereit und dient als "
+#~ "Basis für die GNOME- und KDE-Desktop-Tasks."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS-Server"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Wählt den BIND DNS-Server und verwandte Dokumentation und Hilfspakete aus."
+
+#~ msgid "File server"
+#~ msgstr "Datei-Server"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Dieser Task richtet Ihr System als Datei-Server ein. CIFS und NFS werden "
+#~ "unterstützt."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME-Desktop-Umgebung"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Dieser Task stellt grundlegende »Desktop«-Software für die GNOME-Desktop-"
+#~ "Umgebung bereit."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE-Desktop-Umgebung"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Dieser Task stellt grundlegende »Desktop«-Software für die KDE-Desktop-"
+#~ "Umgebung bereit."
+
+#~ msgid "Laptop"
+#~ msgstr "Laptop"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Dieser Task installiert Programme, die für Laptops nützlich sind."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE-Desktop-Umgebung"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Dieser Task stellt grundlegende »Desktop«-Software für die LXDE-Desktop-"
+#~ "Umgebung bereit."
+
+#~ msgid "Mail server"
+#~ msgstr "Mail-Server"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Dieser Task wählt Pakete aus, die für einen universellen Mail-Server "
+#~ "nützlich sind."
+
+#~ msgid "Print server"
+#~ msgstr "Druck-Server"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "Dieser Task richtet Ihr System als Druck-Server ein."
+
+#~ msgid "SSH server"
+#~ msgstr "SSH-Server"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Dieser Task richtet Ihr System so ein, dass über SSH-Verbindungen von "
+#~ "fern darauf zugegriffen werden kann."
+
+#~ msgid "Web server"
+#~ msgstr "Web-Server"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Dieser Task wählt Pakete aus, die für einen universellen Web-Server "
+#~ "nützlich sind."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce-Desktop-Umgebung"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Dieser Task stellt grundlegende »Desktop«-Software für die Xfce-Desktop-"
+#~ "Umgebung bereit."

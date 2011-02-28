@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2009-08-17 14:57+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Turkish <debian-l10n-turkish@lists.debian.org>\n"
@@ -18,135 +18,6 @@ msgstr ""
 "Plural-Forms:  nplurals=1; plural=0;\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL veritabanı"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Bu görev PostgreSQL veritabanı için sunucu ve istemci paketlerini seçer."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL, artan SQL92 uyumluluğu ve bazı SQL3 özellikleri sunan bir "
-"ilişkisel SQL veritabanıdır. PostgreSQL veri aktarımı ve detaylı kilitleme "
-"hizmetleriyle çok kullanıcılı veri tabanı erişimine uygundur."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Görsel masaüstü ortamı"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Temel masaüstü yazılımlarını sağlayan bu görev, GNOME ve KDE masaüstü "
-"görevleri için de taban teşkil eder."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS sunucusu"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "BIND DNS sunucusunu, ilgili belgeleri ve yardımcı programları seçer."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Dosya sunucusu"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Hem CIFS hem de NFS'i destekleyen bu görev ve sisteminizi dosya sunucusu "
-"olacak şekilde ayarlar."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME masaüstü ortamı"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Bu görev GNOME masaüstü ortamını kullanan temel \"masaüstü\" yazılımlarını "
-"sağlar."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE masaüstü ortamı"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Bu görev K Masaüstü Ortamını (KDE) kullanan temel \"masaüstü\" yazılımlarını "
-"sağlar."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Dizüstü"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Bu görev dizüstü bilgisayarlar için yararlı yazılımları kurar."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE masaüstü ortamı"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Bu görev LXDE masaüstü ortamını kullanan temel \"masaüstü\" yazılımlarını "
-"sağlar."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Posta sunucusu"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Bu görev, genel amaçlı posta sunucusu görevi yapacak bir sistem için faydalı "
-"olan çeşitli paketleri seçer."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "elle paket seçimi"
@@ -155,29 +26,6 @@ msgstr "elle paket seçimi"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Aptitude programıyla kurulacak paketleri elle seçin."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Yazdırma sunucusu"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "Bu görev sisteminizi yazdırma sunucusu olacak şekilde ayarlar."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "SSH sunucusu"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Bu görev sisteminizi SSH yoluyla uzaktan bağlanılabilecek şekilde ayarlar."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -193,30 +41,131 @@ msgstr ""
 "Bu görev komut satırında kullanılabilen hizmet ve araçların küçük bir "
 "kısmını sağlayarak temel bir kullanıcı ortamı kurar."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Web sunucusu"
+#~ msgid "SQL database"
+#~ msgstr "SQL veritabanı"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr "Bu görev genel amaçlı bir web sunucusu için gerekli paketleri seçer."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Bu görev PostgreSQL veritabanı için sunucu ve istemci paketlerini seçer."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce masaüstü ortamı"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL, artan SQL92 uyumluluğu ve bazı SQL3 özellikleri sunan bir "
+#~ "ilişkisel SQL veritabanıdır. PostgreSQL veri aktarımı ve detaylı "
+#~ "kilitleme hizmetleriyle çok kullanıcılı veri tabanı erişimine uygundur."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Bu görev Xfce masaüstü ortamını kullanan temel \"masaüstü\" yazılımlarını "
-"sağlar."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Görsel masaüstü ortamı"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Temel masaüstü yazılımlarını sağlayan bu görev, GNOME ve KDE masaüstü "
+#~ "görevleri için de taban teşkil eder."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS sunucusu"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "BIND DNS sunucusunu, ilgili belgeleri ve yardımcı programları seçer."
+
+#~ msgid "File server"
+#~ msgstr "Dosya sunucusu"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Hem CIFS hem de NFS'i destekleyen bu görev ve sisteminizi dosya sunucusu "
+#~ "olacak şekilde ayarlar."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME masaüstü ortamı"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Bu görev GNOME masaüstü ortamını kullanan temel \"masaüstü\" "
+#~ "yazılımlarını sağlar."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE masaüstü ortamı"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Bu görev K Masaüstü Ortamını (KDE) kullanan temel \"masaüstü\" "
+#~ "yazılımlarını sağlar."
+
+#~ msgid "Laptop"
+#~ msgstr "Dizüstü"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Bu görev dizüstü bilgisayarlar için yararlı yazılımları kurar."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE masaüstü ortamı"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Bu görev LXDE masaüstü ortamını kullanan temel \"masaüstü\" yazılımlarını "
+#~ "sağlar."
+
+#~ msgid "Mail server"
+#~ msgstr "Posta sunucusu"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Bu görev, genel amaçlı posta sunucusu görevi yapacak bir sistem için "
+#~ "faydalı olan çeşitli paketleri seçer."
+
+#~ msgid "Print server"
+#~ msgstr "Yazdırma sunucusu"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "Bu görev sisteminizi yazdırma sunucusu olacak şekilde ayarlar."
+
+#~ msgid "SSH server"
+#~ msgstr "SSH sunucusu"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Bu görev sisteminizi SSH yoluyla uzaktan bağlanılabilecek şekilde ayarlar."
+
+#~ msgid "Web server"
+#~ msgstr "Web sunucusu"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Bu görev genel amaçlı bir web sunucusu için gerekli paketleri seçer."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce masaüstü ortamı"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Bu görev Xfce masaüstü ortamını kullanan temel \"masaüstü\" yazılımlarını "
+#~ "sağlar."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Masaüstü ortamı"

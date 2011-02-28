@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2006-11-19 16:09+0300\n"
 "Last-Translator: Siim Põder <windo@p6drad-teel.net>\n"
 "Language-Team: linuxiabi <linuxiabi@hot.ee>\n"
@@ -19,135 +19,6 @@ msgstr ""
 "X-Poedit-Language: Estonian\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL andmebaas"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr "See ülesanne valib PostgreSQL andmebaasi serveri ja kliendi pakid."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL on relatsiooniline SQL andmebaas, mis vastab üha enam SQL92 "
-"spetsifikatsioonile ja sisaldab mõningaid SQL3 võimalusi. Ta sobib "
-"mitmekasutaja-pöördus andmebaasiks, omades võimalusi ülekanneteks ja väga "
-"täpseks lukustamiseks."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
-msgid "Graphical desktop environment"
-msgstr "Xfce töölaua keskkond"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"See ülesanne tagab põhilise töölaua-tarkvara ning on aluseks GNOME ning KDE "
-"töölaudedele."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS server"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Valib BIND DNS serveri ja temaga seotud dokumentatsiooni ning tööriistad."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Failiserver"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"See ülesanne seab su süsteemi tööle failiserverina, toetades nii CIFS'i kui "
-"ka NFS'i."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME töölaua keskkond"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"See ülesanne tagab peamise \"töölaua\" tarkvare GNOME töölauakeskkonna näol."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE töölauakeskkond"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"See ülesanne tagab peamise \"töölaua\" tarkvara KDE töölauakeskkonna näol."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Sülearvuti"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "See ülesanne paigaldab sülearvutile kasulikku tarkvara."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE töölaua keskkond"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"See ülesanne tagab peamise \"töölaua\" tarkvare LXDE töölauakeskkonna näol."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Meiliserver"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"See ülesanne valib mõningat pakid, mis on kasulikud üldotstarbelise "
-"meiliserveri jooksutamiseks."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "käsitsi pakkide valimine"
@@ -156,32 +27,6 @@ msgstr "käsitsi pakkide valimine"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Vali paigaldatavad pakid aptitude abil käsitsi."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Printimis-server"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "See ülesanne sätib su süsteemi printimis-serveriks."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
-msgid "SSH server"
-msgstr "DNS server"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr "See ülesanne sätib su süsteemi printimis-serveriks."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -197,31 +42,136 @@ msgid ""
 "selection of services and tools usable on the command line."
 msgstr ""
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Veebiserver"
+#~ msgid "SQL database"
+#~ msgstr "SQL andmebaas"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"See ülesanne valib pakid, mis on kasulikud üldotstarbelise veebiserveri "
-"jaoks."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr "See ülesanne valib PostgreSQL andmebaasi serveri ja kliendi pakid."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce töölaua keskkond"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL on relatsiooniline SQL andmebaas, mis vastab üha enam SQL92 "
+#~ "spetsifikatsioonile ja sisaldab mõningaid SQL3 võimalusi. Ta sobib "
+#~ "mitmekasutaja-pöördus andmebaasiks, omades võimalusi ülekanneteks ja väga "
+#~ "täpseks lukustamiseks."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"See ülesanne tagab peamise \"töölaua\" tarkvare Xfce töölauakeskkonna näol."
+#, fuzzy
+#~| msgid "Xfce desktop environment"
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Xfce töölaua keskkond"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "See ülesanne tagab põhilise töölaua-tarkvara ning on aluseks GNOME ning "
+#~ "KDE töölaudedele."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS server"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Valib BIND DNS serveri ja temaga seotud dokumentatsiooni ning tööriistad."
+
+#~ msgid "File server"
+#~ msgstr "Failiserver"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "See ülesanne seab su süsteemi tööle failiserverina, toetades nii CIFS'i "
+#~ "kui ka NFS'i."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME töölaua keskkond"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "See ülesanne tagab peamise \"töölaua\" tarkvare GNOME töölauakeskkonna "
+#~ "näol."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE töölauakeskkond"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "See ülesanne tagab peamise \"töölaua\" tarkvara KDE töölauakeskkonna näol."
+
+#~ msgid "Laptop"
+#~ msgstr "Sülearvuti"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "See ülesanne paigaldab sülearvutile kasulikku tarkvara."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE töölaua keskkond"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "See ülesanne tagab peamise \"töölaua\" tarkvare LXDE töölauakeskkonna "
+#~ "näol."
+
+#~ msgid "Mail server"
+#~ msgstr "Meiliserver"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "See ülesanne valib mõningat pakid, mis on kasulikud üldotstarbelise "
+#~ "meiliserveri jooksutamiseks."
+
+#~ msgid "Print server"
+#~ msgstr "Printimis-server"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "See ülesanne sätib su süsteemi printimis-serveriks."
+
+#, fuzzy
+#~| msgid "DNS server"
+#~ msgid "SSH server"
+#~ msgstr "DNS server"
+
+#, fuzzy
+#~| msgid "This task sets up your system to be a print server."
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr "See ülesanne sätib su süsteemi printimis-serveriks."
+
+#~ msgid "Web server"
+#~ msgstr "Veebiserver"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "See ülesanne valib pakid, mis on kasulikud üldotstarbelise veebiserveri "
+#~ "jaoks."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce töölaua keskkond"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "See ülesanne tagab peamise \"töölaua\" tarkvare Xfce töölauakeskkonna "
+#~ "näol."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Töölauaga keskkond"

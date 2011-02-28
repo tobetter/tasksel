@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2009-11-27 20:38+0800\n"
 "Last-Translator: 苏运强 <wzssyqa@gmail.com>\n"
 "Language-Team: Simplified Chinese <debian-chinese-gb@lists.debian.org>\n"
@@ -17,123 +17,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL 数据库"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr "此软件集选择 PostgreSQL 数据库的服务器端和客户端软件。"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL 是一种 SQL 关系数据库，遵从 SQL92 标准并提供一些 SQL3 的特性。它具"
-"有便利的事务处理和细粒度锁定(fine-grained locking)功能，因此很适合多用户存取"
-"环境。"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "图形桌面环境"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"此软件集将提供基本的桌面软件和服务以作为 GNOME 和 KDE 桌面软件集的基础。"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS 服务器"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "选择 BIND DNS 服务器以及相关文档和工具软件包。"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "文件服务器"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr "此软件集将把您的系统设置成一台同时支持 CIFS 和 NFS 的文件服务器。"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME 桌面环境"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr "此软件集将使用 GNOME 桌面环境提供基本的“桌面”软件。"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE 桌面环境"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr "此软件集将使用 KDE 桌面环境提供基本的“桌面”软件。"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "笔记本电脑"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "此软件集将安装对笔记本电脑有用的软件。"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE 桌面环境"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr "此软件集将使用 LXDE 桌面环境提供基本的“桌面”软件。"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "邮件服务器"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr "此软件集选择了对通用邮件服务器系统有用的一些软件包。"
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -144,28 +27,6 @@ msgstr "手动软件包选择"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "在 aptitude 中手动选择要安装的软件包。"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "打印服务器"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "此软件集将会把您的系统设置成一台打印服务器。"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "SSH 服务器"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr "此软件集将会把您的系统设置为可以通过 SSH 连接远程访问。"
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -181,28 +42,114 @@ msgstr ""
 "此软件集设置一个基本的用户环境，其提供一个合理且小的在命令行上可用的服务和工"
 "具的选择。"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Web 服务器"
+#~ msgid "SQL database"
+#~ msgstr "SQL 数据库"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr "此软件集选择一些对通用 web 服务器系统有用的软件包。"
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr "此软件集选择 PostgreSQL 数据库的服务器端和客户端软件。"
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce 桌面环境"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL 是一种 SQL 关系数据库，遵从 SQL92 标准并提供一些 SQL3 的特性。"
+#~ "它具有便利的事务处理和细粒度锁定(fine-grained locking)功能，因此很适合多用"
+#~ "户存取环境。"
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr "此软件集将使用 Xfce 桌面环境提供基本的“桌面”软件。"
+#~ msgid "Graphical desktop environment"
+#~ msgstr "图形桌面环境"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "此软件集将提供基本的桌面软件和服务以作为 GNOME 和 KDE 桌面软件集的基础。"
+
+#~ msgid "DNS server"
+#~ msgstr "DNS 服务器"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr "选择 BIND DNS 服务器以及相关文档和工具软件包。"
+
+#~ msgid "File server"
+#~ msgstr "文件服务器"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr "此软件集将把您的系统设置成一台同时支持 CIFS 和 NFS 的文件服务器。"
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME 桌面环境"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr "此软件集将使用 GNOME 桌面环境提供基本的“桌面”软件。"
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE 桌面环境"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr "此软件集将使用 KDE 桌面环境提供基本的“桌面”软件。"
+
+#~ msgid "Laptop"
+#~ msgstr "笔记本电脑"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "此软件集将安装对笔记本电脑有用的软件。"
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE 桌面环境"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr "此软件集将使用 LXDE 桌面环境提供基本的“桌面”软件。"
+
+#~ msgid "Mail server"
+#~ msgstr "邮件服务器"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr "此软件集选择了对通用邮件服务器系统有用的一些软件包。"
+
+#~ msgid "Print server"
+#~ msgstr "打印服务器"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "此软件集将会把您的系统设置成一台打印服务器。"
+
+#~ msgid "SSH server"
+#~ msgstr "SSH 服务器"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr "此软件集将会把您的系统设置为可以通过 SSH 连接远程访问。"
+
+#~ msgid "Web server"
+#~ msgstr "Web 服务器"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr "此软件集选择一些对通用 web 服务器系统有用的软件包。"
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce 桌面环境"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr "此软件集将使用 Xfce 桌面环境提供基本的“桌面”软件。"
 
 #~ msgid "Desktop environment"
 #~ msgstr "桌面环境"

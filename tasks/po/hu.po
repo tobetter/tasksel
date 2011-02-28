@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2008-06-08 18:12+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Debian Hungarian Localization Team <debian-l10n>\n"
@@ -20,135 +20,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL adatbázis"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"E metacsomag a PostgreSQL adatbáziskezelő kliens- és szerver csomagjait "
-"telepíti."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"A PostgreSQL egy SQL nyelven lekérdezhető relációs adatbáziskezelő, egyre "
-"jobban közeledik a teljes SQL92-szabványhoz, és az SQL3 egyes "
-"tulajdonságaival is bír. Alkalmas többfelhasználós adatbáziselérésre, mivel "
-"tud tranzakciókat kezelni és finomfelbontású zárolást végezni."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-#, fuzzy
-#| msgid "Xfce desktop environment"
-msgid "Graphical desktop environment"
-msgstr "Xfce munkakörnyezet"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"E metacsomag egy alap asztali szoftver környezetet telepít, mely jó alapot "
-"biztosít a GNOME, KDE és más asztali metacsomagokhoz."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "DNS kiszolgáló"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"A BIND DNS kiszolgálót és hozzá kapcsolódó dokumentációt és segédprogramokat "
-"telepíti."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Fájlkiszolgáló"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"E metacsomag révén CIFS- és NFS-fájlszerveri képességekkel ruházhatja fel "
-"gépét."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME munkakörnyezet"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr "E metacsomag egy GNOME környezetre épülő alap \"asztal\"-t telepít."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE munkakörnyezet"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr "E metacsomag egy KDE környezetre épülő alap \"asztal\"-t telepít."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Laptop"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "E metacsomag laptopra hasznos szoftvereket telepít."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE munkakörnyezet"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr "E metacsomag egy LXDE környezetre épülő alap \"asztal\"-t telepít."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Levelezőkiszolgáló"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"E metacsomag általános célú levelezőkiszolgálókban használt csomagokat "
-"választ ki."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -161,34 +32,6 @@ msgid "Manually select packages to install in aptitude."
 msgstr ""
 "Itt a csomagokat az aptitude segítségével biztosabb kézzel lehet "
 "kiválasztani."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Nyomtatókiszolgáló"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr ""
-"E metacsomag megosztott nyomtatási képességekkel ruházza fel rendszerét."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "DNS server"
-msgid "SSH server"
-msgstr "DNS kiszolgáló"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-#, fuzzy
-#| msgid "This task sets up your system to be a print server."
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"E metacsomag megosztott nyomtatási képességekkel ruházza fel rendszerét."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -204,29 +47,133 @@ msgid ""
 "selection of services and tools usable on the command line."
 msgstr ""
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Webkiszolgáló"
+#~ msgid "SQL database"
+#~ msgstr "SQL adatbázis"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"E metacsomag egy általános célú webkiszolgálón hasznos csomagokat telepít."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "E metacsomag a PostgreSQL adatbáziskezelő kliens- és szerver csomagjait "
+#~ "telepíti."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce munkakörnyezet"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "A PostgreSQL egy SQL nyelven lekérdezhető relációs adatbáziskezelő, egyre "
+#~ "jobban közeledik a teljes SQL92-szabványhoz, és az SQL3 egyes "
+#~ "tulajdonságaival is bír. Alkalmas többfelhasználós adatbáziselérésre, "
+#~ "mivel tud tranzakciókat kezelni és finomfelbontású zárolást végezni."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr "E metacsomag egy Xfce környezetre épülő alap \"asztal\"-t telepít."
+#, fuzzy
+#~| msgid "Xfce desktop environment"
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Xfce munkakörnyezet"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "E metacsomag egy alap asztali szoftver környezetet telepít, mely jó "
+#~ "alapot biztosít a GNOME, KDE és más asztali metacsomagokhoz."
+
+#~ msgid "DNS server"
+#~ msgstr "DNS kiszolgáló"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "A BIND DNS kiszolgálót és hozzá kapcsolódó dokumentációt és "
+#~ "segédprogramokat telepíti."
+
+#~ msgid "File server"
+#~ msgstr "Fájlkiszolgáló"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "E metacsomag révén CIFS- és NFS-fájlszerveri képességekkel ruházhatja fel "
+#~ "gépét."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME munkakörnyezet"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr "E metacsomag egy GNOME környezetre épülő alap \"asztal\"-t telepít."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE munkakörnyezet"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr "E metacsomag egy KDE környezetre épülő alap \"asztal\"-t telepít."
+
+#~ msgid "Laptop"
+#~ msgstr "Laptop"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "E metacsomag laptopra hasznos szoftvereket telepít."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE munkakörnyezet"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr "E metacsomag egy LXDE környezetre épülő alap \"asztal\"-t telepít."
+
+#~ msgid "Mail server"
+#~ msgstr "Levelezőkiszolgáló"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "E metacsomag általános célú levelezőkiszolgálókban használt csomagokat "
+#~ "választ ki."
+
+#~ msgid "Print server"
+#~ msgstr "Nyomtatókiszolgáló"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr ""
+#~ "E metacsomag megosztott nyomtatási képességekkel ruházza fel rendszerét."
+
+#, fuzzy
+#~| msgid "DNS server"
+#~ msgid "SSH server"
+#~ msgstr "DNS kiszolgáló"
+
+#, fuzzy
+#~| msgid "This task sets up your system to be a print server."
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "E metacsomag megosztott nyomtatási képességekkel ruházza fel rendszerét."
+
+#~ msgid "Web server"
+#~ msgstr "Webkiszolgáló"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "E metacsomag egy általános célú webkiszolgálón hasznos csomagokat telepít."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce munkakörnyezet"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr "E metacsomag egy Xfce környezetre épülő alap \"asztal\"-t telepít."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Asztali környezet"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel-tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2009-08-02 14:41-0300\n"
 "Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
@@ -17,138 +17,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "Datumbazo SQL"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Tiu ĉi tasko elektas klientajn kaj servilajn pakojn por la datumbazo "
-"PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL estas rilata datumbazo SQL, kiu liveras ampleksiĝantan kongruon "
-"al SQL92 kaj kelkajn funkciojn el SQL3. Ĝi taŭgas por uzi en datumbazoj "
-"alirataj de pluraj uzantoj, per ĝiaj facilecoj por transakcioj kaj detaliga "
-"ŝlosado."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Grafika labortabla medio"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Tiu ĉi tasko provizas bazan labortablan programaron kaj funkcias kiel bazon "
-"por la labortablaj taskoj GNOME kaj KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "Servilo DNS"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Elektas la servilon BIND DNS, ties rilatan dokumentadon kaj utiletajn pakojn."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Dosier-servilo"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Tiu ĉi tasko preparas vian sistemon por esti dosier-servilo, subtenanta kaj "
-"CIFS kaj NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "Labortabla medio GNOME"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
-"labortablan medion GNOME."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "Labortabla medio KDE"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
-"labortablan medion KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Portebla komputilo"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Tiu ĉi tasko instalas utilan programaron por teko-komputilo."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "Labortabla medio LXDE"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
-"labortablan medion LXDE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Poŝt-servilo"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Tiu ĉi tasko elektas plurajn pakojn utilajn por ĝenerala retpoŝtservila "
-"sistemo."
 
 #. Description
 #: ../po/debian-tasks.desc:10001
@@ -159,30 +27,6 @@ msgstr "Mem-elektado de pakoj"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Elektu vi mem instalotajn pakojn en aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Print-servilo"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "Tiu ĉi tasko preparas vian sistemon por esti printservilo. "
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "Servilo SSH"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Tiu ĉi tasko preparas vian sistemon por esti alirata demalproksime per "
-"konektoj SSH. "
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -198,30 +42,135 @@ msgstr ""
 "Tiu ĉi tasko preparas bazan uzant-medion, provizante pravigeble malgrandan "
 "elekton da servoj kaj iloj uzeblaj per la komand-linio."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "TTT-servilo"
+#~ msgid "SQL database"
+#~ msgstr "Datumbazo SQL"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr "Tiu ĉi tasko elektas utilajn pakojn por ĝenerala TTT-servila sistemo."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Tiu ĉi tasko elektas klientajn kaj servilajn pakojn por la datumbazo "
+#~ "PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Labortabla medio Xfce"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL estas rilata datumbazo SQL, kiu liveras ampleksiĝantan "
+#~ "kongruon al SQL92 kaj kelkajn funkciojn el SQL3. Ĝi taŭgas por uzi en "
+#~ "datumbazoj alirataj de pluraj uzantoj, per ĝiaj facilecoj por transakcioj "
+#~ "kaj detaliga ŝlosado."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
-"labortablan medion Xfce."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Grafika labortabla medio"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Tiu ĉi tasko provizas bazan labortablan programaron kaj funkcias kiel "
+#~ "bazon por la labortablaj taskoj GNOME kaj KDE."
+
+#~ msgid "DNS server"
+#~ msgstr "Servilo DNS"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Elektas la servilon BIND DNS, ties rilatan dokumentadon kaj utiletajn "
+#~ "pakojn."
+
+#~ msgid "File server"
+#~ msgstr "Dosier-servilo"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Tiu ĉi tasko preparas vian sistemon por esti dosier-servilo, subtenanta "
+#~ "kaj CIFS kaj NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "Labortabla medio GNOME"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
+#~ "labortablan medion GNOME."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "Labortabla medio KDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
+#~ "labortablan medion KDE."
+
+#~ msgid "Laptop"
+#~ msgstr "Portebla komputilo"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Tiu ĉi tasko instalas utilan programaron por teko-komputilo."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "Labortabla medio LXDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
+#~ "labortablan medion LXDE."
+
+#~ msgid "Mail server"
+#~ msgstr "Poŝt-servilo"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Tiu ĉi tasko elektas plurajn pakojn utilajn por ĝenerala retpoŝtservila "
+#~ "sistemo."
+
+#~ msgid "Print server"
+#~ msgstr "Print-servilo"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "Tiu ĉi tasko preparas vian sistemon por esti printservilo. "
+
+#~ msgid "SSH server"
+#~ msgstr "Servilo SSH"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Tiu ĉi tasko preparas vian sistemon por esti alirata demalproksime per "
+#~ "konektoj SSH. "
+
+#~ msgid "Web server"
+#~ msgstr "TTT-servilo"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Tiu ĉi tasko elektas utilajn pakojn por ĝenerala TTT-servila sistemo."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Labortabla medio Xfce"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Tiu ĉi tasko provizas bazan \"labortablan\" programaron, kiu uzas la "
+#~ "labortablan medion Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Labortabla medio"

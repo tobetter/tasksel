@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk-exim-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-30 23:31+0200\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2010-06-23 05:40+0300\n"
 "Last-Translator: Borys Yanovych <borys@yanovy.ch>\n"
 "Language-Team: Ukrainian <>\n"
@@ -22,137 +22,6 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "База даних SQL"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Це завдання вибирає клієнтські та серверні пакунки для бази даних PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL -- це реляційна SQL СКБД, що підтримує SQL92 та деякі можливості "
-"SQL3. Вона може використовуватися для багатокористувацьких систем, завдяки "
-"підтримці трансакцій та продуманій системі блокувань."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Графічне стільничне середовище"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Це завдання надає базове програмне забезпечення для стільниці і є базисом "
-"для завдань GNOME та KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "Сервер DNS"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Вибирає DNS сервер BIND та пов'язані з ним пакунки документації та "
-"інструментів."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Файловий сервер"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Це завдання налаштовує вашу систему для використання в якості файлового "
-"сервера, який підтримує CIFS та NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "Стільниця GNOME"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Це завдання надає основне програмне забезпечення для стільниці з "
-"використанням GNOME."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "Стільниця KDE"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Це завдання надає основне програмне забезпечення для стільниці з "
-"використанням KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Лептоп"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Це завдання встановлює програмне забезпечення корисне для лептопів."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "Стільниця LXDE"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Це завдання надає основне програмне забезпечення для стільниці з "
-"використанням LXDE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Поштовий сервер"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Це завдання вибирає набір пакунків, що корисні для поштового сервера "
-"загального призначення."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "ручний вибір пакунків"
@@ -161,31 +30,6 @@ msgstr "ручний вибір пакунків"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Вручну вибрати пакунки для встановлення в aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Сервер друку"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr ""
-"Це завдання налаштовує вашу систему для використання в якості сервера друку."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "Сервер SSH"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Це завдання надає можливість зробити вашу систему доступною через мережу за "
-"допомогою SSH-з'єднання."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -202,32 +46,137 @@ msgstr ""
 "невеликий набір служб та інструментів, які використовуються в режимі "
 "командного рядка."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Web-сервер"
+#~ msgid "SQL database"
+#~ msgstr "База даних SQL"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Це завдання вибирає пакунки, що корисні для web-сервера загального "
-"призначення."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Це завдання вибирає клієнтські та серверні пакунки для бази даних "
+#~ "PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Стільниця Xfce"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL -- це реляційна SQL СКБД, що підтримує SQL92 та деякі "
+#~ "можливості SQL3. Вона може використовуватися для багатокористувацьких "
+#~ "систем, завдяки підтримці трансакцій та продуманій системі блокувань."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Це завдання надає основне програмне забезпечення для стільниці з "
-"використанням Xfce."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Графічне стільничне середовище"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Це завдання надає базове програмне забезпечення для стільниці і є базисом "
+#~ "для завдань GNOME та KDE."
+
+#~ msgid "DNS server"
+#~ msgstr "Сервер DNS"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Вибирає DNS сервер BIND та пов'язані з ним пакунки документації та "
+#~ "інструментів."
+
+#~ msgid "File server"
+#~ msgstr "Файловий сервер"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Це завдання налаштовує вашу систему для використання в якості файлового "
+#~ "сервера, який підтримує CIFS та NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "Стільниця GNOME"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Це завдання надає основне програмне забезпечення для стільниці з "
+#~ "використанням GNOME."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "Стільниця KDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Це завдання надає основне програмне забезпечення для стільниці з "
+#~ "використанням KDE."
+
+#~ msgid "Laptop"
+#~ msgstr "Лептоп"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Це завдання встановлює програмне забезпечення корисне для лептопів."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "Стільниця LXDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Це завдання надає основне програмне забезпечення для стільниці з "
+#~ "використанням LXDE."
+
+#~ msgid "Mail server"
+#~ msgstr "Поштовий сервер"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Це завдання вибирає набір пакунків, що корисні для поштового сервера "
+#~ "загального призначення."
+
+#~ msgid "Print server"
+#~ msgstr "Сервер друку"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr ""
+#~ "Це завдання налаштовує вашу систему для використання в якості сервера "
+#~ "друку."
+
+#~ msgid "SSH server"
+#~ msgstr "Сервер SSH"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Це завдання надає можливість зробити вашу систему доступною через мережу "
+#~ "за допомогою SSH-з'єднання."
+
+#~ msgid "Web server"
+#~ msgstr "Web-сервер"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Це завдання вибирає пакунки, що корисні для web-сервера загального "
+#~ "призначення."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Стільниця Xfce"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Це завдання надає основне програмне забезпечення для стільниці з "
+#~ "використанням Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Стільниця"

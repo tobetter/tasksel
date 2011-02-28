@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks_po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2010-08-14 15:07+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
@@ -22,127 +22,6 @@ msgstr ""
 "%100>=3 && n%100<=10 ? 2 : 3;\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "قاعدة بيانات SQL"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr "هذه المهمّة تنتقي حزم العميلٍ والخادم لقاعدة بيانات PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL هي قاعدة بيانات SQL علائقيّة تتيح إلتزاماً صاعداً بـSQL92 و بعضاً من "
-"ميّزات SQL3. وهي مناسبة للاستعمال مع وصولٍ متعدّد المستخدمين لقاعدة البيانات "
-"عبر وسائلها للمعاملات والقفل الدّقيق."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "بيئة سطح المكتب الرسومية"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"هذه المهمة توفر برامج سطح المكتب الأساسية وتخدم كأساس لمهمات أسطح المكتب "
-"كيدي وجينوم."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "خادم DNS"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr "تنتقي خادم BIND DNS وحزم الأدوات والوثائق المتعلّقة بذلك."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "خادم ملفّات"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr "هذه المهمّة تهيّئ نظامك ليكون خادم ملفّات بدعمٍ لكلٍّ من CIFS و NFS."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "بيئة سطح مكتب جينوم"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"توفر هذه المهمة برامج \"سطح المكتب\" الأساسية باستخدام بيئة سطح المكتب جينوم."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "بيئة سطح مكتب كيدي"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"توفر هذه المهمة برامج \"سطح المكتب\" الأساسية باستخدام بيئة سطح المكتب كيدي."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "حاسب محمول"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "تقوم هذه المهمة بتثبيت البرامج المفيدة للحاسبات المحمولة."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "بيئة سطح مكتب XFCE"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"توفر هذه المهمة برامج \"سطح المكتب\" الأساسية باستخدام بيئة سطح المكتب XFCE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "خادم بريد"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr "هذه المهمّة تنتقي حزماً متنوّعة مفيدة لنظام خادم بريد للأغراض العامّة."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "اختيار الحزم يدوياً"
@@ -151,28 +30,6 @@ msgstr "اختيار الحزم يدوياً"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "القيام باختيار الحزم يديوياً لتثبيتها عبر aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "خادم طباعة"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "هذه المهمّة تهيّئ نظامك ليكون خادم طباعة."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "خادم SSH"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr "تقوم هذه المهمة بإعداد نظامك لاستقبال الاتصالات عبر SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -188,29 +45,123 @@ msgstr ""
 "تقوم هذه المهمة بإعداد بيئة المستخدم الأساسية، بأن توفر له مجموعة مختارة "
 "وبسيطة من الخدمات والأدوات النافعة للاستخدام عبر سطر الأوامر."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "خادم وب"
+#~ msgid "SQL database"
+#~ msgstr "قاعدة بيانات SQL"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr "هذه المهمّة تنتقي حزماً مفيدة لنظام خادم وب للأغراض العامّة."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr "هذه المهمّة تنتقي حزم العميلٍ والخادم لقاعدة بيانات PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "بيئة سطح مكتب XFCE"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL هي قاعدة بيانات SQL علائقيّة تتيح إلتزاماً صاعداً بـSQL92 و بعضاً "
+#~ "من ميّزات SQL3. وهي مناسبة للاستعمال مع وصولٍ متعدّد المستخدمين لقاعدة "
+#~ "البيانات عبر وسائلها للمعاملات والقفل الدّقيق."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"توفر هذه المهمة برامج \"سطح المكتب\" الأساسية باستخدام بيئة سطح المكتب XFCE."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "بيئة سطح المكتب الرسومية"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "هذه المهمة توفر برامج سطح المكتب الأساسية وتخدم كأساس لمهمات أسطح المكتب "
+#~ "كيدي وجينوم."
+
+#~ msgid "DNS server"
+#~ msgstr "خادم DNS"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr "تنتقي خادم BIND DNS وحزم الأدوات والوثائق المتعلّقة بذلك."
+
+#~ msgid "File server"
+#~ msgstr "خادم ملفّات"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr "هذه المهمّة تهيّئ نظامك ليكون خادم ملفّات بدعمٍ لكلٍّ من CIFS و NFS."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "بيئة سطح مكتب جينوم"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "توفر هذه المهمة برامج \"سطح المكتب\" الأساسية باستخدام بيئة سطح المكتب "
+#~ "جينوم."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "بيئة سطح مكتب كيدي"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "توفر هذه المهمة برامج \"سطح المكتب\" الأساسية باستخدام بيئة سطح المكتب "
+#~ "كيدي."
+
+#~ msgid "Laptop"
+#~ msgstr "حاسب محمول"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "تقوم هذه المهمة بتثبيت البرامج المفيدة للحاسبات المحمولة."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "بيئة سطح مكتب XFCE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "توفر هذه المهمة برامج \"سطح المكتب\" الأساسية باستخدام بيئة سطح المكتب "
+#~ "XFCE."
+
+#~ msgid "Mail server"
+#~ msgstr "خادم بريد"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr "هذه المهمّة تنتقي حزماً متنوّعة مفيدة لنظام خادم بريد للأغراض العامّة."
+
+#~ msgid "Print server"
+#~ msgstr "خادم طباعة"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr "هذه المهمّة تهيّئ نظامك ليكون خادم طباعة."
+
+#~ msgid "SSH server"
+#~ msgstr "خادم SSH"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr "تقوم هذه المهمة بإعداد نظامك لاستقبال الاتصالات عبر SSH."
+
+#~ msgid "Web server"
+#~ msgstr "خادم وب"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr "هذه المهمّة تنتقي حزماً مفيدة لنظام خادم وب للأغراض العامّة."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "بيئة سطح مكتب XFCE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "توفر هذه المهمة برامج \"سطح المكتب\" الأساسية باستخدام بيئة سطح المكتب "
+#~ "XFCE."
 
 #~ msgid "Desktop environment"
 #~ msgstr "بيئة سطح مكتب"

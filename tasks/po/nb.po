@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tasksel_tasks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-21 09:54-0200\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2010-08-04 10:26+0200\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -23,135 +23,6 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "SQL-database"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr "Dette oppgaven gir klient- og tjenerpakker for databasen PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"PostgreSQL er en SQL relasjonsdatabase, som tilbyr økende SQL92-"
-"kompatibilitet og noen SQL3-egenskaper. PostgreSQL passer for flerbruker "
-"databasetilgang fordi den kan bruke transaksjoner og fininndelt låsing."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Grafisk skrivebordsmiljø"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Denne oppgaven gir fundamentale programmer for skrivebordet og fungerer som "
-"underlag for oppgavene for GNOME og KDE-skrivebord."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "Navnetjener"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Tar med navnetjeneren BIND og tilhørende dokumentasjon og verktøyspakker."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Filtjener"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Denne oppgaven setter opp systemet som filtjener som støtter både CIFS og "
-"NFS. "
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "GNOME skrivebordsmiljø"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
-"skrivebordsmiljøet GNOME."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "KDE skrivebordsmiljø"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
-"skrivebordsmiljøet K Desktop Environment."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Bærbar"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Denne oppgaven installerer programvare nyttig for en bærbar maskin."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "LXDE skrivebordsmiljø"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
-"skrivebordsmiljøet LXDE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "E-posttjener"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Denne oppgaven installerer ulike pakker som er nyttige for en generell e-"
-"posttjener."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "manuelt pakkevalg"
@@ -160,30 +31,6 @@ msgstr "manuelt pakkevalg"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Velg manuelt i aptitude pakker som skal installeres."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Utskriftstjener"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr "Denne oppgaven setter systemet ditt opp til å være en utskriftstjener."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "SSH-tjener"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Denne oppgaven setter systemet ditt opp så det kan nås eksternt gjennom SSH-"
-"forbindelser."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -199,32 +46,134 @@ msgstr ""
 "Denne oppgaven setter opp et grunnleggende brukermiljø med et fornuftig lite "
 "utvalg av tjenester og verktøy for kommandolinja."
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Nett-tjener"
+#~ msgid "SQL database"
+#~ msgstr "SQL-database"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Denne oppgaven installerer pakker som er nyttige for et generelt system med "
-"en nettjener."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Dette oppgaven gir klient- og tjenerpakker for databasen PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Xfce skrivebordsmiljø"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "PostgreSQL er en SQL relasjonsdatabase, som tilbyr økende SQL92-"
+#~ "kompatibilitet og noen SQL3-egenskaper. PostgreSQL passer for flerbruker "
+#~ "databasetilgang fordi den kan bruke transaksjoner og fininndelt låsing."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
-"skrivebordsmiljøet Xfce."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Grafisk skrivebordsmiljø"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Denne oppgaven gir fundamentale programmer for skrivebordet og fungerer "
+#~ "som underlag for oppgavene for GNOME og KDE-skrivebord."
+
+#~ msgid "DNS server"
+#~ msgstr "Navnetjener"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Tar med navnetjeneren BIND og tilhørende dokumentasjon og verktøyspakker."
+
+#~ msgid "File server"
+#~ msgstr "Filtjener"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Denne oppgaven setter opp systemet som filtjener som støtter både CIFS og "
+#~ "NFS. "
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "GNOME skrivebordsmiljø"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
+#~ "skrivebordsmiljøet GNOME."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "KDE skrivebordsmiljø"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
+#~ "skrivebordsmiljøet K Desktop Environment."
+
+#~ msgid "Laptop"
+#~ msgstr "Bærbar"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr "Denne oppgaven installerer programvare nyttig for en bærbar maskin."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "LXDE skrivebordsmiljø"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
+#~ "skrivebordsmiljøet LXDE."
+
+#~ msgid "Mail server"
+#~ msgstr "E-posttjener"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Denne oppgaven installerer ulike pakker som er nyttige for en generell e-"
+#~ "posttjener."
+
+#~ msgid "Print server"
+#~ msgstr "Utskriftstjener"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr ""
+#~ "Denne oppgaven setter systemet ditt opp til å være en utskriftstjener."
+
+#~ msgid "SSH server"
+#~ msgstr "SSH-tjener"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Denne oppgaven setter systemet ditt opp så det kan nås eksternt gjennom "
+#~ "SSH-forbindelser."
+
+#~ msgid "Web server"
+#~ msgstr "Nett-tjener"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Denne oppgaven installerer pakker som er nyttige for et generelt system "
+#~ "med en nettjener."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Xfce skrivebordsmiljø"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Denne oppgaven skaffer grunnleggende «skrivebord»-programmer med "
+#~ "skrivebordsmiljøet Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Skrivebordsmiljø"

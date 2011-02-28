@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-31 21:35-0300\n"
+"POT-Creation-Date: 2011-02-27 22:39-0400\n"
 "PO-Revision-Date: 2010-11-22 12:19+0200\n"
 "Last-Translator: Emmanuel Galatoulas <galaxico@quad-nrg.net>\n"
 "Language-Team: American English <debian-l10n-greek@lists.debian.org>\n"
@@ -23,140 +23,6 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 
 #. Description
-#: ../po/debian-tasks.desc:1001
-msgid "SQL database"
-msgstr "Βάση Δεδομένων SQL"
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"This task selects client and server packages for the PostgreSQL database."
-msgstr ""
-"Αυτή η ομάδα εγκαθιστά πακέτα για λογισμικό πελάτη και εξυπηρετητή για τη "
-"βάση δεδομένων PostgreSQL."
-
-#. Description
-#: ../po/debian-tasks.desc:1001
-msgid ""
-"PostgreSQL is an SQL relational database, offering increasing SQL92 "
-"compliance and some SQL3 features.  It is suitable for use with multi-user "
-"database access, through its facilities for transactions and fine-grained "
-"locking."
-msgstr ""
-"Η PostgreSQL είναι μια σχεσιακή βάση δεδομένων SQL, που προσφέρει αυξημένη "
-"συμβατότητα με το πρότυπο SQL92 και ορισμένα χαρακτηριστικά του προτύπου "
-"SQL3.  Είναι κατάλληλη για χρήση σε πολυχρηστικά συστήματα βάσεων δεδομένων, "
-"καθώς παρέχει δυνατότητες για συναλλαγές (transactions) και εξελιγμένους "
-"τρόπους συγχρονισμού."
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid "Graphical desktop environment"
-msgstr "Γραφικό περιβάλλον επιφάνειας εργασίας"
-
-#. Description
-#: ../po/debian-tasks.desc:2001
-msgid ""
-"This task provides basic desktop software and serves as a basis for the "
-"GNOME and KDE desktop tasks."
-msgstr ""
-"Αυτή η ομάδα παρέχει το βασικό λογισμικό για την επιφάνεια εργασίας και "
-"είναι η βάση για τις ομάδες επιφάνειας εργασίας του GNOME και του KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid "DNS server"
-msgstr "Διακομιστής Ονομάτων (DNS)"
-
-#. Description
-#: ../po/debian-tasks.desc:3001
-msgid ""
-"Selects the BIND DNS server, and related documentation and utility packages."
-msgstr ""
-"Επιλέγει για εγκατάσταση το διακομιστή ονομάτων BIND, και σχετικά εργαλεία "
-"και οδηγίες χρήσης."
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid "File server"
-msgstr "Διακομιστής Αρχείων"
-
-#. Description
-#: ../po/debian-tasks.desc:4001
-msgid ""
-"This task sets up your system to be a file server, supporting both CIFS and "
-"NFS."
-msgstr ""
-"Αυτή η ομάδα ρυθμίζει τον υπολογιστή σας να λειτουργεί ως διακομιστής "
-"αρχείων (CIFS και NFS)."
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid "GNOME desktop environment"
-msgstr "Περιβάλλον εργασίας GNOME"
-
-#. Description
-#: ../po/debian-tasks.desc:5001
-msgid ""
-"This task provides basic \"desktop\" software using the GNOME desktop "
-"environment."
-msgstr ""
-"Αυτή η ομάδα παρέχει το βασικό λογισμικό για το περιβάλλον επιφάνειας "
-"εργασίας του GNOME."
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid "KDE desktop environment"
-msgstr "Περιβάλλον Εργασίας KDE"
-
-#. Description
-#: ../po/debian-tasks.desc:6001
-msgid ""
-"This task provides basic \"desktop\" software using the K Desktop "
-"Environment."
-msgstr ""
-"Αυτή η ομάδα παρέχει το βασικό λογισμικό για το περιβάλλον επιφάνειας "
-"εργασίας του KDE."
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "Laptop"
-msgstr "Φορητός υπολογιστής"
-
-#. Description
-#: ../po/debian-tasks.desc:7001
-msgid "This task installs software useful for a laptop."
-msgstr "Αυτή η ομάδα εγκαθιστά λογισμικό χρήσιμο για έναν φορητό υπολογιστή."
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid "LXDE desktop environment"
-msgstr "Περιβάλλον εργασίας LXDE"
-
-#. Description
-#: ../po/debian-tasks.desc:8001
-msgid ""
-"This task provides basic \"desktop\" software using the LXDE desktop "
-"environment."
-msgstr ""
-"Αυτή η ομάδα παρέχει το βασικό λογισμικό για το περιβάλλον επιφάνειας "
-"εργασίας LXDE."
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid "Mail server"
-msgstr "Διακομιστής αλληλογραφίας"
-
-#. Description
-#: ../po/debian-tasks.desc:9001
-msgid ""
-"This task selects a variety of package useful for a general purpose mail "
-"server system."
-msgstr ""
-"Αυτή η ομάδα εγκαθιστά μια ποικιλία πακέτων χρήσιμα για ένα γενικής χρήσης "
-"σύστημα αλληλογραφίας."
-
-#. Description
 #: ../po/debian-tasks.desc:10001
 msgid "manual package selection"
 msgstr "επιλογή πακέτων με το χέρι"
@@ -165,31 +31,6 @@ msgstr "επιλογή πακέτων με το χέρι"
 #: ../po/debian-tasks.desc:10001
 msgid "Manually select packages to install in aptitude."
 msgstr "Επιλέέξτε με το χέρι πακέτα για εγκατάσταση στο aptitude."
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "Print server"
-msgstr "Διακομιστής εκτυπώσεων"
-
-#. Description
-#: ../po/debian-tasks.desc:11001
-msgid "This task sets up your system to be a print server."
-msgstr ""
-"Η ομάδα αυτή ρυθμίζει το σύστημά σας για χρήση ως διακομιστή εκτυπώσεων."
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid "SSH server"
-msgstr "Διακομιστής SSH"
-
-#. Description
-#: ../po/debian-tasks.desc:12001
-msgid ""
-"This task sets up your system to be remotely accessed through SSH "
-"connections."
-msgstr ""
-"Η ομάδα αυτή ρυθμίζει το σύστημά σας ώστε να είναι προσβάσιμο από μακριά "
-"μέσω συνδέσεων SSH."
 
 #. Description
 #: ../po/debian-tasks.desc:13001
@@ -205,32 +46,139 @@ msgstr ""
 "Αυτή η ομάδα ρυθμίζει ένα βασικό περιβάλλον χρήστη, παρέχοντας μια εύλογα "
 "μικρή συλλογή από υπηρεσίες και εργαλεία για χρήση από τη γραμμή εντολών.  "
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid "Web server"
-msgstr "Διακομιστής Ιστοσελίδων"
+#~ msgid "SQL database"
+#~ msgstr "Βάση Δεδομένων SQL"
 
-#. Description
-#: ../po/debian-tasks.desc:14001
-msgid ""
-"This task selects packages useful for a general purpose web server system."
-msgstr ""
-"Η ομάδα αυτή επιλέγει για εγκατάσταση πακέτα χρήσιμα για ένα διακομιστή "
-"ιστοσελίδων γενικών αναγκών."
+#~ msgid ""
+#~ "This task selects client and server packages for the PostgreSQL database."
+#~ msgstr ""
+#~ "Αυτή η ομάδα εγκαθιστά πακέτα για λογισμικό πελάτη και εξυπηρετητή για τη "
+#~ "βάση δεδομένων PostgreSQL."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid "Xfce desktop environment"
-msgstr "Περιβάλλον εργασίας Xfce"
+#~ msgid ""
+#~ "PostgreSQL is an SQL relational database, offering increasing SQL92 "
+#~ "compliance and some SQL3 features.  It is suitable for use with multi-"
+#~ "user database access, through its facilities for transactions and fine-"
+#~ "grained locking."
+#~ msgstr ""
+#~ "Η PostgreSQL είναι μια σχεσιακή βάση δεδομένων SQL, που προσφέρει "
+#~ "αυξημένη συμβατότητα με το πρότυπο SQL92 και ορισμένα χαρακτηριστικά του "
+#~ "προτύπου SQL3.  Είναι κατάλληλη για χρήση σε πολυχρηστικά συστήματα "
+#~ "βάσεων δεδομένων, καθώς παρέχει δυνατότητες για συναλλαγές (transactions) "
+#~ "και εξελιγμένους τρόπους συγχρονισμού."
 
-#. Description
-#: ../po/debian-tasks.desc:15001
-msgid ""
-"This task provides basic \"desktop\" software using the Xfce desktop "
-"environment."
-msgstr ""
-"Αυτή η ομάδα παρέχει το βασικό λογισμικό για το περιβάλλον επιφάνειας "
-"εργασίας του Xfce."
+#~ msgid "Graphical desktop environment"
+#~ msgstr "Γραφικό περιβάλλον επιφάνειας εργασίας"
+
+#~ msgid ""
+#~ "This task provides basic desktop software and serves as a basis for the "
+#~ "GNOME and KDE desktop tasks."
+#~ msgstr ""
+#~ "Αυτή η ομάδα παρέχει το βασικό λογισμικό για την επιφάνεια εργασίας και "
+#~ "είναι η βάση για τις ομάδες επιφάνειας εργασίας του GNOME και του KDE."
+
+#~ msgid "DNS server"
+#~ msgstr "Διακομιστής Ονομάτων (DNS)"
+
+#~ msgid ""
+#~ "Selects the BIND DNS server, and related documentation and utility "
+#~ "packages."
+#~ msgstr ""
+#~ "Επιλέγει για εγκατάσταση το διακομιστή ονομάτων BIND, και σχετικά "
+#~ "εργαλεία και οδηγίες χρήσης."
+
+#~ msgid "File server"
+#~ msgstr "Διακομιστής Αρχείων"
+
+#~ msgid ""
+#~ "This task sets up your system to be a file server, supporting both CIFS "
+#~ "and NFS."
+#~ msgstr ""
+#~ "Αυτή η ομάδα ρυθμίζει τον υπολογιστή σας να λειτουργεί ως διακομιστής "
+#~ "αρχείων (CIFS και NFS)."
+
+#~ msgid "GNOME desktop environment"
+#~ msgstr "Περιβάλλον εργασίας GNOME"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the GNOME desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Αυτή η ομάδα παρέχει το βασικό λογισμικό για το περιβάλλον επιφάνειας "
+#~ "εργασίας του GNOME."
+
+#~ msgid "KDE desktop environment"
+#~ msgstr "Περιβάλλον Εργασίας KDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the K Desktop "
+#~ "Environment."
+#~ msgstr ""
+#~ "Αυτή η ομάδα παρέχει το βασικό λογισμικό για το περιβάλλον επιφάνειας "
+#~ "εργασίας του KDE."
+
+#~ msgid "Laptop"
+#~ msgstr "Φορητός υπολογιστής"
+
+#~ msgid "This task installs software useful for a laptop."
+#~ msgstr ""
+#~ "Αυτή η ομάδα εγκαθιστά λογισμικό χρήσιμο για έναν φορητό υπολογιστή."
+
+#~ msgid "LXDE desktop environment"
+#~ msgstr "Περιβάλλον εργασίας LXDE"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the LXDE desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Αυτή η ομάδα παρέχει το βασικό λογισμικό για το περιβάλλον επιφάνειας "
+#~ "εργασίας LXDE."
+
+#~ msgid "Mail server"
+#~ msgstr "Διακομιστής αλληλογραφίας"
+
+#~ msgid ""
+#~ "This task selects a variety of package useful for a general purpose mail "
+#~ "server system."
+#~ msgstr ""
+#~ "Αυτή η ομάδα εγκαθιστά μια ποικιλία πακέτων χρήσιμα για ένα γενικής "
+#~ "χρήσης σύστημα αλληλογραφίας."
+
+#~ msgid "Print server"
+#~ msgstr "Διακομιστής εκτυπώσεων"
+
+#~ msgid "This task sets up your system to be a print server."
+#~ msgstr ""
+#~ "Η ομάδα αυτή ρυθμίζει το σύστημά σας για χρήση ως διακομιστή εκτυπώσεων."
+
+#~ msgid "SSH server"
+#~ msgstr "Διακομιστής SSH"
+
+#~ msgid ""
+#~ "This task sets up your system to be remotely accessed through SSH "
+#~ "connections."
+#~ msgstr ""
+#~ "Η ομάδα αυτή ρυθμίζει το σύστημά σας ώστε να είναι προσβάσιμο από μακριά "
+#~ "μέσω συνδέσεων SSH."
+
+#~ msgid "Web server"
+#~ msgstr "Διακομιστής Ιστοσελίδων"
+
+#~ msgid ""
+#~ "This task selects packages useful for a general purpose web server system."
+#~ msgstr ""
+#~ "Η ομάδα αυτή επιλέγει για εγκατάσταση πακέτα χρήσιμα για ένα διακομιστή "
+#~ "ιστοσελίδων γενικών αναγκών."
+
+#~ msgid "Xfce desktop environment"
+#~ msgstr "Περιβάλλον εργασίας Xfce"
+
+#~ msgid ""
+#~ "This task provides basic \"desktop\" software using the Xfce desktop "
+#~ "environment."
+#~ msgstr ""
+#~ "Αυτή η ομάδα παρέχει το βασικό λογισμικό για το περιβάλλον επιφάνειας "
+#~ "εργασίας του Xfce."
 
 #~ msgid "Desktop environment"
 #~ msgstr "Περιβάλλον Εργασίας"
