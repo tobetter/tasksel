@@ -37,9 +37,11 @@ sub processfile {
 	}
 	close IN;
 	
-	foreach my $field (qw(key packages-list)) {
-		foreach my $package(split(' ', $fields{$field})) {
-			$p{$package}->{$fields{task}} = 1;
+	if (exists $fields{"packages-list"}) {
+		foreach my $field (qw(key packages-list)) {
+			foreach my $package(split(' ', $fields{$field})) {
+				$p{$package}->{$fields{task}} = 1;
+			}
 		}
 	}
 }

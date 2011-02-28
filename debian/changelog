@@ -18,6 +18,9 @@ tasksel (3.00) experimental; urgency=low
   * Removed unnecessary Recommends of xfonts-base, which is included
     in X anyway, and lintian complains about.
   * Updated to debhelper v8.
+  * Don't generate Task field overrides for tasks that have only Key
+    packages. In other words, the Task field overrides are not needed,
+    and are going away.
 
   [ Christian Perrier ]
   * Replace aspell-fi by libenchant-voikko in finnish task
