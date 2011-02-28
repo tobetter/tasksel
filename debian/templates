@@ -1,6 +1,6 @@
 Template: tasksel/first
 Type: multiselect
-Choices-C: ${ORIGCHOICES}
+Choices-C: ${CHOICES_C}
 Choices: ${CHOICES}
 _Description: Choose software to install:
  At the moment, only the core of the system is installed. To tune the
@@ -9,7 +9,7 @@ _Description: Choose software to install:
 
 Template: tasksel/tasks
 Type: multiselect
-Choices-C: ${ORIGCHOICES}
+Choices-C: ${CHOICES_C}
 Choices: ${CHOICES}
 _Description: Choose software to install:
  You can choose to install one or more of the following predefined

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 # Debian task selector, mark II.
-# Copyright 2004-2006 by Joey Hess <joeyh@debian.org>.
+# Copyright 2004-2011 by Joey Hess <joeyh@debian.org>.
 # Licensed under the GPL, version 2 or higher.
 use Locale::gettext;
 use Getopt::Long;
@@ -16,6 +16,7 @@ my $localdescdir="/usr/local/share/tasksel";
 my $statusfile="/var/lib/dpkg/status";
 my $infodir="/usr/lib/tasksel/info";
 my $testmode=0;
+my $taskpackageprefix="task-";
 
 sub warning {
 	print STDERR "tasksel: @_\n";
@@ -80,8 +81,6 @@ sub read_task_desc {
 		}
 		if (%data) {
 			$data{relevance}=5 unless exists $data{relevance};
-			$data{shortdesc}=$data{description}->[0];
-			$data{shortdesctrans}=dgettext("debian-tasks", $data{shortdesc});
 			push @ret, \%data;
 		}
 	}
@@ -300,25 +299,64 @@ sub hide_enhancing_tasks {
 	return $task;
 }
 
-# Converts a list of tasks into a debconf list of their short descriptions.
-sub task_to_debconf {
-	my $field = shift;
-	join ", ", map {
-		my $desc=$_->{$field};
-		if ($desc=~/, /) {
-			warning("task ".$_->{task}." contains a comma in its short description: \"$desc\"");
+# Looks up the descriptions of a set of tasks, returning a new list
+# with the shortdesc fields filled in.
+sub getdescriptions {
+	my @tasks=@_;
+
+	# If the task has a description field in the task desc file,
+	# just use it, looking up a translation in gettext.
+	@tasks = map {
+		if (defined $_->{description}) {
+			$_->{shortdesc}=dgettext("debian-tasks", $_->{description}->[0]);
 		}
-		$desc;
-	} @_;
+		$_;
+	} @tasks;
+
+	# Otherwise, a more expensive apt-cache query is done,
+	# to use the descriptions of task packages.
+	my @todo = grep { ! defined $_->{shortdesc} } @tasks;
+	if (@todo) {
+		open(APT_CACHE, "apt-cache show ".join(" ", map { $taskpackageprefix.$_->{task} } @todo)." |") || die "apt-cache show: $!";
+		local $/="\n\n";
+		while (<APT_CACHE>) {
+			my ($name)=/^Package: $taskpackageprefix(.*)$/m;
+			my ($description)=/^Description-.*: (.*)$/m;
+			($description)=/^Description: (.*)$/m
+				unless defined $description;
+			if (defined $name && defined $description) {
+				@tasks = map {
+					if ($_->{task} eq $name) {
+						$_->{shortdesc}=$description;
+					}
+					$_;
+				} @tasks;
+			}
+		}
+		close APT_CACHE;
+	}
+
+	return @tasks;
 }
 
-# Given a first parameter that is a debconf list of short descriptions of
-# tasks, or a dependency style list of task names, and then a list of task
-# hashes, returns a list of hashes for all the tasks in the list.
+# Converts a list of tasks into a debconf list of the task short
+# descriptions.
+sub task_to_debconf {
+	join ", ", map { my $d=$_->{shortdesc}; $d=~s/,/\\,/g; $d } getdescriptions(@_);
+}
+
+# Converts a list of tasks into a debconf list of the task names.
+sub task_to_debconf_C {
+	join ", ", map { $_->{task} } @_;
+}
+
+# Given a first parameter that is a string listing task names, and then a
+# list of task hashes, returns a list of hashes for all the tasks
+# in the list.
 sub list_to_tasks {
 	my $list=shift;
-	my %desc_to_task = map { $_->{shortdesc} => $_, $_->{task} => $_ } @_;
-	return grep { defined } map { $desc_to_task{$_} } split ", ", $list;
+	my %lookup = map { $_->{task} => $_ } @_;
+	return grep { defined } map { $lookup{$_} } split /[, ]+/, $list;
 }
 
 # Orders a list of tasks for display.
@@ -328,7 +366,7 @@ sub order_for_display {
 		              || 0 ||
 		  $a->{section} cmp $b->{section}
 		              || 0 ||
-	        $a->{shortdesc} cmp $b->{shortdesc}
+	        $a->{task} cmp $b->{task}
 	} @_;
 }
 
@@ -429,6 +467,7 @@ sub main {
 	
 	if ($options{"list-tasks"}) {
 		map { $_->{_installed} = task_installed($_) } @tasks;
+		@tasks=getdescriptions(@tasks);
 		print "".($_->{_installed} ? "i" : "u")." ".$_->{task}."\t".$_->{shortdesc}."\n"
 			foreach order_for_display(grep { $_->{_display} } @tasks);
 		exit(0);
@@ -472,9 +511,9 @@ sub main {
 		my $tmpfile=`tempfile`;
 		chomp $tmpfile;
 		my $ret=system($debconf_helper, $tmpfile,
-			task_to_debconf("shortdesc", @list),
-			task_to_debconf("shortdesctrans", @list),
-			task_to_debconf("shortdesc", @default),
+			task_to_debconf_C(@list),
+			task_to_debconf(@list),
+			task_to_debconf_C(@default),
 			$question) >> 8;
 		if ($ret == 30) {
 			exit 10; # back up

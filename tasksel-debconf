@@ -10,7 +10,7 @@ defaults="$4"
 question=$5
 
 db_settitle tasksel/title
-db_subst $question ORIGCHOICES "$choices"
+db_subst $question CHOICES_C "$choices"
 db_subst $question CHOICES "$choicestrans"
 
 # Allow tasksel/first to be preseeded. If it's marked as seen, then
