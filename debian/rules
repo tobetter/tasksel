@@ -12,8 +12,8 @@ binary-indep:
 	dh $@ --after dh_auto_install
 
 	# Add tarball with overrides file for byhand processing
-	#cd debian/external-overrides && tar czvf ../../../$(TARNAME) .
-	#dpkg-distaddfile $(TARNAME) byhand -
+	cd debian/external-overrides && tar czvf ../../../$(TARNAME) .
+	dpkg-distaddfile $(TARNAME) byhand -
 
 binary: binary-indep binary-arch
 
