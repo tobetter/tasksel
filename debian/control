@@ -1554,6 +1554,16 @@ Description: Kannada KDE desktop
 Depends: ${misc:Depends}, 
 	kde-l10n-kn
 
+Package: task-kazakh
+Architecture: all
+Description: Kazakh environment
+ This task installs programs and documentation in Kazakh
+ to help Kazakh speaking people use Debian.
+XBC-Maintainer: Timur Birsh <taem@linukz.org>
+Depends: ${misc:Depends},
+Recommends:
+	aspell-kk
+
 Package: task-kazakh-desktop
 Architecture: all
 Description: Kazakh desktop
