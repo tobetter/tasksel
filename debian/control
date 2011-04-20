@@ -166,8 +166,9 @@ Depends: ${misc:Depends},
 	task-desktop,
 # The basics of lxde, not the whole thing.
 	lxde-core,
-# gdm is a recommend of lxde, but put here to ensure it's available
-	gdm
+# A display manager is a recommend of lxde,
+# but put here to ensure it's available
+	xdm
 Recommends:
 	lxde,
 # lxtask,
@@ -183,8 +184,7 @@ Depends: ${misc:Depends},
 	task-desktop,
 # The basics of xfce, not the whole thing.
 	xfce4,
-# Would be better to use xdm here?
-	gdm
+	xdm
 Recommends:
 # well known xfce4 enhancements
 	xfce4-goodies,

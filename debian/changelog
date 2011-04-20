@@ -13,6 +13,9 @@ tasksel (3.02) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Typo fix. Closes; #622825
+  * gdm is gone, and gdm3 pulls in much gnome, so for lxde and xfce,
+    use xdm. This is provisional, pending changes in the lxde and xfce
+    dependencies. Closes: #506406
 
  -- Christian Perrier <bubulle@debian.org>  Tue, 08 Mar 2011 18:54:49 +0100
 
