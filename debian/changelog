@@ -1,3 +1,4 @@
+
 tasksel (3.02) UNRELEASED; urgency=low
 
   [ Christian Perrier ]
@@ -8,6 +9,7 @@ tasksel (3.02) UNRELEASED; urgency=low
   [ Rene Engelhard ]
   * update tasks for openoffice.org-* -> libreoffice-*. Closes: #623769
   * add libreoffice-help-sk to slovak-desktop
+  * add hyphen-en-us to desktop
 
   [ Timur Birsh ]
   * Add Kazakh environment task. Closes: #620816
@@ -18,7 +20,7 @@ tasksel (3.02) UNRELEASED; urgency=low
     use xdm. This is provisional, pending changes in the lxde and xfce
     dependencies. Closes: #506406
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 08 Mar 2011 18:54:49 +0100
+ -- Rene Engelhard <rene@debian.org>  Sat, 30 Apr 2011 17:52:37 +0200
 
 tasksel (3.01) experimental; urgency=low
 
