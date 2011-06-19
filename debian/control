@@ -170,7 +170,7 @@ Depends: ${misc:Depends},
 	lxde-core,
 # A display manager is a recommend of lxde,
 # but put here to ensure it's available
-	gdm
+	xdm
 Recommends:
 	lxde,
 	lxtask,
