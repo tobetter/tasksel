@@ -208,7 +208,7 @@ sub task_packages {
 	if (! defined $task->{packages}) {
 		# only key
 	}
-	if ($task->{packages} eq 'task-fields') {
+	elsif ($task->{packages} eq 'task-fields') {
 		# task-fields method is built-in for speed and to support
 		# aptitude task definitions
 		if ($aptitude_tasks) {
