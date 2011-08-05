@@ -5,17 +5,15 @@
 VERSION=$(shell LC_ALL=C dpkg-parsechangelog | grep ^Version: | cut -d ' ' -f 2)
 TARNAME=task-overrides_$(VERSION)_all.tar.gz
 
-binary-indep:
-	dh $@ --before dh_auto_install
+override_dh_auto_install:
 	$(MAKE) install DESTDIR=`pwd`/debian/tasksel
 	$(MAKE) install-data DESTDIR=`pwd`/debian/tasksel-data
-	dh $@ --after dh_auto_install
-
-	# Add tarball with overrides file for byhand processing
-	cd debian/external-overrides && tar czvf ../../../$(TARNAME) .
-	dpkg-distaddfile $(TARNAME) byhand -
-
-binary: binary-indep binary-arch
 
 override_dh_installdocs:
 	dh_installdocs --link-doc=tasksel
+
+override_dh_builddeb:
+	dh_builddeb
+	# Add tarball with overrides file for byhand processing
+	cd debian/external-overrides && tar czvf ../../../$(TARNAME) .
+	dpkg-distaddfile $(TARNAME) byhand -
