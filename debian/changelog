@@ -1,7 +1,12 @@
 tasksel (3.06) UNRELEASED; urgency=low
 
+  [ Joey Hess ]
   * Remove the now empty task overrides file.
   * Add Vcs-Browser field. Closes: #636209
+
+  [ Christian Perrier ]
+  * Recommend cifs-utils in task-file-server instead of deprecated smbfs
+    Closes: #638606
 
  -- Joey Hess <joeyh@debian.org>  Fri, 05 Aug 2011 10:47:14 -0400
 
