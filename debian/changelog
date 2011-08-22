@@ -8,6 +8,10 @@ tasksel (3.06) UNRELEASED; urgency=low
   * Recommend cifs-utils in task-file-server instead of deprecated smbfs
     Closes: #638606
 
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - switch Xfce login manager to LightDM now that it has reached testing.
+
  -- Joey Hess <joeyh@debian.org>  Fri, 05 Aug 2011 10:47:14 -0400
 
 tasksel (3.05) unstable; urgency=low
