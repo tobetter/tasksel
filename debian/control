@@ -1497,7 +1497,6 @@ Recommends:
 	fbterm,
 	unifont,
 	nkf,
-	doc-linux-ja-text,
 	manpages-ja-dev
 
 Package: task-japanese-desktop
@@ -1508,11 +1507,8 @@ Description: Japanese desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	iceweasel-l10n-ja,
-	doc-linux-ja-html,
-	ttf-sazanami-gothic,
-	ttf-sazanami-mincho,
-	ttf-vlgothic,
-	otf-ipafont,
+	fonts-vlgothic,
+	fonts-ipafont,
 	uim,
 	uim-anthy,
 	anthy,
@@ -1540,7 +1536,7 @@ Description: Japanese KDE desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	kde-l10n-ja,
-	uim-applet-kde
+	plasma-widget-uim
 
 Package: task-kannada-desktop
 Architecture: all

@@ -21,6 +21,16 @@ tasksel (3.06) UNRELEASED; urgency=low
   [ Translations of programs ]
   * Sinhala (Danishka Navin). Closes: #640761
 
+  [ Kenshi Muto ]
+  * Update task-japanese, task-japanese-desktop and task-japanese-kde-desktop.
+    - task-japanese: remove obsolete package: doc-linux-ja-text.
+    - task-japanese-desktop: remove obsolete package: doc-linux-ja-html and
+      ttf-sazanami-*.
+      replace package: ttf-vlgothic with fonts-vlgothic,
+      otf-ipafont with fonts-ipafont.
+    - task-japanese-kde-desktop: replace package: uim-applet-kde with
+      plasma-widget-uim.
+
  -- Joey Hess <joeyh@debian.org>  Fri, 05 Aug 2011 10:47:14 -0400
 
 tasksel (3.05) unstable; urgency=low
