@@ -1,3 +1,21 @@
+tasksel (3.07) UNRELEASED; urgency=low
+
+  * Changes requested by the GNOME maintenance team for GNOME 3
+    transition. Closes: #646741. That includes the following changes in
+    gnome tasks:
+    - a typo fix in the package description
+    - gdm3  being dropped from Depends, as it is a dependency of gnome-core now.
+    - gnome-accessibility no longer exists as a separate meta-package. Its
+      functionality will be merged into gnome-core directly.
+    - gnome-desktop-environment is a transitional package, which has been
+      replaced by gnome, so drop it.
+    - iceweasel-gnome-support no longer exists, its functionality has been
+      merged into iceweasel, so drop it.
+    - the gnome meta-package already depends on inkscape, so drop it.
+    - the gnome-core meta-package already depends on epiphany-browser, so drop it.    
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 05 Nov 2011 08:49:15 +0100
+
 tasksel (3.06) unstable; urgency=low
 
   [ Joey Hess ]

@@ -101,32 +101,19 @@ Package: task-gnome-desktop
 Architecture: all
 Description: GNOME desktop environment
  This task package is used to install the Debian desktop, featuring
- the GNOME Decktop environment, and with other packages that Debian users
+ the GNOME desktop environment, and with other packages that Debian users
  expect to have available on the desktop.
 Depends: ${misc:Depends}, 
 	task-desktop,
 # only depend on a very minimal gnome desktop, to ensure it fits on CD1
-	gnome-core,
-	gdm3
+	gnome-core
 Recommends:
-# Include accessibility support even if the gnome-desktop-environment
-# metapackage doesn't fit.
-	gnome-accessibility,
 # The full gnome desktop environment should be included if possible
 # even if the larger gnome metapackage doesn't fit.
-	gnome-desktop-environment,
 	gnome,
-# add gnome support for iceweasel, which is pulled in via the main
-# desktop task
-	iceweasel-gnome-support,
-# May not get installed unless forced, if some other browser
-# satisfies the dependency, so force it.
-	epiphany-browser,
 # GNOME support in LibreOffice
 	libreoffice-gnome,
-	libreoffice-evolution,
-# vector drawing
-	inkscape
+	libreoffice-evolution
 
 Package: task-kde-desktop
 Architecture: all
