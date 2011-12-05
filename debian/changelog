@@ -1,3 +1,12 @@
+tasksel (3.08) UNRELEASED; urgency=low
+
+  * Use kerneloops-applet instead of kerneloops (which is now
+    a transition package) in task-desktop. Thanks to 
+    Laurent Bigonville for reporting.
+    Closes: #650960
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 05 Dec 2011 21:29:17 +0100
+
 tasksel (3.07) unstable; urgency=low
 
   * Team upload
