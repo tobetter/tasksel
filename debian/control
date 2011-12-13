@@ -143,7 +143,7 @@ Recommends:
 # This is configured by d-i to be used to gain root on systems with
 # no root password. It is not enabled by default.
 	kdesudo,
-# KDE-OpenOffice integration
+# KDE libreoffice integration
 	libreoffice-kde
 
 Package: task-lxde-desktop
@@ -179,17 +179,19 @@ Depends: ${misc:Depends},
 Recommends:
 # well known xfce4 enhancements
 	xfce4-goodies,
+	xfce4-power-manager,
+	xfce4-mixer,
+	xfprint4,
+	xfce4-terminal,
 # xfce text editor  
 	mousepad,
 # calendar application  
 	orage,
-	xfce4-mixer,
-	xfprint4,
-	xfce4-terminal,
+# libreoffice widgets using just gtk
 	libreoffice-gtk,
-# Xfce Desktop is really improved by using dbus
+# xfce is really improved by using dbus
 	dbus-x11,
-# Support for scanners
+# support for scanners
 	xsane,
 # media players
 	vlc,
@@ -198,7 +200,6 @@ Recommends:
 	epdfview,
 # icon theme
 	tango-icon-theme,
-	xfce4-power-manager,
 # network management
 	wicd
 
