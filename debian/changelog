@@ -6,6 +6,11 @@ tasksel (3.08) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Remove broffice.org from pt_BR desktop, package is removed from debian.
 
+  [ Theppitak Karoonboonyanan ]
+  * Update task-thai-gnome-desktop and task-thai-kde-desktop:
+    - task-thai-gnome-desktop: Add gtk3-im-libthai
+    - task-thai-kde-desktop: Add libthai-dev (which enhances libkhtml5)
+
  -- Christian Perrier <bubulle@debian.org>  Mon, 05 Dec 2011 21:29:17 +0100
 
 tasksel (3.07) unstable; urgency=low

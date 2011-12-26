@@ -2380,7 +2380,8 @@ Description: Thai GNOME desktop
  This task localises the GNOME desktop in Thai.
 Depends: ${misc:Depends}, 
 Recommends:
-	gtk-im-libthai
+	gtk-im-libthai,
+	gtk3-im-libthai
 
 Package: task-thai-kde-desktop
 Architecture: all
@@ -2388,7 +2389,8 @@ Description: Thai KDE desktop
  This task localises the KDE desktop in Thai.
 Depends: ${misc:Depends}, 
 Recommends:
-	kde-l10n-th
+	kde-l10n-th,
+	libthai-dev
 
 Package: task-turkish
 Architecture: all
