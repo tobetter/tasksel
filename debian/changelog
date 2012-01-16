@@ -10,6 +10,11 @@ tasksel (3.08) UNRELEASED; urgency=low
   * Update task-thai-gnome-desktop and task-thai-kde-desktop:
     - task-thai-gnome-desktop: Add gtk3-im-libthai
     - task-thai-kde-desktop: Add libthai-dev (which enhances libkhtml5)
+  
+  [ Changwoo Ryu ]
+  * Update task-korean-desktop and task-korean-gnome-desktop:
+    - Add ibus-gtk3 to task-korean-gnome-desktop
+    - Replace ttf-* with fonts-*
 
  -- Christian Perrier <bubulle@debian.org>  Mon, 05 Dec 2011 21:29:17 +0100
 
