@@ -16,6 +16,10 @@ tasksel (3.08) UNRELEASED; urgency=low
     - Add ibus-gtk3 to task-korean-gnome-desktop
     - Replace ttf-* with fonts-*
 
+  [ Joey Hess ]
+  * Use dpkg-query to list packages, rather than parsing the status file.
+    Closes: #657389
+
  -- Christian Perrier <bubulle@debian.org>  Mon, 05 Dec 2011 21:29:17 +0100
 
 tasksel (3.07) unstable; urgency=low
