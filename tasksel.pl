@@ -115,7 +115,7 @@ sub list_avail {
 # Returns a list of all installed packages.
 sub list_installed {
 	my @list;
-	open (LIST, q{dpkg-query -W -f='${Package} ${Status}\n' |});
+	open (LIST, q{LANG=C dpkg-query -W -f='${Package} ${Status}\n' |});
 	while (<LIST>) {
 		if (/^([^ ]+) .* installed$/m) {
 			push @list, $1;
