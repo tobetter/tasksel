@@ -18,6 +18,7 @@ tasksel (3.08) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Use dpkg-query to list packages, rather than parsing the status file.
+  * Deal with Description-md5 fields in apt-cache show output.
     Closes: #657389
 
  -- Christian Perrier <bubulle@debian.org>  Mon, 05 Dec 2011 21:29:17 +0100

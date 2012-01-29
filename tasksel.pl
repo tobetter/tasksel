@@ -322,7 +322,7 @@ sub getdescriptions {
 		local $/="\n\n";
 		while (<APT_CACHE>) {
 			my ($name)=/^Package: $taskpackageprefix(.*)$/m;
-			my ($description)=/^Description-.*: (.*)$/m;
+			my ($description)=/^Description-(?:[a-z][a-z](?:_[A-Z][A-Z])?): (.*)$/m;
 			($description)=/^Description: (.*)$/m
 				unless defined $description;
 			if (defined $name && defined $description) {
