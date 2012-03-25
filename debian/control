@@ -3167,6 +3167,14 @@ Recommends:
 	libreoffice-l10n-si,
 	iceweasel-l10n-si
 
+Package: task-uyghur-desktop
+Architecture: all
+Description: Uyghur desktop
+ This task localises the desktop in Uyghur.
+Depends: ${misc:Depends}, 
+Recommends:
+	fonts-ukij-uyghur
+
 Package: task-sinhala-kde-desktop
 Architecture: all
 Description: Sinhala KDE desktop
