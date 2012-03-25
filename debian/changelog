@@ -1,4 +1,4 @@
-tasksel (3.09) UNRELEASED; urgency=low
+tasksel (3.09) unstable; urgency=low
 
   [ Translations of tasks ]
   * Polish (Michał Kułach). Closes: #657267
@@ -12,10 +12,13 @@ tasksel (3.09) UNRELEASED; urgency=low
     Closes: #660057
   * No longer install x-ttcidfont-conf for chinese-t-desktop
     Closes: #660058
-  * Ass util-linux-locales to French, Polish and Czech tasks
+  * Add util-linux-locales to French, Polish and Czech tasks
     Closes: #659840
 
- -- Joey Hess <joeyh@debian.org>  Mon, 30 Jan 2012 19:52:08 -0400
+  [ Joey Hess ]
+  * Remove apmd. Closes: #665466
+
+ -- Otavio Salvador <otavio@debian.org>  Sat, 24 Mar 2012 17:41:35 -0300
 
 tasksel (3.08) unstable; urgency=low
 
