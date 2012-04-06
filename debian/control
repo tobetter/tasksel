@@ -144,7 +144,9 @@ Recommends:
 # no root password. It is not enabled by default.
 	kdesudo,
 # KDE libreoffice integration
-	libreoffice-kde
+	libreoffice-kde,
+# Package management. (Replace with a KDE-specific one when available.)
+	synaptic
 
 Package: task-lxde-desktop
 Architecture: all
@@ -163,7 +165,9 @@ Recommends:
 	lxde,
 	lxtask,
 	lxlauncher,
-	xsane
+	xsane,
+# Package management.
+	synaptic
 
 Package: task-xfce-desktop
 Architecture: all
@@ -201,7 +205,9 @@ Recommends:
 # icon theme
 	tango-icon-theme,
 # network management
-	wicd
+	wicd,
+# package management
+	synaptic
 
 Package: task-laptop
 Architecture: all

@@ -5,6 +5,9 @@ tasksel (3.10) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Xfce caps. Closes: #665786
+  * Include synaptic in the xfce, lxde, and kde tasks, as none of these
+    desktop environments currently have their own package management UI.
+    Closes: #667703
 
  -- Christian Perrier <bubulle@debian.org>  Sun, 25 Mar 2012 14:52:49 +0200
 
