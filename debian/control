@@ -885,8 +885,7 @@ Architecture: all
 Description: Czech environment
  This task installs packages and documentation in Czech
  to help Czech speaking people use Debian.
-Depends: ${misc:Depends}, 
-	manpages-cs
+Depends: ${misc:Depends}
 Recommends:
 	aspell-cs,
 # Other packages to i18n common software
