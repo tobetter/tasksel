@@ -1536,8 +1536,9 @@ Description: Kannada desktop
  This task localises the desktop in Kannada.
 Depends: ${misc:Depends}, 
 	ttf-kannada-fonts,
-	scim-tables-additional,
 	iceweasel-l10n-kn
+Recommends: scim-tables-additional
+
 
 Package: task-kannada-kde-desktop
 Architecture: all
@@ -1771,10 +1772,10 @@ Description: Malayalam desktop
  This task localises the desktop in Malayalam.
 Depends: ${misc:Depends}, 
 	ttf-malayalam-fonts,
-	scim-tables-additional
 Recommends:
 	libreoffice-l10n-ml-in,
-	iceweasel-l10n-ml
+	iceweasel-l10n-ml,
+	scim-tables-additional
 
 Package: task-malayalam-gnome-desktop
 Architecture: all
