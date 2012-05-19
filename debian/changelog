@@ -19,6 +19,8 @@ tasksel (3.10) UNRELEASED; urgency=low
   * Automatically select the ssh server task on new installs when
     the desktop task is not selected. Popcon indicates that the ssh server
     task is the most commonly manually selected task.
+  * Remove mod_perl/python/php from task-web-server, as these are variously
+    unpopular, unmaintained, and disgusting. Closes: #673401
 
  -- Christian Perrier <bubulle@debian.org>  Sun, 25 Mar 2012 14:52:49 +0200
 
