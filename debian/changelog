@@ -20,6 +20,11 @@ tasksel (3.10) UNRELEASED; urgency=low
     the desktop task is not selected. Popcon indicates that the ssh server
     task is the most commonly manually selected task.
 
+  [ Cyril Brulebois ]
+  * Update task-serbian-kde-desktop's Depends: Drop koffice-i18n-sr and
+    koffice-i18n-srlatin, thanks to Ana Guerrero (Closes: #673470).
+    Indeed, koffice is being removed from the archive.
+
  -- Christian Perrier <bubulle@debian.org>  Sun, 25 Mar 2012 14:52:49 +0200
 
 tasksel (3.09) unstable; urgency=low
