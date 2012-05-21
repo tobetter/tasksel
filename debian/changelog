@@ -10,6 +10,9 @@ tasksel (3.10) UNRELEASED; urgency=low
   * Move scim-tables-additional to Recommends for task-malayalam-desktop
     Closes: #672424
   * Drop outdated manpages-cs from task-czech. Closes: #649846
+  * Drop libapache2-mod-perl2 and libapache2-mod-python. The former is not
+    popular enough to be installed by default and the latter is dead
+    upstream and outdated by mod_wsgi. Closes: #673401
 
   [ Joey Hess ]
   * Xfce caps. Closes: #665786
