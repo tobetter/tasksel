@@ -10,6 +10,9 @@ tasksel (3.10) UNRELEASED; urgency=low
   * Move scim-tables-additional to Recommends for task-malayalam-desktop
     Closes: #672424
   * Drop outdated manpages-cs from task-czech. Closes: #649846
+  * Drop libapache2-mod-perl2 and libapache2-mod-python. The former is not
+    popular enough to be installed by default and the latter is dead
+    upstream and outdated by mod_wsgi. Closes: #673401
 
   [ Joey Hess ]
   * Xfce caps. Closes: #665786
@@ -19,8 +22,14 @@ tasksel (3.10) UNRELEASED; urgency=low
   * Automatically select the ssh server task on new installs when
     the desktop task is not selected. Popcon indicates that the ssh server
     task is the most commonly manually selected task.
-  * Remove mod_perl/python/php from task-web-server, as these are variously
-    unpopular, unmaintained, and disgusting. Closes: #673401
+  * Also remove php from task-web-server, as it was the only remaining
+    web development thing in it. This leaves the task more generally
+    focused on getting a web server installed, for whatever reason.
+
+  [ Cyril Brulebois ]
+  * Update task-serbian-kde-desktop's Depends: Drop koffice-i18n-sr and
+    koffice-i18n-srlatin, thanks to Ana Guerrero (Closes: #673470).
+    Indeed, koffice is being removed from the archive.
 
  -- Christian Perrier <bubulle@debian.org>  Sun, 25 Mar 2012 14:52:49 +0200
 
