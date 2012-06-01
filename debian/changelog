@@ -20,6 +20,8 @@ tasksel (3.10) UNRELEASED; urgency=low
   * Drop libapache2-mod-perl2 and libapache2-mod-python. The former is not
     popular enough to be installed by default and the latter is dead
     upstream and outdated by mod_wsgi. Closes: #673401
+  * Add hunspell-gl to task-desktop-galician and util-linux-locales to
+    task-galician. Closes: #675438
 
   [ Joey Hess ]
   * Xfce caps. Closes: #665786

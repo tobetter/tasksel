@@ -1109,6 +1109,7 @@ Description: Galician environment
 Depends: ${misc:Depends}, 
 Recommends:
 	aspell-gl-minimos
+	util-linux-locales
 
 Package: task-galician-desktop
 Architecture: all
@@ -1119,6 +1120,7 @@ Recommends:
 	libreoffice-l10n-gl,
 	libreoffice-help-gl,
 	iceweasel-l10n-gl
+	hunspell-gl
 
 Package: task-galician-kde-desktop
 Architecture: all
