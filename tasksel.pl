@@ -189,12 +189,8 @@ sub task_installed {
 }
 
 # Given task hash, returns a list of all available packages in the task.
-# If the aptitude_tasks parameter is true, then it does not expand tasks
-# that aptitude knows about, and just returns aptitude task syntax for
-# those.
 sub task_packages {
 	my $task=shift;
-	my $aptitude_tasks=shift;
 	
 	my %list;
 
@@ -596,11 +592,11 @@ sub main {
 	if (@tasks_install || @tasks_remove) {
 		my @args;
 		foreach my $task (@tasks_remove) {
-			push @args, map { "$_-" } task_packages($task, 0);
+			push @args, map { "$_-" } task_packages($task);
 			task_script($task->{task}, "prerm");
 		}
 		foreach my $task (@tasks_install) {
-			push @args, task_packages($task, 1);
+			push @args, task_packages($task);
 			task_script($task->{task}, "preinst");
 		}
 		my $ret=run(@aptitude, "-y", "install", @args);
