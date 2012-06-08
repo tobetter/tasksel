@@ -220,9 +220,20 @@ sub task_packages {
 		# only key
 	}
 	elsif ($task->{packages} eq 'standard') {
-		# standard method is built in since it cannot easily be
-		# implemented externally.
-		return "~pstandard", "~prequired", "~pimportant";
+		while (my ($package, $info) = each(info_avail())) {
+			my ($priority, $section) = ($info->{priority}, $info->{section});
+			if (($priority eq 'required' ||
+			     $priority eq 'important' ||
+			     $priority eq 'standard') &&
+		            # Exclude non-main and lib packages
+		            $section !~ /^lib|\// &&
+			    # Exclude packages starting with lib
+			    $package !~ /^lib/ &&
+			    # Exclude already installed packages
+		            !package_installed($package)) {
+				$list{$package} = 1;
+			}
+		}
 	}
 	else {
 		# external method
