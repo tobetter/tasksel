@@ -231,10 +231,6 @@ sub task_packages {
 		# implemented externally.
 		return "~pstandard", "~prequired", "~pimportant";
 	}
-	elsif ($task->{packages} eq 'manual') {
-		# manual package selection is a special case
-		return;
-	}
 	else {
 		# external method
 		my ($method, @params);
@@ -602,24 +598,11 @@ sub main {
 		}
 	}
 
-	# Add tasks to install and see if any selected task requires manual
-	# selection.
-	my $manual_selection=0;
-	foreach my $task (grep { $_->{_install} } @tasks) {
-		push @tasks_install, $task;
-		if (defined $task->{packages} && $task->{packages} eq 'manual') {
-			$manual_selection=1;
-		}
-	}
-	
-	my @aptitude;
-	if ($manual_selection) {
-		# Manaul selection and task installs, as best
-		# aptitude can do it currently. Disables use of
-		# debconf-apt-progress.
-		@aptitude="aptitude";
-	}
-	elsif (-x "/usr/bin/debconf-apt-progress") {
+	# Add tasks to install
+	@tasks_install = grep { $_->{_install} } @tasks;
+
+	my @cmd;
+	if (-x "/usr/bin/debconf-apt-progress") {
 		@aptitude="debconf-apt-progress";
 		push @aptitude, split(' ', $options{'debconf-apt-progress'})
 			if exists $options{'debconf-apt-progress'};
@@ -630,7 +613,7 @@ sub main {
 	}
 	
 	# And finally, act on selected tasks.
-	if (@tasks_install || @tasks_remove || $manual_selection) {
+	if (@tasks_install || @tasks_remove) {
 		my @args;
 		foreach my $task (@tasks_remove) {
 			push @args, map { "$_-" } task_packages($task, 0);
@@ -640,22 +623,9 @@ sub main {
 			push @args, task_packages($task, 1);
 			task_script($task->{task}, "preinst");
 		}
-		# If the user selected no other tasks and manual package
-		# selection, run aptitude w/o the --visual-preview parameter.
-		if (! @args && $manual_selection) {
-			my $ret=run("aptitude");
-			if ($ret != 0) {
-				error gettext("aptitude failed")." ($ret)";
-			}
-		}
-		else {
-			if ($manual_selection) {
-				unshift @args, "--visual-preview";
-			}
-			my $ret=run(@aptitude, "-y", "install", @args);
-			if ($ret != 0) {
-				error gettext("aptitude failed")." ($ret)";
-			}
+		my $ret=run(@aptitude, "-y", "install", @args);
+		if ($ret != 0) {
+			error gettext("aptitude failed")." ($ret)";
 		}
 		foreach my $task (@tasks_remove) {
 			task_script($task->{task}, "postrm");
