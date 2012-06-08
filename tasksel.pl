@@ -579,29 +579,26 @@ sub main {
 
 	my @cmd;
 	if (-x "/usr/bin/debconf-apt-progress") {
-		@aptitude="debconf-apt-progress";
-		push @aptitude, split(' ', $options{'debconf-apt-progress'})
+		@cmd = "debconf-apt-progress";
+		push @cmd, split(' ', $options{'debconf-apt-progress'})
 			if exists $options{'debconf-apt-progress'};
-		push @aptitude, qw{-- aptitude -q};
+		push @cmd, "--";
 	}
-	else {
-		@aptitude="aptitude";
-	}
-	
+	push @cmd, qw{apt-get -q -y -o APT::Install-Recommends=true -o APT::Get::AutomaticRemove=true install};
+
 	# And finally, act on selected tasks.
 	if (@tasks_install || @tasks_remove) {
-		my @args;
 		foreach my $task (@tasks_remove) {
-			push @args, map { "$_-" } task_packages($task);
+			push @cmd, map { "$_-" } task_packages($task);
 			task_script($task->{task}, "prerm");
 		}
 		foreach my $task (@tasks_install) {
-			push @args, task_packages($task);
+			push @cmd, task_packages($task);
 			task_script($task->{task}, "preinst");
 		}
-		my $ret=run(@aptitude, "-y", "install", @args);
+		my $ret=run(@cmd);
 		if ($ret != 0) {
-			error gettext("aptitude failed")." ($ret)";
+			error gettext("apt-get failed")." ($ret)";
 		}
 		foreach my $task (@tasks_remove) {
 			task_script($task->{task}, "postrm");
