@@ -95,21 +95,35 @@ sub all_tasks {
 	map { read_task_desc($_) } list_task_descs();
 }
 
-# Returns a list of all available packages.
-sub list_avail {
-	my @list;
+sub _info_avail {
+	my %ret = ();
 	# Might be better to use the perl apt bindings, but they are not
 	# currently in base.
 	open (AVAIL, "apt-cache dumpavail|");
 	local $_;
+	my ($package, $section, $priority);
 	while (<AVAIL>) {
 		chomp;
-		if (/^Package: (.*)/) {
-			push @list, $1;
+		if (not $_) {
+			if (defined $package && defined $priority && defined $section) {
+				$ret{$package} = {
+				       	"priority" => $priority,
+					"section" => $section,
+				};
+			}
+		}
+		elsif (/^Package: (.*)/) {
+			$package = $1;
+		}
+		elsif (/^Priority: (.*)/) {
+			$priority = $1;
+		}
+		elsif (/^Section: (.*)/) {
+			$section = $1;
 		}
 	}
 	close AVAIL;
-	return @list;
+	return %ret;
 }
 
 # Returns a list of all installed packages.
@@ -125,18 +139,21 @@ sub list_installed {
 	return @list;
 }
 
-my %avail_pkgs;
+my %_info_avail_cache;
+
+# Returns a hash of all available packages.
+sub info_avail {
+	my $package = shift;
+	if (!%_info_avail_cache) {
+		%_info_avail_cache = _info_avail();
+	}
+	return \%_info_avail_cache;
+}
+
 # Given a package name, checks to see if it's available. Memoised.
 sub package_avail {
-	my $package=shift;
-	
-	if (! %avail_pkgs) {
-		foreach my $pkg (list_avail()) {
-			$avail_pkgs{$pkg} = 1;
-		}
-	}
-
-	return $avail_pkgs{$package} || package_installed($package);
+	my $package = shift;
+	return info_avail()->{$package} || package_installed($package);
 }
 
 my %installed_pkgs;
