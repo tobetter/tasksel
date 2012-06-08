@@ -206,26 +206,6 @@ sub task_packages {
 	if (! defined $task->{packages}) {
 		# only key
 	}
-	elsif ($task->{packages} eq 'task-fields') {
-		# task-fields method is built-in for speed and to support
-		# aptitude task definitions
-		if ($aptitude_tasks) {
-			return '~t^'.$task->{task}.'$';
-		}
-		else {
-			local $/="\n\n";
-			open (AVAIL, "apt-cache dumpavail|");
-			while (<AVAIL>) {
-				if (/^Task: (.*)/m) {
-					my @tasks=split(", ", $1);
-					if (grep { $_ eq $task->{task} } @tasks) { 
-						$list{$1}=1 if /^Package: (.*)/m;
-					}
-				}
-			}
-			close AVAIL;
-		}
-	}
 	elsif ($task->{packages} eq 'standard') {
 		# standard method is built in since it cannot easily be
 		# implemented externally.
