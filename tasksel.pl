@@ -394,8 +394,8 @@ sub task_script {
 
 sub usage {
 	print STDERR gettext(q{Usage:
-tasksel install <task>
-tasksel remove <task>
+tasksel install <task>...
+tasksel remove <task>...
 tasksel [options]
 	-t, --test          test mode; don't really do anything
 	    --new-install   automatically install some tasks
@@ -416,17 +416,18 @@ sub getopts {
 		exit(1);
 	}
 	# Special case apt-like syntax.
-	if (@ARGV && $ARGV[0] eq "install") {
-		shift @ARGV;
-		$ret{install} = shift @ARGV;
-	}
-	if (@ARGV && $ARGV[0] eq "remove") {
-		shift @ARGV;
-		$ret{remove} = shift @ARGV;
-	}
 	if (@ARGV) {
-		usage();
-		exit 1;
+		my $cmd = shift @ARGV;
+		if ($cmd eq "install") {
+			$ret{cmd_install} = \@ARGV;
+		}
+		elsif ($cmd eq "remove") {
+			$ret{cmd_remove} = \@ARGV;
+		}
+		else {
+			usage();
+			exit 1;
+		}
 	}
 	$testmode=1 if $ret{test}; # set global
 	return %ret;
@@ -597,22 +598,20 @@ sub main {
 		exit(0);
 	}
 	
-	if ($options{"install"}) {
-		my $task=name_to_task($options{"install"}, @tasks);
-		$task->{_install} = 1 if $task;
+	if ($options{cmd_install}) {
+		@tasks_install = map { name_to_task($_, @tasks) } @{$options{cmd_install}};
 	}
-	if ($options{"remove"}) {
-		my $task=name_to_task($options{"remove"}, @tasks);
-		$task->{_remove} = 1 if $task;
+	elsif ($options{cmd_remove}) {
+		@tasks_remove = map { name_to_task($_, @tasks) } @{$options{cmd_remove}};
 	}
-	if (! $options{install} && ! $options{remove}) {
+	else {
 		interactive(\%options, @tasks);
+
+		# Add tasks to install
+		@tasks_install = grep { $_->{_install} } @tasks;
+		# Add tasks to remove
+		@tasks_remove = grep { $_->{_remove} } @tasks;
 	}
-	
-	# Add tasks to install
-	@tasks_install = grep { $_->{_install} } @tasks;
-	# Add tasks to remove
-	@tasks_remove = grep { $_->{_remove} } @tasks;
 
 	my @cmd;
 	if (-x "/usr/bin/debconf-apt-progress") {

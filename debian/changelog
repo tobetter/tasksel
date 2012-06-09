@@ -53,6 +53,7 @@ tasksel (3.10) UNRELEASED; urgency=low
     - Don't longer remove packages. (closes: #579522)
   * Support standard task with apt-get.
   * Drop ding and trans-de-en from german task.
+  * Act only on specified tasks if used non-interactive.
 
  -- Christian Perrier <bubulle@debian.org>  Sun, 25 Mar 2012 14:52:49 +0200
 
