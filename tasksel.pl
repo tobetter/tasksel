@@ -432,6 +432,129 @@ sub getopts {
 	return %ret;
 }
 
+sub interactive {
+	my $options = shift;
+	my @tasks = @_;
+
+	if (! $options->{"new-install"}) {
+		# Don't install hidden tasks if this is not a new install.
+		map { $_->{_install} = 0 } grep { $_->{_display} == 0 } @tasks;
+	}
+
+	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
+	if (@list) {
+		if (! $options->{"new-install"}) {
+			# Find tasks that are already installed.
+			map { $_->{_installed} = task_installed($_) } @list;
+			# Don't install new tasks unless manually selected.
+			map { $_->{_install} = 0 } @list;
+		}
+		else {
+			# Assume that no tasks are installed, to ensure
+			# that complete tasks get installed on new
+			# installs.
+			map { $_->{_installed} = 0 } @list;
+		}
+		my $question="tasksel/tasks";
+		if ($options->{"new-install"}) {
+			$question="tasksel/first";
+		}
+		my @default = grep { $_->{_display} == 1 && ($_->{_install} == 1 || $_->{_installed} == 1) } @tasks;
+		my $tmpfile=`tempfile`;
+		chomp $tmpfile;
+		my $ret=system($debconf_helper, $tmpfile,
+			task_to_debconf_C(@list),
+			task_to_debconf(@list),
+			task_to_debconf_C(@default),
+			$question) >> 8;
+		if ($ret == 30) {
+			exit 10; # back up
+		}
+		elsif ($ret != 0) {
+			error "debconf failed to run";
+		}
+		open(IN, "<$tmpfile");
+		$ret=<IN>;
+		if (! defined $ret) {
+			die "tasksel canceled\n";
+		}
+		chomp $ret;
+		close IN;
+		unlink $tmpfile;
+		
+		# Set _install flags based on user selection.
+		map { $_->{_install} = 0 } @list;
+		foreach my $task (list_to_tasks($ret, @tasks)) {
+			if (! $task->{_installed}) {
+				$task->{_install} = 1;
+			}
+			$task->{_selected} = 1;
+		}
+		foreach my $task (@list) {
+			if (! $task->{_selected} && $task->{_installed}) {
+				$task->{_remove} = 1;
+			}
+		}
+	}
+
+	# If an enhancing task is already marked for
+	# install, probably by preseeding, mark the tasks
+	# it enhances for install.
+	foreach my $task (grep { $_->{_install} && exists $_->{enhances} &&
+	                         length $_->{enhances} } @tasks) {
+		map { $_->{_install}=1 } list_to_tasks($task->{enhances}, @tasks);
+	}
+
+	# Select enhancing tasks for install.
+	# XXX FIXME ugly hack -- loop until enhances settle to handle
+	# chained enhances. This is ugly and could loop forever if
+	# there's a cycle.
+	my $enhances_needswork=1;
+	my %tested;
+	while ($enhances_needswork) {
+		$enhances_needswork=0;
+		foreach my $task (grep { ! $_->{_install} && exists $_->{enhances} &&
+		                         length $_->{enhances} } @tasks) {
+			my %tasknames = map { $_->{task} => $_ } @tasks;
+			my @deps=map { $tasknames{$_} } split ", ", $task->{enhances};
+
+			if (grep { ! defined $_ } @deps) {
+				# task enhances an unavailable or
+				# uninstallable task
+				next;
+			}
+
+			if (@deps) {
+				my $orig_state=$task->{_install};
+
+				# Mark enhancing tasks for install if their
+				# dependencies are met and their test fields
+				# mark them for install.
+				if (! exists $tested{$task->{task}}) {
+					$ENV{TESTING_ENHANCER}=1;
+					task_test($task, $options->{"new-install"}, 0, 1);
+					delete $ENV{TESTING_ENHANCER};
+					$tested{$task->{task}}=$task->{_install};
+				}
+				else {
+					$task->{_install}=$tested{$task->{task}};
+				}
+
+				foreach my $dep (@deps) {
+					if (! $dep->{_install}) {
+						$task->{_install} = 0;
+					}
+				}
+
+				if ($task->{_install} != $orig_state) {
+					$enhances_needswork=1;
+				}
+			}
+		}
+	}
+
+}
+
 sub main {
 	my %options=getopts();
 	my @tasks_remove;
@@ -474,136 +597,22 @@ sub main {
 		exit(0);
 	}
 	
-	if (! $options{"new-install"}) {
-		# Don't install hidden tasks if this is not a new install.
-		map { $_->{_install} = 0 } grep { $_->{_display} == 0 } @tasks;
-	}
 	if ($options{"install"}) {
 		my $task=name_to_task($options{"install"}, @tasks);
 		$task->{_install} = 1 if $task;
 	}
 	if ($options{"remove"}) {
 		my $task=name_to_task($options{"remove"}, @tasks);
-		push @tasks_remove, $task;
+		$task->{_remove} = 1 if $task;
+	}
+	if (! $options{install} && ! $options{remove}) {
+		interactive(\%options, @tasks);
 	}
 	
-	# The interactive bit.
-	my $interactive=0;
-	my @list = order_for_display(grep { $_->{_display} == 1 } @tasks);
-	if (@list && ! $options{install} && ! $options{remove}) {
-		$interactive=1;
-		if (! $options{"new-install"}) {
-			# Find tasks that are already installed.
-			map { $_->{_installed} = task_installed($_) } @list;
-			# Don't install new tasks unless manually selected.
-			map { $_->{_install} = 0 } @list;
-		}
-		else {
-			# Assume that no tasks are installed, to ensure
-			# that complete tasks get installed on new
-			# installs.
-			map { $_->{_installed} = 0 } @list;
-		}
-		my $question="tasksel/tasks";
-		if ($options{"new-install"}) {
-			$question="tasksel/first";
-		}
-		my @default = grep { $_->{_display} == 1 && ($_->{_install} == 1 || $_->{_installed} == 1) } @tasks;
-		my $tmpfile=`tempfile`;
-		chomp $tmpfile;
-		my $ret=system($debconf_helper, $tmpfile,
-			task_to_debconf_C(@list),
-			task_to_debconf(@list),
-			task_to_debconf_C(@default),
-			$question) >> 8;
-		if ($ret == 30) {
-			exit 10; # back up
-		}
-		elsif ($ret != 0) {
-			error "debconf failed to run";
-		}
-		open(IN, "<$tmpfile");
-		$ret=<IN>;
-		if (! defined $ret) {
-			die "tasksel canceled\n";
-		}
-		chomp $ret;
-		close IN;
-		unlink $tmpfile;
-		
-		# Set _install flags based on user selection.
-		map { $_->{_install} = 0 } @list;
-		foreach my $task (list_to_tasks($ret, @tasks)) {
-			if (! $task->{_installed}) {
-				$task->{_install} = 1;
-			}
-			$task->{_selected} = 1;
-		}
-		foreach my $task (@list) {
-			if (! $task->{_selected} && $task->{_installed}) {
-				push @tasks_remove, $task;
-			}
-		}
-	}
-
-	# If an enhancing task is already marked for
-	# install, probably by preseeding, mark the tasks
-	# it enhances for install.
-	foreach my $task (grep { $_->{_install} && exists $_->{enhances} &&
-	                         length $_->{enhances} } @tasks) {
-		map { $_->{_install}=1 } list_to_tasks($task->{enhances}, @tasks);
-	}
-
-	# Select enhancing tasks for install.
-	# XXX FIXME ugly hack -- loop until enhances settle to handle
-	# chained enhances. This is ugly and could loop forever if
-	# there's a cycle.
-	my $enhances_needswork=1;
-	my %tested;
-	while ($enhances_needswork) {
-		$enhances_needswork=0;
-		foreach my $task (grep { ! $_->{_install} && exists $_->{enhances} &&
-		                         length $_->{enhances} } @tasks) {
-			my %tasknames = map { $_->{task} => $_ } @tasks;
-			my @deps=map { $tasknames{$_} } split ", ", $task->{enhances};
-
-			if (grep { ! defined $_ } @deps) {
-				# task enhances an unavailable or
-				# uninstallable task
-				next;
-			}
-
-			if (@deps) {
-				my $orig_state=$task->{_install};
-
-				# Mark enhancing tasks for install if their
-				# dependencies are met and their test fields
-				# mark them for install.
-				if (! exists $tested{$task->{task}}) {
-					$ENV{TESTING_ENHANCER}=1;
-					task_test($task, $options{"new-install"}, 0, 1);
-					delete $ENV{TESTING_ENHANCER};
-					$tested{$task->{task}}=$task->{_install};
-				}
-				else {
-					$task->{_install}=$tested{$task->{task}};
-				}
-
-				foreach my $dep (@deps) {
-					if (! $dep->{_install}) {
-						$task->{_install} = 0;
-					}
-				}
-
-				if ($task->{_install} != $orig_state) {
-					$enhances_needswork=1;
-				}
-			}
-		}
-	}
-
 	# Add tasks to install
 	@tasks_install = grep { $_->{_install} } @tasks;
+	# Add tasks to remove
+	@tasks_remove = grep { $_->{_remove} } @tasks;
 
 	my @cmd;
 	if (-x "/usr/bin/debconf-apt-progress") {
