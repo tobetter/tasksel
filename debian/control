@@ -1108,7 +1108,7 @@ Description: Galician environment
  to help Galician speaking people use Debian.
 Depends: ${misc:Depends}, 
 Recommends:
-	aspell-gl-minimos
+	aspell-gl-minimos,
 	util-linux-locales
 
 Package: task-galician-desktop
@@ -1119,8 +1119,8 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-gl,
 	libreoffice-help-gl,
-	iceweasel-l10n-gl
-	hunspell-gl
+	iceweasel-l10n-gl,
+	hunspell-gl,
 
 Package: task-galician-kde-desktop
 Architecture: all
