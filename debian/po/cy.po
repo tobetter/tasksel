@@ -18,9 +18,10 @@ msgstr ""
 "Project-Id-Version: tasksel\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-09-13 14:42-0400\n"
-"PO-Revision-Date: 2004-11-24 13:30-0500\n"
-"Last-Translator: Dafydd Harries <daf@muse.19inch.net>\n"
+"PO-Revision-Date: 2012-06-07 21:55-0000\n"
+"Last-Translator: Dafydd Tomos <l10n@da.fydd.org>\n"
 "Language-Team: Welsh <cy@pengwyn.linux.org.uk>\n"
+"Language: cy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,21 +32,19 @@ msgstr ""
 #. Description
 #: ../templates:1001 ../templates:2001
 msgid "Choose software to install:"
-msgstr "Dewis meddalwedd i'w sefydlu"
+msgstr "Dewis meddalwedd i'w sefydlu:"
 
 #. Type: multiselect
 #. Description
 #: ../templates:1001
-#, fuzzy
 msgid ""
 "At the moment, only the core of the system is installed. To tune the system "
 "to your needs, you can choose to install one or more of the following "
 "predefined collections of software."
 msgstr ""
-"Ar hyn o bryd, dim ond craidd Debian sydd wedi ei sefydlu. Er mwyn "
-"addasu'rsefydliad i'ch anghenion, gallwch ddewis i sefydlu un neu fwy o'r "
-"casgliadau canlynol o feddalwardd. Mae'n bosib hoffai  ddefnyddwyr mwy "
-"profiadol ddewis pecynnau â llaw."
+"Ar hyn o bryd, dim ond craidd y system sydd wedi ei sefydlu. Er mwyn "
+"addasu'r system i'ch anghenion, gallwch ddewis sefydlu un neu fwy o'r "
+"casgliadau canlynol o feddalwedd."
 
 #. Type: multiselect
 #. Description
@@ -59,9 +58,8 @@ msgstr ""
 #. Type: title
 #. Description
 #: ../templates:3001
-#, fuzzy
 msgid "Software selection"
-msgstr "Dewis meddalwedd Debian"
+msgstr "Dewis meddalwedd"
 
 #~ msgid "${ORIGCHOICES}"
 #~ msgstr "${CHOICES}"
