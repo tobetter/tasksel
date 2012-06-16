@@ -225,10 +225,8 @@ sub task_packages {
 			if (($priority eq 'required' ||
 			     $priority eq 'important' ||
 			     $priority eq 'standard') &&
-		            # Exclude non-main and lib packages
+		            # Exclude packages in non-main and library sections
 		            $section !~ /^lib|\// &&
-			    # Exclude packages starting with lib
-			    $package !~ /^lib/ &&
 			    # Exclude already installed packages
 		            !package_installed($package)) {
 				$list{$package} = 1;
