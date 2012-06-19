@@ -46,8 +46,6 @@ Recommends:
 # firefox (ne iceweasel) is the most popular web browser at the moment,
 # although both gnome and kde offer their own too
 	iceweasel,
-# the gimp is the best image editor, no matter the desktop
-	gimp,
 # libreoffice is the best word processor / office suite at the moment
 	libreoffice,
 	libreoffice-gcj,
@@ -113,7 +111,9 @@ Recommends:
 	gnome,
 # GNOME support in LibreOffice
 	libreoffice-gnome,
-	libreoffice-evolution
+	libreoffice-evolution,
+# temporarily moved from task-desktop due to #525077
+	gimp
 
 Package: task-kde-desktop
 Architecture: all
@@ -146,7 +146,9 @@ Recommends:
 # KDE libreoffice integration
 	libreoffice-kde,
 # Package management. (Replace with a KDE-specific one when available.)
-	synaptic
+	synaptic,
+# temporarily moved from task-desktop due to #525077
+	gimp
 
 Package: task-lxde-desktop
 Architecture: all
