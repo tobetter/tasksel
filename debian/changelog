@@ -1,20 +1,4 @@
-tasksel (3.10) UNRELEASED; urgency=low
-
-  [ Translations of programs ]
-  * Latvian (Rūdolfs Mazurs). Closes: #674691
-  * Lithuanian (Rimas Kudelis). Closes: #675851
-  * Welsh (Daffyd Tomos).
-
-  [ Translations of debconf templates ]
-  * Latvian (Rūdolfs Mazurs). Closes: #674691
-  * Lithuanian (Rimas Kudelis). Closes: #675851
-  * Welsh (Daffyd Tomos).
-
-  [ Translations of tasks ]
-  * Marathi (Sampada Nakhare)
-  * Latvian (Rūdolfs Mazurs). Closes: #674691
-  * Lithuanian (Rimas Kudelis). Closes: #675851
-  * Welsh (Daffyd Tomos).
+tasksel (3.10) unstable; urgency=low
 
   [ Christian Perrier ]
   * Add uyghur-desktop task
@@ -41,6 +25,7 @@ tasksel (3.10) UNRELEASED; urgency=low
   * Also remove php from task-web-server, as it was the only remaining
     web development thing in it. This leaves the task more generally
     focused on getting a web server installed, for whatever reason.
+  * Don't install the gimp with XFCE and LXDE desktops, to work around #525077
 
   [ Cyril Brulebois ]
   * Update task-serbian-kde-desktop's Depends: Drop koffice-i18n-sr and
@@ -59,10 +44,23 @@ tasksel (3.10) UNRELEASED; urgency=low
   * Drop ding and trans-de-en from german task.
   * Act only on specified tasks if used non-interactive.
 
-  [ Joey Hess ]
-  * Don't install the gimp with XFCE and LXDE desktops, to work around #525077
+  [ Translations of programs ]
+  * Latvian (Rūdolfs Mazurs). Closes: #674691
+  * Lithuanian (Rimas Kudelis). Closes: #675851
+  * Welsh (Daffyd Tomos).
 
- -- Christian Perrier <bubulle@debian.org>  Sun, 25 Mar 2012 14:52:49 +0200
+  [ Translations of debconf templates ]
+  * Latvian (Rūdolfs Mazurs). Closes: #674691
+  * Lithuanian (Rimas Kudelis). Closes: #675851
+  * Welsh (Daffyd Tomos).
+
+  [ Translations of tasks ]
+  * Marathi (Sampada Nakhare)
+  * Latvian (Rūdolfs Mazurs). Closes: #674691
+  * Lithuanian (Rimas Kudelis). Closes: #675851
+  * Welsh (Daffyd Tomos).
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 21 Jun 2012 11:35:18 -0400
 
 tasksel (3.09) unstable; urgency=low
 
