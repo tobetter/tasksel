@@ -2124,6 +2124,7 @@ Description: Uyghur desktop
  This task localises the desktop in Uyghur.
 Depends: ${misc:Depends}, 
 Recommends:
+	libreoffice-l10n-ug,
 	fonts-ukij-uyghur
 
 Package: task-sinhala-kde-desktop
