@@ -69,11 +69,9 @@ Recommends:
 	cups-client,
 	cups-bsd,
 	foomatic-db-engine,
-	cups-driver-gutenprint,
-	hpijs,
 	hplip,
 	hp-ppd,
-	foo2zjs,
+	printer-driver-all,
 # gui for configuration of the print server
 	system-config-printer,
 # 3d acceleration (with free drivers)
@@ -279,11 +277,9 @@ Depends: ${misc:Depends},
 	cups-bsd
 Recommends:
 	foomatic-db-engine,
-	cups-driver-gutenprint,
-	hpijs,
+	printer-driver-all,
 	hplip,
 	hp-ppd,
-	foo2zjs,
 # Note that this is not included in the desktop task, since it only
 # supports high-end postcript printers.
 	openprinting-ppds
