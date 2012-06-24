@@ -77,8 +77,6 @@ Recommends:
 	foo2zjs,
 # gui for configuration of the print server
 	system-config-printer,
-# CPU frequency scaling
-	cpufrequtils,
 # Warn about and allow reporting kernel oopses.
 	kerneloops-applet,
 # 3d acceleration (with free drivers)
@@ -224,7 +222,6 @@ Recommends:
 	pcmciautils,
 	wireless-tools,
 	wpasupplicant,
-	cpufrequtils,
 	avahi-autoipd,
 	bluetooth,
 	powertop,
