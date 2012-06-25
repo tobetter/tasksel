@@ -534,6 +534,14 @@ Recommends:
 	xfonts-terminus,
 	myspell-hr
 
+Package: task-bosnian-kde-desktop
+Architecture: all
+Description: Bosnian KDE desktop
+ This task localises the KDE desktop in Bosnian.
+Depends: ${misc:Depends}, 
+Recommends:
+	kde-l10n-bs
+
 Package: task-brazilian-portuguese
 Architecture: all
 XBC-Maintainer: Otavio Salvador <otavio@debian.org>
