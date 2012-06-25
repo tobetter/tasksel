@@ -1904,6 +1904,14 @@ Recommends:
 	ttf-farsiweb,
 	iceweasel-l10n-fa
 
+Package: task-persian-kde-desktop
+Architecture: all
+Description: Persian KDE desktop
+ This task localises the KDE desktop in Persian.
+Depends: ${misc:Depends}, 
+Recommends:
+	kde-l10n-fa
+
 Package: task-polish
 Architecture: all
 Description: Polish environment
