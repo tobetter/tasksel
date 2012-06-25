@@ -329,17 +329,6 @@ Recommends:
 	winbind,
 	smartmontools
 
-Package: task-finnish
-Architecture: all
-Description: Finnish environment
- This task installs packages and documentation in Finnish
- to help Finnish speaking people use Debian.
-Depends: ${misc:Depends}, 
-Recommends:
-	tmispell-voikko,
-	voikko-fi,
-	libenchant-voikko
-
 Package: task-albanian-desktop
 Architecture: all
 Description: Albanian desktop
@@ -823,60 +812,6 @@ Depends: ${misc:Depends},
 Recommends:
 	kde-l10n-hr
 
-Package: task-cyrillic
-Architecture: all
-Description: Cyrillic environment
- This task provides Cyrillic fonts and other software you will need in
- order to use Cyrillic.  It supports Belarusian, Bulgarian,
- Macedonian, Russian, Serbian and Ukrainian.
-XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
-Depends: ${misc:Depends}, 
-Recommends:
-# Translates Cyrillic encodings.
-	konwert
-
-Package: task-cyrillic-desktop
-Architecture: all
-Description: Cyrillic desktop
- This task localises the desktop in Cyrillic.
- It supports Belarusian, Bulgarian, Macedonian, Russian, Serbian and Ukrainian.
-XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
-Depends: ${misc:Depends}, 
-	t1-cyrillic
-Recommends:
-# Keyboard state indicator and switcher for X:
-	xxkb,
-# The main stuff: fonts for X.
-	t1-teams,
-	ttf-arhangai,
-# For CP1251 (Belarusian and Bulgarian):
-	xfonts-bolkhov-cp1251-misc,
-	xfonts-bolkhov-cp1251-75dpi,
-	xfonts-cronyx-cp1251-100dpi,
-# For ISO 8859-5 (Macedonian and Serbian):
-	xfonts-cronyx-isocyr-misc,
-	xfonts-cronyx-isocyr-75dpi,
-	xfonts-cronyx-isocyr-100dpi,
-# For KOI8-R (Russian):
-	xfonts-bolkhov-koi8r-misc,
-	xfonts-bolkhov-koi8r-75dpi,
-	xfonts-cronyx-koi8r-100dpi,
-# For KOI8-U (Ukrainian):
-	xfonts-bolkhov-koi8u-misc,
-	xfonts-bolkhov-koi8u-75dpi,
-	xfonts-cronyx-koi8u-100dpi,
-# For Unicode:
-	xfonts-bolkhov-misc,
-	xfonts-bolkhov-75dpi,
-	xfonts-cronyx-100dpi
-
-Package: task-cyrillic-kde-desktop
-Architecture: all
-Description: Cyrillic KDE desktop
- This task localises the KDE desktop in Cyrillic.
-Depends: ${misc:Depends}, 
-Recommends:
-
 Package: task-czech
 Architecture: all
 Description: Czech environment
@@ -1041,6 +976,17 @@ Description: Estonian KDE desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	kde-l10n-et
+
+Package: task-finnish
+Architecture: all
+Description: Finnish environment
+ This task installs packages and documentation in Finnish
+ to help Finnish speaking people use Debian.
+Depends: ${misc:Depends}, 
+Recommends:
+	tmispell-voikko,
+	voikko-fi,
+	libenchant-voikko
 
 Package: task-finnish-desktop
 Architecture: all
@@ -1541,7 +1487,6 @@ Description: Kannada KDE desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	kde-l10n-kn
-
 
 Package: task-kazakh
 Architecture: all
@@ -2545,3 +2490,58 @@ Description: Xhosa KDE desktop
  This task localises the KDE desktop in Xhosa.
 Depends: ${misc:Depends}, 
 Recommends:
+
+Package: task-cyrillic
+Architecture: all
+Description: Cyrillic environment
+ This task provides Cyrillic fonts and other software you will need in
+ order to use Cyrillic.  It supports Belarusian, Bulgarian,
+ Macedonian, Russian, Serbian and Ukrainian.
+XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
+Depends: ${misc:Depends}, 
+Recommends:
+# Translates Cyrillic encodings.
+	konwert
+
+Package: task-cyrillic-desktop
+Architecture: all
+Description: Cyrillic desktop
+ This task localises the desktop in Cyrillic.
+ It supports Belarusian, Bulgarian, Macedonian, Russian, Serbian and Ukrainian.
+XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
+Depends: ${misc:Depends}, 
+	t1-cyrillic
+Recommends:
+# Keyboard state indicator and switcher for X:
+	xxkb,
+# The main stuff: fonts for X.
+	t1-teams,
+	ttf-arhangai,
+# For CP1251 (Belarusian and Bulgarian):
+	xfonts-bolkhov-cp1251-misc,
+	xfonts-bolkhov-cp1251-75dpi,
+	xfonts-cronyx-cp1251-100dpi,
+# For ISO 8859-5 (Macedonian and Serbian):
+	xfonts-cronyx-isocyr-misc,
+	xfonts-cronyx-isocyr-75dpi,
+	xfonts-cronyx-isocyr-100dpi,
+# For KOI8-R (Russian):
+	xfonts-bolkhov-koi8r-misc,
+	xfonts-bolkhov-koi8r-75dpi,
+	xfonts-cronyx-koi8r-100dpi,
+# For KOI8-U (Ukrainian):
+	xfonts-bolkhov-koi8u-misc,
+	xfonts-bolkhov-koi8u-75dpi,
+	xfonts-cronyx-koi8u-100dpi,
+# For Unicode:
+	xfonts-bolkhov-misc,
+	xfonts-bolkhov-75dpi,
+	xfonts-cronyx-100dpi
+
+Package: task-cyrillic-kde-desktop
+Architecture: all
+Description: Cyrillic KDE desktop
+ This task localises the KDE desktop in Cyrillic.
+Depends: ${misc:Depends}, 
+Recommends:
+
