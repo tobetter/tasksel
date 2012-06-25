@@ -2488,6 +2488,14 @@ Recommends:
 	libreoffice-l10n-ug,
 	fonts-ukij-uyghur
 
+Package: task-uyghur-kde-desktop
+Architecture: all
+Description: Uyghur KDE desktop
+ This task localises the KDE desktop in Uyghur.
+Depends: ${misc:Depends}, 
+Recommends:
+	kde-l10n-ug
+
 Package: task-vietnamese-desktop
 Architecture: all
 Description: Vietnamese desktop
