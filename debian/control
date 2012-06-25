@@ -2144,15 +2144,6 @@ Depends: ${misc:Depends},
 Recommends:
 	kde-l10n-si
 
-Package: task-uyghur-desktop
-Architecture: all
-Description: Uyghur desktop
- This task localises the desktop in Uyghur.
-Depends: ${misc:Depends}, 
-Recommends:
-	libreoffice-l10n-ug,
-	fonts-ukij-uyghur
-
 Package: task-slovak
 Architecture: all
 Description: Slovak environment
@@ -2487,6 +2478,15 @@ Description: Ukrainian KDE desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	kde-l10n-uk
+
+Package: task-uyghur-desktop
+Architecture: all
+Description: Uyghur desktop
+ This task localises the desktop in Uyghur.
+Depends: ${misc:Depends}, 
+Recommends:
+	libreoffice-l10n-ug,
+	fonts-ukij-uyghur
 
 Package: task-vietnamese-desktop
 Architecture: all
