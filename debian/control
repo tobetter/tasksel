@@ -2136,6 +2136,14 @@ Recommends:
 	libreoffice-l10n-si,
 	iceweasel-l10n-si
 
+Package: task-sinhala-kde-desktop
+Architecture: all
+Description: Sinhala KDE desktop
+ This task localises the KDE desktop in Sinhala.
+Depends: ${misc:Depends}, 
+Recommends:
+	kde-l10n-si
+
 Package: task-uyghur-desktop
 Architecture: all
 Description: Uyghur desktop
