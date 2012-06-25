@@ -1534,6 +1534,14 @@ Depends: ${misc:Depends},
 	iceweasel-l10n-kn
 Recommends: scim-tables-additional
 
+Package: task-kannada-kde-desktop
+Architecture: all
+Description: Kannada KDE desktop
+ This task localises the KDE desktop in Kannada.
+Depends: ${misc:Depends}, 
+Recommends:
+	kde-l10n-kn
+
 
 Package: task-kazakh
 Architecture: all
