@@ -43,6 +43,8 @@ tasksel (3.11) UNRELEASED; urgency=low
 
   [ Per Olofsson ]
   * Replace myspell-sv-se with hunspell-sv-se in swedish-desktop task.
+  * Remove iswedish from swedish task. ispell is old and doesn't work
+    well with UTF-8.
 
  -- Christian Perrier <bubulle@debian.org>  Sun, 24 Jun 2012 11:35:01 +0200
 
