@@ -48,6 +48,9 @@ tasksel (3.11) UNRELEASED; urgency=low
   * Remove iswedish from swedish task. ispell is old and doesn't work
     well with UTF-8.
 
+  [ Joey Hess ]
+  * Move lxde to depends of task-lxde-desktop. Closes: #680519
+
  -- Christian Perrier <bubulle@debian.org>  Sun, 24 Jun 2012 11:35:01 +0200
 
 tasksel (3.10) unstable; urgency=low
