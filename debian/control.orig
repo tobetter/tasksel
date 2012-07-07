@@ -152,11 +152,13 @@ Description: LXDE desktop environment
  expect to have available on the desktop.
 Depends: ${misc:Depends}, 
 	task-desktop,
-	lxde,
+# The basics of lxde, not the whole thing.
+	lxde-core,
 # A display manager is a recommend of lxde,
 # but put here to ensure it's available
 	xdm
 Recommends:
+	lxde,
 	lxtask,
 	lxlauncher,
 	xsane,
