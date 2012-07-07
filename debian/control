@@ -153,9 +153,6 @@ Description: LXDE desktop environment
 Depends: ${misc:Depends}, 
 	task-desktop,
 	lxde,
-# A display manager is a recommend of lxde,
-# but put here to ensure it's available
-	xdm
 Recommends:
 	lxtask,
 	lxlauncher,
