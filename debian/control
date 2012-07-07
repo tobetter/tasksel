@@ -153,6 +153,8 @@ Description: LXDE desktop environment
 Depends: ${misc:Depends}, 
 	task-desktop,
 	lxde,
+	gdm3
+
 Recommends:
 	lxtask,
 	lxlauncher,
