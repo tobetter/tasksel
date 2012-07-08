@@ -64,15 +64,6 @@ Recommends:
 	libnss-mdns,
 # desktop machines might not be up 24/7
 	anacron,
-# The following packages are the same as the packages in the
-# print-server task and provide printing via CUPS.
-	cups,
-	cups-client,
-	cups-bsd,
-	foomatic-db-engine,
-	hplip,
-	hp-ppd,
-	printer-driver-all,
 # gui for configuration of the print server
 	system-config-printer,
 # 3d acceleration (with free drivers)
@@ -278,8 +269,6 @@ Recommends:
 	printer-driver-all,
 	hplip,
 	hp-ppd,
-# Note that this is not included in the desktop task, since it only
-# supports high-end postcript printers.
 	openprinting-ppds
 
 Package: task-ssh-server

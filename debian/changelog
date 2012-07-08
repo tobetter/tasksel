@@ -54,6 +54,12 @@ tasksel (3.11) UNRELEASED; urgency=low
   [ Andrew Lee (李健秋) ]
   * Depending on gdm3 rather than gdm in task-lxde-desktop (Closes: #680519).
 
+  [ Joey Hess ]
+  * Removed printing stuff from task-desktop, and make task-print-server
+    be auto-selected on machines likely to be a desktop. This decreases
+    the overall size of task-desktop, and may allow gnome to fit on the
+    first CD again, with the printing stuff omitted to the second CD.
+
  -- Christian Perrier <bubulle@debian.org>  Sun, 24 Jun 2012 11:35:01 +0200
 
 tasksel (3.10) unstable; urgency=low
