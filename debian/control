@@ -43,20 +43,6 @@ Depends: ${misc:Depends},
 Recommends:
 # The default desktop is gnome, but any can be used with this task.
 	task-gnome-desktop | task-kde-desktop | task-lxde-desktop | task-xfce-desktop,
-# firefox (ne iceweasel) is the most popular web browser at the moment,
-# although both gnome and kde offer their own too
-	iceweasel,
-# libreoffice is the best word processor / office suite at the moment
-	libreoffice,
-	libreoffice-gcj,
-# make help menu work
-	libreoffice-help-en-us,
-# make thesaurus work
-	mythes-en-us,
-# make spellchecker work
-	myspell-en-us,
-# make hyphenation work
-	hyphen-en-us,
 # For use by third-party apps.
 	xdg-utils,
 # mdns/zeroconf stuff
@@ -99,6 +85,20 @@ Recommends:
 	libreoffice-evolution,
 # temporarily moved from task-desktop due to #525077
 	gimp
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
+	iceweasel,
+# libreoffice is the best word processor / office suite at the moment
+	libreoffice,
+	libreoffice-gcj,
+# make help menu work
+	libreoffice-help-en-us,
+# make thesaurus work
+	mythes-en-us,
+# make spellchecker work
+	myspell-en-us,
+# make hyphenation work
+	hyphen-en-us,
 
 Package: task-kde-desktop
 Architecture: all
@@ -134,6 +134,20 @@ Recommends:
 	synaptic,
 # temporarily moved from task-desktop due to #525077
 	gimp
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
+	iceweasel,
+# libreoffice is the best word processor / office suite at the moment
+	libreoffice,
+	libreoffice-gcj,
+# make help menu work
+	libreoffice-help-en-us,
+# make thesaurus work
+	mythes-en-us,
+# make spellchecker work
+	myspell-en-us,
+# make hyphenation work
+	hyphen-en-us,
 
 Package: task-lxde-desktop
 Architecture: all
@@ -152,6 +166,20 @@ Recommends:
 	libreoffice-gtk,
 # Package management.
 	synaptic
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
+	iceweasel,
+# libreoffice is the best word processor / office suite at the moment
+	libreoffice,
+	libreoffice-gcj,
+# make help menu work
+	libreoffice-help-en-us,
+# make thesaurus work
+	mythes-en-us,
+# make spellchecker work
+	myspell-en-us,
+# make hyphenation work
+	hyphen-en-us,
 
 Package: task-xfce-desktop
 Architecture: all
@@ -192,6 +220,20 @@ Recommends:
 	wicd,
 # package management
 	synaptic
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
+	iceweasel,
+# libreoffice is the best word processor / office suite at the moment
+	libreoffice,
+	libreoffice-gcj,
+# make help menu work
+	libreoffice-help-en-us,
+# make thesaurus work
+	mythes-en-us,
+# make spellchecker work
+	myspell-en-us,
+# make hyphenation work
+	hyphen-en-us,
 
 Package: task-laptop
 Architecture: all
