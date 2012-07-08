@@ -1,5 +1,9 @@
 tasksel (3.12) UNRELEASED; urgency=low
 
+  [ Andrew Lee (李健秋) ]
+  * Really depending on gdm3 in task-lxde-desktop (Closes: #680519).
+
+  [ Joey Hess ]
   * xfce: Use network-manager-gnome.
     Rationalle: Everyone I've polled who has installed xfce for nontechnical
     users has had to switch out wicd due to its non-user-friendliness.
