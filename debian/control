@@ -84,7 +84,7 @@ Recommends:
 	libreoffice-gnome,
 	libreoffice-evolution,
 # temporarily moved from task-desktop due to #525077
-	gimp
+	gimp,
 # firefox (ne iceweasel) is the most popular web browser at the moment,
 # although both gnome and kde offer their own too
 	iceweasel,
@@ -98,7 +98,7 @@ Recommends:
 # make spellchecker work
 	myspell-en-us,
 # make hyphenation work
-	hyphen-en-us,
+	hyphen-en-us
 
 Package: task-kde-desktop
 Architecture: all
@@ -133,7 +133,7 @@ Recommends:
 # Package management. (Replace with a KDE-specific one when available.)
 	synaptic,
 # temporarily moved from task-desktop due to #525077
-	gimp
+	gimp,
 # firefox (ne iceweasel) is the most popular web browser at the moment,
 # although both gnome and kde offer their own too
 	iceweasel,
@@ -147,7 +147,7 @@ Recommends:
 # make spellchecker work
 	myspell-en-us,
 # make hyphenation work
-	hyphen-en-us,
+	hyphen-en-us
 
 Package: task-lxde-desktop
 Architecture: all
@@ -165,7 +165,7 @@ Recommends:
 # libreoffice widgets using just gtk
 	libreoffice-gtk,
 # Package management.
-	synaptic
+	synaptic,
 # firefox (ne iceweasel) is the most popular web browser at the moment,
 # although both gnome and kde offer their own too
 	iceweasel,
@@ -179,7 +179,7 @@ Recommends:
 # make spellchecker work
 	myspell-en-us,
 # make hyphenation work
-	hyphen-en-us,
+	hyphen-en-us
 
 Package: task-xfce-desktop
 Architecture: all
@@ -219,7 +219,7 @@ Recommends:
 # network management
 	wicd,
 # package management
-	synaptic
+	synaptic,
 # firefox (ne iceweasel) is the most popular web browser at the moment,
 # although both gnome and kde offer their own too
 	iceweasel,
@@ -233,7 +233,7 @@ Recommends:
 # make spellchecker work
 	myspell-en-us,
 # make hyphenation work
-	hyphen-en-us,
+	hyphen-en-us
 
 Package: task-laptop
 Architecture: all
