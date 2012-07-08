@@ -279,6 +279,7 @@ Description: SSH server
 Depends: ${misc:Depends}, 
 	openssh-server
 Recommends:
+	openssh-client
 
 Package: task-database-server
 Architecture: all
