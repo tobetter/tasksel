@@ -50,8 +50,6 @@ Recommends:
 	libnss-mdns,
 # desktop machines might not be up 24/7
 	anacron,
-# gui for configuration of the print server
-	system-config-printer,
 # 3d acceleration (with free drivers)
 	libgl1-mesa-dri,
 # Make sure that CDs etc can be ejected. May not be installed by d-i.
@@ -98,7 +96,9 @@ Recommends:
 # make spellchecker work
 	myspell-en-us,
 # make hyphenation work
-	hyphen-en-us
+	hyphen-en-us,
+# gui for configuration of the print server
+	system-config-printer
 
 Package: task-kde-desktop
 Architecture: all
@@ -147,7 +147,9 @@ Recommends:
 # make spellchecker work
 	myspell-en-us,
 # make hyphenation work
-	hyphen-en-us
+	hyphen-en-us,
+# gui for configuration of the print server
+	system-config-printer
 
 Package: task-lxde-desktop
 Architecture: all
@@ -179,7 +181,9 @@ Recommends:
 # make spellchecker work
 	myspell-en-us,
 # make hyphenation work
-	hyphen-en-us
+	hyphen-en-us,
+# gui for configuration of the print server
+	system-config-printer
 
 Package: task-xfce-desktop
 Architecture: all
@@ -233,7 +237,9 @@ Recommends:
 # make spellchecker work
 	myspell-en-us,
 # make hyphenation work
-	hyphen-en-us
+	hyphen-en-us,
+# gui for configuration of the print server
+	system-config-printer
 
 Package: task-laptop
 Architecture: all
