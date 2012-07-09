@@ -9,7 +9,11 @@ tasksel (3.12) UNRELEASED; urgency=low
     users has had to switch out wicd due to its non-user-friendliness.
     Technical users who want wicd will have no difficulty installing it.
 
- -- Joey Hess <joeyh@debian.org>  Sun, 08 Jul 2012 13:12:57 -0600
+  [ Christian Perrier ]
+  * Use xul-ext-mozvoikko instead of transitional mozvoikko in
+    task-finnish-desktop. Closes: #680952
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 09 Jul 2012 08:51:28 -0600
 
 tasksel (3.11) unstable; urgency=low
 
