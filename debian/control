@@ -603,19 +603,6 @@ Depends: ${misc:Depends},
 Recommends:
 	kde-l10n-ptbr
 
-Package: task-british
-Architecture: all
-Description: British English environment
- This task installs packages and documentation in British English
- to help British English speaking people use Debian.
-XBC-Maintainer: Per Olofsson <pelle@debian.org>
-Depends: ${misc:Depends}, 
-	locales
-Recommends:
-	util-linux-locales,
-	ibritish,
-	wbritish
-
 Package: task-british-desktop
 Architecture: all
 Description: British English desktop
@@ -958,6 +945,18 @@ Description: Dzongkha KDE desktop
  This task localises the KDE desktop in Dzongkha.
 Depends: ${misc:Depends}, 
 Recommends:
+
+Package: task-english
+Architecture: all
+Description: General English environment
+ This task installs packages and documentation in British
+ and American English to help  English speaking people use Debian.
+Depends: ${misc:Depends}, 
+	locales
+Recommends:
+	util-linux-locales,
+	ibritish,
+	iamerican
 
 Package: task-esperanto
 Architecture: all

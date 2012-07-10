@@ -12,6 +12,9 @@ tasksel (3.12) UNRELEASED; urgency=low
   [ Christian Perrier ]
   * Use xul-ext-mozvoikko instead of transitional mozvoikko in
     task-finnish-desktop. Closes: #680952
+  * Create en "english" task with both British and American
+    dictionaries and word lists. Consequently drop the "british"
+    task and modify british-desktop. Closes: #545047
 
  -- Christian Perrier <bubulle@debian.org>  Mon, 09 Jul 2012 08:51:28 -0600
 
