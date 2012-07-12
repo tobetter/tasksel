@@ -266,7 +266,7 @@ Description: Web server
  This task selects packages useful for a general purpose web server
  system.
 Depends: ${misc:Depends}, 
-	apache2-mpm-prefork
+	apache2
 Recommends:
 	apache2-doc,
 	analog
