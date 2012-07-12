@@ -540,7 +540,6 @@ Depends: ${misc:Depends},
 	locales
 Recommends:
 	aspell-hr,
-	dict-freedict-scr-eng,
 	doc-linux-hr,
 	itools
 
@@ -819,9 +818,6 @@ Depends: ${misc:Depends},
 	locales
 Recommends:
 	aspell-hr,
-	dict-freedict-cro-eng,
-	dict-freedict-eng-cro,
-	dict-freedict-scr-eng,
 	doc-linux-hr
 
 Package: task-croatian-desktop
@@ -2080,10 +2076,7 @@ Description: Serbian environment
  to help Serbian speaking people use Debian.
 Depends: ${misc:Depends}, 
 Recommends:
-	dict-freedict-scr-eng,
-	doc-linux-hr,
-	opendict-plugins-lingvosoft,
-	texlive-lang-other
+	doc-linux-hr
 
 Package: task-serbian-desktop
 Architecture: all

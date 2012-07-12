@@ -12,6 +12,9 @@ tasksel (3.12) UNRELEASED; urgency=low
   [ Christian Perrier ]
   * Use xul-ext-mozvoikko instead of transitional mozvoikko in
     task-finnish-desktop. Closes: #680952
+  * Remove freedict-*, openddict-* and texlive-* from bosnian,
+    croatian and serbian tasks. Thanks to Josip Rodin for
+    reporting and investigating. Closes: #565209
 
   [ Translations of programs ]
   * Uyghur added. Closes: #627005
