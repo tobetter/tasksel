@@ -390,7 +390,12 @@ Description: Amharic desktop
 Depends: ${misc:Depends}, 
 	ttf-sil-abyssinica
 Recommends:
-	scim-tables-additional
+# Move to fcitx from scim for the latter has gone from archive
+	fcitx,
+	fcitx-table-amharic,
+	fcitx-frontend-gtk2,
+	fcitx-frontend-gtk3,
+	fcitx-config-gtk
 
 Package: task-amharic-kde-desktop
 Architecture: all
@@ -398,6 +403,8 @@ Description: Amharic KDE desktop
  This task localises the KDE desktop in Amharic.
 Depends: ${misc:Depends}, 
 Recommends:
+	fcitx-frontend-qt4,
+	kde-config-fcitx
 
 Package: task-arabic
 Architecture: all
@@ -708,17 +715,13 @@ Description: Simplified Chinese environment
  This task installs programs, data files, fonts, and
  documentation that make it easier for Chinese speakers
  to use Debian, using the simplified Chinese encoding.
-Depends: ${misc:Depends}, 
-	jfbterm,
-	zhcon
+Depends: ${misc:Depends}
 Recommends:
-	zh-autoconvert,
+	opencc,
+	zhcon
 	debian-zh-faq-s,
 	manpages-zh,
-	fortune-zh,
-# Printing support
-	ttf2pt1,
-	ttf2pt1-chinese
+	fortune-zh
 
 Package: task-chinese-s-desktop
 Architecture: all
@@ -726,24 +729,25 @@ Description: Simplified Chinese desktop
  This task localises the desktop in Simplified Chinese.
 Depends: ${misc:Depends}, 
 Recommends:
-	rxvt-ml,
-	mlterm,
-	rxvt-unicode-ml,
+# Input method stuff
+	im-config,
 	fcitx,
-	scim-pinyin,
-	im-switch,
+	fcitx-sunpinyin,
+	fcitx-googlepinyin,
+	fcitx-table-wubi,
+# Fonts
 	xfonts-wqy,
-	scim-tables-zh,
-	stardic,
-	xfonts-intl-chinese,
-	xfonts-intl-chinese-big,
-	ttf-arphic-gbsn00lp,
-	ttf-arphic-gkai00mp,
-	unifont,
+	fonts-arphic-ukai,
+	fonts-arphic-uming,
+	fonts-droid,
+	ttf-wqy-microhei,
+	ttf-wqy-zenhei,
+# Software help and localization
 	libreoffice-l10n-zh-cn,
 	libreoffice-help-zh-cn,
 	iceweasel-l10n-zh-cn,
-	paps,
+# Dictionary
+	goldendict,
 # poppler-data which is non-free is needed to display
 # Chinese on poppler applications.
 	poppler-data
@@ -754,7 +758,9 @@ Description: Simplified Chinese KDE desktop
  This task localises the KDE desktop in Simplified Chinese.
 Depends: ${misc:Depends}, 
 Recommends:
-	kde-l10n-zhcn
+	kde-l10n-zhcn,
+	fcitx-frontend-qt4,
+	kde-config-fcitx
 
 Package: task-chinese-t
 Architecture: all
@@ -773,6 +779,7 @@ Recommends:
 # quick-reference-zh-tw		# seems inessential.
 # ttf2pt1			# seems inessential.
 # ttf2pt1-chinese		# seems inessential.
+	zhcon
 
 Package: task-chinese-t-desktop
 Architecture: all
@@ -780,24 +787,23 @@ Description: Traditional Chinese desktop
  This task localises the desktop in Traditional Chinese.
 Depends: ${misc:Depends},
 Recommends:
-	scim-chewing,
+	ibus-chewing,
+	ibus-gtk,
+	ibus-gtk3,
 	im-config,
-	scim-tables-zh,
 	xfonts-wqy,
-# Uncomment once gcin 1.3.3 is available.
-#gcin
-	stardict,
 	ttf-arphic-ukai,
 #xfonts-efont-unicode		# seems inessential.
 	ttf-arphic-uming,
 #xfonts-intl-chinese		# seems inessential.
 #unifont			# seems inessential.
 # seems openjdk needs this to display Chinese.
+	fonts-droid,
+	ttf-wqy-microhei,
 	ttf-wqy-zenhei,
 	libreoffice-l10n-zh-tw,
 	libreoffice-help-zh-tw,
 	iceweasel-l10n-zh-tw,
-	paps,
 # poppler-data which is non-free is needed to display
 # Chinese on poppler applications.
 	poppler-data
@@ -808,7 +814,8 @@ Description: Traditional Chinese KDE desktop
  This task localises the KDE desktop in Traditional Chinese.
 Depends: ${misc:Depends},
 Recommends:
-	kde-l10n-zhtw
+	kde-l10n-zhtw,
+	ibus-qt4
 
 Package: task-croatian
 Architecture: all
@@ -1479,6 +1486,7 @@ Recommends:
 	fonts-ipafont,
 	uim,
 	uim-anthy,
+	uim-mozc,
 	anthy,
 	libreoffice-l10n-ja,
 	libreoffice-help-ja,
@@ -1513,15 +1521,20 @@ Description: Kannada desktop
 Depends: ${misc:Depends}, 
 	ttf-kannada-fonts,
 	iceweasel-l10n-kn
-Recommends: scim-tables-additional
-
+# Move to fcitx from scim since the latter has gone from archive
+Recommends: 
+	fcitx,
+	fcitx-m17n,
+	fcitx-config-gtk
+ 
 Package: task-kannada-kde-desktop
 Architecture: all
 Description: Kannada KDE desktop
  This task localises the KDE desktop in Kannada.
 Depends: ${misc:Depends}, 
 Recommends:
-	kde-l10n-kn
+	kde-l10n-kn,
+	kde-config-fcitx
 
 Package: task-kazakh
 Architecture: all
@@ -1586,7 +1599,7 @@ Description: Korean environment
  to use Debian.
 Depends: ${misc:Depends}, 
 Recommends:
-	jfbterm
+	zhcon
 
 Package: task-korean-desktop
 Architecture: all
@@ -1594,6 +1607,7 @@ Description: Korean desktop
  This task localises the desktop in Korean.
 Depends: ${misc:Depends}, 
 Recommends:
+	im-config,
 	ibus-hangul,
 	fonts-nanum,
 	fonts-nanum-coding,
@@ -1753,7 +1767,10 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-ml,
 	iceweasel-l10n-ml,
-	scim-tables-additional,
+	im-config,
+# Move to fcitx from scim since the latter has gone from archive
+	fcitx,
+	fcitx-table-malayalam-phonetic
 	hunspell-ml
 
 Package: task-malayalam-gnome-desktop
@@ -1762,7 +1779,9 @@ Description: Malayalam GNOME desktop
  This task localises the GNOME desktop in Malayalam.
 Depends: ${misc:Depends}, 
 Recommends:
-	scim-gtk2-immodule
+	fcitx-frontend-gtk3,
+	fcitx-frontend-gtk2,
+	fcitx-config-gtk
 
 Package: task-malayalam-kde-desktop
 Architecture: all
@@ -1770,7 +1789,9 @@ Description: Malayalam KDE desktop
  This task localises the KDE desktop in Malayalam.
 Depends: ${misc:Depends}, 
 Recommends:
-	kde-l10n-ml
+	kde-l10n-ml,
+	fcitx-frontend-qt4,
+	kde-config-fcitx
 
 Package: task-marathi
 Architecture: all
@@ -2325,8 +2346,9 @@ Recommends:
 	libreoffice-l10n-te,
 	iceweasel-l10n-te,
 	ttf-telugu-fonts,
-	scim-tables-additional,
-	iiimf-le-unit
+	im-config,
+	fcitx,
+	fcitx-m17n
 
 Package: task-telugu-gnome-desktop
 Architecture: all
@@ -2335,7 +2357,9 @@ Description: Telugu GNOME desktop environment
  This task localises the GNOME desktop environment in Telugu.
 Depends: ${misc:Depends}, 
 Recommends:
-	scim-gtk2-immodule
+	fcitx-frontend-gtk2,
+	fcitx-frontend-gtk3,
+	fcitx-config-gtk
 
 Package: task-telugu-kde-desktop
 Architecture: all
@@ -2344,7 +2368,8 @@ Description: Telugu KDE desktop environment
  This task localises the KDE desktop environment in Telugu.
 Depends: ${misc:Depends}, 
 Recommends:
-	scim-qtimm
+	fcitx-frontend-qt4,
+	kde-config-fcitx
 
 Package: task-thai
 Architecture: all
