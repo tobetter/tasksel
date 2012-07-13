@@ -466,9 +466,10 @@ Description: Basque desktop
  This task localises the desktop in Basque.
 Depends: ${misc:Depends}, 
 Recommends:
-	iceweasel-l10n-eu,
+	iceweasel-l10n-eu,	
 	libreoffice-l10n-eu,
-	libreoffice-help-eu
+	libreoffice-help-eu,
+	hunspell-eu-es
 
 Package: task-basque-kde-desktop
 Architecture: all
