@@ -18,6 +18,9 @@ tasksel (3.12) UNRELEASED; urgency=low
   * Replace apache2-mpm-prefork by apache2. Closes: #678749
   * Replace qpopper and uw-imapd by dovecot-{pop3d,imapd} in the mail server
     task. Closes: #560696
+  * Create en "english" task with both British and American
+    dictionaries and word lists. Consequently drop the "british"
+    task and modify british-desktop. Closes: #545047
   * Changes related to hunspell used in favoir of aspell:
     - Add hunspell-ro to romanian-desktop. Closes: #583195
     - Add hunspell-be to belarusian-desktop.
