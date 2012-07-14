@@ -773,9 +773,9 @@ Description: Traditional Chinese desktop
  This task localises the desktop in Traditional Chinese.
 Depends: ${misc:Depends},
 Recommends:
-	ibus-chewing,
-	ibus-gtk,
-	ibus-gtk3,
+	scim,
+	scim-chewing,
+	scim-gtk-immodule,
 	im-config,
 	xfonts-wqy,
 	ttf-arphic-ukai,
@@ -801,7 +801,7 @@ Description: Traditional Chinese KDE desktop
 Depends: ${misc:Depends},
 Recommends:
 	kde-l10n-zhtw,
-	ibus-qt4
+	scim-qt-immodule
 
 Package: task-croatian
 Architecture: all
