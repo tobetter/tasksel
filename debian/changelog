@@ -16,6 +16,8 @@ tasksel (3.12) UNRELEASED; urgency=low
     croatian and serbian tasks. Thanks to Josip Rodin for
     reporting and investigating. Closes: #565209
   * Replace apache2-mpm-prefork by apache2. Closes: #678749
+  * Replace qpopper and uw-imapd by dovecot-{pop3d,imapd} in the mail server
+    task. Closes: #560696
   * Changes related to hunspell used in favoir of aspell:
     - Add hunspell-ro to romanian-desktop. Closes: #583195
     - Add hunspell-be to belarusian-desktop.

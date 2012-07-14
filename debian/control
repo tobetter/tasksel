@@ -279,15 +279,14 @@ Description: Mail server
 Depends: ${misc:Depends}, 
 	exim4
 Recommends:
-# HELP: What's a good pop server?
-	qpopper,
+	dovecot-imapd,
+	dovecot-pop3d,
 	mailx,
 	mutt,
 	exim4-daemon-light,
 	exim4-config,
 	procmail,
 	mailagent,
-	uw-imapd,
 # HELP: what about some webmail thing?
 	spamassassin,
 	sa-exim,
