@@ -52,6 +52,10 @@ tasksel (3.12) UNRELEASED; urgency=low
   [ Aron Xu ]
   * Update input method support and Chinese tasks. Closes: #681466
 
+  [ Joey Hess ]
+  * Add synaptic to task-gnome-desktop. It had been pulled in by
+    nautilus, but that Recommends has been dropped.
+
  -- Christian Perrier <bubulle@debian.org>  Mon, 09 Jul 2012 08:51:28 -0600
 
 tasksel (3.11) unstable; urgency=low
