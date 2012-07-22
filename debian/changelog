@@ -1,4 +1,4 @@
-tasksel (3.12) UNRELEASED; urgency=low
+tasksel (3.12) unstable; urgency=low
 
   [ Andrew Lee (李健秋) ]
   * Really depending on gdm3 in task-lxde-desktop (Closes: #680519).
@@ -6,8 +6,11 @@ tasksel (3.12) UNRELEASED; urgency=low
   [ Joey Hess ]
   * xfce: Use network-manager-gnome.
     Rationalle: Everyone I've polled who has installed xfce for nontechnical
-    users has had to switch out wicd due to its non-user-friendliness.
-    Technical users who want wicd will have no difficulty installing it.
+    users has had to switch out wicd due to its non-user-friendliness,
+    which includes not managing wireless interfaces at all by default,
+    and presenting the user with a secreen full of dozens of configuration
+    settings when a network requires a password.
+    Technical  users who want wicd will have no difficulty installing it.
 
   [ Christian Perrier ]
   * Use xul-ext-mozvoikko instead of transitional mozvoikko in
@@ -56,7 +59,7 @@ tasksel (3.12) UNRELEASED; urgency=low
   * Add synaptic to task-gnome-desktop. It had been pulled in by
     nautilus, but that Recommends has been dropped.
 
- -- Christian Perrier <bubulle@debian.org>  Mon, 09 Jul 2012 08:51:28 -0600
+ -- Joey Hess <joeyh@debian.org>  Sat, 21 Jul 2012 19:41:30 -0400
 
 tasksel (3.11) unstable; urgency=low
 
