@@ -1,5 +1,6 @@
 tasksel (3.13) UNRELEASED; urgency=low
 
+  * Change default desktop to xfce.
   * Don't force browser-plugin-gnash onto desktops that don't themselves
     pull it in. This means gnome still installs it, but kde, xfce,
     and lxde do not. Closes: #655841
