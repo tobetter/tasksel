@@ -41,8 +41,11 @@ Depends: ${misc:Depends},
 	desktop-base,
 	menu
 Recommends:
-# The default desktop is gnome, but any can be used with this task.
-	task-gnome-desktop | task-kde-desktop | task-lxde-desktop | task-xfce-desktop,
+# One of the actual desktop tasks is needed to get a full desktop environment.
+# The order here is significant when installing this task manually;
+# when tasksel installs this task it instead selects one of these based
+# on the tasksel/desktop debconf setting.
+	task-xfce-desktop | task-gnome-desktop | task-kde-desktop | task-lxde-desktop,
 # For use by third-party apps.
 	xdg-utils,
 # mdns/zeroconf stuff
@@ -57,10 +60,6 @@ Recommends:
 # sound
 	alsa-utils,
 	alsa-base,
-# flash -- Note that gnome recommends browser-plugin-gnash;
-# if this is changed here to a different flash player, it should
-# also be changed there.
-	browser-plugin-gnash,
 # ensure pm-utils is available
 	pm-utils
 

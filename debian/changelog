@@ -1,8 +1,16 @@
 tasksel (3.13) UNRELEASED; urgency=low
 
+  [ Christian Perrier ]
   * Replace gdm3 by lightdm in lxde-desktop task. Closes: #683349
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 31 Jul 2012 16:47:00 -0400
+  [ Joey Hess ]
+  * Change default desktop to xfce.
+  * Don't force browser-plugin-gnash onto desktops that don't themselves
+    pull it in. This means gnome still installs it, but kde, xfce,
+    and lxde do not. Closes: #655841
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 28 Jul 2012 12:20:32 -0400
+>>>>>>> 2a962cc65cdba010177f27e8824ba10d9a799a08
 
 tasksel (3.12) unstable; urgency=low
 
