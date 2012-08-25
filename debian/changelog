@@ -21,12 +21,12 @@ tasksel (3.12) unstable; urgency=low
 
   [ Joey Hess ]
   * xfce: Use network-manager-gnome.
-    Rationalle: Everyone I've polled who has installed xfce for nontechnical
+    Rationale: Everyone I've polled who has installed xfce for nontechnical
     users has had to switch out wicd due to its non-user-friendliness,
     which includes not managing wireless interfaces at all by default,
-    and presenting the user with a secreen full of dozens of configuration
+    and presenting the user with a screen full of dozens of configuration
     settings when a network requires a password.
-    Technical  users who want wicd will have no difficulty installing it.
+    Technical users who want wicd will have no difficulty installing it.
 
   [ Christian Perrier ]
   * Use xul-ext-mozvoikko instead of transitional mozvoikko in
