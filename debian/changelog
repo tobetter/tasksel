@@ -12,6 +12,10 @@ tasksel (3.13) UNRELEASED; urgency=low
   [ Debconf translations ]
   * Brazilian Portuguese (Adriano Rafael Gomes).  Closes: #685181
 
+  [ Joey Hess ]
+  * Use dh_perl -d, as tasksel does not need perl, only perl-base.
+    Closes: #686021
+
  -- Joey Hess <joeyh@debian.org>  Sat, 28 Jul 2012 12:20:32 -0400
 
 tasksel (3.12) unstable; urgency=low

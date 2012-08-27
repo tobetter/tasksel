@@ -8,3 +8,6 @@ override_dh_auto_install:
 
 override_dh_installdocs:
 	dh_installdocs --link-doc=tasksel
+
+override_dh_perl:
+	dh_perl -d
