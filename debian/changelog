@@ -15,6 +15,8 @@ tasksel (3.13) UNRELEASED; urgency=low
   [ Joey Hess ]
   * Use dh_perl -d, as tasksel does not need perl, only perl-base.
     Closes: #686021
+  * Add gstreamer0.10-alsa to task-xfce-desktop, as a workaround for
+    bug #651495, which was resulting in the mixer being broken.
 
  -- Joey Hess <joeyh@debian.org>  Sat, 28 Jul 2012 12:20:32 -0400
 
