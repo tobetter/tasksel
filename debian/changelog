@@ -4,7 +4,6 @@ tasksel (3.13) UNRELEASED; urgency=low
   * Replace gdm3 by lightdm in lxde-desktop task. Closes: #683345
 
   [ Joey Hess ]
-  * Change default desktop to xfce.
   * Don't force browser-plugin-gnash onto desktops that don't themselves
     pull it in. This means gnome still installs it, but kde, xfce,
     and lxde do not. Closes: #655841
