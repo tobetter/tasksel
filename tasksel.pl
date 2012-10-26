@@ -2,6 +2,7 @@
 # Debian task selector, mark II.
 # Copyright 2004-2011 by Joey Hess <joeyh@debian.org>.
 # Licensed under the GPL, version 2 or higher.
+use 5.014;
 use Locale::gettext;
 use Getopt::Long;
 use warnings;

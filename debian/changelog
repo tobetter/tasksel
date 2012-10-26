@@ -6,6 +6,13 @@ tasksel (3.14) UNRELEASED; urgency=low
 
  -- Joey Hess <joeyh@debian.org>  Mon, 03 Sep 2012 09:45:47 -0400
 
+tasksel (3.13+nmu1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Depend on perl-base >= 5.14.0 (closes: #690594).
+
+ -- Michael Gilbert <mgilbert@debian.org>  Thu, 25 Oct 2012 13:59:44 -0400
+
 tasksel (3.13) unstable; urgency=low
 
   [ Christian Perrier ]
