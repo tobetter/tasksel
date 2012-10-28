@@ -1,8 +1,14 @@
 tasksel (3.14) UNRELEASED; urgency=low
 
+  [ Joey Hess ]
   * Change default desktop to xfce.
   * Work around dpkg's failure to replace directory with symlink on upgrade.
     Only tasksel-data was affected. Closes: #687858
+
+  [ Christian Perrier ]
+  * As suggested by GNOME maintainers, drop system-config-printer from
+    the task-gnome-desktop task as the GNOME control center now
+    includes a configuration tool for cups. Closes: #691334
 
  -- Joey Hess <joeyh@debian.org>  Mon, 03 Sep 2012 09:45:47 -0400
 
