@@ -2,6 +2,7 @@ tasksel (3.15) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Change default desktop to xfce.
+  * Fix typo in changelog. Closes: #694894
 
  -- Christian Perrier <bubulle@debian.org>  Sun, 11 Nov 2012 12:01:59 +0100
 
@@ -412,8 +413,8 @@ tasksel (3.00) experimental; urgency=low
     packages. In other words, the Task field overrides are not needed,
     and are going away. The overrides file uploaded with this version
     of tasksel is empty.
-  * Tasksel no longer looks for desc files in /usr/share/taksel/,
-    instead it looks in /usr/share/taksel/descs/. This was necessary
+  * Tasksel no longer looks for desc files in /usr/share/tasksel/,
+    instead it looks in /usr/share/tasksel/descs/. This was necessary
     because aptitude crashes on the new debian-tasks.desc file without
     Description fields.
   * Remove rarian-compat from task-gnome-desktop. Dependencies on
