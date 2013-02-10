@@ -59,6 +59,8 @@ Recommends:
 # sound
 	alsa-utils,
 	alsa-base,
+# wireless networking tools (they're more and more used on desktops too)
+	iw,
 # ensure pm-utils is available
 	pm-utils
 
@@ -255,8 +257,11 @@ Recommends:
 	acpi,
 	acpi-support,
 	pcmciautils,
+# wireless networking tools
+	iw,
 	wireless-tools,
 	wpasupplicant,
+#	
 	avahi-autoipd,
 	bluetooth,
 	powertop,
