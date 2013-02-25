@@ -1,13 +1,16 @@
-tasksel (3.15) UNRELEASED; urgency=low
+tasksel (3.16) UNRELEASED; urgency=low
 
   [ Christian Perrier ]
   * Add iw package to laptop and dektop task so that
     iwconfig is available. Closes: #697890
+  * Don't depend on network-manager for the GNOME
+    task for non Linux ports where network-manager
+    doesn't exist.
 
   [ Kenshi Muto ]
   * Add mozc-utils-gui to japanese-desktop.
 
- -- Christian Perrier <bubulle@debian.org>  Sun, 10 Feb 2013 08:14:07 +0100
+ -- Christian Perrier <bubulle@debian.org>  Mon, 25 Feb 2013 07:17:51 +0100
 
 tasksel (3.14+nmu1) unstable; urgency=low
 

@@ -75,7 +75,7 @@ Depends: ${misc:Depends},
 # only depend on a very minimal gnome desktop, to ensure it fits on CD1
 	gnome-core,
 # but we need a working network setup at least
-	network-manager-gnome
+	network-manager-gnome [linux-any]
 Recommends:
 # The full gnome desktop environment should be included if possible
 # even if the larger gnome metapackage doesn't fit.
