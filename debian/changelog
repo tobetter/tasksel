@@ -2,7 +2,7 @@ tasksel (3.16) UNRELEASED; urgency=low
 
   [ Christian Perrier ]
   * Add iw package to laptop and dektop task so that
-    iwconfig is available. Closes: #697890
+    the 'iw' command is available to users. Closes: #697890
   * Don't depend on network-manager for the GNOME
     task for non Linux ports where network-manager
     doesn't exist.
