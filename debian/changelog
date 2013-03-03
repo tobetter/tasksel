@@ -1,8 +1,9 @@
 tasksel (3.16) UNRELEASED; urgency=low
 
   [ Christian Perrier ]
-  * Add iw package to laptop and dektop task so that
-    the 'iw' command is available to users. Closes: #697890
+  * Add iw package to laptop and dektop task, in Linux
+    ports, so that the 'iw' command is available to users.
+    Closes: #697890
   * Don't depend on network-manager for the GNOME
     task for non Linux ports where network-manager
     doesn't exist.

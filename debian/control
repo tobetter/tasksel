@@ -60,7 +60,7 @@ Recommends:
 	alsa-utils,
 	alsa-base,
 # wireless networking tools (they're more and more used on desktops too)
-	iw,
+	iw [linux-any],
 # ensure pm-utils is available
 	pm-utils
 
