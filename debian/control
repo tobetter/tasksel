@@ -73,9 +73,7 @@ Description: GNOME desktop environment
 Depends: ${misc:Depends}, 
 	task-desktop,
 # only depend on a very minimal gnome desktop, to ensure it fits on CD1
-	gnome-core,
-# but we need a working network setup at least
-	network-manager-gnome [linux-any]
+	gnome-core
 Recommends:
 # The full gnome desktop environment should be included if possible
 # even if the larger gnome metapackage doesn't fit.
@@ -101,6 +99,8 @@ Recommends:
 	hunspell-en-us,
 # make hyphenation work
 	hyphen-en-us,
+# we need a working network setup at least
+	network-manager-gnome [linux-any]
 
 Package: task-kde-desktop
 Architecture: all
