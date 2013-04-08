@@ -11,6 +11,11 @@ tasksel (3.16) UNRELEASED; urgency=low
   [ Kenshi Muto ]
   * Add mozc-utils-gui to japanese-desktop.
 
+  [ Steven Chamberlain ]
+  * Downgrade network-manager-gnome and iw to Recommends, because a
+    Depends relation on these could only be satisfied on [linux-any]
+    (Closes: #704748)
+
  -- Christian Perrier <bubulle@debian.org>  Mon, 25 Feb 2013 07:17:51 +0100
 
 tasksel (3.14+nmu1) unstable; urgency=low

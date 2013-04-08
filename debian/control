@@ -59,8 +59,6 @@ Recommends:
 # sound
 	alsa-utils,
 	alsa-base,
-# wireless networking tools (they're more and more used on desktops too)
-	iw [linux-any],
 # ensure pm-utils is available
 	pm-utils
 
@@ -99,8 +97,10 @@ Recommends:
 	hunspell-en-us,
 # make hyphenation work
 	hyphen-en-us,
+# wireless networking tools (they're more and more used on desktops too)
+	iw,
 # we need a working network setup at least
-	network-manager-gnome [linux-any]
+	network-manager-gnome
 
 Package: task-kde-desktop
 Architecture: all
