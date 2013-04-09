@@ -38,7 +38,8 @@ Depends: ${misc:Depends},
 	xorg,
 	xserver-xorg-video-all,
 	xserver-xorg-input-all,
-	desktop-base
+	desktop-base,
+	menu
 Recommends:
 # One of the actual desktop tasks is needed to get a full desktop environment.
 # The order here is significant when installing this task manually;
