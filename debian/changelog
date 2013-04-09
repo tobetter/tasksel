@@ -1,16 +1,16 @@
 tasksel (3.16) UNRELEASED; urgency=low
 
   [ Christian Perrier ]
-  * Add iw package to laptop and dektop task, in Linux
-    ports, so that the 'iw' command is available to users.
+  * Add iw package to Recommends for the laptop and desktop tasks,
+    so that the 'iw' command is available to users.
     Closes: #697890
 
   [ Kenshi Muto ]
   * Add mozc-utils-gui to japanese-desktop.
 
   [ Steven Chamberlain ]
-  * Downgrade network-manager-gnome and iw to Recommends, because a
-    Depends relation on these could only be satisfied on [linux-any]
+  * Downgrade network-manager-gnome to Recommends, because a
+    Depends relation could only be satisfied on [linux-any]
     (Closes: #704748)
 
  -- Christian Perrier <bubulle@debian.org>  Mon, 25 Feb 2013 07:17:51 +0100

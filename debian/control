@@ -56,6 +56,8 @@ Recommends:
 	libgl1-mesa-dri,
 # Make sure that CDs etc can be ejected. May not be installed by d-i.
 	eject,
+# wireless networking tools (they're more and more used on desktops too)
+	iw,
 # sound
 	alsa-utils,
 	alsa-base,
@@ -97,8 +99,6 @@ Recommends:
 	hunspell-en-us,
 # make hyphenation work
 	hyphen-en-us,
-# wireless networking tools (they're more and more used on desktops too)
-	iw,
 # we need a working network setup at least
 	network-manager-gnome
 
