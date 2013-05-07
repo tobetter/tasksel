@@ -1,7 +1,12 @@
 #!/bin/sh
+
+if ! [ "$NEW_INSTALL" ]; then
+	exit 3
+fi
+
 /usr/lib/tasksel/tests/desktop
 ret=$?
-case ret in
+case $ret in
 	0|2) # is desktop
 		exit 3 # not server
 	;;

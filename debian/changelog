@@ -16,6 +16,10 @@ tasksel (3.15) UNRELEASED; urgency=low
   [ Thijs Kinkhorst ]
   * Language cleanups in Dutch translations.
 
+  [ Joey Hess ]
+  * Fix broken test for non-desktop systems which caused the ssh server task
+    to be selected by default on systems with a desktop.
+
  -- Christian Perrier <bubulle@debian.org>  Mon, 25 Feb 2013 07:17:51 +0100
 
 tasksel (3.14+nmu1) unstable; urgency=low
