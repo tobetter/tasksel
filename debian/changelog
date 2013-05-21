@@ -5,6 +5,10 @@ tasksel (3.15+nmu1) UNRELEASED; urgency=low
     - task-xfce-desktop: replace epdfview by evince-gtk since epdfview is
       obsolete, unmaintained upstream and about to be removed from Debian.
 
+  [ Christian Perrier ]
+  * Replace ttf-sil-abyssinica by fonts-sil-abyssinica in task-amharic-
+    desktop. Closes: #709154
+
  -- Yves-Alexis Perez <corsac@debian.org>  Fri, 17 May 2013 23:23:33 +0200
 
 tasksel (3.15) unstable; urgency=HIGH
