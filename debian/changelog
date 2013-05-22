@@ -4,8 +4,11 @@ tasksel (3.17) UNRELEASED; urgency=low
     task-hungarian-desktop. Closes: #709337
   * Replace all occurrences of ttf-* packages when they have
     been renamed to fonts-*
-  * Drop ttf-tiresias from task-hungarian-desktop. This font has nothing to do
-    with Hungarian language.
+  * Drop ttf-tiresias, fonts-junicode, ttf-georgewilliams,
+    ttf-isabella, fonts-opensymbol, fonts-sil-doulos,
+    fonts-sil-charis, fonts-sil-gentium, fonts-okolaks,
+    from task-hungarian-desktop. These fonts have
+    nothing to do with Hungarian language.
 
  -- Christian Perrier <bubulle@debian.org>  Wed, 22 May 2013 18:51:35 +0200
 
