@@ -394,10 +394,10 @@ Package: task-amharic-desktop
 Architecture: all
 Description: Amharic desktop
  This task localises the desktop in Amharic.
-Depends: ${misc:Depends}, 
-	fonts-sil-abyssinica
+Depends: ${misc:Depends}
 Recommends:
 # Move to fcitx from scim for the latter has gone from archive
+	fonts-sil-abyssinica,
 	fcitx,
 	fcitx-table-amharic,
 	fcitx-frontend-gtk2,
@@ -1322,13 +1322,13 @@ Package: task-hungarian-desktop
 Architecture: all
 Description: Hungarian desktop
  This task localises the desktop in Hungarian.
-Depends: ${misc:Depends}, 
+Depends: ${misc:Depends}
+Recommends:
 	gsfonts-x11,
+	fonts-sil-andika,
 	fonts-dejavu,
 	fonts-liberation,
 	fonts-freefont,
-Recommends:
-	fonts-sil-andika,
 	iceweasel-l10n-hu,
 	xfonts-100dpi-transcoded,
 	libreoffice-l10n-hu,
