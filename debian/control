@@ -1516,10 +1516,10 @@ Architecture: all
 Description: Kannada desktop
  This task localises the desktop in Kannada.
 Depends: ${misc:Depends}, 
-	ttf-kannada-fonts,
 	iceweasel-l10n-kn
 # Move to fcitx from scim since the latter has gone from archive
 Recommends: 
+	fonts-lohit-knda,
 	fcitx,
 	fcitx-m17n,
 	fcitx-config-gtk
