@@ -525,7 +525,6 @@ Description: Bengali environment
  to use Debian.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-bengali-fonts,
 	aspell-bn
 
 Package: task-bengali-desktop
@@ -537,7 +536,7 @@ Recommends:
 	libreoffice-l10n-bn,
 	iceweasel-l10n-bn-in,
 	iceweasel-l10n-bn-bd,
-	ttf-bengali-fonts
+	fonts-lohit-beng-bengali
 
 Package: task-bengali-kde-desktop
 Architecture: all
@@ -1220,7 +1219,7 @@ Description: Gujarati desktop
  This task localises the desktop in Gujarati.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-gujarati-fonts,
+	fonts-lohit-gujr,
 	libreoffice-l10n-gu,
 	iceweasel-l10n-gu-in
 
@@ -1294,7 +1293,7 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-hi,
 	libreoffice-help-hi,
-	ttf-devanagari-fonts,
+	fonts-lohit-deva,
 	iceweasel-l10n-hi-in
 
 Package: task-hindi-kde-desktop
@@ -1769,8 +1768,7 @@ Package: task-malayalam-desktop
 Architecture: all
 Description: Malayalam desktop
  This task localises the desktop in Malayalam.
-Depends: ${misc:Depends}, 
-	ttf-malayalam-fonts,
+Depends: ${misc:Depends} 
 Recommends:
 	libreoffice-l10n-ml,
 	iceweasel-l10n-ml,
@@ -1778,7 +1776,8 @@ Recommends:
 # Move to fcitx from scim since the latter has gone from archive
 	fcitx,
 	fcitx-table-malayalam-phonetic,
-	hunspell-ml
+	hunspell-ml,
+	fonts-lohit-mlym
 
 Package: task-malayalam-gnome-desktop
 Architecture: all
@@ -1814,11 +1813,11 @@ Package: task-marathi-desktop
 Architecture: all
 Description: Marathi desktop
  This task localises the desktop in Marathi.
-Depends: ${misc:Depends}, 
-	ttf-devanagari-fonts
+Depends: ${misc:Depends}
 Recommends:
 	iceweasel-l10n-mr,
-	libreoffice-l10n-mr
+	libreoffice-l10n-mr,
+	fonts-lohit-deva
 
 Package: task-nepali-desktop
 Architecture: all
@@ -1826,7 +1825,7 @@ Description: Nepali desktop
  This task localises the desktop in Nepali.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-devanagari-fonts,
+	fonts-lohit-deva,
 	libreoffice-l10n-ne,
 	mythes-ne,
 	iceweasel-l10n-ne-np,
@@ -2008,7 +2007,7 @@ Description: Punjabi desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-pa-in,
-	ttf-punjabi-fonts,
+	fonts-lohit-guru,
 	iceweasel-l10n-pa-in
 
 Package: task-punjabi-kde-desktop
@@ -2317,7 +2316,7 @@ Description: Tamil desktop
  This task localises the desktop in Tamil.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-tamil-fonts,
+	fonts-lohit-taml,
 	libreoffice-l10n-ta,
 	iceweasel-l10n-ta,
 	iceweasel-l10n-ta-lk
@@ -2339,7 +2338,6 @@ Description: Telugu environment
  to use Debian.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-telugu-fonts,
 	aspell-te
 
 Package: task-telugu-desktop
@@ -2351,7 +2349,7 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-te,
 	iceweasel-l10n-te,
-	ttf-telugu-fonts,
+	fonts-lohit-telu,
 	im-config,
 	fcitx,
 	fcitx-m17n
