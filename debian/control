@@ -422,7 +422,7 @@ Description: Arabic environment
 Depends: ${misc:Depends}, 
 Recommends:
 	xfonts-intl-arabic,
-	ttf-arabeyes,
+	fonts-arabeyes,
 	aspell-ar,
 	aspell-ar-large,
 	itools
@@ -433,8 +433,8 @@ Description: Arabic desktop
  This task localises the desktop in Arabic.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-kacst,
-	ttf-farsiweb,
+	fonts-kacst,
+	fonts-farsiweb,
 	iceweasel-l10n-ar,
 	libreoffice-l10n-ar,
 	hunspell-ar
@@ -659,7 +659,7 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-bg,
 	iceweasel-l10n-bg,
-	ttf-dejavu,
+	fonts-dejavu,
 	myspell-bg
 
 Package: task-bulgarian-kde-desktop
@@ -786,9 +786,9 @@ Recommends:
 	scim-gtk-immodule,
 	im-config,
 	xfonts-wqy,
-	ttf-arphic-ukai,
+	fonts-arphic-ukai,
 #xfonts-efont-unicode		# seems inessential.
-	ttf-arphic-uming,
+	fonts-arphic-uming,
 #xfonts-intl-chinese		# seems inessential.
 #unifont			# seems inessential.
 # seems openjdk needs this to display Chinese.
@@ -948,7 +948,7 @@ Description: Dzongkha desktop
  This task localises the desktop in Dzongkha.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-dzongkha,
+	fonts-dzongkha,
 	libreoffice-l10n-dz,
 	libreoffice-help-dz
 
@@ -1129,7 +1129,7 @@ Description: Georgian desktop
  This task localises the desktop in Georgian.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-bpg-georgian-fonts,
+	fonts-bpg-georgian,
 	libreoffice-l10n-ka
 
 Package: task-german
@@ -1190,8 +1190,8 @@ Recommends:
 	xfonts-intl-european,
 #xfonts-efont-unicode
 #xfonts-efont-unicode-ib
-	ttf-freefont,
-	ttf-mgopen,
+	fonts-freefont,
+	fonts-mgopen,
 	libreoffice-l10n-el,
 	iceweasel-l10n-el,
 	myspell-el-gr,
@@ -1325,9 +1325,9 @@ Description: Hungarian desktop
  This task localises the desktop in Hungarian.
 Depends: ${misc:Depends}, 
 	gsfonts-x11,
-	ttf-dejavu,
-	ttf-liberation,
-	ttf-freefont,
+	fonts-dejavu,
+	fonts-liberation,
+	fonts-freefont,
 Recommends:
 	fonts-sil-andika,
 	ttf-tiresias,
@@ -1335,11 +1335,11 @@ Recommends:
 	ttf-junicode,
 	ttf-georgewilliams,
 	ttf-isabella,
-	ttf-opensymbol,
-	ttf-sil-doulos,
-	ttf-sil-charis,
-	ttf-sil-gentium,
-	ttf-okolaks,
+	fonts-opensymbol,
+	fonts-sil-doulos,
+	fonts-sil-charis,
+	fonts-sil-gentium,
+	fonts-okolaks,
 	xfonts-100dpi-transcoded,
 	libreoffice-l10n-hu,
 	libreoffice-help-hu,
@@ -1586,7 +1586,7 @@ Description: Khmer desktop
  This task localises the desktop in Khmer.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-khmeros,
+	fonts-khmeros,
 	iceweasel-l10n-km,
 	libreoffice-l10n-km,
 	libreoffice-help-km
@@ -1661,10 +1661,10 @@ Description: Kurdish desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-ku,
-	ttf-dejavu,
+	fonts-dejavu,
 	iceweasel-l10n-ku,
 	myspell-ku,
-	ttf-unikurdweb
+	fonts-unikurdweb
 
 Package: task-kurdish-kde-desktop
 Architecture: all
@@ -1746,7 +1746,7 @@ Depends: ${misc:Depends},
 Recommends:
 	iceweasel-l10n-mk,
 	libreoffice-l10n-mk,
-	ttf-dejavu
+	fonts-dejavu
 
 Package: task-macedonian-kde-desktop
 Architecture: all
@@ -1910,7 +1910,7 @@ Description: Persian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-fa,
-	ttf-farsiweb,
+	fonts-farsiweb,
 	iceweasel-l10n-fa
 
 Package: task-persian-kde-desktop
@@ -2043,8 +2043,8 @@ Recommends:
 # fonty
 	libreoffice-l10n-ro,
 # this appears to be one of the few fonts that has t with comma bellow
-	ttf-dejavu,
-	ttf-freefont,
+	fonts-dejavu,
+	fonts-freefont,
 # is this ok?
 # xfonts-base-transcoded
 # Added because polish-desktop uses them
@@ -2138,7 +2138,7 @@ Description: Sinhala desktop
  This task localises the desktop in Sinhala.
 Depends: ${misc:Depends}, 
 Recommends:
-	ttf-sinhala-lklug,
+	fonts-lklug-sinhala,
 	libreoffice-l10n-si,
 	iceweasel-l10n-si
 
@@ -2477,7 +2477,7 @@ Recommends:
 	xfonts-intl-european,
 	libreoffice-l10n-uk,
 	iceweasel-l10n-uk,
-	ttf-dejavu,
+	fonts-dejavu,
 	myspell-uk
 
 Package: task-ukrainian-kde-desktop

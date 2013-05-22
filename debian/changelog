@@ -2,6 +2,8 @@ tasksel (3.17) UNRELEASED; urgency=low
 
   * Turn Recommends on ttf-sil-andika to fonts-sil-andika for
     task-hungarian-desktop. Closes: #709337
+  * Replace all occurrences of ttf-* packages when they have
+    been renamed to fonts-*
 
  -- Christian Perrier <bubulle@debian.org>  Wed, 22 May 2013 18:51:35 +0200
 
