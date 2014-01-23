@@ -9,6 +9,10 @@ tasksel (3.19) UNRELEASED; urgency=low
   * Replace network-manager-kde by plasma-widget-networkmanagement in
     task-kde-desktop. Closes: #729482
 
+  [ Christian Perrier ]
+  * Use lowercase in task short descriptions, except when acronyms or
+    language names are used
+
  -- Joey Hess <joeyh@debian.org>  Sun, 03 Nov 2013 14:45:59 -0400
 
 tasksel (3.18) unstable; urgency=low
