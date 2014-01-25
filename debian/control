@@ -115,8 +115,6 @@ Depends: ${misc:Depends},
 Recommends:
 # accessibility support
 	kdeaccessibility,
-# package management. Need something here, but please, no kpackage.
-#  kpackage,
 # debconf kde frontend
 	libqtgui4-perl,
 	libqtcore4-perl,
@@ -752,16 +750,7 @@ Description: Traditional Chinese environment
  documentation that make it easier for Chinese speakers
  to use Debian, using the traditional Chinese encoding.
 Depends: ${misc:Depends},
-# jfbterm doesn't support input method. conflicts with gpm,
-# and needs enable FrameBuffer. It is not easy to use,
-# so that we decide to disable it here.
-# Please see http://moto.debian.org.tw/viewtopic.php?t=13004 for more details.
-# jfbterm
 Recommends:
-# zh-autoconvert		# may use iconv instead.
-# quick-reference-zh-tw		# seems inessential.
-# ttf2pt1			# seems inessential.
-# ttf2pt1-chinese		# seems inessential.
 	zhcon
 
 Package: task-chinese-t-desktop
@@ -775,10 +764,7 @@ Recommends:
 	scim-gtk-immodule,
 	im-config,
 	fonts-arphic-ukai,
-#xfonts-efont-unicode		# seems inessential.
 	fonts-arphic-uming,
-#xfonts-intl-chinese		# seems inessential.
-#unifont			# seems inessential.
 # seems openjdk needs this to display Chinese.
 	fonts-droid,
 	ttf-wqy-microhei,
@@ -901,7 +887,6 @@ Description: Dutch environment
  to use Debian.
 Depends: ${misc:Depends}, 
 Recommends:
-# manpages-nl       # Outdated
 	idutch,
 	wdutch,
 	aspell-nl
@@ -1169,8 +1154,6 @@ Description: Greek desktop
  This task localises the desktop in Greek.
 Depends: ${misc:Depends}, 
 Recommends:
-#xfonts-efont-unicode
-#xfonts-efont-unicode-ib
 	fonts-freefont,
 	fonts-mgopen,
 	libreoffice-l10n-el,
@@ -1496,7 +1479,6 @@ Description: Kannada desktop
  This task localises the desktop in Kannada.
 Depends: ${misc:Depends}, 
 	iceweasel-l10n-kn
-# Move to fcitx from scim since the latter has gone from archive
 Recommends: 
 	fonts-lohit-knda,
 	fcitx,
@@ -1997,8 +1979,6 @@ Recommends:
 	console-terminus,
 	util-linux-locales,
 	aspell-ro,
-# None of the dictionaries below are avalable as a debian package yet
-# iromanian
 
 Package: task-romanian-desktop
 Architecture: all
@@ -2007,13 +1987,10 @@ Description: Romanian desktop
 XBC-Maintainer: Eddy Petrişor <eddy.petrisor@gmail.com>
 Depends: ${misc:Depends}, 
 Recommends:
-# fonty
 	libreoffice-l10n-ro,
 # this appears to be one of the few fonts that has t with comma bellow
 	fonts-dejavu,
 	fonts-freefont,
-# is this ok?
-# xfonts-base-transcoded
 	iceweasel-l10n-ro,
 	hunspell-ro
 
