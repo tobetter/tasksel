@@ -38,8 +38,7 @@ Depends: ${misc:Depends},
 	xorg,
 	xserver-xorg-video-all,
 	xserver-xorg-input-all,
-	desktop-base,
-	menu
+	desktop-base
 Recommends:
 # One of the actual desktop tasks is needed to get a full desktop environment.
 # The order here is significant when installing this task manually;
@@ -116,8 +115,6 @@ Depends: ${misc:Depends},
 Recommends:
 # accessibility support
 	kdeaccessibility,
-# enable debian menus
-	menu-xdg,
 # package management. Need something here, but please, no kpackage.
 #  kpackage,
 # debconf kde frontend
