@@ -417,7 +417,6 @@ Description: Arabic environment
  to use Debian.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-arabic,
 	fonts-arabeyes,
 	aspell-ar,
 	aspell-ar-large,
@@ -563,10 +562,6 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-bs,
 	iceweasel-l10n-bs,
-	xfonts-biznet-100dpi,
-	xfonts-biznet-75dpi,
-	xfonts-biznet-base,
-	xfonts-terminus,
 	myspell-hr
 
 Package: task-bosnian-kde-desktop
@@ -725,7 +720,6 @@ Recommends:
 	fcitx-googlepinyin,
 	fcitx-table-wubi,
 # Fonts
-	xfonts-wqy,
 	fonts-arphic-ukai,
 	fonts-arphic-uming,
 	fonts-droid,
@@ -780,7 +774,6 @@ Recommends:
 	scim-chewing,
 	scim-gtk-immodule,
 	im-config,
-	xfonts-wqy,
 	fonts-arphic-ukai,
 #xfonts-efont-unicode		# seems inessential.
 	fonts-arphic-uming,
@@ -827,10 +820,6 @@ Depends: ${misc:Depends},
 Recommends:
 	hyphen-hr,
 	libreoffice-l10n-hr,
-	xfonts-biznet-100dpi,
-	xfonts-biznet-75dpi,
-	xfonts-biznet-base,
-	xfonts-terminus,
 	myspell-hr,
 	iceweasel-l10n-hr
 
@@ -863,7 +852,6 @@ Recommends:
 	libreoffice-l10n-cs,
 	libreoffice-help-cs,
 	mythes-cs,
-	xfonts-terminus,
 	myspell-cs-cz
 
 Package: task-czech-kde-desktop
@@ -1074,7 +1062,6 @@ Description: French desktop
  This task localises the desktop in French.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-european,
 	libreoffice-l10n-fr,
 	libreoffice-help-fr,
 	mythes-fr,
@@ -1182,7 +1169,6 @@ Description: Greek desktop
  This task localises the desktop in Greek.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-european,
 #xfonts-efont-unicode
 #xfonts-efont-unicode-ib
 	fonts-freefont,
@@ -1326,13 +1312,11 @@ Recommends:
 	fonts-liberation,
 	fonts-freefont,
 	iceweasel-l10n-hu,
-	xfonts-100dpi-transcoded,
 	libreoffice-l10n-hu,
 	libreoffice-help-hu,
 	libreoffice-thesausus-hu,
 	hyphen-hu,
-	hunspell-hu,
-	xfonts-terminus
+	hunspell-hu
 
 Package: task-hungarian-kde-desktop
 Architecture: all
@@ -1435,7 +1419,6 @@ Description: Italian desktop
  This task localises the desktop in Italian.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-european,
 	libreoffice-help-it,
 	libreoffice-l10n-it,
 	mythes-it,
@@ -1935,7 +1918,6 @@ Recommends:
 	libreoffice-help-pl,
 	mythes-pl,
 	iceweasel-l10n-pl,
-	xfonts-terminus,
 	myspell-pl
 
 Package: task-polish-kde-desktop
@@ -1963,7 +1945,6 @@ Description: Portuguese desktop
  This task localises the desktop in Portuguese.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-european,
 	libreoffice-l10n-pt,
 	libreoffice-help-pt,
 	iceweasel-l10n-pt-pt,
@@ -2033,8 +2014,6 @@ Recommends:
 	fonts-freefont,
 # is this ok?
 # xfonts-base-transcoded
-# Added because polish-desktop uses them
-	xfonts-terminus,
 	iceweasel-l10n-ro,
 	hunspell-ro
 
@@ -2067,9 +2046,6 @@ Description: Russian desktop
 XBC-Maintainer: Peter Novodvorsky <nidd@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-bolkhov-koi8r-75dpi,
-	xfonts-bolkhov-koi8r-misc,
-	xfonts-cronyx-koi8r-100dpi,
 	libreoffice-l10n-ru,
 	libreoffice-help-ru,
 	mythes-ru,
@@ -2103,10 +2079,6 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-sr,
 	iceweasel-l10n-sr,
-	xfonts-biznet-100dpi,
-	xfonts-biznet-75dpi,
-	xfonts-biznet-base,
-	xfonts-terminus,
 	hunspell-sr
 
 Package: task-serbian-kde-desktop
@@ -2153,7 +2125,6 @@ Recommends:
 	libreoffice-l10n-sk,
 	libreoffice-help-sk,
 	mythes-sk,
-	xfonts-terminus,
 	iceweasel-l10n-sk,
 	myspell-sk
 
@@ -2183,7 +2154,6 @@ Recommends:
 	iceweasel-l10n-sl,
 	libreoffice-l10n-sl,
 	libreoffice-help-sl,
-	xfonts-terminus,
 	myspell-sl
 
 Package: task-slovenian-kde-desktop
@@ -2377,7 +2347,6 @@ Description: Thai desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	xiterm+thai,
-	xfonts-thai,
 	libreoffice-l10n-th,
 	iceweasel-l10n-th,
 	myspell-th
@@ -2420,7 +2389,6 @@ Description: Turkish desktop
 XBC-Maintainer: Recai Oktas <roktas@omu.edu.tr>
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-terminus,
 	libreoffice-l10n-tr,
 	iceweasel-l10n-tr
 
@@ -2452,13 +2420,6 @@ Description: Ukrainian desktop
 XBC-Maintainer: Eugeniy Meshcheryakov <eugen@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-bolkhov-koi8u-75dpi,
-	xfonts-bolkhov-koi8u-misc,
-	xfonts-cronyx-koi8u-100dpi,
-	xfonts-bolkhov-misc,
-	xfonts-bolkhov-75dpi,
-	xfonts-cronyx-100dpi,
-	xfonts-intl-european,
 	libreoffice-l10n-uk,
 	iceweasel-l10n-uk,
 	fonts-dejavu,
@@ -2564,27 +2525,7 @@ Recommends:
 # Keyboard state indicator and switcher for X:
 	xxkb,
 # The main stuff: fonts for X.
-	t1-teams,
-# For CP1251 (Belarusian and Bulgarian):
-	xfonts-bolkhov-cp1251-misc,
-	xfonts-bolkhov-cp1251-75dpi,
-	xfonts-cronyx-cp1251-100dpi,
-# For ISO 8859-5 (Macedonian and Serbian):
-	xfonts-cronyx-isocyr-misc,
-	xfonts-cronyx-isocyr-75dpi,
-	xfonts-cronyx-isocyr-100dpi,
-# For KOI8-R (Russian):
-	xfonts-bolkhov-koi8r-misc,
-	xfonts-bolkhov-koi8r-75dpi,
-	xfonts-cronyx-koi8r-100dpi,
-# For KOI8-U (Ukrainian):
-	xfonts-bolkhov-koi8u-misc,
-	xfonts-bolkhov-koi8u-75dpi,
-	xfonts-cronyx-koi8u-100dpi,
-# For Unicode:
-	xfonts-bolkhov-misc,
-	xfonts-bolkhov-75dpi,
-	xfonts-cronyx-100dpi
+	t1-teams
 
 Package: task-cyrillic-kde-desktop
 Architecture: all
