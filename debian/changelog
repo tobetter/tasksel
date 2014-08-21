@@ -1,10 +1,40 @@
+tasksel (3.21) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * Drop fonts-unfonts-core for task-korean-desktop
+
+  [ Christian Perrier ]
+  * Remove pcmciautils from laptop task. Closes: #698105
+  * Drop acpid and acpi-support from laptop task. Closes: #758762
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 21 Aug 2014 06:59:11 +0200
+
+tasksel (3.20) unstable; urgency=low
+
+  * Drop all xonfts-* packages: bitmapped fonts are now considered
+    obsolete. Closes: #735492
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 25 Jan 2014 16:30:27 +0100
+
 tasksel (3.19) unstable; urgency=low
 
+  [ Joey Hess ]
   * Change default desktop to xfce.
     Will be re-evaluated in August 2014, and may change again before
     jessie is released.
 
- -- Joey Hess <joeyh@debian.org>  Sun, 03 Nov 2013 14:45:59 -0400
+  [ Maximiliano Curia ]
+  * Replace network-manager-kde by plasma-widget-networkmanagement in
+    task-kde-desktop. Closes: #729482
+
+  [ Christian Perrier ]
+  * Use lowercase in task short descriptions, except when acronyms or
+    language names are used
+  * Drop menu from the desktop task and menu-xdk from the KDE desktop
+    task.
+    Closes: #699390
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 25 Jan 2014 08:28:48 +0100
 
 tasksel (3.18) unstable; urgency=low
 

@@ -15,7 +15,7 @@ Architecture: all
 Pre-Depends: debconf (>= 1.5.34) | cdebconf (>= 0.106)
 Depends: ${misc:Depends}, liblocale-gettext-perl, apt, tasksel-data, perl-base (>= 5.14.0-1)
 Conflicts: debconf (<< 1.4.27), base-config (<< 2.32)
-Description: Tool for selecting tasks for installation on Debian systems
+Description: tool for selecting tasks for installation on Debian systems
  This package provides 'tasksel', a simple interface for users who
  want to configure their system to perform a specific task.
 
@@ -26,7 +26,7 @@ Architecture: all
 Depends: ${misc:Depends}, tasksel
 Recommends: laptop-detect
 Conflicts: tasksel (<< 2.67)
-Description: Official tasks used for installation of Debian systems
+Description: official tasks used for installation of Debian systems
  This package contains data about the standard tasks available on a Debian
  system.
 
@@ -38,8 +38,7 @@ Depends: ${misc:Depends},
 	xorg,
 	xserver-xorg-video-all,
 	xserver-xorg-input-all,
-	desktop-base,
-	menu
+	desktop-base
 Recommends:
 # One of the actual desktop tasks is needed to get a full desktop environment.
 # The order here is significant when installing this task manually;
@@ -116,10 +115,6 @@ Depends: ${misc:Depends},
 Recommends:
 # accessibility support
 	kdeaccessibility,
-# enable debian menus
-	menu-xdg,
-# package management. Need something here, but please, no kpackage.
-#  kpackage,
 # debconf kde frontend
 	libqtgui4-perl,
 	libqtcore4-perl,
@@ -127,7 +122,7 @@ Recommends:
 	k3b,
 	k3b-i18n,
 # desktop network setup
-	network-manager-kde,
+	plasma-widget-networkmanagement,
 # This is configured by d-i to be used to gain root on systems with
 # no root password. It is not enabled by default.
 	kdesudo,
@@ -248,15 +243,12 @@ Recommends:
 
 Package: task-laptop
 Architecture: all
-Description: Laptop
+Description: laptop
  This task package installs software useful for a laptop.
 Depends: ${misc:Depends}, 
 	anacron
 Recommends:
-	acpid,
 	acpi,
-	acpi-support,
-	pcmciautils,
 # wireless networking tools
 	iw,
 	wireless-tools,
@@ -269,7 +261,7 @@ Recommends:
 
 Package: task-web-server
 Architecture: all
-Description: Web server
+Description: web server
  This task selects packages useful for a general purpose web server
  system.
 Depends: ${misc:Depends}, 
@@ -280,7 +272,7 @@ Recommends:
 
 Package: task-mail-server
 Architecture: all
-Description: Mail server
+Description: mail server
  This task selects a variety of packages useful for a general purpose mail
  server system.
 Depends: ${misc:Depends}, 
@@ -313,7 +305,7 @@ Recommends:
 
 Package: task-print-server
 Architecture: all
-Description: Print server
+Description: print server
  This task sets up your system to be a print server.
 Depends: ${misc:Depends}, 
 	cups,
@@ -357,7 +349,7 @@ Recommends:
 
 Package: task-file-server
 Architecture: all
-Description: File server
+Description: file server
  This task sets up your system to be a file server, supporting both CIFS
  and NFS.
 Depends: ${misc:Depends}, 
@@ -420,7 +412,6 @@ Description: Arabic environment
  to use Debian.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-arabic,
 	fonts-arabeyes,
 	aspell-ar,
 	aspell-ar-large,
@@ -566,10 +557,6 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-bs,
 	iceweasel-l10n-bs,
-	xfonts-biznet-100dpi,
-	xfonts-biznet-75dpi,
-	xfonts-biznet-base,
-	xfonts-terminus,
 	myspell-hr
 
 Package: task-bosnian-kde-desktop
@@ -728,7 +715,6 @@ Recommends:
 	fcitx-googlepinyin,
 	fcitx-table-wubi,
 # Fonts
-	xfonts-wqy,
 	fonts-arphic-ukai,
 	fonts-arphic-uming,
 	fonts-droid,
@@ -761,16 +747,7 @@ Description: Traditional Chinese environment
  documentation that make it easier for Chinese speakers
  to use Debian, using the traditional Chinese encoding.
 Depends: ${misc:Depends},
-# jfbterm doesn't support input method. conflicts with gpm,
-# and needs enable FrameBuffer. It is not easy to use,
-# so that we decide to disable it here.
-# Please see http://moto.debian.org.tw/viewtopic.php?t=13004 for more details.
-# jfbterm
 Recommends:
-# zh-autoconvert		# may use iconv instead.
-# quick-reference-zh-tw		# seems inessential.
-# ttf2pt1			# seems inessential.
-# ttf2pt1-chinese		# seems inessential.
 	zhcon
 
 Package: task-chinese-t-desktop
@@ -783,12 +760,8 @@ Recommends:
 	scim-chewing,
 	scim-gtk-immodule,
 	im-config,
-	xfonts-wqy,
 	fonts-arphic-ukai,
-#xfonts-efont-unicode		# seems inessential.
 	fonts-arphic-uming,
-#xfonts-intl-chinese		# seems inessential.
-#unifont			# seems inessential.
 # seems openjdk needs this to display Chinese.
 	fonts-droid,
 	ttf-wqy-microhei,
@@ -830,10 +803,6 @@ Depends: ${misc:Depends},
 Recommends:
 	hyphen-hr,
 	libreoffice-l10n-hr,
-	xfonts-biznet-100dpi,
-	xfonts-biznet-75dpi,
-	xfonts-biznet-base,
-	xfonts-terminus,
 	myspell-hr,
 	iceweasel-l10n-hr
 
@@ -866,7 +835,6 @@ Recommends:
 	libreoffice-l10n-cs,
 	libreoffice-help-cs,
 	mythes-cs,
-	xfonts-terminus,
 	myspell-cs-cz
 
 Package: task-czech-kde-desktop
@@ -916,7 +884,6 @@ Description: Dutch environment
  to use Debian.
 Depends: ${misc:Depends}, 
 Recommends:
-# manpages-nl       # Outdated
 	idutch,
 	wdutch,
 	aspell-nl
@@ -1077,7 +1044,6 @@ Description: French desktop
  This task localises the desktop in French.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-european,
 	libreoffice-l10n-fr,
 	libreoffice-help-fr,
 	mythes-fr,
@@ -1185,9 +1151,6 @@ Description: Greek desktop
  This task localises the desktop in Greek.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-european,
-#xfonts-efont-unicode
-#xfonts-efont-unicode-ib
 	fonts-freefont,
 	fonts-mgopen,
 	libreoffice-l10n-el,
@@ -1329,13 +1292,11 @@ Recommends:
 	fonts-liberation,
 	fonts-freefont,
 	iceweasel-l10n-hu,
-	xfonts-100dpi-transcoded,
 	libreoffice-l10n-hu,
 	libreoffice-help-hu,
 	libreoffice-thesausus-hu,
 	hyphen-hu,
-	hunspell-hu,
-	xfonts-terminus
+	hunspell-hu
 
 Package: task-hungarian-kde-desktop
 Architecture: all
@@ -1438,7 +1399,6 @@ Description: Italian desktop
  This task localises the desktop in Italian.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-european,
 	libreoffice-help-it,
 	libreoffice-l10n-it,
 	mythes-it,
@@ -1516,7 +1476,6 @@ Description: Kannada desktop
  This task localises the desktop in Kannada.
 Depends: ${misc:Depends}, 
 	iceweasel-l10n-kn
-# Move to fcitx from scim since the latter has gone from archive
 Recommends: 
 	fonts-lohit-knda,
 	fcitx,
@@ -1607,7 +1566,6 @@ Recommends:
 	ibus-hangul,
 	fonts-nanum,
 	fonts-nanum-coding,
-	fonts-unfonts-core,
 	iceweasel-l10n-ko,
 	libreoffice-help-ko,
 	libreoffice-l10n-ko,
@@ -1938,7 +1896,6 @@ Recommends:
 	libreoffice-help-pl,
 	mythes-pl,
 	iceweasel-l10n-pl,
-	xfonts-terminus,
 	myspell-pl
 
 Package: task-polish-kde-desktop
@@ -1966,7 +1923,6 @@ Description: Portuguese desktop
  This task localises the desktop in Portuguese.
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-intl-european,
 	libreoffice-l10n-pt,
 	libreoffice-help-pt,
 	iceweasel-l10n-pt-pt,
@@ -2019,8 +1975,6 @@ Recommends:
 	console-terminus,
 	util-linux-locales,
 	aspell-ro,
-# None of the dictionaries below are avalable as a debian package yet
-# iromanian
 
 Package: task-romanian-desktop
 Architecture: all
@@ -2029,15 +1983,10 @@ Description: Romanian desktop
 XBC-Maintainer: Eddy Petrişor <eddy.petrisor@gmail.com>
 Depends: ${misc:Depends}, 
 Recommends:
-# fonty
 	libreoffice-l10n-ro,
 # this appears to be one of the few fonts that has t with comma bellow
 	fonts-dejavu,
 	fonts-freefont,
-# is this ok?
-# xfonts-base-transcoded
-# Added because polish-desktop uses them
-	xfonts-terminus,
 	iceweasel-l10n-ro,
 	hunspell-ro
 
@@ -2070,9 +2019,6 @@ Description: Russian desktop
 XBC-Maintainer: Peter Novodvorsky <nidd@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-bolkhov-koi8r-75dpi,
-	xfonts-bolkhov-koi8r-misc,
-	xfonts-cronyx-koi8r-100dpi,
 	libreoffice-l10n-ru,
 	libreoffice-help-ru,
 	mythes-ru,
@@ -2106,10 +2052,6 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-sr,
 	iceweasel-l10n-sr,
-	xfonts-biznet-100dpi,
-	xfonts-biznet-75dpi,
-	xfonts-biznet-base,
-	xfonts-terminus,
 	hunspell-sr
 
 Package: task-serbian-kde-desktop
@@ -2156,7 +2098,6 @@ Recommends:
 	libreoffice-l10n-sk,
 	libreoffice-help-sk,
 	mythes-sk,
-	xfonts-terminus,
 	iceweasel-l10n-sk,
 	myspell-sk
 
@@ -2186,7 +2127,6 @@ Recommends:
 	iceweasel-l10n-sl,
 	libreoffice-l10n-sl,
 	libreoffice-help-sl,
-	xfonts-terminus,
 	myspell-sl
 
 Package: task-slovenian-kde-desktop
@@ -2380,7 +2320,6 @@ Description: Thai desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	xiterm+thai,
-	xfonts-thai,
 	libreoffice-l10n-th,
 	iceweasel-l10n-th,
 	myspell-th
@@ -2423,7 +2362,6 @@ Description: Turkish desktop
 XBC-Maintainer: Recai Oktas <roktas@omu.edu.tr>
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-terminus,
 	libreoffice-l10n-tr,
 	iceweasel-l10n-tr
 
@@ -2455,13 +2393,6 @@ Description: Ukrainian desktop
 XBC-Maintainer: Eugeniy Meshcheryakov <eugen@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
-	xfonts-bolkhov-koi8u-75dpi,
-	xfonts-bolkhov-koi8u-misc,
-	xfonts-cronyx-koi8u-100dpi,
-	xfonts-bolkhov-misc,
-	xfonts-bolkhov-75dpi,
-	xfonts-cronyx-100dpi,
-	xfonts-intl-european,
 	libreoffice-l10n-uk,
 	iceweasel-l10n-uk,
 	fonts-dejavu,
@@ -2567,27 +2498,7 @@ Recommends:
 # Keyboard state indicator and switcher for X:
 	xxkb,
 # The main stuff: fonts for X.
-	t1-teams,
-# For CP1251 (Belarusian and Bulgarian):
-	xfonts-bolkhov-cp1251-misc,
-	xfonts-bolkhov-cp1251-75dpi,
-	xfonts-cronyx-cp1251-100dpi,
-# For ISO 8859-5 (Macedonian and Serbian):
-	xfonts-cronyx-isocyr-misc,
-	xfonts-cronyx-isocyr-75dpi,
-	xfonts-cronyx-isocyr-100dpi,
-# For KOI8-R (Russian):
-	xfonts-bolkhov-koi8r-misc,
-	xfonts-bolkhov-koi8r-75dpi,
-	xfonts-cronyx-koi8r-100dpi,
-# For KOI8-U (Ukrainian):
-	xfonts-bolkhov-koi8u-misc,
-	xfonts-bolkhov-koi8u-75dpi,
-	xfonts-cronyx-koi8u-100dpi,
-# For Unicode:
-	xfonts-bolkhov-misc,
-	xfonts-bolkhov-75dpi,
-	xfonts-cronyx-100dpi
+	t1-teams
 
 Package: task-cyrillic-kde-desktop
 Architecture: all
