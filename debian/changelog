@@ -1,3 +1,10 @@
+tasksel (3.22) UNRELEASED; urgency=medium
+
+  * Avoid using each() on a hash ref, which causes perl to output a
+    warning that it is experimental.
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 06 Sep 2014 14:46:23 -0400
+
 tasksel (3.21) unstable; urgency=low
 
   [ Changwoo Ryu ]

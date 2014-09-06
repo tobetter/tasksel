@@ -221,7 +221,8 @@ sub task_packages {
 		# only key
 	}
 	elsif ($task->{packages} eq 'standard') {
-		while (my ($package, $info) = each(info_avail())) {
+		my %info_avail=%{info_avail()};
+		while (my ($package, $info) = each(%info_avail)) {
 			my ($priority, $section) = ($info->{priority}, $info->{section});
 			if (($priority eq 'required' ||
 			     $priority eq 'important' ||
