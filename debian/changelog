@@ -2,6 +2,8 @@ tasksel (3.22) UNRELEASED; urgency=medium
 
   * Avoid using each() on a hash ref, which causes perl to output a
     warning that it is experimental.
+  * Remove apparently no longer needed workaround for #651495.
+    xfce4-mixer now recommends gstreamer0.10-alsa.
 
  -- Joey Hess <joeyh@debian.org>  Sat, 06 Sep 2014 14:46:23 -0400
 
