@@ -1,4 +1,4 @@
-tasksel (3.22) UNRELEASED; urgency=medium
+tasksel (3.22) unstable; urgency=medium
 
   * Avoid using each() on a hash ref, which causes perl to output a
     warning that it is experimental.
@@ -7,7 +7,7 @@ tasksel (3.22) UNRELEASED; urgency=medium
   * Add task-cinnamon-desktop. Thanks, Margarita Manterola.
     Closes: #712696
 
- -- Joey Hess <joeyh@debian.org>  Sat, 06 Sep 2014 14:46:23 -0400
+ -- Joey Hess <joeyh@debian.org>  Sun, 07 Sep 2014 12:26:26 -0400
 
 tasksel (3.21) unstable; urgency=low
 
