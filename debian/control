@@ -239,6 +239,15 @@ Recommends:
 # gui for configuration of the print server
 	system-config-printer,
 
+Package: task-cinnamon-desktop
+Architecture: all
+Description: Cinnamon desktop environment
+ This task package is used to install the Debian desktop, featuring
+ the Cinnamon desktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+Depends: ${misc:Depends}, 
+	cinnamon-desktop-environment
+
 Package: task-laptop
 Architecture: all
 Description: laptop
