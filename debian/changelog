@@ -1,3 +1,10 @@
+tasksel (3.23) UNRELEASED; urgency=medium
+
+  * Add gnome-orca to task-xfce-desktop; xfce4-accessibility-settings
+    can be used to enable it. Closes: #760778
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 07 Sep 2014 16:26:37 -0400
+
 tasksel (3.22) unstable; urgency=medium
 
   * Avoid using each() on a hash ref, which causes perl to output a
