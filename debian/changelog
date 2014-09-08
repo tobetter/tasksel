@@ -2,6 +2,7 @@ tasksel (3.23) UNRELEASED; urgency=medium
 
   * Individual desktop environments are displayed by tasksel.
     Currently only xfce, gnome, and kde, which are the most popular 3.
+    Closes: #618915
   * Preseeding tasksel/desktop still works to select the default desktop,
     and now preseeding eg, tasksel/desktop=lxde will also cause that task
     to be displayed by tasksel even when it would not normally be.
@@ -15,6 +16,7 @@ tasksel (3.23) UNRELEASED; urgency=medium
   * Removed mail-server, dns-server, database-server, file-server tasks,
     which were not well enough defined to be useful and whose menu 
     space will be better used for blends or openstack tasks.
+    Closes: #604100
   * Add gnome-orca to task-xfce-desktop; xfce4-accessibility-settings
     can be used to enable it. Closes: #760778
   * Laptop task is no longer displayed, just automatically installed
