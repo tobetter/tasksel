@@ -18,12 +18,11 @@ Debian derived distributions can add a new .desc file to
 /usr/share/tasksel/ to add additional tasks, or modify/divert
 debian-tasks.desc to remove tasks.
 
-The file format is a rfc-822 style stanza, with fields named Task, Section,
+The file format is a rfc-822 style stanza, with fields named Task,
 Description (which should include an extended description), Key, Packages, 
 Enhances, Test- and Relevance fields. Here is an example:
 
 Task: graphical-games
-Section: user
 Relevance: 10
 Description: Graphical games
  This task provides a variety of graphical games. Old-school unix games are
@@ -90,8 +89,8 @@ If two tasks both enhance the same task (ie, gnome-desktop and kde-desktop
 enhancing desktop), but only one should be selected, this can be
 accomplished by adding Test-* fields.
 
-If a task is important enough that it should go near the top of its
-section, give it a relevance of 9 or 10. If a task is not likely to be
+If a task is important enough that it should go near the top,
+give it a relevance of 9 or 10. If a task is not likely to be
 used, give it a relevance of 1. Default is 5.
 
 tasksel also supports preinst, postinst, prerm, and postrm scripts for

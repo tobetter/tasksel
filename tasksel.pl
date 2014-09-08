@@ -365,8 +365,6 @@ sub order_for_display {
 	sort {
 		$b->{relevance} <=> $a->{relevance}
 		              || 0 ||
-		  $a->{section} cmp $b->{section}
-		              || 0 ||
 	        $a->{task} cmp $b->{task}
 	} @_;
 }
