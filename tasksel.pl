@@ -49,7 +49,7 @@ sub list_task_descs {
 # Returns a list of hashes; hash values are arrays for multi-line fields.
 sub read_task_desc {
 	my $desc=shift;
-	my @ret;
+	my %tasks;
 	open (DESC, "<$desc") || die "read $desc\: $!";
 	local $/="\n\n";
 	while (<DESC>) {
@@ -80,12 +80,23 @@ sub read_task_desc {
 				warning "parse error in stanza $. of $desc";
 			}
 		}
-		if (%data) {
-			$data{relevance}=5 unless exists $data{relevance};
-			push @ret, \%data;
+		$data{relevance}=5 unless exists $data{relevance};
+		if (exists $data{task}) {
+			$tasks{$data{task}} = \%data;
 		}
 	}
 	close DESC;
+	my @ret;
+	foreach my $task (keys %tasks) {
+		my $t=$tasks{$task};
+		if (exists $t->{parent} && exists $tasks{$t->{parent}}) {
+			$t->{sortkey}=$tasks{$t->{parent}}->{relevance}.$t->{parent}."-0".$t->{relevance};
+		}
+		else {
+			$t->{sortkey}=$t->{relevance}.$t->{task}."-00";
+		}
+		push @ret, $t;
+	}
 	return @ret;
 }
 
@@ -343,7 +354,15 @@ sub getdescriptions {
 # Converts a list of tasks into a debconf list of the task short
 # descriptions.
 sub task_to_debconf {
-	join ", ", map { my $d=$_->{shortdesc}; $d=~s/,/\\,/g; $d } getdescriptions(@_);
+	join ", ", map { format_description_for_debconf($_) } getdescriptions(@_);
+}
+
+sub format_description_for_debconf {
+	my $task=shift;
+	my $d=$task->{shortdesc};
+	$d=~s/,/\\,/g;
+	$d="... ".$d if exists $task->{parent};
+	return $d;
 }
 
 # Converts a list of tasks into a debconf list of the task names.
@@ -363,7 +382,7 @@ sub list_to_tasks {
 # Orders a list of tasks for display.
 sub order_for_display {
 	sort {
-		$b->{relevance} <=> $a->{relevance}
+		$a->{sortkey} cmp $b->{sortkey}
 		              || 0 ||
 	        $a->{task} cmp $b->{task}
 	} @_;

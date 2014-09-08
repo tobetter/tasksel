@@ -18,12 +18,13 @@ Debian derived distributions can add a new .desc file to
 /usr/share/tasksel/ to add additional tasks, or modify/divert
 debian-tasks.desc to remove tasks.
 
-The file format is a rfc-822 style stanza, with fields named Task,
+The file format is a rfc-822 style stanza, with fields named Task, 
 Description (which should include an extended description), Key, Packages, 
-Enhances, Test- and Relevance fields. Here is an example:
+Enhances, Test-, Relevance, and Parent fields. Here is an example:
 
 Task: graphical-games
-Relevance: 10
+Relevance: 9
+Parent: games
 Description: Graphical games
  This task provides a variety of graphical games. Old-school unix games are
  not included.
@@ -85,13 +86,22 @@ enchances a system that has both the french and desktop tasks, and will be
 automatically installed on such a system but not others. Such tasks are
 hidden from the menu.
 
-If two tasks both enhance the same task (ie, gnome-desktop and kde-desktop
-enhancing desktop), but only one should be selected, this can be
-accomplished by adding Test-* fields.
+If two tasks both enhance the same task, but only one should be selected,
+this can be accomplished by adding Test-* fields.
+
+Tasks can be children of a parent task, indicated by using the Parent
+field. For example, the desktop task is the parent of gnome-desktop,
+kde-desktop, etc. This only controls the display; child tasks are displayed
+nested underneath the parent. Only 1 level of nesting is currently
+supported. Selecting the parent task does not select any or all of
+the child tasks, nor does selecting a child task ensure that the parent
+task is installed. Instead, use dependencies between the task packages to
+express any such relationships.
 
 If a task is important enough that it should go near the top,
-give it a relevance of 9 or 10. If a task is not likely to be
-used, give it a relevance of 1. Default is 5.
+give it a relevance of 1. If a task is not likely to be
+used, give it a relevance of 9. Default is 5. Relevance can only be a
+single digit.
 
 tasksel also supports preinst, postinst, prerm, and postrm scripts for
 tasks. These are run before a task is installed, and after it is removed as

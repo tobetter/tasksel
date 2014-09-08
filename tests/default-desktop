@@ -1,0 +1,24 @@
+#!/bin/sh
+# Test-default-desktop: 3 gnome
+# Will check if tasksel/desktop has been preseeded to "gnome".
+# If not, exits with the provided value.
+# (3 will display the task not marked for installation).
+set +e
+
+DEFAULT="$2"
+DESKTOPNAME="$3"
+
+if ! [ "$NEW_INSTALL" ]; then
+	exit $DEFAULT
+fi
+
+. /usr/share/debconf/confmodule
+
+if db_get "tasksel/desktop" && echo "$RET" | grep -q "$DESKTOPNAME"; then
+	# see if the desktop test thinks the system wants a desktop
+	/usr/lib/tasksel/tests/desktop
+	if [ "$?" = 2 ]; then
+		exit 2
+	fi
+fi
+exit $DEFAULT

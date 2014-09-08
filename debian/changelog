@@ -1,7 +1,27 @@
 tasksel (3.23) UNRELEASED; urgency=medium
 
+  * Individual desktop environments are displayed by tasksel.
+    Currently only xfce, gnome, and kde, which are the most popular 3.
+  * Preseeding tasksel/desktop still works to select the default desktop,
+    and now preseeding eg, tasksel/desktop=lxde will also cause that task
+    to be displayed by tasksel even when it would not normally be.
+  * Added a Parent field, which results in a simple nested hierarchy
+    display. (Currently only one level deep, and not collapsable since
+    debconf doesn't have an appropriate widget.)
+  * Relevance field order inverted (1 is highest).
+  * Some strings were fuzzied, but they were all the non-translatable
+    names of desktop environments, so this does not hurt actual d-i
+    localization, only the stats until those get un-fuzzied.
+  * Removed mail-server, dns-server, database-server, file-server tasks,
+    which were not well enough defined to be useful and whose menu 
+    space will be better used for blends or openstack tasks.
   * Add gnome-orca to task-xfce-desktop; xfce4-accessibility-settings
     can be used to enable it. Closes: #760778
+  * Laptop task is no longer displayed, just automatically installed
+    when laptop-detect says to. Note that in the case of a false positive,
+    only a little extra space is used, and in the case of a false negative,
+    nothing in the task is needed for a usable desktop environment on a
+    laptop.
 
  -- Joey Hess <joeyh@debian.org>  Sun, 07 Sep 2014 16:26:37 -0400
 

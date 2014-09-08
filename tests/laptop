@@ -4,9 +4,9 @@
 if [ "$NEW_INSTALL" ]; then
 	if which laptop-detect >/dev/null 2>&1 && \
 		laptop-detect; then
-		exit 2 # mark for install
+		exit 0 # hide; install
 	else
-		exit 3 # do not mark for install
+		exit 1 # hide; do not install
 	fi
 else
 	exit 3

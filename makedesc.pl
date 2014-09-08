@@ -7,7 +7,6 @@
 # data.c. The format of the input files is:
 #
 # Task: desktop
-# Section: user
 # Description: Provide a basic GUI system
 #  This task provides functionality for a basic desktop; whether Gnome
 #   based, KDE based or customised. With this task, your system will boot
@@ -94,7 +93,7 @@ sub processfile {
 		}
 	}
 
-	foreach (qw{task section relevance description key enhances provides depends packages}, 
+	foreach (qw{task parent relevance description key enhances provides depends packages}, 
 	         grep(/^test-(.*)/, keys %fields)) {
 		print OUT ucfirst($_).": ".$fields{$_}."\n" if length $fields{$_};
 	}

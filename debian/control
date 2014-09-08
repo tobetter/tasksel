@@ -66,7 +66,7 @@ Recommends:
 
 Package: task-gnome-desktop
 Architecture: all
-Description: GNOME desktop environment
+Description: GNOME
  This task package is used to install the Debian desktop, featuring
  the GNOME desktop environment, and with other packages that Debian users
  expect to have available on the desktop.
@@ -104,7 +104,7 @@ Recommends:
 
 Package: task-kde-desktop
 Architecture: all
-Description: KDE desktop environment
+Description: KDE
  This task package is used to install the Debian desktop, featuring
  the KDE desktop environment, and with other packages that Debian users
  expect to have available on the desktop.
@@ -151,7 +151,7 @@ Recommends:
 
 Package: task-lxde-desktop
 Architecture: all
-Description: LXDE desktop environment
+Description: LXDE
  This task package is used to install the Debian desktop, featuring
  the LXDE desktop environment, and with other packages that Debian users
  expect to have available on the desktop.
@@ -186,7 +186,7 @@ Recommends:
 
 Package: task-xfce-desktop
 Architecture: all
-Description: Xfce desktop environment
+Description: Xfce
  This task package is used to install the Debian desktop, featuring
  the Xfce desktop environment, and with other packages that Debian users
  expect to have available on the desktop.
@@ -243,7 +243,7 @@ Recommends:
 
 Package: task-cinnamon-desktop
 Architecture: all
-Description: Cinnamon desktop environment
+Description: Cinnamon
  This task package is used to install the Debian desktop, featuring
  the Cinnamon desktop environment, and with other packages that Debian users
  expect to have available on the desktop.
@@ -279,39 +279,6 @@ Recommends:
 	apache2-doc,
 	analog
 
-Package: task-mail-server
-Architecture: all
-Description: mail server
- This task selects a variety of packages useful for a general purpose mail
- server system.
-Depends: ${misc:Depends}, 
-	exim4
-Recommends:
-	dovecot-imapd,
-	dovecot-pop3d,
-	mailx,
-	mutt,
-	exim4-daemon-light,
-	exim4-config,
-	procmail,
-	mailagent,
-# HELP: what about some webmail thing?
-	spamassassin,
-	sa-exim,
-
-Package: task-dns-server
-Architecture: all
-Description: DNS Server
- This task selects the BIND DNS server, and related documentation and
- utility packages.
-Depends: ${misc:Depends}, 
-	bind9
-Recommends:
-	bind9-doc,
-	dnsutils,
-	lwresd,
-	dlint
-
 Package: task-print-server
 Architecture: all
 Description: print server
@@ -336,41 +303,6 @@ Depends: ${misc:Depends},
 	openssh-server
 Recommends:
 	openssh-client
-
-Package: task-database-server
-Architecture: all
-# HELP: Would "relational database server" be a better short desk?
-# HELP: the folks on #debian-devel think if you want a db server, you
-# probably want to pick between postgres and mysql. Should this task live?
-Description: SQL database
- This task selects client and server packages for the PostgreSQL database.
- .
- PostgreSQL is an SQL relational database, offering increasing SQL92
- compliance and some SQL3 features.  It is suitable for use with multi-user
- database access, through its facilities for transactions and fine-grained
- locking.
-Depends: ${misc:Depends}, 
-	postgresql
-Recommends:
-	postgresql-client,
-	postgresql-doc,
-	postgresql-contrib
-
-Package: task-file-server
-Architecture: all
-Description: file server
- This task sets up your system to be a file server, supporting both CIFS
- and NFS.
-Depends: ${misc:Depends}, 
-	nfs-kernel-server,
-	samba
-Recommends:
-	samba-doc,
-	smbclient,
-	swat,
-	cifs-utils,
-	winbind,
-	smartmontools
 
 Package: task-albanian-desktop
 Architecture: all
