@@ -248,6 +248,7 @@ Description: Cinnamon
  the Cinnamon desktop environment, and with other packages that Debian users
  expect to have available on the desktop.
 Depends: ${misc:Depends}, 
+	task-desktop,
 	cinnamon-desktop-environment
 
 Package: task-laptop
