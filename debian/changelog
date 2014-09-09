@@ -7,7 +7,7 @@ tasksel (3.23) unstable; urgency=medium
     and now preseeding eg, tasksel/desktop=lxde will also cause that task
     to be displayed by tasksel even when it would not normally be.
   * Added a Parent field, which results in a simple nested hierarchy
-    display. (Currently only one level deep, and not collapsable since
+    display. (Currently only one level deep, and not collapsible since
     debconf doesn't have an appropriate widget.)
   * Relevance field order inverted (1 is highest).
   * Some strings were fuzzied, but they were all the non-translatable
