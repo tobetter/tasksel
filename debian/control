@@ -44,7 +44,7 @@ Recommends:
 # The order here is significant when installing this task manually;
 # when tasksel installs this task it instead selects one of these based
 # on the tasksel/desktop debconf setting.
-	task-xfce-desktop | task-gnome-desktop | task-kde-desktop | task-lxde-desktop | task-cinnamon-desktop, 
+	task-xfce-desktop | task-gnome-desktop | task-kde-desktop | task-lxde-desktop | task-cinnamon-desktop | task-mate-desktop, 
 # For use by third-party apps.
 	xdg-utils,
 # mdns/zeroconf stuff
@@ -250,6 +250,37 @@ Description: Cinnamon
 Depends: ${misc:Depends}, 
 	task-desktop,
 	cinnamon-desktop-environment
+
+Package: task-mate-desktop
+Architecture: all
+Description: MATE
+ This task package is used to install the Debian desktop, featuring
+ the MATE desktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+Depends: ${misc:Depends},
+	task-desktop,
+	mate-desktop-environment,
+Recommends:
+# temporarily moved from task-desktop due to #525077
+	gimp,
+# Package management.
+	synaptic,
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
+	iceweasel,
+# libreoffice is the best word processor / office suite at the moment
+	libreoffice,
+	libreoffice-gcj,
+# make help menu work
+	libreoffice-help-en-us,
+# make thesaurus work
+	mythes-en-us,
+# make spellchecker work
+	hunspell-en-us,
+# make hyphenation work
+	hyphen-en-us,
+# we need a working network setup at least
+	network-manager-gnome
 
 Package: task-laptop
 Architecture: all
