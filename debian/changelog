@@ -1,3 +1,10 @@
+tasksel (3.25) UNRELEASED; urgency=medium
+
+  * Remove recommends on libreoffice-gcj which has not existed for years.
+    Thanks, Michael Biebl. Closes: 678793
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 13 Sep 2014 19:36:42 -0400
+
 tasksel (3.24) unstable; urgency=medium
 
   * Add missing dependency task-cinnamon-desktop -> task-desktop
