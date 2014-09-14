@@ -256,6 +256,7 @@ Description: MATE
 Depends: ${misc:Depends},
 	task-desktop,
 	mate-desktop-environment,
+	lightdm
 Recommends:
 # temporarily moved from task-desktop due to #525077
 	gimp,
