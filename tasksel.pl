@@ -637,7 +637,7 @@ sub main {
 			if exists $options{'debconf-apt-progress'};
 		push @cmd, "--";
 	}
-	push @cmd, qw{apt-get -q -y -o APT::Install-Recommends=true -o APT::Get::AutomaticRemove=true install};
+	push @cmd, qw{apt-get -q -y -o APT::Install-Recommends=true -o APT::Get::AutomaticRemove=true APT::Acquire::Retries=3 install};
 
 	# And finally, act on selected tasks.
 	if (@tasks_install || @tasks_remove) {

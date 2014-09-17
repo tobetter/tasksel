@@ -3,6 +3,8 @@ tasksel (3.25) UNRELEASED; urgency=medium
   * Remove recommends on libreoffice-gcj which has not existed for years.
     Thanks, Michael Biebl. Closes: 678793
   * Add lightdm to mate task. Closes: #761598
+  * Set APT::Acquire::Retries=3 to deal with minor network glitches.
+    Thanks, Petter Reinholdtsen. Closes: #761970
 
  -- Joey Hess <joeyh@debian.org>  Sat, 13 Sep 2014 19:36:42 -0400
 
