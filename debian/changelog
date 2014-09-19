@@ -1,4 +1,4 @@
-tasksel (3.25) UNRELEASED; urgency=medium
+tasksel (3.25) unstable; urgency=medium
 
   * Switch default desktop to gnome, based on prelimary results from
     https://wiki.debian.org/DebianDesktop/Requalification/Jessie
@@ -10,7 +10,7 @@ tasksel (3.25) UNRELEASED; urgency=medium
   * Set APT::Acquire::Retries=3 to deal with minor network glitches.
     Thanks, Petter Reinholdtsen. Closes: #761970
 
- -- Joey Hess <joeyh@debian.org>  Sat, 13 Sep 2014 19:36:42 -0400
+ -- Joey Hess <joeyh@debian.org>  Fri, 19 Sep 2014 15:20:50 -0400
 
 tasksel (3.24) unstable; urgency=medium
 
