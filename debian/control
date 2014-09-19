@@ -44,7 +44,7 @@ Recommends:
 # The order here is significant when installing this task manually;
 # when tasksel installs this task it instead selects one of these based
 # on the tasksel/desktop debconf setting.
-	task-xfce-desktop | task-gnome-desktop | task-kde-desktop | task-lxde-desktop | task-cinnamon-desktop | task-mate-desktop, 
+	task-gnome-desktop | task-xfce-desktop | task-kde-desktop | task-lxde-desktop | task-cinnamon-desktop | task-mate-desktop, 
 # For use by third-party apps.
 	xdg-utils,
 # mdns/zeroconf stuff

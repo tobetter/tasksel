@@ -1,5 +1,7 @@
 tasksel (3.25) UNRELEASED; urgency=medium
 
+  * Switch default desktop to gnome, based on prelimary results from
+    https://wiki.debian.org/DebianDesktop/Requalification/Jessie
   * Remove recommends on libreoffice-gcj which has not existed for years.
     Thanks, Michael Biebl. Closes: 678793
   * Add lightdm to mate task. Closes: #761598
