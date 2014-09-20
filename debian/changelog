@@ -1,10 +1,10 @@
-tasksel (3.26) UNRELEASED; urgency=medium
+tasksel (3.26) unstable; urgency=medium
 
   [ Karsten Merker ]
   * add missing "-o" parameter when calling apt with
     APT::Acquire::Retries=3. Closes: #762253
 
- -- Karsten Merker <merker@debian.org>  Sat, 20 Sep 2014 12:19:03 +0200
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 20 Sep 2014 15:55:04 +0200
 
 tasksel (3.25) unstable; urgency=medium
 
