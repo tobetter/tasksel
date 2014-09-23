@@ -179,7 +179,9 @@ Recommends:
 # make hyphenation work
 	hyphen-en-us,
 # gui for configuration of the print server
-	system-config-printer
+	system-config-printer,
+# orca works with lxde, adding accessability
+	gnome-orca,
 
 Package: task-xfce-desktop
 Architecture: all
@@ -276,7 +278,9 @@ Recommends:
 # make hyphenation work
 	hyphen-en-us,
 # we need a working network setup at least
-	network-manager-gnome
+	network-manager-gnome,
+# orca works with mate, adding accessability
+	gnome-orca,
 
 Package: task-laptop
 Architecture: all
