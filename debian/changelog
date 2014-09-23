@@ -10,6 +10,7 @@ tasksel (3.27) UNRELEASED; urgency=low
     several different places, including debian-cd and d-i boot parameters.
   * /usr/lib/tasksel/default_desktop is a shell library that debian-cd
     etc can use if they want to know what tasksel's default is.
+  * Bring back Section in debian-tasks.desc; it it used by debian-cd still.
 
  -- Cyril Brulebois <kibi@debian.org>  Sat, 20 Sep 2014 17:43:29 +0200
 

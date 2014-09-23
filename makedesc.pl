@@ -93,7 +93,7 @@ sub processfile {
 		}
 	}
 
-	foreach (qw{task parent relevance description key enhances provides depends packages}, 
+	foreach (qw{task parent relevance description key enhances provides depends packages section}, 
 	         grep(/^test-(.*)/, keys %fields)) {
 		print OUT ucfirst($_).": ".$fields{$_}."\n" if length $fields{$_};
 	}
