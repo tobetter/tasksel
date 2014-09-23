@@ -36,6 +36,7 @@ install:
 		$(DESTDIR)/usr/share/man/man8
 	install -m 755 tasksel.pl $(DESTDIR)/usr/bin/tasksel
 	install -m 755 tasksel-debconf $(DESTDIR)/usr/lib/tasksel/
+	install -m 644 default_desktop $(DESTDIR)/usr/lib/tasksel/
 	install -m 755 tests/new-install $(DESTDIR)/usr/lib/tasksel/tests/
 	install -m 755 tests/debconf $(DESTDIR)/usr/lib/tasksel/tests/
 	install -m 755 tests/lang $(DESTDIR)/usr/lib/tasksel/tests/

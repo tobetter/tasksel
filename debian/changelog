@@ -5,6 +5,11 @@ tasksel (3.27) UNRELEASED; urgency=low
 
   [ Joey Hess ]
   * Add orca to lxde and mate. Closes: #762409, #762408
+  * Add logic to be able to override the default desktop on a per-arch basis,
+    and override to xfce for kfreebsd and hurd. This was previously done in
+    several different places, including debian-cd and d-i boot parameters.
+  * /usr/lib/tasksel/default_desktop is a shell library that debian-cd
+    etc can use if they want to know what tasksel's default is.
 
  -- Cyril Brulebois <kibi@debian.org>  Sat, 20 Sep 2014 17:43:29 +0200
 

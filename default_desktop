@@ -1,0 +1,10 @@
+# shell library to get the default desktop that tasksel will select 
+# for an architecture
+
+default_desktop_for_arch() {
+	case "$1" in
+		kfreebsd-*) echo xfce ;;
+		hurd-*) echo xfce ;;
+		*) echo gnome ;;
+	esac
+}
