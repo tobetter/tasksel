@@ -38,7 +38,7 @@ Depends: ${misc:Depends},
 	xorg,
 	xserver-xorg-video-all,
 	xserver-xorg-input-all,
-	desktop-base
+	desktop-base,
 Recommends:
 # One of the actual desktop tasks is needed to get a full desktop environment.
 # The order here is significant when installing this task manually;
@@ -62,7 +62,7 @@ Recommends:
 	alsa-utils,
 	alsa-base,
 # ensure pm-utils is available
-	pm-utils
+	pm-utils,
 
 Package: task-gnome-desktop
 Architecture: all
@@ -73,7 +73,7 @@ Description: GNOME
 Depends: ${misc:Depends}, 
 	task-desktop,
 # only depend on a very minimal gnome desktop, to ensure it fits on CD1
-	gnome-core
+	gnome-core,
 Recommends:
 # The full gnome desktop environment should be included if possible
 # even if the larger gnome metapackage doesn't fit.
@@ -99,7 +99,7 @@ Recommends:
 # make hyphenation work
 	hyphen-en-us,
 # we need a working network setup at least
-	network-manager-gnome
+	network-manager-gnome,
 
 Package: task-kde-desktop
 Architecture: all
@@ -110,7 +110,7 @@ Description: KDE
 Depends: ${misc:Depends}, 
 	task-desktop,
 	kde-standard,
-	kdm
+	kdm,
 Recommends:
 # accessibility support
 	kdeaccessibility,
@@ -145,7 +145,7 @@ Recommends:
 # make hyphenation work
 	hyphen-en-us,
 # gui for configuration of the print server
-	system-config-printer
+	system-config-printer,
 
 Package: task-lxde-desktop
 Architecture: all
@@ -156,7 +156,7 @@ Description: LXDE
 Depends: ${misc:Depends}, 
 	task-desktop,
 	lightdm,
-	lxde
+	lxde,
 Recommends:
 	lxtask,
 	lxlauncher,
@@ -193,7 +193,7 @@ Depends: ${misc:Depends},
 	task-desktop,
 # The basics of xfce, not the whole thing.
 	xfce4,
-	lightdm
+	lightdm,
 Recommends:
 # well known xfce4 enhancements
 	xfce4-goodies,
@@ -258,7 +258,7 @@ Description: MATE
 Depends: ${misc:Depends},
 	task-desktop,
 	mate-desktop-environment,
-	lightdm
+	lightdm,
 Recommends:
 # temporarily moved from task-desktop due to #525077
 	gimp,
@@ -287,7 +287,7 @@ Architecture: all
 Description: laptop
  This task package installs software useful for a laptop.
 Depends: ${misc:Depends}, 
-	anacron
+	anacron,
 Recommends:
 	acpi,
 # wireless networking tools
@@ -298,7 +298,7 @@ Recommends:
 	avahi-autoipd,
 	bluetooth,
 	powertop,
-	pm-utils
+	pm-utils,
 
 Package: task-web-server
 Architecture: all
@@ -306,10 +306,10 @@ Description: web server
  This task selects packages useful for a general purpose web server
  system.
 Depends: ${misc:Depends}, 
-	apache2
+	apache2,
 Recommends:
 	apache2-doc,
-	analog
+	analog,
 
 Package: task-print-server
 Architecture: all
@@ -318,13 +318,13 @@ Description: print server
 Depends: ${misc:Depends}, 
 	cups,
 	cups-client,
-	cups-bsd
+	cups-bsd,
 Recommends:
 	foomatic-db-engine,
 	printer-driver-all,
 	hplip,
 	hp-ppd,
-	openprinting-ppds
+	openprinting-ppds,
 
 Package: task-ssh-server
 Architecture: all
@@ -332,9 +332,9 @@ Description: SSH server
  This task sets up your system to be remotely accessed through SSH
  connections.
 Depends: ${misc:Depends}, 
-	openssh-server
+	openssh-server,
 Recommends:
-	openssh-client
+	openssh-client,
 
 Package: task-albanian-desktop
 Architecture: all
