@@ -1,18 +1,18 @@
-tasksel (3.27) UNRELEASED; urgency=low
-
-  [ Cyril Brulebois ]
-  * Fix Relvance/Relevant typo in tasks/mate-desktop. Closes: #762345
+tasksel (3.27) unstable; urgency=high
 
   [ Joey Hess ]
+  * Bring back Section in debian-tasks.desc; it it used by debian-cd still.
   * Add orca to lxde and mate. Closes: #762409, #762408
   * Add logic to be able to override the default desktop on a per-arch basis,
     and override to xfce for kfreebsd and hurd. This was previously done in
     several different places, including debian-cd and d-i boot parameters.
   * /usr/lib/tasksel/default_desktop is a shell library that debian-cd
     etc can use if they want to know what tasksel's default is.
-  * Bring back Section in debian-tasks.desc; it it used by debian-cd still.
 
- -- Cyril Brulebois <kibi@debian.org>  Sat, 20 Sep 2014 17:43:29 +0200
+  [ Cyril Brulebois ]
+  * Fix Relvance/Relevant typo in tasks/mate-desktop. Closes: #762345
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 25 Sep 2014 09:38:58 -0400
 
 tasksel (3.26) unstable; urgency=medium
 
