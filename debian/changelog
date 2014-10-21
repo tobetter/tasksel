@@ -1,3 +1,10 @@
+tasksel (3.29) unstable; urgency=high
+
+  * Gnome only works on i386 and amd64, so default to xfce on other arches.
+    Closes: #765839 Thanks, Adam Borowski for testing.
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 21 Oct 2014 11:21:06 -0400
+
 tasksel (3.28) unstable; urgency=medium
 
   * Display cinnamon and lxde tasks. However, this increases the total
