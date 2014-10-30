@@ -286,14 +286,13 @@ Depends: ${misc:Depends},
 	anacron,
 Recommends:
 	acpi,
+	avahi-autoipd,
+	bluetooth,
+	powertop,
 # wireless networking tools
 	iw,
 	wireless-tools,
 	wpasupplicant,
-#	
-	avahi-autoipd,
-	bluetooth,
-	powertop,
 
 Package: task-web-server
 Architecture: all
