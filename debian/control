@@ -52,8 +52,6 @@ Recommends:
 	libnss-mdns,
 # desktop machines might not be up 24/7
 	anacron,
-# 3d acceleration (with free drivers)
-	libgl1-mesa-dri,
 # Make sure that CDs etc can be ejected. May not be installed by d-i.
 	eject,
 # wireless networking tools (they're more and more used on desktops too)
