@@ -1,3 +1,11 @@
+tasksel (3.30) UNRELEASED; urgency=medium
+
+  * Remove pm-utils from laptop and desktop tasks. It was only added because
+    hal needed it, hal doesn't exist anymore, and systemctl is used for
+    command-line suspend/hibernate now.
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 30 Oct 2014 15:58:02 -0400
+
 tasksel (3.29) unstable; urgency=high
 
   * Gnome only works on i386 and amd64, so default to xfce on other arches.

@@ -61,8 +61,6 @@ Recommends:
 # sound
 	alsa-utils,
 	alsa-base,
-# ensure pm-utils is available
-	pm-utils,
 
 Package: task-gnome-desktop
 Architecture: all
@@ -298,7 +296,6 @@ Recommends:
 	avahi-autoipd,
 	bluetooth,
 	powertop,
-	pm-utils,
 
 Package: task-web-server
 Architecture: all
