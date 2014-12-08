@@ -27,8 +27,10 @@ check_desktop_wanted() {
 	fi
 }
 
-if db_get "tasksel/desktop" && echo "$RET" | grep -q "$DESKTOPNAME"; then
-	check_desktop_wanted
+if db_get "tasksel/desktop"; then
+	if echo "$RET" | grep -q "$DESKTOPNAME"; then
+		check_desktop_wanted
+	fi
 else
 	if [ "$DESKTOPNAME" = "$(default_desktop_for_arch $(dpkg --print-architecture))" ]; then
 		check_desktop_wanted

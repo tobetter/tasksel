@@ -1,10 +1,14 @@
 tasksel (3.30) UNRELEASED; urgency=medium
 
+  [ Joey Hess ]
   * Remove pm-utils from laptop and desktop tasks. It was only added because
     hal needed it, hal doesn't exist anymore, and systemctl is used for
     command-line suspend/hibernate now.
   * Remove libgl1-mesa-dri from the desktop task list. xorg depends on it,
     so it does not need to be explicitly listed.
+
+  [ Samuel Thibault ]
+  * When a desktop is preseeded, only enable that desktop. Closes: #771576.
 
  -- Joey Hess <joeyh@debian.org>  Thu, 30 Oct 2014 15:58:02 -0400
 
