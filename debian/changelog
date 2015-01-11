@@ -9,6 +9,8 @@ tasksel (3.30) UNRELEASED; urgency=medium
 
   [ Samuel Thibault ]
   * When a desktop is preseeded, only enable that desktop. Closes: #771576.
+  * Also install libreoffice-gtk along gnome-orca, to make LibreOffice
+    accessible. Closes: #773763.
 
  -- Joey Hess <joeyh@debian.org>  Thu, 30 Oct 2014 15:58:02 -0400
 

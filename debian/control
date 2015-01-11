@@ -178,6 +178,8 @@ Recommends:
 	system-config-printer,
 # orca works with lxde, adding accessability
 	gnome-orca,
+# libreoffice accessibility needs the GTK frontend
+	libreoffice-gtk,
 
 Package: task-xfce-desktop
 Architecture: all
@@ -234,6 +236,8 @@ Recommends:
 	system-config-printer,
 # orca works with xfce, adding accessability
 	gnome-orca,
+# libreoffice accessibility needs the GTK frontend
+	libreoffice-gtk,
 
 Package: task-cinnamon-desktop
 Architecture: all
@@ -277,6 +281,8 @@ Recommends:
 	network-manager-gnome,
 # orca works with mate, adding accessability
 	gnome-orca,
+# libreoffice accessibility needs the GTK frontend
+	libreoffice-gtk,
 
 Package: task-laptop
 Architecture: all
