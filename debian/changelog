@@ -10,6 +10,8 @@ tasksel (3.32) UNRELEASED; urgency=medium
     as suggested by Jonas Smedegaard.
   * Drop alsa-base from task-desktop, it's been merged into/replaced by
     kmod, which is pulled already (Closes: #757366). Thanks, Ansgar!
+  * Add the dragonplayer media player to task-kde-desktop, as suggested
+    by Lisandro Damián Nicanor Pérez Meyer (Closes: #385650).
 
  -- Cyril Brulebois <kibi@debian.org>  Tue, 28 Apr 2015 13:08:36 +0200
 
