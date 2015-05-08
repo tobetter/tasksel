@@ -3,6 +3,9 @@ tasksel (3.32) UNRELEASED; urgency=medium
   * Make task-xfce-desktop recommend evince-gtk | evince instead of just
     evince-gtk, making the GNOME and Xfce desktop tasks co-installable
     (Closes: #783571).
+  * Update dependencies of task-danish-desktop, making myspell-da an
+    alternative to hunspell-da and listing the former in the first
+    place (Closes: #767779), as recommended by Jonas Smedegaard.
 
  -- Cyril Brulebois <kibi@debian.org>  Tue, 28 Apr 2015 13:08:36 +0200
 
