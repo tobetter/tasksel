@@ -8,6 +8,12 @@ tasksel (3.33) UNRELEASED; urgency=low
   * Replace kdm by sddm in task-kde-desktop as part of the KDE5
     transition. Closes: #792829
 
+  [ Scott Kitterman ]
+  * Additional updates for transition to Plasma 5 (Closes: #794051):
+    - Drop specific depends on Qt4 components to support the KDE debconf front
+      end as they will be pulled in as needed by apper or muon
+    - Update plasma-widget-networkmanagement to plasma-nm
+
  -- Adriano Rafael Gomes <adrianorg@arg.eti.br>  Fri, 15 May 2015 19:43:57 -0300
 
 tasksel (3.32) unstable; urgency=medium
