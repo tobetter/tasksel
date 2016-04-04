@@ -2,6 +2,7 @@ tasksel (3.35) UNRELEASED; urgency=medium
 
   * debian/control:
     - replace iceweasel by firefox now that it has entered the archive.
+    - drop firefox language packages not present in the archive.
     - add light-locker to xfce dependencies 
 
  -- Yves-Alexis Perez <corsac@debian.org>  Fri, 18 Mar 2016 16:29:04 +0100
