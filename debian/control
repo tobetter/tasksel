@@ -343,7 +343,7 @@ Description: Albanian desktop
  This task localises the desktop in Albanian.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-sq
+	firefox-esr-l10n-sq
 
 Package: task-amharic
 Architecture: all
@@ -398,7 +398,7 @@ Depends: ${misc:Depends},
 Recommends:
 	fonts-kacst,
 	fonts-farsiweb,
-	firefox-l10n-ar,
+	firefox-esr-l10n-ar,
 	libreoffice-l10n-ar,
 	hunspell-ar
 
@@ -425,7 +425,7 @@ Description: Asturian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-ast,
-	firefox-l10n-ast
+	firefox-esr-l10n-ast
 
 Package: task-basque
 Architecture: all
@@ -442,7 +442,7 @@ Description: Basque desktop
  This task localises the desktop in Basque.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-eu,	
+	firefox-esr-l10n-eu,	
 	libreoffice-l10n-eu,
 	libreoffice-help-eu,
 	hunspell-eu-es
@@ -470,7 +470,7 @@ Description: Belarusian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-be,
-	firefox-l10n-be,
+	firefox-esr-l10n-be,
 	hunspell-be
 
 Package: task-belarusian-kde-desktop
@@ -497,8 +497,8 @@ Description: Bengali desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-bn,
-	firefox-l10n-bn-in,
-	firefox-l10n-bn-bd,
+	firefox-esr-l10n-bn-in,
+	firefox-esr-l10n-bn-bd,
 	fonts-lohit-beng-bengali
 
 Package: task-bengali-kde-desktop
@@ -529,7 +529,7 @@ Description: Bosnian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-bs,
-	firefox-l10n-bs,
+	firefox-esr-l10n-bs,
 	myspell-hr
 
 Package: task-bosnian-kde-desktop
@@ -565,7 +565,7 @@ Description: Brazilian Portuguese desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-pt-br,
-	firefox-l10n-pt-br,
+	firefox-esr-l10n-pt-br,
 	myspell-pt-br
 
 Package: task-brazilian-portuguese-kde-desktop
@@ -583,7 +583,7 @@ Description: British English desktop
 XBC-Maintainer: Per Olofsson <pelle@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-en-gb,
+	firefox-esr-l10n-en-gb,
 	libreoffice-help-en-gb,
 	libreoffice-l10n-en-gb,
 	myspell-en-gb
@@ -616,7 +616,7 @@ XBC-Maintainer: Anton Zinoviev <zinoviev@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-bg,
-	firefox-l10n-bg,
+	firefox-esr-l10n-bg,
 	fonts-dejavu,
 	myspell-bg
 
@@ -648,7 +648,7 @@ Description: Catalan desktop
  This task localises the desktop in Catalan.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-ca,
+	firefox-esr-l10n-ca,
 	libreoffice-l10n-ca,
 	libreoffice-help-ca,
 	myspell-ca
@@ -696,7 +696,7 @@ Recommends:
 # Software help and localization
 	libreoffice-l10n-zh-cn,
 	libreoffice-help-zh-cn,
-	firefox-l10n-zh-cn,
+	firefox-esr-l10n-zh-cn,
 # Dictionary
 	goldendict,
 # poppler-data is needed to display
@@ -741,7 +741,7 @@ Recommends:
 	ttf-wqy-zenhei,
 	libreoffice-l10n-zh-tw,
 	libreoffice-help-zh-tw,
-	firefox-l10n-zh-tw,
+	firefox-esr-l10n-zh-tw,
 # poppler-data is needed to display
 # Chinese on poppler applications.
 	poppler-data
@@ -777,7 +777,7 @@ Recommends:
 	hyphen-hr,
 	libreoffice-l10n-hr,
 	myspell-hr,
-	firefox-l10n-hr
+	firefox-esr-l10n-hr
 
 Package: task-croatian-kde-desktop
 Architecture: all
@@ -804,7 +804,7 @@ Description: Czech desktop
  This task localises the desktop in Czech.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-cs,
+	firefox-esr-l10n-cs,
 	libreoffice-l10n-cs,
 	libreoffice-help-cs,
 	mythes-cs,
@@ -836,7 +836,7 @@ Description: Danish desktop
  This task localises the desktop in Danish.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-da,
+	firefox-esr-l10n-da,
 	libreoffice-l10n-da,
 	libreoffice-help-da,
 	myspell-da | hunspell-da
@@ -867,7 +867,7 @@ Description: Dutch desktop
  This task localises the desktop in Dutch.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-nl,
+	firefox-esr-l10n-nl,
 	libreoffice-l10n-nl,
 	libreoffice-help-nl,
 	myspell-nl
@@ -926,7 +926,7 @@ Depends: ${misc:Depends},
 Recommends:
 	myspell-eo,
 	libreoffice-l10n-eo,
-	firefox-l10n-eo
+	firefox-esr-l10n-eo
 
 Package: task-esperanto-kde-desktop
 Architecture: all
@@ -953,7 +953,7 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-et,
 	libreoffice-help-et,
-	firefox-l10n-et
+	firefox-esr-l10n-et
 
 Package: task-estonian-kde-desktop
 Architecture: all
@@ -983,7 +983,7 @@ Recommends:
 	libreoffice-help-fi,
 	libreoffice-l10n-fi,
 	libreoffice-voikko,
-	firefox-l10n-fi,
+	firefox-esr-l10n-fi,
 	xul-ext-mozvoikko
 
 Package: task-finnish-kde-desktop
@@ -1020,7 +1020,7 @@ Recommends:
 	libreoffice-l10n-fr,
 	libreoffice-help-fr,
 	mythes-fr,
-	firefox-l10n-fr,
+	firefox-esr-l10n-fr,
 	hunspell-fr
 
 Package: task-french-kde-desktop
@@ -1049,7 +1049,7 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-gl,
 	libreoffice-help-gl,
-	firefox-l10n-gl,
+	firefox-esr-l10n-gl,
 	hunspell-gl-es,
 
 Package: task-galician-kde-desktop
@@ -1090,7 +1090,7 @@ Description: German desktop
  This task localises the desktop in German.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-de,
+	firefox-esr-l10n-de,
 	libreoffice-help-de,
 	libreoffice-l10n-de,
 	mythes-de,
@@ -1128,7 +1128,7 @@ Recommends:
 	fonts-freefont,
 	fonts-mgopen,
 	libreoffice-l10n-el,
-	firefox-l10n-el,
+	firefox-esr-l10n-el,
 	myspell-el-gr,
 	libreoffice-help-el
 
@@ -1157,7 +1157,7 @@ Depends: ${misc:Depends},
 Recommends:
 	fonts-lohit-gujr,
 	libreoffice-l10n-gu,
-	firefox-l10n-gu-in
+	firefox-esr-l10n-gu-in
 
 Package: task-gujarati-kde-desktop
 Architecture: all
@@ -1192,7 +1192,7 @@ Depends: ${misc:Depends},
 Recommends:
 	hspell-gui,
 	libreoffice-l10n-he,
-	firefox-l10n-he,
+	firefox-esr-l10n-he,
 	myspell-he
 
 Package: task-hebrew-gnome-desktop
@@ -1230,7 +1230,7 @@ Recommends:
 	libreoffice-l10n-hi,
 	libreoffice-help-hi,
 	fonts-lohit-deva,
-	firefox-l10n-hi-in
+	firefox-esr-l10n-hi-in
 
 Package: task-hindi-kde-desktop
 Architecture: all
@@ -1265,7 +1265,7 @@ Recommends:
 	fonts-dejavu,
 	fonts-liberation,
 	fonts-freefont,
-	firefox-l10n-hu,
+	firefox-esr-l10n-hu,
 	libreoffice-l10n-hu,
 	libreoffice-help-hu,
 	libreoffice-thesausus-hu,
@@ -1296,7 +1296,7 @@ Description: Icelandic desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-is,
-	firefox-l10n-is
+	firefox-esr-l10n-is
 
 Package: task-icelandic-kde-desktop
 Architecture: all
@@ -1312,7 +1312,7 @@ Description: Indonesian desktop
  This task localises the desktop in Indonesian.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-id,
+	firefox-esr-l10n-id,
 	libreoffice-l10n-id
 
 Package: task-indonesian-kde-desktop
@@ -1338,7 +1338,7 @@ Description: Irish desktop
  This task localises the desktop in Irish.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-ga-ie,
+	firefox-esr-l10n-ga-ie,
 	libreoffice-l10n-ga,
 	myspell-ga
 
@@ -1376,7 +1376,7 @@ Recommends:
 	libreoffice-help-it,
 	libreoffice-l10n-it,
 	mythes-it,
-	firefox-l10n-it,
+	firefox-esr-l10n-it,
 	myspell-it
 
 Package: task-italian-kde-desktop
@@ -1410,7 +1410,7 @@ Description: Japanese desktop
  This task localises the desktop in Japanese.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-ja,
+	firefox-esr-l10n-ja,
 	fonts-vlgothic,
 	fonts-ipafont,
 	uim,
@@ -1449,7 +1449,7 @@ Architecture: all
 Description: Kannada desktop
  This task localises the desktop in Kannada.
 Depends: ${misc:Depends}, 
-	firefox-l10n-kn
+	firefox-esr-l10n-kn
 Recommends: 
 	fonts-lohit-knda,
 	fcitx,
@@ -1483,7 +1483,7 @@ XBC-Maintainer: Timur Birsh <taem@linukz.org>
 Depends: ${misc:Depends}, 
 Recommends:
 	hunspell-kk,
-	firefox-l10n-kk
+	firefox-esr-l10n-kk
 
 Package: task-kazakh-kde-desktop
 Architecture: all
@@ -1509,7 +1509,7 @@ Description: Khmer desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	fonts-khmeros,
-	firefox-l10n-km,
+	firefox-esr-l10n-km,
 	libreoffice-l10n-km,
 	libreoffice-help-km
 
@@ -1540,7 +1540,7 @@ Recommends:
 	ibus-hangul,
 	fonts-nanum,
 	fonts-nanum-coding,
-	firefox-l10n-ko,
+	firefox-esr-l10n-ko,
 	libreoffice-help-ko,
 	libreoffice-l10n-ko,
 	hunspell-ko,
@@ -1609,7 +1609,7 @@ Description: Latvian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-lv,
-	firefox-l10n-lv
+	firefox-esr-l10n-lv
 
 Package: task-latvian-kde-desktop
 Architecture: all
@@ -1639,7 +1639,7 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-lt,
 	hyphen-lt,
-	firefox-l10n-lt,
+	firefox-esr-l10n-lt,
 	myspell-lt
 
 Package: task-lithuanian-kde-desktop
@@ -1664,7 +1664,7 @@ Description: Macedonian desktop
  This task localises the desktop in Macedonian.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-mk,
+	firefox-esr-l10n-mk,
 	libreoffice-l10n-mk,
 	fonts-dejavu
 
@@ -1692,7 +1692,7 @@ Description: Malayalam desktop
 Depends: ${misc:Depends} 
 Recommends:
 	libreoffice-l10n-ml,
-	firefox-l10n-ml,
+	firefox-esr-l10n-ml,
 	im-config,
 # Move to fcitx from scim since the latter has gone from archive
 	fcitx,
@@ -1736,7 +1736,7 @@ Description: Marathi desktop
  This task localises the desktop in Marathi.
 Depends: ${misc:Depends}
 Recommends:
-	firefox-l10n-mr,
+	firefox-esr-l10n-mr,
 	libreoffice-l10n-mr,
 	fonts-lohit-deva
 
@@ -1798,8 +1798,8 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-nb,
 	libreoffice-l10n-nn,
-	firefox-l10n-nb-no,
-	firefox-l10n-nn-no,
+	firefox-esr-l10n-nb-no,
+	firefox-esr-l10n-nn-no,
 	myspell-nn,
 	myspell-nb
 
@@ -1830,7 +1830,7 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-fa,
 	fonts-farsiweb,
-	firefox-l10n-fa
+	firefox-esr-l10n-fa
 
 Package: task-persian-kde-desktop
 Architecture: all
@@ -1867,7 +1867,7 @@ Recommends:
 	libreoffice-l10n-pl,
 	libreoffice-help-pl,
 	mythes-pl,
-	firefox-l10n-pl,
+	firefox-esr-l10n-pl,
 	myspell-pl
 
 Package: task-polish-kde-desktop
@@ -1897,7 +1897,7 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-pt,
 	libreoffice-help-pt,
-	firefox-l10n-pt-pt,
+	firefox-esr-l10n-pt-pt,
 	myspell-pt-pt
 
 Package: task-portuguese-kde-desktop
@@ -1926,7 +1926,7 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-pa-in,
 	fonts-lohit-guru,
-	firefox-l10n-pa-in
+	firefox-esr-l10n-pa-in
 
 Package: task-punjabi-kde-desktop
 Architecture: all
@@ -1959,7 +1959,7 @@ Recommends:
 # this appears to be one of the few fonts that has t with comma bellow
 	fonts-dejavu,
 	fonts-freefont,
-	firefox-l10n-ro,
+	firefox-esr-l10n-ro,
 	hunspell-ro
 
 Package: task-romanian-kde-desktop
@@ -1994,7 +1994,7 @@ Recommends:
 	libreoffice-l10n-ru,
 	libreoffice-help-ru,
 	mythes-ru,
-	firefox-l10n-ru,
+	firefox-esr-l10n-ru,
 	hunspell-ru
 
 Package: task-russian-kde-desktop
@@ -2023,7 +2023,7 @@ Description: Serbian desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-sr,
-	firefox-l10n-sr,
+	firefox-esr-l10n-sr,
 	hunspell-sr
 
 Package: task-serbian-kde-desktop
@@ -2042,7 +2042,7 @@ Depends: ${misc:Depends},
 Recommends:
 	fonts-lklug-sinhala,
 	libreoffice-l10n-si,
-	firefox-l10n-si
+	firefox-esr-l10n-si
 
 Package: task-sinhala-kde-desktop
 Architecture: all
@@ -2070,7 +2070,7 @@ Recommends:
 	libreoffice-l10n-sk,
 	libreoffice-help-sk,
 	mythes-sk,
-	firefox-l10n-sk,
+	firefox-esr-l10n-sk,
 	myspell-sk
 
 Package: task-slovak-kde-desktop
@@ -2096,7 +2096,7 @@ Description: Slovenian desktop
  This task localises the desktop in Slovenian.
 Depends: ${misc:Depends}, 
 Recommends:
-	firefox-l10n-sl,
+	firefox-esr-l10n-sl,
 	libreoffice-l10n-sl,
 	libreoffice-help-sl,
 	myspell-sl
@@ -2116,7 +2116,7 @@ Description: South African English desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-en-za,
-	firefox-l10n-en-za
+	firefox-esr-l10n-en-za
 
 Package: task-spanish
 Architecture: all
@@ -2144,10 +2144,10 @@ Depends: ${misc:Depends},
 Recommends:
 	libreoffice-l10n-es,
 	libreoffice-help-es,
-	firefox-l10n-es-ar,
-	firefox-l10n-es-cl,
-	firefox-l10n-es-mx,
-	firefox-l10n-es-es,
+	firefox-esr-l10n-es-ar,
+	firefox-esr-l10n-es-cl,
+	firefox-esr-l10n-es-mx,
+	firefox-esr-l10n-es-es,
 	myspell-es
 
 Package: task-spanish-kde-desktop
@@ -2181,7 +2181,7 @@ Recommends:
 	gimp-help-sv,
 	libreoffice-l10n-sv,
 	libreoffice-help-sv,
-	firefox-l10n-sv-se,
+	firefox-esr-l10n-sv-se,
 	hunspell-sv-se
 
 Package: task-swedish-kde-desktop
@@ -2219,7 +2219,7 @@ Depends: ${misc:Depends},
 Recommends:
 	fonts-lohit-taml,
 	libreoffice-l10n-ta,
-	firefox-l10n-ta
+	firefox-esr-l10n-ta
 
 Package: task-tamil-gnome-desktop
 Architecture: all
@@ -2248,7 +2248,7 @@ Description: Telugu desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-te,
-	firefox-l10n-te,
+	firefox-esr-l10n-te,
 	fonts-lohit-telu,
 	im-config,
 	fcitx,
@@ -2292,7 +2292,7 @@ Depends: ${misc:Depends},
 Recommends:
 	xiterm+thai,
 	libreoffice-l10n-th,
-	firefox-l10n-th,
+	firefox-esr-l10n-th,
 	myspell-th
 
 Package: task-thai-gnome-desktop
@@ -2334,7 +2334,7 @@ XBC-Maintainer: Recai Oktas <roktas@omu.edu.tr>
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-tr,
-	firefox-l10n-tr
+	firefox-esr-l10n-tr
 
 Package: task-turkish-kde-desktop
 Architecture: all
@@ -2365,7 +2365,7 @@ XBC-Maintainer: Eugeniy Meshcheryakov <eugen@debian.org>
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-uk,
-	firefox-l10n-uk,
+	firefox-esr-l10n-uk,
 	fonts-dejavu,
 	myspell-uk
 
@@ -2401,7 +2401,7 @@ Description: Vietnamese desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-vi,
-	firefox-l10n-vi,
+	firefox-esr-l10n-vi,
 	hunspell-vi
 
 Package: task-vietnamese-kde-desktop
@@ -2428,7 +2428,7 @@ Description: Welsh desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	libreoffice-l10n-cy,
-	firefox-l10n-cy
+	firefox-esr-l10n-cy
 
 Package: task-xhosa-desktop
 Architecture: all
