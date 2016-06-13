@@ -1,11 +1,17 @@
 tasksel (3.35) UNRELEASED; urgency=medium
 
+  [ Yves-Alexis Perez ]
   * debian/control:
     - replace iceweasel by firefox-esr now that it has entered the archive.
     - drop firefox language packages not present in the archive.
     - add light-locker to xfce dependencies 
 
- -- Yves-Alexis Perez <corsac@debian.org>  Fri, 18 Mar 2016 16:29:04 +0100
+  [ Rene Engelhard ]
+  * debian/control:
+    - recommend libreoffice-gtk3 instead of -gtk in task-mate-desktop as MATE
+      is now using Gtk3
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 13 Jun 2016 22:38:12 +0200
 
 tasksel (3.34) unstable; urgency=medium
 
