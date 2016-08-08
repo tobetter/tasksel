@@ -1,7 +1,11 @@
 tasksel (3.36) UNRELEASED; urgency=medium
 
+  [ Rene Engelhard ]
   * debian/control:
     - change libreoffice-gtk to libreoffice-gtk2 in task-*-desktop
+
+  [ Dimitri John Ledkov ]
+  * Set s390x as unlikely desktop architecture.
 
  -- Rene Engelhard <rene@debian.org>  Thu, 04 Aug 2016 19:00:39 +0200
 
