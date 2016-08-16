@@ -7,6 +7,12 @@ tasksel (3.36) UNRELEASED; urgency=medium
   [ Dimitri John Ledkov ]
   * Set s390x as unlikely desktop architecture.
 
+  [ Christian Perrier ]
+  * Replace fonts-freefont by fonts-freefont-ttf in
+    task-{greek,romanian,hungarian}-desktop
+    Thanks to Raphaël Halimi for pointing this.
+    Closes: #834418
+
  -- Rene Engelhard <rene@debian.org>  Thu, 04 Aug 2016 19:00:39 +0200
 
 tasksel (3.35) unstable; urgency=medium

@@ -1125,7 +1125,7 @@ Description: Greek desktop
  This task localises the desktop in Greek.
 Depends: ${misc:Depends}, 
 Recommends:
-	fonts-freefont,
+	fonts-freefont-ttf,
 	fonts-mgopen,
 	libreoffice-l10n-el,
 	firefox-esr-l10n-el | firefox-l10n-el,
@@ -1264,7 +1264,7 @@ Recommends:
 	fonts-sil-andika,
 	fonts-dejavu,
 	fonts-liberation,
-	fonts-freefont,
+	fonts-freefont-ttf,
 	firefox-esr-l10n-hu | firefox-l10n-hu,
 	libreoffice-l10n-hu,
 	libreoffice-help-hu,
@@ -1958,7 +1958,7 @@ Recommends:
 	libreoffice-l10n-ro,
 # this appears to be one of the few fonts that has t with comma bellow
 	fonts-dejavu,
-	fonts-freefont,
+	fonts-freefont-ttf,
 	firefox-esr-l10n-ro | firefox-l10n-ro,
 	hunspell-ro
 
