@@ -206,7 +206,7 @@ Recommends:
 # libreoffice widgets using just gtk
 	libreoffice-gtk2,
 # xfce is really improved by using dbus
-	dbus-x11,
+	default-dbus-session-bus | dbus-session-bus
 # support for scanners
 	xsane,
 # media players
