@@ -44,7 +44,7 @@ Recommends:
 # The order here is significant when installing this task manually;
 # when tasksel installs this task it instead selects one of these based
 # on the tasksel/desktop debconf setting.
-	task-gnome-desktop | task-xfce-desktop | task-kde-desktop | task-lxde-desktop | task-cinnamon-desktop | task-mate-desktop, 
+	task-gnome-desktop | task-xfce-desktop | task-kde-desktop | task-lxde-desktop | task-cinnamon-desktop | task-mate-desktop | task-lxqt-desktop,
 # For use by third-party apps.
 	xdg-utils,
 # mdns/zeroconf stuff
@@ -180,6 +180,38 @@ Recommends:
 	gnome-orca,
 # libreoffice accessibility needs the GTK frontend
 	libreoffice-gtk2,
+
+Package: task-lxqt-desktop
+Architecture: all
+Description: LXQt
+ This task package is used to install the Debian desktop, featuring
+ the LXQt desktop environment, and with other packages that Debian users
+ expect to have available on the desktop.
+Depends: ${misc:Depends},
+         task-desktop,
+         sddm,
+         sddm-theme-maui | sddm-theme,
+         lxqt,
+Recommends: xsane,
+# libreoffice widgets using just gtk
+	libreoffice-gtk,
+# Package management.
+	synaptic,
+# firefox (ne iceweasel) is the most popular web browser at the moment,
+# although both gnome and kde offer their own too
+	firefox-esr|firefox,
+# libreoffice is the best word processor / office suite at the moment
+	libreoffice,
+# make help menu work
+	libreoffice-help-en-us,
+# make thesaurus work
+	mythes-en-us,
+# make spellchecker work
+	hunspell-en-us,
+# make hyphenation work
+	hyphen-en-us,
+# gui for configuration of the print server
+	system-config-printer,
 
 Package: task-xfce-desktop
 Architecture: all
@@ -736,8 +768,8 @@ Recommends:
 	fonts-arphic-uming,
 # seems openjdk needs this to display Chinese.
 	fonts-noto,
-	ttf-wqy-microhei,
-	ttf-wqy-zenhei,
+	fonts-wqy-microhei,
+	fonts-wqy-zenhei,
 	libreoffice-l10n-zh-tw,
 	libreoffice-help-zh-tw,
 	firefox-esr-l10n-zh-tw | firefox-l10n-zh-tw,
