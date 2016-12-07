@@ -193,8 +193,10 @@ Depends: ${misc:Depends},
          sddm-theme-maui | sddm-theme,
          lxqt,
 Recommends: xsane,
+# orca works with qt, adding accessibility
+	gnome-orca,
 # libreoffice widgets using just gtk
-	libreoffice-gtk,
+	libreoffice-gtk2,
 # Package management.
 	synaptic,
 # firefox (ne iceweasel) is the most popular web browser at the moment,
