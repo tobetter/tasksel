@@ -408,6 +408,7 @@ Description: Amharic KDE desktop
 Depends: ${misc:Depends}, 
 Recommends:
 	fcitx-frontend-qt4,
+	fcitx-frontend-qt5,
 	kde-config-fcitx
 
 Package: task-arabic
@@ -743,6 +744,7 @@ Depends: ${misc:Depends},
 Recommends:
 	kde-l10n-zhcn,
 	fcitx-frontend-qt4,
+	fcitx-frontend-qt5,
 	kde-config-fcitx
 
 Package: task-chinese-t
@@ -1749,6 +1751,7 @@ Depends: ${misc:Depends},
 Recommends:
 	kde-l10n-ml,
 	fcitx-frontend-qt4,
+	fcitx-frontend-qt5,
 	kde-config-fcitx
 
 Package: task-marathi
@@ -2304,6 +2307,7 @@ Description: Telugu KDE desktop environment
 Depends: ${misc:Depends}, 
 Recommends:
 	fcitx-frontend-qt4,
+	fcitx-frontend-qt5,
 	kde-config-fcitx
 
 Package: task-thai

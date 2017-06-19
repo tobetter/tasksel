@@ -1,6 +1,9 @@
 tasksel (3.40) UNRELEASED; urgency=medium
 
   * Update Chinese fonts, thanks to Boyuan Yang (Closes: #861934).
+  * Add fcitx-frontend-qt5 alongside fcitx-frontend-qt4, for all tasks
+    which recommended the latter. Based on a suggestion by Boyuan Yang
+    for Chinese (See: #861934).
 
  -- Cyril Brulebois <kibi@debian.org>  Mon, 19 Jun 2017 15:05:59 +0200
 
