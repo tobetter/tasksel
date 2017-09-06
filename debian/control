@@ -1460,7 +1460,6 @@ Description: Japanese GNOME desktop
  This task localises the GNOME desktop in Japanese.
 Depends: ${misc:Depends}, 
 Recommends:
-	uim-applet-gnome,
 # evolution has a problem for Japanese, for example it uses always UTF-8
 # subject instead of iso-2022-jp used Japanese de-facto. I recommend
 # icedove as default mailer for Japanese desktop users.
@@ -1473,8 +1472,7 @@ Description: Japanese KDE desktop
  This task localises the KDE desktop in Japanese.
 Depends: ${misc:Depends}, 
 Recommends:
-	kde-l10n-ja,
-	plasma-widget-uim
+	kde-l10n-ja
 
 Package: task-kannada-desktop
 Architecture: all
