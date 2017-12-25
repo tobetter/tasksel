@@ -110,7 +110,7 @@ Recommends:
 # accessibility support
 	kdeaccessibility,
 # orca works with kde, adding accessibility
-	gnome-orca,
+	orca,
 # cd/dvd burner
 	k3b,
 	k3b-i18n,
@@ -175,7 +175,7 @@ Recommends:
 # gui for configuration of the print server
 	system-config-printer,
 # orca works with lxde, adding accessibility
-	gnome-orca,
+	orca,
 # libreoffice accessibility needs the GTK frontend
 	libreoffice-gtk2,
 
@@ -192,7 +192,7 @@ Depends: ${misc:Depends},
          lxqt,
 Recommends: xsane,
 # orca works with qt, adding accessibility
-	gnome-orca,
+	orca,
 # libreoffice widgets using just gtk
 	libreoffice-gtk2,
 # Package management.
@@ -268,7 +268,7 @@ Recommends:
 # gui for configuration of the print server
 	system-config-printer,
 # orca works with xfce, adding accessibility
-	gnome-orca,
+	orca,
 # libreoffice accessibility needs the GTK frontend
 	libreoffice-gtk2,
 
@@ -313,7 +313,7 @@ Recommends:
 # we need a working network setup at least
 	network-manager-gnome,
 # orca works with mate, adding accessibility
-	gnome-orca,
+	orca,
 # libreoffice accessibility needs the GTK frontend
 	libreoffice-gtk3,
 
