@@ -75,16 +75,13 @@ Recommends:
 	gnome,
 # GNOME support in LibreOffice
 	libreoffice-gnome,
-	libreoffice-evolution,
-# temporarily moved from task-desktop due to #525077
-	gimp,
-# Package management.
-	synaptic,
 # firefox is the most popular web browser at the moment,
 # although both gnome and kde offer their own too
 	firefox-esr | firefox,
 # libreoffice is the best word processor / office suite at the moment
-	libreoffice,
+	libreoffice-writer,
+	libreoffice-calc,
+	libreoffice-impress,
 # make help menu work
 	libreoffice-help-en-us,
 # make thesaurus work
