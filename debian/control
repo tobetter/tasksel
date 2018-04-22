@@ -12,7 +12,7 @@ Package: tasksel
 Section: admin
 Priority: important
 Architecture: all
-Pre-Depends: debconf (>= 1.5.34) | cdebconf (>= 0.106), odroid-base
+Pre-Depends: debconf (>= 1.5.34) | cdebconf (>= 0.106)
 Depends: ${misc:Depends}, liblocale-gettext-perl, apt, tasksel-data, perl-base (>= 5.14.0-1)
 Conflicts: debconf (<< 1.4.27), base-config (<< 2.32)
 Description: tool for selecting tasks for installation on Debian systems
